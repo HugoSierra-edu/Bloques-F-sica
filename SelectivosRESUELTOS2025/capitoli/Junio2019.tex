@@ -1,0 +1,735 @@
+```latex
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2019 - Convocatoria Ordinaria}
+\label{chap:2019_jun_ord}
+
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2019_jun_ord}
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:1A_2019_jun_ord}
+
+\begin{cajaenunciado}
+Sobre un cuerpo sólo actúan fuerzas gravitatorias. Al trasladarse el cuerpo entre dos puntos, A y B, su energía potencial gravitatoria aumenta en 2000 J. ¿Cuál es el valor del trabajo que realizan las fuerzas conservativas que actúan sobre el cuerpo? ¿En cuál de los dos puntos su velocidad es mayor?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de fuerzas:} Exclusivamente gravitatorias (conservativas).
+    \item \textbf{Variación de Energía Potencial ($\Delta E_p$):} El cuerpo se mueve de A a B. $\Delta E_p = E_{p,B} - E_{p,A} = +2000 \, \text{J}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Trabajo realizado por las fuerzas conservativas ($W_{A \to B}$).
+        \item Punto de mayor velocidad (A o B).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Relación entre Trabajo y Energía Potencial}
+El trabajo realizado por una fuerza conservativa, como la gravitatoria, al mover un cuerpo entre dos puntos es igual al negativo de la variación de la energía potencial del cuerpo.
+$$ W_{cons} = -\Delta E_p $$
+
+\paragraph{Principio de Conservación de la Energía Mecánica}
+Dado que sobre el cuerpo solo actúan fuerzas conservativas, la energía mecánica total ($E_M = E_c + E_p$) se conserva. Esto significa que la variación de la energía mecánica es nula:
+$$ \Delta E_M = 0 \implies \Delta E_c + \Delta E_p = 0 $$
+donde $\Delta E_c = E_{c,B} - E_{c,A}$ es la variación de la energía cinética.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Cálculo del Trabajo}
+La relación es directa:
+\begin{gather}
+    W_{A \to B} = -(E_{p,B} - E_{p,A}) = -\Delta E_p
+\end{gather}
+
+\paragraph{Comparación de Velocidades}
+De la conservación de la energía mecánica:
+\begin{gather}
+    \Delta E_c = -\Delta E_p \implies E_{c,B} - E_{c,A} = -\Delta E_p \nonumber \\
+    \frac{1}{2}mv_B^2 - \frac{1}{2}mv_A^2 = -\Delta E_p
+\end{gather}
+Dado que se nos dice que $\Delta E_p > 0$, el término de la derecha es negativo. Por tanto:
+\begin{gather}
+    \frac{1}{2}mv_B^2 - \frac{1}{2}mv_A^2 < 0 \implies \frac{1}{2}mv_B^2 < \frac{1}{2}mv_A^2 \implies v_B^2 < v_A^2 \implies v_B < v_A
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    W_{A \to B} = -2000 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+El trabajo que realizan las fuerzas conservativas es de $\boldsymbol{-2000 \, \textbf{J}}$.
+La velocidad es mayor en el punto \textbf{A}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El trabajo realizado por el campo gravitatorio es de -2000 J, un valor negativo que indica que el desplazamiento se ha realizado en contra del campo. Por el principio de conservación de la energía, este aumento en la energía potencial se produce a costa de una disminución en la energía cinética. Por lo tanto, la velocidad del cuerpo es mayor en el punto inicial A que en el punto final B.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:1B_2019_jun_ord}
+\begin{cajaenunciado}
+Un satélite artificial de la Tierra tiene una velocidad de $4,2\,\text{km/s}$ en una determinada órbita circular. Calcula:
+\begin{enumerate}
+    \item[a)] Las expresiones del radio de la órbita y del periodo del movimiento, así como sus valores numéricos. (1 punto)
+    \item[b)] La velocidad con la que debe lanzarse el satélite desde la superficie terrestre para situarlo en dicha órbita. (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{Nm}^2/\text{kg}^2$; masa de la Tierra, $M_{T}=6\cdot10^{24}\,\text{kg}$; radio de la Tierra, $R_{T}=6400\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad orbital ($v$):} $v = 4,2\,\text{km/s} = 4200\,\text{m/s}$
+    \item \textbf{Constante G:} $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$
+    \item \textbf{Masa de la Tierra ($M_T$):} $M_T = 6\cdot10^{24}\,\text{kg}$
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6400\,\text{km} = 6,4\cdot10^6\,\text{m}$
+    \item \textbf{Incógnitas:} Radio orbital ($r$), periodo ($T$), velocidad de lanzamiento ($v_l$).
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Satélite en Órbita} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico (Tierra) de radio $R_T$. Un satélite en una órbita circular de radio $r$ alrededor del planeta. Dibujar el vector velocidad $\vec{v}$ del satélite, tangente a la órbita. Dibujar el vector Fuerza Gravitatoria $\vec{F}_g$ apuntando hacia el centro de la Tierra, y etiquetarlo también como Fuerza Centrípeta $\vec{F}_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_satelite.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Lanzamiento} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico (Tierra) de radio $R_T$. Un cohete en la superficie con un vector velocidad inicial $\vec{v}_l$. Dibujar una trayectoria parabólica que lleve al cohete hasta la órbita circular de radio $r$. Mostrar que la energía mecánica se conserva entre el punto de lanzamiento y la llegada a la órbita."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lanzamiento_satelite.png}
+    }}
+    \caption{Esquemas de la órbita y el lanzamiento del satélite.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Órbita Circular}
+Para que el satélite mantenga una órbita circular, la fuerza de atracción gravitatoria que ejerce la Tierra debe ser igual a la fuerza centrípeta necesaria para el movimiento.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal:} $F_g = G \frac{M_T m}{r^2}$.
+    \item \textbf{Fuerza Centrípeta:} $F_c = m \frac{v^2}{r}$.
+\end{itemize}
+El periodo se relaciona con la velocidad y el radio por $v = 2\pi r/T$.
+\paragraph{b) Lanzamiento}
+Se aplica el \textbf{Principio de Conservación de la Energía Mecánica} entre el punto de lanzamiento en la superficie terrestre y el punto en la órbita. La energía total es la suma de la energía cinética y la potencial.
+$$ E_M = E_c + E_p = \frac{1}{2}mv^2 - G\frac{M_T m}{R} $$
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Radio y Periodo}
+Igualando $F_g = F_c$:
+\begin{gather}
+    G \frac{M_T m}{r^2} = m \frac{v^2}{r} \implies G \frac{M_T}{r} = v^2
+\end{gather}
+Despejamos el radio de la órbita, $r$:
+\begin{gather}
+    r = \frac{G M_T}{v^2}
+\end{gather}
+Despejamos el periodo, $T$, de la relación $v = 2\pi r/T$:
+\begin{gather}
+    T = \frac{2\pi r}{v} = \frac{2\pi}{v} \left( \frac{G M_T}{v^2} \right) = \frac{2\pi G M_T}{v^3}
+\end{gather}
+\paragraph{b) Velocidad de Lanzamiento}
+Por conservación de la energía mecánica entre la superficie (punto 1) y la órbita (punto 2):
+\begin{gather}
+    E_{M1} = E_{M2} \implies \frac{1}{2}mv_l^2 - G\frac{M_T m}{R_T} = \frac{1}{2}mv^2 - G\frac{M_T m}{r}
+\end{gather}
+Simplificamos la masa $m$ del satélite y despejamos $v_l$:
+\begin{gather}
+    \frac{1}{2}v_l^2 = \frac{1}{2}v^2 - G\frac{M_T}{r} + G\frac{M_T}{R_T} \implies v_l^2 = v^2 + 2GM_T\left(\frac{1}{R_T} - \frac{1}{r}\right)
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Radio y Periodo}
+\begin{gather}
+    r = \frac{(6,67\cdot10^{-11})(6\cdot10^{24})}{(4200)^2} \approx 2,268 \cdot 10^7 \, \text{m} \\
+    T = \frac{2\pi (2,268 \cdot 10^7)}{4200} \approx 33900 \, \text{s} \approx 9,42 \, \text{h}
+\end{gather}
+\begin{cajaresultado}
+El radio de la órbita es $\boldsymbol{r \approx 2,27 \cdot 10^7 \, \textbf{m}}$ y el periodo es $\boldsymbol{T \approx 33900 \, \textbf{s}}$.
+\end{cajaresultado}
+\paragraph{b) Velocidad de Lanzamiento}
+\begin{gather}
+    v_l^2 = (4200)^2 + 2(6,67\cdot10^{-11})(6\cdot10^{24})\left(\frac{1}{6,4\cdot10^6} - \frac{1}{2,268\cdot10^7}\right) \nonumber \\
+    v_l^2 \approx 1,764\cdot10^7 + 8,004\cdot10^{14}(1,5625\cdot10^{-7} - 4,409\cdot10^{-8}) \approx 1,074\cdot10^8 \nonumber \\
+    v_l \approx \sqrt{1,074\cdot10^8} \approx 10363 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad de lanzamiento debe ser $\boldsymbol{v_l \approx 10363 \, \textbf{m/s}}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la dinámica del movimiento circular, se ha determinado que para mantener una velocidad orbital de 4,2 km/s, el satélite debe situarse en una órbita de radio 22700 km. Utilizando el principio de conservación de la energía, se ha calculado que la energía cinética inicial necesaria para alcanzar dicha órbita desde la superficie terrestre corresponde a una velocidad de lanzamiento de 10363 m/s.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque II: Campo Eléctrico}
+\label{sec:elec_2019_jun_ord}
+
+\subsection{Cuestión 2 - OPCIÓN A}
+\label{subsec:2A_2019_jun_ord}
+
+\begin{cajaenunciado}
+Sabiendo que el potencial eléctrico en el punto P es nulo, determina el valor de la carga $q_{2}$. Razona si será nulo el campo eléctrico en el punto P.
+\textbf{Datos:} $q_{1}=1\,\text{mC}$. Las coordenadas están dadas en función de $a$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = 1\,\text{mC} = 1\cdot10^{-3}\,\text{C}$, situada en $(a,0)$.
+    \item \textbf{Carga 2 ($q_2$):} Desconocida, situada en $(3a,0)$.
+    \item \textbf{Punto de cálculo (P):} El origen de coordenadas, $(0,0)$.
+    \item \textbf{Condición:} El potencial eléctrico en P es nulo, $V_P=0$.
+    \item \textbf{Incógnitas:} Valor de $q_2$ y si el campo eléctrico en P, $\vec{E}_P$, es nulo.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo y Potencial en el Origen} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje de coordenadas X. Colocar una carga positiva $q_1$ en $x=a$ y una carga $q_2$ en $x=3a$. Marcar el origen P(0,0). Dibujar los vectores de campo eléctrico en P: El vector $\vec{E}_1$ (creado por $q_1>0$) es repulsivo, apuntando hacia la izquierda. El vector $\vec{E}_2$ (creado por $q_2<0$) es atractivo, apuntando hacia la derecha. Mostrar que, aunque los potenciales se anulen, los vectores de campo no lo hacen."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{potencial_nulo_campo_no.png}
+    }}
+    \caption{Vectores de campo eléctrico en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Potencial Eléctrico}
+El potencial eléctrico en un punto es una magnitud escalar. Por el principio de superposición, el potencial total es la suma algebraica de los potenciales creados por cada carga: $V_P = V_1 + V_2$. El potencial creado por una carga puntual es $V = k\frac{q}{d}$.
+\paragraph{Campo Eléctrico}
+El campo eléctrico es una magnitud vectorial. El campo total es la suma vectorial de los campos individuales: $\vec{E}_P = \vec{E}_1 + \vec{E}_2$. El campo creado por una carga puntual es $\vec{E} = k\frac{q}{d^2}\vec{u}_r$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Cálculo de $q_2$}
+La condición es $V_P = 0$.
+\begin{gather}
+    V_P = k\frac{q_1}{d_1} + k\frac{q_2}{d_2} = 0
+\end{gather}
+Las distancias desde las cargas al punto P(0,0) son $d_1 = a$ y $d_2 = 3a$.
+\begin{gather}
+    k\frac{q_1}{a} + k\frac{q_2}{3a} = 0 \implies \frac{q_1}{a} = -\frac{q_2}{3a} \implies q_2 = -3q_1
+\end{gather}
+\paragraph{Análisis del Campo Eléctrico}
+Calculamos los vectores campo en P:
+\begin{itemize}
+    \item $\vec{E}_1$ creado por $q_1$: Como $q_1>0$, el campo es repulsivo y apunta en sentido $-\vec{i}$. $\vec{E}_1 = k\frac{q_1}{a^2}(-\vec{i})$.
+    \item $\vec{E}_2$ creado por $q_2$: Como $q_2<0$, el campo es atractivo y apunta en sentido $+\vec{i}$. $\vec{E}_2 = k\frac{|q_2|}{(3a)^2}(+\vec{i}) = k\frac{3q_1}{9a^2}(+\vec{i}) = k\frac{q_1}{3a^2}(+\vec{i})$.
+\end{itemize}
+El campo total es la suma:
+\begin{gather}
+    \vec{E}_P = \vec{E}_1 + \vec{E}_2 = -k\frac{q_1}{a^2}\vec{i} + k\frac{q_1}{3a^2}\vec{i} = k\frac{q_1}{a^2}\left(-1 + \frac{1}{3}\right)\vec{i} = -\frac{2}{3}k\frac{q_1}{a^2}\vec{i}
+\end{gather}
+Como $q_1 \neq 0$, el campo total $\vec{E}_P$ es distinto de cero.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    q_2 = -3 \cdot (1\,\text{mC}) = -3\,\text{mC}
+\end{gather}
+\begin{cajaresultado}
+El valor de la carga es $\boldsymbol{q_2 = -3\,\textbf{mC}}$. El campo eléctrico en el punto P \textbf{no es nulo}, ya que los campos creados por cada carga, aunque de sentido opuesto, no tienen el mismo módulo y no se anulan.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La anulación del potencial (magnitud escalar) solo requiere que la suma algebraica sea cero. Sin embargo, la anulación del campo (magnitud vectorial) requiere que la suma de vectores sea nula, lo que implica que deben tener igual módulo y sentido opuesto. En este caso, aunque los potenciales se cancelan, los campos no lo hacen, demostrando que un potencial nulo no implica un campo nulo.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:2B_2019_jun_ord}
+\begin{cajaenunciado}
+Una carga puntual de valor $q_{1}=-4\,\mu\text{C}$ se encuentra en el punto (0,0) m y una segunda carga de valor desconocido, $q_{2}$, se encuentra en el punto (2,0) m. Calcula el valor que debe tener la carga $q_{2}$ para que el campo eléctrico generado por ambas cargas en el punto (4,0) m sea nulo. Representa los vectores campo eléctrico generados por cada una de las cargas en ese punto.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = -4\,\mu\text{C} = -4\cdot10^{-6}\,\text{C}$, en $P_1(0,0)$.
+    \item \textbf{Carga 2 ($q_2$):} Desconocida, en $P_2(2,0)$.
+    \item \textbf{Punto de campo nulo (P):} $P(4,0)$.
+    \item \textbf{Condición:} $\vec{E}_{total}(P)=0$.
+    \item \textbf{Incógnita:} Valor de $q_2$.
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Eléctrico Nulo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje X horizontal. Colocar una carga negativa $q_1$ en x=0 y una carga $q_2$ en x=2. Marcar el punto P en x=4. En el punto P, dibujar el vector campo $\vec{E}_1$ creado por $q_1$, que es atractivo y apunta hacia la izquierda. Para que el campo total sea nulo, dibujar un vector $\vec{E}_2$ de igual longitud pero apuntando hacia la derecha. Para que $\vec{E}_2$ sea repulsivo (apunte a la derecha), la carga $q_2$ debe ser positiva."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_nulo_eje.png}
+    }}
+    \caption{Representación de los vectores campo eléctrico en el punto P.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utiliza el \textbf{Principio de Superposición} para el campo eléctrico. Para que el campo total en un punto sea nulo, la suma vectorial de los campos creados por cada carga debe ser cero.
+$$ \vec{E}_{total} = \vec{E}_1 + \vec{E}_2 = \vec{0} \implies \vec{E}_1 = -\vec{E}_2 $$
+Esto significa que los vectores campo deben tener el mismo módulo, la misma dirección y sentidos opuestos.
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Las cargas y el punto P están alineados en el eje X.
+\begin{itemize}
+    \item \textbf{Campo de $q_1$ en P:} La carga $q_1$ es negativa. El campo que crea en P(4,0) es atractivo, por lo que apunta hacia la izquierda (sentido $-\vec{i}$).
+    \item \textbf{Campo de $q_2$ en P:} Para anular a $\vec{E}_1$, el campo $\vec{E}_2$ debe apuntar hacia la derecha (sentido $+\vec{i}$). Como P está a la derecha de $q_2$, el campo debe ser repulsivo, lo que implica que $q_2$ debe ser \textbf{positiva}.
+\end{itemize}
+La condición de anulación se convierte en una igualdad de módulos: $|\vec{E}_1| = |\vec{E}_2|$.
+\begin{gather}
+    k\frac{|q_1|}{d_1^2} = k\frac{|q_2|}{d_2^2}
+\end{gather}
+Las distancias son $d_1 = 4\,\text{m}$ y $d_2 = 4-2=2\,\text{m}$.
+\begin{gather}
+    \frac{|q_1|}{4^2} = \frac{q_2}{2^2} \implies q_2 = |q_1|\frac{2^2}{4^2} = \frac{|q_1|}{4}
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    q_2 = \frac{4\,\mu\text{C}}{4} = 1\,\mu\text{C}
+\end{gather}
+\begin{cajaresultado}
+El valor de la segunda carga debe ser $\boldsymbol{q_2 = +1\,\mu\textbf{C}}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que el campo eléctrico se anule en el punto P(4,0), la carga $q_2$ debe ser positiva para generar un campo de sentido opuesto al de $q_1$. Mediante la igualación de los módulos de ambos campos, se determina que el valor de $q_2$ debe ser $+1\,\mu\text{C}$.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque III: Campo Magnético}
+\label{sec:mag_2019_jun_ord}
+
+\subsection{Problema 3 - OPCIÓN A}
+\label{subsec:3A_2019_jun_ord}
+\begin{cajaenunciado}
+Dos cables rectilíneos y muy largos, paralelos entre sí, transportan corrientes eléctricas $I_{1}=2\,\text{A}$ e $I_{2}=4\,\text{A}$ con los sentidos representados en la figura adjunta.
+\begin{enumerate}
+    \item[a)] Calcula el campo magnético total (módulo, dirección y sentido) en el punto P. (1 punto)
+    \item[b)] Sobre un electrón que se desplaza por el eje X actúa una fuerza magnética $\vec{F}=1,6\cdot10^{-18}\vec{j}\,\text{N}$ cuando pasa por el punto P. Calcula el módulo de su velocidad en dicho punto. (1 punto)
+\end{enumerate}
+\textbf{Datos:} permeabilidad magnética del vacío, $\mu_{0}=4\pi\cdot10^{-7}\,\text{Tm/A}$; carga del electrón, $e=-1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Corriente 1 ($I_1$):} $I_1=2\,\text{A}$, sentido $-\vec{j}$, en $x=0$.
+    \item \textbf{Corriente 2 ($I_2$):} $I_2=4\,\text{A}$, sentido $+\vec{j}$, en $x=20\,\text{cm} = 0,2\,\text{m}$.
+    \item \textbf{Punto P:} en $x=40\,\text{cm} = 0,4\,\text{m}$.
+    \item \textbf{Fuerza sobre electrón en P:} $\vec{F}=1,6\cdot10^{-18}\vec{j}\,\text{N}$.
+    \item \textbf{Incógnitas:} $\vec{B}_{total}$ en P, módulo de la velocidad del electrón.
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Magnético en P} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista desde arriba del plano XY. El eje Y es vertical, el X horizontal. Un cable en x=0 con corriente $I_1$ hacia abajo. Otro cable en x=0.2 con corriente $I_2$ hacia arriba. El punto P está en x=0.4. Por la regla de la mano derecha, el campo $\vec{B}_1$ en P (de $I_1$) apunta hacia dentro del plano (-Z). El campo $\vec{B}_2$ en P (de $I_2$) apunta hacia fuera del plano (+Z). $\vec{B}_2$ debe ser más largo que $\vec{B}_1$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_dos_hilos.png}
+    }}
+    \caption{Vectores campo magnético en el punto P.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Campo Magnético}
+Se aplica la \textbf{Ley de Biot-Savart} para un hilo rectilíneo infinito: $B = \frac{\mu_0 I}{2\pi d}$. La dirección se obtiene con la \textbf{regla de la mano derecha}. El campo total es la suma vectorial de los campos (Principio de Superposición).
+\paragraph{b) Fuerza Magnética}
+La fuerza sobre el electrón viene dada por la \textbf{Fuerza de Lorentz}: $\vec{F} = q(\vec{v} \times \vec{B})$.
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Campo Magnético en P}
+Distancias: $d_1 = 0,4\,\text{m}$, $d_2 = 0,4-0,2=0,2\,\text{m}$.
+\begin{itemize}
+    \item Campo de $I_1$ (hacia abajo, $-\vec{j}$): en P, apunta hacia dentro del plano ($-\vec{k}$). $\vec{B}_1 = -\frac{\mu_0 I_1}{2\pi d_1}\vec{k}$.
+    \item Campo de $I_2$ (hacia arriba, $+\vec{j}$): en P, apunta hacia fuera del plano ($+\vec{k}$). $\vec{B}_2 = +\frac{\mu_0 I_2}{2\pi d_2}\vec{k}$.
+\end{itemize}
+$\vec{B}_{total} = \vec{B}_1 + \vec{B}_2 = \left(\frac{\mu_0 I_2}{2\pi d_2} - \frac{\mu_0 I_1}{2\pi d_1}\right)\vec{k}$.
+\paragraph{b) Velocidad del electrón}
+$\vec{F} = q(\vec{v} \times \vec{B})$. El electrón se desplaza por el eje X, $\vec{v}=v\vec{i}$.
+\begin{gather}
+    \vec{F} = (-e)(v\vec{i} \times B_{total}\vec{k}) = -evB_{total}(\vec{i}\times\vec{k}) = -evB_{total}(-\vec{j}) = evB_{total}\vec{j}
+\end{gather}
+Tomando módulos: $F = evB_{total} \implies v = \frac{F}{eB_{total}}$.
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Campo Magnético en P}
+\begin{gather}
+    B_1 = \frac{(4\pi\cdot10^{-7})(2)}{2\pi(0,4)} = 1\cdot10^{-6}\,\text{T} \\
+    B_2 = \frac{(4\pi\cdot10^{-7})(4)}{2\pi(0,2)} = 4\cdot10^{-6}\,\text{T} \\
+    \vec{B}_{total} = (4\cdot10^{-6} - 1\cdot10^{-6})\vec{k} = 3\cdot10^{-6}\vec{k}\,\text{T}
+\end{gather}
+\begin{cajaresultado}
+El campo magnético total en P es $\boldsymbol{\vec{B} = 3\cdot10^{-6}\vec{k}\,\textbf{T}}$ (módulo $3\,\mu\text{T}$, dirección eje Z, sentido positivo).
+\end{cajaresultado}
+\paragraph{b) Velocidad del electrón}
+\begin{gather}
+    v = \frac{1,6\cdot10^{-18}}{(1,6\cdot10^{-19})(3\cdot10^{-6})} = \frac{10}{3\cdot10^{-6}} \approx 3,33\cdot10^6\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+El módulo de la velocidad del electrón es $\boldsymbol{v \approx 3,33\cdot10^6\,\textbf{m/s}}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la ley de Biot-Savart y el principio de superposición, se ha calculado el campo magnético neto en el punto P. Aplicando la ley de la fuerza de Lorentz, se ha determinado la velocidad del electrón necesaria para experimentar la fuerza dada, demostrando la interrelación entre corrientes, campos y fuerzas magnéticas.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Cuestión 3 - OPCIÓN B}
+\label{subsec:3B_2019_jun_ord}
+\begin{cajaenunciado}
+Escribe la ley de Faraday-Lenz y explica su significado. La figura muestra una varilla que se desliza hacia la derecha con velocidad $\vec{v}$ sobre dos raíles paralelos formando una espira rectangular. El conjunto es conductor y se encuentra en el seno de un campo magnético uniforme $\vec{B}$ perpendicular al plano del papel. Explica el sentido de la corriente inducida en la espira en base a dicha ley.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Ley de Lenz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una espira rectangular formada por dos raíles paralelos y una varilla móvil. La varilla se mueve hacia la derecha con velocidad $\vec{v}$. Un campo magnético uniforme $\vec{B}$ (representado por cruces) apunta hacia dentro del papel. Indicar que el área A de la espira aumenta. Como el flujo hacia dentro $\Phi_{in}$ aumenta, la corriente inducida $I_{ind}$ debe crear un campo $\vec{B}_{ind}$ que se oponga, es decir, hacia fuera. Dibujar flechas en la espira mostrando que para crear un campo hacia fuera, la corriente debe fluir en sentido antihorario."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{ley_lenz_espira.png}
+    }}
+    \caption{Aplicación de la Ley de Lenz al movimiento de la varilla.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Ley de Faraday-Lenz}
+La ley de Faraday-Lenz de la inducción electromagnética establece que la fuerza electromotriz (fem, $\varepsilon$) inducida en un circuito cerrado es igual a la tasa de cambio del flujo magnético ($\Phi_B$) a través del circuito, con signo negativo:
+$$ \varepsilon = - \frac{d\Phi_B}{dt} $$
+\paragraph{Significado}
+\begin{itemize}
+    \item \textbf{Ley de Faraday (el valor):} La magnitud de la fem inducida es proporcional a la rapidez con que cambia el flujo magnético. Un cambio rápido de flujo induce una gran fem.
+    \item \textbf{Ley de Lenz (el signo):} El signo negativo indica el sentido de la corriente inducida. Esta circulará en un sentido tal que el campo magnético que ella misma crea se opone a la variación del flujo magnético que la originó. Es una manifestación de la conservación de la energía.
+\end{itemize}
+\paragraph{Sentido de la corriente inducida en la espira}
+\begin{enumerate}
+    \item \textbf{Variación del flujo:} La varilla se desliza hacia la derecha, por lo que el área $A$ de la espira aumenta con el tiempo. El campo magnético $\vec{B}$ es uniforme y hacia dentro del papel. Por lo tanto, el flujo magnético hacia dentro, $\Phi_B = B \cdot A$, está aumentando.
+    \item \textbf{Oposición al cambio (Ley de Lenz):} Para contrarrestar este aumento de flujo hacia dentro, la corriente inducida debe generar un campo magnético propio ($\vec{B}_{inducido}$) que apunte hacia fuera del papel.
+    \item \textbf{Regla de la mano derecha:} Para que una corriente en la espira cree un campo magnético hacia fuera del papel, según la regla de la mano derecha, la corriente debe circular en \textbf{sentido antihorario}.
+\end{enumerate}
+\begin{cajaresultado}
+La corriente inducida en la espira circulará en \textbf{sentido antihorario}.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La ley de Faraday-Lenz es fundamental para entender la inducción electromagnética. En el caso de la espira con la varilla móvil, el aumento de área provoca un aumento de flujo magnético. La naturaleza (la Ley de Lenz) se opone a este cambio induciendo una corriente antihoraria, cuyo campo magnético contrarresta el aumento de flujo.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque IV: Ondas y Óptica}
+\label{sec:ondasopt_2019_jun_ord}
+
+\subsection{Cuestión 4 - OPCIÓN A}
+\label{subsec:4A_2019_jun_ord}
+\begin{cajaenunciado}
+En la figura se representa un instante de la propagación de una onda armónica en una cuerda. La onda se mueve hacia la derecha sobre el eje x, su periodo es $T=4\,\text{s}$, la distancia entre los puntos P y Q es de 45 cm. Determina razonadamente la longitud de onda, la frecuencia angular y la velocidad de propagación.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Periodo ($T$):} $T = 4\,\text{s}$.
+    \item \textbf{Distancia P-Q:} $d_{PQ} = 45\,\text{cm} = 0,45\,\text{m}$.
+    \item De la figura, se observa que la distancia entre los puntos P y Q, que están en fase, corresponde a un ciclo y medio. Es decir, $d_{PQ} = 1,5 \lambda$.
+    \item \textbf{Incógnitas:} Longitud de onda ($\lambda$), frecuencia angular ($\omega$) y velocidad de propagación ($v$).
+\end{itemize}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las propiedades de una onda armónica se relacionan mediante las siguientes definiciones:
+\begin{itemize}
+    \item \textbf{Frecuencia ($f$):} Es la inversa del periodo, $f=1/T$.
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = 2\pi f = 2\pi/T$.
+    \item \textbf{Velocidad de propagación ($v$):} Relaciona la longitud de onda y el periodo, $v = \lambda/T = \lambda f$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Longitud de onda ($\lambda$)}
+A partir de la observación de la gráfica:
+\begin{gather}
+    1,5 \lambda = d_{PQ} \implies \lambda = \frac{d_{PQ}}{1,5}
+\end{gather}
+\paragraph{Frecuencia angular ($\omega$)}
+\begin{gather}
+    \omega = \frac{2\pi}{T}
+\end{gather}
+\paragraph{Velocidad de propagación ($v$)}
+\begin{gather}
+    v = \frac{\lambda}{T}
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \lambda = \frac{0,45\,\text{m}}{1,5} = 0,3\,\text{m} \\
+    \omega = \frac{2\pi}{4\,\text{s}} = \frac{\pi}{2}\,\text{rad/s} \\
+    v = \frac{0,3\,\text{m}}{4\,\text{s}} = 0,075\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+\begin{itemize}
+    \item Longitud de onda: $\boldsymbol{\lambda = 0,3\,\textbf{m}}$.
+    \item Frecuencia angular: $\boldsymbol{\omega = \pi/2\,\textbf{rad/s}}$.
+    \item Velocidad de propagación: $\boldsymbol{v = 0,075\,\textbf{m/s}}$.
+\end{itemize}
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Interpretando la representación gráfica de la onda, se ha determinado la longitud de onda. A partir de esta y del periodo dado, se han calculado las demás magnitudes características de la onda, como la frecuencia angular y la velocidad de propagación, aplicando sus definiciones fundamentales.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Problema 4 - OPCIÓN B}
+\label{subsec:4B_2019_jun_ord}
+\begin{cajaenunciado}
+Como se observa en la figura, un rayo de luz monocromática incide (punto A) sobre un bloque de policarbonato que se encuentra rodeado de aire.
+\begin{enumerate}
+    \item[a)] Calcula el ángulo $\alpha$ y el índice de refracción $n_p$ del policarbonato. (1 punto)
+    \item[b)] ¿Cuál es la velocidad del rayo cuando se mueve en el policarbonato? Cuando el rayo llega al punto B, ¿se refracta o se refleja? Realiza los cálculos necesarios para razonar la respuesta. (1 punto)
+\end{enumerate}
+\textbf{Dato:} velocidad de la luz en el vacío, $c=3\cdot10^8\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Medio 1:} Aire, $n_{aire}=1$.
+    \item \textbf{Ángulo de incidencia en A:} $\theta_i = 45^\circ$.
+    \item \textbf{Medio 2:} Policarbonato, $n_p$.
+    \item \textbf{Geometría interna:} El rayo viaja desde A hasta B. Si A es (0,0), B es (2d, d).
+    \item \textbf{Incógnitas:} Ángulo de refracción $\alpha$, $n_p$, velocidad $v_p$, fenómeno en B.
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+La figura del enunciado sirve como representación principal. Se puede añadir el ángulo de incidencia en B para el apartado b.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Refracción y Reflexión Total} \vspace{0.5cm} \textit{Prompt para la imagen:} "Recrear la figura del enunciado. Un bloque rectangular. Un rayo incide en el punto A con 45 grados. Dentro del bloque, el rayo se refracta con un ángulo $\alpha$ y viaja hasta el punto B. En el punto B, la normal a la superficie superior es vertical. El ángulo de incidencia del rayo con esta normal es también $\alpha$. Mostrar la comparación de este ángulo $\alpha$ con el ángulo crítico $\theta_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{refraccion_bloque.png}
+    }}
+    \caption{Análisis de la trayectoria del rayo en el bloque.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Geometría:} La relación entre los catetos del triángulo rectángulo formado por el rayo en el interior es $\tan(\alpha) = d/(2d)$.
+    \item \textbf{Ley de Snell:} $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$.
+    \item \textbf{Velocidad de la luz en un medio:} $v = c/n$.
+    \item \textbf{Reflexión Total Interna:} Ocurre si la luz viaja de un medio más denso a uno menos denso ($n_1>n_2$) y el ángulo de incidencia es mayor que el ángulo crítico, $\theta_c$, donde $\sin(\theta_c)=n_2/n_1$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Ángulo $\alpha$ e índice $n_p$}
+De la geometría de la figura:
+\begin{gather}
+    \tan(\alpha) = \frac{d}{2d} = \frac{1}{2} \implies \alpha = \arctan(0,5)
+\end{gather}
+Aplicando la Ley de Snell en el punto A:
+\begin{gather}
+    n_{aire} \sin(45^\circ) = n_p \sin(\alpha) \implies n_p = \frac{n_{aire} \sin(45^\circ)}{\sin(\alpha)}
+\end{gather}
+\paragraph{b) Velocidad y fenómeno en B}
+La velocidad en el policarbonato es:
+\begin{gather}
+    v_p = \frac{c}{n_p}
+\end{gather}
+En el punto B, el rayo incide en la interfaz policarbonato-aire. Por geometría, el ángulo de incidencia es $\alpha$. Se debe comparar $\alpha$ con el ángulo crítico $\theta_c$:
+\begin{gather}
+    \sin(\theta_c) = \frac{n_{aire}}{n_p}
+\end{gather}
+Si $\alpha > \theta_c$, habrá reflexión total. Si $\alpha \le \theta_c$, habrá refracción.
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Ángulo $\alpha$ e índice $n_p$}
+\begin{gather}
+    \alpha = \arctan(0,5) \approx 26,57^\circ \\
+    n_p = \frac{1 \cdot \sin(45^\circ)}{\sin(26,57^\circ)} \approx \frac{0,7071}{0,4472} \approx 1,58
+\end{gather}
+\begin{cajaresultado}
+El ángulo es $\boldsymbol{\alpha \approx 26,57^\circ}$ y el índice de refracción es $\boldsymbol{n_p \approx 1,58}$.
+\end{cajaresultado}
+\paragraph{b) Velocidad y fenómeno en B}
+\begin{gather}
+    v_p = \frac{3\cdot10^8\,\text{m/s}}{1,58} \approx 1,90\cdot10^8\,\text{m/s} \\
+    \sin(\theta_c) = \frac{1}{1,58} \approx 0,6329 \implies \theta_c = \arcsin(0,6329) \approx 39,26^\circ
+\end{gather}
+Comparamos el ángulo de incidencia en B ($\alpha=26,57^\circ$) con el ángulo crítico ($\theta_c=39,26^\circ$). Como $\alpha < \theta_c$, el rayo se refracta.
+\begin{cajaresultado}
+La velocidad es $\boldsymbol{v_p \approx 1,90\cdot10^8\,\textbf{m/s}}$. En el punto B, el rayo \textbf{se refracta}, ya que el ángulo de incidencia es menor que el ángulo crítico.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante el uso de la trigonometría y la Ley de Snell, se han determinado las propiedades ópticas del policarbonato y la trayectoria del rayo. El análisis del ángulo de incidencia en la segunda interfaz en comparación con el ángulo crítico permite predecir que el rayo logrará salir del bloque, refractándose hacia el aire.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque V: Óptica y Física Moderna}
+\label{sec:optmod_2019_jun_ord}
+
+\subsection{Cuestión 5 - OPCIÓN A}
+\label{subsec:5A_2019_jun_ord}
+\begin{cajaenunciado}
+Se tiene una lente de potencia 2 dioptrías. Calcula razonadamente a qué distancia de la lente debe situarse un objeto para que la imagen tenga el mismo tamaño que el objeto y sea invertida. Realiza un trazado de rayos como comprobación de tu respuesta.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Potencia de la lente ($P$):} $P = +2\,\text{D}$. Como $P>0$, la lente es convergente.
+    \item \textbf{Distancia focal ($f'$):} $f' = 1/P = 1/2 = 0,5\,\text{m} = 50\,\text{cm}$.
+    \item \textbf{Condición de la imagen:} Mismo tamaño ($|y'|=|y|$) e invertida ($y'$ y $y$ de signo opuesto).
+    \item \textbf{Aumento lateral ($M$):} $M = y'/y = -1$.
+    \item \textbf{Incógnita:} Posición del objeto ($s$).
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Trazado de Rayos ($M=-1$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de una lente convergente. Dibujar el eje óptico. Marcar el foco objeto F a -50cm y el foco imagen F' a +50cm. Colocar un objeto vertical en la posición $s=-100$cm (en el punto -2f). Trazar dos rayos: 1) Un rayo paralelo al eje que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico y no se desvía. Mostrar que los rayos se cruzan en la posición $s'=+100$cm (en el punto 2f'), formando una imagen invertida y del mismo tamaño que el objeto."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_convergente_2f.png}
+    }}
+    \caption{Formación de una imagen real, invertida y de igual tamaño.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utilizan la ecuación de las lentes delgadas (ecuación de Gauss) y la fórmula del aumento lateral.
+\begin{itemize}
+    \item Ecuación de Gauss: $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item Aumento Lateral: $M = \frac{s'}{s}$
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+De la condición de aumento $M=-1$:
+\begin{gather}
+    \frac{s'}{s} = -1 \implies s' = -s
+\end{gather}
+Sustituimos esta relación en la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{(-s)} - \frac{1}{s} = \frac{1}{f'} \implies -\frac{2}{s} = \frac{1}{f'} \implies s = -2f'
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    s = -2 \cdot (50\,\text{cm}) = -100\,\text{cm} = -1\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+El objeto debe situarse a una distancia de \textbf{1 m a la izquierda} de la lente.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para obtener una imagen invertida y del mismo tamaño con una lente convergente, el objeto debe colocarse exactamente al doble de la distancia focal de la lente. El cálculo confirma que para una lente de +2 D (focal de 50 cm), esta posición es de 100 cm.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Cuestión 5 - OPCIÓN B}
+\label{subsec:5B_2019_jun_ord}
+\begin{cajaenunciado}
+Una lente de -2 dioptrías ¿es convergente o divergente? ¿El foco imagen de esta lente es real o virtual? Calcula la distancia focal imagen de esta lente. Razona qué tipo de defecto ocular (miopía o hipermetropía) puede corregir.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Potencia de la lente ($P$):} $P = -2\,\text{D}$.
+\end{itemize}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Por convenio, las lentes con potencia negativa ($P<0$) son \textbf{divergentes}. Las que tienen potencia positiva ($P>0$) son convergentes.
+    \item \textbf{Distancia focal ($f'$):} Se relaciona con la potencia por $f' = 1/P$.
+    \item \textbf{Foco imagen ($F'$):} En una lente divergente, los rayos que inciden paralelos al eje óptico, tras atravesar la lente, divergen de tal forma que sus prolongaciones hacia atrás se cortan en un punto. Este punto es el foco imagen $F'$. Como no es un punto de convergencia de los rayos reales, es un foco \textbf{virtual}.
+    \item \textbf{Defectos oculares:} La \textbf{miopía} es un exceso de convergencia del ojo (enfoca delante de la retina), y se corrige con lentes divergentes para reducir la potencia total del sistema. La \textbf{hipermetropía} es un defecto de convergencia (enfoca detrás de la retina) y se corrige con lentes convergentes.
+\end{itemize}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Como $P=-2\,\text{D} < 0$, la lente es \textbf{divergente}.
+    \item \textbf{Foco imagen:} Al ser una lente divergente, su foco imagen es \textbf{virtual}.
+    \item \textbf{Distancia focal imagen:} $f' = \frac{1}{P} = \frac{1}{-2} = -0,5\,\text{m} = -50\,\text{cm}$.
+    \item \textbf{Defecto ocular:} Una lente divergente se utiliza para corregir la \textbf{miopía}.
+\end{itemize}
+\begin{cajaresultado}
+La lente es \textbf{divergente}. Su foco imagen es \textbf{virtual}. Su distancia focal imagen es $\boldsymbol{f' = -50\,\textbf{cm}}$. Puede corregir la \textbf{miopía}.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las características de una lente están determinadas por el signo de su potencia. Una potencia negativa, como en este caso, corresponde a una lente divergente, la cual tiene una distancia focal negativa y un foco imagen virtual. Este tipo de lentes se prescriben para corregir la miopía, ya que compensan el exceso de potencia refractiva del ojo miope.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque VI: Física Moderna}
+\label{sec:mod_2019_jun_ord}
+
+\subsection{Problema 6 - OPCIÓN A}
+\label{subsec:6A_2019_jun_ord}
+\begin{cajaenunciado}
+El $^{60}\text{Co}$ se utilizaba como fuente de rayos gamma para ciertos tratamientos de radioterapia. Su periodo de semidesintegración es de 1925 días. Se dispone de una muestra de 100 g de $^{60}\text{Co}$.
+\begin{enumerate}
+    \item[a)] Calcula el valor de la constante de desintegración radiactiva y de la actividad inicial de la muestra. (1 punto)
+    \item[b)] Si hay que reemplazar la muestra cuando la actividad ha descendido a un tercio de la actividad inicial, ¿cuál es la vida útil en años de una muestra destinada a este uso? (1 punto)
+\end{enumerate}
+\textbf{Datos:} número de Avogadro, $N_{A}=6\cdot10^{23}\,\text{mol}^{-1}$; masa molar del $^{60}\text{Co}$, $M=60\,\text{g/mol}$.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 1925\,\text{días} = 1925 \cdot 24 \cdot 3600 = 1,6632\cdot10^8\,\text{s}$.
+    \item \textbf{Masa inicial ($m_0$):} $m_0 = 100\,\text{g}$.
+    \item \textbf{Masa molar ($M$):} $M = 60\,\text{g/mol}$.
+    \item \textbf{Número de Avogadro ($N_A$):} $N_A = 6\cdot10^{23}\,\text{mol}^{-1}$.
+    \item \textbf{Condición de reemplazo:} $A(t) = A_0/3$.
+    \item \textbf{Incógnitas:} Constante de desintegración ($\lambda$), actividad inicial ($A_0$), vida útil ($t$).
+\end{itemize}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Constante de desintegración ($\lambda$):} Se relaciona con el periodo por $\lambda = \ln(2)/T_{1/2}$.
+    \item \textbf{Actividad ($A$):} Es el número de desintegraciones por segundo, $A = \lambda N$, donde $N$ es el número de núcleos.
+    \item \textbf{Ley de desintegración radiactiva:} $A(t) = A_0 e^{-\lambda t}$.
+    \item \textbf{Número de núcleos ($N_0$):} Se calcula con $N_0 = (\frac{m_0}{M})N_A$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Constante $\lambda$ y Actividad inicial $A_0$}
+\begin{gather}
+    \lambda = \frac{\ln(2)}{T_{1/2}} \\
+    N_0 = \frac{m_0}{M}N_A \\
+    A_0 = \lambda N_0
+\end{gather}
+\paragraph{b) Vida útil $t$}
+\begin{gather}
+    A(t) = A_0 e^{-\lambda t} \implies \frac{A_0}{3} = A_0 e^{-\lambda t} \implies \frac{1}{3} = e^{-\lambda t} \nonumber \\
+    \ln\left(\frac{1}{3}\right) = -\lambda t \implies -\ln(3) = -\lambda t \implies t = \frac{\ln(3)}{\lambda}
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) $\lambda$ y $A_0$}
+\begin{gather}
+    \lambda = \frac{\ln(2)}{1,6632\cdot10^8\,\text{s}} \approx 4,167\cdot10^{-9}\,\text{s}^{-1} \\
+    N_0 = \frac{100\,\text{g}}{60\,\text{g/mol}} \cdot (6\cdot10^{23}\,\text{mol}^{-1}) = 1\cdot10^{24}\,\text{núcleos} \\
+    A_0 = (4,167\cdot10^{-9}\,\text{s}^{-1}) \cdot (1\cdot10^{24}\,\text{núcleos}) = 4,167\cdot10^{15}\,\text{Bq}
+\end{gather}
+\begin{cajaresultado}
+La constante de desintegración es $\boldsymbol{\lambda \approx 4,17\cdot10^{-9}\,\textbf{s}^{-1}}$ y la actividad inicial es $\boldsymbol{A_0 \approx 4,17\cdot10^{15}\,\textbf{Bq}}$.
+\end{cajaresultado}
+\paragraph{b) Vida útil $t$}
+\begin{gather}
+    t = \frac{\ln(3)}{4,167\cdot10^{-9}\,\text{s}^{-1}} \approx 2,636\cdot10^8\,\text{s}
+\end{gather}
+Convertimos a años: $t_{años} = \frac{2,636\cdot10^8\,\text{s}}{365,25 \cdot 24 \cdot 3600\,\text{s/año}} \approx 8,35\,\text{años}$.
+\begin{cajaresultado}
+La vida útil de la muestra es de $\boldsymbol{\approx 8,35\,\textbf{años}}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir del periodo de semidesintegración, se ha determinado la constante radiactiva del Cobalto-60 y la actividad inicial de la muestra. Aplicando la ley de decaimiento exponencial, se concluye que la muestra tardará 8,35 años en reducir su actividad a un tercio de la original, momento en el que deberá ser reemplazada.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Cuestión 6 - OPCIÓN B}
+\label{subsec:6B_2019_jun_ord}
+\begin{cajaenunciado}
+Una partícula de masa en reposo m y energía igual a tres veces su energía en reposo se une a otra de igual masa y energía para formar una única partícula con velocidad nula y energía en reposo $Mc^2$. Si en el proceso de unión se conserva la energía, calcula razonadamente el valor de M en función de m y la velocidad de las partículas iniciales en función de la velocidad de la luz en el vacío, c.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partículas iniciales (1 y 2):} Masa en reposo $m_1=m_2=m$. Energía total $E_1=E_2=3E_0 = 3mc^2$.
+    \item \textbf{Partícula final:} Masa en reposo $M$, velocidad $v_f=0$. Energía final $E_f = Mc^2$.
+    \item \textbf{Principio:} Conservación de la energía total.
+    \item \textbf{Incógnitas:} $M$ en función de $m$; velocidad inicial $v$ en función de $c$.
+\end{itemize}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica la teoría de la \textbf{Relatividad Especial}.
+\begin{itemize}
+    \item \textbf{Energía total relativista:} $E = \gamma mc^2$, donde $\gamma = (1-v^2/c^2)^{-1/2}$ es el factor de Lorentz.
+    \item \textbf{Energía en reposo:} $E_0 = mc^2$.
+    \item \textbf{Conservación de la energía:} La energía total antes de la unión es igual a la energía total después.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Cálculo de M}
+Por la conservación de la energía:
+\begin{gather}
+    E_{total, inicial} = E_{total, final} \\
+    E_1 + E_2 = E_f \implies 3mc^2 + 3mc^2 = Mc^2 \nonumber
+\end{gather}
+\begin{gather}
+    6mc^2 = Mc^2 \implies M = 6m
+\end{gather}
+\paragraph{Cálculo de v}
+La energía total de una de las partículas iniciales es $E = 3mc^2$. También sabemos que $E=\gamma mc^2$.
+\begin{gather}
+    \gamma mc^2 = 3mc^2 \implies \gamma = 3
+\end{gather}
+Ahora, usamos la definición del factor de Lorentz para despejar la velocidad $v$:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1-v^2/c^2}} \implies \gamma^2 = \frac{1}{1-v^2/c^2} \implies 1-\frac{v^2}{c^2} = \frac{1}{\gamma^2} \nonumber \\
+    \frac{v^2}{c^2} = 1 - \frac{1}{\gamma^2} \implies v = c\sqrt{1-\frac{1}{\gamma^2}}
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    v = c\sqrt{1-\frac{1}{3^2}} = c\sqrt{1-\frac{1}{9}} = c\sqrt{\frac{8}{9}} = \frac{2\sqrt{2}}{3}c
+\end{gather}
+\begin{cajaresultado}
+La masa de la partícula resultante es $\boldsymbol{M=6m}$. La velocidad de las partículas iniciales es $\boldsymbol{v = \frac{2\sqrt{2}}{3}c \approx 0,943c}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Este problema ilustra la equivalencia masa-energía. La energía cinética de las partículas iniciales (que es $E-E_0 = 2mc^2$ para cada una) se convierte en masa en reposo en la partícula final. De ahí que la masa final $M=6m$ sea mayor que la suma de las masas en reposo iniciales ($2m$). La alta energía de las partículas corresponde a una velocidad muy cercana a la de la luz, como muestra el cálculo.
+\end{cajaconclusion}
+\newpage
+```

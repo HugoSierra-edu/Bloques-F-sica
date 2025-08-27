@@ -1,0 +1,942 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2002 - Convocatoria Ordinaria}
+\label{chap:2002_jun_ord}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Problemas de Campo Gravitatorio}
+\label{sec:grav_2002_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2002_jun_ord}
+
+\begin{cajaenunciado}
+Se determina, experimentalmente, la aceleración con la que cae un cuerpo en el campo gravitatorio terrestre en dos laboratorios diferentes, uno situado al nivel del mar y otro situado en un globo que se encuentra a una altura $h = 19570\,\text{m}$ sobre el nivel del mar. Los resultados obtenidos son $g=9,81\,\text{m/s}^2$ en el primer laboratorio y $g'=9,75\,\text{m/s}^2$ en el segundo laboratorio. Se pide:
+\begin{enumerate}
+    \item[1.] Determinar el valor del radio terrestre. (1,2 puntos)
+    \item[2.] Sabiendo que la densidad media de la tierra es $\rho_T=5523\,\text{kg/m}^3$ determinar el valor de la constante de gravitación G. (0,8 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+A continuación, se listan los datos proporcionados, todos ellos ya en el Sistema Internacional (SI), y las incógnitas a resolver.
+\begin{itemize}
+    \item \textbf{Aceleración de la gravedad a nivel del mar ($g$):} $g = 9,81 \, \text{m/s}^2$
+    \item \textbf{Altura del globo ($h$):} $h = 19570 \text{ m} = 1,957 \cdot 10^4 \text{ m}$
+    \item \textbf{Aceleración de la gravedad a la altura $h$ ($g'$):} $g' = 9,75 \, \text{m/s}^2$
+    \item \textbf{Densidad media de la Tierra ($\rho_T$):} $\rho_T = 5523 \, \text{kg/m}^3$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Radio de la Tierra ($R_T$).
+        \item Constante de Gravitación Universal ($G$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+Se realiza un esquema para visualizar los dos puntos donde se mide la aceleración de la gravedad.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Medición de la gravedad} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de un sector de la Tierra, mostrando su centro y su superficie esférica. Dibujar un punto en la superficie, etiquetado como 'Nivel del mar', con un vector de gravedad $g$ apuntando hacia el centro. Dibujar otro punto a una altura $h$ por encima de la superficie, etiquetado como 'Globo', con un vector de gravedad $g'$ más corto, también apuntando hacia el centro. Acotar claramente el Radio Terrestre $R_T$ desde el centro hasta la superficie, y la altura $h$ desde la superficie hasta el globo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{gravedad_tierra.png}
+    }}
+    \caption{Representación gráfica de los puntos de medición de $g$ y $g'$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando la \textbf{Ley de Gravitación Universal de Newton}. La intensidad del campo gravitatorio, o aceleración de la gravedad ($g$), creada por un cuerpo de masa $M$ a una distancia $r$ de su centro es:
+$$g = G \frac{M}{r^2}$$
+Para el apartado (b), se relaciona la masa de la Tierra con su densidad y volumen, asumiendo una forma esférica: $M_T = \rho_T \cdot V_T = \rho_T \cdot \frac{4}{3}\pi R_T^3$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1) Radio Terrestre ($R_T$)}
+Aplicamos la ley de la gravedad para los dos puntos de medición:
+\begin{gather}
+    g = G \frac{M_T}{R_T^2} \label{eq:g_superficie} \\
+    g' = G \frac{M_T}{(R_T + h)^2} \label{eq:g_altura}
+\end{gather}
+Dividiendo la ecuación \eqref{eq:g_superficie} entre la \eqref{eq:g_altura}, eliminamos $G$ y $M_T$:
+$$\frac{g}{g'} = \frac{(R_T + h)^2}{R_T^2} = \left(\frac{R_T + h}{R_T}\right)^2 = \left(1 + \frac{h}{R_T}\right)^2$$
+Despejamos $R_T$ de esta relación:
+$$\sqrt{\frac{g}{g'}} = 1 + \frac{h}{R_T} \implies \frac{h}{R_T} = \sqrt{\frac{g}{g'}} - 1 \implies R_T = \frac{h}{\sqrt{\frac{g}{g'}} - 1}$$
+
+\paragraph*{2) Constante de Gravitación ($G$)}
+A partir de la ecuación \eqref{eq:g_superficie}, despejamos $G$. Primero, sustituimos la masa de la Tierra ($M_T$) en función de su densidad ($\rho_T$) y su radio ($R_T$):
+$$g = G \frac{\rho_T \cdot \frac{4}{3}\pi R_T^3}{R_T^2} = G \frac{4}{3}\pi \rho_T R_T$$
+Ahora, despejamos la constante $G$:
+$$G = \frac{3g}{4\pi \rho_T R_T}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1) Valor del Radio Terrestre}
+Sustituimos los valores numéricos en la expresión obtenida para $R_T$:
+\begin{gather}
+    R_T = \frac{19570}{\sqrt{\frac{9,81}{9,75}} - 1} \approx \frac{19570}{\sqrt{1,00615} - 1} \approx \frac{19570}{1,00307 - 1} \approx 6,37 \cdot 10^6 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    El valor del radio terrestre es $\boldsymbol{R_T \approx 6370 \, \textbf{km}}$.
+\end{cajaresultado}
+
+\paragraph*{2) Valor de la Constante de Gravitación}
+Utilizamos el valor de $R_T$ calculado y los datos del problema para hallar $G$:
+\begin{gather}
+    G = \frac{3 \cdot 9,81}{4\pi \cdot 5523 \cdot (6,37 \cdot 10^6)} \approx 6,67 \cdot 10^{-11} \, \text{N}\text{m}^2/\text{kg}^2
+\end{gather}
+\begin{cajaresultado}
+    El valor de la constante de gravitación universal es $\boldsymbol{G \approx 6,67 \cdot 10^{-11} \, \textbf{N}\textbf{m}^2/\textbf{kg}^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la variación de la aceleración de la gravedad con la altura, se ha deducido un radio terrestre de $\mathbf{6370 \, km}$. Utilizando este valor junto con la densidad media de la Tierra, se ha podido determinar experimentalmente la constante de Gravitación Universal, obteniendo el valor aceptado de $\mathbf{6,67 \cdot 10^{-11} \, N m^2/kg^2}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2002_jun_ord}
+
+\begin{cajaenunciado}
+Un satélite de 500 kg de masa se mueve alrededor de Marte, describiendo una órbita circular a $6\times10^6$ m de su superficie. Sabiendo que la aceleración de la gravedad en la superficie de Marte es $3,7\,\text{m/s}^2$ y que su radio es 3400 km, se pide:
+\begin{enumerate}
+    \item[1)] Fuerza gravitatoria sobre el satélite. (0,7 puntos)
+    \item[2)] Velocidad y periodo del satélite. (0,7 puntos)
+    \item[3)] ¿A qué altura debería encontrarse el satélite para que su periodo fuese el doble?. (0,6 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es imprescindible identificar los datos y convertirlos al Sistema Internacional (SI).
+\begin{itemize}
+    \item \textbf{Masa del satélite ($m_{sat}$):} $m_{sat} = 500 \, \text{kg}$
+    \item \textbf{Altura orbital del satélite ($h$):} $h = 6 \cdot 10^6 \text{ m}$
+    \item \textbf{Gravedad en la superficie de Marte ($g_M$):} $g_M = 3,7 \, \text{m/s}^2$
+    \item \textbf{Radio de Marte ($R_M$):} $R_M = 3400 \text{ km} = 3,4 \cdot 10^6 \text{ m}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Fuerza gravitatoria sobre el satélite ($F_g$).
+        \item Velocidad orbital ($v$) y periodo ($T$).
+        \item Nueva altura ($h'$) para un periodo $T' = 2T$.
+    \end{itemize}
+\end{itemize}
+Calculamos primero el radio orbital total: $r = R_M + h = 3,4 \cdot 10^6 + 6 \cdot 10^6 = 9,4 \cdot 10^6 \text{ m}$.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Satélite en órbita marciana} \vspace{0.5cm} \textit{Prompt para la imagen:} "Esquema del planeta Marte en el centro y un satélite en una órbita circular a su alrededor. Etiquetar el radio de Marte $R_M$ y la altura de la órbita $h$. El radio total de la órbita $r = R_M+h$ debe estar indicado. Dibujar sobre el satélite el vector de velocidad orbital $v$, tangente a la trayectoria, y el vector de la fuerza gravitatoria $F_g$, apuntando hacia el centro de Marte, que actúa como fuerza centrípeta."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_marte.png}
+    }}
+    \caption{Representación gráfica del satélite orbitando Marte.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1) Fuerza Gravitatoria} Se usa la \textbf{Ley de Gravitación Universal de Newton}, $F_g = G \frac{M m}{r^2}$. Para poder aplicarla, primero necesitamos la masa de Marte, $M_M$, que podemos deducir de la gravedad en su superficie: $g_M = G \frac{M_M}{R_M^2}$.
+\paragraph*{2) Velocidad y Periodo} Para una órbita circular, la fuerza gravitatoria es la fuerza centrípeta ($F_g = F_c$). De la igualdad $G \frac{M_M m_{sat}}{r^2} = m_{sat} \frac{v^2}{r}$ se obtiene la velocidad orbital. El periodo se obtiene de la relación del movimiento circular uniforme: $v = \frac{2\pi r}{T}$.
+\paragraph*{3) Nueva altura} Se utilizará la \textbf{Tercera Ley de Kepler}, que relaciona el periodo orbital con el radio de la órbita: $\frac{T^2}{r^3} = \text{constante}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1) Fuerza Gravitatoria ($F_g$)}
+Primero, de la expresión de la gravedad superficial, despejamos el producto $G M_M$:
+$$g_M = G \frac{M_M}{R_M^2} \implies G M_M = g_M R_M^2$$
+La fuerza gravitatoria a la altura $h$ sobre el satélite es:
+$$F_g = G \frac{M_M m_{sat}}{r^2} = G \frac{M_M m_{sat}}{(R_M+h)^2}$$
+Sustituyendo el producto $G M_M$, obtenemos una expresión que no requiere conocer $G$ ni $M_M$ por separado:
+$$F_g = m_{sat} \frac{g_M R_M^2}{(R_M+h)^2}$$
+
+\paragraph*{2) Velocidad ($v$) y Periodo ($T$)}
+Igualando fuerza gravitatoria y centrípeta:
+$$G \frac{M_M m_{sat}}{r^2} = m_{sat}\frac{v^2}{r} \implies v = \sqrt{\frac{G M_M}{r}} = \sqrt{\frac{g_M R_M^2}{R_M+h}}$$
+Para el periodo, $T = \frac{2\pi r}{v}$:
+$$T = \frac{2\pi r}{\sqrt{\frac{G M_M}{r}}} = 2\pi \sqrt{\frac{r^3}{G M_M}} = 2\pi \sqrt{\frac{(R_M+h)^3}{g_M R_M^2}}$$
+
+\paragraph*{3) Nueva Altura ($h'$)}
+Aplicamos la Tercera Ley de Kepler para la órbita inicial (radio $r$, periodo $T$) y la nueva órbita (radio $r'$, periodo $T' = 2T$):
+$$\frac{T^2}{r^3} = \frac{(T')^2}{(r')^3} = \frac{(2T)^2}{(r')^3} = \frac{4T^2}{(r')^3}$$
+$$\frac{1}{r^3} = \frac{4}{(r')^3} \implies (r')^3 = 4 r^3 \implies r' = \sqrt[3]{4} r$$
+La nueva altura será $h' = r' - R_M$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1) Valor de la Fuerza Gravitatoria}
+\begin{gather}
+    F_g = 500 \cdot \frac{3,7 \cdot (3,4 \cdot 10^6)^2}{(9,4 \cdot 10^6)^2} \approx 241,5 \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza gravitatoria sobre el satélite es $\boldsymbol{F_g \approx 241,5 \, \textbf{N}}$.
+\end{cajaresultado}
+
+\paragraph*{2) Valor de la Velocidad y Periodo}
+\begin{gather}
+    v = \sqrt{\frac{3,7 \cdot (3,4 \cdot 10^6)^2}{9,4 \cdot 10^6}} \approx 2135,5 \, \text{m/s} \\
+    T = \frac{2\pi \cdot (9,4 \cdot 10^6)}{2135,5} \approx 27658 \, \text{s} \approx 7,68 \, \text{h}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad es $\boldsymbol{v \approx 2135,5 \, \textbf{m/s}}$ y el periodo es $\boldsymbol{T \approx 27658 \, \textbf{s}}$ (unas 7,7 horas).
+\end{cajaresultado}
+
+\paragraph*{3) Valor de la Nueva Altura}
+\begin{gather}
+    r' = \sqrt[3]{4} \cdot (9,4 \cdot 10^6) \approx 1,587 \cdot (9,4 \cdot 10^6) \approx 1,492 \cdot 10^7 \, \text{m} \\
+    h' = r' - R_M = (1,492 \cdot 10^7) - (3,4 \cdot 10^6) = 1,152 \cdot 10^7 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La nueva altura debe ser $\boldsymbol{h' \approx 1,152 \cdot 10^7 \, \textbf{m}}$ (11520 km).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se ha calculado una fuerza de atracción de $\mathbf{241,5 \, N}$ sobre el satélite. Esto resulta en una órbita con una velocidad de $\mathbf{2135,5 \, m/s}$ y un periodo de casi 8 horas. Para duplicar dicho periodo, según la Tercera Ley de Kepler, es necesario elevar el satélite hasta una altura de $\mathbf{11520 \, km}$ sobre la superficie de Marte.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Cuestiones de Ondas}
+\label{sec:ondas_2002_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2002_jun_ord}
+
+\begin{cajaenunciado}
+Describe en que consiste el efecto Doppler.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+No se proporcionan datos numéricos. La pregunta es puramente teórica y requiere una descripción conceptual. Las magnitudes involucradas son:
+\begin{itemize}
+    \item \textbf{Frecuencia emitida por la fuente ($f_e$)}
+    \item \textbf{Frecuencia percibida por el observador ($f_o$)}
+    \item \textbf{Velocidad de la fuente ($v_f$)}
+    \item \textbf{Velocidad del observador ($v_o$)}
+    \item \textbf{Velocidad de la onda en el medio ($v$)}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Fuente Acercándose} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una ambulancia moviéndose hacia la derecha con un vector de velocidad $v_f$. La ambulancia emite frentes de onda circulares. Debido a su movimiento, los frentes de onda se comprimen en la dirección del movimiento y se expanden en la dirección opuesta. Un observador estático a la derecha percibe los frentes de onda juntos (mayor frecuencia). Un observador estático a la izquierda percibe los frentes de onda separados (menor frecuencia)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{doppler_acercandose.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Fuente Alejándose} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una ambulancia moviéndose hacia la derecha con un vector de velocidad $v_f$. Ya ha pasado a un observador estático que ahora está a su izquierda. Este observador percibe los frentes de onda expandidos, que están más separados entre sí, lo que corresponde a una menor frecuencia (sonido más grave)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{doppler_alejandose.png}
+    }}
+    \caption{Visualización del efecto Doppler para el sonido.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El efecto Doppler es el cambio aparente en la frecuencia de una onda producido por el movimiento relativo entre la fuente emisora y el observador. Este fenómeno se aplica tanto a ondas mecánicas (como el sonido) como a ondas electromagnéticas (como la luz).
+
+La frecuencia percibida por el observador ($f_o$) se relaciona con la frecuencia emitida por la fuente ($f_e$) mediante la siguiente expresión general:
+$$f_o = f_e \left( \frac{v \pm v_o}{v \mp v_f} \right)$$
+Donde $v$ es la velocidad de la onda, $v_o$ la del observador y $v_f$ la de la fuente. Los signos se eligen de la siguiente manera:
+\begin{itemize}
+    \item En el numerador ($v \pm v_o$): se usa `+` si el observador se acerca a la fuente y `-` si se aleja.
+    \item En el denominador ($v \mp v_f$): se usa `-` si la fuente se acerca al observador y `+` si se aleja.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+No se requiere un desarrollo simbólico, sino una descripción cualitativa. Las consecuencias directas de la fórmula son:
+\begin{itemize}
+    \item \textbf{Acercamiento relativo:} Si la distancia entre la fuente y el observador disminuye, el término $\left( \frac{v \pm v_o}{v \mp v_f} \right)$ es mayor que 1. Por lo tanto, la frecuencia percibida es mayor que la emitida ($f_o > f_e$). En el caso del sonido, se percibe un tono más agudo. En el caso de la luz, la luz se desplaza hacia el azul (\textit{blueshift}).
+    \item \textbf{Alejamiento relativo:} Si la distancia entre la fuente y el observador aumenta, el término $\left( \frac{v \pm v_o}{v \mp v_f} \right)$ es menor que 1. Por lo tanto, la frecuencia percibida es menor que la emitida ($f_o < f_e$). En el caso del sonido, se percibe un tono más grave. En el caso de la luz, la luz se desplaza hacia el rojo (\textit{redshift}).
+    \item \textbf{Sin movimiento relativo:} Si $v_o=0$ y $v_f=0$, entonces $f_o = f_e$. La frecuencia percibida y emitida coinciden.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+El efecto Doppler es la variación de la frecuencia de una onda percibida por un observador cuando existe movimiento relativo entre este y la fuente emisora.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El efecto Doppler explica por qué el sonido de la sirena de una ambulancia es más agudo cuando se acerca y más grave cuando se aleja. En astrofísica, es una herramienta fundamental: el corrimiento al rojo (redshift) de la luz de galaxias lejanas fue la primera evidencia experimental de la expansión del Universo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2002_jun_ord}
+
+\begin{cajaenunciado}
+Describe, en función de la diferencia de fase, que ocurre cuando se superponen dos ondas progresivas armónicas de la misma amplitud y frecuencia.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica. Las magnitudes a considerar son:
+\begin{itemize}
+    \item \textbf{Amplitud de las ondas originales ($A$)}
+    \item \textbf{Frecuencia angular ($\omega$) y número de onda ($k$)}
+    \item \textbf{Diferencia de fase ($\Delta\phi$)}
+    \item \textbf{Amplitud de la onda resultante ($A_R$)}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Interferencia Constructiva} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar dos ondas sinusoidales idénticas (onda 1 y onda 2) perfectamente alineadas (en fase). Debajo de ellas, dibujar una tercera onda sinusoidal (onda resultante) con la misma fase pero con el doble de amplitud. Etiquetar las amplitudes A para las ondas 1 y 2, y 2A para la resultante."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{interferencia_constructiva.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Interferencia Destructiva} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar una onda sinusoidal (onda 1). Debajo, dibujar una segunda onda sinusoidal (onda 2) idéntica pero desfasada 180 grados (en oposición de fase). Debajo de ambas, dibujar la onda resultante, que es una línea recta horizontal en el eje cero, indicando una amplitud nula."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{interferencia_destructiva.png}
+    }}
+    \caption{Visualización de los dos casos extremos de interferencia.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe mediante el \textbf{Principio de Superposición}. Este principio establece que cuando dos o más ondas coinciden en un punto del medio, la elongación resultante en ese punto es la suma vectorial (o algebraica, si son unidimensionales) de las elongaciones que cada onda produciría individualmente.
+El resultado de esta superposición se denomina \textbf{interferencia}.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Consideremos dos ondas armónicas de igual amplitud $A$ y frecuencia $\omega$ que se propagan en la misma dirección, con una diferencia de fase $\Delta\phi$ entre ellas:
+\begin{gather}
+    y_1(x,t) = A \sin(kx - \omega t) \\
+    y_2(x,t) = A \sin(kx - \omega t + \Delta\phi)
+\end{gather}
+Según el principio de superposición, la onda resultante $y_R$ es:
+$$y_R = y_1 + y_2 = A [\sin(kx - \omega t) + \sin(kx - \omega t + \Delta\phi)]$$
+Usando la identidad trigonométrica $\sin a + \sin b = 2 \cos\left(\frac{a-b}{2}\right) \sin\left(\frac{a+b}{2}\right)$, la ecuación se transforma en:
+$$y_R = \left[ 2A \cos\left(\frac{\Delta\phi}{2}\right) \right] \sin\left(kx - \omega t + \frac{\Delta\phi}{2}\right)$$
+Esta es la ecuación de una nueva onda armónica cuya amplitud $A_R$ depende de la diferencia de fase:
+$$A_R = \left| 2A \cos\left(\frac{\Delta\phi}{2}\right) \right|$$
+Analizamos los casos extremos:
+\begin{itemize}
+    \item \textbf{Interferencia Constructiva:} La amplitud resultante es máxima ($A_R = 2A$). Esto ocurre cuando $\cos\left(\frac{\Delta\phi}{2}\right) = \pm 1$.
+    $$\frac{\Delta\phi}{2} = n\pi \implies \Delta\phi = 2n\pi \quad \text{para } n = 0, 1, 2, ...$$
+    Esto significa que las ondas están en fase (su diferencia de fase es un múltiplo par de $\pi$).
+    \item \textbf{Interferencia Destructiva:} La amplitud resultante es nula ($A_R = 0$). Esto ocurre cuando $\cos\left(\frac{\Delta\phi}{2}\right) = 0$.
+    $$\frac{\Delta\phi}{2} = \frac{\pi}{2} + n\pi \implies \Delta\phi = (2n+1)\pi \quad \text{para } n = 0, 1, 2, ...$$
+    Esto significa que las ondas están en oposición de fase (su diferencia de fase es un múltiplo impar de $\pi$).
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+La superposición de dos ondas de igual amplitud y frecuencia da lugar a una nueva onda cuya amplitud depende de la diferencia de fase $\Delta\phi$. Si $\Delta\phi=2n\pi$, la interferencia es constructiva (amplitud $2A$). Si $\Delta\phi=(2n+1)\pi$, la interferencia es destructiva (amplitud 0). Para valores intermedios, la amplitud resultante está entre 0 y $2A$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El fenómeno de interferencia es una característica distintiva del comportamiento ondulatorio. El resultado de la superposición, determinado por la diferencia de fase, puede ir desde una anulación completa de la perturbación hasta un refuerzo que duplica la amplitud original. Este principio es fundamental para entender fenómenos como los patrones de difracción o el funcionamiento de los interferómetros.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Cuestiones de Óptica}
+\label{sec:optica_2002_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2002_jun_ord}
+
+\begin{cajaenunciado}
+Un foco luminoso puntual se encuentra situado en el fondo de un estanque lleno de agua de $n=4/3$ y a 1 metro de profundidad. Emite luz en todas las direcciones. En la superficie del agua se observa una zona circular iluminada de radio R. Calcula el radio R del círculo luminoso.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Índice de refracción del agua ($n_1$):} $n_1 = n_{agua} = 4/3$
+    \item \textbf{Índice de refracción del aire ($n_2$):} $n_2 = n_{aire} \approx 1$
+    \item \textbf{Profundidad del foco luminoso ($h$):} $h = 1 \, \text{m}$
+    \item \textbf{Incógnita:} Radio del círculo luminoso ($R$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Reflexión Total Interna en el estanque} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un corte transversal de un estanque. Dibujar el fondo y la superficie horizontal (interfaz agua-aire). En el fondo, un punto 'Foco'. Dibujar varios rayos de luz saliendo del foco hacia arriba. Un rayo vertical atraviesa la superficie sin desviarse. Otro rayo incide con un ángulo pequeño y se refracta alejándose de la normal. Un tercer rayo incide justo en el ángulo crítico $\theta_c$ y se refracta a 90 grados, viajando rasante a la superficie. Un cuarto rayo con un ángulo mayor que $\theta_c$ sufre reflexión total interna y vuelve al agua. Marcar la profundidad $h$ y el radio $R$ del círculo en la superficie, que está determinado por el rayo que incide con el ángulo crítico. Formar un triángulo rectángulo con catetos $h$ y $R$ y ángulo $\theta_c$ en el foco."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{reflexion_total_interna.png}
+    }}
+    \caption{Trazado de rayos desde el fondo del estanque.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno que limita el tamaño del círculo luminoso es la \textbf{reflexión total interna}. La luz puede pasar del agua (medio más denso) al aire (medio menos denso). Según la \textbf{Ley de Snell de la refracción}, $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$.
+
+Existe un ángulo de incidencia, llamado \textbf{ángulo crítico} o \textbf{ángulo límite} ($\theta_c$), para el cual el ángulo de refracción es de 90 grados ($\theta_2 = 90^\circ$). Para cualquier ángulo de incidencia mayor que $\theta_c$, la luz no se refracta hacia el aire, sino que se refleja completamente de nuevo en el agua.
+
+El borde del círculo luminoso está determinado por los rayos que salen del foco e inciden en la superficie justo con este ángulo crítico.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Primero, calculamos el ángulo crítico usando la Ley de Snell:
+$$n_1 \sin(\theta_c) = n_2 \sin(90^\circ)$$
+Como $\sin(90^\circ)=1$:
+$$\sin(\theta_c) = \frac{n_2}{n_1}$$
+A partir de la geometría del problema, observando el triángulo rectángulo formado por la profundidad $h$, el radio $R$ y el rayo de luz, podemos establecer una relación trigonométrica:
+$$\tan(\theta_c) = \frac{R}{h}$$
+Por lo tanto, el radio del círculo es:
+$$R = h \tan(\theta_c)$$
+Para calcular $\tan(\theta_c)$ a partir de $\sin(\theta_c)$, usamos la identidad $\tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)} = \frac{\sin(\theta)}{\sqrt{1-\sin^2(\theta)}}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos el seno del ángulo crítico:
+\begin{gather}
+    \sin(\theta_c) = \frac{n_{aire}}{n_{agua}} = \frac{1}{4/3} = \frac{3}{4} = 0,75
+\end{gather}
+Ahora calculamos la tangente de este ángulo:
+\begin{gather}
+    \tan(\theta_c) = \frac{\sin(\theta_c)}{\sqrt{1-\sin^2(\theta_c)}} = \frac{3/4}{\sqrt{1 - (3/4)^2}} = \frac{3/4}{\sqrt{1 - 9/16}} = \frac{3/4}{\sqrt{7/16}} = \frac{3/4}{\sqrt{7}/4} = \frac{3}{\sqrt{7}}
+\end{gather}
+Finalmente, calculamos el radio $R$:
+\begin{gather}
+    R = h \tan(\theta_c) = 1 \, \text{m} \cdot \frac{3}{\sqrt{7}} \approx 1,134 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    El radio del círculo luminoso en la superficie es $\boldsymbol{R \approx 1,134 \, \textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido al fenómeno de reflexión total interna, solo los rayos de luz que inciden en la superficie con un ángulo menor que el ángulo crítico pueden escapar al aire. Esto crea una "ventana" circular en la superficie, a través de la cual se ve la luz del fondo. Para una profundidad de 1 metro en agua, el radio de esta ventana es de aproximadamente $\mathbf{1,13 \, m}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2002_jun_ord}
+
+\begin{cajaenunciado}
+Explica razonadamente, basándote en el trazado de rayos, por qué la profundidad aparente de una piscina llena de agua es menor que la profundidad real.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica. Las magnitudes involucradas son:
+\begin{itemize}
+    \item \textbf{Profundidad real ($h_{real}$)}
+    \item \textbf{Profundidad aparente ($h_{aparente}$)}
+    \item \textbf{Índice de refracción del agua ($n_1 = n_{agua} > 1$)}
+    \item \textbf{Índice de refracción del aire ($n_2 = n_{aire} \approx 1$)}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Profundidad Aparente} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un corte transversal de una piscina. Dibujar un punto 'Objeto' en el fondo, a una profundidad real $h_{real}$. Desde este objeto, trazar dos rayos de luz hacia arriba. Un rayo sale perpendicular a la superficie y no se desvía. El segundo rayo sale con un ángulo de incidencia $\theta_1$ respecto a la normal. Al pasar del agua al aire, este rayo se refracta alejándose de la normal, con un ángulo de refracción $\theta_2 > \theta_1$. Un observador (representado por un ojo) fuera del agua ve los rayos. Prolongar hacia atrás el rayo refractado con una línea de puntos hasta que se cruce con la prolongación del rayo vertical. El punto de cruce es la 'Imagen' o posición aparente del objeto, que está a una profundidad aparente $h_{aparente}$ menor que la real. Etiquetar todos los elementos: $h_{real}$, $h_{aparente}$, $\theta_1$, $\theta_2$, $n_1$ (agua) y $n_2$ (aire)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{profundidad_aparente.png}
+    }}
+    \caption{Trazado de rayos para explicar la profundidad aparente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se debe a la \textbf{refracción de la luz}. Cuando la luz pasa de un medio con un índice de refracción mayor (agua, $n_1$) a uno con un índice de refracción menor (aire, $n_2$), los rayos se desvían alejándose de la normal, según la \textbf{Ley de Snell}: $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$.
+
+El cerebro humano interpreta que los objetos están en la dirección de la que parecen provenir los rayos de luz. Al prolongar los rayos refractados (divergentes) hacia atrás, estos convergen en un punto que está por encima de la posición real del objeto. Este punto de convergencia forma una \textbf{imagen virtual} del objeto, y su profundidad es la que percibimos como "profundidad aparente".
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Considerando el trazado de rayos de la figura y aplicando la trigonometría para ángulos pequeños (aproximación paraxial, donde $\sin \theta \approx \tan \theta \approx \theta$), se puede derivar una relación entre las profundidades.
+Sea $x$ la distancia horizontal desde el punto de incidencia en la superficie hasta la vertical del objeto.
+\begin{gather}
+    \tan(\theta_1) = \frac{x}{h_{real}} \\
+    \tan(\theta_2) = \frac{x}{h_{aparente}}
+\end{gather}
+La Ley de Snell es $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$. Para ángulos pequeños: $n_1 \tan(\theta_1) \approx n_2 \tan(\theta_2)$.
+Sustituyendo las expresiones de las tangentes:
+$$n_1 \frac{x}{h_{real}} \approx n_2 \frac{x}{h_{aparente}}$$
+Simplificando $x$, obtenemos la relación:
+$$h_{aparente} \approx h_{real} \frac{n_2}{n_1}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Como el agua es más densa ópticamente que el aire, $n_1 = n_{agua} \approx 1,33$ y $n_2 = n_{aire} \approx 1$. Por tanto, el cociente $\frac{n_2}{n_1} = \frac{1}{1,33}$ es menor que 1.
+Esto implica que:
+$$h_{aparente} < h_{real}$$
+Por ejemplo, para el agua, $h_{aparente} \approx h_{real} \cdot \frac{1}{4/3} = \frac{3}{4} h_{real}$. La profundidad aparente es aproximadamente el 75\% de la profundidad real.
+\begin{cajaresultado}
+La profundidad aparente es menor que la real porque los rayos de luz que emanan de un objeto en el fondo de la piscina se desvían al pasar del agua al aire, alejándose de la normal. El cerebro reconstruye la imagen en la prolongación de estos rayos divergentes, situándola en una posición más elevada.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La refracción de la luz en la interfaz agua-aire es la responsable de una ilusión óptica que hace que los objetos sumergidos parezcan estar más cerca de la superficie de lo que realmente están. La relación entre la profundidad aparente y la real depende directamente del cociente de los índices de refracción de los dos medios, siendo siempre la profundidad aparente menor cuando se observa desde un medio menos denso.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Cuestiones de Electromagnetismo}
+\label{sec:em_2002_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2002_jun_ord}
+
+\begin{cajaenunciado}
+En un acelerador lineal de partículas existe un campo eléctrico uniforme, de intensidad 20 N/C, a lo largo de 50 m. ¿Qué energía cinética adquiere un electrón, partiendo del reposo, a lo largo de este recorrido?. ¿Es posible construir un acelerador lineal de partículas con un campo magnético constante? Razona la respuesta.
+\textbf{Dato:} carga del electrón $e=1,6\times10^{-19}\,\text{C}$
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Intensidad del campo eléctrico ($E$):} $E = 20 \, \text{N/C}$
+    \item \textbf{Distancia del recorrido ($d$):} $d = 50 \, \text{m}$
+    \item \textbf{Carga del electrón ($q_e$):} $q_e = -e = -1,6 \cdot 10^{-19} \, \text{C}$
+    \item \textbf{Velocidad inicial ($v_0$):} $v_0 = 0 \, \text{m/s}$ (parte del reposo)
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Energía cinética adquirida ($\Delta E_c$).
+            \item Posibilidad de usar un campo magnético para acelerar linealmente.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Aceleración de un electrón} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una región con un campo eléctrico uniforme $\vec{E}$ apuntando hacia la derecha. Un electrón (carga negativa) se sitúa en el lado derecho y es liberado del reposo. Dibujar el vector de la fuerza eléctrica $\vec{F_e}$ sobre el electrón, que apunta hacia la izquierda (en sentido contrario a $\vec{E}$). Mostrar que el electrón se acelera hacia la izquierda a lo largo de una distancia $d$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{acelerador_electrico.png}
+    }}
+    \caption{Acción de un campo eléctrico sobre un electrón.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Energía Cinética}
+El \textbf{Teorema de la Energía Cinética} (o teorema de las fuerzas vivas) establece que el trabajo total realizado sobre una partícula es igual al cambio en su energía cinética: $W_{total} = \Delta E_c$.
+En este caso, la única fuerza que realiza trabajo es la fuerza eléctrica, $F_e = |q| E$. El trabajo realizado por esta fuerza constante a lo largo de una distancia $d$ es $W_e = F_e \cdot d$.
+
+Alternativamente, se puede usar el \textbf{Principio de Conservación de la Energía Mecánica más el Trabajo de Fuerzas no Conservativas}. Como la fuerza eléctrica es conservativa, el trabajo que realiza es igual a la disminución de la energía potencial eléctrica: $W_e = -\Delta E_p = -q \Delta V$. El cambio en la energía cinética es, por tanto, $\Delta E_c = - \Delta E_p = -q \Delta V$. La diferencia de potencial $\Delta V$ en un campo uniforme es $\Delta V = -E \cdot d$ (asumiendo que el desplazamiento es en la dirección del campo).
+
+\paragraph*{b) Campo Magnético}
+La fuerza que un campo magnético ejerce sobre una carga en movimiento es la \textbf{Fuerza de Lorentz}: $\vec{F}_m = q (\vec{v} \times \vec{B})$. Esta fuerza es siempre perpendicular tanto a la velocidad de la partícula ($\vec{v}$) como al campo magnético ($\vec{B}$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Energía Cinética}
+Usando el teorema de la energía cinética:
+$$\Delta E_c = W_e$$
+El trabajo realizado por el campo eléctrico es:
+$$W_e = F_e \cdot d \cos(\theta)$$
+La fuerza sobre el electrón es $\vec{F}_e = q_e \vec{E}$. Como $q_e$ es negativa, la fuerza tiene sentido opuesto al campo. Si el electrón se libera y se mueve en la dirección de la fuerza, $\theta = 0$ respecto a la fuerza, y el trabajo es positivo.
+$$W_e = |q_e| E d$$
+Como parte del reposo, $E_{c, inicial} = 0$, por lo que la energía cinética final es:
+$$E_{c, final} = \Delta E_c = |e| E d$$
+
+\paragraph*{b) Acelerador Magnético}
+La potencia desarrollada por la fuerza magnética es $P_m = \vec{F}_m \cdot \vec{v}$. Dado que $\vec{F}_m$ es siempre perpendicular a $\vec{v}$, su producto escalar es siempre cero:
+$$P_m = \vec{F}_m \cdot \vec{v} = 0$$
+La potencia es la tasa de cambio del trabajo, $P = \frac{dW}{dt}$. Si la potencia es cero, el trabajo realizado por la fuerza magnética es cero ($W_m=0$). Por el teorema de la energía cinética, si el trabajo es cero, no hay cambio en la energía cinética ($\Delta E_c = 0$).
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la Energía Cinética}
+\begin{gather}
+    \Delta E_c = (1,6 \cdot 10^{-19} \, \text{C}) \cdot (20 \, \text{N/C}) \cdot (50 \, \text{m}) = 1,6 \cdot 10^{-16} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía cinética adquirida por el electrón es $\boldsymbol{1,6 \cdot 10^{-16} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Acelerador Magnético}
+\begin{cajaresultado}
+No es posible construir un acelerador lineal con un campo magnético constante. La fuerza magnética es siempre perpendicular a la velocidad de la partícula, por lo que no realiza trabajo y no puede aumentar la energía cinética (el módulo de la velocidad) de la partícula. Únicamente puede cambiar su dirección.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Un campo eléctrico puede acelerar partículas cargadas, ya que ejerce una fuerza que realiza trabajo sobre ellas, incrementando su energía cinética. En este caso, el electrón gana $\mathbf{1,6 \cdot 10^{-16} \, J}$. Por el contrario, un campo magnético estático no puede acelerar partículas (en el sentido de aumentar su celeridad), ya que la fuerza de Lorentz no realiza trabajo. Su función en los aceleradores es curvar la trayectoria de las partículas, como en los sincrotrones o ciclotrones.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2002_jun_ord}
+
+\begin{cajaenunciado}
+La figura muestra un hilo conductor rectilíneo y una espira conductora. Por el hilo circula una corriente continua. Justifica si se inducirá corriente en la espira en los siguientes casos:
+\begin{enumerate}
+    \item[1.] La espira se mueve hacia la derecha.
+    \item[2.] La espira se mueve hacia arriba paralelamente al hilo.
+    \item[3.] La espira se encuentra en reposo.
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica. Las magnitudes clave son:
+\begin{itemize}
+    \item \textbf{Corriente en el hilo ($I$):} Constante (continua).
+    \item \textbf{Campo magnético creado por el hilo ($B$)}
+    \item \textbf{Flujo magnético a través de la espira ($\Phi_m$)}
+    \item \textbf{Fuerza electromotriz inducida ($\varepsilon$)}
+    \item \textbf{Corriente inducida en la espira ($I_{ind}$)}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Inducción en una espira} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un hilo conductor vertical muy largo con una corriente $I$ fluyendo hacia arriba. A la derecha del hilo, dibujar una espira rectangular con sus lados paralelos y perpendiculares al hilo. Usando la regla de la mano derecha, dibujar el campo magnético $\vec{B}$ creado por el hilo: círculos concéntricos alrededor del hilo. En la región de la espira, el campo entra en el papel (dibujar cruces 'x'). La densidad de las cruces debe disminuir a medida que aumenta la distancia al hilo, para mostrar que el campo es más débil. Dibujar tres flechas desde la espira para indicar los tres movimientos posibles: (1) hacia la derecha, alejándose del hilo; (2) hacia arriba, paralela al hilo; (3) un símbolo de reposo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{induccion_espira.png}
+    }}
+    \caption{Sistema hilo-espira y movimientos analizados.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se rige por la \textbf{Ley de Faraday-Lenz de la inducción electromagnética}.
+\begin{itemize}
+    \item \textbf{Ley de Faraday:} Establece que se induce una fuerza electromotriz (fem, $\varepsilon$) en un circuito cerrado si el flujo magnético ($\Phi_m$) que lo atraviesa cambia con el tiempo. La fem es igual a la tasa de cambio del flujo: $\varepsilon = -\frac{d\Phi_m}{dt}$.
+    \item \textbf{Ley de Lenz:} El signo negativo indica que la corriente inducida en la espira creará su propio campo magnético que se opondrá al cambio en el flujo que la originó.
+\end{itemize}
+El \textbf{flujo magnético} se define como $\Phi_m = \int_S \vec{B} \cdot d\vec{S}$. Se inducirá una corriente si y solo si este flujo cambia.
+Un hilo rectilíneo infinito crea un campo magnético a su alrededor cuya magnitud, según la \textbf{Ley de Ampère}, es $B = \frac{\mu_0 I}{2\pi r}$, donde $r$ es la distancia al hilo. El campo es más intenso cerca del hilo y se debilita al alejarse.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La condición para que exista una corriente inducida ($I_{ind} \neq 0$) es que la fem sea no nula ($\varepsilon \neq 0$). Esto, a su vez, requiere que el flujo magnético varíe en el tiempo:
+$$I_{ind} \neq 0 \iff \varepsilon \neq 0 \iff \frac{d\Phi_m}{dt} \neq 0$$
+El flujo a través de la espira depende de la intensidad del campo magnético $B$ que la atraviesa y del área $S$. El campo $B$ depende de la corriente $I$ en el hilo y de la distancia $r$ a la espira. Como el campo no es uniforme en el área de la espira, el flujo es una integral, pero cualitativamente podemos decir que $\Phi_m$ es proporcional a $B$ y al área.
+
+Analizamos cada caso:
+\paragraph*{1. La espira se mueve hacia la derecha}
+Al moverse hacia la derecha, la espira se aleja del hilo. La distancia promedio $r$ de la espira al hilo aumenta. Como $B \propto 1/r$, el campo magnético que atraviesa la espira se debilita. El flujo magnético $\Phi_m$ disminuye. Como el flujo cambia, $\frac{d\Phi_m}{dt} < 0$. \textbf{Sí se induce corriente}. (Según Lenz, la corriente inducida creará un campo magnético que intentará reforzar el flujo, es decir, un campo entrante).
+
+\paragraph*{2. La espira se mueve hacia arriba}
+Al moverse paralelamente al hilo, la distancia de cada punto de la espira al hilo permanece constante. La espira se mueve a través de una región donde el campo magnético tiene la misma distribución de intensidad. Por lo tanto, el flujo magnético $\Phi_m$ que atraviesa la espira no cambia con el tiempo. $\frac{d\Phi_m}{dt} = 0$. \textbf{No se induce corriente}.
+
+\paragraph*{3. La espira se encuentra en reposo}
+La espira está quieta y la corriente $I$ en el hilo es continua (constante). Ni la posición de la espira ni la intensidad del campo magnético cambian. Por lo tanto, el flujo magnético $\Phi_m$ es constante en el tiempo. $\frac{d\Phi_m}{dt} = 0$. \textbf{No se induce corriente}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+\begin{enumerate}
+    \item \textbf{Sí se induce corriente.} Al alejarse del hilo, el flujo magnético a través de la espira disminuye.
+    \item \textbf{No se induce corriente.} Al moverse paralelamente al hilo, el flujo magnético permanece constante.
+    \item \textbf{No se induce corriente.} Al estar en reposo y con una corriente en el hilo constante, el flujo magnético no varía.
+\end{enumerate}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La inducción de corriente en la espira solo ocurre cuando hay una variación del flujo magnético que la atraviesa. Esta variación puede ser causada por un cambio en el campo magnético (si la corriente del hilo variara), un cambio en el área de la espira, un cambio en la orientación, o, como en el primer caso, un movimiento de la espira a través de una región donde el campo magnético no es uniforme.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Problemas de Física Moderna}
+\label{sec:moderna_2002_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2002_jun_ord}
+
+\begin{cajaenunciado}
+Si la frecuencia mínima que ha de tener la luz para extraer electrones de un cierto metal es de $8,5\times10^{14}$ Hz, se pide:
+\begin{enumerate}
+    \item[1.] Hallar la energía cinética máxima de los electrones, expresada en eV, que emite el metal cuando se ilumina con luz de $1,3\times10^{15}$ Hz. (1 punto)
+    \item[2.] ¿Cuál es la longitud de onda de De Broglie asociada a esos electrones? (1 punto)
+\end{enumerate}
+\textbf{Datos:} Constante de Planck, $h=6.63\times10^{-34}\,\text{J}\cdot\text{s}$; carga del electrón, $e=1,6\times10^{-19}\,\text{C}$; masa del electrón: $m_e=9.1\times10^{-31}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Frecuencia umbral ($f_0$):} $f_0 = 8,5 \cdot 10^{14} \, \text{Hz}$
+    \item \textbf{Frecuencia de la luz incidente ($f$):} $f = 1,3 \cdot 10^{15} \, \text{Hz}$
+    \item \textbf{Constante de Planck ($h$):} $h=6.63\times10^{-34}\,\text{J}\cdot\text{s}$
+    \item \textbf{Carga elemental ($e$):} $e=1,6\times10^{-19}\,\text{C}$
+    \item \textbf{Masa del electrón ($m_e$):} $m_e=9.1\times10^{-31}\,\text{kg}$
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Energía cinética máxima de los electrones ($E_{c,max}$) en eV.
+            \item Longitud de onda de De Broglie ($\lambda_{DB}$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una superficie metálica. Un fotón, representado como una flecha ondulada con la etiqueta $E = hf$, incide sobre la superficie. Desde el punto de impacto, un electrón es emitido con un vector de velocidad $v_{max}$. Etiquetar la superficie con la 'Función de Trabajo $\phi_0 = hf_0$'. Escribir la ecuación de Einstein $hf = \phi_0 + E_{c,max}$ junto al diagrama."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{efecto_fotoelectrico.png}
+    }}
+    \caption{Esquema del efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1) Energía Cinética}
+El problema se describe mediante la ecuación de Einstein para el \textbf{efecto fotoeléctrico}, que es una manifestación de la conservación de la energía. La energía de un fotón incidente ($E=hf$) se invierte en dos partes: una parte para arrancar el electrón del metal (la función de trabajo o trabajo de extracción, $\phi_0$) y el resto se convierte en la energía cinética del electrón emitido.
+$$E_{fotón} = \phi_0 + E_{c,max} \implies hf = hf_0 + E_{c,max}$$
+La frecuencia umbral ($f_0$) es la mínima para producir el efecto, y está relacionada con la función de trabajo por $\phi_0 = hf_0$.
+
+\paragraph*{2) Longitud de Onda de De Broglie}
+La \textbf{hipótesis de De Broglie} postula que toda partícula en movimiento tiene asociada una onda, cuya longitud de onda ($\lambda_{DB}$) es inversamente proporcional a su momento lineal ($p$).
+$$\lambda_{DB} = \frac{h}{p}$$
+El momento lineal se relaciona con la energía cinética no relativista mediante $E_c = \frac{p^2}{2m}$, por lo que $p = \sqrt{2m E_c}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1) Energía Cinética Máxima ($E_{c,max}$)}
+De la ecuación del efecto fotoeléctrico:
+$$E_{c,max} = hf - hf_0 = h(f - f_0)$$
+El resultado se obtendrá en Julios y deberá ser convertido a electronvoltios (eV) dividiendo por la carga elemental $e$.
+$$E_{c,max} \, (\text{en eV}) = \frac{h(f - f_0)}{e}$$
+
+\paragraph*{2) Longitud de onda de De Broglie ($\lambda_{DB}$)}
+Sustituyendo la expresión del momento lineal en la ecuación de De Broglie:
+$$\lambda_{DB} = \frac{h}{\sqrt{2 m_e E_{c,max}}}$$
+Aquí, $E_{c,max}$ debe estar expresada en Julios.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1) Valor de la Energía Cinética Máxima}
+Calculamos primero la energía en Julios:
+\begin{gather}
+    E_{c,max} = (6,63 \cdot 10^{-34}) \cdot (1,3 \cdot 10^{15} - 8,5 \cdot 10^{14}) \\
+    E_{c,max} = (6,63 \cdot 10^{-34}) \cdot (4,5 \cdot 10^{14}) \approx 2,9835 \cdot 10^{-19} \, \text{J}
+\end{gather}
+Ahora convertimos a eV:
+\begin{gather}
+    E_{c,max} \, (\text{en eV}) = \frac{2,9835 \cdot 10^{-19} \, \text{J}}{1,6 \cdot 10^{-19} \, \text{J/eV}} \approx 1,865 \, \text{eV}
+\end{gather}
+\begin{cajaresultado}
+    La energía cinética máxima de los electrones es $\boldsymbol{\approx 1,865 \, \textbf{eV}}$.
+\end{cajaresultado}
+
+\paragraph*{2) Valor de la Longitud de Onda de De Broglie}
+Usamos la energía cinética en Julios:
+\begin{gather}
+    \lambda_{DB} = \frac{6,63 \cdot 10^{-34}}{\sqrt{2 \cdot (9,1 \cdot 10^{-31}) \cdot (2,9835 \cdot 10^{-19})}} \approx \frac{6,63 \cdot 10^{-34}}{7,37 \cdot 10^{-25}} \approx 9,0 \cdot 10^{-10} \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La longitud de onda de De Broglie asociada es $\boldsymbol{\lambda_{DB} \approx 9,0 \cdot 10^{-10} \, \textbf{m}}$ (ó 9 Ångströms).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La luz incidente, al tener una frecuencia superior a la umbral, es capaz de arrancar electrones y comunicarles una energía cinética de $\mathbf{1,865 \, eV}$. Estos electrones, al ser partículas en movimiento, exhiben propiedades ondulatorias, con una longitud de onda de De Broglie asociada de $\mathbf{9,0 \cdot 10^{-10} \, m}$, demostrando la dualidad onda-corpúsculo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2002_jun_ord}
+
+\begin{cajaenunciado}
+Cuando se ilumina un cierto metal con luz monocromática de frecuencia $1,2\times10^{15}$ Hz, es necesario aplicar un potencial de frenado de 2 V para anular la fotocorriente que se produce. Se pide:
+\begin{enumerate}
+    \item[1.] Determinar la frecuencia mínima que ha de tener la luz para extraer electrones de dicho metal. (1 punto)
+    \item[2.] Si la luz fuese de 150 nm de longitud de onda, calcular la tensión necesaria para anular la fotocorriente. (1 punto)
+\end{enumerate}
+\textbf{Datos:} Constante de Planck, $h=6.63\times10^{-34}\,\text{J}\cdot\text{s}$; carga del electrón, $e=1,6\times10^{-19}\,\text{C}$; velocidad de la luz en el vacío, $c=3\times10^8\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Frecuencia de la luz incidente ($f_1$):} $f_1 = 1,2 \cdot 10^{15} \, \text{Hz}$
+    \item \textbf{Potencial de frenado ($V_{f1}$):} $V_{f1} = 2 \, \text{V}$
+    \item \textbf{Longitud de onda de la nueva luz ($\lambda_2$):} $\lambda_2 = 150 \text{ nm} = 1,5 \cdot 10^{-7} \text{ m}$
+    \item \textbf{Constante de Planck ($h$):} $h=6.63\times10^{-34}\,\text{J}\cdot\text{s}$
+    \item \textbf{Carga elemental ($e$):} $e=1,6\times10^{-19}\,\text{C}$
+    \item \textbf{Velocidad de la luz ($c$):} $c=3\times10^8\,\text{m/s}$
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Frecuencia umbral ($f_0$).
+            \item Nuevo potencial de frenado ($V_{f2}$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Potencial de Frenado} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de una célula fotoeléctrica. Mostrar una placa metálica (cátodo) y otra placa (ánodo) dentro de una ampolla de vacío. Luz incide sobre el cátodo, emitiendo electrones. Conectar las placas a una fuente de voltaje variable, con el polo positivo en el cátodo y el negativo en el ánodo (polaridad inversa). Etiquetar este voltaje como 'Potencial de Frenado $V_f$'. Mostrar que el campo eléctrico creado por este voltaje se opone al movimiento de los electrones y los frena antes de llegar al ánodo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{potencial_frenado.png}
+    }}
+    \caption{Esquema para la medición del potencial de frenado.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1) Frecuencia Umbral}
+Se utiliza la ecuación de Einstein para el \textbf{efecto fotoeléctrico}: $hf = hf_0 + E_{c,max}$. El \textbf{potencial de frenado} ($V_f$) es la diferencia de potencial necesaria para detener a los electrones más energéticos. La energía que el campo eléctrico les resta es igual a su energía cinética inicial: $E_{c,max} = e V_f$.
+Combinando ambas ecuaciones:
+$$hf = hf_0 + e V_f$$
+Con los datos del primer experimento, podemos despejar la incógnita, que es la frecuencia umbral $f_0$.
+
+\paragraph*{2) Nuevo Potencial de Frenado}
+Una vez conocida la frecuencia umbral $f_0$ (que es una propiedad del metal y no cambia), podemos aplicar la misma ecuación para las nuevas condiciones de iluminación. La nueva frecuencia ($f_2$) se calcula a partir de la longitud de onda usando la relación $c = \lambda f$.
+$$h f_2 = h \frac{c}{\lambda_2} = h f_0 + e V_{f2}$$
+De aquí se despejará el nuevo potencial de frenado $V_{f2}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1) Frecuencia Umbral ($f_0$)}
+De la ecuación $hf_1 = hf_0 + e V_{f1}$, despejamos $f_0$:
+$$hf_0 = hf_1 - e V_{f1} \implies f_0 = f_1 - \frac{e V_{f1}}{h}$$
+
+\paragraph*{2) Nuevo Potencial de Frenado ($V_{f2}$)}
+De la ecuación $h \frac{c}{\lambda_2} = h f_0 + e V_{f2}$, despejamos $V_{f2}$:
+$$e V_{f2} = h \frac{c}{\lambda_2} - h f_0 \implies V_{f2} = \frac{h}{e} \left( \frac{c}{\lambda_2} - f_0 \right)$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1) Valor de la Frecuencia Umbral}
+\begin{gather}
+    f_0 = 1,2 \cdot 10^{15} - \frac{(1,6 \cdot 10^{-19}) \cdot 2}{6,63 \cdot 10^{-34}} \approx 1,2 \cdot 10^{15} - 4,82 \cdot 10^{14} \\
+    f_0 \approx 7,18 \cdot 10^{14} \, \text{Hz}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia umbral del metal es $\boldsymbol{f_0 \approx 7,18 \cdot 10^{14} \, \textbf{Hz}}$.
+\end{cajaresultado}
+
+\paragraph*{2) Valor del Nuevo Potencial de Frenado}
+Primero calculamos la nueva frecuencia $f_2$:
+$$f_2 = \frac{c}{\lambda_2} = \frac{3 \cdot 10^8}{1,5 \cdot 10^{-7}} = 2 \cdot 10^{15} \, \text{Hz}$$
+Ahora calculamos $V_{f2}$:
+\begin{gather}
+    V_{f2} = \frac{6,63 \cdot 10^{-34}}{1,6 \cdot 10^{-19}} \left( 2 \cdot 10^{15} - 7,18 \cdot 10^{14} \right) \\
+    V_{f2} \approx (4,14 \cdot 10^{-15}) \cdot (1,282 \cdot 10^{15}) \approx 5,3 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+    El nuevo potencial de frenado necesario es $\boldsymbol{V_{f2} \approx 5,3 \, \textbf{V}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir del primer experimento se ha determinado que la frecuencia umbral del metal es de $\mathbf{7,18 \cdot 10^{14} \, Hz}$, lo que define su función de trabajo. Al iluminar este mismo metal con una luz más energética (de mayor frecuencia), los electrones son emitidos con una mayor energía cinética, requiriéndose un potencial de frenado superior, de $\mathbf{5,3 \, V}$, para detenerlos completamente.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Cuestiones de Física Moderna}
+\label{sec:moderna2_2002_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2002_jun_ord}
+
+\begin{cajaenunciado}
+Se hacen girar partículas subatómicas en un acelerador de partículas y se observa que el tiempo de vida medio es $t_1 = 4,2 \times 10^{-8}\,\text{s}$. Por otra parte se sabe que el tiempo de vida medio de dichas partículas, en reposo, es $t_0 = 2,6 \times 10^{-8}\,\text{s}$. ¿A qué velocidad giran las partículas en el acelerador? Razona la respuesta.
+\textbf{Dato:} Velocidad de la luz en el vacío, $c=3\times10^8\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tiempo de vida medio medido en el laboratorio ($t_1$):} $t_1 = \Delta t = 4,2 \cdot 10^{-8} \, \text{s}$ (tiempo dilatado)
+    \item \textbf{Tiempo de vida medio propio ($t_0$):} $t_0 = \Delta t_0 = 2,6 \cdot 10^{-8} \, \text{s}$ (tiempo en reposo)
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3 \cdot 10^8 \, \text{m/s}$
+    \item \textbf{Incógnita:} Velocidad de las partículas ($v$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Dilatación del Tiempo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos sistemas de referencia. El sistema S' es un reloj que se mueve junto a una partícula subatómica, y mide su tiempo de vida propio $\Delta t_0$. Este sistema se mueve con una velocidad $v$ muy alta hacia la derecha. El sistema S es el laboratorio, que ve a la partícula moverse. Un reloj en el laboratorio S mide el tiempo de vida dilatado $\Delta t$. Mostrar que $\Delta t > \Delta t_0$. Incluir la fórmula de la dilatación del tiempo en el diagrama."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{dilatacion_tiempo.png}
+    }}
+    \caption{Visualización de la dilatación del tiempo para una partícula en movimiento.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Este fenómeno es una consecuencia directa de la \textbf{Teoría de la Relatividad Especial} de Einstein. Uno de sus postulados fundamentales es que la velocidad de la luz en el vacío es constante para todos los observadores inerciales. Esto conduce a que el tiempo no es absoluto.
+El fenómeno se conoce como \textbf{dilatación del tiempo}: el tiempo medido en un sistema de referencia en movimiento respecto a un observador ($\Delta t$) es siempre mayor que el tiempo medido en el sistema de referencia propio del suceso ($\Delta t_0$, o tiempo propio).
+
+La relación entre ambos tiempos viene dada por la fórmula:
+$$\Delta t = \frac{\Delta t_0}{\sqrt{1 - \frac{v^2}{c^2}}} = \gamma \Delta t_0$$
+Donde $\gamma = (1 - v^2/c^2)^{-1/2}$ es el factor de Lorentz. Como $v < c$, el denominador es menor que 1, y por tanto $\Delta t > \Delta t_0$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Partimos de la fórmula de la dilatación del tiempo, donde $t_1 = \Delta t$ y $t_0 = \Delta t_0$:
+$$t_1 = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+Nuestro objetivo es despejar la velocidad $v$.
+\begin{gather}
+    \sqrt{1 - \frac{v^2}{c^2}} = \frac{t_0}{t_1} \nonumber \\
+    1 - \frac{v^2}{c^2} = \left(\frac{t_0}{t_1}\right)^2 \nonumber \\
+    \frac{v^2}{c^2} = 1 - \left(\frac{t_0}{t_1}\right)^2 \nonumber \\
+    v = c \sqrt{1 - \left(\frac{t_0}{t_1}\right)^2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores dados en la ecuación final:
+\begin{gather}
+    v = (3 \cdot 10^8) \sqrt{1 - \left(\frac{2,6 \cdot 10^{-8}}{4,2 \cdot 10^{-8}}\right)^2} \approx (3 \cdot 10^8) \sqrt{1 - (0,619)^2} \\
+    v \approx (3 \cdot 10^8) \sqrt{1 - 0,383} = (3 \cdot 10^8) \sqrt{0,617} \approx (3 \cdot 10^8) \cdot 0,785 \\
+    v \approx 2,355 \cdot 10^8 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad a la que giran las partículas es $\boldsymbol{v \approx 2,355 \cdot 10^8 \, \textbf{m/s}}$, que es aproximadamente el 78,5\% de la velocidad de la luz.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La observación de que el tiempo de vida de las partículas en el acelerador es mayor que su tiempo de vida en reposo es una confirmación experimental de la dilatación del tiempo predicha por la Relatividad Especial. Para que el tiempo se "ralentice" por el factor observado, las partículas deben moverse a una velocidad relativista de $\mathbf{2,355 \cdot 10^8 \, m/s}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2002_jun_ord}
+
+\begin{cajaenunciado}
+Cuando un núcleo de ${}_{92}^{235}\text{U}$ captura un neutrón se produce un isótopo del Ba con número másico 141, un isótopo del Kr, cuyo numero atómico es 36 y tres neutrones. Se pide calcular el número atómico del isótopo del Ba y el número másico del isótopo del Kr.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de escribir y balancear una reacción nuclear de fisión.
+\begin{itemize}
+    \item \textbf{Núcleo inicial:} Uranio-235 (${}_{92}^{235}\text{U}$)
+    \item \textbf{Partícula capturada:} Neutrón (${}_{0}^{1}\text{n}$)
+    \item \textbf{Productos de la fisión:}
+        \begin{itemize}
+            \item Isótopo de Bario: ${}_{Z}^{141}\text{Ba}$
+            \item Isótopo de Kriptón: ${}_{36}^{A}\text{Kr}$
+            \item Tres neutrones: $3 \cdot {}_{0}^{1}\text{n}$
+        \end{itemize}
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Número atómico Z del Bario.
+            \item Número másico A del Kriptón.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Fisión del Uranio-235} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de una reacción de fisión nuclear. A la izquierda, un neutrón lento se aproxima a un gran núcleo de Uranio-235. En un paso intermedio, se muestra un núcleo excitado e inestable de Uranio-236. A la derecha, mostrar que este núcleo se ha dividido en dos núcleos más pequeños (productos de fisión), etiquetados como Bario-141 y Kriptón. Además, mostrar tres nuevos neutrones rápidos siendo emitidos por la reacción. Escribir la ecuación de la reacción nuclear completa debajo del diagrama."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fision_uranio.png}
+    }}
+    \caption{Esquema del proceso de fisión nuclear.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En cualquier reacción nuclear, se deben cumplir dos leyes de conservación fundamentales:
+\begin{enumerate}
+    \item \textbf{Conservación del número másico (A):} La suma de los números másicos (número total de protones y neutrones) de los reactivos debe ser igual a la suma de los números másicos de los productos.
+    \item \textbf{Conservación del número atómico (Z):} La suma de los números atómicos (número de protones, que determina la carga eléctrica) de los reactivos debe ser igual a la suma de los números atómicos de los productos.
+\end{enumerate}
+Aplicaremos estas dos leyes a la reacción nuclear dada para encontrar los valores desconocidos de A y Z.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La reacción nuclear se puede escribir como:
+$${}_{92}^{235}\text{U} + {}_{0}^{1}\text{n} \longrightarrow {}_{Z}^{141}\text{Ba} + {}_{36}^{A}\text{Kr} + 3 \cdot {}_{0}^{1}\text{n}$$
+
+\paragraph*{Balance de Números Másicos (A)}
+La suma de los superíndices a la izquierda debe ser igual a la suma de los superíndices a la derecha.
+$$235 + 1 = 141 + A + 3 \cdot 1$$
+$$236 = 141 + A + 3$$
+$$236 = 144 + A$$
+$$A = 236 - 144 = 92$$
+
+\paragraph*{Balance de Números Atómicos (Z)}
+La suma de los subíndices a la izquierda debe ser igual a la suma de los subíndices a la derecha.
+$$92 + 0 = Z + 36 + 3 \cdot 0$$
+$$92 = Z + 36$$
+$$Z = 92 - 36 = 56$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Los cálculos ya se han realizado en el paso anterior.
+\begin{cajaresultado}
+El número atómico del isótopo de Bario es $\boldsymbol{Z=56}$.
+El número másico del isótopo de Kriptón es $\boldsymbol{A=92}$.
+\end{cajaresultado}
+La reacción completa es:
+$${}_{92}^{235}\text{U} + {}_{0}^{1}\text{n} \longrightarrow {}_{56}^{141}\text{Ba} + {}_{36}^{92}\text{Kr} + 3 \cdot {}_{0}^{1}\text{n}$$
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando las leyes de conservación de los números másico y atómico a la reacción de fisión nuclear descrita, se ha determinado que el isótopo de Bario producido es el Bario-141 (${}_{56}^{141}\text{Ba}$) y el isótopo de Kriptón es el Kriptón-92 (${}_{36}^{92}\text{Kr}$). La liberación de más de un neutrón en la reacción es lo que permite la posibilidad de una reacción en cadena.
+\end{cajaconclusion}
+
+\newpage

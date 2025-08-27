@@ -1,0 +1,69 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath} % Para usar \vec
+\usetikzlibrary{arrows.meta, shapes.geometric, calc}
+
+\begin{document}
+
+% --- Definición de colores ---
+\colorlet{DarkRed}{red!60!black}
+\colorlet{DarkBlue}{blue!80!black}
+
+\begin{tikzpicture}[
+    % --- Estilos ---
+    axis/.style={-Latex, thick, color=black},
+    field_vector/.style={-{Stealth[length=3mm, width=2.5mm]}, color=DarkRed!80!black, line width=1.2pt},
+    total_vector/.style={-{Stealth[length=4mm, width=3.5mm]}, color=DarkRed, line width=1.8pt},
+    pos_vector/.style={-Stealth, color=DarkBlue, thick, dashed},
+    star_shape/.style={star, star points=7, star point ratio=0.7, draw=red!80!black, fill=red!40, minimum size=10pt},
+    point/.style={circle, draw=DarkBlue, fill=blue!30, minimum size=6pt, inner sep=0pt}
+]
+
+% --- Coordenadas ---
+\def\d{1.2}
+\coordinate (A) at (-3*\d, 0);
+\coordinate (B) at (3*\d, 0);
+\coordinate (P) at (0, 4*\d);
+\coordinate (O) at (0,0);
+
+% --- Ejes y Objetos ---
+\draw[axis] (-4.5*\d, 0) -- (4.5*\d, 0) node[below left] {$x$};
+\draw[axis] (0, -1.5*\d) -- (0, 5.2*\d) node[below left] {$y$};
+\node[star_shape, label=below:$A$] at (A) {};
+\node[star_shape, label=below:$B$] at (B) {};
+\node[point, label=above right:$P$] at (P) {};
+\node at (O) [cross, draw, minimum size=3pt, thick] {};
+
+% --- Etiquetas de distancia ---
+\draw[|<->|, thin] ($(A)+(0,-0.2)$) -- ($(O)+(0,-0.2)$) node[midway, below] {$3d$};
+\draw[|<->|, thin] ($(O)+(0,-0.2)$) -- ($(B)+(0,-0.2)$) node[midway, below] {$3d$};
+\draw[|<->|, thin] ($(O)+(0.2,0)$) -- ($(P)+(0.2,0)$) node[midway, right] {$4d$};
+
+% --- Vectores de Posición ---
+\draw[pos_vector] (A) -- (P) node[midway, above left, sloped, font=\small, color=black] {$\vec{r}_{AP}$};
+\draw[pos_vector] (B) -- (P) node[midway, above right, sloped, font=\small, color=black] {$\vec{r}_{BP}$};
+
+% --- Vectores de Campo y su Suma ---
+% 1. Definimos los factores de escala y proporción de masa
+\def\scaleFactor{0.3}
+\def\massRatio{0.6} % m_B / m_A
+
+% 2. Calculamos los vectores usando la sintaxis robusta
+\coordinate (vec_gA) at ($ \scaleFactor*(A) - \scaleFactor*(P) $);
+\coordinate (vec_gB) at ($ \massRatio*\scaleFactor*(B) - \massRatio*\scaleFactor*(P) $);
+
+% 3. Dibujamos los vectores de campo individuales desde P
+\draw[field_vector] (P) -- ++(vec_gA) node[anchor=east, xshift=-2pt] {$\vec{g}_A$};
+\draw[field_vector] (P) -- ++(vec_gB) node[anchor=west, xshift=2pt] {$\vec{g}_B$};
+
+% 4. Calculamos el punto final del vector suma y lo dibujamos
+\coordinate (P_total) at ($(P) + (vec_gA) + (vec_gB)$);
+\draw[total_vector] (P) -- (P_total) node[below right, yshift=-2pt] {$\vec{g}_T$};
+
+% 5. (Opcional) Dibujamos las líneas de ayuda del paralelogramo
+\draw[gray, dotted, thin] ($(P)+(vec_gA)$) -- (P_total);
+\draw[gray, dotted, thin] ($(P)+(vec_gB)$) -- (P_total);
+
+\end{tikzpicture}
+
+\end{document}

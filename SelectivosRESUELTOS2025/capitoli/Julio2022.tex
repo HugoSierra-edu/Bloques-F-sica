@@ -1,0 +1,1115 @@
+% !TEX root = ../main.tex
+% ======================================================================
+% CAPÍTULO: Examen Julio 2022 - Convocatoria Ordinaria
+% ======================================================================
+\chapter{Examen Julio 2022 - Convocatoria Ordinaria}
+\label{chap:2022_jul_ord}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2022_jul_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1}
+\label{subsec:C1_2022_jul_ord}
+
+\begin{cajaenunciado}
+El potencial gravitatorio en un punto situado a una distancia r del centro de un planeta es $V=-9,1\cdot10^{8}\,\text{J/kg}$. La intensidad de campo en la superficie del planeta es $g_{0}=26\,\text{m/s}^2$ y el radio del planeta es $R=7\cdot10^{4}\,\text{km}$. Deduce una relación que proporcione la distancia r en función de V, R y $g_0$ y calcula el valor de r.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Antes de operar, es imprescindible identificar los datos y convertirlos al Sistema Internacional de unidades (SI).
+\begin{itemize}
+    \item \textbf{Potencial gravitatorio en r (V):} $V = -9,1 \cdot 10^8 \, \text{J/kg}$
+    \item \textbf{Gravedad en superficie ($g_0$):} $g_0 = 26 \, \text{m/s}^2$
+    \item \textbf{Radio del planeta (R):} $R = 7 \cdot 10^4 \text{ km} = 7 \cdot 10^7 \text{ m}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Distancia al centro del planeta ($r$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+Se realiza un esquema para visualizar la situación física del problema.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Planeta y punto exterior} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico de radio R. En su superficie, se dibuja un vector de intensidad de campo gravitatorio g0 apuntando hacia el centro. En un punto exterior P, a una distancia r del centro, se indica el valor del potencial gravitatorio V."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{planeta_potencial.png}
+    }}
+    \caption{Representación del campo y potencial gravitatorio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando las definiciones de la \textbf{intensidad del campo gravitatorio ($g$)} y del \textbf{potencial gravitatorio ($V$)} generados por una masa puntual o esférica $M$ a una distancia $d$ de su centro.
+\begin{itemize}
+    \item \textbf{Intensidad del campo gravitatorio:} Es la fuerza por unidad de masa. Su módulo es $g = G \frac{M}{d^2}$. En la superficie del planeta ($d=R$), será $g_0 = G \frac{M}{R^2}$.
+    \item \textbf{Potencial gravitatorio:} Es la energía potencial por unidad de masa. Su expresión es $V = -G \frac{M}{d}$. En el punto P ($d=r$), será $V = -G \frac{M}{r}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El objetivo es encontrar una expresión para $r$ en función de los datos $V$, $R$ y $g_0$. Para ello, despejamos el producto $GM$ de ambas ecuaciones:
+\begin{gather}
+    g_0 = G \frac{M}{R^2} \implies GM = g_0 R^2 \label{eq:GM_g0} \\
+    V = -G \frac{M}{r} \implies GM = -V r \label{eq:GM_V}
+\end{gather}
+Igualando las expresiones \eqref{eq:GM_g0} y \eqref{eq:GM_V} obtenemos la relación buscada:
+\begin{gather}
+    g_0 R^2 = -V r \nonumber \\
+    r = -\frac{g_0 R^2}{V}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores numéricos de los datos en la expresión final obtenida.
+\begin{gather}
+    r = -\frac{(26\,\text{m/s}^2) \cdot (7 \cdot 10^7\,\text{m})^2}{-9,1 \cdot 10^8\,\text{J/kg}} = \frac{26 \cdot 49 \cdot 10^{14}}{9,1 \cdot 10^8} \approx 1,4 \cdot 10^8 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La distancia al centro del planeta es $\boldsymbol{r \approx 1,4 \cdot 10^8 \, \textbf{m}}$ (o 140.000 km).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Combinando las expresiones para el campo gravitatorio en la superficie y el potencial en un punto exterior, se ha deducido una relación entre ambas magnitudes y las distancias correspondientes. El resultado, $1,4 \cdot 10^8\,\text{m}$, es coherente, ya que es mayor que el radio del planeta ($7 \cdot 10^7\,\text{m}$), lo que confirma que el punto es exterior.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1}
+\label{subsec:P1_2022_jul_ord}
+
+\begin{cajaenunciado}
+Una sonda espacial de masa 800 kg se coloca en órbita circular de radio 6500 km alrededor de Venus. Si la energía cinética de la sonda es de $2\cdot10^{10}$ J:
+\begin{enumerate}
+    \item[a)] Deduce la expresión de la velocidad orbital de la sonda y calcula la masa de Venus. (1 punto)
+    \item[b)] Si Venus es un planeta esférico de densidad $\rho=5,24\,\text{g/cm}^3$, obtén la altura, en kilómetros, a la que hay que situar un cuerpo para que la fuerza de atracción gravitatoria que realiza Venus sobre este cuerpo sea un 36\% menor que la ejercida en su superficie. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la sonda (m):} $m = 800 \, \text{kg}$
+    \item \textbf{Radio orbital ($r_{orb}$):} $r_{orb} = 6500 \text{ km} = 6,5 \cdot 10^6 \text{ m}$
+    \item \textbf{Energía cinética de la sonda ($E_c$):} $E_c = 2 \cdot 10^{10} \, \text{J}$
+    \item \textbf{Densidad de Venus ($\rho$):} $\rho = 5,24 \text{ g/cm}^3 = 5,24 \frac{10^{-3}\text{kg}}{(10^{-2}\text{m})^3} = 5240 \, \text{kg/m}^3$
+    \item \textbf{Constante de Gravitación Universal (G):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Masa de Venus ($M_V$).
+        \item Altura ($h$) sobre la superficie para que la fuerza sea un 36\% menor.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (a): Sonda en Órbita} \vspace{0.5cm} \textit{Prompt para la imagen:} "Planeta Venus en el centro. Una sonda espacial en una órbita circular de radio $r_{orb}$. Dibujar el vector velocidad orbital ($v_{orb}$) tangente a la trayectoria y el vector Fuerza Gravitatoria (Fg) apuntando hacia el centro de Venus, que actúa como Fuerza Centrípeta (Fc)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{sonda_orbita_venus.png} 
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (b): Fuerza a una altura h} \vspace{0.5cm} \textit{Prompt para la imagen:} "Planeta Venus de radio $R_v$. Dibujar dos objetos idénticos. Uno en la superficie, con un vector Fuerza $F_{sup}$. Otro a una altura h sobre la superficie, con un vector Fuerza $F_h$ más corto, apuntando también al centro."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_altura_venus.png}
+    }}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Velocidad orbital y Masa de Venus}
+Para una órbita circular estable, la \textbf{Fuerza de Atracción Gravitatoria ($F_g$)} es la responsable del movimiento, actuando como \textbf{Fuerza Centrípeta ($F_c$)}. Además, se utiliza la definición de \textbf{Energía Cinética ($E_c$)}.
+\begin{itemize}
+    \item Ley de Gravitación Universal: $F_g = G \frac{M_V m}{r_{orb}^2}$.
+    \item Segunda Ley de Newton para MCU: $F_c = m \frac{v_{orb}^2}{r_{orb}}$.
+    \item Energía Cinética: $E_c = \frac{1}{2} m v_{orb}^2$.
+\end{itemize}
+\paragraph*{b) Altura para una fuerza determinada}
+Se utiliza la Ley de Gravitación Universal para relacionar la fuerza en la superficie y a una altura $h$. También se usa la definición de \textbf{densidad ($\rho$)} para un cuerpo esférico.
+\begin{itemize}
+    \item Fuerza en la superficie: $F_{sup} = G \frac{M_V m'}{R_V^2}$.
+    \item Fuerza a una altura $h$: $F_h = G \frac{M_V m'}{(R_V+h)^2}$.
+    \item Densidad: $\rho = \frac{M_V}{V_{esfera}} = \frac{M_V}{\frac{4}{3}\pi R_V^3}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Velocidad orbital y Masa de Venus}
+Primero, de la energía cinética despejamos la velocidad orbital:
+$E_c = \frac{1}{2} m v_{orb}^2 \implies v_{orb} = \sqrt{\frac{2 E_c}{m}}$.
+Ahora, igualamos $F_g = F_c$:
+\begin{gather}
+    G \frac{M_V m}{r_{orb}^2} = m \frac{v_{orb}^2}{r_{orb}} \implies G \frac{M_V}{r_{orb}} = v_{orb}^2
+\end{gather}
+Sustituyendo la velocidad y despejando la masa de Venus ($M_V$):
+\begin{gather}
+    G \frac{M_V}{r_{orb}} = \frac{2 E_c}{m} \implies M_V = \frac{2 E_c r_{orb}}{G m}
+\end{gather}
+\paragraph*{b) Altura h}
+La condición del enunciado es que $F_h$ es un 36\% menor que $F_{sup}$, lo que significa que $F_h = (1 - 0,36) F_{sup} = 0,64 F_{sup}$.
+\begin{gather}
+    G \frac{M_V m'}{(R_V+h)^2} = 0,64 \cdot G \frac{M_V m'}{R_V^2} \implies \frac{1}{(R_V+h)^2} = \frac{0,64}{R_V^2} \nonumber \\[8pt]
+    R_V^2 = 0,64 (R_V+h)^2 \implies R_V = \sqrt{0,64} (R_V+h) = 0,8 (R_V+h) \nonumber \\[8pt]
+    R_V = 0,8 R_V + 0,8 h \implies 0,2 R_V = 0,8 h \implies h = \frac{0,2}{0,8} R_V = \frac{1}{4} R_V
+\end{gather}
+Necesitamos el radio de Venus ($R_V$), que obtenemos de la fórmula de la densidad:
+\begin{gather}
+    \rho = \frac{M_V}{\frac{4}{3}\pi R_V^3} \implies R_V = \sqrt[3]{\frac{3 M_V}{4 \pi \rho}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la Masa de Venus}
+\begin{gather}
+    M_V = \frac{2 \cdot (2 \cdot 10^{10}\,\text{J}) \cdot (6,5 \cdot 10^6\,\text{m})}{(6,67 \cdot 10^{-11}\,\text{N}\text{m}^2/\text{kg}^2) \cdot (800\,\text{kg})} \approx 4,87 \cdot 10^{24} \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    La masa de Venus es $\boldsymbol{M_V \approx 4,87 \cdot 10^{24} \, \textbf{kg}}$.
+\end{cajaresultado}
+\paragraph*{b) Valor de la altura h}
+Primero calculamos el radio de Venus:
+\begin{gather}
+    R_V = \sqrt[3]{\frac{3 \cdot (4,87 \cdot 10^{24}\,\text{kg})}{4 \pi \cdot (5240\,\text{kg/m}^3)}} \approx 6,05 \cdot 10^6 \, \text{m}
+\end{gather}
+Ahora calculamos la altura $h$:
+\begin{gather}
+    h = \frac{1}{4} R_V = \frac{1}{4} (6,05 \cdot 10^6 \, \text{m}) = 1,5125 \cdot 10^6 \, \text{m} \approx 1513 \, \text{km}
+\end{gather}
+\begin{cajaresultado}
+    La altura a la que hay que situar el cuerpo es $\boldsymbol{h \approx 1513 \, \textbf{km}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) A partir de la energía cinética de la sonda y aplicando la dinámica del movimiento circular, se ha determinado que la masa de Venus es de $\mathbf{4,87 \cdot 10^{24} \, kg}$, un valor cercano al aceptado.
+
+b) Utilizando la masa calculada y la densidad, se obtuvo el radio de Venus. Posteriormente, se dedujo que para que la fuerza gravitatoria se reduzca a un 64\% de la superficial, el cuerpo debe situarse a una altura de $\mathbf{1513 \, km}$ sobre el planeta.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+% A INSERTAR EN \section{Bloque I: Interacción Gravitatoria}
+% ----------------------------------------------------------------------
+\subsection{Cuestión 2}
+\label{subsec:C2_2022_jul_ord}
+
+\begin{cajaenunciado}
+Deduce la relación entre la energía mecánica de un satélite y el radio de su órbita circular alrededor de un planeta. Dos satélites, A y B, de igual masa siguen órbitas circulares, uno con energía mecánica $E_A = -4\cdot10^{10}\,\text{J}$ y otro con $E_B = -2\cdot10^{10}\,\text{J}$. Razona cuál de los dos satélites tiene mayor energía cinética y cuál se encuentra más lejos del planeta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de los satélites:} $m_A = m_B = m$.
+    \item \textbf{Energía mecánica del satélite A ($E_A$):} $E_A = -4 \cdot 10^{10}\,\text{J}$.
+    \item \textbf{Energía mecánica del satélite B ($E_B$):} $E_B = -2 \cdot 10^{10}\,\text{J}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Relación entre energía mecánica ($E_M$) y radio ($r$).
+        \item Satélite con mayor energía cinética ($E_c$).
+        \item Satélite con mayor radio orbital (más lejos).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Órbitas de los satélites} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta central. Dos satélites, A y B, en dos órbitas circulares concéntricas distintas. La órbita del satélite B tiene un radio visiblemente mayor que la del satélite A. Etiquetar cada satélite y su radio orbital (rA y rB)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbitas_satelites_AB.png}
+    }}
+    \caption{Representación de dos satélites en órbitas de distinto radio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para deducir la relación pedida se parte de la dinámica del movimiento circular y de las definiciones de las energías.
+\begin{itemize}
+    \item \textbf{Dinámica Orbital:} Para una órbita circular, la fuerza de atracción gravitatoria ($F_g$) actúa como fuerza centrípeta ($F_c$).
+    \item \textbf{Energía Cinética:} $E_c = \frac{1}{2}mv^2$.
+    \item \textbf{Energía Potencial Gravitatoria:} $E_p = -G\frac{Mm}{r}$.
+    \item \textbf{Energía Mecánica Total:} Es la suma de la energía cinética y la potencial, $E_M = E_c + E_p$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta para un satélite de masa $m$ en una órbita de radio $r$ alrededor de un planeta de masa $M$:
+\begin{gather}
+    F_g = F_c \implies G\frac{Mm}{r^2} = m\frac{v^2}{r} \implies mv^2 = G\frac{Mm}{r}
+\end{gather}
+La energía cinética es $E_c = \frac{1}{2}mv^2$. Sustituyendo la expresión anterior:
+\begin{gather}
+    E_c = \frac{1}{2} G\frac{Mm}{r}
+\end{gather}
+La energía mecánica total es la suma de la cinética y la potencial:
+\begin{gather}
+    E_M = E_c + E_p = \frac{1}{2} G\frac{Mm}{r} + \left(-G\frac{Mm}{r}\right) = -\frac{1}{2} G\frac{Mm}{r}
+\end{gather}
+Esta es la relación buscada entre la energía mecánica y el radio orbital. De ella se deducen dos importantes relaciones, conocidas como el \textbf{Teorema del Virial} para órbitas circulares: $E_c = -E_M$ y $E_p = 2E_M$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Comparación de Energías Cinéticas}
+Usando la relación $E_c = -E_M$:
+\begin{itemize}
+    \item $E_{c,A} = -E_A = -(-4\cdot10^{10}\,\text{J}) = 4\cdot10^{10}\,\text{J}$.
+    \item $E_{c,B} = -E_B = -(-2\cdot10^{10}\,\text{J}) = 2\cdot10^{10}\,\text{J}$.
+\end{itemize}
+Como $4\cdot10^{10} > 2\cdot10^{10}$, el satélite A tiene mayor energía cinética.
+\begin{cajaresultado}
+    El satélite con mayor energía cinética es el \textbf{A}.
+\end{cajaresultado}
+\paragraph*{Comparación de Distancias}
+Usando la relación $E_M = -\frac{GMm}{2r}$, despejamos el radio: $r = -\frac{GMm}{2E_M}$.
+Dado que G, M y m son constantes positivas, el radio $r$ es inversamente proporcional a $-E_M$. Esto significa que a mayor energía mecánica (menos negativa), mayor es el radio.
+Tenemos que $E_B > E_A$ (ya que $-2\cdot10^{10} > -4\cdot10^{10}$). Por lo tanto, $r_B > r_A$.
+\begin{cajaresultado}
+    El satélite que se encuentra más lejos del planeta es el \textbf{B}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La energía mecánica de un satélite en órbita circular es $E_M = -E_c = E_p/2$. A partir de estas relaciones, se concluye que el satélite A, con la energía mecánica más negativa, posee mayor energía cinética (es más rápido) y se encuentra en una órbita más cercana. Por el contrario, el satélite B, con mayor energía mecánica (menos negativa), tiene menor energía cinética y orbita a una mayor distancia del planeta.
+\end{cajaconclusion}
+
+\newpage
+
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Interacción Electromagnética}
+\label{sec:em_2022_jul_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 2}
+\label{subsec:P2_2022_jul_ord}
+
+\begin{cajaenunciado}
+Una carga puntual $q_1 = -5\,\mu\text{C}$ está situada en el punto $A(3, -4)\,\text{m}$ y otra segunda, $q_2 = 4\,\mu\text{C}$, en el punto $B(0, -5)\,\text{m}$.
+\begin{enumerate}
+    \item[a)] Calcula los vectores campo eléctrico debidos a cada carga y el campo eléctrico total en el origen de coordenadas O(0,0) m. Representa los tres vectores. (1 punto)
+    \item[b)] Calcula el potencial eléctrico total producido por las dos cargas en el origen de coordenadas. Calcula el trabajo necesario para trasladar una carga $Q = 1\,\mu\text{C}$ desde el infinito hasta dicho punto considerando nulo el potencial en el infinito. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = -5\,\mu\text{C} = -5 \cdot 10^{-6}\,\text{C}$
+    \item \textbf{Posición de $q_1$ (A):} $\vec{r}_A = (3, -4)\,\text{m} = 3\vec{i} - 4\vec{j}\,\text{m}$
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = 4\,\mu\text{C} = 4 \cdot 10^{-6}\,\text{C}$
+    \item \textbf{Posición de $q_2$ (B):} $\vec{r}_B = (0, -5)\,\text{m} = -5\vec{j}\,\text{m}$
+    \item \textbf{Carga de prueba (Q):} $Q = 1\,\mu\text{C} = 1 \cdot 10^{-6}\,\text{C}$
+    \item \textbf{Punto de cálculo (O):} Origen de coordenadas, $\vec{r}_O = (0,0)\,\text{m}$
+    \item \textbf{Constante de Coulomb (k):} $k = 9 \cdot 10^9\,\text{N}\text{m}^2/\text{C}^2$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Campo eléctrico de $q_1$ en O ($\vec{E}_1$).
+        \item Campo eléctrico de $q_2$ en O ($\vec{E}_2$).
+        \item Campo eléctrico total en O ($\vec{E}_{total}$).
+        \item Potencial total en O ($V_{total}$).
+        \item Trabajo para traer Q desde $\infty$ hasta O ($W_{\infty \to O}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Apartado (a): Vectores Campo Eléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de coordenadas cartesianas XY. Situar la carga negativa q1 en el punto A(3,-4) y la carga positiva q2 en el punto B(0,-5). En el origen O(0,0), dibujar el vector campo eléctrico E1, que apunta desde O hacia A (porque q1 es negativa). Dibujar el vector campo eléctrico E2, que apunta desde B hacia O y continúa hacia arriba en el eje Y (porque q2 es positiva). Dibujar el vector resultante $E_{total}$ como la suma vectorial de E1 y E2."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campos_electricos_cargas.png}
+    } }
+    \caption{Representación de los vectores campo eléctrico en el origen.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo Eléctrico}
+Se aplica la definición del \textbf{campo eléctrico} creado por una carga puntual $q$ en un punto P, que viene dado por la Ley de Coulomb: $\vec{E} = k \frac{q}{r^2} \hat{u}_r$, donde $r$ es la distancia de la carga al punto y $\hat{u}_r$ es el vector unitario que apunta desde la carga hacia el punto. El campo total es la suma vectorial de los campos individuales, según el \textbf{Principio de Superposición}.
+\paragraph*{b) Potencial Eléctrico y Trabajo}
+El \textbf{potencial eléctrico} creado por una carga puntual es una magnitud escalar $V = k \frac{q}{r}$. El potencial total es la suma algebraica de los potenciales individuales (Principio de Superposición). El \textbf{trabajo} realizado por el campo para mover una carga $Q$ entre dos puntos A y B es $W_{A \to B} = Q (V_A - V_B)$. El trabajo realizado por un agente externo es el opuesto: $W_{ext} = -W_{campo}$. Para traer una carga desde el infinito (donde $V_\infty = 0$) hasta un punto O, el trabajo externo es $W_{\infty \to O} = Q (V_O - V_\infty) = Q V_O$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Vectores Campo Eléctrico}
+El vector que va desde la carga $q_i$ al origen es $\vec{r}_{i \to O} = \vec{r}_O - \vec{r}_i = -\vec{r}_i$.
+\begin{gather}
+    \vec{E}_1 = k \frac{q_1}{|\vec{r}_{A \to O}|^3} \vec{r}_{A \to O} = k \frac{q_1}{|-\vec{r}_A|^3} (-\vec{r}_A) = -k \frac{q_1}{r_A^3} \vec{r}_A \\
+    \vec{E}_2 = k \frac{q_2}{|\vec{r}_{B \to O}|^3} \vec{r}_{B \to O} = k \frac{q_2}{|-\vec{r}_B|^3} (-\vec{r}_B) = -k \frac{q_2}{r_B^3} \vec{r}_B \\
+    \vec{E}_{total} = \vec{E}_1 + \vec{E}_2
+\end{gather}
+\paragraph*{b) Potencial y Trabajo}
+\begin{gather}
+    V_{total} = V_1 + V_2 = k \frac{q_1}{r_A} + k \frac{q_2}{r_B} \\
+    W_{\infty \to O} = Q \cdot V_{total}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Cálculo de los vectores}
+Calculamos distancias y vectores posición:
+\begin{itemize}
+    \item $\vec{r}_A = 3\vec{i} - 4\vec{j}\,\text{m} \implies r_A = \sqrt{3^2 + (-4)^2} = 5\,\text{m}$
+    \item $\vec{r}_B = -5\vec{j}\,\text{m} \implies r_B = \sqrt{0^2 + (-5)^2} = 5\,\text{m}$
+\end{itemize}
+Sustituimos para $\vec{E}_1$ y $\vec{E}_2$:
+\begin{gather}
+    \vec{E}_1 = -(9\cdot10^9) \frac{-5\cdot10^{-6}}{5^3} (3\vec{i} - 4\vec{j}) = 360 (3\vec{i} - 4\vec{j}) = 1080\vec{i} - 1440\vec{j} \, \text{N/C} \\
+    \vec{E}_2 = -(9\cdot10^9) \frac{4\cdot10^{-6}}{5^3} (-5\vec{j}) = 1440\vec{j} \, \text{N/C}
+\end{gather}
+El campo total es:
+\begin{gather}
+    \vec{E}_{total} = (1080\vec{i} - 1440\vec{j}) + (1440\vec{j}) = 1080\vec{i} \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    Los campos eléctricos son:
+    $\boldsymbol{\vec{E}_1 = (1080\vec{i} - 1440\vec{j}) \, \textbf{N/C}}$,
+    $\boldsymbol{\vec{E}_2 = 1440\vec{j} \, \textbf{N/C}}$,
+    y el campo total es $\boldsymbol{\vec{E}_{total} = 1080\vec{i} \, \textbf{N/C}}$.
+\end{cajaresultado}
+\paragraph*{b) Cálculo del potencial y trabajo}
+\begin{gather}
+    V_{total} = (9\cdot10^9) \frac{-5\cdot10^{-6}}{5} + (9\cdot10^9) \frac{4\cdot10^{-6}}{5} = -9000 + 7200 = -1800 \, \text{V} \\
+    W_{\infty \to O} = (1\cdot10^{-6}\,\text{C}) \cdot (-1800\,\text{V}) = -1,8 \cdot 10^{-3} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    El potencial total en el origen es $\boldsymbol{V_{total} = -1800 \, \textbf{V}}$ y el trabajo necesario para traer la carga Q es $\boldsymbol{W = -1,8 \cdot 10^{-3} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) Aplicando el principio de superposición, se han calculado los campos vectoriales generados por cada carga en el origen. El campo total, $\mathbf{1080\vec{i} \, N/C}$, apunta en la dirección del eje X positivo debido a una cancelación de las componentes verticales y a la atracción de la carga negativa $q_1$.
+
+b) El potencial en el origen es negativo ($\mathbf{-1800 \, V}$) porque el efecto de la carga negativa, al estar a la misma distancia, es mayor en magnitud. El trabajo negativo ($\mathbf{-1,8 \cdot 10^{-3} \, J}$) significa que es el propio campo eléctrico el que realiza trabajo para traer la carga positiva Q desde el infinito, lo cual es coherente con un potencial neto negativo.
+\end{cajaconclusion}
+
+\newpage
+
+
+
+% ----------------------------------------------------------------------
+% A INSERTAR EN \section{Bloque II: Interacción Electromagnética}
+% ----------------------------------------------------------------------
+\subsection{Cuestión 3}
+\label{subsec:C3_2022_jul_ord}
+
+\begin{cajaenunciado}
+Una carga de $3\,\mu\text{C}$ entra con velocidad $\vec{v}=10^4\vec{i}\,\text{m/s}$ en una región del espacio en la que existe un campo eléctrico $\vec{E}=10^4\vec{j}\,\text{N/C}$ y un campo magnético $\vec{B}=(\vec{i}+\vec{k})\,\text{T}$. Determina el valor de las fuerzas eléctrica, magnética y total que actúan sobre la carga.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga (q):} $q = 3\,\mu\text{C} = 3 \cdot 10^{-6}\,\text{C}$.
+    \item \textbf{Velocidad ($\vec{v}$):} $\vec{v} = 10^4 \vec{i} \, \text{m/s}$.
+    \item \textbf{Campo Eléctrico ($\vec{E}$):} $\vec{E} = 10^4 \vec{j} \, \text{N/C}$.
+    \item \textbf{Campo Magnético ($\vec{B}$):} $\vec{B} = (\vec{i} + \vec{k}) \, \text{T} = (1\vec{i} + 0\vec{j} + 1\vec{k}) \, \text{T}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Fuerza eléctrica ($\vec{F}_e$).
+        \item Fuerza magnética ($\vec{F}_m$).
+        \item Fuerza total ($\vec{F}_{total}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fuerzas sobre la carga} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de coordenadas 3D (X, Y, Z). Un punto de carga positiva q en el origen. Dibujar el vector velocidad v a lo largo del eje +X. Dibujar el vector campo eléctrico E a lo largo del eje +Y. Dibujar el vector campo magnético B en el plano XZ, con componentes en +X y +Z. A partir de la carga, dibujar el vector Fuerza eléctrica Fe en la misma dirección que E (eje +Y). Dibujar el vector Fuerza magnética Fm apuntando en la dirección del eje -Y. Mostrar que Fe y Fm son opuestos."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_lorentz_3d.png}
+    }}
+    \caption{Vectores de campo y fuerza actuando sobre la carga móvil.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza total que actúa sobre una carga en una región con campos eléctrico y magnético viene dada por la \textbf{Ley de Lorentz}, que es la suma de la fuerza eléctrica y la fuerza magnética.
+\begin{itemize}
+    \item \textbf{Fuerza Eléctrica:} $\vec{F}_e = q\vec{E}$. Esta fuerza tiene la misma dirección y sentido que el campo eléctrico si la carga es positiva.
+    \item \textbf{Fuerza Magnética:} $\vec{F}_m = q(\vec{v} \times \vec{B})$. Esta fuerza es perpendicular tanto a la velocidad como al campo magnético, y su dirección se determina por la regla de la mano derecha.
+    \item \textbf{Fuerza Total de Lorentz:} $\vec{F}_{total} = \vec{F}_e + \vec{F}_m = q(\vec{E} + \vec{v} \times \vec{B})$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Las expresiones de las fuerzas ya están en su forma simbólica final y listas para la sustitución. El único cálculo simbólico intermedio es el producto vectorial:
+\begin{gather}
+    \vec{v} \times \vec{B} = 
+    \begin{vmatrix}
+        \vec{i} & \vec{j} & \vec{k} \\
+        v_x & v_y & v_z \\
+        B_x & B_y & B_z
+    \end{vmatrix}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Fuerza Eléctrica}
+\begin{gather}
+    \vec{F}_e = q\vec{E} = (3 \cdot 10^{-6}\,\text{C}) \cdot (10^4 \vec{j}\,\text{N/C}) = 0,03 \vec{j} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza eléctrica es $\boldsymbol{\vec{F}_e = 0,03 \vec{j} \, \textbf{N}}$.
+\end{cajaresultado}
+\paragraph*{Fuerza Magnética}
+Primero calculamos el producto vectorial:
+\begin{gather}
+    \vec{v} \times \vec{B} = 
+    \begin{vmatrix}
+        \vec{i} & \vec{j} & \vec{k} \\
+        10^4 & 0 & 0 \\
+        1 & 0 & 1
+    \end{vmatrix}
+    = \vec{i}(0-0) - \vec{j}(10^4 - 0) + \vec{k}(0-0) = -10^4 \vec{j} \, (\text{m/s})\cdot\text{T}
+\end{gather}
+Ahora multiplicamos por la carga:
+\begin{gather}
+    \vec{F}_m = q(\vec{v} \times \vec{B}) = (3 \cdot 10^{-6}\,\text{C}) \cdot (-10^4 \vec{j}) = -0,03 \vec{j} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza magnética es $\boldsymbol{\vec{F}_m = -0,03 \vec{j} \, \textbf{N}}$.
+\end{cajaresultado}
+\paragraph*{Fuerza Total}
+\begin{gather}
+    \vec{F}_{total} = \vec{F}_e + \vec{F}_m = (0,03 \vec{j}) + (-0,03 \vec{j}) = \vec{0} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza total sobre la carga es $\boldsymbol{\vec{F}_{total} = \vec{0} \, \textbf{N}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza eléctrica actúa en la dirección del campo $\vec{E}$, mientras que la fuerza magnética, resultado del producto vectorial $\vec{v} \times \vec{B}$, actúa en la dirección opuesta. Casualmente, en este caso ambas fuerzas tienen el mismo módulo ($0,03\,\text{N}$) pero sentidos opuestos, por lo que se anulan mutuamente. La fuerza neta sobre la partícula es cero, lo que implica que continuará su movimiento con velocidad constante (MRU), sin desviarse. Esta configuración de campos se conoce como \textbf{selector de velocidades}.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 4}
+\label{subsec:C4_2022_jul_ord}
+
+\begin{cajaenunciado}
+El circuito de la figura está formado por una barra metálica que desliza sobre un conductor en forma de U. Sobre dicho circuito actúa un campo magnético perpendicular al plano xy, como aparece en la figura. Razona por qué se genera una corriente inducida en el circuito y cuál es su sentido (indícalo claramente con un dibujo). Escribe la ley física en la que te basas para responder, indicando las magnitudes que aparecen en ella.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Sistema:} Una barra conductora de longitud $L$ se mueve con velocidad $\vec{v}$ sobre unos raíles en forma de U.
+    \item \textbf{Campo Magnético ($\vec{B}$):} Uniforme, constante y perpendicular al plano del circuito, con sentido entrante (hacia $-z$).
+    \item \textbf{Movimiento:} La barra se desplaza hacia la derecha (sentido $+x$).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Justificación de la corriente inducida.
+        \item Sentido de la corriente inducida.
+        \item Ley física fundamental.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Inducción electromagnética} \vspace{0.5cm} \textit{Prompt para la imagen:} "Replicar la figura del enunciado. Unos raíles en forma de U en el plano XY. Un campo magnético B uniforme y entrante (representado por cruces). Una barra conductora vertical sobre los raíles se mueve hacia la derecha con un vector velocidad v. Sobre la barra, dibujar una flecha curvada que indique el sentido de la corriente inducida ($I_{inducida}$$) en sentido antihorario. Etiquetar claramente todos los elementos."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{induccion_barra_movil.png}
+    }
+    }
+    \caption{Sentido de la corriente inducida en el circuito.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se explica mediante la \textbf{Ley de Faraday-Lenz de la inducción electromagnética}.
+
+\paragraph*{Ley de Faraday-Lenz}
+Esta ley establece que una variación del flujo magnético ($\Phi_B$) a través de una superficie delimitada por un circuito conductor induce una fuerza electromotriz (fem, $\varepsilon$) en dicho circuito. La fem es la causa de la corriente inducida. Matemáticamente, se expresa como:
+$$ \varepsilon = - \frac{d\Phi_B}{dt} $$
+Las magnitudes que aparecen son:
+\begin{itemize}
+    \item $\varepsilon$: \textbf{Fuerza electromotriz inducida (fem)}, medida en voltios (V). Es el trabajo por unidad de carga para mover las cargas a lo largo del circuito.
+    \item $\Phi_B$: \textbf{Flujo magnético}, medido en webers (Wb). Se define como $\Phi_B = \int \vec{B} \cdot d\vec{S}$. Para un campo uniforme y una superficie plana, $\Phi_B = \vec{B} \cdot \vec{S} = B S \cos\theta$.
+    \item $\frac{d\Phi_B}{dt}$: \textbf{Tasa de variación del flujo magnético} con el tiempo.
+    \item El signo negativo es una manifestación de la \textbf{Ley de Lenz}, que establece que el sentido de la corriente inducida es tal que se opone a la variación del flujo magnético que la produce.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Justificación de la corriente inducida}
+El flujo magnético que atraviesa la espira formada por los raíles y la barra es $\Phi_B = B \cdot S$, ya que $\vec{B}$ y el vector superficie $\vec{S}$ son paralelos.
+El área de la espira es $S = L \cdot x$, donde $x$ es la posición de la barra.
+Al moverse la barra, la posición $x$ cambia con el tiempo, $x=vt$. Por tanto, el área $S(t) = Lvt$ también cambia.
+Esta variación del área provoca una variación del flujo magnético:
+\begin{gather}
+    \Phi_B(t) = B \cdot (L v t)
+\end{gather}
+Según la Ley de Faraday, si hay una variación del flujo en el tiempo, se induce una fem:
+\begin{gather}
+    \varepsilon = - \frac{d}{dt} (B L v t) = -BLv
+\end{gather}
+Como la fem es distinta de cero y el circuito es cerrado, se establece una corriente inducida $I = \varepsilon/R$.
+
+\paragraph*{b) Sentido de la corriente (Ley de Lenz)}
+\begin{enumerate}
+    \item \textbf{Flujo inicial:} El flujo magnético a través de la espira es \textbf{entrante} al papel.
+    \item \textbf{Variación del flujo:} Al moverse la barra hacia la derecha, el área de la espira aumenta. Como el campo $B$ es constante, el flujo magnético entrante \textbf{aumenta}.
+    \item \textbf{Oposición a la variación:} La Ley de Lenz dice que el sistema reacciona para oponerse a este aumento de flujo entrante. Para ello, la corriente inducida debe crear su propio campo magnético ($\vec{B}_{inducido}$) en sentido \textbf{saliente}.
+    \item \textbf{Sentido de la corriente:} Aplicando la regla de la mano derecha, para que una espira genere un campo magnético saliente en su interior, la corriente debe circular en sentido \textbf{antihorario}.
+\end{enumerate}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Este problema es cualitativo y no requiere cálculos numéricos. Los resultados se han razonado en los apartados anteriores.
+\begin{cajaresultado}
+    Se genera una corriente inducida porque el \textbf{flujo magnético a través del área del circuito varía} con el tiempo al moverse la barra.
+\end{cajaresultado}
+\begin{cajaresultado}
+    El sentido de la corriente inducida es \textbf{antihorario}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En resumen, el movimiento de la barra conductora altera el área del circuito, lo que causa una variación en el flujo magnético que lo atraviesa. De acuerdo con la Ley de Faraday-Lenz, esta variación induce una fem y una corriente. El sentido antihorario de esta corriente genera un campo magnético inducido que se opone al aumento del flujo magnético original, cumpliendo así con el principio de conservación de la energía.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Ondas y Óptica Geométrica}
+\label{sec:ondopt_2022_jul_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 3}
+\label{subsec:P3_2022_jul_ord}
+
+\begin{cajaenunciado}
+A partir de un objeto de 15 cm se desea obtener una imagen invertida de tamaño 0,75 m sobre una pantalla. Para ello se dispone de una lente convergente de 4 dioptrías.
+\begin{enumerate}
+    \item[a)] ¿Dónde hay que colocar el objeto respecto a la lente? ¿Dónde hay que colocar la pantalla? Realiza un trazado de rayos esquemático que represente lo calculado (1 punto).
+    \item[b)] Supongamos que se rompe la lente anterior y la cambiamos por otra cuya distancia focal imagen es la mitad que la del apartado a). ¿Cuál es la potencia de la nueva lente? Si la distancia entre el objeto y la pantalla es 1,0 m, determina la menor distancia a la que hay que situar la lente del objeto para obtener una imagen enfocada en la pantalla. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Apartado (a):}
+    \begin{itemize}
+        \item Tamaño del objeto ($y$): $15\,\text{cm} = 0,15\,\text{m}$.
+        \item Tamaño de la imagen ($y'$): $-0,75\,\text{m}$ (negativo por ser invertida).
+        \item Potencia de la lente ($P$): $4\,\text{D}$.
+        \item \textbf{Incógnitas:} Posición del objeto ($s$), posición de la pantalla ($s'$).
+    \end{itemize}
+    \item \textbf{Apartado (b):}
+    \begin{itemize}
+        \item Distancia objeto-pantalla ($D$): $D = |s' - s| = 1,0\,\text{m}$.
+        \item Nueva distancia focal ($f'_{new}$): $f'_{new} = f'/2$.
+        \item \textbf{Incógnitas:} Nueva potencia ($P_{new}$), menor distancia objeto-lente ($s_{new}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Apartado (a): Trazado de Rayos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de óptica de una lente delgada convergente. El eje óptico horizontal. La lente vertical en el centro. Focos F (izquierda) y F' (derecha) a la misma distancia de la lente. Un objeto (flecha vertical hacia arriba) situado a la izquierda de F. Trazar tres rayos principales: 1) Rayo paralelo al eje que sale pasando por F'. 2) Rayo que pasa por el centro de la lente y no se desvía. 3) Rayo que pasa por F y sale paralelo al eje. Los tres rayos convergen en un punto para formar una imagen real, invertida y más grande, a la derecha de F'."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_convergente_trazado.png}
+    }}
+    \caption{Trazado de rayos para la formación de una imagen real e invertida.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve utilizando las ecuaciones fundamentales de las lentes delgadas (convenio de signos DIN):
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss de las lentes delgadas:} Relaciona las posiciones del objeto ($s$) y de la imagen ($s'$) con la distancia focal imagen ($f'$): $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$.
+    \item \textbf{Aumento lateral ($A_L$):} Relaciona los tamaños y posiciones de la imagen y el objeto: $A_L = \frac{y'}{y} = \frac{s'}{s}$.
+    \item \textbf{Potencia de una lente ($P$):} Es la inversa de la distancia focal imagen, medida en metros: $P = \frac{1}{f'}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Posiciones de objeto y pantalla}
+Calculamos la distancia focal a partir de la potencia: $f' = 1/P$.
+Calculamos el aumento lateral: $A_L = y'/y$.
+De la ecuación del aumento, despejamos $s'$ en función de $s$: $s' = A_L \cdot s$.
+Sustituimos esta relación en la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{A_L s} - \frac{1}{s} = \frac{1}{f'} \implies \frac{1-A_L}{A_L s} = \frac{1}{f'} \implies s = \frac{(1-A_L)f'}{A_L}
+\end{gather}
+Una vez obtenido $s$, calculamos $s'$ con $s' = A_L \cdot s$.
+
+\paragraph*{b) Nueva lente y posiciones}
+La nueva potencia es $P_{new} = 1/f'_{new}$.
+La distancia entre objeto y pantalla es $D = s' - s = 1.0$ m (ya que la imagen es real, $s'>0$, y el objeto es real, $s<0$, pero la distancia es la suma de los valores absolutos, y como $s$ es negativo, es $s' - s$).
+De aquí, $s' = D + s$. Sustituimos en la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{D+s} - \frac{1}{s} = \frac{1}{f'_{new}} \implies \frac{s - (D+s)}{s(D+s)} = \frac{1}{f'_{new}} \implies \frac{-D}{sD+s^2} = \frac{1}{f'_{new}} \nonumber \\
+    s^2 + Ds + Df'_{new} = 0
+\end{gather}
+Esta es una ecuación de segundo grado para $s$. Las soluciones son $s = \frac{-D \pm \sqrt{D^2 - 4Df'_{new}}}{2}$. La menor distancia pedida corresponderá al valor de $s$ de mayor magnitud (más negativo).
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Cálculo de s y s'}
+\begin{gather}
+    f' = \frac{1}{4\,\text{D}} = 0,25\,\text{m} \\
+    A_L = \frac{-0,75\,\text{m}}{0,15\,\text{m}} = -5
+\end{gather}
+Sustituimos para encontrar $s$:
+\begin{gather}
+    s = \frac{(1 - (-5)) \cdot 0,25}{-5} = \frac{6 \cdot 0,25}{-5} = -0,3\,\text{m}
+\end{gather}
+Y ahora $s'$:
+\begin{gather}
+    s' = A_L \cdot s = -5 \cdot (-0,3\,\text{m}) = 1,5\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+    El objeto debe colocarse a $\boldsymbol{30\,\textbf{cm}}$ a la izquierda de la lente, y la pantalla a $\boldsymbol{1,5\,\textbf{m}}$ a la derecha de la lente.
+\end{cajaresultado}
+
+\paragraph*{b) Nueva potencia y menor distancia}
+La focal de la lente original era $f' = 0,25\,\text{m}$. La nueva es:
+\begin{gather}
+    f'_{new} = \frac{f'}{2} = \frac{0,25\,\text{m}}{2} = 0,125\,\text{m}
+\end{gather}
+La nueva potencia es:
+\begin{gather}
+    P_{new} = \frac{1}{0,125\,\text{m}} = 8\,\text{D}
+\end{gather}
+Resolvemos la ecuación de segundo grado para $s$ con $D=1,0\,\text{m}$ y $f'_{new}=0,125\,\text{m}$:
+\begin{gather}
+    s^2 + (1,0)s + (1,0)(0,125) = 0 \implies s^2 + s + 0,125 = 0 \nonumber \\
+    s = \frac{-1 \pm \sqrt{1^2 - 4(1)(0,125)}}{2} = \frac{-1 \pm \sqrt{1 - 0,5}}{2} = \frac{-1 \pm \sqrt{0,5}}{2} \nonumber \\
+    s_1 = \frac{-1 + 0,707}{2} = -0,1465\,\text{m} \quad ; \quad s_2 = \frac{-1 - 0,707}{2} = -0,8535\,\text{m}
+\end{gather}
+La menor distancia al objeto es el valor de $s$ con menor valor absoluto, es decir, $-0,1465\,\text{m}$.
+\begin{cajaresultado}
+    La potencia de la nueva lente es $\boldsymbol{P_{new} = 8\,\textbf{D}}$. La menor distancia a la que hay que situar la lente del objeto es $\boldsymbol{|s| \approx 14,7\,\textbf{cm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) Para obtener una imagen real, invertida y 5 veces mayor con una lente de 4 dioptrías, se ha calculado que el objeto debe situarse a 30 cm de la lente y la pantalla a 1.5 m. El trazado de rayos confirma esta configuración.
+
+b) Al usar una lente con la mitad de focal (y por tanto, el doble de potencia, 8 D), existen dos posiciones para la lente entre el objeto y la pantalla (separados 1 m) que producen una imagen nítida. La menor distancia de la lente al objeto para lograrlo es de aproximadamente 14.7 cm.
+\end{cajaconclusion}
+
+\newpage
+% ----------------------------------------------------------------------
+% A INSERTAR EN \section{Bloque III: Ondas y Óptica Geométrica}
+% ----------------------------------------------------------------------
+\subsection{Cuestión 5}
+\label{subsec:C5_2022_jul_ord}
+
+\begin{cajaenunciado}
+Una onda trasversal en una cuerda viene descrita por la función $y(x,t)=a\sin(2\pi bt-cx)$. ¿Qué magnitudes físicas representan a, b y c? ¿Cuáles son sus unidades en el Sistema Internacional? ¿Qué información aporta sobre la onda el signo negativo de la expresión? ¿Qué magnitud física representa el cociente $2\pi b/c$?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ecuación de onda:} $y(x,t)=a\sin(2\pi bt-cx)$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Significado físico y unidades de $a$, $b$ y $c$.
+        \item Interpretación del signo negativo.
+        \item Significado físico del cociente $2\pi b/c$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Onda Transversal} \vspace{0.5cm} \textit{Prompt para la imagen:} "Gráfico de una onda sinusoidal transversal en un instante t=0. El eje vertical es la elongación 'y', el eje horizontal es la posición 'x'. La onda debe mostrar varios ciclos. Etiquetar la Amplitud (A) como la altura máxima de la cresta, y la Longitud de Onda ($\lambda$) como la distancia horizontal entre dos crestas consecutivas. Un vector de velocidad de propagación (v) debe apuntar hacia la derecha, en el sentido +x."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_transversal.png}
+    }}
+    \caption{Parámetros de una onda sinusoidal.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La resolución se basa en la comparación de la ecuación de onda proporcionada con la forma general de una onda armónica unidimensional que se propaga en el sentido positivo del eje X:
+$$ y(x,t) = A\sin(\omega t - kx + \phi_0) $$
+Donde:
+\begin{itemize}
+    \item $A$ es la \textbf{amplitud}.
+    \item $\omega$ es la \textbf{frecuencia angular} ($\omega = 2\pi f = 2\pi/T$).
+    \item $k$ es el \textbf{número de onda} ($k = 2\pi/\lambda$).
+    \item $\phi_0$ es la \textbf{fase inicial}.
+    \item La \textbf{velocidad de propagación} de la onda es $v_p = \frac{\omega}{k} = \lambda f$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Comparando término a término la ecuación dada, $y(x,t)=a\sin(2\pi bt-cx)$, con la forma general (asumiendo $\phi_0=0$ y reordenando los términos dentro del seno), $y(x,t)=A\sin(\omega t - kx)$:
+\begin{itemize}
+    \item \textbf{Parámetro 'a':} Se corresponde directamente con la amplitud $A$.
+    \item \textbf{Parámetro 'b':} El término temporal es $\omega t = 2\pi b t$. Por tanto, $\omega = 2\pi b$. Sabiendo que $\omega = 2\pi f$, se deduce que $b = f$ (la frecuencia).
+    \item \textbf{Parámetro 'c':} El término espacial es $kx = cx$. Por tanto, $c = k$ (el número de onda).
+    \item \textbf{Signo negativo:} El signo relativo entre el término temporal ($\omega t$) y el espacial ($kx$) determina la dirección de propagación. Un signo negativo ($ \omega t - kx $ o $ kx - \omega t $) indica que la onda se propaga en el \textbf{sentido positivo del eje X}.
+    \item \textbf{Cociente $2\pi b/c$:} Sustituyendo las equivalencias encontradas:
+    $$ \frac{2\pi b}{c} = \frac{\omega}{k} = v_p $$
+    El cociente representa la velocidad de propagación de la onda.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es cualitativo. Los resultados son la interpretación de cada término y sus unidades en el SI.
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{a}: Representa la \textbf{Amplitud} de la onda (máxima elongación). Su unidad en el SI es el \textbf{metro (m)}.
+    \item \textbf{b}: Representa la \textbf{Frecuencia} de la onda (número de oscilaciones por segundo). Su unidad en el SI es el \textbf{hercio (Hz)} o $\text{s}^{-1}$.
+    \item \textbf{c}: Representa el \textbf{Número de Onda} (relacionado con la periodicidad espacial). Su unidad en el SI es el \textbf{radián por metro (rad/m)}.
+    \item El \textbf{signo negativo} indica que la onda se propaga en el \textbf{sentido positivo del eje X}.
+    \item El cociente $\boldsymbol{2\pi b/c}$ representa la \textbf{Velocidad de Propagación} de la onda. Su unidad en el SI es \textbf{metros por segundo (m/s)}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al comparar la ecuación de onda proporcionada con su forma canónica, se han identificado los parámetros clave: 'a' como la amplitud, 'b' como la frecuencia y 'c' como el número de onda. El análisis de la fase revela que la onda viaja hacia la derecha (+X), y el cociente propuesto corresponde a la velocidad de propagación, una de las magnitudes fundamentales que caracterizan el movimiento ondulatorio.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 6}
+\label{subsec:C6_2022_jul_ord}
+
+\begin{cajaenunciado}
+En el fondo de una piscina llena de agua salada se sitúa un pequeño foco luminoso (ver figura adjunta). Se observa que el rayo A se refracta y sale del agua con un ángulo de refracción de $44^{\circ}$, pero el rayo B no se refracta. Determina el índice de refracción n del líquido y explica razonadamente el motivo por el cual el rayo B no se refracta.
+\textbf{Dato:} índice de refracción del aire, $n_{aire}=1,00$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Extraemos los datos geométricos de la figura y del enunciado:
+\begin{itemize}
+    \item \textbf{Profundidad del foco (h):} $h = 5\,\text{cm}$.
+    \item \textbf{Distancia horizontal del rayo A ($d_A$):} $d_A = 3\,\text{cm}$.
+    \item \textbf{Distancia horizontal del rayo B ($d_B$):} $d_B = 6\,\text{cm}$.
+    \item \textbf{Ángulo de refracción del rayo A ($\theta_{r,A}$):} $\theta_{r,A} = 44^{\circ}$.
+    \item \textbf{Medio 1 (incidencia):} Agua salada, con índice de refracción $n_1 = n$.
+    \item \textbf{Medio 2 (refracción):} Aire, con índice de refracción $n_2 = n_{aire} = 1,00$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Índice de refracción del agua salada ($n$).
+        \item Explicación del fenómeno del rayo B.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Refracción y Reflexión Total} \vspace{0.5cm} \textit{Prompt para la imagen:} "Recrear la figura del examen. Una interfaz horizontal agua-aire. Un foco luminoso en el fondo (a 5 cm). Trazar la normal (línea vertical punteada) desde el foco. El rayo A sale del foco, incide en la interfaz a 3 cm de la normal, y se refracta hacia el aire. Etiquetar el ángulo de incidencia $\theta_{i,A}$ y el de refracción $\theta_{r,A}=44^\circ$. El rayo B sale del foco, incide en la interfaz a 6 cm de la normal y se refleja totalmente hacia abajo. Etiquetar su ángulo de incidencia $\theta_{i,B}$ y mostrar que es igual al ángulo de reflexión."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{refraccion_reflexion_piscina.png}
+    }}
+    \caption{Trayectoria de los rayos A y B.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema involucra dos fenómenos ópticos fundamentales:
+\begin{itemize}
+    \item \textbf{Ley de Snell de la Refracción:} Cuando la luz pasa de un medio con índice $n_1$ a otro con índice $n_2$, los ángulos de incidencia ($\theta_1$) y refracción ($\theta_2$) con respecto a la normal se relacionan por: $n_1 \sin\theta_1 = n_2 \sin\theta_2$.
+    \item \textbf{Reflexión Total Interna:} Este fenómeno ocurre cuando la luz viaja de un medio más denso a uno menos denso ($n_1 > n_2$). Si el ángulo de incidencia supera un valor crítico, llamado \textbf{ángulo límite ($\theta_L$)}, la luz no se refracta y se refleja completamente. El ángulo límite se calcula haciendo $\theta_2=90^\circ$ en la ley de Snell: $\sin\theta_L = \frac{n_2}{n_1}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Índice de refracción (n)}
+Para el rayo A, primero calculamos su ángulo de incidencia, $\theta_{i,A}$, usando la trigonometría del triángulo rectángulo formado:
+\begin{gather}
+    \tan(\theta_{i,A}) = \frac{d_A}{h} \implies \theta_{i,A} = \arctan\left(\frac{d_A}{h}\right)
+\end{gather}
+Luego, aplicamos la Ley de Snell ($n_1=n, n_2=n_{aire}$):
+\begin{gather}
+    n \sin(\theta_{i,A}) = n_{aire} \sin(\theta_{r,A}) \implies n = \frac{n_{aire} \sin(\theta_{r,A})}{\sin(\theta_{i,A})}
+\end{gather}
+\paragraph*{Fenómeno del rayo B}
+El rayo B no se refracta porque sufre reflexión total interna. Para verificarlo, debemos demostrar que su ángulo de incidencia, $\theta_{i,B}$, es mayor que el ángulo límite, $\theta_L$, del medio.
+\begin{gather}
+    \theta_{i,B} = \arctan\left(\frac{d_B}{h}\right) \\
+    \theta_L = \arcsin\left(\frac{n_{aire}}{n}\right)
+\end{gather}
+Debemos comprobar que $\theta_{i,B} > \theta_L$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de n}
+\begin{gather}
+    \theta_{i,A} = \arctan\left(\frac{3\,\text{cm}}{5\,\text{cm}}\right) = \arctan(0,6) \approx 30,96^{\circ} \\
+    n = \frac{1,00 \cdot \sin(44^{\circ})}{\sin(30,96^{\circ})} \approx \frac{0,6947}{0,5145} \approx 1,35
+\end{gather}
+\begin{cajaresultado}
+    El índice de refracción del agua salada es $\boldsymbol{n \approx 1,35}$.
+\end{cajaresultado}
+\paragraph*{Explicación para el rayo B}
+Calculamos el ángulo de incidencia del rayo B y el ángulo límite:
+\begin{gather}
+    \theta_{i,B} = \arctan\left(\frac{6\,\text{cm}}{5\,\text{cm}}\right) = \arctan(1,2) \approx 50,19^{\circ} \\
+    \theta_L = \arcsin\left(\frac{1,00}{1,35}\right) \approx \arcsin(0,7407) \approx 47,79^{\circ}
+\end{gather}
+Como $\theta_{i,B} (50,19^{\circ}) > \theta_L (47,79^{\circ})$, se cumple la condición para la reflexión total interna.
+\begin{cajaresultado}
+    El rayo B no se refracta porque incide sobre la superficie con un ángulo ($\boldsymbol{\approx 50,19^{\circ}}$) \textbf{mayor que el ángulo límite} ($\boldsymbol{\approx 47,79^{\circ}}$), produciéndose el fenómeno de \textbf{reflexión total interna}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la aplicación de la Ley de Snell al rayo A, se ha determinado que el índice de refracción del agua salada es de 1,35. Con este valor, se calculó el ángulo límite para la interfaz agua-aire, resultando ser de unos 47,8$^{\circ}$. El rayo B no se refracta porque su ángulo de incidencia, de 50,2$^{\circ}$, supera este umbral, lo que provoca que toda la luz se refleje de nuevo hacia el agua.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 7}
+\label{subsec:C7_2022_jul_ord}
+
+\begin{cajaenunciado}
+Una persona usa habitualmente gafas con lentes y no sabe si éstas son convergentes o divergentes. Se quita las gafas y situándolas a 30 cm de un objeto obtiene sobre una pared una imagen enfocada a 2,7 m de la gafa. ¿Qué potencia posee la lente? ¿La lente es convergente o divergente? Razona si la persona es miope o hipermétrope.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de objeto:} Real.
+    \item \textbf{Posición del objeto ($s$):} A 30 cm de la lente.
+    \item \textbf{Tipo de imagen:} Real, ya que se proyecta sobre una pared.
+    \item \textbf{Posición de la imagen ($s'$):} A 2,7 m de la lente.
+    \item \textbf{Convenio de signos (DIN):}
+    \begin{itemize}
+        \item Distancia al objeto: $s = -30\,\text{cm} = -0,3\,\text{m}$.
+        \item Distancia a la imagen: $s' = +2,7\,\text{m}$.
+    \end{itemize}
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Potencia de la lente (P).
+        \item Tipo de lente (convergente/divergente).
+        \item Defecto visual de la persona (miopía/hipermetropía).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Formación de imagen real} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de óptica con un eje óptico horizontal. En el centro, una lente delgada convergente (símbolo con flechas hacia afuera). Un objeto (flecha vertical hacia arriba) se sitúa a la izquierda de la lente, a una distancia s. A la derecha de la lente, a una distancia s', se forma una imagen real (flecha vertical invertida), donde convergen los rayos de luz."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_convergente_real.png}
+    }}
+    \caption{Esquema de la formación de una imagen real por una lente convergente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss para lentes delgadas:} Relaciona las distancias objeto ($s$) e imagen ($s'$) con la distancia focal imagen ($f'$): $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$.
+    \item \textbf{Potencia de una lente (P):} Se define como la inversa de la distancia focal imagen en metros. $P = \frac{1}{f'}$. Su unidad es la dioptría (D).
+    \item \textbf{Tipos de lentes y defectos visuales:}
+    \begin{itemize}
+        \item Lentes con $f' > 0$ (y $P > 0$) son \textbf{convergentes}. Se usan para corregir la \textbf{hipermetropía}, un defecto donde las imágenes se forman detrás de la retina y se tiene dificultad para enfocar objetos cercanos.
+        \item Lentes con $f' < 0$ (y $P < 0$) son \textbf{divergentes}. Se usan para corregir la \textbf{miopía}, un defecto donde las imágenes se forman delante de la retina y se tiene dificultad para enfocar objetos lejanos.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La potencia $P$ es igual a la expresión de la derecha de la ecuación de Gauss, por lo que no es necesario calcular $f'$ primero:
+\begin{gather}
+    P = \frac{1}{f'} = \frac{1}{s'} - \frac{1}{s}
+\end{gather}
+El signo de $P$ determinará el tipo de lente y, por consiguiente, el defecto visual que corrige.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores de $s$ y $s'$ en la ecuación de la potencia:
+\begin{gather}
+    P = \frac{1}{2,7\,\text{m}} - \frac{1}{-0,3\,\text{m}} = \frac{1}{2,7} + \frac{1}{0,3} = \frac{1 + 9}{2,7} = \frac{10}{2,7} \approx +3,70\,\text{D}
+\end{gather}
+\begin{cajaresultado}
+    La potencia de la lente es $\boldsymbol{P \approx +3,7\,\textbf{D}}$.
+\end{cajaresultado}
+\paragraph*{Tipo de lente y defecto visual}
+\begin{itemize}
+    \item Como la potencia $P$ es \textbf{positiva}, la lente es \textbf{convergente}. Las lentes divergentes no pueden formar imágenes reales de objetos reales.
+    \item Las lentes convergentes se utilizan para corregir la \textbf{hipermetropía}. Un ojo hipermétrope tiene poca potencia refractiva, y la lente convergente la aumenta para que la imagen se forme correctamente sobre la retina.
+\end{itemize}
+\begin{cajaresultado}
+    La lente es \textbf{convergente} y la persona es \textbf{hipermétrope}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando la ecuación de las lentes delgadas a la situación experimental descrita, se ha calculado una potencia de +3,7 dioptrías. El signo positivo de la potencia indica inequívocamente que se trata de una lente convergente. Dado que las lentes convergentes se emplean para suplir la falta de convergencia del cristalino en ojos hipermétropes, se concluye que la persona padece de hipermetropía.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Física del Siglo XX}
+\label{sec:fisXX_2022_jul_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 4}
+\label{subsec:P4_2022_jul_ord}
+
+\begin{cajaenunciado}
+En un experimento de efecto fotoeléctrico, al incidir luz con longitud de onda $\lambda_1 = 550\,\text{nm}$ se obtiene una velocidad máxima de los electrones $v = 296\,\text{km/s}$. Calcula razonadamente:
+\begin{enumerate}
+    \item[a)] El trabajo de extracción del metal sobre el que incide la luz (en eV) y la longitud de onda umbral. (1 punto)
+    \item[b)] El momento lineal y la longitud de onda de De Broglie asociada, en nanómetros, de los electrones que salen con velocidad máxima. (1 punto)
+\end{enumerate}
+\textbf{Datos:} carga eléctrica elemental, $q=1,6\cdot10^{-19}\,\text{C}$; velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$; constante de Planck, $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$; masa electrón, $m_e=9,1\cdot10^{-31}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda incidente ($\lambda_1$):} $550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$
+    \item \textbf{Velocidad máxima de los electrones ($v_{max}$):} $296\,\text{km/s} = 2,96 \cdot 10^5\,\text{m/s}$
+    \item \textbf{Carga elemental (e):} $e = 1,6 \cdot 10^{-19}\,\text{C}$ (se usa para conversión J a eV)
+    \item \textbf{Velocidad de la luz (c):} $c = 3 \cdot 10^8\,\text{m/s}$
+    \item \textbf{Constante de Planck (h):} $h = 6,63 \cdot 10^{-34}\,\text{J}\cdot\text{s}$
+    \item \textbf{Masa del electrón ($m_e$):} $m_e = 9,1 \cdot 10^{-31}\,\text{kg}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Trabajo de extracción ($W_0$).
+        \item Longitud de onda umbral ($\lambda_0$).
+        \item Momento lineal del electrón ($p$).
+        \item Longitud de onda de De Broglie ($\lambda_{DB}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Superficie de un metal. Un fotón (onda de luz con energía E=h·f) incide sobre la superficie. Un electrón es eyectado de la superficie con una energía cinética máxima (Ec_max). Etiquetar la energía del fotón, el trabajo de extracción (W0) que retiene al electrón en el metal, y la energía cinética del fotoelectrón."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{efecto_fotoelectrico.png}
+    }}
+    \caption{Esquema del balance energético en el efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Efecto Fotoeléctrico}
+El problema se basa en la \textbf{ecuación del efecto fotoeléctrico de Einstein}, que establece el principio de conservación de la energía: la energía del fotón incidente ($E_f$) se invierte en liberar al electrón del metal (trabajo de extracción, $W_0$) y en proporcionarle energía cinética ($E_{c,max}$).
+\begin{itemize}
+    \item Energía del fotón: $E_f = h f = h \frac{c}{\lambda}$.
+    \item Ecuación de Einstein: $E_f = W_0 + E_{c,max}$.
+    \item Energía cinética máxima: $E_{c,max} = \frac{1}{2} m_e v_{max}^2$.
+    \item El trabajo de extracción se relaciona con la frecuencia umbral ($f_0$) y la longitud de onda umbral ($\lambda_0$): $W_0 = h f_0 = h \frac{c}{\lambda_0}$.
+\end{itemize}
+\paragraph*{b) Dualidad Onda-Partícula}
+Se aplica la \textbf{hipótesis de De Broglie}, que asocia una longitud de onda a toda partícula en movimiento.
+\begin{itemize}
+    \item Momento lineal (clásico): $p = m_e v$.
+    \item Longitud de onda de De Broglie: $\lambda_{DB} = \frac{h}{p}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Trabajo de extracción y longitud de onda umbral}
+De la ecuación de Einstein, despejamos el trabajo de extracción:
+\begin{gather}
+    W_0 = E_f - E_{c,max} = h \frac{c}{\lambda_1} - \frac{1}{2} m_e v_{max}^2
+\end{gather}
+Una vez calculado $W_0$, despejamos la longitud de onda umbral de su definición:
+\begin{gather}
+    W_0 = h \frac{c}{\lambda_0} \implies \lambda_0 = \frac{h c}{W_0}
+\end{gather}
+\paragraph*{b) Momento lineal y longitud de onda de De Broglie}
+Las ecuaciones ya están en su forma final:
+\begin{gather}
+    p = m_e v_{max} \\
+    \lambda_{DB} = \frac{h}{p} = \frac{h}{m_e v_{max}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Cálculo de $W_0$ y $\lambda_0$}
+Primero calculamos las energías en Julios:
+\begin{gather}
+    E_f = (6,63\cdot10^{-34}) \frac{3\cdot10^8}{550\cdot10^{-9}} \approx 3,616 \cdot 10^{-19} \, \text{J} \\
+    E_{c,max} = \frac{1}{2} (9,1\cdot10^{-31}) (2,96\cdot10^5)^2 \approx 3,989 \cdot 10^{-20} \, \text{J}
+\end{gather}
+Ahora el trabajo de extracción:
+\begin{gather}
+    W_0 = (3,616 \cdot 10^{-19}) - (3,989 \cdot 10^{-20}) \approx 3,217 \cdot 10^{-19} \, \text{J}
+\end{gather}
+Convertimos $W_0$ a eV:
+\begin{gather}
+    W_0 (\text{eV}) = \frac{3,217 \cdot 10^{-19}\,\text{J}}{1,6 \cdot 10^{-19}\,\text{J/eV}} \approx 2,01 \, \text{eV}
+\end{gather}
+Y la longitud de onda umbral:
+\begin{gather}
+    \lambda_0 = \frac{(6,63\cdot10^{-34})(3\cdot10^8)}{3,217\cdot10^{-19}} \approx 6,18 \cdot 10^{-7} \, \text{m} = 618\,\text{nm}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo de extracción es $\boldsymbol{W_0 \approx 2,01 \, \textbf{eV}}$ y la longitud de onda umbral es $\boldsymbol{\lambda_0 \approx 618 \, \textbf{nm}}$.
+\end{cajaresultado}
+\paragraph*{b) Cálculo de $p$ y $\lambda_{DB}$}
+\begin{gather}
+    p = (9,1\cdot10^{-31}\,\text{kg}) \cdot (2,96\cdot10^5\,\text{m/s}) \approx 2,69 \cdot 10^{-25} \, \text{kg}\cdot\text{m/s} \\
+    \lambda_{DB} = \frac{6,63\cdot10^{-34}\,\text{J}\cdot\text{s}}{2,69\cdot10^{-25}\,\text{kg}\cdot\text{m/s}} \approx 2,46 \cdot 10^{-9} \, \text{m} = 2,46\,\text{nm}
+\end{gather}
+\begin{cajaresultado}
+    El momento lineal del electrón es $\boldsymbol{p \approx 2,69 \cdot 10^{-25} \, \textbf{kg}\cdot\textbf{m/s}}$ y su longitud de onda de De Broglie es $\boldsymbol{\lambda_{DB} \approx 2,46 \, \textbf{nm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) A partir del balance energético propuesto por Einstein para el efecto fotoeléctrico, se ha determinado un trabajo de extracción de $\mathbf{2,01 \, eV}$. Este valor corresponde a la energía mínima necesaria para arrancar un electrón del metal. La longitud de onda umbral de $\mathbf{618 \, nm}$ es la máxima longitud de onda de la luz capaz de producir el efecto.
+
+b) Los electrones eyectados, al estar en movimiento, tienen un momento lineal de $\mathbf{2,69 \cdot 10^{-25} \, kg \cdot m/s}$ y, por la dualidad onda-corpúsculo, llevan asociada una longitud de onda de De Broglie de $\mathbf{2,46 \, nm}$.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+% INICIO DE LA SEGUNDA PARTE - CUESTIONES RESTANTES
+% Este bloque de código contiene las soluciones a las Cuestiones 
+% que no se incluyeron en la primera respuesta. Debe ser insertado
+% en el archivo .tex principal, dentro de las secciones correspondientes.
+% ======================================================================
+
+
+% ----------------------------------------------------------------------
+% A INSERTAR EN \section{Bloque IV: Física del Siglo XX}
+% ----------------------------------------------------------------------
+\subsection{Cuestión 8}
+\label{subsec:C8_2022_jul_ord}
+
+\begin{cajaenunciado}
+Calcula la velocidad que debe tener una partícula para que su energía relativista sea el doble de su energía en reposo. ¿Sería posible que la velocidad de la partícula fuera el doble que la calculada anteriormente? Razona la respuesta.
+\textbf{Dato:} velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Condición energética:} Energía relativista total ($E$) es el doble de la energía en reposo ($E_0$). Es decir, $E = 2E_0$.
+    \item \textbf{Constante:} Velocidad de la luz en el vacío, $c = 3 \cdot 10^8\,\text{m/s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Velocidad de la partícula ($v$).
+        \item Posibilidad de que la velocidad sea $2v$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Energía Relativista vs. Velocidad} \vspace{0.5cm} \textit{Prompt para la imagen:} "Gráfico con eje horizontal de velocidad 'v' (de 0 a c) y eje vertical de Energía Total 'E'. La curva empieza en v=0 en el valor E0 (energía en reposo). La curva crece a medida que v aumenta, haciéndose asintótica a la línea vertical v=c (la energía tiende a infinito). Marcar el punto en la curva donde la energía es 2E0 y trazar una línea hasta el eje horizontal para señalar la velocidad 'v' correspondiente."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{energia_relativista.png}
+    }}
+    \caption{Dependencia de la energía total relativista con la velocidad.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La solución se basa en las ecuaciones de la \textbf{Teoría de la Relatividad Especial} de Einstein.
+\begin{itemize}
+    \item \textbf{Energía en reposo ($E_0$):} Es la energía intrínseca de una partícula con masa en reposo $m_0$. Se calcula como $E_0 = m_0 c^2$.
+    \item \textbf{Energía total relativista ($E$):} Es la energía de la misma partícula cuando se mueve a una velocidad $v$. Se calcula como $E = \gamma m_0 c^2$, donde $\gamma$ es el factor de Lorentz.
+    \item \textbf{Factor de Lorentz ($\gamma$):} $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}$. Siempre es $\gamma \ge 1$.
+    \item \textbf{Postulado fundamental:} Ninguna partícula con masa puede alcanzar o superar la velocidad de la luz en el vacío ($c$).
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Partimos de la condición del enunciado $E = 2E_0$. Sustituimos las expresiones relativistas:
+\begin{gather}
+    \gamma m_0 c^2 = 2 (m_0 c^2) \implies \gamma = 2
+\end{gather}
+Ahora sustituimos la definición del factor de Lorentz y despejamos $v$:
+\begin{gather}
+    \frac{1}{\sqrt{1 - v^2/c^2}} = 2 \implies \sqrt{1 - v^2/c^2} = \frac{1}{2} \nonumber \\
+    \text{Elevando al cuadrado ambos miembros:} \quad 1 - \frac{v^2}{c^2} = \frac{1}{4} \nonumber \\
+    \frac{v^2}{c^2} = 1 - \frac{1}{4} = \frac{3}{4} \nonumber \\
+    v^2 = \frac{3}{4}c^2 \implies v = \sqrt{\frac{3}{4}}c = \frac{\sqrt{3}}{2}c
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la velocidad v}
+\begin{gather}
+    v = \frac{\sqrt{3}}{2} \cdot (3 \cdot 10^8\,\text{m/s}) \approx 0,866 \cdot (3 \cdot 10^8\,\text{m/s}) \approx 2,598 \cdot 10^8 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de la partícula debe ser $\boldsymbol{v = \frac{\sqrt{3}}{2}c \approx 2,6 \cdot 10^8 \, \textbf{m/s}}$.
+\end{cajaresultado}
+\paragraph*{Posibilidad de duplicar la velocidad}
+La velocidad calculada es $v = \frac{\sqrt{3}}{2}c$. El doble de esta velocidad sería:
+\begin{gather}
+    v' = 2v = 2 \left(\frac{\sqrt{3}}{2}c\right) = \sqrt{3}c \approx 1,732c
+\end{gather}
+Esta velocidad $v'$ es mayor que la velocidad de la luz $c$.
+\begin{cajaresultado}
+    \textbf{No sería posible} que la velocidad de la partícula fuera el doble de la calculada, ya que implicaría superar la velocidad de la luz ($v' \approx 1,732c > c$), lo cual es físicamente imposible para una partícula con masa según los postulados de la Relatividad Especial.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Utilizando la relación relativista entre energía y velocidad, se ha determinado que una partícula debe moverse a un 86,6\% de la velocidad de la luz para que su energía total duplique su energía en reposo. Es imposible duplicar esta velocidad, ya que resultaría en una velocidad superior a la de la luz, violando un principio fundamental de la física: la velocidad de la luz en el vacío es el límite máximo de velocidad en el universo para cualquier objeto con masa.
+\end{cajaconclusion}
+
+\newpage

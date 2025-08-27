@@ -1,0 +1,923 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2018 - Convocatoria Ordinaria}
+\label{chap:2018_jun_ord}
+
+% ======================================================================
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2018_jun_ord}
+% ======================================================================
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2018_jun_ord}
+
+\begin{cajaenunciado}
+Deduce razonadamente la expresión que permite calcular el radio de una órbita circular descrita por un planeta alrededor de una estrella de masa M, conociendo la velocidad orbital del planeta.
+Supongamos dos planetas cuyas velocidades orbitales alrededor de la misma estrella son $v_{1}$ y $v_{2}$, siendo $v_{1}>v_{2}$. ¿Qué planeta tiene el radio orbital mayor? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica que requiere una deducción y un razonamiento posterior.
+\begin{itemize}
+    \item \textbf{Sistema:} Un planeta de masa $m$ en órbita circular alrededor de una estrella de masa $M$.
+    \item \textbf{Datos conocidos:} Masa de la estrella ($M$), velocidad orbital del planeta ($v$).
+    \item \textbf{Incógnita 1:} Expresión del radio orbital ($r$) en función de $M$ y $v$.
+    \item \textbf{Condición para la segunda parte:} Dos planetas orbitan la misma estrella ($M$) con velocidades $v_1 > v_2$.
+    \item \textbf{Incógnita 2:} Cuál de los dos planetas tiene un radio orbital mayor ($r_1$ vs $r_2$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Órbita circular de un planeta} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una estrella masiva de masa M en el centro. Un planeta de masa m en una órbita circular de radio r a su alrededor. Dibujar el vector velocidad orbital del planeta, $\vec{v}$, tangente a la trayectoria. Dibujar el vector de la Fuerza Gravitatoria, $\vec{F}_g$, que la estrella ejerce sobre el planeta, apuntando hacia el centro de la estrella. Indicar que esta fuerza es la responsable de la aceleración centrípeta, $\vec{a}_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/grav_orbita_circular.png}
+    }}
+    \caption{Modelo para la deducción de la relación entre radio y velocidad orbital.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para que un planeta describa una órbita circular, la fuerza que lo mantiene en dicha trayectoria es la fuerza de atracción gravitatoria ejercida por la estrella. Esta fuerza gravitatoria debe ser igual a la fuerza centrípeta necesaria para mantener el movimiento circular uniforme.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal de Newton:} La fuerza de atracción entre la estrella y el planeta es $F_g = G \frac{M m}{r^2}$.
+    \item \textbf{Dinámica del Movimiento Circular Uniforme (MCU):} La fuerza centrípeta requerida para una órbita circular es $F_c = m a_c = m \frac{v^2}{r}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Deducción del radio orbital}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta:
+\begin{gather}
+    F_g = F_c \implies G \frac{M m}{r^2} = m \frac{v^2}{r}
+\end{gather}
+La masa del planeta, $m$, se simplifica de ambos lados de la ecuación. Podemos reorganizar la expresión para despejar el radio orbital, $r$:
+\begin{gather}
+    G \frac{M}{r} = v^2 \implies r = \frac{G M}{v^2}
+\end{gather}
+Esta es la expresión que permite calcular el radio de la órbita conociendo la masa de la estrella y la velocidad orbital.
+
+\paragraph*{Comparación de los radios orbitales}
+Para los dos planetas que orbitan la misma estrella ($M$ es constante, al igual que $G$), la relación obtenida es $r = \frac{GM}{v^2}$. Esto nos indica que el radio orbital es inversamente proporcional al cuadrado de la velocidad orbital.
+$$ r \propto \frac{1}{v^2} $$
+Si tenemos dos planetas con $v_1 > v_2$, al elevar al cuadrado se mantiene la desigualdad $v_1^2 > v_2^2$. Al ser la relación inversa, los radios orbitales cumplirán:
+$$ r_1 < r_2 $$
+Por lo tanto, el planeta con la menor velocidad orbital ($v_2$) tendrá el mayor radio orbital.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es puramente simbólico.
+\begin{cajaresultado}
+La expresión para el radio de la órbita es $\boldsymbol{r = \frac{G M}{v^2}}$.
+Dado que el radio es inversamente proporcional al cuadrado de la velocidad, el planeta con la velocidad menor ($v_2$) es el que tiene el \textbf{radio orbital mayor}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La dinámica del movimiento orbital circular implica que la velocidad y el radio no son independientes. La expresión $r=GM/v^2$ muestra que para órbitas más cercanas a una estrella (menor $r$), se requiere una mayor velocidad orbital para contrarrestar la atracción gravitatoria, que es más intensa. Por el contrario, en órbitas más lejanas (mayor $r$), la gravedad es más débil y se necesita una velocidad menor para mantener la órbita estable.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2018_jun_ord}
+\begin{cajaenunciado}
+Tau Ceti es una estrella que, como nuestro Sol, tiene un sistema planetario. La masa de ese sistema solar es 0,7 veces la masa del nuestro. Considerando ambos sistemas como dos masas puntuales separadas una distancia d, calcula el punto donde se anula el campo gravitatorio originado exclusivamente por dichas masas. Calcula primero la posición del punto en función de d y realiza después el cálculo numérico en km sabiendo que $d=12$ años luz.
+\textbf{Dato:} velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del Sol ($M_S$):} Referencia.
+    \item \textbf{Masa de Tau Ceti ($M_T$):} $M_T = 0,7 M_S$.
+    \item \textbf{Distancia entre estrellas ($d$):} $d = 12$ años luz.
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3\cdot10^8 \, \text{m/s}$.
+    \item \textbf{Incógnita:} Posición del punto $P$ donde el campo gravitatorio total es nulo ($\vec{g}_{total}=0$).
+\end{itemize}
+Para el cálculo numérico, primero convertimos la distancia a metros y luego a kilómetros.
+\begin{itemize}
+    \item 1 año = $365,25 \text{ días} \times 24 \text{ h/día} \times 3600 \text{ s/h} \approx 3,15576 \cdot 10^7 \text{ s}$.
+    \item $d = 12 \text{ años-luz} = 12 \times (3\cdot10^8 \text{ m/s}) \times (3,15576 \cdot 10^7 \text{ s}) \approx 1,136 \cdot 10^{17} \text{ m}$.
+    \item $d \approx 1,136 \cdot 10^{14} \text{ km}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo Gravitatorio Nulo entre dos Masas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje horizontal X. Colocar una masa grande, $M_S$ (el Sol), en el origen (x=0). Colocar una masa más pequeña, $M_T=0,7M_S$ (Tau Ceti), en la posición x=d. Marcar un punto P en una posición 'x' entre las dos masas. En el punto P, dibujar dos vectores de campo gravitatorio: 1) El vector $\vec{g}_S$, creado por el Sol, apuntando hacia la izquierda (hacia $M_S$). 2) El vector $\vec{g}_T$, creado por Tau Ceti, apuntando hacia la derecha (hacia $M_T$). Indicar que para que el campo total sea nulo, estos dos vectores deben tener la misma magnitud."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/grav_campo_nulo_masas.png}
+    }}
+    \caption{Esquema para la anulación del campo gravitatorio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica el \textbf{Principio de Superposición} para el campo gravitatorio. El campo total en un punto es la suma vectorial de los campos creados por cada masa. Para que el campo total sea nulo, los campos individuales deben ser iguales en módulo y de sentido opuesto.
+$$ \vec{g}_{total} = \vec{g}_S + \vec{g}_T = \vec{0} \implies \vec{g}_S = -\vec{g}_T $$
+Dado que el campo gravitatorio es siempre atractivo, el único lugar donde los vectores pueden tener sentidos opuestos es en la línea que une las dos masas, en un punto intermedio entre ellas.
+El módulo del campo gravitatorio creado por una masa $M$ a una distancia $r$ es $g = G \frac{M}{r^2}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sea $x$ la distancia desde el Sol al punto P. La distancia desde Tau Ceti a ese mismo punto será $(d-x)$. La condición para que el campo se anule es que los módulos de los campos sean iguales:
+\begin{gather}
+    |\vec{g}_S| = |\vec{g}_T| \implies G \frac{M_S}{x^2} = G \frac{M_T}{(d-x)^2}
+\end{gather}
+Sustituimos $M_T = 0,7 M_S$ y simplificamos G y $M_S$:
+\begin{gather}
+    \frac{1}{x^2} = \frac{0,7}{(d-x)^2}
+\end{gather}
+Reorganizamos y tomamos la raíz cuadrada en ambos lados:
+\begin{gather}
+    (d-x)^2 = 0,7 x^2 \implies d-x = \sqrt{0,7} x
+\end{gather}
+Despejamos la posición $x$:
+\begin{gather}
+    d = x + \sqrt{0,7} x = x(1 + \sqrt{0,7}) \implies x = \frac{d}{1+\sqrt{0,7}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, calculamos el valor simbólico de $x$:
+\begin{gather}
+    x = \frac{d}{1+\sqrt{0,7}} \approx \frac{d}{1+0,8367} \approx \frac{d}{1,8367} \approx 0,544 d
+\end{gather}
+Ahora, sustituimos el valor numérico de $d$:
+\begin{gather}
+    x \approx 0,544 \cdot (1,136 \cdot 10^{14} \, \text{km}) \approx 6,18 \cdot 10^{13} \, \text{km}
+\end{gather}
+\begin{cajaresultado}
+El campo gravitatorio se anula en un punto situado a una distancia $\boldsymbol{x = \frac{d}{1+\sqrt{0,7}} \approx 0,544d}$ del Sol.
+Numéricamente, esto corresponde a $\boldsymbol{x \approx 6,18 \cdot 10^{13} \, \textbf{km}}$ del Sol.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Dado que el campo gravitatorio decae con el cuadrado de la distancia, el punto de campo nulo se encuentra más cerca de la masa menor (Tau Ceti) y más lejos de la masa mayor (el Sol). El cálculo exacto sitúa este punto a aproximadamente el 54,4\% de la distancia total desde el Sol.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque II: Ondas}
+\label{sec:ondas_2018_jun_ord}
+% ======================================================================
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2018_jun_ord}
+\begin{cajaenunciado}
+Una onda sonora de frecuencia f se propaga por un medio (1) con una longitud de onda $\lambda_{1}$. En un cierto punto, la onda pasa a otro medio (2) en el que la longitud de onda es $\lambda_{2}=2\lambda_{1}$. Determina razonadamente el periodo, el número de onda y la velocidad de propagación en el medio (2) en función de los que tiene la onda en el medio (1).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica sobre el cambio de propiedades de una onda al cambiar de medio.
+\begin{itemize}
+    \item \textbf{Medio 1:} Frecuencia $f_1=f$, longitud de onda $\lambda_1$, periodo $T_1$, número de onda $k_1$, velocidad $v_1$.
+    \item \textbf{Medio 2:} Frecuencia $f_2$, longitud de onda $\lambda_2$, periodo $T_2$, número de onda $k_2$, velocidad $v_2$.
+    \item \textbf{Condición de cambio:} $\lambda_2 = 2\lambda_1$.
+    \item \textbf{Incógnitas:} $T_2$, $k_2$ y $v_2$ en función de $T_1$, $k_1$ y $v_1$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Onda cambiando de medio} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una línea vertical representa la interfaz entre dos medios, 'Medio 1' a la izquierda y 'Medio 2' a la derecha. Dibujar una onda sinusoidal viajando de izquierda a derecha. En el 'Medio 1', la onda tiene una longitud de onda $\lambda_1$. Al cruzar la interfaz hacia el 'Medio 2', la onda continúa, pero su longitud de onda se duplica, mostrándose visiblemente más 'estirada'. Etiquetar claramente $\lambda_1$ y $\lambda_2 = 2\lambda_1$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/ondas_cambio_medio.png}
+    }}
+    \caption{Cambio de la longitud de onda al pasar de un medio a otro.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El principio fundamental que rige este fenómeno es que, cuando una onda cambia de medio de propagación, su \textbf{frecuencia ($f$)} y su \textbf{periodo ($T=1/f$)} permanecen \textbf{constantes}. La frecuencia es una característica intrínseca de la fuente que genera la onda y no depende del medio.
+Las demás magnitudes se derivan de las siguientes relaciones:
+\begin{itemize}
+    \item \textbf{Velocidad de propagación:} $v = \lambda f$. Depende del medio.
+    \item \textbf{Número de onda:} $k = \frac{2\pi}{\lambda}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Periodo en el medio 2 ($T_2$)}
+Como la frecuencia no cambia al cambiar de medio ($f_2=f_1$), el periodo tampoco lo hace.
+$$ T_2 = \frac{1}{f_2} = \frac{1}{f_1} = T_1 $$
+
+\paragraph*{Número de onda en el medio 2 ($k_2$)}
+El número de onda es inversamente proporcional a la longitud de onda.
+$$ k_2 = \frac{2\pi}{\lambda_2} $$
+Usando la condición dada, $\lambda_2 = 2\lambda_1$:
+$$ k_2 = \frac{2\pi}{2\lambda_1} = \frac{1}{2} \left(\frac{2\pi}{\lambda_1}\right) = \frac{1}{2} k_1 $$
+
+\paragraph*{Velocidad de propagación en el medio 2 ($v_2$)}
+La velocidad es directamente proporcional a la longitud de onda (ya que la frecuencia es constante).
+$$ v_2 = \lambda_2 f_2 = (2\lambda_1) f_1 = 2(\lambda_1 f_1) = 2v_1 $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es simbólico, no numérico.
+\begin{cajaresultado}
+Las magnitudes en el medio (2) en función de las del medio (1) son:
+\begin{itemize}
+    \item \textbf{Periodo:} $\boldsymbol{T_2 = T_1}$ (permanece constante).
+    \item \textbf{Número de onda:} $\boldsymbol{k_2 = \frac{1}{2}k_1}$ (se reduce a la mitad).
+    \item \textbf{Velocidad de propagación:} $\boldsymbol{v_2 = 2v_1}$ (se duplica).
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al pasar a un medio donde la longitud de onda se duplica, y dado que la frecuencia debe permanecer constante, la velocidad de propagación de la onda también debe duplicarse para satisfacer la relación $v=\lambda f$. A su vez, el número de onda, al ser inversamente proporcional a la longitud de onda, se reduce a la mitad. El periodo no sufre ninguna alteración.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 2 - OPCIÓN B}
+\label{subsec:2B_2018_jun_ord}
+\begin{cajaenunciado}
+La función que representa una onda sísmica es $y(x,t)=3\sin(\frac{\pi}{4}t-4\pi x)$, donde x e y están expresadas en metros y t en segundos. Calcula razonadamente:
+\begin{itemize}
+    \item[a)] La amplitud, el periodo, la frecuencia y la longitud de onda. (1,2 puntos)
+    \item[b)] La velocidad de propagación de la onda y la velocidad de vibración de un punto situado a 1 m del foco emisor, para $t=8$ s. (0,8 puntos)
+\end{itemize}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+La ecuación de la onda proporcionada es:
+$$ y(x,t)=3\sin\left(\frac{\pi}{4}t - 4\pi x\right) $$
+Se compara con la forma general de una onda armónica que se propaga en el sentido positivo del eje X:
+$$ y(x,t)=A\sin(\omega t - kx) $$
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} Por inspección directa, $A = 3 \, \text{m}$.
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = \frac{\pi}{4} \, \text{rad/s}$.
+    \item \textbf{Número de onda ($k$):} $k = 4\pi \, \text{rad/m}$.
+    \item \textbf{Incógnitas apartado a):} $A, T, f, \lambda$.
+    \item \textbf{Incógnitas apartado b):} $v_p$ y $v_y(x=1, t=8)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Onda Sísmica} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de una onda sinusoidal propagándose a lo largo del eje X. Etiquetar la amplitud (A) como la altura máxima de la onda (3 m) y la longitud de onda ($\lambda$) como la distancia entre dos crestas consecutivas. Mostrar un vector $v_p$ indicando el sentido de propagación hacia la derecha (+X). En el punto x=1 m, dibujar un vector vertical $v_y$ que represente la velocidad de vibración de ese punto del medio en un instante t."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/ondas_sismica_parametros.png}
+    }}
+    \caption{Parámetros de la onda sísmica.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Parámetros de la onda}
+Los parámetros se obtienen de las definiciones que relacionan $\omega$ y $k$ con $T, f$ y $\lambda$.
+\begin{itemize}
+    \item Periodo: $T = 2\pi/\omega$.
+    \item Frecuencia: $f = 1/T = \omega/(2\pi)$.
+    \item Longitud de onda: $\lambda = 2\pi/k$.
+\end{itemize}
+\paragraph{b) Velocidades}
+\begin{itemize}
+    \item \textbf{Velocidad de propagación ($v_p$):} Es la velocidad a la que se desplaza la perturbación. Se calcula como $v_p = \lambda f = \omega/k$.
+    \item \textbf{Velocidad de vibración ($v_y$):} Es la velocidad con la que oscilan las partículas del medio. Se obtiene derivando la elongación $y(x,t)$ con respecto al tiempo: $v_y(x,t) = \frac{\partial y}{\partial t}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Parámetros}
+$A$ por inspección. $T = \frac{2\pi}{\omega}$. $f = \frac{1}{T}$. $\lambda = \frac{2\pi}{k}$.
+
+\paragraph{b) Velocidades}
+$v_p = \frac{\omega}{k}$.
+$v_y(x,t) = \frac{\partial}{\partial t} [A\sin(\omega t - kx)] = A\omega\cos(\omega t - kx)$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Amplitud, periodo, frecuencia y longitud de onda}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = \boldsymbol{3 \, \textbf{m}}$.
+    \item \textbf{Periodo ($T$):} $T = \frac{2\pi}{\omega} = \frac{2\pi}{\pi/4 \, \text{rad/s}} = \boldsymbol{8 \, \textbf{s}}$.
+    \item \textbf{Frecuencia ($f$):} $f = \frac{1}{T} = \frac{1}{8 \, \text{s}} = \boldsymbol{0,125 \, \textbf{Hz}}$.
+    \item \textbf{Longitud de onda ($\lambda$):} $\lambda = \frac{2\pi}{k} = \frac{2\pi}{4\pi \, \text{rad/m}} = \boldsymbol{0,5 \, \textbf{m}}$.
+\end{itemize}
+\begin{cajaresultado}
+$A = 3\,\text{m}$, $T = 8\,\text{s}$, $f = 0,125\,\text{Hz}$ y $\lambda = 0,5\,\text{m}$.
+\end{cajaresultado}
+
+\paragraph{b) Velocidad de propagación y velocidad de vibración}
+\begin{itemize}
+    \item \textbf{Velocidad de propagación ($v_p$):} $v_p = \frac{\omega}{k} = \frac{\pi/4 \, \text{rad/s}}{4\pi \, \text{rad/m}} = \frac{1}{16} = \boldsymbol{0,0625 \, \textbf{m/s}}$.
+\end{itemize}
+La ecuación de la velocidad de vibración es:
+$v_y(x,t) = (3)\left(\frac{\pi}{4}\right)\cos\left(\frac{\pi}{4}t - 4\pi x\right) = \frac{3\pi}{4}\cos\left(\frac{\pi}{4}t - 4\pi x\right)$.
+Sustituyendo $x=1$ m y $t=8$ s:
+\begin{gather}
+    v_y(1, 8) = \frac{3\pi}{4}\cos\left(\frac{\pi}{4}(8) - 4\pi (1)\right) = \frac{3\pi}{4}\cos(2\pi - 4\pi) = \frac{3\pi}{4}\cos(-2\pi)
+\end{gather}
+Como $\cos(-2\pi) = \cos(0) = 1$:
+$$ v_y(1, 8) = \frac{3\pi}{4} \approx \boldsymbol{2,36 \, \textbf{m/s}} $$
+\begin{cajaresultado}
+La velocidad de propagación es $\boldsymbol{v_p = 0,0625\,\textbf{m/s}}$.
+La velocidad de vibración en el punto y tiempo indicados es $\boldsymbol{v_y \approx 2,36\,\textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Identificando los términos de la ecuación de onda se han obtenido todos sus parámetros característicos. Es crucial distinguir entre la velocidad de propagación (constante, a la que viaja la energía de la onda) y la velocidad de vibración (variable, la que tiene cada punto del medio), que en el instante y posición solicitados alcanza su valor máximo.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque III: Óptica Geométrica}
+\label{sec:optica_2018_jun_ord}
+% ======================================================================
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2018_jun_ord}
+\begin{cajaenunciado}
+Utiliza un esquema de trazado de rayos para describir el problema de visión de una persona que sufre de miopía y explica razonadamente el fenómeno. ¿Con qué tipo de lente debe corregirse y por qué?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica sobre el defecto visual de la miopía.
+\begin{itemize}
+    \item \textbf{Fenómeno a describir:} Miopía.
+    \item \textbf{Tarea 1:} Explicar el fenómeno y realizar el trazado de rayos de un ojo miope.
+    \item \textbf{Tarea 2:} Indicar el tipo de lente correctora y justificarlo con un segundo trazado de rayos.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Ojo Miope} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de un ojo humano visto de perfil, con su córnea, cristalino y retina. El globo ocular es ligeramente alargado. Dibujar rayos de luz paralelos, provenientes de un objeto lejano, que entran en el ojo. Mostrar cómo el sistema córnea-cristalino converge los rayos en un punto focal que queda \textbf{delante} de la retina. Indicar que la imagen en la retina está desenfocada."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/optica_ojo_miope.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Corrección con Lente Divergente} \vspace{0.5cm} \textit{Prompt para la imagen:} "El mismo esquema del ojo miope, pero ahora con una lente bicóncava (divergente) colocada delante. Los rayos de luz paralelos del objeto lejano primero divergen ligeramente al pasar por la lente correctora. Luego, el sistema del ojo converge estos rayos, haciendo que el punto focal se desplace hacia atrás y caiga \textbf{exactamente sobre} la retina, formando una imagen nítida."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/optica_correccion_miopia.png}
+    }}
+    \caption{Esquema del ojo miope y su corrección.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Explicación del fenómeno de la Miopía}
+Un ojo normal, o emétrope, forma la imagen de los objetos lejanos (considerados en el infinito) sobre la retina. La miopía es un defecto de refracción del ojo en el cual éste tiene un \textbf{exceso de potencia convergente}. Esto puede deberse a dos causas principales:
+\begin{itemize}
+    \item El globo ocular es demasiado largo (miopía axial).
+    \item La córnea o el cristalino son demasiado curvos y, por tanto, demasiado convergentes (miopía refractiva).
+\end{itemize}
+Como consecuencia, los rayos de luz paralelos que provienen de objetos lejanos convergen y forman un foco en un punto \textbf{delante de la retina}. Cuando estos rayos llegan a la retina, ya han vuelto a divergir, formando una imagen borrosa. Una persona miope ve bien los objetos cercanos, pero no los lejanos.
+
+\paragraph{Tipo de lente correctora y porqué}
+Para corregir el exceso de convergencia del ojo miope, es necesario \textbf{reducir la potencia refractiva} total del sistema ojo-lente. Esto se consigue anteponiendo al ojo una \textbf{lente divergente} (una lente cóncava).
+La lente divergente hace que los rayos paralelos de un objeto lejano se separen ligeramente antes de entrar en el ojo. Para el sistema óptico del ojo, es como si los rayos provinieran de un objeto virtual más cercano (situado en el punto remoto del ojo miope). De esta manera, el sistema ocular, que es demasiado potente, puede ahora enfocar correctamente estos rayos divergentes sobre la retina, produciendo una imagen nítida.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La miopía es un defecto visual causado por un exceso de convergencia del sistema óptico del ojo, lo que provoca que las imágenes de objetos lejanos se formen delante de la retina. Se corrige mediante el uso de una lente divergente (cóncava), cuya función es reducir la convergencia de los rayos de luz antes de que entren en el ojo, permitiendo así que la imagen se forme nítidamente sobre la retina.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 3 - OPCIÓN B}
+\label{subsec:3B_2018_jun_ord}
+\begin{cajaenunciado}
+La lente convergente de un proyector de diapositivas tiene una potencia de 10 D, y se encuentra a una distancia de 10,2 cm de la diapositiva que se proyecta.
+\begin{itemize}
+    \item[a)] Calcula razonadamente la distancia a la que habrá que poner la pantalla para tener una imagen nítida. (1 punto)
+    \item[b)] Calcula el tamaño de la imagen y realiza un trazado de rayos para justificar la respuesta. (1 punto)
+\end{itemize}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Convergente (proyector).
+    \item \textbf{Potencia ($P$):} $P = +10 \, \text{D}$.
+    \item \textbf{Distancia focal ($f'$):} La distancia focal es la inversa de la potencia: $f' = 1/P = 1/10 = 0,1 \, \text{m} = 10 \, \text{cm}$.
+    \item \textbf{Posición del objeto (diapositiva, $s$):} La diapositiva es el objeto. Está a 10,2 cm de la lente. Según el convenio de signos, $s = -10,2 \, \text{cm}$.
+    \item \textbf{Incógnita a):} Distancia de la imagen (pantalla, $s'$).
+    \item \textbf{Incógnita b):} Tamaño de la imagen ($y'$). Para esto se necesita el tamaño del objeto ($y$), que no se da. Se calculará el \textbf{aumento lateral ($M$)}.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Trazado de rayos de un proyector} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama de trazado de rayos para una lente convergente. Dibuja el eje óptico horizontal. En el centro, una lente convergente. Marcar el foco imagen F' en x=+10 cm y el foco objeto F en x=-10 cm. Colocar un objeto (una flecha vertical hacia arriba, representando la diapositiva) en la posición s=-10,2 cm, justo a la izquierda del foco F. Trazar dos rayos principales desde la punta del objeto: 1) Un rayo que pasa por el centro óptico sin desviarse. 2) Un rayo paralelo al eje óptico que, tras refractarse en la lente, pasa por el foco imagen F'. El punto donde se cruzan estos dos rayos, muy a la derecha de la lente, forma la punta de la imagen. La imagen resultante debe ser real, invertida y mucho más grande que el objeto."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/optica_proyector.png}
+    }}
+    \caption{Formación de la imagen en un proyector de diapositivas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se emplean las ecuaciones de las lentes delgadas, que relacionan la posición del objeto ($s$), la posición de la imagen ($s'$) y la distancia focal ($f'$).
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss para lentes delgadas:} $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item \textbf{Aumento Lateral ($M$):} Relaciona el tamaño de la imagen ($y'$) con el del objeto ($y$), y sus posiciones. $M = \frac{y'}{y} = \frac{s'}{s}$.
+\end{itemize}
+Una imagen real se forma donde los rayos de luz convergen realmente, y puede ser proyectada en una pantalla. Esto corresponde a un valor de $s' > 0$. Un aumento negativo ($M<0$) indica que la imagen es invertida.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Distancia de la imagen ($s'$)}
+Despejamos $1/s'$ de la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{f'} + \frac{1}{s}
+\end{gather}
+Invirtiendo la expresión, obtenemos $s'$.
+
+\paragraph{b) Aumento lateral ($M$)}
+Una vez calculado $s'$, se utiliza la fórmula del aumento:
+\begin{gather}
+    M = \frac{s'}{s}
+\end{gather}
+El tamaño de la imagen será $y' = M \cdot y$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Distancia a la pantalla}
+Sustituimos los valores numéricos (en cm) en la ecuación:
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{10} + \frac{1}{-10,2} = \frac{1}{10} - \frac{1}{10,2} = \frac{10,2 - 10}{10 \cdot 10,2} = \frac{0,2}{102} \\
+    s' = \frac{102}{0,2} = 510 \, \text{cm} = 5,1 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+Habrá que poner la pantalla a una distancia de $\boldsymbol{5,1\,\textbf{m}}$ de la lente para obtener una imagen nítida.
+\end{cajaresultado}
+
+\paragraph{b) Tamaño de la imagen (aumento lateral)}
+Calculamos el aumento lateral:
+\begin{gather}
+    M = \frac{s'}{s} = \frac{510 \, \text{cm}}{-10,2 \, \text{cm}} = -50
+\end{gather}
+El tamaño de la imagen será 50 veces el tamaño de la diapositiva.
+\begin{cajaresultado}
+El aumento lateral es $\boldsymbol{M=-50}$. Esto significa que la imagen es \textbf{50 veces mayor} que la diapositiva y está \textbf{invertida}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que un proyector funcione, el objeto (la diapositiva) debe colocarse ligeramente fuera del foco de la lente convergente. El cálculo muestra que situando la diapositiva a 10,2 cm de una lente de 10 cm de focal, se proyecta una imagen real a 5,1 metros de distancia. El signo negativo del aumento ($M=-50$) confirma que la imagen está invertida (por eso las diapositivas se colocan al revés) y el gran valor del módulo indica que la imagen está muy ampliada, cumpliendo así la función del proyector.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque IV: Campo Electromagnético}
+\label{sec:em_2018_jun_ord}
+% ======================================================================
+\subsection{Problema 4 - OPCIÓN A}
+\label{subsec:4A_2018_jun_ord}
+\begin{cajaenunciado}
+Atendiendo a la distribución de cargas representada en la figura, calcula:
+\begin{itemize}
+    \item[a)] El vector campo eléctrico debido a cada una de las cargas y el total en el punto P. Dibuja todos los vectores (1,2 puntos).
+    \item[b)] El trabajo mínimo necesario para trasladar una carga $q_{3}=1$ nC desde el infinito hasta el punto P. Considera que el potencial eléctrico en el infinito es nulo. (0,8 puntos)
+\end{itemize}
+\textbf{Dato:} constante de Coulomb, $k_{e}=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = -4 \, \mu\text{C} = -4 \cdot 10^{-6} \, \text{C}$. Situada en el origen, $P_1(0,0)$.
+    \item \textbf{Punto de cálculo (P):} $P(0,4)$ m.
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = +2 \, \mu\text{C} = +2 \cdot 10^{-6} \, \text{C}$. Su posición $P_2(x_2, 0)$ se debe determinar por la geometría.
+    \item \textbf{Geometría:} La distancia vertical de $q_1$ a P es $d_{1P,y}=4$ m. Del gráfico, $\tan(30^{\circ}) = \frac{4}{x_2}$, por lo que $x_2 = \frac{4}{\tan(30^{\circ})} = \frac{4}{1/\sqrt{3}} = 4\sqrt{3} \approx 6,93$ m. La posición de $q_2$ es $P_2(4\sqrt{3}, 0)$.
+    \item \textbf{Carga 3 ($q_3$):} $q_3 = 1 \, \text{nC} = 1 \cdot 10^{-9} \, \text{C}$ para el apartado b).
+    \item \textbf{Constante de Coulomb ($k_e$):} $k_e = 9\cdot10^9 \, \text{N}\text{m}^2/\text{C}^2$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo Eléctrico en el punto P} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Una carga $q_1$ negativa en el origen (0,0). Una carga $q_2$ positiva en $(4\sqrt{3}, 0)$. Un punto P en (0,4). Dibujar los vectores de campo eléctrico en P: 1) El vector $\vec{E}_1$ creado por $q_1$ debe ser atractivo, apuntando desde P verticalmente hacia abajo, hacia $q_1$. 2) El vector $\vec{E}_2$ creado por $q_2$ debe ser repulsivo, apuntando a lo largo de la línea que une $q_2$ y P, alejándose de $q_2$. Este vector tendrá componentes x negativa e y positiva. Dibujar el vector suma $\vec{E}_{total}$ usando la regla del paralelogramo."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/em_campo_cargas_P.png}
+    }}
+    \caption{Superposición de campos eléctricos en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Campo Eléctrico} Se aplica el \textbf{Principio de Superposición}. El campo total es la suma vectorial de los campos creados por cada carga: $\vec{E}_P = \vec{E}_1 + \vec{E}_2$. El campo creado por una carga puntual $q$ es $\vec{E} = k_e \frac{q}{r^2} \vec{u}_r$, donde $\vec{u}_r$ es el vector unitario que va desde la carga al punto.
+\paragraph{b) Trabajo y Potencial} El trabajo mínimo necesario que debe realizar un agente externo para traer una carga $q_3$ desde el infinito a un punto P es igual al cambio en la energía potencial de la carga, $W_{ext} = \Delta E_p = q_3 V_P$. El potencial $V_P$ en el punto P es la suma escalar de los potenciales creados por las cargas fuente: $V_P = V_1 + V_2 = k_e\frac{q_1}{r_1} + k_e\frac{q_2}{r_2}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Campo Eléctrico}
+\begin{itemize}
+    \item \textbf{Campo de $q_1$ en P:} $r_1=4$ m. $\vec{u}_1=\vec{j}$. $\vec{E}_1 = k_e \frac{q_1}{r_1^2}\vec{j}$.
+    \item \textbf{Campo de $q_2$ en P:} El vector de $q_2$ a P es $\vec{r}_2 = (0-4\sqrt{3})\vec{i} + (4-0)\vec{j} = -4\sqrt{3}\vec{i} + 4\vec{j}$. La distancia es $r_2 = |\vec{r}_2| = \sqrt{(-4\sqrt{3})^2+4^2} = \sqrt{48+16} = \sqrt{64}=8$ m. El vector unitario es $\vec{u}_2 = \frac{\vec{r}_2}{r_2} = \frac{-4\sqrt{3}\vec{i} + 4\vec{j}}{8} = \frac{-\sqrt{3}}{2}\vec{i} + \frac{1}{2}\vec{j}$. El campo es $\vec{E}_2 = k_e \frac{q_2}{r_2^2}\vec{u}_2$.
+\end{itemize}
+$\vec{E}_{total} = \vec{E}_1 + \vec{E}_2$.
+
+\paragraph{b) Trabajo}
+$W = q_3 V_P = q_3 \left(k_e \frac{q_1}{r_1} + k_e \frac{q_2}{r_2}\right)$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Vectores Campo Eléctrico}
+\begin{gather}
+    \vec{E}_1 = (9\cdot10^9) \frac{-4\cdot10^{-6}}{4^2}\vec{j} = -2250 \vec{j} \, \text{N/C} \\
+    \vec{E}_2 = (9\cdot10^9) \frac{2\cdot10^{-6}}{8^2} \left( \frac{-\sqrt{3}}{2}\vec{i} + \frac{1}{2}\vec{j} \right) = 281,25 \left( \frac{-\sqrt{3}}{2}\vec{i} + \frac{1}{2}\vec{j} \right) \approx (-243,5\vec{i} + 140,6\vec{j}) \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+$\boldsymbol{\vec{E}_1 = -2250 \vec{j} \, \textbf{N/C}}$.
+$\boldsymbol{\vec{E}_2 \approx (-243,5\vec{i} + 140,6\vec{j}) \, \textbf{N/C}}$.
+\end{cajaresultado}
+\begin{gather}
+    \vec{E}_{total} = \vec{E}_1+\vec{E}_2 \approx -243,5\vec{i} + (-2250+140,6)\vec{j} = (-243,5\vec{i} - 2109,4\vec{j}) \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+El campo eléctrico total en P es $\boldsymbol{\vec{E}_{total} \approx (-243,5\vec{i} - 2109,4\vec{j}) \, \textbf{N/C}}$.
+\end{cajaresultado}
+
+\paragraph{b) Trabajo para trasladar $q_3$}
+\begin{gather}
+    V_P = k_e\left(\frac{q_1}{r_1} + \frac{q_2}{r_2}\right) = 9\cdot10^9 \left( \frac{-4\cdot10^{-6}}{4} + \frac{2\cdot10^{-6}}{8} \right) = 9\cdot10^9 (-10^{-6} + 0,25\cdot10^{-6}) \\
+    V_P = 9\cdot10^9 (-0,75\cdot10^{-6}) = -6750 \, \text{V}
+\end{gather}
+\begin{gather}
+    W = q_3 V_P = (1\cdot10^{-9} \, \text{C})(-6750 \, \text{V}) = -6,75 \cdot 10^{-6} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+El trabajo necesario es $\boldsymbol{W = -6,75 \cdot 10^{-6} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo eléctrico total en el punto P es la suma vectorial de las contribuciones de cada carga, resultando en un vector con componentes en ambos ejes. El trabajo necesario para traer la carga $q_3$ es negativo. Esto significa que el campo eléctrico realiza un trabajo positivo, es decir, la carga positiva $q_3$ es atraída hacia el punto P (que tiene un potencial negativo). Un agente externo tendría que realizar un trabajo "frenante" para que la carga llegue a P sin acelerarse.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2018_jun_ord}
+\begin{cajaenunciado}
+La figura representa un conductor rectilíneo de longitud muy grande recorrido por una corriente continua $I_{1}=2$ A. Calcula y dibuja el vector campo magnético en un punto P situado a una distancia $d=1$ m a la derecha del conductor. En el punto P se sitúa otro conductor rectilíneo paralelo al anterior y recorrido por una corriente $I_{2}$ en sentido opuesto. Representa el vector fuerza que actúa sobre el segundo conductor.
+\textbf{Dato:} permeabilidad magnética del vacío, $\mu_{0}=4\pi\cdot10^{-7}\,\text{N/A}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Conductor 1:} Rectilíneo, muy largo. Corriente $I_1 = 2$ A, sentido hacia arriba (eje +Y).
+    \item \textbf{Punto P:} Situado a una distancia $d=1$ m a la derecha del conductor 1.
+    \item \textbf{Conductor 2:} Situado en P, paralelo al 1. Corriente $I_2$, sentido opuesto a $I_1$ (eje -Y).
+    \item \textbf{Constante ($\mu_0$):} $\mu_0 = 4\pi\cdot10^{-7} \, \text{N/A}^2$.
+    \item \textbf{Incógnitas:} Vector $\vec{B}_1$ en P; vector $\vec{F}_2$ sobre el conductor 2.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Campo Magnético en P} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista desde arriba del plano XY. El conductor 1 es un punto en el origen con un símbolo de 'salida' (un punto en un círculo) para indicar que la corriente $I_1$ va hacia arriba (+Y). El punto P está en x=1. Usando la regla de la mano derecha, el campo magnético $\vec{B}_1$ en el punto P es un vector que apunta hacia la izquierda (eje -Z). No, el prompt está mal. Vista en el plano XZ. El eje Y es perpendicular al plano. El conductor 1 es un punto en el origen con corriente $I_1$ saliendo del papel. P está en x=1. El campo $\vec{B}_1$ en P es un vector vertical hacia arriba (eje +Y). No, eso también es confuso. Usemos la vista del enunciado: Plano YX. Conductor 1 en el eje Y, corriente hacia arriba. En el punto P (x=1), el campo $\vec{B}_1$ entra en el papel (-Z), representado por una 'X' en un círculo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/em_campo_hilo.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Fuerza sobre el conductor 2} \vspace{0.5cm} \textit{Prompt para la imagen:} "La misma vista que antes. En el punto P (x=1), ahora hay un segundo conductor con una corriente $I_2$ que entra en el papel ('X'). Este conductor está inmerso en el campo $\vec{B}_1$ (que también entra en el papel). No, esta vista es mala. Vista desde el frente (plano YX). Cable 1 a la izquierda, corriente $I_1$ hacia arriba. Cable 2 a la derecha, corriente $I_2$ hacia abajo. El campo $\vec{B}_1$ creado por el cable 1 en la posición del cable 2 entra en el papel. Aplicando la regla de la mano derecha (o de Fleming) a $I_2$ (hacia abajo) y $\vec{B}_1$ (hacia adentro), la fuerza $\vec{F}_2$ sobre el cable 2 apunta hacia la derecha, alejándose del cable 1. Es una fuerza repulsiva."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/em_fuerza_hilos.png}
+    }}
+    \caption{Campo magnético en P (izquierda) y fuerza sobre el conductor 2 (derecha).}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Campo magnético de un hilo infinito:} El módulo del campo magnético creado por un conductor rectilíneo muy largo viene dado por la Ley de Ampère: $B = \frac{\mu_0 I}{2\pi d}$. La dirección y sentido del campo se obtienen con la \textbf{regla de la mano derecha}.
+    \item \textbf{Fuerza sobre un conductor:} La fuerza magnética que actúa sobre un segmento de longitud L de un conductor que transporta una corriente I inmerso en un campo magnético $\vec{B}$ es $\vec{F} = I (\vec{L} \times \vec{B})$. El sentido de la fuerza se obtiene también con la \textbf{regla de la mano derecha}.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Campo magnético en P}
+El módulo del campo $\vec{B}_1$ creado por $I_1$ en P es:
+\begin{gather}
+    B_1 = \frac{\mu_0 I_1}{2\pi d}
+\end{gather}
+Usando un sistema de coordenadas donde $I_1$ va en la dirección $+\vec{j}$ y P está en el eje X positivo, la regla de la mano derecha indica que el campo $\vec{B}_1$ en P apunta en la dirección $-\vec{k}$ (hacia dentro del papel).
+$$ \vec{B}_1(P) = -\frac{\mu_0 I_1}{2\pi d} \vec{k} $$
+\paragraph{Fuerza sobre el conductor 2}
+El conductor 2 transporta una corriente $I_2$ en la dirección $-\vec{j}$ y está inmerso en el campo $\vec{B}_1(P)$. La fuerza por unidad de longitud sobre este conductor es:
+\begin{gather}
+    \frac{\vec{F}_2}{L} = I_2 (-\vec{j}) \times \vec{B}_1(P) = I_2 (-\vec{j}) \times \left( -\frac{\mu_0 I_1}{2\pi d} \vec{k} \right) = \frac{\mu_0 I_1 I_2}{2\pi d} (\vec{j} \times \vec{k})
+\end{gather}
+Como $\vec{j} \times \vec{k} = \vec{i}$, la fuerza apunta en la dirección $+\vec{i}$, es decir, hacia la derecha, alejándose del primer conductor. Es una fuerza repulsiva.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Cálculo del campo magnético en P}
+\begin{gather}
+    B_1 = \frac{(4\pi\cdot10^{-7}\,\text{N/A}^2) \cdot (2\,\text{A})}{2\pi \cdot (1\,\text{m})} = 4 \cdot 10^{-7} \, \text{T}
+\end{gather}
+\begin{cajaresultado}
+El vector campo magnético en P es $\boldsymbol{\vec{B}_1 = -4 \cdot 10^{-7} \vec{k} \, \textbf{T}}$. Es decir, tiene un módulo de $4 \cdot 10^{-7}$ T y apunta perpendicularmente hacia dentro del plano del papel.
+\end{cajaresultado}
+\paragraph{Representación de la fuerza}
+Como se ha deducido simbólicamente, la fuerza sobre el segundo conductor apunta en la dirección $+\vec{i}$. Es una \textbf{fuerza repulsiva} que aleja al conductor 2 del conductor 1.
+\begin{cajaresultado}
+El vector fuerza $\vec{F}_2$ sobre el segundo conductor es \textbf{repulsivo}, apuntando hacia la derecha, en sentido opuesto al primer conductor.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Un conductor con corriente crea un campo magnético circular a su alrededor. Se ha calculado el valor de este campo en un punto específico. Al colocar un segundo conductor con corriente en ese punto, éste experimenta una fuerza. Como las corrientes son antiparalelas (tienen sentidos opuestos), la fuerza entre los conductores es repulsiva, un principio fundamental del electromagnetismo.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque V: Física Moderna}
+\label{sec:moderna_2018_jun_ord}
+% ======================================================================
+
+\subsection{Cuestión 5 - OPCIÓN A}
+\label{subsec:5A_2018_jun_ord}
+\begin{cajaenunciado}
+En una experiencia de efecto fotoeléctrico se ilumina un metal con luz monocromática de 500 nm y se observa que es necesario aplicar una diferencia de potencial de 0,2 V para anular totalmente la fotocorriente. Calcula la longitud de onda máxima de la radiación incidente para que se produzca el efecto fotoeléctrico en el metal.
+\textbf{Datos:} constante de Planck, $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$; carga elemental, $e=1,6\cdot10^{-19}\,\text{C}$; velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda incidente ($\lambda$):} $\lambda = 500 \, \text{nm} = 5 \cdot 10^{-7} \, \text{m}$.
+    \item \textbf{Potencial de frenado ($V_f$):} $V_f = 0,2 \, \text{V}$.
+    \item \textbf{Constante de Planck ($h$):} $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+    \item \textbf{Carga elemental ($e$):} $e=1,6\cdot10^{-19}\,\text{C}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c=3\cdot10^{8}\,\text{m/s}$.
+    \item \textbf{Incógnita:} Longitud de onda máxima o umbral ($\lambda_{max}$ o $\lambda_0$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama conceptual del efecto fotoeléctrico. A la izquierda, luz (fotones) de longitud de onda $\lambda$ incide sobre una placa metálica (cátodo). Los fotones arrancan electrones (fotoelectrones) de la placa. Estos electrones son emitidos con una energía cinética máxima, $E_{c,max}$. A la derecha, se muestra un gráfico de energía. La energía del fotón incidente, $E_{inc}$, se divide en dos partes: una parte para superar el trabajo de extracción del metal, $W_0$, y el resto se convierte en la energía cinética del electrón, $E_{c,max}$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/moderna_fotoelectrico.png}
+    }}
+    \caption{Esquema energético del efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe mediante la \textbf{ecuación del efecto fotoeléctrico de Einstein}:
+$$ E_{inc} = W_0 + E_{c,max} $$
+\newpage
+Donde:
+\begin{itemize}
+    \item $E_{inc}$ es la energía del fotón incidente, que se calcula como $E_{inc} = hf = \frac{hc}{\lambda}$.
+    \item $W_0$ es el \textbf{trabajo de extracción} o función de trabajo, la energía mínima necesaria para arrancar un electrón del metal. Es una propiedad de cada material.
+    \item $E_{c,max}$ es la energía cinética máxima de los electrones emitidos. Esta energía se relaciona con el potencial de frenado $V_f$ mediante $E_{c,max} = e \cdot V_f$.
+\end{itemize}
+La \textbf{longitud de onda máxima ($\lambda_0$)} es la longitud de onda umbral, por encima de la cual no se produce efecto fotoeléctrico. Corresponde al caso límite en que la energía del fotón es justo la necesaria para arrancar el electrón, pero sin comunicarle energía cinética ($E_{c,max}=0$). Por tanto, $E_{inc,min} = W_0$, lo que implica $\frac{hc}{\lambda_0} = W_0$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El procedimiento para resolver el problema consta de dos pasos:
+\paragraph{1. Calcular el trabajo de extracción ($W_0$)}
+A partir de la ecuación de Einstein y los datos del experimento:
+\begin{gather}
+    \frac{hc}{\lambda} = W_0 + e V_f \implies W_0 = \frac{hc}{\lambda} - e V_f
+\end{gather}
+\paragraph{2. Calcular la longitud de onda máxima ($\lambda_0$)}
+Una vez conocido $W_0$, usamos la relación del umbral:
+\begin{gather}
+    W_0 = \frac{hc}{\lambda_0} \implies \lambda_0 = \frac{hc}{W_0}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Cálculo de $W_0$}
+\begin{gather}
+    E_{inc} = \frac{(6,63\cdot10^{-34})(3\cdot10^8)}{5\cdot10^{-7}} = 3,978 \cdot 10^{-19} \, \text{J} \\
+    E_{c,max} = (1,6\cdot10^{-19} \, \text{C})(0,2 \, \text{V}) = 0,32 \cdot 10^{-19} \, \text{J} \\
+    W_0 = E_{inc} - E_{c,max} = (3,978 \cdot 10^{-19}) - (0,32 \cdot 10^{-19}) = 3,658 \cdot 10^{-19} \, \text{J}
+\end{gather}
+\paragraph{2. Cálculo de $\lambda_0$}
+\begin{gather}
+    \lambda_0 = \frac{hc}{W_0} = \frac{(6,63\cdot10^{-34})(3\cdot10^8)}{3,658 \cdot 10^{-19}} \approx 5,437 \cdot 10^{-7} \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+La longitud de onda máxima de la radiación para que se produzca el efecto fotoeléctrico es $\boldsymbol{\lambda_0 \approx 544 \, \textbf{nm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El experimento permite determinar primero el trabajo de extracción del metal, que resulta ser de $3,66 \cdot 10^{-19}$ J. Esta energía es la barrera que deben superar los fotones para arrancar electrones. La longitud de onda umbral correspondiente a esta energía es de 544 nm. Cualquier radiación con una longitud de onda superior a este valor (y por tanto, menor energía por fotón) no será capaz de producir efecto fotoeléctrico en este metal.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 5 - OPCIÓN B}
+\label{subsec:5B_2018_jun_ord}
+\begin{cajaenunciado}
+La energía cinética de una partícula es un 50\% de su energía en reposo. Calcula su energía relativista total en función de su energía en reposo y calcula también la velocidad de la partícula.
+\textbf{Dato:} velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Energía en reposo ($E_0$):} $E_0 = m_0 c^2$.
+    \item \textbf{Condición de energía cinética ($E_c$):} $E_c = 0,50 \cdot E_0 = \frac{1}{2} E_0$.
+    \item \textbf{Incógnita 1:} Energía relativista total ($E$) en función de $E_0$.
+    \item \textbf{Incógnita 2:} Velocidad de la partícula ($v$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema conceptual y de cálculo.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplican los principios de la \textbf{Relatividad Especial} de Einstein.
+\begin{itemize}
+    \item La \textbf{energía total relativista ($E$)} de una partícula es la suma de su energía en reposo ($E_0$) y su energía cinética ($E_c$):
+    $$ E = E_0 + E_c $$
+    \item La energía total también se relaciona con la masa en reposo ($m_0$) y la velocidad ($v$) a través del factor de Lorentz ($\gamma$):
+    $$ E = \gamma m_0 c^2 = \gamma E_0 $$
+    donde el factor de Lorentz es $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Energía total en función de la energía en reposo}
+Partimos de la definición de energía total y sustituimos la condición dada:
+\begin{gather}
+    E = E_0 + E_c = E_0 + \frac{1}{2}E_0 = \frac{3}{2}E_0
+\end{gather}
+\paragraph{Velocidad de la partícula}
+Igualamos las dos expresiones para la energía total:
+\begin{gather}
+    \gamma E_0 = \frac{3}{2}E_0 \implies \gamma = \frac{3}{2} = 1,5
+\end{gather}
+Ahora, usamos la definición del factor de Lorentz para despejar la velocidad $v$:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1-v^2/c^2}} \implies \gamma^2 = \frac{1}{1-v^2/c^2} \\
+    1-\frac{v^2}{c^2} = \frac{1}{\gamma^2} \implies \frac{v^2}{c^2} = 1 - \frac{1}{\gamma^2} \\
+    v = c \sqrt{1 - \frac{1}{\gamma^2}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Energía total}
+El resultado ya está en la forma simbólica pedida.
+\begin{cajaresultado}
+La energía relativista total de la partícula es $\boldsymbol{E = \frac{3}{2} E_0}$ (o 1,5 veces su energía en reposo).
+\end{cajaresultado}
+\paragraph{Velocidad de la partícula}
+Sustituimos el valor de $\gamma=1,5$:
+\begin{gather}
+    v = c \sqrt{1 - \frac{1}{(1,5)^2}} = c \sqrt{1 - \frac{1}{2,25}} = c \sqrt{1 - \frac{4}{9}} = c \sqrt{\frac{5}{9}} = \frac{\sqrt{5}}{3}c
+\end{gather}
+Calculamos el valor numérico:
+\begin{gather}
+    v \approx \frac{2,236}{3} c \approx 0,745 c \\
+    v \approx 0,745 \cdot (3\cdot10^8 \, \text{m/s}) \approx 2,236 \cdot 10^8 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad de la partícula es $\boldsymbol{v = \frac{\sqrt{5}}{3}c \approx 2,24 \cdot 10^8 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Este problema ilustra cómo a velocidades relativistas la energía cinética no sigue la expresión clásica. Una energía cinética de "solo" el 50\% de la energía en reposo ya implica que la partícula se mueve a una velocidad muy elevada, aproximadamente al 74,5\% de la velocidad de la luz. Su energía total es la suma de su energía en reposo y su energía de movimiento, alcanzando 1,5 veces su energía en reposo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 6 - OPCIÓN A}
+\label{subsec:6A_2018_jun_ord}
+\begin{cajaenunciado}
+En una prueba médica, se le inyecta a un paciente un radiofármaco constituido por un isótopo radiactivo con periodo de semidesintegración $T=17,8$ h. Para obtener la resolución deseada, en el momento de realizar la prueba la actividad de la sustancia inyectada debe ser de 2108 Bq (desintegraciones/segundo). Entre la fabricación del radiofármaco y la realización de la prueba pasan 20 h. Calcula:
+\begin{itemize}
+    \item[a)] La actividad que debe tener el radiofármaco en el momento de su fabricación. (1 punto)
+    \item[b)] El número inicial de núcleos de dicho isótopo y la masa que se necesita fabricar. (1 punto)
+\end{itemize}
+\textbf{Datos:} número de Avogadro, $N_{A}=6,02\cdot10^{23}\,\text{mol}^{-1}$; masa molar del isótopo, $m_{M}=74\,\text{g/mol}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T = 17,8 \, \text{h} = 17,8 \times 3600 = 64080 \, \text{s}$.
+    \item \textbf{Actividad final ($A(t)$):} $A(t) = 2108 \, \text{Bq}$.
+    \item \textbf{Tiempo transcurrido ($t$):} $t = 20 \, \text{h} = 20 \times 3600 = 72000 \, \text{s}$.
+    \item \textbf{Número de Avogadro ($N_A$):} $N_A = 6,02\cdot10^{23} \, \text{mol}^{-1}$.
+    \item \textbf{Masa molar ($M_m$):} $M_m = 74 \, \text{g/mol}$.
+    \item \textbf{Incógnitas:} Actividad inicial ($A_0$), número inicial de núcleos ($N_0$) y masa inicial ($m_0$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Decaimiento Radiactivo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico con el tiempo 't' en el eje X y la Actividad 'A' en el eje Y. Dibujar una curva de decaimiento exponencial que comience en un punto $A_0$ en t=0. Marcar el tiempo $t=20$ h en el eje X y el punto correspondiente en la curva, cuya altura es $A(t)=2108$ Bq. La curva debe mostrar cómo la actividad disminuye con el tiempo."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/nuclear_decaimiento.png}
+    }}
+    \caption{Curva de decaimiento de la actividad del radiofármaco.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve con las leyes de la desintegración radiactiva.
+\begin{itemize}
+    \item \textbf{Constante de desintegración ($\lambda$):} Se relaciona con el periodo de semidesintegración: $\lambda = \frac{\ln(2)}{T_{1/2}}$.
+    \item \textbf{Ley de desintegración radiactiva:} La actividad de una muestra en un instante $t$ se relaciona con la actividad inicial $A_0$ mediante: $A(t) = A_0 e^{-\lambda t}$.
+    \item \textbf{Relación Actividad-Núcleos:} La actividad es proporcional al número de núcleos radiactivos presentes: $A = \lambda N$.
+    \item \textbf{Relación Núcleos-Masa:} El número de núcleos $N$ se relaciona con la masa $m$ de la muestra a través de la masa molar $M_m$ y el número de Avogadro $N_A$: $N = \frac{m}{M_m} N_A$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Actividad inicial ($A_0$)}
+Primero se calcula la constante de desintegración $\lambda$.
+\begin{gather}
+    \lambda = \frac{\ln(2)}{T_{1/2}}
+\end{gather}
+Luego, se despeja $A_0$ de la ley de decaimiento:
+\begin{gather}
+    A(t) = A_0 e^{-\lambda t} \implies A_0 = A(t) e^{\lambda t}
+\end{gather}
+\paragraph{b) Número de núcleos ($N_0$) y masa ($m_0$)}
+A partir de la actividad inicial $A_0$, se calcula el número inicial de núcleos $N_0$:
+\begin{gather}
+    A_0 = \lambda N_0 \implies N_0 = \frac{A_0}{\lambda}
+\end{gather}
+Finalmente, se calcula la masa inicial $m_0$ a partir de $N_0$:
+\begin{gather}
+    m_0 = N_0 \frac{M_m}{N_A}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Actividad inicial}
+Es conveniente mantener las unidades de tiempo en horas, ya que tanto $T_{1/2}$ como $t$ se dan en horas.
+\begin{gather}
+    \lambda = \frac{\ln(2)}{17,8 \, \text{h}} \approx 0,03894 \, \text{h}^{-1} \\
+    A_0 = (2108 \, \text{Bq}) \cdot e^{(0,03894 \cdot 20)} = 2108 \cdot e^{0,7788} \approx 2108 \cdot 2,1788 \approx 4593,5 \, \text{Bq}
+\end{gather}
+\begin{cajaresultado}
+La actividad que debe tener el radiofármaco en el momento de su fabricación es $\boldsymbol{A_0 \approx 4594 \, \textbf{Bq}}$.
+\end{cajaresultado}
+\paragraph{b) Número de núcleos y masa}
+Para estos cálculos, necesitamos $\lambda$ en unidades del SI ($\text{s}^{-1}$).
+\begin{gather}
+    \lambda = \frac{\ln(2)}{64080 \, \text{s}} \approx 1,0816 \cdot 10^{-5} \, \text{s}^{-1} \\
+    N_0 = \frac{A_0}{\lambda} = \frac{4593,5 \, \text{s}^{-1}}{1,0816 \cdot 10^{-5} \, \text{s}^{-1}} \approx 4,247 \cdot 10^8 \, \text{núcleos}
+\end{gather}
+\begin{cajaresultado}
+El número inicial de núcleos es $\boldsymbol{N_0 \approx 4,25 \cdot 10^8 \, \textbf{núcleos}}$.
+\end{cajaresultado}
+\begin{gather}
+    m_0 = (4,247 \cdot 10^8 \, \text{núcleos}) \frac{74 \, \text{g/mol}}{6,02\cdot10^{23} \, \text{núcleos/mol}} \approx 5,22 \cdot 10^{-14} \, \text{g}
+\end{gather}
+\begin{cajaresultado}
+La masa que se necesita fabricar es $\boldsymbol{m_0 \approx 5,22 \cdot 10^{-14} \, \textbf{g}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido al decaimiento radiactivo, la actividad de la muestra disminuye con el tiempo. Para asegurar la actividad requerida de 2108 Bq en el momento de la prueba, es necesario fabricar una muestra con una actividad inicial mayor, de 4594 Bq. Este nivel de actividad corresponde a un número de núcleos de $4,25 \cdot 10^8$, lo que equivale a una masa extraordinariamente pequeña, del orden de $10^{-14}$ gramos, demostrando la alta actividad específica de este tipo de isótopos.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 6 - OPCIÓN B}
+\label{subsec:6B_2018_jun_ord}
+\begin{cajaenunciado}
+Explica brevemente en qué consisten la radiación alfa y la radiación beta. Halla razonadamente el número atómico y el número másico del elemento producido a partir del ${}_{84}^{218}\text{Po}$, después de emitir una partícula $\alpha$ y una partícula $\beta^{-}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica sobre tipos de desintegración nuclear y la aplicación de las leyes de conservación.
+\begin{itemize}
+    \item \textbf{Núcleo inicial:} Polonio-218, ${}_{84}^{218}\text{Po}$.
+    \item \textbf{Partículas emitidas:} Una partícula alfa ($\alpha$) y una partícula beta menos ($\beta^-$).
+    \item \textbf{Incógnitas:} Descripción de las radiaciones $\alpha$ y $\beta$, y los números másico ($A'$) y atómico ($Z'$) del núcleo final.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Radiación Alfa ($\alpha$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un núcleo atómico grande e inestable. Mostrar cómo emite una partícula alfa, que es un pequeño cúmulo de 2 protones y 2 neutrones (un núcleo de Helio-4). El núcleo original se transforma en un núcleo hijo, que tiene 2 protones y 2 neutrones menos. Escribir la reacción genérica: ${}_{Z}^{A}X \to {}_{Z-2}^{A-4}Y + {}_{2}^{4}\text{He}$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/nuclear_alfa.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Radiación Beta ($\beta^-$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un núcleo con un exceso de neutrones. Dentro del núcleo, mostrar un neutrón transformándose en un protón, un electrón y un antineutrino. El protón permanece en el núcleo, mientras que el electrón (la partícula $\beta^-$) y el antineutrino son emitidos a alta velocidad. Escribir la reacción genérica: ${}_{Z}^{A}X \to {}_{Z+1}^{A}Y + {}_{-1}^{0}e^{-} + \bar{\nu}_e$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/nuclear_beta.png}
+    }}
+    \caption{Esquemas de la desintegración alfa y beta menos.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Radiación Alfa ($\alpha$)}
+Es la emisión de una \textbf{partícula alfa}, que es un \textbf{núcleo de Helio-4} (${}_{2}^{4}\text{He}$), compuesto por dos protones y dos neutrones. Es una partícula relativamente pesada y con carga positiva (+2e). Este tipo de desintegración es común en núcleos muy masivos, ya que les permite reducir su tamaño y acercarse a una configuración más estable.
+
+\paragraph{Radiación Beta ($\beta^{-}$)}
+Es la emisión de un \textbf{electrón de alta energía} (${}_{-1}^{0}e^{-}$) procedente del núcleo. Este tipo de desintegración ocurre en núcleos que tienen un exceso de neutrones. El proceso subyacente es la conversión de un neutrón en un protón, un electrón y un antineutrino electrónico, a través de la interacción nuclear débil:
+$$ {}_{0}^{1}n \to {}_{1}^{1}p + {}_{-1}^{0}e^{-} + \bar{\nu}_e $$
+El protón queda en el núcleo, mientras que el electrón y el antineutrino son expulsados.
+
+\paragraph{Leyes de Conservación (Leyes de Soddy-Fajans)}
+En cualquier reacción nuclear, se deben conservar el número másico total (A) y el número atómico total (Z).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Escribimos la reacción nuclear completa. El orden en que se emiten las partículas no afecta al resultado final.
+\begin{gather}
+    {}_{84}^{218}\text{Po} \to {}_{Z'}^{A'}X + {}_{2}^{4}\text{He} + {}_{-1}^{0}e^{-} (+ \bar{\nu}_e)
+\end{gather}
+Aplicamos las leyes de conservación:
+\begin{itemize}
+    \item \textbf{Conservación del número másico (A):} La suma de los superíndices a la izquierda debe ser igual a la de la derecha.
+    $$ 218 = A' + 4 + 0 \implies A' = 218 - 4 $$
+    \item \textbf{Conservación del número atómico (Z):} La suma de los subíndices a la izquierda debe ser igual a la de la derecha.
+    $$ 84 = Z' + 2 + (-1) \implies 84 = Z' + 1 $$
+\end{itemize}
+Despejamos $Z'$: $$ Z' = 84 - 1 $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    A' = 214 \\
+    Z' = 83
+\end{gather}
+\begin{cajaresultado}
+El elemento producido tiene un \textbf{número másico} $\boldsymbol{A'=214}$ y un \textbf{número atómico} $\boldsymbol{Z'=83}$. (Corresponde al isótopo Bismuto-214, ${}_{83}^{214}\text{Bi}$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La desintegración alfa reduce el número másico en 4 unidades y el atómico en 2, mientras que la desintegración beta menos no altera el número másico y aumenta el atómico en 1. Aplicando estas reglas de forma consecutiva al núcleo de Polonio-218, se determina que el núcleo hijo resultante tendrá un número másico de 214 y un número atómico de 83.
+\end{cajaconclusion}
+
+\newpage

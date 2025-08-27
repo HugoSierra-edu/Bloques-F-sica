@@ -1,0 +1,841 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2007 - Convocatoria Extraordinaria}
+\label{chap:2007_sep_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Cuestiones}
+\label{sec:grav_2007_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2007_sep_ext}
+
+\begin{cajaenunciado}
+Define el momento angular de una partícula de masa m y velocidad $\vec{v}$ respecto a un punto O (1 punto). Pon un ejemplo razonado de ley o fenómeno físico que sea una aplicación de la conservación del momento angular (0,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica que pide la definición de una magnitud física vectorial (momento angular) y un ejemplo de aplicación de su principio de conservación.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Momento Angular de una Partícula} \vspace{0.5cm} \textit{Prompt:} "Un sistema de coordenadas con origen O. Dibujar un vector de posición $\vec{r}$ desde O hasta una partícula de masa m. La partícula tiene un vector velocidad $\vec{v}$, que forma un ángulo con $\vec{r}$. El vector momento lineal $\vec{p}=m\vec{v}$ también debe mostrarse. El vector momento angular $\vec{L}=\vec{r}\times\vec{p}$ se dibuja perpendicular al plano formado por $\vec{r}$ y $\vec{p}$, siguiendo la regla de la mano derecha."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{momento_angular.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Conservación del Momento Angular} \vspace{0.5cm} \textit{Prompt:} "Dos imágenes de una patinadora sobre hielo girando. Izquierda: 'Brazos extendidos'. La patinadora gira con una velocidad angular $\omega_1$ y un radio de giro $r_1$. Derecha: 'Brazos recogidos'. La patinadora ha reducido su radio de giro a $r_2 < r_1$ y su velocidad angular ha aumentado a $\omega_2 > \omega_1$. Una nota indica $L_1 = I_1 \omega_1 = L_2 = I_2 \omega_2$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{patinadora_momento_angular.png}
+    }}
+    \caption{Definición de momento angular y ejemplo de su conservación.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Definición de Momento Angular}
+El \textbf{momento angular} ($\vec{L}$) de una partícula de masa $m$ que se mueve con una velocidad $\vec{v}$ (y por tanto, con un momento lineal $\vec{p}=m\vec{v}$) respecto a un punto de referencia O, se define como el producto vectorial del vector de posición de la partícula ($\vec{r}$) respecto a O y su momento lineal ($\vec{p}$).
+$$ \vec{L} = \vec{r} \times \vec{p} = \vec{r} \times (m\vec{v}) $$
+Es una magnitud vectorial que caracteriza el estado de rotación de la partícula en torno al punto O. Su módulo es $|\vec{L}|=rmv\sin(\theta)$, donde $\theta$ es el ángulo entre $\vec{r}$ y $\vec{v}$. Su dirección es perpendicular al plano formado por $\vec{r}$ y $\vec{v}$.
+
+\paragraph*{Conservación del Momento Angular y Ejemplo}
+El \textbf{principio de conservación del momento angular} establece que si el momento de las fuerzas externas netas ($\vec{\tau}_{neto}$) que actúa sobre una partícula o sistema es nulo, su momento angular total permanece constante.
+$$ \vec{\tau}_{neto} = \frac{d\vec{L}}{dt} = \vec{0} \implies \vec{L} = \text{constante} $$
+Un ejemplo clásico es el de una \textbf{patinadora sobre hielo} que gira sobre sí misma. Al principio, gira con los brazos extendidos. En esta posición, tiene un momento de inercia ($I$) grande y una velocidad angular ($\omega$) determinada. Su momento angular es $L_1 = I_1 \omega_1$. Al recoger los brazos hacia su cuerpo, disminuye su momento de inercia ($I_2 < I_1$). Como la fuerza de rozamiento con el hielo es muy pequeña, el momento de las fuerzas externas es prácticamente nulo, por lo que su momento angular se conserva ($L_1 = L_2$). Para compensar la disminución del momento de inercia, su velocidad angular debe aumentar drásticamente ($I_1 \omega_1 = I_2 \omega_2 \implies \omega_2 > \omega_1$), y la patinadora gira mucho más rápido.
+
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Definición:} $\vec{L} = \vec{r} \times \vec{p}$. Es una medida de la cantidad de rotación de una partícula respecto a un punto.
+    \item \textbf{Ejemplo de Conservación:} Una patinadora que gira aumenta su velocidad de giro al encoger los brazos, ya que su momento angular se conserva y su momento de inercia disminuye.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El momento angular es el análogo rotacional del momento lineal. Su principio de conservación es fundamental en física y explica fenómenos tan diversos como el aumento de velocidad de una patinadora al recoger sus brazos, la mayor velocidad de un planeta en el perihelio (Segunda Ley de Kepler) o la estabilidad giroscópica.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2007_sep_ext}
+
+\begin{cajaenunciado}
+Calcula el trabajo necesario para poner en órbita de radio r un satélite de masa m, situado inicialmente sobre la superficie de un planeta que tiene radio R y masa M. Expresar el resultado en función de los datos anteriores y de la constante de gravitación universal G.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica de desarrollo simbólico.
+\begin{itemize}
+    \item \textbf{Masa del satélite:} $m$
+    \item \textbf{Masa del planeta:} $M$
+    \item \textbf{Radio del planeta:} $R$
+    \item \textbf{Radio de la órbita final:} $r$
+    \item \textbf{Constante universal:} $G$
+    \item \textbf{Incógnita:} Trabajo ($W$) para pasar de la superficie a la órbita.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Puesta en Órbita de un Satélite} \vspace{0.5cm} \textit{Prompt:} "Un planeta esférico de masa M y radio R. Mostrar un satélite en dos posiciones. Posición 1 (Inicial): El satélite de masa m está en reposo sobre la superficie del planeta. Posición 2 (Final): El satélite está en una órbita circular de radio r alrededor del planeta, moviéndose con una velocidad orbital $v_{orb}$. Una flecha curva, que representa el trabajo realizado por el cohete ($W_{cohete}$), conecta la posición 1 con la 2, indicando la transición entre los dos estados energéticos."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{trabajo_orbita.png}
+    }}
+    \caption{Esquema del proceso de llevar un satélite de la superficie a una órbita.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El trabajo que debe realizarse sobre el satélite por parte de fuerzas no conservativas (como el empuje de un cohete) es igual a la variación de la energía mecánica total del satélite entre el estado final (en órbita) y el estado inicial (en la superficie).
+$$ W_{nc} = \Delta E_M = E_{M, final} - E_{M, inicial} $$
+La energía mecánica en el campo gravitatorio es la suma de la energía cinética y la potencial:
+$$ E_M = E_c + E_p = \frac{1}{2}mv^2 - G\frac{Mm}{\text{distancia al centro}} $$
+Para una órbita circular estable, la fuerza gravitatoria es igual a la fuerza centrípeta, lo que permite relacionar la energía cinética con la potencial.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Energía Mecánica Inicial ($E_{M,i}$)}
+En la superficie del planeta, se considera que el satélite está en reposo ($v_i=0$). La distancia al centro del planeta es $R$.
+\begin{gather}
+    E_{M,i} = \frac{1}{2}m(0)^2 - G\frac{Mm}{R} = -G\frac{Mm}{R}
+\end{gather}
+\paragraph{2. Energía Mecánica Final ($E_{M,f}$)}
+En la órbita circular de radio $r$, el satélite tiene una velocidad orbital $v_{orb}$. Para encontrarla, igualamos la fuerza gravitatoria a la centrípeta:
+\begin{gather}
+    F_g = F_c \implies G\frac{Mm}{r^2} = m\frac{v_{orb}^2}{r} \implies mv_{orb}^2 = G\frac{Mm}{r}
+\end{gather}
+La energía cinética en la órbita es $E_c = \frac{1}{2}mv_{orb}^2 = G\frac{Mm}{2r}$. La energía potencial es $E_p = -G\frac{Mm}{r}$. Por tanto, la energía mecánica total en la órbita es:
+\begin{gather}
+    E_{M,f} = E_c + E_p = G\frac{Mm}{2r} - G\frac{Mm}{r} = -\frac{1}{2}G\frac{Mm}{r}
+\end{gather}
+\paragraph{3. Trabajo Necesario (W)}
+\begin{gather}
+    W = E_{M,f} - E_{M,i} = \left(-\frac{1}{2}G\frac{Mm}{r}\right) - \left(-G\frac{Mm}{R}\right) \nonumber \\
+    W = GMm \left(\frac{1}{R} - \frac{1}{2r}\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es puramente simbólico.
+\begin{cajaresultado}
+El trabajo necesario para poner el satélite en órbita es $\boldsymbol{W = GMm \left(\frac{1}{R} - \frac{1}{2r}\right)}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El resultado muestra que el trabajo a realizar es positivo, ya que $R<r$ y por tanto $1/R > 1/(2r)$. Esto es lógico, pues se debe suministrar energía al satélite para llevarlo desde un estado de energía mecánica más negativo (más ligado) en la superficie a un estado de energía mecánica menos negativo (menos ligado) en la órbita. Este trabajo se invierte en aumentar tanto su energía potencial (alejarlo del planeta) como su energía cinética (darle velocidad orbital).
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Problemas}
+\label{sec:ondas_2007_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2007_sep_ext}
+
+\begin{cajaenunciado}
+Una onda de frecuencia 40 Hz se propaga a lo largo del eje X en el sentido de las x crecientes. En un cierto instante temporal, la diferencia de fase entre dos puntos separados entre sí 5 cm es $\pi/6$ rad.
+\begin{enumerate}
+    \item[1)] ¿Qué valor tiene la longitud de onda? ¿Cuál es la velocidad de propagación de la onda? (1,4 puntos).
+    \item[2)] Escribe la función de onda sabiendo que la amplitud es 2 mm (0,6 puntos).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Frecuencia ($f$):} $f=40\,\text{Hz}$.
+    \item \textbf{Sentido de propagación:} Positivo del eje X.
+    \item \textbf{Separación entre puntos ($\Delta x$):} $\Delta x = 5\,\text{cm} = 0,05\,\text{m}$.
+    \item \textbf{Diferencia de fase ($\Delta\phi$):} $\Delta\phi = \pi/6\,\text{rad}$.
+    \item \textbf{Amplitud ($A$):} $A = 2\,\text{mm} = 0,002\,\text{m}$.
+    \item \textbf{Incógnitas:}
+    \begin{enumerate}
+        \item Longitud de onda ($\lambda$) y velocidad de propagación ($v$).
+        \item Ecuación de la onda $y(x,t)$.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Diferencia de Fase en una Onda} \vspace{0.5cm} \textit{Prompt:} "Dibujo de una onda sinusoidal en un instante t. Marcar dos puntos en el eje X, $x_1$ y $x_2$, separados por una distancia $\Delta x = 5$ cm. Mostrar las elongaciones $y_1$ e $y_2$ en esos puntos. Indicar que la diferencia en la 'posición' a lo largo del ciclo de la onda entre estos dos puntos es la diferencia de fase, $\Delta \phi = \pi/6$ rad. Un vector $v$ debe indicar que la onda se propaga hacia la derecha."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{diferencia_fase.png}
+    }}
+    \caption{Visualización de la diferencia de fase entre dos puntos de una onda.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Diferencia de fase:} La diferencia de fase entre dos puntos separados una distancia $\Delta x$ en un mismo instante de tiempo está relacionada con el número de onda $k$:
+    $$ \Delta\phi = k \cdot \Delta x $$
+    \item \textbf{Relación $k-\lambda$:} El número de onda $k$ está definido como $k = \frac{2\pi}{\lambda}$.
+    \item \textbf{Ecuación fundamental de las ondas:} La velocidad de propagación $v$ se relaciona con la longitud de onda $\lambda$ y la frecuencia $f$: $v = \lambda f$.
+    \item \textbf{Ecuación de onda:} Para una propagación en el sentido +X, la forma general es $y(x,t) = A\sin(kx - \omega t + \phi_0)$, donde $\omega=2\pi f$. Como no se dan condiciones iniciales, se puede asumir la fase inicial $\phi_0=0$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Longitud de onda y velocidad}
+De la relación de la diferencia de fase, despejamos $k$:
+$$ k = \frac{\Delta\phi}{\Delta x} $$
+Luego, a partir de la definición de $k$, despejamos $\lambda$:
+$$ \lambda = \frac{2\pi}{k} = \frac{2\pi \Delta x}{\Delta\phi} $$
+Finalmente, calculamos la velocidad de propagación:
+$$ v = \lambda \cdot f $$
+\paragraph{2. Ecuación de la onda}
+Calculamos la frecuencia angular $\omega$:
+$$ \omega = 2\pi f $$
+Con $A$, $k$ y $\omega$ conocidos, y asumiendo $\phi_0 = 0$, la ecuación es:
+$$ y(x,t) = A\sin(kx - \omega t) $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Longitud de onda y velocidad}
+\begin{gather}
+    k = \frac{\pi/6\,\text{rad}}{0,05\,\text{m}} = \frac{\pi}{0,3} = \frac{10\pi}{3}\,\text{rad/m} \\
+    \lambda = \frac{2\pi}{k} = \frac{2\pi}{10\pi/3} = \frac{6\pi}{10\pi} = 0,6\,\text{m} \\
+    v = \lambda \cdot f = (0,6\,\text{m}) \cdot (40\,\text{Hz}) = 24\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La longitud de onda es $\boldsymbol{\lambda=0,6\,\textbf{m}}$ y la velocidad de propagación es $\boldsymbol{v=24\,\textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph{2. Ecuación de la onda}
+\begin{gather}
+    \omega = 2\pi f = 2\pi(40) = 80\pi\,\text{rad/s}
+\end{gather}
+La ecuación, en unidades del SI, es:
+\begin{cajaresultado}
+La función de onda es $\boldsymbol{y(x,t) = 0,002\sin\left(\frac{10\pi}{3}x - 80\pi t\right)}$ (SI).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La relación entre la diferencia de fase y la separación espacial ha permitido determinar el número de onda y, a partir de él, la longitud de onda de 0,6 m. Conociendo la frecuencia, la velocidad de propagación resulta ser de 24 m/s. Con todos estos parámetros, se ha construido la ecuación de onda que describe completamente su evolución en el espacio y el tiempo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2007_sep_ext}
+
+\begin{cajaenunciado}
+Una partícula de masa 2 kg efectúa un movimiento armónico simple (MAS) de amplitud 1 cm. La elongación y la velocidad de la partícula en el instante inicial $t=0$ s valen 0,5 cm y 1 cm/s, respectivamente.
+\begin{enumerate}
+    \item[1)] Determina la fase inicial y la frecuencia del MAS. (1 punto)
+    \item[2)] Calcula la energía total del MAS, así como la energía cinética y potencial en el instante $t=1,5$ s. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Datos convertidos al SI:
+\begin{itemize}
+    \item \textbf{Masa ($m$):} $m=2\,\text{kg}$.
+    \item \textbf{Amplitud ($A$):} $A=1\,\text{cm} = 0,01\,\text{m}$.
+    \item \textbf{Condiciones iniciales ($t=0$):}
+    \begin{itemize}
+        \item Elongación $x(0) = 0,5\,\text{cm} = 0,005\,\text{m}$.
+        \item Velocidad $v(0) = 1\,\text{cm/s} = 0,01\,\text{m/s}$.
+    \end{itemize}
+    \item \textbf{Instante para energía:} $t=1,5\,\text{s}$.
+    \item \textbf{Incógnitas:} Fase inicial ($\phi_0$), frecuencia ($f$), energía total ($E_T$), $E_c(1,5)$ y $E_p(1,5)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Movimiento Armónico Simple} \vspace{0.5cm} \textit{Prompt:} "Un círculo de referencia para el MAS. Un punto P se mueve en el círculo con velocidad angular constante $\omega$. La proyección del punto P sobre el eje X, el punto Q, realiza un MAS. Mostrar un instante inicial $t=0$ donde el ángulo es $\phi_0$. La proyección en X es $x(0) = A \cos(\phi_0)$ y la proyección de la velocidad tangencial en X es $v(0) = -A\omega\sin(\phi_0)$."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{mas_circulo_referencia.png}
+    }}
+    \caption{Representación del MAS y sus condiciones iniciales.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ecuaciones del MAS:} $x(t) = A\cos(\omega t + \phi_0)$ y $v(t) = -A\omega\sin(\omega t + \phi_0)$.
+    \item \textbf{Relación frecuencia-pulsación:} $\omega = 2\pi f$.
+    \item \textbf{Energías en el MAS:} La energía total es constante: $E_T = \frac{1}{2}m\omega^2A^2$. La energía cinética es $E_c = \frac{1}{2}mv^2$ y la potencial es $E_p = \frac{1}{2}m\omega^2x^2$. Se cumple que $E_T=E_c+E_p$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Fase inicial y frecuencia}
+Planteamos el sistema de ecuaciones con las condiciones iniciales:
+\begin{gather}
+    x(0) = A\cos(\phi_0) \\
+    v(0) = -A\omega\sin(\phi_0)
+\end{gather}
+Dividiendo la segunda ecuación entre la primera (y multiplicando por -1/$\omega$):
+$$ \frac{v(0)}{x(0)} = -\omega\tan(\phi_0) \implies \omega = -\frac{v(0)}{x(0)\tan(\phi_0)} $$
+De la primera ecuación podemos despejar $\phi_0$. De la segunda, $\omega$.
+\paragraph{2. Energías}
+Primero se calcula la energía total: $E_T = \frac{1}{2}m\omega^2A^2$.
+Luego, se calculan $x(t)$ y $v(t)$ para $t=1,5$ s.
+Finalmente, se calculan $E_c(t)$ y $E_p(t)$ con sus fórmulas.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Fase inicial y frecuencia}
+Usamos las condiciones iniciales en SI:
+\begin{gather}
+    0,005 = 0,01 \cos(\phi_0) \implies \cos(\phi_0) = 0,5 \implies \phi_0 = \pm \frac{\pi}{3} \, \text{rad} \\
+    0,01 = -0,01 \omega \sin(\phi_0) \implies -1 = \omega \sin(\phi_0)
+\end{gather}
+Como $v(0)$ es positiva, y $\omega$ y $A$ son positivos, $\sin(\phi_0)$ debe ser negativo. Entre $\pm \pi/3$, el que tiene seno negativo es $\phi_0 = -\pi/3$.
+Sustituimos $\phi_0 = -\pi/3$ en la segunda ecuación:
+\begin{gather}
+    -1 = \omega \sin(-\pi/3) = \omega \left(-\frac{\sqrt{3}}{2}\right) \implies \omega = \frac{2}{\sqrt{3}} \approx 1,155 \, \text{rad/s}
+\end{gather}
+La frecuencia es $f = \frac{\omega}{2\pi} = \frac{1,155}{2\pi} \approx 0,184 \, \text{Hz}$.
+\begin{cajaresultado}
+La fase inicial es $\boldsymbol{\phi_0=-\pi/3\,\textbf{rad}}$ y la frecuencia es $\boldsymbol{f \approx 0,184\,\textbf{Hz}}$.
+\end{cajaresultado}
+\paragraph{2. Energías}
+\begin{gather}
+    E_T = \frac{1}{2}(2\,\text{kg})(1,155\,\text{rad/s})^2(0,01\,\text{m})^2 = 1,33 \cdot 10^{-4}\,\text{J} \\
+    \text{Para } t=1,5\,\text{s}: \quad \alpha = \omega t + \phi_0 = (1,155)(1,5) - \pi/3 \approx 1,732 - 1,047 = 0,685\,\text{rad} \\
+    x(1,5) = 0,01 \cos(0,685) \approx 0,01 \cdot 0,775 = 0,00775\,\text{m} \\
+    v(1,5) = -0,01(1,155)\sin(0,685) \approx -0,01155 \cdot 0,632 = -0,0073\,\text{m/s} \\
+    E_p(1,5) = \frac{1}{2}(2)(1,155)^2(0,00775)^2 \approx 8,0 \cdot 10^{-5}\,\text{J} \\
+    E_c(1,5) = \frac{1}{2}(2)(-0,0073)^2 \approx 5,3 \cdot 10^{-5}\,\text{J}
+\end{gather}
+(Comprobación: $E_p+E_c = (8,0+5,3)\cdot 10^{-5} = 13,3 \cdot 10^{-5} = 1,33 \cdot 10^{-4}\,\text{J} = E_T$).
+\begin{cajaresultado}
+La energía total es $\boldsymbol{E_T \approx 1,33 \cdot 10^{-4}\,\textbf{J}}$. En $t=1,5$ s, la energía potencial es $\boldsymbol{E_p \approx 8,0 \cdot 10^{-5}\,\textbf{J}}$ y la cinética es $\boldsymbol{E_c \approx 5,3 \cdot 10^{-5}\,\textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las condiciones iniciales de posición y velocidad han permitido determinar unívocamente los parámetros del MAS, obteniendo una frecuencia de 0,184 Hz y una fase inicial de $-\pi/3$ rad. La energía total del sistema es constante, con un valor de $1,33 \times 10^{-4}$ J. En el instante $t=1,5$ s, esta energía se reparte entre la energía potencial y la cinética, como se ha comprobado numéricamente.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Cuestiones}
+\label{sec:optica_2007_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2007_sep_ext}
+
+\begin{cajaenunciado}
+Una lente convergente forma una imagen derecha y de tamaño doble de un objeto real. Si la imagen queda a 60 cm de la lente. ¿Cuál es la distancia del objeto a la lente (0,7 puntos) y la distancia focal de la lente (0,8 puntos)?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Convergente.
+    \item \textbf{Imagen:} Derecha (no invertida) $\implies$ Aumento $M>0$.
+    \item \textbf{Tamaño imagen:} Doble que el objeto $\implies |M|=2$. Por tanto, $M=+2$.
+    \item Una imagen derecha formada por una lente convergente es siempre virtual.
+    \item \textbf{Posición imagen ($s'$):} La imagen es virtual, por lo que se forma en el mismo lado que el objeto (a la izquierda de la lente, según convenio DIN). $s' = -60\,\text{cm}$.
+    \item \textbf{Incógnitas:} Distancia del objeto ($s$) y distancia focal ($f'$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Lente Convergente como Lupa} \vspace{0.5cm} \textit{Prompt:} "Dibujar el eje óptico de una lente convergente. Marcar el foco imagen F' a la derecha y el foco objeto F a la izquierda. Colocar un objeto (flecha vertical) entre el foco F y el centro de la lente. Trazar dos rayos: 1) Un rayo paralelo al eje óptico que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico y no se desvía. Mostrar que los rayos refractados divergen. Trazar las prolongaciones de estos rayos hacia atrás (líneas discontinuas) hasta que se crucen para formar la imagen. La imagen debe ser virtual, derecha y de mayor tamaño que el objeto."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{lupa.png}
+    }}
+    \caption{Trazado de rayos para un objeto situado dentro de la distancia focal de una lente convergente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utilizan las ecuaciones de las lentes delgadas:
+\begin{itemize}
+    \item \textbf{Ecuación del aumento lateral:} $M = \frac{s'}{s}$. Permite relacionar las posiciones de objeto e imagen con el aumento conocido.
+    \item \textbf{Ecuación de Gauss para lentes:} $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$. Permite calcular la distancia focal una vez se conocen $s$ y $s'$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Distancia del objeto ($s$)}
+Se despeja $s$ de la fórmula del aumento:
+$$ M = \frac{s'}{s} \implies s = \frac{s'}{M} $$
+\paragraph{2. Distancia focal ($f'$)}
+Se despeja $f'$ de la ecuación de Gauss:
+$$ \frac{1}{f'} = \frac{1}{s'} - \frac{1}{s} \implies f' = \left(\frac{1}{s'} - \frac{1}{s}\right)^{-1} = \frac{s's}{s-s'} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Distancia del objeto ($s$)}
+\begin{gather}
+    s = \frac{-60\,\text{cm}}{+2} = -30\,\text{cm}
+\end{gather}
+\begin{cajaresultado}
+La distancia del objeto a la lente es de $\boldsymbol{30\,\textbf{cm}}$ (a la izquierda de la lente).
+\end{cajaresultado}
+
+\paragraph{2. Distancia focal ($f'$)}
+\begin{gather}
+    \frac{1}{f'} = \frac{1}{-60} - \frac{1}{-30} = -\frac{1}{60} + \frac{2}{60} = \frac{1}{60}\,\text{cm}^{-1} \\
+    f' = +60\,\text{cm}
+\end{gather}
+\begin{cajaresultado}
+La distancia focal de la lente es $\boldsymbol{f' = +60\,\textbf{cm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para obtener una imagen virtual, derecha y aumentada al doble, el objeto debe colocarse a una distancia de 30 cm de la lente. Dado que esta imagen se forma a -60 cm, la lente convergente debe tener una distancia focal de +60 cm. El objeto se sitúa, como se esperaba, entre el foco objeto (en -60 cm) y la lente.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2007_sep_ext}
+
+\begin{cajaenunciado}
+Describir el fenómeno de la reflexión total interna indicando en qué circunstancias se produce (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica que pide la descripción de un fenómeno óptico y las condiciones necesarias para que ocurra.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Fenómeno de Reflexión Total Interna} \vspace{0.5cm} \textit{Prompt:} "Diagrama que muestra una interfaz horizontal entre un medio denso (abajo, p.ej. agua, $n_1$) y un medio menos denso (arriba, p.ej. aire, $n_2$). Dibujar tres rayos de luz que parten de un mismo punto en el medio denso. El primer rayo incide con un ángulo pequeño y se refracta alejándose de la normal. El segundo rayo incide con el ángulo crítico, $\theta_c$, y se refracta a 90 grados, viajando rasante a la superficie. El tercer rayo incide con un ángulo mayor que $\theta_c$ y se refleja completamente hacia el interior del primer medio, cumpliendo la ley de la reflexión ($\theta_i=\theta_r$)."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{reflexion_total_interna.png}
+    }}
+    \caption{Ilustración del camino de la luz para ángulos de incidencia creciente hasta la reflexión total.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se fundamenta en la \textbf{Ley de Snell de la refracción}: $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$, donde $n$ es el índice de refracción y $\theta$ es el ángulo con la normal.
+
+\paragraph*{Descripción del Fenómeno}
+La \textbf{reflexión total interna} es un fenómeno óptico que ocurre cuando un rayo de luz, al intentar pasar de un medio a otro, no se refracta (no atraviesa la superficie) sino que se refleja completamente de vuelta en el primer medio. La superficie de separación se comporta como un espejo perfecto.
+
+\paragraph*{Circunstancias en las que se produce}
+Para que ocurra la reflexión total interna, deben cumplirse dos condiciones indispensables:
+\begin{enumerate}
+    \item \textbf{Dirección de la luz:} La luz debe viajar desde un medio con un índice de refracción \textbf{mayor} hacia un medio con un índice de refracción \textbf{menor} (es decir, de un medio ópticamente más denso a uno menos denso). Por ejemplo, del agua al aire, o del vidrio al agua. ($n_1 > n_2$).
+    \item \textbf{Ángulo de incidencia:} El ángulo de incidencia $\theta_1$ debe ser \textbf{mayor} que un cierto valor crítico, denominado \textbf{ángulo límite} o \textbf{ángulo crítico} ($\theta_c$).
+\end{enumerate}
+El ángulo crítico es el ángulo de incidencia para el cual el ángulo de refracción es exactamente $90^\circ$. A partir de la ley de Snell:
+$$ n_1 \sin(\theta_c) = n_2 \sin(90^\circ) \implies \sin(\theta_c) = \frac{n_2}{n_1} $$
+
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Descripción:} Es la reflexión completa de la luz en la interfaz entre dos medios, sin que haya refracción.
+    \item \textbf{Circunstancias:}
+    \begin{enumerate}
+        \item La luz debe ir de un medio de mayor índice de refracción a uno de menor ($n_1 > n_2$).
+        \item El ángulo de incidencia debe ser mayor que el ángulo crítico ($\theta_1 > \theta_c$), donde $\sin(\theta_c) = n_2/n_1$.
+    \end{enumerate}
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La reflexión total interna es una consecuencia directa de la ley de Snell cuando la luz intenta escapar de un medio denso. Este principio es la base del funcionamiento de las fibras ópticas, que guían la luz a lo largo de grandes distancias mediante sucesivas reflexiones totales en su interior, así como de instrumentos ópticos como los prismáticos.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Problemas}
+\label{sec:em_2007_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2007_sep_ext}
+
+\begin{cajaenunciado}
+1) En una línea de alta tensión se tienen dos cables conductores paralelos y horizontales, separados entre sí 2 m. Los dos cables transportan una corriente eléctrica de 1 kA. ¿Cuál será la intensidad del campo magnético generado por esos dos cables en un punto P situado entre los dos cables, equidistante de ambos y a su misma altura, cuando el sentido de la corriente es el mismo en ambos? ¿Y cuando el sentido de la corriente es opuesto en un cable respecto al otro cable? (1 punto).
+2) En este último caso, cuando las corrientes tienen sentidos opuestos, calcular la fuerza (módulo, dirección y sentido) que ejerce un cable por unidad de longitud del segundo cable (1 punto).
+\textbf{Dato:} $\mu_{0}=4\pi\times10^{-7}N/A^{2}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Geometría:} Dos cables paralelos. Distancia $d=2\,\text{m}$.
+    \item \textbf{Punto P:} Punto medio, a una distancia $r=d/2=1\,\text{m}$ de cada cable.
+    \item \textbf{Corrientes ($I_1, I_2$):} $I_1=I_2=1\,\text{kA}=1000\,\text{A}$.
+    \item \textbf{Dato:} $\mu_0 = 4\pi\cdot 10^{-7}\,\text{T}\cdot\text{m/A}$.
+    \item \textbf{Incógnitas:}
+    \begin{enumerate}
+        \item Campo magnético $\vec{B}_P$ para corrientes paralelas y antiparalelas.
+        \item Fuerza por unidad de longitud $F/L$ para corrientes antiparalelas.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Campos Magnéticos en P} \vspace{0.5cm} \textit{Prompt:} "Vista superior. Dos cables como puntos. Izquierda: 'Mismo sentido' (ambos con punto, corriente saliendo). En el punto medio P, dibujar $\vec{B}_1$ (hacia abajo) y $\vec{B}_2$ (hacia arriba) de igual longitud, mostrando que se anulan. Derecha: 'Sentidos opuestos' (uno con punto, otro con cruz). En el punto P, dibujar $\vec{B}_1$ y $\vec{B}_2$ apuntando ambos hacia abajo, mostrando que se suman."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campos_hilos_p.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Fuerza entre Cables} \vspace{0.5cm} \textit{Prompt:} "Vista en perspectiva. Dos cables paralelos con corrientes en sentidos opuestos. En el cable 2, dibujar el campo $\vec{B}_1$ creado por el cable 1 (entrando en el plano). Aplicar la ley de Lorentz $\vec{F}=I_2(\vec{L}\times\vec{B}_1)$ para mostrar una fuerza repulsiva $\vec{F}_{1\to 2}$ sobre el cable 2, alejándolo del cable 1."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_hilos_p.png}
+    }}
+    \caption{Campos en el punto medio (izq.) y fuerza entre cables con corrientes antiparalelas (dcha.).}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Campo de un hilo infinito:} El módulo del campo magnético creado por un hilo rectilíneo muy largo es $B = \frac{\mu_0 I}{2\pi r}$. Su dirección viene dada por la regla de la mano derecha.
+    \item \textbf{Principio de Superposición:} El campo total en un punto es la suma vectorial de los campos creados por cada fuente.
+    \item \textbf{Fuerza entre corrientes:} La fuerza por unidad de longitud que un hilo ejerce sobre otro paralelo es $F/L = \frac{\mu_0 I_1 I_2}{2\pi d}$. Corrientes con el mismo sentido se atraen; con sentidos opuestos se repelen.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph{1. Campo magnético en P}
+El módulo del campo creado por cada cable en P es el mismo:
+$$ B_1 = B_2 = B = \frac{\mu_0 I}{2\pi r} = \frac{(4\pi\cdot 10^{-7})(1000)}{2\pi(1)} = 2 \cdot 10^{-4}\,\text{T} $$
+\begin{itemize}
+    \item \textbf{Mismo sentido:} Por la regla de la mano derecha, en P los campos tienen la misma dirección pero sentidos opuestos. $\vec{B}_{total} = \vec{B}_1 + \vec{B}_2 = \vec{0}$.
+    \item \textbf{Sentidos opuestos:} En P, los campos tienen el mismo sentido y se suman. El módulo del campo total es $|\vec{B}_{total}| = B_1+B_2 = 2B$.
+\end{itemize}
+\paragraph{2. Fuerza por unidad de longitud (sentidos opuestos)}
+La fuerza es de repulsión. Su módulo es:
+$$ \frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Campo magnético en P}
+\begin{cajaresultado}
+\begin{itemize}
+    \item Con corrientes en el \textbf{mismo sentido}, el campo en P es \textbf{nulo}: $\boldsymbol{\vec{B}_P = 0}$.
+    \item Con corrientes en \textbf{sentidos opuestos}, el campo en P tiene un módulo de $\boldsymbol{4 \cdot 10^{-4}\,\textbf{T}}$.
+\end{itemize}
+\end{cajaresultado}
+\paragraph{2. Fuerza por unidad de longitud}
+\begin{gather}
+    \frac{F}{L} = \frac{(4\pi\cdot 10^{-7})(1000)(1000)}{2\pi(2)} = \frac{4\pi\cdot 10^{-1}}{4\pi} = 0,1\,\text{N/m}
+\end{gather}
+\begin{cajaresultado}
+La fuerza por unidad de longitud es de $\boldsymbol{0,1\,\textbf{N/m}}$ y es \textbf{repulsiva}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La simetría del problema permite una rápida resolución. Cuando las corrientes son paralelas, los campos se cancelan en el punto medio. Cuando son antiparalelas, se refuerzan. La fuerza entre los cables con corrientes opuestas es repulsiva, con un valor de 0,1 N por cada metro de cable, un efecto tangible en las líneas de alta tensión.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2007_sep_ext}
+
+\begin{cajaenunciado}
+Se tiene un campo eléctrico uniforme $\vec{E}_{0}=3000\vec{i}V/m$ que se extiende por todo el espacio. Seguidamente se introduce una carga $Q=4~\mu C$, que se situa en el punto (2,0) m.
+\begin{enumerate}
+    \item[1)] Calcula el vector campo eléctrico resultante en el punto $P(2,3)$ m y su módulo.
+    \item[2)] A continuación se añade una segunda carga Q' en el punto (0,3) m. ¿Qué valor ha de tener Q' para que el campo eléctrico resultante en el punto P no tenga componente X?
+\end{enumerate}
+\textbf{Dato:} $K_{e}=9\times10^{9}Nm^{2}/C^{2}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo uniforme ($\vec{E}_0$):} $\vec{E}_0 = 3000\vec{i}\,\text{V/m}$.
+    \item \textbf{Carga Q:} $Q = 4\,\mu\text{C} = 4\cdot 10^{-6}\,\text{C}$, situada en $P_Q(2,0)$.
+    \item \textbf{Punto de cálculo P:} $P(2,3)$.
+    \item \textbf{Carga Q':} $Q'$, situada en $P_{Q'}(0,3)$.
+    \item \textbf{Incógnitas:}
+    \begin{enumerate}
+        \item Campo resultante $\vec{E}_{res}$ en P (debido a $\vec{E}_0$ y $Q$) y su módulo.
+        \item Valor de $Q'$ para que la componente x del nuevo campo resultante sea cero.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Superposición de Campos Eléctricos} \vspace{0.5cm} \textit{Prompt:} "Sistema de ejes XY. Mostrar el punto P(2,3). 1) Dibujar flechas horizontales hacia la derecha en todo el espacio para representar $\vec{E}_0$. 2) Colocar la carga Q en (2,0). Dibujar el vector $\vec{E}_Q$ en P, que es repulsivo y apunta verticalmente hacia arriba. 3) Colocar la carga Q' en (0,3). Dibujar el vector $\vec{E}_{Q'}$ en P. Para que la componente X total se anule, $\vec{E}_{Q'}$ debe apuntar hacia la izquierda, por lo que debe ser atractivo, lo que implica que Q' es negativa."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{superposicion_campos.png}
+    }}
+    \caption{Vectores campo eléctrico en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Principio de Superposición:} El campo eléctrico total en un punto es la suma vectorial de todos los campos presentes: $\vec{E}_{res} = \vec{E}_0 + \vec{E}_Q + \vec{E}_{Q'}$.
+    \item \textbf{Campo de una carga puntual:} El campo creado por una carga $q$ en un punto es $\vec{E} = K_e \frac{q}{r^2}\hat{r}$, donde $\hat{r}$ es el vector unitario que va desde la carga al punto.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Campo resultante en P (con $\vec{E}_0$ y Q)}
+$\vec{E}_{res}(P) = \vec{E}_0 + \vec{E}_Q(P)$.
+El vector que va desde la carga $Q$ a P es $\vec{r}_{QP} = (2-2)\vec{i} + (3-0)\vec{j} = 3\vec{j}\,\text{m}$.
+La distancia es $r_{QP}=3\,\text{m}$ y el vector unitario es $\hat{r}_{QP}=\vec{j}$.
+$$ \vec{E}_Q(P) = K_e \frac{Q}{r_{QP}^2} \hat{r}_{QP} $$
+\paragraph{2. Valor de Q'}
+El nuevo campo resultante es $\vec{E}_{res, nuevo}(P) = \vec{E}_{res}(P) + \vec{E}_{Q'}(P)$.
+La condición es que su componente X sea nula: $E_{res, nuevo, x} = 0$.
+$$ E_{0,x} + E_{Q,x} + E_{Q',x} = 0 $$
+El vector que va desde la carga $Q'$ a P es $\vec{r}_{Q'P} = (2-0)\vec{i} + (3-3)\vec{j} = 2\vec{i}\,\text{m}$.
+La distancia es $r_{Q'P}=2\,\text{m}$ y el unitario $\hat{r}_{Q'P}=\vec{i}$.
+$$ \vec{E}_{Q'}(P) = K_e \frac{Q'}{r_{Q'P}^2}\hat{r}_{Q'P} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Campo resultante en P}
+\begin{gather}
+    \vec{E}_Q(P) = (9\cdot 10^9) \frac{4\cdot 10^{-6}}{3^2}\vec{j} = 4000\vec{j}\,\text{V/m} \\
+    \vec{E}_{res}(P) = 3000\vec{i} + 4000\vec{j}\,\text{V/m} \\
+    |\vec{E}_{res}(P)| = \sqrt{3000^2 + 4000^2} = \sqrt{9\cdot 10^6 + 16\cdot 10^6} = \sqrt{25\cdot 10^6} = 5000\,\text{V/m}
+\end{gather}
+\begin{cajaresultado}
+El campo resultante es $\boldsymbol{\vec{E}_{res} = (3000\vec{i} + 4000\vec{j})\,\textbf{V/m}}$ y su módulo es $\boldsymbol{5000\,\textbf{V/m}}$.
+\end{cajaresultado}
+\paragraph{2. Valor de Q'}
+La componente X del campo de Q es nula. La condición $E_{res, nuevo, x} = 0$ se convierte en:
+\begin{gather}
+    3000 + 0 + E_{Q',x} = 0 \implies E_{Q',x} = -3000\,\text{V/m} \\
+    \vec{E}_{Q'}(P) = K_e \frac{Q'}{2^2}\vec{i} = (9\cdot 10^9)\frac{Q'}{4}\vec{i} \\
+    (9\cdot 10^9)\frac{Q'}{4} = -3000 \implies Q' = \frac{-3000 \cdot 4}{9\cdot 10^9} = -\frac{12000}{9\cdot 10^9} \approx -1,33\cdot 10^{-6}\,\text{C}
+\end{gather}
+\begin{cajaresultado}
+El valor de la carga debe ser $\boldsymbol{Q' \approx -1,33\,\mu\textbf{C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo eléctrico total en un punto es la suma vectorial de los campos contribuyentes. Inicialmente, el campo en P es la suma del campo uniforme y el campo radial de la carga Q. Para anular la componente horizontal de este campo, se debe introducir una carga Q' que genere un campo horizontal opuesto, lo que requiere que Q' sea negativa.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Cuestiones}
+\label{sec:moderna1_2007_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2007_sep_ext}
+
+\begin{cajaenunciado}
+Un horno de microondas doméstico utiliza radiación de frecuencia $2,5\times10^{3}$ MHz. La frecuencia de la luz violeta es $7,5\times10^{8}$ MHz. ¿Cuántos fotones de microondas necesitamos para obtener la misma energía que con un solo fotón de luz violeta? (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Frecuencia microondas ($f_m$):} $f_m = 2,5 \cdot 10^3\,\text{MHz} = 2,5 \cdot 10^9\,\text{Hz}$.
+    \item \textbf{Frecuencia luz violeta ($f_v$):} $f_v = 7,5 \cdot 10^8\,\text{MHz} = 7,5 \cdot 10^{14}\,\text{Hz}$.
+    \item \textbf{Incógnita:} Número de fotones de microondas ($N_m$) para igualar la energía de un fotón violeta.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Energía de los Fotones} \vspace{0.5cm} \textit{Prompt:} "Una balanza de platillos. En el platillo izquierdo, colocar un único paquete de energía grande y de color violeta, etiquetado como 'Fotón Violeta, $E_v=hf_v$'. En el platillo derecho, colocar un gran número de paquetes de energía pequeños y de color rojo/naranja, etiquetados como 'Fotones de Microondas, $E_m=hf_m$'. La balanza debe estar equilibrada, con una nota que indique '$N_m \cdot E_m = E_v$'."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{energia_fotones.png}
+    }}
+    \caption{Equivalencia energética entre fotones de diferentes frecuencias.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La solución se basa en la \textbf{hipótesis de Planck}, que establece que la energía de la radiación electromagnética está cuantizada en paquetes discretos llamados fotones. La energía de un único fotón es directamente proporcional a la frecuencia de la radiación:
+$$ E = hf $$
+donde $h$ es la constante de Planck ($h \approx 6,626 \cdot 10^{-34}\,\text{J}\cdot\text{s}$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La condición del problema es que la energía total de $N_m$ fotones de microondas sea igual a la energía de un fotón de luz violeta.
+\begin{gather}
+    N_m \cdot E_m = 1 \cdot E_v
+\end{gather}
+Sustituyendo la fórmula de Planck para la energía:
+\begin{gather}
+    N_m \cdot (h f_m) = h f_v
+\end{gather}
+La constante de Planck, $h$, se cancela, y podemos despejar $N_m$:
+\begin{gather}
+    N_m = \frac{f_v}{f_m}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    N_m = \frac{7,5 \cdot 10^{14}\,\text{Hz}}{2,5 \cdot 10^9\,\text{Hz}} = \frac{7,5}{2,5} \cdot 10^{14-9} = 3 \cdot 10^5
+\end{gather}
+\begin{cajaresultado}
+Se necesitan $\boldsymbol{300.000}$ fotones de microondas.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Este problema ilustra la cuantización de la energía lumínica. Dado que la frecuencia de la luz violeta es 300.000 veces mayor que la de la radiación de microondas, la energía de un solo fotón violeta es también 300.000 veces mayor. Por lo tanto, se requiere esa misma cantidad de fotones de microondas para igualar la energía.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2007_sep_ext}
+
+\begin{cajaenunciado}
+Un metal emite electrones por efecto fotoeléctrico cuando se ilumina con luz azul, pero no lo hace cuando la luz es amarilla. Sabiendo que la longitud de onda de la luz roja es mayor que la de la amarilla, ¿Qué ocurrirá al iluminar el metal con luz roja? Razona la respuesta (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión conceptual sobre el efecto fotoeléctrico.
+\begin{itemize}
+    \item \textbf{Luz azul:} Provoca emisión de electrones.
+    \item \textbf{Luz amarilla:} No provoca emisión.
+    \item \textbf{Relación de longitudes de onda:} $\lambda_{roja} > \lambda_{amarilla}$.
+    \item \textbf{Incógnita:} ¿Provocará la luz roja emisión de electrones?
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Efecto Fotoeléctrico y Frecuencia Umbral} \vspace{0.5cm} \textit{Prompt:} "Una superficie metálica con una 'barrera de energía' etiquetada como 'Función de trabajo $\Phi$'. Dibujar tres tipos de fotones incidiendo: 1) Un fotón azul de alta energía que golpea un electrón, y el electrón escapa con energía cinética. 2) Un fotón amarillo de energía media que golpea un electrón, pero el electrón no tiene suficiente energía para superar la barrera $\Phi$. 3) Un fotón rojo de baja energía, que tampoco logra liberar al electrón. Debajo, un espectro visible que muestre que la frecuencia aumenta de rojo a azul ($\lambda$ disminuye)."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{efecto_fotoelectrico_umbral.png}
+    }}
+    \caption{Comparación de la energía de fotones de diferentes colores con la función de trabajo del metal.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se explica mediante la ecuación del efecto fotoeléctrico de Einstein:
+$$ E_{c,max} = hf - \Phi $$
+donde $E_{c,max}$ es la energía cinética máxima de los electrones emitidos, $hf$ es la energía del fotón incidente y $\Phi$ es la función de trabajo (o trabajo de extracción), que es la energía mínima necesaria para arrancar un electrón del metal.
+Para que se produzca la emisión de electrones, la energía del fotón debe ser, como mínimo, igual a la función de trabajo. Esto define una \textbf{frecuencia umbral}, $f_0$:
+$$ hf \ge \Phi \implies f \ge \frac{\Phi}{h} = f_0 $$
+La energía de un fotón está inversamente relacionada con su longitud de onda: $E=hf=hc/\lambda$. Por lo tanto, una mayor longitud de onda implica una menor frecuencia y menor energía.
+
+\subsubsection*{4. Razonamiento}
+\begin{enumerate}
+    \item \textbf{Orden de energías:} En el espectro visible, el orden de longitudes de onda es $\lambda_{roja} > \lambda_{amarilla} > \lambda_{azul}$. Como la energía es inversamente proporcional a la longitud de onda, el orden de energías de los fotones es:
+    $$ E_{roja} < E_{amarilla} < E_{azul} $$
+    \item \textbf{Localización de la función de trabajo $\Phi$:} El enunciado nos dice que la luz azul sí emite electrones ($E_{azul} > \Phi$), pero la luz amarilla no ($E_{amarilla} < \Phi$). Esto sitúa la energía umbral del metal entre la energía de un fotón amarillo y uno azul:
+    $$ E_{amarilla} < \Phi < E_{azul} $$
+    \item \textbf{Predicción para la luz roja:} Sabemos que la energía de un fotón rojo es menor que la de un fotón amarillo. Por lo tanto, si la energía de la luz amarilla ya era insuficiente para superar la función de trabajo, con más razón lo será la de la luz roja:
+    $$ E_{roja} < E_{amarilla} < \Phi \implies E_{roja} < \Phi $$
+\end{enumerate}
+
+\subsubsection*{5. Resultado}
+\begin{cajaresultado}
+Al iluminar el metal con luz roja, \textbf{no se producirá el efecto fotoeléctrico}. Los fotones de luz roja tienen menos energía que los de luz amarilla y, por tanto, no tienen la energía suficiente para arrancar electrones del metal.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El efecto fotoeléctrico no depende de la intensidad de la luz, sino de la energía de sus fotones individuales. Existe una energía mínima (función de trabajo) que el fotón debe poseer para poder liberar un electrón. En este caso, la función de trabajo es mayor que la energía de un fotón amarillo, y como los fotones rojos son aún menos energéticos, tampoco podrán provocar la emisión.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Cuestiones}
+\label{sec:moderna2_2007_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2007_sep_ext}
+
+\begin{cajaenunciado}
+Enuncia el principio de indeterminación de Heisenberg y comenta su significado físico (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica que pide enunciar y explicar uno de los principios fundamentales de la mecánica cuántica.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Principio de Indeterminación} \vspace{0.5cm} \textit{Prompt:} "Un diagrama conceptual. A la izquierda, una onda de materia extendida en el espacio, representando una partícula con momento ($\vec{p}$) bien definido pero posición ($\vec{x}$) muy incierta. A la derecha, un paquete de ondas muy localizado, representando una partícula con posición ($\vec{x}$) bien definida pero momento ($\vec{p}$) muy incierto (compuesto por la superposición de muchas ondas). Una balanza en el centro muestra 'Posición' y 'Momento' en un equilibrio imposible: al aumentar la certeza en uno, disminuye en el otro."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{heisenberg_principle.png}
+    }}
+    \caption{Visualización de la relación inversa entre la incertidumbre en la posición y en el momento.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Enunciado del Principio de Indeterminación}
+El \textbf{Principio de Indeterminación de Heisenberg} (o principio de incertidumbre) establece que es imposible determinar simultáneamente y con precisión absoluta ciertos pares de variables físicas conjugadas de una partícula. El ejemplo más conocido es el par posición-momento lineal.
+Matemáticamente, si $\Delta x$ es la incertidumbre en la medida de la posición de una partícula en una dirección y $\Delta p_x$ es la incertidumbre en la medida de su momento lineal en esa misma dirección, el producto de ambas incertidumbres tiene un límite inferior fundamental:
+$$ \Delta x \cdot \Delta p_x \ge \frac{\hbar}{2} $$
+donde $\hbar = h/(2\pi)$ es la constante de Planck reducida. Existe una relación similar para la energía y el tiempo: $\Delta E \cdot \Delta t \ge \frac{\hbar}{2}$.
+
+\paragraph{Significado Físico}
+El significado profundo de este principio es que la indeterminación \textbf{no es una limitación de nuestros instrumentos de medida}, sino una \textbf{propiedad intrínseca de la naturaleza} a escala cuántica, derivada de la dualidad onda-partícula.
+\begin{itemize}
+    \item Una partícula cuántica no tiene una posición y un momento bien definidos al mismo tiempo, como una bola de billar clásica. Su estado se describe por una función de onda.
+    \item Si queremos conocer la posición de una partícula con mucha precisión ($\Delta x \to 0$), su función de onda debe estar muy localizada. Un "paquete de ondas" muy localizado se consigue superponiendo muchas ondas de diferentes longitudes de onda (y por tanto, diferentes momentos, ya que $p=h/\lambda$). Esto hace que la incertidumbre en el momento ($\Delta p_x$) sea muy grande.
+    \item A la inversa, si queremos conocer el momento con mucha precisión ($\Delta p_x \to 0$), la partícula debe tener una longitud de onda muy bien definida, lo que implica una onda que se extiende por todo el espacio, haciendo que su posición ($\Delta x$) sea completamente incierta.
+\end{itemize}
+En esencia, el principio de Heisenberg marca el límite fundamental de la aplicabilidad de los conceptos clásicos de "posición" y "momento" a los objetos del mundo cuántico.
+
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Enunciado:} Es imposible conocer simultáneamente con precisión la posición y el momento lineal de una partícula. El producto de sus incertidumbres es siempre mayor o igual a $\hbar/2$.
+    \item \textbf{Significado:} No es un fallo técnico, sino una característica fundamental de la naturaleza cuántica. Cuanto más preciso es el conocimiento de una de las variables, más impreciso se vuelve el de la otra.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El principio de indeterminación de Heisenberg representa una ruptura radical con la física clásica determinista, donde se asumía que se podían conocer todas las propiedades de un sistema en un instante dado con precisión arbitraria. En el mundo cuántico, la naturaleza impone un límite fundamental a nuestro conocimiento, redefiniendo el propio concepto de partícula.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2007_sep_ext}
+
+\begin{cajaenunciado}
+Hallar el número atómico y el número másico del elemento producido a partir del ${}_{84}^{218}Po$, después de emitir 4 partículas $\alpha$ y 2 partículas $\beta^{-}$ (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Núcleo inicial:} Polonio-218, ${}_{84}^{218}\text{Po}$.
+    \item \textbf{Partículas emitidas:}
+    \begin{itemize}
+        \item 4 partículas alfa (${}_{2}^{4}\alpha$ o ${}_{2}^{4}\text{He}$).
+        \item 2 partículas beta menos (${}_{-1}^{0}\beta^{-}$ o ${}_{-1}^{0}e$).
+    \end{itemize}
+    \item \textbf{Incógnita:} Número atómico ($Z'$) y número másico ($A'$) del núcleo final.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Cadena de Desintegración Nuclear} \vspace{0.5cm} \textit{Prompt:} "Un diagrama que muestra un núcleo grande de Polonio-218 (Po-218). Desde él, dibujar 4 flechas que apuntan hacia fuera, cada una llevando una partícula alfa (2 protones, 2 neutrones). También dibujar 2 flechas que apuntan hacia fuera, cada una llevando una partícula beta (electrón). Al final de la cadena de flechas, dibujar el núcleo resultante, X, mostrando que ha perdido las partículas correspondientes."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{cadena_desintegracion.png}
+    }}
+    \caption{Esquema del proceso de decaimiento radiactivo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En cualquier reacción o desintegración nuclear, se deben cumplir las \textbf{leyes de conservación de Soddy-Fajans}:
+\begin{enumerate}
+    \item \textbf{Conservación del número másico (A):} El número total de nucleones (protones + neutrones) antes y después de la reacción debe ser el mismo.
+    \item \textbf{Conservación del número atómico (Z):} La carga eléctrica total (número de protones) antes y después de la reacción debe ser la misma.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Podemos escribir la reacción nuclear global, donde ${}_{Z'}^{A'}X$ es el núcleo resultante desconocido.
+$$ {}_{84}^{218}\text{Po} \longrightarrow {}_{Z'}^{A'}X + 4 \cdot ({}_{2}^{4}\alpha) + 2 \cdot ({}_{-1}^{0}\beta^{-}) $$
+\paragraph{Cálculo del número másico final ($A'$)}
+Aplicamos la conservación del número másico:
+\begin{gather}
+    218 = A' + 4 \cdot 4 + 2 \cdot 0 \implies 218 = A' + 16 \implies A' = 218 - 16
+\end{gather}
+\paragraph{Cálculo del número atómico final ($Z'$)}
+Aplicamos la conservación del número atómico (carga):
+\begin{gather}
+    84 = Z' + 4 \cdot 2 + 2 \cdot (-1) \implies 84 = Z' + 8 - 2 \implies 84 = Z' + 6 \implies Z' = 84 - 6
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    A' = 218 - 16 = 202 \\
+    Z' = 84 - 6 = 78
+\end{gather}
+El elemento con número atómico 78 es el Platino (Pt), aunque no se pide identificarlo.
+\begin{cajaresultado}
+El núcleo producido tiene un \textbf{número másico} $\boldsymbol{A'=202}$ y un \textbf{número atómico} $\boldsymbol{Z'=78}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando las leyes de conservación de la carga y del número de nucleones, se puede seguir la transformación de un núcleo a través de una cadena de desintegraciones. Cada emisión alfa reduce el número másico en 4 y el atómico en 2, mientras que cada emisión beta menos no altera el número másico y aumenta el atómico en 1. El resultado final del proceso es un núcleo de ${}_{78}^{202}\text{Pt}$.
+\end{cajaconclusion}
+
+\newpage

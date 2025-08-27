@@ -1,0 +1,1046 @@
+```latex
+% !TEX root = ../main.tex
+\chapter{Examen Extraordinario Julio 2025}
+\label{chap:2025_jul_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2025_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2025_jul_ext}
+
+\begin{cajaenunciado}
+En abril de 2023, la Agencia Espacial Europea lanzó la misión JUICE (Jupiter Icy Moons Explorer) para estudiar las lunas heladas de Júpiter. Ganímedes, la luna más grande del sistema solar, tiene un radio promedio de 2634 km y una masa de $1,48\cdot10^{23}$ kg.
+\begin{enumerate}
+    \item[a)] Obtén la expresión que relaciona el periodo orbital con el radio orbital.
+    \item[b)] Calcula el periodo de JUICE si se colocara en una órbita circular a 500 km de la superficie de Ganimedes.
+\end{enumerate}
+\textbf{Dato:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Antes de operar, es imprescindible identificar los datos y convertirlos al Sistema Internacional de unidades (SI).
+\begin{itemize}
+    \item \textbf{Constante de Gravitación Universal (G):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$
+    \item \textbf{Radio de Ganímedes ($R_G$):} $R_G = 2634 \text{ km} = 2,634 \cdot 10^{6} \text{ m}$
+    \item \textbf{Masa de Ganímedes ($M_G$):} $M_G = 1,48 \cdot 10^{23} \text{ kg}$
+    \item \textbf{Altura de la órbita sobre la superficie ($h$):} $h = 500 \text{ km} = 5 \cdot 10^{5} \text{ m}$
+    \item \textbf{Radio orbital ($r$):} Se calculará como $r = R_G + h$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresión que relaciona el periodo ($T$) con el radio orbital ($r$).
+        \item Valor numérico del periodo de JUICE ($T$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+Se realiza un esquema para visualizar la órbita de la sonda JUICE alrededor de Ganímedes.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Órbita de JUICE} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la luna Ganímedes en el centro de un sistema de coordenadas. Alrededor, una sonda espacial (JUICE) sigue una órbita circular de radio 'r'. El radio de Ganímedes se etiqueta como 'R_G' y la altura de la órbita como 'h'. Se debe dibujar el vector de la Fuerza Gravitatoria ($F_g$) sobre la sonda, apuntando hacia el centro de Ganímedes. Este vector también representa la Fuerza Centrípeta ($F_c$)."}}
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_juice.png}}
+    \caption{Representación gráfica de la órbita circular.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para que un satélite (la sonda JUICE) describa una órbita circular alrededor de un cuerpo masivo (Ganímedes), la fuerza de atracción gravitatoria que ejerce el cuerpo central debe ser la fuerza centrípeta que mantiene al satélite en su trayectoria circular.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal de Newton:} La fuerza de atracción entre Ganímedes (masa $M_G$) y la sonda (masa $m$) separadas una distancia $r$ es $F_g = G \frac{M_G m}{r^2}$.
+    \item \textbf{Dinámica del Movimiento Circular Uniforme (MCU):} La fuerza centrípeta necesaria para mantener una órbita circular es $F_c = m a_c = m \frac{v^2}{r} = m \omega^2 r$. La velocidad angular $\omega$ se relaciona con el periodo $T$ mediante $\omega = \frac{2\pi}{T}$.
+\end{itemize}
+Igualando ambas fuerzas ($F_g = F_c$) podremos deducir la relación solicitada.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Expresión del periodo orbital en función del radio}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta:
+\begin{gather}
+    F_g = F_c \nonumber \\[8pt]
+    G \frac{M_G m}{r^2} = m \omega^2 r
+\end{gather}
+La masa del satélite, $m$, se cancela. Sustituimos la velocidad angular $\omega$ por su expresión en función del periodo $T$:
+\begin{gather}
+    G \frac{M_G}{r^2} = \left(\frac{2\pi}{T}\right)^2 r \nonumber \\[8pt]
+    G \frac{M_G}{r^3} = \frac{4\pi^2}{T^2}
+\end{gather}
+Despejando el periodo $T$, obtenemos la expresión que lo relaciona con el radio orbital. Esta es la Tercera Ley de Kepler para órbitas circulares:
+\begin{gather}
+    T^2 = \frac{4\pi^2}{G M_G} r^3 \implies T = \sqrt{\frac{4\pi^2 r^3}{G M_G}} = 2\pi \sqrt{\frac{r^3}{G M_G}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{b) Valor del periodo de JUICE}
+Primero, calculamos el radio de la órbita $r$:
+\begin{gather}
+    r = R_G + h = 2,634 \cdot 10^6 \, \text{m} + 5 \cdot 10^5 \, \text{m} = 3,134 \cdot 10^6 \, \text{m}
+\end{gather}
+Ahora, sustituimos los valores numéricos en la expresión del periodo obtenida:
+\begin{gather}
+    T = 2\pi \sqrt{\frac{(3,134 \cdot 10^6)^3}{(6,67 \cdot 10^{-11})(1,48 \cdot 10^{23})}} \approx 2\pi \sqrt{\frac{3,078 \cdot 10^{19}}{9,8716 \cdot 10^{12}}} \approx 11175 \, \text{s}
+\end{gather}
+Para una mejor comprensión, podemos convertir el resultado a horas: $11175 \, \text{s} \times \frac{1 \, \text{h}}{3600 \, \text{s}} \approx 3,10 \, \text{h}$.
+\begin{cajaresultado}
+    El periodo orbital de la sonda JUICE será de $\boldsymbol{11175 \, \textbf{s}}$ (aproximadamente 3,1 horas).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Igualando la fuerza gravitatoria con la fuerza centrípeta, se deduce la Tercera Ley de Kepler, que relaciona el cuadrado del periodo con el cubo del radio orbital ($T^2 \propto r^3$). Con los datos de Ganímedes y la altura de la órbita, se calcula que la sonda JUICE tendría un periodo de aproximadamente 3,1 horas para completar una vuelta alrededor de la luna.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2025_jul_ext}
+
+\begin{cajaenunciado}
+Considerando únicamente la interacción gravitatoria entre dos esferas homogéneas de diámetros 20 cm y 10 cm, calcula la relación entre sus masas, $m_{2}/m_{1}$ para que el campo gravitatorio en el punto de contacto entre ellas, P, sea nulo. ¿Cuál es el valor del cociente entre los potenciales gravitatorios $V_{2}/V_{1}$ en dicho punto P?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Convertimos todos los datos al Sistema Internacional.
+\begin{itemize}
+    \item \textbf{Diámetro esfera 1 ($d_1$):} $d_1 = 20 \text{ cm} \implies R_1 = 10 \text{ cm} = 0,10 \text{ m}$
+    \item \textbf{Diámetro esfera 2 ($d_2$):} $d_2 = 10 \text{ cm} \implies R_2 = 5 \text{ cm} = 0,05 \text{ m}$
+    \item \textbf{Condición de campo nulo:} $\vec{g}_T(P) = \vec{0}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Relación entre masas ($m_2/m_1$).
+        \item Relación entre potenciales ($V_2/V_1$) en el punto P.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo y Potencial en el Punto de Contacto} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar dos esferas de diferentes tamaños, una con radio $R_1$ y otra con radio $R_2$, en contacto en un punto P. Los centros de las esferas, C1 y C2, y el punto P están alineados en un eje horizontal. En el punto P, dibujar dos vectores de campo gravitatorio: $\vec{g}_1$ apuntando hacia C1 y $\vec{g}_2$ apuntando hacia C2. Los vectores deben tener la misma longitud para indicar que sus módulos son iguales. Etiquetar las distancias $R_1$ desde P a C1 y $R_2$ desde P a C2."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esferas_contacto.png}
+    }}
+    \caption{Vectores de campo gravitatorio en el punto de contacto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando el principio de superposición tanto para el campo gravitatorio como para el potencial gravitatorio.
+\begin{itemize}
+    \item \textbf{Campo Gravitatorio de una Esfera:} Una esfera homogénea de masa $M$ y radio $R$ crea en un punto exterior a una distancia $r$ de su centro el mismo campo que una partícula puntual de masa $M$ situada en su centro: $\vec{g} = -G \frac{M}{r^2} \hat{u}_r$.
+    \item \textbf{Principio de Superposición para Campos:} El campo total en un punto es la suma vectorial de los campos creados por cada masa individual: $\vec{g}_T = \vec{g}_1 + \vec{g}_2$.
+    \item \textbf{Potencial Gravitatorio de una Esfera:} En las mismas condiciones, el potencial es $V = -G \frac{M}{r}$.
+    \item \textbf{Principio de Superposición para Potenciales:} El potencial total es la suma escalar de los potenciales individuales: $V_T = V_1 + V_2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Relación entre masas ($m_2/m_1$)}
+El punto de contacto P está a una distancia $R_1$ del centro de la esfera 1 y a una distancia $R_2$ del centro de la esfera 2. El campo $\vec{g}_1$ apunta hacia $m_1$ y el campo $\vec{g}_2$ apunta hacia $m_2$. Como son de sentidos opuestos, para que la suma vectorial sea nula, sus módulos deben ser iguales:
+\begin{gather}
+    \vec{g}_T(P) = \vec{g}_1(P) + \vec{g}_2(P) = \vec{0} \implies |\vec{g}_1(P)| = |\vec{g}_2(P)|
+\end{gather}
+Sustituyendo la expresión del módulo del campo gravitatorio:
+\begin{gather}
+    G \frac{m_1}{R_1^2} = G \frac{m_2}{R_2^2}
+\end{gather}
+Simplificando la constante G y reordenando para obtener la relación pedida:
+\begin{gather}
+    \frac{m_2}{m_1} = \frac{R_2^2}{R_1^2} = \left(\frac{R_2}{R_1}\right)^2
+\end{gather}
+\paragraph*{b) Relación entre potenciales ($V_2/V_1$)}
+El potencial creado por cada esfera en el punto P es:
+\begin{gather}
+    V_1 = -G \frac{m_1}{R_1} \quad ; \quad V_2 = -G \frac{m_2}{R_2}
+\end{gather}
+La relación entre ellos será:
+\begin{gather}
+    \frac{V_2}{V_1} = \frac{-G \frac{m_2}{R_2}}{-G \frac{m_1}{R_1}} = \frac{m_2}{m_1} \cdot \frac{R_1}{R_2}
+\end{gather}
+Sustituimos la relación de masas encontrada en el apartado anterior:
+\begin{gather}
+    \frac{V_2}{V_1} = \left(\frac{R_2}{R_1}\right)^2 \cdot \frac{R_1}{R_2} = \frac{R_2}{R_1}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores de los radios en las expresiones finales.
+\paragraph*{a) Valor de la relación de masas}
+\begin{gather}
+    \frac{m_2}{m_1} = \left(\frac{0,05 \, \text{m}}{0,10 \, \text{m}}\right)^2 = (0,5)^2 = 0,25
+\end{gather}
+\begin{cajaresultado}
+    La relación entre las masas para que el campo sea nulo es $\boldsymbol{m_2/m_1 = 0,25}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de la relación de potenciales}
+\begin{gather}
+    \frac{V_2}{V_1} = \frac{0,05 \, \text{m}}{0,10 \, \text{m}} = 0,5
+\end{gather}
+\begin{cajaresultado}
+    La relación entre los potenciales gravitatorios en el punto P es $\boldsymbol{V_2/V_1 = 0,5}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Para anular el campo gravitatorio en el punto de contacto, la masa de la segunda esfera debe ser un cuarto de la masa de la primera ($m_2 = 0,25 \, m_1$). En estas condiciones, y debido a que el potencial depende linealmente del radio y no de su cuadrado, el potencial creado por la segunda esfera en dicho punto es la mitad del creado por la primera ($V_2 = 0,5 \, V_1$).
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Campo Electromagnético}
+\label{sec:em_2025_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2025_jul_ext}
+
+\begin{cajaenunciado}
+Una carga puntual de valor $q_{1}=2$ µC se encuentra en el punto $O(0,0)$ m y una segunda carga de valor desconocido, $q_{2}$, se encuentra en el punto $A(0,3)$ m. Calcula:
+\begin{enumerate}
+    \item[a)] El valor que debe tener la carga $q_{2}$ para que el campo eléctrico generado por ambas cargas en el punto $B(0,4)$ m sea nulo. Representa los vectores campo eléctrico generados por cada una de las cargas en este punto. (1 punto).
+    \item[b)] La diferencia de potencial entre el punto B y el punto $C(0,8)$ m y el trabajo necesario para mover una carga $q_{3}=0,1~\mu C$ desde B hasta C. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = 2 \, \mu\text{C} = 2 \cdot 10^{-6} \, \text{C}$. Posición $\vec{r}_1 = (0,0)$ m.
+    \item \textbf{Carga 2 ($q_2$):} Valor desconocido. Posición $\vec{r}_2 = (0,3)$ m.
+    \item \textbf{Carga 3 ($q_3$):} $q_3 = 0,1 \, \mu\text{C} = 1 \cdot 10^{-7} \, \text{C}$.
+    \item \textbf{Punto B:} $\vec{r}_B = (0,4)$ m.
+    \item \textbf{Punto C:} $\vec{r}_C = (0,8)$ m.
+    \item \textbf{Constante de Coulomb ($k$):} $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Valor de la carga $q_2$.
+        \item Diferencia de potencial $V_C - V_B$.
+        \item Trabajo para mover $q_3$ de B a C, $W_{B \to C}$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Apartado (a): Campo Eléctrico Nulo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas cartesianas XY. Dibujar el eje Y vertical. Colocar una carga positiva $q_1$ en el origen (0,0). Colocar una carga $q_2$ en el punto A(0,3). Marcar el punto B(0,4). En el punto B, dibujar dos vectores de campo eléctrico: $\vec{E}_1$ generado por $q_1$, apuntando hacia arriba (sentido +Y) y $\vec{E}_2$ generado por $q_2$, apuntando hacia abajo (sentido -Y). Ambos vectores deben tener la misma longitud para que su suma sea cero. Etiquetar claramente las cargas y los puntos."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_electrico_nulo.png}
+    }}
+    \caption{Representación de los vectores campo eléctrico en el punto B.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo Eléctrico}
+Se aplica el \textbf{Principio de Superposición}: el campo eléctrico total en un punto es la suma vectorial de los campos creados por cada carga individual. El campo creado por una carga puntual $q$ a una distancia $r$ es $\vec{E} = k \frac{q}{r^2}\hat{u}_r$.
+\paragraph*{b) Potencial Eléctrico y Trabajo}
+El potencial en un punto es la suma escalar de los potenciales creados por cada carga: $V = \sum V_i = \sum k \frac{q_i}{r_i}$. La diferencia de potencial es $\Delta V_{BC} = V_C - V_B$. El trabajo realizado por el campo eléctrico para mover una carga $q_3$ entre dos puntos es $W_{B \to C} = -q_3 \Delta V_{BC} = q_3(V_B - V_C)$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Cálculo de la carga $q_2$}
+El campo en B es $\vec{E}_B = \vec{E}_{1,B} + \vec{E}_{2,B}$. Para que sea nulo, ambos vectores deben ser iguales en módulo y de sentido opuesto.
+La carga $q_1$ es positiva y está en (0,0), por lo que en B(0,4) crea un campo en la dirección $+\hat{\jmath}$. Por tanto, $\vec{E}_{2,B}$ debe apuntar en la dirección $-\hat{\jmath}$, lo que implica que la carga $q_2$ debe ser negativa.
+$|\vec{E}_{1,B}| = |\vec{E}_{2,B}|$. Las distancias son $r_{1B} = 4$ m y $r_{2B} = 4-3 = 1$ m.
+\begin{gather}
+    k \frac{|q_1|}{r_{1B}^2} = k \frac{|q_2|}{r_{2B}^2} \implies |q_2| = |q_1| \frac{r_{2B}^2}{r_{1B}^2}
+\end{gather}
+\paragraph*{b) Diferencia de Potencial y Trabajo}
+Calculamos el potencial en B y en C.
+\begin{gather}
+    V_B = V_{1,B} + V_{2,B} = k\frac{q_1}{r_{1B}} + k\frac{q_2}{r_{2B}} = k\left(\frac{q_1}{r_{1B}} + \frac{q_2}{r_{2B}}\right) \\
+    V_C = V_{1,C} + V_{2,C} = k\frac{q_1}{r_{1C}} + k\frac{q_2}{r_{2C}} = k\left(\frac{q_1}{r_{1C}} + \frac{q_2}{r_{2C}}\right)
+\end{gather}
+donde $r_{1C} = 8$ m y $r_{2C} = 8-3 = 5$ m.
+La diferencia de potencial es $\Delta V_{BC} = V_C - V_B$. El trabajo es $W_{B \to C} = q_3(V_B - V_C)$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de $q_2$}
+\begin{gather}
+    |q_2| = (2 \cdot 10^{-6} \, \text{C}) \frac{(1 \, \text{m})^2}{(4 \, \text{m})^2} = \frac{2 \cdot 10^{-6}}{16} = 0,125 \cdot 10^{-6} \, \text{C} = 0,125 \, \mu\text{C}
+\end{gather}
+Como determinamos que debía ser negativa, $q_2 = -0,125 \, \mu\text{C}$.
+\begin{cajaresultado}
+    El valor de la carga es $\boldsymbol{q_2 = -0,125 \, \mu\textbf{C}}$.
+\end{cajaresultado}
+\paragraph*{b) Valor de $\Delta V_{BC}$ y $W_{B \to C}$}
+Calculamos $V_B$ y $V_C$ usando $q_2 = -0,125 \cdot 10^{-6}$ C.
+\begin{gather}
+    V_B = 9\cdot10^9 \left(\frac{2 \cdot 10^{-6}}{4} + \frac{-0,125 \cdot 10^{-6}}{1}\right) = 9\cdot10^9 (0,5 - 0,125) \cdot 10^{-6} = 3375 \, \text{V} \\
+    V_C = 9\cdot10^9 \left(\frac{2 \cdot 10^{-6}}{8} + \frac{-0,125 \cdot 10^{-6}}{5}\right) = 9\cdot10^9 (0,25 - 0,025) \cdot 10^{-6} = 2025 \, \text{V}
+\end{gather}
+La diferencia de potencial es:
+\begin{gather}
+    \Delta V_{BC} = V_C - V_B = 2025 \, \text{V} - 3375 \, \text{V} = -1350 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+    La diferencia de potencial es $\boldsymbol{V_C - V_B = -1350 \, \textbf{V}}$.
+\end{cajaresultado}
+El trabajo para mover $q_3$ es:
+\begin{gather}
+    W_{B \to C} = q_3 (V_B - V_C) = (1 \cdot 10^{-7} \, \text{C}) (3375 \, \text{V} - 2025 \, \text{V}) = 1,35 \cdot 10^{-4} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo necesario es $\boldsymbol{W_{B \to C} = 1,35 \cdot 10^{-4} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Para anular el campo eléctrico en el punto B, la carga $q_2$ debe ser negativa y de valor $-0,125\,\mu\text{C}$. Con esta configuración, el potencial en C es 1350 V menor que en B. El trabajo realizado por el campo para mover una carga positiva de B a C es positivo, lo que indica que el desplazamiento es a favor del campo y la carga pierde energía potencial eléctrica.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2025_jul_ext}
+
+\begin{cajaenunciado}
+El 24/11/2024 aparecía en un periódico la siguiente noticia: "La radioterapia con protones es el arma más eficaz contra los tumores en niños según los expertos oncológicos". Para realizar esta terapia, los protones deben ser acelerados y guiados. Consideremos un protón en reposo que es acelerado por una diferencia de potencial $\Delta V=2\cdot10^{4}V$. A continuación, el protón entra en una región en la que existe un campo magnético constante, uniforme, perpendicular a la trayectoria del protón y de valor $B=0,02~T$. Realizando un planteamiento no relativista del problema, determina razonadamente:
+\begin{enumerate}
+    \item[a)] La energía cinética y el módulo de la velocidad del protón, con que entra en la zona donde existe el campo magnético. (1 punto)
+    \item[b)] La expresión y el valor del radio de curvatura de la trayectoria del protón cuando se encuentra en la región donde actúa el campo magnético. ¿Cuánto tiempo emplea en describir media órbita completa? Razona si cambia el módulo de la velocidad del protón al realizar dicha trayectoria. (1 punto)
+\end{enumerate}
+\textbf{Datos:} masa del protón, $m=1,67\cdot10^{-27}$ kg; carga elemental, $q=1,6\cdot10^{-19}C$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Diferencia de potencial ($\Delta V$):} $\Delta V = 2 \cdot 10^4 \, \text{V}$
+    \item \textbf{Campo magnético ($B$):} $B = 0,02 \, \text{T}$
+    \item \textbf{Masa del protón ($m_p$):} $m = 1,67 \cdot 10^{-27} \, \text{kg}$
+    \item \textbf{Carga del protón ($q_p$):} $q = 1,6 \cdot 10^{-19} \, \text{C}$
+    \item \textbf{Estado inicial:} El protón parte del reposo.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Energía cinética ($E_c$) y velocidad ($v$).
+        \item Expresión y valor del radio de la trayectoria ($R$).
+        \item Tiempo para media órbita ($t_{1/2}$).
+        \item Justificación sobre el cambio de velocidad.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Trayectoria del Protón} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dividir la imagen en dos zonas. A la izquierda, una zona con un campo eléctrico (representado por líneas de potencial V1 y V2, con V1 > V2) donde un protón es acelerado en línea recta. A la derecha, una región sombreada con un campo magnético uniforme $\vec{B}$ apuntando hacia dentro de la página (usar símbolos de 'x'). El protón entra en esta región con una velocidad $\vec{v}$ horizontal y comienza a describir una trayectoria circular (semicircunferencia). En un punto de la trayectoria, dibujar el vector velocidad $\vec{v}$ (tangente) y el vector Fuerza de Lorentz $\vec{F}_m$ (apuntando hacia el centro de la circunferencia), mostrando que son perpendiculares."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{proton_acelerado.png}
+    }}
+    \caption{Esquema del movimiento del protón en el campo eléctrico y magnético.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Aceleración en Campo Eléctrico}
+El trabajo realizado por el campo eléctrico sobre el protón se invierte íntegramente en aumentar su energía cinética (Teorema de la Energía Cinética), ya que parte del reposo. El trabajo es $W_E = q \Delta V$ y la energía cinética es $E_c = \frac{1}{2}mv^2$.
+\paragraph*{b) Movimiento en Campo Magnético}
+Cuando el protón entra en el campo magnético, experimenta una \textbf{Fuerza de Lorentz}, $\vec{F}_m = q(\vec{v} \times \vec{B})$. Como $\vec{v}$ y $\vec{B}$ son perpendiculares, el módulo de la fuerza es $F_m = qvB$. Esta fuerza es siempre perpendicular a la velocidad, por lo que actúa como \textbf{fuerza centrípeta}, causando un Movimiento Circular Uniforme (MCU). La fuerza magnética no realiza trabajo ($W_m = \int \vec{F}_m \cdot d\vec{l} = 0$), por lo que la energía cinética y el módulo de la velocidad del protón permanecen constantes.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Energía Cinética y Velocidad}
+Por el Teorema de la Energía Cinética:
+\begin{gather}
+    \Delta E_c = W_E \implies E_{c,final} - E_{c,inicial} = q \Delta V
+\end{gather}
+Como parte del reposo ($E_{c,inicial}=0$), la energía cinética de entrada al campo B es:
+\begin{gather}
+    E_c = q \Delta V
+\end{gather}
+De la definición de energía cinética, $E_c = \frac{1}{2} m v^2$, despejamos la velocidad:
+\begin{gather}
+    v = \sqrt{\frac{2 E_c}{m}} = \sqrt{\frac{2 q \Delta V}{m}}
+\end{gather}
+\paragraph*{b) Radio de Curvatura y Tiempo de Vuelo}
+Igualamos la fuerza de Lorentz (magnética) a la fuerza centrípeta:
+\begin{gather}
+    F_m = F_c \implies q v B = \frac{m v^2}{R}
+\end{gather}
+La expresión para el radio de curvatura $R$ es:
+\begin{gather}
+    R = \frac{m v}{q B}
+\end{gather}
+El periodo de una órbita completa es $T = \frac{2\pi R}{v}$. Sustituyendo $R$: $T = \frac{2\pi}{v}\left(\frac{m v}{q B}\right) = \frac{2\pi m}{q B}$.
+El tiempo para media órbita es la mitad del periodo:
+\begin{gather}
+    t_{1/2} = \frac{T}{2} = \frac{\pi m}{q B}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valores de $E_c$ y $v$}
+\begin{gather}
+    E_c = (1,6 \cdot 10^{-19} \, \text{C})(2 \cdot 10^4 \, \text{V}) = 3,2 \cdot 10^{-15} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía cinética del protón es $\boldsymbol{3,2 \cdot 10^{-15} \, \textbf{J}}$.
+\end{cajaresultado}
+\begin{gather}
+    v = \sqrt{\frac{2 (3,2 \cdot 10^{-15} \, \text{J})}{1,67 \cdot 10^{-27} \, \text{kg}}} \approx 1,96 \cdot 10^6 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    El módulo de la velocidad es $\boldsymbol{1,96 \cdot 10^6 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valores de $R$ y $t_{1/2}$}
+\begin{gather}
+    R = \frac{(1,67 \cdot 10^{-27} \, \text{kg})(1,96 \cdot 10^6 \, \text{m/s})}{(1,6 \cdot 10^{-19} \, \text{C})(0,02 \, \text{T})} \approx 1,02 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    El radio de curvatura de la trayectoria es $\boldsymbol{1,02 \, \textbf{m}}$.
+\end{cajaresultado}
+\begin{gather}
+    t_{1/2} = \frac{\pi (1,67 \cdot 10^{-27} \, \text{kg})}{(1,6 \cdot 10^{-19} \, \text{C})(0,02 \, \text{T})} \approx 1,64 \cdot 10^{-6} \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+    El tiempo empleado en describir media órbita es $\boldsymbol{1,64 \, \mu\textbf{s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    El protón es acelerado por el campo eléctrico adquiriendo una energía cinética de $3,2 \cdot 10^{-15} \, \text{J}$ y una velocidad de $1,96 \cdot 10^6 \, \text{m/s}$. Al entrar en el campo magnético, describe una semicircunferencia de 1,02 m de radio en 1,64 microsegundos. El módulo de su velocidad no cambia durante esta fase porque la fuerza magnética es siempre perpendicular a la velocidad, por lo que no realiza trabajo y no puede modificar la energía cinética de la partícula.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2025_jul_ext}
+
+\begin{cajaenunciado}
+En el seno de un campo magnético uniforme se sitúa una espira de sección S constante, de forma que el plano que la contiene es perpendicular al campo. La gráfica representa la fuerza electromotriz inducida en la espira en función del tiempo. Explica cómo varía el campo magnético en los dos tramos de la gráfica. Justifica las respuestas indicando la ley física en que te basas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Del enunciado y la gráfica extraemos la siguiente información cualitativa:
+\begin{itemize}
+    \item \textbf{Configuración:} Espira de área S constante, plano perpendicular a un campo magnético $\vec{B}$ uniforme.
+    \item \textbf{Tramo 1 ($0 < t < t_1$):} La fuerza electromotriz inducida ($\epsilon$) es nula. $\epsilon_1 = 0$.
+    \item \textbf{Tramo 2 ($t > t_1$):} La fuerza electromotriz inducida es constante y no nula. $\epsilon_2 = \text{cte} > 0$.
+    \item \textbf{Incógnita:} Describir la variación del campo magnético $B(t)$ en ambos tramos.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Espira en Campo Magnético} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar una espira circular de área 'S'. A través de la espira, dibujar líneas de campo magnético $\vec{B}$ uniformes y paralelas, perpendiculares al plano de la espira (por ejemplo, entrando en la página). Etiquetar claramente la espira, el área S y el vector de campo magnético $\vec{B}$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espira_campo_b.png}
+    }}
+    \caption{Esquema de la espira y el campo magnético.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La justificación se basa en la \textbf{Ley de Faraday-Lenz de la Inducción Electromagnética}. Esta ley establece que la fuerza electromotriz (f.e.m. o $\epsilon$) inducida en un circuito cerrado es igual a la tasa de cambio temporal del flujo magnético ($\Phi_B$) que lo atraviesa, cambiada de signo.
+$$ \epsilon = -\frac{d\Phi_B}{dt} $$
+El \textbf{flujo magnético} a través de la espira, al ser el campo $\vec{B}$ uniforme y perpendicular a la superficie de área $S$, se calcula como:
+$$ \Phi_B = \vec{B} \cdot \vec{S} = B S \cos(0^\circ) = B S $$
+donde $\vec{S}$ es el vector superficie, perpendicular al plano de la espira.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sustituyendo la expresión del flujo en la Ley de Faraday, y dado que el área $S$ de la espira es constante, podemos escribir:
+\begin{gather}
+    \epsilon = -\frac{d(B S)}{dt} = -S \frac{dB}{dt}
+\end{gather}
+Esta ecuación relaciona directamente la f.e.m. inducida ($\epsilon$) con la variación del campo magnético en el tiempo ($\frac{dB}{dt}$). Analizaremos cada tramo con esta expresión.
+
+\paragraph*{Análisis del Tramo 1 ($0 < t < t_1$)}
+En este tramo, la gráfica muestra que $\epsilon_1 = 0$.
+\begin{gather}
+    0 = -S \frac{dB}{dt} \implies \frac{dB}{dt} = 0
+\end{gather}
+Si la derivada del campo magnético respecto al tiempo es cero, significa que el campo magnético no cambia.
+\begin{cajaresultado}
+    En el Tramo 1, el campo magnético $\boldsymbol{B}$ es \textbf{constante}.
+\end{cajaresultado}
+
+\paragraph*{Análisis del Tramo 2 ($t > t_1$)}
+En este tramo, la gráfica muestra que la f.e.m. es una constante positiva, $\epsilon_2 = \text{cte} > 0$.
+\begin{gather}
+    \epsilon_2 = -S \frac{dB}{dt} \implies \frac{dB}{dt} = -\frac{\epsilon_2}{S}
+\end{gather}
+Dado que $\epsilon_2$ y $S$ son constantes positivas, la tasa de cambio del campo magnético, $\frac{dB}{dt}$, es una constante negativa. Esto implica que el campo magnético está disminuyendo a un ritmo constante, es decir, varía linealmente con el tiempo.
+\begin{cajaresultado}
+    En el Tramo 2, el campo magnético $\boldsymbol{B}$ \textbf{disminuye linealmente con el tiempo} a un ritmo constante.
+\end{cajaresultado}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Este problema es cualitativo y no requiere sustitución numérica. Los resultados son las descripciones del comportamiento del campo magnético obtenidas en el paso anterior.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Basándonos en la Ley de Faraday-Lenz ($\epsilon = -S \frac{dB}{dt}$), podemos concluir:
+    \begin{itemize}
+        \item \textbf{Tramo 1:} Una f.e.m. nula implica que el flujo magnético es constante. Como el área de la espira es constante, el campo magnético también debe serlo.
+        \item \textbf{Tramo 2:} Una f.e.m. inducida constante y positiva implica que el flujo magnético está variando a un ritmo constante. Específicamente, el campo magnético debe estar disminuyendo linealmente con el tiempo para inducir una f.e.m. constante.
+    \end{itemize}
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2025_jul_ext}
+
+\begin{cajaenunciado}
+Explica brevemente qué es un campo de fuerzas conservativo. Una carga $q$ negativa se encuentra en el seno de un campo eléctrico. El valor del trabajo cuando se desplaza entre los puntos A y B de la figura es 0,01 J, si se sigue el camino (1). ¿Cuál es el valor del trabajo si se sigue el camino (2)? ¿En qué punto, A o B, es mayor el potencial eléctrico? Razona las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo de fuerzas:} Campo eléctrico, que es conservativo.
+    \item \textbf{Carga de prueba ($q$):} Es una carga negativa ($q < 0$).
+    \item \textbf{Trabajo por el camino (1):} $W_{A \to B}^{(1)} = 0,01 \, \text{J}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Definición de campo de fuerzas conservativo.
+        \item Trabajo por el camino (2), $W_{A \to B}^{(2)}$.
+        \item Comparación entre el potencial en A ($V_A$) y en B ($V_B$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La pregunta se refiere a una figura que muestra dos puntos A y B y dos trayectorias diferentes, (1) y (2), que los conectan. No es necesario un prompt nuevo, ya que el análisis se basa en los conceptos y no en la forma específica de los caminos.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.5\textwidth}{\centering \textbf{Caminos entre A y B} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama simple con dos puntos etiquetados como 'A' y 'B'. Dibujar dos líneas curvas distintas que comiencen en A y terminen en B. Etiquetar una línea como 'Camino (1)' y la otra como 'Camino (2)'."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{caminos_conservativos.png}
+    }}
+    \caption{Dos trayectorias distintas entre los puntos A y B.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Campo de Fuerzas Conservativo}
+Un campo de fuerzas es \textbf{conservativo} si el trabajo realizado por las fuerzas del campo para mover una partícula entre dos puntos cualesquiera, A y B, es independiente de la trayectoria seguida. Una consecuencia directa de esto es que el trabajo realizado en una trayectoria cerrada es siempre nulo. A todo campo conservativo se le puede asociar una función escalar llamada energía potencial ($E_p$), de tal forma que el trabajo realizado por el campo es igual a la disminución de dicha energía potencial: $W_{A \to B} = E_{p,A} - E_{p,B} = -\Delta E_p$. El campo eléctrico estático es un ejemplo de campo de fuerzas conservativo.
+
+\paragraph*{Relación entre Trabajo y Potencial Eléctrico}
+La energía potencial eléctrica ($U$ o $E_p$) de una carga $q$ en un punto con potencial eléctrico $V$ es $U=qV$. Por lo tanto, el trabajo realizado por el campo eléctrico para mover la carga $q$ desde A hasta B se relaciona con la diferencia de potencial entre esos puntos:
+$$ W_{A \to B} = -\Delta U = -(U_B - U_A) = U_A - U_B = qV_A - qV_B = q(V_A - V_B) $$
+
+\subsubsection*{4. Razonamiento y Análisis}
+\paragraph*{Valor del trabajo por el camino (2)}
+El enunciado establece que el campo de fuerzas es un campo eléctrico, el cual es conservativo. Por la definición de campo conservativo, el trabajo para ir de A a B no depende del camino. Si por el camino (1) el trabajo es $W_{A \to B}^{(1)} = 0,01 \, \text{J}$, entonces por cualquier otro camino, incluido el (2), el trabajo será el mismo.
+\begin{gather}
+    W_{A \to B}^{(2)} = W_{A \to B}^{(1)}
+\end{gather}
+
+\paragraph*{Comparación de Potenciales ($V_A$ vs $V_B$)}
+Utilizamos la relación entre trabajo y potencial: $W_{A \to B} = q(V_A - V_B)$.
+Sabemos que $W_{A \to B} = 0,01 \, \text{J}$ (un valor positivo) y que la carga $q$ es negativa ($q < 0$).
+Despejamos la diferencia de potencial:
+\begin{gather}
+    V_A - V_B = \frac{W_{A \to B}}{q}
+\end{gather}
+Sustituimos los signos de las magnitudes:
+\begin{gather}
+    V_A - V_B = \frac{0,01 \, \text{J}}{q} = \frac{(+)}{(-)} = \text{negativo}
+\end{gather}
+Si la diferencia $V_A - V_B$ es un número negativo, esto implica que $V_A < V_B$.
+
+\subsubsection*{5. Resultados}
+\begin{cajaresultado}
+El valor del trabajo para el camino (2) es $\boldsymbol{W_{A \to B}^{(2)} = 0.01 \, \textbf{J}}$.
+\end{cajaresultado}
+
+\medskip % Se recomienda usar \medskip para una separación visual limpia
+
+\begin{cajaresultado}
+El potencial eléctrico es mayor en el punto B que en el punto A: $\boldsymbol{V_B > V_A}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Un campo conservativo, como el eléctrico, se caracteriza porque el trabajo entre dos puntos es independiente de la trayectoria. Por ello, el trabajo por el camino (2) es idéntico al del camino (1). Dado que el trabajo realizado por el campo al mover una carga negativa de A a B es positivo, esto significa que la carga se ha movido hacia una zona de mayor potencial eléctrico, en contra de la fuerza espontánea del campo. Por lo tanto, el potencial en B es mayor que en A.
+\end{cajaconclusion}
+
+\newpage
+% ----------------------------------------------------------------------
+\section{Bloque III: Vibraciones y Ondas}
+\label{sec:ondas_2025_jul_ext}
+% ----------------------------------------------------------------------
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2025_jul_ext}
+
+\begin{cajaenunciado}
+A una olla que contiene agua se le añade aceite en cantidad suficiente para crear una capa plana de caras paralelas flotando sobre el agua. Un rayo de luz, proveniente del aire, incide sobre la superficie de separación aire-aceite formando un ángulo de $70^{\circ}$ con la normal a dicha superficie. Realiza un esquema de la trayectoria del rayo de luz en los distintos medios (aire, aceite y agua), indicando los valores de los ángulos de refracción que forma al entrar en el aceite y luego en el agua.
+\textbf{Datos:} índice de refracción del aire, $n_{aire}=1$; índice de refracción del aceite, $n_{aceite}=1,47$; índice de refracción del agua, $n_{agua}=1,33$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Medio 1:} Aire, $n_1 = n_{aire} = 1,00$.
+    \item \textbf{Medio 2:} Aceite, $n_2 = n_{aceite} = 1,47$.
+    \item \textbf{Medio 3:} Agua, $n_3 = n_{agua} = 1,33$.
+    \item \textbf{Ángulo de incidencia en el aire ($\theta_1$):} $\theta_1 = 70^{\circ}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Esquema de la trayectoria del rayo.
+        \item Ángulo de refracción en el aceite ($\theta_2$).
+        \item Ángulo de refracción en el agua ($\theta_3$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Refracción en Múltiples Medios} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar tres capas horizontales apiladas, etiquetadas de arriba a abajo como 'Aire ($n_1$)', 'Aceite ($n_2$)', y 'Agua ($n_3$)'. Trazar una línea normal vertical que atraviese todas las capas. Dibujar un rayo de luz incidente en el aire que llega a la interfaz aire-aceite con un ángulo $\theta_1 = 70^\circ$ respecto a la normal. Mostrar el rayo refractado en el aceite, doblándose hacia la normal, con un ángulo $\theta_2$. Este rayo continúa hasta la interfaz aceite-agua. Mostrar el rayo refractado en el agua, doblándose ligeramente lejos de la normal (en comparación con el aceite), con un ángulo $\theta_3$. Etiquetar todos los ángulos y medios con sus índices de refracción."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{refraccion_capas.png}
+    }}
+    \caption{Esquema de la trayectoria del rayo de luz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe mediante la \textbf{Ley de Snell de la Refracción}. Esta ley relaciona los ángulos de incidencia y refracción con los índices de refracción de los medios involucrados. Para una interfaz entre un medio 1 y un medio 2, la ley establece:
+$$ n_1 \sin(\theta_1) = n_2 \sin(\theta_2) $$
+Aplicaremos esta ley sucesivamente a las dos interfaces: aire-aceite y aceite-agua. Como las interfaces son paralelas, el ángulo de refracción de la primera interfaz es el ángulo de incidencia de la segunda.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Interfaz 1: Aire-Aceite}
+Aplicamos la Ley de Snell con $n_1=n_{aire}$ y $n_2=n_{aceite}$:
+\begin{gather}
+    n_{aire} \sin(\theta_1) = n_{aceite} \sin(\theta_2)
+\end{gather}
+Despejamos el ángulo de refracción en el aceite, $\theta_2$:
+\begin{gather}
+    \sin(\theta_2) = \frac{n_{aire}}{n_{aceite}} \sin(\theta_1) \implies \theta_2 = \arcsin\left(\frac{n_{aire}}{n_{aceite}} \sin(\theta_1)\right)
+\end{gather}
+\paragraph*{Interfaz 2: Aceite-Agua}
+El ángulo de incidencia en esta interfaz es $\theta_2$. Aplicamos de nuevo la Ley de Snell con $n_2=n_{aceite}$ y $n_3=n_{agua}$:
+\begin{gather}
+    n_{aceite} \sin(\theta_2) = n_{agua} \sin(\theta_3)
+\end{gather}
+Despejamos el ángulo de refracción en el agua, $\theta_3$:
+\begin{gather}
+    \sin(\theta_3) = \frac{n_{aceite}}{n_{agua}} \sin(\theta_2) \implies \theta_3 = \arcsin\left(\frac{n_{aceite}}{n_{agua}} \sin(\theta_2)\right)
+\end{gather}
+Notar que, combinando ambas ecuaciones, $n_{aire} \sin(\theta_1) = n_{aceite} \sin(\theta_2) = n_{agua} \sin(\theta_3)$. Esto significa que el ángulo de refracción final en el agua no depende de la capa intermedia de aceite.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo del ángulo en el aceite ($\theta_2$)}
+\begin{gather}
+    \theta_2 = \arcsin\left(\frac{1,00}{1,47} \sin(70^{\circ})\right) = \arcsin\left(\frac{0,9397}{1,47}\right) = \arcsin(0,6392) \approx 39,73^{\circ}
+\end{gather}
+\begin{cajaresultado}
+    El ángulo de refracción al entrar en el aceite es $\boldsymbol{\theta_2 \approx 39,73^{\circ}}$.
+\end{cajaresultado}
+\paragraph*{Cálculo del ángulo en el agua ($\theta_3$)}
+\begin{gather}
+    \theta_3 = \arcsin\left(\frac{1,47}{1,33} \sin(39,73^{\circ})\right) = \arcsin\left(\frac{1,47 \cdot 0,6392}{1,33}\right) = \arcsin(0,7065) \approx 44,95^{\circ}
+\end{gather}
+\begin{cajaresultado}
+    El ángulo de refracción al entrar en el agua es $\boldsymbol{\theta_3 \approx 44,95^{\circ}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Al pasar del aire al aceite, un medio más denso ópticamente, el rayo de luz se acerca a la normal, refractándose con un ángulo de $39,73^{\circ}$. Posteriormente, al pasar del aceite al agua, un medio menos denso que el aceite, el rayo se aleja de la normal, resultando en un ángulo final de refracción de $44,95^{\circ}$. El esquema y los cálculos muestran la trayectoria completa del rayo a través de las tres capas.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2025_jul_ext}
+
+\begin{cajaenunciado}
+La figura representa la propagación de una onda transversal sinusoidal en una cuerda en el instante $t=10$ s. La onda se mueve hacia la derecha sobre el eje x y su periodo es $T=2$ s. Determina razonadamente la amplitud, la longitud de onda, la pulsación o frecuencia angular, el número de onda, la velocidad de propagación y la fase inicial.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de onda:} Transversal sinusoidal, se propaga hacia la derecha ($+x$).
+    \item \textbf{Instante de la gráfica:} $t = 10 \, \text{s}$.
+    \item \textbf{Periodo ($T$):} $T = 2 \, \text{s}$.
+    \item \textbf{Datos de la gráfica:}
+        \begin{itemize}
+            \item Elongación máxima: 2 cm.
+            \item La onda se repite cada 1 cm en el eje x.
+            \item En $x=0$, la elongación $y$ es 0 y la pendiente es negativa.
+        \end{itemize}
+    \item \textbf{Incógnitas:} Amplitud ($A$), longitud de onda ($\lambda$), pulsación ($\omega$), número de onda ($k$), velocidad de propagación ($v$) y fase inicial ($\phi_0$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La propia figura del enunciado sirve como representación gráfica. El análisis se basa en la interpretación de dicha figura.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación general de una onda armónica que se propaga en el sentido positivo del eje x es:
+$$ y(x,t) = A \cos(kx - \omega t + \phi_0) $$
+o equivalentemente, $y(x,t) = A \sin(kx - \omega t + \phi_0')$. Usaremos la forma coseno.
+Las magnitudes que la describen se relacionan entre sí:
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} Máxima elongación.
+    \item \textbf{Longitud de onda ($\lambda$):} Distancia mínima entre dos puntos en el mismo estado de vibración.
+    \item \textbf{Periodo ($T$):} Tiempo que tarda un punto en realizar una oscilación completa.
+    \item \textbf{Pulsación o Frecuencia Angular ($\omega$):} $\omega = 2\pi f = \frac{2\pi}{T}$.
+    \item \textbf{Número de Onda ($k$):} $k = \frac{2\pi}{\lambda}$.
+    \item \textbf{Velocidad de Propagación ($v$):} $v = \frac{\lambda}{T} = \frac{\omega}{k}$.
+    \item \textbf{Fase inicial ($\phi_0$):} Determina el estado de oscilación en $x=0$ y $t=0$.
+\end{itemize}
+
+\subsubsection*{4. Determinación de las magnitudes}
+\paragraph*{Amplitud ($A$) y Longitud de Onda ($\lambda$)}
+Se obtienen directamente de la gráfica:
+\begin{itemize}
+    \item La elongación máxima (valor pico en el eje y) es de 2 cm. Por tanto, $\boldsymbol{A = 2 \, \text{cm} = 0,02 \, \text{m}}$.
+    \item La distancia para un ciclo completo (por ejemplo, entre $x=0$ y $x=1$ cm, donde la forma se repite) es la longitud de onda. Por tanto, $\boldsymbol{\lambda = 1 \, \text{cm} = 0,01 \, \text{m}}$.
+\end{itemize}
+
+\paragraph*{Pulsación ($\omega$), Número de Onda ($k$) y Velocidad ($v$)}
+Se calculan a partir de $T$ y $\lambda$:
+\begin{itemize}
+    \item $\boldsymbol{\omega} = \frac{2\pi}{T} = \frac{2\pi}{2 \, \text{s}} = \boldsymbol{\pi \, \text{rad/s}}$.
+    \item $\boldsymbol{k} = \frac{2\pi}{\lambda} = \frac{2\pi}{0,01 \, \text{m}} = \boldsymbol{200\pi \, \text{rad/m}}$.
+    \item $\boldsymbol{v} = \frac{\lambda}{T} = \frac{0,01 \, \text{m}}{2 \, \text{s}} = \boldsymbol{0,005 \, \text{m/s}}$.
+\end{itemize}
+
+\paragraph*{Fase Inicial ($\phi_0$)}
+Usamos la ecuación $y(x,t) = A \cos(kx - \omega t + \phi_0)$ y la información de la gráfica en $t=10$ s.
+En el punto $x=0$ y $t=10$ s, la elongación es $y(0,10)=0$.
+\begin{gather}
+    y(0,10) = A \cos(k \cdot 0 - \omega \cdot 10 + \phi_0) = 0 \implies \cos(-10\omega + \phi_0) = 0
+\end{gather}
+Sustituyendo $\omega=\pi$, tenemos $\cos(-10\pi + \phi_0) = 0$. Como la función coseno es periódica con periodo $2\pi$, esto es equivalente a $\cos(\phi_0) = 0$.
+Las soluciones para $\phi_0$ son $\phi_0 = \pm \frac{\pi}{2}, \pm \frac{3\pi}{2}, ...$.
+Para decidir el signo, analizamos la velocidad de oscilación de la partícula en $x=0$ en el instante $t=10$ s. La gráfica muestra que en $x=0$, $y=0$ y la pendiente espacial $\frac{\partial y}{\partial x}$ es negativa. La relación entre la velocidad de oscilación ($v_y$) y la pendiente es $v_y = -v \frac{\partial y}{\partial x}$. Como $v>0$ y $\frac{\partial y}{\partial x}<0$, se deduce que $v_y > 0$. La partícula en $x=0$ está subiendo.
+La expresión de la velocidad de oscilación es $v_y(x,t) = \frac{\partial y}{\partial t} = A\omega \sin(kx - \omega t + \phi_0)$.
+Evaluamos en $(x=0, t=10)$:
+\begin{gather}
+    v_y(0,10) = A\omega \sin(-10\pi + \phi_0) > 0 \implies \sin(-10\pi+\phi_0) > 0 \implies \sin(\phi_0) > 0
+\end{gather}
+La única solución que cumple $\cos(\phi_0)=0$ y $\sin(\phi_0)>0$ es $\boldsymbol{\phi_0 = \frac{\pi}{2} \, \text{rad}}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Los cálculos ya han sido realizados. Resumimos los resultados.
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $\boldsymbol{0,02 \, \textbf{m}}$
+    \item \textbf{Longitud de Onda ($\lambda$):} $\boldsymbol{0,01 \, \textbf{m}}$
+    \item \textbf{Pulsación ($\omega$):} $\boldsymbol{\pi \, \textbf{rad/s}}$
+    \item \textbf{Número de Onda ($k$):} $\boldsymbol{200\pi \, \textbf{rad/m}}$
+    \item \textbf{Velocidad de Propagación ($v$):} $\boldsymbol{0,005 \, \textbf{m/s}}$
+    \item \textbf{Fase Inicial ($\phi_0$):} $\boldsymbol{\frac{\pi}{2} \, \textbf{rad}}$
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Mediante la interpretación directa de la gráfica de la onda en $t=10$ s, se determinan la amplitud y la longitud de onda. A partir de estas y del periodo proporcionado, se calculan las magnitudes derivadas como la pulsación, el número de onda y la velocidad de propagación. Finalmente, utilizando el estado de la onda en $x=0$ y $t=10$ s (posición y sentido del movimiento), se deduce el valor de la fase inicial, completando la descripción de la onda.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2025_jul_ext}
+
+\begin{cajaenunciado}
+En el campeonato mundial de balonmano femenino de 2023, un espectador que se encontraba a 1 m de una especie de trompetilla llamada vuvuzela, percibió un incómodo ruido de 110 dB. Supón la vuvuzela como una fuente sonora puntual que genera ondas esféricas.
+\begin{enumerate}
+    \item[a)] Molesto por el sonido se aleja hasta la grada de enfrente, a una distancia de 31,6 m de la vuvuzela ¿cuál es el nivel sonoro (en dB) que recibe en dicha posición? (1 punto)
+    \item[b)] ¿Cuál es la potencia sonora que emite una vuvuzela? Por desgracia para el espectador se pusieron a sonar nueve vuvuzelas más, justo al lado de la anterior ¿cuál es la intensidad total y qué nivel sonoro recibe el espectador situado a 31,6 m? (1 punto)
+\end{enumerate}
+\textbf{Dato:} intensidad sonora umbral, $I_{0}=10^{-12}W/m^{2}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Fuente:} Puntual, emite ondas esféricas.
+    \item \textbf{Posición 1:} $r_1 = 1 \, \text{m}$, nivel sonoro $\beta_1 = 110 \, \text{dB}$.
+    \item \textbf{Posición 2:} $r_2 = 31,6 \, \text{m}$.
+    \item \textbf{Intensidad umbral de audición ($I_0$):} $I_0 = 10^{-12} \, \text{W/m}^2$.
+    \item \textbf{Número total de fuentes:} $N = 1+9 = 10$ vuvuzelas.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Nivel sonoro en la posición 2 ($\beta_2$).
+        \item Potencia de una vuvuzela ($P$).
+        \item Intensidad total de 10 vuvuzelas en $r_2$ ($I_{T,2}$).
+        \item Nivel sonoro total en $r_2$ ($\beta_{T,2}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Fuente Sonora Puntual} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar una fuente puntual en el centro, etiquetada como 'Vuvuzela'. Dibujar dos esferas concéntricas alrededor de la fuente. La primera esfera tiene radio $r_1=1$ m y la segunda un radio mayor $r_2=31.6$ m. Indicar que en la superficie de la primera esfera el nivel sonoro es $\beta_1=110$ dB. El objetivo es calcular el nivel sonoro $\beta_2$ en la superficie de la segunda esfera."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuente_sonora.png}
+    }}
+    \caption{Esquema de la atenuación del sonido con la distancia.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Intensidad de una Onda Esférica:} La intensidad ($I$) de una onda emitida por una fuente puntual de potencia $P$ a una distancia $r$ es la potencia por unidad de área: $I = \frac{P}{4\pi r^2}$. La intensidad disminuye con el cuadrado de la distancia.
+    \item \textbf{Nivel de Intensidad Sonora ($\beta$):} Se mide en decibelios (dB) y se define como $\beta = 10 \log_{10}\left(\frac{I}{I_0}\right)$.
+    \item \textbf{Principio de Superposición:} Para fuentes de sonido no coherentes, las intensidades se suman: $I_{Total} = \sum I_i$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Nivel sonoro a 31,6 m}
+Primero, relacionamos las intensidades en los puntos 1 y 2. Como $I_1 = P/(4\pi r_1^2)$ y $I_2 = P/(4\pi r_2^2)$, su cociente es:
+\begin{gather}
+    \frac{I_2}{I_1} = \frac{P/4\pi r_2^2}{P/4\pi r_1^2} = \left(\frac{r_1}{r_2}\right)^2
+\end{gather}
+La diferencia de niveles sonoros es:
+\begin{gather}
+    \beta_2 - \beta_1 = 10 \log\left(\frac{I_2}{I_0}\right) - 10 \log\left(\frac{I_1}{I_0}\right) = 10 \log\left(\frac{I_2}{I_1}\right) = 10 \log\left(\frac{r_1}{r_2}\right)^2 = 20 \log\left(\frac{r_1}{r_2}\right)
+\end{gather}
+Así, $\beta_2 = \beta_1 + 20 \log\left(\frac{r_1}{r_2}\right)$.
+
+\paragraph*{b) Potencia, intensidad total y nivel sonoro total}
+De la definición de nivel sonoro, despejamos la intensidad $I_1$:
+\begin{gather}
+    \beta_1 = 10 \log\left(\frac{I_1}{I_0}\right) \implies I_1 = I_0 \cdot 10^{\beta_1/10}
+\end{gather}
+La potencia de la fuente es:
+\begin{gather}
+    P = I_1 \cdot 4\pi r_1^2
+\end{gather}
+La intensidad total de $N=10$ vuvuzelas en el punto $r_2$ es 10 veces la intensidad de una sola ($I_2$):
+\begin{gather}
+    I_{T,2} = 10 \cdot I_2 = 10 \cdot I_1 \left(\frac{r_1}{r_2}\right)^2
+\end{gather}
+El nivel sonoro total correspondiente es:
+\begin{gather}
+    \beta_{T,2} = 10 \log\left(\frac{I_{T,2}}{I_0}\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de $\beta_2$}
+\begin{gather}
+    \beta_2 = 110 \, \text{dB} + 20 \log\left(\frac{1}{31,6}\right) = 110 + 20(-1,5) = 110 - 30 = 80 \, \text{dB}
+\end{gather}
+\begin{cajaresultado}
+    El nivel sonoro a 31,6 m es de $\boldsymbol{80 \, \textbf{dB}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valores de $P$, $I_{T,2}$ y $\beta_{T,2}$}
+Primero calculamos $I_1$:
+\begin{gather}
+    I_1 = 10^{-12} \cdot 10^{110/10} = 10^{-12} \cdot 10^{11} = 10^{-1} \, \text{W/m}^2 = 0,1 \, \text{W/m}^2
+\end{gather}
+Ahora la potencia $P$:
+\begin{gather}
+    P = (0,1 \, \text{W/m}^2) \cdot 4\pi (1 \, \text{m})^2 = 0,4\pi \, \text{W} \approx 1,26 \, \text{W}
+\end{gather}
+\begin{cajaresultado}
+    La potencia sonora de una vuvuzela es $\boldsymbol{\approx 1,26 \, \textbf{W}}$.
+\end{cajaresultado}
+Calculamos $I_2$: $I_2 = I_1 (r_1/r_2)^2 = 0,1 \cdot (1/31,6)^2 \approx 10^{-4} \, \text{W/m}^2$.
+La intensidad total de 10 vuvuzelas en $r_2$:
+\begin{gather}
+    I_{T,2} = 10 \cdot I_2 = 10 \cdot 10^{-4} = 10^{-3} \, \text{W/m}^2
+\end{gather}
+\begin{cajaresultado}
+    La intensidad total a 31,6 m es $\boldsymbol{10^{-3} \, \textbf{W/m}^2}$.
+\end{cajaresultado}
+El nivel sonoro total:
+\begin{gather}
+    \beta_{T,2} = 10 \log\left(\frac{10^{-3}}{10^{-12}}\right) = 10 \log(10^9) = 10 \cdot 9 = 90 \, \text{dB}
+\end{gather}
+\begin{cajaresultado}
+    El nivel sonoro total recibido es de $\boldsymbol{90 \, \textbf{dB}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Al alejarse de la fuente sonora, la intensidad disminuye con el cuadrado de la distancia, lo que provoca una caída del nivel sonoro de 110 dB a 80 dB. La potencia de una sola vuvuzela es de 1,26 W. Al añadirse 9 fuentes más, la intensidad se multiplica por 10 (de $10^{-4}$ a $10^{-3}$ W/m$^2$), lo que corresponde a un aumento del nivel sonoro de 10 dB, alcanzando los 90 dB en la posición del espectador.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2025_jul_ext}
+
+\begin{cajaenunciado}
+Un cuerpo de masa $m=50$ kg se encuentra sujeto a un muelle de constante elástica k. Se empuja el cuerpo comprimiendo el muelle. Al dejar de empujar, el sistema se pone a vibrar con movimiento armónico simple de frecuencia $f=\frac{1}{\pi}$ Hz y una aceleración máxima de $2,0~m/s^{2}$. Calcula:
+\begin{enumerate}
+    \item[a)] La amplitud de la oscilación y la fase inicial. Escribe, utilizando la función coseno, la ecuación del movimiento del cuerpo, $x(t)$. Obtén la expresión de la velocidad del cuerpo en función del tiempo ¿Cuál es el valor absoluto de la velocidad máxima de vibración? (1 punto)
+    \item[b)] El valor de la constante elástica del muelle ¿Cuál sería la energía potencial elástica máxima, la energía cinética máxima y la energía mecánica de dicha masa? No se consideran rozamientos (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa ($m$):} $m = 50 \, \text{kg}$.
+    \item \textbf{Frecuencia ($f$):} $f = \frac{1}{\pi} \, \text{Hz}$.
+    \item \textbf{Aceleración máxima ($a_{max}$):} $a_{max} = 2,0 \, \text{m/s}^2$.
+    \item \textbf{Condición inicial:} Se suelta desde la máxima compresión. Esto significa que en $t=0$, la posición es $x(0)=-A$ y la velocidad $v(0)=0$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+        \item Amplitud ($A$) y fase inicial ($\phi_0$).
+        \item Ecuaciones $x(t)$ y $v(t)$.
+        \item Velocidad máxima ($v_{max}$).
+        \item Constante elástica ($k$).
+        \item Energías: $E_{pe,max}$, $E_{k,max}$, $E_{mec}$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Sistema Masa-Muelle} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un sistema masa-muelle horizontal sobre una superficie sin rozamiento. Mostrar tres instantes del movimiento: (1) El muelle en su máxima compresión, con la masa en la posición $x=-A$, velocidad $v=0$ y aceleración $a_{max}$ hacia la derecha. (2) La masa en la posición de equilibrio $x=0$, con velocidad $v_{max}$ hacia la derecha y aceleración $a=0$. (3) El muelle en su máximo estiramiento, con la masa en la posición $x=+A$, velocidad $v=0$ y aceleración $-a_{max}$ hacia la izquierda."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{masa_muelle_shm.png}
+    }}
+    \caption{Esquema de un Movimiento Armónico Simple.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Cinemática del M.A.S.:} Las ecuaciones de posición, velocidad y aceleración para un M.A.S. son:
+        $x(t) = A \cos(\omega t + \phi_0)$
+        $v(t) = -A\omega \sin(\omega t + \phi_0)$
+        $a(t) = -A\omega^2 \cos(\omega t + \phi_0) = -\omega^2 x(t)$
+    \item \textbf{Valores máximos:} $v_{max} = A\omega$, $a_{max} = A\omega^2$.
+    \item \textbf{Relaciones angulares:} La frecuencia angular $\omega$ se relaciona con la frecuencia $f$ por $\omega=2\pi f$.
+    \item \textbf{Dinámica y Energía del M.A.S.:} La constante elástica $k$ está relacionada con la frecuencia angular por $\omega = \sqrt{k/m}$. La energía mecánica total se conserva:
+        $E_{mec} = E_k + E_{pe} = \frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2 = \frac{1}{2}mv_{max}^2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Amplitud, fase y cinemática}
+Primero calculamos la frecuencia angular $\omega$:
+\begin{gather}
+    \omega = 2\pi f
+\end{gather}
+Usamos la expresión de la aceleración máxima, $a_{max} = A\omega^2$, para despejar la amplitud $A$:
+\begin{gather}
+    A = \frac{a_{max}}{\omega^2}
+\end{gather}
+La fase inicial $\phi_0$ se determina por la condición inicial $x(0)=-A$:
+\begin{gather}
+    x(0) = A \cos(\phi_0) = -A \implies \cos(\phi_0) = -1 \implies \phi_0 = \pi \, \text{rad}
+\end{gather}
+Con $A$, $\omega$ y $\phi_0$, se escriben $x(t)$ y $v(t) = -A\omega \sin(\omega t + \phi_0)$. La velocidad máxima es $v_{max} = A\omega$.
+
+\paragraph*{b) Constante elástica y energías}
+De la relación $\omega = \sqrt{k/m}$, despejamos la constante $k$:
+\begin{gather}
+    k = m\omega^2
+\end{gather}
+Las energías máxima potencial, máxima cinética y mecánica son iguales:
+\begin{gather}
+    E_{pe,max} = E_{k,max} = E_{mec} = \frac{1}{2}kA^2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valores cinemáticos}
+Calculamos $\omega$: $\omega = 2\pi \left(\frac{1}{\pi}\right) = 2 \, \text{rad/s}$.
+Calculamos la amplitud $A$:
+\begin{gather}
+    A = \frac{2,0 \, \text{m/s}^2}{(2 \, \text{rad/s})^2} = \frac{2}{4} = 0,5 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La amplitud es $\boldsymbol{A=0,5 \, \textbf{m}}$ y la fase inicial es $\boldsymbol{\phi_0 = \pi \, \textbf{rad}}$.
+\end{cajaresultado}
+Ecuaciones del movimiento:
+\begin{gather}
+    x(t) = 0,5 \cos(2t + \pi) \, \text{(en SI)} \\
+    v(t) = -0,5 \cdot 2 \sin(2t + \pi) = -1 \sin(2t + \pi) \, \text{(en SI)}
+\end{gather}
+Velocidad máxima: $v_{max} = A\omega = 0,5 \cdot 2 = 1 \, \text{m/s}$.
+\begin{cajaresultado}
+    $x(t) = 0,5 \cos(2t + \pi)$ y $v(t) = -\sin(2t+\pi)$ en SI. La velocidad máxima es $\boldsymbol{v_{max} = 1,0 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valores de k y energías}
+\begin{gather}
+    k = (50 \, \text{kg})(2 \, \text{rad/s})^2 = 50 \cdot 4 = 200 \, \text{N/m}
+\end{gather}
+\begin{cajaresultado}
+    La constante elástica del muelle es $\boldsymbol{k=200 \, \textbf{N/m}}$.
+\end{cajaresultado}
+\begin{gather}
+    E_{mec} = \frac{1}{2} k A^2 = \frac{1}{2} (200 \, \text{N/m}) (0,5 \, \text{m})^2 = 100 \cdot 0,25 = 25 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía potencial máxima, la energía cinética máxima y la energía mecánica total tienen el mismo valor: $\boldsymbol{25 \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    A partir de la frecuencia y la aceleración máxima se deducen las características cinemáticas del M.A.S., resultando en una amplitud de 0,5 m y una velocidad máxima de 1,0 m/s. La fase inicial de $\pi$ rad confirma que el movimiento se inicia desde el punto de máxima compresión. Dinámicamente, esto corresponde a un muelle de constante $k=200$ N/m. La energía mecánica total del sistema, que se conserva y se transforma continuamente entre cinética y potencial, es de 25 J.
+\end{cajaconclusion}
+
+\newpage
+% ----------------------------------------------------------------------
+\section{Bloque IV: Física Relativista, Cuántica, Nuclear y de Partículas}
+\label{sec:nuclear_2025_jul_ext}
+% ----------------------------------------------------------------------
+\subsection{Pregunta 6 - OBLIGATORIA}
+\label{subsec:6_2025_jul_ext}
+
+\begin{cajaenunciado}
+El yodo-131, $^{131}_{53}I$, es un isótopo radiactivo que se usa para realizar gammagrafías, combatir el cáncer y tratar otras enfermedades de la glándula tiroides. Se desintegra, con un periodo de semidesintegración de 8,0 días, según la siguiente reacción, $^{131}_{53}I\rightarrow^{A}_{Z}Xe+\beta^{-}+^{0}_{0}\bar{\nu}_e$. Determina los valores de los números atómico y másico del xenón. Si un paciente recibe un tratamiento con $^{131}_{53}I$, ¿cuántos días tienen que transcurrir para que la cantidad de $^{131}_{53}I$ en su cuerpo se reduzca hasta el 15\% del valor inicial? Supón que la desintegración radiactiva sea la única vía de eliminación. (Nota: se ha corregido el antineutrino $\gamma$ del enunciado original por $\bar{\nu}_e$ para mayor precisión).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Isótopo inicial:} Yodo-131 ($^{131}_{53}I$).
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 8,0$ días.
+    \item \textbf{Tipo de desintegración:} Beta menos ($\beta^{-}$).
+    \item \textbf{Reacción:} $^{131}_{53}I \rightarrow ^{A}_{Z}Xe + \beta^{-} + \bar{\nu}_e$. Una partícula $\beta^-$ es un electrón, $^{0}_{-1}e$.
+    \item \textbf{Condición final:} La cantidad de Yodo-131 restante es el 15\% de la inicial, es decir, $N(t) = 0,15 N_0$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Número másico ($A$) y número atómico ($Z$) del Xenón.
+            \item Tiempo ($t$) para que la muestra se reduzca al 15\%.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Curva de Decaimiento Radiactivo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar una gráfica con el tiempo 't' en el eje horizontal y el porcentaje de núcleos restantes 'N(t)/N0' en el eje vertical. Trazar una curva de decaimiento exponencial que comience en (0, 100\%). Marcar el punto correspondiente a la primera vida media en $t=T_{1/2}=8$ días, donde el porcentaje es 50\%. Marcar también el punto buscado en el eje Y en 15\%, y trazar una línea horizontal hasta la curva y luego una línea vertical hasta el eje X para señalar el tiempo 't' que se debe calcular."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{decaimiento_yodo.png}
+    }}
+    \caption{Curva de decaimiento para el Yodo-131.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Leyes de Conservación de Soddy-Fajans:} En una reacción nuclear, se conservan tanto el número total de nucleones (número másico, A) como la carga eléctrica total (número atómico, Z).
+    \item \textbf{Ley de Desintegración Radiactiva:} El número de núcleos radiactivos $N$ que quedan en una muestra después de un tiempo $t$ sigue una ley exponencial: $N(t) = N_0 e^{-\lambda t}$, donde $N_0$ es el número de núcleos iniciales y $\lambda$ es la constante de desintegración.
+    \item \textbf{Relación entre $\lambda$ y $T_{1/2}$:} La constante de desintegración se relaciona con el periodo de semidesintegración mediante la expresión $\lambda = \frac{\ln 2}{T_{1/2}}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Determinación de A y Z}
+Escribimos la reacción nuclear completa:
+$$ ^{131}_{53}I \rightarrow ^{A}_{Z}Xe + ^{0}_{-1}e + ^{0}_{0}\bar{\nu}_e $$
+Aplicamos las leyes de conservación:
+\begin{itemize}
+    \item \textbf{Conservación del número másico (A):} $131 = A + 0 + 0 \implies A = 131$.
+    \item \textbf{Conservación del número atómico (Z):} $53 = Z - 1 + 0 \implies Z = 54$.
+\end{itemize}
+El isótopo resultante es, por tanto, $^{131}_{54}Xe$.
+
+\paragraph*{b) Cálculo del tiempo de desintegración}
+Partimos de la ley de desintegración radiactiva: $N(t) = N_0 e^{-\lambda t}$.
+Sustituimos la condición $N(t) = 0,15 N_0$:
+\begin{gather}
+    0,15 N_0 = N_0 e^{-\lambda t} \implies 0,15 = e^{-\lambda t}
+\end{gather}
+Aplicamos logaritmos neperianos a ambos lados para despejar el exponente:
+\begin{gather}
+    \ln(0,15) = -\lambda t
+\end{gather}
+Sustituimos $\lambda = \frac{\ln 2}{T_{1/2}}$ y despejamos el tiempo $t$:
+\begin{gather}
+    t = -\frac{\ln(0,15)}{\lambda} = -\frac{\ln(0,15) \cdot T_{1/2}}{\ln 2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valores de A y Z}
+Los valores se obtienen directamente del análisis simbólico.
+\begin{cajaresultado}
+    El número másico del xenón es $\boldsymbol{A=131}$ y su número atómico es $\boldsymbol{Z=54}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor del tiempo $t$}
+Sustituimos los valores de $T_{1/2}$ y $\ln(0,15)$:
+\begin{gather}
+    t = -\frac{(-1,897) \cdot (8,0 \, \text{días})}{0,693} \approx 21,9 \, \text{días}
+\end{gather}
+\begin{cajaresultado}
+    Deben transcurrir aproximadamente $\boldsymbol{21,9 \, \textbf{días}}$ para que la cantidad de Yodo-131 se reduzca al 15\% de la inicial.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Aplicando las leyes de conservación de número másico y atómico, se determina que el Yodo-131 se transmuta en Xenón-131 a través de una desintegración beta. Utilizando la ley de desintegración radiactiva, se calcula que el tiempo necesario para que la actividad del isótopo en el cuerpo del paciente disminuya al 15\% del nivel inicial es de 21,9 días, casi tres veces su periodo de semidesintegración.
+\end{cajaconclusion}
+
+\newpage
+```

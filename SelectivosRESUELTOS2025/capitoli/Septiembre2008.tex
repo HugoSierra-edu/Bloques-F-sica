@@ -1,0 +1,821 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2008 - Convocatoria Extraordinaria}
+\label{chap:2008_sep_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Cuestiones}
+\label{sec:grav_2008_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2008_sep_ext}
+
+\begin{cajaenunciado}
+¿A qué altitud sobre la superficie terrestre la intensidad del campo gravitatorio es el 20\% de su valor sobre la superficie de la tierra?
+\textbf{Dato:} Radio de la Tierra $R_T = 6.300\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6300 \text{ km} = 6,3 \cdot 10^6 \text{ m}$.
+    \item \textbf{Intensidad del campo en la superficie ($g_0$):} Valor de referencia.
+    \item \textbf{Intensidad del campo en la altitud $h$ ($g_h$):} $g_h = 0,20 \cdot g_0$.
+    \item \textbf{Incógnita:} Altitud sobre la superficie ($h$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Gravitatorio a Diferentes Alturas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Tierra (esfera) con su radio $R_T$ indicado desde el centro hasta la superficie. Mostrar dos puntos. Un punto en la superficie, donde un vector $\vec{g}_0$ apunta hacia el centro. Otro punto a una altitud $h$ sobre la superficie, donde un vector $\vec{g}_h$, visiblemente más corto, también apunta hacia el centro. Etiquetar la distancia total desde el centro hasta el punto exterior como $r = R_T + h$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_grav_altitud.png}
+    }}
+    \caption{Comparación de la intensidad del campo gravitatorio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La intensidad del campo gravitatorio creado por un cuerpo esférico de masa $M$ a una distancia $r$ de su centro viene dada por la \textbf{Ley de Gravitación Universal}:
+$$ g(r) = G \frac{M}{r^2} $$
+En la superficie de la Tierra ($r = R_T$):
+$$ g_0 = G \frac{M_T}{R_T^2} $$
+A una altitud $h$ sobre la superficie ($r = R_T + h$):
+$$ g_h = G \frac{M_T}{(R_T+h)^2} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Se nos da la condición $g_h = 0,20 \cdot g_0$. Sustituimos las expresiones de los campos en esta relación:
+\begin{gather}
+    G \frac{M_T}{(R_T+h)^2} = 0,20 \cdot \left(G \frac{M_T}{R_T^2}\right)
+\end{gather}
+Los términos $G$ y $M_T$ se cancelan:
+\begin{gather}
+    \frac{1}{(R_T+h)^2} = \frac{0,20}{R_T^2} \implies R_T^2 = 0,20 (R_T+h)^2
+\end{gather}
+Para despejar $h$, tomamos la raíz cuadrada en ambos lados:
+\begin{gather}
+    R_T = \sqrt{0,20} (R_T+h) \implies \frac{R_T}{\sqrt{0,20}} = R_T+h
+\end{gather}
+Finalmente, despejamos la altitud $h$:
+\begin{gather}
+    h = \frac{R_T}{\sqrt{0,20}} - R_T = R_T \left( \frac{1}{\sqrt{0,20}} - 1 \right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    h = (6,3 \cdot 10^6 \, \text{m}) \left( \frac{1}{\sqrt{0,20}} - 1 \right) \approx (6,3 \cdot 10^6) (2,236 - 1) = (6,3 \cdot 10^6)(1,236) \approx 7,787 \cdot 10^6 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La altitud a la que el campo gravitatorio se reduce al 20\% de su valor en la superficie es $\boldsymbol{h \approx 7787 \, \textbf{km}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Dado que el campo gravitatorio decae con el cuadrado de la distancia al centro de la Tierra, es necesario ascender a una altitud considerable de 7787 km para que su intensidad se reduzca al 20\%. Esta altitud es incluso mayor que el propio radio del planeta.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2008_sep_ext}
+
+\begin{cajaenunciado}
+Enuncia las leyes de Kepler.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión puramente teórica que requiere la enunciación de las tres leyes empíricas de Kepler sobre el movimiento planetario.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Leyes de Kepler} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama dividido en tres secciones horizontales, una para cada ley de Kepler.
+    Sección 1 (Primera Ley): Dibujar una órbita elíptica clara. Marcar los dos focos de la elipse. Colocar un Sol grande en uno de los focos. Dibujar un planeta en un punto de la órbita.
+    Sección 2 (Segunda Ley): Dibujar la misma órbita elíptica con el Sol en un foco. Mostrar al planeta en dos posiciones diferentes de su órbita: una cerca del Sol (perihelio) y otra lejos (afelio). Dibujar el radio vector (línea del Sol al planeta) en los extremos de dos arcos de trayectoria de igual duración temporal. Sombrear las dos áreas barridas por el radio vector. Las áreas deben ser visiblemente iguales, lo que implica que el arco recorrido cerca del perihelio es más largo que el arco recorrido cerca del afelio.
+    Sección 3 (Tercera Ley): Dibujar el Sol y dos planetas diferentes en órbitas circulares concéntricas de radios $r_1$ y $r_2$. Etiquetar sus periodos como $T_1$ y $T_2$. Escribir la fórmula $T_1^2/r_1^3 = T_2^2/r_2^3 = \text{constante}$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{leyes_kepler_explicadas.png}
+    }}
+    \caption{Ilustración de las tres leyes de Kepler.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+A principios del siglo XVII, basándose en las meticulosas observaciones astronómicas de Tycho Brahe, Johannes Kepler formuló las tres leyes que describen el movimiento de los planetas alrededor del Sol.
+
+\paragraph*{Primera Ley de Kepler (Ley de las Órbitas - 1609)}
+\begin{quote}
+    \textit{Todos los planetas se mueven en órbitas elípticas, con el Sol situado en uno de los focos de la elipse.}
+\end{quote}
+Esta ley rompió con la idea ancestral de las órbitas circulares perfectas y estableció la geometría real del movimiento planetario.
+
+\paragraph*{Segunda Ley de Kepler (Ley de las Áreas - 1609)}
+\begin{quote}
+    \textit{La línea que une un planeta con el Sol (el radio vector) barre áreas iguales en intervalos de tiempo iguales.}
+\end{quote}
+Una consecuencia directa de esta ley (que es una manifestación de la conservación del momento angular) es que la velocidad orbital de un planeta no es constante. El planeta se mueve más rápido cuando está más cerca del Sol (perihelio) y más lento cuando está más lejos (afelio).
+
+\paragraph*{Tercera Ley de Kepler (Ley de los Periodos - 1618)}
+\begin{quote}
+    \textit{El cuadrado del periodo orbital de cualquier planeta es directamente proporcional al cubo del semieje mayor de su órbita elíptica.}
+\end{quote}
+Matemáticamente, para dos planetas cualesquiera que orbitan al Sol:
+$$ \frac{T_1^2}{a_1^3} = \frac{T_2^2}{a_2^3} = \text{constante} $$
+donde $T$ es el periodo orbital y $a$ es el semieje mayor de la elipse. Esta ley establece una relación matemática precisa entre el tamaño de la órbita de un planeta y el tiempo que tarda en completarla.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las leyes de Kepler son la base de la mecánica celeste. Aunque fueron formuladas de manera empírica, describen con una precisión asombrosa el movimiento de los planetas y cualquier otro cuerpo que orbita alrededor de una masa central. Más tarde, Isaac Newton proporcionaría la justificación física de estas leyes a través de su Ley de la Gravitación Universal.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Problemas}
+\label{sec:ondas_2008_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2008_sep_ext}
+
+\begin{cajaenunciado}
+Una onda transversal de amplitud 10 cm y longitud de onda 1 m se propaga con una velocidad de $10\,\text{m/s}$ en la dirección y sentido del vector $\vec{u}_x$. Si en $t=0$ la elongación en el origen vale 0 cm, calcula:
+\begin{enumerate}
+    \item La ecuación que corresponde a esta onda (1 punto).
+    \item La diferencia de fase entre dos puntos separados 0,5 m y la velocidad transversal de un punto situado en $x=10$ cm en el instante $t=1$ s (1 punto).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 10 \text{ cm} = 0,1 \text{ m}$.
+    \item \textbf{Longitud de onda ($\lambda$):} $\lambda = 1 \text{ m}$.
+    \item \textbf{Velocidad de propagación ($v$):} $v = 10 \, \text{m/s}$.
+    \item \textbf{Sentido de propagación:} Sentido positivo del eje X.
+    \item \textbf{Condición inicial:} $y(0,0) = 0$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Ecuación de la onda $y(x,t)$.
+            \item Diferencia de fase ($\Delta\phi$) para $\Delta x = 0,5$ m.
+            \item Velocidad transversal $v_y$ en $x=0,1$ m y $t=1$ s.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Onda Transversal} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de una onda sinusoidal propagándose a lo largo del eje X. Etiquetar la amplitud (A) como la altura máxima de la onda (0.1 m) y la longitud de onda ($\lambda$) como la distancia entre dos crestas consecutivas (1 m). Mostrar un vector $v$ indicando la propagación hacia la derecha (+X). En un punto específico de la onda, dibujar un vector vertical $v_y$ que represente la velocidad de vibración de ese punto del medio."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{onda_transversal.png}
+    }}
+    \caption{Parámetros de una onda armónica transversal.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ecuación de onda:} La forma general para una onda que se propaga en el sentido +X es $y(x,t) = A\sin(kx - \omega t + \phi_0)$.
+    \item \textbf{Parámetros de la onda:}
+        \begin{itemize}
+            \item Número de onda: $k = 2\pi/\lambda$.
+            \item Frecuencia: $f = v/\lambda$.
+            \item Frecuencia angular: $\omega = 2\pi f = vk$.
+        \end{itemize}
+    \item \textbf{Fase inicial ($\phi_0$):} Se determina por las condiciones iniciales. La condición $y(0,0)=0$ implica $A\sin(\phi_0)=0$, por lo que la solución más simple es $\phi_0=0$.
+    \item \textbf{Velocidad transversal:} $v_y(x,t) = \frac{\partial y}{\partial t}$.
+    \item \textbf{Diferencia de fase:} Para dos puntos separados una distancia $\Delta x$, la diferencia de fase es $\Delta\phi = k \cdot \Delta x$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Ecuación de la onda}
+Primero, calculamos los parámetros angulares $k$ y $\omega$:
+$$k = \frac{2\pi}{\lambda} \quad ; \quad \omega = v \cdot k$$
+Con $\phi_0=0$, la ecuación es:
+$$y(x,t) = A\sin(kx - \omega t)$$
+\paragraph{2. Diferencia de fase y velocidad transversal}
+$$\Delta\phi = k \cdot \Delta x$$
+Derivamos la ecuación de onda para obtener la velocidad transversal:
+$$v_y(x,t) = \frac{\partial}{\partial t} [A\sin(kx - \omega t)] = -A\omega\cos(kx - \omega t)$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Ecuación de la onda}
+Calculamos $k$ y $\omega$:
+$$k = \frac{2\pi}{1} = 2\pi \, \text{rad/m}$$
+$$\omega = (10 \, \text{m/s}) \cdot (2\pi \, \text{rad/m}) = 20\pi \, \text{rad/s}$$
+Sustituyendo en la ecuación de onda (en unidades del SI):
+\begin{cajaresultado}
+    La ecuación de la onda es $\boldsymbol{y(x,t) = 0,1\sin(2\pi x - 20\pi t)}$ (en SI).
+\end{cajaresultado}
+
+\paragraph{2. Diferencia de fase y velocidad transversal}
+Calculamos la diferencia de fase para $\Delta x = 0,5$ m:
+$$\Delta\phi = (2\pi \, \text{rad/m}) \cdot (0,5 \, \text{m}) = \pi \, \text{rad}$$
+Calculamos la velocidad transversal en $x=0,1$ m y $t=1$ s:
+$$v_y(x,t) = -0,1 \cdot 20\pi \cos(2\pi x - 20\pi t) = -2\pi \cos(2\pi x - 20\pi t)$$
+$$v_y(0.1, 1) = -2\pi \cos(2\pi \cdot 0,1 - 20\pi \cdot 1) = -2\pi \cos(0,2\pi - 20\pi) = -2\pi \cos(-19,8\pi)$$
+Como $\cos(-x)=\cos(x)$ y $\cos(x) = \cos(x-2n\pi)$: $\cos(-19,8\pi) = \cos(19,8\pi) = \cos(20\pi - 0,2\pi) = \cos(-0,2\pi) = \cos(0,2\pi)$.
+$$v_y(0.1, 1) = -2\pi \cos(0,2\pi) \approx -2\pi(0,809) \approx -5,08 \, \text{m/s}$$
+\begin{cajaresultado}
+    La diferencia de fase es $\boldsymbol{\pi}$ \textbf{radianes}. La velocidad transversal es $\boldsymbol{v_y \approx -5,08 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La ecuación de la onda se ha construido a partir de los parámetros fundamentales proporcionados. La diferencia de fase de $\pi$ radianes entre los puntos indica que oscilan en oposición de fase. La velocidad transversal calculada, de -5,08 m/s, representa la velocidad instantánea del punto de la cuerda en su movimiento vertical.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2008_sep_ext}
+
+\begin{cajaenunciado}
+Una partícula oscila con un movimiento armónico simple a lo largo del eje X. La ecuación que describe el movimiento de la partícula es $x=4\cos(\pi t+\pi/4)$, donde x se expresa en metros y t en segundos.
+\begin{enumerate}
+    \item Determina la amplitud, la frecuencia y el periodo del movimiento (0,5 puntos).
+    \item Calcula la posición, la velocidad y la aceleración de la partícula en $t=1$ s (1 punto).
+    \item Determina la velocidad y la aceleración máximas de la partícula (0,5 puntos).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ecuación del M.A.S.:} $x(t) = 4\cos(\pi t + \pi/4)$ (en unidades del SI).
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Amplitud ($A$), frecuencia ($f$), periodo ($T$).
+            \item $x(1)$, $v(1)$, $a(1)$.
+            \item $v_{max}$, $a_{max}$.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica, el problema es analítico.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Un Movimiento Armónico Simple (M.A.S.) se describe por la ecuación general $x(t) = A\cos(\omega t + \phi_0)$.
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} Máxima elongación.
+    \item \textbf{Frecuencia angular ($\omega$):} Se relaciona con la frecuencia y el periodo: $\omega = 2\pi f = 2\pi/T$.
+    \item \textbf{Velocidad ($v$):} Es la derivada de la posición: $v(t) = \frac{dx}{dt} = -A\omega\sin(\omega t + \phi_0)$. Su valor máximo es $v_{max} = A\omega$.
+    \item \textbf{Aceleración ($a$):} Es la derivada de la velocidad: $a(t) = \frac{dv}{dt} = -A\omega^2\cos(\omega t + \phi_0) = -\omega^2 x$. Su valor máximo es $a_{max} = A\omega^2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Parámetros del movimiento}
+Por comparación directa de $x(t) = 4\cos(\pi t + \pi/4)$ con la forma general, identificamos $A$ y $\omega$. Luego calculamos $f$ y $T$.
+$$f = \frac{\omega}{2\pi} \quad ; \quad T = \frac{1}{f}$$
+\paragraph{2. Cinemática en $t=1$ s}
+Sustituimos $t=1$ en las ecuaciones de $x(t)$, $v(t)$ y $a(t)$.
+\paragraph{3. Valores máximos}
+$$v_{max} = A\omega \quad ; \quad a_{max} = A\omega^2$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Parámetros del movimiento}
+Por inspección de la ecuación $x(t) = 4\cos(\pi t + \pi/4)$:
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 4$ m.
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = \pi$ rad/s.
+\end{itemize}
+Calculamos $f$ y $T$:
+$$f = \frac{\pi}{2\pi} = 0,5 \, \text{Hz}$$
+$$T = \frac{1}{0,5} = 2 \, \text{s}$$
+\begin{cajaresultado}
+    Amplitud $\boldsymbol{A=4}$ \textbf{m}, frecuencia $\boldsymbol{f=0,5}$ \textbf{Hz} y periodo $\boldsymbol{T=2}$ \textbf{s}.
+\end{cajaresultado}
+
+\paragraph{2. Cinemática en $t=1$ s}
+Ecuaciones de velocidad y aceleración:
+$v(t) = -4\pi\sin(\pi t + \pi/4)$
+$a(t) = -4\pi^2\cos(\pi t + \pi/4)$
+Sustituimos $t=1$:
+$x(1) = 4\cos(\pi + \pi/4) = 4(-\cos(\pi/4)) = 4(-\frac{\sqrt{2}}{2}) = -2\sqrt{2} \approx \boldsymbol{-2,83 \, \textbf{m}}$
+$v(1) = -4\pi\sin(\pi + \pi/4) = -4\pi(-\sin(\pi/4)) = 4\pi(\frac{\sqrt{2}}{2}) = 2\pi\sqrt{2} \approx \boldsymbol{8,89 \, \textbf{m/s}}$
+$a(1) = -4\pi^2\cos(\pi + \pi/4) = -4\pi^2(-\cos(\pi/4)) = 4\pi^2(\frac{\sqrt{2}}{2}) = 2\pi^2\sqrt{2} \approx \boldsymbol{27,9 \, \textbf{m/s}^2}$
+\begin{cajaresultado}
+    En $t=1$ s: $\boldsymbol{x \approx -2,83}$ \textbf{m}, $\boldsymbol{v \approx 8,89}$ \textbf{m/s}, $\boldsymbol{a \approx 27,9}$ \textbf{m/s$^2$}.
+\end{cajaresultado}
+
+\paragraph{3. Valores máximos}
+$v_{max} = A\omega = 4 \cdot \pi = 4\pi \approx \boldsymbol{12,57 \, \textbf{m/s}}$
+$a_{max} = A\omega^2 = 4 \cdot \pi^2 \approx \boldsymbol{39,48 \, \textbf{m/s}^2}$
+\begin{cajaresultado}
+    La velocidad máxima es $\boldsymbol{v_{max} \approx 12,57 \, \textbf{m/s}}$ y la aceleración máxima es $\boldsymbol{a_{max} \approx 39,48 \, \textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La ecuación del M.A.S. contiene toda la información cinemática del movimiento. Por simple inspección y derivación se han obtenido la amplitud, frecuencia, periodo, así como la posición, velocidad y aceleración en cualquier instante. Los valores máximos de velocidad y aceleración dependen directamente de la amplitud y la frecuencia angular del movimiento.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Cuestiones}
+\label{sec:optica_2008_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2008_sep_ext}
+
+\begin{cajaenunciado}
+Indica los elementos ópticos que componen el ojo humano, en qué consiste la miopía y cómo se corrige.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Pregunta teórica sobre la óptica del ojo humano y el defecto de la miopía.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Ojo Miope} \vspace{0.5cm} \textit{Prompt:} "Un esquema de un ojo humano. Rayos paralelos de un objeto lejano entran en el ojo. El sistema córnea-cristalino es demasiado convergente, haciendo que los rayos se enfoquen en un punto focal delante de la retina. Indicar que la imagen en la retina está desenfocada."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }} \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Corrección de la Miopía} \vspace{0.5cm} \textit{Prompt:} "El mismo esquema del ojo miope, pero ahora se coloca una lente divergente (bicóncava) delante. Los rayos paralelos primero divergen ligeramente al pasar por la lente. Esta divergencia compensa el exceso de convergencia del ojo, y el cristalino ahora enfoca los rayos correctamente sobre la retina."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Esquema de la miopía y su corrección.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Elementos ópticos del ojo humano}
+El ojo humano es un sistema óptico complejo que funciona de manera análoga a una cámara fotográfica. Sus principales componentes ópticos, ordenados de fuera hacia dentro, son:
+\begin{itemize}
+    \item \textbf{Córnea:} Es la superficie transparente y curvada en la parte frontal del ojo. Es el elemento con mayor potencia refractiva (aproximadamente +43 dioptrías) y realiza la mayor parte del enfoque de la luz.
+    \item \textbf{Humor acuoso:} Líquido transparente que llena el espacio entre la córnea y el cristalino.
+    \item \textbf{Iris y Pupila:} El iris es la parte coloreada del ojo que actúa como un diafragma, controlando el tamaño de la pupila (la abertura central) para regular la cantidad de luz que entra.
+    \item \textbf{Cristalino:} Es una lente biconvexa flexible situada detrás del iris. Su función es realizar el enfoque fino de la imagen, cambiando su curvatura (y por tanto su potencia refractiva) mediante los músculos ciliares. Este proceso se llama \textbf{acomodación}.
+    \item \textbf{Humor vítreo:} Sustancia gelatinosa y transparente que llena el interior del globo ocular, manteniendo su forma.
+    \item \textbf{Retina:} Es la capa sensible a la luz en la parte posterior del ojo, análoga al sensor de una cámara. Contiene las células fotorreceptoras (conos y bastones) que convierten la luz en señales nerviosas.
+\end{itemize}
+
+\paragraph*{Miopía}
+\begin{itemize}
+    \item \textbf{Descripción:} Es un defecto de refracción en el que el ojo tiene un \textbf{exceso de potencia refractiva} o una longitud axial mayor de lo normal. Como resultado, los rayos de luz procedentes de objetos lejanos se enfocan \textbf{delante de la retina}, en lugar de sobre ella. Esto provoca que la persona vea los objetos lejanos de forma borrosa, mientras que la visión de cerca suele ser buena.
+    \item \textbf{Corrección:} Para corregir la miopía, se necesita reducir la potencia convergente total del sistema ojo-lente. Esto se consigue utilizando una \textbf{lente divergente} (cóncava), que tiene una potencia negativa. La lente divergente hace que los rayos paralelos se separen ligeramente antes de entrar en el ojo, desplazando el punto focal hacia atrás hasta que se sitúa exactamente sobre la retina.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El ojo humano es un sistema óptico formado principalmente por la córnea y el cristalino, que enfocan la luz sobre la retina. La miopía es un defecto común en el que este enfoque se produce delante de la retina, causando visión lejana borrosa. Se corrige eficazmente mediante el uso de lentes divergentes (gafas o lentillas) que compensan el exceso de convergencia del ojo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2008_sep_ext}
+
+\begin{cajaenunciado}
+Un objeto se encuentra 10 cm a la izquierda del vértice de un espejo esférico cóncavo, cuyo radio de curvatura es 24 cm. Determina la posición de la imagen y su aumento.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de espejo:} Cóncavo.
+    \item \textbf{Radio de curvatura ($R$):} Por convenio, para un espejo cóncavo, $R$ es negativo. $R = -24 \, \text{cm}$.
+    \item \textbf{Distancia focal ($f$):} $f = R/2 = -12 \, \text{cm}$.
+    \item \textbf{Posición del objeto ($s$):} El objeto está a la izquierda del espejo. $s = -10 \, \text{cm}$.
+    \item \textbf{Incógnitas:} Posición de la imagen ($s'$) y aumento lateral ($A_L$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Formación de imagen en espejo cóncavo (objeto entre F y V)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar el eje óptico horizontal. A la derecha, un arco de circunferencia representando un espejo cóncavo. Marcar su vértice V, su foco F a -12 cm y su centro de curvatura C a -24 cm. Colocar un objeto (flecha vertical) en s=-10 cm (entre el foco y el vértice). Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje que se refleja pasando por el foco F. 2) Un rayo que incide en el vértice V y se refleja con el mismo ángulo respecto al eje. Mostrar que los rayos reflejados divergen. Dibujar las prolongaciones de estos rayos reflejados hacia atrás (detrás del espejo) con líneas discontinuas. El punto donde se cruzan las prolongaciones forma la imagen, que será virtual, derecha y más grande."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_concavo_lupa.png}
+    }}
+    \caption{Trazado de rayos para un espejo cóncavo actuando como lupa.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve utilizando las ecuaciones de los espejos esféricos:
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss (ecuación fundamental del espejo):}
+    $$\frac{1}{s'} + \frac{1}{s} = \frac{1}{f}$$
+    \item \textbf{Ecuación del aumento lateral ($A_L$):}
+    $$A_L = \frac{y'}{y} = -\frac{s'}{s}$$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Despejamos la posición de la imagen ($s'$) de la ecuación de Gauss:
+$$\frac{1}{s'} = \frac{1}{f} - \frac{1}{s} \implies s' = \left(\frac{1}{f} - \frac{1}{s}\right)^{-1} = \frac{s \cdot f}{s - f}$$
+Una vez obtenida $s'$, calculamos el aumento $A_L$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Cálculo de la posición de la imagen ($s'$)}
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{-12} - \frac{1}{-10} = -\frac{1}{12} + \frac{1}{10} = \frac{-5 + 6}{60} = \frac{1}{60} \\
+    s' = +60 \, \text{cm}
+\end{gather}
+\paragraph{Cálculo del aumento lateral ($A_L$)}
+\begin{gather}
+    A_L = -\frac{s'}{s} = -\frac{+60}{-10} = +6
+\end{gather}
+\begin{cajaresultado}
+    La imagen se forma a $\boldsymbol{60 \, \textbf{cm}}$ a la derecha del espejo (es una imagen virtual). El aumento es $\boldsymbol{A_L = +6}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al colocar el objeto entre el foco y el vértice de un espejo cóncavo, este actúa como una lupa, formando una imagen \textbf{virtual} ($s'>0$), \textbf{derecha} ($A_L>0$) y de \textbf{mayor tamaño} ($|A_L|>1$). Los cálculos confirman estas características, obteniendo una imagen virtual situada a 60 cm del espejo y aumentada 6 veces.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Cuestiones}
+\label{sec:em_2008_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2008_sep_ext}
+
+\begin{cajaenunciado}
+Se tiene un campo magnético uniforme $\vec{B}=0,2\vec{i}$ (T) y una carga $q=5\,\mu\text{C}$ que se desplaza con velocidad $\vec{v}=3\vec{j}$ (m/s). ¿Cuál es la fuerza que el campo magnético realiza sobre la carga? Indica en la respuesta el módulo, dirección y sentido de la fuerza.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo magnético ($\vec{B}$):} $\vec{B} = 0,2 \vec{i} \, \text{T}$.
+    \item \textbf{Carga ($q$):} $q = 5 \, \mu\text{C} = 5 \cdot 10^{-6} \, \text{C}$.
+    \item \textbf{Velocidad ($\vec{v}$):} $\vec{v} = 3 \vec{j} \, \text{m/s}$.
+    \item \textbf{Incógnita:} Fuerza magnética ($\vec{F}_m$) sobre la carga.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fuerza de Lorentz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas en 3D (X, Y, Z). Dibujar el vector campo magnético $\vec{B}$ a lo largo del eje X positivo. Dibujar el vector velocidad $\vec{v}$ de una carga positiva 'q' a lo largo del eje Y positivo. Aplicando la regla de la mano derecha para el producto vectorial $\vec{v} \times \vec{B}$, mostrar que el vector fuerza magnética resultante $\vec{F}_m$ apunta a lo largo del eje Z positivo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_lorentz_3d.png}
+    }}
+    \caption{Determinación de la dirección de la fuerza magnética.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza que un campo magnético ejerce sobre una carga en movimiento viene descrita por la \textbf{expresión de la Fuerza de Lorentz}:
+$$ \vec{F}_m = q (\vec{v} \times \vec{B}) $$
+Esta fuerza es el resultado de un producto vectorial, lo que implica que será perpendicular tanto a la velocidad $\vec{v}$ como al campo $\vec{B}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Para calcular el vector fuerza, realizamos el producto vectorial de $\vec{v}$ y $\vec{B}$:
+\begin{gather}
+    \vec{v} \times \vec{B} = (3\vec{j}) \times (0,2\vec{i}) = (3 \cdot 0,2)(\vec{j} \times \vec{i})
+\end{gather}
+Recordando las reglas del producto vectorial de los vectores unitarios ($\vec{i}\times\vec{j}=\vec{k}$, $\vec{j}\times\vec{k}=\vec{i}$, $\vec{k}\times\vec{i}=\vec{j}$) y que es anticonmutativo ($\vec{j}\times\vec{i} = -\vec{k}$), tenemos:
+\begin{gather}
+    \vec{v} \times \vec{B} = 0,6(-\vec{k}) = -0,6\vec{k} \, \, (\text{T} \cdot \text{m/s})
+\end{gather}
+Ahora multiplicamos por la carga $q$ para obtener la fuerza:
+\begin{gather}
+    \vec{F}_m = q (\vec{v} \times \vec{B}) = q(-0,6\vec{k})
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \vec{F}_m = (5 \cdot 10^{-6} \, \text{C}) \cdot (-0,6\vec{k} \, \text{T} \cdot \text{m/s}) = -3 \cdot 10^{-6} \vec{k} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+La fuerza magnética es $\boldsymbol{\vec{F}_m = -3 \cdot 10^{-6} \vec{k} \, \textbf{N}}$.
+\begin{itemize}
+    \item \textbf{Módulo:} $|\vec{F}_m| = 3 \cdot 10^{-6} \, \text{N}$ (o $3\,\mu\text{N}$).
+    \item \textbf{Dirección:} Eje Z.
+    \item \textbf{Sentido:} Negativo (hacia dentro del plano XY, si se representa en 2D).
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Una carga positiva que se mueve perpendicularmente a un campo magnético experimenta una fuerza máxima, cuya dirección es perpendicular al plano formado por la velocidad y el campo. El cálculo mediante el producto vectorial de la ley de Lorentz nos da como resultado una fuerza de $3\,\mu\text{N}$ en la dirección del eje Z negativo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2008_sep_ext}
+
+\begin{cajaenunciado}
+Se tiene una carga $q=40$ nC en el punto A (1,0) cm y otra carga $q'=-10$ nC en el punto $A'(0,2)$ cm. Calcula la diferencia de potencial eléctrico entre el origen de coordenadas y el punto B (1,2) cm.
+\textbf{Dato:} $K_{e}=9\cdot10^{9}Nm^{2}/C^{2}$
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q$):} $q = 40 \, \text{nC} = 40 \cdot 10^{-9} \, \text{C}$ en A(0.01, 0) m.
+    \item \textbf{Carga 2 ($q'$):} $q' = -10 \, \text{nC} = -10 \cdot 10^{-9} \, \text{C}$ en A'(0, 0.02) m.
+    \item \textbf{Punto inicial:} Origen O(0, 0).
+    \item \textbf{Punto final:} B(0.01, 0.02) m.
+    \item \textbf{Incógnita:} Diferencia de potencial $V_O - V_B$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Potencial de Cargas Puntuales} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Colocar una carga positiva 'q' en A(1,0) y una carga negativa 'q'' en A'(0,2). Marcar los puntos O(0,0) y B(1,2). Dibujar líneas discontinuas desde cada carga hasta el punto O y hasta el punto B para visualizar las distancias necesarias para calcular el potencial en cada punto."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{diferencia_potencial.png}
+    }}
+    \caption{Configuración de las cargas y puntos de interés.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Potencial Eléctrico ($V$):} Es una magnitud escalar. El potencial creado por una carga puntual $Q$ a una distancia $r$ es $V = K \frac{Q}{r}$.
+    \item \textbf{Principio de Superposición:} El potencial total en un punto es la suma algebraica de los potenciales creados por cada carga individualmente: $V_{total} = \sum V_i$.
+    \item \textbf{Diferencia de Potencial:} Se nos pide $V_O - V_B$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Potencial en el Origen O(0,0)}
+Distancias al origen:
+$r_{AO} = 0,01$ m.
+$r_{A'O} = 0,02$ m.
+$$V_O = V_q(O) + V_{q'}(O) = K\frac{q}{r_{AO}} + K\frac{q'}{r_{A'O}}$$
+\paragraph{2. Potencial en el punto B(0.01, 0.02)}
+Distancias al punto B:
+$r_{AB} = \sqrt{(0,01-0,01)^2 + (0,02-0)^2} = 0,02$ m.
+$r_{A'B} = \sqrt{(0,01-0)^2 + (0,02-0,02)^2} = 0,01$ m.
+$$V_B = V_q(B) + V_{q'}(B) = K\frac{q}{r_{AB}} + K\frac{q'}{r_{A'B}}$$
+\paragraph{3. Diferencia de Potencial}
+$$\Delta V = V_O - V_B$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Potencial en O}
+$$V_O = (9\cdot10^9) \left( \frac{40\cdot10^{-9}}{0,01} + \frac{-10\cdot10^{-9}}{0,02} \right) = 9\cdot10^9 (4000\cdot10^{-9} - 500\cdot10^{-9}) = 9\cdot10^9 (3500\cdot10^{-9}) = 31500 \, \text{V}$$
+\paragraph{Potencial en B}
+$$V_B = (9\cdot10^9) \left( \frac{40\cdot10^{-9}}{0,02} + \frac{-10\cdot10^{-9}}{0,01} \right) = 9\cdot10^9 (2000\cdot10^{-9} - 1000\cdot10^{-9}) = 9\cdot10^9 (1000\cdot10^{-9}) = 9000 \, \text{V}$$
+\paragraph{Diferencia de Potencial}
+$$V_O - V_B = 31500 \, \text{V} - 9000 \, \text{V} = 22500 \, \text{V}$$
+\begin{cajaresultado}
+    La diferencia de potencial entre el origen y el punto B es $\boldsymbol{V_O - V_B = 22500 \, \textbf{V}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando el principio de superposición para el potencial eléctrico, se ha calculado el potencial en el origen (31500 V) y en el punto B (9000 V) como la suma escalar de los potenciales creados por cada una de las dos cargas. La diferencia entre ambos valores es de 22500 V.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Problemas}
+\label{sec:moderna_2008_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2008_sep_ext}
+
+\begin{cajaenunciado}
+El espectro de emisión del hidrógeno atómico presenta una serie de longitudes de onda discretas. La longitud de onda límite de mayor energía tiene el valor 91 nm.
+\begin{enumerate}
+    \item ¿Cuál es la energía de un fotón que tenga la longitud de onda límite expresada en eV? (1 punto).
+    \item ¿Cuál sería la longitud de onda de De Broglie de un electrón que tuviera una energía cinética igual a la energía del fotón del apartado anterior? (1 punto).
+\end{enumerate}
+\textbf{Datos:} $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$, $e=1,6\cdot10^{-19}\,\text{C}$, $m_e=9,1\cdot10^{-31}\,\text{kg}$, $c=3\cdot10^8\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda del fotón ($\lambda_{foton}$):} $\lambda_{foton} = 91 \, \text{nm} = 91 \cdot 10^{-9} \, \text{m}$.
+    \item \textbf{Constantes:} $h$, $e$, $m_e$, $c$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Energía del fotón ($E_{foton}$) en eV.
+            \item Longitud de onda de De Broglie ($\lambda_e$) para un electrón con $E_{c,e} = E_{foton}$.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{1. Energía del fotón}
+La energía de un fotón se relaciona con su longitud de onda a través de la \textbf{relación de Planck-Einstein}:
+$$ E = hf = \frac{hc}{\lambda} $$
+Para convertir de Julios a electronvoltios (eV) se utiliza la equivalencia $1 \, \text{eV} = 1,6 \cdot 10^{-19} \, \text{J}$.
+
+\paragraph{2. Longitud de onda de De Broglie}
+La hipótesis de De Broglie asocia una longitud de onda a cualquier partícula con momento lineal $p$:
+$$ \lambda = \frac{h}{p} $$
+La energía cinética clásica se relaciona con el momento lineal como $E_c = \frac{p^2}{2m}$. De aquí podemos despejar el momento: $p = \sqrt{2mE_c}$. Se debe comprobar que la velocidad resultante es no relativista.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Energía del fotón}
+$$ E_{foton, J} = \frac{hc}{\lambda_{foton}} \quad ; \quad E_{foton, eV} = \frac{E_{foton, J}}{e} $$
+\paragraph{2. Longitud de onda del electrón}
+Sustituimos la expresión del momento en la ecuación de De Broglie:
+$$ \lambda_e = \frac{h}{p_e} = \frac{h}{\sqrt{2m_e E_{c,e}}} $$
+Donde $E_{c,e}$ es la energía calculada en el primer apartado.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Energía del fotón}
+$$ E_{foton, J} = \frac{(6,6\cdot10^{-34})(3\cdot10^8)}{91\cdot10^{-9}} = \frac{19,8\cdot10^{-26}}{91\cdot10^{-9}} \approx 2,176 \cdot 10^{-18} \, \text{J} $$
+$$ E_{foton, eV} = \frac{2,176 \cdot 10^{-18} \, \text{J}}{1,6\cdot10^{-19} \, \text{J/eV}} \approx 13,6 \, \text{eV} $$
+\begin{cajaresultado}
+    La energía del fotón es $\boldsymbol{\approx 13,6 \, \textbf{eV}}$. (Esta es la energía de ionización del hidrógeno).
+\end{cajaresultado}
+
+\paragraph{2. Longitud de onda del electrón}
+La energía cinética del electrón es $E_{c,e} = 2,176 \cdot 10^{-18} \, \text{J}$.
+$$ \lambda_e = \frac{6,6\cdot10^{-34}}{\sqrt{2(9,1\cdot10^{-31})(2,176 \cdot 10^{-18})}} = \frac{6,6\cdot10^{-34}}{\sqrt{3,96 \cdot 10^{-48}}} = \frac{6,6\cdot10^{-34}}{1,99 \cdot 10^{-24}} \approx 3,32 \cdot 10^{-10} \, \text{m} $$
+\begin{cajaresultado}
+    La longitud de onda de De Broglie del electrón es $\boldsymbol{\lambda_e \approx 0,332 \, \textbf{nm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La energía del fotón de 91 nm es de 13,6 eV, que corresponde a la energía necesaria para ionizar un átomo de hidrógeno desde su estado fundamental. Si un electrón adquiere esta misma cantidad como energía cinética, su longitud de onda de De Broglie asociada es de 0,332 nm, un valor del orden del tamaño de los átomos, lo que demuestra la relevancia de los efectos ondulatorios para partículas a esta escala de energía.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2008_sep_ext}
+
+\begin{cajaenunciado}
+La reacción de fusión de 4 átomos de hidrógeno para formar un átomo de helio es: $4 {}_1^1\text{H} \to {}_2^4\text{He} + 2 e^{+}$.
+\begin{enumerate}
+    \item Calcula la energía, expresada en julios, que se libera en dicha reacción empleando los datos siguientes: $m_H=1,00783\,\text{u}$, $m_{He}=4,00260\,\text{u}$, $m_e=0,00055\,\text{u}$, $1\,\text{u}=1,66\cdot10^{-27}\,\text{kg}$, $c=3\cdot10^8\,\text{m/s}$ (1 punto).
+    \item Si fusionamos 1 g de hidrógeno, ¿cuánta energía se obtendría? (1 punto).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Reacción de fusión:} $4 {}_1^1\text{H} \to {}_2^4\text{He} + 2 e^{+}$
+    \item \textbf{Masas atómicas:} $m({}_1^1\text{H}) = 1,00783\,\text{u}$, $m({}_2^4\text{He}) = 4,00260\,\text{u}$. (Nota: estas son masas de los átomos neutros, incluyen electrones).
+    \item \textbf{Masa del positrón ($e^+$):} $m_{e^+} = m_{e^-} = 0,00055\,\text{u}$.
+    \item \textbf{Constantes:} $1\,\text{u}=1,66\cdot10^{-27}\,\text{kg}$, $c=3\cdot10^8\,\text{m/s}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Energía liberada por reacción ($E_{reac}$).
+            \item Energía liberada por 1 g de H ($E_{total}$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{1. Energía de la reacción}
+La energía liberada en una reacción nuclear se debe al \textbf{defecto de masa ($\Delta m$)}, que es la diferencia entre la masa total de los reactivos y la masa total de los productos.
+$$ \Delta m = m_{reactivos} - m_{productos} $$
+La energía se calcula mediante la \textbf{ecuación de equivalencia masa-energía de Einstein}:
+$$ E = \Delta m \cdot c^2 $$
+Hay que tener cuidado al usar masas atómicas. La masa de ${}_1^1\text{H}$ incluye un protón y un electrón. La masa de ${}_2^4\text{He}$ incluye el núcleo y dos electrones. En la reacción, se parte de 4 átomos de H (4p + 4e) y se obtiene 1 átomo de He (núcleo + 2e) y 2 positrones. Para balancear los electrones, la masa de los productos es: $m({}_2^4\text{He}) - 2m_e + 2m_{e^+} = m({}_2^4\text{He})$.
+$$ \Delta m = 4 \cdot m({}_1^1\text{H}) - (m({}_2^4\text{He}) + 2m_{e^+}) $$
+\paragraph{2. Energía total}
+Se calcula el número de átomos de H en 1 gramo y se multiplica por la energía liberada por cada 4 átomos.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Energía por reacción}
+$$ \Delta m = [4 \cdot m_H] - [m_{He} + 2m_{e}] $$
+$$ E_{reac} = \Delta m \cdot c^2 $$
+\paragraph{2. Energía total para 1 g de H}
+Número de átomos de H en 1 g ($N_H$):
+$$ N_H = \frac{1\,\text{g}}{M_H} \cdot N_A \approx \frac{1\,\text{g}}{1,00783\,\text{g/mol}} N_A $$
+Número de reacciones ($N_{reac}$), ya que se necesitan 4 átomos por reacción:
+$$ N_{reac} = \frac{N_H}{4} $$
+$$ E_{total} = N_{reac} \cdot E_{reac} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Energía por reacción}
+$$ \Delta m = [4 \cdot 1,00783] - [4,00260 + 2 \cdot 0,00055] = 4,03132 - (4,00260 + 0,0011) = 4,03132 - 4,0037 = 0,02762 \, \text{u} $$
+$$ \Delta m_{kg} = 0,02762 \cdot (1,66\cdot10^{-27}\,\text{kg}) \approx 4,585 \cdot 10^{-29} \, \text{kg} $$
+$$ E_{reac} = (4,585 \cdot 10^{-29}) \cdot (3\cdot10^8)^2 = (4,585 \cdot 10^{-29})(9 \cdot 10^{16}) \approx 4,126 \cdot 10^{-12} \, \text{J} $$
+\begin{cajaresultado}
+    La energía liberada por cada reacción de fusión es $\boldsymbol{E_{reac} \approx 4,13 \cdot 10^{-12} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph{2. Energía total para 1 g de H}
+Número de átomos de H en 1 g:
+$$ N_H \approx \frac{1}{1,00783} \cdot (6,022 \cdot 10^{23}) \approx 5,975 \cdot 10^{23} \, \text{átomos} $$
+Número de reacciones:
+$$ N_{reac} = \frac{5,975 \cdot 10^{23}}{4} \approx 1,494 \cdot 10^{23} \, \text{reacciones} $$
+Energía total:
+$$ E_{total} = (1,494 \cdot 10^{23}) \cdot (4,126 \cdot 10^{-12}) \approx 6,16 \cdot 10^{11} \, \text{J} $$
+\begin{cajaresultado}
+    Al fusionar 1 gramo de hidrógeno se obtendrían $\boldsymbol{E_{total} \approx 6,16 \cdot 10^{11} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fusión de cuatro núcleos de hidrógeno en uno de helio es un proceso exotérmico que libera una enorme cantidad de energía debido a la conversión de una pequeña parte de la masa en energía. La energía liberada por la fusión de un solo gramo de hidrógeno es de aproximadamente 616 GigaJulios, lo que ilustra el inmenso potencial energético de las reacciones de fusión nuclear, la fuente de energía de las estrellas.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Cuestiones}
+\label{sec:moderna2_2008_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2008_sep_ext}
+
+\begin{cajaenunciado}
+¿A qué velocidad la masa relativista de un cuerpo será doble que la que tiene en reposo?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa en reposo:} $m_0$.
+    \item \textbf{Masa relativista (o en movimiento):} $m$.
+    \item \textbf{Condición:} $m = 2m_0$.
+    \item \textbf{Incógnita:} Velocidad ($v$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve utilizando la fórmula de la \textbf{masa relativista} de la Teoría de la Relatividad Especial de Einstein:
+$$ m = \gamma m_0 $$
+donde $\gamma$ es el \textbf{factor de Lorentz}, definido como:
+$$ \gamma = \frac{1}{\sqrt{1 - v^2/c^2}} $$
+siendo $v$ la velocidad del cuerpo y $c$ la velocidad de la luz en el vacío.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Partimos de la condición del enunciado: $m = 2m_0$.
+Sustituyendo la definición de masa relativista:
+$$ \gamma m_0 = 2m_0 $$
+La masa en reposo $m_0$ se cancela, lo que nos indica que el resultado es independiente de la masa del objeto. Obtenemos el valor del factor de Lorentz:
+$$ \gamma = 2 $$
+Ahora, usamos la definición del factor de Lorentz para despejar la velocidad $v$:
+\begin{gather}
+    2 = \frac{1}{\sqrt{1 - v^2/c^2}}
+\end{gather}
+Elevamos al cuadrado ambos lados:
+\begin{gather}
+    4 = \frac{1}{1 - v^2/c^2} \implies 1 - \frac{v^2}{c^2} = \frac{1}{4}
+\end{gather}
+Reorganizamos la ecuación:
+\begin{gather}
+    \frac{v^2}{c^2} = 1 - \frac{1}{4} = \frac{3}{4}
+\end{gather}
+Finalmente, tomamos la raíz cuadrada para obtener $v$:
+\begin{gather}
+    v = \sqrt{\frac{3}{4}} c = \frac{\sqrt{3}}{2} c
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El resultado es simbólico, pero podemos dar una aproximación numérica:
+\begin{gather}
+    v = \frac{\sqrt{3}}{2} c \approx 0,866 c
+\end{gather}
+\begin{cajaresultado}
+    La velocidad a la que la masa relativista se duplica es $\boldsymbol{v = \frac{\sqrt{3}}{2} c}$, que es aproximadamente el 86,6\% de la velocidad de la luz.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Este resultado es una consecuencia directa de la relatividad especial, que predice que la masa inercial de un objeto aumenta con su velocidad. Para que la masa se duplique, el objeto debe moverse a una velocidad extremadamente alta, cercana a la de la luz (0,866 c), demostrando que los efectos relativistas solo son significativos a velocidades muy elevadas.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2008_sep_ext}
+
+\begin{cajaenunciado}
+Define la actividad de una muestra radiactiva y expresa su valor en función del número de núcleos existentes en la muestra.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una pregunta teórica que requiere la definición de un concepto fundamental en física nuclear.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Actividad Radiactiva} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un bloque que representa una muestra radiactiva, conteniendo muchos núcleos atómicos (pequeños puntos). Algunos de los núcleos están emitiendo partículas (alfa, beta) o radiación (gamma), con pequeñas flechas onduladas saliendo de ellos. Un contador Geiger al lado de la muestra muestra una lectura, indicando el número de 'clics' o desintegraciones por segundo. Escribir la leyenda 'Actividad (A) = número de desintegraciones por segundo'."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{actividad_radiactiva.png}
+    }}
+    \caption{Concepto de actividad de una muestra radiactiva.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Definición de Actividad Radiactiva}
+La \textbf{actividad} de una muestra radiactiva, a menudo simbolizada por la letra $A$, es una medida de la rapidez con la que se desintegran sus núcleos. Se define como el \textbf{número de desintegraciones nucleares que ocurren por unidad de tiempo} en la muestra.
+
+Matemáticamente, si $N$ es el número de núcleos radiactivos en un instante $t$, la actividad es el valor absoluto de la tasa de cambio de $N$:
+$$ A = \left| \frac{dN}{dt} \right| $$
+La unidad de actividad en el Sistema Internacional es el \textbf{Becquerel (Bq)}, que equivale a una desintegración por segundo ($1\,\text{Bq} = 1\,\text{s}^{-1}$). Históricamente también se usa el Curio (Ci).
+
+\paragraph{Expresión en función del número de núcleos}
+La ley fundamental de la desintegración radiactiva establece que el número de núcleos que se desintegran por unidad de tiempo es directamente proporcional al número de núcleos radiactivos presentes en la muestra en ese instante. La constante de proporcionalidad es la \textbf{constante de desintegración ($\lambda$)}, que es una característica propia de cada isótopo radiactivo.
+La ley de desintegración es:
+$$ \frac{dN}{dt} = -\lambda N $$
+El signo negativo indica que el número de núcleos $N$ disminuye con el tiempo.
+Tomando el valor absoluto de esta expresión para obtener la actividad, llegamos a la función solicitada:
+$$ A(t) = |-\lambda N(t)| = \lambda N(t) $$
+Por lo tanto, la actividad en cualquier instante es el producto de la constante de desintegración y el número de núcleos radiactivos que aún no se han desintegrado en ese instante.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En resumen, la actividad de una muestra radiactiva es la frecuencia con la que se producen desintegraciones en su seno, medida en Becquerels. Su valor es directamente proporcional al número de núcleos inestables presentes, según la relación $\mathbf{A = \lambda N}$, donde $\lambda$ es la constante de desintegración característica del isótopo.
+\end{cajaconclusion}
+
+\newpage

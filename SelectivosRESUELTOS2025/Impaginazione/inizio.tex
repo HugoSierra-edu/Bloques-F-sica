@@ -1,0 +1,37 @@
+% ======================================================================
+% ARCHIVO DE INICIO (PORTADA, ÍNDICE, ETC.)
+% ======================================================================
+
+% --- Configuración de la Portada ---
+% (Asegúrate de tener 'logo_color.png' y 'logo_fondo.png' en esta carpeta)
+\Universita{Parque Colegio Santa Ana}
+\Dipartimento{Departamento de Ciencias}
+\CorsoDiLaurea{Física}
+\AnnoAccademico{Curso 2025--2026}
+\Titolo{Selectivos Comunidad Valenciana}
+\Relatore{Prof. Hugo Sierra}
+\RelatoreLabel{Autor}
+\Candidato{}
+\CandidatoLabel{}
+\Matricola{} %
+\Logo{Impaginazione/logo_color.png} % <-- RUTA CORREGIDA
+\LogoWidth{4.5cm}
+\LogoSfondo{Impaginazione/logo_fondo.png} % <-- RUTA CORREGIDA
+\opacitaSfondo{0.05}
+
+% --- Comandos para generar la parte inicial del libro ---
+\frontmatter % Inicia la parte "preliminar" (numeración romana, sin capítulos en el índice)
+
+\makefrontpage
+
+% --- Agradecimientos (Opcional) ---
+\chapter*{Agradecimientos}
+% \addcontentsline{toc}{chapter}{Agradecimientos} % Descomenta si quieres que aparezca en el índice
+% Aquí puedes escribir tus agradecimientos.
+
+% --- Índice de Contenidos ---
+\cleardoublepage % Asegura que el índice empiece en una página impar
+\tableofcontents
+
+% --- Comando que inicia la parte principal del libro ---
+\mainmatter % A partir de aquí, los capítulos se numeran y aparecen en el índice

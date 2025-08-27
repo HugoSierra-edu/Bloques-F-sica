@@ -1,0 +1,903 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2006 - Convocatoria de Septiembre}
+\label{chap:2006_sep}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Cuestiones}
+\label{sec:grav_2006_sep}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2006_sep}
+
+\begin{cajaenunciado}
+Enuncia las leyes de Kepler. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item Se trata de una cuestión teórica que requiere la enunciación de las tres leyes que describen el movimiento planetario.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Leyes de Kepler} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama dividido en tres secciones horizontales, cada una ilustrando una de las leyes de Kepler.
+    1. Primera Ley: Dibuja una elipse clara. El Sol debe estar situado en uno de los focos de la elipse, no en el centro. Un planeta se muestra en un punto de la trayectoria elíptica. Etiquetar 'Sol', 'Planeta' y 'Foco'.
+    2. Segunda Ley: Muestra la misma elipse con el Sol en un foco. Dibuja dos sectores de la órbita con áreas sombreadas, A1 y A2. El sector A1 debe estar cerca del perihelio, siendo más ancho y corto. El sector A2 debe estar cerca del afelio, siendo más estrecho y largo. Las áreas A1 y A2 deben ser visiblemente iguales. Añadir una nota: 'Si el tiempo para barrer A1 y A2 es el mismo, entonces A1=A2'.
+    3. Tercera Ley: Dibuja el Sol en el centro y dos órbitas circulares concéntricas. En la órbita interior (radio r1), un planeta 1 con periodo T1. En la órbita exterior (radio r2), un planeta 2 con periodo T2. Añadir la fórmula T1²/r1³ = T2²/r2³ = constante."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/leyes_kepler.png}
+    }}
+    \caption{Ilustración de las tres leyes de Kepler.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Johannes Kepler, basándose en los datos astronómicos de Tycho Brahe, formuló tres leyes empíricas que describen el movimiento de los planetas alrededor del Sol:
+
+\paragraph*{Primera Ley (Ley de las Órbitas - 1609)}
+Todos los planetas se mueven en órbitas elípticas, con el Sol situado en uno de los focos de la elipse. Esto rompió con la idea milenaria de las órbitas circulares perfectas.
+
+\paragraph*{Segunda Ley (Ley de las Áreas - 1609)}
+La línea que une un planeta con el Sol (el radio vector) barre áreas iguales en intervalos de tiempo iguales. Esto implica que la velocidad orbital de un planeta no es constante. El planeta se mueve más rápido cuando está más cerca del Sol (perihelio) y más lento cuando está más lejos (afelio). Esta ley es una consecuencia de la conservación del momento angular del planeta.
+
+\paragraph*{Tercera Ley (Ley de los Periodos - 1618)}
+El cuadrado del periodo orbital de cualquier planeta es directamente proporcional al cubo del semieje mayor de su órbita elíptica. Para todos los planetas que orbitan al Sol, esta relación es constante.
+$$ \frac{T^2}{a^3} = K_{sol} $$
+donde $T$ es el periodo y $a$ es el semieje mayor.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La formulación matemática de la tercera ley es:
+\begin{gather}
+    \frac{T^2}{a^3} = \text{constante}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{1ª Ley:} Los planetas describen órbitas elípticas con el Sol en un foco.
+    \item \textbf{2ª Ley:} El radio vector que une el planeta y el Sol barre áreas iguales en tiempos iguales.
+    \item \textbf{3ª Ley:} El cuadrado del periodo orbital ($T$) es proporcional al cubo del semieje mayor de la órbita ($a$): $T^2 \propto a^3$.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las leyes de Kepler fueron un hito en la historia de la astronomía, proporcionando una descripción cinemática precisa del movimiento planetario. Más tarde, Isaac Newton les daría una fundamentación dinámica con su Ley de Gravitación Universal, demostrando que eran una consecuencia matemática de la naturaleza de la fuerza gravitatoria.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2006_sep}
+
+\begin{cajaenunciado}
+Calcula la velocidad a la que orbita un satélite artificial situado en una órbita que dista 1000 km de la superficie terrestre. 
+\textbf{Datos:} $R_{T}=6370~km$, $M_{T}=5,98\times10^{24}$ kg, $G=6,7\times10^{-11}Nm^{2}/kg^{2}$ 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Altura sobre la superficie ($h$):} $1000 \, \text{km} = 1 \cdot 10^6 \, \text{m}$
+    \item \textbf{Radio de la Tierra ($R_T$):} $6370 \, \text{km} = 6,37 \cdot 10^6 \, \text{m}$
+    \item \textbf{Masa de la Tierra ($M_T$):} $5,98 \cdot 10^{24} \, \text{kg}$
+    \item \textbf{Constante de Gravitación Universal ($G$):} $6,7 \cdot 10^{-11} \, \text{N}\text{m}^2/\text{kg}^2$
+    \item \textbf{Incógnita:} Velocidad orbital del satélite ($v$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Satélite en Órbita Circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Tierra (esfera azul) en el centro de un sistema de coordenadas. Dibuja una órbita circular alrededor de la Tierra. Coloca un satélite en esta órbita. Dibuja el radio de la Tierra, $R_T$, y la altura orbital, $h$, desde la superficie hasta el satélite. Dibuja el radio orbital total, $r = R_T + h$. Sobre el satélite, dibuja un vector de fuerza $\vec{F}_g$ apuntando hacia el centro de la Tierra, y etiquétalo también como 'Fuerza Centrípeta, $\vec{F}_c$'. Dibuja también un vector velocidad $\vec{v}$, tangente a la órbita en el punto donde está el satélite."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/orbita_satelite.png}
+    }}
+    \caption{Diagrama de fuerzas para un satélite en órbita.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para que un satélite describa una órbita circular a velocidad constante, la fuerza de atracción gravitatoria que ejerce la Tierra debe actuar como fuerza centrípeta.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal de Newton:} La fuerza de atracción entre la Tierra y el satélite (de masa $m$) es $F_g = G \frac{M_T m}{r^2}$, donde $r$ es el radio de la órbita.
+    \item \textbf{Fuerza Centrípeta:} Para un movimiento circular uniforme, la fuerza necesaria es $F_c = m \frac{v^2}{r}$.
+\end{itemize}
+El radio de la órbita es la suma del radio de la Tierra y la altura del satélite sobre la superficie: $r = R_T + h$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta:
+\begin{gather}
+    F_g = F_c \implies G \frac{M_T m}{r^2} = m \frac{v^2}{r}
+\end{gather}
+La masa del satélite, $m$, se simplifica en ambos lados de la ecuación. Despejamos la velocidad orbital, $v$:
+\begin{gather}
+    G \frac{M_T}{r} = v^2 \implies v = \sqrt{\frac{G M_T}{r}}
+\end{gather}
+Sustituyendo $r = R_T + h$, obtenemos la expresión final:
+\begin{gather}
+    v = \sqrt{\frac{G M_T}{R_T + h}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, calculamos el radio orbital, $r$, en metros:
+$$ r = R_T + h = 6,37 \cdot 10^6 \, \text{m} + 1 \cdot 10^6 \, \text{m} = 7,37 \cdot 10^6 \, \text{m} $$
+Ahora, sustituimos los valores en la ecuación de la velocidad:
+\begin{gather}
+    v = \sqrt{\frac{(6,7 \cdot 10^{-11}) \cdot (5,98 \cdot 10^{24})}{7,37 \cdot 10^6}} = \sqrt{\frac{4,0066 \cdot 10^{14}}{7,37 \cdot 10^6}} \approx \sqrt{5,436 \cdot 10^7} \approx 7373 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad a la que orbita el satélite es $\boldsymbol{v \approx 7373 \, \textbf{m/s}}$ (o 7,37 km/s).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La velocidad orbital de un satélite no depende de su propia masa, sino de la masa del cuerpo central y del radio de la órbita. Para una altura de 1000 km sobre la superficie terrestre, la velocidad necesaria para mantener una órbita circular estable es de aproximadamente 7373 m/s. A mayor altura, la velocidad orbital requerida sería menor.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Problemas}
+\label{sec:ondas_2006_sep}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2006_sep}
+
+\begin{cajaenunciado}
+Una partícula efectúa un movimiento armónico simple cuya ecuación es $x(t)=0,3~\cos(2t+\frac{\pi}{6})$ donde x se mide en metros y t en segundos. 
+\begin{enumerate}
+    \item Determina la frecuencia, el período, la amplitud y la fase inicial del movimiento. (1 punto) 
+    \item Calcula la aceleración y la velocidad en el instante inicial $t=0$ s. (1 punto) 
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ecuación de movimiento:} $x(t) = 0,3 \cos(2t + \pi/6)$ en unidades del SI.
+    \item Comparando con la forma general $x(t) = A \cos(\omega t + \phi_0)$, identificamos directamente:
+        \begin{itemize}
+            \item \textbf{Amplitud ($A$):} $A = 0,3 \, \text{m}$
+            \item \textbf{Frecuencia angular ($\omega$):} $\omega = 2 \, \text{rad/s}$
+            \item \textbf{Fase inicial ($\phi_0$):} $\phi_0 = \pi/6 \, \text{rad}$
+        \end{itemize}
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Frecuencia ($f$) y Periodo ($T$).
+            \item Velocidad ($v$) y aceleración ($a$) en $t=0$ s.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Movimiento Armónico Simple} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de la posición $x$ en función del tiempo $t$. Dibuja una curva cosenoidal. La curva debe alcanzar un valor máximo de +0.3 y un mínimo de -0.3. Etiqueta la Amplitud (A=0.3 m). La curva no debe empezar en el máximo, sino en $x(0)=0.3\cos(\pi/6)$, que es aproximadamente 0.26. Etiqueta el Periodo (T) como la distancia horizontal entre dos picos consecutivos de la onda."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/mas_coseno.png}
+    }}
+    \caption{Gráfica de la posición frente al tiempo para el M.A.S. descrito.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las magnitudes de un Movimiento Armónico Simple (M.A.S.) están interrelacionadas.
+\begin{itemize}
+    \item La \textbf{frecuencia ($f$)} y el \textbf{periodo ($T$)} se derivan de la frecuencia angular ($\omega$) mediante las relaciones:
+    $$ \omega = 2\pi f = \frac{2\pi}{T} $$
+    \item La \textbf{velocidad ($v$)} es la primera derivada temporal de la posición: $v(t) = \frac{dx}{dt}$.
+    \item La \textbf{aceleración ($a$)} es la primera derivada temporal de la velocidad: $a(t) = \frac{dv}{dt} = \frac{d^2x}{dt^2}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Frecuencia y Periodo}
+A partir de las definiciones:
+\begin{gather}
+    f = \frac{\omega}{2\pi} \\
+    T = \frac{1}{f} = \frac{2\pi}{\omega}
+\end{gather}
+\paragraph{2. Velocidad y Aceleración}
+Derivamos la ecuación de la posición para obtener las ecuaciones de la velocidad y la aceleración en función del tiempo:
+\begin{gather}
+    v(t) = \frac{d}{dt} [A \cos(\omega t + \phi_0)] = -A\omega \sin(\omega t + \phi_0) \\
+    a(t) = \frac{d}{dt} [-A\omega \sin(\omega t + \phi_0)] = -A\omega^2 \cos(\omega t + \phi_0)
+\end{gather}
+Luego, evaluamos estas expresiones en $t=0$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Parámetros del movimiento}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $\boldsymbol{A = 0,3 \, \textbf{m}}$ (por inspección).
+    \item \textbf{Fase inicial ($\phi_0$):} $\boldsymbol{\phi_0 = \pi/6 \, \textbf{rad}}$ (por inspección).
+    \item \textbf{Periodo ($T$):} $T = \frac{2\pi}{2} = \pi \, \text{s} \approx \boldsymbol{3,14 \, \textbf{s}}$.
+    \item \textbf{Frecuencia ($f$):} $f = \frac{1}{T} = \frac{1}{\pi} \, \text{Hz} \approx \boldsymbol{0,318 \, \textbf{Hz}}$.
+\end{itemize}
+\begin{cajaresultado}
+Amplitud: $\boldsymbol{A=0,3\,m}$. Fase inicial: $\boldsymbol{\phi_0=\pi/6\,rad}$. Periodo: $\boldsymbol{T=\pi\,s}$. Frecuencia: $\boldsymbol{f=1/\pi\,Hz}$.
+\end{cajaresultado}
+
+\paragraph{2. Velocidad y aceleración en t=0}
+Sustituimos los valores y $t=0$ en las ecuaciones simbólicas:
+\begin{gather}
+    v(0) = -0,3 \cdot 2 \cdot \sin(2 \cdot 0 + \pi/6) = -0,6 \sin(\pi/6) = -0,6 \cdot (0,5) = -0,3 \, \text{m/s} \\
+    a(0) = -0,3 \cdot 2^2 \cdot \cos(2 \cdot 0 + \pi/6) = -1,2 \cos(\pi/6) = -1,2 \cdot \left(\frac{\sqrt{3}}{2}\right) \approx -1,04 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+La velocidad inicial es $\boldsymbol{v(0) = -0,3 \, \textbf{m/s}}$ y la aceleración inicial es $\boldsymbol{a(0) \approx -1,04 \, \textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La ecuación de un M.A.S. contiene toda la información necesaria para describir completamente el movimiento. Por simple inspección y derivación, se han determinado todas las magnitudes características del oscilador. El signo negativo de la velocidad inicial indica que la partícula comienza moviéndose hacia la posición de equilibrio, mientras que el signo negativo de la aceleración confirma que la fuerza restauradora apunta, como siempre, en sentido opuesto a la elongación (que es positiva en $t=0$).
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2006_sep}
+
+\begin{cajaenunciado}
+Una partícula puntual realiza un movimiento armónico simple de amplitud 8 m que responde a la ecuación $a=-16x$ donde x indica la posición de la partícula en metros y a es la aceleración del movimiento expresada en $m/s^{2}$. 
+\begin{enumerate}
+    \item Calcula la frecuencia y el valor máximo de la velocidad. (1 punto) 
+    \item Calcula el tiempo invertido por la partícula para desplazarse desde la posición $x_{1}=2$ m hasta la posición $x_{2}=4$ m. (1 punto) 
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 8 \, \text{m}$.
+    \item \textbf{Ecuación de la aceleración:} $a = -16x$.
+    \item \textbf{Posiciones para el intervalo de tiempo:} $x_1 = 2 \, \text{m}$, $x_2 = 4 \, \text{m}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Frecuencia ($f$).
+            \item Velocidad máxima ($v_{max}$).
+            \item Tiempo invertido ($\Delta t = t_2 - t_1$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Oscilación y Posiciones} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje horizontal X que representa la trayectoria de una partícula en M.A.S. Marcar la posición de equilibrio en x=0 y los extremos en x=-8 m y x=+8 m. Indicar la Amplitud A=8 m. Sobre la trayectoria, marcar los puntos x1=2 m y x2=4 m. Dibujar una flecha para indicar el desplazamiento desde x1 hasta x2. En el origen, dibujar un vector de velocidad máxima ($v_{max}$). En los extremos, indicar que v=0."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/mas_posiciones.png}
+    }}
+    \caption{Esquema de la trayectoria del oscilador armónico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ecuación definitoria del M.A.S.:} La aceleración es proporcional y de sentido opuesto al desplazamiento: $a = -\omega^2 x$.
+    \item \textbf{Frecuencia:} Se relaciona con la frecuencia angular por $\omega = 2\pi f$.
+    \item \textbf{Velocidad máxima:} Se alcanza en la posición de equilibrio ($x=0$) y su valor es $v_{max} = A\omega$.
+    \item \textbf{Ecuación de la posición:} Para calcular el tiempo, necesitamos una ecuación de la forma $x(t)$. La elección más sencilla es $x(t) = A\sin(\omega t)$ o $x(t) = A\cos(\omega t)$. La elección no afecta a la duración de un intervalo, siempre que el movimiento sea continuo entre los dos puntos.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Frecuencia y velocidad máxima}
+Comparando la ecuación dada, $a=-16x$, con la ecuación general, $a=-\omega^2x$, obtenemos:
+\begin{gather}
+    \omega^2 = 16 \implies \omega = \sqrt{16} = 4 \, \text{rad/s}
+\end{gather}
+A partir de $\omega$, calculamos la frecuencia $f$ y la velocidad máxima $v_{max}$:
+\begin{gather}
+    f = \frac{\omega}{2\pi} \\
+    v_{max} = A\omega
+\end{gather}
+\paragraph{2. Tiempo invertido}
+Asumimos una ecuación de posición. Para evitar complicaciones con la fase inicial, podemos usar la forma $x(t)=A\sin(\omega t)$.
+Encontramos el instante $t_1$ en que la partícula está en $x_1$:
+$$ x_1 = A\sin(\omega t_1) \implies t_1 = \frac{1}{\omega}\arcsin\left(\frac{x_1}{A}\right) $$
+Encontramos el instante $t_2$ en que la partícula está en $x_2$:
+$$ x_2 = A\sin(\omega t_2) \implies t_2 = \frac{1}{\omega}\arcsin\left(\frac{x_2}{A}\right) $$
+El tiempo invertido será la diferencia $\Delta t = t_2 - t_1$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Frecuencia y velocidad máxima}
+Ya hemos calculado $\omega=4$ rad/s.
+\begin{gather}
+    f = \frac{4}{2\pi} = \frac{2}{\pi} \, \text{Hz} \approx 0,637 \, \text{Hz} \\
+    v_{max} = 8 \, \text{m} \cdot 4 \, \text{rad/s} = 32 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La frecuencia es $\boldsymbol{f = 2/\pi \, Hz}$ y la velocidad máxima es $\boldsymbol{v_{max} = 32 \, m/s}$.
+\end{cajaresultado}
+
+\paragraph{2. Tiempo invertido}
+\begin{gather}
+    t_1 = \frac{1}{4} \arcsin\left(\frac{2}{8}\right) = \frac{1}{4} \arcsin(0,25) \approx \frac{1}{4}(0,2527 \, \text{rad}) \approx 0,063 \, \text{s} \\
+    t_2 = \frac{1}{4} \arcsin\left(\frac{4}{8}\right) = \frac{1}{4} \arcsin(0,5) = \frac{1}{4}\left(\frac{\pi}{6} \, \text{rad}\right) \approx \frac{1}{4}(0,5236 \, \text{rad}) \approx 0,131 \, \text{s} \\
+    \Delta t = t_2 - t_1 = 0,131 - 0,063 = 0,068 \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+El tiempo invertido para ir de $x_1=2$ m a $x_2=4$ m es $\boldsymbol{\Delta t \approx 0,068 \, s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La relación directa entre aceleración y posición nos ha permitido determinar la frecuencia angular del movimiento y, a partir de ella, la frecuencia y la velocidad máxima. Para calcular el tiempo transcurrido entre dos puntos, se ha modelado la trayectoria con una función sinusoidal, calculando los instantes correspondientes a cada posición y hallando su diferencia. El resultado muestra el corto intervalo de tiempo necesario para cubrir esa distancia, coherente con la alta frecuencia del oscilador.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Cuestiones}
+\label{sec:optica_2006_sep}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2006_sep}
+
+\begin{cajaenunciado}
+Dibuja el diagrama de rayos para formar la imagen de un objeto situado a una distancia s de una lente convergente de distancia focal f, en los casos en que $|s|<f$ y $|s|>f$. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Elemento óptico:} Lente convergente de distancia focal $f$.
+    \item \textbf{Caso 1:} Objeto situado entre el foco objeto y la lente ($|s| < f$).
+    \item \textbf{Caso 2:} Objeto situado más allá del foco objeto ($|s| > f$). Este caso se puede subdividir en $f < |s| < 2f$ y $|s| > 2f$, pero el trazado general es similar.
+    \item \textbf{Tarea:} Construcción gráfica de la imagen en ambos casos.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.48\textwidth}{\centering \textbf{Caso 1: $|s| < f$ (Lupa)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente convergente. Dibuja el eje óptico horizontal. Coloca la lente en el origen. Marca el foco objeto F a la izquierda y el foco imagen F' a la derecha. Coloca un objeto (flecha vertical) entre F y la lente. Traza dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje óptico, que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico sin desviarse. Los rayos refractados divergen. Dibuja las prolongaciones de estos rayos hacia atrás (a la izquierda) con líneas discontinuas, mostrando que se cruzan para formar una imagen virtual, derecha y de mayor tamaño."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/lente_convergente_lupa.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.48\textwidth}{\centering \textbf{Caso 2: $|s| > f$ (Proyector/Objetivo)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente convergente. Dibuja el eje óptico y la lente. Marca los focos F y F'. Coloca un objeto (flecha vertical) a la izquierda de F (por ejemplo, en la posición -2F). Traza dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje óptico, que se refracta pasando por F'. 2) Un rayo que pasa por el foco objeto F y se refracta saliendo paralelo al eje. Los rayos refractados convergen a la derecha de la lente, formando una imagen real e invertida."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/lente_convergente_real.png}
+    }}
+    \caption{Formación de imagen en una lente convergente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La construcción de imágenes en lentes delgadas se basa en el comportamiento predecible de tres rayos principales:
+\begin{enumerate}
+    \item \textbf{Rayo paralelo:} Un rayo que incide paralelo al eje óptico se refracta pasando por el foco imagen ($F'$).
+    \item \textbf{Rayo focal:} Un rayo que incide pasando por el foco objeto ($F$) se refracta saliendo paralelo al eje óptico.
+    \item \textbf{Rayo central:} Un rayo que pasa por el centro óptico de la lente no sufre desviación.
+\end{enumerate}
+La imagen se forma en el punto donde se cruzan los rayos refractados (imagen real) o sus prolongaciones (imagen virtual).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+No es necesario para esta cuestión gráfica.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Cuando $|s|<f$ (objeto dentro del foco):} La lente actúa como lupa. La imagen formada es \textbf{virtual, derecha y de mayor tamaño}.
+    \item \textbf{Cuando $|s|>f$ (objeto fuera del foco):} La lente forma una imagen \textbf{real e invertida}. El tamaño puede ser mayor, igual o menor que el objeto, dependiendo de si la distancia es $f<|s|<2f$, $|s|=2f$ o $|s|>2f$, respectivamente.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Una lente convergente puede formar tipos de imágenes muy diferentes dependiendo de la posición del objeto. Si el objeto se sitúa cerca de la lente (dentro de la distancia focal), produce una imagen virtual y aumentada, que es el principio de la lupa. Si el objeto se aleja más allá del foco, la imagen se vuelve real e invertida, principio utilizado en proyectores y cámaras fotográficas.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2006_sep}
+
+\begin{cajaenunciado}
+¿Cómo es el ángulo de refracción cuando la luz pasa del aire al agua, mayor, menor o igual que el ángulo de incidencia? Explica razonadamente la respuesta y dibuja el diagrama de rayos. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Medio de incidencia:} Aire ($n_1 = n_{aire} \approx 1,00$).
+    \item \textbf{Medio de refracción:} Agua ($n_2 = n_{agua} \approx 1,33$).
+    \item \textbf{Condición clave:} La luz pasa de un medio menos denso ópticamente a uno más denso ($n_1 < n_2$).
+    \item \textbf{Incógnita:} Comparar el ángulo de refracción ($\theta_2$) con el ángulo de incidencia ($\theta_1$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Refracción del Aire al Agua} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama que muestra una interfaz horizontal separando dos medios. El medio superior es 'Aire (n1 ≈ 1)' y el inferior es 'Agua (n2 ≈ 1.33)'. Dibuja una línea normal (vertical y discontinua) perpendicular a la interfaz. Dibuja un rayo de luz incidente que viene desde el aire y golpea la interfaz en un ángulo de incidencia $\theta_1$ con la normal. Dibuja el rayo refractado que entra en el agua, mostrando que se desvía 'hacia' la normal, de modo que el ángulo de refracción $\theta_2$ es visiblemente menor que $\theta_1$. Etiqueta claramente ambos ángulos, la normal y los medios."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/refraccion_aire_agua.png}
+    }}
+    \caption{Diagrama de rayos para la refracción de la luz al pasar del aire al agua.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe mediante la \textbf{Ley de Snell de la refracción}. Esta ley relaciona los índices de refracción de los dos medios con los senos de los ángulos de incidencia y refracción (medidos siempre respecto a la normal):
+$$ n_1 \sin(\theta_1) = n_2 \sin(\theta_2) $$
+El índice de refracción ($n$) de un medio es una medida de cuánto reduce la velocidad de la luz. El agua es ópticamente más densa que el aire, por lo que su índice de refracción es mayor: $n_{agua} > n_{aire}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Partimos de la Ley de Snell:
+$$ n_1 \sin(\theta_1) = n_2 \sin(\theta_2) $$
+Podemos despejar la relación entre los senos de los ángulos:
+$$ \frac{\sin(\theta_2)}{\sin(\theta_1)} = \frac{n_1}{n_2} $$
+Dado que $n_1 < n_2$, el cociente $n_1/n_2$ es menor que 1:
+$$ \frac{\sin(\theta_2)}{\sin(\theta_1)} < 1 \implies \sin(\theta_2) < \sin(\theta_1) $$
+Para ángulos agudos (entre 0 y 90 grados), la función seno es creciente. Por lo tanto, si $\sin(\theta_2) < \sin(\theta_1)$, se concluye que:
+$$ \theta_2 < \theta_1 $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El resultado es cualitativo.
+\begin{cajaresultado}
+El ángulo de refracción es \textbf{menor} que el ángulo de incidencia.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Según la Ley de Snell, cuando un rayo de luz pasa de un medio con un índice de refracción menor (como el aire) a un medio con un índice de refracción mayor (como el agua), se desvía acercándose a la línea normal. Esto resulta en un ángulo de refracción más pequeño que el ángulo de incidencia. Este es el principio por el cual un objeto sumergido en agua, como una pajita en un vaso, parece estar "doblado".
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Problemas}
+\label{sec:em_2006_sep}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2006_sep}
+
+\begin{cajaenunciado}
+Un haz de electrones pasa sin ser desviado de su trayectoria rectilínea a través de dos campos, uno eléctrico y otro magnético, mutuamente perpendiculares. El haz incide perpendicularmente a ambos campos. El campo eléctrico, que supondremos constante, está generado por dos placas cargadas paralelas separadas 1 cm, entre las que existe una diferencia de potencial de 80 V. El campo magnético también es constante, siendo su módulo de $2\times10^{-3}$ T. A la salida de las placas, sobre el haz actúa únicamente el campo magnético, describiendo los electrones una trayectoria circular de 1,14 cm de radio. 
+\begin{enumerate}
+    \item Calcula el campo eléctrico generado por las placas. (0,5 puntos) 
+    \item Calcula la velocidad del haz de electrones. (0,5 puntos) 
+    \item Deduce, a partir de los datos anteriores, la relación carga/masa del electrón. (1 punto) 
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Separación de placas ($d$):} $1 \, \text{cm} = 0,01 \, \text{m}$
+    \item \textbf{Diferencia de potencial ($\Delta V$):} $80 \, \text{V}$
+    \item \textbf{Campo magnético ($B$):} $2 \cdot 10^{-3} \, \text{T}$
+    \item \textbf{Radio de la trayectoria circular ($r$):} $1,14 \, \text{cm} = 0,0114 \, \text{m}$
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Campo eléctrico ($E$).
+            \item Velocidad de los electrones ($v$).
+            \item Relación carga/masa ($q/m$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.48\textwidth}{\centering \textbf{1. Selector de Velocidades} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una región con un campo eléctrico $\vec{E}$ uniforme apuntando hacia abajo (de una placa + a una -) y un campo magnético $\vec{B}$ uniforme apuntando hacia dentro del papel (cruces). Un electrón con carga negativa entra desde la izquierda con velocidad $\vec{v}$. Dibuja la fuerza eléctrica $\vec{F}_e$ sobre el electrón apuntando hacia arriba (opuesta a $\vec{E}$). Dibuja la fuerza magnética $\vec{F}_m$ apuntando hacia abajo (regla de la mano izquierda para carga negativa). Mostrar que para que el electrón no se desvíe, $\vec{F}_e = -\vec{F}_m$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/selector_velocidad.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.48\textwidth}{\centering \textbf{2. Movimiento Circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "A la derecha de la región anterior, mostrar que el campo eléctrico desaparece. Solo queda el campo magnético $\vec{B}$ apuntando hacia dentro. El electrón entra en esta región con la misma velocidad $\vec{v}$. La única fuerza que actúa es la fuerza magnética $\vec{F}_m$, que ahora actúa como fuerza centrípeta, obligando al electrón a describir una trayectoria circular en sentido horario. Dibujar la trayectoria y el radio r."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/movimiento_circular_electron.png}
+    }}
+    \caption{Esquema del selector de velocidades (izquierda) y de la trayectoria circular en el campo magnético (derecha).}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Campo Eléctrico Uniforme:} En un condensador de placas paralelas, el campo eléctrico $E$ se relaciona con la diferencia de potencial $\Delta V$ y la separación $d$ por $E = \frac{\Delta V}{d}$.
+    \item \textbf{Selector de Velocidades:} Para que una partícula cargada atraviese una región de campos $\vec{E}$ y $\vec{B}$ cruzados sin desviarse, la fuerza eléctrica total sobre ella debe ser nula. Esto ocurre cuando la fuerza eléctrica $\vec{F}_e = q\vec{E}$ y la fuerza magnética $\vec{F}_m = q(\vec{v} \times \vec{B})$ se cancelan mutuamente: $\vec{F}_e + \vec{F}_m = 0$.
+    \item \textbf{Movimiento en Campo Magnético:} Cuando la única fuerza es la magnética, y $\vec{v}$ es perpendicular a $\vec{B}$, esta actúa como fuerza centrípeta, provocando un Movimiento Circular Uniforme (MCU). La igualdad de fuerzas es: $|q|vB = m\frac{v^2}{r}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Campo Eléctrico}
+\begin{gather}
+    E = \frac{\Delta V}{d}
+\end{gather}
+\paragraph{2. Velocidad del haz}
+De la condición del selector de velocidades, $|\vec{F}_e| = |\vec{F}_m|$:
+\begin{gather}
+    |q|E = |q|vB\sin(90^\circ) \implies E = vB \implies v = \frac{E}{B}
+\end{gather}
+\paragraph{3. Relación carga/masa}
+De la ecuación del movimiento circular, despejamos la relación $q/m$:
+\begin{gather}
+    |q|vB = m\frac{v^2}{r} \implies |q|B = \frac{mv}{r} \implies \frac{|q|}{m} = \frac{v}{Br}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Campo Eléctrico}
+\begin{gather}
+    E = \frac{80 \, \text{V}}{0,01 \, \text{m}} = 8000 \, \text{V/m} \, (\text{o N/C})
+\end{gather}
+\begin{cajaresultado}
+El campo eléctrico generado por las placas es $\boldsymbol{E = 8000 \, N/C}$.
+\end{cajaresultado}
+
+\paragraph{2. Velocidad del haz}
+\begin{gather}
+    v = \frac{8000 \, \text{N/C}}{2 \cdot 10^{-3} \, \text{T}} = 4 \cdot 10^6 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad del haz de electrones es $\boldsymbol{v = 4 \cdot 10^6 \, m/s}$.
+\end{cajaresultado}
+
+\paragraph{3. Relación carga/masa}
+\begin{gather}
+    \frac{|q|}{m} = \frac{4 \cdot 10^6 \, \text{m/s}}{(2 \cdot 10^{-3} \, \text{T}) \cdot (0,0114 \, \text{m})} = \frac{4 \cdot 10^6}{2,28 \cdot 10^{-5}} \approx 1,75 \cdot 10^{11} \, \text{C/kg}
+\end{gather}
+\begin{cajaresultado}
+La relación carga/masa del electrón es $\boldsymbol{|q|/m \approx 1,75 \cdot 10^{11} \, C/kg}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Este problema describe el funcionamiento de un espectrómetro de masas. Primero, un selector de velocidades permite que solo las partículas con una velocidad específica ($v=E/B$) pasen sin desviarse. Luego, al entrar en una región con solo campo magnético, la curvatura de su trayectoria permite determinar su relación carga/masa. Los resultados obtenidos para el electrón son consistentes con los valores teóricos aceptados, validando el modelo físico utilizado.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2006_sep}
+
+\begin{cajaenunciado}
+Un modelo eléctrico simple para la molécula de cloruro de sodio consiste en considerar a los átomos de sodio y cloro como sendas cargas eléctricas puntuales de valor $1,6\times10^{-19}$ C y $-1,6\times10^{-19}$ C, respectivamente. Ambas cargas se encuentran separadas una distancia $d=1,2\times10^{-10}$ m. Calcula: 
+\begin{enumerate}
+    \item El potencial eléctrico originado por la molécula en un punto O localizado a lo largo de la recta que une a ambas cargas y a una distancia 50d de su punto medio. Considera el caso en que el punto O se encuentra más próximo a la carga positiva. (1 punto) 
+    \item El potencial eléctrico originado por la molécula en un punto P localizado a lo largo de la recta mediatriz del segmento que une las cargas y a una distancia 50d de su punto medio. (0,5 puntos) 
+    \item El trabajo necesario para desplazar a un electrón desde el punto O hasta el punto P. (0,5 puntos) 
+\end{enumerate}
+\textbf{Datos:} $e=1,6\times10^{-19}$ C. $K_{e}=9,0\times10^{9}Nm^{2}/C^{2}$
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga de Sodio ($q_1$):} $q_1 = +1,6 \cdot 10^{-19} \, \text{C}$.
+    \item \textbf{Carga de Cloro ($q_2$):} $q_2 = -1,6 \cdot 10^{-19} \, \text{C}$.
+    \item \textbf{Separación de cargas ($d$):} $d = 1,2 \cdot 10^{-10} \, \text{m}$. La distancia entre ellas es $d$. No, el enunciado dice "separadas una distancia d", no "2d". Asumiré $d$ es la separación total.
+    \item \textbf{Punto medio:} Origen de coordenadas (0,0).
+    \item \textbf{Posiciones de las cargas:} $q_1$ en $(-d/2, 0)$, $q_2$ en $(+d/2, 0)$.
+    \item \textbf{Punto O:} En la recta que une las cargas, a 50d del origen y más cerca de la positiva. Su coordenada es $x_O = -50d$.
+    \item \textbf{Punto P:} En la mediatriz, a 50d del origen. Su coordenada es $(0, 50d)$.
+    \item \textbf{Carga a desplazar:} Un electrón, $q_e = -e = -1,6 \cdot 10^{-19} \, \text{C}$.
+    \item \textbf{Constante de Coulomb ($K_e$):} $K_e = 9,0 \cdot 10^9 \, \text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:} $V_O$, $V_P$, $W_{O \to P}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Potencial de un Dipolo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Dibuja una carga positiva $q_1$ en $(-d/2, 0)$ y una carga negativa $q_2$ en $(+d/2, 0)$. Dibuja el punto O en el eje X, muy a la izquierda, en $(-50d, 0)$. Dibuja el punto P en el eje Y, muy arriba, en $(0, 50d)$. Dibuja líneas discontinuas desde $q_1$ y $q_2$ hasta el punto O, y etiquétalas con sus distancias $r_{1O}$ y $r_{2O}$. Haz lo mismo para el punto P, con las distancias $r_{1P}$ y $r_{2P}$, mostrando que $r_{1P}=r_{2P}$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/potencial_dipolo.png}
+    }}
+    \caption{Configuración del dipolo y los puntos de cálculo O y P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Potencial Eléctrico:} Es una magnitud escalar. El potencial total en un punto debido a un conjunto de cargas es la suma algebraica de los potenciales creados por cada carga individualmente (Principio de Superposición). El potencial creado por una carga puntual $q$ a una distancia $r$ es $V = K_e \frac{q}{r}$.
+    \item \textbf{Trabajo Eléctrico:} El trabajo realizado por el campo eléctrico para mover una carga $q$ desde un punto inicial A a un punto final B es $W_{A \to B} = q(V_A - V_B)$. El trabajo realizado por un agente externo es $W_{ext} = q(V_B - V_A)$. El enunciado no especifica, pero se suele referir al trabajo externo.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Potencial en el punto O}
+$ V_O = V_1(O) + V_2(O) = K_e \frac{q_1}{r_{1O}} + K_e \frac{q_2}{r_{2O}} $.
+Distancias: $r_{1O} = |-50d - (-d/2)| = |-49,5d| = 49,5d$.
+$r_{2O} = |-50d - (d/2)| = |-50,5d| = 50,5d$.
+\paragraph{2. Potencial en el punto P}
+$ V_P = V_1(P) + V_2(P) = K_e \frac{q_1}{r_{1P}} + K_e \frac{q_2}{r_{2P}} $.
+Distancias por Pitágoras:
+$r_{1P} = \sqrt{(0 - (-d/2))^2 + (50d - 0)^2} = \sqrt{(d/2)^2 + (50d)^2}$.
+$r_{2P} = \sqrt{(0 - d/2)^2 + (50d - 0)^2} = \sqrt{(d/2)^2 + (50d)^2}$.
+Las distancias son iguales ($r_{1P}=r_{2P}$) y las cargas opuestas ($q_1=-q_2$), por lo que el potencial en P será nulo.
+\paragraph{3. Trabajo para desplazar un electrón}
+$ W_{O \to P} = q_e(V_P - V_O) $.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Potencial en O}
+$d = 1,2 \cdot 10^{-10} \, \text{m}$.
+$r_{1O} = 49,5 \cdot (1,2 \cdot 10^{-10}) = 5,94 \cdot 10^{-9} \, \text{m}$.
+$r_{2O} = 50,5 \cdot (1,2 \cdot 10^{-10}) = 6,06 \cdot 10^{-9} \, \text{m}$.
+\begin{gather}
+    V_O = (9 \cdot 10^9) \left( \frac{1,6 \cdot 10^{-19}}{5,94 \cdot 10^{-9}} + \frac{-1,6 \cdot 10^{-19}}{6,06 \cdot 10^{-9}} \right) \\
+    V_O = (9 \cdot 10^9) \cdot (1,6 \cdot 10^{-19}) \left( \frac{1}{5,94 \cdot 10^{-9}} - \frac{1}{6,06 \cdot 10^{-9}} \right) \approx 1,44 \cdot 10^{-9} (0,1683 - 0,1650) \cdot 10^9 \approx 0,00475 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+El potencial eléctrico en el punto O es $\boldsymbol{V_O \approx 4,75 \cdot 10^{-3} \, V}$.
+\end{cajaresultado}
+
+\paragraph{2. Potencial en P}
+Como $r_{1P} = r_{2P}$ y $q_1 = -q_2$:
+\begin{gather}
+    V_P = K_e \left( \frac{q_1}{r_{1P}} + \frac{-q_1}{r_{1P}} \right) = 0 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+El potencial eléctrico en el punto P es $\boldsymbol{V_P = 0 \, V}$.
+\end{cajaresultado}
+
+\paragraph{3. Trabajo O -> P}
+\begin{gather}
+    W_{O \to P} = q_e(V_P - V_O) = (-1,6 \cdot 10^{-19} \, \text{C}) (0 - 4,75 \cdot 10^{-3} \, \text{V}) \approx +7,6 \cdot 10^{-22} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+El trabajo necesario es $\boldsymbol{W \approx 7,6 \cdot 10^{-22} \, J}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se ha calculado el potencial en dos puntos del espacio generados por un dipolo eléctrico. En la mediatriz del dipolo, el potencial es siempre nulo por simetría. Sobre el eje, el potencial es pequeño pero no nulo. El trabajo para mover un electrón de O a P es positivo, lo que indica que un agente externo debe realizar trabajo para mover la carga negativa desde una región de potencial positivo (O) a una de potencial nulo (P), en contra de la fuerza del campo eléctrico.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Cuestiones}
+\label{sec:moderna1_2006_sep}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2006_sep}
+
+\begin{cajaenunciado}
+Define el trabajo de extracción de los electrones de un metal cuando recibe radiación electromagnética. Explica de qué magnitudes depende la energía máxima de los electrones emitidos en el efecto fotoeléctrico. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item Se trata de una cuestión teórica sobre el efecto fotoeléctrico.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama que ilustra el efecto fotoeléctrico. A la izquierda, una fuente de luz emite fotones, representados como paquetes de ondas, hacia una superficie metálica. La superficie del metal se representa como un 'mar de electrones'. Un fotón incidente (etiquetado con Energía $E=hf$) colisiona con un electrón. Dibuja una flecha saliendo del metal que representa al electrón emitido (fotoelectrón), etiquetado con 'Energía Cinética Máxima, $E_{c,max}$'. Incluye una nota en el metal que diga 'Trabajo de extracción, $W_0$ (energía mínima para escapar)'."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/efecto_fotoelectrico.png}
+    }}
+    \caption{Esquema del modelo de Einstein para el efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se explica mediante el modelo cuántico de la luz propuesto por Albert Einstein.
+\paragraph{Trabajo de Extracción ($W_0$)}
+El \textbf{trabajo de extracción}, también conocido como \textbf{función de trabajo}, es la energía mínima necesaria para arrancar un electrón de la superficie de un material conductor (un metal) y liberarlo al vacío.
+\begin{itemize}
+    \item Es una propiedad característica de cada material.
+    \item Representa la energía con la que los electrones están ligados a la red cristalina del metal.
+    \item Se relaciona con la \textbf{frecuencia umbral ($f_0$)}, que es la frecuencia mínima que debe tener la radiación incidente para producir el efecto fotoeléctrico: $W_0 = h f_0$, donde $h$ es la constante de Planck.
+\end{itemize}
+
+\paragraph{Energía Máxima de los Electrones Emitidos}
+Einstein postuló que la luz está compuesta de cuantos de energía (fotones), cada uno con una energía $E = hf$. En el efecto fotoeléctrico, un fotón transfiere toda su energía a un solo electrón. La conservación de la energía en esta interacción se describe por la \textbf{ecuación del efecto fotoeléctrico}:
+$$ E_{foton} = W_0 + E_{c,max} $$
+$$ hf = W_0 + E_{c,max} $$
+Despejando la energía cinética máxima de los electrones emitidos:
+$$ E_{c,max} = hf - W_0 $$
+De esta ecuación se deduce que la energía cinética máxima de los fotoelectrones depende de dos magnitudes:
+\begin{enumerate}
+    \item La \textbf{frecuencia ($f$) de la radiación incidente}. La energía aumenta linealmente con la frecuencia. Si la frecuencia es menor que la umbral ($f<f_0$), la energía del fotón es insuficiente para superar el trabajo de extracción y no se emiten electrones.
+    \item El \textbf{trabajo de extracción ($W_0$) del metal}. Esta magnitud es propia de cada material. Un metal con un trabajo de extracción bajo emitirá electrones con mayor energía cinética que un metal con un trabajo de extracción alto, para la misma radiación incidente.
+\end{enumerate}
+Es crucial señalar que la energía de los electrones \textbf{no depende de la intensidad} de la luz, la cual solo afecta al número de fotoelectrones emitidos por segundo.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La ecuación fundamental es $E_{c,max} = hf - W_0$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Trabajo de extracción ($W_0$):} Es la energía mínima para arrancar un electrón de un metal.
+    \item \textbf{Dependencia de la energía máxima ($E_{c,max}$):} Depende linealmente de la \textbf{frecuencia de la luz incidente} y del \textbf{tipo de material} (que determina el trabajo de extracción).
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El concepto de trabajo de extracción y la dependencia de la energía cinética de los fotoelectrones con la frecuencia de la luz (y no con su intensidad) fueron pruebas clave para la validación del modelo corpuscular de la luz. La ecuación de Einstein para el efecto fotoeléctrico resume elegantemente la conservación de la energía en esta interacción cuántica.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2006_sep}
+
+\begin{cajaenunciado}
+Una determinada partícula elemental en reposo se desintegra espontáneamente con un periodo de semidesintegración $T_{1/2}=3.5\times10^{-6}$ s. Determina $T_{1/2}$ cuando la partícula tiene velocidad $v=0,95c$ siendo c la velocidad de la luz. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Periodo de semidesintegración propio ($\Delta t_0$):} Es el medido en el sistema de referencia de la partícula, donde está en reposo. $\Delta t_0 = T_{1/2, reposo} = 3,5 \cdot 10^{-6} \, \text{s}$.
+    \item \textbf{Velocidad de la partícula ($v$):} $v = 0,95c$.
+    \item \textbf{Incógnita:} Periodo de semidesintegración medido en el laboratorio ($\Delta t$), donde la partícula se mueve.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Dilatación del Tiempo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama de dos paneles. En el panel superior, etiquetado 'Sistema en Reposo', mostrar una partícula elemental con un reloj al lado. El reloj muestra un intervalo de tiempo $\Delta t_0 = 3.5 \times 10^{-6}$ s. En el panel inferior, etiquetado 'Sistema del Laboratorio', mostrar la misma partícula moviéndose a gran velocidad ($v=0.95c$). Un observador del laboratorio mira su propio reloj, que mide el mismo proceso de desintegración, pero el intervalo de tiempo medido, $\Delta t$, es visiblemente más largo. Incluir la fórmula $\Delta t = \gamma \Delta t_0$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/dilatacion_tiempo.png}
+    }}
+    \caption{Ilustración del fenómeno de dilatación del tiempo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Este fenómeno es una consecuencia directa de la \textbf{Teoría de la Relatividad Especial} de Einstein, conocido como \textbf{dilatación del tiempo}.
+Establece que el intervalo de tiempo medido por un observador en movimiento relativo respecto a un suceso es siempre mayor que el intervalo de tiempo medido en el sistema de referencia donde el suceso ocurre en reposo (tiempo propio).
+La relación matemática es:
+$$ \Delta t = \gamma \Delta t_0 $$
+donde $\Delta t_0$ es el tiempo propio, $\Delta t$ es el tiempo dilatado, y $\gamma$ es el factor de Lorentz.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El factor de Lorentz $\gamma$ se define como:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{gather}
+Primero calcularemos el valor de $\gamma$ para la velocidad dada y luego lo aplicaremos a la fórmula de la dilatación del tiempo para encontrar el nuevo periodo de semidesintegración, $T'_{1/2} = \Delta t$.
+\begin{gather}
+    T'_{1/2} = \gamma T_{1/2} = \frac{T_{1/2}}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos el factor de Lorentz:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - \frac{(0,95c)^2}{c^2}}} = \frac{1}{\sqrt{1 - (0,95)^2}} = \frac{1}{\sqrt{1 - 0,9025}} = \frac{1}{\sqrt{0,0975}} \approx \frac{1}{0,3122} \approx 3,203
+\end{gather}
+Ahora calculamos el tiempo dilatado:
+\begin{gather}
+    T'_{1/2} = \gamma \cdot T_{1/2} = 3,203 \cdot (3,5 \cdot 10^{-6} \, \text{s}) \approx 11,21 \cdot 10^{-6} \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+El periodo de semidesintegración medido para la partícula en movimiento es $\boldsymbol{T'_{1/2} \approx 1,12 \cdot 10^{-5} \, s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El "reloj interno" de la partícula en movimiento parece transcurrir más lentamente desde la perspectiva de un observador en el laboratorio. Como resultado, su vida media se alarga por un factor $\gamma \approx 3,2$. Este efecto, la dilatación del tiempo, es una de las predicciones más sorprendentes y bien verificadas de la relatividad especial, y es crucial en la física de partículas para explicar cómo partículas inestables creadas en la alta atmósfera pueden llegar a la superficie de la Tierra antes de desintegrarse.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Cuestiones}
+\label{sec:nuclear_2006_sep}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2006_sep}
+
+\begin{cajaenunciado}
+Un núcleo de ${}_{49}^{115}\text{In}$ absorbe un neutrón y se transforma en el isótopo ${}_{50}^{116}\text{Sn}$ conjuntamente con una partícula adicional. Indica de qué partícula se trata y escribe la reacción ajustada. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Núcleo inicial:} Indio-115, ${}_{49}^{115}\text{In}$.
+    \item \textbf{Partícula absorbida:} Neutrón, ${}_{0}^{1}\text{n}$.
+    \item \textbf{Núcleo final principal:} Estaño-116, ${}_{50}^{116}\text{Sn}$.
+    \item \textbf{Partícula final adicional:} Desconocida, ${}_{Z}^{A}X$.
+    \item \textbf{Incógnitas:} Identidad de la partícula X y la ecuación nuclear completa.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema de ajuste de reacciones.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En cualquier reacción nuclear, se deben conservar dos magnitudes fundamentales:
+\begin{enumerate}
+    \item El \textbf{número másico (A)}, que es el número total de nucleones (protones + neutrones).
+    \item El \textbf{número atómico (Z)}, que es el número total de protones (y por tanto, la carga eléctrica neta).
+\end{enumerate}
+Estas son las leyes de conservación de Soddy-Fajans.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Escribimos la reacción nuclear de forma simbólica:
+\begin{gather}
+    {}_{49}^{115}\text{In} + {}_{0}^{1}\text{n} \longrightarrow {}_{50}^{116}\text{Sn} + {}_{Z}^{A}X
+\end{gather}
+Aplicamos las leyes de conservación:
+\paragraph{Conservación del número másico (A)}
+La suma de los superíndices a la izquierda debe ser igual a la suma de los superíndices a la derecha.
+\begin{gather}
+    115 + 1 = 116 + A \implies 116 = 116 + A \implies A = 0
+\end{gather}
+\paragraph{Conservación del número atómico (Z)}
+La suma de los subíndices a la izquierda debe ser igual a la suma de los subíndices a la derecha.
+\begin{gather}
+    49 + 0 = 50 + Z \implies 49 = 50 + Z \implies Z = -1
+\end{gather}
+La partícula desconocida, ${}_{Z}^{A}X$, tiene por tanto $A=0$ y $Z=-1$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+La partícula con número de masa 0 y número atómico -1 es un \textbf{electrón}, también conocido como \textbf{partícula beta} ($\beta^-$) en el contexto de las reacciones nucleares. Su notación es ${}_{-1}^{0}\text{e}$ o $\beta^-$.
+La reacción ajustada es:
+\begin{gather}
+    {}_{49}^{115}\text{In} + {}_{0}^{1}\text{n} \longrightarrow {}_{50}^{116}\text{Sn} + {}_{-1}^{0}\text{e}
+\end{gather}
+Este proceso es un ejemplo de captura neutrónica seguida de una desintegración beta negativa. El neutrón absorbido se convierte en un protón (aumentando Z en 1) y emite un electrón para conservar la carga.
+\begin{cajaresultado}
+La partícula adicional es un \textbf{electrón} (o partícula beta, $\beta^-$).
+La reacción ajustada es: $\boldsymbol{{}_{49}^{115}\text{In} + {}_{0}^{1}\text{n} \longrightarrow {}_{50}^{116}\text{Sn} + {}_{-1}^{0}\text{e}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando las leyes de conservación del número másico y el número atómico, se ha deducido que la partícula emitida para balancear la reacción nuclear debe tener una masa de 0 y una carga de -1. Esta partícula es el electrón, lo que indica que en el proceso un neutrón del núcleo intermedio se ha transformado en un protón y un electrón.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2006_sep}
+
+\begin{cajaenunciado}
+Explica el fenómeno de fisión nuclear del uranio e indica de dónde se obtiene la energía liberada. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Fenómeno:} Fisión nuclear.
+    \item \textbf{Elemento:} Uranio (generalmente el isótopo U-235).
+    \item \textbf{Incógnitas:} Descripción del proceso y origen de la energía.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Fisión Nuclear del Uranio-235} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama secuencial de la fisión nuclear.
+    1. A la izquierda, un neutrón lento (etiquetado 'n') se aproxima a un núcleo grande y esférico de Uranio-235 (etiquetado 'U-235').
+    2. En el centro, el neutrón ha sido absorbido, formando un núcleo de Uranio-236 muy inestable y deformado (con forma de elipsoide vibrante, etiquetado 'U-236*').
+    3. A la derecha, el núcleo inestable se ha dividido en dos núcleos más pequeños y de tamaño desigual (por ejemplo, Bario y Kriptón, etiquetados 'Productos de fisión'). Además, se emiten 2 o 3 nuevos neutrones rápidos (etiquetados 'n') y una gran cantidad de energía (representada como un destello de luz, etiquetada 'Energía liberada')."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/fision_nuclear.png}
+    }}
+    \caption{Representación esquemática de la fisión del U-235.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Fenómeno de Fisión Nuclear}
+La fisión nuclear es una reacción en la que el núcleo de un átomo pesado, al absorber una partícula como un neutrón, se vuelve inestable y se divide ("fisiona") en dos o más núcleos más pequeños, liberando además neutrones, partículas subatómicas y una enorme cantidad de energía.
+
+En el caso del Uranio-235, el proceso típico es el siguiente:
+\begin{enumerate}
+    \item Un neutrón de baja energía (neutrón térmico) incide sobre un núcleo de U-235.
+    \item El núcleo absorbe el neutrón, transformándose en un isótopo extremadamente inestable, el U-236.
+    \item Este núcleo compuesto de U-236 existe durante un tiempo muy corto y se deforma hasta que las fuerzas de repulsión eléctrica entre sus protones superan la fuerza nuclear fuerte que lo mantiene unido.
+    \item El núcleo se rompe en dos fragmentos más ligeros (llamados productos de fisión, como por ejemplo núcleos de Bario y Kriptón), y emite de dos a tres neutrones rápidos.
+\end{enumerate}
+Si los neutrones liberados son capaces de inducir nuevas fisiones en otros núcleos de U-235, se puede producir una \textbf{reacción en cadena}, que es el principio de los reactores nucleares y las bombas atómicas.
+
+\paragraph{Origen de la Energía Liberada}
+La energía liberada en la fisión proviene de un \textbf{defecto de masa}, en acuerdo con la ecuación de equivalencia masa-energía de Einstein, $E=\Delta m c^2$.
+\begin{itemize}
+    \item La suma de las masas en reposo de los productos finales (los dos núcleos más ligeros, los neutrones, etc.) es \textbf{menor} que la suma de las masas en reposo de los reactivos iniciales (el núcleo de U-235 y el neutrón).
+    \item Esta diferencia de masa, $\Delta m = m_{inicial} - m_{final}$, no desaparece, sino que se convierte en una cantidad masiva de energía, principalmente en forma de energía cinética de los productos de fisión y de los neutrones, y también en forma de radiación gamma.
+    \item Esto ocurre porque los núcleos de masa intermedia (como el Bario o el Kriptón) tienen una mayor \textbf{energía de enlace por nucleón} que los núcleos muy pesados (como el Uranio). Al pasar de un estado menos ligado a uno más ligado, se libera la diferencia de energía de enlace.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Una de las posibles reacciones de fisión del U-235 es:
+\begin{gather}
+    {}_{92}^{235}\text{U} + {}_{0}^{1}\text{n} \longrightarrow {}_{56}^{141}\text{Ba} + {}_{36}^{92}\text{Kr} + 3{}_{0}^{1}\text{n} + \text{Energía}
+\end{gather}
+La energía liberada se calcula como:
+\begin{gather}
+    E = [m(^{235}U) + m(n) - m(^{141}Ba) - m(^{92}Kr) - 3m(n)] \cdot c^2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Fisión nuclear del Uranio:} Es la ruptura de un núcleo de uranio pesado (generalmente U-235) en dos núcleos más ligeros tras la absorción de un neutrón, liberando más neutrones y energía.
+    \item \textbf{Origen de la energía:} Proviene de la conversión de una pequeña parte de la masa de los reactivos en energía ($E=\Delta m c^2$), debido a que los productos de la fisión tienen una mayor energía de enlace por nucleón.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fisión nuclear es un proceso que aprovecha la inestabilidad de los núcleos pesados para liberar la enorme energía almacenada en ellos. El origen de esta energía es el "defecto de masa" entre reactivos y productos, una manifestación directa de la famosa ecuación $E=mc^2$ de Einstein, y está fundamentalmente relacionado con el hecho de que los núcleos de masa intermedia son los más estables del universo.
+\end{cajaconclusion}
+
+\newpage

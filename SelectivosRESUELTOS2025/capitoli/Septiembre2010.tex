@@ -1,0 +1,894 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2010 - Convocatoria Extraordinaria}
+\label{chap:2010_sep_ext}
+
+% ----------------------------------------------------------------------
+\section{Opción A}
+\label{sec:A_2010_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Bloque I - Cuestión}
+\label{subsec:A1_2010_sep_ext}
+
+\begin{cajaenunciado}
+Explica brevemente el significado de la velocidad de escape. ¿Qué valor adquiere la velocidad de escape en la superficie terrestre? Calcúlala utilizando exclusivamente los siguientes datos: el radio terrestre $R=6,4\cdot10^{6}$ m y la aceleración de la gravedad $g=9,8\,\text{m/s}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Concepto a definir:} Velocidad de escape ($v_e$).
+    \item \textbf{Radio terrestre ($R_T$):} $R_T = 6,4 \cdot 10^6 \, \text{m}$.
+    \item \textbf{Aceleración de la gravedad en superficie ($g$):} $g = 9,8 \, \text{m/s}^2$.
+    \item \textbf{Incógnita:} Valor numérico de la velocidad de escape ($v_e$) en la superficie terrestre.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Lanzamiento para Velocidad de Escape} \vspace{0.5cm} \textit{Prompt para la imagen:} "Planeta Tierra esférico de radio $R_T$. En su superficie, un proyectil es lanzado verticalmente hacia arriba con una velocidad inicial $\vec{v}_e$. Dibujar una trayectoria que muestra al proyectil alejándose indefinidamente. Añadir una nota que indique que la condición para escapar es que la energía mecánica total del proyectil sea nula, permitiéndole llegar al infinito ($r=\infty$) con velocidad final nula."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{esquemas/grav_escape_tierra.png}
+    }}
+    \caption{Concepto de velocidad de escape desde la superficie terrestre.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Concepto de Velocidad de Escape}
+La velocidad de escape es la velocidad mínima inicial que debe comunicarse a un cuerpo para que pueda escapar del campo gravitatorio de un astro. Esto significa que el cuerpo puede alejarse indefinidamente del astro, llegando al infinito con una velocidad nula.
+\paragraph*{Principio de Conservación de la Energía Mecánica}
+El campo gravitatorio es un campo conservativo, por lo que la energía mecánica total ($E_M = E_c + E_p$) de un objeto que se mueve en él se conserva. La condición para que un cuerpo escape con la velocidad mínima es que su energía mecánica total sea exactamente cero.
+$$ E_M = E_c + E_p = \frac{1}{2}mv^2 - G\frac{Mm}{r} $$
+Para el lanzamiento desde la superficie ($r=R_T$ con $v=v_e$) y la llegada al infinito ($r=\infty$ con $v=0, E_p=0$), se establece:
+$$ E_{M, \text{superficie}} = E_{M, \text{infinito}} = 0 $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Aplicamos la conservación de la energía mecánica entre la superficie de la Tierra y el infinito:
+\begin{gather}
+    \frac{1}{2}mv_e^2 - G\frac{M_T m}{R_T} = 0
+\end{gather}
+De esta expresión, podemos despejar la velocidad de escape:
+\begin{gather}
+    \frac{1}{2}mv_e^2 = G\frac{M_T m}{R_T} \implies v_e = \sqrt{\frac{2GM_T}{R_T}}
+\end{gather}
+El problema nos pide usar $g$ en lugar de $G$ y $M_T$. Sabemos que la aceleración de la gravedad en la superficie es la fuerza por unidad de masa:
+\begin{gather}
+    g = \frac{F_g}{m} = \frac{G M_T m / R_T^2}{m} = \frac{GM_T}{R_T^2} \implies GM_T = g R_T^2
+\end{gather}
+Sustituimos $GM_T$ en la expresión de la velocidad de escape:
+\begin{gather}
+    v_e = \sqrt{\frac{2(g R_T^2)}{R_T}} = \sqrt{2gR_T}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores proporcionados en la expresión final:
+\begin{gather}
+    v_e = \sqrt{2 \cdot (9,8 \, \text{m/s}^2) \cdot (6,4 \cdot 10^6 \, \text{m})} = \sqrt{125,44 \cdot 10^6} \approx 11200 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de escape en la superficie terrestre es de $\boldsymbol{\approx 11200 \, \textbf{m/s}}$ o $\boldsymbol{11,2 \, \textbf{km/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La velocidad de escape es la velocidad mínima necesaria para que la energía mecánica total del objeto sea nula, permitiéndole superar la atracción gravitatoria. Mediante el principio de conservación de la energía y la definición de la gravedad superficial, se deduce la expresión $v_e = \sqrt{2gR_T}$, cuyo valor para la Tierra es de aproximadamente 11,2 km/s.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque II - Problema}
+\label{subsec:A2_2010_sep_ext}
+
+\begin{cajaenunciado}
+Dos fuentes sonoras que están separadas por una pequeña distancia emiten ondas armónicas planas de igual amplitud, en fase y de frecuencia 1 kHz. Estas ondas se transmiten en el medio a una velocidad de 340 m/s.
+\begin{enumerate}
+    \item[a)] Calcula el número de onda, la longitud de onda y el periodo de la onda resultante de la interferencia entre ellas. (1,2 puntos)
+    \item[b)] Calcula la diferencia de fase en un punto situado a 1024 m de una fuente y a 990 m de la otra. (0,8 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Frecuencia de las fuentes ($f$):} $f = 1 \, \text{kHz} = 1000 \, \text{Hz}$.
+    \item \textbf{Velocidad de propagación ($v$):} $v = 340 \, \text{m/s}$.
+    \item \textbf{Distancia de la fuente 1 al punto ($r_1$):} $r_1 = 1024 \, \text{m}$.
+    \item \textbf{Distancia de la fuente 2 al punto ($r_2$):} $r_2 = 990 \, \text{m}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item a) Número de onda ($k$), longitud de onda ($\lambda$), periodo ($T$).
+        \item b) Diferencia de fase ($\Delta\phi$) en el punto.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Interferencia de Ondas Sonoras} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos puntos, F1 y F2, representando dos fuentes sonoras. Un punto P en el espacio. Dibujar frentes de onda circulares emanando de F1 y F2. Mostrar que las ondas llegan a P habiendo recorrido caminos diferentes, $r_1$ y $r_2$. Indicar que la superposición en P depende de la diferencia de caminos $\Delta r = |r_1 - r_2|$."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{esquemas/ondas_interferencia_fuentes.png}
+    }}
+    \caption{Esquema del problema de interferencia.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Parámetros de la onda}
+Cuando dos ondas idénticas interfieren, la onda resultante mantiene la misma frecuencia, periodo, longitud de onda y número de onda que las ondas originales. Estos parámetros se calculan con las relaciones fundamentales de las ondas:
+\begin{itemize}
+    \item \textbf{Periodo ($T$):} Es el inverso de la frecuencia: $T=1/f$.
+    \item \textbf{Longitud de onda ($\lambda$):} Se relaciona con la velocidad y la frecuencia: $v = \lambda f \implies \lambda = v/f$.
+    \item \textbf{Número de onda ($k$):} Se relaciona con la longitud de onda: $k = 2\pi/\lambda$.
+\end{itemize}
+\paragraph*{b) Diferencia de fase}
+La diferencia de fase ($\Delta\phi$) entre dos ondas que llegan a un punto P desde dos fuentes en fase se debe únicamente a la diferencia de caminos recorridos ($\Delta r = |r_1 - r_2|$). La relación es:
+$$ \Delta\phi = k \cdot \Delta r = \frac{2\pi}{\lambda} \Delta r $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Parámetros de la onda}
+\begin{gather}
+    T = \frac{1}{f} \\
+    \lambda = \frac{v}{f} \\
+    k = \frac{2\pi}{\lambda} = \frac{2\pi f}{v}
+\end{gather}
+\paragraph*{b) Diferencia de fase}
+\begin{gather}
+    \Delta r = |r_1 - r_2| \\
+    \Delta\phi = k \cdot \Delta r
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Parámetros de la onda}
+\begin{gather}
+    \lambda = \frac{340 \, \text{m/s}}{1000 \, \text{Hz}} = 0,34 \, \text{m} \\
+    T = \frac{1}{1000 \, \text{Hz}} = 0,001 \, \text{s} \\
+    k = \frac{2\pi}{0,34 \, \text{m}} \approx 18,48 \, \text{rad/m}
+\end{gather}
+\begin{cajaresultado}
+    La longitud de onda es $\boldsymbol{\lambda = 0,34 \, \textbf{m}}$, el periodo es $\boldsymbol{T = 0,001 \, \textbf{s}}$, y el número de onda es $\boldsymbol{k \approx 18,48 \, \textbf{rad/m}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Diferencia de fase}
+Calculamos la diferencia de caminos:
+\begin{gather}
+    \Delta r = |1024 \, \text{m} - 990 \, \text{m}| = 34 \, \text{m}
+\end{gather}
+Ahora calculamos la diferencia de fase:
+\begin{gather}
+    \Delta\phi = k \cdot \Delta r = \left(\frac{2\pi}{0,34 \, \text{m}}\right) \cdot (34 \, \text{m}) = 200\pi \, \text{rad}
+\end{gather}
+Una diferencia de fase de $200\pi$ es un múltiplo par de $\pi$ ($2n\pi$ con $n=100$), lo que corresponde a una interferencia perfectamente constructiva.
+\begin{cajaresultado}
+    La diferencia de fase en el punto es $\boldsymbol{\Delta\phi = 200\pi \, \textbf{rad}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Los parámetros característicos de la onda, como la longitud de onda (0,34 m) y el periodo (1 ms), son los mismos que los de las fuentes originales. La diferencia de fase en el punto especificado es de $200\pi$ radianes. Esto significa que las ondas llegan en fase (interferencia constructiva), ya que la diferencia de caminos de 34 m es un múltiplo entero (100) de la longitud de onda.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque III - Cuestión}
+\label{subsec:A3_2010_sep_ext}
+
+\begin{cajaenunciado}
+Deseamos conseguir una imagen derecha de un objeto situado a 20 cm del vértice de un espejo. El tamaño de la imagen debe ser la quinta parte del tamaño del objeto. ¿Qué tipo de espejo debemos utilizar y qué radio de curvatura debe tener? Justifica brevemente tu respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Posición del objeto ($s$):} $s = -20 \, \text{cm}$.
+    \item \textbf{Características de la imagen:} Derecha y reducida.
+    \item \textbf{Aumento lateral ($M$):} La imagen es derecha ($M > 0$) y de tamaño 1/5 del objeto. Por lo tanto, $M = +1/5 = +0,2$.
+    \item \textbf{Incógnitas:} Tipo de espejo (cóncavo o convexo) y su radio de curvatura ($R$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Formación de imagen en espejo convexo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un eje óptico horizontal. A la derecha, un arco de circunferencia representando un espejo convexo. Marcar su vértice V. El foco F y el centro de curvatura C están a la derecha del vértice (virtuales). Colocar un objeto (flecha vertical) a la izquierda del espejo. Trazar dos rayos: 1) Un rayo paralelo al eje que se refleja como si proviniera del foco F. 2) Un rayo dirigido hacia el centro C que se refleja sobre sí mismo. Mostrar que las prolongaciones de los rayos reflejados se cruzan detrás del espejo para formar una imagen virtual, derecha y más pequeña."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{esquemas/optica_espejo_convexo.png}
+    }}
+    \caption{Trazado de rayos para un espejo convexo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Tipo de espejo}
+Los espejos cóncavos pueden formar imágenes derechas, pero estas son siempre virtuales y de mayor tamaño que el objeto (actúan como lupas). Para obtener una imagen derecha y \textbf{reducida}, es necesario utilizar un \textbf{espejo convexo}. Los espejos convexos siempre forman imágenes virtuales, derechas y de menor tamaño.
+\paragraph*{Ecuaciones de los espejos esféricos}
+Se utilizan la ecuación del aumento lateral y la ecuación de Gauss:
+\begin{itemize}
+    \item \textbf{Aumento Lateral:} $M = -s'/s$
+    \item \textbf{Ecuación de Gauss:} $\frac{1}{s'} + \frac{1}{s} = \frac{1}{f}$
+    \item \textbf{Relación focal-radio:} $R = 2f$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+A partir de la fórmula del aumento, podemos encontrar la posición de la imagen ($s'$) en función de la del objeto ($s$) y el aumento ($M$):
+\begin{gather}
+    s' = -M \cdot s
+\end{gather}
+Una vez conocida $s'$, podemos usar la ecuación de Gauss para despejar la distancia focal $f$:
+\begin{gather}
+    \frac{1}{f} = \frac{1}{s'} + \frac{1}{s} \implies f = \left( \frac{1}{s'} + \frac{1}{s} \right)^{-1}
+\end{gather}
+Finalmente, calculamos el radio de curvatura:
+\begin{gather}
+    R = 2f
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos la posición de la imagen $s'$:
+\begin{gather}
+    s' = -(+0,2) \cdot (-20 \, \text{cm}) = +4 \, \text{cm}
+\end{gather}
+El signo positivo de $s'$ confirma que la imagen es virtual, consistente con un espejo convexo. Ahora calculamos la distancia focal $f$:
+\begin{gather}
+    \frac{1}{f} = \frac{1}{+4 \, \text{cm}} + \frac{1}{-20 \, \text{cm}} = \frac{5-1}{20} = \frac{4}{20} = \frac{1}{5} \, \text{cm}^{-1} \implies f = +5 \, \text{cm}
+\end{gather}
+El signo positivo de $f$ confirma que el espejo es convexo. Finalmente, el radio de curvatura:
+\begin{gather}
+    R = 2f = 2 \cdot (5 \, \text{cm}) = +10 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    Se debe utilizar un \textbf{espejo convexo}. Su radio de curvatura debe ser de $\boldsymbol{R = +10 \, \textbf{cm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las características de la imagen (derecha y reducida) determinan inequívocamente que el espejo debe ser convexo. Aplicando las ecuaciones de los espejos esféricos, se calcula que para lograr un aumento de +0,2 con un objeto a -20 cm, el espejo debe tener una distancia focal de +5 cm, lo que corresponde a un radio de curvatura de +10 cm.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque IV - Problema}
+\label{subsec:A4_2010_sep_ext}
+
+\begin{cajaenunciado}
+Por dos conductores rectilíneos e indefinidos, que coinciden con los ejes Y y Z, circulan corrientes de 2 A en el sentido positivo de dichos ejes. Calcula:
+\begin{enumerate}
+    \item[a)] El campo magnético en el punto P de coordenadas (0, 2, 1) cm. (1,2 puntos)
+    \item[b)] La fuerza magnética sobre un electrón situado en el punto P que se mueve con velocidad $\vec{v}=10^{4}\vec{j}\,\text{m/s}$. (0,8 puntos)
+\end{enumerate}
+\textbf{Datos:} permeabilidad magnética del vacío $\mu_{0}=4\pi\cdot10^{-7}\,\text{T}\cdot\text{m/A}$; carga del electrón $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Hilo 1 (eje Y):} Corriente $I_Y = 2 \, \text{A}$ en la dirección $+\vec{j}$.
+    \item \textbf{Hilo 2 (eje Z):} Corriente $I_Z = 2 \, \text{A}$ en la dirección $+\vec{k}$.
+    \item \textbf{Punto de cálculo (P):} P(0, 2, 1) cm, que en SI es P(0; 0,02; 0,01) m.
+    \item \textbf{Partícula:} Electrón con carga $q = -e = -1,6 \cdot 10^{-19} \, \text{C}$.
+    \item \textbf{Velocidad del electrón:} $\vec{v} = 10^4 \vec{j} \, \text{m/s}$.
+    \item \textbf{Constante:} $\mu_0 = 4\pi \cdot 10^{-7} \, \text{T}\cdot\text{m/A}$.
+    \item \textbf{Incógnitas:} a) Campo magnético total $\vec{B}_P$ en P. b) Fuerza magnética $\vec{F}_m$ sobre el electrón.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo de dos hilos perpendiculares} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas 3D (X,Y,Z). Dibujar un hilo conductor sobre el eje Y con una flecha de corriente $I_Y$ en sentido +Y. Dibujar otro hilo sobre el eje Z con una flecha de corriente $I_Z$ en sentido +Z. Marcar el punto P(0, 0.02, 0.01). En P, dibujar el vector $\vec{B}_Y$ (creado por $I_Y$) que, por la regla de la mano derecha, apunta en el sentido +X. En P, dibujar el vector $\vec{B}_Z$ (creado por $I_Z$) que apunta en el sentido -X. Mostrar el vector suma $\vec{B}_{total}$."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{esquemas/mag_hilos_perpendiculares.png}
+    }}
+    \caption{Superposición de campos magnéticos en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo magnético}
+El campo magnético total en P es la suma vectorial de los campos creados por cada hilo (Principio de Superposición). El campo creado por un hilo rectilíneo indefinido viene dado por la Ley de Biot-Savart: $B = \frac{\mu_0 I}{2\pi r}$, donde $r$ es la distancia perpendicular al hilo. La dirección se obtiene con la regla de la mano derecha.
+\paragraph*{b) Fuerza magnética}
+La fuerza sobre el electrón viene dada por la Fuerza de Lorentz: $\vec{F}_m = q(\vec{v} \times \vec{B})$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Campo magnético en P}
+\begin{itemize}
+    \item \textbf{Campo del hilo Y ($\vec{B}_Y$):} El punto P está en el plano YZ. La distancia perpendicular al eje Y es la coordenada z, $r_Y = z_P = 0,01$ m. Por la regla de la mano derecha, el campo en P apunta en la dirección $+\vec{i}$.
+    $$ \vec{B}_Y = \frac{\mu_0 I_Y}{2\pi z_P} \vec{i} $$
+    \item \textbf{Campo del hilo Z ($\vec{B}_Z$):} La distancia perpendicular al eje Z es la coordenada y, $r_Z = y_P = 0,02$ m. Por la regla de la mano derecha, el campo en P apunta en la dirección $-\vec{i}$.
+    $$ \vec{B}_Z = -\frac{\mu_0 I_Z}{2\pi y_P} \vec{i} $$
+\end{itemize}
+El campo total es $\vec{B}_P = \vec{B}_Y + \vec{B}_Z$.
+\paragraph*{b) Fuerza magnética}
+Se calcula el producto vectorial:
+$$ \vec{F}_m = q (\vec{v} \times \vec{B}_P) = (-e) (v_y \vec{j} \times B_x \vec{i}) $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Campo magnético en P}
+\begin{gather}
+    B_Y = \frac{(4\pi \cdot 10^{-7} \, \text{T}\cdot\text{m/A}) \cdot (2 \, \text{A})}{2\pi \cdot (0,01 \, \text{m})} = 4 \cdot 10^{-5} \, \text{T} \\
+    B_Z = \frac{(4\pi \cdot 10^{-7} \, \text{T}\cdot\text{m/A}) \cdot (2 \, \text{A})}{2\pi \cdot (0,02 \, \text{m})} = 2 \cdot 10^{-5} \, \text{T} \\
+    \vec{B}_P = (4 \cdot 10^{-5} \vec{i}) - (2 \cdot 10^{-5} \vec{i}) = 2 \cdot 10^{-5} \vec{i} \, \text{T}
+\end{gather}
+\begin{cajaresultado}
+    El campo magnético en el punto P es $\boldsymbol{\vec{B}_P = 2 \cdot 10^{-5} \vec{i} \, \textbf{T}}$.
+\end{cajaresultado}
+\paragraph*{b) Fuerza magnética}
+\begin{gather}
+    \vec{F}_m = (-1,6 \cdot 10^{-19} \, \text{C}) \cdot (10^4 \vec{j} \, \text{m/s} \times 2 \cdot 10^{-5} \vec{i} \, \text{T}) \\
+    \vec{F}_m = (-1,6 \cdot 10^{-19}) \cdot (2 \cdot 10^{-1}) (\vec{j} \times \vec{i}) \\
+    \vec{F}_m = (-3,2 \cdot 10^{-20}) (-\vec{k}) = 3,2 \cdot 10^{-20} \vec{k} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza magnética sobre el electrón es $\boldsymbol{\vec{F}_m = 3,2 \cdot 10^{-20} \vec{k} \, \textbf{N}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Los dos hilos de corriente generan campos magnéticos que en el punto P son colineales y de sentido opuesto. El campo neto resultante apunta en la dirección del eje X. Un electrón que se mueve paralelamente al eje Y en esta región experimenta una fuerza de Lorentz que es perpendicular tanto a su velocidad como al campo, resultando en una fuerza en la dirección del eje Z.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque V - Cuestión}
+\label{subsec:A5_2010_sep_ext}
+
+\begin{cajaenunciado}
+Se quiere diseñar un sistema de diagnóstico por rayos X y se ha establecido que la longitud de onda óptima de la radiación sería de 1 nm. ¿Cuál ha de ser la diferencia de potencial entre el ánodo y el cátodo de nuestro sistema?
+\textbf{Datos:} carga del electrón $e=1,6\cdot10^{-19}\,\text{C}$; constante de Planck $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$; velocidad de la luz $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda de los rayos X ($\lambda$):} $\lambda = 1 \, \text{nm} = 1 \cdot 10^{-9} \, \text{m}$.
+    \item \textbf{Carga del electrón ($e$):} $e = 1,6 \cdot 10^{-19} \, \text{C}$.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,63 \cdot 10^{-34} \, \text{J}\cdot\text{s}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3 \cdot 10^8 \, \text{m/s}$.
+    \item \textbf{Incógnita:} Diferencia de potencial ($\Delta V$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Tubo de Rayos X} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un tubo de vacío con dos electrodos. A la izquierda, el cátodo (filamento caliente) emitiendo electrones. A la derecha, el ánodo (blanco metálico). Dibujar una gran diferencia de potencial $\Delta V$ entre ellos. Mostrar a los electrones acelerándose desde el cátodo hacia el ánodo, ganando energía cinética. Al chocar con el ánodo, los electrones frenan bruscamente, y su energía cinética se convierte en fotones de rayos X, que son emitidos."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{esquemas/moderna_rayos_x.png}
+    }}
+    \caption{Esquema del principio de funcionamiento de un tubo de rayos X.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En un tubo de rayos X, los electrones son acelerados por una diferencia de potencial $\Delta V$. La energía potencial eléctrica que pierden se convierte en energía cinética. La energía cinética ganada por un electrón es:
+$$ E_c = e \cdot \Delta V $$
+Cuando estos electrones de alta energía impactan contra el ánodo, se frenan bruscamente. Parte o toda su energía cinética se convierte en energía de un fotón de rayos X. La máxima energía que puede tener un fotón de rayos X corresponde al caso en que toda la energía cinética del electrón se convierte en la energía de un único fotón. La energía de un fotón viene dada por la ecuación de Planck:
+$$ E_{foton} = hf = \frac{hc}{\lambda} $$
+Para obtener la longitud de onda deseada (que es la mínima posible para esa aceleración), igualamos la energía cinética del electrón a la energía del fotón.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Igualamos la energía cinética del electrón con la energía del fotón:
+\begin{gather}
+    E_c = E_{foton} \implies e \cdot \Delta V = \frac{hc}{\lambda}
+\end{gather}
+Despejamos la diferencia de potencial $\Delta V$:
+\begin{gather}
+    \Delta V = \frac{hc}{e\lambda}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores de las constantes y la longitud de onda dada:
+\begin{gather}
+    \Delta V = \frac{(6,63 \cdot 10^{-34} \, \text{J}\cdot\text{s}) \cdot (3 \cdot 10^8 \, \text{m/s})}{(1,6 \cdot 10^{-19} \, \text{C}) \cdot (1 \cdot 10^{-9} \, \text{m})} \\
+    \Delta V = \frac{1,989 \cdot 10^{-25}}{1,6 \cdot 10^{-28}} \approx 1243 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+    La diferencia de potencial necesaria es de $\boldsymbol{\approx 1243 \, \textbf{V}}$ (o 1,24 kV).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La producción de rayos X es un ejemplo de la conversión de energía. La energía cinética adquirida por los electrones al ser acelerados en un campo eléctrico se transforma en energía electromagnética (fotones de rayos X) al impactar con el ánodo. Para producir fotones con una longitud de onda de 1 nm, se requiere una tensión de aceleración de aproximadamente 1243 voltios.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque VI - Cuestión}
+\label{subsec:A6_2010_sep_ext}
+
+\begin{cajaenunciado}
+Ajusta las siguientes reacciones nucleares completando los valores de número atómico y número másico que faltan.
+\begin{enumerate}
+    \item[a)] ${}_{Z}^{A}\text{Li} + {}_{1}^{1}\text{H} \rightarrow 2\alpha$
+    \item[b)] ${}^{235}\text{U} + {}^{1}\text{n} \rightarrow {}_{38}^{95}\text{Sr} + {}_{Z}^{A}\text{Xe} + 2 \cdot {}^{1}\text{n}$
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se nos pide encontrar los números másicos (A) y atómicos (Z) desconocidos en dos reacciones nucleares. Para ello, debemos recordar la notación de las partículas involucradas:
+\begin{itemize}
+    \item \textbf{Protón (${}_{1}^{1}\text{H}$):} $A=1, Z=1$.
+    \item \textbf{Neutrón (${}^{1}\text{n}$):} $A=1, Z=0$.
+    \item \textbf{Partícula alfa ($\alpha$):} Es un núcleo de Helio, ${}_{2}^{4}\text{He}$, por tanto $A=4, Z=2$.
+    \item \textbf{Uranio-235 (${}^{235}\text{U}$):} Su número atómico es $Z=92$.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En cualquier reacción nuclear se conservan dos magnitudes fundamentales:
+\begin{enumerate}
+    \item \textbf{La suma de los números másicos (A)} de los reactivos debe ser igual a la suma de los números másicos de los productos.
+    \item \textbf{La suma de los números atómicos (Z)} de los reactivos debe ser igual a la suma de los números atómicos de los productos. Esto equivale a la conservación de la carga eléctrica.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{a) Reacción ${}_{Z}^{A}\text{Li} + {}_{1}^{1}\text{H} \rightarrow 2 \cdot {}_{2}^{4}\text{He}$}
+\begin{itemize}
+    \item \textbf{Conservación de A (número másico):}
+    \begin{gather}
+        A + 1 = 2 \cdot 4 \implies A + 1 = 8 \implies A = 7
+    \end{gather}
+    \item \textbf{Conservación de Z (número atómico):}
+    \begin{gather}
+        Z + 1 = 2 \cdot 2 \implies Z + 1 = 4 \implies Z = 3
+    \end{gather}
+\end{itemize}
+El isótopo de Litio es, por tanto, ${}_{3}^{7}\text{Li}$.
+\begin{cajaresultado}
+    La primera reacción completada es: $\boldsymbol{{}_{3}^{7}\textbf{Li} + {}_{1}^{1}\textbf{H} \rightarrow 2{}_{2}^{4}\textbf{He}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Reacción ${}_{92}^{235}\text{U} + {}_{0}^{1}\text{n} \rightarrow {}_{38}^{95}\text{Sr} + {}_{Z}^{A}\text{Xe} + 2 \cdot {}_{0}^{1}\text{n}$}
+\begin{itemize}
+    \item \textbf{Conservación de A (número másico):}
+    \begin{gather}
+        235 + 1 = 95 + A + 2 \cdot 1 \implies 236 = 97 + A \implies A = 139
+    \end{gather}
+    \item \textbf{Conservación de Z (número atómico):}
+    \begin{gather}
+        92 + 0 = 38 + Z + 2 \cdot 0 \implies 92 = 38 + Z \implies Z = 54
+    \end{gather}
+\end{itemize}
+El isótopo de Xenón es, por tanto, ${}_{54}^{139}\text{Xe}$.
+\begin{cajaresultado}
+    La segunda reacción completada es: $\boldsymbol{{}_{92}^{235}\textbf{U} + {}_{0}^{1}\textbf{n} \rightarrow {}_{38}^{95}\textbf{Sr} + {}_{54}^{139}\textbf{Xe} + 2 \cdot {}_{0}^{1}\textbf{n}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando las leyes de conservación del número másico y del número atómico (leyes de Soddy-Fajans), se han determinado los nucleidos que faltaban en las reacciones. La primera reacción es una fusión nuclear, mientras que la segunda es una reacción de fisión nuclear típica del Uranio-235.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Opción B}
+\label{sec:B_2010_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Bloque I - Problema}
+\label{subsec:B1_2010_sep_ext}
+
+\begin{cajaenunciado}
+Un satélite se sitúa en órbita circular alrededor de la Tierra. Si su velocidad orbital es de $7,6\cdot10^{3}\,\text{m/s}$, calcula:
+\begin{enumerate}
+    \item[a)] El radio de la órbita y el periodo orbital del satélite. (1,2 puntos)
+    \item[b)] La velocidad de escape del satélite desde ese punto. (0,8 puntos)
+\end{enumerate}
+Utilizar exclusivamente estos datos: aceleración de la gravedad en la superficie terrestre $g=9,8\,\text{m/s}^2$; radio de la Tierra $R=6,4\cdot10^{6}$ m.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad orbital ($v_{orb}$):} $v_{orb} = 7,6 \cdot 10^3 \, \text{m/s}$.
+    \item \textbf{Gravedad en superficie ($g$):} $g = 9,8 \, \text{m/s}^2$.
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6,4 \cdot 10^6 \, \text{m}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item a) Radio de la órbita ($r$) y periodo orbital ($T$).
+        \item b) Velocidad de escape desde la órbita ($v_e$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Satélite en Órbita} \vspace{0.5cm} \textit{Prompt para la imagen:} "La Tierra con radio $R_T$. Un satélite en una órbita circular de radio $r$ y velocidad $v_{orb}$. Dibujar el vector fuerza gravitatoria $\vec{F}_g$ apuntando al centro de la Tierra, que actúa como fuerza centrípeta. Desde el satélite, dibujar un vector $\vec{v}_e$ que representa la velocidad de escape necesaria para abandonar la órbita y seguir una trayectoria de escape abierta."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{esquemas/grav_satelite_escape.png}
+    }}
+    \caption{Esquema de la órbita del satélite y el concepto de velocidad de escape desde la órbita.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Dinámica Orbital}
+La fuerza de atracción gravitatoria proporciona la fuerza centrípeta necesaria para la órbita circular: $F_g = F_c$.
+$$ G \frac{M_T m}{r^2} = m \frac{v_{orb}^2}{r} $$
+El problema nos pide no usar $G$ ni $M_T$, sino $g$ y $R_T$. Debemos usar la relación $GM_T = g R_T^2$.
+El periodo se relaciona con el radio y la velocidad: $T = 2\pi r / v_{orb}$.
+\paragraph*{b) Velocidad de Escape}
+La velocidad de escape $v_e$ desde un punto a una distancia $r$ del centro de la Tierra es la velocidad necesaria para que la energía mecánica total sea cero.
+$$ \frac{1}{2} m v_e^2 - G\frac{M_T m}{r} = 0 $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Radio y Periodo}
+De la igualdad $F_g=F_c$ obtenemos:
+\begin{gather}
+    G \frac{M_T}{r} = v_{orb}^2 \implies r = \frac{GM_T}{v_{orb}^2}
+\end{gather}
+Sustituyendo $GM_T = g R_T^2$:
+\begin{gather}
+    r = \frac{g R_T^2}{v_{orb}^2}
+\end{gather}
+Una vez calculado $r$, el periodo es:
+\begin{gather}
+    T = \frac{2\pi r}{v_{orb}}
+\end{gather}
+\paragraph*{b) Velocidad de Escape}
+De la condición de energía nula, despejamos $v_e$:
+\begin{gather}
+    v_e = \sqrt{\frac{2GM_T}{r}}
+\end{gather}
+De la dinámica orbital, sabemos que $v_{orb} = \sqrt{\frac{GM_T}{r}}$. Comparando ambas expresiones:
+\begin{gather}
+    v_e = \sqrt{2} \cdot \sqrt{\frac{GM_T}{r}} = \sqrt{2} \cdot v_{orb}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Radio y Periodo}
+Primero calculamos el producto $g R_T^2$ que equivale a $GM_T$:
+\begin{gather}
+    g R_T^2 = (9,8) \cdot (6,4 \cdot 10^6)^2 \approx 4,014 \cdot 10^{14} \, \text{m}^3/\text{s}^2
+\end{gather}
+Ahora calculamos el radio de la órbita:
+\begin{gather}
+    r = \frac{4,014 \cdot 10^{14}}{(7,6 \cdot 10^3)^2} = \frac{4,014 \cdot 10^{14}}{5,776 \cdot 10^7} \approx 6,95 \cdot 10^6 \, \text{m}
+\end{gather}
+Calculamos el periodo:
+\begin{gather}
+    T = \frac{2\pi \cdot (6,95 \cdot 10^6 \, \text{m})}{7,6 \cdot 10^3 \, \text{m/s}} \approx 5745 \, \text{s} \approx 95,7 \, \text{min}
+\end{gather}
+\begin{cajaresultado}
+    El radio de la órbita es $\boldsymbol{r \approx 6,95 \cdot 10^6 \, \textbf{m}}$ y el periodo es $\boldsymbol{T \approx 5745 \, \textbf{s}}$.
+\end{cajaresultado}
+\paragraph*{b) Velocidad de Escape}
+\begin{gather}
+    v_e = \sqrt{2} \cdot v_{orb} = \sqrt{2} \cdot (7,6 \cdot 10^3 \, \text{m/s}) \approx 10748 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de escape desde esa órbita es $\boldsymbol{v_e \approx 10748 \, \textbf{m/s}}$ (o 10,75 km/s).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Utilizando la dinámica del movimiento circular y la relación $GM_T=gR_T^2$, se ha determinado que el satélite orbita a un radio de 6950 km, completando una vuelta cada 95,7 minutos. Desde esa altitud, la velocidad de escape es $\sqrt{2}$ veces la velocidad orbital, resultando en un valor de 10,75 km/s.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque II - Cuestión}
+\label{subsec:B2_2010_sep_ext}
+
+\begin{cajaenunciado}
+La ecuación de una onda es: $y(x,t)=0,02 \sin(10\pi(x-2t)+0,52)$ donde x se mide en metros y t en segundos. Calcula la amplitud, la longitud de onda, la frecuencia, la velocidad de propagación y la fase inicial de dicha onda.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+La ecuación de la onda proporcionada es:
+$$ y(x,t) = 0,02 \sin(10\pi(x-2t)+0,52) $$
+Para identificar los parámetros, es conveniente reordenar el argumento para que coincida con la forma estándar $y(x,t) = A \sin(kx - \omega t + \phi_0)$.
+\begin{itemize}
+    \item Ecuación reordenada: $y(x,t) = 0,02 \sin(10\pi x - 20\pi t + 0,52)$.
+    \item \textbf{Incógnitas:} Amplitud ($A$), longitud de onda ($\lambda$), frecuencia ($f$), velocidad de propagación ($v$) y fase inicial ($\phi_0$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Los parámetros de la onda se extraen por comparación directa de la ecuación dada con la forma general $y(x,t) = A \sin(kx - \omega t + \phi_0)$.
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} Es el coeficiente que multiplica a la función seno.
+    \item \textbf{Número de onda ($k$):} Es el coeficiente que multiplica a $x$. Se relaciona con la longitud de onda por $k = 2\pi/\lambda$.
+    \item \textbf{Frecuencia angular ($\omega$):} Es el coeficiente que multiplica a $t$. Se relaciona con la frecuencia por $\omega = 2\pi f$.
+    \item \textbf{Fase inicial ($\phi_0$):} Es el término constante en el argumento del seno.
+    \item \textbf{Velocidad de propagación ($v$):} Se calcula como $v = \omega/k$. El signo negativo entre $kx$ y $\omega t$ indica que la onda se propaga en el sentido positivo del eje X.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+Por comparación directa con $y(x,t) = 0,02 \sin(10\pi x - 20\pi t + 0,52)$:
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 0,02 \, \text{m}$.
+    \item \textbf{Número de onda ($k$):} $k = 10\pi \, \text{rad/m}$.
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = 20\pi \, \text{rad/s}$.
+    \item \textbf{Fase inicial ($\phi_0$):} $\phi_0 = 0,52 \, \text{rad}$.
+\end{itemize}
+A partir de estos valores, calculamos el resto:
+\begin{itemize}
+    \item \textbf{Longitud de onda ($\lambda$):}
+    \begin{gather}
+        k = \frac{2\pi}{\lambda} \implies \lambda = \frac{2\pi}{k} = \frac{2\pi}{10\pi} = 0,2 \, \text{m}
+    \end{gather}
+    \item \textbf{Frecuencia ($f$):}
+    \begin{gather}
+        \omega = 2\pi f \implies f = \frac{\omega}{2\pi} = \frac{20\pi}{2\pi} = 10 \, \text{Hz}
+    \end{gather}
+    \item \textbf{Velocidad de propagación ($v$):}
+    \begin{gather}
+        v = \frac{\omega}{k} = \frac{20\pi}{10\pi} = 2 \, \text{m/s}
+    \end{gather}
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+Los parámetros de la onda son:
+\begin{itemize}
+    \item Amplitud: $\boldsymbol{A = 0,02 \, \textbf{m}}$
+    \item Longitud de onda: $\boldsymbol{\lambda = 0,2 \, \textbf{m}}$
+    \item Frecuencia: $\boldsymbol{f = 10 \, \textbf{Hz}}$
+    \item Velocidad de propagación: $\boldsymbol{v = 2 \, \textbf{m/s}}$
+    \item Fase inicial: $\boldsymbol{\phi_0 = 0,52 \, \textbf{rad}}$
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La identificación de los términos de la ecuación de onda con sus correspondientes magnitudes físicas permite caracterizarla por completo. Se trata de una onda de 2 cm de amplitud que se propaga a 2 m/s en el sentido positivo del eje X, con una longitud de onda de 20 cm y una frecuencia de 10 Hz.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque III - Cuestión}
+\label{subsec:B3_2010_sep_ext}
+
+\begin{cajaenunciado}
+¿Por qué se dispersa la luz blanca al atravesar un prisma?. Explica brevemente este fenómeno.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Dispersión de la luz en un prisma} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un rayo de luz blanca incide sobre la cara izquierda de un prisma de vidrio. Al entrar en el prisma, el rayo se refracta y se descompone en sus colores constituyentes (el espectro visible: rojo, naranja, amarillo, verde, azul, añil, violeta). El rayo rojo es el que menos se desvía, y el violeta es el que más se desvía. Al salir por la cara derecha del prisma, los rayos de colores se vuelven a refractar, separándose aún más, y se proyectan sobre una pantalla mostrando el espectro."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{esquemas/optica_dispersion_prisma.png}
+    }}
+    \caption{Fenómeno de la dispersión cromática.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se denomina \textbf{dispersión cromática} y se explica porque el \textbf{índice de refracción ($n$)} de un medio material (como el vidrio del prisma) no es constante, sino que depende de la longitud de onda ($\lambda$) de la luz que lo atraviesa.
+\paragraph*{Explicación}
+\begin{enumerate}
+    \item \textbf{Luz blanca:} La luz blanca no es monocromática, sino una mezcla de todas las longitudes de onda del espectro visible. Cada longitud de onda corresponde a un color, desde el rojo (mayor $\lambda$, $\approx 700$ nm) hasta el violeta (menor $\lambda$, $\approx 400$ nm).
+    \item \textbf{Dependencia de n con $\lambda$:} En la mayoría de los materiales transparentes, el índice de refracción aumenta a medida que la longitud de onda disminuye. Es decir, $n_{violeta} > n_{rojo}$.
+    \item \textbf{Ley de Snell:} La refracción (el cambio de dirección de la luz al pasar de un medio a otro) se rige por la Ley de Snell: $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$. El ángulo de desviación depende del índice de refracción del medio.
+    \item \textbf{Fenómeno en el prisma:}
+    \begin{itemize}
+        \item Al entrar en el prisma, cada color de la luz blanca se encuentra con un índice de refracción ligeramente diferente.
+        \item Como el índice es mayor para el violeta, la luz violeta se desviará más de su trayectoria original que la luz roja, que tiene un índice menor.
+        \item Al salir del prisma, se produce una segunda refracción que acentúa aún más esta separación angular.
+        \item El resultado es que la luz blanca se descompone o "dispersa" en un abanico de colores, formando el espectro.
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La luz blanca se dispersa al atravesar un prisma porque el índice de refracción del vidrio depende de la longitud de onda de la luz. La luz violeta, de menor longitud de onda, tiene un índice de refracción mayor y se desvía más que la luz roja, de mayor longitud de onda. Este fenómeno, conocido como dispersión cromática, es el responsable de la formación de los arcoíris.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque IV - Cuestión}
+\label{subsec:B4_2010_sep_ext}
+
+\begin{cajaenunciado}
+Calcula el flujo de un campo magnético uniforme de 5 T a través de una espira cuadrada, de 1 metro de lado, cuyo vector superficie sea:
+\begin{enumerate}
+    \item[a)] Perpendicular al campo magnético.
+    \item[b)] Paralelo al campo magnético.
+    \item[c)] Formando un ángulo de $30^{\circ}$ con el campo magnético.
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo magnético uniforme ($\vec{B}$):} Módulo $B = 5 \, \text{T}$.
+    \item \textbf{Espira cuadrada:} Lado $L = 1 \, \text{m}$.
+    \item \textbf{Área de la espira ($S$):} $S = L^2 = (1 \, \text{m})^2 = 1 \, \text{m}^2$.
+    \item \textbf{Incógnita:} Flujo magnético ($\Phi_B$) para tres orientaciones diferentes.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.3\textwidth}{\centering \textbf{a) $\alpha=90^\circ$} \vspace{0.5cm} \textit{Prompt:} "Una espira cuadrada vista de perfil (como una línea). El vector superficie $\vec{S}$ sale perpendicular a ella. Un campo magnético $\vec{B}$ es paralelo a la espira. El ángulo $\alpha$ entre $\vec{B}$ y $\vec{S}$ es de $90^\circ$."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }} \hfill
+    \fbox{\parbox{0.3\textwidth}{\centering \textbf{b) $\alpha=0^\circ$} \vspace{0.5cm} \textit{Prompt:} "Una espira cuadrada vista de perfil. El vector superficie $\vec{S}$ sale perpendicular a ella. Un campo magnético $\vec{B}$ es perpendicular a la espira y paralelo a $\vec{S}$. El ángulo $\alpha$ entre $\vec{B}$ y $\vec{S}$ es de $0^\circ$."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }} \hfill
+    \fbox{\parbox{0.3\textwidth}{\centering \textbf{c) $\alpha=30^\circ$} \vspace{0.5cm} \textit{Prompt:} "Una espira cuadrada vista de perfil, ligeramente inclinada. El vector superficie $\vec{S}$ sale perpendicular a ella. Un campo magnético $\vec{B}$ forma un ángulo de $30^\circ$ con el vector $\vec{S}$."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Orientaciones de la espira respecto al campo magnético.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El \textbf{flujo magnético ($\Phi_B$)} a través de una superficie plana se define como el producto escalar del vector campo magnético ($\vec{B}$) y el vector superficie ($\vec{S}$). El vector superficie tiene un módulo igual al área de la superficie y una dirección perpendicular a la misma.
+$$ \Phi_B = \vec{B} \cdot \vec{S} = B \cdot S \cdot \cos(\alpha) $$
+donde $\alpha$ es el ángulo que forman el vector $\vec{B}$ y el vector $\vec{S}$.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{a) Vector superficie perpendicular al campo magnético}
+El ángulo entre $\vec{B}$ y $\vec{S}$ es $\alpha = 90^\circ$.
+\begin{gather}
+    \Phi_B = B \cdot S \cdot \cos(90^\circ) = B \cdot S \cdot 0 = 0 \, \text{Wb}
+\end{gather}
+\begin{cajaresultado}
+    El flujo es $\boldsymbol{\Phi_B = 0 \, \textbf{Wb}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Vector superficie paralelo al campo magnético}
+El ángulo entre $\vec{B}$ y $\vec{S}$ es $\alpha = 0^\circ$.
+\begin{gather}
+    \Phi_B = B \cdot S \cdot \cos(0^\circ) = (5 \, \text{T}) \cdot (1 \, \text{m}^2) \cdot 1 = 5 \, \text{Wb}
+\end{gather}
+\begin{cajaresultado}
+    El flujo es $\boldsymbol{\Phi_B = 5 \, \textbf{Wb}}$.
+\end{cajaresultado}
+
+\paragraph*{c) Vector superficie formando $30^\circ$ con el campo magnético}
+El ángulo entre $\vec{B}$ y $\vec{S}$ es $\alpha = 30^\circ$.
+\begin{gather}
+    \Phi_B = B \cdot S \cdot \cos(30^\circ) = (5 \, \text{T}) \cdot (1 \, \text{m}^2) \cdot \frac{\sqrt{3}}{2} \approx 4,33 \, \text{Wb}
+\end{gather}
+\begin{cajaresultado}
+    El flujo es $\boldsymbol{\Phi_B \approx 4,33 \, \textbf{Wb}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El flujo magnético a través de una espira depende críticamente de su orientación relativa al campo. Es máximo cuando el campo es perpendicular al plano de la espira (paralelo al vector superficie) y nulo cuando el campo es paralelo al plano de la espira (perpendicular al vector superficie). Para orientaciones intermedias, el flujo toma valores intermedios.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque V - Problema}
+\label{subsec:B5_2010_sep_ext}
+
+\begin{cajaenunciado}
+Una célula fotoeléctrica se ilumina con luz monocromática de 250 nm. Para anular la fotocorriente producida es necesario aplicar una diferencia de potencial de 2 voltios. Calcula:
+\begin{enumerate}
+    \item[a)] La longitud de onda máxima de la radiación incidente para que se produzca el efecto fotoeléctrico en el metal. (1 punto)
+    \item[b)] El trabajo de extracción del metal en electrón-volt. (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de Planck $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$; carga del electrón $e=1,6\cdot10^{-19}\,\text{C}$; velocidad de la luz $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda incidente ($\lambda$):} $\lambda = 250 \, \text{nm} = 2,5 \cdot 10^{-7} \, \text{m}$.
+    \item \textbf{Potencial de frenado ($V_f$):} $V_f = 2 \, \text{V}$.
+    \item \textbf{Constantes:} $h$, $e$, $c$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item a) Longitud de onda umbral o máxima ($\lambda_{max}$).
+        \item b) Trabajo de extracción ($W_0$) en eV.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una superficie metálica (cátodo). Fotones de luz incidente de longitud de onda $\lambda$ chocan contra ella. Se emiten electrones (fotoelectrones) con una energía cinética máxima $E_{c,max}$. Dibujar que la energía del fotón incidente se divide en dos partes: una parte para superar el 'Trabajo de Extracción' $W_0$ y el resto se convierte en $E_{c,max}$."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{esquemas/moderna_fotoelectrico.png}
+    }}
+    \caption{Balance energético en el efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe mediante la \textbf{ecuación del efecto fotoeléctrico de Einstein}:
+$$ E_{foton} = W_0 + E_{c,max} $$
+donde:
+\begin{itemize}
+    \item $E_{foton} = hc/\lambda$ es la energía del fotón incidente.
+    \item $W_0$ es el trabajo de extracción, energía mínima para arrancar un electrón del metal.
+    \item $E_{c,max}$ es la energía cinética máxima de los electrones emitidos.
+\end{itemize}
+El \textbf{potencial de frenado ($V_f$)} es la diferencia de potencial necesaria para detener a los electrones más energéticos. La energía cinética se iguala al trabajo eléctrico de frenado:
+$$ E_{c,max} = e \cdot V_f $$
+La \textbf{longitud de onda máxima ($\lambda_{max}$)} (o umbral) corresponde a la energía mínima del fotón que puede producir el efecto, es decir, cuando la energía cinética de los electrones es nula ($E_{c,max}=0$).
+$$ \frac{hc}{\lambda_{max}} = W_0 $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El problema se puede resolver en dos partes. Primero usamos los datos de la luz de 250 nm y el potencial de frenado para encontrar el trabajo de extracción $W_0$, que es una propiedad del metal.
+\begin{gather}
+    \frac{hc}{\lambda} = W_0 + e V_f \implies W_0 = \frac{hc}{\lambda} - e V_f
+\end{gather}
+Una vez que tenemos $W_0$, podemos calcular la longitud de onda máxima.
+\begin{gather}
+    \lambda_{max} = \frac{hc}{W_0}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, calculamos $W_0$ en Julios.
+Energía del fotón incidente:
+\begin{gather}
+    E_{foton} = \frac{(6,63 \cdot 10^{-34}) \cdot (3 \cdot 10^8)}{2,5 \cdot 10^{-7}} = 7,956 \cdot 10^{-19} \, \text{J}
+\end{gather}
+Energía cinética máxima:
+\begin{gather}
+    E_{c,max} = (1,6 \cdot 10^{-19} \, \text{C}) \cdot (2 \, \text{V}) = 3,2 \cdot 10^{-19} \, \text{J}
+\end{gather}
+Trabajo de extracción:
+\begin{gather}
+    W_0 = E_{foton} - E_{c,max} = (7,956 - 3,2) \cdot 10^{-19} = 4,756 \cdot 10^{-19} \, \text{J}
+\end{gather}
+\paragraph*{b) Trabajo de extracción en eV}
+Convertimos $W_0$ a electrón-voltios:
+\begin{gather}
+    W_0 (\text{eV}) = \frac{4,756 \cdot 10^{-19} \, \text{J}}{1,6 \cdot 10^{-19} \, \text{J/eV}} \approx 2,97 \, \text{eV}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo de extracción del metal es $\boldsymbol{W_0 \approx 2,97 \, \textbf{eV}}$.
+\end{cajaresultado}
+\paragraph*{a) Longitud de onda máxima}
+Ahora usamos el valor de $W_0$ para hallar $\lambda_{max}$:
+\begin{gather}
+    \lambda_{max} = \frac{hc}{W_0} = \frac{(6,63 \cdot 10^{-34}) \cdot (3 \cdot 10^8)}{4,756 \cdot 10^{-19}} \approx 4,18 \cdot 10^{-7} \, \text{m} = 418 \, \text{nm}
+\end{gather}
+\begin{cajaresultado}
+    La longitud de onda máxima para producir efecto fotoeléctrico es $\boldsymbol{\lambda_{max} \approx 418 \, \textbf{nm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir del potencial de frenado, se deduce la energía cinética máxima de los fotoelectrones. Aplicando la ecuación de Einstein, se determina el trabajo de extracción del metal, que resulta ser 2,97 eV. Esta propiedad intrínseca del material nos permite calcular la longitud de onda umbral, que es de 418 nm. Cualquier radiación con una longitud de onda superior a este valor no tendrá suficiente energía para arrancar electrones de este metal.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque VI - Cuestión}
+\label{subsec:B6_2010_sep_ext}
+
+\begin{cajaenunciado}
+Los periodos de semidesintegración de dos muestras radiactivas son $T_1$ y $T_2 = 2T_1$. Si ambas tienen inicialmente el mismo número de núcleos radiactivos, razona cuál de las dos muestras presentará mayor actividad inicial.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Muestra 1:} Periodo de semidesintegración $T_1$. Número inicial de núcleos $N_0$.
+    \item \textbf{Muestra 2:} Periodo de semidesintegración $T_2 = 2T_1$. Número inicial de núcleos $N_0$.
+    \item \textbf{Condición:} $N_{0,1} = N_{0,2} = N_0$.
+    \item \textbf{Incógnita:} Comparar las actividades iniciales $A_{0,1}$ y $A_{0,2}$.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{actividad ($A$)} de una muestra radiactiva es el número de desintegraciones por segundo y se define como:
+$$ A = \lambda N $$
+donde $N$ es el número de núcleos radiactivos y $\lambda$ es la \textbf{constante de desintegración}.
+La constante de desintegración se relaciona con el \textbf{periodo de semidesintegración ($T_{1/2}$)} mediante la expresión:
+$$ \lambda = \frac{\ln(2)}{T_{1/2}} $$
+Esta relación muestra que la constante de desintegración y el periodo de semidesintegración son inversamente proporcionales. Un periodo corto implica una constante de desintegración grande (el material se desintegra rápidamente), y viceversa.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Vamos a escribir las expresiones para las actividades iniciales de ambas muestras.
+\begin{itemize}
+    \item \textbf{Actividad inicial de la muestra 1 ($A_{0,1}$):}
+    \begin{gather}
+        A_{0,1} = \lambda_1 N_0 = \frac{\ln(2)}{T_1} N_0
+    \end{gather}
+    \item \textbf{Actividad inicial de la muestra 2 ($A_{0,2}$):}
+    \begin{gather}
+        A_{0,2} = \lambda_2 N_0 = \frac{\ln(2)}{T_2} N_0
+    \end{gather}
+\end{itemize}
+Ahora, comparamos ambas actividades. Para ello, podemos calcular su cociente:
+\begin{gather}
+    \frac{A_{0,1}}{A_{0,2}} = \frac{\frac{\ln(2)}{T_1} N_0}{\frac{\ln(2)}{T_2} N_0} = \frac{T_2}{T_1}
+\end{gather}
+Usamos la relación que nos da el enunciado, $T_2 = 2T_1$:
+\begin{gather}
+    \frac{A_{0,1}}{A_{0,2}} = \frac{2T_1}{T_1} = 2 \implies A_{0,1} = 2 A_{0,2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es puramente simbólico y conceptual. El razonamiento anterior es suficiente.
+\begin{cajaresultado}
+    La muestra 1, que tiene el periodo de semidesintegración más corto ($T_1$), presentará una actividad inicial mayor. Concretamente, su actividad inicial será el doble que la de la muestra 2.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La actividad radiactiva es inversamente proporcional al periodo de semidesintegración. A igual número de núcleos, la muestra con el periodo más corto es la que se desintegra más rápidamente, y por lo tanto, presenta una mayor actividad. En este caso, la muestra 1 es el doble de activa que la muestra 2.
+\end{cajaconclusion}
+
+\newpage

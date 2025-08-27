@@ -1,0 +1,873 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2002 - Convocatoria Extraordinaria}
+\label{chap:2002_sep_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Cuestiones de Campo Gravitatorio}
+\label{sec:grav_2002_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2002_sep_ext}
+
+\begin{cajaenunciado}
+Un astronauta que se encuentra dentro de un satélite en órbita alrededor de la Tierra a 250 km, observa que no pesa. ¿Cuál es la razón de este fenómeno? Calcula la intensidad del campo gravitatorio a esa altura. Comenta el resultado.
+\textbf{Datos:} $G=6,67\times10^{-11}\,\text{S.I.}$; $M_{Tierra}=5,98\times10^{24}\,\text{kg}$; $R_{Tierra}=6370\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Altura orbital ($h$):} $h = 250 \text{ km} = 2,5 \cdot 10^5 \text{ m}$
+    \item \textbf{Constante de Gravitación Universal ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\text{m}^2/\text{kg}^2$
+    \item \textbf{Masa de la Tierra ($M_T$):} $M_T = 5,98 \cdot 10^{24} \, \text{kg}$
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6370 \text{ km} = 6,37 \cdot 10^6 \text{ m}$
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Razón de la ingravidez aparente.
+            \item Intensidad del campo gravitatorio a la altura $h$ ($g'$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Astronauta en órbita} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Tierra con un satélite en una órbita circular. Dentro del satélite, dibujar un astronauta flotando. Tanto sobre el satélite como sobre el astronauta, dibujar un vector de fuerza gravitatoria $\vec{F}_g$ apuntando hacia el centro de la Tierra. Indicar que ambos, satélite y astronauta, están en 'caída libre' continua alrededor del planeta, lo que provoca la sensación de ingravidez."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{ingravidez_orbita.png}
+    }}
+    \caption{Ilustración del estado de ingravidez en órbita.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Razón de la ingravidez}
+La sensación de peso no es la fuerza de la gravedad en sí misma, sino la fuerza normal que una superficie (como el suelo) ejerce sobre nosotros para contrarrestar la gravedad. En órbita, tanto el satélite como el astronauta están siendo atraídos por la gravedad terrestre. De hecho, esta fuerza gravitatoria es la que actúa como fuerza centrípeta, manteniendo al conjunto en su órbita.
+El fenómeno de "no pesar" se debe a que tanto el astronauta como el satélite están en un estado de \textbf{caída libre permanente} alrededor de la Tierra. Como ambos "caen" con la misma aceleración, no hay contacto entre el astronauta y las paredes del satélite, y por lo tanto, no hay fuerza normal. Esta ausencia de fuerza normal es lo que se percibe como ingravidez.
+
+\paragraph*{Intensidad del campo gravitatorio}
+Se calcula usando la \textbf{Ley de Gravitación Universal}. La intensidad del campo, $g'$, a una distancia $r = R_T + h$ del centro de la Tierra es:
+$$g' = G \frac{M_T}{(R_T+h)^2}$$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La ecuación para calcular la intensidad del campo gravitatorio ya está en su forma final. No se requiere más desarrollo simbólico.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la intensidad del campo gravitatorio ($g'$)}
+Primero, calculamos el radio orbital total: $r = R_T + h = 6,37 \cdot 10^6 + 2,5 \cdot 10^5 = 6,62 \cdot 10^6 \text{ m}$.
+\begin{gather}
+    g' = (6,67 \cdot 10^{-11}) \frac{5,98 \cdot 10^{24}}{(6,62 \cdot 10^6)^2} \approx 9,09 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+La razón de la ingravidez es que tanto el satélite como el astronauta están en un estado de caída libre continua. La intensidad del campo gravitatorio a 250 km de altura es $\boldsymbol{g' \approx 9,09 \, \textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La sensación de ingravidez no se debe a la ausencia de gravedad. De hecho, a 250 km de altura, la gravedad es de $\mathbf{9,09 \, m/s^2}$, aproximadamente el 93\% de su valor en la superficie. La "ausencia de peso" es una sensación fisiológica debida a que no hay una fuerza normal de soporte, ya que el entorno del astronauta (el satélite) cae hacia la Tierra a la misma velocidad que él.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2002_sep_ext}
+
+\begin{cajaenunciado}
+La Tierra gira alrededor del Sol realizando una órbita aproximadamente circular. Si por cualquier causa, el Sol perdiera instantáneamente las tres cuartas partes de su masa, ¿continuaría la Tierra en órbita alrededor de éste? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica. Las magnitudes a considerar son:
+\begin{itemize}
+    \item \textbf{Masa inicial del Sol ($M_S$)}
+    \item \textbf{Masa final del Sol ($M_S'$):} $M_S' = M_S - \frac{3}{4}M_S = \frac{1}{4}M_S$
+    \item \textbf{Energía mecánica de la Tierra ($E_M$)}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Escape del Campo Gravitatorio} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos escenarios. A la izquierda, 'Antes': El Sol (grande) con masa $M_S$ y la Tierra en una órbita circular estable. A la derecha, 'Después': El Sol (mucho más pequeño) con masa $M_S/4$. La Tierra, en el mismo punto de la órbita anterior, ya no sigue una trayectoria cerrada, sino una trayectoria hiperbólica abierta, escapando del sistema solar. Indicar que la energía mecánica total ha pasado de ser negativa a ser positiva."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{escape_orbita.png}
+    }}
+    \caption{Comparación de la órbita antes y después del cambio de masa del Sol.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La condición para que un cuerpo permanezca en una órbita cerrada (elíptica o circular) alrededor de otro es que su \textbf{energía mecánica total ($E_M$)} sea negativa. Si la energía mecánica es cero o positiva, el cuerpo escapará del campo gravitatorio siguiendo una trayectoria parabólica o hiperbólica, respectivamente.
+La energía mecánica de un planeta en órbita es la suma de su energía cinética ($E_c$) y su energía potencial gravitatoria ($E_p$):
+$$E_M = E_c + E_p = \frac{1}{2}m_T v^2 - G \frac{M_S m_T}{r}$$
+Para una órbita circular, la fuerza gravitatoria es la fuerza centrípeta:
+$$G \frac{M_S m_T}{r^2} = m_T \frac{v^2}{r} \implies m_T v^2 = G \frac{M_S m_T}{r}$$
+De aquí se deduce que la energía cinética es $E_c = \frac{1}{2} m_T v^2 = G \frac{M_S m_T}{2r}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La energía mecánica inicial de la Tierra en su órbita circular es:
+$$E_{M, inicial} = E_c + E_p = G \frac{M_S m_T}{2r} - G \frac{M_S m_T}{r} = - G \frac{M_S m_T}{2r}$$
+Como $E_{M, inicial} < 0$, la órbita es estable.
+
+Instantáneamente, la masa del Sol cambia a $M_S' = M_S/4$. En ese instante, la Tierra conserva su posición ($r$) y su velocidad ($v$), por lo que su energía cinética no cambia. Sin embargo, la energía potencial gravitatoria cambia drásticamente porque depende de la masa del Sol. La nueva energía mecánica ($E_{M, final}$) es:
+$$E_{M, final} = E_{c, inicial} + E_{p, final} = \frac{1}{2}m_T v^2 - G \frac{M_S' m_T}{r}$$
+Sustituyendo la energía cinética por su valor original ($G \frac{M_S m_T}{2r}$) y la nueva masa del Sol:
+$$E_{M, final} = G \frac{M_S m_T}{2r} - G \frac{(M_S/4) m_T}{r} = G \frac{M_S m_T}{r} \left(\frac{1}{2} - \frac{1}{4}\right) = G \frac{M_S m_T}{4r}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El resultado es simbólico. Hemos encontrado que la energía mecánica final es:
+$$E_{M, final} = + G \frac{M_S m_T}{4r}$$
+Como $G, M_S, m_T$ y $r$ son todas cantidades positivas, la energía mecánica final es $E_{M, final} > 0$.
+\begin{cajaresultado}
+No, la Tierra no continuaría en órbita. Su energía mecánica total se volvería positiva, lo que significa que escaparía del campo gravitatorio del Sol siguiendo una trayectoria hiperbólica.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Una reducción tan drástica de la masa del Sol haría que la atracción gravitatoria fuese insuficiente para mantener a la Tierra en una órbita cerrada. La energía cinética que la Tierra posee, adecuada para su órbita original, sería excesiva para la nueva y débil atracción gravitatoria. Como resultado, la energía mecánica total del sistema Tierra-Sol se tornaría positiva, y la Tierra abandonaría el sistema solar.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Cuestiones de Ondas}
+\label{sec:ondas_2002_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2002_sep_ext}
+
+\begin{cajaenunciado}
+De una onda armónica se conoce la pulsación $\omega=100\pi\,\text{s}^{-1}$ y el número de ondas $k=50\pi\,\text{m}^{-1}$. Determina la velocidad, la frecuencia y el periodo de la onda.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Pulsación o frecuencia angular ($\omega$):} $\omega = 100\pi \, \text{rad/s}$
+    \item \textbf{Número de onda ($k$):} $k = 50\pi \, \text{rad/m}$
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Velocidad de propagación ($v$).
+            \item Frecuencia ($f$).
+            \item Periodo ($T$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema, ya que se basa en la definición de las magnitudes de una onda.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las magnitudes que describen una onda armónica están relacionadas entre sí.
+\begin{itemize}
+    \item La \textbf{frecuencia angular ($\omega$)} se relaciona con la \textbf{frecuencia ($f$)} y el \textbf{periodo ($T$)}:
+    $$\omega = 2\pi f = \frac{2\pi}{T}$$
+    \item El \textbf{número de onda ($k$)} se relaciona con la \textbf{longitud de onda ($\lambda$)}:
+    $$k = \frac{2\pi}{\lambda}$$
+    \item La \textbf{velocidad de propagación ($v$)} relaciona la longitud de onda y el periodo (o la frecuencia), y también la frecuencia angular y el número de onda:
+    $$v = \frac{\lambda}{T} = \lambda f = \frac{\omega}{k}$$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Las ecuaciones ya están en su forma final y listas para ser usadas.
+\paragraph*{Frecuencia ($f$)}
+$$f = \frac{\omega}{2\pi}$$
+\paragraph*{Periodo ($T$)}
+$$T = \frac{1}{f} = \frac{2\pi}{\omega}$$
+\paragraph*{Velocidad de propagación ($v$)}
+$$v = \frac{\omega}{k}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la Frecuencia}
+\begin{gather}
+    f = \frac{100\pi \, \text{rad/s}}{2\pi \, \text{rad}} = 50 \, \text{Hz}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia de la onda es $\boldsymbol{f = 50 \, \textbf{Hz}}$.
+\end{cajaresultado}
+
+\paragraph*{Cálculo del Periodo}
+\begin{gather}
+    T = \frac{1}{f} = \frac{1}{50 \, \text{Hz}} = 0,02 \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+    El periodo de la onda es $\boldsymbol{T = 0,02 \, \textbf{s}}$.
+\end{cajaresultado}
+
+\paragraph*{Cálculo de la Velocidad de Propagación}
+\begin{gather}
+    v = \frac{100\pi \, \text{rad/s}}{50\pi \, \text{rad/m}} = 2 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de propagación de la onda es $\boldsymbol{v = 2 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de las definiciones de frecuencia angular y número de onda, se han deducido las características fundamentales de la onda. Tiene una frecuencia de $\mathbf{50 \, Hz}$, lo que corresponde a un periodo de $\mathbf{0,02 \, s}$, y se propaga a una velocidad de $\mathbf{2 \, m/s}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2002_sep_ext}
+
+\begin{cajaenunciado}
+El extremo de una cuerda, situada sobre el eje OX, oscila con un movimiento armónico simple con una amplitud de 5 cm y una frecuencia de 34 Hz. Esta oscilación se propaga, en el sentido positivo del eje OX, con una velocidad de $51\,\text{m/s}$. Si en el instante inicial la elongación del extremo de la cuerda es nula, escribe la ecuación que representa la onda generada en la cuerda. ¿Cuál será la elongación del extremo de la cuerda en el instante $t=0,1$ s?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 5 \text{ cm} = 0,05 \text{ m}$
+    \item \textbf{Frecuencia ($f$):} $f = 34 \, \text{Hz}$
+    \item \textbf{Velocidad de propagación ($v$):} $v = 51 \, \text{m/s}$
+    \item \textbf{Sentido de propagación:} Sentido positivo del eje OX.
+    \item \textbf{Condición inicial:} Para $x=0$ y $t=0$, la elongación es nula, $y(0,0)=0$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Ecuación de la onda $y(x,t)$.
+            \item Elongación en $x=0$ para $t=0,1 \, \text{s}$.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Onda en una cuerda} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una cuerda tensa a lo largo del eje X. El extremo izquierdo (x=0) está siendo movido hacia arriba y hacia abajo por un oscilador. Dibujar una onda sinusoidal propagándose hacia la derecha a lo largo de la cuerda. Etiquetar la amplitud A como la máxima elongación vertical. Etiquetar la longitud de onda $\lambda$ como la distancia entre dos crestas consecutivas. Indicar la velocidad de propagación $v$ con una flecha hacia la derecha."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_cuerda.png}
+    }}
+    \caption{Generación y propagación de una onda en una cuerda.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación general de una onda armónica que se propaga en el sentido positivo del eje OX es:
+$$y(x,t) = A \sin(kx - \omega t + \phi_0)$$
+donde $\phi_0$ es la fase inicial. Necesitamos determinar los parámetros $A, k, \omega$ y $\phi_0$.
+\begin{itemize}
+    \item $A$ se da directamente.
+    \item $\omega$ se calcula a partir de la frecuencia: $\omega = 2\pi f$.
+    \item $k$ se calcula a partir de la velocidad y la frecuencia angular: $v = \omega/k \implies k = \omega/v$.
+    \item $\phi_0$ se determina a partir de las condiciones iniciales.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Cálculo de los parámetros de la onda}
+$$\omega = 2\pi f$$
+$$k = \frac{2\pi f}{v}$$
+La condición inicial $y(0,0)=0$ implica:
+$$y(0,0) = A \sin(k\cdot 0 - \omega \cdot 0 + \phi_0) = A \sin(\phi_0) = 0$$
+Esto se cumple si $\sin(\phi_0)=0$, lo que significa que $\phi_0$ puede ser $0$ o $\pi$. La elección entre ambos depende de la velocidad inicial del extremo de la cuerda, pero como no se especifica, la solución más simple es tomar $\phi_0=0$.
+
+\paragraph*{Cálculo de la elongación}
+La elongación en el extremo ($x=0$) en un instante $t$ es:
+$$y(0,t) = A \sin(-\omega t) = -A \sin(\omega t)$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Parámetros de la onda}
+\begin{gather}
+    \omega = 2\pi \cdot 34 = 68\pi \, \text{rad/s} \\
+    k = \frac{68\pi \, \text{rad/s}}{51 \, \text{m/s}} = \frac{4}{3}\pi \, \text{rad/m}
+\end{gather}
+Tomando $\phi_0=0$, la ecuación de la onda es:
+$$y(x,t) = 0,05 \sin\left(\frac{4\pi}{3}x - 68\pi t\right)$$
+\begin{cajaresultado}
+    La ecuación de la onda es $\boldsymbol{y(x,t) = 0,05 \sin\left(\frac{4\pi}{3}x - 68\pi t\right)}$ (en unidades del SI).
+\end{cajaresultado}
+
+\paragraph*{Elongación en $t=0,1$ s}
+\begin{gather}
+    y(0, 0.1) = -0,05 \sin(68\pi \cdot 0,1) = -0,05 \sin(6,8\pi)
+\end{gather}
+Para calcular el seno, recordemos que $\sin(x) = \sin(x - 2n\pi)$. $6,8\pi = 6\pi + 0,8\pi$.
+$$y(0, 0.1) = -0,05 \sin(0,8\pi) \approx -0,05 \cdot (0,5878) \approx -0,0294 \, \text{m}$$
+\begin{cajaresultado}
+    La elongación del extremo de la cuerda en $t=0,1$ s es $\boldsymbol{y \approx -2,94 \, \textbf{cm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se ha construido la ecuación de la onda a partir de sus parámetros fundamentales, resultando en $\mathbf{y(x,t) = 0,05 \sin(4\pi/3 x - 68\pi t)}$. La evaluación de esta ecuación para el punto de origen ($x=0$) en el instante $t=0,1$ s muestra que el extremo de la cuerda tiene una elongación de $\mathbf{-2,94 \, cm}$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Problemas de Óptica}
+\label{sec:optica_2002_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2002_sep_ext}
+
+\begin{cajaenunciado}
+Se desea diseñar un espejo esférico que forme una imagen real, invertida y que mida el doble que los objetos que se sitúen a 50 cm del espejo. Se pide determinar:
+\begin{enumerate}
+    \item[1.] Tipo de curvatura del espejo. Justificar la respuesta. (0,7 puntos)
+    \item[2.] Radio de curvatura del espejo. (1,3 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de imagen:} Real, invertida.
+    \item \textbf{Aumento lateral ($A_L$):} La imagen es invertida ($A_L < 0$) y mide el doble que el objeto ($|A_L|=2$). Por tanto, $A_L = -2$.
+    \item \textbf{Posición del objeto ($s$):} El objeto es real, por lo que se sitúa a la izquierda del espejo. Según el convenio de signos DIN, $s = -50 \, \text{cm}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Tipo de espejo (cóncavo o convexo).
+            \item Radio de curvatura ($R$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Formación de imagen en espejo cóncavo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar el eje óptico horizontal. A la derecha, un arco de circunferencia representando un espejo cóncavo. Marcar su vértice V, su foco F y su centro de curvatura C a la izquierda del vértice. Colocar un objeto (una flecha vertical hacia arriba) entre C y F. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje que se refleja pasando por el foco F. 2) Un rayo que pasa por el foco F y se refleja paralelo al eje. El punto donde se cruzan los rayos reflejados forma la punta de la imagen, que será real, invertida y más grande que el objeto."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_concavo_aumentado.png}
+    }}
+    \caption{Trazado de rayos para un espejo cóncavo que produce una imagen real y aumentada.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve utilizando las ecuaciones de los espejos esféricos.
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss (ecuación fundamental del espejo):}
+    $$\frac{1}{s'} + \frac{1}{s} = \frac{1}{f}$$
+    donde $s$ es la posición del objeto, $s'$ es la posición de la imagen y $f$ es la distancia focal.
+    \item \textbf{Ecuación del aumento lateral ($A_L$):}
+    $$A_L = \frac{y'}{y} = -\frac{s'}{s}$$
+    donde $y$ e $y'$ son los tamaños del objeto y la imagen, respectivamente.
+    \item \textbf{Relación entre distancia focal y radio de curvatura ($R$):}
+    $$f = \frac{R}{2}$$
+\end{itemize}
+\textbf{Convenio de signos (DIN):}
+\begin{itemize}
+    \item Distancias a la izquierda del vértice son negativas. Distancias a la derecha son positivas.
+    \item Espejo cóncavo: $R < 0$ y $f < 0$.
+    \item Espejo convexo: $R > 0$ y $f > 0$.
+    \item Imagen real: $s' < 0$. Imagen virtual: $s' > 0$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1) Tipo de espejo}
+Los espejos convexos siempre forman imágenes virtuales, derechas y de menor tamaño. Como se nos pide una imagen real e invertida, el espejo debe ser necesariamente \textbf{cóncavo}.
+Podemos confirmarlo matemáticamente. Sabemos que $A_L = -2$ y $s = -50$ cm.
+$$A_L = -\frac{s'}{s} \implies -2 = -\frac{s'}{-50} \implies s' = -100 \, \text{cm}$$
+Como $s' < 0$, la imagen es real, lo que es consistente con un espejo cóncavo.
+
+\paragraph*{2) Radio de curvatura ($R$)}
+Usamos la ecuación de Gauss para encontrar la distancia focal $f$:
+$$\frac{1}{f} = \frac{1}{s'} + \frac{1}{s}$$
+Una vez obtenida $f$, calculamos el radio:
+$$R = 2f$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la distancia focal}
+Ya hemos calculado $s' = -100$ cm.
+\begin{gather}
+    \frac{1}{f} = \frac{1}{-100} + \frac{1}{-50} = \frac{-1 - 2}{100} = -\frac{3}{100} \\
+    f = -\frac{100}{3} \approx -33,33 \, \text{cm}
+\end{gather}
+Como $f < 0$, se confirma que el espejo es cóncavo.
+
+\paragraph*{Cálculo del radio de curvatura}
+\begin{gather}
+    R = 2f = 2 \cdot \left(-\frac{100}{3}\right) = -\frac{200}{3} \approx -66,67 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    1. El espejo debe ser \textbf{cóncavo}, ya que es el único tipo que puede formar imágenes reales.
+    2. El radio de curvatura del espejo es $\boldsymbol{R \approx -66,67 \, \textbf{cm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para cumplir con los requisitos de formar una imagen real, invertida y aumentada al doble, se necesita un espejo cóncavo con una distancia focal de $\mathbf{-33,33 \, cm}$, lo que corresponde a un radio de curvatura de $\mathbf{-66,67 \, cm}$. El objeto debe situarse a 50 cm del espejo, es decir, entre el centro de curvatura y el foco.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2002_sep_ext}
+
+\begin{cajaenunciado}
+Considera un espejo esférico cóncavo de radio $R=20$ cm. Obtén analítica y gráficamente la posición y el tamaño de la imagen de un objeto real cuando éste se sitúa a las distancias 5 cm, 20 cm, y 30 cm del vértice del espejo.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de espejo:} Cóncavo.
+    \item \textbf{Radio de curvatura ($R$):} $R = -20 \, \text{cm}$ (negativo por ser cóncavo).
+    \item \textbf{Distancia focal ($f$):} $f = R/2 = -10 \, \text{cm}$.
+    \item \textbf{Posiciones del objeto ($s$):}
+        \begin{itemize}
+            \item Caso 1: $s_1 = -5 \, \text{cm}$ (objeto entre el foco y el vértice).
+            \item Caso 2: $s_2 = -20 \, \text{cm}$ (objeto en el centro de curvatura).
+            \item Caso 3: $s_3 = -30 \, \text{cm}$ (objeto a la izquierda del centro de curvatura).
+        \end{itemize}
+    \item \textbf{Incógnitas:} Posición ($s'$) y aumento ($A_L$) para cada caso, analítica y gráficamente.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.3\textwidth}{\centering \textbf{Caso 1: $s=-5$ cm} \vspace{0.5cm} \textit{Prompt:} "Espejo cóncavo con F a -10cm y C a -20cm. Objeto a -5cm. Rayo paralelo se refleja por F. Rayo hacia F se refleja paralelo. Las prolongaciones de los rayos reflejados se cortan detrás del espejo, formando una imagen virtual, derecha y mayor."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }} \hfill
+    \fbox{\parbox{0.3\textwidth}{\centering \textbf{Caso 2: $s=-20$ cm} \vspace{0.5cm} \textit{Prompt:} "Espejo cóncavo con F a -10cm y C a -20cm. Objeto en C. Rayo paralelo se refleja por F. Rayo que pasa por F se refleja paralelo. Los rayos se cruzan en C, formando una imagen real, invertida y de igual tamaño."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }} \hfill
+    \fbox{\parbox{0.3\textwidth}{\centering \textbf{Caso 3: $s=-30$ cm} \vspace{0.5cm} \textit{Prompt:} "Espejo cóncavo con F a -10cm y C a -20cm. Objeto a -30cm. Rayo paralelo se refleja por F. Rayo que pasa por F se refleja paralelo. Los rayos se cruzan entre C y F, formando una imagen real, invertida y menor."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Trazado de rayos para las tres posiciones del objeto.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utilizan la ecuación de Gauss para espejos y la fórmula del aumento lateral, ya descritas en la Opción A de este mismo bloque.
+$$\frac{1}{s'} + \frac{1}{s} = \frac{1}{f} \quad ; \quad A_L = -\frac{s'}{s}$$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Para cada caso, despejamos $s'$ de la ecuación de Gauss:
+$$\frac{1}{s'} = \frac{1}{f} - \frac{1}{s} \implies s' = \left(\frac{1}{f} - \frac{1}{s}\right)^{-1} = \frac{s \cdot f}{s - f}$$
+Luego, calculamos el aumento $A_L$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Caso 1: Objeto en $s_1 = -5$ cm}
+\begin{gather}
+    s_1' = \frac{(-5) \cdot (-10)}{(-5) - (-10)} = \frac{50}{5} = +10 \, \text{cm} \\
+    A_{L1} = -\frac{+10}{-5} = +2
+\end{gather}
+\begin{cajaresultado}
+    Para $s_1=-5$ cm: Imagen en $\boldsymbol{s_1'=+10}$ \textbf{cm}. Es \textbf{virtual}, \textbf{derecha} y de \textbf{doble tamaño}.
+\end{cajaresultado}
+
+\paragraph*{Caso 2: Objeto en $s_2 = -20$ cm}
+\begin{gather}
+    s_2' = \frac{(-20) \cdot (-10)}{(-20) - (-10)} = \frac{200}{-10} = -20 \, \text{cm} \\
+    A_{L2} = -\frac{-20}{-20} = -1
+\end{gather}
+\begin{cajaresultado}
+    Para $s_2=-20$ cm: Imagen en $\boldsymbol{s_2'=-20}$ \textbf{cm}. Es \textbf{real}, \textbf{invertida} y de \textbf{igual tamaño}.
+\end{cajaresultado}
+
+\paragraph*{Caso 3: Objeto en $s_3 = -30$ cm}
+\begin{gather}
+    s_3' = \frac{(-30) \cdot (-10)}{(-30) - (-10)} = \frac{300}{-20} = -15 \, \text{cm} \\
+    A_{L3} = -\frac{-15}{-30} = -0,5
+\end{gather}
+\begin{cajaresultado}
+    Para $s_3=-30$ cm: Imagen en $\boldsymbol{s_3'=-15}$ \textbf{cm}. Es \textbf{real}, \textbf{invertida} y de \textbf{la mitad de tamaño}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se ha demostrado analítica y gráficamente cómo la posición de un objeto frente a un espejo cóncavo determina la naturaleza, posición y tamaño de la imagen. Al colocar el objeto entre el foco y el vértice se obtiene una imagen virtual y aumentada (lupa). Al colocarlo en el centro de curvatura, la imagen es idéntica pero invertida. Al alejarlo más allá del centro, la imagen se acerca al foco y disminuye de tamaño.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Cuestiones de Electromagnetismo}
+\label{sec:em_2002_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2002_sep_ext}
+
+\begin{cajaenunciado}
+Considera dos espiras A y B como las que se muestran en la figura. Si por la espira A pasa una corriente de intensidad I constante, ¿se inducirá corriente en la espira B? ¿Y si la intensidad de la espira A la hacemos variar con el tiempo? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre inducción electromagnética.
+\begin{itemize}
+    \item \textbf{Espira A (inductora):} Circula una corriente $I_A$.
+    \item \textbf{Espira B (inducida):} Se analiza si aparece una corriente $I_B$.
+    \item \textbf{Caso 1:} $I_A$ es constante.
+    \item \textbf{Caso 2:} $I_A$ varía con el tiempo ($I_A(t)$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Inducción entre espiras} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos espiras circulares concéntricas y coplanares. La espira interior es A y la exterior es B. Dibujar una corriente $I_A$ circulando en sentido antihorario en la espira A. Usando la regla de la mano derecha, dibujar las líneas del campo magnético $\vec{B}_A$ que crea: saliendo del papel en el interior de A y entrando en el papel en el exterior. Mostrar que este campo atraviesa la superficie de la espira B, creando un flujo magnético."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{induccion_espiras.png}
+    }}
+    \caption{Campo magnético creado por la espira A que atraviesa la espira B.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se explica por la \textbf{Ley de Faraday-Lenz}. Se induce una corriente en una espira (B) si y solo si el \textbf{flujo magnético ($\Phi_B$)} que la atraviesa cambia con el tiempo.
+$$\varepsilon_B = -\frac{d\Phi_B}{dt}$$
+Una corriente inducida $I_B$ aparece si la fuerza electromotriz inducida $\varepsilon_B$ es distinta de cero.
+El flujo a través de la espira B es causado por el campo magnético $\vec{B}_A$ creado por la corriente en la espira A. La intensidad de este campo es directamente proporcional a la corriente que lo crea, $B_A \propto I_A$. Por lo tanto, el flujo a través de B también es proporcional a la corriente en A: $\Phi_B \propto I_A$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Analizamos la variación del flujo en cada caso.
+\paragraph*{Caso 1: $I_A$ es constante}
+Si $I_A$ es constante, el campo magnético $B_A$ que crea es también constante en el tiempo. Como las espiras no se mueven, el flujo magnético $\Phi_B$ a través de la espira B es constante.
+$$\frac{d\Phi_B}{dt} = 0$$
+Por lo tanto, $\varepsilon_B = 0$ y no se induce corriente en B.
+
+\paragraph*{Caso 2: $I_A$ varía con el tiempo}
+Si $I_A(t)$ varía, el campo magnético $B_A(t)$ también varía. En consecuencia, el flujo magnético $\Phi_B(t)$ que atraviesa la espira B varía con el tiempo.
+$$\frac{d\Phi_B}{dt} \neq 0$$
+Por lo tanto, $\varepsilon_B \neq 0$ y sí se induce una corriente en la espira B.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+\begin{itemize}
+    \item Si la corriente en A es \textbf{constante}, el flujo en B no varía y \textbf{no se induce corriente}.
+    \item Si la corriente en A \textbf{varía con el tiempo}, el flujo en B también varía y \textbf{sí se induce corriente}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Este es el principio de funcionamiento de los transformadores. Una corriente variable en un bobinado primario crea un flujo magnético variable que induce una corriente en un bobinado secundario. Una corriente continua y constante no puede inducir corriente en un circuito secundario estático. La clave de la inducción electromagnética es siempre la \textbf{variación} del flujo magnético.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2002_sep_ext}
+
+\begin{cajaenunciado}
+Un electrón se encuentra situado en el seno de un campo magnético uniforme B. Si se comunica al electrón una velocidad inicial, determina cuál es la trayectoria que sigue el electrón cuando:
+\begin{enumerate}
+    \item[1.] La velocidad inicial es perpendicular al campo magnético. (0,8 puntos)
+    \item[2.] La velocidad inicial es paralela al campo magnético. (0,7 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica. Las magnitudes a considerar son:
+\begin{itemize}
+    \item \textbf{Carga de la partícula:} Electrón ($q = -e$).
+    \item \textbf{Campo magnético ($\vec{B}$):} Uniforme.
+    \item \textbf{Velocidad inicial ($\vec{v}$)}.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{1. $\vec{v} \perp \vec{B}$} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una región con un campo magnético uniforme $\vec{B}$ entrando en el papel (cruces 'x'). Un electrón entra por la izquierda con un vector de velocidad horizontal $\vec{v}$. Usando la regla de la mano izquierda (y recordando que la carga es negativa), la fuerza de Lorentz $\vec{F}_m$ apunta inicialmente hacia abajo. Esta fuerza, siempre perpendicular a $\vec{v}$, actúa como fuerza centrípeta, haciendo que el electrón describa una trayectoria circular en el sentido de las agujas del reloj. Dibujar la trayectoria circular y el vector fuerza en varios puntos, siempre apuntando hacia el centro del círculo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{movimiento_circular_electron.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{2. $\vec{v} \parallel \vec{B}$} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una región con un campo magnético uniforme $\vec{B}$ apuntando hacia la derecha (líneas de campo paralelas). Un electrón entra con un vector de velocidad $\vec{v}$ también apuntando hacia la derecha. Mostrar que la fuerza de Lorentz es cero y que el electrón continúa su movimiento en línea recta sin ser afectado por el campo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{movimiento_paralelo_electron.png}
+    }}
+    \caption{Trayectorias del electrón en un campo magnético.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza que actúa sobre el electrón es la \textbf{Fuerza de Lorentz}:
+$$\vec{F}_m = q(\vec{v} \times \vec{B})$$
+El módulo de esta fuerza es $F_m = |q|vB\sin(\theta)$, donde $\theta$ es el ángulo entre $\vec{v}$ y $\vec{B}$. La dirección de la fuerza es perpendicular al plano formado por $\vec{v}$ y $\vec{B}$, y su sentido se obtiene con la regla de la mano izquierda (teniendo en cuenta que para una carga negativa, el sentido es opuesto al que indica la regla).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Velocidad perpendicular al campo ($\vec{v} \perp \vec{B}$)}
+En este caso, el ángulo $\theta = 90^\circ$, y $\sin(90^\circ) = 1$. El módulo de la fuerza es máximo: $F_m = evB$.
+La fuerza $\vec{F}_m$ es siempre perpendicular a $\vec{v}$. Una fuerza que es constantemente perpendicular a la velocidad no cambia el módulo de la velocidad (no realiza trabajo), pero sí cambia su dirección. Esta fuerza actúa como \textbf{fuerza centrípeta}, obligando a la partícula a describir un \textbf{Movimiento Circular Uniforme (MCU)}.
+$$F_m = F_c \implies evB = m_e \frac{v^2}{r}$$
+El radio de la trayectoria circular será $r = \frac{m_e v}{eB}$.
+
+\paragraph*{2. Velocidad paralela al campo ($\vec{v} \parallel \vec{B}$)}
+En este caso, el ángulo $\theta = 0^\circ$ (o $180^\circ$), y $\sin(0^\circ) = \sin(180^\circ) = 0$.
+El producto vectorial $\vec{v} \times \vec{B}$ es el vector nulo. Por lo tanto, la fuerza magnética es cero:
+$$\vec{F}_m = q(\vec{v} \times \vec{B}) = \vec{0}$$
+Al no actuar ninguna fuerza sobre el electrón (despreciando otras interacciones), por la Primera Ley de Newton, este continuará moviéndose con su velocidad inicial. La trayectoria será un \textbf{Movimiento Rectilíneo Uniforme (MRU)}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+\begin{enumerate}
+    \item Si la velocidad es perpendicular al campo, la trayectoria es una \textbf{circunferencia}, descrita con velocidad constante (MCU).
+    \item Si la velocidad es paralela al campo, no actúa fuerza magnética y la trayectoria es una \textbf{línea recta}, recorrida con velocidad constante (MRU).
+\end{enumerate}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La trayectoria de una partícula cargada en un campo magnético uniforme depende críticamente del ángulo entre su velocidad y el campo. Si es perpendicular, la fuerza de Lorentz actúa como fuerza centrípeta perfecta, resultando en un movimiento circular. Si es paralela, la fuerza es nula y el campo no afecta al movimiento. (Si el ángulo fuera oblicuo, la trayectoria sería una hélice, combinación de los dos movimientos anteriores).
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Cuestiones de Física Moderna}
+\label{sec:moderna_2002_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2002_sep_ext}
+
+\begin{cajaenunciado}
+¿Es cierto que el átomo de hidrógeno puede emitir energía en forma de radiación electromagnética de cualquier frecuencia? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una pregunta puramente conceptual sobre el modelo atómico y los espectros de emisión.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Niveles de Energía del Hidrógeno} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama de niveles de energía para el átomo de hidrógeno. Dibujar una serie de líneas horizontales que representen los niveles de energía cuantizados (n=1, n=2, n=3, ...). El nivel n=1 (estado fundamental) es el más bajo. La separación entre los niveles debe disminuir a medida que n aumenta. Dibujar varias flechas verticales hacia abajo que representen transiciones electrónicas desde un nivel superior a uno inferior (por ejemplo, de n=3 a n=2, de n=2 a n=1). Cada flecha debe tener asociada la emisión de un fotón, representado como una onda, con la etiqueta $E_{fotón} = hf = E_{superior} - E_{inferior}$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{niveles_energia_hidrogeno.png}
+    }}
+    \caption{Emisión de fotones por transiciones electrónicas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La respuesta se basa en los \textbf{Postulados de Bohr} para el átomo de hidrógeno, que son una piedra angular de la mecánica cuántica temprana.
+\begin{itemize}
+    \item \textbf{Primer Postulado (cuantización de las órbitas):} El electrón no puede orbitar al núcleo a cualquier distancia, sino solo en ciertas órbitas estables permitidas, cada una con un nivel de energía asociado y bien definido.
+    \item \textbf{Segundo Postulado (cuantización de la energía):} La energía del electrón en el átomo de hidrógeno está cuantizada, es decir, solo puede tomar valores discretos. La energía del nivel $n$ viene dada por:
+    $$E_n = -\frac{k_e^2 m_e e^4}{2\hbar^2} \frac{1}{n^2} \approx -\frac{13,6 \, \text{eV}}{n^2} \quad \text{con } n=1, 2, 3, ...$$
+    \item \textbf{Tercer Postulado (emisión y absorción):} Un átomo emite radiación (un fotón) solo cuando un electrón realiza una transición (un "salto") desde un nivel de energía superior ($E_i$) a uno inferior ($E_f$). La energía del fotón emitido es exactamente igual a la diferencia de energía entre los dos niveles:
+    $$E_{fotón} = hf = E_i - E_f$$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Dado que los niveles de energía $E_n$ solo pueden tomar valores discretos, la diferencia de energía entre dos niveles cualesquiera, $E_i - E_f$, también será un valor discreto y específico.
+$$hf = E_i - E_f = \left(-\frac{13,6}{n_i^2}\right) - \left(-\frac{13,6}{n_f^2}\right) = 13,6 \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right) \, \text{eV}$$
+Como la frecuencia $f$ de la radiación emitida es directamente proporcional a esta diferencia de energía ($f = \frac{\Delta E}{h}$), la frecuencia también está cuantizada. El átomo no puede emitir un fotón con una energía (y por tanto, una frecuencia) que no corresponda a la diferencia exacta entre dos de sus niveles de energía permitidos.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+No, no es cierto. El átomo de hidrógeno solo puede emitir radiación electromagnética de ciertas frecuencias discretas y específicas, que corresponden a las diferencias de energía entre sus niveles electrónicos permitidos.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La afirmación es falsa y contradice uno de los principios fundamentales de la mecánica cuántica: la cuantización de la energía. El espectro de emisión del hidrógeno no es un continuo de colores, sino una serie de líneas brillantes bien definidas (como las series de Lyman, Balmer, Paschen, etc.), cada una correspondiente a una transición electrónica particular. Este espectro de líneas discretas fue una de las evidencias experimentales clave que llevaron al desarrollo del modelo cuántico del átomo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2002_sep_ext}
+
+\begin{cajaenunciado}
+Concepto de isótopo y sus aplicaciones.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Pregunta teórica que requiere la definición de un concepto y la enumeración de sus aplicaciones.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Isótopos del Hidrógeno} \vspace{0.5cm} \textit{Prompt para la imagen:} "Tres diagramas de modelos atómicos uno al lado del otro. Cada uno tiene un núcleo y un electrón orbitando. Etiquetarlos como 'Protio (${}^1$H)', 'Deuterio (${}^2$H)' y 'Tritio (${}^3$H)'. En el núcleo del Protio, dibujar 1 protón (círculo rojo). En el del Deuterio, 1 protón y 1 neutrón (círculo azul). En el del Tritio, 1 protón y 2 neutrones. Indicar que todos tienen Z=1 (mismo elemento) pero diferente A (diferente número de neutrones)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{isotopos_hidrogeno.png}
+    }}
+    \caption{Representación de los isótopos como átomos con igual número de protones y diferente número de neutrones.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Concepto de Isótopo}
+Los \textbf{isótopos} son átomos de un mismo elemento químico, lo que significa que tienen el mismo \textbf{número atómico (Z)} (igual número de protones en el núcleo). Sin embargo, se diferencian en su \textbf{número másico (A)}, ya que tienen un número diferente de neutrones (N) en el núcleo.
+Dado que las propiedades químicas de un átomo dependen principalmente de su configuración electrónica, y esta a su vez depende del número de protones (Z), los isótopos de un elemento tienen propiedades químicas muy similares. Sus propiedades físicas, como la masa o la estabilidad nuclear, pueden ser muy diferentes.
+
+\paragraph*{Aplicaciones de los Isótopos}
+Las aplicaciones se basan a menudo en la propiedad de que algunos isótopos son inestables (radiactivos).
+\begin{itemize}
+    \item \textbf{Medicina:}
+    \begin{itemize}
+        \item \textit{Diagnóstico:} Isótopos como el Tecnecio-99m o el Yodo-131 se usan como trazadores. Se introducen en el cuerpo y su radiación permite obtener imágenes de órganos (gammagrafías).
+        \item \textit{Terapia:} Isótopos como el Cobalto-60 emiten radiación gamma de alta energía que se utiliza para destruir células cancerosas (radioterapia).
+    \end{itemize}
+    \item \textbf{Datación Arqueológica y Geológica:}
+    \begin{itemize}
+        \item El \textbf{Carbono-14} se utiliza para datar restos orgánicos (fósiles, madera, etc.) de hasta unos 50.000 años de antigüedad, basándose en su periodo de semidesintegración.
+        \item Isótopos de vida más larga, como el Uranio-238, se usan para datar rocas y determinar la edad de la Tierra.
+    \end{itemize}
+    \item \textbf{Generación de Energía:}
+    \begin{itemize}
+        \item El \textbf{Uranio-235} es el combustible principal en las centrales nucleares de fisión. Su capacidad para fisionarse al capturar un neutrón libera enormes cantidades de energía.
+    \end{itemize}
+    \item \textbf{Industria e Investigación:}
+    \begin{itemize}
+        \item \textit{Trazadores:} Se usan para estudiar procesos como el desgaste de motores o el curso de reacciones químicas.
+        \item \textit{Esterilización:} La radiación de isótopos como el Cobalto-60 se usa para esterilizar material médico y para la conservación de alimentos.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+No aplica, es una cuestión teórica.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica.
+\begin{cajaresultado}
+Los isótopos son átomos con el mismo número de protones y diferente número de neutrones. Sus aplicaciones son vastas, destacando su uso en medicina (diagnóstico y terapia), datación (Carbono-14), generación de energía (Uranio-235) e industria.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El concepto de isótopo es fundamental en la física y química nuclear. La existencia de isótopos, especialmente los radiactivos, ha abierto la puerta a tecnologías revolucionarias que han tenido un impacto profundo en prácticamente todos los campos de la ciencia y la sociedad.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Problemas de Física Nuclear}
+\label{sec:nuclear_2002_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2002_sep_ext}
+
+\begin{cajaenunciado}
+La erradicación parcial de la glándula tiroides en pacientes que sufren de hipertiroidismo se consigue gracias a un compuesto que contiene el nucleido radiactivo del iodo ${}^{131}\text{I}$. Este compuesto se inyecta en el cuerpo del paciente y se concentra en la tiroides destruyendo sus células. Determina cuántos gramos del nucleido ${}^{131}\text{I}$ deben ser inyectados en un paciente para conseguir una actividad de $3,7\times10^9\,\text{Bq}$ (desintegraciones/s). El tiempo de vida medio del ${}^{131}\text{I}$ es 8,04 días.
+\textbf{Dato:} $u=1,66\times10^{-27}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Nucleido:} Yodo-131 (${}^{131}\text{I}$). Su masa molar aproximada es $M \approx 131 \, \text{g/mol}$.
+    \item \textbf{Actividad deseada ($A$):} $A = 3,7 \cdot 10^9 \, \text{Bq} = 3,7 \cdot 10^9 \, \text{s}^{-1}$
+    \item \textbf{Tiempo de vida medio ($\tau$):} $\tau = 8,04 \text{ días} = 8,04 \cdot 24 \cdot 3600 \text{ s} \approx 6,946 \cdot 10^5 \text{ s}$
+    \item \textbf{Unidad de masa atómica ($u$):} $1 \, u = 1,66 \cdot 10^{-27} \, \text{kg}$
+    \item \textbf{Número de Avogadro ($N_A$):} $N_A \approx 6,022 \cdot 10^{23} \, \text{mol}^{-1}$
+    \item \textbf{Incógnita:} Masa en gramos del ${}^{131}\text{I}$ necesaria.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema de cálculo.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{actividad ($A$)} de una muestra radiactiva es el número de desintegraciones que ocurren por unidad de tiempo. Es directamente proporcional al número de núcleos radiactivos ($N$) presentes en la muestra y a la constante de desintegración ($\lambda$).
+$$A = \lambda N$$
+La \textbf{constante de desintegración ($\lambda$)} está inversamente relacionada con el \textbf{tiempo de vida medio ($\tau$)}:
+$$\lambda = \frac{1}{\tau}$$
+Una vez que calculemos el número de núcleos $N$ necesarios, podemos encontrar la masa correspondiente usando el número de Avogadro y la masa molar del isótopo.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Calcular la constante de desintegración ($\lambda$)}
+$$\lambda = \frac{1}{\tau}$$
+Es crucial que $\tau$ esté en segundos para que $\lambda$ esté en $\text{s}^{-1}$, consistente con las unidades de Bq.
+
+\paragraph*{2. Calcular el número de núcleos ($N$)}
+De la ley de la actividad, despejamos $N$:
+$$N = \frac{A}{\lambda} = A \cdot \tau$$
+
+\paragraph*{3. Calcular la masa ($m$)}
+La masa de la muestra se puede calcular como:
+$$m = N \cdot (\text{masa de un núcleo de }{}^{131}\text{I})$$
+La masa de un núcleo de ${}^{131}\text{I}$ es aproximadamente $131 \, u$.
+$$m = N \cdot 131 \cdot (1,66 \cdot 10^{-27} \, \text{kg})$$
+El resultado estará en kg, y lo convertiremos a gramos.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo del número de núcleos ($N$)}
+Primero, convertimos el tiempo de vida medio a segundos:
+$$\tau = 8,04 \text{ días} \times \frac{24 \text{ h}}{1 \text{ día}} \times \frac{3600 \text{ s}}{1 \text{ h}} = 694656 \, \text{s}$$
+Ahora, calculamos $N$:
+\begin{gather}
+    N = A \cdot \tau = (3,7 \cdot 10^9 \, \text{s}^{-1}) \cdot (694656 \, \text{s}) \approx 2,57 \cdot 10^{15} \, \text{núcleos}
+\end{gather}
+
+\paragraph*{Cálculo de la masa ($m$)}
+\begin{gather}
+    m = (2,57 \cdot 10^{15} \text{ núcleos}) \cdot (131 \, u/\text{núcleo}) \cdot (1,66 \cdot 10^{-27} \, \text{kg}/u) \\
+    m \approx 5,59 \cdot 10^{-10} \, \text{kg} = 5,59 \cdot 10^{-7} \, \text{g}
+\end{gather}
+\begin{cajaresultado}
+    Se deben inyectar aproximadamente $\boldsymbol{5,59 \cdot 10^{-7} \, \textbf{gramos}}$ (o 0,559 microgramos) de ${}^{131}\text{I}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La alta actividad radiactiva requerida se puede lograr con una cantidad de masa extremadamente pequeña. Para obtener una actividad de 3,7 GigaBecquerels, solo se necesita una masa de $\mathbf{0,559 \, \mu g}$ de Yodo-131. Esto demuestra la enorme cantidad de energía y actividad que puede estar contenida en cantidades minúsculas de material radiactivo, lo que lo hace eficaz para aplicaciones médicas como la radioterapia.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2002_sep_ext}
+
+\begin{cajaenunciado}
+Las masas atómicas del ${}^{14}\text{N}$ y del ${}^{15}\text{N}$ son 13,99922 u y 15,000109 u, respectivamente. Determina la energía de enlace de ambos, en eV. ¿Cuál es el más estable?
+\textbf{Datos:} Masas atómicas: neutrón: 1,008665 u; protón: 1,007276 u; velocidad de la luz, $c=3\times10^8\,\text{m/s}$; $1\,u=1,66\times10^{-27}\,\text{kg}$; $e=1,6\times10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de ${}^{14}\text{N}$:} $m_{14N} = 13,99922 \, \text{u}$
+    \item \textbf{Masa de ${}^{15}\text{N}$:} $m_{15N} = 15,000109 \, \text{u}$
+    \item \textbf{Masa del protón ($m_p$):} $m_p = 1,007276 \, \text{u}$
+    \item \textbf{Masa del neutrón ($m_n$):} $m_n = 1,008665 \, \text{u}$
+    \item \textbf{Conversiones:} $c=3\cdot10^8\,\text{m/s}$, $1\,u=1,66\cdot10^{-27}\,\text{kg}$, $1\,\text{eV} = 1,6\cdot10^{-19}\,\text{J}$.
+    \item \textbf{Incógnitas:} Energía de enlace ($E_e$) para cada isótopo y cuál es más estable.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema de cálculo.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{energía de enlace ($E_e$)} de un núcleo es la energía que se liberaría si sus nucleones constituyentes (protones y neutrones) se unieran para formarlo. Equivalentemente, es la energía que habría que suministrar al núcleo para descomponerlo en sus nucleones separados.
+Esta energía proviene del \textbf{defecto de masa ($\Delta m$)}, que es la diferencia entre la masa de los nucleones por separado y la masa del núcleo formado. La masa del núcleo es siempre ligeramente inferior.
+$$\Delta m = (Z \cdot m_p + N \cdot m_n) - m_{núcleo}$$
+La energía de enlace se calcula mediante la ecuación de equivalencia masa-energía de Einstein:
+$$E_e = \Delta m \cdot c^2$$
+La \textbf{estabilidad} de un núcleo no se compara con la energía de enlace total, sino con la \textbf{energía de enlace por nucleón} ($E_e/A$). Un mayor valor de energía de enlace por nucleón indica un núcleo más estable.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Para ${}^{14}\text{N}$ (Z=7, N=7, A=14)}
+\begin{gather}
+    \Delta m_{14N} = (7 \cdot m_p + 7 \cdot m_n) - m_{14N} \\
+    E_{e, 14N} = \Delta m_{14N} \cdot c^2
+\end{gather}
+\paragraph*{Para ${}^{15}\text{N}$ (Z=7, N=8, A=15)}
+\begin{gather}
+    \Delta m_{15N} = (7 \cdot m_p + 8 \cdot m_n) - m_{15N} \\
+    E_{e, 15N} = \Delta m_{15N} \cdot c^2
+\end{gather}
+La comparación de estabilidad se hará entre $\frac{E_{e, 14N}}{14}$ y $\frac{E_{e, 15N}}{15}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculos para ${}^{14}\text{N}$}
+\begin{gather}
+    \Delta m_{14N} = (7 \cdot 1,007276 + 7 \cdot 1,008665) - 13,99922 = (7,050932 + 7,060655) - 13,99922 \\
+    \Delta m_{14N} = 14,111587 - 13,99922 = 0,112367 \, \text{u} \\
+    E_{e, 14N} = 0,112367 \cdot (1,66\cdot10^{-27}) \cdot (3\cdot10^8)^2 \approx 1,678 \cdot 10^{-11} \, \text{J} \\
+    E_{e, 14N} (\text{eV}) = \frac{1,678 \cdot 10^{-11}}{1,6 \cdot 10^{-19}} \approx 1,049 \cdot 10^8 \, \text{eV} = 104,9 \, \text{MeV} \\
+    \frac{E_{e, 14N}}{A} = \frac{104,9 \, \text{MeV}}{14} \approx 7,49 \, \text{MeV/nucleón}
+\end{gather}
+\begin{cajaresultado}
+    La energía de enlace del ${}^{14}\text{N}$ es $\boldsymbol{\approx 1,049 \cdot 10^8 \, \textbf{eV}}$ (104,9 MeV).
+\end{cajaresultado}
+
+\paragraph*{Cálculos para ${}^{15}\text{N}$}
+\begin{gather}
+    \Delta m_{15N} = (7 \cdot 1,007276 + 8 \cdot 1,008665) - 15,000109 = (7,050932 + 8,06932) - 15,000109 \\
+    \Delta m_{15N} = 15,120252 - 15,000109 = 0,120143 \, \text{u} \\
+    E_{e, 15N} = 0,120143 \cdot (1,66\cdot10^{-27}) \cdot (3\cdot10^8)^2 \approx 1,793 \cdot 10^{-11} \, \text{J} \\
+    E_{e, 15N} (\text{eV}) = \frac{1,793 \cdot 10^{-11}}{1,6 \cdot 10^{-19}} \approx 1,121 \cdot 10^8 \, \text{eV} = 112,1 \, \text{MeV} \\
+    \frac{E_{e, 15N}}{A} = \frac{112,1 \, \text{MeV}}{15} \approx 7,47 \, \text{MeV/nucleón}
+\end{gather}
+\begin{cajaresultado}
+    La energía de enlace del ${}^{15}\text{N}$ es $\boldsymbol{\approx 1,121 \cdot 10^8 \, \textbf{eV}}$ (112,1 MeV).
+\end{cajaresultado}
+
+\paragraph*{Comparación de Estabilidad}
+Comparamos las energías de enlace por nucleón:
+$$7,49 \, \text{MeV/nucleón} \, ({}^{14}\text{N}) > 7,47 \, \text{MeV/nucleón} \, ({}^{15}\text{N})$$
+\begin{cajaresultado}
+    El isótopo más estable es el $\boldsymbol{{}^{14}\textbf{N}}$ porque tiene una mayor energía de enlace por nucleón.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aunque el núcleo de ${}^{15}\text{N}$ tiene una energía de enlace total mayor, el isótopo más estable es el ${}^{14}\text{N}$. La estabilidad nuclear viene determinada por la energía de enlace por nucleón, que es una medida de cuán fuertemente está unido cada componente del núcleo en promedio. El valor para el ${}^{14}\text{N}$ (7,49 MeV/nucleón) es ligeramente superior al del ${}^{15}\text{N}$ (7,47 MeV/nucleón), indicando su mayor estabilidad.
+\end{cajaconclusion}
+
+\newpage

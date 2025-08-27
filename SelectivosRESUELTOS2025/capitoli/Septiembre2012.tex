@@ -1,0 +1,929 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2012 - Convocatoria Extraordinaria}
+\label{chap:2012_sep}
+
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2012_sep}
+
+\subsection{Problema - OPCIÓN A}
+\label{subsec:IA_2012_sep}
+
+\begin{cajaenunciado}
+La estación espacial internacional gira alrededor de la Tierra siguiendo una órbita circular a una altura $h=340$ km sobre la superficie terrestre. Deduce la expresión teórica y calcula el valor numérico de:
+\begin{enumerate}
+    \item[a)] La velocidad de la estación espacial en su movimiento alrededor de la Tierra. ¿Cuántas órbitas completa al día? (1,2 puntos)
+    \item[b)] La aceleración de la gravedad a la altura a la que se encuentra la estación espacial. (0,8 puntos)
+\end{enumerate}
+\textbf{Datos:} Constante de gravitación universal $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$; radio de la Tierra $R_T=6400$ km; masa de la Tierra $M_T=6\cdot10^{24}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Altura de la órbita ($h$):} $340\,\text{km} = 3,4 \cdot 10^5\,\text{m}$.
+    \item \textbf{Constante de Gravitación Universal ($G$):} $6,67 \cdot 10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+    \item \textbf{Radio de la Tierra ($R_T$):} $6400\,\text{km} = 6,4 \cdot 10^6\,\text{m}$.
+    \item \textbf{Masa de la Tierra ($M_T$):} $6 \cdot 10^{24}\,\text{kg}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Velocidad orbital ($v_{orb}$).
+        \item Número de órbitas por día.
+        \item Aceleración de la gravedad a la altura $h$ ($g'$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Satélite en Órbita Circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Tierra (esfera azul y verde) con su radio $R_T$ indicado desde el centro. Una órbita circular alrededor de la Tierra a una altura $h$ sobre la superficie. Un satélite (la Estación Espacial Internacional) en la órbita. Dibujar el radio orbital total $r = R_T + h$. Sobre el satélite, dibujar un vector de fuerza gravitatoria $\vec{F}_g$ apuntando hacia el centro de la Tierra. Etiquetar esta fuerza también como la fuerza centrípeta $\vec{F}_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{orbita_iss.png}
+    }}
+    \caption{Modelo de la Estación Espacial Internacional en órbita.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para que un satélite describa una órbita circular, la fuerza de atracción gravitatoria que ejerce el planeta central debe actuar como la fuerza centrípeta que mantiene al satélite en su trayectoria.
+
+\paragraph*{a) Velocidad Orbital y Periodo}
+Igualamos la Ley de Gravitación Universal con la expresión de la fuerza centrípeta.
+$$ F_g = F_c \implies G\frac{M_T m_s}{r^2} = m_s\frac{v_{orb}^2}{r} $$
+donde $m_s$ es la masa del satélite y $r = R_T+h$ es el radio de la órbita.
+El periodo orbital ($T$) es el tiempo que tarda en completar una vuelta, y se relaciona con la velocidad por $v_{orb} = \frac{2\pi r}{T}$. El número de órbitas en un día se calcula dividiendo el número de segundos en un día por el periodo en segundos.
+
+\paragraph*{b) Aceleración de la Gravedad}
+La aceleración de la gravedad (o intensidad del campo gravitatorio) a una distancia $r$ del centro de la Tierra se calcula directamente con la Ley de Gravitación Universal.
+$$ g' = G\frac{M_T}{r^2} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Velocidad y Número de Órbitas}
+De la igualdad de fuerzas, despejamos la velocidad orbital:
+\begin{gather}
+    v_{orb} = \sqrt{\frac{G M_T}{r}} = \sqrt{\frac{G M_T}{R_T+h}}
+\end{gather}
+El periodo orbital es:
+\begin{gather}
+    T = \frac{2\pi r}{v_{orb}} = \frac{2\pi(R_T+h)}{\sqrt{\frac{G M_T}{R_T+h}}} = 2\pi\sqrt{\frac{(R_T+h)^3}{G M_T}}
+\end{gather}
+Y el número de órbitas en un día (86400 s) es:
+\begin{gather}
+    N_{\text{órbitas/día}} = \frac{86400\,\text{s}}{T}
+\end{gather}
+
+\paragraph*{b) Aceleración de la Gravedad}
+La ecuación ya está en su forma final:
+\begin{gather}
+    g' = \frac{G M_T}{(R_T+h)^2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero calculamos el radio orbital, $r$:
+$$ r = R_T+h = 6,4 \cdot 10^6\,\text{m} + 3,4 \cdot 10^5\,\text{m} = 6,74 \cdot 10^6\,\text{m} $$
+
+\paragraph*{a) Velocidad y Número de Órbitas}
+\begin{gather}
+    v_{orb} = \sqrt{\frac{(6,67\cdot10^{-11})(6\cdot10^{24})}{6,74 \cdot 10^6}} \approx 7705,7\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de la estación espacial es $\boldsymbol{v_{orb} \approx 7705,7\,\textbf{m/s}}$.
+\end{cajaresultado}
+Calculamos el periodo:
+\begin{gather}
+    T = \frac{2\pi (6,74 \cdot 10^6)}{7705,7} \approx 5493,5\,\text{s}
+\end{gather}
+Calculamos el número de órbitas por día:
+\begin{gather}
+    N_{\text{órbitas/día}} = \frac{86400}{5493,5} \approx 15,73\,\text{órbitas}
+\end{gather}
+\begin{cajaresultado}
+    La estación completa aproximadamente $\boldsymbol{15,73}$ órbitas al día.
+\end{cajaresultado}
+
+\paragraph*{b) Aceleración de la Gravedad}
+\begin{gather}
+    g' = \frac{(6,67\cdot10^{-11})(6\cdot10^{24})}{(6,74 \cdot 10^6)^2} \approx 8,81\,\text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+    La aceleración de la gravedad a esa altura es $\boldsymbol{g' \approx 8,81\,\textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La Estación Espacial Internacional viaja a una velocidad de unos 7706 m/s para mantenerse en su órbita baja. A esta velocidad, completa una vuelta a la Tierra en aproximadamente 91,5 minutos, lo que le permite dar casi 16 vueltas al planeta cada día. La aceleración de la gravedad a esa altitud es de 8,81 m/s², un valor solo un 10\% inferior al de la superficie, lo que demuestra que la sensación de ingravidez a bordo se debe al estado de caída libre constante y no a la ausencia de gravedad.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:IB_2012_sep}
+
+\begin{cajaenunciado}
+La velocidad de escape de un objeto desde la superficie de la Luna es de $2375\,\text{m/s}$. Calcula la velocidad de escape de dicho objeto desde la superficie de un planeta de radio 4 veces el de la Luna y masa 80 veces la de la Luna.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad de escape de la Luna ($v_{e,L}$):} $2375\,\text{m/s}$.
+    \item \textbf{Radio del planeta ($R_P$):} $R_P = 4 \cdot R_L$.
+    \item \textbf{Masa del planeta ($M_P$):} $M_P = 80 \cdot M_L$.
+    \item \textbf{Incógnita:} Velocidad de escape del planeta ($v_{e,P}$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Comparación de Velocidades de Escape} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos escenas una al lado de la otra. A la izquierda, la Luna, representada como una esfera pequeña de radio $R_L$. Un cohete despega de su superficie con una flecha etiquetada $v_{e,L}$. A la derecha, un planeta mucho más grande, de radio $R_P=4R_L$. Un cohete idéntico despega de su superficie con una flecha mucho más larga etiquetada $v_{e,P}$. El texto debe indicar que la velocidad de escape depende de la masa y el radio del astro."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{escape_comparacion.png}
+    }}
+    \caption{Concepto de velocidad de escape para dos cuerpos celestes diferentes.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La velocidad de escape es la velocidad mínima que debe tener un objeto en la superficie de un astro para escapar de su campo gravitatorio. Se calcula aplicando el principio de conservación de la energía mecánica. La energía mecánica total del objeto en el momento del lanzamiento (en la superficie) debe ser igual a la energía mecánica en el infinito, que es cero.
+$$ E_{m, \text{sup}} = E_{m, \infty} \implies \frac{1}{2}mv_e^2 - G\frac{Mm}{R} = 0 $$
+donde $M$ y $R$ son la masa y el radio del astro.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+De la conservación de la energía, se despeja la expresión general de la velocidad de escape:
+\begin{gather}
+    v_e = \sqrt{\frac{2GM}{R}}
+\end{gather}
+Aplicamos esta fórmula a la Luna y al planeta:
+$$ v_{e,L} = \sqrt{\frac{2GM_L}{R_L}} \quad ; \quad v_{e,P} = \sqrt{\frac{2GM_P}{R_P}} $$
+Para encontrar la relación entre ambas, calculamos su cociente:
+\begin{gather}
+    \frac{v_{e,P}}{v_{e,L}} = \frac{\sqrt{\frac{2GM_P}{R_P}}}{\sqrt{\frac{2GM_L}{R_L}}} = \sqrt{\frac{M_P}{M_L} \cdot \frac{R_L}{R_P}}
+\end{gather}
+Sustituimos las relaciones dadas en el enunciado, $M_P = 80 M_L$ y $R_P = 4 R_L$:
+\begin{gather}
+    \frac{v_{e,P}}{v_{e,L}} = \sqrt{\frac{80 M_L}{M_L} \cdot \frac{R_L}{4 R_L}} = \sqrt{\frac{80}{4}} = \sqrt{20}
+\end{gather}
+Por lo tanto, la velocidad de escape del planeta es:
+$$ v_{e,P} = v_{e,L} \cdot \sqrt{20} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    v_{e,P} = 2375\,\text{m/s} \cdot \sqrt{20} \approx 2375 \cdot 4,472 \approx 10621,3\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de escape desde la superficie del planeta es $\boldsymbol{v_{e,P} \approx 10621,3\,\textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La velocidad de escape de un astro es directamente proporcional a la raíz cuadrada de su masa e inversamente proporcional a la raíz cuadrada de su radio. Aunque el planeta es 4 veces más grande, su masa es 80 veces mayor, lo que resulta en un campo gravitatorio superficial mucho más intenso. Como resultado, la velocidad de escape del planeta es $\sqrt{20}$ veces (aproximadamente 4,47 veces) mayor que la de la Luna, alcanzando un valor de más de 10,6 km/s.
+\end{cajaconclusion}
+
+\newpage
+\section{Bloque II: Ondas y Óptica}
+\label{sec:ondas_2012_sep}
+
+\subsection{Problema - OPCIÓN A}
+\label{subsec:IIA_2012_sep}
+
+\begin{cajaenunciado}
+Una persona de masa 60 kg que está sentada en el asiento de un vehículo, oscila verticalmente alrededor de su posición de equilibrio comportándose como un oscilador armónico simple. Su posición inicial es $y(0)=A\cdot\cos(\pi/6)$ donde $A=1,2$ cm, y su velocidad inicial $v_y(0)=-2,4\cdot\sin(\pi/6)\,\text{m/s}$. Calcula, justificando brevemente:
+\begin{enumerate}
+    \item[a)] La posición vertical de la persona en cualquier instante de tiempo, es decir, la función $y(t)$. (1 punto)
+    \item[b)] La energía mecánica de dicho oscilador en cualquier instante de tiempo. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la persona ($m$):} $60\,\text{kg}$.
+    \item \textbf{Amplitud ($A$):} $1,2\,\text{cm} = 0,012\,\text{m}$.
+    \item \textbf{Posición inicial ($y(0)$):} $y(0) = A\cos(\pi/6)$.
+    \item \textbf{Velocidad inicial ($v_y(0)$):} $v_y(0) = -2,4\sin(\pi/6)\,\text{m/s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Ecuación del movimiento $y(t)$.
+        \item Energía mecánica ($E_m$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Oscilador Armónico Simple} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de la posición (y) en función del tiempo (t) para un movimiento armónico simple. La curva es un coseno. Etiquetar la amplitud (A) como el valor máximo de y. Mostrar el punto inicial en t=0, con la posición $y(0)$ y la velocidad inicial $v_y(0)$ representada por la pendiente de la tangente a la curva en ese punto, que debe ser negativa."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{mas_grafico.png}
+    }}
+    \caption{Representación del movimiento oscilatorio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Ecuación del Movimiento Armónico Simple (M.A.S.)}
+La ecuación general de la posición en un M.A.S. es:
+$$ y(t) = A \cos(\omega t + \phi_0) $$
+Y la ecuación de la velocidad, su derivada temporal, es:
+$$ v_y(t) = \frac{dy}{dt} = -A\omega \sin(\omega t + \phi_0) $$
+Los parámetros desconocidos, la frecuencia angular ($\omega$) y la fase inicial ($\phi_0$), se determinan a partir de las condiciones iniciales dadas.
+
+\paragraph*{b) Energía Mecánica}
+En un M.A.S., la energía mecánica total es constante y es igual a la energía cinética máxima (en el punto de equilibrio) o a la energía potencial máxima (en los extremos). Se calcula como:
+$$ E_m = \frac{1}{2} k A^2 = \frac{1}{2} m \omega^2 A^2 $$
+donde $k$ es la constante elástica del oscilador ($k=m\omega^2$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Determinación de $\omega$ y $\phi_0$}
+Evaluamos las ecuaciones generales en $t=0$:
+\begin{gather}
+    y(0) = A \cos(\phi_0) \\
+    v_y(0) = -A\omega \sin(\phi_0)
+\end{gather}
+Comparamos estas expresiones con las condiciones iniciales dadas en el enunciado:
+$$ A \cos(\phi_0) = A \cos(\pi/6) \implies \cos(\phi_0) = \cos(\pi/6) $$
+$$ -A\omega \sin(\phi_0) = -2,4 \sin(\pi/6) \implies A\omega \sin(\phi_0) = 2,4 \sin(\pi/6) $$
+De la primera ecuación, se deduce que $\phi_0 = \pi/6$ (o $-\pi/6$, pero la segunda ecuación nos lo aclarará).
+Sustituyendo $\phi_0 = \pi/6$ en la segunda ecuación:
+\begin{gather}
+    A\omega \sin(\pi/6) = 2,4 \sin(\pi/6) \implies A\omega = 2,4
+\end{gather}
+De aquí podemos despejar $\omega$:
+$$ \omega = \frac{2,4}{A} $$
+Con $\omega$ y $\phi_0$ conocidos, la ecuación $y(t)$ queda completamente determinada.
+
+\paragraph*{b) Energía Mecánica}
+Sustituimos la expresión $A\omega = 2,4$ en la fórmula de la energía:
+\begin{gather}
+    E_m = \frac{1}{2} m \omega^2 A^2 = \frac{1}{2} m (A\omega)^2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Ecuación del movimiento}
+Calculamos $\omega$:
+\begin{gather}
+    \omega = \frac{2,4\,\text{m/s}}{0,012\,\text{m}} = 200\,\text{rad/s}
+\end{gather}
+La fase inicial es $\phi_0 = \pi/6\,\text{rad}$.
+Sustituyendo en la ecuación general:
+$$ y(t) = 0,012 \cos(200t + \pi/6) $$
+\begin{cajaresultado}
+    La función de la posición vertical en unidades del SI es $\boldsymbol{y(t) = 0,012 \cos(200t + \pi/6)}$.
+\end{cajaresultado}
+
+\paragraph*{b) Energía Mecánica}
+\begin{gather}
+    E_m = \frac{1}{2} (60\,\text{kg}) (2,4\,\text{m/s})^2 = 30 \cdot 5,76 = 172,8\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía mecánica del oscilador es $\boldsymbol{E_m = 172,8\,\textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante el análisis de las condiciones iniciales de posición y velocidad, ha sido posible determinar unívocamente la fase inicial ($\pi/6$ rad) y la pulsación ($\omega=200$ rad/s) del movimiento armónico simple. Esto define por completo la ecuación de la trayectoria. La energía mecánica, que permanece constante durante la oscilación, se ha calculado a partir de la masa y la velocidad máxima implícita en los datos, resultando en un valor de 172,8 J.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:IIB_2012_sep}
+
+\begin{cajaenunciado}
+Explica qué es una onda estacionaria. Describe algún ejemplo en el que se produzcan ondas estacionarias.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica que pide la definición de onda estacionaria y un ejemplo de su aplicación.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Onda Estacionaria en una Cuerda} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una cuerda de guitarra fijada en ambos extremos. Dibujar la forma de la onda estacionaria para el tercer armónico (n=3). La cuerda debe mostrar una forma sinusoidal con tres 'vientres' o 'husos'. La amplitud máxima de oscilación está en el centro de cada vientre (antinodos). Los puntos de la cuerda que no se mueven (en los extremos y en dos puntos intermedios) deben estar etiquetados como 'Nodos'. Mostrar con flechas que cada segmento de la cuerda oscila verticalmente, pero el patrón de la onda en sí no se desplaza a lo largo de la cuerda."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{onda_estacionaria.png}
+    }}
+    \caption{Representación del tercer armónico de una onda estacionaria.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Concepto de Onda Estacionaria}
+Una \textbf{onda estacionaria} es un tipo de onda que se forma por la \textbf{interferencia (superposición)} de dos ondas idénticas (misma amplitud, frecuencia y longitud de onda) que se propagan en la misma dirección pero en \textbf{sentidos opuestos}.
+
+A diferencia de una onda viajera, una onda estacionaria no propaga energía a través del medio. La energía queda confinada en la región donde se produce la onda. Su característica principal es que existen puntos que no oscilan y otros que oscilan con la máxima amplitud posible:
+\begin{itemize}
+    \item \textbf{Nodos:} Son puntos que permanecen permanentemente en reposo (amplitud de oscilación nula). Se producen por interferencia destructiva constante.
+    \item \textbf{Vientres o Antinodos:} Son los puntos que oscilan con la máxima amplitud (el doble de la amplitud de las ondas originales). Se producen por interferencia constructiva constante.
+\end{itemize}
+Todos los puntos situados entre dos nodos consecutivos oscilan en fase, pero con diferente amplitud.
+
+\paragraph*{Ejemplo: Cuerda de una Guitarra}
+Un ejemplo muy común es el de las ondas que se producen en la cuerda de una guitarra o cualquier instrumento de cuerda.
+\begin{enumerate}
+    \item Al pulsar la cuerda, se genera una onda viajera que se propaga hacia los extremos.
+    \item Cuando la onda llega a los extremos fijos (el puente y la cejuela), se refleja e invierte su fase.
+    \item Esta onda reflejada viaja en sentido contrario a la onda original.
+    \item La superposición de la onda original y la onda reflejada (que son idénticas pero de sentido opuesto) da lugar a una onda estacionaria.
+\end{enumerate}
+Para que la onda estacionaria persista, la longitud de la cuerda ($L$) debe ser un múltiplo entero de media longitud de onda ($L=n\frac{\lambda}{2}$). Esto da lugar a los distintos "modos de vibración" o "armónicos", que son los que producen las distintas notas musicales. El primer armónico (n=1) es la nota fundamental, y los siguientes (n=2, 3...) son los sobretonos.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En resumen, una onda estacionaria no es una onda de propagación, sino un patrón de oscilación confinado que resulta de la interferencia de dos ondas idénticas que viajan en sentidos opuestos. Sus características distintivas son los nodos (puntos fijos) y los antinodos (puntos de máxima oscilación). Este fenómeno es el principio de funcionamiento de todos los instrumentos musicales de cuerda y de viento.
+\end{cajaconclusion}
+
+\newpage
+\section{Bloque III: Ondas y Óptica}
+\label{sec:optica_2012_sep}
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:IIIA_2012_sep}
+
+\begin{cajaenunciado}
+¿Dónde se debe situar un objeto para que un espejo cóncavo forme imágenes virtuales? ¿Qué tamaño tienen estas imágenes en relación al objeto? Justifica la respuesta con ayuda de las construcciones geométricas necesarias.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Instrumento óptico:} Espejo esférico cóncavo.
+    \item \textbf{Condición:} La imagen formada debe ser virtual.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Posición del objeto para obtener una imagen virtual.
+            \item Tamaño relativo de dicha imagen.
+            \item Justificación mediante un diagrama de rayos.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+El diagrama de rayos es la parte fundamental de la justificación.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Formación de Imagen Virtual en Espejo Cóncavo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama de trazado de rayos para un espejo cóncavo. Dibujar el eje óptico. A la derecha, el espejo cóncavo, con su vértice V. A la izquierda del vértice, marcar el foco F y el centro de curvatura C. Colocar un objeto (una flecha vertical hacia arriba) entre el foco F y el vértice V. Trazar dos rayos principales desde la punta de la flecha: 1) Un rayo paralelo al eje óptico, que se refleja pasando por el foco F. 2) Un rayo que se dirige hacia el espejo como si proviniera del foco F, que se refleja paralelo al eje. Mostrar que los rayos reflejados divergen. Dibujar las prolongaciones de estos rayos reflejados con líneas discontinuas detrás del espejo, mostrando que se cruzan en un punto para formar la imagen. La imagen debe ser una flecha de trazo discontinuo, más grande que el objeto y orientada hacia arriba."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_concavo_virtual.png}
+    }}
+    \caption{Trazado de rayos para un objeto situado entre el foco y el vértice.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La formación de imágenes en espejos esféricos se describe mediante el trazado de rayos principales. Para un espejo cóncavo:
+\begin{enumerate}
+    \item Todo rayo que incide paralelo al eje óptico se refleja pasando por el foco (F).
+    \item Todo rayo que incide pasando por el foco (F) se refleja paralelo al eje óptico.
+    \item Todo rayo que incide pasando por el centro de curvatura (C) se refleja sobre sí mismo.
+\end{enumerate}
+Una imagen es \textbf{virtual} si se forma por la intersección de las \textit{prolongaciones} de los rayos reflejados, no por los rayos mismos. Estas imágenes no se pueden proyectar en una pantalla y se observan "detrás" del espejo.
+
+\subsubsection*{4. Justificación y Conclusión}
+\paragraph*{Posición del objeto}
+Como se demuestra en el diagrama de rayos, para que un espejo cóncavo forme una imagen virtual, el objeto debe situarse \textbf{entre el foco (F) y el vértice (V) del espejo}. Si el objeto se coloca en el foco o más alejado, la imagen formada es siempre real (o se forma en el infinito si está justo en el foco).
+
+\paragraph*{Tamaño de la imagen}
+Observando el diagrama de rayos, se concluye que la imagen virtual formada por un espejo cóncavo es siempre:
+\begin{itemize}
+    \item \textbf{Derecha} (o no invertida), ya que tiene la misma orientación que el objeto.
+    \item \textbf{De mayor tamaño} que el objeto.
+\end{itemize}
+Este es el principio de funcionamiento de los espejos de aumento, como los que se usan para maquillarse.
+
+\begin{cajaconclusion}
+En conclusión, un espejo cóncavo produce una imagen virtual, derecha y aumentada cuando el objeto se coloca a una distancia del espejo inferior a su distancia focal. El diagrama de rayos muestra que en esta configuración, los rayos reflejados divergen y son sus prolongaciones las que convergen detrás del espejo para formar la imagen con las características mencionadas.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Problema - OPCIÓN B}
+\label{subsec:IIIB_2012_sep}
+
+\begin{cajaenunciado}
+Una placa de vidrio se sitúa horizontalmente sobre un depósito de agua de forma que la parte superior de la placa está en contacto con el aire como muestra la figura. Un rayo de luz incide desde el aire a la cara superior del vidrio formando un ángulo $\alpha=30^\circ$ con la vertical.
+\begin{enumerate}
+    \item[a)] Calcula el ángulo de refracción del rayo de luz al pasar del vidrio al agua. (1 punto)
+    \item[b)] Deduce la expresión de la distancia (AB) de desviación del rayo tras atravesar el vidrio y calcula su valor numérico. La placa de vidrio tiene un espesor $d=30\,\text{mm}$ y su índice de refracción es de 1,6. (1 punto)
+\end{enumerate}
+\textbf{Datos:} Índice de refracción del agua: 1,33; índice de refracción del aire: 1.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Índice de refracción del aire ($n_a$):} $1$.
+    \item \textbf{Índice de refracción del vidrio ($n_v$):} $1,6$.
+    \item \textbf{Índice de refracción del agua ($n_w$):} $1,33$.
+    \item \textbf{Ángulo de incidencia en el aire ($\theta_a$):} $\alpha = 30^\circ$.
+    \item \textbf{Espesor del vidrio ($d$):} $30\,\text{mm} = 0,03\,\text{m}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Ángulo de refracción en el agua ($\theta_w$).
+            \item Expresión y valor de la desviación lateral ($AB$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Refracción en Múltiples Medios} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema con tres capas horizontales: Aire, Vidrio, Agua. Un rayo de luz incide desde el aire sobre el vidrio con un ángulo $\theta_a=30^\circ$ respecto a la normal. El rayo se refracta en el vidrio con un ángulo $\theta_v < \theta_a$. Este rayo atraviesa el vidrio y llega a la interfaz vidrio-agua. El ángulo de incidencia aquí es también $\theta_v$. El rayo se refracta en el agua con un ángulo $\theta_w > \theta_v$. Dibujar un triángulo rectángulo dentro del vidrio, con cateto vertical 'd' (espesor) y cateto horizontal 'AB' (desviación). El ángulo superior de este triángulo es $\theta_v$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{refraccion_vidrio_agua.png}
+    }}
+    \caption{Trayectoria del rayo de luz a través de las capas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando la \textbf{Ley de Snell de la refracción} en cada una de las dos interfaces (aire-vidrio y vidrio-agua).
+$$ n_1 \sin(\theta_1) = n_2 \sin(\theta_2) $$
+La desviación lateral se obtiene a partir de la trigonometría básica en el triángulo rectángulo que forma el rayo dentro del vidrio.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Ángulo de refracción en el agua ($\theta_w$)}
+Aplicamos la Ley de Snell en la interfaz aire-vidrio para encontrar el ángulo de refracción en el vidrio, $\theta_v$:
+\begin{gather}
+    n_a \sin(\theta_a) = n_v \sin(\theta_v) \label{eq:snell1}
+\end{gather}
+El ángulo con el que el rayo sale del vidrio es el mismo con el que incide en la interfaz vidrio-agua. Aplicamos la Ley de Snell en esta segunda interfaz:
+\begin{gather}
+    n_v \sin(\theta_v) = n_w \sin(\theta_w) \label{eq:snell2}
+\end{gather}
+Combinando las ecuaciones \eqref{eq:snell1} y \eqref{eq:snell2}, vemos que el medio intermedio (vidrio) es irrelevante para el ángulo final:
+\begin{gather}
+    n_a \sin(\theta_a) = n_w \sin(\theta_w)
+\end{gather}
+De aquí despejamos $\theta_w$:
+$$ \sin(\theta_w) = \frac{n_a}{n_w} \sin(\theta_a) \implies \theta_w = \arcsin\left(\frac{n_a}{n_w} \sin(\theta_a)\right) $$
+
+\paragraph*{b) Desviación lateral (AB)}
+En el triángulo rectángulo formado dentro del vidrio, la tangente del ángulo de refracción $\theta_v$ es:
+$$ \tan(\theta_v) = \frac{AB}{d} $$
+Por lo tanto, la expresión para la desviación es:
+\begin{gather}
+    AB = d \cdot \tan(\theta_v)
+\end{gather}
+Para calcular su valor, primero necesitamos $\theta_v$ de la ecuación \eqref{eq:snell1}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Ángulo de refracción en el agua}
+\begin{gather}
+    \sin(\theta_w) = \frac{1}{1,33} \sin(30^\circ) = \frac{0,5}{1,33} \approx 0,3759 \\
+    \theta_w = \arcsin(0,3759) \approx 22,08^\circ
+\end{gather}
+\begin{cajaresultado}
+    El ángulo de refracción al pasar del vidrio al agua es $\boldsymbol{\theta_w \approx 22,08^\circ}$.
+\end{cajaresultado}
+
+\paragraph*{b) Desviación lateral (AB)}
+Primero calculamos $\theta_v$ usando la ecuación \eqref{eq:snell1}:
+\begin{gather}
+    1 \cdot \sin(30^\circ) = 1,6 \cdot \sin(\theta_v) \implies \sin(\theta_v) = \frac{0,5}{1,6} = 0,3125 \\
+    \theta_v = \arcsin(0,3125) \approx 18,21^\circ
+\end{gather}
+Ahora calculamos la desviación AB:
+\begin{gather}
+    AB = (0,03\,\text{m}) \cdot \tan(18,21^\circ) \approx 0,03 \cdot 0,329 \approx 9,87 \cdot 10^{-3}\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+    La expresión de la desviación es $\boldsymbol{AB = d \cdot \tan(\theta_v)}$. Su valor numérico es $\boldsymbol{\approx 9,87\,\textbf{mm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La aplicación sucesiva de la Ley de Snell muestra que el ángulo de refracción final en el agua depende únicamente de los medios inicial y final, no del vidrio intermedio. Sin embargo, la presencia del vidrio sí causa una desviación lateral del rayo. Se ha deducido que esta desviación es de aproximadamente 9,87 mm para el espesor y los materiales dados.
+\end{cajaconclusion}
+
+\newpage
+\section{Bloque IV: Campo Electromagnético}
+\label{sec:em_2012_sep}
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:IVA_2012_sep}
+
+\begin{cajaenunciado}
+Una partícula de carga $q=2\,\mu\text{C}$ que se mueve con velocidad $\vec{v}=(10^3\vec{i})\,\text{m/s}$ entra en una región del espacio en la que hay un campo eléctrico uniforme $\vec{E}=(-3\vec{j})\,\text{N/C}$ y también un campo magnético uniforme $\vec{B}=(2\vec{k})\,\text{mT}$. Calcula el vector fuerza total que actúa sobre esa partícula y representa todos los vectores involucrados (haz coincidir el plano XY con el plano del papel).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga ($q$):} $2\,\mu\text{C} = 2 \cdot 10^{-6}\,\text{C}$.
+    \item \textbf{Velocidad ($\vec{v}$):} $(10^3\vec{i})\,\text{m/s}$.
+    \item \textbf{Campo Eléctrico ($\vec{E}$):} $(-3\vec{j})\,\text{N/C}$.
+    \item \textbf{Campo Magnético ($\vec{B}$):} $(2\vec{k})\,\text{mT} = (2 \cdot 10^{-3}\vec{k})\,\text{T}$.
+    \item \textbf{Incógnita:} Vector fuerza total ($\vec{F}_T$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fuerza de Lorentz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas 3D, con el eje X apuntando a la derecha, el eje Y hacia arriba y el eje Z saliendo del papel (indicado con un círculo con un punto). En el origen, dibujar: el vector velocidad $\vec{v}$ a lo largo del eje X. El vector campo eléctrico $\vec{E}$ a lo largo del eje Y negativo. El vector campo magnético $\vec{B}$ a lo largo del eje Z positivo. A partir de estos, dibujar los vectores de fuerza: La fuerza eléctrica $\vec{F}_e$ en la misma dirección que $\vec{E}$ (hacia abajo). La fuerza magnética $\vec{F}_m$, resultado de $\vec{v} \times \vec{B}$, también apuntando hacia abajo (eje Y negativo). Finalmente, dibujar el vector fuerza total $\vec{F}_T$ como la suma de los dos anteriores, un vector más largo apuntando hacia abajo."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{fuerza_lorentz_3d.png}
+    }}
+    \caption{Representación de los vectores de campo y fuerza.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza total que actúa sobre una carga en movimiento en una región con campos eléctrico y magnético es la \textbf{Fuerza de Lorentz}. Esta es la suma vectorial de la fuerza eléctrica y la fuerza magnética.
+$$ \vec{F}_T = \vec{F}_e + \vec{F}_m $$
+\begin{itemize}
+    \item \textbf{Fuerza Eléctrica:} $\vec{F}_e = q\vec{E}$.
+    \item \textbf{Fuerza Magnética:} $\vec{F}_m = q(\vec{v} \times \vec{B})$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La ecuación a resolver es la suma directa de las dos fuerzas:
+\begin{gather}
+    \vec{F}_T = q\vec{E} + q(\vec{v} \times \vec{B})
+\end{gather}
+Primero calculamos cada componente por separado y luego las sumamos.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la Fuerza Eléctrica ($\vec{F}_e$)}
+\begin{gather}
+    \vec{F}_e = (2 \cdot 10^{-6}\,\text{C}) \cdot (-3\vec{j}\,\text{N/C}) = -6 \cdot 10^{-6}\vec{j}\,\text{N}
+\end{gather}
+
+\paragraph*{Cálculo de la Fuerza Magnética ($\vec{F}_m$)}
+Primero calculamos el producto vectorial $\vec{v} \times \vec{B}$:
+\begin{gather}
+    \vec{v} \times \vec{B} = (10^3\vec{i}) \times (2 \cdot 10^{-3}\vec{k}) = (10^3 \cdot 2 \cdot 10^{-3}) (\vec{i} \times \vec{k}) = 2(-\vec{j}) = -2\vec{j}\,\text{T}\cdot\text{m/s}
+\end{gather}
+Ahora multiplicamos por la carga $q$:
+\begin{gather}
+    \vec{F}_m = (2 \cdot 10^{-6}\,\text{C}) \cdot (-2\vec{j}\,\text{T}\cdot\text{m/s}) = -4 \cdot 10^{-6}\vec{j}\,\text{N}
+\end{gather}
+
+\paragraph*{Cálculo de la Fuerza Total ($\vec{F}_T$)}
+\begin{gather}
+    \vec{F}_T = \vec{F}_e + \vec{F}_m = (-6 \cdot 10^{-6}\vec{j}\,\text{N}) + (-4 \cdot 10^{-6}\vec{j}\,\text{N}) = -10 \cdot 10^{-6}\vec{j}\,\text{N} = -10^{-5}\vec{j}\,\text{N}
+\end{gather}
+\begin{cajaresultado}
+    El vector fuerza total que actúa sobre la partícula es $\boldsymbol{\vec{F}_T = -10^{-5}\vec{j}\,\textbf{N}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Tanto el campo eléctrico como la combinación del campo magnético y la velocidad de la partícula producen una fuerza en la misma dirección y sentido (eje Y negativo). La fuerza eléctrica tiene un módulo de $6\,\mu\text{N}$ y la magnética de $4\,\mu\text{N}$. La fuerza total, por el principio de superposición, es la suma de ambas, resultando en una fuerza neta de $10\,\mu\text{N}$ dirigida a lo largo del eje Y negativo.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:IVB_2012_sep}
+
+\begin{cajaenunciado}
+Una carga puntual de valor $q_1=-2\,\mu\text{C}$ se encuentra en el punto (0,0) m y una segunda carga de valor desconocido, $q_2$, se encuentra en el punto (3,0) m. Calcula el valor que debe tener la carga $q_2$ para que el campo eléctrico generado por ambas cargas en el punto (5,0) m sea nulo. Representa los vectores campo eléctrico generados por cada una de las cargas en ese punto.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $-2\,\mu\text{C} = -2 \cdot 10^{-6}\,\text{C}$ en $P_1(0,0)$.
+    \item \textbf{Carga 2 ($q_2$):} Desconocida, en $P_2(3,0)$.
+    \item \textbf{Punto de interés ($P$):} $(5,0)$.
+    \item \textbf{Condición:} El campo eléctrico total en P es nulo, $\vec{E}_P = \vec{0}$.
+    \item \textbf{Incógnita:} Valor de la carga $q_2$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Anulación de Campo Eléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje X horizontal. Una carga negativa $q_1$ en el origen (x=0). Una carga $q_2$ en x=3. Un punto de observación P en x=5. En el punto P, dibujar el vector de campo eléctrico $\vec{E}_1$ creado por $q_1$. Como $q_1$ es negativa, $\vec{E}_1$ es atractivo y apunta hacia la izquierda. Para que el campo total en P sea cero, el vector de campo $\vec{E}_2$ debe ser igual en módulo y apuntar hacia la derecha. Para que $\vec{E}_2$ apunte a la derecha (alejándose de $q_2$), debe ser repulsivo, lo que significa que la carga $q_2$ debe ser positiva. Dibujar los dos vectores con la misma longitud pero sentidos opuestos."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{campo_nulo_dos_cargas.png}
+    }}
+    \caption{Representación de los vectores campo que se anulan en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica el \textbf{Principio de Superposición}. El campo eléctrico total en un punto es la suma vectorial de los campos creados por cada carga individual.
+$$ \vec{E}_P = \vec{E}_1 + \vec{E}_2 $$
+Para que el campo sea nulo, se debe cumplir que:
+$$ \vec{E}_1 + \vec{E}_2 = \vec{0} \implies \vec{E}_1 = -\vec{E}_2 $$
+Esto implica que los dos vectores de campo deben tener la misma dirección, el mismo módulo y sentidos opuestos. El campo de una carga puntual es $\vec{E} = K\frac{q}{r^2}\hat{r}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Las cargas y el punto P están sobre el eje X.
+\begin{itemize}
+    \item \textbf{Campo $\vec{E}_1$ en P:} Creado por $q_1 = -2\,\mu\text{C}$ en $(0,0)$. La distancia es $r_1 = 5\,\text{m}$. Como $q_1$ es negativa, el campo es atractivo, apuntando hacia $q_1$, es decir, en la dirección $-\vec{i}$.
+    \item \textbf{Campo $\vec{E}_2$ en P:} Para anular a $\vec{E}_1$, el vector $\vec{E}_2$ debe apuntar en la dirección $+\vec{i}$. Como $q_2$ está en $(3,0)$, a la izquierda de P, un campo en la dirección $+\vec{i}$ es repulsivo. Por tanto, la carga \textbf{$q_2$ debe ser positiva}.
+\end{itemize}
+La condición vectorial se reduce a una igualdad de módulos:
+\begin{gather}
+    |\vec{E}_1| = |\vec{E}_2| \implies K\frac{|q_1|}{r_1^2} = K\frac{|q_2|}{r_2^2}
+\end{gather}
+Las distancias son $r_1 = 5\,\text{m}$ y $r_2 = 5-3 = 2\,\text{m}$.
+Despejamos $q_2$ (sabiendo que es positiva, $|q_2|=q_2$):
+\begin{gather}
+    q_2 = |q_1| \cdot \frac{r_2^2}{r_1^2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    q_2 = (2 \cdot 10^{-6}\,\text{C}) \cdot \frac{(2\,\text{m})^2}{(5\,\text{m})^2} = (2 \cdot 10^{-6}) \cdot \frac{4}{25} = 3,2 \cdot 10^{-7}\,\text{C}
+\end{gather}
+\begin{cajaresultado}
+    El valor de la carga debe ser $\boldsymbol{q_2 = +3,2 \cdot 10^{-7}\,\textbf{C}}$ (o $+0,32\,\mu\text{C}$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para lograr un campo eléctrico nulo en el punto (5,0), la carga $q_2$ debe ser positiva, de modo que su campo repulsivo se oponga al campo atractivo de $q_1$. El análisis de la dependencia del campo con la distancia ($1/r^2$) muestra que, al estar más cerca del punto P, la magnitud de $q_2$ debe ser menor que la de $q_1$ para que los módulos de los campos se igualen. El valor preciso calculado es de $+0,32\,\mu\text{C}$.
+\end{cajaconclusion}
+
+\newpage
+\section{Bloque V: Física Moderna}
+\label{sec:moderna_2012_sep}
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:VA_2012_sep}
+
+\begin{cajaenunciado}
+Uno de los procesos que tiene lugar en la capa de ozono de la estratosfera es la rotura del enlace de la molécula de oxígeno por la radiación ultravioleta del sol. Para que este proceso tenga lugar hay que aportar a cada molécula 5 eV. Calcula la longitud de onda máxima que debe tener la radiación incidente para que esto suceda. Explica brevemente tus razonamientos.
+\textbf{Datos:} Carga elemental $e=1,6\cdot10^{-19}\,\text{C}$; constante de Planck $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$; velocidad de la luz $c=3\cdot10^8\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Energía de disociación ($E_{min}$):} $5\,\text{eV}$. Es la energía mínima necesaria para romper el enlace.
+    \item \textbf{Carga elemental ($e$):} $1,6 \cdot 10^{-19}\,\text{C}$.
+    \item \textbf{Constante de Planck ($h$):} $6,63 \cdot 10^{-34}\,\text{J}\cdot\text{s}$.
+    \item \textbf{Velocidad de la luz ($c$):} $3 \cdot 10^8\,\text{m/s}$.
+    \item \textbf{Incógnita:} Longitud de onda máxima ($\lambda_{max}$) de la radiación.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fotodisociación} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de una molécula de oxígeno (O2), representada como dos esferas unidas. Un fotón, representado como un paquete de onda con la etiqueta $E=h\nu$, incide sobre la molécula. Una flecha muestra el resultado: los dos átomos de oxígeno ahora están separados, indicando que el enlace se ha roto."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{fotodisociacion.png}
+    }}
+    \caption{Un fotón rompe el enlace de una molécula de oxígeno.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El proceso se basa en la naturaleza cuántica de la luz. La radiación electromagnética está compuesta por paquetes de energía llamados fotones. La energía de un fotón ($E_{fotón}$) está relacionada con su frecuencia ($f$) y su longitud de onda ($\lambda$) a través de la \textbf{relación de Planck-Einstein}:
+$$ E_{fotón} = h f = \frac{hc}{\lambda} $$
+Para que un fotón pueda romper el enlace de la molécula de oxígeno, su energía debe ser, como mínimo, igual a la energía de enlace (5 eV).
+$$ E_{fotón} \ge E_{min} $$
+Como la energía del fotón es inversamente proporcional a su longitud de onda, la energía mínima necesaria corresponde a la longitud de onda máxima posible.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La condición umbral es:
+\begin{gather}
+    E_{fotón, min} = \frac{hc}{\lambda_{max}} = E_{min}
+\end{gather}
+Despejamos la longitud de onda máxima:
+\begin{gather}
+    \lambda_{max} = \frac{hc}{E_{min}}
+\end{gather}
+Para realizar el cálculo, es imprescindible expresar la energía $E_{min}$ en unidades del Sistema Internacional (Julios).
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, convertimos la energía de enlace a Julios:
+\begin{gather}
+    E_{min} = 5\,\text{eV} \cdot \frac{1,6 \cdot 10^{-19}\,\text{J}}{1\,\text{eV}} = 8 \cdot 10^{-19}\,\text{J}
+\end{gather}
+Ahora, calculamos la longitud de onda máxima:
+\begin{gather}
+    \lambda_{max} = \frac{(6,63 \cdot 10^{-34}\,\text{J}\cdot\text{s}) \cdot (3 \cdot 10^8\,\text{m/s})}{8 \cdot 10^{-19}\,\text{J}} = \frac{19,89 \cdot 10^{-26}}{8 \cdot 10^{-19}} \approx 2,486 \cdot 10^{-7}\,\text{m}
+\end{gather}
+Este resultado se suele expresar en nanómetros: $2,486 \cdot 10^{-7}\,\text{m} = 248,6\,\text{nm}$.
+\begin{cajaresultado}
+    La longitud de onda máxima que debe tener la radiación es $\boldsymbol{\lambda_{max} \approx 248,6\,\textbf{nm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La interacción entre la luz y la materia ocurre a través de la absorción de fotones discretos. Para romper el enlace de 5 eV de la molécula de O$_2$, se requiere un fotón con, al menos, esa energía. Dado que la energía de un fotón es inversamente proporcional a su longitud de onda, la condición de energía mínima se traduce en una longitud de onda máxima de 248,6 nm. Esta longitud de onda pertenece a la región ultravioleta del espectro electromagnético, lo que concuerda con el enunciado.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Problema - OPCIÓN B}
+\label{subsec:VB_2012_sep}
+
+\begin{cajaenunciado}
+El cátodo de una célula fotoeléctrica tiene una longitud de onda umbral de 542 nm. Sobre su superficie incide un haz de luz de longitud de onda 160 nm. Calcula:
+\begin{enumerate}
+    \item[a)] La velocidad máxima de los fotoelectrones emitidos desde el cátodo. (1 punto)
+    \item[b)] La diferencia de potencial que hay que aplicar para anular la corriente producida en la fotocélula. (1 punto)
+\end{enumerate}
+\textbf{Datos:} Constante de Planck, $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$; masa del electrón, $m_e=9,1\cdot10^{-31}\,\text{kg}$; velocidad de la luz en el vacío $c=3\cdot10^8\,\text{m/s}$; carga elemental $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda umbral ($\lambda_0$):} $542\,\text{nm} = 5,42 \cdot 10^{-7}\,\text{m}$.
+    \item \textbf{Longitud de onda incidente ($\lambda$):} $160\,\text{nm} = 1,60 \cdot 10^{-7}\,\text{m}$.
+    \item \textbf{Constante de Planck ($h$):} $6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+    \item \textbf{Masa del electrón ($m_e$):} $9,1\cdot10^{-31}\,\text{kg}$.
+    \item \textbf{Velocidad de la luz ($c$):} $3\cdot10^8\,\text{m/s}$.
+    \item \textbf{Carga elemental ($e$):} $1,6\cdot10^{-19}\,\text{C}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Velocidad máxima de los fotoelectrones ($v_{max}$).
+            \item Potencial de frenado ($V_f$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de una célula fotoeléctrica: un tubo de vacío con dos placas metálicas, el cátodo y el ánodo. Luz (fotones) de longitud de onda $\lambda$ incide sobre el cátodo. Como resultado, se emiten electrones (fotoelectrones) desde el cátodo hacia el ánodo, con una energía cinética $E_c$. Un amperímetro en el circuito externo mide la fotocorriente. Para el apartado b), mostrar una fuente de voltaje variable conectada con la polaridad invertida (el ánodo negativo respecto al cátodo) para crear un potencial de frenado $V_f$ que detenga a los electrones."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{celula_fotoelectrica.png}
+    }}
+    \caption{Esquema del dispositivo para el efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe mediante la \textbf{ecuación del efecto fotoeléctrico de Einstein}:
+$$ E_{fotón} = W_0 + E_{c,max} $$
+donde:
+\begin{itemize}
+    \item $E_{fotón} = \frac{hc}{\lambda}$ es la energía del fotón incidente.
+    \item $W_0 = \frac{hc}{\lambda_0}$ es el trabajo de extracción (o función trabajo) del material, que es la energía mínima para arrancar un electrón.
+    \item $E_{c,max} = \frac{1}{2} m_e v_{max}^2$ es la energía cinética máxima de los electrones emitidos.
+\end{itemize}
+El \textbf{potencial de frenado ($V_f$)} es la diferencia de potencial que hay que aplicar para detener completamente a los fotoelectrones más energéticos. Se calcula igualando el trabajo realizado por el campo eléctrico con la energía cinética máxima:
+$$ e \cdot V_f = E_{c,max} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Velocidad máxima ($v_{max}$)}
+De la ecuación de Einstein, despejamos la energía cinética máxima:
+\begin{gather}
+    E_{c,max} = E_{fotón} - W_0 = \frac{hc}{\lambda} - \frac{hc}{\lambda_0} = hc\left(\frac{1}{\lambda} - \frac{1}{\lambda_0}\right)
+\end{gather}
+Una vez calculada $E_{c,max}$, despejamos la velocidad de la fórmula de la energía cinética:
+\begin{gather}
+    v_{max} = \sqrt{\frac{2 E_{c,max}}{m_e}}
+\end{gather}
+
+\paragraph*{b) Potencial de frenado ($V_f$)}
+\begin{gather}
+    V_f = \frac{E_{c,max}}{e}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, calculamos la energía cinética máxima $E_{c,max}$:
+\begin{gather}
+    E_{c,max} = (6,63\cdot10^{-34})(3\cdot10^8)\left(\frac{1}{1,60\cdot10^{-7}} - \frac{1}{5,42\cdot10^{-7}}\right) \nonumber \\
+    E_{c,max} \approx (1,989\cdot10^{-25}) \cdot (6,25\cdot10^6 - 1,845\cdot10^6) \nonumber \\
+    E_{c,max} \approx (1,989\cdot10^{-25}) \cdot (4,405\cdot10^6) \approx 8,76 \cdot 10^{-19}\,\text{J}
+\end{gather}
+
+\paragraph*{a) Velocidad máxima}
+\begin{gather}
+    v_{max} = \sqrt{\frac{2 \cdot (8,76 \cdot 10^{-19}\,\text{J})}{9,1\cdot10^{-31}\,\text{kg}}} \approx \sqrt{1,925 \cdot 10^{12}} \approx 1,388 \cdot 10^6\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad máxima de los fotoelectrones es $\boldsymbol{v_{max} \approx 1,39 \cdot 10^6\,\textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Potencial de frenado}
+\begin{gather}
+    V_f = \frac{8,76 \cdot 10^{-19}\,\text{J}}{1,6\cdot10^{-19}\,\text{C}} \approx 5,475\,\text{V}
+\end{gather}
+\begin{cajaresultado}
+    La diferencia de potencial de frenado es $\boldsymbol{V_f \approx 5,48\,\textbf{V}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La luz incidente, de 160 nm, tiene una energía superior al trabajo de extracción del material, que corresponde a 542 nm. El exceso de energía se transfiere al fotoelectrón en forma de energía cinética. Esto le confiere una velocidad máxima de 1,39 millones de metros por segundo. Para detener por completo a estos electrones, es necesario aplicar un potencial de frenado de 5,48 V, que realice un trabajo eléctrico igual a su energía cinética inicial.
+\end{cajaconclusion}
+
+\newpage
+\section{Bloque VI: Física Nuclear}
+\label{sec:nuclear_2012_sep}
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:VIA_2012_sep}
+
+\begin{cajaenunciado}
+La gráfica de la derecha representa el número de núcleos radiactivos de una muestra en función del tiempo en años. Utilizando los datos de la gráfica deduce razonadamente el valor de la constante de desintegración radiactiva de este material.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Gráfica:} Número de núcleos ($N$) en función del tiempo ($t$).
+    \item \textbf{Datos extraídos de la gráfica:}
+        \begin{itemize}
+            \item Número inicial de núcleos ($N_0$ en $t=0$): $1000$ núcleos.
+            \item En un instante posterior, por ejemplo, cuando $N=500$ (la mitad), el tiempo transcurrido es el periodo de semidesintegración, $T_{1/2}$. De la gráfica, para $N=500$, $t \approx 7$ años.
+            \item Se puede tomar otro punto para verificar, p.ej. en $t=10$ años, $N \approx 370$ núcleos.
+        \end{itemize}
+    \item \textbf{Incógnita:} Constante de desintegración radiactiva ($\lambda$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La gráfica es proporcionada por el enunciado del problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La desintegración radiactiva se rige por la \textbf{ley de decaimiento exponencial}:
+$$ N(t) = N_0 e^{-\lambda t} $$
+donde $N(t)$ es el número de núcleos en el instante $t$, $N_0$ es el número inicial y $\lambda$ es la constante de desintegración.
+La constante $\lambda$ se relaciona con el \textbf{periodo de semidesintegración ($T_{1/2}$)}, que es el tiempo necesario para que el número de núcleos se reduzca a la mitad:
+$$ \lambda = \frac{\ln(2)}{T_{1/2}} $$
+Podemos determinar $T_{1/2}$ directamente de la gráfica y luego calcular $\lambda$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Método 1: Usando el periodo de semidesintegración}
+\begin{enumerate}
+    \item Leer $N_0$ de la gráfica en $t=0$.
+    \item Encontrar el tiempo $t=T_{1/2}$ para el cual $N(t) = N_0/2$.
+    \item Calcular $\lambda$ con la fórmula $\lambda = \frac{\ln(2)}{T_{1/2}}$.
+\end{enumerate}
+
+\paragraph*{Método 2: Usando un punto arbitrario}
+\begin{enumerate}
+    \item Leer $N_0$ en $t=0$ y otro par de valores $(t, N(t))$ de la gráfica.
+    \item Despejar $\lambda$ de la ley de decaimiento:
+    $$ \frac{N(t)}{N_0} = e^{-\lambda t} \implies \ln\left(\frac{N(t)}{N_0}\right) = -\lambda t \implies \lambda = -\frac{1}{t}\ln\left(\frac{N(t)}{N_0}\right) $$
+\end{enumerate}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Aplicando el Método 1}
+\begin{enumerate}
+    \item De la gráfica, $N_0 = 1000$.
+    \item Buscamos el tiempo para $N = 1000/2 = 500$. Observando la gráfica, el valor de $t$ correspondiente es aproximadamente $t = 7$ años. Por lo tanto, $T_{1/2} \approx 7$ años.
+    \item Calculamos $\lambda$:
+    \begin{gather}
+        \lambda = \frac{\ln(2)}{7\,\text{años}} \approx \frac{0,693}{7} \approx 0,099\,\text{años}^{-1}
+    \end{gather}
+\end{enumerate}
+\begin{cajaresultado}
+    La constante de desintegración radiactiva es $\boldsymbol{\lambda \approx 0,099\,\textbf{años}^{-1}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La forma más directa de resolver el problema es identificar el periodo de semidesintegración a partir de la gráfica, que es el tiempo que tarda la muestra en reducirse a la mitad de su tamaño inicial. Se observa que la muestra pasa de 1000 a 500 núcleos en aproximadamente 7 años. Usando la relación entre la constante de desintegración y el periodo de semidesintegración, se obtiene un valor para $\lambda$ de aproximadamente 0,099 años$^{-1}$.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:VIB_2012_sep}
+
+\begin{cajaenunciado}
+Calcula la energía total en kilowatios-hora (kWh) que se obtiene como resultado de la fisión de 1 g de ${}^{235}\text{U}$ suponiendo que todos los núcleos se fisionan y que en cada reacción se liberan 200 MeV.
+\textbf{Datos:} Número de Avogadro $N_A=6,022\cdot10^{23}$; carga elemental $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de Uranio-235 ($m$):} $1\,\text{g}$.
+    \item \textbf{Masa molar del ${}^{235}\text{U}$ ($M$):} Aproximadamente $235\,\text{g/mol}$.
+    \item \textbf{Energía por fisión ($E_{fision}$):} $200\,\text{MeV}$.
+    \item \textbf{Número de Avogadro ($N_A$):} $6,022\cdot10^{23}\,\text{mol}^{-1}$.
+    \item \textbf{Carga elemental ($e$):} $1,6\cdot10^{-19}\,\text{C}$.
+    \item \textbf{Incógnita:} Energía total ($E_{total}$) en kWh.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fisión Nuclear} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de una reacción de fisión. Un neutrón incide sobre un núcleo grande de Uranio-235. El núcleo se vuelve inestable y se divide en dos núcleos más pequeños (productos de fisión, por ejemplo, Bario y Kriptón), liberando además 2 o 3 neutrones y una gran cantidad de energía en forma de rayos gamma y energía cinética de los fragmentos. Etiquetar 'Energía liberada: 200 MeV'."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{fision_uranio.png}
+    }}
+    \caption{Proceso de fisión de un núcleo de Uranio-235.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La resolución del problema sigue tres pasos:
+\begin{enumerate}
+    \item \textbf{Calcular el número de núcleos:} A partir de la masa de la muestra, la masa molar y el número de Avogadro, se calcula cuántos núcleos de ${}^{235}\text{U}$ hay en 1 gramo.
+    \item \textbf{Calcular la energía total liberada:} Se multiplica el número de núcleos por la energía liberada en cada fisión.
+    \item \textbf{Convertir las unidades:} La energía total, obtenida en MeV, debe convertirse a Julios y finalmente a kilovatios-hora (kWh).
+\end{enumerate}
+Conversiones necesarias: $1\,\text{MeV} = 1,6\cdot10^{-13}\,\text{J}$ y $1\,\text{kWh} = 3,6\cdot10^6\,\text{J}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Número de núcleos ($N$)}
+$$ N = (\text{moles}) \cdot N_A = \frac{m}{M} \cdot N_A $$
+
+\paragraph*{2. Energía total ($E_{total}$)}
+$$ E_{total} = N \cdot E_{fision} $$
+
+\paragraph*{3. Conversión de unidades}
+$$ E_{total, \text{J}} = E_{total, \text{MeV}} \cdot (1,6 \cdot 10^{-13}\,\text{J/MeV}) $$
+$$ E_{total, \text{kWh}} = \frac{E_{total, \text{J}}}{3,6 \cdot 10^6\,\text{J/kWh}} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Número de núcleos}
+\begin{gather}
+    N = \frac{1\,\text{g}}{235\,\text{g/mol}} \cdot (6,022\cdot10^{23}\,\text{núcleos/mol}) \approx 2,562 \cdot 10^{21}\,\text{núcleos}
+\end{gather}
+
+\paragraph*{2. Energía total en MeV}
+\begin{gather}
+    E_{total, \text{MeV}} = (2,562 \cdot 10^{21}\,\text{núcleos}) \cdot (200\,\text{MeV/núcleo}) \approx 5,124 \cdot 10^{23}\,\text{MeV}
+\end{gather}
+
+\paragraph*{3. Conversión a kWh}
+Primero a Julios:
+\begin{gather}
+    E_{total, \text{J}} = (5,124 \cdot 10^{23}\,\text{MeV}) \cdot (1,6\cdot10^{-13}\,\text{J/MeV}) \approx 8,198 \cdot 10^{10}\,\text{J}
+\end{gather}
+Ahora a kWh:
+\begin{gather}
+    E_{total, \text{kWh}} = \frac{8,198 \cdot 10^{10}\,\text{J}}{3,6 \cdot 10^6\,\text{J/kWh}} \approx 2,277 \cdot 10^4\,\text{kWh}
+\end{gather}
+\begin{cajaresultado}
+    La energía total obtenida es $\boldsymbol{\approx 22770\,\textbf{kWh}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Este cálculo demuestra la enorme densidad energética del combustible nuclear. La fisión completa de un solo gramo de Uranio-235, una cantidad muy pequeña de materia, libera aproximadamente 22.770 kWh. Esta cantidad de energía es equivalente al consumo eléctrico medio de unos 6 hogares españoles durante todo un año, lo que pone de manifiesto el inmenso potencial de la energía nuclear.
+\end{cajaconclusion}
+
+\newpage

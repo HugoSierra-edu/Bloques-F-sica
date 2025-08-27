@@ -1,0 +1,877 @@
+```latex
+% !TEX root = ../main.tex
+\chapter{Examen Julio 2015 - Convocatoria Extraordinaria}
+\label{chap:2015_jul_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2015_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:1A_2015_jul_ext}
+
+\begin{cajaenunciado}
+Calcula a qué distancia desde la superficie terrestre se debe situar un satélite artificial para que describa órbitas circulares con un periodo de una semana.
+\textbf{Datos:} $G=6,67\cdot10^{-11}\,\text{Nm}^{2}\text{kg}^{-2}$; $M_{Tierra}=5,97\cdot10^{24}\,\text{kg}$; $R_{Tierra}=6370\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Periodo orbital ($T$):} $T = 1\,\text{semana} = 7\,\text{días} \times 24\,\text{h/día} \times 3600\,\text{s/h} = 604800\,\text{s}$.
+    \item \textbf{Constante de Gravitación Universal ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\text{m}^2/\text{kg}^2$.
+    \item \textbf{Masa de la Tierra ($M_T$):} $M_T = 5,97 \cdot 10^{24} \, \text{kg}$.
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6370 \text{ km} = 6,37 \cdot 10^6 \text{ m}$.
+    \item \textbf{Incógnita:} Altura sobre la superficie ($h$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Satélite en órbita circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Tierra (esfera) con su radio $R_T$ indicado. Un satélite en una órbita circular de radio $r$ alrededor del centro de la Tierra. Indicar que la altura $h$ es la distancia desde la superficie hasta la órbita, de modo que $r = R_T + h$. Dibujar el vector de la fuerza gravitatoria $\vec{F}_g$ sobre el satélite, apuntando hacia el centro de la Tierra, y etiquetarlo también como la fuerza centrípeta $\vec{F}_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{grav_orbita_terrestre.png}
+    }}
+    \caption{Esquema de un satélite en órbita circular alrededor de la Tierra.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para que un satélite describa una órbita circular, la fuerza de atracción gravitatoria que ejerce la Tierra sobre él debe ser la fuerza centrípeta que mantiene el movimiento circular.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal:} La fuerza de atracción es $F_g = G \frac{M_T m}{r^2}$, donde $r$ es el radio de la órbita.
+    \item \textbf{Fuerza Centrípeta:} Para un movimiento circular, la fuerza centrípeta se puede expresar en función del periodo orbital $T$ como $F_c = m a_c = m \omega^2 r = m \left(\frac{2\pi}{T}\right)^2 r$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Igualamos la fuerza gravitatoria y la fuerza centrípeta ($F_g = F_c$):
+\begin{gather}
+    G \frac{M_T m}{r^2} = m \left(\frac{2\pi}{T}\right)^2 r
+\end{gather}
+La masa del satélite, $m$, se cancela. Reorganizamos la ecuación para despejar el radio orbital, $r$:
+\begin{gather}
+    G M_T T^2 = 4\pi^2 r^3 \implies r = \sqrt[3]{\frac{G M_T T^2}{4\pi^2}}
+\end{gather}
+La altura sobre la superficie terrestre, $h$, se calcula restando el radio de la Tierra al radio orbital:
+\begin{gather}
+    h = r - R_T
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, calculamos el radio de la órbita $r$:
+\begin{gather}
+    r = \sqrt[3]{\frac{(6,67\cdot10^{-11})(5,97\cdot10^{24})(604800)^2}{4\pi^2}} \approx \sqrt[3]{3,695 \cdot 10^{24}} \approx 1,546 \cdot 10^8 \, \text{m}
+\end{gather}
+Ahora, calculamos la altura $h$:
+\begin{gather}
+    h = (1,546 \cdot 10^8 \, \text{m}) - (6,37 \cdot 10^6 \, \text{m}) = 1,4823 \cdot 10^8 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+El satélite debe situarse a una altura de $\boldsymbol{h \approx 1,48 \cdot 10^8 \, \textbf{m}}$ (aproximadamente 148230 km) sobre la superficie terrestre.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando la Tercera Ley de Kepler (deducida de la dinámica del movimiento circular), se determina que para tener un periodo orbital de una semana, el satélite debe estar a un radio orbital de $1,55 \cdot 10^8$ m. Esto corresponde a una altura sobre la superficie terrestre de unos 148230 km, una órbita considerablemente más lejana que la geoestacionaria.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:1B_2015_jul_ext}
+
+\begin{cajaenunciado}
+Un planeta tiene la misma densidad que la Tierra y un radio doble que el de ésta. Ambos planetas se consideran esféricos.
+\begin{enumerate}
+    \item[a)] Si una nave aterriza en dicho planeta, ¿cuál será su peso en comparación con el que la nave tiene en la Tierra? (1 punto).
+    \item[b)] Obtén la velocidad de escape en dicho planeta, si la velocidad de escape terrestre es de $11,2\,\text{km/s}$. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Planeta P y Tierra T:} Se comparan sus propiedades.
+    \item \textbf{Densidad:} $\rho_P = \rho_T = \rho$.
+    \item \textbf{Radio:} $R_P = 2 R_T$.
+    \item \textbf{Velocidad de escape terrestre:} $v_{e,T} = 11,2 \, \text{km/s} = 11200 \, \text{m/s}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Razón de pesos, $W_P / W_T$.
+            \item Velocidad de escape en el planeta P, $v_{e,P}$.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Comparación de Planetas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos esferas una al lado de la otra. A la izquierda, la Tierra, con radio $R_T$. A la derecha, un planeta más grande, con radio $R_P = 2R_T$. Indicar que ambos tienen la misma densidad $\rho$. Sobre la superficie de cada uno, dibujar una nave espacial idéntica y un vector de peso ($\vec{W}_T$ y $\vec{W}_P$) apuntando hacia el centro de su respectivo planeta."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{comparacion_planetas.png}
+    }}
+    \caption{Esquema comparativo entre la Tierra y el nuevo planeta.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Peso y Gravedad}
+El peso de un objeto de masa $m$ es $W = m \cdot g$, donde $g$ es la aceleración de la gravedad en la superficie del planeta. La gravedad se define como $g = G\frac{M}{R^2}$. La masa de un planeta esférico es $M = \rho \cdot V = \rho \cdot \frac{4}{3}\pi R^3$.
+\paragraph*{b) Velocidad de Escape}
+La velocidad de escape de un planeta se calcula con la expresión $v_e = \sqrt{\frac{2GM}{R}}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Razón de pesos}
+Primero, expresamos la gravedad $g$ en función de la densidad $\rho$ y el radio $R$:
+\begin{gather}
+    g = G \frac{\rho \frac{4}{3}\pi R^3}{R^2} = G \rho \frac{4}{3}\pi R
+\end{gather}
+La razón de pesos es igual a la razón de gravedades:
+\begin{gather}
+    \frac{W_P}{W_T} = \frac{m g_P}{m g_T} = \frac{g_P}{g_T} = \frac{G \rho_P \frac{4}{3}\pi R_P}{G \rho_T \frac{4}{3}\pi R_T} = \frac{\rho_P R_P}{\rho_T R_T}
+\end{gather}
+Dado que $\rho_P = \rho_T$ y $R_P = 2 R_T$:
+\begin{gather}
+    \frac{W_P}{W_T} = \frac{\rho (2R_T)}{\rho R_T} = 2
+\end{gather}
+\paragraph*{b) Velocidad de escape}
+Expresamos la velocidad de escape en función de $\rho$ y $R$:
+\begin{gather}
+    v_e = \sqrt{\frac{2G(\rho \frac{4}{3}\pi R^3)}{R}} = \sqrt{G\rho \frac{8}{3}\pi R^2} = R \sqrt{G\rho \frac{8\pi}{3}}
+\end{gather}
+Calculamos la razón de las velocidades de escape:
+\begin{gather}
+    \frac{v_{e,P}}{v_{e,T}} = \frac{R_P \sqrt{G\rho_P \frac{8\pi}{3}}}{R_T \sqrt{G\rho_T \frac{8\pi}{3}}} = \frac{R_P}{R_T}
+\end{gather}
+Dado que $R_P = 2 R_T$, obtenemos $v_{e,P} = 2 v_{e,T}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Razón de pesos}
+El resultado es simbólico.
+\begin{cajaresultado}
+El peso de la nave en el planeta será el \textbf{doble} del que tiene en la Tierra ($W_P = 2 W_T$).
+\end{cajaresultado}
+\paragraph*{b) Velocidad de escape}
+\begin{gather}
+    v_{e,P} = 2 \cdot (11,2 \, \text{km/s}) = 22,4 \, \text{km/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad de escape en el planeta es de $\boldsymbol{v_{e,P} = 22,4 \, \textbf{km/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al tener el doble de radio pero la misma densidad, la masa del planeta es 8 veces la de la Tierra, pero la gravedad en su superficie es solo el doble. Por tanto, el peso de una nave en él es el doble. La velocidad de escape, que es proporcional al radio para una densidad constante, también resulta ser el doble que la terrestre, alcanzando los 22,4 km/s.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Ondas}
+\label{sec:ondas_2015_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 2 - OPCIÓN A}
+\label{subsec:2A_2015_jul_ext}
+
+\begin{cajaenunciado}
+Un altavoz produce una onda armónica que se propaga por el aire y que está descrita por la expresión $s(x,t)=20\sin(6200t-18x)\,\mu\text{m}$, con t en segundos y x en metros.
+\begin{enumerate}
+    \item[a)] Determina la amplitud, la frecuencia, la longitud de onda y la velocidad de propagación de la onda. (1 punto).
+    \item[b)] Calcula el desplazamiento, s, y la velocidad de oscilación de una partícula del medio, que se encuentra en $x=20$ cm en el instante $t=1$ ms. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ecuación de la onda:} $s(x,t) = 20\sin(6200t - 18x)$ en $\mu\text{m}$.
+    \item Comparando con la forma general $s(x,t) = A\sin(\omega t - kx)$:
+        \begin{itemize}
+            \item \textbf{Amplitud ($A$):} $A = 20 \, \mu\text{m} = 20 \cdot 10^{-6} \, \text{m}$.
+            \item \textbf{Frecuencia angular ($\omega$):} $\omega = 6200 \, \text{rad/s}$.
+            \item \textbf{Número de onda ($k$):} $k = 18 \, \text{rad/m}$.
+        \end{itemize}
+    \item \textbf{Punto para el apartado b):} $x = 20 \, \text{cm} = 0,2 \, \text{m}$ y $t = 1 \, \text{ms} = 10^{-3} \, \text{s}$.
+    \item \textbf{Incógnitas:} $A, f, \lambda, v, s(0.2, 0.001), v_{osc}(0.2, 0.001)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Onda armónica} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico 3D que muestre una onda sinusoidal propagándose a lo largo de un eje X a medida que avanza el tiempo en un eje T. La amplitud de la onda se representa en el eje Z. Etiquetar la amplitud A, la longitud de onda $\lambda$ en el eje X y el periodo T en el eje t. Un vector $v$ indica el sentido de propagación."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_armonica_3d.png}
+    }}
+    \caption{Representación de una onda armónica.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Parámetros de la onda}
+A partir de $\omega$ y $k$ se obtienen las demás magnitudes:
+\begin{itemize}
+    \item Frecuencia: $f = \omega / (2\pi)$.
+    \item Longitud de onda: $\lambda = 2\pi / k$.
+    \item Velocidad de propagación: $v = \lambda f = \omega / k$.
+\end{itemize}
+\paragraph*{b) Cinemática de una partícula del medio}
+\begin{itemize}
+    \item Desplazamiento $s(x,t)$: Se obtiene sustituyendo los valores de $x$ y $t$ en la ecuación dada.
+    \item Velocidad de oscilación $v_{osc}(x,t)$: Es la derivada parcial del desplazamiento respecto al tiempo: $v_{osc} = \frac{\partial s}{\partial t}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Parámetros}
+$f = \frac{\omega}{2\pi}$, $\lambda = \frac{2\pi}{k}$, $v = \frac{\omega}{k}$.
+\paragraph*{b) Desplazamiento y velocidad}
+La velocidad de oscilación se deriva de la ecuación de onda:
+\begin{gather}
+    v_{osc}(x,t) = \frac{\partial}{\partial t} [A\sin(\omega t - kx)] = A\omega\cos(\omega t - kx)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Parámetros de la onda}
+\begin{itemize}
+    \item \textbf{Amplitud:} $A = \boldsymbol{20 \, \mu\textbf{m}}$.
+    \item \textbf{Frecuencia:} $f = \frac{6200}{2\pi} \approx \boldsymbol{986,5 \, \textbf{Hz}}$.
+    \item \textbf{Longitud de onda:} $\lambda = \frac{2\pi}{18} \approx \boldsymbol{0,349 \, \textbf{m}}$.
+    \item \textbf{Velocidad de propagación:} $v = \frac{6200}{18} \approx \boldsymbol{344,4 \, \textbf{m/s}}$.
+\end{itemize}
+\begin{cajaresultado}
+$A=20\,\mu\text{m}$, $f\approx986,5\,\text{Hz}$, $\lambda\approx0,349\,\text{m}$, $v\approx344,4\,\text{m/s}$.
+\end{cajaresultado}
+
+\paragraph*{b) Desplazamiento y velocidad de oscilación}
+\begin{gather}
+    s(0.2, 0.001) = 20\sin(6200 \cdot 10^{-3} - 18 \cdot 0,2) = 20\sin(6,2 - 3,6) = 20\sin(2,6) \approx 20 \cdot 0,5155 \approx 10,31 \, \mu\text{m} \\
+    v_{osc}(0.2, 0.001) = (20 \cdot 10^{-6}) \cdot 6200 \cos(2,6) = 0,124 \cos(2,6) \approx 0,124 \cdot (-0,857) \approx -0,106 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+El desplazamiento es $\boldsymbol{s \approx 10,31 \, \mu\textbf{m}}$ y la velocidad de oscilación es $\boldsymbol{v_{osc} \approx -0,106 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La ecuación de la onda contiene toda la información sobre sus características. Por identificación de términos, se ha determinado una amplitud de 20 $\mu$m y una velocidad de propagación de 344,4 m/s. En el instante y posición solicitados, la partícula del medio tiene un desplazamiento de 10,31 $\mu$m y se está moviendo con una velocidad de -0,106 m/s.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:2B_2015_jul_ext}
+
+\begin{cajaenunciado}
+Un bloque apoyado sobre una mesa sin rozamiento y sujeto a un muelle oscila entre las posiciones a) y b) de la figura. El tiempo que tarda en desplazarse entre a) y b) es de 2 s. Si en $t=0$ s el bloque se encuentra en la posición a), representa la gráfica de la posición en función del tiempo, $x(t)$. Señala en dicha gráfica la amplitud, A, y el periodo del movimiento. Indica razonadamente sobre la gráfica el punto correspondiente a la posición del bloque cuando ha trascurrido un tiempo $t=1,5$ periodos.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Movimiento:} Armónico Simple (M.A.S.) de un bloque-muelle.
+    \item \textbf{Posiciones extremas:} a) $x=+A$ y b) $x=-A$.
+    \item \textbf{Tiempo de a) a b):} El tiempo para ir de un extremo al otro es medio periodo. $T/2 = 2 \, \text{s}$.
+    \item \textbf{Condición inicial:} En $t=0$, el bloque está en la posición a), es decir, $x(0) = +A$.
+    \item \textbf{Incógnitas:} Gráfica $x(t)$ con $A$ y $T$ señalados, y la posición en $t=1,5T$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Gráfica del Movimiento Armónico Simple} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de la posición $x(t)$ en función del tiempo $t$. Dibujar un eje de tiempo horizontal y un eje de posición vertical. La curva debe ser una función coseno, comenzando en su máximo valor, $+A$, en $t=0$. Debe alcanzar su valor mínimo, $-A$, en $t=2$ s. Debe completar un ciclo completo, volviendo a $+A$, en $t=4$ s. Etiquetar la amplitud $A$ en el eje vertical y el periodo $T=4$ s en el eje horizontal. Extender el gráfico hasta $t=6$ s. Marcar el punto en $t=6$ s y mostrar que la posición correspondiente es $x=+A$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{mas_grafica.png}
+    }}
+    \caption{Gráfica de la posición en función del tiempo para el M.A.S. descrito.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El movimiento es un M.A.S. descrito por una ecuación de la forma $x(t) = A \cos(\omega t + \phi_0)$.
+\begin{itemize}
+    \item \textbf{Periodo (T):} Es el tiempo que tarda en completarse una oscilación. El tiempo de ir de un extremo al opuesto es $T/2$.
+    \item \textbf{Amplitud (A):} Es la máxima elongación, que corresponde a las posiciones a) y b).
+    \item \textbf{Fase inicial ($\phi_0$):} Se determina por la condición $x(0)=+A$. Esto implica $\cos(\phi_0)=1$, por lo que $\phi_0=0$. La ecuación es $x(t)=A\cos(\omega t)$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+A partir de los datos, deducimos el periodo:
+\begin{gather}
+    \frac{T}{2} = 2\,\text{s} \implies T = 4\,\text{s}
+\end{gather}
+La posición en $t = 1,5 T$ se puede determinar sabiendo que el movimiento es periódico:
+\begin{gather}
+    x(1,5 T) = x(T + T/2)
+\end{gather}
+Como la posición en $t=T$ es la misma que en $t=0$, y la posición en $t=T/2$ es la opuesta a la de $t=0$:
+$x(T) = x(0) = +A$.
+$x(T+T/2)$ es la posición medio periodo después de $t=T$. La posición en $t=T$ es $+A$, por lo que medio periodo después estará en el extremo opuesto, $-A$.
+No, un momento. En $t=0$ está en $x=+A$. En $t=T/2=2s$ está en $x=-A$. En $t=T=4s$ está en $x=+A$.
+En $t=1,5T = 6s$: $x(6) = x(4+2) = x(T+T/2)$. En $t=T=4s$ está en $+A$. Medio periodo después, en $t=4+2=6s$, estará en $-A$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+La gráfica es una función coseno que parte de $x=+A$ en $t=0$ y tiene un periodo de $T=4$ s. La posición en $t=1,5T=6$ s es $\boldsymbol{x=-A}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El tiempo de 2 segundos para ir de un extremo a otro corresponde a medio periodo, estableciendo el periodo del M.A.S. en 4 segundos. La condición inicial sitúa el inicio de la oscilación en un máximo positivo, definiendo una función coseno para la posición. Después de 1,5 periodos, el bloque habrá completado una oscilación y media, por lo que se encontrará en la posición opuesta a la inicial, es decir, en $x=-A$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Óptica Geométrica}
+\label{sec:optica_2015_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 3 - OPCIÓN A}
+\label{subsec:3A_2015_jul_ext}
+
+\begin{cajaenunciado}
+Un objeto real se sitúa frente a un espejo cóncavo, a una distancia menor que la mitad de su radio de curvatura. ¿Qué características tiene la imagen que se forma? Justifica la respuesta mediante un esquema de trazado de rayos.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Elemento óptico:} Espejo esférico cóncavo.
+    \item \textbf{Posición del objeto ($s$):} La distancia del objeto al espejo es menor que la mitad del radio de curvatura. Dado que la distancia focal $f = R/2$, esto significa que el objeto está situado entre el foco (F) y el vértice (V) del espejo. $|s| < f$.
+    \item \textbf{Incógnita:} Características de la imagen (naturaleza, orientación, tamaño) justificadas con un diagrama de rayos.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Formación de imagen en espejo cóncavo (Lupa)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar el eje óptico horizontal. A la derecha, un arco que representa un espejo cóncavo. Marcar su vértice V, su foco F y su centro de curvatura C a la izquierda del vértice. Colocar un objeto (flecha vertical hacia arriba) entre el foco F y el vértice V. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje que se refleja pasando por el foco F. 2) Un rayo que se dirige hacia el foco F y se refleja paralelo al eje (este es difícil de dibujar, mejor usar el rayo que pasa por C o el que va al vértice). Alternativa: 2) Un rayo que incide en el vértice V y se refleja con el mismo ángulo respecto al eje óptico. Las prolongaciones de los rayos reflejados, dibujadas con líneas discontinuas detrás del espejo, se cortan en un punto. Dibujar la imagen en ese punto."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_concavo_lupa.png}
+    }}
+    \caption{Trazado de rayos para un objeto situado entre el foco y el vértice de un espejo cóncavo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La construcción de la imagen se basa en el comportamiento de los rayos principales al reflejarse en un espejo cóncavo:
+\begin{enumerate}
+    \item \textbf{Rayo paralelo:} Un rayo que incide paralelo al eje óptico se refleja pasando por el foco (F).
+    \item \textbf{Rayo focal:} Un rayo que incide pasando por el foco (F) se refleja paralelo al eje óptico.
+    \item \textbf{Rayo del vértice:} Un rayo que incide en el vértice del espejo se refleja simétricamente respecto al eje óptico.
+\end{enumerate}
+La imagen se forma donde los rayos reflejados (o sus prolongaciones) se cruzan.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Aunque no se pide, se puede confirmar con la ecuación de Gauss $\frac{1}{s'} + \frac{1}{s} = \frac{1}{f}$.
+Con el convenio de signos DIN: $s$ es negativo, $f$ es negativo.
+Como $|s| < |f|$, tenemos que $\frac{1}{|s|} > \frac{1}{|f|}$.
+$\frac{1}{s'} = \frac{1}{f} - \frac{1}{s} = -\frac{1}{|f|} - \frac{1}{-|s|} = \frac{1}{|s|} - \frac{1}{|f|}$.
+Como $\frac{1}{|s|} > \frac{1}{|f|}$, el resultado es positivo. Por tanto, $s' > 0$, lo que confirma una imagen virtual.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+Las características de la imagen, deducidas del trazado de rayos, son:
+\begin{itemize}
+    \item \textbf{Virtual:} Se forma por la prolongación de los rayos reflejados, detrás del espejo.
+    \item \textbf{Derecha:} Tiene la misma orientación que el objeto.
+    \item \textbf{De mayor tamaño:} La imagen es más grande que el objeto.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Cuando un objeto se sitúa entre el foco y el vértice de un espejo cóncavo, este actúa como una lupa o espejo de aumento. El diagrama de rayos demuestra inequívocamente que la imagen formada es virtual, derecha y de mayor tamaño que el objeto original.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 3 - OPCIÓN B}
+\label{subsec:3B_2015_jul_ext}
+
+\begin{cajaenunciado}
+En la fotografía de la derecha, un haz láser que se propaga por el aire incide sobre la cara plana de un medio cuyo índice de refracción es n. Determina n y la velocidad de la luz en ese medio utilizando la información de la fotografía.
+\textbf{Dato:} velocidad de la luz en el aire, $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Fenómeno:} Refracción de la luz.
+    \item \textbf{Medio de incidencia:} Aire, cuyo índice de refracción es $n_1 = n_{aire} \approx 1$.
+    \item \textbf{Medio de refracción:} Material desconocido con índice de refracción $n_2=n$.
+    \item \textbf{Ángulos (leídos del transportador):}
+        \begin{itemize}
+            \item \textbf{Ángulo de incidencia ($\theta_1$):} El rayo incidente forma un ángulo de $40^\circ$ con la normal (eje vertical).
+            \item \textbf{Ángulo de refracción ($\theta_2$):} El rayo refractado forma un ángulo de $25^\circ$ con la normal.
+        \end{itemize}
+    \item \textbf{Dato:} Velocidad de la luz en el vacío/aire, $c \approx 3 \cdot 10^8 \, \text{m/s}$.
+    \item \textbf{Incógnitas:} Índice de refracción $n$ y velocidad de la luz en el medio $v$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La fotografía proporcionada en el enunciado actúa como la representación gráfica del problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ley de Snell de la refracción:} Relaciona los ángulos y los índices de refracción: $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$.
+    \item \textbf{Definición del índice de refracción:} Relaciona la velocidad de la luz en el vacío ($c$) con la velocidad en el medio ($v$): $n = c/v$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Cálculo del índice de refracción ($n$)}
+A partir de la Ley de Snell, con $n_1=1$ y $n_2=n$:
+\begin{gather}
+    1 \cdot \sin(\theta_1) = n \cdot \sin(\theta_2) \implies n = \frac{\sin(\theta_1)}{\sin(\theta_2)}
+\end{gather}
+\paragraph*{Cálculo de la velocidad en el medio ($v$)}
+A partir de la definición de $n$:
+\begin{gather}
+    v = \frac{c}{n}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de $n$}
+\begin{gather}
+    n = \frac{\sin(40^\circ)}{\sin(25^\circ)} \approx \frac{0,6428}{0,4226} \approx 1,52
+\end{gather}
+\begin{cajaresultado}
+El índice de refracción del medio es $\boldsymbol{n \approx 1,52}$.
+\end{cajaresultado}
+\paragraph*{Cálculo de $v$}
+\begin{gather}
+    v = \frac{3 \cdot 10^8 \, \text{m/s}}{1,52} \approx 1,97 \cdot 10^8 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad de la luz en ese medio es $\boldsymbol{v \approx 1,97 \cdot 10^8 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la lectura directa de los ángulos de incidencia y refracción en la fotografía y la aplicación de la Ley de Snell, se ha determinado que el índice de refracción del material es de aproximadamente 1,52. Con este valor, se calcula que la velocidad de propagación de la luz en dicho medio se reduce a $1,97 \cdot 10^8$ m/s.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Electromagnetismo}
+\label{sec:em_2015_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 4 - OPCIÓN A}
+\label{subsec:4A_2015_jul_ext}
+
+\begin{cajaenunciado}
+Por un conductor rectilíneo de longitud muy grande, situado sobre el eje Y, circula una corriente eléctrica uniforme de intensidad $I=2\,\text{A}$, en el sentido positivo de dicho eje. En el punto (1,0) m se encuentra una carga eléctrica positiva $q=2\,\mu\text{C}$ cuya velocidad es $\vec{v}=3\cdot10^{6}\vec{i}\,\text{m/s}$. Calcula la fuerza magnética que actúa sobre la carga y dibuja los vectores velocidad, campo magnético y fuerza magnética, en el punto donde se encuentra situada la carga.
+\textbf{Dato:} permeabilidad magnética del vacío, $\mu_{0}=4\pi\cdot10^{-7}\,\text{T}\cdot\text{m/A}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Corriente ($I$):} $I = 2 \, \text{A}$ en sentido $+\vec{j}$.
+    \item \textbf{Carga ($q$):} $q = 2 \, \mu\text{C} = 2 \cdot 10^{-6} \, \text{C}$.
+    \item \textbf{Posición de la carga:} P(1,0) m. La distancia al conductor es $d=1\,\text{m}$.
+    \item \textbf{Velocidad de la carga ($\vec{v}$):} $\vec{v} = 3 \cdot 10^6 \vec{i} \, \text{m/s}$.
+    \item \textbf{Dato:} $\mu_0 = 4\pi \cdot 10^{-7} \, \text{T}\cdot\text{m/A}$.
+    \item \textbf{Incógnita:} Fuerza magnética $\vec{F}_m$ sobre la carga.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fuerza de Lorentz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XYZ. Un hilo conductor rectilíneo a lo largo del eje Y con una flecha indicando una corriente $I$ hacia arriba ($+\vec{j}$). Marcar el punto P(1,0,0) en el eje X. En P, dibujar: 1) El vector velocidad $\vec{v}$ apuntando a lo largo del eje X ($+\vec{i}$). 2) Usando la regla de la mano derecha para el hilo, dibujar el vector campo magnético $\vec{B}$, que apunta saliendo del plano XY ($+\vec{k}$). 3) Usando la regla de la mano derecha para la fuerza de Lorentz ($q(\vec{v} \times \vec{B})$), dibujar el vector fuerza magnética $\vec{F}_m$, que apunta hacia abajo ($-\vec{j}$)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_lorentz_hilo.png}
+    }}
+    \caption{Representación de los vectores $\vec{v}$, $\vec{B}$ y $\vec{F}_m$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema requiere dos leyes fundamentales del electromagnetismo:
+\begin{itemize}
+    \item \textbf{Ley de Biot-Savart} para un conductor rectilíneo largo: El módulo del campo magnético a una distancia $d$ es $B = \frac{\mu_0 I}{2\pi d}$. La dirección se obtiene con la regla de la mano derecha.
+    \item \textbf{Fuerza de Lorentz:} La fuerza magnética sobre una carga $q$ que se mueve con velocidad $\vec{v}$ en un campo $\vec{B}$ es $\vec{F}_m = q(\vec{v} \times \vec{B})$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Campo magnético en P(1,0)}
+La corriente va en dirección $+\vec{j}$. En el punto P(1,0), que está en el semieje positivo de las X, la regla de la mano derecha indica que el campo magnético sale del plano XY, es decir, en la dirección $+\vec{k}$.
+\begin{gather}
+    \vec{B} = \frac{\mu_0 I}{2\pi d} \vec{k}
+\end{gather}
+\paragraph*{2. Fuerza magnética sobre q}
+Sustituimos los vectores en la fórmula de la fuerza de Lorentz:
+\begin{gather}
+    \vec{F}_m = q (\vec{v} \times \vec{B}) = q \left( (v\vec{i}) \times \left(\frac{\mu_0 I}{2\pi d} \vec{k}\right) \right) = qv \frac{\mu_0 I}{2\pi d} (\vec{i} \times \vec{k})
+\end{gather}
+Recordando que $\vec{i} \times \vec{k} = -\vec{j}$, la expresión final es:
+\begin{gather}
+    \vec{F}_m = - qv \frac{\mu_0 I}{2\pi d} \vec{j}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, calculamos el módulo del campo magnético $B$:
+\begin{gather}
+    B = \frac{(4\pi \cdot 10^{-7})(2)}{2\pi (1)} = 4 \cdot 10^{-7} \, \text{T} \implies \vec{B} = 4 \cdot 10^{-7} \vec{k} \, \text{T}
+\end{gather}
+Ahora, calculamos la fuerza:
+\begin{gather}
+    \vec{F}_m = (2\cdot 10^{-6}) \left( (3\cdot 10^6 \vec{i}) \times (4\cdot 10^{-7} \vec{k}) \right) = (2\cdot 10^{-6}) (1,2) (\vec{i} \times \vec{k}) = 2,4 \cdot 10^{-6} (-\vec{j}) \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+La fuerza magnética que actúa sobre la carga es $\boldsymbol{\vec{F}_m = -2,4 \cdot 10^{-6} \vec{j} \, \textbf{N}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La corriente rectilínea genera un campo magnético de $4 \cdot 10^{-7}$ T en la dirección $+z$ en el punto P. Al moverse la carga positiva en la dirección $+x$ a través de este campo, experimenta una fuerza de Lorentz de $2,4 \cdot 10^{-6}$ N en la dirección $-y$, perpendicular tanto a su velocidad como al campo magnético.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 4 - OPCIÓN B}
+\label{subsec:4B_2015_jul_ext}
+
+\begin{cajaenunciado}
+Una carga puntual de valor $q_{1}=-3\,\mu\text{C}$ se encuentra en el punto (0,0) m y una segunda carga de valor desconocido, $q_{2}$, se encuentra en el punto (2,0) m.
+\begin{enumerate}
+    \item[a)] Calcula el valor que debe tener la carga $q_{2}$ para que el campo eléctrico generado por ambas cargas en el punto (5,0) m sea nulo. Representa los vectores campo eléctrico generados por cada una de las cargas en ese punto. (1 punto).
+    \item[b)] Calcula el trabajo necesario para mover una carga $q_{3}=0,1\,\mu\text{C}$ desde el punto (5,0) m hasta el punto (10,0) m. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de Coulomb, $k_{e}=9\cdot10^{9}\,\text{Nm}^{2}/\text{C}^{2}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = -3\,\mu\text{C} = -3\cdot10^{-6}\,\text{C}$ en P1(0,0).
+    \item \textbf{Carga 2 ($q_2$):} Desconocida, en P2(2,0).
+    \item \textbf{Punto de campo nulo (P):} P(5,0). Condición: $\vec{E}_{total}(P)=0$.
+    \item \textbf{Carga 3 ($q_3$):} $q_3 = 0,1\,\mu\text{C} = 10^{-7}\,\text{C}$.
+    \item \textbf{Trayectoria para el trabajo:} Desde P(5,0) hasta R(10,0).
+    \item \textbf{Incógnitas:} $q_2$ y $W_{P \to R}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Eléctrico Nulo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje X horizontal. Colocar una carga negativa $q_1$ en x=0 y una carga $q_2$ en x=2. Marcar el punto P en x=5. En P, dibujar el vector campo $\vec{E}_1$ (creado por $q_1$), que es atractivo y apunta hacia la izquierda. Para que el campo total sea nulo, dibujar un vector $\vec{E}_2$ de igual longitud pero apuntando hacia la derecha. Para que $\vec{E}_2$ sea repulsivo (apunte a la derecha), la carga $q_2$ debe ser positiva."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_nulo_eje.png}
+    }}
+    \caption{Representación de los vectores campo eléctrico en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo Eléctrico Nulo}
+Se utiliza el \textbf{Principio de Superposición}. Para que el campo total en P sea nulo, la suma vectorial debe ser cero: $\vec{E}_{total} = \vec{E}_1 + \vec{E}_2 = \vec{0}$, lo que implica $\vec{E}_1 = -\vec{E}_2$. Los vectores deben tener igual módulo y sentido opuesto.
+\paragraph*{b) Trabajo Eléctrico}
+El trabajo realizado por una fuerza externa para mover una carga $q_3$ de un punto P a otro R en un campo electrostático es igual al producto de la carga por la diferencia de potencial eléctrico entre los dos puntos: $W_{P \to R} = q_3 (V_R - V_P)$. El potencial en un punto es la suma escalar de los potenciales creados por cada carga fuente: $V = \sum k \frac{q_i}{r_i}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Cálculo de $q_2$}
+Igualamos los módulos de los campos en P(5,0): $|\vec{E}_1| = |\vec{E}_2|$.
+Las distancias son $d_1 = 5\,\text{m}$ y $d_2 = 5-2=3\,\text{m}$.
+\begin{gather}
+    k\frac{|q_1|}{d_1^2} = k\frac{q_2}{d_2^2} \implies q_2 = |q_1|\frac{d_2^2}{d_1^2}
+\end{gather}
+(Como $\vec{E}_1$ es atractivo y apunta a la izquierda, $\vec{E}_2$ debe ser repulsivo y apuntar a la derecha, por lo que $q_2$ debe ser positiva).
+\paragraph*{b) Cálculo del trabajo}
+\begin{gather}
+    V_P = k\frac{q_1}{5} + k\frac{q_2}{3} \quad ; \quad V_R = k\frac{q_1}{10} + k\frac{q_2}{8} \\
+    W_{P \to R} = q_3 (V_R - V_P)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de $q_2$}
+\begin{gather}
+    q_2 = (3\cdot10^{-6}\,\text{C}) \frac{3^2}{5^2} = (3\cdot10^{-6}) \frac{9}{25} = 1,08\cdot10^{-6}\,\text{C}
+\end{gather}
+\begin{cajaresultado}
+El valor de la carga es $\boldsymbol{q_2 = +1,08\,\mu\textbf{C}}$.
+\end{cajaresultado}
+\paragraph*{b) Trabajo $W_{P \to R}$}
+Calculamos los potenciales usando $q_1=-3\,\mu\text{C}$ y $q_2=+1,08\,\mu\text{C}$:
+\begin{gather}
+    V_P = 9\cdot10^9 \left( \frac{-3\cdot10^{-6}}{5} + \frac{1,08\cdot10^{-6}}{3} \right) = 9\cdot10^9(-0,6\cdot10^{-6} + 0,36\cdot10^{-6}) = -2160\,\text{V} \\
+    V_R = 9\cdot10^9 \left( \frac{-3\cdot10^{-6}}{10} + \frac{1,08\cdot10^{-6}}{8} \right) = 9\cdot10^9(-0,3\cdot10^{-6} + 0,135\cdot10^{-6}) = -1485\,\text{V} \\
+    W_{P \to R} = (10^{-7})(-1485 - (-2160)) = (10^{-7})(675) = 6,75\cdot10^{-5}\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+El trabajo necesario es $\boldsymbol{W_{P \to R} = 6,75 \cdot 10^{-5}\,\textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para anular el campo en el punto P(5,0), la carga $q_2$ debe ser positiva y de valor +1,08 $\mu$C. Con esta configuración, el potencial en el punto P es de -2160 V y en el punto R es de -1485 V. El trabajo positivo de $6,75 \cdot 10^{-5}$ J indica que un agente externo debe aportar energía para mover la carga positiva $q_3$ de una región de menor potencial a una de mayor potencial.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Física Moderna}
+\label{sec:moderna_2015_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 5 - OPCIÓN A}
+\label{subsec:5A_2015_jul_ext}
+
+\begin{cajaenunciado}
+Se mide la actividad de una pequeña muestra radiactiva. Los resultados se representan en la figura. Determina cual es el isótopo radiactivo que constituye la muestra teniendo en cuenta la tabla proporcionada.
+\textbf{Tabla de isótopos:} ${}_{15}^{32}P$ (14,3 días), ${}_{19}^{42}K$ (12360 h), ${}_{20}^{47}Ca$ (108,8 h), I-131 (691200 s), ${}_{35}^{82}Br$ (131750 s), ${}_{60}^{147}Nd$ (11 días).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Datos del gráfico:} Se observan los siguientes puntos (t, Actividad):
+        \begin{itemize}
+            \item (0 días, 1000 Bq) $\implies A_0 = 1000 \, \text{Bq}$.
+            \item (8 días, 500 Bq).
+            \item (16 días, 250 Bq).
+        \end{itemize}
+    \item \textbf{Incógnita:} Identificar el isótopo de la tabla.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+El enunciado proporciona la gráfica necesaria para resolver la cuestión.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se basa en la \textbf{ley de desintegración radiactiva} y el concepto de \textbf{periodo de semidesintegración ($T_{1/2}$)}.
+\begin{itemize}
+    \item La actividad de una muestra sigue la ley $A(t) = A_0 e^{-\lambda t}$.
+    \item El periodo de semidesintegración es el tiempo necesario para que la actividad (o el número de núcleos) de una muestra se reduzca a la mitad de su valor inicial. Es decir, si $A(T_{1/2}) = A_0/2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La estrategia consiste en determinar el periodo de semidesintegración a partir de los datos de la gráfica y luego compararlo con los valores de la tabla.
+Observando los datos:
+La actividad inicial es $A_0 = 1000$ Bq.
+En el instante $t = 8$ días, la actividad es $A(8) = 500$ Bq.
+Como $A(8) = A_0/2$, por definición, el periodo de semidesintegración es $T_{1/2} = 8$ días.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Ahora debemos comparar $T_{1/2} = 8$ días con los periodos de los isótopos de la tabla, convirtiendo todas las unidades a días.
+\begin{itemize}
+    \item ${}_{15}^{32}P$: $T_{1/2} = 14,3$ días.
+    \item ${}_{19}^{42}K$: $T_{1/2} = 12360\,\text{h} / 24\,\text{h/día} = 515$ días.
+    \item ${}_{20}^{47}Ca$: $T_{1/2} = 108,8\,\text{h} / 24\,\text{h/día} \approx 4,53$ días.
+    \item \textbf{I-131:} $T_{1/2} = 691200\,\text{s} / (3600\,\text{s/h} \cdot 24\,\text{h/día}) = \boldsymbol{8}$ \textbf{días}.
+    \item ${}_{35}^{82}Br$: $T_{1/2} = 131750\,\text{s} / (3600 \cdot 24)\,\text{s/día} \approx 1,52$ días.
+    \item ${}_{60}^{147}Nd$: $T_{1/2} = 11$ días.
+\end{itemize}
+El valor coincide con el del Yodo-131.
+\begin{cajaresultado}
+El isótopo radiactivo que constituye la muestra es el \textbf{Yodo-131} (${}^{131}\text{I}$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La gráfica de la actividad en función del tiempo muestra claramente que la actividad se reduce a la mitad cada 8 días. Por lo tanto, el periodo de semidesintegración de la muestra es de 8 días. Al comparar este valor con la tabla proporcionada, se concluye que el isótopo presente en la muestra es el Yodo-131.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 5 - OPCIÓN B}
+\label{subsec:5B_2015_jul_ext}
+
+\begin{cajaenunciado}
+Determina la energía de enlace por nucleón (en MeV) para el núcleo de ${}_{1}^{3}H$ y para una partícula alfa. ¿Cuál de los dos núcleos será más estable?
+\textbf{Datos:} masa del protón, $m_{p}=1,007276$ u; masa del neutrón, $m_{n}=1,008665$ u; masa de la partícula alfa, $m_{\alpha} = 4,001505$ u; masa del núcleo de ${}_{1}^{3}H, m({}_{1}^{3}H)=5,0081\cdot10^{-27}\,\text{kg}$; $1\,\text{u}=1,6605\cdot10^{-27}\,\text{kg}$; $e=1,602\cdot10^{-19}\,\text{C}$; $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del protón ($m_p$):} $1,007276$ u.
+    \item \textbf{Masa del neutrón ($m_n$):} $1,008665$ u.
+    \item \textbf{Masa de ${}_{1}^{3}H$ ($m_H$):} $5,0081\cdot10^{-27}\,\text{kg} / (1,6605\cdot10^{-27}\,\text{kg/u}) \approx 3,01602$ u.
+    \item \textbf{Masa de $\alpha$ (${}_{2}^{4}He$, $m_\alpha$):} $4,001505$ u.
+    \item \textbf{Incógnitas:} Energía de enlace por nucleón ($E_b/A$) para ambos y cuál es más estable.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema de cálculo.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La estabilidad de un núcleo se mide por su \textbf{energía de enlace por nucleón} ($E_b/A$). Un mayor valor indica mayor estabilidad.
+La energía de enlace ($E_b$) se calcula a partir del \textbf{defecto de masa ($\Delta m$)} mediante la ecuación de Einstein, $E_b = \Delta m c^2$.
+El defecto de masa es la diferencia entre la masa de los nucleones constituyentes por separado y la masa real del núcleo: $\Delta m = (Z \cdot m_p + N \cdot m_n) - m_{núcleo}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Para ${}_{1}^{3}H$ (Tritio)}
+$Z=1, N=2, A=3$.
+\begin{gather}
+    \Delta m_H = (1 \cdot m_p + 2 \cdot m_n) - m_H \\
+    E_{b,H}/A = \frac{\Delta m_H c^2}{3}
+\end{gather}
+\paragraph*{Para ${}_{2}^{4}He$ (partícula $\alpha$)}
+$Z=2, N=2, A=4$.
+\begin{gather}
+    \Delta m_\alpha = (2 \cdot m_p + 2 \cdot m_n) - m_\alpha \\
+    E_{b,\alpha}/A = \frac{\Delta m_\alpha c^2}{4}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Se puede usar la equivalencia $1\,\text{u} \approx 931,5\,\text{MeV/c}^2$.
+\paragraph*{Cálculos para ${}_{1}^{3}H$}
+\begin{gather}
+    \Delta m_H = (1 \cdot 1,007276 + 2 \cdot 1,008665) - 3,01602 = 3,024606 - 3,01602 = 0,008586 \, \text{u} \\
+    E_{b,H} = 0,008586\,\text{u} \times 931,5\,\text{MeV/u} \approx 7,996 \, \text{MeV} \\
+    E_{b,H}/A = \frac{7,996 \, \text{MeV}}{3} \approx 2,665 \, \text{MeV/nucleón}
+\end{gather}
+\begin{cajaresultado}
+La energía de enlace por nucleón para ${}_{1}^{3}H$ es $\boldsymbol{\approx 2,67 \, \textbf{MeV/nucleón}}$.
+\end{cajaresultado}
+\paragraph*{Cálculos para ${}_{2}^{4}He$}
+\begin{gather}
+    \Delta m_\alpha = (2 \cdot 1,007276 + 2 \cdot 1,008665) - 4,001505 = 4,031882 - 4,001505 = 0,030377 \, \text{u} \\
+    E_{b,\alpha} = 0,030377\,\text{u} \times 931,5\,\text{MeV/u} \approx 28,30 \, \text{MeV} \\
+    E_{b,\alpha}/A = \frac{28,30 \, \text{MeV}}{4} \approx 7,075 \, \text{MeV/nucleón}
+\end{gather}
+\begin{cajaresultado}
+La energía de enlace por nucleón para la partícula alfa es $\boldsymbol{\approx 7,08 \, \textbf{MeV/nucleón}}$.
+\end{cajaresultado}
+\paragraph*{Comparación de Estabilidad}
+Como $7,08 \, \text{MeV/nucleón} > 2,67 \, \text{MeV/nucleón}$, la partícula alfa es más estable.
+\begin{cajaresultado}
+El núcleo más estable es la \textbf{partícula alfa} (${}_{2}^{4}He$) al tener una mayor energía de enlace por nucleón.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La partícula alfa tiene una energía de enlace por nucleón de 7,08 MeV, significativamente mayor que la del tritio (2,67 MeV). Esto indica que los nucleones en el núcleo de helio están mucho más fuertemente ligados que en el núcleo de tritio, lo que convierte a la partícula alfa en un núcleo excepcionalmente estable.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 6 - OPCIÓN A}
+\label{subsec:6A_2015_jul_ext}
+
+\begin{cajaenunciado}
+Un muón desciende verticalmente con una velocidad $v=0,9c$.
+\begin{enumerate}
+    \item[a)] Calcula la energía en reposo y la energía total del muón en MeV. (1 punto)
+    \item[b)] El muón se ha producido a una altura de 10 km. Calcula el intervalo de tiempo que tarda el muón en alcanzar la superficie, según un sistema de referencia ligado a la Tierra, y según un sistema de referencia que viaje con el muón. (1 punto)
+\end{enumerate}
+\textbf{Datos:} velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$; masa (en reposo) del muón: $m=1,88\cdot10^{-28}\,\text{kg}$; carga elemental, $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad del muón ($v$):} $v=0,9c = 0,9 \cdot 3\cdot10^8 = 2,7\cdot10^8 \, \text{m/s}$.
+    \item \textbf{Masa en reposo ($m_0$):} $m_0 = 1,88\cdot10^{-28}\,\text{kg}$.
+    \item \textbf{Altura de producción ($h$):} $h = 10 \, \text{km} = 10^4 \, \text{m}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Energía en reposo ($E_0$) y energía total ($E$) en MeV.
+            \item Tiempo de viaje medido desde la Tierra ($\Delta t$) y desde el muón ($\Delta t_0$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Dilatación del Tiempo y Contracción de la Longitud} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos paneles. Panel izquierdo (Referencial Tierra): Un muón viaja una distancia de 10 km en un tiempo $\Delta t$. Un reloj en la Tierra mide este tiempo. Panel derecho (Referencial Muón): El muón está en reposo. La atmósfera de la Tierra se mueve hacia él a 0.9c. La distancia de 10 km aparece contraída a una longitud $L < 10$ km. Un reloj junto al muón mide el tiempo propio $\Delta t_0$ que tarda la superficie en llegar a él. Indicar que $\Delta t > \Delta t_0$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{dilatacion_tiempo_muon.png}
+    }}
+    \caption{Dos puntos de vista para el viaje del muón: el del observador terrestre y el del propio muón.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica la Teoría de la Relatividad Especial.
+\begin{itemize}
+    \item \textbf{Energía en reposo:} $E_0 = m_0c^2$.
+    \item \textbf{Energía total relativista:} $E = \gamma m_0c^2$, donde $\gamma = (1-v^2/c^2)^{-1/2}$ es el factor de Lorentz.
+    \item \textbf{Dilatación del tiempo:} El tiempo medido en un sistema en movimiento ($\Delta t$) es mayor que el tiempo propio ($\Delta t_0$). La relación es $\Delta t = \gamma \Delta t_0$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Energías}
+Primero calculamos el factor de Lorentz $\gamma$. Luego se aplican las fórmulas $E_0 = m_0c^2$ y $E = \gamma E_0$. Los resultados en Julios se convierten a MeV dividiendo por $1,6\cdot10^{-13}\,\text{J/MeV}$.
+\paragraph*{b) Intervalos de tiempo}
+\begin{itemize}
+    \item \textbf{Tiempo en el sistema de la Tierra ($\Delta t$):} Se calcula con la cinemática clásica, ya que la distancia de 10 km se mide en este sistema. $\Delta t = h/v$.
+    \item \textbf{Tiempo en el sistema del muón ($\Delta t_0$):} Este es el tiempo propio, y se calcula a partir del tiempo dilatado mediante la fórmula de dilatación del tiempo: $\Delta t_0 = \Delta t / \gamma$.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de $\gamma$}
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - (0,9c)^2/c^2}} = \frac{1}{\sqrt{1 - 0,81}} = \frac{1}{\sqrt{0,19}} \approx 2,294
+\end{gather}
+\paragraph*{a) Energías}
+\begin{gather}
+    E_0 = (1,88\cdot10^{-28})(3\cdot10^8)^2 = 1,692\cdot10^{-11} \, \text{J} \approx \boldsymbol{105,75 \, \textbf{MeV}} \\
+    E = \gamma E_0 \approx 2,294 \cdot (105,75 \, \text{MeV}) \approx \boldsymbol{242,59 \, \textbf{MeV}}
+\end{gather}
+\begin{cajaresultado}
+$E_0 \approx 105,75\,\text{MeV}$ y $E \approx 242,59\,\text{MeV}$.
+\end{cajaresultado}
+\paragraph*{b) Tiempos}
+\begin{gather}
+    \Delta t = \frac{10^4 \, \text{m}}{2,7\cdot10^8 \, \text{m/s}} \approx 3,70 \cdot 10^{-5} \, \text{s} \\
+    \Delta t_0 = \frac{\Delta t}{\gamma} = \frac{3,70 \cdot 10^{-5} \, \text{s}}{2,294} \approx 1,61 \cdot 10^{-5} \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+El tiempo medido desde la Tierra es $\boldsymbol{\Delta t \approx 3,70 \cdot 10^{-5} \, \textbf{s}}$. El tiempo medido por el muón es $\boldsymbol{\Delta t_0 \approx 1,61 \cdot 10^{-5} \, \textbf{s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido a su alta velocidad, la energía total del muón es 2,29 veces su energía en reposo. El fenómeno de la dilatación del tiempo hace que, mientras para un observador terrestre el viaje dura $37\,\mu\text{s}$, para el muón solo transcurren $16,1\,\mu\text{s}$. Este efecto es crucial para explicar por qué los muones, a pesar de su corta vida media, logran llegar a la superficie terrestre.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 6 - OPCIÓN B}
+\label{subsec:6B_2015_jul_ext}
+
+\begin{cajaenunciado}
+Completa razonadamente la siguiente cadena de desintegración radiactiva. ${}_{90}^{232}\text{Th}\longrightarrow{}_{88}^{228}\text{Ra}+{}_{b}^{a}X$. Identifica X y obtén los valores a, b, c y d.
+${}_{88}^{228}\text{Ra} \longrightarrow {}_{d}^{c}\text{Ac}+{}_{-1}^{0}e$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Primera reacción:} ${}_{90}^{232}\text{Th} \longrightarrow {}_{88}^{228}\text{Ra} + {}_{b}^{a}X$.
+    \item \textbf{Segunda reacción:} ${}_{88}^{228}\text{Ra} \longrightarrow {}_{d}^{c}\text{Ac} + {}_{-1}^{0}e$.
+    \item \textbf{Identificación de partículas:} ${}_{-1}^{0}e$ es un electrón (partícula beta). Ac es Actinio, que tiene número atómico $Z=89$.
+    \item \textbf{Incógnitas:} Partícula X y los números $a, b, c, d$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En cualquier reacción nuclear, se deben conservar el \textbf{número másico (A)} y el \textbf{número atómico (Z)}. Estas son las leyes de conservación de Soddy-Fajans.
+\begin{itemize}
+    \item \textbf{Conservación de A:} La suma de los superíndices a la izquierda debe ser igual a la suma de los superíndices a la derecha.
+    \item \textbf{Conservación de Z:} La suma de los subíndices a la izquierda debe ser igual a la suma de los subíndices a la derecha.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Análisis de la primera reacción}
+${}_{90}^{232}\text{Th} \longrightarrow {}_{88}^{228}\text{Ra} + {}_{b}^{a}X$
+\begin{itemize}
+    \item Conservación de A: $232 = 228 + a \implies a = 4$.
+    \item Conservación de Z: $90 = 88 + b \implies b = 2$.
+\end{itemize}
+La partícula ${}_{2}^{4}X$ con 2 protones y 4 nucleones es un núcleo de Helio, conocido como \textbf{partícula alfa ($\alpha$)}.
+
+\paragraph*{Análisis de la segunda reacción}
+${}_{88}^{228}\text{Ra} \longrightarrow {}_{d}^{c}\text{Ac} + {}_{-1}^{0}e$. Sabemos que para Ac, $d=89$.
+\begin{itemize}
+    \item Conservación de A: $228 = c + 0 \implies c = 228$.
+    \item Conservación de Z: $88 = d + (-1) \implies 88 = d-1 \implies d=89$.
+\end{itemize}
+El valor de $d=89$ es consistente con el elemento Actinio.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+\begin{itemize}
+    \item La partícula X es una \textbf{partícula alfa} (${}_{2}^{4}\text{He}$).
+    \item El valor de $\boldsymbol{a=4}$.
+    \item El valor de $\boldsymbol{b=2}$.
+    \item El valor de $\boldsymbol{c=228}$.
+    \item El valor de $\boldsymbol{d=89}$.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando las leyes de conservación del número másico y el número atómico, se ha completado la cadena de desintegración. El primer paso es una desintegración alfa, donde el Torio-232 emite una partícula alfa para convertirse en Radio-228. El segundo paso es una desintegración beta, donde el Radio-228 emite un electrón para convertirse en Actinio-228.
+\end{cajaconclusion}
+
+\newpage
+```

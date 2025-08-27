@@ -1,0 +1,629 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2000 - Convocatoria Extraordinaria}
+\label{chap:2000_sep_ext}
+
+% ======================================================================
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2000_sep_ext}
+% ======================================================================
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:1A_2000_sep_ext}
+
+\begin{cajaenunciado}
+Se desea colocar en órbita un satélite de comunicaciones, de tal forma que se encuentre siempre sobre el mismo punto de la superficie terrestre (órbita "geoestacionaria"). Si la masa del satélite es de 1500 kg, se pide calcular:
+\begin{enumerate}
+    \item Altura sobre la superficie terrestre a la que hay que situar el satélite.
+    \item Energía total del satélite cuando se encuentre en órbita.
+\end{enumerate}
+\textbf{Datos:} $G=6,67\times10^{-11}$ S.I.; $M_{Tierra}=5,98\times10^{24}$ kg; $R_{Tierra}=6370\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Los datos del problema, convertidos al Sistema Internacional (SI), son:
+\begin{itemize}
+    \item \textbf{Masa del satélite ($m_s$):} $m_s = 1500 \, \text{kg}$.
+    \item \textbf{Masa de la Tierra ($M_T$):} $M_T = 5,98 \cdot 10^{24} \, \text{kg}$.
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6370 \, \text{km} = 6,37 \cdot 10^6 \, \text{m}$.
+    \item \textbf{Constante de Gravitación ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Periodo de la órbita ($T$):} Para una órbita geoestacionaria, el periodo del satélite debe ser igual al periodo de rotación de la Tierra, que es de 24 horas.
+    $T = 24 \, \text{h} \times 3600 \, \text{s/h} = 86400 \, \text{s}$.
+    \item \textbf{Incógnitas:} Altura de la órbita ($h$) y energía total del satélite ($E_T$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Órbita Geoestacionaria} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Tierra en el centro, con su radio $R_T$ indicado. Un satélite en una órbita circular de radio $r$ alrededor de la Tierra. El radio orbital $r$ debe mostrarse como la suma del radio terrestre $R_T$ y la altitud $h$. Dibujar el vector de la Fuerza Gravitatoria ($F_g$) que la Tierra ejerce sobre el satélite, apuntando hacia el centro de la Tierra, y etiquetarlo también como Fuerza Centrípeta ($F_c$)." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{orbita_geo.png}
+    }}
+    \caption{Modelo de un satélite en órbita circular.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para que el satélite mantenga su órbita circular, la fuerza de atracción gravitatoria de la Tierra debe ser igual a la fuerza centrípeta requerida para el movimiento.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal:} $F_g = G \frac{M_T m_s}{r^2}$, donde $r$ es el radio de la órbita.
+    \item \textbf{Fuerza Centrípeta:} $F_c = m_s a_c = m_s \omega^2 r = m_s \left(\frac{2\pi}{T}\right)^2 r$.
+    \item \textbf{Energía total en órbita:} Es la suma de la energía cinética y la potencial: $E_T = E_c + E_p = \frac{1}{2}m_s v^2 - G\frac{M_T m_s}{r}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Altura de la órbita}
+Igualamos $F_g = F_c$:
+\begin{gather}
+    G \frac{M_T m_s}{r^2} = m_s \left(\frac{2\pi}{T}\right)^2 r
+\end{gather}
+Despejamos el radio orbital $r$:
+\begin{gather}
+    G M_T T^2 = 4\pi^2 r^3 \implies r = \sqrt[3]{\frac{G M_T T^2}{4\pi^2}}
+\end{gather}
+La altura sobre la superficie será $h = r - R_T$.
+
+\paragraph{2. Energía total}
+De la igualdad $F_g = F_c$ se deduce que $G \frac{M_T m_s}{r^2} = m_s \frac{v^2}{r} \implies m_s v^2 = G\frac{M_T m_s}{r}$. La energía cinética es $E_c = \frac{1}{2} m_s v^2 = \frac{1}{2} G\frac{M_T m_s}{r}$.
+Sustituyendo en la fórmula de la energía total:
+\begin{gather}
+    E_T = \frac{1}{2} G\frac{M_T m_s}{r} - G\frac{M_T m_s}{r} = -\frac{1}{2} G\frac{M_T m_s}{r}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Altura de la órbita}
+Primero calculamos el radio orbital $r$:
+\begin{gather}
+    r = \sqrt[3]{\frac{(6,67 \cdot 10^{-11})(5,98 \cdot 10^{24})(86400)^2}{4\pi^2}} \approx \sqrt[3]{7,54 \cdot 10^{22}} \approx 4,225 \cdot 10^7 \, \text{m}
+\end{gather}
+Ahora calculamos la altura $h$:
+\begin{gather}
+    h = (4,225 \cdot 10^7 \, \text{m}) - (6,37 \cdot 10^6 \, \text{m}) = 3,588 \cdot 10^7 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La altura del satélite sobre la superficie terrestre debe ser $\boldsymbol{h \approx 35880 \, \textbf{km}}$.
+\end{cajaresultado}
+
+\paragraph{2. Energía total}
+Usamos el valor de $r$ calculado para hallar la energía:
+\begin{gather}
+    E_T = -\frac{1}{2} \frac{(6,67 \cdot 10^{-11})(5,98 \cdot 10^{24})(1500)}{4,225 \cdot 10^7} \approx -7,09 \cdot 10^9 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía total del satélite en órbita es $\boldsymbol{E_T \approx -7,09 \cdot 10^9 \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que un satélite sea geoestacionario, debe orbitar a una altura específica de aproximadamente 35880 km sobre la superficie terrestre. A esa altura, su energía total, que es la suma de sus energías cinética y potencial, tiene un valor negativo de -7,09 GJ, lo que indica que es un sistema ligado a la Tierra.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:1B_2000_sep_ext}
+
+\begin{cajaenunciado}
+Sean dos masas puntuales de 100 kg y 150 kg, situadas en los puntos A(-2,0) m y B(3,0) m, respectivamente. Se pide calcular:
+\begin{enumerate}
+    \item Campo gravitatorio en el punto C(0,4) m.
+    \item Trabajo necesario para desplazar una partícula de 10 kg de masa desde el punto C(0,4) m hasta el punto O(0,0) m.
+\end{enumerate}
+\textbf{Dato:} $G=6,67\times10^{-11}$ S.I.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa A ($m_A$):} $100 \, \text{kg}$ en A(-2, 0).
+    \item \textbf{Masa B ($m_B$):} $150 \, \text{kg}$ en B(3, 0).
+    \item \textbf{Masa de prueba ($m$):} $10 \, \text{kg}$.
+    \item \textbf{Puntos de interés:} C(0, 4) y O(0, 0).
+    \item \textbf{Incógnitas:} Campo $\vec{g}$ en C y trabajo $W_{C \to O}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Gravitatorio} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Marcar la masa $m_A$ en (-2,0) y la masa $m_B$ en (3,0). Marcar el punto C en (0,4). Dibujar el vector de campo gravitatorio $\vec{g}_A$ en el punto C, apuntando desde C hacia A. Dibujar el vector $\vec{g}_B$ en C, apuntando desde C hacia B. Dibujar el vector resultante $\vec{g}_C = \vec{g}_A + \vec{g}_B$ usando la regla del paralelogramo." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{campo_gravitatorio_superposicion.png}
+    }}
+    \caption{Superposición de campos gravitatorios en el punto C.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Principio de Superposición:} El campo gravitatorio total en un punto es la suma vectorial de los campos creados por cada masa individualmente. $\vec{g} = \sum \vec{g}_i$.
+    \item \textbf{Campo Gravitatorio de una masa puntual:} $\vec{g} = -G \frac{M}{r^2} \vec{u}_r$, donde $\vec{u}_r$ es el vector unitario que va desde la masa M al punto.
+    \item \textbf{Trabajo y Energía Potencial:} El trabajo realizado por el campo para mover una masa $m$ es $W = -\Delta E_p$. El trabajo realizado por una fuerza externa es $W_{ext} = \Delta E_p = m \Delta V = m(V_{final} - V_{inicial})$.
+    \item \textbf{Potencial Gravitatorio:} $V = -G \frac{M}{r}$. El potencial total es la suma escalar $V = \sum V_i$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Campo en C(0,4)}
+Distancias: $r_{AC} = \sqrt{(0 - (-2))^2 + (4-0)^2} = \sqrt{20}$ m. $r_{BC} = \sqrt{(0-3)^2 + (4-0)^2} = \sqrt{25} = 5$ m.
+Vectores de campo: $\vec{g}_C = \vec{g}_A + \vec{g}_B = -G\frac{m_A}{r_{AC}^2}\vec{u}_{AC} - G\frac{m_B}{r_{BC}^2}\vec{u}_{BC}$.
+$\vec{u}_{AC} = \frac{(0-(-2))\vec{i} + (4-0)\vec{j}}{\sqrt{20}} = \frac{2\vec{i}+4\vec{j}}{\sqrt{20}}$.
+$\vec{u}_{BC} = \frac{(0-3)\vec{i} + (4-0)\vec{j}}{5} = \frac{-3\vec{i}+4\vec{j}}{5}$.
+\paragraph{2. Trabajo $W_{C \to O}$}
+$W_{C \to O} = m(V_O - V_C)$.
+$V_C = V_{AC} + V_{BC} = -G\frac{m_A}{r_{AC}} - G\frac{m_B}{r_{BC}}$.
+$V_O = V_{AO} + V_{BO} = -G\frac{m_A}{r_{AO}} - G\frac{m_B}{r_{BO}}$.
+Distancias al origen: $r_{AO} = 2$ m, $r_{BO} = 3$ m.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Campo en C(0,4)}
+$\vec{g}_A = -(6,67\cdot 10^{-11})\frac{100}{20} \frac{2\vec{i}+4\vec{j}}{\sqrt{20}} = (-1,49\vec{i} - 2,98\vec{j})\cdot 10^{-10}$ N/kg.
+$\vec{g}_B = -(6,67\cdot 10^{-11})\frac{150}{25} \frac{-3\vec{i}+4\vec{j}}{5} = (2,40\vec{i} - 3,20\vec{j})\cdot 10^{-10}$ N/kg.
+$\vec{g}_C = \vec{g}_A + \vec{g}_B = (0,91\vec{i} - 6,18\vec{j})\cdot 10^{-10}$ N/kg.
+\begin{cajaresultado}
+    El campo gravitatorio en C es $\boldsymbol{\vec{g}_C = (0,91\vec{i} - 6,18\vec{j}) \cdot 10^{-10} \, \textbf{N/kg}}$.
+\end{cajaresultado}
+
+\paragraph{2. Trabajo $W_{C \to O}$}
+$V_C = -(6,67\cdot 10^{-11})\left(\frac{100}{\sqrt{20}} + \frac{150}{5}\right) = -3,49 \cdot 10^{-9}$ J/kg.
+$V_O = -(6,67\cdot 10^{-11})\left(\frac{100}{2} + \frac{150}{3}\right) = -6,67 \cdot 10^{-9}$ J/kg.
+$W_{C \to O} = 10 \cdot (V_O - V_C) = 10 \cdot (-6,67\cdot 10^{-9} - (-3,49\cdot 10^{-9})) = -3,18 \cdot 10^{-8}$ J.
+\begin{cajaresultado}
+    El trabajo necesario es $\boldsymbol{W_{C \to O} = -3,18 \cdot 10^{-8} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo gravitatorio en el punto C es el resultado de la superposición vectorial de los campos de ambas masas. El trabajo para mover una masa entre dos puntos es la diferencia de energía potencial. El signo negativo del trabajo indica que el campo gravitatorio realiza trabajo positivo (la partícula se mueve a una región de menor potencial), por lo que un agente externo debe realizar trabajo negativo (frenar) para que el desplazamiento sea a velocidad constante.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque II: Movimiento Armónico y Ondas}
+\label{sec:ondas_2000_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:2A_2000_sep_ext}
+
+\begin{cajaenunciado}
+Una partícula de masa m describe un movimiento armónico simple de amplitud A y pulsación $\omega$. Determinar su energía cinética y su energía potencial en el instante en que su elongación es nula y en el instante en que es máxima.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En un Movimiento Armónico Simple (M.A.S.), la energía mecánica total se conserva y es la suma de la energía cinética ($E_c$) y la energía potencial elástica ($E_p$).
+\begin{itemize}
+    \item \textbf{Elongación ($x$):} $x(t) = A\sin(\omega t + \phi_0)$.
+    \item \textbf{Velocidad ($v$):} $v(t) = A\omega\cos(\omega t + \phi_0)$. También se puede expresar en función de x: $v = \pm\omega\sqrt{A^2-x^2}$.
+    \item \textbf{Energía Potencial ($E_p$):} Depende de la elongación: $E_p = \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2x^2$.
+    \item \textbf{Energía Cinética ($E_c$):} Depende de la velocidad: $E_c = \frac{1}{2}mv^2$.
+    \item \textbf{Energía Mecánica Total ($E_T$):} Es constante: $E_T = E_c + E_p = \frac{1}{2}kA^2 = \frac{1}{2}m\omega^2A^2$.
+\end{itemize}
+
+\subsubsection*{4. Análisis de los Casos}
+
+\paragraph{Caso 1: Elongación nula ($x=0$)}
+Esto ocurre cuando la partícula pasa por la posición de equilibrio.
+\begin{itemize}
+    \item \textbf{Energía Potencial:} Como $E_p$ es directamente proporcional a $x^2$, si $x=0$, entonces:
+    $$ E_p = \frac{1}{2}m\omega^2(0)^2 = 0 $$
+    La energía potencial es \textbf{nula}.
+    \item \textbf{Energía Cinética:} La velocidad es máxima en este punto ($v_{max}=\pm\omega A$). Por conservación de la energía, toda la energía es cinética:
+    $$ E_c = E_T - E_p = E_T - 0 = \frac{1}{2}m\omega^2A^2 $$
+    La energía cinética es \textbf{máxima}.
+\end{itemize}
+
+\paragraph{Caso 2: Elongación máxima ($x=\pm A$)}
+Esto ocurre en los extremos de la trayectoria.
+\begin{itemize}
+    \item \textbf{Energía Potencial:} La elongación es máxima, por lo tanto la energía potencial también lo es:
+    $$ E_p = \frac{1}{2}m\omega^2(\pm A)^2 = \frac{1}{2}m\omega^2A^2 $$
+    La energía potencial es \textbf{máxima} e igual a la energía total.
+    \item \textbf{Energía Cinética:} En los extremos de la trayectoria, la partícula se detiene instantáneamente para cambiar de dirección, por lo que su velocidad es $v=0$.
+    $$ E_c = \frac{1}{2}m(0)^2 = 0 $$
+    La energía cinética es \textbf{nula}.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En un M.A.S. hay una continua transformación entre energía cinética y potencial.
+\begin{itemize}
+    \item \textbf{En el centro ($x=0$):} la energía potencial es nula y la energía cinética es máxima.
+    \item \textbf{En los extremos ($x=\pm A$):} la energía potencial es máxima y la energía cinética es nula.
+\end{itemize}
+La energía mecánica total se mantiene constante en todo momento.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:2B_2000_sep_ext}
+
+\begin{cajaenunciado}
+Explicar en qué consiste el efecto Doppler aplicado a ondas sonoras.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Fuente en Movimiento} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una ambulancia moviéndose hacia la derecha. Dibuja frentes de onda circulares que emite. Los frentes de onda deben estar comprimidos en la dirección del movimiento (delante de la ambulancia) y expandidos en la dirección opuesta (detrás). Muestra dos observadores: uno delante (que percibe una alta frecuencia, sonido agudo) y otro detrás (que percibe una baja frecuencia, sonido grave)." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{doppler_fuente.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Observador en Movimiento} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una fuente de sonido estacionaria (un altavoz) emitiendo frentes de onda circulares y concéntricos. Muestra un observador (una persona) moviéndose hacia la fuente. Indicar que el observador intercepta los frentes de onda con más frecuencia de la que son emitidos, percibiendo un sonido más agudo." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{doppler_observador.png}
+    }}
+    \caption{Ilustración del efecto Doppler.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El \textbf{efecto Doppler} es el cambio aparente en la frecuencia de una onda percibida por un observador cuando existe un movimiento relativo entre la fuente de la onda y el propio observador.
+
+\paragraph{Descripción del fenómeno}
+Cuando una fuente de sonido (por ejemplo, la sirena de una ambulancia) y un receptor (nuestro oído) se acercan entre sí, el sonido percibido es más agudo (mayor frecuencia) que el sonido real emitido por la fuente. Por el contrario, cuando la fuente y el receptor se alejan, el sonido percibido es más grave (menor frecuencia).
+
+\paragraph{Causa Física}
+La causa es el cambio en la forma en que los frentes de onda llegan al observador.
+\begin{itemize}
+    \item \textbf{Acercamiento:} Si la fuente se mueve hacia el observador, cada nuevo frente de onda se emite desde una posición más cercana al observador que el anterior. Esto provoca que los frentes de onda lleguen al observador más juntos en el tiempo (y en el espacio), lo que se traduce en una mayor frecuencia percibida y una menor longitud de onda.
+    \item \textbf{Alejamiento:} Si la fuente se aleja, cada frente de onda se emite desde un punto más lejano. Los frentes de onda llegan más espaciados, resultando en una menor frecuencia percibida y una mayor longitud de onda.
+\end{itemize}
+Un efecto similar ocurre si es el observador quien se mueve respecto a una fuente en reposo.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La frecuencia percibida ($f'$) se puede calcular con la siguiente fórmula general:
+\begin{gather}
+    f' = f \left( \frac{v \pm v_o}{v \mp v_s} \right)
+\end{gather}
+donde:
+\begin{itemize}
+    \item $f$ es la frecuencia real emitida por la fuente.
+    \item $v$ es la velocidad del sonido en el medio.
+    \item $v_o$ es la velocidad del observador.
+    \item $v_s$ es la velocidad de la fuente.
+\end{itemize}
+Los signos se eligen de la siguiente manera: en el numerador, el signo `+` se usa si el observador se acerca a la fuente. En el denominador, el signo `-` se usa si la fuente se acerca al observador.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El efecto Doppler es un fenómeno ondulatorio fundamental que consiste en la variación de la frecuencia percibida de una onda debido al movimiento relativo entre el emisor y el receptor. Para el sonido, esto se manifiesta como un cambio en el tono (agudo al acercarse, grave al alejarse). Este efecto también se aplica a la luz y es crucial en campos como la astronomía y la medicina.
+\end{cajaconclusion}
+
+\newpage
+% ======================================================================
+\section{Bloque III: Naturaleza de la Luz}
+\label{sec:luz_2000_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:3A_2000_sep_ext}
+
+\begin{cajaenunciado}
+Cita y explica, brevemente, dos fenómenos físicos a favor de la teoría ondulatoria de la luz.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Interferencia} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama del experimento de la doble rendija de Young. Un frente de onda plano incide sobre una barrera con dos rendijas estrechas y cercanas. Las rendijas actúan como dos fuentes de ondas coherentes. Mostrar los frentes de onda circulares que emanan de cada rendija, superponiéndose. A la derecha, una pantalla muestra el resultado: un patrón de franjas de interferencia brillantes (constructiva) y oscuras (destructiva)." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{interferencia_young.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Difracción} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un frente de onda plano incide sobre una barrera con una única rendija de anchura comparable a la longitud de onda. Mostrar cómo la onda se curva o se abre al pasar por la rendija, propagándose en direcciones distintas a la original. En una pantalla lejana, se observa un patrón de difracción con un máximo central brillante y ancho, y máximos secundarios más débiles." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{difraccion_rendija.png}
+    }}
+    \caption{Esquemas de la interferencia y la difracción.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La teoría ondulatoria, consolidada por Huygens y Maxwell, describe la luz como una onda electromagnética. Dos fenómenos clave que solo pueden explicarse satisfactoriamente mediante este modelo son la interferencia y la difracción.
+
+\paragraph{1. Interferencia}
+La interferencia es un fenómeno característico de las ondas que ocurre cuando dos o más ondas coherentes (con la misma frecuencia y una diferencia de fase constante) se superponen en una región del espacio. Según el principio de superposición, la amplitud de la onda resultante es la suma de las amplitudes de las ondas individuales.
+\begin{itemize}
+    \item \textbf{Interferencia Constructiva:} Ocurre en puntos donde las crestas (o valles) de las ondas coinciden. La amplitud resultante es máxima, lo que en el caso de la luz produce una franja brillante.
+    \item \textbf{Interferencia Destructiva:} Ocurre en puntos donde la cresta de una onda coincide con el valle de otra. Las amplitudes se anulan, resultando en una amplitud mínima o nula, lo que produce una franja oscura.
+\end{itemize}
+El experimento de la doble rendija de Young es la demostración clásica de la interferencia lumínica. Un modelo corpuscular predeciría simplemente dos franjas de luz detrás de las rendijas, no el patrón complejo de máximos y mínimos que se observa.
+
+\paragraph{2. Difracción}
+La difracción es la capacidad de las ondas para curvarse y rodear obstáculos o para abrirse al pasar por una abertura. Este fenómeno es perceptible cuando el tamaño del obstáculo o la abertura es del orden de la longitud de onda de la onda. Si la luz estuviera compuesta por partículas que viajan en línea recta, al pasar por una rendija proyectaría simplemente una imagen nítida de la misma. Sin embargo, lo que se observa es que la luz se expande y crea un patrón de franjas (el patrón de difracción). Este comportamiento es una propiedad intrínseca de las ondas y una fuerte evidencia en contra de un modelo puramente corpuscular rectilíneo.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La interferencia y la difracción son dos fenómenos que demuestran de forma concluyente la naturaleza ondulatoria de la luz. Ambos se basan en el principio de superposición y la propagación de frentes de onda, conceptos que son incompatibles con una teoría que describa la luz únicamente como un chorro de partículas.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:3B_2000_sep_ext}
+
+\begin{cajaenunciado}
+Cita y explica, brevemente, dos fenómenos físicos a favor de la teoría corpuscular de la luz.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una superficie metálica sobre la que inciden paquetes de energía (fotones) de luz. Algunos fotones tienen suficiente energía para arrancar electrones de la superficie, que son emitidos con una cierta energía cinética. Mostrar que un fotón de baja energía (luz roja) no arranca electrones, mientras que uno de alta energía (luz azul) sí lo hace." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{efecto_fotoelectrico_corpuscular.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Efecto Compton} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una colisión entre dos 'bolas de billar'. Una es un fotón de rayos X (con momento $p$) y la otra es un electrón en reposo. Después de la colisión, el fotón sale desviado con un momento menor ($p'$) y el electrón retrocede con un cierto momento." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{efecto_compton_corpuscular.png}
+    }}
+    \caption{Esquemas del efecto fotoeléctrico y el efecto Compton.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+A principios del siglo XX, ciertos experimentos no podían ser explicados por la teoría ondulatoria clásica, lo que llevó a la idea de que la luz, en su interacción con la materia, se comporta como un flujo de partículas llamadas fotones.
+
+\paragraph{1. Efecto Fotoeléctrico}
+Consiste en la emisión de electrones por parte de un material cuando es iluminado con radiación electromagnética. La teoría ondulatoria no podía explicar por qué la emisión solo ocurría a partir de una cierta frecuencia umbral, ni por qué la energía de los electrones emitidos no dependía de la intensidad de la luz.
+
+Albert Einstein explicó el fenómeno postulando que la luz está formada por cuantos de energía (fotones), cada uno con una energía $E=h\nu$.
+\begin{itemize}
+    \item Un fotón individual transfiere toda su energía a un solo electrón en una interacción instantánea.
+    \item Para que el electrón escape del material, la energía del fotón debe ser, como mínimo, igual al trabajo de extracción ($\Phi$) del material. Esto explica la existencia de una \textbf{frecuencia umbral} ($\nu_0 = \Phi/h$).
+    \item Si la energía del fotón es mayor, el exceso se convierte en energía cinética del electrón.
+\end{itemize}
+El carácter discreto e "instantáneo" de la interacción es una evidencia de un comportamiento corpuscular.
+
+\paragraph{2. Efecto Compton}
+Consiste en el aumento de la longitud de onda (disminución de energía) de un fotón de alta energía (rayos X o gamma) cuando es dispersado por un electrón. La teoría ondulatoria predecía que la radiación dispersada debería tener la misma longitud de onda que la incidente.
+
+Arthur Compton explicó el fenómeno modelándolo como una \textbf{colisión elástica} entre dos partículas: el fotón incidente y el electrón. Al tratar al fotón como una partícula con energía ($E=h\nu$) y también con \textbf{momento lineal} ($p=h/\lambda$), y aplicando las leyes de conservación de energía y momento, fue capaz de predecir perfectamente el cambio en la longitud de onda en función del ángulo de dispersión. La idea de que la luz transporta momento en paquetes discretos es una característica puramente corpuscular.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El efecto fotoeléctrico y el efecto Compton son dos pilares experimentales de la física cuántica que demuestran de forma inequívoca la naturaleza corpuscular de la luz. Revelan que, en su interacción con la materia, la energía y el momento de la luz están cuantizados en partículas discretas llamadas fotones, un concepto fundamental de la dualidad onda-partícula.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque IV: Campo Eléctrico y Magnético}
+\label{sec:em_2000_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:4A_2000_sep_ext}
+
+\begin{cajaenunciado}
+Concepto de línea de campo. Diferencias entre las líneas del campo electrostático y del campo magnético. Proponer un ejemplo para cada uno de ellos.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Campo Electrostático (Dipolo)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una carga puntual positiva (+Q) y una carga puntual negativa (-Q) separadas por una corta distancia (dipolo eléctrico). Dibuja las líneas de campo eléctrico. Las líneas deben nacer en la carga positiva y morir en la carga negativa. Deben ser curvas y salir perpendicularmente de la superficie de +Q y llegar perpendicularmente a -Q. Las flechas en las líneas deben indicar la dirección de +Q a -Q." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lineas_campo_electrico.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Campo Magnético (Imán)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un imán de barra con su polo Norte (N) y su polo Sur (S). Dibuja las líneas de campo magnético. Las líneas deben ser bucles cerrados. Por fuera del imán, las líneas deben salir del polo Norte y entrar en el polo Sur, indicando la dirección con flechas. Por dentro del imán, las líneas deben continuar, yendo del polo Sur al polo Norte para cerrar los bucles." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lineas_campo_magnetico.png}
+    }}
+    \caption{Ejemplos de líneas de campo eléctrico y magnético.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Concepto de Línea de Campo}
+Una \textbf{línea de campo} (o línea de fuerza) es una construcción gráfica imaginaria utilizada para representar la dirección y la intensidad de un campo vectorial (como el eléctrico o el magnético) en una región del espacio. Tienen las siguientes propiedades:
+\begin{itemize}
+    \item El vector del campo en cualquier punto es \textbf{tangente} a la línea de campo que pasa por ese punto.
+    \item La \textbf{densidad} de líneas de campo en una región (cuán juntas están) es proporcional a la \textbf{intensidad} (módulo) del campo en esa región.
+    \item Las líneas de campo \textbf{nunca se cruzan}, ya que el campo debe tener una dirección única en cada punto.
+\end{itemize}
+
+\paragraph{Diferencias entre Líneas de Campo Eléctrico y Magnético}
+\begin{itemize}
+    \item \textbf{Origen y Final (Naturaleza del Campo):}
+    \begin{itemize}
+        \item \textbf{Campo Eléctrico:} Las líneas de campo electrostático son \textbf{abiertas}. Nacen en las cargas positivas (fuentes) y mueren en las cargas negativas (sumideros), o se extienden hasta el infinito. Esto se debe a que el campo eléctrico es \textit{conservativo} y tiene fuentes escalares (las cargas).
+        \item \textbf{Campo Magnético:} Las líneas de campo magnético son siempre \textbf{cerradas}. No tienen principio ni fin. Esto refleja un hecho fundamental: no existen los monopolos magnéticos (cargas magnéticas aisladas). El campo magnético es \textit{no conservativo} y es generado por corrientes eléctricas o dipolos magnéticos.
+    \end{itemize}
+    \item \textbf{Relación con Conductores:}
+    \begin{itemize}
+        \item \textbf{Campo Eléctrico:} Las líneas de campo electrostático son siempre \textbf{perpendiculares} a la superficie de los materiales conductores en equilibrio.
+        \item \textbf{Campo Magnético:} No existe una regla general similar para las líneas de campo magnético y los conductores.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las líneas de campo son una herramienta visual poderosa para describir campos vectoriales. La diferencia fundamental entre las líneas de campo eléctrico y magnético radica en su topología: las líneas eléctricas son abiertas, naciendo y muriendo en cargas, mientras que las líneas magnéticas son siempre bucles cerrados, reflejando la inexistencia de monopolos magnéticos.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:4B_2000_sep_ext}
+
+\begin{cajaenunciado}
+a) ¿Puede ser cero la fuerza magnética que se ejerce sobre una partícula cargada que se mueve en el seno de un campo magnético?
+b) ¿Puede ser cero la fuerza eléctrica sobre una partícula cargada que se mueve en el seno de un campo eléctrico?
+Justificar las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La justificación de ambas preguntas se basa en la expresión de la \textbf{Fuerza de Lorentz}, que describe la fuerza total sobre una carga $q$ que se mueve con velocidad $\vec{v}$ en una región con un campo eléctrico $\vec{E}$ y un campo magnético $\vec{B}$.
+$$ \vec{F} = \vec{F}_e + \vec{F}_m = q\vec{E} + q(\vec{v} \times \vec{B}) $$
+
+\paragraph{a) Fuerza Magnética Nula}
+La expresión para la fuerza magnética es $\vec{F}_m = q(\vec{v} \times \vec{B})$. El módulo de esta fuerza es $|\vec{F}_m| = |q|vB\sin(\theta)$, donde $\theta$ es el ángulo entre $\vec{v}$ y $\vec{B}$.
+
+\textbf{Sí, la fuerza magnética puede ser cero} incluso si la partícula está cargada ($q \neq 0$), en movimiento ($v \neq 0$) y en un campo magnético ($B \neq 0$). Esto ocurre si se cumple la siguiente condición:
+\begin{itemize}
+    \item El vector velocidad $\vec{v}$ es \textbf{paralelo} o \textbf{antiparalelo} al vector campo magnético $\vec{B}$.
+\end{itemize}
+En este caso, el ángulo $\theta$ es $0^\circ$ o $180^\circ$. En ambos casos, $\sin(\theta) = 0$, lo que anula el producto vectorial y, por tanto, la fuerza magnética. La partícula continuaría su movimiento sin ser desviada por el campo magnético.
+(Otras condiciones triviales son que la carga sea nula, la velocidad sea cero o el campo sea cero).
+
+\paragraph{b) Fuerza Eléctrica Nula}
+La expresión para la fuerza eléctrica es $\vec{F}_e = q\vec{E}$.
+
+\textbf{No, la fuerza eléctrica no puede ser cero} si se cumplen las condiciones del enunciado:
+\begin{itemize}
+    \item La partícula está cargada ($q \neq 0$).
+    \item Se mueve en el seno de un campo eléctrico (es decir, $\vec{E} \neq 0$).
+\end{itemize}
+La fuerza eléctrica, a diferencia de la magnética, no depende de la velocidad de la partícula ni de su dirección. Si una partícula cargada se encuentra en una región donde hay un campo eléctrico, \textit{siempre} experimentará una fuerza eléctrica en la dirección (o en contra, si q<0) del campo. La única forma de que la fuerza eléctrica sea cero es que la carga sea nula o que el campo eléctrico sea nulo.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+\begin{itemize}
+    \item \textbf{a) Sí:} La fuerza magnética sobre una carga en movimiento es nula si su velocidad es paralela al campo magnético.
+    \item \textbf{b) No:} La fuerza eléctrica sobre una carga en un campo eléctrico es siempre distinta de cero (a menos que la carga o el campo sean nulos), independientemente de su estado de movimiento.
+\end{itemize}
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque VI: Física Cuántica y Nuclear}
+\label{sec:cuantica_nuclear_2000_sep_ext}
+% ======================================================================
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:6A_2000_sep_ext}
+
+\begin{cajaenunciado}
+Un electrón tiene una longitud de onda de De Broglie de 200 nm. Calcular:
+\begin{enumerate}
+    \item Cantidad de movimiento del electrón.
+    \item Energía cinética del electrón.
+\end{enumerate}
+\textbf{Datos:} Constante de Planck, $h=6,63\times10^{-34}$ J$\cdot$s; masa del electrón, $m_{e}=9,11\times10^{-31}$ kg.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda de De Broglie ($\lambda$):} $\lambda = 200 \, \text{nm} = 200 \cdot 10^{-9} \, \text{m} = 2 \cdot 10^{-7} \, \text{m}$.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,63 \cdot 10^{-34} \, \text{J}\cdot\text{s}$.
+    \item \textbf{Masa del electrón ($m_e$):} $m_e = 9,11 \cdot 10^{-31} \, \text{kg}$.
+    \item \textbf{Incógnitas:} Cantidad de movimiento ($p$) y energía cinética ($E_c$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Hipótesis de De Broglie:} Toda partícula en movimiento lleva asociada una onda, cuya longitud de onda se relaciona con el momento lineal (cantidad de movimiento) de la partícula mediante la ecuación:
+    $$ \lambda = \frac{h}{p} $$
+    \item \textbf{Energía Cinética:} La energía cinética se relaciona con el momento lineal y la masa. Es importante verificar si se puede usar la fórmula clásica o si se requiere la relativista. La fórmula clásica es:
+    $$ E_c = \frac{1}{2}mv^2 = \frac{p^2}{2m} $$
+    Esta fórmula es válida si la velocidad de la partícula es mucho menor que la velocidad de la luz ($v \ll c$).
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Cantidad de movimiento ($p$)}
+Se despeja directamente de la ecuación de De Broglie:
+\begin{gather}
+    p = \frac{h}{\lambda}
+\end{gather}
+\paragraph{2. Energía cinética ($E_c$)}
+Una vez calculado $p$, se puede usar la relación clásica $E_c = \frac{p^2}{2m_e}$, pero primero debemos justificar su uso. Para ello, calculamos la velocidad del electrón $v = p/m_e$ y la comparamos con $c$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Cantidad de movimiento}
+\begin{gather}
+    p = \frac{6,63 \cdot 10^{-34} \, \text{J}\cdot\text{s}}{2 \cdot 10^{-7} \, \text{m}} = 3,315 \cdot 10^{-27} \, \text{kg}\cdot\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La cantidad de movimiento del electrón es $\boldsymbol{p = 3,315 \cdot 10^{-27} \, \textbf{kg}\cdot\textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph{2. Energía cinética}
+Primero, calculamos la velocidad para verificar la validez de la aproximación clásica:
+\begin{gather}
+    v = \frac{p}{m_e} = \frac{3,315 \cdot 10^{-27} \, \text{kg}\cdot\text{m/s}}{9,11 \cdot 10^{-31} \, \text{kg}} \approx 3639 \, \text{m/s}
+\end{gather}
+Esta velocidad ($ \approx 3,6 \cdot 10^3$ m/s) es mucho menor que la velocidad de la luz ($c=3 \cdot 10^8$ m/s), por lo que el uso de la fórmula clásica para la energía cinética está justificado.
+\begin{gather}
+    E_c = \frac{p^2}{2m_e} = \frac{(3,315 \cdot 10^{-27})^2}{2 \cdot (9,11 \cdot 10^{-31})} = \frac{1,099 \cdot 10^{-53}}{1,822 \cdot 10^{-30}} \approx 6,03 \cdot 10^{-24} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía cinética del electrón es $\boldsymbol{E_c \approx 6,03 \cdot 10^{-24} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando la hipótesis de De Broglie, se determina que un electrón con una longitud de onda de 200 nm tiene un momento lineal de $3,315 \times 10^{-27}$ kg$\cdot$m/s. La energía cinética asociada, calculada mediante la fórmula clásica (cuya validez se ha comprobado), es de $6,03 \times 10^{-24}$ J, mostrando cómo las propiedades ondulatorias y corpusculares de la materia están intrínsecamente ligadas.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:6B_2000_sep_ext}
+
+\begin{cajaenunciado}
+El $^{137}\text{Cs}$ tiene una vida media de 30,8 s. Si se parte de 6,2 µg. Se pide:
+\begin{enumerate}
+    \item ¿Cuántos núcleos hay en ese instante?
+    \item ¿Cuántos núcleos habrá 2 minutos después? ¿Cuál será la actividad en ese momento?
+\end{enumerate}
+\textbf{Dato:} Nº de Avogadro, $N_{A}=6,023\times10^{23}$ mol$^{-1}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+(Nota: El enunciado original tiene un error. El periodo de semidesintegración del $^{137}\text{Cs}$ es de unos 30 años. Se resolverá el problema con los datos literales del enunciado.)
+\begin{itemize}
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 30,8 \, \text{s}$. (Dato del problema, no el real).
+    \item \textbf{Masa inicial ($m_0$):} $m_0 = 6,2 \, \mu\text{g} = 6,2 \cdot 10^{-6} \, \text{g}$.
+    \item \textbf{Masa molar del Cesio-137 ($M$):} $M \approx 137 \, \text{g/mol}$.
+    \item \textbf{Número de Avogadro ($N_A$):} $N_A = 6,023 \cdot 10^{23} \, \text{mol}^{-1}$.
+    \item \textbf{Instante de tiempo ($t$):} $t = 2 \, \text{min} = 120 \, \text{s}$.
+    \item \textbf{Incógnitas:} $N_0$, $N(t=120s)$ y $A(t=120s)$.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Cálculo del número de núcleos ($N$):} Se relaciona la masa de la muestra con el número de moles, y este con el número de Avogadro: $N = (\text{moles}) \cdot N_A = \frac{m}{M} N_A$.
+    \item \textbf{Ley de desintegración radiactiva:} El número de núcleos que quedan en un instante $t$ es $N(t) = N_0 e^{-\lambda t}$.
+    \item \textbf{Constante de desintegración ($\lambda$):} Se relaciona con el periodo de semidesintegración: $\lambda = \frac{\ln(2)}{T_{1/2}}$.
+    \item \textbf{Actividad ($A$):} Es el número de desintegraciones por segundo: $A(t) = \lambda N(t)$. Se mide en Becquerelios (Bq), donde 1 Bq = 1 desintegración/s.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Número de núcleos iniciales ($N_0$)}
+\begin{gather}
+    N_0 = \frac{m_0}{M} N_A
+\end{gather}
+\paragraph{2. Núcleos y actividad en $t=120$ s}
+Primero calculamos $\lambda$.
+\begin{gather}
+    \lambda = \frac{\ln(2)}{T_{1/2}}
+\end{gather}
+Luego, el número de núcleos restantes.
+\begin{gather}
+    N(t) = N_0 e^{-\lambda t}
+\end{gather}
+Finalmente, la actividad en ese instante.
+\begin{gather}
+    A(t) = \lambda N(t)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Número de núcleos iniciales}
+\begin{gather}
+    N_0 = \frac{6,2 \cdot 10^{-6} \, \text{g}}{137 \, \text{g/mol}} \cdot (6,023 \cdot 10^{23} \, \text{mol}^{-1}) \approx 2,72 \cdot 10^{16} \, \text{núcleos}
+\end{gather}
+\begin{cajaresultado}
+    Inicialmente hay $\boldsymbol{N_0 \approx 2,72 \cdot 10^{16} \, \textbf{núcleos}}$.
+\end{cajaresultado}
+
+\paragraph{2. Núcleos y actividad en $t=120$ s}
+Calculamos $\lambda$:
+\begin{gather}
+    \lambda = \frac{\ln(2)}{30,8 \, \text{s}} \approx 0,0225 \, \text{s}^{-1}
+\end{gather}
+Calculamos $N(120)$:
+\begin{gather}
+    N(120) = (2,72 \cdot 10^{16}) e^{-0,0225 \cdot 120} = (2,72 \cdot 10^{16}) e^{-2,7} \approx (2,72 \cdot 10^{16})(0,0672) \approx 1,83 \cdot 10^{15} \, \text{núcleos}
+\end{gather}
+Calculamos $A(120)$:
+\begin{gather}
+    A(120) = (0,0225 \, \text{s}^{-1}) \cdot (1,83 \cdot 10^{15}) \approx 4,12 \cdot 10^{13} \, \text{Bq}
+\end{gather}
+\begin{cajaresultado}
+    A los 2 minutos quedarán $\boldsymbol{N(120) \approx 1,83 \cdot 10^{15} \, \textbf{núcleos}}$ y la actividad será $\boldsymbol{A(120) \approx 4,12 \cdot 10^{13} \, \textbf{Bq}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la masa inicial, se calcula que la muestra contenía $2,72 \times 10^{16}$ núcleos de Cesio-137. Debido a su corta vida media (según los datos del problema), después de 2 minutos, que son casi 4 periodos de semidesintegración, el número de núcleos se reduce a $1,83 \times 10^{15}$, con una actividad muy elevada de $4,12 \times 10^{13}$ Bq.
+\end{cajaconclusion}
+
+\newpage

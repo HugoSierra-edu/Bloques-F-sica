@@ -1,0 +1,1108 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2022 - Convocatoria Ordinaria}
+\label{chap:2022_jun_ord}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2022_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1}
+\label{subsec:C1_2022_jun_ord}
+
+\begin{cajaenunciado}
+Deduce razonadamente la expresión de la velocidad de un satélite que gira alrededor de un planeta en una órbita circular y también la de la velocidad mínima necesaria para que se aleje indefinidamente desde la órbita en la que se encuentra. Supongamos que un satélite orbita a una distancia r de un planeta y se propulsa instantáneamente, de forma que su velocidad pasa a ser 1,5 veces la velocidad orbital, ¿continuará dicho planeta en alguna órbita o se alejará indefinidamente del planeta? Justifica la respuesta. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+El problema es de carácter teórico y simbólico. Se definen las siguientes variables:
+\begin{itemize}
+    \item \textbf{Masa del planeta ($M$):} Cuerpo central que genera el campo gravitatorio.
+    \item \textbf{Masa del satélite ($m$):} Cuerpo que orbita.
+    \item \textbf{Radio de la órbita ($r$):} Distancia constante entre el centro del planeta y el satélite.
+    \item \textbf{Constante de Gravitación Universal ($G$):} Constante fundamental de la naturaleza.
+    \item \textbf{Velocidad orbital ($v_{orb}$):} Velocidad del satélite en su órbita circular.
+    \item \textbf{Velocidad de escape ($v_{esc}$):} Velocidad mínima para escapar del campo gravitatorio desde la órbita.
+    \item \textbf{Nueva velocidad ($v'$):} $v' = 1,5 \cdot v_{orb}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Satélite en Órbita} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico en el centro. Un satélite más pequeño se encuentra en una órbita circular perfecta a su alrededor. Dibuja el vector de la fuerza gravitatoria ($F_g$) sobre el satélite, apuntando hacia el centro del planeta. Etiqueta el radio de la órbita ($r$) y el vector velocidad orbital ($v_{orb}$) del satélite, tangente a la trayectoria." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_circular.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Escape de la Órbita} \vspace{0.5cm} \textit{Prompt para la imagen:} "El mismo planeta y satélite en órbita. Desde la posición del satélite, dibuja una trayectoria parabólica que se aleja indefinidamente del planeta. Dibuja un vector de velocidad de escape ($v_{esc}$) en el punto de inicio de la trayectoria de escape, tangente a la órbita inicial y de mayor magnitud que el vector de velocidad orbital." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{escape_orbita.png}
+    }}
+    \caption{Esquemas de la velocidad orbital y la velocidad de escape.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Velocidad Orbital}
+Se deduce al igualar la \textbf{fuerza de atracción gravitatoria} (Ley de Gravitación Universal de Newton), que actúa como \textbf{fuerza centrípeta}, con la expresión de la fuerza centrípeta de un movimiento circular uniforme (MCU).
+\paragraph*{Velocidad de Escape}
+Se deduce a partir del \textbf{Principio de Conservación de la Energía Mecánica}. Para que un objeto se aleje indefinidamente, su energía mecánica total en el infinito debe ser cero. Por tanto, la energía mecánica en el punto de lanzamiento (la órbita) debe ser, como mínimo, cero.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Velocidad Orbital ($v_{orb}$)}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta:
+\begin{gather}
+    F_g = F_c \implies G \frac{M m}{r^2} = m \frac{v_{orb}^2}{r}
+\end{gather}
+Despejando la velocidad orbital, obtenemos:
+\begin{gather}
+    v_{orb} = \sqrt{\frac{G M}{r}}
+\end{gather}
+\paragraph*{Velocidad de Escape ($v_{esc}$)}
+Aplicamos la conservación de la energía. La energía mecánica en la órbita debe ser igual a la energía mecánica en el infinito (que es cero).
+\begin{gather}
+    E_{M,orbita} = E_{M,\infty} \implies E_{c,esc} + E_{p,orbita} = 0 \nonumber \\[8pt]
+    \frac{1}{2} m v_{esc}^2 - G \frac{M m}{r} = 0
+\end{gather}
+Despejando la velocidad de escape:
+\begin{gather}
+    v_{esc} = \sqrt{\frac{2 G M}{r}}
+\end{gather}
+\paragraph*{Comparación y Justificación}
+Ahora comparamos la nueva velocidad del satélite, $v'$, con la velocidad de escape desde esa misma órbita. Para ello, calculamos la relación entre $v_{esc}$ y $v_{orb}$:
+\begin{gather}
+    \frac{v_{esc}}{v_{orb}} = \frac{\sqrt{2 G M / r}}{\sqrt{G M / r}} = \sqrt{2}
+\end{gather}
+La nueva velocidad es $v' = 1,5 \cdot v_{orb}$. Como $\sqrt{2} \approx 1,414$, tenemos que $1,5 > \sqrt{2}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema no requiere sustitución numérica, sino una justificación basada en la comparación simbólica.
+\begin{cajaresultado}
+La expresión de la velocidad orbital es $\boldsymbol{v_{orb} = \sqrt{\frac{G M}{r}}}$. La expresión de la velocidad de escape desde esa órbita es $\boldsymbol{v_{esc} = \sqrt{\frac{2 G M}{r}}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se ha demostrado que la velocidad de escape es $\sqrt{2}$ veces la velocidad orbital. La nueva velocidad del satélite es $v' = 1,5 \cdot v_{orb}$. Dado que $1,5 > \sqrt{2}$, la velocidad adquirida por el satélite \textbf{es superior a la velocidad de escape} necesaria para esa órbita. Por lo tanto, el satélite no permanecerá en órbita, sino que \textbf{se alejará indefinidamente} del planeta, siguiendo una trayectoria hiperbólica.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1}
+\label{subsec:P1_2022_jun_ord}
+
+\begin{cajaenunciado}
+Un planeta de radio $R_P = 5000$ km que tiene una intensa actividad volcánica, emite fragmentos en las erupciones que pueden llegar a orbitar circularmente a una altura $h=400$ km, donde el campo gravitatorio del planeta vale $g=7\,\text{m/s}^2$.
+\begin{enumerate}
+    \item[a)] Deduce las expresiones de la velocidad orbital y de la energía mecánica de un fragmento de masa $m=2$ kg que se encuentra en dicha órbita y calcula también sus valores numéricos. (1 punto) 
+    \item[b)] Calcula el campo gravitatorio en la superficie del planeta y la velocidad con la que el fragmento ha sido emitido desde dicha superficie. (1 punto) 
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Convertimos todos los datos al Sistema Internacional:
+\begin{itemize}
+    \item \textbf{Radio del planeta ($R_P$):} $R_P = 5000 \text{ km} = 5 \cdot 10^6 \text{ m}$
+    \item \textbf{Altura de la órbita ($h$):} $h = 400 \text{ km} = 4 \cdot 10^5 \text{ m}$
+    \item \textbf{Radio orbital ($r_{orb}$):} $r_{orb} = R_P + h = 5 \cdot 10^6 + 4 \cdot 10^5 = 5,4 \cdot 10^6 \text{ m}$
+    \item \textbf{Gravedad a la altura h ($g_h$):} $g_h = 7 \text{ m/s}^2$
+    \item \textbf{Masa del fragmento ($m$):} $m = 2 \text{ kg}$
+    \item \textbf{Constante de Gravitación ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$ (valor conocido)
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Velocidad orbital ($v_{orb}$) y Energía Mecánica ($E_M$) en la órbita.
+        \item Campo gravitatorio en superficie ($g_S$).
+        \item Velocidad de lanzamiento desde la superficie ($v_{lanz}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (a): Órbita del fragmento} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico con radio $R_P$. Un pequeño fragmento de roca está en una órbita circular a una altura $h$ sobre la superficie. Etiqueta claramente $R_P$, $h$, y el radio total de la órbita $r_{orb}$. Dibuja el vector velocidad orbital $v_{orb}$ del fragmento, tangente a la trayectoria." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_fragmento.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (b): Lanzamiento y órbita} \vspace{0.5cm} \textit{Prompt para la imagen:} "El mismo planeta. Dibuja una trayectoria desde un punto en la superficie del planeta hasta la órbita circular. En la superficie, dibuja un vector de velocidad de lanzamiento $v_{lanz}$. En la órbita, muestra el vector de velocidad orbital $v_{orb}$. Etiqueta los puntos de inicio (superficie) y fin (órbita) para ilustrar la conservación de la energía." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lanzamiento_orbita.png}
+    }}
+    \caption{Esquemas del fragmento en órbita y su trayectoria de lanzamiento.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Velocidad Orbital y Energía Mecánica}
+La \textbf{velocidad orbital} se obtiene igualando la fuerza gravitatoria a la centrípeta. Sin embargo, dado que conocemos la gravedad $g_h$ a esa altura, podemos usar la relación $g_h = v_{orb}^2/r_{orb}$. La \textbf{energía mecánica} de un cuerpo en órbita es la suma de su energía cinética y potencial gravitatoria, $E_M = E_c + E_p$.
+\paragraph*{b) Campo en Superficie y Velocidad de Lanzamiento}
+La intensidad del \textbf{campo gravitatorio} sigue una ley de la inversa del cuadrado de la distancia al centro del planeta. La \textbf{velocidad de lanzamiento} se calcula aplicando el \textbf{Principio de Conservación de la Energía Mecánica} entre el punto de lanzamiento en la superficie y el punto donde el fragmento alcanza la órbita.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Velocidad y Energía en Órbita}
+Primero, calculamos la masa del planeta ($M_P$) a partir del dato de $g_h$:
+\begin{gather}
+    g_h = G \frac{M_P}{r_{orb}^2} \implies M_P = \frac{g_h \cdot r_{orb}^2}{G}
+\end{gather}
+La fuerza gravitatoria ($F_g = m \cdot g_h$) actúa como fuerza centrípeta ($F_c = m v_{orb}^2 / r_{orb}$):
+\begin{gather}
+    m \cdot g_h = m \frac{v_{orb}^2}{r_{orb}} \implies v_{orb} = \sqrt{g_h \cdot r_{orb}}
+\end{gather}
+La energía mecánica en la órbita es:
+\begin{gather}
+    E_M = E_c + E_p = \frac{1}{2} m v_{orb}^2 - G \frac{M_P m}{r_{orb}}
+\end{gather}
+Sustituyendo $G M_P = g_h r_{orb}^2$ y $v_{orb}^2 = g_h r_{orb}$:
+\begin{gather}
+    E_M = \frac{1}{2} m (g_h r_{orb}) - \frac{(g_h r_{orb}^2) m}{r_{orb}} = \frac{1}{2} m g_h r_{orb} - m g_h r_{orb} = -\frac{1}{2} m g_h r_{orb}
+\end{gather}
+\paragraph*{b) Gravedad en Superficie y Velocidad de Lanzamiento}
+La gravedad en la superficie ($g_S$) es:
+\begin{gather}
+    g_S = G \frac{M_P}{R_P^2}
+\end{gather}
+Por conservación de la energía entre la superficie (lanzamiento) y la órbita:
+\begin{gather}
+    E_{M, superficie} = E_{M, orbita} \nonumber \\[8pt]
+    \frac{1}{2} m v_{lanz}^2 - G \frac{M_P m}{R_P} = E_M
+\end{gather}
+Despejamos $v_{lanz}$:
+\begin{gather}
+    v_{lanz} = \sqrt{2 \left( \frac{E_M}{m} + G \frac{M_P}{R_P} \right)}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la Velocidad y Energía en Órbita}
+\begin{gather}
+    v_{orb} = \sqrt{7 \cdot (5,4 \cdot 10^6)} = \sqrt{3,78 \cdot 10^7} \approx 6148,17 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad orbital del fragmento es $\boldsymbol{v_{orb} \approx 6148,17 \, m/s}$.
+\end{cajaresultado}
+\begin{gather}
+    E_M = -\frac{1}{2} \cdot 2 \cdot 7 \cdot (5,4 \cdot 10^6) = -3,78 \cdot 10^7 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+La energía mecánica del fragmento en órbita es $\boldsymbol{E_M = -3,78 \cdot 10^7 \, J}$.
+\end{cajaresultado}
+\paragraph*{b) Gravedad en Superficie y Velocidad de Lanzamiento}
+Primero necesitamos la masa del planeta, $M_P$:
+\begin{gather}
+    M_P = \frac{7 \cdot (5,4 \cdot 10^6)^2}{6,67 \cdot 10^{-11}} \approx 3,06 \cdot 10^{24} \, \text{kg}
+\end{gather}
+Ahora, la gravedad en la superficie:
+\begin{gather}
+    g_S = G \frac{M_P}{R_P^2} = (6,67 \cdot 10^{-11}) \frac{3,06 \cdot 10^{24}}{(5 \cdot 10^6)^2} \approx 8,16 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+El campo gravitatorio en la superficie del planeta es $\boldsymbol{g_S \approx 8,16 \, m/s^2}$.
+\end{cajaresultado}
+Finalmente, la velocidad de lanzamiento:
+\begin{gather}
+    \frac{1}{2} (2) v_{lanz}^2 - (6,67 \cdot 10^{-11}) \frac{(3,06 \cdot 10^{24})(2)}{5 \cdot 10^6} = -3,78 \cdot 10^7 \nonumber \\[8pt]
+    v_{lanz}^2 - 8,16 \cdot 10^7 = -3,78 \cdot 10^7 \implies v_{lanz} = \sqrt{4,38 \cdot 10^7} \approx 6618,16 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad de emisión del fragmento desde la superficie fue de $\boldsymbol{v_{lanz} \approx 6618,16 \, m/s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la gravedad en órbita, se ha determinado que el fragmento de 2 kg orbita a una velocidad de unos $6148$ m/s con una energía mecánica de $-37,8$ MJ. La gravedad en la superficie del planeta es de $8,16 \, \text{m/s}^2$, y para que el fragmento alcanzase la órbita descrita, tuvo que ser lanzado desde la superficie con una velocidad de aproximadamente $6618$ m/s. La diferencia de energía se invirtió en ganar altura contra el campo gravitatorio.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Interacción Electromagnética}
+\label{sec:em_2022_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 2}
+\label{subsec:C2_2022_jun_ord}
+
+\begin{cajaenunciado}
+El potencial eléctrico en el punto A de la figura es nulo y $q_2 = 1$ nC. Determina el valor de la carga $q_1$ y el potencial eléctrico en el punto B.
+\textbf{Dato:} constante de Coulomb, $k = 9 \cdot 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2$. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = 1 \text{ nC} = 1 \cdot 10^{-9} \text{ C}$
+    \item \textbf{Potencial en A ($V_A$):} $V_A = 0 \text{ V}$
+    \item \textbf{Constante de Coulomb ($k$):} $k = 9 \cdot 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2$
+    \item \textbf{Coordenadas:} Asumiendo $q_1$ en $(0,0)$:
+        \begin{itemize}
+            \item Posición de $q_1$: $\vec{r}_1 = (0,0)$ m
+            \item Posición de $q_2$: $\vec{r}_2 = (3,0)$ m
+            \item Posición del punto A: $\vec{r}_A = (0,4)$ m
+            \item Posición del punto B: $\vec{r}_B = (3,4)$ m
+        \end{itemize}
+    \item \textbf{Distancias (calculadas a partir de las coordenadas):}
+        \begin{itemize}
+            \item Distancia de $q_1$ a A: $d_{1A} = 4 \text{ m}$
+            \item Distancia de $q_2$ a A: $d_{2A} = \sqrt{3^2 + 4^2} = 5 \text{ m}$
+            \item Distancia de $q_1$ a B: $d_{1B} = \sqrt{3^2 + 4^2} = 5 \text{ m}$
+            \item Distancia de $q_2$ a B: $d_{2B} = 4 \text{ m}$
+        \end{itemize}
+    \item \textbf{Incógnitas:} Carga $q_1$ y Potencial en B ($V_B$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Configuración de cargas y puntos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas cartesianas XY. Una carga $q_1$ está en el origen (0,0). Una carga $q_2$ está en (3,0). El punto A está en (0,4). El punto B está en (3,4). Dibuja líneas discontinuas para formar un rectángulo con vértices en (0,0), (3,0), (3,4) y (0,4). Dibuja y etiqueta las distancias $d_{1A}$, $d_{2A}$, $d_{1B}$ y $d_{2B}$ que conectan las cargas a los puntos A y B." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{cargas_potencial.png}
+    }}
+    \caption{Disposición de las cargas $q_1$, $q_2$ y los puntos A, B.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando el \textbf{Principio de Superposición para el potencial eléctrico}. El potencial total en un punto debido a una distribución de cargas puntuales es la suma algebraica de los potenciales creados por cada carga individual en dicho punto. El potencial creado por una carga puntual $q$ a una distancia $d$ es $V = k \frac{q}{d}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Cálculo de la Carga $q_1$}
+El potencial total en A es la suma de los potenciales creados por $q_1$ y $q_2$:
+\begin{gather}
+    V_A = V_{1A} + V_{2A} = k \frac{q_1}{d_{1A}} + k \frac{q_2}{d_{2A}}
+\end{gather}
+Dado que $V_A = 0$:
+\begin{gather}
+    k \frac{q_1}{d_{1A}} + k \frac{q_2}{d_{2A}} = 0 \implies q_1 = -q_2 \frac{d_{1A}}{d_{2A}}
+\end{gather}
+\paragraph*{Cálculo del Potencial en B}
+De forma análoga, el potencial en B es:
+\begin{gather}
+    V_B = V_{1B} + V_{2B} = k \frac{q_1}{d_{1B}} + k \frac{q_2}{d_{2B}} = k \left( \frac{q_1}{d_{1B}} + \frac{q_2}{d_{2B}} \right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Valor de la Carga $q_1$}
+Sustituimos los valores de las distancias y $q_2$:
+\begin{gather}
+    q_1 = -(1 \cdot 10^{-9}) \frac{4}{5} = -0,8 \cdot 10^{-9} \, \text{C}
+\end{gather}
+\begin{cajaresultado}
+El valor de la carga es $\boldsymbol{q_1 = -0,8 \, nC}$.
+\end{cajaresultado}
+\paragraph*{Valor del Potencial en B}
+Ahora que conocemos $q_1$, calculamos $V_B$:
+\begin{gather}
+    V_B = (9 \cdot 10^9) \left( \frac{-0,8 \cdot 10^{-9}}{5} + \frac{1 \cdot 10^{-9}}{4} \right) \nonumber \\[8pt]
+    V_B = 9 \cdot 10^9 \cdot 10^{-9} \left( -0,16 + 0,25 \right) = 9 \cdot 0,09 = 0,81 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+El potencial eléctrico en el punto B es $\boldsymbol{V_B = 0,81 \, V}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando el principio de superposición y la condición de que el potencial en el punto A es nulo, se ha determinado que la carga $q_1$ debe ser negativa y tener un valor de $-0,8$ nC. Con este valor, el potencial eléctrico en el punto B, resultante de la contribución de ambas cargas, es de $0,81$ V.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 3}
+\label{subsec:C3_2022_jun_ord}
+
+\begin{cajaenunciado}
+Una partícula cargada entra con velocidad constante $\vec{v}$ en el seno de un campo magnético uniforme no nulo $\vec{B}$. Escribe qué fuerza aparece sobre la partícula y razona en qué condiciones ésta será nula y en qué condiciones será máxima. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Este es un problema puramente teórico. Las variables a considerar son:
+\begin{itemize}
+    \item \textbf{Carga de la partícula ($q$)}
+    \item \textbf{Velocidad de la partícula ($\vec{v}$)}
+    \item \textbf{Campo magnético ($\vec{B}$)}
+    \item \textbf{Fuerza magnética ($\vec{F}_m$)}
+    \item \textbf{Ángulo entre $\vec{v}$ y $\vec{B}$ ($\alpha$)}
+\end{itemize}
+Se asume que la partícula está cargada ($q \neq 0$), su velocidad no es nula ($\vec{v} \neq \vec{0}$) y el campo magnético es uniforme y no nulo ($\vec{B} \neq \vec{0}$).
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Condición de Fuerza Máxima} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas 3D (X, Y, Z). El vector del campo magnético $\vec{B}$ apunta en la dirección del eje Z positivo. El vector velocidad $\vec{v}$ de una carga positiva $q$ apunta en la dirección del eje X positivo. Dibuja el vector de la fuerza magnética $\vec{F}_m$ resultante, que apunta en la dirección del eje Y positivo, perpendicular a ambos $\vec{v}$ y $\vec{B}$, según la regla de la mano derecha. Etiqueta el ángulo de 90 grados entre $\vec{v}$ y $\vec{B}$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_maxima.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Condición de Fuerza Nula} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas 3D (X, Y, Z). El vector del campo magnético $\vec{B}$ apunta en la dirección del eje Z positivo. El vector velocidad $\vec{v}$ de una carga positiva $q$ también apunta en la dirección del eje Z positivo (paralelo a $\vec{B}$). Muestra que no hay vector de fuerza resultante ($\vec{F}_m = \vec{0}$)." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_nula.png}
+    }}
+    \caption{Representación de las condiciones de fuerza magnética máxima y nula.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza que experimenta una partícula cargada en movimiento dentro de un campo magnético se describe mediante la \textbf{Ley de Lorentz}. Esta ley establece que la fuerza es perpendicular tanto a la velocidad de la partícula como al campo magnético, y su magnitud depende del producto vectorial de estos dos vectores.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La expresión vectorial de la fuerza magnética de Lorentz es:
+\begin{gather}
+    \vec{F}_m = q (\vec{v} \times \vec{B})
+\end{gather}
+El módulo de esta fuerza se calcula como:
+\begin{gather}
+    F_m = |q| \cdot v \cdot B \cdot \sin(\alpha)
+\end{gather}
+donde $\alpha$ es el ángulo que forman los vectores $\vec{v}$ y $\vec{B}$.
+
+\paragraph*{Condición de Fuerza Nula}
+La fuerza será nula ($F_m = 0$) cuando el seno del ángulo sea cero, ya que hemos partido de que $q$, $v$ y $B$ son no nulos.
+\begin{gather}
+    \sin(\alpha) = 0 \implies \alpha = 0^\circ \quad \text{o} \quad \alpha = 180^\circ
+\end{gather}
+Esto ocurre cuando el vector velocidad $\vec{v}$ es \textbf{paralelo} o \textbf{antiparalelo} al vector campo magnético $\vec{B}$. En esta situación, la partícula no se desvía y continúa su movimiento rectilíneo uniforme.
+
+\paragraph*{Condición de Fuerza Máxima}
+La fuerza será máxima ($F_{m, max}$) cuando el seno del ángulo sea máximo. El valor máximo de la función seno es 1.
+\begin{gather}
+    \sin(\alpha) = 1 \implies \alpha = 90^\circ
+\end{gather}
+Esto ocurre cuando el vector velocidad $\vec{v}$ es \textbf{perpendicular} al vector campo magnético $\vec{B}$. En este caso, la fuerza tiene su máximo valor posible:
+\begin{gather}
+    F_{m, max} = |q| \cdot v \cdot B
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es cualitativo y no requiere cálculos numéricos.
+\begin{cajaresultado}
+La fuerza que aparece es la \textbf{Fuerza de Lorentz}: $\boldsymbol{\vec{F}_m = q (\vec{v} \times \vec{B})}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza magnética sobre una partícula cargada es nula cuando su velocidad es paralela al campo magnético, lo que significa que la partícula atraviesa el campo sin desviarse. Por el contrario, la fuerza es máxima cuando la velocidad es perpendicular al campo, provocando la máxima desviación posible de su trayectoria, lo que resulta en un movimiento circular o helicoidal.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 4}
+\label{subsec:C4_2022_jun_ord}
+
+\begin{cajaenunciado}
+Por un hilo rectilíneo indefinido circula una corriente uniforme de intensidad I. Escribe la expresión del módulo del vector campo magnético $\vec{B}$ generado por dicha corriente y dibuja razonadamente dicho vector en un punto P situado a una distancia d del hilo. Si el módulo del campo magnético en ese punto es de 100 µT, deduce cuánto valdrá en un punto que se encuentre a una distancia $d/2$ (expresa el resultado en teslas). 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Intensidad de corriente ($I$):} Circula por el hilo.
+    \item \textbf{Permeabilidad magnética del vacío ($\mu_0$):} $\mu_0 = 4\pi \cdot 10^{-7} \, \text{T}\cdot\text{m}/\text{A}$ (valor conocido).
+    \item \textbf{Punto P1:}
+        \begin{itemize}
+            \item Distancia al hilo: $d_1 = d$
+            \item Módulo del campo magnético: $B_1 = 100 \, \mu\text{T} = 100 \cdot 10^{-6} \, \text{T} = 1 \cdot 10^{-4} \, \text{T}$
+        \end{itemize}
+    \item \textbf{Punto P2:}
+        \begin{itemize}
+            \item Distancia al hilo: $d_2 = d/2$
+        \end{itemize}
+    \item \textbf{Incógnita:} Módulo del campo magnético en P2 ($B_2$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Campo magnético de un hilo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista en perspectiva de un hilo conductor rectilíneo y vertical, con una corriente I fluyendo hacia arriba. Dibuja las líneas de campo magnético como círculos concéntricos al hilo en un plano horizontal, con flechas indicando el sentido antihorario (regla de la mano derecha). Marca un punto P a una distancia $d$ del hilo. En el punto P, dibuja el vector campo magnético $\vec{B}$, que debe ser tangente a la línea de campo circular y apuntando hacia fuera de la página si el punto está a la derecha del hilo." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{hilo_campo.png}
+    }}
+    \caption{Dirección y sentido del campo magnético creado por una corriente rectilínea.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El campo magnético creado por una corriente rectilínea e indefinida se describe por la \textbf{Ley de Biot-Savart}, o más sencillamente para esta geometría, por la \textbf{Ley de Ampère}. La ley establece que el módulo del campo es directamente proporcional a la intensidad de la corriente e inversamente proporcional a la distancia al hilo. La dirección del vector $\vec{B}$ es siempre tangente a las líneas de campo circulares y concéntricas al hilo, y su sentido viene determinado por la \textbf{regla de la mano derecha}.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La expresión del módulo del campo magnético a una distancia $d$ de un hilo indefinido es:
+\begin{gather}
+    B = \frac{\mu_0 I}{2 \pi d}
+\end{gather}
+Para el punto P1 ($d_1 = d$):
+\begin{gather}
+    B_1 = \frac{\mu_0 I}{2 \pi d}
+\end{gather}
+Para el punto P2 ($d_2 = d/2$):
+\begin{gather}
+    B_2 = \frac{\mu_0 I}{2 \pi (d/2)} = 2 \left( \frac{\mu_0 I}{2 \pi d} \right)
+\end{gather}
+Comparando ambas expresiones, vemos que:
+\begin{gather}
+    B_2 = 2 \cdot B_1
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Usamos la relación encontrada para calcular $B_2$:
+\begin{gather}
+    B_2 = 2 \cdot B_1 = 2 \cdot (1 \cdot 10^{-4} \, \text{T}) = 2 \cdot 10^{-4} \, \text{T}
+\end{gather}
+\begin{cajaresultado}
+La expresión del módulo del campo es $\boldsymbol{B = \frac{\mu_0 I}{2 \pi d}}$. El valor del campo en el segundo punto es $\boldsymbol{B_2 = 2 \cdot 10^{-4} \, T}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo magnético generado por un hilo rectilíneo es inversamente proporcional a la distancia. Por lo tanto, al reducir la distancia a la mitad (de $d$ a $d/2$), el módulo del campo magnético se duplica. Si a una distancia $d$ el campo era de 100 µT, a la distancia $d/2$ será de 200 µT, que expresado en el Sistema Internacional es $2 \cdot 10^{-4}$ T.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 2}
+\label{subsec:P2_2022_jun_ord}
+
+\begin{cajaenunciado}
+Una carga puntual fija $q_1 = 10^{-9}$ C se encuentra situada a 1 m de otra carga puntual fija $q_2 = -2 q_1$.
+\begin{enumerate}
+    \item[a)] Determina el punto de la recta que contiene las cargas en el cual el campo eléctrico es nulo. (1 punto) 
+    \item[b)] Un protón con velocidad inicial nula se deja libre entre $q_1$ y $q_2$, a 90 cm de $q_2$. Determina la diferencia de energía potencial del protón entre el punto inicial y un punto situado a 10 cm de $q_2$. ¿Qué velocidad tendrá el protón cuando alcance este último punto? (1 punto) 
+\end{enumerate}
+\textbf{Datos:} constante de Coulomb, $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$; masa del protón, $m_p=1,67\cdot10^{-27}\,\text{kg}$; carga del protón, $q_p=1,6\cdot10^{-19}\,\text{C}$. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = 1 \cdot 10^{-9} \text{ C}$
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = -2 q_1 = -2 \cdot 10^{-9} \text{ C}$
+    \item \textbf{Distancia entre cargas ($D$):} $D = 1 \text{ m}$
+    \item \textbf{Constantes:} $k = 9\cdot10^{9}$, $m_p=1,67\cdot10^{-27}$, $q_p=1,6\cdot10^{-19}$ (en SI).
+    \item \textbf{Apartado b):}
+        \begin{itemize}
+            \item Punto inicial (A): a 90 cm de $q_2 \implies d_{2A} = 0,9$ m. Como la distancia total es 1 m, está a $d_{1A} = 0,1$ m de $q_1$.
+            \item Punto final (B): a 10 cm de $q_2 \implies d_{2B} = 0,1$ m. Está a $d_{1B} = 0,9$ m de $q_1$.
+            \item Velocidad inicial: $v_A = 0$ m/s.
+        \end{itemize}
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Posición $x$ donde el campo es nulo.
+            \item Diferencia de energía potencial $\Delta E_p = E_{p,B} - E_{p,A}$.
+            \item Velocidad final del protón $v_B$.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (a): Campo Eléctrico Nulo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje X horizontal. Una carga positiva $q_1$ está en el origen (x=0). Una carga negativa $q_2$ (representada más grande) está en x=1. Como las cargas son de signo opuesto, el punto de campo nulo debe estar fuera del segmento que las une, y más cerca de la carga de menor magnitud. Dibuja un punto P a la izquierda de $q_1$, en una coordenada $x < 0$. En P, dibuja el vector campo $\vec{E}_1$ (creado por $q_1$) apuntando hacia la izquierda, y el vector campo $\vec{E}_2$ (creado por $q_2$) apuntando hacia la derecha. Los dos vectores deben tener la misma longitud." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_nulo.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (b): Movimiento del Protón} \vspace{0.5cm} \textit{Prompt para la imagen:} "El mismo eje X con $q_1$ en x=0 y $q_2$ en x=1. Marca el punto inicial A en x=0.1 y el punto final B en x=0.9. Dibuja un protón (círculo con '+') en el punto A. Dibuja los vectores de fuerza eléctrica $\vec{F}_1$ (repulsiva, hacia la derecha) y $\vec{F}_2$ (atractiva, hacia la derecha) actuando sobre el protón en A. Dibuja una flecha que indique el movimiento del protón de A a B." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{movimiento_proton.png}
+    }}
+    \caption{Esquemas para el campo nulo y el movimiento del protón.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo Eléctrico Nulo}
+Se basa en el \textbf{Principio de Superposición}. El campo total en un punto es la suma vectorial de los campos creados por cada carga. Para que el campo sea nulo, los vectores campo deben ser de igual módulo y sentido opuesto. Dado que las cargas son de signo contrario, esto solo puede ocurrir en la recta que las une, fuera del segmento entre ellas, y del lado de la carga con menor valor absoluto ($q_1$).
+\paragraph*{b) Movimiento del Protón}
+Se aplica el \textbf{Principio de Conservación de la Energía Mecánica}, ya que la fuerza eléctrica es conservativa. La disminución de la energía potencial se transforma íntegramente en un aumento de la energía cinética. $\Delta E_c + \Delta E_p = 0$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Punto de Campo Nulo}
+Situamos $q_1$ en $x=0$ y $q_2$ en $x=D$. Sea $x$ la coordenada del punto P donde el campo es nulo. Este punto estará a la izquierda de $q_1$, en $x<0$. La distancia a $q_1$ es $|x|$ y a $q_2$ es $D+|x|$.
+\begin{gather}
+    |\vec{E}_1| = |\vec{E}_2| \implies k \frac{|q_1|}{x^2} = k \frac{|q_2|}{(D-x)^2} \quad \text{(Error común, la distancia es D+(-x))}
+     \nonumber \\[8pt] k \frac{|q_1|}{x^2} = k \frac{|q_2|}{(D+x)^2} \quad \text{(Correcto si x es la distancia, no la coordenada)}
+\end{gather}
+Llamemos $d$ a la distancia a la izquierda de $q_1$. La distancia a $q_2$ es $D+d$.
+\begin{gather}
+    k \frac{|q_1|}{d^2} = k \frac{|-2q_1|}{(D+d)^2} \implies \frac{1}{d^2} = \frac{2}{(D+d)^2} \nonumber \\[8pt]
+    (D+d)^2 = 2d^2 \implies D+d = \sqrt{2} d \implies d = \frac{D}{\sqrt{2}-1}
+\end{gather}
+\paragraph*{b) Diferencia de Energía Potencial y Velocidad}
+La energía potencial de una carga $q_p$ en un punto es $E_p = q_p V$, donde $V$ es el potencial total.
+\begin{gather}
+    V_A = k\left(\frac{q_1}{d_{1A}} + \frac{q_2}{d_{2A}}\right), \quad V_B = k\left(\frac{q_1}{d_{1B}} + \frac{q_2}{d_{2B}}\right) \nonumber \\[8pt]
+    \Delta E_p = E_{p,B} - E_{p,A} = q_p (V_B - V_A)
+\end{gather}
+Por conservación de la energía, con $v_A=0$:
+\begin{gather}
+    \Delta E_c = -\Delta E_p \implies \frac{1}{2}m_p v_B^2 - 0 = -(E_{p,B} - E_{p,A}) \implies v_B = \sqrt{\frac{-2 \Delta E_p}{m_p}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Punto de Campo Nulo}
+\begin{gather}
+    d = \frac{1}{\sqrt{2}-1} \approx 2,414 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+El campo eléctrico es nulo en un punto de la recta que une las cargas, situado a $\boldsymbol{2,414 \, m}$ de $\boldsymbol{q_1}$ y en el lado opuesto a $\boldsymbol{q_2}$.
+\end{cajaresultado}
+\paragraph*{b) Energía y Velocidad}
+\begin{gather}
+    V_A = 9\cdot10^9 \left(\frac{10^{-9}}{0,1} + \frac{-2\cdot10^{-9}}{0,9}\right) = 70 \, \text{V} \\
+    V_B = 9\cdot10^9 \left(\frac{10^{-9}}{0,9} + \frac{-2\cdot10^{-9}}{0,1}\right) =  -170 \, \text{V} \\
+    \Delta E_p = q_p (V_B - V_A) = (1,6\cdot10^{-19})(-170 - 70) =  -3,84 \cdot 10^{-17} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+La diferencia de energía potencial es $\boldsymbol{\Delta E_p = -3,84 \cdot 10^{-17} \, J}$.
+\end{cajaresultado}
+\begin{gather}
+    v_B = \sqrt{\frac{-2(-3,84 \cdot 10^{-17})}{1,67 \cdot 10^{-27}}} = \sqrt{4,6 \cdot 10^{10}} \approx 214476 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad del protón al llegar al punto B es $\boldsymbol{v_B \approx 2,14 \cdot 10^5 \, m/s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) El punto de campo nulo se encuentra en la región exterior a las cargas, más cerca de la carga de menor magnitud $q_1$.
+b) El protón se mueve desde un punto de alto potencial (70 V) a uno de bajo potencial (-170 V), por lo que su energía potencial disminuye en $3,84 \cdot 10^{-17}$ J. Esta energía se convierte en energía cinética, permitiendo que el protón, partiendo del reposo, alcance una velocidad de aproximadamente $2,14 \cdot 10^5$ m/s.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Ondas}
+\label{sec:ondas_2022_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 5}
+\label{subsec:C5_2022_jun_ord}
+
+\begin{cajaenunciado}
+Una fuente sonora puntual de potencia $1,26 \cdot 10^{-4}$ W emite uniformemente en todas las direcciones. Calcula la intensidad, I, a 10 m de la fuente. ¿Cuál es el nivel de intensidad sonora en decibelios a dicha distancia de la fuente?
+\textbf{Dato:} intensidad física umbral $I_0 = 10^{-12} \, \text{W/m}^2$. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Potencia de la fuente ($P$):} $P = 1,26 \cdot 10^{-4} \text{ W}$
+    \item \textbf{Distancia a la fuente ($r$):} $r = 10 \text{ m}$
+    \item \textbf{Intensidad umbral de audición ($I_0$):} $I_0 = 10^{-12} \text{ W/m}^2$
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Intensidad sonora ($I$) a la distancia $r$.
+            \item Nivel de intensidad sonora ($\beta$) en decibelios.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Frentes de Onda Esféricos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una fuente puntual 'S' en el centro. Desde la fuente emanan frentes de onda esféricos y concéntricos. Dibuja una esfera de radio $r=10$ m alrededor de la fuente. Indica que la potencia $P$ de la fuente se distribuye uniformemente sobre la superficie de esta esfera, cuya área es $A = 4\pi r^2$. Un observador está situado en un punto de esta superficie." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{frentes_onda.png}
+    }}
+    \caption{La potencia de una fuente puntual se distribuye sobre superficies esféricas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Intensidad Sonora (I)}
+La intensidad de una onda se define como la potencia que atraviesa por unidad de superficie perpendicular a la dirección de propagación. Para una fuente puntual que emite isótropamente (uniformemente en todas las direcciones), la energía se distribuye sobre la superficie de una esfera de radio $r$. El área de esta esfera es $A = 4\pi r^2$.
+\paragraph*{Nivel de Intensidad Sonora ($\beta$)}
+Debido a que el oído humano percibe el sonido en una escala logarítmica, se define el nivel de intensidad sonora ($\beta$) en decibelios (dB) para comparar una intensidad dada $I$ con la intensidad umbral de audición, $I_0$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La intensidad sonora a una distancia $r$ de la fuente es:
+\begin{gather}
+    I = \frac{P}{A} = \frac{P}{4\pi r^2}
+\end{gather}
+El nivel de intensidad sonora se define como:
+\begin{gather}
+    \beta (\text{dB}) = 10 \cdot \log_{10}\left(\frac{I}{I_0}\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la Intensidad (I)}
+\begin{gather}
+    I = \frac{1,26 \cdot 10^{-4}}{4\pi (10)^2} = \frac{1,26 \cdot 10^{-4}}{400\pi} \approx 1 \cdot 10^{-7} \, \text{W/m}^2
+\end{gather}
+\begin{cajaresultado}
+La intensidad sonora a 10 m de la fuente es $\boldsymbol{I \approx 1 \cdot 10^{-7} \, W/m^2}$.
+\end{cajaresultado}
+\paragraph*{Cálculo del Nivel de Intensidad Sonora ($\beta$)}
+\begin{gather}
+    \beta = 10 \cdot \log_{10}\left(\frac{1 \cdot 10^{-7}}{10^{-12}}\right) = 10 \cdot \log_{10}(10^5) = 10 \cdot 5 = 50 \, \text{dB}
+\end{gather}
+\begin{cajaresultado}
+El nivel de intensidad sonora es $\boldsymbol{\beta = 50 \, dB}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La intensidad de la onda sonora disminuye con el cuadrado de la distancia. A 10 metros, la intensidad es de $10^{-7} \, \text{W/m}^2$. Este valor, comparado con el umbral de audición, corresponde a un nivel de intensidad sonora de 50 decibelios, que es un sonido fácilmente audible y comparable al de una conversación tranquila.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 3}
+\label{subsec:P3_2022_jun_ord}
+
+\begin{cajaenunciado}
+La función que representa una onda es $y(x,t) = 2 \sin(\pi t - 8\pi x)$, donde x e y están expresadas en metros y t en segundos. Calcula razonadamente:
+\begin{enumerate}
+    \item[a)] La amplitud, el periodo, la frecuencia y la longitud de onda. (1 punto) 
+    \item[b)] La velocidad de propagación de la onda y la velocidad de vibración de un punto situado a 1 m del foco emisor, para $t=8$ s. (1 punto) 
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+La ecuación de una onda armónica que se propaga en el sentido positivo del eje X es de la forma $y(x,t) = A \sin(\omega t - kx)$. Comparando esta forma general con la ecuación proporcionada:
+\begin{gather}
+    y(x,t) = 2 \sin(\pi t - 8\pi x)
+\end{gather}
+Identificamos directamente los siguientes parámetros:
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 2 \text{ m}$
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = \pi \text{ rad/s}$
+    \item \textbf{Número de onda ($k$):} $k = 8\pi \text{ rad/m}$
+\end{itemize}
+Las incógnitas son: Periodo ($T$), frecuencia ($f$), longitud de onda ($\lambda$), velocidad de propagación ($v_p$) y velocidad de vibración ($v_y$) en $x=1$ m y $t=8$ s.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Representación de la Onda} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de una onda sinusoidal en el espacio en un instante de tiempo fijo (eje Y vs eje X). Etiqueta la Amplitud (A) como la altura máxima de la cresta. Etiqueta la Longitud de Onda ($\lambda$) como la distancia horizontal entre dos crestas consecutivas. Añade una nota que indique que la onda se desplaza hacia la derecha con velocidad $v_p$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_parametros.png}
+    }}
+    \caption{Parámetros de una onda armónica.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Los parámetros de una onda armónica están relacionados a través de definiciones fundamentales:
+\begin{itemize}
+    \item El \textbf{periodo ($T$)} se relaciona con la frecuencia angular: $T = 2\pi / \omega$.
+    \item La \textbf{frecuencia ($f$)} es la inversa del periodo: $f = 1/T = \omega / (2\pi)$.
+    \item La \textbf{longitud de onda ($\lambda$)} se relaciona con el número de onda: $\lambda = 2\pi / k$.
+    \item La \textbf{velocidad de propagación ($v_p$)} es la velocidad a la que se desplaza la perturbación: $v_p = \lambda f = \omega / k$.
+    \item La \textbf{velocidad de vibración ($v_y$)} es la velocidad de un punto del medio, y se calcula derivando la elongación $y$ respecto al tiempo: $v_y = \partial y / \partial t$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Parámetros de la Onda}
+\begin{gather}
+    A \quad (\text{identificada directamente}) \\
+    T = \frac{2\pi}{\omega} \\
+    f = \frac{1}{T} = \frac{\omega}{2\pi} \\
+    \lambda = \frac{2\pi}{k}
+\end{gather}
+\paragraph*{b) Velocidades}
+\begin{gather}
+    v_p = \frac{\omega}{k} \\
+    v_y(x,t) = \frac{\partial}{\partial t} [A \sin(\omega t - kx)] = A\omega \cos(\omega t - kx)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Parámetros de la Onda}
+\begin{itemize}
+    \item \textbf{Amplitud:} $A = 2$ m.
+    \item \textbf{Periodo:} $T = \frac{2\pi}{\pi} = 2$ s.
+    \item \textbf{Frecuencia:} $f = \frac{1}{2} = 0,5$ Hz.
+    \item \textbf{Longitud de onda:} $\lambda = \frac{2\pi}{8\pi} = \frac{1}{4} = 0,25$ m.
+\end{itemize}
+\begin{cajaresultado}
+La amplitud es $\boldsymbol{A=2\,m}$, el periodo $\boldsymbol{T=2\,s}$, la frecuencia $\boldsymbol{f=0,5\,Hz}$ y la longitud de onda $\boldsymbol{\lambda=0,25\,m}$.
+\end{cajaresultado}
+\paragraph*{b) Velocidades}
+\begin{gather}
+    v_p = \frac{\pi}{8\pi} = \frac{1}{8} = 0,125 \, \text{m/s}
+\end{gather}
+La ecuación de la velocidad de vibración es:
+\begin{gather}
+    v_y(x,t) = 2 \cdot \pi \cos(\pi t - 8\pi x)
+\end{gather}
+Sustituyendo $x=1$ m y $t=8$ s:
+\begin{gather}
+    v_y(1, 8) = 2\pi \cos(\pi \cdot 8 - 8\pi \cdot 1) = 2\pi \cos(8\pi - 8\pi) = 2\pi \cos(0) = 2\pi \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad de propagación es $\boldsymbol{v_p = 0,125 \, m/s}$. La velocidad de vibración en el punto y tiempo dados es $\boldsymbol{v_y = 2\pi \approx 6,28 \, m/s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la identificación de los términos en la ecuación de onda, se han determinado sus parámetros fundamentales. La onda se propaga a una velocidad constante de 0,125 m/s. Sin embargo, las partículas del medio oscilan con una velocidad variable. En el instante $t=8$ s, la partícula en $x=1$ m pasa por su posición de equilibrio ($y=0$) moviéndose en el sentido positivo, alcanzando su velocidad máxima de vibración, que es de $2\pi$ m/s.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Óptica Geométrica}
+\label{sec:optica_2022_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 6}
+\label{subsec:C6_2022_jun_ord}
+
+\begin{cajaenunciado}
+En la figura se muestra una lente, la posición de un objeto, O, y la de la imagen, O', que la lente genera de dicho objeto. Determina la distancia focal imagen de la lente, la potencia de la lente en dioptrías y el tamaño de la imagen si el objeto mide 2 cm. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+De la figura, y siguiendo el convenio de signos DIN (origen en la lente, eje X positivo hacia la derecha):
+\begin{itemize}
+    \item Cada división de la cuadrícula representa 10 cm.
+    \item \textbf{Posición del objeto (s):} El objeto O está 3 divisiones a la izquierda de la lente. $s = -30 \text{ cm} = -0,3 \text{ m}$.
+    \item \textbf{Posición de la imagen (s'):} La imagen O' está 1 división a la izquierda de la lente. $s' = -10 \text{ cm} = -0,1 \text{ m}$.
+    \item \textbf{Tamaño del objeto (y):} $y = 2 \text{ cm} = 0,02 \text{ m}$.
+    \item \textbf{Tipo de lente:} Como la imagen de un objeto real es virtual ($s' < 0$), derecha (se infiere del diagrama de rayos implícito) y de menor tamaño, se trata de una \textbf{lente divergente}.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Distancia focal imagen ($f'$).
+            \item Potencia de la lente ($P$).
+            \item Tamaño de la imagen ($y'$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Trazado de Rayos para Lente Divergente} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibuja un eje óptico horizontal. En el centro, coloca el símbolo de una lente divergente (línea vertical con puntas de flecha invertidas). Coloca un objeto (flecha vertical hacia arriba) a una distancia $s=-30$cm a la izquierda de la lente. Traza dos rayos principales desde la punta del objeto: 1) Un rayo paralelo al eje óptico que, al pasar por la lente, se desvía de tal forma que su prolongación hacia atrás pasa por el foco imagen $F'$. 2) Un rayo que se dirige hacia el centro óptico y no se desvía. El punto donde se cruzan la prolongación del primer rayo y el segundo rayo es la punta de la imagen. La imagen debe ser virtual, derecha, más pequeña que el objeto y situada en $s'=-10$cm. Etiqueta claramente $s$, $s'$, el objeto O y la imagen O'." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_divergente.png}
+    }}
+    \caption{Esquema del trazado de rayos que confirma la naturaleza de la lente y la posición de la imagen.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve utilizando las ecuaciones fundamentales de las lentes delgadas:
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss de las lentes delgadas:} Relaciona las posiciones del objeto ($s$) y la imagen ($s'$) con la distancia focal imagen ($f'$).
+    \item \textbf{Potencia de una lente (P):} Se define como la inversa de la distancia focal imagen expresada en metros. Su unidad es la dioptría (m$^{-1}$).
+    \item \textbf{Aumento lateral ($\beta$):} Relaciona los tamaños y posiciones de la imagen y el objeto.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La ecuación de Gauss es:
+\begin{gather}
+    \frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}
+\end{gather}
+La potencia de la lente es:
+\begin{gather}
+    P = \frac{1}{f' (\text{en metros})}
+\end{gather}
+El aumento lateral es:
+\begin{gather}
+    \beta = \frac{y'}{y} = \frac{s'}{s}
+\end{gather}
+De donde se despeja el tamaño de la imagen:
+\begin{gather}
+    y' = y \cdot \frac{s'}{s}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la Distancia Focal y la Potencia}
+Usamos la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{-10} - \frac{1}{-30} = \frac{1}{f'} \implies -\frac{1}{10} + \frac{1}{30} = \frac{1}{f'} \implies \frac{-3+1}{30} = \frac{1}{f'} \implies \frac{-2}{30} = \frac{1}{f'} \nonumber \\[8pt]
+    f' = -\frac{30}{2} = -15 \, \text{cm} = -0,15 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+La distancia focal imagen es $\boldsymbol{f' = -15 \, cm}$.
+\end{cajaresultado}
+Ahora, la potencia:
+\begin{gather}
+    P = \frac{1}{-0,15} \approx -6,67 \, \text{dioptrías}
+\end{gather}
+\begin{cajaresultado}
+La potencia de la lente es $\boldsymbol{P \approx -6,67 \, D}$.
+\end{cajaresultado}
+\paragraph*{Cálculo del Tamaño de la Imagen}
+\begin{gather}
+    y' = (2 \, \text{cm}) \cdot \frac{-10 \, \text{cm}}{-30 \, \text{cm}} = 2 \cdot \frac{1}{3} = \frac{2}{3} \approx 0,67 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+El tamaño de la imagen es $\boldsymbol{y' \approx 0,67 \, cm}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de las posiciones del objeto y la imagen dadas en la figura, se deduce que se trata de una lente divergente, lo cual es consistente con la distancia focal negativa calculada ($f'=-15$ cm) y la potencia también negativa ($P=-6,67$ D). La imagen formada es virtual, derecha y de menor tamaño que el objeto, midiendo aproximadamente 0,67 cm de altura para un objeto de 2 cm.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Física del Siglo XX}
+\label{sec:fisSXX_2022_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{CUESTIÓN 7}
+\label{subsec:C7_2022_jun_ord}
+
+\begin{cajaenunciado}
+Al iluminar un determinado cátodo con radiación monocromática de frecuencia $f=6,1\cdot10^{14}$ Hz se produce efecto fotoeléctrico. Se mide el valor del potencial de frenado $\Delta V$ y resulta 0,23 V. Calcula el valor de la frecuencia umbral $f_{o}$ y determina el metal que constituye el cátodo.
+
+\textbf{Datos:} carga elemental, $q=1,6\cdot10^{-19}\,\text{C}$; constante de Planck, $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$; trabajos de extracción, $W_{e}(\text{potasio})=2,3\,\text{eV}$, $W_{e}(\text{aluminio})=4,3\,\text{eV}$, $W_{e}(\text{cobre})=4,7\,\text{eV}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Frecuencia de la radiación incidente ($f$):} $f = 6,1 \cdot 10^{14} \, \text{Hz}$
+    \item \textbf{Potencial de frenado ($\Delta V$):} $\Delta V = 0,23 \, \text{V}$
+    \item \textbf{Carga elemental ($q$):} $q = 1,6 \cdot 10^{-19} \, \text{C}$
+    \item \textbf{Constante de Planck ($h$):} $h = 6,6 \cdot 10^{-34} \, \text{J}\cdot\text{s}$
+    \item \textbf{Trabajos de extracción de referencia:}
+    \begin{itemize}
+        \item $W_{e,\text{K}} = 2,3 \, \text{eV} = 2,3 \cdot (1,6 \cdot 10^{-19}) = 3,68 \cdot 10^{-19} \, \text{J}$
+        \item $W_{e,\text{Al}} = 4,3 \, \text{eV} = 6,88 \cdot 10^{-19} \, \text{J}$
+        \item $W_{e,\text{Cu}} = 4,7 \, \text{eV} = 7,52 \cdot 10^{-19} \, \text{J}$
+    \end{itemize}
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Frecuencia umbral ($f_0$).
+        \item Identidad del metal del cátodo.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Esquema del Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de un fototubo al vacío. Mostrar una placa metálica (cátodo) a la izquierda y otra placa (ánodo) a la derecha. Dibujar fotones de luz monocromática (ondas con flechas) incidiendo sobre el cátodo. Mostrar electrones (fotoelectrones) siendo emitidos desde el cátodo y viajando hacia el ánodo. Conectar las placas a una fuente de voltaje variable con un voltímetro en paralelo, mostrando que el polo negativo está conectado al ánodo para crear un potencial de frenado $\Delta V$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{efecto_fotoelectrico.png}
+    }}
+    \caption{Representación del montaje para medir el potencial de frenado.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se explica mediante la \textbf{ecuación del efecto fotoeléctrico de Einstein}, que es una manifestación de la conservación de la energía. La energía de un fotón incidente ($E_{fotón}$) se invierte en arrancar un electrón del metal (trabajo de extracción, $W_e$) y en proporcionarle energía cinética ($E_c$):
+\[ E_{fotón} = W_e + E_{c, \text{max}} \]
+Donde $E_{fotón} = hf$ y $W_e = hf_0$. El \textbf{potencial de frenado} ($\Delta V$) es la diferencia de potencial necesaria para detener a los fotoelectrones más energéticos, por lo que su energía cinética máxima se relaciona con $\Delta V$ mediante:
+\[ E_{c, \text{max}} = q \cdot \Delta V \]
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Partimos de la ecuación de Einstein:
+\begin{gather}
+    hf = W_e + E_{c, \text{max}}
+\end{gather}
+Sustituimos la energía cinética por su expresión en función del potencial de frenado:
+\begin{gather}
+    hf = W_e + q \Delta V
+\end{gather}
+De aquí, podemos despejar el trabajo de extracción $W_e$:
+\begin{gather}
+    W_e = hf - q \Delta V \label{eq:trabajo_extraccion}
+\end{gather}
+Una vez conocido $W_e$, podemos hallar la frecuencia umbral $f_0$ a partir de la relación $W_e = hf_0$:
+\begin{gather}
+    f_0 = \frac{W_e}{h} \label{eq:frecuencia_umbral}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, calculamos el trabajo de extracción usando la Ecuación \ref{eq:trabajo_extraccion}:
+\begin{gather}
+    W_e = (6,6 \cdot 10^{-34})(6,1 \cdot 10^{14}) - (1,6 \cdot 10^{-19})(0,23) \nonumber \\
+    W_e = 4,026 \cdot 10^{-19} - 0,368 \cdot 10^{-19} = 3,658 \cdot 10^{-19} \, \text{J}
+\end{gather}
+Para identificar el metal, convertimos este valor a eV:
+\begin{gather}
+    W_e (\text{en eV}) = \frac{3,658 \cdot 10^{-19} \, \text{J}}{1,6 \cdot 10^{-19} \, \text{J/eV}} \approx 2,29 \, \text{eV}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo de extracción es $\boldsymbol{W_e \approx 2,29 \, \textbf{eV}}$. Este valor es muy cercano a los 2,3 eV del \textbf{Potasio}.
+\end{cajaresultado}
+\medskip
+Ahora, calculamos la frecuencia umbral usando la Ecuación \ref{eq:frecuencia_umbral}:
+\begin{gather}
+    f_0 = \frac{3,658 \cdot 10^{-19}}{6,6 \cdot 10^{-34}} \approx 5,54 \cdot 10^{14} \, \text{Hz}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia umbral del cátodo es $\boldsymbol{f_0 \approx 5,54 \cdot 10^{14} \, \textbf{Hz}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Aplicando la ecuación de Einstein para el efecto fotoeléctrico, se ha determinado que el trabajo de extracción del metal es de $\mathbf{2,29 \, eV}$. Al comparar este valor con los datos proporcionados, se concluye que el material del cátodo es \textbf{Potasio}. La frecuencia umbral correspondiente a este trabajo de extracción es de $\mathbf{5,54 \cdot 10^{14} \, Hz}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{CUESTIÓN 8}
+\label{subsec:C8_2022_jun_ord}
+
+\begin{cajaenunciado}
+Un núcleo de ${}^{60}\text{Co}$ se desintegra según la reacción ${}_{27}^{60}\text{Co}\rightarrow{}_{28}^{60}\text{Ni}^{*}+{}_{b}^{a}\text{X}$. Razona qué partícula es X. Posteriormente, el núcleo de níquel excitado, ${}_{28}^{60}\text{Ni}^{*}$, emite dos fotones de energías 1,17 y 1,33 MeV. Si en un segundo se emiten $10^{10}$ fotones de cada tipo, calcula la energía por unidad de tiempo (en watios) que produce la emisión.
+
+\textbf{Dato:} carga elemental, $q=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Reacción nuclear:} ${}_{27}^{60}\text{Co}\rightarrow{}_{28}^{60}\text{Ni}^{*}+{}_{b}^{a}\text{X}$
+    \item \textbf{Energías de los fotones emitidos:} $E_{\gamma1} = 1,17 \, \text{MeV}$, $E_{\gamma2} = 1,33 \, \text{MeV}$
+    \item \textbf{Tasa de emisión de fotones ($R$):} $R = 10^{10} \, \text{fotones/s}$ (para cada tipo)
+    \item \textbf{Carga elemental ($q$):} $q = 1,6 \cdot 10^{-19} \, \text{C}$
+    \item \textbf{Conversión de energía:} $1 \, \text{MeV} = 10^6 \, \text{eV} = 10^6 \cdot (1,6 \cdot 10^{-19}) = 1,6 \cdot 10^{-13} \, \text{J}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Identidad de la partícula X ($ {}_{b}^{a}\text{X} $).
+        \item Potencia total emitida ($P$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Esquema de Desintegración Beta y Emisión Gamma} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de niveles de energía. Mostrar un nivel superior etiquetado como $^{60}_{27}\text{Co}$. Dibujar una flecha diagonal hacia abajo y a la derecha apuntando a un nivel intermedio etiquetado como $^{60}_{28}\text{Ni}^{*}$. Esta flecha representa la desintegración beta y debe estar etiquetada con '$\beta^-$ ($^{0}_{-1}e$)'. Desde el nivel de $^{60}_{28}\text{Ni}^{*}$, dibujar dos flechas verticales hacia abajo (emisiones gamma) apuntando a un nivel inferior, el estado fundamental $^{60}_{28}\text{Ni}$. Etiquetar estas flechas con sus energías, $\gamma_1 = 1.17$ MeV y $\gamma_2 = 1.33$ MeV." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{desintegracion_cobalto.png}
+    }}
+    \caption{Proceso de desintegración del Cobalto-60.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Identificación de la partícula X}
+En toda reacción nuclear se deben conservar el \textbf{número másico (A)} y el \textbf{número atómico (Z)}.
+\begin{itemize}
+    \item Conservación del número másico A (superíndices): La suma de los números másicos de los reactivos debe ser igual a la de los productos.
+    \item Conservación del número atómico Z (subíndices): La suma de los números atómicos de los reactivos debe ser igual a la de los productos.
+\end{itemize}
+
+\paragraph*{b) Cálculo de la Potencia}
+La \textbf{potencia (P)} es la energía total emitida por unidad de tiempo. Si se emiten $N$ fotones de energía $E$ en un tiempo $t$, la potencia es $P = \frac{N \cdot E}{t}$. En este caso, tenemos dos tipos de fotones.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Leyes de Conservación (Leyes de Soddy-Fajans)}
+Para la reacción ${}_{27}^{60}\text{Co}\rightarrow{}_{28}^{60}\text{Ni}^{*}+{}_{b}^{a}\text{X}$:
+\begin{gather}
+    \text{Conservación de A: } 60 = 60 + a \implies a = 0 \\
+    \text{Conservación de Z: } 27 = 28 + b \implies b = -1
+\end{gather}
+La partícula ${}_{b}^{a}\text{X}$ es, por tanto, ${}_{-1}^{0}\text{X}$.
+
+\paragraph*{b) Potencia Total Emitida}
+La energía total emitida en un segundo es la suma de las energías de todos los fotones emitidos en ese segundo:
+\begin{gather}
+    E_{\text{total por segundo}} = R \cdot E_{\gamma1} + R \cdot E_{\gamma2} = R (E_{\gamma1} + E_{\gamma2})
+\end{gather}
+Dado que la potencia es la energía por unidad de tiempo, y el tiempo es 1 segundo:
+\begin{gather}
+    P = \frac{E_{\text{total por segundo}}}{1 \, \text{s}} = R (E_{\gamma1} + E_{\gamma2}) \label{eq:potencia_gamma}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Identificación de la partícula X}
+La partícula con $a=0$ y $b=-1$, ${}_{-1}^{0}\text{X}$, es un \textbf{electrón}, también conocido como \textbf{partícula beta negativa} ($\beta^-$). La reacción es una desintegración beta.
+\begin{cajaresultado}
+    La partícula X es un electrón ($\boldsymbol{{}_{-1}^{0}e}$ o $\boldsymbol{\beta^-}$).
+\end{cajaresultado}
+
+\paragraph*{b) Cálculo de la Potencia}
+Primero, convertimos las energías a Julios:
+\begin{gather}
+    E_{\gamma1} = 1,17 \cdot 1,6 \cdot 10^{-13} = 1,872 \cdot 10^{-13} \, \text{J} \nonumber \\
+    E_{\gamma2} = 1,33 \cdot 1,6 \cdot 10^{-13} = 2,128 \cdot 10^{-13} \, \text{J} \nonumber
+\end{gather}
+Ahora aplicamos la Ecuación \ref{eq:potencia_gamma}:
+\begin{gather}
+    P = 10^{10} \frac{\text{fotones}}{\text{s}} \cdot (1,872 \cdot 10^{-13} \, \text{J} + 2,128 \cdot 10^{-13} \, \text{J}) \nonumber \\
+    P = 10^{10} \cdot (4,0 \cdot 10^{-13}) = 4,0 \cdot 10^{-3} \, \text{J/s} = 4,0 \cdot 10^{-3} \, \text{W}
+\end{gather}
+\begin{cajaresultado}
+    La energía por unidad de tiempo (potencia) que produce la emisión es de $\boldsymbol{4,0 \cdot 10^{-3} \, \textbf{W}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Mediante la aplicación de las leyes de conservación del número másico y atómico, se determina que la partícula X emitida en la desintegración del Cobalto-60 es un \textbf{electrón (partícula $\beta^-$)}. La posterior desexcitación del núcleo de Níquel emite fotones gamma. La potencia total generada por la emisión de $10^{10}$ fotones de cada tipo por segundo es de $\mathbf{4,0 \, mW}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{PROBLEMA 4}
+\label{subsec:P4_2022_jun_ord}
+
+\begin{cajaenunciado}
+El mesón $J/\psi$ tiene una vida media de $7,2\cdot10^{-21}$ s en su sistema de referencia y de $1,1\cdot10^{-20}$ s cuando se mueve a velocidad relativista respecto a un sistema de referencia ligado al laboratorio. Calcula razonadamente:
+\begin{enumerate}
+    \item[a)] El valor de la velocidad respecto al laboratorio. (1 punto)
+    \item[b)] La energía cinética y la energía total, en MeV, en ambos sistemas de referencia. (1 punto)
+\end{enumerate}
+\textbf{Datos:} masa (en reposo) del mesón $J/\psi$, $m_{0}=5,52\cdot10^{-27}\,\text{kg}$; velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$; carga elemental, $q=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tiempo propio ($\Delta t_0$):} $\Delta t_0 = 7,2 \cdot 10^{-21} \, \text{s}$ (vida media en reposo).
+    \item \textbf{Tiempo dilatado ($\Delta t$):} $\Delta t = 1,1 \cdot 10^{-20} \, \text{s}$ (vida media en el laboratorio).
+    \item \textbf{Masa en reposo ($m_0$):} $m_0 = 5,52 \cdot 10^{-27} \, \text{kg}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3 \cdot 10^8 \, \text{m/s}$.
+    \item \textbf{Carga elemental ($q$):} $q = 1,6 \cdot 10^{-19} \, \text{C}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Velocidad del mesón ($v$).
+        \item Energía total ($E$) y cinética ($E_c$) en ambos sistemas de referencia.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Sistemas de Referencia} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos recuadros uno al lado del otro. El recuadro izquierdo se titula 'Sistema Propio (S')' y muestra un mesón $J/\psi$ estático con un reloj al lado que marca $\Delta t_0$. El recuadro derecho se titula 'Sistema Laboratorio (S)' y muestra el mismo mesón moviéndose hacia la derecha con un vector velocidad $\vec{v}$. Un observador en S mide con su reloj un tiempo $\Delta t$. Una flecha conecta los dos recuadros indicando la transformación de Lorentz." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{dilatacion_temporal.png}
+    }}
+    \caption{Comparación del tiempo medido en el sistema de referencia propio y el del laboratorio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Este problema se resuelve con los postulados de la \textbf{Relatividad Especial}.
+\paragraph*{a) Velocidad del mesón}
+Se utiliza la ecuación de la \textbf{dilatación del tiempo}, que relaciona el tiempo propio ($\Delta t_0$) medido en el sistema de referencia en reposo de la partícula, con el tiempo ($\Delta t$) medido en un sistema de referencia donde la partícula se mueve a velocidad $v$.
+\[ \Delta t = \gamma \Delta t_0 \]
+donde $\gamma$ es el \textbf{factor de Lorentz}, definido como $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}$.
+
+\paragraph*{b) Energías}
+\begin{itemize}
+    \item \textbf{Energía en reposo ($E_0$):} Es la energía intrínseca de la partícula por tener masa, dada por la famosa ecuación de Einstein: $E_0 = m_0 c^2$.
+    \item \textbf{Energía total relativista ($E$):} Es la energía de la partícula en movimiento: $E = \gamma m_0 c^2 = \gamma E_0$.
+    \item \textbf{Energía cinética relativista ($E_c$):} Es la diferencia entre la energía total y la energía en reposo: $E_c = E - E_0 = (\gamma - 1)m_0 c^2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Cálculo de la velocidad}
+A partir de la dilatación temporal, despejamos el factor de Lorentz:
+\begin{gather}
+    \gamma = \frac{\Delta t}{\Delta t_0} \label{eq:gamma_calc}
+\end{gather}
+Luego, de la definición de $\gamma$, despejamos la velocidad $v$:
+\begin{gather}
+    \gamma^2 = \frac{1}{1 - v^2/c^2} \implies 1 - \frac{v^2}{c^2} = \frac{1}{\gamma^2} \implies \frac{v^2}{c^2} = 1 - \frac{1}{\gamma^2} \nonumber \\
+    v = c \sqrt{1 - \frac{1}{\gamma^2}} \label{eq:velocidad_relativista}
+\end{gather}
+
+\paragraph*{b) Cálculo de las energías}
+\begin{itemize}
+    \item \textbf{En el sistema de referencia del mesón (en reposo):}
+    \begin{gather}
+        E_{\text{total, reposo}} = E_0 = m_0 c^2 \\
+        E_{c, \text{reposo}} = 0
+    \end{gather}
+    \item \textbf{En el sistema de referencia del laboratorio (en movimiento):}
+    \begin{gather}
+        E_{\text{total, lab}} = \gamma m_0 c^2 \\
+        E_{c, \text{lab}} = (\gamma - 1) m_0 c^2
+    \end{gather}
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la velocidad}
+Calculamos $\gamma$ con la Ecuación \ref{eq:gamma_calc}:
+\begin{gather}
+    \gamma = \frac{1,1 \cdot 10^{-20}}{7,2 \cdot 10^{-21}} \approx 1,528
+\end{gather}
+Ahora calculamos $v$ con la Ecuación \ref{eq:velocidad_relativista}:
+\begin{gather}
+    v = c \sqrt{1 - \frac{1}{(1,528)^2}} = c \sqrt{1 - 0,428} = c \sqrt{0,572} \approx 0,756 c \nonumber \\
+    v \approx 0,756 \cdot (3 \cdot 10^8) = 2,268 \cdot 10^8 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad del mesón respecto al laboratorio es $\boldsymbol{v \approx 0,756c \approx 2,27 \cdot 10^8 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valores de las energías}
+Primero calculamos la energía en reposo $E_0$ en Julios y la convertimos a MeV:
+\begin{gather}
+    E_0 = (5,52 \cdot 10^{-27})(3 \cdot 10^8)^2 = 4,968 \cdot 10^{-10} \, \text{J} \nonumber \\
+    E_0 (\text{en MeV}) = \frac{4,968 \cdot 10^{-10} \, \text{J}}{1,6 \cdot 10^{-13} \, \text{J/MeV}} \approx 3105 \, \text{MeV}
+\end{gather}
+\begin{itemize}
+    \item \textbf{En el sistema de referencia del mesón (en reposo):}
+    \begin{cajaresultado}
+        Energía total: $\boldsymbol{E_0 \approx 3105 \, \textbf{MeV}}$. Energía cinética: $\boldsymbol{E_c = 0 \, \textbf{MeV}}$.
+    \end{cajaresultado}
+    \item \textbf{En el sistema de referencia del laboratorio (en movimiento):}
+    \begin{gather}
+        E_{\text{total, lab}} = \gamma E_0 = 1,528 \cdot (3105 \, \text{MeV}) \approx 4745 \, \text{MeV} \nonumber \\
+        E_{c, \text{lab}} = E_{\text{total, lab}} - E_0 = 4745 - 3105 = 1640 \, \text{MeV} \nonumber
+    \end{gather}
+    \begin{cajaresultado}
+        Energía total: $\boldsymbol{E_{\text{lab}} \approx 4745 \, \textbf{MeV}}$. Energía cinética: $\boldsymbol{E_{c, \text{lab}} \approx 1640 \, \textbf{MeV}}$.
+    \end{cajaresultado}
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    a) El fenómeno de la dilatación temporal demuestra que el tiempo transcurre más lentamente para un objeto en movimiento. A partir de la vida media propia y la observada en el laboratorio, se deduce que el mesón $J/\psi$ se desplaza a una velocidad de $\mathbf{0,756c}$, es decir, aproximadamente el 76\% de la velocidad de la luz.
+    
+    b) En su propio sistema de referencia, la partícula solo posee su energía en reposo, $\mathbf{3105 \, MeV}$, con energía cinética nula. En el sistema del laboratorio, debido a su alta velocidad, su energía total aumenta a $\mathbf{4745 \, MeV}$, siendo la diferencia, $\mathbf{1640 \, MeV}$, su energía cinética relativista.
+\end{cajaconclusion}
+
+\newpage

@@ -1,0 +1,995 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2025 - Convocatoria Ordinaria}
+\label{chap:2025_jun_ord}
+
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2025_jun_ord}
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2025_jun_ord}
+
+\begin{cajaenunciado}
+Dos estrellas, A y B, del sistema IK Pegasi se encuentran en la posición indicada en la figura, separadas entre sí una distancia 6d. Calcula razonadamente:
+\begin{enumerate}
+    \item[a)] El vector campo gravitatorio total en el punto P (0,4d). (1 punto)
+    \item[b)] La energía potencial de un cuerpo de masa 1 kg situado en el punto P. ¿Qué velocidad mínima deberá tener dicho cuerpo para alejarse indefinidamente del sistema estelar, partiendo del punto P? (1 punto)
+\end{enumerate}
+\textbf{Datos:} $d=5\cdot10^{9}$ m; constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$; masa de la estrella A, $M_{A}=3,3\cdot10^{30}$ kg; masa de la estrella B, $M_{B}=2,3\cdot10^{30}$ kg.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Constante de Gravitación Universal (G):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$
+    \item \textbf{Distancia de referencia (d):} $d = 5 \cdot 10^{9} \, \text{m}$
+    \item \textbf{Masa de la estrella A ($M_A$):} $M_A = 3,3 \cdot 10^{30} \, \text{kg}$
+    \item \textbf{Masa de la estrella B ($M_B$):} $M_B = 2,3 \cdot 10^{30} \, \text{kg}$
+    \item \textbf{Masa del cuerpo de prueba (m):} $m = 1 \, \text{kg}$
+    \item \textbf{Coordenadas de las estrellas:} A: $(-3d, 0)$; B: $(3d, 0)$
+    \item \textbf{Coordenadas del punto P:} P: $(0, 4d)$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Vector campo gravitatorio total en P ($\vec{g}_P$).
+        \item Energía potencial del cuerpo en P ($E_p$).
+        \item Velocidad de escape del cuerpo desde P ($v_e$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Campo gravitatorio en P} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama en 2D con ejes cartesianos X e Y. Dos masas puntuales, $M_A$ y $M_B$, están situadas simétricamente en el eje X en las posiciones $(-3d, 0)$ y $(3d, 0)$ respectivamente. Un punto P se encuentra en el eje Y en $(0, 4d)$. Desde el punto P, dibujar dos vectores de campo gravitatorio: $\vec{g}_A$ apuntando desde P hacia $M_A$, y $\vec{g}_B$ apuntando desde P hacia $M_B$. Las componentes horizontales de estos vectores se oponen, mientras que las verticales se suman. Dibujar el vector resultante $\vec{g}_{total}$ apuntando verticalmente hacia abajo y ligeramente hacia la izquierda, ya que $M_A > M_B$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_grav_estrellas.png}
+    }}
+    \caption{Representación de los vectores de campo gravitatorio en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo Gravitatorio}
+Se aplica la \textbf{Ley de Gravitación Universal} de Newton para el campo creado por una masa puntual, $\vec{g} = -G \frac{M}{r^2}\vec{u}_r$, donde $\vec{u}_r$ es el vector unitario que apunta desde la masa hacia el punto. El campo total es la suma vectorial de los campos individuales, según el \textbf{Principio de Superposición}.
+
+\paragraph*{b) Energía Potencial y Velocidad de Escape}
+La energía potencial gravitatoria de un sistema de masas es $E_p = -G\frac{M m}{r}$. Para múltiples fuentes, la energía total es la suma escalar de las energías debidas a cada fuente. La velocidad de escape se calcula aplicando el \textbf{Principio de Conservación de la Energía Mecánica}. Para que un objeto escape al infinito, su energía mecánica total ($E_M = E_c + E_p$) debe ser nula en el punto de lanzamiento.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Cálculo del vector campo gravitatorio}
+Primero definimos los vectores de posición desde las estrellas al punto P:
+\begin{gather}
+    \vec{r}_{AP} = (0 - (-3d))\vec{i} + (4d - 0)\vec{j} = 3d\vec{i} + 4d\vec{j} \\
+    \vec{r}_{BP} = (0 - 3d)\vec{i} + (4d - 0)\vec{j} = -3d\vec{i} + 4d\vec{j}
+\end{gather}
+La distancia de cada estrella a P es la misma, calculada por el módulo de estos vectores:
+\begin{gather}
+    r = |\vec{r}_{AP}| = |\vec{r}_{BP}| = \sqrt{(3d)^2 + (4d)^2} = \sqrt{9d^2 + 16d^2} = \sqrt{25d^2} = 5d
+\end{gather}
+El campo gravitatorio de cada estrella en P es:
+\begin{gather}
+    \vec{g}_A = -G\frac{M_A}{r^3}\vec{r}_{AP} = -G\frac{M_A}{(5d)^3}(3d\vec{i} + 4d\vec{j}) \\
+    \vec{g}_B = -G\frac{M_B}{r^3}\vec{r}_{BP} = -G\frac{M_B}{(5d)^3}(-3d\vec{i} + 4d\vec{j})
+\end{gather}
+El campo total en P por el principio de superposición es $\vec{g}_P = \vec{g}_A + \vec{g}_B$:
+\begin{gather}
+    \vec{g}_P = -\frac{G}{(5d)^3} \left[ (M_A(3d) + M_B(-3d))\vec{i} + (M_A(4d) + M_B(4d))\vec{j} \right] \nonumber \\
+    \vec{g}_P = -\frac{G}{125d^2} \left[ 3(M_A - M_B)\vec{i} + 4(M_A + M_B)\vec{j} \right]
+\end{gather}
+
+\paragraph*{b) Energía Potencial y Velocidad de Escape}
+La energía potencial en P es la suma de las energías debidas a A y B:
+\begin{gather}
+    E_p = E_{pA} + E_{pB} = -G\frac{M_A m}{r} - G\frac{M_B m}{r} = -\frac{G m}{5d}(M_A + M_B)
+\end{gather}
+Para la velocidad de escape, la energía mecánica inicial es cero:
+\begin{gather}
+    E_M = E_c + E_p = 0 \implies \frac{1}{2}mv_e^2 + E_p = 0 \nonumber \\
+    v_e = \sqrt{\frac{-2E_p}{m}} = \sqrt{\frac{2G}{5d}(M_A + M_B)}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor del campo gravitatorio}
+Sustituimos los valores numéricos:
+\begin{gather}
+    M_A - M_B = (3,3 - 2,3) \cdot 10^{30} = 1,0 \cdot 10^{30} \, \text{kg} \\
+    M_A + M_B = (3,3 + 2,3) \cdot 10^{30} = 5,6 \cdot 10^{30} \, \text{kg} \\
+    d = 5 \cdot 10^9 \, \text{m}
+\end{gather}
+\begin{gather}
+    \vec{g}_P = -\frac{6,67 \cdot 10^{-11}}{125(5 \cdot 10^9)^2} \left[ 3(1,0 \cdot 10^{30})\vec{i} + 4(5,6 \cdot 10^{30})\vec{j} \right] \nonumber \\
+    \vec{g}_P = -2,1344 \cdot 10^{-33} \left[ (3 \cdot 10^{30})\vec{i} + (22,4 \cdot 10^{30})\vec{j} \right] \nonumber \\
+    \vec{g}_P \approx (-0,0064\vec{i} - 0,0478\vec{j}) \, \text{N/kg}
+\end{gather}
+\begin{cajaresultado}
+    El vector campo gravitatorio total en P es $\boldsymbol{\vec{g}_P = (-6,4 \cdot 10^{-3}\vec{i} - 4,78 \cdot 10^{-2}\vec{j}) \, \textbf{N/kg}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de la Energía Potencial y Velocidad de Escape}
+\begin{gather}
+    E_p = -\frac{(6,67 \cdot 10^{-11})(1)}{5(5 \cdot 10^9)}(5,6 \cdot 10^{30}) \approx -1,49 \cdot 10^{10} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía potencial del cuerpo en P es $\boldsymbol{E_p \approx -1,49 \cdot 10^{10} \, \textbf{J}}$.
+\end{cajaresultado}
+\medskip
+\begin{gather}
+    v_e = \sqrt{\frac{-2(-1,49 \cdot 10^{10})}{1}} = \sqrt{2,98 \cdot 10^{10}} \approx 1,73 \cdot 10^5 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad mínima de escape desde P es $\boldsymbol{v_e \approx 1,73 \cdot 10^5 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante el principio de superposición, se ha determinado que el campo gravitatorio en el punto P es $\vec{g}_P = (-6,4 \cdot 10^{-3}\vec{i} - 4,78 \cdot 10^{-2}\vec{j}) \, \text{N/kg}$. La energía potencial de una masa de 1 kg en ese punto es de $-1,49 \cdot 10^{10} \, \text{J}$, lo que implica que se necesita una velocidad de escape de $1,73 \cdot 10^5 \, \text{m/s}$ para que el cuerpo pueda alejarse indefinidamente del sistema estelar.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2025_jun_ord}
+
+\begin{cajaenunciado}
+Una estación espacial gira alrededor de un planeta describiendo una órbita circular con una velocidad $v=6,7\,\text{km/s}$. Deduce razonadamente:
+\begin{enumerate}
+    \item[a)] La expresión simbólica de la altura h, a la que se encontrará la estación espacial respecto a la superficie del planeta, en función de las magnitudes proporcionadas $(v, g_0 \text{ y } R)$. Calcula su valor numérico. (1 punto)
+    \item[b)] La expresión simbólica de la aceleración de la gravedad, g, en función de la altura, h, y de la aceleración en la superficie del planeta, $g_0$. Calcula su valor numérico para la posición en la que se encuentra la estación espacial. (1 punto)
+\end{enumerate}
+\textbf{Datos:} aceleración de la gravedad en la superficie del planeta, $g_{0}=9\,\text{m s}^{-2}$; radio del planeta, $R=5500\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad orbital de la estación (v):} $v = 6,7 \, \text{km/s} = 6700 \, \text{m/s}$
+    \item \textbf{Gravedad en superficie ($g_0$):} $g_0 = 9 \, \text{m/s}^2$
+    \item \textbf{Radio del planeta (R):} $R = 5500 \, \text{km} = 5,5 \cdot 10^6 \, \text{m}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresión y valor de la altura orbital ($h$).
+        \item Expresión y valor de la gravedad a dicha altura ($g$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Órbita circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de un planeta esférico de radio R con una estación espacial en una órbita circular a una altura h sobre la superficie. El radio total de la órbita es $r = R+h$. Dibujar el vector velocidad orbital $\vec{v}$ de la estación, tangente a la órbita. Dibujar el vector fuerza gravitatoria $\vec{F}_g$ apuntando desde la estación hacia el centro del planeta. Indicar que esta fuerza actúa como fuerza centrípeta $\vec{F}_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_estacion.png}
+    }}
+    \caption{Esquema de la estación espacial en órbita circular.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Altura de la órbita}
+El movimiento de la estación es un \textbf{Movimiento Circular Uniforme (MCU)}. La fuerza que lo causa (fuerza centrípeta, $F_c$) es la \textbf{Fuerza de Atracción Gravitatoria} ($F_g$) ejercida por el planeta. Al igualar ambas fuerzas, se puede relacionar la velocidad orbital con el radio de la órbita. La gravedad en la superficie ($g_0$) también se relaciona con la masa y el radio del planeta.
+
+\paragraph*{b) Aceleración de la gravedad en la órbita}
+La aceleración de la gravedad ($g$) a una cierta distancia del centro del planeta se define a partir de la \textbf{Ley de Gravitación Universal}. Relacionando la expresión de $g$ en la órbita con la expresión de $g_0$ en la superficie, se puede obtener la fórmula pedida.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Expresión de la altura (h)}
+La fuerza gravitatoria proporciona la fuerza centrípeta necesaria para la órbita:
+\begin{gather}
+    F_g = F_c \implies G\frac{M m}{(R+h)^2} = \frac{m v^2}{R+h}
+\end{gather}
+Donde M es la masa del planeta y m la de la estación. Simplificando, obtenemos una expresión para el producto $GM$:
+\begin{gather}
+    GM = v^2 (R+h)
+\end{gather}
+En la superficie del planeta, la fuerza gravitatoria es el peso, $P = mg_0$:
+\begin{gather}
+    G\frac{M m}{R^2} = m g_0 \implies GM = g_0 R^2
+\end{gather}
+Igualamos las dos expresiones para $GM$:
+\begin{gather}
+    v^2(R+h) = g_0 R^2 \implies R+h = \frac{g_0 R^2}{v^2} \nonumber \\
+    h = \frac{g_0 R^2}{v^2} - R
+\end{gather}
+
+\paragraph*{b) Expresión de la gravedad en la órbita (g)}
+La gravedad a la altura $h$ es:
+\begin{gather}
+    g = G\frac{M}{(R+h)^2}
+\end{gather}
+Usando la relación $GM = g_0 R^2$ obtenida anteriormente:
+\begin{gather}
+    g = g_0 \frac{R^2}{(R+h)^2} = g_0 \left(\frac{R}{R+h}\right)^2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la altura (h)}
+\begin{gather}
+    h = \frac{9 \cdot (5,5 \cdot 10^6)^2}{(6700)^2} - 5,5 \cdot 10^6 = \frac{9 \cdot 3,025 \cdot 10^{13}}{4,489 \cdot 10^7} - 5,5 \cdot 10^6 \nonumber \\
+    h \approx 6,065 \cdot 10^6 - 5,5 \cdot 10^6 = 5,65 \cdot 10^5 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La altura de la estación espacial sobre la superficie es $\boldsymbol{h \approx 565 \, \textbf{km}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de la gravedad en la órbita (g)}
+Usamos la altura calculada: $R+h = 5,5 \cdot 10^6 + 0,565 \cdot 10^6 = 6,065 \cdot 10^6 \, \text{m}$.
+\begin{gather}
+    g = 9 \cdot \left(\frac{5,5 \cdot 10^6}{6,065 \cdot 10^6}\right)^2 \approx 9 \cdot (0,9068)^2 \approx 7,40 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+    La aceleración de la gravedad en la órbita es $\boldsymbol{g \approx 7,40 \, \textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Igualando la fuerza gravitatoria a la fuerza centrípeta y utilizando la definición de $g_0$, se ha deducido la expresión para la altura orbital $h = \frac{g_0 R^2}{v^2} - R$, resultando en un valor de $565\,\text{km}$. A esta altura, la aceleración de la gravedad se reduce a $g = g_0 (\frac{R}{R+h})^2$, dando un valor de $7,40\,\text{m/s}^2$.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque II: Campo Electromagnético}
+\label{sec:em_2025_jun_ord}
+
+\subsection{Pregunta 2 - OBLIGATORIA}
+\label{subsec:2_2025_jun_ord}
+
+\begin{cajaenunciado}
+Una trabajadora de una planta de electrolisis para la producción de cloro, realiza tareas de mantenimiento debajo de un cable conductor, por el que circula una corriente de 18 kA que se puede considerar rectilínea e indefinida. El cable se encuentra a 4 m sobre el suelo, como muestra la figura. Calcula el vector campo magnético sobre la cabeza de la trabajadora (a una altura de 1,6 m) y representa dicho vector conjuntamente con la corriente que circula por el cable. Justifica la respuesta, indicando la ley física en que se fundamenta y el significado de cada una de las magnitudes que intervienen. El Real Decreto 299/2016, contra los riesgos relacionados con la exposición a campos electromagnéticos, establece que la exposición a un campo magnético estático no debe superar los 2 T. ¿Está protegida la trabajadora en base a esta normativa?
+\textbf{Dato:} permeabilidad magnética en el vacío, $\mu_{0}=4\pi\cdot10^{-7}\,\text{T m/A}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Intensidad de corriente (I):} $I = 18 \, \text{kA} = 1,8 \cdot 10^4 \, \text{A}$
+    \item \textbf{Altura del cable sobre el suelo ($y_{cable}$):} $y_{cable} = 4 \, \text{m}$
+    \item \textbf{Altura de la trabajadora ($h_{trabajadora}$):} $h_{trabajadora} = 1,6 \, \text{m}$
+    \item \textbf{Permeabilidad magnética del vacío ($\mu_0$):} $\mu_0 = 4\pi \cdot 10^{-7} \, \text{T}\cdot\text{m}/\text{A}$
+    \item \textbf{Límite de exposición ($B_{lim}$):} $B_{lim} = 2 \, \text{T}$
+    \item \textbf{Distancia perpendicular al cable (r):} La distancia desde el cable hasta la cabeza de la trabajadora es $r = y_{cable} - h_{trabajadora} = 4 - 1,6 = 2,4 \, \text{m}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Vector campo magnético ($\vec{B}$) en la cabeza de la trabajadora.
+        \item Comparación del módulo del campo con la normativa.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo magnético del conductor} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista de perfil de un sistema de coordenadas cartesianas 3D. El eje Y es vertical hacia arriba, el eje X es horizontal hacia la derecha y el eje Z sale de la página (vector $\vec{k}$). Un cable conductor rectilíneo e infinito se sitúa paralelo al eje X, a una altura $y=4$ m. La corriente $I$ circula en el sentido negativo del eje X (vector $-\vec{i}$). Un punto P (la cabeza de la trabajadora) se encuentra debajo del cable, a una altura $y=1.6$ m. Aplicando la regla de la mano derecha, el pulgar en la dirección de $I$, los dedos se curvan y, en el punto P, apuntan hacia dentro de la página. Dibujar el vector campo magnético $\vec{B}$ en el punto P, apuntando en la dirección del vector $\vec{k}$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_cable.png}
+    }}
+    \caption{Representación del campo magnético creado por la corriente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El campo magnético creado por una corriente rectilínea e indefinida se describe mediante la \textbf{Ley de Biot-Savart}. La expresión integrada para un conductor de este tipo es:
+$$ B = \frac{\mu_0 I}{2\pi r} $$
+donde:
+\begin{itemize}
+    \item $B$ es el módulo del campo magnético.
+    \item $\mu_0$ es la permeabilidad magnética del vacío.
+    \item $I$ es la intensidad de la corriente que circula por el conductor.
+    \item $r$ es la distancia perpendicular desde el conductor hasta el punto donde se mide el campo.
+\end{itemize}
+La dirección y el sentido del vector campo magnético $\vec{B}$ se determinan mediante la \textbf{regla de la mano derecha}: si el pulgar apunta en el sentido de la corriente, los demás dedos indican el sentido de las líneas de campo magnético, que son circulares y concéntricas al hilo.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Según la figura, la corriente $I$ circula en la dirección $-\vec{i}$. El punto donde medimos el campo está debajo del cable. Usando la regla de la mano derecha, el vector $\vec{B}$ apunta en la dirección del vector $\vec{k}$ (hacia dentro del plano del dibujo).
+La distancia $r$ es la diferencia de alturas:
+\begin{gather}
+    r = y_{cable} - h_{trabajadora}
+\end{gather}
+El vector campo magnético es, por tanto:
+\begin{gather}
+    \vec{B} = \frac{\mu_0 I}{2\pi (y_{cable} - h_{trabajadora})} \vec{k}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos la distancia $r$:
+\begin{gather}
+    r = 4 \, \text{m} - 1,6 \, \text{m} = 2,4 \, \text{m}
+\end{gather}
+Sustituimos los valores en la expresión del campo magnético:
+\begin{gather}
+    \vec{B} = \frac{(4\pi \cdot 10^{-7}) \cdot (1,8 \cdot 10^4)}{2\pi \cdot 2,4} \vec{k} = \frac{2 \cdot 1,8 \cdot 10^{-3}}{2,4} \vec{k} = 1,5 \cdot 10^{-3} \vec{k} \, \text{T}
+\end{gather}
+\begin{cajaresultado}
+    El vector campo magnético sobre la cabeza de la trabajadora es $\boldsymbol{\vec{B} = 1,5 \cdot 10^{-3} \vec{k} \, \textbf{T}}$.
+\end{cajaresultado}
+\medskip
+Ahora comparamos el módulo del campo con el límite de la normativa:
+\begin{gather}
+    B = |\vec{B}| = 1,5 \cdot 10^{-3} \, \text{T} \\
+    B_{lim} = 2 \, \text{T}
+\end{gather}
+Es evidente que $1,5 \cdot 10^{-3} \, \text{T} \ll 2 \, \text{T}$.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo magnético generado por el cable a la altura de la cabeza de la trabajadora es de $1,5 \cdot 10^{-3}\,\text{T}$, dirigido hacia dentro del plano representado en la figura ($\vec{k}$). Dado que este valor es muy inferior al límite de exposición de 2 T establecido por el Real Decreto 299/2016, se concluye que \textbf{la trabajadora está protegida} y no se encuentra en una situación de riesgo por exposición a campos magnéticos estáticos.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2025_jun_ord}
+
+\begin{cajaenunciado}
+Se tiene una carga positiva, q, en el origen de coordenadas y otra $-q$ en el punto (a, 0) con $a>0$. Obtén razonadamente, con ayuda de una representación vectorial, el sentido del campo eléctrico total producido por ambas cargas, a la izquierda de la carga positiva $(x<0)$, a la derecha de la carga negativa $(x>a)$ y en el tramo comprendido entre las dos cargas $(0<x<a)$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = +q$, situada en $P_1(0,0)$.
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = -q$, situada en $P_2(a,0)$, con $a>0$.
+    \item \textbf{Incógnita:} Sentido del vector campo eléctrico total ($\vec{E}_{total}$) en tres regiones del eje X:
+    \begin{itemize}
+        \item Región I: $x < 0$
+        \item Región II: $0 < x < a$
+        \item Región III: $x > a$
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Campo eléctrico de un dipolo en el eje X} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un eje horizontal X. Colocar una carga puntual positiva `+q` en el origen (x=0) y una carga puntual negativa `-q` en la posición `x=a`.
+    1. Para la región $x<0$, en un punto de prueba, dibujar el vector campo $\vec{E}_+$ (creado por +q) apuntando hacia la izquierda (repulsivo) y el vector $\vec{E}_-$ (creado por -q) apuntando hacia la derecha (atractivo). El vector $\vec{E}_+$ debe ser visiblemente más largo que $\vec{E}_-$. El vector resultante $\vec{E}_{total}$ debe apuntar hacia la izquierda.
+    2. Para la región $0<x<a$, en un punto de prueba, dibujar el vector $\vec{E}_+$ apuntando hacia la derecha (repulsivo) y el vector $\vec{E}_-$ también apuntando hacia la derecha (atractivo). El vector resultante $\vec{E}_{total}$ debe apuntar hacia la derecha.
+    3. Para la región $x>a$, en un punto de prueba, dibujar el vector $\vec{E}_+$ apuntando hacia la derecha (repulsivo) y el vector $\vec{E}_-$ apuntando hacia la izquierda (atractivo). El vector $\vec{E}_-$ debe ser visiblemente más largo que $\vec{E}_+$. El vector resultante $\vec{E}_{total}$ debe apuntar hacia la izquierda."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_dipolo.png}
+    }}
+    \caption{Representación vectorial del campo eléctrico en las tres regiones del eje X.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El campo eléctrico total en un punto es la suma vectorial de los campos creados por cada carga individual, según el \textbf{Principio de Superposición}. El campo eléctrico creado por una carga puntual $Q$ a una distancia $r$ viene dado por la expresión $\vec{E} = k \frac{Q}{r^2} \vec{u}_r$, donde $\vec{u}_r$ es un vector unitario que apunta desde la carga hacia el punto.
+\begin{itemize}
+    \item Las cargas \textbf{positivas} crean campos eléctricos \textbf{radiales y hacia fuera} (repulsivos).
+    \item Las cargas \textbf{negativas} crean campos eléctricos \textbf{radiales y hacia dentro} (atractivos).
+\end{itemize}
+El módulo del campo disminuye con el cuadrado de la distancia.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sea un punto genérico $P(x,0)$ sobre el eje X. Los campos creados por cada carga son $\vec{E}_+$ y $\vec{E}_-$. El campo total es $\vec{E}_{total} = \vec{E}_+ + \vec{E}_-$. Analizamos el sentido en cada región:
+
+\paragraph*{Región I: $x < 0$}
+En un punto a la izquierda de $+q$:
+\begin{itemize}
+    \item $\vec{E}_+$ (creado por $+q$) es repulsivo, por lo tanto apunta hacia la izquierda (sentido $-\vec{i}$).
+    \item $\vec{E}_-$ (creado por $-q$) es atractivo, por lo tanto apunta hacia la derecha (sentido $+\vec{i}$).
+\end{itemize}
+El módulo de cada campo es $E_+ = k\frac{q}{|x|^2}$ y $E_- = k\frac{q}{|x-a|^2}$. Como el punto está más cerca de la carga $+q$ que de $-q$, tenemos que $|x| < |x-a|$, lo que implica que $|\vec{E}_+| > |\vec{E}_-|$. Por lo tanto, el vector resultante $\vec{E}_{total}$ tendrá el sentido del vector de mayor módulo.
+
+\paragraph*{Región II: $0 < x < a$}
+En un punto entre las dos cargas:
+\begin{itemize}
+    \item $\vec{E}_+$ es repulsivo (respecto a $+q$), apunta hacia la derecha (sentido $+\vec{i}$).
+    \item $\vec{E}_-$ es atractivo (respecto a $-q$), también apunta hacia la derecha (sentido $+\vec{i}$).
+\end{itemize}
+Ambos vectores tienen el mismo sentido, por lo que el vector resultante $\vec{E}_{total}$ también tendrá ese sentido.
+
+\paragraph*{Región III: $x > a$}
+En un punto a la derecha de $-q$:
+\begin{itemize}
+    \item $\vec{E}_+$ es repulsivo (respecto a $+q$), apunta hacia la derecha (sentido $+\vec{i}$).
+    \item $\vec{E}_-$ es atractivo (respecto a $-q$), apunta hacia la izquierda (sentido $-\vec{i}$).
+\end{itemize}
+El módulo de cada campo es $E_+ = k\frac{q}{x^2}$ y $E_- = k\frac{q}{(x-a)^2}$. Como el punto está más cerca de la carga $-q$ que de $+q$, tenemos que $(x-a) < x$, lo que implica que $|\vec{E}_-| > |\vec{E}_+|$. El vector resultante $\vec{E}_{total}$ tendrá el sentido del vector de mayor módulo.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Este problema no requiere cálculos numéricos, solo un análisis cualitativo y vectorial.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Basado en el principio de superposición y la naturaleza de los campos creados por cargas positivas y negativas, el sentido del campo eléctrico total en el eje que las une es:
+\begin{itemize}
+    \item \textbf{A la izquierda de la carga positiva ($x<0$):} El campo total apunta hacia la \textbf{izquierda} (sentido $-\vec{i}$).
+    \item \textbf{Entre las dos cargas ($0<x<a$):} El campo total apunta hacia la \textbf{derecha} (sentido $+\vec{i}$).
+    \item \textbf{A la derecha de la carga negativa ($x>a$):} El campo total apunta hacia la \textbf{izquierda} (sentido $-\vec{i}$).
+\end{itemize}
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2025_jun_ord}
+
+\begin{cajaenunciado}
+Una espira cuadrada de 20 cm de lado se sitúa en el seno de un campo magnético uniforme. El módulo del campo magnético varía en función del tiempo, como se indica en la figura adjunta, y su dirección es perpendicular al plano de la espira. Calcula razonadamente el valor de la fuerza electromotriz inducida en la espira. Dibuja el campo magnético y la corriente inducida sobre la espira, razonando su sentido.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Forma de la espira:} Cuadrada.
+    \item \textbf{Lado de la espira (L):} $L = 20 \, \text{cm} = 0,2 \, \text{m}$.
+    \item \textbf{Área de la espira (A):} $A = L^2 = (0,2)^2 = 0,04 \, \text{m}^2$.
+    \item \textbf{Orientación:} El campo $\vec{B}$ es perpendicular al plano de la espira, por lo que el ángulo entre $\vec{B}$ y el vector superficie $\vec{A}$ es $\theta=0^\circ$ (o $180^\circ$). Asumiremos $\theta=0^\circ$.
+    \item \textbf{Variación de B(t):} Según la gráfica, el campo magnético varía linealmente con el tiempo.
+    \begin{itemize}
+        \item En $t=0 \, s$, $B=0 \, \text{mT} = 0 \, \text{T}$.
+        \item En $t=2 \, s$, $B=2 \, \text{mT} = 2 \cdot 10^{-3} \, \text{T}$.
+    \end{itemize}
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Fuerza electromotriz inducida ($\mathcal{E}$).
+        \item Dibujo y razonamiento del sentido de la corriente inducida ($I_{ind}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Corriente inducida en la espira} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar una espira cuadrada en el plano XY. Un campo magnético uniforme $\vec{B}$ apunta en la dirección Z positiva (saliendo de la página), atravesando la espira. Indicar que el módulo de $\vec{B}$ aumenta con el tiempo. Según la Ley de Lenz, la corriente inducida ($I_{ind}$) debe crear un campo magnético inducido ($\vec{B}_{ind}$) que se oponga a este aumento. Por lo tanto, $\vec{B}_{ind}$ debe apuntar en la dirección Z negativa (entrando en la página). Usando la regla de la mano derecha, para crear un campo hacia adentro, la corriente $I_{ind}$ debe fluir en el sentido de las agujas del reloj (horario). Dibujar flechas en la espira para mostrar esta corriente horaria."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{corriente_inducida.png}
+    }}
+    \caption{Representación del sentido de la corriente inducida según la Ley de Lenz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para resolver este problema se utiliza la \textbf{Ley de Faraday-Lenz}. Esta ley establece que la fuerza electromotriz (fem, $\mathcal{E}$) inducida en un circuito cerrado es igual a la tasa de cambio negativa del flujo magnético ($\Phi_B$) que lo atraviesa:
+$$ \mathcal{E} = - \frac{d\Phi_B}{dt} $$
+El flujo magnético se define como $\Phi_B = \vec{B} \cdot \vec{A} = B A \cos(\theta)$, donde $\theta$ es el ángulo entre el campo y el vector normal a la superficie. El signo negativo de la ley corresponde a la \textbf{Ley de Lenz}, que establece que la corriente inducida tendrá un sentido tal que el campo magnético que crea se opone al cambio de flujo que la originó.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El flujo magnético a través de la espira es $\Phi_B = B(t) \cdot A$, ya que $\vec{B}$ y $\vec{A}$ son paralelos ($\cos(0^\circ)=1$).
+El campo magnético varía linealmente, por lo que $B(t) = k \cdot t$, donde $k$ es la pendiente de la gráfica.
+\begin{gather}
+    k = \frac{\Delta B}{\Delta t} = \frac{B_{final} - B_{inicial}}{t_{final} - t_{inicial}}
+\end{gather}
+La fem inducida es:
+\begin{gather}
+    \mathcal{E} = - \frac{d}{dt}(B(t) \cdot A) = -A \frac{dB(t)}{dt} = -A \cdot k
+\end{gather}
+Como la pendiente $k$ es constante, la fem inducida será constante.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, calculamos la pendiente $k$ de la gráfica $B(t)$:
+\begin{gather}
+    k = \frac{2 \cdot 10^{-3} \, \text{T} - 0 \, \text{T}}{2 \, \text{s} - 0 \, \text{s}} = 1 \cdot 10^{-3} \, \text{T/s}
+\end{gather}
+Ahora, calculamos la fem inducida:
+\begin{gather}
+    \mathcal{E} = -A \cdot k = -(0,04 \, \text{m}^2) \cdot (1 \cdot 10^{-3} \, \text{T/s}) = -4 \cdot 10^{-5} \, \text{V}
+\end{gather}
+El valor de la fem es el módulo: $|\mathcal{E}| = 4 \cdot 10^{-5} \, \text{V}$.
+\begin{cajaresultado}
+    El valor de la fuerza electromotriz inducida en la espira es $\boldsymbol{4 \cdot 10^{-5} \, \textbf{V}}$ (o 40 µV).
+\end{cajaresultado}
+\medskip
+\paragraph*{Sentido de la corriente}
+La gráfica muestra que el campo magnético aumenta su módulo con el tiempo. Asumiendo que $\vec{B}$ sale del papel, el flujo magnético hacia afuera está aumentando. Según la Ley de Lenz, la corriente inducida creará un campo magnético inducido $\vec{B}_{ind}$ que se oponga a este cambio, es decir, un campo hacia adentro. Por la regla de la mano derecha, para generar un campo hacia adentro, la corriente debe circular en \textbf{sentido horario}.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido a la variación lineal del campo magnético a través de la espira, se induce una fuerza electromotriz constante de $\mathbf{4 \cdot 10^{-5} \, V}$. El flujo magnético a través de la espira está aumentando, por lo que, según la Ley de Lenz, la corriente inducida circulará en \textbf{sentido horario} para generar un campo magnético que se oponga a dicho aumento.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque III: Vibraciones y Ondas}
+\label{sec:ondas_2025_jun_ord}
+
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2025_jun_ord}
+
+\begin{cajaenunciado}
+Una onda armónica transversal se propaga en el sentido positivo del eje X. Las gráficas muestran la elongación de la onda en el instante $t=0$ y en la posición $x=0$. Determina la amplitud de la onda, el periodo, la pulsación o frecuencia angular, la longitud de onda y la velocidad de propagación.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Los datos se extraen directamente de las dos gráficas proporcionadas.
+\paragraph*{Gráfica $Y(x)$ para $t=0$ s ("foto" de la onda):}
+\begin{itemize}
+    \item \textbf{Amplitud (A):} El valor máximo de la elongación es $A = 6 \, \text{cm} = 0,06 \, \text{m}$.
+    \item \textbf{Longitud de onda ($\lambda$):} La distancia de un ciclo completo. Observando la gráfica, la onda se repite cada $4 \, \text{cm}$. Por lo tanto, $\lambda = 4 \, \text{cm} = 0,04 \, \text{m}$.
+\end{itemize}
+\paragraph*{Gráfica $Y(t)$ para $x=0$ cm ("película" de un punto):}
+\begin{itemize}
+    \item \textbf{Amplitud (A):} Confirma el valor de $A = 6 \, \text{cm} = 0,06 \, \text{m}$.
+    \item \textbf{Periodo (T):} El tiempo de un ciclo completo. La gráfica muestra que la oscilación se repite cada $2 \, \text{s}$. Por lo tanto, $T = 2 \, \text{s}$.
+\end{itemize}
+\paragraph*{Incógnitas:}
+\begin{itemize}
+    \item Amplitud (A).
+    \item Periodo (T).
+    \item Pulsación o frecuencia angular ($\omega$).
+    \item Longitud de onda ($\lambda$).
+    \item Velocidad de propagación ($v$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+Las gráficas del enunciado ya sirven como representación visual del problema. No se requiere una figura adicional.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las magnitudes que caracterizan una onda armónica se relacionan mediante las siguientes definiciones:
+\begin{itemize}
+    \item \textbf{Amplitud (A):} Máxima elongación de la onda.
+    \item \textbf{Longitud de onda ($\lambda$):} Distancia espacial de un ciclo completo.
+    \item \textbf{Periodo (T):} Tiempo que tarda un punto en completar una oscilación.
+    \item \textbf{Frecuencia angular ($\omega$):} Relacionada con el periodo por $\omega = 2\pi / T$.
+    \item \textbf{Velocidad de propagación (v):} Relaciona la longitud de onda y el periodo: $v = \lambda / T$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Las magnitudes se obtienen directamente de las gráficas o mediante las fórmulas de definición:
+\begin{gather}
+    A = Y_{max} \\
+    \lambda = \text{distancia de un ciclo en la gráfica } Y(x) \\
+    T = \text{tiempo de un ciclo en la gráfica } Y(t) \\
+    \omega = \frac{2\pi}{T} \\
+    v = \frac{\lambda}{T}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{itemize}
+    \item \textbf{Amplitud (A):} De las gráficas, el valor máximo de Y es 6 cm.
+    \begin{cajaresultado}
+        La amplitud de la onda es $\boldsymbol{A = 0,06 \, \textbf{m}}$.
+    \end{cajaresultado}
+    \item \textbf{Longitud de onda ($\lambda$):} De la gráfica $Y(x)$, un ciclo se completa en 4 cm.
+    \begin{cajaresultado}
+        La longitud de onda es $\boldsymbol{\lambda = 0,04 \, \textbf{m}}$.
+    \end{cajaresultado}
+    \item \textbf{Periodo (T):} De la gráfica $Y(t)$, un ciclo se completa en 2 s.
+    \begin{cajaresultado}
+        El periodo de la onda es $\boldsymbol{T = 2 \, \textbf{s}}$.
+    \end{cajaresultado}
+    \item \textbf{Pulsación o frecuencia angular ($\omega$):}
+    \begin{gather}
+        \omega = \frac{2\pi}{T} = \frac{2\pi}{2} = \pi \, \text{rad/s}
+    \end{gather}
+    \begin{cajaresultado}
+        La frecuencia angular es $\boldsymbol{\omega = \pi \, \textbf{rad/s}}$.
+    \end{cajaresultado}
+    \item \textbf{Velocidad de propagación (v):}
+    \begin{gather}
+        v = \frac{\lambda}{T} = \frac{0,04 \, \text{m}}{2 \, \text{s}} = 0,02 \, \text{m/s}
+    \end{gather}
+    \begin{cajaresultado}
+        La velocidad de propagación es $\boldsymbol{v = 0,02 \, \textbf{m/s}}$.
+    \end{cajaresultado}
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir del análisis de las gráficas proporcionadas, se han determinado todas las magnitudes características de la onda armónica. La amplitud es de $0,06\,\text{m}$, la longitud de onda es de $0,04\,\text{m}$, y el periodo es de $2\,\text{s}$. A partir de estas, se calcula una frecuencia angular de $\pi\,\text{rad/s}$ y una velocidad de propagación de $0,02\,\text{m/s}$.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2025_jun_ord}
+
+\begin{cajaenunciado}
+Dos compresores de aire acondicionado están separados una distancia de 100 m. El primero emite ruido con una potencia sonora de 4 µW. El nivel sonoro en el punto equidistante entre ellos es de 25 dB. Calcula en ese punto el nivel sonoro debido a cada uno de los compresores. Calcula la potencia sonora emitida por el segundo compresor. Desprecia la absorción del aire y el efecto de los objetos situados en el entorno. Considera que las ondas sonoras son esféricas.
+\textbf{Dato:} intensidad sonora umbral, $I_{0}=10^{-12}\,\text{W/m}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Distancia total entre compresores ($d_{total}$):} $d_{total} = 100 \, \text{m}$.
+    \item \textbf{Punto de medida:} Equidistante, por lo que la distancia a cada compresor es $r = d_{total}/2 = 50 \, \text{m}$.
+    \item \textbf{Potencia sonora del compresor 1 ($P_1$):} $P_1 = 4 \, \mu\text{W} = 4 \cdot 10^{-6} \, \text{W}$.
+    \item \textbf{Nivel sonoro total en el punto medio ($\beta_{total}$):} $\beta_{total} = 25 \, \text{dB}$.
+    \item \textbf{Intensidad sonora umbral ($I_0$):} $I_0 = 10^{-12} \, \text{W/m}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Nivel sonoro del compresor 1 en el punto medio ($\beta_1$).
+        \item Nivel sonoro del compresor 2 en el punto medio ($\beta_2$).
+        \item Potencia sonora del compresor 2 ($P_2$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Interferencia de fuentes sonoras} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama lineal simple. Dos puntos, C1 (compresor 1) y C2 (compresor 2), están separados por 100 m. Un punto P está exactamente en el medio, a 50 m de C1 y 50 m de C2. Desde C1 y C2 emanan ondas sonoras esféricas (representadas por arcos de círculo concéntricos). En el punto P, indicar que la intensidad total $I_{total}$ es la suma de las intensidades $I_1$ e $I_2$ provenientes de cada compresor."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuentes_sonoras.png}
+    }}
+    \caption{Esquema de las dos fuentes sonoras y el punto de medida.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Intensidad de una onda esférica:} La intensidad ($I$) de una onda emitida por una fuente puntual de potencia ($P$) a una distancia ($r$) es $I = \frac{P}{4\pi r^2}$.
+    \item \textbf{Nivel de intensidad sonora:} Se mide en decibelios (dB) y se define como $\beta = 10 \log_{10}\left(\frac{I}{I_0}\right)$. La fórmula inversa es $I = I_0 \cdot 10^{\beta/10}$.
+    \item \textbf{Superposición de intensidades:} Las intensidades sonoras (energía por unidad de tiempo y área) se suman directamente: $I_{total} = I_1 + I_2$. Los niveles sonoros (dB) no se suman directamente.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Calcular $I_1$ y luego $\beta_1$}
+\begin{gather}
+    I_1 = \frac{P_1}{4\pi r^2} \\
+    \beta_1 = 10 \log_{10}\left(\frac{I_1}{I_0}\right)
+\end{gather}
+\paragraph*{2. Calcular $I_{total}$ a partir de $\beta_{total}$}
+\begin{gather}
+    I_{total} = I_0 \cdot 10^{\beta_{total}/10}
+\end{gather}
+\paragraph*{3. Calcular $I_2$ y luego $\beta_2$}
+\begin{gather}
+    I_2 = I_{total} - I_1 \\
+    \beta_2 = 10 \log_{10}\left(\frac{I_2}{I_0}\right)
+\end{gather}
+\paragraph*{4. Calcular $P_2$}
+\begin{gather}
+    P_2 = I_2 \cdot 4\pi r^2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Paso 1: Nivel sonoro del compresor 1 ($\beta_1$)}
+\begin{gather}
+    I_1 = \frac{4 \cdot 10^{-6}}{4\pi (50)^2} = \frac{4 \cdot 10^{-6}}{10000\pi} \approx 1,27 \cdot 10^{-10} \, \text{W/m}^2 \\
+    \beta_1 = 10 \log_{10}\left(\frac{1,27 \cdot 10^{-10}}{10^{-12}}\right) = 10 \log_{10}(127) \approx 21,05 \, \text{dB}
+\end{gather}
+\begin{cajaresultado}
+    El nivel sonoro debido al primer compresor es $\boldsymbol{\beta_1 \approx 21,05 \, \textbf{dB}}$.
+\end{cajaresultado}
+
+\paragraph*{Paso 2 y 3: Nivel sonoro del compresor 2 ($\beta_2$)}
+\begin{gather}
+    I_{total} = 10^{-12} \cdot 10^{25/10} = 10^{-12} \cdot 10^{2,5} \approx 3,16 \cdot 10^{-10} \, \text{W/m}^2 \\
+    I_2 = I_{total} - I_1 = 3,16 \cdot 10^{-10} - 1,27 \cdot 10^{-10} = 1,89 \cdot 10^{-10} \, \text{W/m}^2 \\
+    \beta_2 = 10 \log_{10}\left(\frac{1,89 \cdot 10^{-10}}{10^{-12}}\right) = 10 \log_{10}(189) \approx 22,76 \, \text{dB}
+\end{gather}
+\begin{cajaresultado}
+    El nivel sonoro debido al segundo compresor es $\boldsymbol{\beta_2 \approx 22,76 \, \textbf{dB}}$.
+\end{cajaresultado}
+
+\paragraph*{Paso 4: Potencia del compresor 2 ($P_2$)}
+\begin{gather}
+    P_2 = I_2 \cdot 4\pi r^2 = (1,89 \cdot 10^{-10}) \cdot 4\pi (50)^2 \approx 5,94 \cdot 10^{-6} \, \text{W}
+\end{gather}
+\begin{cajaresultado}
+    La potencia sonora emitida por el segundo compresor es $\boldsymbol{P_2 \approx 5,94 \, \mu\textbf{W}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En el punto equidistante, el nivel sonoro del primer compresor es de $21,05\,\text{dB}$ y el del segundo es de $22,76\,\text{dB}$. Para lograr el nivel sonoro total medido de $25\,\text{dB}$, la potencia de emisión del segundo compresor debe ser de $5,94\,\mu\text{W}$. Este ejercicio demuestra que las intensidades se suman, pero los decibelios, al ser una escala logarítmica, no.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2025_jun_ord}
+
+\begin{cajaenunciado}
+La posición de un cuerpo, de masa $m=1,5$ g, que oscila respecto a su posición de equilibrio, está descrita por la función $x(t)=0,10 \cos(10\pi t+\frac{\pi}{2})$ en unidades del Sistema Internacional.
+\begin{enumerate}
+    \item[a)] ¿Qué tipo de movimiento realiza el cuerpo? Calcula el período de oscilación, así como la posición y la velocidad del cuerpo para $t=1$ s. (1 punto)
+    \item[b)] Calcula la energía mecánica total del cuerpo, su energía cinética y su energía potencial en el instante en que la posición del cuerpo se corresponde con la mitad de la amplitud del movimiento. (1 punto).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del cuerpo (m):} $m = 1,5 \, \text{g} = 1,5 \cdot 10^{-3} \, \text{kg}$.
+    \item \textbf{Ecuación de posición:} $x(t)=0,10 \cos(10\pi t+\frac{\pi}{2})$ (SI).
+    \item De la ecuación, identificamos los parámetros del movimiento:
+    \begin{itemize}
+        \item \textbf{Amplitud (A):} $A = 0,10 \, \text{m}$.
+        \item \textbf{Frecuencia angular ($\omega$):} $\omega = 10\pi \, \text{rad/s}$.
+        \item \textbf{Fase inicial ($\phi_0$):} $\phi_0 = \pi/2 \, \text{rad}$.
+    \end{itemize}
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Tipo de movimiento.
+        \item Periodo (T).
+        \item Posición y velocidad en $t=1$ s: $x(1)$, $v(1)$.
+        \item Energía mecánica ($E_M$).
+        \item Energía cinética ($E_k$) y potencial ($E_p$) cuando $x = A/2$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica específica, ya que el movimiento está completamente descrito por su ecuación.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Cinemática del Movimiento}
+La forma de la ecuación $x(t) = A \cos(\omega t + \phi_0)$ corresponde a un \textbf{Movimiento Armónico Simple (MAS)}.
+La velocidad se obtiene derivando la posición respecto al tiempo: $v(t) = \frac{dx}{dt} = -A\omega \sin(\omega t + \phi_0)$.
+El periodo de oscilación está relacionado con la frecuencia angular por $T = \frac{2\pi}{\omega}$.
+
+\paragraph*{b) Energética del Movimiento}
+En un MAS, la energía mecánica total es constante y vale $E_M = \frac{1}{2}kA^2$, donde $k$ es la constante elástica del oscilador. Se puede expresar en función de la masa y la frecuencia angular, ya que $\omega = \sqrt{k/m} \implies k=m\omega^2$. Por tanto, $E_M = \frac{1}{2}m\omega^2A^2$.
+La energía potencial en una posición $x$ es $E_p = \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2x^2$.
+La energía cinética es $E_k = E_M - E_p$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Periodo, posición y velocidad}
+\begin{gather}
+    T = \frac{2\pi}{\omega} \\
+    x(t) = A \cos(\omega t + \phi_0) \\
+    v(t) = -A\omega \sin(\omega t + \phi_0)
+\end{gather}
+\paragraph*{b) Energías}
+\begin{gather}
+    E_M = \frac{1}{2}m\omega^2A^2 \\
+    E_p(x) = \frac{1}{2}m\omega^2x^2 \implies E_p(x=A/2) = \frac{1}{2}m\omega^2\left(\frac{A}{2}\right)^2 = \frac{1}{8}m\omega^2A^2 \\
+    E_k(x=A/2) = E_M - E_p(x=A/2)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Tipo de movimiento, Periodo, Posición y Velocidad}
+El cuerpo realiza un \textbf{Movimiento Armónico Simple (MAS)}.
+\begin{gather}
+    T = \frac{2\pi}{10\pi} = 0,2 \, \text{s} \\
+    x(1) = 0,10 \cos(10\pi \cdot 1 + \pi/2) = 0,10 \cos(21\pi/2) = 0,10 \cos(\pi/2 + 10\pi) = 0,10 \cos(\pi/2) = 0 \, \text{m} \\
+    v(1) = -0,10 \cdot 10\pi \sin(10\pi \cdot 1 + \pi/2) = -\pi \sin(21\pi/2) = -\pi \sin(\pi/2) = -\pi \, \text{m/s} \approx -3,14 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+El cuerpo describe un \textbf{MAS} con un periodo $\boldsymbol{T=0,2 \, \textbf{s}}$. En $t=1$ s, su posición es $\boldsymbol{x(1)=0 \, \textbf{m}}$ y su velocidad es $\boldsymbol{v(1)=-\pi \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Energías}
+\begin{gather}
+    E_M = \frac{1}{2}(1,5 \cdot 10^{-3})(10\pi)^2(0,10)^2 = \frac{1}{2}(1,5 \cdot 10^{-3})(100\pi^2)(0,01) \approx 0,0074 \, \text{J} \\
+    E_p(x=A/2) = \frac{1}{8}m\omega^2A^2 = \frac{1}{4}E_M = \frac{1}{4}(0,0074) \approx 0,00185 \, \text{J} \\
+    E_k(x=A/2) = E_M - E_p(x=A/2) = \frac{3}{4}E_M \approx 0,00555 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+La energía mecánica total es $\boldsymbol{E_M \approx 7,4 \cdot 10^{-3} \, \textbf{J}}$. Cuando $x=A/2$, la energía potencial es $\boldsymbol{E_p \approx 1,85 \cdot 10^{-3} \, \textbf{J}}$ y la energía cinética es $\boldsymbol{E_k \approx 5,55 \cdot 10^{-3} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El movimiento descrito es un MAS de periodo $0,2\,\text{s}$. En el instante $t=1\,\text{s}$, el cuerpo pasa por la posición de equilibrio ($x=0$) con velocidad máxima negativa ($-\pi\,\text{m/s}$). Su energía mecánica total es constante e igual a $7,4\,\text{mJ}$. En la posición $x=A/2$, esta energía se reparte en un 25\% de energía potencial ($1,85\,\text{mJ}$) y un 75\% de energía cinética ($5,55\,\text{mJ}$).
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2025_jun_ord}
+
+\begin{cajaenunciado}
+Un objeto de 12 cm de altura se sitúa a 15 cm, a la izquierda, de una lente de 4 dioptrías.
+\begin{enumerate}
+    \item[a)] Dibuja un esquema de rayos con la posición del objeto, de la lente y de la imagen. Calcula la posición de la imagen y su tamaño. Indica las características de la imagen que se forma. (1 punto)
+    \item[b)] ¿Qué distancia habrá que mover el objeto y en qué sentido, para que la imagen que se forme sea invertida y de tamaño 4 cm? (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Altura del objeto (y):} $y = 12 \, \text{cm} = 0,12 \, \text{m}$.
+    \item \textbf{Posición del objeto (s):} $s = -15 \, \text{cm} = -0,15 \, \text{m}$ (Criterio de signos DIN: a la izquierda de la lente).
+    \item \textbf{Potencia de la lente (P):} $P = +4 \, \text{D}$.
+    \item \textbf{Distancia focal (f'):} $f' = 1/P = 1/4 = 0,25 \, \text{m} = 25 \, \text{cm}$. Como $P>0$, es una lente convergente.
+    \item \textbf{Incógnitas (a):} Posición de la imagen ($s'$), tamaño ($y'$) y características.
+    \item \textbf{Incógnitas (b):} Nueva posición del objeto ($s_{new}$) y desplazamiento ($\Delta s$) para que $y' = -4 \, \text{cm}$ (invertida).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Apartado (a): Formación de imagen virtual} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente delgada convergente. Dibujar el eje óptico horizontal y la lente como una línea vertical con flechas en los extremos. Marcar los focos F (a la izquierda) y F' (a la derecha) a 25 cm de la lente. Colocar un objeto vertical (flecha) de 12 cm de altura en la posición s = -15 cm, es decir, entre el foco F y la lente. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje óptico que, tras refractarse en la lente, pasa por el foco imagen F'. 2) Un rayo que pasa por el centro óptico de la lente y no se desvía. Las prolongaciones de estos dos rayos refractados hacia la izquierda se cortan en un punto, formando una imagen virtual, derecha y de mayor tamaño que el objeto."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_virtual.png}
+    }}
+    \caption{Esquema de rayos para el apartado (a).}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utiliza la \textbf{ecuación de las lentes delgadas} (o ecuación de Gauss) y la fórmula del \textbf{aumento lateral (M)}.
+\begin{itemize}
+    \item Ecuación de Gauss: $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item Aumento Lateral: $M = \frac{y'}{y} = \frac{s'}{s}$
+\end{itemize}
+Donde $s$ es la posición del objeto, $s'$ la de la imagen, $y$ el tamaño del objeto, $y'$ el de la imagen, y $f'$ la distancia focal imagen.
+Las características de la imagen se determinan por los signos de $s'$ y $y'$:
+\begin{itemize}
+    \item $s' > 0$: Imagen real (se forma a la derecha de la lente).
+    \item $s' < 0$: Imagen virtual (se forma a la izquierda de la lente).
+    \item $y' > 0$ (o $M>0$): Imagen derecha.
+    \item $y' < 0$ (o $M<0$): Imagen invertida.
+    \item $|M| > 1$: Imagen aumentada. $|M| < 1$: Imagen reducida.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Posición, tamaño y características}
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{f'} + \frac{1}{s} \implies s' = \left(\frac{1}{f'} + \frac{1}{s}\right)^{-1} \\
+    y' = y \cdot \frac{s'}{s}
+\end{gather}
+\paragraph*{b) Nueva posición del objeto}
+Conocemos $y'_{new} = -4$ cm y $y=12$ cm. Calculamos el nuevo aumento $M_{new}$.
+\begin{gather}
+    M_{new} = \frac{y'_{new}}{y} = \frac{s'_{new}}{s_{new}} \implies s'_{new} = M_{new} \cdot s_{new}
+\end{gather}
+Sustituimos $s'_{new}$ en la ecuación de Gauss para despejar $s_{new}$:
+\begin{gather}
+    \frac{1}{M_{new} \cdot s_{new}} - \frac{1}{s_{new}} = \frac{1}{f'} \implies \frac{1-M_{new}}{M_{new} \cdot s_{new}} = \frac{1}{f'} \nonumber \\
+    s_{new} = \frac{f'(1-M_{new})}{M_{new}}
+\end{gather}
+El desplazamiento será $\Delta s = s_{new} - s$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Posición, tamaño y características}
+\begin{gather}
+    \frac{1}{s'} - \frac{1}{-15} = \frac{1}{25} \implies \frac{1}{s'} = \frac{1}{25} - \frac{1}{15} = \frac{3-5}{75} = -\frac{2}{75} \implies s' = -37,5 \, \text{cm} \\
+    y' = 12 \cdot \frac{-37,5}{-15} = 12 \cdot 2,5 = 30 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+La imagen se forma a $\boldsymbol{s'=-37,5 \, \textbf{cm}}$ (37,5 cm a la izquierda de la lente) y tiene un tamaño de $\boldsymbol{y'=30 \, \textbf{cm}}$.
+Es una imagen \textbf{virtual}, \textbf{derecha} y \textbf{aumentada}.
+\end{cajaresultado}
+
+\paragraph*{b) Nueva posición y desplazamiento}
+\begin{gather}
+    M_{new} = \frac{-4 \, \text{cm}}{12 \, \text{cm}} = -\frac{1}{3} \\
+    s_{new} = \frac{25 \left(1 - (-\frac{1}{3})\right)}{-\frac{1}{3}} = \frac{25 (\frac{4}{3})}{-\frac{1}{3}} = -4 \cdot 25 = -100 \, \text{cm}
+\end{gather}
+La nueva posición del objeto es a 100 cm a la izquierda de la lente. El desplazamiento es:
+\begin{gather}
+    \Delta s = s_{new} - s = -100 \, \text{cm} - (-15 \, \text{cm}) = -85 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+Para obtener la imagen deseada, el objeto se debe mover $\boldsymbol{85 \, \textbf{cm} \, \textbf{hacia la izquierda}}$ (alejándolo de la lente).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) Al situar el objeto dentro de la distancia focal de la lente convergente, se obtiene una imagen virtual, derecha y aumentada (de 30 cm de altura), situada a 37,5 cm a la izquierda de la lente. b) Para formar una imagen real, invertida y reducida (de 4 cm de altura), es necesario alejar el objeto de la lente hasta una posición de 100 cm a su izquierda, lo que supone un desplazamiento de 85 cm.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque IV: Física del Siglo XX}
+\label{sec:fisSXX_2025_jun_ord}
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2025_jun_ord}
+
+\begin{cajaenunciado}
+El $^{218}$Po se desintegra con un periodo de semidesintegración de 183 s, emitiendo partículas alfa y se transforma en un isótopo del plomo, Pb. Determina razonadamente los números másico y atómico del isótopo del plomo. En un cierto instante, en una muestra se determina que hay 1,0 mg de polonio-218, calcula la masa de polonio-218 que había diez minutos antes.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Isótopo inicial:} Polonio-218 ($^{218}$Po). De la tabla periódica, el número atómico (Z) del Polonio es 84. Así, el isótopo es $^{218}_{84}$Po.
+    \item \textbf{Tipo de desintegración:} Emisión de partículas alfa ($^4_2\alpha$).
+    \item \textbf{Isótopo final:} Un isótopo del Plomo (Pb).
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 183 \, \text{s}$.
+    \item \textbf{Masa final ($m(t)$):} $m(t) = 1,0 \, \text{mg}$.
+    \item \textbf{Intervalo de tiempo ($\Delta t$):} $\Delta t = 10 \, \text{minutos} = 10 \cdot 60 = 600 \, \text{s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Número másico (A') y atómico (Z') del isótopo de Plomo.
+        \item Masa de Polonio que había 10 minutos antes ($m_0$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Desintegración Alfa}
+Una desintegración alfa es un proceso nuclear en el que un núcleo inestable emite una partícula alfa (un núcleo de Helio, $^4_2$He). En este proceso se conservan el número másico total (A, número de nucleones) y el número atómico total (Z, número de protones).
+La reacción genérica es: $^{A}_{Z}X \rightarrow ^{A-4}_{Z-2}Y + ^4_2\alpha$.
+
+\paragraph*{Ley de la Desintegración Radiactiva}
+La masa (o el número de núcleos) de una muestra radiactiva disminuye exponencialmente con el tiempo según la ley:
+$$ m(t) = m_0 e^{-\lambda t} $$
+donde $m_0$ es la masa inicial, $\lambda$ es la constante de desintegración y $t$ es el tiempo transcurrido. Una forma alternativa, usando el periodo de semidesintegración, es:
+$$ m(t) = m_0 \left(\frac{1}{2}\right)^{t/T_{1/2}} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Números másico y atómico}
+La reacción de desintegración es:
+\begin{gather}
+    ^{218}_{84}\text{Po} \rightarrow ^{A'}_{Z'}\text{Pb} + ^{4}_{2}\alpha
+\end{gather}
+Por conservación de A y Z:
+\begin{gather}
+    218 = A' + 4 \implies A' = 214 \\
+    84 = Z' + 2 \implies Z' = 82
+\end{gather}
+El número atómico $Z=82$ corresponde efectivamente al Plomo.
+
+\paragraph*{Cálculo de la masa inicial}
+Tenemos la masa final $m(t)$ después de un tiempo $\Delta t = 600$ s y queremos la masa inicial $m_0$. Reordenamos la ley de desintegración:
+\begin{gather}
+    m_0 = \frac{m(t)}{\left(\frac{1}{2}\right)^{\Delta t/T_{1/2}}} = m(t) \cdot 2^{\Delta t/T_{1/2}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Isótopo de Plomo}
+\medskip
+\begin{cajaresultado}
+El isótopo resultante es el Plomo-214, con número másico $\boldsymbol{A'=214}$ y número atómico $\boldsymbol{Z'=82}$ ($^{214}_{82}$Pb).
+\end{cajaresultado}
+
+\paragraph*{Masa inicial}
+\begin{gather}
+    m_0 = (1,0 \, \text{mg}) \cdot 2^{600/183} \approx (1,0 \, \text{mg}) \cdot 2^{3,2787} \approx 9,72 \, \text{mg}
+\end{gather}
+\begin{cajaresultado}
+La masa de Polonio-218 que había diez minutos antes era de $\boldsymbol{\approx 9,72 \, \textbf{mg}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La desintegración alfa del $^{218}_{84}$Po produce $^{214}_{82}$Pb, conservando los números de nucleones y protones. Aplicando la ley de desintegración radiactiva, se determina que para tener 1,0 mg de la muestra en el presente, la masa hace diez minutos debía ser de 9,72 mg, lo que evidencia el rápido decaimiento de este isótopo debido a su corto periodo de semidesintegración.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2025_jun_ord}
+
+\begin{cajaenunciado}
+Una nave espacial viaja con velocidad $v=2,1\cdot10^{8}\,\text{m/s}$ desde la Tierra hasta la estrella de Barnard, situada a una distancia $d=5,98$ años luz. Se mide la duración del viaje en la Tierra y en la nave, ¿en cuál de estos dos sistemas de referencia inerciales se mide el tiempo propio? ¿Qué duración tiene el viaje en cada uno de estos dos sistemas? Razona las respuestas.
+\textbf{Dato:} velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad de la nave (v):} $v = 2,1 \cdot 10^8 \, \text{m/s}$.
+    \item \textbf{Velocidad de la luz (c):} $c = 3 \cdot 10^8 \, \text{m/s}$.
+    \item \textbf{Distancia Tierra-Estrella (d):} $d = 5,98 \, \text{años luz}$. Esta es la distancia propia, medida en el sistema de referencia Tierra-Estrella, que se considera en reposo.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Sistema de referencia donde se mide el tiempo propio.
+        \item Duración del viaje medida en la Tierra ($\Delta t$).
+        \item Duración del viaje medida en la nave ($\Delta t_p$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Este problema se resuelve aplicando los postulados de la \textbf{Teoría de la Relatividad Especial} de Einstein, concretamente el fenómeno de la \textbf{dilatación del tiempo}.
+\begin{itemize}
+    \item \textbf{Tiempo Propio ($\Delta t_p$):} Es el intervalo de tiempo medido por un observador que se encuentra en reposo relativo a los dos eventos que definen dicho intervalo. En otras palabras, es el tiempo medido en el sistema de referencia donde los eventos ocurren en la misma posición espacial.
+    \item \textbf{Dilatación del Tiempo:} Un observador en un sistema de referencia que se mueve con velocidad $v$ respecto al sistema del tiempo propio medirá un intervalo de tiempo más largo, llamado tiempo dilatado ($\Delta t$), dado por la fórmula:
+    $$ \Delta t = \gamma \Delta t_p $$
+    donde $\gamma$ es el factor de Lorentz: $\gamma = \frac{1}{\sqrt{1-v^2/c^2}}$. Siempre se cumple que $\gamma \ge 1$, por lo que $\Delta t \ge \Delta t_p$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Determinación del tiempo propio}
+Los dos eventos son "la nave sale de la Tierra" y "la nave llega a la estrella". Para un observador en la nave, ambos eventos ocurren en su misma posición (en la propia nave, $x'_{nave}=0$). Por lo tanto, el sistema de referencia de \textbf{la nave mide el tiempo propio}, $\Delta t_p$. El sistema de la Tierra mide el tiempo dilatado, $\Delta t$.
+
+\paragraph*{Cálculo del tiempo en la Tierra ($\Delta t$)}
+Desde el punto de vista de la Tierra, la nave recorre una distancia $d$ a una velocidad $v$. El tiempo medido es:
+\begin{gather}
+    \Delta t = \frac{d}{v}
+\end{gather}
+Es conveniente expresar la velocidad $v$ como una fracción de $c$, y la distancia $d$ en años-luz (que es $c \cdot \text{año}$).
+
+\paragraph*{Cálculo del tiempo en la nave ($\Delta t_p$)}
+Primero calculamos el factor de Lorentz $\gamma$.
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1-(v/c)^2}}
+\end{gather}
+Luego, usamos la fórmula de la dilatación del tiempo para hallar $\Delta t_p$:
+\begin{gather}
+    \Delta t_p = \frac{\Delta t}{\gamma}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos la relación $v/c$:
+\begin{gather}
+    \frac{v}{c} = \frac{2,1 \cdot 10^8}{3 \cdot 10^8} = 0,7
+\end{gather}
+\paragraph*{Duración del viaje medida desde la Tierra}
+La distancia es $d = 5,98 \cdot c \cdot \text{años}$.
+\begin{gather}
+    \Delta t = \frac{d}{v} = \frac{5,98 \cdot c \cdot \text{años}}{0,7 \cdot c} = \frac{5,98}{0,7} \text{ años} \approx 8,54 \text{ años}
+\end{gather}
+\begin{cajaresultado}
+La duración del viaje medida en la Tierra es $\boldsymbol{\Delta t \approx 8,54 \, \textbf{años}}$.
+\end{cajaresultado}
+
+\paragraph*{Duración del viaje medida desde la Nave}
+Calculamos el factor de Lorentz $\gamma$:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - (0,7)^2}} = \frac{1}{\sqrt{1 - 0,49}} = \frac{1}{\sqrt{0,51}} \approx 1,40
+\end{gather}
+Calculamos el tiempo propio $\Delta t_p$:
+\begin{gather}
+    \Delta t_p = \frac{\Delta t}{\gamma} = \frac{8,54 \text{ años}}{1,40} \approx 6,1 \text{ años}
+\end{gather}
+\begin{cajaresultado}
+La duración del viaje medida en la nave (tiempo propio) es $\boldsymbol{\Delta t_p \approx 6,1 \, \textbf{años}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El \textbf{tiempo propio se mide en el sistema de referencia de la nave espacial}, ya que los eventos de inicio y fin del viaje ocurren en su misma posición. Debido al fenómeno de la dilatación del tiempo, el viaje que para un observador en la Tierra dura $\mathbf{8,54}$ años, para los tripulantes de la nave transcurre en solo $\mathbf{6,1}$ años. Este es un ejemplo clásico del "movimiento de los relojes" predicho por la relatividad especial.
+\end{cajaconclusion}

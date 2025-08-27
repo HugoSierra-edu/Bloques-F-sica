@@ -1,0 +1,693 @@
+% !TEX root = ../main.tex
+\chapter{Examen Julio 2018 - Convocatoria Extraordinaria}
+\label{chap:2018_jul_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2018_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2018_jul_ext}
+
+\begin{cajaenunciado}
+Un planeta, de masa $M=0,86\,M_{\text{Tierra}}$ y radio un 4\% mayor que el de la Tierra, orbita alrededor de la estrella TRAPPIST-1. Calcula:
+\begin{enumerate}
+    \item[a)] El peso de un astronauta en la superficie del planeta si su peso en la superficie terrestre es de 800 N. (1 punto).
+    \item[b)] La expresión de la velocidad de escape del planeta. Realiza el cálculo numérico sabiendo que la velocidad de escape de la Tierra es de $11,2\,\text{km/s}$. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del planeta ($M_P$):} $M_P = 0,86 M_T$.
+    \item \textbf{Radio del planeta ($R_P$):} Es un 4\% mayor que el terrestre. $R_P = R_T + 0,04 R_T = 1,04 R_T$.
+    \item \textbf{Peso del astronauta en la Tierra ($P_T$):} $P_T = 800\,\text{N}$.
+    \item \textbf{Velocidad de escape de la Tierra ($v_{e,T}$):} $v_{e,T} = 11,2\,\text{km/s} = 11200\,\text{m/s}$.
+    \item \textbf{Incógnitas:} Peso del astronauta en el planeta ($P_P$) y velocidad de escape del planeta ($v_{e,P}$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Comparación Planetaria} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos planetas lado a lado. A la izquierda, la Tierra con radio $R_T$ y masa $M_T$. A la derecha, un planeta ligeramente más grande con radio $R_P=1.04 R_T$ y masa $M_P=0.86 M_T$. Sobre la superficie de cada uno, un astronauta con un vector peso ($\vec{P}_T$ y $\vec{P}_P$) apuntando al centro. Para la velocidad de escape, mostrar un cohete despegando de cada planeta con velocidades $v_{e,T}$ y $v_{e,P}$."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{comparacion_planetas.png}
+    }}
+    \caption{Comparación de propiedades entre la Tierra y el exoplaneta.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Peso y Gravedad}
+El peso de un objeto de masa $m$ en la superficie de un planeta es la fuerza gravitatoria que este ejerce sobre él: $P = G\frac{M m}{R^2}$. El peso también se puede expresar como $P=mg$, donde $g = G\frac{M}{R^2}$ es la aceleración de la gravedad en la superficie.
+\paragraph{b) Velocidad de Escape}
+La velocidad de escape se deduce del principio de conservación de la energía mecánica, igualando la energía mecánica en la superficie a cero (la energía en el infinito).
+$$ E_{m, \text{superficie}} = E_{m, \text{infinito}} \implies \frac{1}{2}mv_e^2 - G\frac{Mm}{R} = 0 $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Relación de Pesos}
+Calculamos el cociente entre el peso en el planeta y el peso en la Tierra:
+\begin{gather}
+    \frac{P_P}{P_T} = \frac{G \frac{M_P m}{R_P^2}}{G \frac{M_T m}{R_T^2}} = \frac{M_P}{M_T} \left(\frac{R_T}{R_P}\right)^2
+\end{gather}
+Sustituyendo las relaciones dadas:
+\begin{gather}
+    \frac{P_P}{P_T} = \frac{0,86 M_T}{M_T} \left(\frac{R_T}{1,04 R_T}\right)^2 = 0,86 \left(\frac{1}{1,04}\right)^2
+\end{gather}
+\paragraph{b) Velocidad de Escape}
+La expresión de la velocidad de escape es:
+\begin{gather}
+    v_e = \sqrt{\frac{2GM}{R}}
+\end{gather}
+Calculamos el cociente entre la velocidad de escape del planeta y la de la Tierra:
+\begin{gather}
+    \frac{v_{e,P}}{v_{e,T}} = \frac{\sqrt{2GM_P/R_P}}{\sqrt{2GM_T/R_T}} = \sqrt{\frac{M_P}{M_T} \cdot \frac{R_T}{R_P}} = \sqrt{\frac{0,86 M_T}{M_T} \cdot \frac{R_T}{1,04 R_T}} = \sqrt{\frac{0,86}{1,04}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Peso en el Planeta}
+\begin{gather}
+    \frac{P_P}{800} = 0,86 \cdot \frac{1}{1,04^2} \approx 0,795 \implies P_P \approx 0,795 \cdot 800 = 636\,\text{N}
+\end{gather}
+\begin{cajaresultado}
+    El peso del astronauta en el planeta es $\boldsymbol{P_P \approx 636\,\textbf{N}}$.
+\end{cajaresultado}
+\paragraph{b) Velocidad de Escape}
+\begin{gather}
+    \frac{v_{e,P}}{11,2\,\text{km/s}} = \sqrt{\frac{0,86}{1,04}} \approx 0,909 \implies v_{e,P} \approx 0,909 \cdot 11,2 = 10,18\,\text{km/s}
+\end{gather}
+\begin{cajaresultado}
+    La expresión es $\boldsymbol{v_e = \sqrt{2GM/R}}$. Su valor numérico es $\boldsymbol{v_{e,P} \approx 10,18\,\textbf{km/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aunque el planeta es ligeramente más grande en radio, su menor masa provoca que la gravedad en su superficie sea menor que la terrestre, resultando en un peso para el astronauta de 636 N. De forma similar, la velocidad de escape del planeta, que depende de la misma relación masa/radio, es de 10,18 km/s, un valor inferior al de la Tierra.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2018_jul_ext}
+\begin{cajaenunciado}
+Deduce razonadamente la expresión que relaciona el periodo de una órbita circular con su radio. El radio de la órbita terrestre es de $1,5\cdot10^{11}$ m y el de la órbita de Urano es de $2,9\cdot10^{12}$ m. Calcula el periodo orbital de Urano, suponiendo que la órbita de los planetas alrededor del Sol es circular.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Radio orbital de la Tierra ($r_T$):} $r_T = 1,5\cdot10^{11}\,\text{m}$.
+    \item \textbf{Periodo orbital de la Tierra ($T_T$):} $T_T = 1\,\text{año}$.
+    \item \textbf{Radio orbital de Urano ($r_U$):} $r_U = 2,9\cdot10^{12}\,\text{m}$.
+    \item \textbf{Incógnita:} Periodo orbital de Urano ($T_U$).
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Órbitas Planetarias} \vspace{0.5cm} \textit{Prompt para la imagen:} "El Sol en el centro del sistema. Dibujar dos órbitas circulares concéntricas. La interior para la Tierra, etiquetada con su radio $r_T$ y periodo $T_T$. La exterior, mucho más grande, para Urano, etiquetada con su radio $r_U$ y periodo $T_U$. En ambos planetas, dibujar el vector de fuerza gravitatoria apuntando hacia el Sol."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{orbitas_sol.png}
+    }}
+    \caption{Esquema de las órbitas de la Tierra y Urano.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Deducción de la Tercera Ley de Kepler}
+Para un planeta de masa $m$ en una órbita circular de radio $r$ alrededor del Sol (masa $M_S$), la fuerza de atracción gravitatoria proporciona la fuerza centrípeta necesaria.
+$$ F_g = F_c \implies G\frac{M_S m}{r^2} = m \frac{v^2}{r} $$
+La velocidad orbital es $v = 2\pi r/T$. Sustituyendo esta relación y simplificando, se obtiene la Tercera Ley de Kepler.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Deducción}
+\begin{gather}
+    G\frac{M_S}{r^2} = \frac{(2\pi r/T)^2}{r} = \frac{4\pi^2 r}{T^2} \implies G M_S T^2 = 4\pi^2 r^3
+\end{gather}
+Reordenando, obtenemos la relación entre el periodo y el radio:
+\begin{gather}
+    \frac{T^2}{r^3} = \frac{4\pi^2}{G M_S} = \text{constante}
+\end{gather}
+Esta constante es la misma para todos los planetas que orbitan el Sol. Por tanto, podemos aplicarla a la Tierra y a Urano:
+\begin{gather}
+    \frac{T_U^2}{r_U^3} = \frac{T_T^2}{r_T^3} \implies T_U^2 = T_T^2 \left(\frac{r_U}{r_T}\right)^3 \implies T_U = T_T \sqrt{\left(\frac{r_U}{r_T}\right)^3}
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    T_U = (1\,\text{año}) \sqrt{\left(\frac{2,9\cdot10^{12}}{1,5\cdot10^{11}}\right)^3} = \sqrt{(19,33)^3} \approx \sqrt{7226} \approx 85\,\text{años}
+\end{gather}
+\begin{cajaresultado}
+    La expresión que relaciona periodo y radio es la \textbf{Tercera Ley de Kepler}, $\boldsymbol{\frac{T^2}{r^3} = \text{cte}}$. El periodo orbital de Urano es de aproximadamente \textbf{85 años terrestres}.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La Tercera Ley de Kepler, deducida a partir de la dinámica newtoniana, establece que el cuadrado del periodo es proporcional al cubo del radio orbital. Aplicando esta ley a los datos orbitales de la Tierra y Urano, se concluye que, al estar mucho más lejos del Sol, el periodo orbital de Urano es significativamente mayor, de unos 85 años.
+\end{cajaconclusion}
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Ondas}
+\label{sec:ondas_2018_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2018_jul_ext}
+\begin{cajaenunciado}
+La gráfica representa la propagación de una onda armónica de presión, en cierto instante temporal. La frecuencia de la onda es de 100 Hz. Determina razonadamente la longitud de onda y la velocidad de propagación de la onda en el medio.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Gráfico:} Representación de la elongación $Y$ (en cm) en función de la posición $x$ (en m).
+    \item \textbf{Frecuencia ($f$):} $f=100\,\text{Hz}$.
+    \item \textbf{Incógnitas:} Longitud de onda ($\lambda$) y velocidad de propagación ($v$).
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+El enunciado proporciona la representación gráfica necesaria.
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Longitud de onda ($\lambda$):} Es la distancia espacial mínima entre dos puntos que están en el mismo estado de vibración. En un gráfico $Y(x)$, corresponde a la longitud de un ciclo completo de la onda.
+    \item \textbf{Velocidad de propagación ($v$):} Se relaciona con la longitud de onda y la frecuencia mediante la ecuación fundamental de las ondas: $v = \lambda \cdot f$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La longitud de onda $\lambda$ se extrae directamente del gráfico. La velocidad se calcula con la fórmula:
+\begin{gather}
+    v = \lambda \cdot f
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Del gráfico, se observa que la onda completa un ciclo entre $x=0\,\text{m}$ y $x=3\,\text{m}$ (por ejemplo, de un máximo en $x=0$ al siguiente en $x=3$). Por tanto:
+\begin{gather}
+    \lambda = 3\,\text{m}
+\end{gather}
+Ahora calculamos la velocidad de propagación:
+\begin{gather}
+    v = (3\,\text{m}) \cdot (100\,\text{Hz}) = 300\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La longitud de onda es $\boldsymbol{\lambda = 3\,\textbf{m}}$ y la velocidad de propagación es $\boldsymbol{v = 300\,\textbf{m/s}}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La inspección directa del gráfico proporcionado permite determinar que la longitud de onda es de 3 metros. Conociendo la frecuencia de la onda (100 Hz), la aplicación de la ecuación fundamental de las ondas da como resultado una velocidad de propagación de 300 m/s.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2018_jul_ext}
+\begin{cajaenunciado}
+Una onda transversal se propaga por una cuerda según la ecuación $y(x,t)=0,5\,\cos[5\pi(2t-x)]$, en unidades del SI. Calcula:
+\begin{enumerate}
+    \item[a)] La elongación, y, del punto de la cuerda situado en $x_{1}=40$ cm en el instante $t_{1}=1$ s. ¿Qué distancia mínima hay entre dos puntos de la cuerda con la misma elongación y velocidad en un mismo instante? (1 punto)
+    \item[b)] La velocidad transversal en los dos puntos, $x_{1}$ y $x_{2}=x_{1}+\frac{\lambda}{4}$ en el instante $t_{1}$. (1 punto).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ecuación de onda:} $y(x,t)=0,5\,\cos[5\pi(2t-x)]$. Expandiendo: $y(x,t)=0,5\,\cos(10\pi t - 5\pi x)$.
+    \item Por comparación con $y(x,t)=A\cos(\omega t - kx)$:
+        \begin{itemize}
+            \item Amplitud ($A$): $A=0,5\,\text{m}$.
+            \item Frecuencia angular ($\omega$): $\omega=10\pi\,\text{rad/s}$.
+            \item Número de onda ($k$): $k=5\pi\,\text{rad/m}$.
+        \end{itemize}
+    \item \textbf{Punto y tiempo (a):} $x_1=40\,\text{cm}=0,4\,\text{m}$, $t_1=1\,\text{s}$.
+    \item \textbf{Punto (b):} $x_2=x_1+\lambda/4$.
+\end{itemize}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Longitud de onda ($\lambda$):} Es la distancia mínima entre dos puntos en fase, y se relaciona con el número de onda por $k=2\pi/\lambda$.
+    \item \textbf{Velocidad transversal ($v_y$):} Es la derivada de la elongación respecto al tiempo: $v_y(x,t) = \frac{\partial y}{\partial t}$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Elongación y distancia mínima}
+La elongación se calcula sustituyendo $x_1$ y $t_1$ en $y(x,t)$. La distancia mínima entre dos puntos con la misma elongación y velocidad es, por definición, la \textbf{longitud de onda}, $\lambda$.
+\begin{gather}
+    \lambda = \frac{2\pi}{k}
+\end{gather}
+\paragraph{b) Velocidad transversal}
+Primero derivamos la función de onda:
+\begin{gather}
+    v_y(x,t) = \frac{\partial}{\partial t}[A\cos(\omega t - kx)] = -A\omega\sin(\omega t - kx)
+\end{gather}
+Luego evaluamos esta expresión en $(x_1, t_1)$ y en $(x_2, t_1)$.
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Elongación y $\lambda$}
+\begin{gather}
+    y(0.4, 1) = 0,5\,\cos(10\pi \cdot 1 - 5\pi \cdot 0,4) = 0,5\,\cos(10\pi - 2\pi) = 0,5\,\cos(8\pi) = 0,5 \cdot 1 = 0,5\,\text{m} \\
+    \lambda = \frac{2\pi}{5\pi} = 0,4\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+    La elongación en $(x_1, t_1)$ es $\boldsymbol{y=0,5\,\textbf{m}}$. La distancia mínima pedida es la longitud de onda, $\boldsymbol{\lambda=0,4\,\textbf{m}}$.
+\end{cajaresultado}
+\paragraph{b) Velocidad transversal}
+\begin{gather}
+    v_y(x,t) = -0,5(10\pi)\sin(10\pi t - 5\pi x) = -5\pi\sin(10\pi t - 5\pi x)
+\end{gather}
+Para $(x_1, t_1)$:
+\begin{gather}
+    v_y(0.4, 1) = -5\pi\sin(10\pi \cdot 1 - 5\pi \cdot 0,4) = -5\pi\sin(8\pi) = 0\,\text{m/s}
+\end{gather}
+Para $x_2 = 0,4 + 0,4/4 = 0,5\,\text{m}$:
+\begin{gather}
+    v_y(0.5, 1) = -5\pi\sin(10\pi \cdot 1 - 5\pi \cdot 0,5) = -5\pi\sin(10\pi - 2,5\pi) = -5\pi\sin(7,5\pi) \nonumber \\
+    \sin(7,5\pi) = \sin(8\pi - 0,5\pi) = \sin(-0,5\pi) = -1 \implies v_y(0.5,1) = -5\pi(-1) = 5\pi\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    Las velocidades son $\boldsymbol{v_y(x_1,t_1)=0\,\textbf{m/s}}$ y $\boldsymbol{v_y(x_2,t_1)=5\pi\,\textbf{m/s}}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La elongación en el punto $x_1$ en el instante $t_1$ es máxima (igual a la amplitud), por lo que su velocidad transversal en ese instante es nula. Un punto desfasado $\pi/2$ (a una distancia de $\lambda/4$), se encuentra en su posición de equilibrio y, por tanto, tiene la máxima velocidad transversal, $A\omega = 5\pi$ m/s.
+\end{cajaconclusion}
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Óptica}
+\label{sec:optica_2018_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2018_jul_ext}
+\begin{cajaenunciado}
+Se tiene una lente convergente en aire. Razona mediante un trazado de rayos dónde habrá que situar un objeto respecto a la lente para que la imagen sea derecha y mayor que el objeto.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Lente:} Convergente.
+    \item \textbf{Condiciones de la imagen:} Derecha ($M>0$) y de mayor tamaño ($|M|>1$).
+    \item \textbf{Tarea:} Determinar la posición del objeto mediante un diagrama de rayos.
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+El diagrama de rayos es la solución principal de este problema.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Funcionamiento de la Lupa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar el eje óptico de una lente convergente. Marcar el foco objeto F a la izquierda y el foco imagen F' a la derecha. Colocar un objeto (flecha vertical) ENTRE el foco objeto F y el centro óptico de la lente. Trazar dos rayos desde la punta del objeto: 1) Un rayo que incide paralelo al eje y se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico sin desviarse. Mostrar que los rayos refractados divergen. Dibujar las prolongaciones de estos rayos hacia atrás (líneas discontinuas), mostrando que se cruzan para formar una imagen virtual, derecha y de mayor tamaño."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{lupa_trazado.png}
+    }}
+    \caption{Trazado de rayos para una lente convergente actuando como lupa.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando las reglas del trazado de rayos para lentes convergentes:
+\begin{enumerate}
+    \item Un rayo que incide paralelo al eje óptico se refracta pasando por el foco imagen (F').
+    \item Un rayo que pasa por el centro óptico no se desvía.
+    \item Un rayo que incide pasando por el foco objeto (F) se refracta paralelo al eje óptico.
+\end{enumerate}
+La imagen se forma donde los rayos refractados (o sus prolongaciones) se cruzan. Si se cruzan las prolongaciones, la imagen es virtual.
+\subsubsection*{4. Razonamiento}
+Para que una lente convergente forme una imagen derecha, esta debe ser virtual. Esto solo ocurre cuando el objeto se sitúa entre el foco objeto (F) y el centro óptico de la lente. Como se ve en el diagrama de rayos, en esta configuración, los rayos refractados divergen, y son sus prolongaciones hacia atrás las que se cortan, formando una imagen virtual, derecha y de mayor tamaño que el objeto. Este es el principio de funcionamiento de una lupa.
+\begin{cajaresultado}
+Para obtener una imagen derecha y mayor que el objeto con una lente convergente, el objeto debe situarse \textbf{entre el foco objeto y el centro óptico de la lente}.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El trazado de rayos demuestra que la única configuración en la que una lente convergente produce una imagen derecha es cuando el objeto se coloca a una distancia inferior a la focal. En este caso, la imagen es también virtual y aumentada, cumpliendo todas las condiciones del enunciado.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2018_jul_ext}
+\begin{cajaenunciado}
+En el fondo de una cubeta, llena de un cierto líquido, se sitúa un pequeño foco luminoso (ver figura adjunta). Se observa que el rayo A se refracta y sale con un ángulo de refracción de $58^{\circ}$, pero el rayo B no se refracta. Determina el índice de refracción, n, del líquido y explica razonadamente el motivo por el cual el rayo B no se refracta.
+\textbf{Dato:} índice de refracción del aire, $n_{aire}=1,00$.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Medio 1:} Líquido de índice de refracción $n$.
+    \item \textbf{Medio 2:} Aire, $n_{aire}=1$.
+    \item \textbf{Geometría:} Profundidad de la cubeta $h=20\,\text{cm}$. Distancias horizontales $x_A=14\,\text{cm}$, $x_B=20\,\text{cm}$.
+    \item \textbf{Rayo A:} Ángulo de refracción $\theta_{ref,A} = 58^\circ$.
+    \item \textbf{Rayo B:} No se refracta.
+    \item \textbf{Incógnitas:} Índice $n$ y explicación para el rayo B.
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+La figura del enunciado es la representación principal.
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Trigonometría:} Para hallar los ángulos de incidencia a partir de la geometría. $\tan(\theta_i) = x/h$.
+    \item \textbf{Ley de Snell:} $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$.
+    \item \textbf{Reflexión Total Interna:} Ocurre cuando un rayo viaja de un medio de mayor índice a uno de menor índice ($n_1>n_2$) con un ángulo de incidencia $\theta_1$ superior al ángulo crítico $\theta_c$, donde $\sin(\theta_c)=n_2/n_1$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Índice de refracción $n$}
+Para el rayo A, primero calculamos su ángulo de incidencia $\theta_{inc,A}$ a partir de la geometría:
+\begin{gather}
+    \tan(\theta_{inc,A}) = \frac{x_A}{h} \implies \theta_{inc,A} = \arctan\left(\frac{x_A}{h}\right)
+\end{gather}
+Luego aplicamos la Ley de Snell:
+\begin{gather}
+    n \sin(\theta_{inc,A}) = n_{aire} \sin(\theta_{ref,A}) \implies n = \frac{n_{aire} \sin(\theta_{ref,A})}{\sin(\theta_{inc,A})}
+\end{gather}
+\paragraph{Rayo B}
+El rayo B no se refracta porque experimenta el fenómeno de \textbf{reflexión total interna}. Para confirmar esto, debemos calcular el ángulo crítico $\theta_c$ y el ángulo de incidencia del rayo B, $\theta_{inc,B}$, y verificar que $\theta_{inc,B} > \theta_c$.
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Índice de refracción $n$}
+\begin{gather}
+    \theta_{inc,A} = \arctan\left(\frac{14}{20}\right) = \arctan(0,7) \approx 34,99^\circ \\
+    n = \frac{1 \cdot \sin(58^\circ)}{\sin(34,99^\circ)} \approx \frac{0,848}{0,573} \approx 1,48
+\end{gather}
+\begin{cajaresultado}
+El índice de refracción del líquido es $\boldsymbol{n \approx 1,48}$.
+\end{cajaresultado}
+\paragraph{Explicación para el Rayo B}
+Calculamos el ángulo crítico para la interfaz líquido-aire:
+\begin{gather}
+    \sin(\theta_c) = \frac{n_{aire}}{n} = \frac{1}{1,48} \approx 0,675 \implies \theta_c \approx 42,45^\circ
+\end{gather}
+Calculamos el ángulo de incidencia para el rayo B:
+\begin{gather}
+    \theta_{inc,B} = \arctan\left(\frac{20}{20}\right) = \arctan(1) = 45^\circ
+\end{gather}
+Como $\theta_{inc,B} (45^\circ) > \theta_c (42,45^\circ)$, el rayo B sufre reflexión total interna.
+\begin{cajaresultado}
+El rayo B no se refracta porque su ángulo de incidencia ($45^\circ$) \textbf{es mayor que el ángulo crítico} ($42,45^\circ$), produciéndose el fenómeno de \textbf{reflexión total interna}.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La trayectoria del rayo A permite, mediante la Ley de Snell, determinar que el índice de refracción del líquido es 1,48. Con este valor, se calcula que el ángulo crítico para la reflexión total es de 42,45º. El rayo B incide con un ángulo de 45º, superando el ángulo crítico, lo que explica por qué no sale al aire y en su lugar se refleja completamente hacia el interior del líquido.
+\end{cajaconclusion}
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Campo Eléctrico y Magnético}
+\label{sec:em_2018_jul_ext}
+% ----------------------------------------------------------------------
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2018_jul_ext}
+\begin{cajaenunciado}
+Por dos conductores rectilíneos, paralelos e indefinidos circulan corrientes continuas de intensidades $I_{1}$ e $I_{2}$, siendo $I_{2}=2I_{1}$ (ver figura adjunta). Calcula la fuerza que actúa sobre una carga q que pasa por el punto P con una velocidad $\vec{v}=2\vec{i}\,\text{m/s}$.
+\textbf{Dato:} permeabilidad magnética del vacío, $\mu_{0}=4\pi\cdot10^{-7}\,\text{Tm/A}$.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Corriente 1 ($I_1$):} sentido $+\vec{j}$, en $x=0$.
+    \item \textbf{Corriente 2 ($I_2$):} $I_2=2I_1$, sentido $-\vec{j}$, en $x=3\,\text{cm}=0,03\,\text{m}$.
+    \item \textbf{Punto P:} en $x=-3\,\text{cm}=-0,03\,\text{m}$.
+    \item \textbf{Carga de prueba:} Carga $q$ con velocidad $\vec{v}=2\vec{i}\,\text{m/s}$.
+    \item \textbf{Incógnita:} Fuerza $\vec{F}$ sobre la carga $q$ en P.
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Magnético en P} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista desde arriba del plano XY. El eje Y es vertical, el X horizontal. Un hilo en x=0 con corriente $I_1$ hacia arriba. Otro hilo en x=0.03 con corriente $I_2$ hacia abajo. El punto P está en x=-0.03. Por la regla de la mano derecha, el campo $\vec{B}_1$ en P (de $I_1$, hacia arriba) apunta hacia dentro del plano (-Z). El campo $\vec{B}_2$ en P (de $I_2$, hacia abajo) también apunta hacia dentro del plano (-Z). Ambos vectores se suman."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_dos_hilos_antiparalelos.png}
+    }}
+    \caption{Vectores campo magnético en el punto P.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Campo magnético de un hilo:} $B=\frac{\mu_0 I}{2\pi d}$. La dirección se obtiene con la regla de la mano derecha.
+    \item \textbf{Principio de Superposición:} $\vec{B}_{total} = \vec{B}_1 + \vec{B}_2$.
+    \item \textbf{Fuerza de Lorentz:} $\vec{F} = q(\vec{v} \times \vec{B})$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Distancias a P: $d_1=0,03\,\text{m}$, $d_2 = 0,03 - (-0,03) = 0,06\,\text{m}$.
+\begin{itemize}
+    \item Campo de $I_1$ (hacia arriba): en P, apunta hacia dentro ($-\vec{k}$). $\vec{B}_1 = -\frac{\mu_0 I_1}{2\pi d_1}\vec{k}$.
+    \item Campo de $I_2$ (hacia abajo): en P, apunta hacia dentro ($-\vec{k}$). $\vec{B}_2 = -\frac{\mu_0 I_2}{2\pi d_2}\vec{k} = -\frac{\mu_0 (2I_1)}{2\pi (2d_1)}\vec{k} = -\frac{\mu_0 I_1}{2\pi d_1}\vec{k}$.
+\end{itemize}
+Resulta que $\vec{B}_1 = \vec{B}_2$.
+\begin{gather}
+    \vec{B}_{total} = \vec{B}_1 + \vec{B}_2 = -2\frac{\mu_0 I_1}{2\pi d_1}\vec{k} = -\frac{\mu_0 I_1}{\pi d_1}\vec{k}
+\end{gather}
+Ahora calculamos la fuerza:
+\begin{gather}
+    \vec{F} = q(\vec{v} \times \vec{B}_{total}) = q \left( v\vec{i} \times \left(-\frac{\mu_0 I_1}{\pi d_1}\right)\vec{k} \right) = -q \frac{\mu_0 I_1 v}{\pi d_1} (\vec{i}\times\vec{k}) = -q \frac{\mu_0 I_1 v}{\pi d_1} (-\vec{j}) = q \frac{\mu_0 I_1 v}{\pi d_1} \vec{j}
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \vec{F} = q \frac{(4\pi\cdot10^{-7}) I_1 (2)}{\pi (0,03)} \vec{j} = q I_1 \frac{8\cdot10^{-7}}{0,03} \vec{j} \approx (2,67\cdot10^{-5}) q I_1 \vec{j} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza es $\boldsymbol{\vec{F} = \frac{\mu_0 I_1 v}{\pi d_1} q \vec{j} \approx (2,67\cdot10^{-5}) q I_1 \vec{j}}\,\textbf{N}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Los campos magnéticos creados por ambos hilos en el punto P tienen el mismo sentido (entrante) y, debido a la relación entre las corrientes y las distancias ($I_2=2I_1, d_2=2d_1$), también tienen el mismo módulo. El campo total es el doble del campo creado por $I_1$. La fuerza de Lorentz sobre una carga $q$ que se mueve en el eje X es, por tanto, perpendicular tanto a la velocidad como al campo, resultando en una fuerza en la dirección del eje Y.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2018_jul_ext}
+\begin{cajaenunciado}
+En los puntos $A(0,0)$ m, $B(0, 2)$ m y $C(2,2)$ m se sitúan tres cargas eléctricas iguales, de valor $-3\,\mu\text{C}$.
+\begin{enumerate}
+    \item[a)] Dibuja, en el punto $D(1,1)$ los vectores campo eléctrico generados por cada una de las cargas y calcula el vector campo eléctrico resultante. (1 punto)
+    \item[b)] Calcula el trabajo realizado en el desplazamiento de una carga eléctrica puntual de $1\,\mu\text{C}$ entre los puntos $D(1,1)$ m y $E(2,0)$ m, razonando si la carga puede realizar espontáneamente dicho desplazamiento. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de Coulomb, $k_{e}=9\cdot10^{9}\,\text{Nm}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Cargas fuente:} $q_A=q_B=q_C = -3\,\mu\text{C} = -3\cdot10^{-6}\,\text{C}$.
+    \item \textbf{Posiciones:} A(0,0), B(0,2), C(2,2).
+    \item \textbf{Puntos de interés:} D(1,1) y E(2,0).
+    \item \textbf{Carga de prueba:} $q_p=1\,\mu\text{C}=10^{-6}\,\text{C}$.
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo en el punto D} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Marcar las cargas A(0,0), B(0,2) y C(2,2). Marcar el punto D(1,1). Como las cargas son negativas, dibujar los vectores campo en D como atractivos: $\vec{E}_A$ apunta de D a A (hacia abajo-izquierda). $\vec{E}_B$ apunta de D a B (hacia arriba-izquierda). $\vec{E}_C$ apunta de D a C (hacia arriba-derecha). Mostrar la suma vectorial."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{campo_tres_cargas.png}
+    }}
+    \caption{Suma vectorial de campos en el punto D.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Campo Eléctrico:} $\vec{E} = k\frac{q}{r^2}\vec{u}_r$. El campo total es la suma vectorial (superposición).
+    \item \textbf{Trabajo y Potencial:} El trabajo realizado por el campo es $W_{D \to E} = q_p(V_D - V_E)$. Un desplazamiento es espontáneo si el campo realiza trabajo positivo. El potencial total es la suma escalar $V=\sum V_i$, con $V_i = k q_i / r_i$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Campo en D(1,1)}
+Distancias: $r_{AD} = \sqrt{1^2+1^2}=\sqrt{2}$. $r_{BD}=\sqrt{1^2+(-1)^2}=\sqrt{2}$. $r_{CD}=\sqrt{(-1)^2+(-1)^2}=\sqrt{2}$.
+Vectores unitarios desde las cargas a D: $\vec{u}_{AD}=\frac{\vec{i}+\vec{j}}{\sqrt{2}}$, $\vec{u}_{BD}=\frac{\vec{i}-\vec{j}}{\sqrt{2}}$, $\vec{u}_{CD}=\frac{-\vec{i}-\vec{j}}{\sqrt{2}}$.
+\begin{gather}
+    \vec{E}_D = \vec{E}_A+\vec{E}_B+\vec{E}_C = k\frac{q}{r^2}(\vec{u}_{AD}+\vec{u}_{BD}+\vec{u}_{CD}) = k\frac{q}{2\sqrt{2}}((\vec{i}+\vec{j})+(\vec{i}-\vec{j})+(-\vec{i}-\vec{j})) = k\frac{q}{2\sqrt{2}}(\vec{i}-\vec{j})
+\end{gather}
+\paragraph{b) Trabajo de D a E}
+$V_D = V_A(D)+V_B(D)+V_C(D) = 3 \cdot k\frac{q}{\sqrt{2}}$.
+Distancias a E(2,0): $r_{AE}=2$, $r_{BE}=\sqrt{2^2+(-2)^2}=\sqrt{8}=2\sqrt{2}$, $r_{CE}=\sqrt{0^2+(-2)^2}=2$.
+$V_E = k q (\frac{1}{r_{AE}}+\frac{1}{r_{BE}}+\frac{1}{r_{CE}}) = kq(\frac{1}{2}+\frac{1}{2\sqrt{2}}+\frac{1}{2})$.
+$W_{D \to E} = q_p(V_D-V_E)$.
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Campo en D}
+\begin{gather}
+    \vec{E}_D = (9\cdot10^9)\frac{-3\cdot10^{-6}}{2\sqrt{2}}(\vec{i}-\vec{j}) \approx -9546(\vec{i}-\vec{j})\,\text{N/C}
+\end{gather}
+\begin{cajaresultado}
+El campo resultante es $\boldsymbol{\vec{E}_D \approx (-9546\vec{i} + 9546\vec{j})\,\textbf{N/C}}$.
+\end{cajaresultado}
+\paragraph{b) Trabajo}
+\begin{gather}
+    V_D = 3 \cdot (9\cdot10^9)\frac{-3\cdot10^{-6}}{\sqrt{2}} \approx -57276\,\text{V} \\
+    V_E = (9\cdot10^9)(-3\cdot10^{-6})\left(1+\frac{1}{2\sqrt{2}}\right) \approx -36569\,\text{V} \\
+    W_{D \to E} = (10^{-6})(-57276 - (-36569)) = (10^{-6})(-20707) \approx -2,07\cdot10^{-2}\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+El trabajo es $\boldsymbol{W \approx -2,07\cdot10^{-2}\,\textbf{J}}$. Como el trabajo del campo es negativo, el desplazamiento \textbf{no es espontáneo}.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La simetría del problema simplifica el cálculo del campo eléctrico en D. Para el trabajo, se calcula la diferencia de potencial entre los puntos D y E. El trabajo negativo resultante indica que el campo se opone al desplazamiento, por lo que se requiere un agente externo para mover la carga positiva de D a E.
+\end{cajaconclusion}
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Física Moderna}
+\label{sec:mod1_2018_jul_ext}
+% ----------------------------------------------------------------------
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2018_jul_ext}
+\begin{cajaenunciado}
+Razona cual debe ser la velocidad $v_{\mu}$ de un muon, para que su longitud de onda asociada (de De Broglie) sea igual que la de un electrón que se mueve a una velocidad $v_{e}=0,025\,c$. La masa del muon es 207 veces la del electrón. Considera que las velocidades son no relativistas. Deja el resultado en función de la velocidad de la luz en el vacío c.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Condición:} $\lambda_{\mu} = \lambda_e$.
+    \item \textbf{Relación de masas:} $m_{\mu} = 207 m_e$.
+    \item \textbf{Velocidad del electrón:} $v_e = 0,025\,c$.
+    \item \textbf{Incógnita:} Velocidad del muón, $v_{\mu}$.
+\end{itemize}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica la hipótesis de \textbf{De Broglie}, que asocia una longitud de onda a toda partícula en movimiento:
+$$ \lambda = \frac{h}{p} = \frac{h}{mv} $$
+donde $h$ es la constante de Planck.
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La condición del problema es $\lambda_{\mu} = \lambda_e$. Aplicando la fórmula de De Broglie:
+\begin{gather}
+    \frac{h}{m_{\mu} v_{\mu}} = \frac{h}{m_e v_e}
+\end{gather}
+Simplificando $h$ y despejando $v_{\mu}$:
+\begin{gather}
+    m_{\mu} v_{\mu} = m_e v_e \implies v_{\mu} = v_e \frac{m_e}{m_{\mu}}
+\end{gather}
+Sustituyendo la relación de masas:
+\begin{gather}
+    v_{\mu} = v_e \frac{m_e}{207 m_e} = \frac{v_e}{207}
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    v_{\mu} = \frac{0,025\,c}{207} \approx 1,21\cdot10^{-4}c
+\end{gather}
+\begin{cajaresultado}
+    La velocidad del muón debe ser $\boldsymbol{v_{\mu} \approx 1,21\cdot10^{-4}c}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que dos partículas tengan la misma longitud de onda de De Broglie, sus momentos lineales deben ser iguales ($p_e = p_{\mu}$). Dado que el muón es 207 veces más masivo que el electrón, su velocidad debe ser 207 veces menor para que se cumpla esta condición.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2018_jul_ext}
+\begin{cajaenunciado}
+La energía cinética relativista de un electrón es el doble de su energía en reposo. Calcula su energía total y su velocidad en unidades del SI.
+\textbf{Dato:} velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$; masa del electrón, $m_e=9,1\cdot10^{-31}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Condición:} $E_c = 2E_0$.
+    \item \textbf{Masa del electrón ($m_e$):} $m_e=9,1\cdot10^{-31}\,\text{kg}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c=3\cdot10^{8}\,\text{m/s}$.
+    \item \textbf{Incógnitas:} Energía total ($E_T$) y velocidad ($v$).
+\end{itemize}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utilizan las ecuaciones de la \textbf{Relatividad Especial}:
+\begin{itemize}
+    \item \textbf{Energía en reposo:} $E_0 = m_e c^2$.
+    \item \textbf{Energía total:} $E_T = E_0 + E_c = \gamma m_e c^2$.
+    \item \textbf{Factor de Lorentz ($\gamma$):} $\gamma = (1-v^2/c^2)^{-1/2}$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Energía total}
+\begin{gather}
+    E_T = E_0 + E_c = E_0 + 2E_0 = 3E_0 = 3m_e c^2
+\end{gather}
+\paragraph{Velocidad}
+De la relación $E_T = \gamma m_e c^2$:
+\begin{gather}
+    3m_e c^2 = \gamma m_e c^2 \implies \gamma = 3
+\end{gather}
+Despejamos $v$ de la definición de $\gamma$:
+\begin{gather}
+    v = c\sqrt{1-\frac{1}{\gamma^2}}
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Energía total}
+\begin{gather}
+    E_T = 3(9,1\cdot10^{-31})(3\cdot10^8)^2 \approx 2,46\cdot10^{-13}\,\text{J}
+\end{gather}
+\paragraph{Velocidad}
+\begin{gather}
+    v = c\sqrt{1-\frac{1}{3^2}} = c\sqrt{\frac{8}{9}} = \frac{2\sqrt{2}}{3}c \approx 0,943 \cdot (3\cdot10^8) \approx 2,83\cdot10^8\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La energía total es $\boldsymbol{E_T \approx 2,46\cdot10^{-13}\,\textbf{J}}$ y la velocidad es $\boldsymbol{v \approx 2,83\cdot10^8\,\textbf{m/s}}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Cuando la energía cinética de una partícula es el doble de su energía en reposo, su energía total es el triple de la energía en reposo. Este alto nivel de energía implica que el factor de Lorentz es 3, y la partícula debe moverse a una velocidad muy cercana a la de la luz, concretamente al 94,3\% de $c$.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2018_jul_ext}
+\begin{cajaenunciado}
+Se ha descubierto una antigua silla egipcia de madera que se desea datar. Se mide la actividad de una muestra debido al $^{14}\text{C}$ presente en la silla y se obtiene que es de 260 desintegraciones/dia, frente a las 18 desintegraciones/hora que produce una muestra similar de madera recién talada.
+\begin{enumerate}
+    \item[a)] Calcula las actividades de las muestras en becquerelios (desintegraciones por segundo). Determina la edad de la silla y establece si pudo pertenecer a la reina Hetepheres I que vivió en la cuarta dinastía entre los años 2575 a. C. y 2551 a. C. (1 punto)
+    \item[b)] Calcula la actividad de la muestra de la silla dentro de 2000 años y el porcentaje de núcleos de $^{14}\text{C}$ que se han desintegrado desde que se fabricó la silla. (1 punto)
+\end{enumerate}
+\textbf{Dato:} periodo de semidesintegración del $^{14}\text{C}$, $T=5730$ años.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Actividad actual (silla, $A(t)$):} $260\,\text{des/día}$.
+    \item \textbf{Actividad inicial (madera nueva, $A_0$):} $18\,\text{des/hora}$.
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T=5730\,\text{años}$.
+    \item \textbf{Incógnitas:} Actividades en Bq, edad $t$, $A(t+2000)$, \% desintegrado.
+\end{itemize}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ley de desintegración radiactiva:} $A(t) = A_0 e^{-\lambda t}$.
+    \item \textbf{Constante de desintegración ($\lambda$):} $\lambda = \ln(2)/T_{1/2}$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Actividades y edad}
+Para calcular la edad $t$, despejamos de la ley de desintegración:
+\begin{gather}
+    \frac{A(t)}{A_0} = e^{-\lambda t} \implies \ln\left(\frac{A(t)}{A_0}\right) = -\lambda t \implies t = -\frac{1}{\lambda}\ln\left(\frac{A(t)}{A_0}\right) = \frac{T_{1/2}}{\ln(2)}\ln\left(\frac{A_0}{A(t)}\right)
+\end{gather}
+\paragraph{b) Actividad futura y porcentaje desintegrado}
+La actividad dentro de 2000 años será $A(t+2000)=A(t) e^{-\lambda (2000)}$.
+El porcentaje de núcleos restantes es $\frac{N(t)}{N_0} = \frac{A(t)}{A_0}$. El porcentaje desintegrado es $1 - \frac{N(t)}{N_0}$.
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Actividades y edad}
+\begin{gather}
+    A(t) = 260\,\frac{\text{des}}{\text{día}} \cdot \frac{1\,\text{día}}{86400\,\text{s}} \approx 3,01\cdot10^{-3}\,\text{Bq} \\
+    A_0 = 18\,\frac{\text{des}}{\text{h}} \cdot \frac{1\,\text{h}}{3600\,\text{s}} = 5\cdot10^{-3}\,\text{Bq} \\
+    t = \frac{5730}{\ln(2)}\ln\left(\frac{5\cdot10^{-3}}{3,01\cdot10^{-3}}\right) \approx 8266 \cdot \ln(1,66) \approx 4183\,\text{años}
+\end{gather}
+La silla tiene 4183 años. A fecha de 2018 (año del examen), esto corresponde al año $2018-4183 = -2165$, es decir, 2165 a.C. Este periodo no coincide con el reinado (2575-2551 a.C).
+\begin{cajaresultado}
+    $\boldsymbol{A(t)\approx 3,01\cdot10^{-3}\,\textbf{Bq}}$, $\boldsymbol{A_0 = 5\cdot10^{-3}\,\textbf{Bq}}$. La edad es $\boldsymbol{t\approx4183\,\textbf{años}}$. \textbf{No pudo} pertenecer a la reina.
+\end{cajaresultado}
+\paragraph{b) Actividad futura y porcentaje}
+$\lambda = \frac{\ln(2)}{5730} \approx 1,21\cdot10^{-4}\,\text{años}^{-1}$.
+\begin{gather}
+    A(t+2000) = (3,01\cdot10^{-3}) e^{-(1,21\cdot10^{-4})(2000)} \approx 2,36\cdot10^{-3}\,\text{Bq} \\
+    \% \text{restante} = \frac{A(t)}{A_0} = \frac{3,01}{5} \approx 0,602 = 60,2\% \implies \% \text{desintegrado} = 100 - 60,2 = 39,8\%
+\end{gather}
+\begin{cajaresultado}
+    La actividad futura será $\boldsymbol{A \approx 2,36\cdot10^{-3}\,\textbf{Bq}}$. Se ha desintegrado un \textbf{39,8\%} de los núcleos.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La datación por Carbono-14, basada en la ley de decaimiento exponencial, sitúa la edad de la silla en 4183 años, descartando su pertenencia a la reina Hetepheres I. Los cálculos predictivos muestran que su actividad continuará disminuyendo y que hasta la fecha se ha desintegrado aproximadamente el 40% del C-14 original.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2018_jul_ext}
+\begin{cajaenunciado}
+Completa la reacción (determinando Z y X) sabiendo que la partícula emitida sigue la trayectoria representada en la gráfica cuando pasa por un campo eléctrico uniforme. ¿De qué tipo de desintegración y partícula se trata?
+${}_{6}^{14}\text{C}\rightarrow{}_{Z}^{14}\text{N}+X$
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Reacción nuclear:} ${}_{6}^{14}\text{C}\rightarrow{}_{Z}^{14}\text{N}+X$.
+    \item \textbf{Gráfico:} Muestra una partícula desviándose hacia la placa positiva de un condensador. El campo eléctrico $\vec{E}$ va de la placa `+` a la `-`.
+    \item \textbf{Incógnitas:} Z, X, tipo de desintegración y partícula.
+\end{itemize}
+\subsubsection*{2. Representación Gráfica}
+El enunciado proporciona el gráfico clave para la resolución.
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Fuerza eléctrica:} $\vec{F}=q\vec{E}$. La dirección de la fuerza sobre una carga positiva es la misma que la del campo; para una carga negativa, es opuesta.
+    \item \textbf{Leyes de conservación nuclear (Soddy-Fajans):} Se conservan el número másico (A) y el número atómico (Z).
+\end{itemize}
+\subsubsection*{4. Razonamiento}
+\paragraph{Identificación de la partícula X a partir de la trayectoria}
+El campo eléctrico uniforme apunta de la placa positiva a la negativa (hacia abajo). La partícula se desvía hacia la placa positiva (hacia arriba), en sentido contrario al campo. Como $\vec{F}$ y $\vec{E}$ tienen sentidos opuestos, la carga $q$ de la partícula X debe ser \textbf{negativa}. La partícula fundamental con carga negativa emitida en desintegraciones nucleares es el \textbf{electrón} ($e^-$).
+\paragraph{Identificación del tipo de desintegración y Z}
+Una desintegración que emite un electrón se denomina \textbf{desintegración beta negativa ($\beta^-$)}. La partícula X es un electrón, que se representa como ${}_{-1}^{0}e$.
+Aplicamos las leyes de conservación:
+\begin{gather}
+    {}_{6}^{14}\text{C}\rightarrow{}_{Z}^{14}\text{N}+{}_{-1}^{0}e \\
+    \text{Conservación de A: } 14 = 14 + 0 \quad (\text{se cumple}) \\
+    \text{Conservación de Z: } 6 = Z + (-1) \implies Z = 7
+\end{gather}
+\subsubsection*{5. Resultado}
+\begin{cajaresultado}
+La reacción completa es $\boldsymbol{{}_{6}^{14}\text{C}\rightarrow{}_{7}^{14}\text{N}+{}_{-1}^{0}e}$.
+Se trata de una \textbf{desintegración beta negativa ($\beta^-$)} y la partícula emitida X es un \textbf{electrón}.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La trayectoria de la partícula emitida en un campo eléctrico revela su carga negativa. Esto la identifica como un electrón, característico de una desintegración beta negativa. La aplicación de las leyes de conservación de número másico y atómico confirma esta identificación y determina que el número atómico del núcleo hijo (Nitrógeno) es 7.
+\end{cajaconclusion}
+\newpage

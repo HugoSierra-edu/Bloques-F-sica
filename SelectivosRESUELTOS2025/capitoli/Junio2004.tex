@@ -1,0 +1,497 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2004 - Convocatoria Ordinaria}
+\label{chap:2004_jun_ord}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Problemas de Campo Gravitatorio}
+\label{sec:grav_2004_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2004_jun_ord}
+
+\begin{cajaenunciado}
+Un satélite artificial de 500 kg de masa se mueve alrededor de un planeta, describiendo una órbita circular con un periodo de 42,47 horas y un radio de 419.000 km. Se pide:
+\begin{enumerate}
+    \item[1.] Fuerza gravitatoria que actúa sobre el satélite. (0,6 puntos)
+    \item[2.] La energía cinética, la energía potencial y la energía total del satélite en su órbita. (0,7 puntos)
+    \item[3.] Si, por cualquier causa, el satélite duplica repentinamente su velocidad sin cambiar la dirección, ¿se alejará éste indefinidamente del planeta? Razona la respuesta. (0,7 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del satélite ($m$):} $m = 500$ kg.
+    \item \textbf{Periodo orbital ($T$):} $T = 42,47 \text{ h} = 42,47 \cdot 3600 \text{ s} = 152892$ s.
+    \item \textbf{Radio orbital ($r$):} $r = 419000 \text{ km} = 4,19 \cdot 10^8$ m.
+    \item \textbf{Incógnitas:} Fuerza gravitatoria ($F_g$), energías ($E_c, E_p, E_T$), y si escapa con velocidad $v' = 2v$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Satélite en Órbita Circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta en el centro y un satélite en una órbita circular de radio r. Dibujar el vector velocidad $\vec{v}$ del satélite, tangente a la órbita. Dibujar el vector de la fuerza gravitatoria $\vec{F}_g$ sobre el satélite, apuntando hacia el centro del planeta. Indicar que esta fuerza actúa como fuerza centrípeta."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_circular.png}
+    }}
+    \caption{Esquema de un satélite en órbita.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Fuerza Gravitatoria:} En una órbita circular, la fuerza gravitatoria es la fuerza centrípeta: $F_g = F_c = m a_c = m \omega^2 r = m \left(\frac{2\pi}{T}\right)^2 r$.
+    \item \textbf{Energías:} $E_c = \frac{1}{2}mv^2$. La energía potencial es $E_p = -2E_c$ (Teorema del Virial para órbitas circulares). La energía total es $E_T = E_c + E_p = -E_c$.
+    \item \textbf{Condición de escape:} Un objeto escapa del campo gravitatorio si su energía mecánica total es mayor o igual a cero ($E_T \ge 0$).
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{1. Fuerza gravitatoria}
+$$F_g = m \left(\frac{2\pi}{T}\right)^2 r = 500 \cdot \left(\frac{2\pi}{152892}\right)^2 \cdot (4,19 \cdot 10^8) \approx 354,7 \, \text{N}$$
+\begin{cajaresultado}
+    La fuerza gravitatoria sobre el satélite es $\boldsymbol{\approx 354,7}$ \textbf{N}.
+\end{cajaresultado}
+
+\paragraph*{2. Energías}
+Primero calculamos la velocidad orbital: $v = \omega r = \frac{2\pi}{T}r = \frac{2\pi}{152892} \cdot (4,19 \cdot 10^8) \approx 17215 \, \text{m/s}$.
+$E_c = \frac{1}{2}mv^2 = \frac{1}{2}(500)(17215)^2 \approx 7,41 \cdot 10^{10} \, \text{J}$.
+$E_p = -2E_c \approx -1,482 \cdot 10^{11} \, \text{J}$.
+$E_T = -E_c \approx -7,41 \cdot 10^{10} \, \text{J}$.
+\begin{cajaresultado}
+    $E_c \approx 7,41 \cdot 10^{10}$ J, $E_p \approx -1,482 \cdot 10^{11}$ J, $E_T \approx -7,41 \cdot 10^{10}$ J.
+\end{cajaresultado}
+
+\paragraph*{3. Condición de escape}
+La nueva velocidad es $v' = 2v$. La nueva energía cinética es $E_c' = \frac{1}{2}m(2v)^2 = 4(\frac{1}{2}mv^2) = 4E_c$.
+La energía potencial no cambia en ese instante, ya que la posición es la misma. La nueva energía total es:
+$$E_T' = E_c' + E_p = 4E_c + (-2E_c) = 2E_c$$
+Como $E_c$ es positiva, $E_T' = 2E_c > 0$.
+\begin{cajaresultado}
+    \textbf{Sí, se alejará indefinidamente}. Al duplicar la velocidad, la energía total se vuelve positiva, lo que significa que el satélite escapará del campo gravitatorio del planeta.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se han calculado las fuerzas y energías de la órbita. El análisis final demuestra que la velocidad de escape de una órbita circular es $\sqrt{2}$ veces la velocidad orbital. Al duplicar la velocidad (un factor mayor que $\sqrt{2}$), se supera con creces la energía necesaria para escapar.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2004_jun_ord}
+
+\begin{cajaenunciado}
+Una partícula puntual de masa $m_1=10\,\text{kg}$ está situada en el origen O. Una segunda partícula de masa $m_2=30\,\text{kg}$ está situada, sobre el eje X, en el punto A(6,0) m. Se pide:
+\begin{enumerate}
+    \item[1.] El módulo, la dirección y el sentido del campo gravitatorio en el punto B(2,0) m. (0,7 puntos)
+    \item[2.] El punto sobre el eje X para el cual el campo gravitatorio es nulo. (0,7 puntos)
+    \item[3.] El trabajo realizado por el campo gravitatorio cuando la masa $m_2$ se traslada desde A hasta C(0,6) m. (0,6 puntos)
+\end{enumerate}
+\textbf{Dato:} $G=6,67\times10^{-11}\,\text{Nm}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa 1 ($m_1$):} $10$ kg en (0,0).
+    \item \textbf{Masa 2 ($m_2$):} $30$ kg en A(6,0).
+    \item \textbf{Punto B:} (2,0).
+    \item \textbf{Punto C:} (0,6).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo de dos masas} \vspace{0.5cm} \textit{Prompt:} "Eje X. Masa $m_1$ en el origen. Masa $m_2$ en x=6. Punto B en x=2. En B, dibujar $\vec{g}_1$ apuntando hacia la izquierda (hacia $m_1$) y $\vec{g}_2$ apuntando hacia la derecha (hacia $m_2$)."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Campos gravitatorios en el punto B.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplican los mismos principios que en el examen de Septiembre de 2003 (Bloque I, Opción B): Principio de Superposición para campos y la relación entre trabajo y energía potencial. El trabajo realizado por el campo es $W = - \Delta E_p = E_{p,inicial} - E_{p,final}$.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{1. Campo en B(2,0)}
+Distancia de $m_1$ a B: $r_{1B}=2$ m. Distancia de $m_2$ a B: $r_{2B}=6-2=4$ m.
+$\vec{g}_1(B) = G\frac{m_1}{r_{1B}^2}\vec{i} = 6,67\cdot10^{-11}\frac{10}{2^2}\vec{i} = 1,67\cdot10^{-10}\vec{i}$ N/kg.
+$\vec{g}_2(B) = -G\frac{m_2}{r_{2B}^2}\vec{i} = -6,67\cdot10^{-11}\frac{30}{4^2}\vec{i} = -1,25\cdot10^{-10}\vec{i}$ N/kg.
+$\vec{g}_B = \vec{g}_1(B) + \vec{g}_2(B) = (1,67 - 1,25)\cdot10^{-10}\vec{i} = \boldsymbol{4,2\cdot10^{-11}\vec{i}}$ \textbf{N/kg}.
+Módulo $4,2\cdot10^{-11}$ N/kg, dirección eje X, sentido positivo.
+
+\paragraph*{2. Punto de campo nulo}
+Debe estar entre las masas, en un punto $x$. $G\frac{m_1}{x^2} = G\frac{m_2}{(6-x)^2}$.
+$\frac{10}{x^2} = \frac{30}{(6-x)^2} \implies (6-x)^2 = 3x^2 \implies 6-x = \sqrt{3}x$.
+$6 = x(1+\sqrt{3}) \implies x = \frac{6}{1+\sqrt{3}} \approx 2,196$ m.
+\begin{cajaresultado}
+    El campo es nulo en $\boldsymbol{x \approx 2,2}$ \textbf{m}.
+\end{cajaresultado}
+
+\paragraph*{3. Trabajo para mover $m_2$}
+El trabajo depende solo del potencial creado por $m_1$ en las posiciones A y C.
+$E_{p,inicial} = V_A = -G\frac{m_1 m_2}{r_{1A}} = -6,67\cdot10^{-11}\frac{10 \cdot 30}{6} = -3,335\cdot10^{-9}$ J.
+$E_{p,final} = V_C = -G\frac{m_1 m_2}{r_{1C}} = -6,67\cdot10^{-11}\frac{10 \cdot 30}{6} = -3,335\cdot10^{-9}$ J.
+$W_{A \to C} = E_{p,inicial} - E_{p,final} = 0$.
+\begin{cajaresultado}
+    El trabajo realizado es $\boldsymbol{0}$ \textbf{J}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se han calculado los campos y el punto de equilibrio. El trabajo para mover la masa $m_2$ es cero porque los puntos A y C son equidistantes de $m_1$, y por tanto se encuentran en la misma superficie equipotencial del campo creado por $m_1$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Cuestiones de Ondas}
+\label{sec:ondas_2004_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2004_jun_ord}
+
+\begin{cajaenunciado}
+Explica, mediante algún ejemplo, el transporte de energía en una onda. ¿Existe un transporte efectivo de masa?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Una onda es una perturbación que se propaga a través de un medio (o del vacío, si es electromagnética), transportando \textbf{energía} y \textbf{momento lineal} sin que haya un transporte neto de \textbf{materia}.
+\paragraph*{Transporte de Energía}
+Las partículas del medio a través del cual se propaga la onda son obligadas a oscilar. Esta oscilación les confiere energía cinética (por su movimiento) y energía potencial (por la deformación elástica del medio). A medida que la onda avanza, esta energía se transfiere de unas partículas a otras.
+\begin{itemize}
+    \item \textbf{Ejemplo 1 (Ondas en el agua):} Una ola en el mar puede transportar la energía suficiente para mover grandes rocas en la costa o para hacer funcionar una central undimotriz. La energía proviene del viento que generó la ola a kilómetros de distancia.
+    \item \textbf{Ejemplo 2 (Sonido):} La energía de las ondas sonoras hace vibrar el tímpano en nuestro oído, lo que nos permite oír. Un sonido muy intenso (una explosión) puede transportar la energía suficiente para romper cristales.
+    \item \textbf{Ejemplo 3 (Luz):} La energía de las ondas electromagnéticas del Sol (luz y calor) viaja por el vacío y calienta la Tierra, haciendo posible la vida. Esta misma energía es la que aprovechan las placas solares.
+\end{itemize}
+\paragraph*{Transporte de Masa}
+En una onda mecánica, las partículas del medio oscilan alrededor de sus posiciones de equilibrio, pero no se desplazan con la onda.
+\begin{itemize}
+    \item \textbf{Ejemplo (Ola en el mar):} Un corcho flotando en el agua sube y baja a medida que pasa una ola, pero apenas se desplaza en la dirección de propagación de la ola. Esto demuestra que es la perturbación (la "forma" de la ola) la que viaja, no el agua en sí misma.
+\end{itemize}
+Por lo tanto, no existe un transporte efectivo de masa.
+
+\begin{cajaresultado}
+Las ondas transportan energía, como demuestra la capacidad de las olas del mar o del sonido para realizar trabajo. Sin embargo, \textbf{no hay un transporte neto de masa}; las partículas del medio simplemente oscilan alrededor de sus posiciones de equilibrio.
+\end{cajaresultado}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2004_jun_ord}
+
+\begin{cajaenunciado}
+¿Qué son las ondas estacionarias? Explica en qué consiste este fenómeno, menciona sus características más destacables y pon un ejemplo.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Una \textbf{onda estacionaria} es el resultado de la interferencia (superposición) de dos ondas de la misma amplitud y frecuencia que viajan en la misma dirección pero en \textbf{sentidos opuestos}.
+\paragraph*{Características}
+\begin{itemize}
+    \item \textbf{No se propaga:} A diferencia de una onda viajera, una onda estacionaria no avanza. La energía no se transfiere de un punto a otro, sino que queda confinada en la región donde se produce la interferencia.
+    \item \textbf{Nodos:} Son puntos que permanecen siempre en reposo (amplitud cero). Están separados por media longitud de onda ($\lambda/2$).
+    \item \textbf{Vientres (o antinodos):} Son puntos que oscilan con la máxima amplitud posible (el doble de la amplitud de las ondas originales, 2A). También están separados por media longitud de onda.
+    \item \textbf{Fase:} Todas las partículas situadas entre dos nodos consecutivos oscilan en fase (alcanzan sus máximos y mínimos al mismo tiempo). Las partículas de segmentos adyacentes oscilan en oposición de fase.
+\end{itemize}
+\paragraph*{Ejemplo}
+El ejemplo más común es la vibración de una \textbf{cuerda de guitarra}. Cuando se pulsa la cuerda, se generan ondas que viajan hacia los extremos fijos. En estos extremos, las ondas se reflejan e invierten su fase. La onda original y la onda reflejada interfieren, creando una onda estacionaria. Solo ciertas frecuencias (los armónicos o modos normales de vibración) pueden formar ondas estacionarias estables en la cuerda, lo que da lugar a las notas musicales. Los extremos de la cuerda son siempre nodos.
+
+\begin{cajaresultado}
+Una onda estacionaria es la superposición de dos ondas idénticas que viajan en sentidos opuestos. No transporta energía y se caracteriza por tener puntos fijos (nodos) y puntos de máxima oscilación (vientres). Un ejemplo típico son las vibraciones en una cuerda de guitarra.
+\end{cajaresultado}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Problemas de Óptica}
+\label{sec:optica_2004_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2004_jun_ord}
+
+\begin{cajaenunciado}
+Un haz de luz blanca incide sobre una lámina de vidrio de grosor d, con un ángulo $\theta_i=60^\circ$.
+\begin{enumerate}
+    \item[1.] Dibuja esquemáticamente las trayectorias de los rayos rojo y violeta. (0,4 puntos)
+    \item[2.] Determina la altura, respecto al punto O', del punto por el que la luz roja emerge de la lámina siendo $d=1$ cm. (0,8 puntos)
+    \item[3.] Calcula qué grosor d debe tener la lámina para que los puntos de salida de la luz roja y de la luz violeta estén separados 1 cm. (0,8 puntos)
+\end{enumerate}
+\textbf{Datos:} Los índices de refracción en el vidrio de la luz roja y violeta son $n_R=1,5$ y $n_V=1,6$ respectivamente.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ángulo de incidencia ($\theta_i$):} $60^\circ$.
+    \item \textbf{Índice de refracción del aire ($n_{aire}$):} $\approx 1$.
+    \item \textbf{Índice para el rojo ($n_R$):} 1,5.
+    \item \textbf{Índice para el violeta ($n_V$):} 1,6.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Dispersión en una lámina} \vspace{0.5cm} \textit{Prompt:} "Una lámina de vidrio de caras paralelas. Un rayo de luz blanca incide desde el aire con 60°. Dentro del vidrio, el rayo se separa en dos: el rayo violeta se desvía más (más cerca de la normal) que el rayo rojo. Al salir de la lámina, ambos rayos emergen paralelos al rayo incidente original, pero desplazados lateralmente. El desplazamiento del violeta es mayor que el del rojo."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Trayectorias de la luz roja y violeta (dispersión cromática).}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno es la \textbf{dispersión cromática} debida a la refracción. Se usa la Ley de Snell: $n_1\sin\theta_1 = n_2\sin\theta_2$. El desplazamiento lateral $h$ de un rayo viene dado por la geometría del problema.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{2. Desplazamiento de la luz roja ($h_R$)}
+Ángulo de refracción para el rojo ($\theta_R$): $1 \cdot \sin(60^\circ) = 1,5 \cdot \sin(\theta_R) \implies \sin(\theta_R) = \frac{\sin(60^\circ)}{1,5} \approx 0,577 \implies \theta_R \approx 35,26^\circ$.
+El desplazamiento lateral es $h_R = d \frac{\sin(\theta_i - \theta_R)}{\cos(\theta_R)}$.
+$h_R = (1 \text{ cm}) \frac{\sin(60^\circ - 35,26^\circ)}{\cos(35,26^\circ)} = \frac{\sin(24,74^\circ)}{\cos(35,26^\circ)} \approx \frac{0,418}{0,816} \approx 0,512$ cm.
+\begin{cajaresultado}
+    La altura (desplazamiento lateral) para la luz roja es $\boldsymbol{\approx 0,512}$ \textbf{cm}.
+\end{cajaresultado}
+
+\paragraph*{3. Grosor para una separación de 1 cm}
+Ángulo de refracción para el violeta ($\theta_V$): $1 \cdot \sin(60^\circ) = 1,6 \cdot \sin(\theta_V) \implies \sin(\theta_V) = \frac{\sin(60^\circ)}{1,6} \approx 0,541 \implies \theta_V \approx 32,77^\circ$.
+Desplazamiento para el violeta: $h_V = d \frac{\sin(60^\circ - 32,77^\circ)}{\cos(32,77^\circ)} = d \frac{\sin(27,23^\circ)}{\cos(32,77^\circ)} \approx d \frac{0,457}{0,841} \approx 0,543d$.
+La separación es $\Delta h = |h_V - h_R| = |0,543d - 0,512d| = 0,031d$.
+Queremos que $\Delta h = 1$ cm: $0,031d = 1 \implies d = \frac{1}{0,031} \approx 32,26$ cm.
+\begin{cajaresultado}
+    El grosor debe ser $\boldsymbol{\approx 32,26}$ \textbf{cm}.
+\end{cajaresultado}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2004_jun_ord}
+
+\begin{cajaenunciado}
+Un objeto luminoso se encuentra a 4 m de una pantalla. Mediante una lente situada entre el objeto y la pantalla se pretende obtener una imagen del objeto sobre la pantalla que sea real, invertida y tres veces mayor que él.
+\begin{enumerate}
+    \item[1.] Determina el tipo de lente que se tiene que utilizar, así como su distancia focal y la posición en la que debe situarse. (1,2 puntos)
+    \item[2.] Existe una segunda posición de esta lente para la cual se obtiene una imagen del objeto, pero de tamaño menor que éste, sobre la pantalla. ¿Cuál es la nueva posición de la lente? ¿Cuál es el nuevo tamaño de la imagen? (0,8 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Distancia objeto-pantalla:} $|s| + s' = 4$ m (ya que s es negativo y s' positivo).
+    \item \textbf{Imagen:} Real, invertida, $A_L = -3$.
+    \item \textbf{Incógnitas:} Tipo de lente, $f$, $s$, $s'$, y una segunda posición.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Solo las lentes \textbf{convergentes} pueden formar imágenes reales de objetos reales.
+Usamos las ecuaciones de las lentes delgadas: $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f}$ y $A_L = \frac{s'}{s}$.
+El objeto es real ($s<0$), la imagen es real ($s'>0$). La distancia es $s' - s = 4$.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{1. Posición y distancia focal}
+$A_L = \frac{s'}{s} = -3 \implies s' = -3s$.
+Sustituimos en la distancia: $s' - s = 4 \implies -3s - s = 4 \implies -4s = 4 \implies s = -1$ m.
+La posición de la imagen es $s' = -3(-1) = 3$ m.
+La lente debe situarse a 1 m del objeto y a 3 m de la pantalla.
+Calculamos la focal: $\frac{1}{f} = \frac{1}{3} - \frac{1}{-1} = \frac{1}{3} + 1 = \frac{4}{3} \implies f = \frac{3}{4} = 0,75$ m.
+Como $f>0$, se confirma que la lente es convergente.
+\begin{cajaresultado}
+    Lente \textbf{convergente}, $f=0,75$ m, situada a \textbf{1 m del objeto}.
+\end{cajaresultado}
+
+\paragraph*{2. Segunda posición (Método de Bessel)}
+Si para una lente convergente existe una posición que forma una imagen real, existe una segunda posición simétrica. Las nuevas distancias objeto e imagen son las anteriores intercambiadas: $s_2 = -3$ m y $s_2' = 1$ m.
+La lente se sitúa ahora a 3 m del objeto.
+El nuevo aumento es $A_{L2} = \frac{s_2'}{s_2} = \frac{1}{-3} = -1/3$.
+\begin{cajaresultado}
+    La nueva posición es a \textbf{3 m del objeto}. El nuevo aumento es $\boldsymbol{-1/3}$ (imagen real, invertida y de un tercio del tamaño).
+\end{cajaresultado}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Cuestiones de Electromagnetismo}
+\label{sec:em_2004_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2004_jun_ord}
+
+\begin{cajaenunciado}
+Considérese un conductor rectilíneo de longitud infinita por el que circula una corriente eléctrica. En las proximidades del conductor se mueve una carga eléctrica positiva cuyo vector velocidad tiene la misma dirección y sentido que la corriente sobre el conductor. Indica, mediante un dibujo, la dirección y el sentido de la fuerza magnética que actúa sobre la partícula. Justifica la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Fuerza sobre carga en movimiento} \vspace{0.5cm} \textit{Prompt:} "Un hilo conductor horizontal con una corriente I hacia la derecha. Debajo del hilo, una carga positiva q se mueve con velocidad v, también hacia la derecha. Usar la regla de la mano derecha para dibujar el campo magnético B creado por el hilo en la posición de la carga (entrando en el papel, 'x'). Luego, usar la regla de la mano derecha (o izquierda para fuerza) para $\vec{F} = q(\vec{v} \times \vec{B})$. Con $\vec{v}$ a la derecha y $\vec{B}$ entrando, la fuerza $\vec{F}$ debe apuntar hacia el hilo (hacia arriba)."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Dirección y sentido de la fuerza magnética.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{enumerate}
+    \item \textbf{Campo magnético de un hilo:} Un hilo infinito con corriente $I$ crea un campo magnético $\vec{B}$ cuyas líneas de campo son círculos concéntricos. Su dirección se determina por la regla de la mano derecha.
+    \item \textbf{Fuerza de Lorentz:} Una carga $q$ que se mueve con velocidad $\vec{v}$ en un campo $\vec{B}$ experimenta una fuerza $\vec{F} = q(\vec{v} \times \vec{B})$.
+\end{enumerate}
+En nuestro caso, la corriente y la velocidad van en el mismo sentido (p.ej. $+X$). La carga está cerca, p.ej., en el plano XY. El campo $\vec{B}$ en la posición de la carga será perpendicular al plano que contiene al hilo y a la carga (p.ej., en dirección Z). El producto vectorial $\vec{v} \times \vec{B}$ será perpendicular a ambos, resultando en una fuerza atractiva o repulsiva respecto al hilo.
+
+\begin{cajaresultado}
+La fuerza magnética es \textbf{atractiva}, es decir, apunta desde la carga \textbf{hacia el conductor rectilíneo}.
+\end{cajaresultado}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2004_jun_ord}
+
+\begin{cajaenunciado}
+En un relámpago típico, la diferencia de potencial entre la nube y la tierra es $10^9\,\text{V}$ y la cantidad de carga transferida vale 30 C. ¿Cuánta energía se libera? Suponiendo que el campo eléctrico entre la nube y la tierra es uniforme y perpendicular a la tierra, y que la nube se encuentra a 500 m sobre el suelo, calcula la intensidad del campo eléctrico.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Diferencia de potencial ($\Delta V$):} $\Delta V = 10^9$ V.
+    \item \textbf{Carga transferida ($q$):} $q = 30$ C.
+    \item \textbf{Distancia ($d$):} $d = 500$ m.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Energía liberada:} La energía potencial eléctrica liberada al moverse una carga $q$ a través de una diferencia de potencial $\Delta V$ es $E = q \cdot \Delta V$.
+    \item \textbf{Campo eléctrico uniforme:} Para un campo uniforme, la diferencia de potencial se relaciona con la intensidad del campo $E$ y la distancia $d$ como $\Delta V = E \cdot d$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{Energía liberada}
+$$E = q \cdot \Delta V = (30 \, \text{C}) \cdot (10^9 \, \text{V}) = 3 \cdot 10^{10} \, \text{J}$$
+\begin{cajaresultado}
+    La energía liberada es $\boldsymbol{3 \cdot 10^{10}}$ \textbf{J}.
+\end{cajaresultado}
+
+\paragraph*{Intensidad del campo eléctrico}
+$$E = \frac{\Delta V}{d} = \frac{10^9 \, \text{V}}{500 \, \text{m}} = 2 \cdot 10^6 \, \text{V/m (o N/C)}$$
+\begin{cajaresultado}
+    La intensidad del campo eléctrico es $\boldsymbol{2 \cdot 10^6}$ \textbf{V/m}.
+\end{cajaresultado}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Cuestiones de Física Moderna}
+\label{sec:moderna_2004_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2004_jun_ord}
+
+\begin{cajaenunciado}
+Enuncia los postulados en los que se fundamenta la teoría de la relatividad especial.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La Teoría de la Relatividad Especial, formulada por Albert Einstein en 1905, se basa en dos postulados fundamentales:
+\begin{enumerate}
+    \item \textbf{Principio de Relatividad:} Las leyes de la física son las mismas en todos los sistemas de referencia inerciales. No existe un sistema de referencia absoluto o "en reposo"; todo movimiento es relativo. Esto significa que no se puede realizar ningún experimento para determinar si uno se está moviendo a velocidad constante o si está en reposo.
+    \item \textbf{Principio de la Constancia de la Velocidad de la Luz:} La velocidad de la luz en el vacío ($c$) tiene el mismo valor para todos los observadores inerciales, independientemente de la velocidad de la fuente de luz o del observador.
+\end{enumerate}
+\begin{cajaresultado}
+1. Las leyes de la física son invariantes en todos los sistemas de referencia inerciales.
+2. La velocidad de la luz en el vacío es una constante universal, $c$.
+\end{cajaresultado}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2004_jun_ord}
+
+\begin{cajaenunciado}
+Considérense las longitudes de onda de un electrón y de un protón. ¿Cuál es menor si las partículas tienen a) la misma velocidad, b) la misma energía cinética y c) el mismo momento lineal?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La longitud de onda de De Broglie es $\lambda = h/p = h/(mv)$. La energía cinética es $E_c = p^2/(2m)$.
+\paragraph*{a) Misma velocidad ($v$)}
+$\lambda_e = h/(m_e v)$, $\lambda_p = h/(m_p v)$. Como $m_p > m_e$, entonces $\lambda_p < \lambda_e$. Es menor la del protón.
+\paragraph*{b) Misma energía cinética ($E_c$)}
+$p = \sqrt{2mE_c}$. $\lambda = h/\sqrt{2mE_c}$. Como $m_p > m_e$, el denominador es mayor para el protón, por tanto $\lambda_p < \lambda_e$. Es menor la del protón.
+\paragraph*{c) Mismo momento lineal ($p$)}
+$\lambda_e = h/p$, $\lambda_p = h/p$. Son iguales.
+\begin{cajaresultado}
+a) Menor la del \textbf{protón}. b) Menor la del \textbf{protón}. c) Son \textbf{iguales}.
+\end{cajaresultado}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Cuestiones de Física Nuclear}
+\label{sec:nuclear_2004_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2004_jun_ord}
+
+\begin{cajaenunciado}
+Si un núcleo de ${}^6\text{Li}$, de número atómico 3 y número másico 6, reacciona con un núcleo de un determinado elemento X se producen dos partículas $\alpha$. Escribe la reacción y determina el número atómico y el número másico del elemento X.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Reactivos:} ${}^6_3\text{Li}$ y un núcleo desconocido ${}^A_Z\text{X}$.
+    \item \textbf{Productos:} Dos partículas alfa ($2 \cdot {}^4_2\text{He}$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En toda reacción nuclear se conservan el número másico (A) y el número atómico (Z).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La reacción es:
+$${}^6_3\text{Li} + {}^A_Z\text{X} \longrightarrow 2 \cdot {}^4_2\text{He}$$
+\paragraph*{Conservación del número másico (A):}
+$$6 + A = 2 \cdot 4 = 8 \implies A = 2$$
+\paragraph*{Conservación del número atómico (Z):}
+$$3 + Z = 2 \cdot 2 = 4 \implies Z = 1$$
+El elemento con Z=1 es el Hidrógeno (H). El núcleo ${}^2_1\text{X}$ es un isótopo del hidrógeno llamado Deuterio (${}^2_1\text{H}$ o D).
+
+\begin{cajaresultado}
+La reacción es $\boldsymbol{{}^6_3\text{Li} + {}^2_1\text{H} \longrightarrow 2 \cdot {}^4_2\text{He}}$. El elemento X es el \textbf{Deuterio}, con número atómico $\boldsymbol{Z=1}$ y número másico $\boldsymbol{A=2}$.
+\end{cajaresultado}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2004_jun_ord}
+
+\begin{cajaenunciado}
+El principio de indeterminación de Heisenberg establece para la energía y el tiempo la relación $\Delta E \cdot \Delta t \ge h/(2\pi)$. Se tiene un láser que emite impulsos de luz cuyo espectro de longitudes de onda se extiende de 783 nm a 817 nm. Calcula la anchura en frecuencias $\Delta f$ y la duración temporal mínima de esos impulsos. Tómese $c=3\times10^8\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda mínima ($\lambda_{min}$):} 783 nm.
+    \item \textbf{Longitud de onda máxima ($\lambda_{max}$):} 817 nm.
+    \item \textbf{Relación de indeterminación:} $\Delta E \cdot \Delta t \ge \hbar$.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La energía de un fotón es $E=hf$. Una indeterminación en la energía $\Delta E$ se relaciona con una indeterminación en la frecuencia $\Delta f$ como $\Delta E = h \Delta f$.
+Sustituyendo en el principio de Heisenberg: $(h \Delta f) \cdot \Delta t \ge h/(2\pi) \implies \Delta f \cdot \Delta t \ge 1/(2\pi)$.
+La anchura en frecuencias $\Delta f$ es la diferencia entre la frecuencia máxima y la mínima, que corresponden a la longitud de onda mínima y máxima, respectivamente. $f=c/\lambda$.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+$f_{max} = c/\lambda_{min} = (3\cdot10^8)/(783\cdot10^{-9}) \approx 3,8314 \cdot 10^{14}$ Hz.
+$f_{min} = c/\lambda_{max} = (3\cdot10^8)/(817\cdot10^{-9}) \approx 3,6720 \cdot 10^{14}$ Hz.
+$\Delta f = f_{max} - f_{min} \approx 1,594 \cdot 10^{13}$ Hz.
+La duración temporal mínima es:
+$\Delta t_{min} = \frac{1}{2\pi \Delta f} = \frac{1}{2\pi \cdot 1,594 \cdot 10^{13}} \approx 1 \cdot 10^{-14}$ s.
+\begin{cajaresultado}
+La anchura en frecuencias es $\boldsymbol{\Delta f \approx 1,59 \cdot 10^{13}}$ \textbf{Hz}. La duración mínima del pulso es $\boldsymbol{\Delta t_{min} \approx 1 \cdot 10^{-14}}$ \textbf{s} (10 femtosegundos).
+\end{cajaresultado}
+
+\newpage

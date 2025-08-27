@@ -1,0 +1,713 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2001 - Convocatoria Ordinaria}
+\label{chap:2001_jun_ord}
+
+% ======================================================================
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2001_jun_ord}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:1A_2001_jun_ord}
+
+\begin{cajaenunciado}
+Si la Luna siguiera una órbita circular en torno a la Tierra, pero con un radio igual a la cuarta parte de su valor actual, ¿cuál sería su período de revolución?.
+\textbf{Dato:} Tomar el periodo actual igual a 28 días.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Periodo actual ($T_1$):} $T_1 = 28$ días.
+    \item \textbf{Radio actual ($R_1$):} Valor desconocido, lo llamamos $R_1$.
+    \item \textbf{Nuevo radio ($R_2$):} $R_2 = \frac{1}{4} R_1$.
+    \item \textbf{Incógnita:} Nuevo periodo ($T_2$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Comparación de Órbitas Lunares} \vspace{0.5cm} \textit{Prompt para la imagen:} "La Tierra en el centro. Dibujar dos órbitas circulares concéntricas. La órbita exterior, más grande, está etiquetada con radio $R_1$ y periodo $T_1$. La órbita interior, más pequeña, está etiquetada con radio $R_2 = R_1/4$ y periodo $T_2$. Mostrar la Luna en ambas órbitas para la comparación." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{orbitas_comparadas.png}
+    }}
+    \caption{Esquema de las dos órbitas de la Luna.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para resolver este problema, se aplica la \textbf{Tercera Ley de Kepler}, que relaciona el periodo de revolución de un cuerpo con el radio de su órbita (considerando órbitas circulares). La ley establece que el cuadrado del periodo es proporcional al cubo del radio de la órbita.
+$$ \frac{T^2}{R^3} = \text{constante} $$
+Esta constante es la misma para todos los objetos que orbitan alrededor del mismo cuerpo central (en este caso, la Tierra).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Aplicamos la Tercera Ley de Kepler a las dos situaciones orbitales de la Luna (la actual y la hipotética):
+\begin{gather}
+    \frac{T_1^2}{R_1^3} = \frac{T_2^2}{R_2^3}
+\end{gather}
+Nuestro objetivo es despejar el nuevo periodo, $T_2$:
+\begin{gather}
+    T_2^2 = T_1^2 \cdot \frac{R_2^3}{R_1^3} = T_1^2 \left(\frac{R_2}{R_1}\right)^3
+\end{gather}
+Sustituimos la relación dada, $R_2 = \frac{1}{4} R_1$:
+\begin{gather}
+    T_2^2 = T_1^2 \left(\frac{R_1/4}{R_1}\right)^3 = T_1^2 \left(\frac{1}{4}\right)^3 = \frac{T_1^2}{64}
+\end{gather}
+Tomando la raíz cuadrada en ambos lados:
+\begin{gather}
+    T_2 = \sqrt{\frac{T_1^2}{64}} = \frac{T_1}{8}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos el valor del periodo actual, $T_1 = 28$ días:
+\begin{gather}
+    T_2 = \frac{28 \text{ días}}{8} = 3,5 \text{ días}
+\end{gather}
+\begin{cajaresultado}
+    El nuevo período de revolución sería de $\boldsymbol{3,5 \, \textbf{días}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Según la Tercera Ley de Kepler, una reducción drástica en el radio orbital conlleva una reducción aún mayor en el periodo de revolución. Al reducir el radio a la cuarta parte, el periodo se reduce a la octava parte del original, pasando de 28 a 3,5 días.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:1B_2001_jun_ord}
+
+\begin{cajaenunciado}
+¿Cuál debería ser la velocidad inicial de la Tierra para que escapase del Sol y se dirigiera hacia el infinito? Supóngase que la Tierra se encuentra describiendo una órbita circular alrededor del Sol.
+\textbf{Datos:} Distancia Tierra-Sol $=1,5\times10^{11}$ m; $M_{Sol}=2\times10^{30}\,\text{kg}$; $G=6,67\times10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Radio orbital de la Tierra ($R_T$):} $R_T = 1,5 \cdot 10^{11} \, \text{m}$.
+    \item \textbf{Masa del Sol ($M_S$):} $M_S = 2 \cdot 10^{30} \, \text{kg}$.
+    \item \textbf{Constante de Gravitación ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnita:} Velocidad de escape de la Tierra desde su órbita ($v_e$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Velocidad de Escape} \vspace{0.5cm} \textit{Prompt para la imagen:} "El Sol en el centro. La Tierra en su órbita circular de radio $R_T$. Desde la posición de la Tierra, dibujar un vector de velocidad tangencial etiquetado como 'velocidad de escape, $v_e$'. Mostrar una trayectoria parabólica que se aleja del Sol hacia el infinito, para indicar que ha escapado del campo gravitatorio." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{velocidad_escape_tierra.png}
+    }}
+    \caption{Concepto de velocidad de escape desde la órbita terrestre.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El cálculo de la velocidad de escape se basa en el \textbf{Principio de Conservación de la Energía Mecánica}.
+Para que un objeto escape de un campo gravitatorio, debe tener la energía mecánica total suficiente para llegar al infinito ($r \to \infty$) con velocidad nula. En el infinito, la energía potencial gravitatoria es cero ($E_p(\infty) = 0$), y si la velocidad es nula, la energía cinética también lo es ($E_c(\infty)=0$). Por lo tanto, la energía mecánica total mínima necesaria para escapar es cero.
+$$ E_{M, \text{total}} = E_c + E_p = 0 $$
+La energía mecánica en la órbita es $E_M = \frac{1}{2}m_T v_e^2 - G\frac{M_S m_T}{R_T}$, donde $m_T$ es la masa de la Tierra.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Igualamos la energía mecánica total a cero para encontrar la velocidad de escape:
+\begin{gather}
+    \frac{1}{2}m_T v_e^2 - G\frac{M_S m_T}{R_T} = 0
+\end{gather}
+La masa de la Tierra, $m_T$, se cancela:
+\begin{gather}
+    \frac{1}{2}v_e^2 = G\frac{M_S}{R_T}
+\end{gather}
+Despejando la velocidad de escape, $v_e$:
+\begin{gather}
+    v_e = \sqrt{\frac{2 G M_S}{R_T}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores numéricos en la expresión obtenida:
+\begin{gather}
+    v_e = \sqrt{\frac{2 \cdot (6,67 \cdot 10^{-11}) \cdot (2 \cdot 10^{30})}{1,5 \cdot 10^{11}}} = \sqrt{\frac{2,668 \cdot 10^{20}}{1,5 \cdot 10^{11}}} = \sqrt{1,778 \cdot 10^9} \approx 42171 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad necesaria para que la Tierra escape del Sol es $\boldsymbol{v_e \approx 42,17 \, \textbf{km/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando el principio de conservación de la energía, se determina que la velocidad de escape de un objeto depende de la masa del cuerpo central y de la distancia a él. Para que la Tierra pudiera escapar de la atracción solar desde su órbita actual, necesitaría alcanzar una velocidad de aproximadamente 42,2 km/s. Esta velocidad es $\sqrt{2}$ veces la velocidad orbital de la Tierra.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque II: Ondas}
+\label{sec:ondas_2001_jun_ord}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:2A_2001_jun_ord}
+
+\begin{cajaenunciado}
+La ecuación de una onda que se propaga por una cuerda es $y=8\sin\pi(100t-8x)$, donde x e y se miden en cm y t en segundos. Calcular el tiempo que tardará la onda en recorrer una distancia de 25m.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ecuación de la onda:} $y(x,t) = 8\sin(\pi(100t-8x)) \, \text{cm}$.
+    \item \textbf{Distancia a recorrer ($d$):} $d = 25 \, \text{m} = 2500 \, \text{cm}$.
+    \item \textbf{Incógnita:} Tiempo de recorrido ($t_{rec}$).
+\end{itemize}
+Para resolver el problema, primero debemos determinar la velocidad de propagación de la onda a partir de su ecuación.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La forma general de una onda armónica que se propaga en el sentido +X es $y(x,t) = A\sin(\omega t - kx)$. La velocidad de propagación ($v_p$) se puede calcular a partir de la frecuencia angular ($\omega$) y el número de onda ($k$) mediante la relación:
+$$ v_p = \frac{\omega}{k} $$
+Una vez conocida la velocidad, el tiempo que tarda en recorrer una distancia $d$ se calcula con la fórmula del movimiento rectilíneo uniforme:
+$$ t_{rec} = \frac{d}{v_p} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Primero, reescribimos la ecuación de la onda dada para identificar $\omega$ y $k$:
+\begin{gather}
+    y(x,t) = 8\sin(100\pi t - 8\pi x) \, \text{cm}
+\end{gather}
+Comparando con la forma general $y(x,t) = A\sin(\omega t - kx)$, identificamos:
+\begin{itemize}
+    \item Frecuencia angular: $\omega = 100\pi \, \text{rad/s}$.
+    \item Número de onda: $k = 8\pi \, \text{rad/cm}$. (Las unidades de k dependen de las unidades de x).
+\end{itemize}
+Calculamos la velocidad de propagación:
+\begin{gather}
+    v_p = \frac{\omega}{k}
+\end{gather}
+Y luego el tiempo de recorrido:
+\begin{gather}
+    t_{rec} = \frac{d}{v_p} = \frac{d}{\omega/k} = \frac{d \cdot k}{\omega}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Es crucial ser consistente con las unidades. Dado que $x$ está en cm, $k$ está en rad/cm.
+Calculamos la velocidad de propagación:
+\begin{gather}
+    v_p = \frac{100\pi \, \text{rad/s}}{8\pi \, \text{rad/cm}} = \frac{100}{8} \, \text{cm/s} = 12,5 \, \text{cm/s}
+\end{gather}
+Ahora, calculamos el tiempo para recorrer $d = 2500$ cm:
+\begin{gather}
+    t_{rec} = \frac{d}{v_p} = \frac{2500 \, \text{cm}}{12,5 \, \text{cm/s}} = 200 \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+    El tiempo que tardará la onda en recorrer 25 m es de $\boldsymbol{200 \, \textbf{s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la ecuación de onda, se han extraído los valores de la frecuencia angular y el número de onda, lo que ha permitido calcular una velocidad de propagación de 12,5 cm/s. Con esta velocidad constante, el tiempo necesario para cubrir una distancia de 25 metros es de 200 segundos.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:2B_2001_jun_ord}
+
+\begin{cajaenunciado}
+Explicar la diferencia entre ondas longitudinales y ondas transversales. Proponer un ejemplo de cada una de ellas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Onda Transversal} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una cuerda tensa horizontalmente. Mostrar una perturbación en forma de seno viajando hacia la derecha (vector de velocidad de propagación $\vec{v}$). En un punto de la cuerda, dibujar una flecha vertical (vector de velocidad de vibración $\vec{v}_y$) para mostrar que las partículas de la cuerda oscilan arriba y abajo, perpendicularmente a la dirección de propagación." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_transversal.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Onda Longitudinal} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un tubo largo lleno de partículas de aire. Mostrar una onda sonora viajando hacia la derecha (vector $\vec{v}$). La onda se visualiza como una secuencia de zonas de alta densidad de partículas (compresiones) y zonas de baja densidad (rarefacciones). En un punto, dibujar una flecha horizontal de doble sentido para mostrar que las partículas de aire oscilan hacia adelante y hacia atrás, en la misma dirección de la propagación." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_longitudinal_sonido.png}
+    }}
+    \caption{Comparación de la dirección de vibración y propagación.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La diferencia fundamental entre las ondas longitudinales y transversales reside en la \textbf{relación entre la dirección de la vibración de las partículas del medio y la dirección de propagación de la onda}.
+
+\paragraph{Ondas Transversales}
+En una onda transversal, las partículas del medio oscilan en una dirección \textbf{perpendicular} a la dirección en la que se propaga la energía de la onda.
+\begin{itemize}
+    \item \textbf{Característica clave:} La vibración es ortogonal a la propagación.
+    \item \textbf{Ejemplos:}
+    \begin{itemize}
+        \item Las ondas que se propagan en una cuerda de guitarra al pulsarla.
+        \item Las olas en la superficie del agua.
+        \item \textbf{Las ondas electromagnéticas (como la luz o las ondas de radio)}, donde lo que oscila son los campos eléctrico y magnético, siempre perpendicularmente a la dirección de propagación.
+    \end{itemize}
+\end{itemize}
+
+\paragraph{Ondas Longitudinales}
+En una onda longitudinal, las partículas del medio oscilan en la \textbf{misma dirección} (paralela) en la que se propaga la energía de la onda.
+\begin{itemize}
+    \item \textbf{Característica clave:} La vibración es paralela a la propagación.
+    \item Estas ondas se propagan como una serie de compresiones (zonas de alta densidad y presión) y rarefacciones (zonas de baja densidad y presión).
+    \item \textbf{Ejemplos:}
+    \begin{itemize}
+        \item \textbf{El sonido} en cualquier medio (aire, agua, sólidos).
+        \item Las ondas que se propagan a lo largo de un muelle (resorte) cuando se comprime y se suelta uno de sus extremos.
+        \item Las ondas sísmicas de tipo P (primarias).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La distinción entre ondas transversales y longitudinales se basa en la orientación de la oscilación del medio respecto a la propagación de la onda. Si la oscilación es perpendicular, la onda es transversal (ej: luz). Si la oscilación es paralela, la onda es longitudinal (ej: sonido).
+\end{cajaconclusion}
+
+\newpage
+% ======================================================================
+\section{Bloque III: Óptica Geométrica}
+\label{sec:optica_2001_jun_ord}
+% ======================================================================
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:3A_2001_jun_ord}
+
+\begin{cajaenunciado}
+Un rayo de luz monocromática incide en una de las caras de una lámina de vidrio, de caras planas y paralelas, con un ángulo de incidencia de 30º. La lámina de vidrio, situada en el aire, tiene un espesor de 5 cm y un índice de refracción de 1,5. Se pide:
+\begin{enumerate}
+    \item Dibujar el camino seguido por el rayo. (0.7 puntos)
+    \item Calcular la longitud recorrida por el rayo en el interior de la lámina. (0.7 puntos)
+    \item Calcular el ángulo que forma con la normal el rayo que emerge de la lámina. (0.6 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Medio inicial y final (aire):} $n_1 = n_3 \approx 1$.
+    \item \textbf{Medio intermedio (vidrio):} $n_2 = 1,5$.
+    \item \textbf{Ángulo de incidencia inicial:} $\theta_1 = 30^\circ$.
+    \item \textbf{Espesor de la lámina ($e$):} $e = 5 \, \text{cm}$.
+    \item \textbf{Incógnitas:} Diagrama de rayos, longitud recorrida en el vidrio ($L$), ángulo de emergencia ($\theta_3$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+El diagrama de rayos es la primera parte de la pregunta.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Trayectoria del rayo en una lámina} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de una lámina de vidrio de caras plano-paralelas de espesor 'e'. Un rayo de luz incide desde el aire con un ángulo $\theta_1$ respecto a la normal. El rayo se refracta al entrar al vidrio con un ángulo menor, $\theta_2$. El rayo viaja en línea recta a través del vidrio una distancia 'L'. Al llegar a la segunda cara, el rayo se refracta de nuevo para salir al aire con un ángulo $\theta_3$. El rayo emergente debe ser paralelo al rayo incidente original, pero desplazado lateralmente. Etiquetar claramente los ángulos $\theta_1, \theta_2, \theta_3$, el espesor 'e' y la longitud 'L'." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{lamina_plano_paralela.png}
+    }}
+    \caption{Camino seguido por el rayo de luz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica la \textbf{Ley de Snell} de la refracción en cada una de las dos interfaces (aire-vidrio y vidrio-aire). La ley establece que $n_i \sin(\theta_i) = n_r \sin(\theta_r)$. Para calcular la longitud del camino se usa trigonometría básica.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{2. Longitud recorrida ($L$)}
+Primero, aplicamos la Ley de Snell en la primera interfaz (aire-vidrio) para encontrar el ángulo de refracción $\theta_2$:
+\begin{gather}
+    n_1 \sin(\theta_1) = n_2 \sin(\theta_2) \implies \sin(\theta_2) = \frac{n_1}{n_2}\sin(\theta_1)
+\end{gather}
+Del diagrama de rayos, se forma un triángulo rectángulo dentro de la lámina, donde el espesor $e$ es el cateto adyacente al ángulo $\theta_2$ y la longitud $L$ es la hipotenusa. Por lo tanto:
+\begin{gather}
+    \cos(\theta_2) = \frac{e}{L} \implies L = \frac{e}{\cos(\theta_2)}
+\end{gather}
+
+\paragraph{3. Ángulo de emergencia ($\theta_3$)}
+Aplicamos la Ley de Snell en la segunda interfaz (vidrio-aire). El ángulo de incidencia aquí es $\theta_2$ (por ser las caras paralelas) y el ángulo de refracción es el ángulo de emergencia $\theta_3$:
+\begin{gather}
+    n_2 \sin(\theta_2) = n_3 \sin(\theta_3)
+\end{gather}
+Como $n_3 = n_1$ (aire), tenemos $n_2 \sin(\theta_2) = n_1 \sin(\theta_3)$. Pero por la primera refracción, sabemos que $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$. Combinando ambas ecuaciones:
+\begin{gather}
+    n_1 \sin(\theta_1) = n_1 \sin(\theta_3) \implies \sin(\theta_1) = \sin(\theta_3) \implies \theta_1 = \theta_3
+\end{gather}
+El rayo emerge con el mismo ángulo con el que incidió.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Cálculo de $\theta_2$ y $L$}
+\begin{gather}
+    \sin(\theta_2) = \frac{1}{1,5} \sin(30^\circ) = \frac{1}{1,5} \cdot (0,5) = \frac{1}{3} \implies \theta_2 = \arcsin\left(\frac{1}{3}\right) \approx 19,47^\circ
+\end{gather}
+Ahora calculamos el coseno de este ángulo para hallar L:
+\begin{gather}
+    \cos(19,47^\circ) \approx 0,9428
+\end{gather}
+\begin{gather}
+    L = \frac{5 \, \text{cm}}{0,9428} \approx 5,30 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    La longitud recorrida en el interior de la lámina es $\boldsymbol{L \approx 5,30 \, \textbf{cm}}$.
+\end{cajaresultado}
+
+\paragraph{Cálculo de $\theta_3$}
+Como se demostró simbólicamente, el ángulo de emergencia es igual al de incidencia.
+\begin{cajaresultado}
+    El ángulo que forma el rayo emergente con la normal es $\boldsymbol{\theta_3 = 30^\circ}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al atravesar una lámina de caras plano-paralelas, un rayo de luz emerge en una dirección paralela a la incidente, pero con un desplazamiento lateral. Para una incidencia de 30º en una lámina de vidrio de 5 cm, el rayo recorre 5,30 cm en su interior y emerge de nuevo a 30º.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:3B_2001_jun_ord}
+
+\begin{cajaenunciado}
+Sea una lente convergente de distancia focal 10 cm. Obtener gráficamente la imagen de un objeto, y comentar sus características, cuando éste está situado:
+\begin{enumerate}
+    \item 20 cm antes de la lente. (0,8 puntos)
+    \item 5 cm antes de la lente. (0,8 puntos)
+    \item Calcular la potencia de la lente. (0,4 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Convergente.
+    \item \textbf{Distancia focal ($f$):} $f = 10 \, \text{cm}$. El foco objeto F está en x=-10cm, el foco imagen F' en x=+10cm. El radio de curvatura es $2f=20$ cm.
+    \item \textbf{Caso 1:} Objeto en $s_o = -20 \, \text{cm}$ (es decir, en el punto $-2f$).
+    \item \textbf{Caso 2:} Objeto en $s_o = -5 \, \text{cm}$ (es decir, entre el foco y la lente).
+    \item \textbf{Incógnita 3:} Potencia de la lente (P).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Caso 1: Objeto en $s_o = -2f$} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente convergente con focos F y F' a 10 cm. Un objeto vertical se coloca en la posición $x=-20$ cm (punto -2f). Trazar dos rayos principales: 1) Un rayo paralelo al eje óptico que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico y no se desvía. Mostrar que los rayos convergen y forman una imagen en $x=+20$ cm (punto +2f). La imagen debe ser del mismo tamaño que el objeto y estar invertida." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_convergente_2f.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Caso 2: Objeto en $s_o = -f/2$} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente convergente con focos F y F' a 10 cm. Un objeto vertical se coloca en $x=-5$ cm. Trazar dos rayos principales: 1) Un rayo paralelo al eje óptico que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico y no se desvía. Los rayos refractados divergen. Prolongarlos hacia atrás (líneas discontinuas) hasta que se crucen para formar una imagen. La imagen debe ser más grande que el objeto, derecha y virtual." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_convergente_lupa_2.png}
+    }}
+    \caption{Formación de imágenes para las dos posiciones del objeto.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos y Resultados}
+La construcción de imágenes se basa en el trazado de rayos principales. La potencia de una lente es la inversa de su distancia focal en metros.
+\paragraph{1. Objeto a 20 cm ($s_o = -2f$)}
+\begin{itemize}
+    \item \textbf{Características de la imagen:} Como se observa en el diagrama de rayos, la imagen formada es \textbf{Real}, \textbf{Invertida} y \textbf{de igual tamaño} que el objeto. Se forma a una distancia de 20 cm de la lente, en el lado opuesto ($s_i = +2f$).
+\end{itemize}
+
+\paragraph{2. Objeto a 5 cm ($s_o = -f/2$)}
+\begin{itemize}
+    \item \textbf{Características de la imagen:} En este caso, los rayos refractados divergen y son sus prolongaciones las que se cortan. La imagen formada es \textbf{Virtual}, \textbf{Derecha} y \textbf{de mayor tamaño} que el objeto. Esta es la configuración de una lupa.
+\end{itemize}
+
+\paragraph{3. Potencia de la lente}
+La potencia ($P$) de una lente se calcula como la inversa de su distancia focal ($f$) expresada en metros.
+\begin{gather}
+    f = 10 \, \text{cm} = 0,1 \, \text{m} \\
+    P = \frac{1}{f} = \frac{1}{0,1 \, \text{m}} = 10 \, \text{m}^{-1} = 10 \text{ dioptrías}
+\end{gather}
+\begin{cajaresultado}
+    La potencia de la lente es $\boldsymbol{P = +10 \, \textbf{dioptrías}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Una lente convergente puede formar imágenes con características muy diferentes dependiendo de la posición del objeto. Si el objeto se sitúa en el doble de la distancia focal, la imagen es real, invertida y de igual tamaño. Si se sitúa entre el foco y la lente, actúa como lupa, generando una imagen virtual, derecha y aumentada. La potencia de esta lente es de +10 dioptrías.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque IV: Campo Eléctrico y Magnético}
+\label{sec:em_2001_jun_ord}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:4A_2001_jun_ord}
+
+\begin{cajaenunciado}
+Un hilo conductor rectilíneo de longitud infinita, está ubicado sobre el eje OZ, y por él circula una corriente continua de intensidad I, en sentido positivo de dicho eje. Una partícula con carga positiva Q, se desplaza con velocidad v sobre el eje OX, en sentido positivo del mismo. Determinar la dirección y sentido de la fuerza magnética que actúa sobre la partícula.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Corriente:} $\vec{I}$ a lo largo del eje Z, sentido $+\vec{k}$.
+    \item \textbf{Partícula:} Carga $Q>0$, velocidad $\vec{v}$ a lo largo del eje X, sentido $+\vec{i}$.
+    \item \textbf{Incógnita:} Dirección y sentido de la fuerza magnética $\vec{F}_m$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fuerza sobre carga en movimiento} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas 3D (X, Y, Z). Un hilo infinito se sitúa sobre el eje Z, con una flecha indicando una corriente $I$ hacia arriba ($+Z$). Mostrar una carga positiva $Q$ en un punto del eje X positivo. Dibujar el vector velocidad $\vec{v}$ de la carga, apuntando en la dirección $+X$. Dibujar una línea de campo magnético circular en el plano XY, centrada en el origen, con sentido antihorario (regla de la mano derecha). En el punto donde está la carga, dibujar el vector de campo magnético $\vec{B}$, tangente al círculo y apuntando en la dirección $+Y$. Finalmente, dibujar el vector de la fuerza magnética $\vec{F}_m = Q(\vec{v} \times \vec{B})$, apuntando en la dirección $+Z$." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{fuerza_lorentz_hilo.png}
+    }}
+    \caption{Determinación de la dirección de la fuerza magnética.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve en dos pasos:
+\begin{enumerate}
+    \item \textbf{Campo magnético creado por un hilo infinito:} Un hilo de corriente crea un campo magnético a su alrededor. La dirección y el sentido de este campo en cualquier punto se determinan mediante la \textbf{regla de la mano derecha}. Las líneas de campo son circunferencias concéntricas al hilo, contenidas en planos perpendiculares a él.
+    \item \textbf{Fuerza de Lorentz:} Una partícula cargada que se mueve en un campo magnético experimenta una fuerza dada por $\vec{F}_m = Q(\vec{v} \times \vec{B})$. La dirección y el sentido de esta fuerza se determinan mediante el producto vectorial (o la regla de la mano derecha para el producto vectorial).
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico y Razonamiento}
+\paragraph{Paso 1: Dirección del Campo Magnético ($\vec{B}$)}
+La partícula se mueve sobre el eje OX. En cualquier punto del eje OX, el campo magnético $\vec{B}$ creado por la corriente $I$ en el eje OZ se puede determinar con la regla de la mano derecha: si el pulgar apunta en la dirección de la corriente ($+\vec{k}$), los dedos se curvan en la dirección de las líneas de campo. En el eje OX positivo, los dedos apuntan en la dirección del eje OY positivo. Por tanto:
+$$ \vec{B} \text{ tiene la dirección y sentido del eje } OY \text{ positivo } (+\vec{j}) $$
+
+\paragraph{Paso 2: Dirección de la Fuerza Magnética ($\vec{F}_m$)}
+La velocidad de la partícula es en la dirección y sentido del eje OX positivo ($+\vec{i}$).
+$$ \vec{v} \propto \vec{i} \quad ; \quad \vec{B} \propto \vec{j} $$
+Calculamos el producto vectorial $\vec{v} \times \vec{B}$:
+$$ \vec{v} \times \vec{B} \propto \vec{i} \times \vec{j} = \vec{k} $$
+La fuerza magnética es $\vec{F}_m = Q(\vec{v} \times \vec{B})$. Como la carga $Q$ es positiva, la fuerza $\vec{F}_m$ tiene la misma dirección y sentido que el producto vectorial.
+$$ \vec{F}_m \text{ tiene la dirección y sentido del eje } OZ \text{ positivo } (+\vec{k}) $$
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza magnética que actúa sobre la partícula tiene la \textbf{dirección del eje OZ} y su \textbf{sentido es positivo}. La fuerza es paralela al hilo de corriente.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:4B_2001_jun_ord}
+
+\begin{cajaenunciado}
+Describir el proceso de generación de una corriente alterna en una espira. Enunciar la ley en la que se basa.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Generador de Corriente Alterna (Alternador)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un campo magnético uniforme horizontal (de N a S). Dentro del campo, una espira conductora rectangular está girando con una velocidad angular constante $\omega$. Los extremos de la espira están conectados a dos anillos colectores (anillos de delga) que giran con ella. Dos escobillas fijas hacen contacto con los anillos, conectando la espira a un circuito externo con una bombilla. Mostrar la espira en varias posiciones de su rotación (0°, 90°, 180°, 270°) e indicar cómo el flujo magnético a través de ella cambia, siendo máximo a 0°/180° y nulo a 90°/270°, y cómo la corriente inducida cambia de sentido." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{alternador_ca.png}
+    }}
+    \caption{Principio de funcionamiento de un generador de C.A.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El principio fundamental en el que se basa la generación de corriente alterna es la \textbf{Ley de Faraday-Lenz de la Inducción Electromagnética}.
+
+\paragraph{Enunciado de la Ley de Faraday-Lenz}
+La ley establece que siempre que varía el flujo magnético ($\Phi_B$) a través de una superficie delimitada por un circuito cerrado, se induce en dicho circuito una fuerza electromotriz (f.e.m., $\mathcal{E}$), cuyo valor es igual a la tasa de cambio del flujo, con signo negativo:
+$$ \mathcal{E} = - \frac{d\Phi_B}{dt} $$
+El signo negativo (Ley de Lenz) indica que la corriente inducida se opone al cambio de flujo que la produce.
+
+\paragraph{Proceso de Generación en una Espira}
+Un generador de corriente alterna (alternador) consta, en su forma más simple, de una espira conductora que se hace girar a una velocidad angular constante ($\omega$) en el seno de un campo magnético uniforme ($\vec{B}$).
+\begin{enumerate}
+    \item \textbf{Flujo Magnético Variable:} El flujo magnético a través de la espira es $\Phi_B = \vec{B} \cdot \vec{S} = B S \cos(\theta)$, donde $S$ es el área de la espira y $\theta$ es el ángulo entre el campo $\vec{B}$ y el vector normal a la superficie de la espira, $\vec{S}$. Como la espira gira, este ángulo cambia con el tiempo según $\theta = \omega t$.
+    \item \textbf{Expresión del Flujo:} El flujo se convierte en una función sinusoidal del tiempo:
+    $$ \Phi_B(t) = B S \cos(\omega t) $$
+    \item \textbf{Inducción de la F.E.M.:} Aplicamos la Ley de Faraday, derivando el flujo con respecto al tiempo:
+    $$ \mathcal{E}(t) = - \frac{d}{dt} [B S \cos(\omega t)] = - B S (-\omega \sin(\omega t)) = B S \omega \sin(\omega t) $$
+    \item \textbf{Corriente Alterna:} La fuerza electromotriz inducida, $\mathcal{E}(t)$, es una función senoidal. Si la espira está conectada a un circuito externo, esta f.e.m. producirá una corriente eléctrica que también varía senoidalmente, es decir, una \textbf{corriente alterna}. La corriente cambia de dirección y de valor periódicamente, completando un ciclo en cada vuelta de la espira.
+\end{enumerate}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La generación de corriente alterna se basa en la Ley de Faraday-Lenz. Al girar una espira conductora dentro de un campo magnético, el flujo magnético que la atraviesa varía de forma senoidal. Esta variación de flujo induce una fuerza electromotriz también senoidal, que da lugar a una corriente que invierte su sentido periódicamente: una corriente alterna.
+\end{cajaconclusion}
+
+\newpage
+% ======================================================================
+\section{Bloque V: Física Moderna}
+\label{sec:moderna_2001_jun_ord}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:5A_2001_jun_ord}
+
+\begin{cajaenunciado}
+Enuncia la hipótesis de de Broglie y comenta algún resultado experimental que de soporte a dicha hipótesis.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Difracción de Electrones (Davisson-Germer)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema del experimento de Davisson y Germer. Un cañón de electrones emite un haz de electrones con un momento 'p' conocido. El haz incide sobre un cristal de Níquel. Los electrones son dispersados en varias direcciones. Un detector de electrones móvil, que puede girar alrededor del cristal, mide la intensidad del haz dispersado en función del ángulo de dispersión $\theta$. Dibujar un gráfico polar superpuesto que muestre un pico de intensidad en un ángulo específico, indicando difracción y, por tanto, interferencia constructiva." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{davisson_germer.png}
+    }}
+    \caption{Representación del experimento que confirmó la naturaleza ondulatoria de la materia.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Hipótesis de De Broglie (1924)}
+En su tesis doctoral, Louis de Broglie propuso una hipótesis revolucionaria para unificar la física de la materia y la radiación. Postuló que, así como la luz exhibe una dualidad onda-partícula, la materia también la posee. Específicamente, enunció que \textbf{toda partícula material en movimiento lleva asociada una onda}, cuya longitud de onda ($\lambda$) está inversamente relacionada con su momento lineal ($p$).
+La ecuación que cuantifica esta relación es:
+$$ \lambda = \frac{h}{p} = \frac{h}{mv} $$
+donde $h$ es la constante de Planck. Esto significa que objetos masivos o rápidos (gran momento) tienen longitudes de onda muy pequeñas e indetectables, pero partículas subatómicas como los electrones pueden tener longitudes de onda del orden de las distancias atómicas.
+
+\paragraph{Resultado Experimental de Soporte: Experimento de Davisson y Germer (1927)}
+La confirmación experimental más importante de la hipótesis de de Broglie llegó con el experimento realizado por los físicos estadounidenses Clinton Davisson y Lester Germer.
+\begin{itemize}
+    \item \textbf{El experimento:} Dirigieron un haz de electrones de energía conocida contra la superficie de un cristal de níquel.
+    \item \textbf{La observación:} Descubrieron que los electrones no se dispersaban al azar, sino que lo hacían con intensidades máximas en ángulos muy específicos, de manera análoga a como los rayos X (que se sabía que eran ondas) se difractaban al pasar por un cristal (difracción de Bragg).
+    \item \textbf{La conclusión:} El patrón de dispersión observado era un \textbf{patrón de difracción e interferencia}. Estos son fenómenos exclusivamente ondulatorios. La única manera de explicar que los electrones interfirieran constructivamente en ciertos ángulos era aceptar que el haz de electrones se comportaba como una onda. Además, la longitud de onda calculada a partir del patrón de difracción coincidía perfectamente con la predicha por la ecuación de de Broglie para el momento de los electrones utilizados.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La hipótesis de de Broglie generalizó la dualidad onda-partícula a la materia. El experimento de Davisson y Germer proporcionó la prueba definitiva de esta idea al demostrar que los electrones pueden ser difractados, un comportamiento característico de las ondas. Este resultado fue un pilar fundamental para el desarrollo completo de la mecánica cuántica.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:5B_2001_jun_ord}
+
+\begin{cajaenunciado}
+Si se fusionan dos átomos de hidrógeno, ¿se libera energía en la reacción? ¿Y si se fisiona un átomo de uranio? Razona tu respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Curva de Energía de Enlace por Nucleón} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico con el número másico A en el eje horizontal y la energía de enlace por nucleón (B/A) en MeV en el eje vertical. Dibujar la curva característica: empieza baja para el Hidrógeno (A=1), sube rápidamente hasta un pico máximo en el Hierro-56 (A=56), y luego desciende lentamente para núcleos más pesados como el Uranio (A=235). Marcar las regiones de 'Fusión' en la parte ascendente de la izquierda y de 'Fisión' en la parte descendente de la derecha. Usar flechas para mostrar que ambos procesos se mueven hacia el pico de mayor estabilidad (mayor B/A)." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{curva_energia_enlace.png}
+    }}
+    \caption{Estabilidad nuclear y liberación de energía.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La respuesta a ambas preguntas es \textbf{SÍ}, en ambos procesos se libera una enorme cantidad de energía. El razonamiento se basa en el concepto de \textbf{energía de enlace nuclear} y la \textbf{estabilidad de los núcleos atómicos}.
+\begin{itemize}
+    \item \textbf{Energía de Enlace por Nucleón (B/A):} Es la energía promedio que se necesita para extraer un nucleón (protón o neutrón) de un núcleo. Un valor más alto de B/A indica un núcleo más estable.
+    \item \textbf{Principio de Liberación de Energía:} Se libera energía en cualquier reacción nuclear en la que los productos finales sean más estables que los reactivos iniciales. Esto significa que la suma de las energías de enlace de los productos es mayor que la de los reactivos.
+\end{itemize}
+La curva de energía de enlace por nucleón (mostrada en la figura) es clave para entenderlo. Muestra que los núcleos más estables son los de masa intermedia, alrededor del Hierro-56.
+
+\paragraph{Fusión Nuclear}
+La fusión es el proceso por el cual núcleos muy ligeros (como los isótopos de hidrógeno, deuterio y tritio) se combinan para formar un núcleo más pesado (como el helio).
+\begin{itemize}
+    \item \textbf{Razonamiento:} Los núcleos de hidrógeno están en la parte más baja y ascendente de la curva de estabilidad. Al fusionarse para formar helio, se "asciende" por la curva hacia una región de mayor energía de enlace por nucleón. El núcleo de helio resultante es mucho más estable que los núcleos de hidrógeno por separado. Esta diferencia de estabilidad se traduce en una liberación de la energía de enlace sobrante, según la fórmula $E=\Delta m c^2$.
+\end{itemize}
+
+\paragraph{Fisión Nuclear}
+La fisión es el proceso por el cual un núcleo muy pesado e inestable (como el Uranio-235) se divide, generalmente al absorber un neutrón, en dos o más núcleos más ligeros y estables, además de otros subproductos.
+\begin{itemize}
+    \item \textbf{Razonamiento:} Los núcleos muy pesados como el uranio se encuentran en la parte descendente de la curva, donde la estabilidad por nucleón es menor que la de los núcleos intermedios. Al fisionarse, se producen núcleos de masa intermedia (como Bario y Kriptón) que están más arriba en la curva de estabilidad. Este aumento en la energía de enlace por nucleón total implica que se libera una gran cantidad de energía.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Tanto la fusión de núcleos ligeros como la fisión de núcleos pesados liberan energía. Ambos procesos son exotérmicos porque los productos de la reacción son núcleos más estables (con mayor energía de enlace por nucleón) que los reactivos originales. La naturaleza busca la máxima estabilidad, que se encuentra en los núcleos de masa intermedia, y tanto la fusión como la fisión son caminos para alcanzar esa estabilidad.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque VI: Relatividad y Física Nuclear}
+\label{sec:relatividad_nuclear_2001_jun_ord}
+% ======================================================================
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:6A_2001_jun_ord}
+
+\begin{cajaenunciado}
+Se determina, por métodos ópticos, la longitud de una nave espacial que pasa por las proximidades de la Tierra, resultando ser 100 m. En contacto radiofónico los astronautas que viajan en la nave comunican que la longitud de su nave es de 120 m. ¿A qué velocidad viaja la nave con respecto a la Tierra?
+\textbf{Dato:} $c=3\times10^{8}\,\text{m/s}$
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+(Nota: El enunciado original del examen contiene un error en el dato de $c$, indicando $3\times10^5$ m/s. Se utilizará el valor correcto de $3\times10^8$ m/s.)
+\begin{itemize}
+    \item \textbf{Longitud propia ($L_p$):} Es la longitud de la nave medida en su propio sistema de referencia en reposo. Es el valor que comunican los astronautas. $L_p = 120 \, \text{m}$.
+    \item \textbf{Longitud contraída ($L$):} Es la longitud medida desde un sistema de referencia en movimiento relativo (la Tierra). $L = 100 \, \text{m}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3 \cdot 10^8 \, \text{m/s}$.
+    \item \textbf{Incógnita:} La velocidad relativa de la nave ($v$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno descrito es la \textbf{contracción de la longitud}, una consecuencia de la Teoría de la Relatividad Especial. Postula que la longitud de un objeto en movimiento, medida por un observador, es menor que la longitud medida en el sistema de referencia propio del objeto. La relación es:
+$$ L = \frac{L_p}{\gamma} = L_p \sqrt{1 - \frac{v^2}{c^2}} $$
+donde $\gamma$ es el factor de Lorentz.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Partimos de la ecuación de la contracción de la longitud y nuestro objetivo es despejar la velocidad $v$.
+\begin{gather}
+    L = L_p \sqrt{1 - \frac{v^2}{c^2}}
+\end{gather}
+Dividimos por $L_p$ y elevamos al cuadrado ambos lados:
+\begin{gather}
+    \left(\frac{L}{L_p}\right)^2 = 1 - \frac{v^2}{c^2}
+\end{gather}
+Reorganizamos para aislar el término de la velocidad:
+\begin{gather}
+    \frac{v^2}{c^2} = 1 - \left(\frac{L}{L_p}\right)^2
+\end{gather}
+Finalmente, despejamos $v$:
+\begin{gather}
+    v = c \sqrt{1 - \left(\frac{L}{L_p}\right)^2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores de las longitudes en la ecuación:
+\begin{gather}
+    v = (3 \cdot 10^8 \, \text{m/s}) \sqrt{1 - \left(\frac{100 \, \text{m}}{120 \, \text{m}}\right)^2} = (3 \cdot 10^8) \sqrt{1 - \left(\frac{5}{6}\right)^2} \nonumber \\
+    v = (3 \cdot 10^8) \sqrt{1 - \frac{25}{36}} = (3 \cdot 10^8) \sqrt{\frac{11}{36}} = (3 \cdot 10^8) \frac{\sqrt{11}}{6} \nonumber \\
+    v \approx (3 \cdot 10^8) \cdot 0,5527 \approx 1,658 \cdot 10^8 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de la nave es $\boldsymbol{v \approx 1,66 \cdot 10^8 \, \textbf{m/s}}$ (aproximadamente 0,55c).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La diferencia entre la longitud medida desde la Tierra y la longitud propia de la nave es un efecto real predicho por la relatividad especial. Para que una nave de 120 m sea percibida como de 100 m, debe viajar a una velocidad muy alta, del orden del 55\% de la velocidad de la luz, lo que demuestra la magnitud de los efectos relativistas a altas velocidades.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:6B_2001_jun_ord}
+
+\begin{cajaenunciado}
+En una excavación arqueológica se ha encontrado una estatua de madera cuyo contenido de $^{14}\text{C}$ es el 58\% del que poseen las maderas actuales de la zona. Sabiendo que el periodo de semi-desintegración del $^{14}\text{C}$ es de 5570 años, determinar la antigüedad de la estatua encontrada.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 5570$ años.
+    \item \textbf{Fracción de $^{14}\text{C}$ restante:} El contenido es el 58\% del original. Esto significa que la relación entre el número de núcleos actuales, $N(t)$, y el número de núcleos iniciales, $N_0$, es:
+    $$ \frac{N(t)}{N_0} = 0,58 $$
+    \item \textbf{Incógnita:} La antigüedad de la estatua ($t$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El método de datación por radiocarbono se basa en la \textbf{ley de desintegración radiactiva}.
+\begin{itemize}
+    \item Los organismos vivos mantienen un nivel constante de $^{14}\text{C}$ (isótopo radiactivo) al intercambiar carbono con la atmósfera. Al morir, dejan de intercambiarlo y el $^{14}\text{C}$ que contienen comienza a desintegrarse sin ser reemplazado.
+    \item \textbf{Ley de desintegración:} El número de núcleos radiactivos $N(t)$ que quedan en una muestra después de un tiempo $t$ viene dado por:
+    $$ N(t) = N_0 e^{-\lambda t} $$
+    donde $N_0$ es el número inicial de núcleos y $\lambda$ es la constante de desintegración.
+    \item \textbf{Constante de desintegración ($\lambda$):} Se relaciona con el periodo de semidesintegración ($T_{1/2}$) mediante:
+    $$ \lambda = \frac{\ln(2)}{T_{1/2}} $$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Partimos de la ley de desintegración radiactiva:
+\begin{gather}
+    \frac{N(t)}{N_0} = e^{-\lambda t}
+\end{gather}
+Para despejar el tiempo $t$, aplicamos el logaritmo neperiano a ambos lados de la ecuación:
+\begin{gather}
+    \ln\left(\frac{N(t)}{N_0}\right) = \ln(e^{-\lambda t}) = -\lambda t
+\end{gather}
+Despejamos $t$:
+\begin{gather}
+    t = -\frac{1}{\lambda} \ln\left(\frac{N(t)}{N_0}\right)
+\end{gather}
+Sustituimos la expresión de $\lambda$ en función de $T_{1/2}$:
+\begin{gather}
+    t = -\frac{T_{1/2}}{\ln(2)} \ln\left(\frac{N(t)}{N_0}\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores dados en la ecuación final:
+\begin{gather}
+    t = -\frac{5570 \text{ años}}{\ln(2)} \ln(0,58) \nonumber \\
+    t \approx -\frac{5570}{0,693} \cdot (-0,5447) \approx - (8037,5) \cdot (-0,5447) \approx 4378 \text{ años}
+\end{gather}
+\begin{cajaresultado}
+    La antigüedad de la estatua es de aproximadamente $\boldsymbol{4378 \, \textbf{años}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Utilizando la ley de decaimiento exponencial para isótopos radiactivos, y conociendo el periodo de semidesintegración del Carbono-14, es posible determinar la antigüedad de muestras orgánicas. Una muestra que conserva el 58\% de su $^{14}\text{C}$ original indica que el organismo del que proviene murió hace aproximadamente 4378 años.
+\end{cajaconclusion}
+
+\newpage

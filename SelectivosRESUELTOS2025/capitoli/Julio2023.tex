@@ -1,0 +1,1066 @@
+% !TEX root = ../main.tex
+\chapter{Examen Julio 2023 - Convocatoria Ordinaria}
+\label{chap:2023_jul_ord}
+
+% ======================================================================
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2023_jul_ord}
+% ======================================================================
+
+\subsection{Cuestión 1}
+\label{subsec:C1_2023_jul_ord}
+
+\begin{cajaenunciado}
+Deduce la expresión del periodo de un satélite que sigue una órbita circular alrededor de un planeta, en función de la masa de este y del radio de la órbita.
+Alrededor del planeta, de masa M, orbitan dos satélites de igual masa m y radios orbitales $r_1$ y $r_2$, siendo $r_{2}>r_{1}$. Discute cuál de los dos satélites orbitará con mayor periodo. Razona también cuál de los dos satélites tendrá menor energía potencial gravitatoria.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del planeta central:} $M$
+    \item \textbf{Masa de los satélites:} $m$
+    \item \textbf{Radio orbital del satélite 1:} $r_1$
+    \item \textbf{Radio orbital del satélite 2:} $r_2$, con la condición $r_2 > r_1$.
+    \item \textbf{Constante de Gravitación Universal:} $G$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresión del periodo orbital $T$ en función de $M$ y $r$.
+        \item Comparación entre los periodos $T_1$ y $T_2$.
+        \item Comparación entre las energías potenciales $E_{p1}$ y $E_{p2}$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Órbitas de los satélites} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico de masa M en el centro. Dos satélites de masa m en órbitas circulares concéntricas. El satélite 1 está en una órbita interior de radio r1. El satélite 2 está en una órbita exterior de radio r2. Para cada satélite, dibujar un vector de Fuerza Gravitatoria (Fg) apuntando hacia el centro del planeta. Etiquetar claramente M, m, r1 y r2."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbitas_comparadas.png}
+    }}
+    \caption{Esquema de los dos satélites orbitando el planeta M.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para deducir el periodo orbital, se asume que la única fuerza que actúa sobre el satélite es la fuerza de atracción gravitatoria ejercida por el planeta. Esta fuerza es la responsable de mantener al satélite en su órbita circular, por lo que actúa como fuerza centrípeta.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal de Newton:} La fuerza de atracción entre el planeta y un satélite es $F_g = G \frac{M m}{r^2}$.
+    \item \textbf{Dinámica del Movimiento Circular Uniforme (MCU):} La fuerza centrípeta necesaria para mantener una órbita circular es $F_c = m a_c = m \frac{v^2}{r}$. La velocidad orbital $v$ se relaciona con el periodo $T$ mediante $v = \frac{2\pi r}{T}$.
+    \item \textbf{Energía Potencial Gravitatoria:} La energía potencial de un sistema de dos masas M y m separadas por una distancia r es $E_p = -G \frac{M m}{r}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Expresión del Periodo}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta ($F_g = F_c$):
+\begin{gather}
+    G \frac{M m}{r^2} = m \frac{v^2}{r}
+\end{gather}
+Sustituimos la velocidad $v$ por su expresión en función del periodo $T$:
+\begin{gather}
+    G \frac{M}{r^2} = \frac{(2\pi r/T)^2}{r} = \frac{4\pi^2 r}{T^2}
+\end{gather}
+Despejando el periodo $T$, obtenemos la tercera ley de Kepler:
+\begin{gather}
+    T^2 = \frac{4\pi^2}{G M} r^3 \implies T = 2\pi \sqrt{\frac{r^3}{G M}}
+\end{gather}
+
+\paragraph*{Comparación de Periodos}
+De la expresión obtenida, vemos que $T^2$ es directamente proporcional a $r^3$. Por lo tanto, a mayor radio orbital, mayor será el periodo. Dado que $r_2 > r_1$:
+\begin{gather}
+    \frac{T_2^2}{T_1^2} = \frac{r_2^3}{r_1^3} > 1 \implies T_2^2 > T_1^2 \implies T_2 > T_1
+\end{gather}
+
+\paragraph*{Comparación de Energías Potenciales}
+La energía potencial gravitatoria viene dada por $E_p(r) = -G \frac{M m}{r}$. Al ser una función negativa, su valor aumenta a medida que $r$ aumenta (se hace "menos negativa"). Dado que $r_2 > r_1$:
+\begin{gather}
+    \frac{1}{r_2} < \frac{1}{r_1} \implies -\frac{1}{r_2} > -\frac{1}{r_1} \implies -G\frac{Mm}{r_2} > -G\frac{Mm}{r_1} \implies E_{p2} > E_{p1}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Este problema es cualitativo y no requiere sustitución numérica. Los resultados se derivan del análisis simbólico.
+\begin{cajaresultado}
+    La expresión del periodo orbital es $\boldsymbol{T = 2\pi \sqrt{\frac{r^3}{G M}}}$.
+\end{cajaresultado}
+\begin{cajaresultado}
+    El satélite con mayor radio, el satélite 2, tendrá un \textbf{periodo mayor} ($T_2 > T_1$).
+\end{cajaresultado}
+\begin{cajaresultado}
+    El satélite con menor radio, el satélite 1, tendrá una \textbf{energía potencial gravitatoria menor} ($E_{p1} < E_{p2}$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La tercera ley de Kepler, deducida al igualar la fuerza gravitatoria con la centrípeta, muestra que el periodo orbital aumenta con el cubo del radio. Por ello, el satélite más alejado ($r_2$) tarda más en completar una órbita. La energía potencial gravitatoria, al ser negativa, es menor (más negativa) para el satélite más cercano ($r_1$), lo que indica que está "más ligado" al planeta.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1}
+\label{subsec:P1_2023_jul_ord}
+
+\begin{cajaenunciado}
+En enero de 2023 el telescopio espacial James Webb descubrió su primer exoplaneta, el LHS 475b. Dicho planeta gira en una órbita circular alrededor de una estrella de masa $M=5,4\cdot10^{29}$ kg. Además, se sabe que tarda 2 días terrestres en describir una órbita.
+\begin{enumerate}
+    \item[a)] Calcula la distancia a la que se encuentra el planeta del centro de la estrella. Primero deduce razonadamente la expresión simbólica que relaciona dicha distancia con las otras magnitudes conocidas (M y el periodo orbital). (1 punto)
+    \item[b)] En la superficie del planeta la aceleración de la gravedad es de $9,2\,\text{m/s}^2$ y la velocidad de escape es de $10,8\,\text{km/s}$. Deduce la expresión de dicha velocidad de escape y calcula el valor de la masa y del radio del planeta. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Constante de Gravitación Universal (G):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$
+    \item \textbf{Masa de la estrella ($M_{\star}$):} $M_{\star} = 5,4 \cdot 10^{29} \, \text{kg}$
+    \item \textbf{Periodo orbital del planeta (T):} $T = 2 \text{ días} \times \frac{24 \text{ h}}{1 \text{ día}} \times \frac{3600 \text{ s}}{1 \text{ h}} = 172800 \text{ s}$
+    \item \textbf{Gravedad en la superficie del planeta ($g_p$):} $g_p = 9,2 \, \text{m/s}^2$
+    \item \textbf{Velocidad de escape del planeta ($v_e$):} $v_e = 10,8 \text{ km/s} = 10800 \, \text{m/s}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Radio orbital del planeta ($r$).
+        \item Masa del planeta ($M_p$).
+        \item Radio del planeta ($R_p$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (a): Órbita Planetaria} \vspace{0.5cm} \textit{Prompt para la imagen:} "Esquema de una estrella masiva en el centro y un exoplaneta en una órbita circular de radio r. Dibujar el vector de Fuerza Gravitatoria (Fg) sobre el planeta, apuntando hacia la estrella, indicando que actúa como Fuerza Centrípeta."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_exoplaneta.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (b): Propiedades del Planeta} \vspace{0.5cm} \textit{Prompt para la imagen:} "Esquema del exoplaneta esférico de radio Rp. Sobre su superficie, mostrar dos conceptos: 1) Un vector de gravedad (gp) apuntando hacia el centro. 2) Un cohete despegando con un vector de velocidad de escape (ve) radialmente hacia afuera."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{planeta_escape.png}
+    }}
+    \caption{Representación del sistema estrella-planeta y de las magnitudes en la superficie del planeta.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Radio Orbital}
+Se utiliza el mismo razonamiento que en la Cuestión 1. La \textbf{fuerza gravitatoria} de la estrella sobre el planeta provee la \textbf{fuerza centrípeta} necesaria para la órbita circular, lo que permite relacionar el radio orbital con el periodo (Tercera Ley de Kepler).
+
+\paragraph*{b) Masa y Radio del Planeta}
+La velocidad de escape se deduce a partir del \textbf{Principio de Conservación de la Energía Mecánica}. Un objeto escapa del campo gravitatorio si su energía mecánica total es nula. La aceleración de la gravedad en la superficie se define a partir de la \textbf{Ley de Gravitación Universal de Newton}. Se plantea un sistema de dos ecuaciones con dos incógnitas ($M_p$ y $R_p$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Expresión del Radio Orbital ($r$)}
+Partiendo de $F_g = F_c$ y $T^2 = \frac{4\pi^2}{G M_{\star}} r^3$, despejamos el radio orbital $r$:
+\begin{gather}
+    r^3 = \frac{G M_{\star} T^2}{4\pi^2} \implies r = \sqrt[3]{\frac{G M_{\star} T^2}{4\pi^2}}
+\end{gather}
+
+\paragraph*{b) Expresión de la Velocidad de Escape ($v_e$), Masa ($M_p$) y Radio ($R_p$)}
+Por conservación de la energía, la energía mecánica inicial en la superficie es igual a la final en el infinito (que es cero).
+\begin{gather}
+    E_{M, \text{sup}} = E_{M, \infty} \implies \frac{1}{2} m v_e^2 - G \frac{M_p m}{R_p} = 0 \implies v_e = \sqrt{\frac{2 G M_p}{R_p}}
+\end{gather}
+La gravedad en la superficie es $g_p = G \frac{M_p}{R_p^2}$. Tenemos un sistema:
+\begin{gather}
+    v_e^2 = \frac{2 G M_p}{R_p} \label{eq:ve} \\
+    g_p = \frac{G M_p}{R_p^2} \label{eq:gp}
+\end{gather}
+De \eqref{eq:ve}, despejamos $G M_p = \frac{v_e^2 R_p}{2}$. Sustituimos en \eqref{eq:gp}:
+$g_p = \frac{v_e^2 R_p / 2}{R_p^2} = \frac{v_e^2}{2 R_p}$. Despejamos $R_p$:
+\begin{gather}
+    R_p = \frac{v_e^2}{2 g_p}
+\end{gather}
+Con $R_p$, podemos despejar $M_p$ de la ecuación de la gravedad:
+\begin{gather}
+    M_p = \frac{g_p R_p^2}{G}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor del Radio Orbital}
+\begin{gather}
+    r = \sqrt[3]{\frac{(6,67 \cdot 10^{-11})(5,4 \cdot 10^{29})(172800)^2}{4\pi^2}} \approx 3,01 \cdot 10^{9} \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La distancia del planeta a la estrella es $\boldsymbol{r \approx 3,01 \cdot 10^{9} \, m}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de la Masa y Radio del Planeta}
+Calculamos primero el radio del planeta:
+\begin{gather}
+    R_p = \frac{(10800)^2}{2 \cdot 9,2} \approx 6,34 \cdot 10^6 \, \text{m}
+\end{gather}
+Ahora calculamos la masa del planeta:
+\begin{gather}
+    M_p = \frac{9,2 \cdot (6,34 \cdot 10^6)^2}{6,67 \cdot 10^{-11}} \approx 5,55 \cdot 10^{24} \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    El radio del planeta es $\boldsymbol{R_p \approx 6,34 \cdot 10^6 \, m}$ y su masa es $\boldsymbol{M_p \approx 5,55 \cdot 10^{24} \, kg}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando la tercera ley de Kepler, se ha determinado que el exoplaneta LHS 475b orbita su estrella a una distancia de aproximadamente 3 millones de kilómetros. A partir de los datos de gravedad superficial y velocidad de escape, y combinando las leyes de gravitación y conservación de la energía, se ha calculado que el planeta tiene una masa y un radio muy similares a los de la Tierra.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque II: Interacción Electromagnética}
+\label{sec:em_2023_jul_ord}
+% ======================================================================
+
+\subsection{Cuestión 2}
+\label{subsec:C2_2023_jul_ord}
+
+\begin{cajaenunciado}
+El diagrama muestra dos cargas de magnitudes -q y 9q con $q>0$. Razona cuál de los vectores dibujados representa el vector campo eléctrico total en el punto P. Si los puntos P y S pertenecen a la misma superficie equipotencial, ¿cuál es el trabajo realizado al llevar una carga Q desde el punto P hasta el punto S?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1:} $q_1 = -q$ ($q>0$)
+    \item \textbf{Carga 2:} $q_2 = +9q$
+    \item \textbf{Distancia de $q_1$ a P:} $r_1 = 1 \, \text{m}$ (vertical)
+    \item \textbf{Distancia de $q_2$ a P:} $r_2 = 3 \, \text{m}$ (diagonal)
+    \item \textbf{Condición adicional:} Los puntos P y S están en la misma superficie equipotencial.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Vector que representa el campo eléctrico total $\vec{E}_T$ en P.
+        \item Trabajo $W_{P \to S}$ para mover una carga $Q$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Suma de Campos Eléctricos} \vspace{0.5cm} \textit{Prompt para la imagen:} "En un sistema de coordenadas 2D, situar una carga -q en el origen (0,0) y una carga +9q en el punto (sqrt(8), 0). El punto P está en (0, 1). Dibujar el vector campo eléctrico E1 en P, generado por -q, apuntando verticalmente hacia abajo. Dibujar el vector campo eléctrico E2 en P, generado por +9q, que es repulsivo y apunta a lo largo de la línea que une +9q y P. Realizar la suma vectorial de E1 y E2 para obtener el campo total ET. El vector ET debe apuntar hacia el tercer cuadrante (abajo y a la izquierda), similar al vector 'c' del enunciado."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_dipolo_asim.png}
+    }}
+    \caption{Construcción del vector campo eléctrico total en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Campo Eléctrico}
+Se aplica el \textbf{Principio de Superposición}. El campo eléctrico total en un punto es la suma vectorial de los campos creados por cada carga individual en ese punto. El campo creado por una carga puntual $Q$ a una distancia $r$ es $\vec{E} = k \frac{Q}{r^2} \hat{u}_r$, donde $\hat{u}_r$ es un vector unitario radial. Si $Q>0$, el campo es repulsivo (hacia afuera). Si $Q<0$, el campo es atractivo (hacia la carga).
+
+\paragraph*{Trabajo y Potencial Eléctrico}
+El trabajo realizado por el campo eléctrico para mover una carga $Q$ entre dos puntos A y B está relacionado con la diferencia de potencial eléctrico entre esos puntos: $W_{A \to B} = Q (V_A - V_B)$. Una superficie equipotencial es el lugar geométrico de los puntos del espacio que tienen el mismo potencial eléctrico.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Análisis de los Vectores Campo}
+\begin{itemize}
+    \item \textbf{Campo $\vec{E}_1$ creado por $-q$:} Al ser una carga negativa, el campo en P es de atracción, es decir, apunta desde P hacia la carga $-q$. Este vector es vertical y hacia abajo.
+    \item \textbf{Campo $\vec{E}_2$ creado por $+9q$:} Al ser una carga positiva, el campo en P es de repulsión, apuntando en la dirección que se aleja de la carga $+9q$.
+    \item \textbf{Magnitudes:} $|E_1| = k \frac{q}{r_1^2} = k \frac{q}{1^2} = kq$. $|E_2| = k \frac{9q}{r_2^2} = k \frac{9q}{3^2} = kq$. Sorprendentemente, los módulos de ambos campos son iguales.
+    \item \textbf{Campo Total $\vec{E}_T$:} El campo total es la suma vectorial $\vec{E}_T = \vec{E}_1 + \vec{E}_2$. Como los dos vectores tienen el mismo módulo, el vector resultante se situará en la bisectriz del ángulo que forman, apuntando hacia abajo y a la izquierda. De los vectores mostrados en la figura, el único que cumple esta condición es el \textbf{vector $\vec{c}$}.
+\end{itemize}
+
+\paragraph*{Cálculo del Trabajo}
+El trabajo para mover una carga $Q$ desde P hasta S es:
+\begin{gather}
+    W_{P \to S} = Q (V_P - V_S)
+\end{gather}
+El enunciado afirma que P y S pertenecen a la misma superficie equipotencial, lo que por definición significa que $V_P = V_S$. Por lo tanto:
+\begin{gather}
+    V_P - V_S = 0 \implies W_{P \to S} = Q \cdot 0 = 0
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Este problema es cualitativo.
+\begin{cajaresultado}
+    El vector que representa el campo eléctrico total es el \textbf{vector $\vec{c}$}.
+\end{cajaresultado}
+\begin{cajaresultado}
+    El trabajo realizado para llevar una carga Q desde P hasta S es \textbf{nulo} ($W_{P \to S} = 0$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante el análisis cualitativo y cuantitativo de los campos eléctricos generados por cada carga, se concluye que sus módulos en el punto P son idénticos. La suma vectorial de un campo vertical hacia abajo y otro diagonal repulsivo da como resultado un vector dirigido hacia abajo y a la izquierda, correspondiente al vector $\vec{c}$. Además, dado que el trabajo del campo eléctrico entre dos puntos es proporcional a la diferencia de potencial, este es nulo si los puntos pertenecen a la misma superficie equipotencial.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 3}
+\label{subsec:C3_2023_jul_ord}
+
+\begin{cajaenunciado}
+Un protón se mueve con velocidad $\vec{v}$ y describe una trayectoria circular en un ciclotrón en el que hay un campo magnético constante $\vec{B}$, perpendicular a $\vec{v}$. Escribe la expresión de la fuerza que actúa sobre el protón y representa los vectores velocidad, campo magnético y fuerza. Razona por qué la trayectoria es circular. ¿Cómo cambiaría la trayectoria si se tratara de un neutrón?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partícula 1:} Protón, carga $q_p = +e$.
+    \item \textbf{Partícula 2:} Neutrón, carga $q_n = 0$.
+    \item \textbf{Movimiento:} Velocidad $\vec{v}$.
+    \item \textbf{Campo:} Campo magnético uniforme y constante $\vec{B}$.
+    \item \textbf{Condición:} $\vec{v} \perp \vec{B}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresión de la fuerza magnética.
+        \item Representación de los vectores $\vec{v}$, $\vec{B}$ y $\vec{F}_m$.
+        \item Justificación de la trayectoria circular.
+        \item Trayectoria de un neutrón.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Fuerza de Lorentz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Representación de la regla de la mano derecha para la fuerza de Lorentz. El campo magnético B se representa con cruces (entrando en el papel). La velocidad v de un protón (carga positiva) apunta hacia la derecha. La fuerza magnética F, resultado del producto vectorial q(v x B), apunta hacia abajo. Indicar que esta fuerza actúa como fuerza centrípeta, curvando la trayectoria para formar un círculo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_lorentz.png}
+    }}
+    \caption{Vectores implicados en la fuerza magnética sobre un protón.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Fuerza de Lorentz:} La fuerza que un campo magnético $\vec{B}$ ejerce sobre una carga $q$ que se mueve con velocidad $\vec{v}$ viene dada por la expresión de la Fuerza de Lorentz: $\vec{F}_m = q (\vec{v} \times \vec{B})$.
+    \item \textbf{Segunda Ley de Newton:} La fuerza neta sobre una partícula es igual a su masa por su aceleración, $\vec{F} = m\vec{a}$.
+    \item \textbf{Dinámica del Movimiento Circular Uniforme (MCU):} Un movimiento es circular y uniforme cuando sobre la partícula actúa una fuerza de módulo constante y siempre perpendicular a su velocidad. Esta fuerza se denomina fuerza centrípeta.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Expresión de la Fuerza}
+La fuerza que actúa sobre el protón es la fuerza de Lorentz:
+\begin{gather}
+    \vec{F}_m = q_p (\vec{v} \times \vec{B}) = e (\vec{v} \times \vec{B})
+\end{gather}
+
+\paragraph*{Justificación de la Trayectoria Circular}
+Por la definición del producto vectorial, el vector fuerza $\vec{F}_m$ es siempre perpendicular tanto a la velocidad $\vec{v}$ como al campo $\vec{B}$.
+\begin{itemize}
+    \item Como $\vec{F}_m \perp \vec{v}$, el trabajo realizado por esta fuerza es nulo ($W = \int \vec{F}_m \cdot d\vec{l} = \int \vec{F}_m \cdot \vec{v} dt = 0$).
+    \item Por el teorema de la energía cinética, si el trabajo es nulo, la energía cinética de la partícula no varía. Por lo tanto, el módulo de la velocidad (la celeridad) es constante.
+    \item Una fuerza que es siempre perpendicular a la velocidad no cambia su módulo, pero sí cambia continuamente su dirección. Esta es precisamente la definición de una \textbf{fuerza centrípeta}.
+    \item Una fuerza centrípeta que actúa sobre un cuerpo con celeridad constante provoca un Movimiento Circular Uniforme.
+\end{itemize}
+
+\paragraph*{Trayectoria de un Neutrón}
+Un neutrón es una partícula sin carga eléctrica neta, $q_n = 0$. Aplicando la expresión de la fuerza de Lorentz:
+\begin{gather}
+    \vec{F}_m = 0 \cdot (\vec{v} \times \vec{B}) = \vec{0}
+\end{gather}
+Al no actuar ninguna fuerza sobre el neutrón (despreciando la gravedad), por el Principio de Inercia (Primera Ley de Newton), este seguirá una trayectoria rectilínea con velocidad constante.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Este problema es cualitativo.
+\begin{cajaresultado}
+    La expresión de la fuerza es la Fuerza de Lorentz: $\boldsymbol{\vec{F}_m = q (\vec{v} \times \vec{B})}$.
+\end{cajaresultado}
+\begin{cajaresultado}
+    La trayectoria es circular porque la fuerza magnética es siempre perpendicular a la velocidad, actuando como una fuerza centrípeta que no modifica el módulo de la velocidad pero sí su dirección.
+\end{cajaresultado}
+\begin{cajaresultado}
+    Un neutrón no experimentaría ninguna fuerza y seguiría una \textbf{trayectoria rectilínea uniforme}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La interacción de una partícula cargada con un campo magnético se describe mediante la fuerza de Lorentz. Su naturaleza, al ser siempre perpendicular a la velocidad, la convierte en la fuerza centrípeta perfecta para generar trayectorias circulares, un principio fundamental en aceleradores de partículas como el ciclotrón. Las partículas neutras, como el neutrón, no son afectadas por los campos magnéticos y mantienen su estado de movimiento inalterado.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 4}
+\label{subsec:C4_2023_jul_ord}
+
+\begin{cajaenunciado}
+En la figura se muestra una espira circular en el seno de un campo magnético dirigido hacia dentro del plano del papel. Razona si se genera corriente inducida en la espira y en qué sentido, en los siguientes casos: a) el módulo del campo magnético disminuye y la espira permanece fija y b) el radio de la espira aumenta progresivamente y el módulo del campo magnético permanece constante.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Sistema:} Espira circular.
+    \item \textbf{Campo Magnético ($\vec{B}$):} Inicialmente uniforme y perpendicular a la espira (entrante).
+    \item \textbf{Caso a):} $|\vec{B}|$ disminuye con el tiempo. La espira está fija.
+    \item \textbf{Caso b):} El radio de la espira ($R$) aumenta. $|\vec{B}|$ es constante.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Existencia de corriente inducida en ambos casos.
+        \item Sentido de la corriente inducida (horario o antihorario) en ambos casos.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Caso (a): Campo B variable} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una espira circular fija. En su interior, un campo magnético B entrante (representado por cruces) cuya densidad disminuye. Dibujar una flecha circular indicando el sentido de la corriente inducida (I_ind) que, según la ley de Lenz, crea un campo inducido (B_ind) entrante para oponerse a la disminución del flujo. La corriente debe ser en sentido horario."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lenz_b_variable.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Caso (b): Área variable} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una espira circular cuyo radio está aumentando (mostrar con flechas radiales hacia afuera). El campo magnético B entrante es constante y uniforme. Dibujar una flecha circular indicando el sentido de la corriente inducida (I_ind) que, según la ley de Lenz, crea un campo inducido (B_ind) saliente (puntos) para oponerse al aumento del flujo entrante. La corriente debe ser en sentido antihorario."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lenz_area_variable.png}
+    }}
+    \caption{Aplicación de la Ley de Lenz a los dos casos propuestos.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ley de Faraday-Henry de la Inducción Electromagnética:} Siempre que hay una variación del flujo magnético ($\Phi_m$) a través de una espira, se induce en ella una fuerza electromotriz (fem, $\varepsilon$). La fem es proporcional a la rapidez con que cambia el flujo: $\varepsilon = -\frac{d\Phi_m}{dt}$.
+    \item \textbf{Flujo Magnético:} Para un campo uniforme $\vec{B}$ y una superficie plana $\vec{S}$, el flujo es $\Phi_m = \vec{B} \cdot \vec{S} = B S \cos(\alpha)$. En este caso, $\vec{B}$ es perpendicular a la superficie de la espira, por lo que $\alpha=0$ y $\cos(\alpha)=1$. El flujo es $\Phi_m = B S = B (\pi R^2)$.
+    \item \textbf{Ley de Lenz:} El signo negativo en la ley de Faraday indica que el sentido de la corriente inducida es tal que se opone a la variación del flujo magnético que la produce. La corriente inducida genera su propio campo magnético inducido ($\vec{B}_{ind}$) que tratará de contrarrestar el cambio de flujo.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La variación del flujo puede deberse a un cambio en el módulo del campo ($B$), en la superficie ($S$) o en la orientación ($\alpha$).
+\begin{gather}
+    \frac{d\Phi_m}{dt} = \frac{d(B S \cos\alpha)}{dt}
+\end{gather}
+
+\paragraph*{Caso a): El módulo del campo magnético disminuye}
+El área $S$ es constante. El flujo magnético entrante está disminuyendo ($\frac{d\Phi_m}{dt} < 0$). Según la Ley de Lenz, la espira generará una corriente inducida cuyo campo magnético inducido ($\vec{B}_{ind}$) se oponga a esta disminución. Para ello, $\vec{B}_{ind}$ debe tener el mismo sentido que el campo original, es decir, \textbf{entrante}. Aplicando la regla de la mano derecha, para generar un campo entrante, la corriente debe circular en \textbf{sentido horario}.
+
+\paragraph*{Caso b): El radio de la espira aumenta}
+El campo $B$ es constante. El área $S = \pi R^2$ está aumentando. Por lo tanto, el flujo magnético entrante a través de la espira está aumentando ($\frac{d\Phi_m}{dt} > 0$). Según la Ley de Lenz, la corriente inducida generará un campo $\vec{B}_{ind}$ que se oponga a este aumento. Para ello, $\vec{B}_{ind}$ debe tener sentido contrario al campo original, es decir, \textbf{saliente}. Aplicando la regla de la mano derecha, para generar un campo saliente, la corriente debe circular en \textbf{sentido antihorario}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Problema cualitativo.
+\begin{cajaresultado}
+    \textbf{a)} Sí se genera corriente. El flujo entrante disminuye, por lo que la corriente inducida circulará en \textbf{sentido horario} para crear un campo inducido entrante que se oponga a la disminución.
+\end{cajaresultado}
+\begin{cajaresultado}
+    \textbf{b)} Sí se genera corriente. El flujo entrante aumenta, por lo que la corriente inducida circulará en \textbf{sentido antihorario} para crear un campo inducido saliente que se oponga al aumento.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En ambos casos se produce una variación del flujo magnético a través de la espira, lo que induce una corriente eléctrica según la ley de Faraday. El sentido de esta corriente, determinado por la ley de Lenz, es siempre aquel que busca contrarrestar el cambio de flujo original: si el flujo disminuye, la corriente lo refuerza (horario); si aumenta, la corriente lo debilita (antihorario).
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 2}
+\label{subsec:P2_2023_jul_ord}
+
+\begin{cajaenunciado}
+Dos cargas eléctricas de valor $q_A = +2\,\mu\text{C}$ y $q_B = -2\,\mu\text{C}$ están situadas en los puntos $A(3,0)$ m y $B(0,3)$ m, respectivamente.
+\begin{enumerate}
+    \item[a)] Calcula y representa en el punto $C(3,3)$ m los vectores campo eléctrico generados por cada una de las cargas y el campo eléctrico total. (1 punto)
+    \item[b)] Calcula el potencial eléctrico en el punto $D(4,4)$ m. Determina el trabajo para trasladar una carga de $10^{-6}$ C desde el infinito hasta el punto D. (Considera nulo el potencial eléctrico en el infinito). (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Constante de Coulomb (k):} $k = 9 \cdot 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2$
+    \item \textbf{Carga A ($q_A$):} $q_A = +2 \,\mu\text{C} = +2 \cdot 10^{-6} \, \text{C}$
+    \item \textbf{Posición de A:} $\vec{r}_A = (3, 0) \, \text{m}$
+    \item \textbf{Carga B ($q_B$):} $q_B = -2 \,\mu\text{C} = -2 \cdot 10^{-6} \, \text{C}$
+    \item \textbf{Posición de B:} $\vec{r}_B = (0, 3) \, \text{m}$
+    \item \textbf{Punto C:} $\vec{r}_C = (3, 3) \, \text{m}$
+    \item \textbf{Punto D:} $\vec{r}_D = (4, 4) \, \text{m}$
+    \item \textbf{Carga de prueba ($q'$):} $q' = 10^{-6} \, \text{C}$
+    \item \textbf{Condición:} $V(\infty) = 0$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item $\vec{E}_A(C)$, $\vec{E}_B(C)$, $\vec{E}_{total}(C)$.
+        \item $V(D)$, $W_{\infty \to D}$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Eléctrico en C} \vspace{0.5cm} \textit{Prompt para la imagen:} "En un sistema de coordenadas XY, colocar una carga positiva qA en (3,0) y una carga negativa qB en (0,3). Marcar el punto C en (3,3). En el punto C, dibujar el vector campo eléctrico EA, que es repulsivo desde qA, apuntando verticalmente hacia arriba. En el mismo punto C, dibujar el vector campo eléctrico EB, que es atractivo hacia qB, apuntando horizontalmente hacia la izquierda. Dibujar la suma vectorial E_total = EA + EB, que será un vector apuntando hacia el segundo cuadrante (arriba y a la izquierda)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_en_c.png}
+    }}
+    \caption{Representación de los vectores campo eléctrico en el punto C.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo Eléctrico}
+Se aplica el \textbf{Principio de Superposición}. El campo total es la suma vectorial de los campos individuales, $\vec{E}_{total} = \sum_i \vec{E}_i$. El campo creado por una carga puntual $q_i$ en un punto $P$ se calcula con la expresión $\vec{E}_i = k \frac{q_i}{|\vec{r}|^2} \hat{u}_r$, donde $\vec{r}$ es el vector que va desde la carga hasta el punto $P$.
+
+\paragraph*{b) Potencial Eléctrico y Trabajo}
+El potencial eléctrico en un punto debido a un conjunto de cargas también sigue el \textbf{Principio de Superposición}, pero con suma escalar: $V_{total} = \sum_i V_i = \sum_i k \frac{q_i}{r_i}$. El trabajo realizado por una fuerza externa para mover una carga $q'$ desde el infinito hasta un punto $D$ es $W_{\infty \to D} = q' \Delta V = q' (V_D - V_\infty)$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Campo Eléctrico en C}
+Vector de A a C: $\vec{r}_{AC} = \vec{r}_C - \vec{r}_A = (3,3) - (3,0) = (0,3)$ m. $|\vec{r}_{AC}| = 3$ m. $\hat{u}_{AC} = (0,1) = \hat{j}$.
+Vector de B a C: $\vec{r}_{BC} = \vec{r}_C - \vec{r}_B = (3,3) - (0,3) = (3,0)$ m. $|\vec{r}_{BC}| = 3$ m. $\hat{u}_{BC} = (1,0) = \hat{i}$.
+Campo de A en C: $\vec{E}_A(C) = k \frac{q_A}{|\vec{r}_{AC}|^2} \hat{u}_{AC} = k \frac{q_A}{3^2} \hat{j}$.
+Campo de B en C: $\vec{E}_B(C) = k \frac{q_B}{|\vec{r}_{BC}|^2} \hat{u}_{BC} = k \frac{q_B}{3^2} \hat{i}$. (El vector desde la carga al punto es $\vec{r}_{BC}$, pero como $q_B$ es negativa, el campo apunta en sentido contrario, hacia $B$. Una forma más rigurosa es usar el vector $\vec{r}_{CB} = -\vec{r}_{BC}$ en la dirección del campo: $\vec{E}_B(C) = k \frac{|q_B|}{|\vec{r}_{BC}|^2} (-\hat{i})$).
+Campo Total: $\vec{E}_T(C) = \vec{E}_A(C) + \vec{E}_B(C) = k \frac{q_B}{9}\hat{i} + k \frac{q_A}{9}\hat{j}$.
+
+\paragraph*{b) Potencial Eléctrico en D y Trabajo}
+Distancia de A a D: $r_{AD} = |\vec{r}_D - \vec{r}_A| = |(4-3, 4-0)| = |(1,4)| = \sqrt{1^2+4^2} = \sqrt{17}$ m.
+Distancia de B a D: $r_{BD} = |\vec{r}_D - \vec{r}_B| = |(4-0, 4-3)| = |(4,1)| = \sqrt{4^2+1^2} = \sqrt{17}$ m.
+Potencial en D: $V_D = V_A(D) + V_B(D) = k \frac{q_A}{r_{AD}} + k \frac{q_B}{r_{BD}}$.
+Trabajo: $W_{\infty \to D} = q'(V_D - V_\infty) = q' V_D$ (dado que $V_\infty = 0$).
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Campo Eléctrico en C}
+\begin{gather}
+    \vec{E}_A(C) = (9\cdot10^9) \frac{2\cdot10^{-6}}{9} \hat{j} = 2000 \hat{j} \, \text{N/C} \\
+    \vec{E}_B(C) = (9\cdot10^9) \frac{-2\cdot10^{-6}}{9} \hat{i} = -2000 \hat{i} \, \text{N/C} \\
+    \vec{E}_T(C) = (-2000 \hat{i} + 2000 \hat{j}) \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    Los campos son $\boldsymbol{\vec{E}_A(C) = 2000 \hat{j} \, N/C}$, $\boldsymbol{\vec{E}_B(C) = -2000 \hat{i} \, N/C}$, y el total es $\boldsymbol{\vec{E}_T(C) = (-2000 \hat{i} + 2000 \hat{j}) \, N/C}$.
+\end{cajaresultado}
+
+\paragraph*{b) Potencial y Trabajo}
+\begin{gather}
+    V_D = (9\cdot10^9) \frac{2\cdot10^{-6}}{\sqrt{17}} + (9\cdot10^9) \frac{-2\cdot10^{-6}}{\sqrt{17}} = 0 \, \text{V}
+\end{gather}
+\begin{gather}
+    W_{\infty \to D} = q' V_D = (10^{-6} \, \text{C}) \cdot (0 \, \text{V}) = 0 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    El potencial eléctrico en el punto D es $\boldsymbol{V_D = 0 \, V}$. El trabajo para traer la carga desde el infinito es $\boldsymbol{W_{\infty \to D} = 0 \, J}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En el punto C, la carga positiva A crea un campo repulsivo vertical y la carga negativa B crea un campo atractivo horizontal, resultando en un campo total diagonal. Para el punto D, debido a la simetría de las distancias y a que las cargas son de igual magnitud pero signo opuesto (formando un dipolo eléctrico), los potenciales que crean se anulan mutuamente. En consecuencia, el potencial neto en D es cero, y no se requiere trabajo neto para traer una carga desde el infinito a ese punto.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque III: Ondas y Óptica}
+\label{sec:ondasopt_2023_jul_ord}
+% ======================================================================
+
+\subsection{Cuestión 5}
+\label{subsec:C5_2023_jul_ord}
+
+\begin{cajaenunciado}
+Determina el periodo, la longitud de onda, el número de ondas y la velocidad de propagación de una onda sísmica trasversal cuya función es $y(x,t)=2\cdot\text{sen}(50\pi t - \frac{\pi}{2}x)$ (todos los valores se expresan en unidades del Sistema Internacional). Si $y(0,t)=2$ m, determina razonadamente el valor de $y(8,t)$ y el valor de $y(0, t+0,04)$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ecuación de la onda:} $y(x,t)=2\cdot\text{sen}(50\pi t - \frac{\pi}{2}x)$
+    \item \textbf{Unidades:} Sistema Internacional (SI).
+    \item \textbf{Forma general de la onda:} $y(x,t) = A \cdot \text{sen}(\omega t - kx)$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Periodo ($T$).
+        \item Longitud de onda ($\lambda$).
+        \item Número de onda ($k$).
+        \item Velocidad de propagación ($v_p$).
+        \item Valor de $y(8,t)$ y $y(0,t+0.04)$ si $y(0,t)=2$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Onda Armónica} \vspace{0.5cm} \textit{Prompt para la imagen:} "Animación o secuencia de dos gráficos de una onda sinusoidal viajando hacia la derecha. El primer gráfico muestra la elongación 'y' en función de la posición 'x' en un instante fijo 't', etiquetando la amplitud A y la longitud de onda lambda. El segundo gráfico muestra la elongación 'y' en función del tiempo 't' para un punto fijo 'x', etiquetando la amplitud A y el periodo T."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_armonica.png}
+    }}
+    \caption{Parámetros de una onda transversal.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La solución se basa en la identificación de los parámetros de la onda comparando la ecuación dada con la forma general de una onda armónica unidimensional que se propaga en el sentido positivo del eje X: $y(x,t) = A \cdot \text{sen}(\omega t - kx + \phi_0)$.
+\begin{itemize}
+    \item \textbf{Amplitud (A):} Elongación máxima.
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = 2\pi f = 2\pi/T$.
+    \item \textbf{Número de onda (k):} $k = 2\pi/\lambda$.
+    \item \textbf{Velocidad de propagación ($v_p$):} $v_p = \lambda f = \omega/k$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Comparando $y(x,t)=2\cdot\text{sen}(50\pi t - \frac{\pi}{2}x)$ con la forma general:
+\begin{itemize}
+    \item Amplitud: $A = 2$ m.
+    \item Frecuencia angular: $\omega = 50\pi$ rad/s.
+    \item Número de onda: $k = \pi/2$ rad/m.
+\end{itemize}
+A partir de estos valores, se deducen las incógnitas:
+\begin{itemize}
+    \item Periodo: $T = 2\pi / \omega$.
+    \item Longitud de onda: $\lambda = 2\pi / k$.
+    \item Velocidad de propagación: $v_p = \omega/k$.
+\end{itemize}
+Para la segunda parte, la condición $y(0,t)=2$ m implica que la onda está en un máximo en $x=0$.
+$y(8,t)$ se evalúa sustituyendo $x=8$.
+$y(0, t+0.04)$ se evalúa sustituyendo $t$ por $t+0.04$ en $y(0,t)$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Parámetros de la onda}
+\begin{gather}
+    k = \frac{\pi}{2} \, \text{rad/m} \\
+    T = \frac{2\pi}{50\pi} = \frac{1}{25} = 0,04 \, \text{s} \\
+    \lambda = \frac{2\pi}{\pi/2} = 4 \, \text{m} \\
+    v_p = \frac{50\pi}{\pi/2} = 100 \, \text{m/s} \quad (\text{o } v_p = \lambda/T = 4/0,04 = 100 \, \text{m/s})
+\end{gather}
+\begin{cajaresultado}
+El periodo es $\boldsymbol{T=0,04\,s}$, la longitud de onda es $\boldsymbol{\lambda=4\,m}$, el número de ondas es $\boldsymbol{k=\pi/2 \, rad/m}$ y la velocidad de propagación es $\boldsymbol{v_p=100\,m/s}$.
+\end{cajaresultado}
+\paragraph*{Valores de y}
+\begin{itemize}
+    \item \textbf{Cálculo de $y(8,t)$:}
+    La distancia $x=8$ m es exactamente dos longitudes de onda ($8 = 2 \cdot \lambda$). Los puntos separados por un número entero de longitudes de onda vibran en fase, es decir, tienen la misma elongación en todo momento. Por lo tanto, si $y(0,t)=2$ m, entonces $y(8,t)=y(0,t)=2$ m.
+    Algebraicamente: $y(8,t) = 2\sin(50\pi t - \frac{\pi}{2} \cdot 8) = 2\sin(50\pi t - 4\pi)$. Como $\sin(\alpha - 2n\pi) = \sin(\alpha)$, esto es $2\sin(50\pi t) = y(0,t) = 2$ m.
+    \item \textbf{Cálculo de $y(0,t+0.04)$:}
+    El tiempo $t'=t+0.04$ s es exactamente un periodo más tarde ($0.04 = T$). La onda es periódica en el tiempo con periodo T. Por lo tanto, la elongación será la misma que en el instante t. $y(0,t+T) = y(0,t) = 2$ m.
+    Algebraicamente: $y(0,t+0.04) = 2\sin(50\pi(t+0.04)) = 2\sin(50\pi t + 50\pi \cdot 0.04) = 2\sin(50\pi t + 2\pi) = 2\sin(50\pi t) = y(0,t) = 2$ m.
+\end{itemize}
+\begin{cajaresultado}
+    El valor de $\boldsymbol{y(8,t) = 2 \, m}$. El valor de $\boldsymbol{y(0,t+0,04) = 2 \, m}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La identificación de los parámetros de la ecuación de onda permite caracterizarla completamente. La periodicidad espacial (longitud de onda) y temporal (periodo) de la onda implican que puntos separados por múltiplos enteros de $\lambda$ vibran en fase, y que la elongación de cualquier punto se repite cada vez que transcurre un tiempo igual a un múltiplo entero de $T$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 6}
+\label{subsec:C6_2023_jul_ord}
+
+\begin{cajaenunciado}
+Escribe la expresión del nivel sonoro (en dB) en función de la intensidad de un sonido. Demuestra que una persona expuesta a un nivel sonoro de 70 dB recibe una intensidad 100 veces menor que aquella que está expuesta a un nivel sonoro de 90 dB.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Nivel sonoro 1 ($\beta_1$):} $\beta_1 = 70$ dB
+    \item \textbf{Nivel sonoro 2 ($\beta_2$):} $\beta_2 = 90$ dB
+    \item \textbf{Intensidad umbral de audición ($I_0$):} $I_0 = 10^{-12} \, \text{W/m}^2$ (valor estándar).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresión del nivel sonoro $\beta$.
+        \item Demostración de que $I_2 = 100 \cdot I_1$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Escala Decibélica} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico con eje horizontal logarítmico para la Intensidad (W/m^2) y eje vertical lineal para el Nivel Sonoro (dB). Marcar puntos clave: I_0 = 10^-12 W/m^2 corresponde a 0 dB. Mostrar dos puntos, uno en 70 dB (correspondiente a una intensidad I1) y otro en 90 dB (correspondiente a una intensidad I2). La gráfica debe ilustrar que un aumento aditivo en dB corresponde a un aumento multiplicativo en intensidad."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{escala_db.png}
+    }}
+    \caption{Relación logarítmica entre intensidad y nivel sonoro.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El nivel de intensidad sonora, $\beta$, se define en una escala logarítmica para manejar el amplio rango de intensidades que el oído humano puede percibir. Se mide en decibelios (dB) y se define en relación con una intensidad de referencia, $I_0$, que es el umbral de audición.
+Las propiedades de los logaritmos son clave para la demostración: $\log(a) - \log(b) = \log(a/b)$ y $10^{\log_{10}(x)} = x$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Expresión del Nivel Sonoro}
+El nivel de intensidad sonora $\beta$ en decibelios se define como:
+\begin{gather}
+    \beta (\text{dB}) = 10 \cdot \log_{10}\left(\frac{I}{I_0}\right)
+\end{gather}
+donde $I$ es la intensidad del sonido e $I_0$ es la intensidad umbral de audición.
+
+\paragraph*{Demostración}
+Escribimos las expresiones para los dos niveles sonoros dados:
+\begin{gather}
+    \beta_1 = 70 = 10 \log\left(\frac{I_1}{I_0}\right) \\
+    \beta_2 = 90 = 10 \log\left(\frac{I_2}{I_0}\right)
+\end{gather}
+Restamos la primera ecuación de la segunda:
+\begin{gather}
+    \beta_2 - \beta_1 = 10 \log\left(\frac{I_2}{I_0}\right) - 10 \log\left(\frac{I_1}{I_0}\right) \\
+    90 - 70 = 10 \left[ \log\left(\frac{I_2}{I_0}\right) - \log\left(\frac{I_1}{I_0}\right) \right]
+\end{gather}
+Usando la propiedad de la resta de logaritmos:
+\begin{gather}
+    20 = 10 \log\left(\frac{I_2/I_0}{I_1/I_0}\right) = 10 \log\left(\frac{I_2}{I_1}\right)
+\end{gather}
+Ahora, despejamos el cociente de intensidades:
+\begin{gather}
+    2 = \log\left(\frac{I_2}{I_1}\right) \\
+    \frac{I_2}{I_1} = 10^2 = 100
+\end{gather}
+Esto demuestra que $I_2 = 100 \cdot I_1$, que es lo que se pedía. La intensidad a 90 dB es 100 veces mayor que la intensidad a 70 dB.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+La resolución es simbólica y no requiere más cálculos numéricos.
+\begin{cajaresultado}
+    La expresión del nivel sonoro es $\boldsymbol{\beta = 10 \log(I/I_0)}$. La demostración muestra que la relación entre las intensidades es $\boldsymbol{I_2/I_1 = 100}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La escala decibélica es logarítmica, lo que significa que un incremento de 20 dB no corresponde a una suma, sino a un aumento de la intensidad en un factor de $10^{20/10} = 10^2 = 100$. Esto pone de manifiesto cómo esta escala comprime un vasto rango de intensidades en números manejables, reflejando mejor la percepción auditiva humana.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 7}
+\label{subsec:C7_2023_jul_ord}
+
+\begin{cajaenunciado}
+Demuestra que una lupa produce imágenes derechas de objetos reales si estos se encuentran entre la lupa y su foco objeto. ¿Estas imágenes son reales o virtuales? ¿Dónde debería situarse un objeto real si se desea obtener una imagen invertida? ¿Qué ocurre si situamos el objeto justo en el foco objeto de la lupa? Para responder usa en cada caso un trazado de rayos.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Instrumento óptico:} Lupa (lente convergente).
+    \item \textbf{Caso 1:} Objeto situado entre el foco objeto (F) y la lente. $|s| < |f|$.
+    \item \textbf{Caso 2:} Objeto situado para obtener una imagen invertida.
+    \item \textbf{Caso 3:} Objeto situado en el foco objeto (F). $s = f$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Demostrar que la imagen es derecha en el Caso 1.
+        \item Determinar si la imagen es real o virtual en el Caso 1.
+        \item Posición del objeto en el Caso 2.
+        \item ¿Qué ocurre en el Caso 3?
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Caso 1: Lupa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Trazado de rayos para una lente convergente. Un objeto (flecha vertical) se sitúa entre el foco objeto F y el centro óptico O. Trazar dos rayos: 1) Rayo paralelo al eje óptico que se refracta pasando por el foco imagen F'. 2) Rayo que pasa por el centro óptico O y no se desvía. Las prolongaciones de estos rayos refractados se cortan detrás del objeto, formando una imagen virtual, derecha y de mayor tamaño."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lupa_caso1.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Caso 2 y 3} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos trazados de rayos para una lente convergente. Arriba, Caso 2: El objeto se sitúa más allá del foco objeto F (|s| > |f|). Los rayos refractados convergen al otro lado de la lente para formar una imagen real, invertida. Abajo, Caso 3: El objeto se sitúa justo en el foco objeto F. Los rayos refractados emergen paralelos entre sí, por lo que la imagen se forma en el infinito."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lupa_casos_2_3.png}
+    }}
+    \caption{Trazado de rayos para las tres situaciones planteadas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Una lupa es una lente convergente ($f' > 0$). La formación de imágenes se describe mediante el trazado de rayos principales y la ecuación de las lentes delgadas: $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$, donde $s$ es la posición del objeto, $s'$ la de la imagen y $f'$ la distancia focal imagen. El aumento lateral es $M = \frac{y'}{y} = \frac{s'}{s}$.
+\begin{itemize}
+    \item \textbf{Imagen derecha:} $M > 0$. \textbf{Imagen invertida:} $M < 0$.
+    \item \textbf{Imagen real:} Se forma por la convergencia de los rayos. Se puede proyectar. $s' > 0$.
+    \item \textbf{Imagen virtual:} Se forma por la convergencia de las prolongaciones de los rayos. No se puede proyectar. $s' < 0$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Caso 1: $|s| < |f|$}
+Un objeto real se sitúa a la izquierda ($s<0$). Una lente convergente tiene $f' > 0$. La condición es $0 < -s < f'$.
+De la ecuación de la lente: $\frac{1}{s'} = \frac{1}{f'} + \frac{1}{s} = \frac{s+f'}{s f'}$. Como $s$ es negativo y $|s| < f'$, el numerador $s+f'$ es positivo. El denominador $s f'$ es negativo. Por tanto, $\frac{1}{s'}$ es negativo, lo que implica $s'<0$. La imagen es \textbf{virtual}.
+El aumento es $M = s'/s$. Como $s'$ y $s$ son ambos negativos, su cociente es positivo ($M>0$). La imagen es \textbf{derecha}.
+El trazado de rayos (Figura) confirma que las prolongaciones de los rayos divergen y se cortan a la izquierda de la lente, formando una imagen virtual y derecha.
+
+\paragraph*{Caso 2: Imagen Invertida}
+Se requiere una imagen invertida, lo que significa $M<0$. Como $M = s'/s$, y para un objeto real $s<0$, se necesita que $s'>0$ (imagen real).
+Para que $s'>0$, en la ecuación $\frac{1}{s'} = \frac{s+f'}{s f'}$, el término de la derecha debe ser positivo. Como $s f'$ es negativo ($s<0, f'>0$), el numerador $s+f'$ también debe ser negativo. Esto ocurre cuando $|s| > f'$, es decir, el objeto debe situarse \textbf{más alejado del foco objeto que la distancia focal} ($s < -f'$). El trazado de rayos confirma que los rayos convergen a la derecha de la lente.
+
+\paragraph*{Caso 3: Objeto en el Foco}
+Si el objeto se sitúa en el foco objeto, $s = -f'$. Sustituyendo en la ecuación de la lente:
+$\frac{1}{s'} = \frac{1}{f'} + \frac{1}{-f'} = 0$.
+Esto implica que $s' \to \infty$. Los rayos refractados emergen paralelos entre sí y la imagen se forma en el \textbf{infinito}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Problema cualitativo basado en el trazado de rayos y el análisis de las ecuaciones.
+\begin{cajaresultado}
+    \textbf{Caso 1:} Si el objeto está entre el foco y la lente, la imagen es \textbf{derecha} ($M>0$) y \textbf{virtual} ($s'<0$), como muestra el trazado de rayos.
+\end{cajaresultado}
+\begin{cajaresultado}
+    \textbf{Caso 2:} Para obtener una imagen invertida, el objeto debe situarse a una distancia de la lente \textbf{mayor que la distancia focal} ($|s| > |f|$).
+\end{cajaresultado}
+\begin{cajaresultado}
+    \textbf{Caso 3:} Si el objeto se sitúa en el foco objeto, los rayos emergen paralelos y la imagen se forma en el \textbf{infinito}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La posición del objeto respecto al foco de una lente convergente determina drásticamente la naturaleza de la imagen. Situado dentro de la distancia focal, actúa como lupa, creando una imagen virtual, derecha y aumentada. Más allá del foco, produce una imagen real e invertida, principio usado en proyectores. Justo en el foco, los rayos se coliman, formando una imagen en el infinito, un concepto crucial en telescopios y colimadores.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 3}
+\label{subsec:P3_2023_jul_ord}
+
+\begin{cajaenunciado}
+Una lente delgada en aire tiene una distancia focal imagen de 10 cm. A 5 cm de la lente se sitúa un objeto de 2 cm de altura.
+\begin{enumerate}
+    \item[a)] Calcula la posición y tamaño de la imagen. Razona si la lente es convergente o divergente. (1 punto)
+    \item[b)] Obtén razonadamente la posición de un objeto para que la imagen sea derecha y tenga un tamaño que sea la mitad que el del objeto. Justifica mediante un trazado de rayos la formación de la imagen. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Distancia focal imagen ($f'$):} $f' = +10 \, \text{cm} = +0,1 \, \text{m}$. El signo positivo se deduce en el apartado a.
+    \item \textbf{Posición del objeto (a) ($s_a$):} $s_a = -5 \, \text{cm} = -0,05 \, \text{m}$ (convenio de signos).
+    \item \textbf{Altura del objeto ($y$):} $y = 2 \, \text{cm} = 0,02 \, \text{m}$.
+    \item \textbf{Condición (b):} Imagen derecha ($M_b > 0$) y tamaño mitad ($y'_b = y/2$).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Posición $s'_a$ y tamaño $y'_a$ de la imagen en (a).
+        \item Tipo de lente.
+        \item Posición del objeto $s_b$ en (b).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (a): Lupa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Trazado de rayos para una lente convergente con f'=+10cm. Un objeto de 2cm de altura se sitúa en s=-5cm. El objeto está entre el foco F y la lente. Los rayos refractados divergen. Sus prolongaciones se cortan a la izquierda, formando una imagen virtual, derecha y más grande en s'=-10cm."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{problema_lupa_a.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (b): Imagen reducida} \vspace{0.5cm} \textit{Prompt para la imagen:} "Trazado de rayos para una lente divergente con f'=-10cm. Un objeto de altura y se sitúa en s=-10cm. Un rayo paralelo al eje se refracta como si viniera del foco imagen F'. Otro rayo que apunta al foco objeto F emerge paralelo. Los rayos divergen, y sus prolongaciones forman una imagen virtual, derecha y más pequeña en s'=-5cm."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{problema_lupa_b.png}
+    }}
+    \caption{Trazados de rayos para los dos apartados del problema.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utiliza la \textbf{ecuación de las lentes delgadas} y la fórmula del \textbf{aumento lateral (M)}, con el convenio de signos DIN (objeto a la izquierda, $s<0$; distancias a la derecha positivas, a la izquierda negativas; alturas hacia arriba positivas).
+\begin{itemize}
+    \item Ecuación de la lente: $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item Aumento lateral: $M = \frac{y'}{y} = \frac{s'}{s}$
+    \item Una lente con $f'>0$ es \textbf{convergente}. Una lente con $f'<0$ es \textbf{divergente}.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Posición, tamaño y tipo de lente}
+El enunciado da $f' = 10$ cm. Al ser positiva, la lente es \textbf{convergente}.
+Despejamos $s'_a$ de la ecuación de la lente:
+\begin{gather}
+    \frac{1}{s'_a} = \frac{1}{f'} + \frac{1}{s_a} \implies s'_a = \left(\frac{1}{f'} + \frac{1}{s_a}\right)^{-1} = \frac{s_a f'}{s_a + f'}
+\end{gather}
+Calculamos el aumento $M_a$ y luego el tamaño $y'_a$:
+\begin{gather}
+    M_a = \frac{s'_a}{s_a} \quad , \quad y'_a = M_a \cdot y
+\end{gather}
+
+\paragraph*{b) Posición del objeto para $M = +1/2$}
+La condición es que la imagen sea derecha ($M>0$) y la mitad del objeto ($|y'|=|y|/2$), por lo que el aumento es $M_b = +0,5$.
+\begin{gather}
+    M_b = \frac{s'_b}{s_b} = 0,5 \implies s'_b = 0,5 s_b
+\end{gather}
+Sustituimos esta relación en la ecuación de la lente. Ojo, no sabemos si la lente es la misma. De hecho, una lente convergente no puede producir una imagen derecha y reducida. La imagen derecha que produce es siempre aumentada (caso lupa). Una imagen derecha y reducida sólo puede ser creada por una \textbf{lente divergente}. Por lo tanto, para este apartado debemos suponer una lente con $f' < 0$. El enunciado es ambiguo, pero la física es clara. Asumiremos que se trata de otra lente, una divergente, con $f'=-10$ cm.
+\begin{gather}
+    \frac{1}{0,5 s_b} - \frac{1}{s_b} = \frac{1}{f'} \implies \frac{2-1}{s_b} = \frac{1}{s_b} = \frac{1}{f'} \implies s_b = f'
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Lente convergente con $f'=+10$ cm}
+\begin{gather}
+    \frac{1}{s'_a} = \frac{1}{10} + \frac{1}{-5} = \frac{1-2}{10} = -\frac{1}{10} \implies s'_a = -10 \, \text{cm} \\
+    M_a = \frac{s'_a}{s_a} = \frac{-10}{-5} = +2 \\
+    y'_a = M_a \cdot y = 2 \cdot (2 \, \text{cm}) = 4 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    La lente es \textbf{convergente} ($f'>0$). La imagen se forma en $\boldsymbol{s'=-10 \, cm}$ (es virtual) y su tamaño es $\boldsymbol{y'=4 \, cm}$ (es derecha y aumentada).
+\end{cajaresultado}
+
+\paragraph*{b) Lente divergente con $f'=-10$ cm}
+Como se razonó, este caso solo es posible con una lente divergente. Usando la distancia focal $|f'|=10$ cm, es decir, $f'=-10$ cm.
+\begin{gather}
+    s_b = f' = -10 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    Para obtener una imagen derecha y de la mitad del tamaño, se necesita una \textbf{lente divergente} de $f'=-10$ cm y el objeto debe situarse en $\boldsymbol{s = -10 \, cm}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) El problema describe el funcionamiento de una lupa: una lente convergente con el objeto situado dentro de su distancia focal produce una imagen virtual, derecha y aumentada. b) La petición de una imagen derecha y reducida es incompatible con una lente convergente. Este tipo de imagen es característico de las lentes divergentes, que siempre producen imágenes virtuales, derechas y de menor tamaño que el objeto, como se verifica con el trazado de rayos y las ecuaciones.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque IV: Física del Siglo XX}
+\label{sec:f20_2023_jul_ord}
+% ======================================================================
+
+\subsection{Cuestión 8}
+\label{subsec:C8_2023_jul_ord}
+
+\begin{cajaenunciado}
+La gráfica representa la actividad de una muestra radiactiva en función del tiempo (en días). Utilizando los datos de la gráfica, deduce razonadamente el periodo de semidesintegración de la muestra y la constante de desintegración. Determina el número de periodos necesarios para que la actividad pase a valer 1000 Bq.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+De la gráfica se extraen los siguientes datos:
+\begin{itemize}
+    \item \textbf{Actividad inicial ($A_0$):} Para $t=0$, $A_0 = 8000$ Bq.
+    \item \textbf{Actividad en $t=5$ días:} $A(5) \approx 4000$ Bq.
+    \item \textbf{Actividad en $t=10$ días:} $A(10) \approx 2000$ Bq.
+    \item \textbf{Actividad en $t=15$ días:} $A(15) \approx 1000$ Bq.
+    \item \textbf{Actividad final objetivo:} $A_f = 1000$ Bq.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Periodo de semidesintegración ($T_{1/2}$).
+        \item Constante de desintegración ($\lambda$).
+        \item Número de periodos para llegar a 1000 Bq.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Decaimiento Radioactivo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una gráfica de decaimiento exponencial con el eje Y como Actividad (A) y el eje X como Tiempo (t). La curva empieza en A0. Marcar el punto (T_1/2, A0/2), mostrando que el periodo de semidesintegración es el tiempo necesario para que la actividad se reduzca a la mitad. Marcar también los puntos (2*T_1/2, A0/4) y (3*T_1/2, A0/8) para ilustrar el concepto."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{decaimiento.png}
+    }}
+    \caption{Definición gráfica del periodo de semidesintegración.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ley de desintegración radiactiva:} La actividad de una muestra disminuye exponencialmente con el tiempo según la ley $A(t) = A_0 e^{-\lambda t}$, donde $\lambda$ es la constante de desintegración.
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} Es el tiempo que debe transcurrir para que la actividad de la muestra se reduzca a la mitad de su valor inicial. Es decir, $A(T_{1/2}) = A_0/2$.
+    \item \textbf{Relación entre $\lambda$ y $T_{1/2}$:} Se relacionan mediante la expresión $T_{1/2} = \frac{\ln(2)}{\lambda}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Determinación de $T_{1/2}$ desde la gráfica}
+Buscamos el tiempo $t$ para el cual $A(t) = A_0/2$.
+$A_0 = 8000$ Bq, por lo que $A_0/2 = 4000$ Bq. En la gráfica, observamos el tiempo correspondiente a 4000 Bq.
+
+\paragraph*{Cálculo de $\lambda$}
+Una vez obtenido $T_{1/2}$, despejamos $\lambda$ de la fórmula que los relaciona:
+\begin{gather}
+    \lambda = \frac{\ln(2)}{T_{1/2}}
+\end{gather}
+
+\paragraph*{Número de periodos para llegar a 1000 Bq}
+La actividad se reduce a la mitad en cada periodo:
+$A_0 \xrightarrow{1 \cdot T_{1/2}} A_0/2 \xrightarrow{2 \cdot T_{1/2}} A_0/4 \xrightarrow{3 \cdot T_{1/2}} A_0/8 \dots \xrightarrow{n \cdot T_{1/2}} A_0/2^n$.
+Queremos encontrar $n$ tal que $A(n \cdot T_{1/2}) = 1000$ Bq.
+\begin{gather}
+    1000 = \frac{8000}{2^n} \implies 2^n = \frac{8000}{1000} = 8
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Periodo de Semidesintegración}
+Observando la gráfica, para una actividad de $A = 4000$ Bq, el tiempo es $t=5$ días.
+\begin{cajaresultado}
+    El periodo de semidesintegración es $\boldsymbol{T_{1/2} = 5 \, días}$.
+\end{cajaresultado}
+
+\paragraph*{Constante de Desintegración}
+Primero, pasamos el periodo a segundos para que $\lambda$ esté en SI: $T_{1/2} = 5 \text{ días} \times 86400 \text{ s/día} = 432000$ s.
+\begin{gather}
+    \lambda = \frac{\ln(2)}{432000 \, \text{s}} \approx 1,60 \cdot 10^{-6} \, \text{s}^{-1}
+\end{gather}
+También se puede expresar en días$^{-1}$:
+\begin{gather}
+    \lambda = \frac{\ln(2)}{5 \, \text{días}} \approx 0,1386 \, \text{días}^{-1}
+\end{gather}
+\begin{cajaresultado}
+    La constante de desintegración es $\boldsymbol{\lambda \approx 1,60 \cdot 10^{-6} \, s^{-1}}$ (o $\approx 0,1386 \, \text{días}^{-1}$).
+\end{cajaresultado}
+
+\paragraph*{Número de Periodos}
+\begin{gather}
+    2^n = 8 \implies 2^n = 2^3 \implies n=3
+\end{gather}
+Se puede comprobar en la gráfica: $t = 3 \cdot T_{1/2} = 3 \cdot 5 = 15$ días. Para $t=15$ días, la gráfica muestra $A(15) = 1000$ Bq.
+\begin{cajaresultado}
+    Se necesitan \textbf{3 periodos de semidesintegración} para que la actividad se reduzca a 1000 Bq.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La gráfica de decaimiento radiactivo permite determinar de forma directa el periodo de semidesintegración, que es de 5 días. A partir de este valor, se calcula la constante de desintegración $\lambda$. El concepto de semidesintegración simplifica el cálculo de la actividad en múltiplos del periodo, confirmando que tras 3 periodos (15 días), la actividad se reduce a un octavo de la inicial, alcanzando los 1000 Bq.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 4}
+\label{subsec:P4_2023_jul_ord}
+
+\begin{cajaenunciado}
+En una experiencia se ilumina, con diferentes longitudes de onda, una placa que tiene dos zonas con metales distintos, titanio y un metal A desconocido. Se mide la energía cinética de los fotoelectrones emitidos obteniendo la gráfica adjunta.
+\begin{enumerate}
+    \item[a)] Calcula razonadamente la longitud de onda umbral para el metal A y su trabajo de extracción. Identifícalo a partir de los datos de la tabla adjunta. (1 punto)
+    \item[b)] Determina la velocidad de los electrones emitidos por el titanio cuando se ilumina con luz de frecuencia $1,13\cdot10^{15}$ Hz. ¿Qué sucede con los electrones del metal A si se ilumina con dicha luz? (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de Planck, $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$; carga eléctrica del electrón, $e=1,6\cdot10^{-19}\,\text{C}$; velocidad de la luz, $c=3\cdot10^{8}\,\text{m/s}$; masa del electrón, $m_e=9,1\cdot10^{-31}\,\text{kg}$.
+\textbf{Tabla:} Metal - W(eV): Berilio-4,95; Cadmio-4,08; Paladio-5,60.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Constantes Físicas:} $h$, $e$, $c$, $m_e$ dadas.
+    \item \textbf{Gráfica:} Energía cinética $E_c$ (en eV) vs. $1/\lambda$ (en m$^{-1}$).
+    \item \textbf{Punto de corte Metal A:} $E_c=0$ para $1/\lambda_{0,A} = 4,0 \cdot 10^6 \, \text{m}^{-1}$.
+    \item \textbf{Punto de corte Titanio:} $E_c=0$ para $1/\lambda_{0,Ti} = 3,5 \cdot 10^6 \, \text{m}^{-1}$.
+    \item \textbf{Frecuencia incidente (b):} $f_{inc} = 1,13 \cdot 10^{15} \, \text{Hz}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Longitud de onda umbral del Metal A ($\lambda_{0,A}$).
+        \item Trabajo de extracción del Metal A ($W_A$).
+        \item Identidad del Metal A.
+        \item Velocidad de electrones del Titanio ($v_{e,Ti}$).
+        \item ¿Hay efecto fotoeléctrico en Metal A con $f_{inc}$?
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Esquema de un experimento de efecto fotoeléctrico. Luz monocromática (fotones) de energía E=hf incide sobre una placa metálica (cátodo) dentro de un tubo de vacío. Si la energía es suficiente, se emiten electrones (fotoelectrones) que son atraídos por un ánodo, generando una corriente medible. Indicar que la energía cinética máxima de los electrones depende de la frecuencia de la luz y del trabajo de extracción del metal."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{efecto_fotoelectrico.png}
+    }}
+    \caption{Montaje experimental para el efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se explica por la \textbf{ecuación del efecto fotoeléctrico de Einstein}: la energía de un fotón incidente ($E_{fotón}$) se invierte en liberar un electrón del metal (trabajo de extracción, $W$) y en darle energía cinética ($E_{c,max}$).
+\begin{gather*}
+    E_{c,max} = E_{fotón} - W = hf - W = \frac{hc}{\lambda} - W
+\end{gather*}
+La \textbf{frecuencia umbral ($f_0$)} o \textbf{longitud de onda umbral ($\lambda_0$)} es la mínima frecuencia (máxima longitud de onda) de la luz para la que se produce el efecto ($E_c=0$). Por tanto, $W = hf_0 = hc/\lambda_0$.
+La energía cinética se relaciona con la velocidad mediante $E_c = \frac{1}{2}m_e v^2$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Metal A}
+De la gráfica, el punto donde la recta corta el eje de abscisas ($E_c=0$) corresponde a la inversa de la longitud de onda umbral, $1/\lambda_{0,A}$.
+\begin{gather}
+    \lambda_{0,A} = \left(\frac{1}{\lambda_{0,A}}\right)^{-1} \\
+    W_A = \frac{hc}{\lambda_{0,A}} = hc \left(\frac{1}{\lambda_{0,A}}\right)
+\end{gather}
+El valor de $W_A$ se calculará en Julios y luego se convertirá a eV para compararlo con la tabla, usando la conversión $1 \, \text{eV} = 1,6 \cdot 10^{-19} \, \text{J}$.
+
+\paragraph*{b) Titanio y Metal A}
+Primero calculamos el trabajo de extracción del Titanio, $W_{Ti}$, usando su frecuencia umbral (obtenida de la gráfica).
+\begin{gather}
+    W_{Ti} = hc \left(\frac{1}{\lambda_{0,Ti}}\right)
+\end{gather}
+Luego, usamos la ecuación de Einstein con la frecuencia incidente $f_{inc}$:
+\begin{gather}
+    E_{c,Ti} = h f_{inc} - W_{Ti}
+\end{gather}
+Y de la energía cinética, obtenemos la velocidad:
+\begin{gather}
+    v_{e,Ti} = \sqrt{\frac{2 E_{c,Ti}}{m_e}}
+\end{gather}
+Para el Metal A, comparamos la energía del fotón incidente $E_{inc} = hf_{inc}$ con el trabajo de extracción $W_A$. Si $E_{inc} > W_A$, hay efecto fotoeléctrico. Si no, no lo hay.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Metal A}
+\begin{gather}
+    \frac{1}{\lambda_{0,A}} = 4,0 \cdot 10^6 \, \text{m}^{-1} \implies \lambda_{0,A} = \frac{1}{4,0 \cdot 10^6} = 2,5 \cdot 10^{-7} \, \text{m} = 250 \, \text{nm} \\
+    W_A = (6,6\cdot10^{-34})(3\cdot10^8)(4,0\cdot10^6) = 7,92 \cdot 10^{-19} \, \text{J} \\
+    W_A (\text{eV}) = \frac{7,92 \cdot 10^{-19} \, \text{J}}{1,6 \cdot 10^{-19} \, \text{J/eV}} = 4,95 \, \text{eV}
+\end{gather}
+Comparando con la tabla, un trabajo de extracción de 4,95 eV corresponde al \textbf{Berilio}.
+\begin{cajaresultado}
+    La longitud de onda umbral es $\boldsymbol{\lambda_{0,A} = 250 \, nm}$, el trabajo de extracción es $\boldsymbol{W_A = 4,95 \, eV}$, y el metal A es \textbf{Berilio}.
+\end{cajaresultado}
+
+\paragraph*{b) Titanio y re-evaluación de Metal A}
+$W_{Ti} = hc \left(\frac{1}{\lambda_{0,Ti}}\right) = (6,6\cdot10^{-34})(3\cdot10^8)(3,5\cdot10^6) = 6,93 \cdot 10^{-19} \, \text{J}$.
+Energía del fotón incidente: $E_{inc} = h f_{inc} = (6,6\cdot10^{-34})(1,13\cdot10^{15}) = 7,458 \cdot 10^{-19} \, \text{J}$.
+Para el Titanio: $E_{inc} > W_{Ti}$ ($7,458 > 6,93$), por tanto, sí hay efecto.
+\begin{gather}
+    E_{c,Ti} = 7,458 \cdot 10^{-19} - 6,93 \cdot 10^{-19} = 5,28 \cdot 10^{-20} \, \text{J} \\
+    v_{e,Ti} = \sqrt{\frac{2 \cdot (5,28 \cdot 10^{-20})}{9,1\cdot10^{-31}}} \approx 3,4 \cdot 10^5 \, \text{m/s}
+\end{gather}
+Para el Metal A (Berilio): $E_{inc} = 7,458 \cdot 10^{-19} \, \text{J}$ y $W_A = 7,92 \cdot 10^{-19} \, \text{J}$.
+Como $E_{inc} < W_A$, la energía del fotón \textbf{no es suficiente} para arrancar electrones del metal A.
+\begin{cajaresultado}
+    La velocidad de los electrones emitidos por el titanio es $\boldsymbol{v \approx 3,4 \cdot 10^5 \, m/s}$. Con esta luz, \textbf{no se emiten electrones} del metal A (Berilio) porque la energía del fotón es menor que su trabajo de extracción.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La gráfica experimental permite extraer los trabajos de extracción de los metales, identificando el Metal A como Berilio. La ecuación de Einstein predice la energía cinética y, por tanto, la velocidad de los fotoelectrones, que para el Titanio es de $3,4 \cdot 10^5$ m/s. Crucialmente, el modelo fotoeléctrico también explica por qué no se produce emisión si la energía del fotón incidente no supera el umbral del trabajo de extracción, como ocurre en el caso del Berilio con la luz propuesta.
+\end{cajaconclusion}

@@ -1,0 +1,813 @@
+% !TEX root = ../main.tex
+% ======================================================================
+% CAPÍTULO: Examen Junio 2005 - Comunidad Valenciana
+% ======================================================================
+\chapter{Examen Junio 2005 - Comunidad Valenciana}
+\label{chap:2005_jun_cv}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2005_jun_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:1A_2005_jun_cv}
+
+\begin{cajaenunciado}
+Calcula el radio de la Tierra $R_T$ sabiendo que la energía potencial gravitatoria de un cuerpo de masa 20 kg, situado a una altura $h=R_T$ sobre la superficie terrestre, es $E_p = -1,2446 \cdot 10^9\,\text{J}$. Toma como dato el valor de la aceleración de la gravedad sobre la superficie terrestre $g=9,8\,\text{m/s}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del cuerpo ($m$):} $m = 20 \, \text{kg}$
+    \item \textbf{Altura sobre la superficie ($h$):} $h = R_T$
+    \item \textbf{Distancia al centro de la Tierra ($r$):} $r = R_T + h = R_T + R_T = 2R_T$
+    \item \textbf{Energía potencial a esa altura ($E_p$):} $E_p = -1,2446 \cdot 10^9 \, \text{J}$
+    \item \textbf{Gravedad en la superficie terrestre ($g$):} $g = 9,8 \, \text{m/s}^2$
+    \item \textbf{Incógnita:} Radio de la Tierra ($R_T$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Energía Potencial a una altura $h=R_T$} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Tierra, representada como una esfera de radio $R_T$. Un objeto de masa $m$ se sitúa a una altura $h$ sobre la superficie, donde la distancia $h$ es igual al radio $R_T$. Se indica claramente que la distancia total del objeto al centro de la Tierra es $r = 2R_T$." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{energia_potencial_rt.png}
+    }}
+    \caption{Esquema de la posición del cuerpo respecto a la Tierra.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utilizan dos expresiones fundamentales del campo gravitatorio:
+\begin{enumerate}
+    \item La \textbf{energía potencial gravitatoria} de una masa $m$ a una distancia $r$ del centro de la Tierra ($M_T$) es: $E_p = -G \frac{M_T m}{r}$.
+    \item La \textbf{aceleración de la gravedad} en la superficie de la Tierra se relaciona con su masa y radio mediante: $g = G \frac{M_T}{R_T^2}$.
+\end{enumerate}
+De la segunda ecuación, podemos despejar el producto $G M_T = g R_T^2$, lo que nos permitirá resolver el problema sin necesidad de conocer $G$ ni $M_T$ individualmente.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sustituimos $r=2R_T$ en la fórmula de la energía potencial:
+\begin{gather}
+    E_p = -G \frac{M_T m}{2R_T}
+\end{gather}
+Ahora, sustituimos el producto $G M_T$ por su equivalente $g R_T^2$:
+\begin{gather}
+    E_p = - \frac{(g R_T^2) m}{2R_T} = - \frac{g m R_T}{2}
+\end{gather}
+De esta expresión final, podemos despejar la incógnita, el radio de la Tierra $R_T$:
+\begin{gather}
+    R_T = - \frac{2 E_p}{g m}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores numéricos proporcionados en el enunciado:
+\begin{gather}
+    R_T = - \frac{2 \cdot (-1,2446 \cdot 10^9 \, \text{J})}{(9,8 \, \text{m/s}^2) \cdot (20 \, \text{kg})} = \frac{2,4892 \cdot 10^9}{196} \approx 1,27 \cdot 10^7 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    El radio de la Tierra es $\boldsymbol{R_T \approx 1,27 \cdot 10^7 \, \textbf{m}}$ (o 12700 km).
+\end{cajaresultado}
+\textit{Nota: El valor obtenido es aproximadamente el doble del real. Esto se debe a los datos del enunciado.}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Combinando la expresión de la energía potencial gravitatoria con la definición de la aceleración de la gravedad en la superficie, se ha despejado el radio terrestre. Con los datos proporcionados, se obtiene un valor para el radio de la Tierra de $\mathbf{12700 \, km}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:1B_2005_jun_cv}
+
+\begin{cajaenunciado}
+Un satélite de masa m describe una órbita circular de radio R alrededor de un planeta de masa M, con velocidad constante v. ¿Qué trabajo realiza la fuerza que actúa sobre el satélite durante una vuelta completa? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Movimiento:} Circular uniforme.
+    \item \textbf{Fuerza actuante:} Fuerza de atracción gravitatoria, $\vec{F}_g$.
+    \item \textbf{Trayectoria:} Una órbita circular completa.
+    \item \textbf{Incógnita:} Trabajo realizado por la fuerza gravitatoria ($W_g$) en una órbita.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Fuerza y Desplazamiento en una Órbita Circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta de masa M en el centro. Un satélite de masa m en una órbita circular de radio R. En un punto cualquiera de la órbita, dibujar el vector de la fuerza gravitatoria $\vec{F}_g$ apuntando hacia el centro del planeta. En el mismo punto, dibujar el vector velocidad $\vec{v}$, que es tangente a la trayectoria. Mostrar que el ángulo entre $\vec{F}_g$ y $\vec{v}$ (y por tanto, con el desplazamiento infinitesimal $d\vec{l}$) es siempre de 90 grados." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{trabajo_orbita.png}
+    }}
+    \caption{La fuerza gravitatoria es siempre perpendicular al desplazamiento.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El trabajo realizado por una fuerza $\vec{F}$ a lo largo de una trayectoria se define por la integral de línea:
+$$ W = \int \vec{F} \cdot d\vec{l} $$
+donde $d\vec{l}$ es el vector desplazamiento infinitesimal, que es tangente a la trayectoria y tiene la misma dirección que el vector velocidad $\vec{v}$.
+
+Se puede razonar de dos maneras:
+\paragraph*{Razonamiento 1: Perpendicularidad de los vectores}
+La fuerza que actúa sobre el satélite es la fuerza gravitatoria. Esta fuerza es siempre radial y dirigida hacia el centro del planeta. En un movimiento circular, el vector velocidad (y por tanto el vector desplazamiento $d\vec{l}$) es siempre tangente a la trayectoria. Una recta radial y una recta tangente a una circunferencia en el mismo punto son siempre perpendiculares. Por lo tanto, el ángulo entre $\vec{F}_g$ y $d\vec{l}$ es siempre de $90^\circ$.
+
+\paragraph*{Razonamiento 2: Teorema de la Energía Cinética}
+El teorema de la energía cinética establece que el trabajo total realizado sobre un cuerpo es igual a la variación de su energía cinética: $W_{neto} = \Delta E_c$. En una órbita circular, el módulo de la velocidad es constante, por lo que la energía cinética ($E_c = \frac{1}{2}mv^2$) también es constante.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Método 1}
+El producto escalar $\vec{F} \cdot d\vec{l}$ es igual a $|\vec{F}| |d\vec{l}| \cos(\theta)$. Como $\theta = 90^\circ$:
+\begin{gather}
+    \vec{F}_g \cdot d\vec{l} = |\vec{F}_g| |d\vec{l}| \cos(90^\circ) = 0
+\end{gather}
+Por lo tanto, la integral es:
+\begin{gather}
+    W_g = \int 0 = 0
+\end{gather}
+\paragraph*{Método 2}
+La velocidad inicial y final después de una vuelta completa son idénticas ($\vec{v}_i = \vec{v}_f$).
+\begin{gather}
+    \Delta E_c = E_{c,f} - E_{c,i} = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2 = 0
+\end{gather}
+Como la única fuerza que actúa es la gravitatoria, $W_{neto} = W_g$.
+\begin{gather}
+    W_g = \Delta E_c = 0
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No se requiere sustitución numérica.
+\begin{cajaresultado}
+    El trabajo realizado por la fuerza gravitatoria sobre el satélite durante una vuelta completa es $\boldsymbol{W_g = 0 \, J}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    El trabajo realizado es nulo por dos razones equivalentes. Primero, porque la fuerza gravitatoria, que actúa como fuerza centrípeta, es en todo momento perpendicular al desplazamiento del satélite. Segundo, por el teorema de la energía cinética, al ser una órbita circular la velocidad es constante, la energía cinética no varía y, por tanto, el trabajo neto realizado sobre el satélite es cero.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Movimiento Ondulatorio y Armónico}
+\label{sec:mas_2005_jun_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 2 - OPCIÓN A}
+\label{subsec:2A_2005_jun_cv}
+
+\begin{cajaenunciado}
+Se tiene un cuerpo de masa $m=10$ kg que realiza un movimiento armónico simple. La figura adjunta es la representación de su elongación y en función del tiempo t. Se pide:
+\begin{enumerate}
+    \item[1.] La ecuación matemática del movimiento armónico $y(t)$ con los valores numéricos correspondientes, que se tienen que deducir de la gráfica. (1,2 puntos)
+    \item[2.] La velocidad de dicha partícula en función del tiempo y su valor concreto en $t=5$ s. (0,8 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+De la gráfica se extraen los siguientes parámetros del M.A.S.:
+\begin{itemize}
+    \item \textbf{Masa ($m$):} $m=10$ kg.
+    \item \textbf{Amplitud ($A$):} Es el valor máximo de la elongación. $A = 4 \text{ mm} = 4 \cdot 10^{-3} \text{ m}$.
+    \item \textbf{Período ($T$):} Tiempo en completar una oscilación. Se observa que un ciclo completo va de $t \approx 1,5$ s a $t \approx 11,5$ s. Por lo tanto, $T = 10 \text{ s}$.
+    \item \textbf{Pulsación ($\omega$):} $\omega = \frac{2\pi}{T} = \frac{2\pi}{10} = \frac{\pi}{5} \text{ rad/s}$.
+    \item \textbf{Condición inicial:} En $t=0$, la elongación es $y(0) = 2 \text{ mm} = 2 \cdot 10^{-3} \text{ m}$.
+    \item \textbf{Incógnitas:} Ecuación $y(t)$ y velocidad $v(t)$, en particular $v(5)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La propia gráfica del enunciado es la representación del movimiento.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación general de un M.A.S. es $y(t) = A \sin(\omega t + \phi_0)$ o $y(t) = A \cos(\omega t + \phi_0')$. Usaremos la forma seno. La velocidad se obtiene derivando la posición respecto al tiempo: $v(t) = \frac{dy}{dt}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Ecuación del movimiento $y(t)$}
+La forma general es $y(t) = A \sin(\omega t + \phi_0)$. Debemos encontrar la fase inicial $\phi_0$ usando la condición en $t=0$:
+\begin{gather}
+    y(0) = A \sin(\omega \cdot 0 + \phi_0) = A \sin(\phi_0)
+\end{gather}
+\paragraph*{2. Ecuación de la velocidad $v(t)$}
+Derivamos la ecuación de la posición:
+\begin{gather}
+    v(t) = \frac{d}{dt} [A \sin(\omega t + \phi_0)] = A\omega \cos(\omega t + \phi_0)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Cálculo de la fase inicial y ecuación de $y(t)$}
+Usamos los valores numéricos en la ecuación para $y(0)$:
+\begin{gather}
+    2 \cdot 10^{-3} = (4 \cdot 10^{-3}) \sin(\phi_0) \implies \sin(\phi_0) = \frac{2}{4} = 0,5 \nonumber \\[8pt]
+    \phi_0 = \arcsin(0,5) = \frac{\pi}{6} \text{ rad}
+\end{gather}
+(Se elige $\pi/6$ y no $5\pi/6$ porque en $t=0$ la pendiente de la gráfica es positiva, lo que implica que la velocidad inicial es positiva, y $\cos(\pi/6)>0$).
+La ecuación del movimiento es:
+\begin{cajaresultado}
+    $\boldsymbol{y(t) = 4 \cdot 10^{-3} \sin\left(\frac{\pi}{5}t + \frac{\pi}{6}\right)}$ (en unidades del SI).
+\end{cajaresultado}
+
+\paragraph*{2. Ecuación de $v(t)$ y valor en $t=5$ s}
+La ecuación de la velocidad es:
+\begin{gather}
+    v(t) = (4 \cdot 10^{-3}) \left(\frac{\pi}{5}\right) \cos\left(\frac{\pi}{5}t + \frac{\pi}{6}\right) = \frac{4\pi}{5} \cdot 10^{-3} \cos\left(\frac{\pi}{5}t + \frac{\pi}{6}\right)
+\end{gather}
+Ahora, sustituimos $t=5$ s:
+\begin{gather}
+    v(5) = \frac{4\pi}{5} \cdot 10^{-3} \cos\left(\frac{\pi}{5}(5) + \frac{\pi}{6}\right) = \frac{4\pi}{5} \cdot 10^{-3} \cos\left(\pi + \frac{\pi}{6}\right) \nonumber \\[8pt]
+    v(5) = \frac{4\pi}{5} \cdot 10^{-3} \cos\left(\frac{7\pi}{6}\right) = \frac{4\pi}{5} \cdot 10^{-3} \left(-\frac{\sqrt{3}}{2}\right) \approx -2,18 \cdot 10^{-3} \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad en $t=5$ s es $\boldsymbol{v(5) \approx -2,18 \cdot 10^{-3} \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    A partir de la gráfica se han deducido la amplitud (4 mm), el período (10 s) y la fase inicial ($\pi/6$ rad). Con estos parámetros, la ecuación del movimiento es $y(t) = 4 \cdot 10^{-3} \sin(\pi t/5 + \pi/6)$. La velocidad en $t=5$ s, obtenida derivando la posición, es de $\mathbf{-2,18 \, mm/s}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 2 - OPCIÓN B}
+\label{subsec:2B_2005_jun_cv}
+
+\begin{cajaenunciado}
+El vector campo eléctrico $\vec{E}(t)$ de una onda luminosa que se propaga por el interior de un vidrio viene dado por la ecuación $\vec{E}(x,t) = \vec{E}_0 \cos[\pi \cdot 10^{15}(t - \frac{x}{0,65c})]$. En la anterior ecuación el símbolo c indica la velocidad de la luz en el vacío, $\vec{E}_0$ es una constante y la distancia y el tiempo se expresan en metros y segundos, respectivamente. Se pide:
+\begin{enumerate}
+    \item[1.] La frecuencia de la onda, su longitud de onda y el índice de refracción del vidrio. (1,5 puntos)
+    \item[2.] La diferencia de fase entre dos puntos del vidrio distantes 130 nm en el instante $t=0$ s. (0,5 puntos)
+\end{enumerate}
+\textbf{Dato:} $c=3\cdot10^8\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ecuación de la onda:} $\vec{E}(x,t) = \vec{E}_0 \cos[\pi \cdot 10^{15}t - \frac{\pi \cdot 10^{15}}{0,65c}x]$.
+    \item \textbf{Forma general de la onda:} $\vec{E}(x,t) = \vec{E}_0 \cos(\omega t - kx)$.
+    \item \textbf{Velocidad de la luz ($c$):} $c=3\cdot10^8\,\text{m/s}$.
+    \item \textbf{Separación de puntos ($\Delta x$):} $\Delta x = 130 \text{ nm} = 1,3 \cdot 10^{-7}$ m.
+    \item \textbf{Incógnitas:} Frecuencia $f$, longitud de onda $\lambda$, índice de refracción $n$, diferencia de fase $\Delta\phi$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Onda Electromagnética} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una onda sinusoidal propagándose a lo largo del eje X. El eje Y representa la amplitud del campo eléctrico E. Marcar la longitud de onda $\lambda$ como la distancia entre dos crestas consecutivas. Indicar que la onda se mueve con una velocidad de propagación $v$ en el medio." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{onda_em.png}
+    }}
+    \caption{Representación de una onda armónica.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Comparando la ecuación dada con la forma general $y(x,t) = A \cos(\omega t - kx)$, podemos identificar la frecuencia angular $\omega$ y el número de onda $k$.
+\begin{itemize}
+    \item \textbf{Frecuencia ($f$):} Se relaciona con $\omega$ mediante $\omega = 2\pi f$.
+    \item \textbf{Velocidad de propagación ($v$):} $v = \frac{\omega}{k}$.
+    \item \textbf{Índice de refracción ($n$):} $n = \frac{c}{v}$.
+    \item \textbf{Longitud de onda ($\lambda$):} $\lambda = \frac{v}{f}$ o $\lambda = \frac{2\pi}{k}$.
+    \item \textbf{Fase ($\phi$):} La fase de la onda es el argumento del coseno, $\phi(x,t) = \omega t - kx$. La diferencia de fase entre dos puntos $x_1$ y $x_2$ en un mismo instante es $\Delta\phi = k(x_2 - x_1) = k \Delta x$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+De la comparación de las ecuaciones:
+\begin{gather}
+    \omega = \pi \cdot 10^{15} \, \text{rad/s} \\
+    k = \frac{\pi \cdot 10^{15}}{0,65c} \, \text{rad/m}
+\end{gather}
+A partir de aquí, aplicamos las definiciones.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Frecuencia, longitud de onda e índice de refracción}
+\begin{gather}
+    f = \frac{\omega}{2\pi} = \frac{\pi \cdot 10^{15}}{2\pi} = 5 \cdot 10^{14} \, \text{Hz}
+\end{gather}
+La velocidad de propagación en el vidrio es $v = \frac{\omega}{k} = \frac{\pi \cdot 10^{15}}{\pi \cdot 10^{15} / (0,65c)} = 0,65c$.
+\begin{gather}
+    v = 0,65 \cdot (3\cdot10^8) = 1,95 \cdot 10^8 \, \text{m/s} \\
+    n = \frac{c}{v} = \frac{c}{0,65c} = \frac{1}{0,65} \approx 1,54 \\
+    \lambda = \frac{v}{f} = \frac{1,95 \cdot 10^8}{5 \cdot 10^{14}} = 3,9 \cdot 10^{-7} \, \text{m} = 390 \, \text{nm}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia es $\boldsymbol{f=5 \cdot 10^{14}\,Hz}$, la longitud de onda $\boldsymbol{\lambda=390\,nm}$ y el índice de refracción $\boldsymbol{n \approx 1,54}$.
+\end{cajaresultado}
+
+\paragraph*{2. Diferencia de fase}
+\begin{gather}
+    \Delta\phi = k \Delta x = \left(\frac{\pi \cdot 10^{15}}{0,65 \cdot 3\cdot10^8}\right) \cdot (1,3 \cdot 10^{-7}) = \frac{1,3 \pi \cdot 10^8}{1,95 \cdot 10^8} = \frac{1,3 \pi}{1,95} = \frac{2\pi}{3} \, \text{rad}
+\end{gather}
+\begin{cajaresultado}
+    La diferencia de fase es $\boldsymbol{\Delta\phi = \frac{2\pi}{3} \, rad}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Identificando los términos de la ecuación de onda, se obtiene una frecuencia de $\mathbf{5 \cdot 10^{14} \, Hz}$ y un número de onda que permite calcular una velocidad de propagación de $0,65c$. Esto conduce a un índice de refracción de $\mathbf{1,54}$ y una longitud de onda de $\mathbf{390 \, nm}$ (luz violeta). La diferencia de fase entre dos puntos separados 130 nm es $\mathbf{2\pi/3}$ radianes.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Óptica Geométrica}
+\label{sec:optica_2005_jun_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 2 - OPCIÓN A}
+\label{subsec:3A_2005_jun_cv}
+
+\begin{cajaenunciado}
+Enuncia las leyes de la reflexión y de la refracción. ¿En qué circunstancias se produce el fenómeno de la reflexión total interna? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre los principios fundamentales de la óptica geométrica.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Reflexión y Refracción} \vspace{0.5cm} \textit{Prompt para la imagen:} "Interfase entre dos medios, n1 y n2. Un rayo incidente forma un ángulo $\theta_1$ con la normal. Se muestran el rayo reflejado, con ángulo $\theta_r=\theta_1$, y el rayo refractado, con ángulo $\theta_2$ según la ley de Snell." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{reflexion_refraccion.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Reflexión Total Interna} \vspace{0.5cm} \textit{Prompt para la imagen:} "Interfase con $n_1 > n_2$. Se muestran tres rayos incidiendo desde n1. El primero se refracta. El segundo incide con el ángulo límite $\theta_L$ y se refracta a 90°. El tercero incide con un ángulo mayor que $\theta_L$ y se refleja totalmente, sin rayo refractado." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{reflexion_total.png}
+    }}
+    \caption{Esquemas de las leyes de la óptica y del fenómeno de reflexión total.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Leyes de la Reflexión}
+\begin{enumerate}
+    \item El rayo incidente, el rayo reflejado y la recta normal a la superficie en el punto de incidencia están en el mismo plano.
+    \item El ángulo de incidencia ($\theta_1$) es igual al ángulo de reflexión ($\theta_r$). $\boldsymbol{\theta_1 = \theta_r}$.
+\end{enumerate}
+
+\paragraph*{Leyes de la Refracción (Ley de Snell)}
+\begin{enumerate}
+    \item El rayo incidente, el rayo refractado y la recta normal a la superficie en el punto de incidencia están en el mismo plano.
+    \item La relación entre los senos de los ángulos de incidencia ($\theta_1$) y refracción ($\theta_2$) es constante e igual a la relación inversa de los índices de refracción de los medios. $\boldsymbol{n_1 \sin(\theta_1) = n_2 \sin(\theta_2)}$.
+\end{enumerate}
+
+\paragraph*{Reflexión Total Interna}
+Este fenómeno ocurre cuando la luz viaja de un medio más denso a uno menos denso (ópticamente hablando).
+\begin{cajaconclusion}
+La reflexión total interna se produce cuando se cumplen dos condiciones:
+\begin{enumerate}
+    \item El rayo de luz debe pasar de un medio con \textbf{mayor índice de refracción a otro con menor índice de refracción} ($n_1 > n_2$).
+    \item El \textbf{ángulo de incidencia debe ser mayor que un cierto ángulo crítico}, llamado ángulo límite ($\theta_1 > \theta_L$).
+\end{enumerate}
+\end{cajaconclusion}
+\textbf{Razonamiento:} Según la ley de Snell, si $n_1 > n_2$, entonces $\sin(\theta_2) = \frac{n_1}{n_2}\sin(\theta_1) > \sin(\theta_1)$, lo que implica que $\theta_2 > \theta_1$. A medida que $\theta_1$ aumenta, $\theta_2$ también lo hace, pero más rápido. Existe un ángulo de incidencia, el ángulo límite $\theta_L$, para el cual el ángulo de refracción es $\theta_2 = 90^\circ$. Para cualquier ángulo de incidencia mayor que $\theta_L$, el seno de $\theta_2$ debería ser mayor que 1, lo cual es imposible. En esa situación, no hay refracción y toda la luz se refleja. El ángulo límite se calcula haciendo $\theta_2=90^\circ$: $n_1 \sin(\theta_L) = n_2 \sin(90^\circ) \implies \sin(\theta_L) = \frac{n_2}{n_1}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+No aplica.
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica.
+\subsubsection*{6. Conclusión}
+Resumen de lo anterior.
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:3B_2005_jun_cv}
+
+\begin{cajaenunciado}
+¿A qué distancia de una lente delgada convergente de focal 10 cm se debe situar un objeto para que su imagen se forme a la misma distancia de la lente? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Lente:} Convergente, $f' = +10$ cm.
+    \item \textbf{Condición:} La distancia de la imagen a la lente es igual a la distancia del objeto a la lente. $|s'| = |s|$.
+    \item \textbf{Incógnita:} Distancia objeto, $s$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Trazado de Rayos para $s=-2f'$} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente convergente. El eje óptico es horizontal. La lente se sitúa en el origen. El foco objeto F está en x=-10 cm y el foco imagen F' en x=+10 cm. Un objeto (flecha vertical hacia arriba) se coloca en x=-20 cm (en -2F). Se dibujan los rayos notables que convergen para formar una imagen real e invertida en x=+20 cm (en 2F'). La imagen y el objeto están a la misma distancia (20 cm) de la lente." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_convergente_2f.png}
+    }}
+    \caption{Caso particular en el que objeto e imagen equidistan de la lente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utiliza la \textbf{Ecuación de las Lentes Delgadas}: $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$.
+Hay dos posibles casos que cumplen $|s'|=|s|$:
+\begin{enumerate}
+    \item $s' = s$: Esto implicaría que $\frac{1}{s} - \frac{1}{s} = 0 = \frac{1}{f'}$, lo cual es imposible para una lente.
+    \item $s' = -s$: La imagen se forma a la misma distancia que el objeto, pero en el lado opuesto.
+\end{enumerate}
+Un objeto real tiene $s<0$. Si la imagen es real ($s'>0$), se cumple $s' = -s$. Si la imagen es virtual ($s'<0$), se cumpliría $s'=s$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sustituimos la condición $s' = -s$ en la ecuación de la lente:
+\begin{gather}
+    \frac{1}{-s} - \frac{1}{s} = \frac{1}{f'} \nonumber \\[8pt]
+    -\frac{2}{s} = \frac{1}{f'} \implies s = -2f'
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    s = -2 \cdot (10 \, \text{cm}) = -20 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    El objeto debe situarse a $\boldsymbol{20 \, cm}$ de la lente (en $s=-20$ cm).
+\end{cajaresultado}
+La posición de la imagen será $s' = -s = -(-20) = +20$ cm.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Para que la imagen y el objeto estén a la misma distancia de una lente convergente, el objeto debe ser real y la imagen también real. Esto solo ocurre cuando el objeto se sitúa a una distancia igual al doble de la distancia focal. Para una focal de 10 cm, el objeto debe colocarse a \textbf{20 cm} de la lente.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Campo Eléctrico y Magnético}
+\label{sec:em_2005_jun_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 3 - OPCIÓN A}
+\label{subsec:4A_2005_jun_cv}
+
+\begin{cajaenunciado}
+Una partícula con carga $q_1=10^{-6}\,\text{C}$ se fija en el origen de coordenadas.
+\begin{enumerate}
+    \item[1.] ¿Qué trabajo será necesario realizar para colocar una segunda partícula, con carga $q_2=10^{-8}\,\text{C}$, que está inicialmente en el infinito, en un punto P situado en la parte positiva del eje Y a una distancia de 30 cm del origen de coordenadas? (1 punto)
+    \item[2.] La partícula de carga $q_2$ tiene 2 mg de masa. Esta partícula se deja libre en el punto P, ¿qué velocidad tendrá cuando se encuentre a 1,5 m de distancia de $q_1$? (suponer despreciables los efectos gravitatorios). (1 punto)
+\end{enumerate}
+\textbf{Dato:} $K_e=9\cdot10^9\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga fija ($q_1$):} $q_1=10^{-6}\,\text{C}$ en (0,0,0).
+    \item \textbf{Carga móvil ($q_2$):} $q_2=10^{-8}\,\text{C}$.
+    \item \textbf{Masa de $q_2$ ($m_2$):} $m_2 = 2 \text{ mg} = 2 \cdot 10^{-6}$ kg.
+    \item \textbf{Punto P:} En el eje Y, a $r_P = 30 \text{ cm} = 0,3$ m del origen.
+    \item \textbf{Punto final Q:} A $r_Q = 1,5$ m del origen.
+    \item \textbf{Constante de Coulomb ($K_e$):} $K_e=9\cdot10^9\,\text{N}\text{m}^2/\text{C}^2$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Movimiento de una carga en un campo eléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de coordenadas XY. Una carga positiva $q_1$ en el origen. Para el apartado 1, mostrar una trayectoria de la carga $q_2$ desde el infinito hasta el punto P(0, 0.3). Para el apartado 2, mostrar la carga $q_2$ partiendo del reposo en P y moviéndose hacia arriba a lo largo del eje Y, alejándose de $q_1$ debido a la repulsión. Indicar su velocidad $v_f$ en el punto Q(0, 1.5)." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{movimiento_carga.png}
+    }}
+    \caption{Esquema de los dos procesos descritos.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1. Trabajo y Energía Potencial Eléctrica}
+El trabajo realizado por un agente externo para traer una carga $q_2$ desde el infinito hasta un punto P en el campo de $q_1$ es igual al incremento de energía potencial eléctrica del sistema, $W_{ext} = \Delta E_p = E_{p,f} - E_{p,i}$. La energía potencial en el infinito es cero. Por tanto, $W_{ext} = E_p(P) = q_2 V_1(P)$, donde $V_1(P)$ es el potencial creado por $q_1$ en P.
+
+\paragraph*{2. Conservación de la Energía Mecánica}
+El campo eléctrico es conservativo. Si se deja libre la carga $q_2$, su energía mecánica total (cinética + potencial) se conserva.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Trabajo}
+\begin{gather}
+    W_{ext} = E_p(P) = K_e \frac{q_1 q_2}{r_P}
+\end{gather}
+\paragraph*{2. Velocidad}
+$E_{M, \text{inicial}}(P) = E_{M, \text{final}}(Q)$
+\begin{gather}
+    E_{c,i} + E_{p,i} = E_{c,f} + E_{p,f} \nonumber \\[8pt]
+    0 + K_e \frac{q_1 q_2}{r_P} = \frac{1}{2} m_2 v_f^2 + K_e \frac{q_1 q_2}{r_Q} \nonumber \\[8pt]
+    v_f = \sqrt{\frac{2 K_e q_1 q_2}{m_2} \left(\frac{1}{r_P} - \frac{1}{r_Q}\right)}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Trabajo}
+\begin{gather}
+    W_{ext} = (9\cdot10^9) \frac{(10^{-6})(10^{-8})}{0,3} = 3 \cdot 10^{-4} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo necesario es $\boldsymbol{W_{ext} = 3 \cdot 10^{-4} \, J}$.
+\end{cajaresultado}
+\paragraph*{2. Velocidad}
+\begin{gather}
+    v_f = \sqrt{\frac{2 (9\cdot10^9) (10^{-6}) (10^{-8})}{2 \cdot 10^{-6}} \left(\frac{1}{0,3} - \frac{1}{1,5}\right)} \nonumber \\[8pt]
+    v_f = \sqrt{0,09 \left(\frac{10}{3} - \frac{2}{3}\right)} = \sqrt{0,09 \left(\frac{8}{3}\right)} = \sqrt{0,24} \approx 0,49 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad será $\boldsymbol{v_f \approx 0,49 \, m/s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Se requiere un trabajo externo de $\mathbf{3 \cdot 10^{-4} \, J}$ para vencer la repulsión y situar la carga $q_2$ en el punto P. Al liberarla, esta energía potencial se convierte en energía cinética, y la partícula alcanza una velocidad de $\mathbf{0,49 \, m/s}$ al pasar por el punto Q.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 3 - OPCIÓN B}
+\label{subsec:4B_2005_jun_cv}
+
+\begin{cajaenunciado}
+Se lanzan partículas con carga $-1,6\cdot10^{-19}\,\text{C}$ dentro de una región donde hay un campo magnético y otro eléctrico, constantes y perpendiculares entre sí. El campo magnético aplicado es $\vec{B}=0,1\vec{k}\,\text{T}$.
+\begin{enumerate}
+    \item[1.] El campo eléctrico uniforme, con la dirección y el sentido del vector $\vec{j}$, se genera aplicando una diferencia de potencial de 300 V entre dos placas paralelas separadas 2 cm. Calcula el valor del campo eléctrico. (0,5 puntos)
+    \item[2.] Si la velocidad de las partículas incidentes es $\vec{v}=10^6\vec{i}\,\text{m/s}$, determina la fuerza de Lorentz que actúa sobre una de estas partículas. (0,8 puntos)
+    \item[3.] ¿Qué velocidad deberían llevar las partículas para que atravesaran la región entre las placas sin desviarse? (0,7 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga ($q$):} $q = -1,6\cdot10^{-19}\,\text{C}$.
+    \item \textbf{Campo magnético ($\vec{B}$):} $\vec{B} = 0,1\vec{k}\,\text{T}$.
+    \item \textbf{Diferencia de potencial ($\Delta V$):} $\Delta V = 300$ V.
+    \item \textbf{Separación de placas ($d$):} $d = 2 \text{ cm} = 0,02$ m.
+    \item \textbf{Velocidad inicial ($\vec{v}$):} $\vec{v}=10^6\vec{i}\,\text{m/s}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Selector de Velocidades} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de coordenadas XYZ. El campo eléctrico $\vec{E}$ apunta en la dirección +Y. El campo magnético $\vec{B}$ apunta en la dirección +Z. Una partícula negativa entra con velocidad $\vec{v}$ en la dirección +X. Dibujar el vector de fuerza eléctrica $\vec{F}_e = q\vec{E}$ apuntando hacia abajo (dirección -Y). Dibujar el vector de fuerza magnética $\vec{F}_m = q(\vec{v} \times \vec{B})$ apuntando hacia arriba (dirección +Y). Mostrar que para una cierta velocidad, las fuerzas se anulan." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{selector_velocidades.png}
+    }}
+    \caption{Configuración de campos cruzados para un selector de velocidades.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1. Campo Eléctrico Uniforme}
+Para un campo uniforme entre placas paralelas, la relación entre el campo $E$ y la diferencia de potencial $\Delta V$ es $E = \frac{\Delta V}{d}$.
+\paragraph*{2. Fuerza de Lorentz}
+La fuerza total sobre una carga en una región con campos $\vec{E}$ y $\vec{B}$ es la Fuerza de Lorentz: $\vec{F}_L = \vec{F}_e + \vec{F}_m = q\vec{E} + q(\vec{v} \times \vec{B})$.
+\paragraph*{3. Selector de Velocidades}
+Para que una partícula no se desvíe, la fuerza de Lorentz total debe ser nula, $\vec{F}_L = 0$, lo que implica que la fuerza eléctrica y la magnética deben ser iguales en módulo y de sentido opuesto: $\vec{F}_e = -\vec{F}_m$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Campo Eléctrico}
+$E = \frac{\Delta V}{d}$. El vector es $\vec{E} = E\vec{j}$.
+\paragraph*{2. Fuerza de Lorentz}
+$\vec{F}_e = q\vec{E}$.
+$\vec{F}_m = q(\vec{v} \times \vec{B})$.
+$\vec{F}_L = \vec{F}_e + \vec{F}_m$.
+\paragraph*{3. Condición de no desviación}
+$|\vec{F}_e| = |\vec{F}_m| \implies |q|E = |q|vB \implies v = \frac{E}{B}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Campo Eléctrico}
+\begin{gather}
+    E = \frac{300 \, \text{V}}{0,02 \, \text{m}} = 15000 \, \text{V/m} \implies \vec{E} = 15000\vec{j} \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    El campo eléctrico es $\boldsymbol{\vec{E} = 15000\vec{j} \, N/C}$.
+\end{cajaresultado}
+\paragraph*{2. Fuerza de Lorentz}
+$\vec{F}_e = (-1,6\cdot10^{-19})(15000\vec{j}) = -2,4\cdot10^{-15}\vec{j} \, \text{N}$.
+$\vec{v} \times \vec{B} = (10^6\vec{i}) \times (0,1\vec{k}) = 10^5 (\vec{i} \times \vec{k}) = 10^5 (-\vec{j}) = -10^5\vec{j}$.
+$\vec{F}_m = (-1,6\cdot10^{-19})(-10^5\vec{j}) = 1,6\cdot10^{-14}\vec{j} \, \text{N}$.
+\begin{gather}
+    \vec{F}_L = (-2,4\cdot10^{-15}\vec{j}) + (1,6\cdot10^{-14}\vec{j}) = 1,36\cdot10^{-14}\vec{j} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza de Lorentz es $\boldsymbol{\vec{F}_L = 1,36\cdot10^{-14}\vec{j} \, N}$.
+\end{cajaresultado}
+\paragraph*{3. Velocidad de no desviación}
+\begin{gather}
+    v = \frac{E}{B} = \frac{15000}{0,1} = 1,5 \cdot 10^5 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad para no desviarse es $\boldsymbol{v = 1,5 \cdot 10^5 \, m/s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    El campo eléctrico es de $\mathbf{15000 \, N/C}$. Para la velocidad dada, la fuerza eléctrica y magnética no se compensan, resultando en una fuerza neta de $\mathbf{1,36\cdot10^{-14}\vec{j} \, N}$ que desviará la partícula. Para que las partículas pasen sin desviarse, su velocidad debería ser de $\mathbf{1,5 \cdot 10^5 \, m/s}$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Física Nuclear}
+\label{sec:nuclear_2005_jun_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 3 - OPCIÓN A}
+\label{subsec:5A_2005_jun_cv}
+
+\begin{cajaenunciado}
+Cuando el nitrógeno absorbe una partícula $\alpha$ se produce el isótopo del oxígeno ${}_{8}^{17}O$ y un protón. A partir de estos datos determinar los números atómicos y másico del nitrógeno y escribir la reacción ajustada.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Reacción nuclear:} Nitrógeno + partícula alfa $\rightarrow$ Oxígeno-17 + protón.
+    \item \textbf{Partícula alfa ($\alpha$):} Es un núcleo de Helio, ${}_{2}^{4}\text{He}$.
+    \item \textbf{Oxígeno-17:} ${}_{8}^{17}\text{O}$.
+    \item \textbf{Protón ($p$):} Es un núcleo de Hidrógeno, ${}_{1}^{1}\text{H}$.
+    \item \textbf{Incógnita:} Números atómico (Z) y másico (A) del Nitrógeno, ${}_{Z}^{A}\text{N}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Reacción Nuclear} \vspace{0.5cm} \textit{Prompt para la imagen:} "A la izquierda, un núcleo de Nitrógeno (etiquetado ${}_{Z}^{A}\text{N}$) y un núcleo de Helio (${}_{2}^{4}\text{He}$) se aproximan para colisionar. Una flecha de reacción apunta a la derecha. A la derecha, se muestran los productos: un núcleo de Oxígeno-17 (${}_{8}^{17}\text{O}$) y un protón (${}_{1}^{1}\text{H}$), alejándose." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{reaccion_nitrogeno.png}
+    }}
+    \caption{Esquema de la transmutación del nitrógeno en oxígeno.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para ajustar la reacción nuclear, se aplican las \textbf{Leyes de Conservación de Soddy-Fajans}:
+\begin{enumerate}
+    \item \textbf{Conservación del número másico (A):} La suma de los superíndices (números másicos) debe ser igual a ambos lados de la reacción.
+    \item \textbf{Conservación del número atómico (Z):} La suma de los subíndices (números atómicos o carga) debe ser igual a ambos lados de la reacción.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La reacción se escribe como:
+\begin{gather}
+    {}_{Z}^{A}\text{N} + {}_{2}^{4}\text{He} \rightarrow {}_{8}^{17}\text{O} + {}_{1}^{1}\text{H}
+\end{gather}
+Aplicamos las leyes de conservación:
+\begin{itemize}
+    \item \textbf{Conservación de A:} $A + 4 = 17 + 1 \implies A = 18 - 4 = 14$.
+    \item \textbf{Conservación de Z:} $Z + 2 = 8 + 1 \implies Z = 9 - 2 = 7$.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Los números obtenidos son $A=14$ y $Z=7$. El elemento con número atómico 7 es, por definición, el Nitrógeno.
+\begin{cajaresultado}
+    El isótopo de nitrógeno es el $\boldsymbol{{}_{7}^{14}\textbf{N}}$. La reacción ajustada es:
+    $$ \boldsymbol{{}_{7}^{14}\textbf{N} + {}_{2}^{4}\textbf{He} \rightarrow {}_{8}^{17}\textbf{O} + {}_{1}^{1}\textbf{H}} $$
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Mediante la aplicación de las leyes de conservación de la carga y del número de nucleones, se ha determinado que el isótopo de nitrógeno que participa en la reacción es el \textbf{Nitrógeno-14} (${}_{7}^{14}\text{N}$). Esta fue la primera reacción de transmutación artificial observada por Rutherford en 1919.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 3 - OPCIÓN B}
+\label{subsec:5B_2005_jun_cv}
+
+\begin{cajaenunciado}
+¿Qué velocidad debe tener un rectángulo de lados x e y, que se mueve en la dirección del lado y, para que su superficie sea $\frac{3}{5}$ partes de su superficie en reposo?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Objeto:} Rectángulo de lados $x_0$ e $y_0$ en reposo.
+    \item \textbf{Superficie en reposo ($S_0$):} $S_0 = x_0 y_0$.
+    \item \textbf{Movimiento:} Se mueve con velocidad $v$ en la dirección del lado $y$.
+    \item \textbf{Superficie en movimiento ($S$):} $S = \frac{3}{5} S_0$.
+    \item \textbf{Incógnita:} Velocidad $v$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Contracción de Lorentz de una Superficie} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos rectángulos. El de la izquierda está etiquetado como 'En reposo', con lados $x_0$ e $y_0$. El de la derecha está etiquetado como 'En movimiento', con un vector de velocidad $\vec{v}$ apuntando hacia arriba (dirección Y). Este rectángulo tiene un lado horizontal $x=x_0$ y un lado vertical $y < y_0$, mostrando que se ha contraído en la dirección del movimiento." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{contraccion_lorentz.png}
+    }}
+    \caption{La longitud se contrae solo en la dirección del movimiento.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando el postulado de la \textbf{Relatividad Especial} sobre la \textbf{contracción de la longitud} (o contracción de Lorentz-FitzGerald). Este fenómeno establece que la longitud de un objeto en movimiento, medida por un observador en reposo, es menor que su longitud propia (medida en reposo). La contracción solo ocurre en la dirección del movimiento.
+$$ L = L_0 \sqrt{1 - \frac{v^2}{c^2}} = \frac{L_0}{\gamma} $$
+donde $L_0$ es la longitud propia, $L$ es la longitud contraída, $v$ es la velocidad relativa y $c$ es la velocidad de la luz.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El rectángulo se mueve en la dirección del lado $y$. Por lo tanto:
+\begin{itemize}
+    \item La longitud del lado $x$ no se ve afectada: $x = x_0$.
+    \item La longitud del lado $y$ se contrae: $y = y_0 \sqrt{1 - v^2/c^2}$.
+\end{itemize}
+La nueva superficie $S$ será:
+\begin{gather}
+    S = x \cdot y = x_0 \cdot y_0 \sqrt{1 - v^2/c^2} = S_0 \sqrt{1 - v^2/c^2}
+\end{gather}
+Usamos la condición del enunciado, $S = \frac{3}{5} S_0$:
+\begin{gather}
+    \frac{3}{5} S_0 = S_0 \sqrt{1 - v^2/c^2} \implies \frac{3}{5} = \sqrt{1 - v^2/c^2}
+\end{gather}
+Ahora, despejamos $v$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Elevamos al cuadrado ambos lados de la ecuación:
+\begin{gather}
+    \left(\frac{3}{5}\right)^2 = 1 - \frac{v^2}{c^2} \implies \frac{9}{25} = 1 - \frac{v^2}{c^2} \nonumber \\[8pt]
+    \frac{v^2}{c^2} = 1 - \frac{9}{25} = \frac{16}{25} \nonumber \\[8pt]
+    v^2 = \frac{16}{25} c^2 \implies v = \sqrt{\frac{16}{25}} c = \frac{4}{5} c
+\end{gather}
+\begin{cajaresultado}
+    La velocidad debe ser $\boldsymbol{v = \frac{4}{5} c}$ (o $0,8c$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Debido al fenómeno de contracción de la longitud, que solo afecta a la dimensión paralela al movimiento, la superficie del rectángulo disminuye. Para que la superficie se reduzca a $3/5$ de su valor en reposo, el factor de contracción $\sqrt{1-v^2/c^2}$ debe ser igual a $3/5$. Esto ocurre a una velocidad de $\mathbf{0,8}$ veces la velocidad de la luz.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Física Moderna}
+\label{sec:moderna_2005_jun_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 4 - OPCIÓN A}
+\label{subsec:6A_2005_jun_cv}
+
+\begin{cajaenunciado}
+Define los conceptos de constante radioactiva, vida media o período y período de semidesintegración.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica que pide la definición de tres magnitudes fundamentales que describen la desintegración radiactiva.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Parámetros de la Desintegración Radiactiva} \vspace{0.5cm} \textit{Prompt para la imagen:} "Gráfica de decaimiento exponencial $N(t) = N_0 e^{-\lambda t}$. El eje Y es el número de núcleos $N(t)$ y el eje X es el tiempo $t$. La curva empieza en $N_0$. Marcar el punto $(T_{1/2}, N_0/2)$ para ilustrar el período de semidesintegración. Trazar una tangente a la curva en $t=0$. El punto donde esta tangente corta el eje X es la vida media, $\tau$. Indicar que la pendiente inicial es proporcional a la constante radiactiva $\lambda$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{parametros_radiactividad.png}
+    }}
+    \caption{Representación gráfica de $T_{1/2}$ y $\tau$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{cajaconclusion}
+\paragraph*{Constante Radiactiva ($\lambda$)}
+Es la \textbf{probabilidad por unidad de tiempo} de que un núcleo atómico se desintegre. Es una característica intrínseca de cada isótopo radiactivo. Sus unidades en el SI son $\text{s}^{-1}$. Un valor alto de $\lambda$ indica que el isótopo es muy inestable y se desintegra rápidamente. Gobierna la ley de desintegración: $N(t) = N_0 e^{-\lambda t}$.
+
+\paragraph*{Período de Semidesintegración ($T_{1/2}$)}
+Es el \textbf{tiempo necesario para que se desintegre la mitad de los núcleos} de una muestra inicial de un isótopo radiactivo. De forma equivalente, es el tiempo que tarda la actividad de la muestra en reducirse a la mitad. Se relaciona con la constante radiactiva mediante la expresión:
+$$ \boldsymbol{T_{1/2} = \frac{\ln(2)}{\lambda}} $$
+
+\paragraph*{Vida Media ($\tau$)}
+Es el \textbf{promedio de vida de un núcleo} en una muestra de un isótopo radiactivo. Representa el tiempo que, en promedio, un núcleo cualquiera de la muestra tardará en desintegrarse. Matemáticamente, es la inversa de la constante radiactiva:
+$$ \boldsymbol{\tau = \frac{1}{\lambda}} $$
+Por lo tanto, la vida media es siempre mayor que el período de semidesintegración ($\tau = T_{1/2} / \ln(2) \approx 1,44 \cdot T_{1/2}$).
+\end{cajaconclusion}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Ver definiciones.
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica.
+\subsubsection*{6. Conclusión}
+Las tres magnitudes están interrelacionadas y describen la rapidez con la que un nucleido se desintegra. $\lambda$ es la probabilidad fundamental, $T_{1/2}$ es una medida de tiempo muy intuitiva (cuánto tarda en quedar la mitad) y $\tau$ es el promedio estadístico de la "esperanza de vida" de un núcleo.
+
+\newpage
+
+\subsection{Cuestión 4 - OPCIÓN B}
+\label{subsec:6B_2005_jun_cv}
+
+\begin{cajaenunciado}
+La energía de disociación de la molécula de monóxido de carbono es 11 eV. ¿Es posible disociar esta molécula utilizando la radiación de 632,8 nm procedente de un láser de He-Ne?
+\textbf{Datos:} Carga del protón $e=1,6\cdot10^{-19}\,\text{C}$; $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Energía de disociación ($E_{dis}$):} $E_{dis} = 11$ eV.
+    \item \textbf{Longitud de onda de la radiación ($\lambda$):} $\lambda = 632,8 \text{ nm} = 6,328 \cdot 10^{-7}$ m.
+    \item \textbf{Constantes:} $e=1,6\cdot10^{-19}\,\text{C}$, $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$, $c=3\cdot10^8\,\text{m/s}$.
+    \item \textbf{Pregunta:} ¿Es la energía de un fotón de esta radiación ($E_{foton}$) suficiente para disociar la molécula? Es decir, ¿se cumple que $E_{foton} \ge E_{dis}$?
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Disociación Molecular por un Fotón} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una molécula de monóxido de carbono (un átomo de C unido a uno de O) a la izquierda. Un fotón, representado como una onda con la etiqueta $E_{foton}$, incide sobre la molécula. Una flecha apunta a la derecha, mostrando el resultado: los átomos de C y O separados, indicando que la molécula se ha disociado." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{disociacion_molecula.png}
+    }}
+    \caption{Un fotón puede romper un enlace molecular si su energía es suficiente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para resolver el problema, debemos calcular la energía de un único fotón de la radiación del láser y compararla con la energía de disociación. La energía de un fotón se calcula con la \textbf{ecuación de Planck-Einstein}:
+$$ E_{foton} = hf = \frac{hc}{\lambda} $$
+donde $h$ es la constante de Planck, $c$ es la velocidad de la luz, y $\lambda$ es la longitud de onda de la radiación.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Calcularemos $E_{foton}$ en Julios y luego la convertiremos a electronvoltios (eV) para compararla con $E_{dis}$.
+\begin{gather}
+    E_{foton} (\text{en J}) = \frac{hc}{\lambda} \\
+    E_{foton} (\text{en eV}) = \frac{E_{foton} (\text{en J})}{e}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    E_{foton} = \frac{(6,6\cdot10^{-34} \, \text{J}\cdot\text{s}) \cdot (3\cdot10^8 \, \text{m/s})}{6,328 \cdot 10^{-7} \, \text{m}} \approx 3,13 \cdot 10^{-19} \, \text{J}
+\end{gather}
+Ahora, convertimos esta energía a eV:
+\begin{gather}
+    E_{foton} (\text{en eV}) = \frac{3,13 \cdot 10^{-19} \, \text{J}}{1,6\cdot10^{-19} \, \text{J/eV}} \approx 1,96 \, \text{eV}
+\end{gather}
+Finalmente, comparamos las energías:
+\begin{gather}
+    E_{foton} \approx 1,96 \, \text{eV} \quad < \quad E_{dis} = 11 \, \text{eV}
+\end{gather}
+\begin{cajaresultado}
+    No, no es posible disociar la molécula. La energía de un fotón del láser (1,96 eV) es considerablemente menor que la energía de disociación requerida (11 eV).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Para disociar la molécula de monóxido de carbono se necesita una energía de 11 eV. La radiación del láser de He-Ne, con una longitud de onda de 632,8 nm (luz roja), transporta fotones con una energía de solo 1,96 eV. Al ser esta energía \textbf{insuficiente}, la molécula de CO no se disociará al ser irradiada con este láser. Se necesitaría radiación de una longitud de onda mucho más corta (en el ultravioleta) para lograr la disociación.
+\end{cajaconclusion}
+
+\newpage

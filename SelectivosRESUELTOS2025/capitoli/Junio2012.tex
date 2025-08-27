@@ -1,0 +1,727 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2012 - Convocatoria Ordinaria}
+\label{chap:2012_jun_ord}
+
+\section{Opción A}
+\label{sec:A_2012_jun_ord}
+
+\subsection{Bloque I: Cuestión}
+\label{subsec:A1_2012_jun_ord}
+\begin{cajaenunciado}
+El módulo del campo gravitatorio de la Tierra en su superficie es una constante de valor $g_0$. Calcula a qué altura $h$ desde la superficie el valor del campo se reduce a la cuarta parte de $g_0$. Realiza primero el cálculo teórico y después el numérico, utilizando únicamente este dato: radio de la Tierra, $R_{T}=6370$ km.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo en la superficie ($r=R_T$):} $g(R_T) = g_0$.
+    \item \textbf{Campo a una altura $h$ ($r=R_T+h$):} $g(R_T+h) = g' = g_0/4$.
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6370\,\text{km} = 6,37 \cdot 10^6\,\text{m}$.
+    \item \textbf{Incógnita:} Altura sobre la superficie ($h$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo gravitatorio terrestre} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Tierra, representada como una esfera de radio $R_T$. Dibujar dos puntos: uno en la superficie y otro a una altura $h$ sobre la superficie. En el punto de la superficie, dibujar un vector $\vec{g}_0$ apuntando hacia el centro de la Tierra. En el punto a altura $h$, dibujar un vector $\vec{g}'$ también apuntando al centro, pero visiblemente más corto (aproximadamente 1/4 de la longitud de $\vec{g}_0$). Etiquetar claramente los radios $R_T$ y la altura $h$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/grav_campo_altura.png}
+    }}
+    \caption{Comparación del campo gravitatorio en la superficie y a una altura $h$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La intensidad del campo gravitatorio creado por un cuerpo esférico de masa $M$ a una distancia $r$ de su centro viene dada por la Ley de Gravitación Universal:
+$$g(r) = G\frac{M}{r^2}$$
+Donde $G$ es la constante de gravitación universal. Esta ley nos permite relacionar el campo en la superficie con el campo a cualquier otra altura.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Escribimos la expresión para el campo gravitatorio en los dos puntos de interés: en la superficie ($r=R_T$) y a la altura $h$ ($r=R_T+h$).
+\begin{gather}
+    g_0 = G\frac{M_T}{R_T^2} \label{eq:g0_jun12_A1} \\
+    g' = \frac{g_0}{4} = G\frac{M_T}{(R_T+h)^2} \label{eq:gh_jun12_A1}
+\end{gather}
+Para eliminar las constantes $G$ y $M_T$, dividimos la ecuación \eqref{eq:g0_jun12_A1} entre la ecuación \eqref{eq:gh_jun12_A1}:
+\begin{gather}
+    \frac{g_0}{g_0/4} = \frac{G M_T / R_T^2}{G M_T / (R_T+h)^2} \implies 4 = \frac{(R_T+h)^2}{R_T^2}
+\end{gather}
+Tomando la raíz cuadrada en ambos lados de la ecuación:
+\begin{gather}
+    2 = \frac{R_T+h}{R_T}
+\end{gather}
+Finalmente, despejamos la altura $h$:
+\begin{gather}
+    2R_T = R_T + h \implies h = R_T
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos el valor del radio de la Tierra en la expresión teórica obtenida.
+\begin{gather}
+    h = R_T = 6370\,\text{km}
+\end{gather}
+\begin{cajaresultado}
+La altura a la que el campo gravitatorio se reduce a la cuarta parte de su valor en la superficie es igual al propio radio de la Tierra, $\boldsymbol{h = 6370\,\textbf{km}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo gravitatorio disminuye con el cuadrado de la distancia al centro de la Tierra. Para que su intensidad se reduzca por un factor de 4, la distancia debe aumentar por un factor de $\sqrt{4}=2$. Esto significa que debemos estar al doble del radio terrestre desde el centro, lo que equivale a una altura igual al radio terrestre sobre la superficie.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque II: Problema}
+\label{subsec:A2_2012_jun_ord}
+\begin{cajaenunciado}
+Dos fuentes de ondas armónicas transversales están situadas en las posiciones $x=0$ m y $x=2$ m. Las dos fuentes generan ondas que se propagan a una velocidad de $8\,\text{m/s}$ a lo largo del eje OX con amplitud 1 cm y frecuencia 0,5 Hz. La fuente situada en $x=2$ m emite con una diferencia de fase de $+\pi/4$ rad con respecto a la situada en $x=0$ m.
+\begin{enumerate}
+    \item[a)] Escribe la ecuación de ondas resultante de la acción de estas dos fuentes. (1 punto)
+    \item[b)] Suponiendo que sólo se tiene la fuente situada en $x=0$ m, calcula la posición de al menos un punto en el que el desplazamiento transversal sea $y=0$ m en el instante $t=2$ s. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Posición fuente 1:} $x_1 = 0\,\text{m}$.
+    \item \textbf{Posición fuente 2:} $x_2 = 2\,\text{m}$.
+    \item \textbf{Velocidad de propagación ($v$):} $v = 8\,\text{m/s}$.
+    \item \textbf{Amplitud ($A$):} $A = 1\,\text{cm} = 0,01\,\text{m}$.
+    \item \textbf{Frecuencia ($f$):} $f = 0,5\,\text{Hz}$.
+    \item \textbf{Diferencia de fase:} La fase inicial de la fuente 2 es $\phi_{0,2} = \phi_{0,1} + \pi/4$. Asumiremos $\phi_{0,1}=0$.
+    \item \textbf{Incógnitas:}
+    \begin{enumerate}
+        \item[a)] Ecuación de la onda resultante $y_{total}(x,t)$.
+        \item[b)] Posición $x$ tal que $y_1(x, t=2\,\text{s})=0$.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Interferencia de Ondas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje X horizontal. En x=0, dibujar una fuente de ondas (un punto) emitiendo una onda sinusoidal $y_1$ que se propaga hacia la derecha. En x=2, dibujar otra fuente emitiendo una onda sinusoidal $y_2$ que también se propaga hacia la derecha. Mostrar que en cualquier punto $x$ del eje, la onda total es la superposición de $y_1$ e $y_2$. Indicar los parámetros A, $\lambda$ y v."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/ondas_interferencia_1d.png}
+    }}
+    \caption{Superposición de las dos ondas generadas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Interferencia de ondas}
+La ecuación de una onda armónica que se propaga en el sentido positivo del eje OX desde un origen $x_0$ con una fase inicial $\phi_0$ es $y(x,t) = A\sin(\omega t - k(x-x_0) + \phi_0)$. El \textbf{Principio de Superposición} establece que la onda resultante en un punto es la suma de las elongaciones de las ondas individuales que coinciden en ese punto: $y_{total}(x,t) = y_1(x,t) + y_2(x,t)$.
+
+\paragraph*{b) Nodos de una onda}
+Un punto tiene elongación nula si el argumento de la función seno (o coseno) es un múltiplo entero de $\pi$. Es decir, $\sin(\alpha)=0$ si $\alpha=n\pi$ con $n \in \mathbb{Z}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Ecuación de la onda resultante}
+Primero, calculamos los parámetros de las ondas:
+\begin{gather}
+    \omega = 2\pi f \\
+    k = \frac{2\pi}{\lambda} = \frac{2\pi}{v/f} = \frac{2\pi f}{v}
+\end{gather}
+Escribimos las ecuaciones para cada onda. Ambas se propagan en el sentido +OX.
+\begin{gather}
+    y_1(x,t) = A\sin(\omega t - kx) \\
+    y_2(x,t) = A\sin(\omega t - k(x-x_2) + \phi_{0,2})
+\end{gather}
+La onda resultante es $y_{total}(x,t) = y_1(x,t) + y_2(x,t)$. Se puede simplificar usando la identidad trigonométrica $\sin(a) + \sin(b) = 2\cos\left(\frac{a-b}{2}\right)\sin\left(\frac{a+b}{2}\right)$.
+
+\paragraph*{b) Posición de elongación nula}
+Para la onda $y_1(x,t) = A\sin(\omega t - kx)$, imponemos la condición $y_1=0$ en $t=2$ s.
+\begin{gather}
+    A\sin(\omega \cdot 2 - kx) = 0 \implies \sin(2\omega - kx) = 0
+\end{gather}
+Esto se cumple si el argumento es un múltiplo entero de $\pi$:
+\begin{gather}
+    2\omega - kx = n\pi \quad (n \in \mathbb{Z}) \implies kx = 2\omega - n\pi \implies x = \frac{2\omega - n\pi}{k}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Ecuación de la onda resultante}
+Calculamos los parámetros:
+\begin{gather}
+    \omega = 2\pi (0,5\,\text{Hz}) = \pi\,\text{rad/s} \\
+    k = \frac{\pi\,\text{rad/s}}{8\,\text{m/s}} = \frac{\pi}{8}\,\text{rad/m}
+\end{gather}
+Ahora las ecuaciones de las ondas individuales (en SI):
+\begin{gather}
+    y_1(x,t) = 0,01\sin(\pi t - \frac{\pi}{8}x) \\
+    y_2(x,t) = 0,01\sin(\pi t - \frac{\pi}{8}(x-2) + \frac{\pi}{4}) = 0,01\sin(\pi t - \frac{\pi}{8}x + \frac{\pi}{4} + \frac{\pi}{4}) = 0,01\sin(\pi t - \frac{\pi}{8}x + \frac{\pi}{2})
+\end{gather}
+Sumamos ambas ondas, $y_{total} = y_1+y_2$. Usando la identidad trigonométrica con $a = \pi t - \frac{\pi}{8}x + \frac{\pi}{2}$ y $b = \pi t - \frac{\pi}{8}x$:
+\begin{gather}
+    \frac{a-b}{2} = \frac{\pi/2}{2} = \frac{\pi}{4} \\
+    \frac{a+b}{2} = \frac{2(\pi t - \pi/8 x) + \pi/2}{2} = \pi t - \frac{\pi}{8}x + \frac{\pi}{4}
+\end{gather}
+\begin{gather}
+    y_{total}(x,t) = 2(0,01)\cos(\frac{\pi}{4})\sin(\pi t - \frac{\pi}{8}x + \frac{\pi}{4}) = 0,02 \frac{\sqrt{2}}{2} \sin(\pi t - \frac{\pi}{8}x + \frac{\pi}{4})
+\end{gather}
+\begin{cajaresultado}
+La ecuación de la onda resultante es $\boldsymbol{y_{total}(x,t) = 0,01\sqrt{2} \sin(\pi t - \frac{\pi}{8}x + \frac{\pi}{4})}$ (en unidades del SI).
+\end{cajaresultado}
+
+\paragraph*{b) Posición de elongación nula}
+\begin{gather}
+    x = \frac{2\omega - n\pi}{k} = \frac{2\pi - n\pi}{\pi/8} = \frac{\pi(2-n)}{\pi/8} = 8(2-n)
+\end{gather}
+Podemos encontrar puntos dando valores enteros a $n$. Por ejemplo, para $n=0$:
+\begin{gather}
+    x = 8(2-0) = 16\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+Un punto en el que el desplazamiento es nulo en $t=2$ s es $\boldsymbol{x = 16\,\textbf{m}}$. (Otros puntos serían $x=8$ m para n=1, $x=0$ m para n=2, etc.).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La superposición de las dos ondas armónicas resulta en una nueva onda armónica con la misma frecuencia y número de onda, pero con una amplitud modificada y una nueva fase inicial. Para la onda generada por la primera fuente, los puntos de elongación nula en un instante dado se repiten periódicamente a lo largo de la cuerda, separados por una longitud de onda.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque III: Cuestión}
+\label{subsec:A3_2012_jun_ord}
+\begin{cajaenunciado}
+Las fibras ópticas son varillas delgadas de vidrio que permiten la propagación y el guiado de la luz por su interior, de forma que ésta entra por un extremo y sale por el opuesto pero no escapa lateralmente, tal como ilustra la figura. Explica brevemente el fenómeno que permite su funcionamiento, utilizando la ley física que lo justifica.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Reflexión Total Interna en una Fibra Óptica} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un corte longitudinal de una fibra óptica, mostrando un núcleo central con índice de refracción $n_1$ y un revestimiento exterior con índice $n_2$, donde $n_1>n_2$. Dibujar un rayo de luz entrando en la fibra y propagándose mediante múltiples rebotes en la interfaz núcleo-revestimiento. En uno de los puntos de rebote, dibujar la línea normal a la interfaz y mostrar que el ángulo de incidencia $\theta_i$ es mayor que el ángulo crítico $\theta_c$. Etiquetar claramente el núcleo, el revestimiento y los índices de refracción."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/optica_fibra.png}
+    }}
+    \caption{Guiado de la luz en una fibra óptica.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Fenómeno Físico}
+El fenómeno que permite el funcionamiento de las fibras ópticas es la \textbf{Reflexión Total Interna}. La luz queda confinada dentro del núcleo de la fibra y se propaga a lo largo de ella mediante sucesivas reflexiones en la pared interna, sin que se produzca refracción hacia el exterior.
+
+\paragraph*{Ley Física que lo justifica}
+La ley que explica este fenómeno es la \textbf{Ley de Snell de la refracción}. Para que ocurra la reflexión total interna, deben cumplirse dos condiciones:
+\begin{enumerate}
+    \item La luz debe viajar desde un medio con un índice de refracción mayor hacia un medio con un índice de refracción menor. En la fibra óptica, el núcleo ($n_1$) tiene un índice de refracción ligeramente superior al del revestimiento ($n_2$), es decir, $n_1 > n_2$.
+    \item El ángulo de incidencia ($\theta_1$) en la interfaz entre los dos medios debe ser mayor que un ángulo específico llamado \textbf{ángulo crítico} o ángulo límite ($\theta_c$).
+\end{enumerate}
+El ángulo crítico se define como el ángulo de incidencia para el cual el ángulo de refracción es de 90°. Aplicando la Ley de Snell:
+$$n_1 \sin(\theta_c) = n_2 \sin(90^\circ) \implies \sin(\theta_c) = \frac{n_2}{n_1}$$
+Si el rayo de luz incide con un ángulo $\theta_1 > \theta_c$, no hay rayo refractado y toda la luz se refleja de nuevo en el primer medio, permitiendo el guiado a lo largo de la fibra.
+
+\begin{cajaresultado}
+El fenómeno es la \textbf{Reflexión Total Interna}, justificada por la \textbf{Ley de Snell}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El funcionamiento de las fibras ópticas es una aplicación directa de la Ley de Snell. Al diseñar la fibra con un núcleo de mayor índice de refracción que el revestimiento y asegurando que la luz incida en la interfaz con un ángulo superior al crítico, se logra que la luz se refleje totalmente en su interior. Esto permite transmitir señales luminosas a grandes distancias con pérdidas mínimas de energía.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque IV: Problema}
+\label{subsec:A4_2012_jun_ord}
+\begin{cajaenunciado}
+Una carga puntual de valor $q_{1}=3$ mC se encuentra situada en el origen de coordenadas mientras que una segunda carga, $q_{2}$, de valor desconocido, se encuentra situada en el punto (4, 0) m. Estas cargas crean conjuntamente un potencial de $-10^{6}$ V en el punto P (0, 3) m. Calcula la expresión teórica y el valor numérico de:
+\begin{enumerate}
+    \item[a)] La carga $q_2$. (1 punto)
+    \item[b)] El campo eléctrico total creado por ambas cargas en el punto P. Representa gráficamente los vectores campo de cada carga y el vector campo total. (1 punto)
+\end{enumerate}
+\textbf{Dato:} Constante de Coulomb, $k=9\cdot10^{9}N\cdot m^{2}/C^{2}$
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = 3\,\text{mC} = 3 \cdot 10^{-3}\,\text{C}$, en O(0,0).
+    \item \textbf{Carga 2 ($q_2$):} Desconocida, en Q(4,0).
+    \item \textbf{Punto de cálculo (P):} P(0,3).
+    \item \textbf{Potencial en P ($V_P$):} $V_P = -10^6\,\text{V}$.
+    \item \textbf{Constante de Coulomb ($k$):} $k = 9\cdot 10^9\,\text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:} Valor de $q_2$ y campo eléctrico total $\vec{E}_P$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo y Potencial en el punto P} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Colocar una carga positiva $q_1$ en el origen (0,0) y una carga $q_2$ en (4,0). Marcar el punto P en (0,3). Dibujar el vector campo $\vec{E}_1$ en P, creado por $q_1$, apuntando verticalmente hacia arriba (repulsivo). Dibujar el vector campo $\vec{E}_2$ en P, apuntando desde (4,0) hacia P. Dibujar el vector suma $\vec{E}_{total}$ usando la regla del paralelogramo."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/em_campo_dos_cargas.png}
+    }}
+    \caption{Vectores de campo eléctrico en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utiliza el \textbf{Principio de Superposición}.
+\begin{itemize}
+    \item El \textbf{potencial eléctrico} en un punto es la suma escalar de los potenciales creados por cada carga: $V_P = V_1 + V_2$. El potencial creado por una carga puntual es $V=k\frac{q}{r}$.
+    \item El \textbf{campo eléctrico} en un punto es la suma vectorial de los campos creados por cada carga: $\vec{E}_P = \vec{E}_1 + \vec{E}_2$. El campo creado por una carga puntual es $\vec{E}=k\frac{q}{r^2}\vec{u}_r$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Cálculo de la carga $q_2$}
+Calculamos las distancias desde las cargas al punto P:
+\begin{itemize}
+    \item Distancia de $q_1$ a P: $r_1 = \sqrt{(0-0)^2 + (3-0)^2} = 3\,\text{m}$.
+    \item Distancia de $q_2$ a P: $r_2 = \sqrt{(0-4)^2 + (3-0)^2} = \sqrt{16+9} = 5\,\text{m}$.
+\end{itemize}
+Aplicamos el principio de superposición para el potencial:
+\begin{gather}
+    V_P = k\frac{q_1}{r_1} + k\frac{q_2}{r_2}
+\end{gather}
+Despejamos $q_2$:
+\begin{gather}
+    k\frac{q_2}{r_2} = V_P - k\frac{q_1}{r_1} \implies q_2 = \frac{r_2}{k}\left(V_P - k\frac{q_1}{r_1}\right)
+\end{gather}
+
+\paragraph*{b) Cálculo del campo eléctrico $\vec{E}_P$}
+Calculamos los vectores de campo por separado:
+\begin{itemize}
+    \item Campo de $q_1$: El vector unitario desde $q_1$(0,0) a P(0,3) es $\vec{u}_1 = \vec{j}$.
+    $\vec{E}_1 = k\frac{q_1}{r_1^2}\vec{u}_1$.
+    \item Campo de $q_2$: El vector unitario desde $q_2$(4,0) a P(0,3) es $\vec{u}_2 = \frac{(0-4)\vec{i}+(3-0)\vec{j}}{5} = \frac{-4\vec{i}+3\vec{j}}{5}$.
+    $\vec{E}_2 = k\frac{q_2}{r_2^2}\vec{u}_2$.
+\end{itemize}
+El campo total es la suma vectorial: $\vec{E}_P = \vec{E}_1 + \vec{E}_2$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Carga $q_2$}
+\begin{gather}
+    q_2 = \frac{5}{9\cdot10^9}\left(-10^6 - 9\cdot10^9\frac{3\cdot10^{-3}}{3}\right) = \frac{5}{9\cdot10^9}\left(-10^6 - 9\cdot10^6\right) \nonumber \\
+    q_2 = \frac{5}{9\cdot10^9}(-10\cdot10^6) = -\frac{50}{9}\cdot10^{-3}\,\text{C} \approx -5,56\cdot10^{-3}\,\text{C}
+\end{gather}
+\begin{cajaresultado}
+La carga es $\boldsymbol{q_2 \approx -5,56\,\textbf{mC}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Campo eléctrico $\vec{E}_P$}
+\begin{gather}
+    \vec{E}_1 = (9\cdot10^9)\frac{3\cdot10^{-3}}{3^2}\vec{j} = 3\cdot10^6\vec{j}\,\text{N/C} \\
+    \vec{E}_2 = (9\cdot10^9)\frac{-5,56\cdot10^{-3}}{5^2}\left(\frac{-4\vec{i}+3\vec{j}}{5}\right) \approx -2\cdot10^6(-0,8\vec{i}+0,6\vec{j}) = (1,6\cdot10^6\vec{i} - 1,2\cdot10^6\vec{j})\,\text{N/C}
+\end{gather}
+Sumamos ambos vectores:
+\begin{gather}
+    \vec{E}_P = (1,6\cdot10^6\vec{i}) + (3\cdot10^6 - 1,2\cdot10^6)\vec{j} = (1,6\vec{i} + 1,8\vec{j})\cdot10^6\,\text{N/C}
+\end{gather}
+\begin{cajaresultado}
+El campo eléctrico total en P es $\boldsymbol{\vec{E}_P = (1,6\vec{i} + 1,8\vec{j})\cdot10^6\,\textbf{N/C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir del potencial total en el punto P, se ha deducido que la carga desconocida $q_2$ debe ser negativa y de valor -5,56 mC. Con los valores de ambas cargas, se ha calculado el campo eléctrico total en P mediante la superposición vectorial de los campos generados por cada carga, resultando en un campo que apunta hacia el primer cuadrante del plano.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque V: Cuestión}
+\label{subsec:A5_2012_jun_ord}
+\begin{cajaenunciado}
+Un haz de luz tiene una longitud de onda de 550 nm y una intensidad luminosa de $10\,\text{W/m}^2$. Sabiendo que la intensidad luminosa es la potencia por unidad de superficie, calcula el número de fotones por segundo y metro cuadrado que constituyen ese haz. Realiza primero el cálculo teórico, justificándolo brevemente, y después el cálculo numérico.
+\textbf{Datos:} Constante de Planck, $h=6,63\cdot10^{-34}J\cdot s$; velocidad de la luz, $c=3\cdot10^{8}m/s.$
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda ($\lambda$):} $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$.
+    \item \textbf{Intensidad luminosa ($I$):} $I = 10\,\text{W/m}^2$.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,63 \cdot 10^{-34}\,\text{J}\cdot\text{s}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3 \cdot 10^8\,\text{m/s}$.
+    \item \textbf{Incógnita:} Número de fotones por segundo y por metro cuadrado ($N_{fotones}/(t \cdot S)$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La luz, en su interacción con la materia, se comporta como un flujo de partículas llamadas fotones.
+\begin{itemize}
+    \item La \textbf{energía de un único fotón} ($E_{f}$) está relacionada con su frecuencia ($f$) y su longitud de onda ($\lambda$) a través de la constante de Planck.
+    \item La \textbf{intensidad ($I$)} es la energía total que incide por unidad de tiempo y por unidad de superficie. La energía total es el producto del número de fotones ($N$) por la energía de cada uno.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La energía de un fotón es:
+\begin{gather}
+    E_f = hf = \frac{hc}{\lambda}
+\end{gather}
+La intensidad se define como:
+\begin{gather}
+    I = \frac{\text{Potencia}}{\text{Superficie}} = \frac{E_{total}}{t \cdot S} = \frac{N_{fotones} \cdot E_f}{t \cdot S}
+\end{gather}
+La cantidad que buscamos es el flujo de fotones, $\Phi_{fotones} = \frac{N_{fotones}}{t \cdot S}$. Despejando de la ecuación de la intensidad:
+\begin{gather}
+    \Phi_{fotones} = \frac{I}{E_f} = \frac{I}{hc/\lambda} = \frac{I \lambda}{hc}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero calculamos la energía de un solo fotón:
+\begin{gather}
+    E_f = \frac{(6,63\cdot10^{-34})(3\cdot10^8)}{550\cdot10^{-9}} = \frac{19,89\cdot10^{-26}}{550\cdot10^{-9}} \approx 3,616\cdot10^{-19}\,\text{J}
+\end{gather}
+Ahora calculamos el flujo de fotones:
+\begin{gather}
+    \Phi_{fotones} = \frac{I}{E_f} = \frac{10\,\text{W/m}^2}{3,616\cdot10^{-19}\,\text{J}} \approx 2,77 \cdot 10^{19}\,\frac{\text{fotones}}{\text{s}\cdot\text{m}^2}
+\end{gather}
+\begin{cajaresultado}
+El número de fotones por segundo y metro cuadrado es $\boldsymbol{\approx 2,77 \cdot 10^{19}\,\textbf{fotones/(s}\cdot\textbf{m}^2\textbf{)}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La intensidad de un haz de luz es el resultado macroscópico del impacto de un número inmenso de fotones. Cada fotón transporta una cantidad minúscula de energía, del orden de $10^{-19}$ J para la luz visible. Para alcanzar una intensidad de $10\,\text{W/m}^2$, es necesario que casi $3 \cdot 10^{19}$ fotones incidan sobre cada metro cuadrado cada segundo, lo que ilustra la naturaleza cuántica de la luz.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque VI: Cuestión}
+\label{subsec:A6_2012_jun_ord}
+\begin{cajaenunciado}
+Escribe los dos postulados de la teoría de la relatividad especial de Einstein, también conocida como teoría de la relatividad restringida. Explica brevemente su significado.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La Teoría de la Relatividad Especial, publicada por Albert Einstein en 1905, se fundamenta en dos postulados básicos que revolucionaron la comprensión del espacio, el tiempo y el movimiento.
+
+\paragraph*{Primer Postulado: Principio de Relatividad}
+\begin{itemize}
+    \item \textbf{Enunciado:} Las leyes de la física son las mismas en todos los sistemas de referencia inerciales.
+    \item \textbf{Significado:} No existe un sistema de referencia "absoluto" o privilegiado en el universo. Las ecuaciones que describen los fenómenos físicos (tanto de la mecánica como del electromagnetismo) deben tener la misma forma matemática para cualquier observador que se mueva con velocidad constante. Esto generaliza el principio de relatividad de Galileo para incluir todas las leyes de la física.
+\end{itemize}
+
+\paragraph*{Segundo Postulado: Principio de la constancia de la velocidad de la luz}
+\begin{itemize}
+    \item \textbf{Enunciado:} La velocidad de la luz en el vacío ($c$) tiene el mismo valor para todos los observadores inerciales, independientemente del movimiento de la fuente de luz o del observador.
+    \item \textbf{Significado:} Este postulado es radicalmente anti-intuitivo. En la mecánica clásica, las velocidades se suman (si un coche a 100 km/h enciende sus luces, esperaríamos que la luz viajara a $c + 100$ km/h). Einstein postula que no es así: tanto un observador en reposo como el conductor del coche medirán exactamente la misma velocidad para la luz, $c$. Para que esto sea posible, el espacio y el tiempo ya no pueden ser absolutos, sino que deben ser relativos y cambiar en función del estado de movimiento del observador, dando lugar a fenómenos como la dilatación del tiempo y la contracción de la longitud.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Los dos postulados de Einstein establecen un nuevo marco para la física. El primero proclama la equivalencia de todos los sistemas inerciales, mientras que el segundo eleva la velocidad de la luz a la categoría de constante universal. Juntos, implican una redefinición fundamental de los conceptos de espacio y tiempo, que pasan a estar entrelazados en una única entidad: el espaciotiempo.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Opción B}
+\label{sec:B_2012_jun_ord}
+
+\subsection{Bloque I: Cuestión}
+\label{subsec:B1_2012_jun_ord}
+\begin{cajaenunciado}
+Se sabe que la energía mecánica de la Luna en su órbita alrededor de la Tierra aumenta con el tiempo. Escribe la expresión de la energía mecánica de la Luna en función del radio de su órbita, y discute si se está alejando o acercando a la Tierra. Justifica la respuesta prestando especial atención a los signos de las energías.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para un cuerpo de masa $m$ (la Luna) en una órbita circular de radio $r$ alrededor de un cuerpo central de masa $M$ (la Tierra), la energía mecánica total ($E_M$) es la suma de su energía cinética ($E_c$) y su energía potencial gravitatoria ($E_p$).
+\begin{itemize}
+    \item \textbf{Energía Potencial:} Es siempre negativa: $E_p = -G\frac{Mm}{r}$.
+    \item \textbf{Energía Cinética:} Se obtiene al igualar la fuerza gravitatoria con la fuerza centrípeta:
+    $G\frac{Mm}{r^2} = \frac{mv^2}{r} \implies mv^2=G\frac{Mm}{r}$.
+    La energía cinética es $E_c = \frac{1}{2}mv^2 = \frac{1}{2}G\frac{Mm}{r}$, que es siempre positiva.
+\end{itemize}
+La energía mecánica total es, por tanto:
+$$ E_M = E_c + E_p = \frac{1}{2}G\frac{Mm}{r} - G\frac{Mm}{r} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La expresión final para la energía mecánica es:
+\begin{gather}
+    E_M = -\frac{1}{2}G\frac{Mm}{r}
+\end{gather}
+Se nos dice que la energía mecánica de la Luna ($E_M$) aumenta con el tiempo. Analicemos la expresión:
+\begin{itemize}
+    \item La energía mecánica es \textbf{negativa}, lo que indica que la Luna es un sistema ligado a la Tierra (no puede escapar).
+    \item Un "aumento" de una cantidad negativa significa que se vuelve menos negativa, es decir, se acerca a cero.
+    \item Para que $E_M = -\frac{\text{constante}}{r}$ aumente (se haga menos negativa), el denominador $r$ debe \textbf{aumentar}.
+\end{itemize}
+Si el radio orbital $r$ aumenta, la Luna se está alejando de la Tierra.
+
+\begin{cajaresultado}
+La expresión de la energía mecánica es $\boldsymbol{E_M = -\frac{1}{2}G\frac{M_T m_L}{r}}$. Dado que la energía aumenta (se vuelve menos negativa), el radio orbital $\boldsymbol{r}$ debe aumentar, por lo que la Luna \textbf{se está alejando} de la Tierra.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La relación inversa y negativa entre la energía mecánica y el radio orbital implica que un aumento en la energía del sistema corresponde a un aumento en la distancia entre los cuerpos. El hecho de que la energía mecánica de la Luna aumente se debe a los efectos de marea, que transfieren energía y momento angular de la rotación de la Tierra a la órbita de la Luna, haciendo que esta se aleje lentamente de nosotros a un ritmo de unos 3,8 cm por año.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque II: Cuestión}
+\label{subsec:B2_2012_jun_ord}
+\begin{cajaenunciado}
+Explica las diferencias existentes entre las ondas longitudinales y las ondas transversales. Describe un ejemplo de cada una de ellas, razonando brevemente por qué pertenece a un tipo u otro.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Onda Transversal} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una onda sinusoidal propagándose a lo largo de una cuerda horizontal. Dibujar flechas verticales en varios puntos de la cuerda para indicar la dirección de vibración de las partículas. Dibujar una flecha horizontal grande para indicar la dirección de propagación de la onda. Mostrar claramente que las dos direcciones son perpendiculares."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/ondas_transversal.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Onda Longitudinal} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una onda de compresión propagándose a lo largo de un muelle (resorte) horizontal. Mostrar zonas de compresión (espiras juntas) y rarefacción (espiras separadas). Dibujar flechas horizontales de doble sentido en varias espiras para indicar su oscilación. Dibujar una flecha horizontal grande para indicar la dirección de propagación de la onda. Mostrar claramente que las dos direcciones son paralelas."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/ondas_longitudinal.png}
+    }}
+    \caption{Comparación de la vibración en ondas transversales y longitudinales.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La diferencia fundamental entre las ondas longitudinales y las transversales radica en la relación entre la \textbf{dirección de propagación} de la onda y la \textbf{dirección de vibración} de las partículas del medio.
+
+\paragraph*{Ondas Transversales}
+\begin{itemize}
+    \item \textbf{Definición:} Son aquellas en las que las partículas del medio oscilan en una dirección \textbf{perpendicular} a la dirección en que se propaga la energía de la onda.
+    \item \textbf{Ejemplo:} Una \textbf{onda en una cuerda de guitarra}. Al pulsar la cuerda, los segmentos de la misma vibran verticalmente (arriba y abajo), mientras que la perturbación se propaga horizontalmente a lo largo de la cuerda. Las ondas electromagnéticas, como la luz, también son transversales.
+\end{itemize}
+
+\paragraph*{Ondas Longitudinales}
+\begin{itemize}
+    \item \textbf{Definición:} Son aquellas en las que las partículas del medio oscilan en la \textbf{misma dirección} (paralela) en que se propaga la energía de la onda.
+    \item \textbf{Ejemplo:} El \textbf{sonido}. Cuando un altavoz emite un sonido, su membrana vibra hacia adelante y hacia atrás, empujando y comprimiendo las moléculas de aire en esa misma dirección. Estas compresiones y rarefacciones se propagan a través del aire, pero la vibración individual de cada molécula de aire es en la misma dirección de la propagación del sonido.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La clasificación de una onda como longitudinal o transversal depende exclusivamente de la geometría de la vibración del medio respecto a la propagación. Mientras que en las ondas transversales la vibración es "de lado a lado", en las longitudinales es "de vaivén", dando lugar a fenómenos ondulatorios con características distintas.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque III: Problema}
+\label{subsec:B3_2012_jun_ord}
+\begin{cajaenunciado}
+Se quiere utilizar una lente delgada convergente, cuya distancia focal es de 20 cm, para obtener una imagen real que sea tres veces mayor que el objeto.
+\begin{enumerate}
+    \item[a)] Calcula la distancia del objeto a la lente. (1 punto)
+    \item[b)] Dibuja el diagrama de rayos, indica claramente el significado de cada uno de los elementos y distancias del dibujo y explica las características de la imagen resultante. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Convergente.
+    \item \textbf{Distancia focal imagen ($f'$):} $f' = +20\,\text{cm}$ (positiva para lentes convergentes).
+    \item \textbf{Características de la imagen:} Es \textbf{real}, lo que implica que $s'>0$. En una lente convergente, una imagen real es siempre \textbf{invertida}, por lo que el aumento es negativo.
+    \item \textbf{Aumento lateral ($M$):} El tamaño es tres veces mayor ($|M|=3$) y es invertida ($M<0$), por lo tanto $M = -3$.
+    \item \textbf{Incógnita:} Posición del objeto ($s$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Formación de imagen real y aumentada} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de una lente convergente. Dibujar el eje óptico. Marcar el foco imagen F' en x=+20cm y el foco objeto F en x=-20cm. Marcar el punto -2f en x=-40cm. Colocar un objeto vertical (flecha 'y') entre F y -2f, en la posición calculada s=-26,67cm. Trazar dos rayos: 1) Un rayo paralelo al eje que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico y no se desvía. Mostrar que los rayos se cruzan a la derecha de la lente, en la posición s'=-3s=+80cm, formando una imagen (flecha 'y'') que es real, invertida y visiblemente más grande."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/optica_lente_convergente_aum.png}
+    }}
+    \caption{Trazado de rayos para la formación de una imagen real, invertida y aumentada.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utilizan la ecuación de las lentes delgadas (ecuación de Gauss) y la fórmula del aumento lateral.
+\begin{itemize}
+    \item Ecuación de Gauss: $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item Aumento Lateral: $M = \frac{s'}{s}$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Posición del objeto}
+Primero, usamos la fórmula del aumento para relacionar $s'$ y $s$:
+\begin{gather}
+    M = \frac{s'}{s} \implies s' = M \cdot s
+\end{gather}
+Sustituimos esta relación en la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{M \cdot s} - \frac{1}{s} = \frac{1}{f'}
+\end{gather}
+Sacamos factor común $1/s$ y despejamos $s$:
+\begin{gather}
+    \frac{1}{s} \left(\frac{1}{M} - 1\right) = \frac{1}{f'} \implies s = f' \left(\frac{1}{M} - 1\right) = f' \left(\frac{1-M}{M}\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Posición del objeto}
+\begin{gather}
+    s = (+20\,\text{cm}) \left(\frac{1 - (-3)}{-3}\right) = 20 \left(\frac{4}{-3}\right) = -\frac{80}{3}\,\text{cm} \approx -26,67\,\text{cm}
+\end{gather}
+\begin{cajaresultado}
+El objeto debe situarse a $\boldsymbol{26,67\,\textbf{cm}}$ a la izquierda de la lente.
+\end{cajaresultado}
+
+\paragraph*{b) Características de la imagen}
+Según el enunciado y los cálculos, la imagen es:
+\begin{itemize}
+    \item \textbf{Real:} Se forma por la convergencia de los rayos de luz. $s' = -3s = -3(-26,67) = +80$ cm, al ser positivo, confirma que es real.
+    \item \textbf{Invertida:} El aumento $M=-3$ es negativo.
+    \item \textbf{De mayor tamaño:} El módulo del aumento $|M|=3$ es mayor que 1.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para obtener una imagen real, invertida y triplicada en tamaño con una lente convergente de 20 cm de focal, es necesario colocar el objeto a 26,67 cm a su izquierda. Esta posición se encuentra entre una y dos veces la distancia focal ($f < |s| < 2f$), que es la configuración característica para producir este tipo de imágenes.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque IV: Cuestión}
+\label{subsec:B4_2012_jun_ord}
+\begin{cajaenunciado}
+Una carga eléctrica entra, con velocidad constante, en una región del espacio donde existe un campo magnético uniforme cuya dirección es perpendicular al plano del papel. ¿Cuál es el signo de la carga eléctrica si ésta se desvía en el campo siguiendo la trayectoria indicada en la figura? Justifica la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+La figura del enunciado muestra una carga $q$ entrando con velocidad $\vec{v}$ horizontal hacia la derecha en una región con campo magnético $\vec{B}$ uniforme y entrante al papel (representado por cruces). La trayectoria de la carga se curva hacia arriba.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza que un campo magnético ejerce sobre una carga en movimiento viene dada por la \textbf{Fuerza de Lorentz}:
+$$\vec{F}_m = q(\vec{v} \times \vec{B})$$
+La dirección y sentido de esta fuerza se determinan mediante la \textbf{regla de la mano derecha}:
+\begin{enumerate}
+    \item Se coloca el dedo \textbf{índice} en la dirección de la velocidad $\vec{v}$.
+    \item Se coloca el dedo \textbf{corazón} en la dirección del campo magnético $\vec{B}$.
+    \item El dedo \textbf{pulgar} indica la dirección de la fuerza $\vec{F}_m$ si la carga $q$ es positiva. Si la carga es negativa, la fuerza tiene sentido opuesto al que indica el pulgar.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Apliquemos la regla de la mano derecha a la situación descrita en la figura:
+\begin{itemize}
+    \item \textbf{Velocidad ($\vec{v}$):} Dedo índice apuntando hacia la derecha.
+    \item \textbf{Campo magnético ($\vec{B}$):} Dedo corazón apuntando hacia dentro del papel.
+    \item \textbf{Producto vectorial ($\vec{v} \times \vec{B}$):} El dedo pulgar apunta hacia \textbf{arriba}.
+\end{itemize}
+Ahora comparamos este resultado con la fuerza real que experimenta la partícula:
+\begin{itemize}
+    \item La trayectoria se curva hacia arriba, lo que significa que la partícula ha experimentado una fuerza inicial ($\vec{F}_m$) dirigida hacia \textbf{arriba}.
+    \item La dirección de la fuerza observada ($\vec{F}_m$) coincide con la dirección del producto vectorial ($\vec{v} \times \vec{B}$).
+\end{itemize}
+Según la ley de Lorentz, $\vec{F}_m$ y $(\vec{v} \times \vec{B})$ tienen el mismo sentido si $q$ es positiva, y sentidos opuestos si $q$ es negativa. Como en este caso tienen el mismo sentido, la carga $q$ debe ser positiva.
+
+\begin{cajaresultado}
+El signo de la carga eléctrica es \textbf{positivo}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La aplicación de la regla de la mano derecha al producto vectorial $\vec{v} \times \vec{B}$ da como resultado un vector dirigido hacia arriba. Dado que la trayectoria observada de la partícula también se curva hacia arriba, la fuerza magnética real tiene el mismo sentido. Para que esto ocurra, el signo de la carga $q$ en la ecuación de Lorentz debe ser necesariamente positivo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque V: Problema}
+\label{subsec:B5_2012_jun_ord}
+\begin{cajaenunciado}
+Considera una partícula $\alpha$ y un protón con la misma longitud de onda asociada de De Broglie. Supón que ambas partículas se mueven a velocidades cercanas a la velocidad de la luz. Calcula la relación que existe entre:
+\begin{enumerate}
+    \item[a)] Las velocidades de ambas partículas (1 punto)
+    \item[b)] Las energías totales de ambas partículas. Una vez realizado el cálculo teórico, sustituye para el caso en el que la velocidad del protón sea 0,4c. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Condición inicial:} Misma longitud de onda, $\lambda_\alpha = \lambda_p$.
+    \item \textbf{Partículas:} Protón ($p$) y partícula alfa ($\alpha$, núcleo de Helio-4).
+    \item \textbf{Masas en reposo:} $m_\alpha \approx 4 m_p$.
+    \item \textbf{Régimen:} Relativista ("velocidades cercanas a la de la luz").
+    \item \textbf{Dato para (b):} $v_p = 0,4c$.
+    \item \textbf{Incógnitas:} Relación de velocidades ($v_\alpha/v_p$) y relación de energías totales ($E_\alpha/E_p$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplican los conceptos de la Relatividad Especial y la hipótesis de De Broglie.
+\begin{itemize}
+    \item \textbf{Hipótesis de De Broglie:} $\lambda = \frac{h}{p}$.
+    \item \textbf{Momento lineal relativista:} $p = \gamma m_0 v = \frac{m_0 v}{\sqrt{1-v^2/c^2}}$.
+    \item \textbf{Energía total relativista:} $E = \gamma m_0 c^2 = \frac{m_0 c^2}{\sqrt{1-v^2/c^2}}$.
+    \item \textbf{Relación energía-momento:} $E^2 = (pc)^2 + (m_0c^2)^2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La condición $\lambda_\alpha = \lambda_p$ implica, por la hipótesis de De Broglie, que ambas partículas tienen el mismo momento lineal:
+$$ p_\alpha = p_p = p $$
+
+\paragraph*{a) Relación entre velocidades}
+Igualamos los momentos relativistas:
+\begin{gather}
+    \frac{m_\alpha v_\alpha}{\sqrt{1-v_\alpha^2/c^2}} = \frac{m_p v_p}{\sqrt{1-v_p^2/c^2}}
+\end{gather}
+Dado que el enunciado indica un régimen relativista, esta ecuación no se puede simplificar fácilmente para obtener una relación general $v_\alpha/v_p$. (Nota: La aproximación no relativista, $m_\alpha v_\alpha \approx m_p v_p$, daría $v_p/v_\alpha \approx 4$, pero es inconsistente con la premisa). No es posible dar una relación general sin conocer una de las velocidades.
+
+\paragraph*{b) Relación entre energías totales}
+Usamos la relación energía-momento, que es más directa ya que sabemos que $p$ es el mismo para ambas partículas.
+\begin{gather}
+    E_\alpha = \sqrt{(pc)^2 + (m_\alpha c^2)^2} \\
+    E_p = \sqrt{(pc)^2 + (m_p c^2)^2}
+\end{gather}
+La relación entre las energías totales es:
+\begin{gather}
+    \frac{E_\alpha}{E_p} = \frac{\sqrt{p^2c^2 + (m_\alpha c^2)^2}}{\sqrt{p^2c^2 + (m_p c^2)^2}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Relación entre velocidades}
+Dado que no se puede obtener una relación general, este apartado no puede resolverse tal y como está planteado en un marco estrictamente relativista sin más datos. La aproximación clásica (inválida aquí) daría $v_p=4v_\alpha$.
+
+\paragraph*{b) Relación entre energías totales}
+Para el caso $v_p = 0,4c$, primero calculamos el momento del protón, $p$.
+El factor de Lorentz para el protón es $\gamma_p = \frac{1}{\sqrt{1 - (0,4)^2}} = \frac{1}{\sqrt{1 - 0,16}} = \frac{1}{\sqrt{0,84}} \approx 1,091$.
+El momento (al cuadrado y multiplicado por $c^2$) es:
+\begin{gather}
+    p^2c^2 = (\gamma_p m_p v_p)^2 c^2 = (1,091 \cdot m_p \cdot 0,4c)^2 c^2 = (0,4364)^2 m_p^2 c^4 \approx 0,1905 m_p^2 c^4
+\end{gather}
+Ahora sustituimos este valor en la relación de energías, usando $m_\alpha = 4m_p$:
+\begin{gather}
+    \frac{E_\alpha}{E_p} = \frac{\sqrt{0,1905 m_p^2 c^4 + (4m_p c^2)^2}}{\sqrt{0,1905 m_p^2 c^4 + (m_p c^2)^2}} = \frac{\sqrt{0,1905 m_p^2 c^4 + 16 m_p^2 c^4}}{\sqrt{0,1905 m_p^2 c^4 + m_p^2 c^4}} \nonumber \\
+    \frac{E_\alpha}{E_p} = \frac{\sqrt{16,1905} \cdot m_p c^2}{\sqrt{1,1905} \cdot m_p c^2} \approx \frac{4,024}{1,091} \approx 3,688
+\end{gather}
+\begin{cajaresultado}
+a) No es posible establecer una relación general sencilla entre las velocidades en el marco relativista. La aproximación clásica (inválida) daría $\boldsymbol{v_p = 4v_\alpha}$.
+b) La relación teórica es $\boldsymbol{\frac{E_\alpha}{E_p} = \frac{\sqrt{p^2c^2 + 16m_p^2c^4}}{\sqrt{p^2c^2 + m_p^2c^4}}}$. Para $v_p=0,4c$, la relación es $\boldsymbol{\approx 3,69}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La condición de igual longitud de onda de De Broglie implica igual momento lineal. En el régimen relativista, esto no conduce a una simple relación inversa de velocidades debido al factor de Lorentz. Sin embargo, usando la relación energía-momento, se puede encontrar que para un mismo momento lineal, la partícula más masiva (la partícula alfa) tiene una energía total mayor, aunque la relación no es simplemente la de las masas en reposo debido a la contribución del momento.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque VI: Cuestión}
+\label{subsec:B6_2012_jun_ord}
+\begin{cajaenunciado}
+Representa gráficamente, de forma aproximada, la energía de enlace por nucleón en función del número másico de los diferentes núcleos atómicos y razona, utilizando dicha gráfica, por qué es posible obtener energía mediante reacciones de fusión y de fisión nuclear.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Energía de enlace por nucleón} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico con el 'Número másico (A)' en el eje X y la 'Energía de enlace por nucleón (MeV)' en el eje Y. Dibujar una curva que comience en A=1, suba rápidamente, alcance un máximo amplio alrededor de A=56 (etiquetado como 'Fe', la región de máxima estabilidad), y luego descienda lentamente para valores más altos de A (hasta A>200, etiquetado como 'U'). Indicar con una flecha en la parte izquierda del gráfico (A bajo) 'FUSIÓN', mostrando que se va de núcleos menos estables a más estables. Indicar con una flecha en la parte derecha (A alto) 'FISIÓN', mostrando que un núcleo pesado se rompe en dos más ligeros, que también están en una zona más estable (más arriba en la curva)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/nuclear_energia_enlace_curva.png}
+    }}
+    \caption{Curva de la energía de enlace por nucleón en función del número másico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{energía de enlace por nucleón ($E_e/A$)} es una medida de la estabilidad de un núcleo atómico. Representa la energía promedio que se necesita para extraer un nucleón (protón o neutrón) del núcleo. Cuanto mayor es este valor, más estable es el núcleo. La gráfica de esta magnitud frente al número másico A no es monótona, sino que presenta un máximo.
+
+\paragraph*{Fusión Nuclear}
+\begin{itemize}
+    \item \textbf{Proceso:} Es una reacción en la que dos núcleos muy ligeros (con número másico bajo, situados en la parte ascendente y baja de la gráfica) se unen para formar un núcleo más pesado.
+    \item \textbf{Liberación de energía:} El núcleo resultante de la fusión tiene un número másico mayor y se encuentra en una posición más alta en la curva, lo que significa que tiene una \textbf{mayor energía de enlace por nucleón}. Al pasar de un estado menos ligado a uno más ligado, la diferencia de energía se libera, principalmente en forma de energía cinética de los productos.
+\end{itemize}
+
+\paragraph*{Fisión Nuclear}
+\begin{itemize}
+    \item \textbf{Proceso:} Es una reacción en la que un núcleo muy pesado e inestable (con número másico alto, situado en la parte descendente de la gráfica) se rompe, generalmente al absorber un neutrón, en dos núcleos de masa intermedia.
+    \item \textbf{Liberación de energía:} Los núcleos resultantes de la fisión (los "fragmentos") tienen números másicos intermedios y se sitúan en una zona más alta de la curva de estabilidad, cerca del máximo del Hierro. Por tanto, los productos tienen una \textbf{mayor energía de enlace por nucleón} que el núcleo original. Esta diferencia de energía entre el estado inicial (menos ligado) y el final (más ligado) se libera en forma de energía.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La forma de la curva de energía de enlace por nucleón es la clave para la obtención de energía nuclear. Tanto la fusión de núcleos ligeros como la fisión de núcleos pesados son procesos que conducen a la formación de núcleos más estables (con mayor energía de enlace por nucleón). En ambos casos, el sistema evoluciona hacia un estado de menor masa total, y la diferencia de masa se convierte en una enorme cantidad de energía liberada, de acuerdo con la ecuación $E = \Delta m c^2$.
+\end{cajaconclusion}
+
+\newpage
+```

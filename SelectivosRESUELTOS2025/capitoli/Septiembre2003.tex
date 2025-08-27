@@ -1,0 +1,724 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2003 - Convocatoria Extraordinaria}
+\label{chap:2003_sep_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Cuestiones de Campo Gravitatorio}
+\label{sec:grav_2003_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2003_sep_ext}
+
+\begin{cajaenunciado}
+Si consideramos que las órbitas de la Tierra y de Marte alrededor del Sol son circulares, ¿cuántos años terrestres dura un año marciano? El radio de la órbita de Marte es 1,486 veces mayor que el terrestre.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Relación de radios orbitales:} $r_M = 1,486 \cdot r_T$.
+    \item \textbf{Periodo orbital de la Tierra ($T_T$):} $T_T = 1$ año terrestre.
+    \item \textbf{Incógnita:} Periodo orbital de Marte ($T_M$) en años terrestres.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Órbitas de la Tierra y Marte} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema del Sol en el centro. Dibujar dos órbitas circulares concéntricas alrededor del Sol. La órbita interior corresponde a la Tierra y la exterior a Marte. Etiquetar los radios orbitales $r_T$ y $r_M$ respectivamente, mostrando que $r_M > r_T$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbitas_tierra_marte.png}
+    }}
+    \caption{Comparación de las órbitas terrestre y marciana.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando la \textbf{Tercera Ley de Kepler}. Esta ley establece que para todos los planetas que orbitan alrededor del Sol, el cuadrado de su periodo orbital ($T$) es directamente proporcional al cubo de su radio orbital medio ($r$).
+$$\frac{T^2}{r^3} = \text{constante}$$
+La constante es la misma para todos los cuerpos que orbitan alrededor del mismo cuerpo central (en este caso, el Sol).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Aplicamos la Tercera Ley de Kepler tanto para la Tierra como para Marte:
+$$\frac{T_T^2}{r_T^3} = \frac{T_M^2}{r_M^3}$$
+Nuestro objetivo es despejar $T_M$:
+$$T_M^2 = T_T^2 \cdot \frac{r_M^3}{r_T^3} = T_T^2 \cdot \left(\frac{r_M}{r_T}\right)^3$$
+$$T_M = T_T \sqrt{\left(\frac{r_M}{r_T}\right)^3}$$
+Sustituimos la relación dada $r_M = 1,486 \cdot r_T$:
+$$T_M = T_T \sqrt{\left(\frac{1,486 \cdot r_T}{r_T}\right)^3} = T_T \sqrt{(1,486)^3}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos $T_T = 1$ año:
+\begin{gather}
+    T_M = 1 \cdot \sqrt{(1,486)^3} \approx \sqrt{3,28} \approx 1,81 \, \text{años terrestres}
+\end{gather}
+\begin{cajaresultado}
+Un año marciano dura aproximadamente $\boldsymbol{1,81}$ años terrestres.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando la Tercera Ley de Kepler, que relaciona los periodos y radios orbitales de los planetas, se concluye que, al tener una órbita más alejada del Sol, Marte tiene un periodo orbital significativamente más largo que la Tierra. Un año en Marte equivale a casi dos años en la Tierra.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2003_sep_ext}
+
+\begin{cajaenunciado}
+Dibuja las líneas de campo del campo gravitatorio producido por dos masas puntuales iguales separadas una cierta distancia. ¿Existe algún punto en el que la intensidad del campo gravitatorio sea nula? En caso afirmativo indica en que punto. ¿Existe algún punto en el que el potencial gravitatorio sea nulo? En caso afirmativo indica en que punto.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre la representación y propiedades de los campos gravitatorios.
+\begin{itemize}
+    \item \textbf{Sistema:} Dos masas puntuales iguales ($m_1 = m_2 = M$).
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Dibujo de las líneas de campo.
+            \item Existencia y localización de puntos con campo ($\vec{g}$) nulo.
+            \item Existencia y localización de puntos con potencial ($V$) nulo.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Líneas de Campo de dos Masas Iguales} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos masas puntuales idénticas M1 y M2 en el eje horizontal. Dibujar las líneas de campo gravitatorio. Las líneas deben ser curvas que salen del infinito y terminan en cada una de las masas, con flechas apuntando hacia las masas. Las líneas deben ser simétricas respecto al eje vertical que pasa por el punto medio entre las masas. En el punto medio exacto, mostrar que los vectores de campo de cada masa se anulan. Las líneas de campo deben parecerse a las de un dipolo eléctrico pero con las flechas en sentido contrario (atractivo)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lineas_campo_dos_masas.png}
+    }}
+    \caption{Líneas del campo gravitatorio para dos masas iguales.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Campo Gravitatorio ($\vec{g}$):} Es una magnitud vectorial. El campo total es la suma vectorial de los campos individuales. $\vec{g}_{total} = \vec{g}_1 + \vec{g}_2$.
+    \item \textbf{Potencial Gravitatorio ($V$):} Es una magnitud escalar. El potencial total es la suma escalar de los potenciales individuales. $V_{total} = V_1 + V_2$. Por convenio, el potencial gravitatorio creado por una masa es siempre negativo ($V = -G\frac{M}{r}$) y se anula en el infinito.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Campo Gravitatorio Nulo}
+Para que $\vec{g}_{total} = \vec{g}_1 + \vec{g}_2 = \vec{0}$, se necesita que $\vec{g}_1 = -\vec{g}_2$. Es decir, los vectores deben tener igual módulo y sentido opuesto.
+Considerando las dos masas en el eje X en $x=-d$ y $x=+d$, el único punto donde esto ocurre es el punto medio entre ellas, en el origen $(0,0)$. En este punto, la distancia a ambas masas es la misma ($d$), y como las masas son iguales, los módulos de los campos son idénticos. El campo de la masa en $-d$ apunta hacia la izquierda ($\vec{g}_1 = -G\frac{M}{d^2}\vec{i}$) y el campo de la masa en $+d$ apunta hacia la derecha ($\vec{g}_2 = G\frac{M}{d^2}\vec{i}$). No, es al revés, el campo es atractivo. El campo de la masa en $-d$ apunta hacia $-d$ y el de la masa en $+d$ apunta hacia $+d$. En el punto medio, el campo de la masa de la izquierda apunta a la izquierda y el de la derecha a la derecha. No, el campo de la masa en $x=-d$ apunta hacia la izquierda, y el de la masa en $x=d$ apunta hacia la derecha. No, el campo de la masa en $-d$ apunta hacia ELLA, es decir, en el punto medio, apunta hacia la izquierda. El campo de la masa en $+d$ apunta hacia ELLA, es decir, hacia la derecha. Un momento, la gravedad es atractiva. El campo de la masa en $x=-d$ apunta hacia $x=-d$. El campo de la masa en $x=d$ apunta hacia $x=d$. En el punto medio $(0,0)$, el vector $\vec{g}_1$ apunta hacia la izquierda y el vector $\vec{g}_2$ apunta hacia la derecha. ¡No! El campo de $m_1$ en el origen apunta hacia $m_1$, es decir, hacia la izquierda. El campo de $m_2$ en el origen apunta hacia $m_2$, es decir, hacia la derecha. No, estoy confundido.
+Revisemos: Una masa $M$ en el origen crea en un punto $P$ de coordenadas $(x,0)$ con $x>0$ un campo $\vec{g} = -G\frac{M}{x^2}\vec{i}$.
+Nuestras masas están en $(-d,0)$ y $(d,0)$. El punto de interés es $P(0,0)$.
+Campo de $m_1$ en $P$: la distancia es $d$. El vector de posición de P respecto a $m_1$ es $d\vec{i}$. El campo apunta en sentido contrario: $\vec{g}_1 = -G\frac{M}{d^2}\vec{i}$.
+Campo de $m_2$ en $P$: la distancia es $d$. El vector de posición de P respecto a $m_2$ es $-d\vec{i}$. El campo apunta en sentido contrario: $\vec{g}_2 = -G\frac{M}{d^2}(-\vec{i}) = G\frac{M}{d^2}\vec{i}$.
+La suma es $\vec{g}_{total} = -G\frac{M}{d^2}\vec{i} + G\frac{M}{d^2}\vec{i} = \vec{0}$. Correcto.
+
+\paragraph*{Potencial Gravitatorio Nulo}
+El potencial total es $V_{total} = V_1 + V_2 = (-G\frac{M}{r_1}) + (-G\frac{M}{r_2})$.
+Como $G, M, r_1, r_2$ son siempre positivos, cada término de la suma es siempre negativo. La suma de dos números negativos nunca puede ser cero. El potencial gravitatorio es negativo en todo el espacio y solo tiende a cero en el infinito.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica.
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Sí existe un punto donde el campo gravitatorio es nulo}: Es el punto medio del segmento que une las dos masas.
+    \item \textbf{No existe ningún punto (en el espacio finito) donde el potencial gravitatorio sea nulo}. El potencial es siempre negativo y solo se anula en el infinito.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La naturaleza vectorial del campo gravitatorio permite que los campos creados por dos masas se anulen por simetría en el punto medio. Sin embargo, la naturaleza escalar y siempre negativa del potencial gravitatorio (por convenio) impide que la suma de los potenciales de dos masas sea cero, excepto a una distancia infinita.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Problemas de Ondas}
+\label{sec:ondas_2003_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2003_sep_ext}
+
+\begin{cajaenunciado}
+Una onda armónica transversal progresiva tiene una amplitud de 3 cm, una longitud de onda de 20 cm y se propaga con velocidad $5\,\text{m/s}$. Sabiendo que en $t=0$ s la elongación en el origen es 3 cm, se pide:
+\begin{enumerate}
+    \item[1.] Ecuación de la onda. (0,7 puntos)
+    \item[2.] Velocidad transversal de un punto situado a 40 cm del foco en el instante $t=1$ s. (0,7 puntos)
+    \item[3.] Diferencia de fase entre dos puntos separados 5 cm, en un instante dado. (0,6 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 3 \text{ cm} = 0,03 \text{ m}$.
+    \item \textbf{Longitud de onda ($\lambda$):} $\lambda = 20 \text{ cm} = 0,2 \text{ m}$.
+    \item \textbf{Velocidad de propagación ($v$):} $v = 5 \, \text{m/s}$.
+    \item \textbf{Condición inicial:} $y(0,0) = 3 \text{ cm} = A$.
+    \item \textbf{Incógnitas:} $y(x,t)$, $v_y(0.4, 1)$, $\Delta\phi$ para $\Delta x=0.05$ m.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ecuación de onda:} $y(x,t) = A\cos(kx \mp \omega t + \phi_0)$. Usamos coseno porque la condición inicial es la elongación máxima.
+    \item \textbf{Parámetros de la onda:} $k = 2\pi/\lambda$, $\omega = vk = 2\pi f$.
+    \item \textbf{Velocidad transversal:} $v_y(x,t) = \frac{\partial y}{\partial t}$.
+    \item \textbf{Diferencia de fase:} $\Delta\phi = k \cdot \Delta x$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{1. Ecuación de la onda}
+Calculamos $k$ y $\omega$:
+$$k = \frac{2\pi}{\lambda} = \frac{2\pi}{0,2} = 10\pi \, \text{rad/m}$$
+$$\omega = v \cdot k = 5 \cdot 10\pi = 50\pi \, \text{rad/s}$$
+La condición inicial $y(0,0)=A$ implica que $A = A\cos(\phi_0)$, por lo que $\cos(\phi_0)=1$ y podemos tomar $\phi_0=0$. La forma más simple es:
+$$y(x,t) = A\cos(kx - \omega t)$$
+(El signo '-' asume propagación en sentido +X, lo habitual si no se dice lo contrario).
+\begin{cajaresultado}
+    La ecuación de la onda es $\boldsymbol{y(x,t) = 0,03\cos(10\pi x - 50\pi t)}$ (en SI).
+\end{cajaresultado}
+
+\paragraph*{2. Velocidad transversal}
+Derivamos la ecuación de la onda:
+$$v_y(x,t) = \frac{\partial y}{\partial t} = -A(-\omega)\sin(kx - \omega t) = A\omega\sin(kx - \omega t)$$
+$$v_y(x,t) = 0,03 \cdot 50\pi \sin(10\pi x - 50\pi t) = 1,5\pi \sin(10\pi x - 50\pi t)$$
+Evaluamos en $x=0,4$ m y $t=1$ s:
+$$v_y(0.4, 1) = 1,5\pi \sin(10\pi \cdot 0,4 - 50\pi \cdot 1) = 1,5\pi \sin(4\pi - 50\pi) = 1,5\pi \sin(-46\pi)$$
+Como $\sin(-46\pi) = \sin(0) = 0$:
+$$v_y(0.4, 1) = 0 \, \text{m/s}$$
+\begin{cajaresultado}
+    La velocidad transversal en ese punto e instante es $\boldsymbol{0 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph*{3. Diferencia de fase}
+$$\Delta\phi = k \cdot \Delta x = (10\pi \, \text{rad/m}) \cdot (0,05 \, \text{m}) = 0,5\pi = \frac{\pi}{2} \, \text{rad}$$
+\begin{cajaresultado}
+    La diferencia de fase es $\boldsymbol{\pi/2}$ \textbf{radianes}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se ha determinado la ecuación de la onda y sus propiedades. La velocidad transversal nula en el punto y tiempo dados indica que la partícula se encuentra en un extremo de su oscilación en ese preciso instante. La diferencia de fase de $\pi/2$ entre dos puntos separados 5 cm significa que están en cuadratura.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2003_sep_ext}
+
+\begin{cajaenunciado}
+Dos fuentes sonoras iguales, A y B, emiten en fase ondas armónicas planas de igual amplitud y frecuencia, que se propagan a lo largo del eje OX.
+\begin{enumerate}
+    \item[1.] Calcula la frecuencia mínima del sonido que deben emitir las fuentes para que en un punto C situado a 7 m de la fuente A y a 2 m de la fuente B, la amplitud del sonido sea máxima. (1 punto)
+    \item[2.] Si las fuentes emiten sonido de 1530 Hz, calcula la diferencia de fase en el punto C. ¿Cómo será la amplitud del sonido en este punto? (1 punto)
+\end{enumerate}
+\textbf{Dato:} Velocidad de propagación del sonido, 340 m/s.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Distancia de A a C ($x_A$):} $x_A = 7$ m.
+    \item \textbf{Distancia de B a C ($x_B$):} $x_B = 2$ m.
+    \item \textbf{Velocidad del sonido ($v$):} $v = 340$ m/s.
+    \item \textbf{Incógnitas:} Frecuencia mínima para interferencia constructiva; diferencia de fase y tipo de interferencia para $f=1530$ Hz.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Interferencia de Ondas Sonoras} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar una línea horizontal (eje X). Colocar dos puntos, A y B, sobre ella, representando las fuentes sonoras. Colocar un tercer punto C a la derecha de ambos. Dibujar ondas emanando de A y B hacia C. Indicar las distancias $x_A=7$m y $x_B=2$m. Mostrar que las ondas llegan a C habiendo recorrido caminos diferentes, lo que genera una diferencia de fase."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{interferencia_sonido.png}
+    }}
+    \caption{Esquema del problema de interferencia.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno es la \textbf{interferencia} de dos ondas.
+\begin{itemize}
+    \item \textbf{Interferencia Constructiva (amplitud máxima):} Ocurre cuando la diferencia de caminos recorridos por las ondas, $\Delta x = |x_A - x_B|$, es un múltiplo entero de la longitud de onda, $\lambda$.
+    $$\Delta x = n\lambda \quad \text{con } n=0, 1, 2, ...$$
+    \item \textbf{Interferencia Destructiva (amplitud mínima/nula):} Ocurre cuando la diferencia de caminos es un múltiplo semientero impar de la longitud de onda.
+    $$\Delta x = (2n+1)\frac{\lambda}{2} \quad \text{con } n=0, 1, 2, ...$$
+    \item \textbf{Relación onda:} $v = \lambda f$.
+    \item \textbf{Diferencia de fase ($\Delta\phi$):} Se relaciona con la diferencia de caminos por $\Delta\phi = k \Delta x = \frac{2\pi}{\lambda}\Delta x$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{1. Frecuencia mínima para interferencia constructiva}
+Diferencia de caminos: $\Delta x = |7 - 2| = 5$ m.
+La condición es $\Delta x = n\lambda = n \frac{v}{f}$. Despejamos la frecuencia: $f = n \frac{v}{\Delta x}$.
+La frecuencia mínima se obtiene para el menor valor de $n$ que da una frecuencia no nula, es decir, $n=1$.
+$$f_{min} = 1 \cdot \frac{v}{\Delta x} = \frac{340 \, \text{m/s}}{5 \, \text{m}} = 68 \, \text{Hz}$$
+\begin{cajaresultado}
+    La frecuencia mínima para interferencia constructiva es $\boldsymbol{68}$ \textbf{Hz}.
+\end{cajaresultado}
+
+\paragraph*{2. Interferencia para $f=1530$ Hz}
+Calculamos la longitud de onda para esta frecuencia:
+$$\lambda = \frac{v}{f} = \frac{340 \, \text{m/s}}{1530 \, \text{Hz}} \approx 0,222 \, \text{m}$$
+Calculamos la diferencia de fase:
+$$\Delta\phi = \frac{2\pi}{\lambda}\Delta x = \frac{2\pi}{0,222} \cdot 5 \approx 45\pi \, \text{rad}$$
+Una diferencia de fase de $45\pi$ es un múltiplo impar de $\pi$ ($45\pi = (2 \cdot 22 + 1)\pi$). Esto corresponde a una \textbf{interferencia destructiva}.
+Alternativamente, podemos ver cuántas longitudes de onda caben en la diferencia de camino:
+$$\frac{\Delta x}{\lambda} = \frac{5}{0,222} \approx 22,5$$
+Como la diferencia de caminos es un múltiplo semientero de la longitud de onda ($\Delta x = 22,5 \lambda$), la interferencia es destructiva.
+\begin{cajaresultado}
+    La diferencia de fase es $\boldsymbol{45\pi}$ \textbf{rad}. La amplitud será \textbf{mínima (destructiva)}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La interferencia en el punto C depende críticamente de la frecuencia del sonido. Para una frecuencia mínima de $\mathbf{68 \, Hz}$, la diferencia de caminos es exactamente una longitud de onda, produciendo un máximo de sonido. Sin embargo, a una frecuencia de $\mathbf{1530 \, Hz}$, la diferencia de caminos equivale a 22,5 longitudes de onda, lo que provoca que las ondas lleguen en oposición de fase, resultando en una anulación o mínimo de sonido.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Cuestiones de Óptica}
+\label{sec:optica_2003_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2003_sep_ext}
+
+\begin{cajaenunciado}
+La figura representa la propagación de un rayo de luz al pasar de un medio a otro. Enuncia la ley que rige este fenómeno físico y razona en cuál de los dos medios (A ó B) se propaga la luz con mayor velocidad.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica a partir de una figura.
+\begin{itemize}
+    \item \textbf{Fenómeno:} Refracción de la luz.
+    \item \textbf{Observación clave:} El rayo de luz en el medio B está más cerca de la normal que el rayo en el medio A. Es decir, el ángulo de refracción $\theta_B$ es menor que el ángulo de incidencia $\theta_A$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La propia figura del enunciado es la representación gráfica.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se rige por la \textbf{Ley de Snell de la refracción}:
+$$n_A \sin(\theta_A) = n_B \sin(\theta_B)$$
+donde $n_A$ y $n_B$ son los índices de refracción de los medios A y B, y $\theta_A$ y $\theta_B$ son los ángulos que los rayos forman con la normal a la superficie de separación.
+El \textbf{índice de refracción ($n$)} de un medio se define como el cociente entre la velocidad de la luz en el vacío ($c$) y la velocidad de la luz en ese medio ($v$):
+$$n = \frac{c}{v}$$
+Esta definición implica que la velocidad de la luz en un medio es inversamente proporcional a su índice de refracción ($v = c/n$). Por lo tanto, la luz se propaga con mayor velocidad en el medio con menor índice de refracción.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+De la Ley de Snell, podemos despejar la relación entre los índices de refracción:
+$$\frac{n_A}{n_B} = \frac{\sin(\theta_B)}{\sin(\theta_A)}$$
+De la figura, observamos que $\theta_A > \theta_B$. Como la función seno es creciente para ángulos entre 0 y 90 grados, esto implica que $\sin(\theta_A) > \sin(\theta_B)$.
+Por lo tanto, el cociente $\frac{\sin(\theta_B)}{\sin(\theta_A)}$ es menor que 1.
+$$\frac{n_A}{n_B} < 1 \implies n_A < n_B$$
+El medio A tiene un índice de refracción menor que el medio B.
+Ahora relacionamos esto con la velocidad. Como $v_A = c/n_A$ y $v_B = c/n_B$, la condición $n_A < n_B$ implica:
+$$\frac{c}{v_A} < \frac{c}{v_B} \implies v_A > v_B$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica.
+\begin{cajaresultado}
+La ley que rige el fenómeno es la \textbf{Ley de Snell}. La luz se propaga con \textbf{mayor velocidad en el medio A}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al pasar de un medio a otro, el rayo de luz se acerca a la normal, lo que indica que está pasando de un medio con menor índice de refracción (A) a uno con mayor índice de refracción (B). Dado que la velocidad de la luz es inversamente proporcional al índice de refracción, la velocidad es mayor en el medio A, el ópticamente menos denso.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2003_sep_ext}
+
+\begin{cajaenunciado}
+Describe en qué consisten la miopía y la hipermetropía y cómo se corrigen.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre los defectos de la visión y su corrección mediante lentes.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Miopía y su Corrección} \vspace{0.5cm} \textit{Prompt:} "Dos esquemas del ojo. Arriba: 'Ojo Miope'. Rayos paralelos de un objeto lejano entran en el ojo y convergen en un punto focal delante de la retina. Abajo: 'Corrección'. Colocar una lente divergente (bicóncava) delante del ojo. Los rayos paralelos primero divergen ligeramente al pasar por la lente, y luego el cristalino los converge justo sobre la retina."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }} \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Hipermetropía y su Corrección} \vspace{0.5cm} \textit{Prompt:} "Dos esquemas del ojo. Arriba: 'Ojo Hipermétrope'. Rayos paralelos de un objeto lejano entran en el ojo y convergen en un punto focal detrás de la retina. Abajo: 'Corrección'. Colocar una lente convergente (biconvexa) delante del ojo. Los rayos paralelos primero convergen un poco al pasar por la lente, ayudando al cristalino a enfocarlos sobre la retina."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Esquemas de la miopía y la hipermetropía y su corrección.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El ojo humano funciona como un sistema de lentes (córnea y cristalino) que enfoca la luz sobre la retina. Un ojo normal (emétrope) enfoca los objetos lejanos (en el infinito) sobre la retina sin esfuerzo.
+\paragraph*{Miopía}
+\begin{itemize}
+    \item \textbf{Descripción:} Es un defecto de refracción en el que el ojo tiene un exceso de potencia refractiva. Esto puede deberse a que el globo ocular es demasiado largo o a que el cristalino es demasiado convergente. Como resultado, los rayos de luz procedentes de objetos lejanos se enfocan \textbf{delante de la retina}. La persona ve bien de cerca, pero borroso de lejos.
+    \item \textbf{Corrección:} Se necesita reducir la potencia convergente del ojo. Esto se logra colocando una \textbf{lente divergente} (cóncava) delante del ojo. Esta lente forma una imagen virtual del objeto lejano más cerca del ojo (en el punto remoto del ojo miope), permitiendo que el cristalino la enfoque correctamente sobre la retina.
+\end{itemize}
+\paragraph*{Hipermetropía}
+\begin{itemize}
+    \item \textbf{Descripción:} Es un defecto en el que el ojo tiene una falta de potencia refractiva. El globo ocular es demasiado corto o el cristalino es poco convergente. Los rayos de luz de objetos lejanos se enfocan \textbf{detrás de la retina}. La persona puede ver relativamente bien de lejos (a costa de un esfuerzo de acomodación del cristalino), pero ve borroso de cerca.
+    \item \textbf{Corrección:} Se necesita aumentar la potencia convergente del sistema. Esto se logra con una \textbf{lente convergente} (convexa). Esta lente pre-enfoca los rayos de luz, ayudando al cristalino a llevar el punto focal final sobre la retina.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+No aplica, es una cuestión descriptiva.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica.
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Miopía:} Exceso de convergencia, la imagen se forma delante de la retina. Se corrige con una \textbf{lente divergente}.
+    \item \textbf{Hipermetropía:} Defecto de convergencia, la imagen se forma detrás de la retina. Se corrige con una \textbf{lente convergente}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La miopía y la hipermetropía son los dos defectos de refracción más comunes y se deben a un desajuste entre la potencia del sistema óptico del ojo y su longitud axial. Afortunadamente, ambos pueden corregirse de manera efectiva mediante el uso de lentes oftálmicas (gafas o lentillas) que compensan el exceso o defecto de convergencia del ojo, restaurando así una visión nítida.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Problemas de Electromagnetismo}
+\label{sec:em_2003_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2003_sep_ext}
+
+\begin{cajaenunciado}
+Dos cargas puntuales de 3µC y 5µC se hallan situadas, respectivamente, en los puntos A(1,0) y B(0,3), con las distancias expresadas en metros. Se pide:
+\begin{enumerate}
+    \item[1.] El módulo, la dirección y el sentido del campo eléctrico en el punto P(4,0). (1 punto)
+    \item[2.] Trabajo realizado por la fuerza eléctrica para trasladar una carga de 2µC, desde el punto P al punto R(5,3). (1 punto)
+\end{enumerate}
+\textbf{Dato:} $K=9\times10^9\,\text{Nm}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_A$):} $q_A = 3 \cdot 10^{-6}$ C en A(1,0).
+    \item \textbf{Carga 2 ($q_B$):} $q_B = 5 \cdot 10^{-6}$ C en B(0,3).
+    \item \textbf{Punto P:} P(4,0).
+    \item \textbf{Punto R:} R(5,3).
+    \item \textbf{Carga de prueba ($q_p$):} $q_p = 2 \cdot 10^{-6}$ C.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo de dos cargas} \vspace{0.5cm} \textit{Prompt:} "Sistema de ejes XY. Carga $q_A$ en (1,0). Carga $q_B$ en (0,3). Punto P en (4,0). En P, dibujar el vector $\vec{E}_A$ apuntando a la derecha (repulsivo). Dibujar el vector $\vec{E}_B$ apuntando desde B hacia P (repulsivo). Dibujar el vector suma $\vec{E}_P$."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Vectores de campo eléctrico en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplican los mismos principios que en el examen de Junio 2003 (Bloque IV, Opción A): Principio de Superposición para campos (vectorial) y potenciales (escalar), y la relación entre trabajo y diferencia de potencial.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{1. Campo eléctrico en P(4,0)}
+Vector de A a P: $\vec{r}_{AP} = (4-1)\vec{i} + (0-0)\vec{j} = 3\vec{i}$. Distancia $r_{AP}=3$ m.
+Vector de B a P: $\vec{r}_{BP} = (4-0)\vec{i} + (0-3)\vec{j} = 4\vec{i} - 3\vec{j}$. Distancia $r_{BP}=\sqrt{4^2+(-3)^2}=5$ m.
+$\vec{E}_A(P) = K\frac{q_A}{r_{AP}^2}\hat{r}_{AP} = 9\cdot10^9 \frac{3\cdot10^{-6}}{3^2} \vec{i} = 3000 \vec{i}$ N/C.
+$\vec{E}_B(P) = K\frac{q_B}{r_{BP}^2}\hat{r}_{BP} = 9\cdot10^9 \frac{5\cdot10^{-6}}{5^2} \frac{4\vec{i}-3\vec{j}}{5} = 1800 \cdot (0,8\vec{i}-0,6\vec{j}) = 1440\vec{i} - 1080\vec{j}$ N/C.
+$\vec{E}_P = \vec{E}_A(P) + \vec{E}_B(P) = (3000+1440)\vec{i} - 1080\vec{j} = \boldsymbol{4440\vec{i} - 1080\vec{j}}$ \textbf{N/C}.
+Módulo: $|\vec{E}_P| = \sqrt{4440^2 + (-1080)^2} \approx 4570$ N/C.
+Ángulo: $\alpha = \arctan(\frac{-1080}{4440}) \approx -13,6^\circ$.
+
+\paragraph*{2. Trabajo de P a R}
+Necesitamos los potenciales en P y R.
+$V_P = V_A(P) + V_B(P) = K(\frac{q_A}{r_{AP}} + \frac{q_B}{r_{BP}}) = 9\cdot10^9(\frac{3\cdot10^{-6}}{3} + \frac{5\cdot10^{-6}}{5}) = 9\cdot10^9(10^{-6}+10^{-6}) = 18000$ V.
+Distancias para R(5,3):
+$r_{AR} = \sqrt{(5-1)^2+(3-0)^2} = \sqrt{16+9}=5$ m.
+$r_{BR} = \sqrt{(5-0)^2+(3-3)^2} = \sqrt{25}=5$ m.
+$V_R = V_A(R) + V_B(R) = K(\frac{q_A}{r_{AR}} + \frac{q_B}{r_{BR}}) = 9\cdot10^9(\frac{3\cdot10^{-6}}{5} + \frac{5\cdot10^{-6}}{5}) = 9\cdot10^9(\frac{8\cdot10^{-6}}{5}) = 14400$ V.
+$W_{P \to R} = q_p(V_P - V_R) = (2\cdot10^{-6})(18000 - 14400) = (2\cdot10^{-6})(3600) = \boldsymbol{7,2 \cdot 10^{-3}}$ \textbf{J}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+1. El campo en P es $\boldsymbol{\vec{E}_P = (4440\vec{i} - 1080\vec{j})}$ \textbf{N/C}.
+2. El trabajo realizado es $\boldsymbol{W_{P \to R} = 7,2 \cdot 10^{-3}}$ \textbf{J}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se han calculado el campo y el trabajo aplicando el principio de superposición y la definición de trabajo eléctrico. El trabajo positivo indica que el campo eléctrico realiza el trabajo, moviendo la carga positiva de una región de mayor potencial a una de menor potencial.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2003_sep_ext}
+
+\begin{cajaenunciado}
+Se colocan cuatro cargas puntuales en los vértices de un cuadrado de lado $a=1$ m. Calcula el módulo, la dirección y el sentido del campo eléctrico en el centro del cuadrado, O, en los siguientes casos:
+\begin{enumerate}
+    \item[1.] Las cuatro cargas son iguales y valen $3\,\mu\text{C}$.
+    \item[2.] Las cargas situadas en A y B son iguales a $2\,\mu\text{C}$ y las situadas en C y D son iguales a $-2\,\mu\text{C}$.
+    \item[3.] Las cargas situadas en A, B y C son iguales a $1\,\mu\text{C}$ y la situada en D vale $-1\,\mu\text{C}$.
+\end{enumerate}
+\textbf{Dato:} $K=9\times10^9\,\text{Nm}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Geometría:} Cuadrado de lado $a=1$ m. Vértices A, B, C, D (p.ej. antihorario desde arriba a la izquierda).
+    \item \textbf{Punto de cálculo:} Centro del cuadrado, O.
+    \item \textbf{Distancia del centro a cada vértice ($r$):} La mitad de la diagonal. $d = \sqrt{a^2+a^2} = a\sqrt{2}$. $r = d/2 = a\sqrt{2}/2 = \sqrt{2}/2$ m. $r^2 = 1/2 \, \text{m}^2$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo en el centro de un cuadrado} \vspace{0.5cm} \textit{Prompt:} "Dibujar un cuadrado con vértices A, B, C, D y centro O. Para cada uno de los tres casos, dibujar las cargas correspondientes en los vértices y los cuatro vectores de campo eléctrico ($\vec{E}_A, \vec{E}_B, \vec{E}_C, \vec{E}_D$) en el centro O, mostrando cómo se suman vectorialmente."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Suma de campos en el centro del cuadrado para los distintos casos.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Principio de Superposición: $\vec{E}_{total} = \sum \vec{E}_i$. Por la simetría del problema, los campos de cargas opuestas se anulan o se suman.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+Módulo del campo de una carga $|q|$ en el centro: $E = K\frac{|q|}{r^2} = K\frac{|q|}{(1/2)} = 2K|q|$.
+
+\paragraph*{1. $q_A=q_B=q_C=q_D=3\,\mu\text{C}$}
+Por simetría, los campos se anulan dos a dos. $\vec{E}_A$ se anula con $\vec{E}_C$, y $\vec{E}_B$ se anula con $\vec{E}_D$.
+\begin{cajaresultado}
+    $\boldsymbol{\vec{E}_{total} = 0}$.
+\end{cajaresultado}
+
+\paragraph*{2. $q_A=q_B=2\,\mu\text{C}$; $q_C=q_D=-2\,\mu\text{C}$}
+$\vec{E}_A$ y $\vec{E}_C$ apuntan ambos hacia C. $\vec{E}_B$ y $\vec{E}_D$ apuntan ambos hacia D.
+$E_0 = 2K|q| = 2 \cdot 9\cdot10^9 \cdot 2\cdot10^{-6} = 36000$ N/C.
+$\vec{E}_A+\vec{E}_C$ es un vector de módulo $2E_0$ que va de A a C.
+$\vec{E}_B+\vec{E}_D$ es un vector de módulo $2E_0$ que va de B a D.
+Ambos vectores resultantes son iguales y apuntan hacia abajo. El vector total apunta hacia abajo con módulo $2 \cdot (2E_0 \cos 45^\circ)$. No, se suman directamente.
+$\vec{E}_A = E_0(-\frac{\sqrt{2}}{2}\vec{i} + \frac{\sqrt{2}}{2}\vec{j})$. $\vec{E}_C = E_0(-\frac{\sqrt{2}}{2}\vec{i} + \frac{\sqrt{2}}{2}\vec{j})$. Suma: $2E_0(-\frac{\sqrt{2}}{2}\vec{i} + \frac{\sqrt{2}}{2}\vec{j})$.
+$\vec{E}_B = E_0(\frac{\sqrt{2}}{2}\vec{i} + \frac{\sqrt{2}}{2}\vec{j})$. $\vec{E}_D = E_0(\frac{\sqrt{2}}{2}\vec{i} + \frac{\sqrt{2}}{2}\vec{j})$. Suma: $2E_0(\frac{\sqrt{2}}{2}\vec{i} + \frac{\sqrt{2}}{2}\vec{j})$.
+Suma total: $4E_0\frac{\sqrt{2}}{2}\vec{j} = 2\sqrt{2}E_0 \vec{j} = 2\sqrt{2}(36000)\vec{j} \approx 101823\vec{j}$ N/C.
+\begin{cajaresultado}
+    El campo total apunta \textbf{hacia arriba} (del punto medio de CD al de AB) con módulo $\boldsymbol{1,02 \cdot 10^5}$ \textbf{N/C}.
+\end{cajaresultado}
+
+\paragraph*{3. $q_A=q_B=q_C=1\,\mu\text{C}$; $q_D=-1\,\mu\text{C}$}
+$\vec{E}_A$ y $\vec{E}_C$ se anulan. Solo quedan $\vec{E}_B$ y $\vec{E}_D$.
+$E_0 = 2K|q| = 2 \cdot 9\cdot10^9 \cdot 1\cdot10^{-6} = 18000$ N/C.
+$\vec{E}_B$ apunta de B a O. $\vec{E}_D$ apunta de O a D. Ambos apuntan en la misma dirección (de B a D).
+El campo total es la suma de sus módulos y apunta en la dirección de la diagonal BD.
+$|\vec{E}_{total}| = E_B + E_D = 2E_0 = 36000$ N/C.
+\begin{cajaresultado}
+    El campo total apunta en la dirección de la diagonal que va del vértice B al D, con módulo $\boldsymbol{36000}$ \textbf{N/C}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La simetría es clave para resolver este tipo de problemas. En el primer caso, la simetría total anula el campo. En los otros dos casos, la ruptura parcial de la simetría produce un campo neto que se puede calcular sumando vectorialmente las contribuciones de cada carga.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Cuestiones de Física Moderna}
+\label{sec:moderna_2003_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2003_sep_ext}
+
+\begin{cajaenunciado}
+El ${}^{131}\text{I}$ tiene un periodo de semidesintegración $T=8,04$ días. ¿Cuántos átomos de ${}^{131}\text{I}$ quedarán en una muestra que inicialmente tiene $N_0$ átomos de ${}^{131}\text{I}$ al cabo de 16,08 días? Considera los casos $N_0=10^{12}$ átomos y $N_0=2$ átomos. Comenta los resultados.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 8,04$ días.
+    \item \textbf{Tiempo transcurrido ($t$):} $t = 16,08$ días.
+    \item \textbf{Casos iniciales:} $N_{0,1} = 10^{12}$ átomos; $N_{0,2} = 2$ átomos.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{ley de desintegración radiactiva} relaciona el número de núcleos sin desintegrar ($N$) con el número inicial ($N_0$) y el tiempo transcurrido ($t$):
+$$N(t) = N_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}$$
+Esta ley es estadística y funciona muy bien para un número grande de átomos.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+El tiempo transcurrido es exactamente el doble del periodo de semidesintegración: $t = 16,08 = 2 \cdot 8,04 = 2 \cdot T_{1/2}$.
+El exponente en la ley de desintegración es $t/T_{1/2} = 2$.
+$$N = N_0 \left(\frac{1}{2}\right)^2 = \frac{N_0}{4}$$
+Al cabo de dos periodos de semidesintegración, queda la cuarta parte de la muestra inicial.
+
+\paragraph*{Caso 1: $N_0 = 10^{12}$ átomos}
+$$N_1 = \frac{10^{12}}{4} = 2,5 \cdot 10^{11} \, \text{átomos}$$
+\begin{cajaresultado}
+    Para $N_0 = 10^{12}$, quedarán $\boldsymbol{2,5 \cdot 10^{11}}$ \textbf{átomos}.
+\end{cajaresultado}
+
+\paragraph*{Caso 2: $N_0 = 2$ átomos}
+$$N_2 = \frac{2}{4} = 0,5 \, \text{átomos}$$
+Este resultado no tiene sentido físico, ya que no puede haber medio átomo.
+\begin{cajaresultado}
+    Para $N_0 = 2$, el cálculo da 0,5 átomos. Esto significa que lo más probable es que no quede ningún átomo (o quizás uno), pero no se puede predecir con certeza.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La ley de decaimiento radiactivo es de naturaleza estadística. Para un número muy grande de átomos como $10^{12}$, predice con gran exactitud que quedará una cuarta parte de ellos. Sin embargo, para un número tan pequeño como 2 átomos, la ley pierde su poder predictivo. No podemos saber con certeza si se desintegrarán los dos, uno o ninguno. Solo podemos hablar de probabilidades: hay una probabilidad del 25\% de que no se desintegre ninguno, un 50\% de que se desintegre uno, y un 25\% de que se desintegren los dos. El valor esperado es 0,5 átomos sin desintegrar, pero este no es un resultado posible.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2003_sep_ext}
+
+\begin{cajaenunciado}
+Una nave se aleja de la Tierra a una velocidad de 0,9 veces la de la luz. Desde la nave se envía una señal luminosa hacia la Tierra. ¿Qué velocidad tiene esta señal luminosa respecto a la nave? ¿Y respecto a la Tierra? Razona tus respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre la cinemática relativista.
+\begin{itemize}
+    \item \textbf{Velocidad de la nave respecto a la Tierra:} $v = 0,9c$.
+    \item \textbf{Señal emitida:} Un pulso de luz.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Velocidad de la luz respecto a la nave.
+            \item Velocidad de la luz respecto a la Tierra.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La respuesta se basa directamente en el \textbf{Segundo Postulado de la Relatividad Especial} de Einstein:
+\textit{"La velocidad de la luz en el vacío es la misma para todos los observadores inerciales, independientemente del movimiento de la fuente de luz."}
+Este postulado rompe con la adición de velocidades de la mecánica clásica de Galileo. En la mecánica clásica, si la nave se aleja a $v$ y emite una señal hacia atrás con velocidad $c$ (respecto a la nave), un observador en la Tierra mediría una velocidad de $c-v$. Sin embargo, esto no se aplica a la luz.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+No se requiere un desarrollo matemático, sino la aplicación directa del postulado.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+\begin{itemize}
+    \item La velocidad de la señal luminosa respecto a la \textbf{nave} es $\boldsymbol{c}$ (aproximadamente $3 \cdot 10^8$ m/s).
+    \item La velocidad de la señal luminosa respecto a la \textbf{Tierra} es también $\boldsymbol{c}$.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Según el postulado fundamental de la Relatividad Especial, la velocidad de la luz en el vacío es una constante universal, $c$. Cualquier observador inercial, ya sea el que viaja en la nave o el que está en la Tierra, medirá exactamente el mismo valor para la velocidad de esa señal luminosa, independientemente de la velocidad relativa entre ellos.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Cuestiones de Física Moderna}
+\label{sec:moderna2_2003_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2003_sep_ext}
+
+\begin{cajaenunciado}
+La transición electrónica del sodio, que ocurre entre dos de sus niveles energéticos, tiene una energía $E=3,37\times10^{-19}\,\text{J}$. Supongamos que se ilumina un átomo de sodio con luz monocromática cuya longitud de onda puede ser $\lambda_1=685,7\,\text{nm}$, $\lambda_2=642,2\,\text{nm}$, o $\lambda_3=589,6\,\text{nm}$. ¿Se conseguirá excitar un electrón desde el nivel de menor energía al de mayor energía con alguna de estas radiaciones? ¿Con cuál o cuáles de ellas? Razona la respuesta.
+\textbf{Datos:} Constante de Planck, $h=6,626\times10^{-34}\,\text{J s}$; Velocidad de la luz en el vacío, $c=3\times10^8\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Energía de la transición ($\Delta E$):} $\Delta E = 3,37 \cdot 10^{-19}$ J.
+    \item \textbf{Longitudes de onda incidentes:} $\lambda_1=685,7$ nm, $\lambda_2=642,2$ nm, $\lambda_3=589,6$ nm.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Según el modelo cuántico del átomo (Postulados de Bohr), un electrón solo puede ser excitado a un nivel superior si absorbe un fotón cuya energía sea \textbf{exactamente igual} a la diferencia de energía entre el nivel inicial y el final.
+La energía de un fotón se calcula como $E_{fotón} = hf = hc/\lambda$.
+Debemos calcular la energía de los fotones para cada una de las tres longitudes de onda y compararla con la energía de transición $\Delta E$.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+Calculamos la energía para cada fotón:
+\begin{gather*}
+    E_1 = \frac{hc}{\lambda_1} = \frac{(6,626\cdot10^{-34})(3\cdot10^8)}{685,7\cdot10^{-9}} \approx 2,90 \cdot 10^{-19} \, \text{J} \\
+    E_2 = \frac{hc}{\lambda_2} = \frac{(6,626\cdot10^{-34})(3\cdot10^8)}{642,2\cdot10^{-9}} \approx 3,10 \cdot 10^{-19} \, \text{J} \\
+    E_3 = \frac{hc}{\lambda_3} = \frac{(6,626\cdot10^{-34})(3\cdot10^8)}{589,6\cdot10^{-9}} \approx 3,37 \cdot 10^{-19} \, \text{J}
+\end{gather*}
+Comparamos cada energía con $\Delta E = 3,37 \cdot 10^{-19}$ J:
+\begin{itemize}
+    \item $E_1 < \Delta E$
+    \item $E_2 < \Delta E$
+    \item $E_3 = \Delta E$
+\end{itemize}
+\begin{cajaresultado}
+    Sí se conseguirá excitar el electrón, pero únicamente con la radiación de longitud de onda $\boldsymbol{\lambda_3 = 589,6}$ \textbf{nm}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La absorción de energía por parte de los átomos está cuantizada. No basta con que la energía del fotón sea "suficiente"; debe ser exactamente la necesaria para promover la transición. Las dos primeras radiaciones no tienen la energía precisa y pasarán a través del átomo sin ser absorbidas. Solo la tercera radiación, cuya energía coincide con la de la transición, será absorbida, excitando el átomo de sodio. Esta es la base de los espectros de absorción.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2003_sep_ext}
+
+\begin{cajaenunciado}
+Se lleva a cabo un experimento de interferencias con un haz de electrones que incide en el dispositivo interferencial con velocidad v y se obtiene que la longitud de onda de estos electrones es $\lambda_e$. Posteriormente se repite el experimento pero utilizando un haz de protones que incide con la misma velocidad v, obteniéndose un valor $\lambda_p$ para la longitud de onda. Sabiendo que la masa del protón es, aproximadamente, 1838 veces mayor que la masa del electrón, ¿qué valdrá la relación entre las longitudes de onda medidas, $\lambda_e/\lambda_p$?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partículas:} Electrones y protones.
+    \item \textbf{Velocidad:} La misma para ambos, $v_e = v_p = v$.
+    \item \textbf{Relación de masas:} $m_p = 1838 \cdot m_e$.
+    \item \textbf{Incógnita:} Cociente de longitudes de onda, $\lambda_e / \lambda_p$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La cuestión se basa en la \textbf{hipótesis de De Broglie}, que asocia una longitud de onda a toda partícula en movimiento:
+$$\lambda = \frac{h}{p} = \frac{h}{mv}$$
+donde $h$ es la constante de Planck, $p$ es el momento lineal, $m$ la masa y $v$ la velocidad de la partícula.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Aplicamos la fórmula de De Broglie para el electrón y para el protón:
+$$\lambda_e = \frac{h}{m_e v}$$
+$$\lambda_p = \frac{h}{m_p v}$$
+Ahora calculamos el cociente que se nos pide:
+$$\frac{\lambda_e}{\lambda_p} = \frac{\frac{h}{m_e v}}{\frac{h}{m_p v}}$$
+Simplificando $h$ y $v$:
+$$\frac{\lambda_e}{\lambda_p} = \frac{m_p}{m_e}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos la relación de masas dada en el enunciado:
+$$\frac{\lambda_e}{\lambda_p} = \frac{1838 \cdot m_e}{m_e} = 1838$$
+\begin{cajaresultado}
+    La relación entre las longitudes de onda es $\boldsymbol{\lambda_e / \lambda_p = 1838}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A igual velocidad, la longitud de onda de De Broglie es inversamente proporcional a la masa de la partícula. Como el protón es mucho más masivo que el electrón, su longitud de onda asociada es mucho más corta. Concretamente, la longitud de onda del electrón es 1838 veces mayor que la del protón. Esto implica que los fenómenos ondulatorios, como la difracción o la interferencia, son mucho más difíciles de observar para partículas masivas.
+\end{cajaconclusion}
+
+\newpage

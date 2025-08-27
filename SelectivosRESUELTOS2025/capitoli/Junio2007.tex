@@ -1,0 +1,749 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2007 - Convocatoria Ordinaria}
+\label{chap:2007_jun_ord}
+
+\section{Bloque I: Problemas de Campo Gravitatorio}
+\label{sec:grav_2007_jun_ord}
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:1A_2007_jun_ord}
+
+\begin{cajaenunciado}
+Un objeto de masa $M_{1}=100$ kg está situado en el punto A de coordenadas (6, 0) m. Un segundo objeto de masa $M_{2}=300$ kg está situado en el punto B de coordenadas (-6, 0) m. Calcular:
+\begin{enumerate}
+    \item El punto sobre el eje X para el cual el campo gravitatorio es nulo (1 punto).
+    \item El trabajo realizado por el campo gravitatorio cuando la masa $M_1$ se traslada desde el punto A hasta el punto C de coordenadas (-6, 6) m (1 punto).
+\end{enumerate}
+\textbf{Dato:} Constante de Gravitación Universal, $G=6,7\times10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa 1 ($M_1$):} $100\,\text{kg}$ en el punto A(6, 0) m.
+    \item \textbf{Masa 2 ($M_2$):} $300\,\text{kg}$ en el punto B(-6, 0) m.
+    \item \textbf{Punto C:} C(-6, 6) m.
+    \item \textbf{Constante de Gravitación ($G$):} $G = 6,7\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Punto P(x, 0) donde el campo gravitatorio total, $\vec{g}_{tot}$, es nulo.
+        \item Trabajo, $W_{A \to C}$, para trasladar la masa $M_1$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Gravitatorio Nulo y Trabajo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Marcar la masa $M_1$ en (6,0) y la masa $M_2$ en (-6,0). En un punto P(x,0) entre las dos masas, dibujar el vector de campo $\vec{g}_1$ apuntando hacia $M_1$ (derecha) y el vector $\vec{g}_2$ apuntando hacia $M_2$ (izquierda). Indicar que en el punto de campo nulo, estos dos vectores tienen la misma longitud. Marcar también el punto C en (-6,6) y dibujar una trayectoria desde A hasta C para ilustrar el desplazamiento de la masa $M_1$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grav_junio_2007.png}
+    }}
+    \caption{Esquema de las masas y los puntos de interés.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo Gravitatorio Nulo}
+Se utiliza el \textbf{Principio de Superposición}. El campo gravitatorio total en un punto es la suma vectorial de los campos creados por cada masa. Para que el campo sea nulo ($\vec{g}_{tot} = \vec{g}_1 + \vec{g}_2 = \vec{0}$), los vectores campo deben ser de igual módulo, misma dirección y sentidos opuestos. Dado que ambas masas son atractivas, el punto de campo nulo sobre el eje X debe estar situado entre ellas.
+
+\paragraph*{b) Trabajo y Energía Potencial}
+El campo gravitatorio es conservativo. El trabajo realizado por el campo para mover una masa ($M_1$) entre dos puntos (A y C) es igual al negativo de la variación de su energía potencial gravitatoria.
+$$ W_{A \to C} = -\Delta E_p = -(E_{p,C} - E_{p,A}) $$
+La energía potencial de la masa $M_1$ en un punto se debe a la presencia de la masa $M_2$, y se calcula como $E_p = M_1 \cdot V_2$, donde $V_2$ es el potencial gravitatorio creado por $M_2$.
+$$ V_2 = -G \frac{M_2}{r} $$
+donde $r$ es la distancia entre $M_2$ y el punto donde se encuentra $M_1$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Punto de campo nulo}
+Sea P(x,0) el punto buscado. La condición de anulación es $|\vec{g}_1| = |\vec{g}_2|$.
+\begin{gather}
+    G \frac{M_1}{(6-x)^2} = G \frac{M_2}{(x-(-6))^2} \implies \frac{M_1}{(6-x)^2} = \frac{M_2}{(x+6)^2} \\
+    \sqrt{M_1}(x+6) = \sqrt{M_2}(6-x) \implies x(\sqrt{M_1}+\sqrt{M_2}) = 6(\sqrt{M_2}-\sqrt{M_1})
+\end{gather}
+
+\paragraph*{2. Trabajo realizado}
+El trabajo para mover $M_1$ de A a C es debido únicamente a la influencia de $M_2$.
+\begin{gather}
+    W_{A \to C} = E_{p,A} - E_{p,C} = M_1 \cdot V_{2A} - M_1 \cdot V_{2C} = M_1 (V_{2A} - V_{2C}) \\
+    W_{A \to C} = M_1 \left( -G\frac{M_2}{r_{BA}} - \left(-G\frac{M_2}{r_{BC}}\right) \right) = GM_1M_2 \left( \frac{1}{r_{BC}} - \frac{1}{r_{BA}} \right)
+\end{gather}
+donde $r_{BA}$ es la distancia de B a A, y $r_{BC}$ es la distancia de B a C.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Punto de campo nulo}
+\begin{gather}
+    \frac{100}{(6-x)^2} = \frac{300}{(x+6)^2} \implies \frac{1}{(6-x)^2} = \frac{3}{(x+6)^2} \\
+    (x+6)^2 = 3(6-x)^2 \implies x+6 = \sqrt{3}(6-x) \\
+    x+6 = 6\sqrt{3} - \sqrt{3}x \implies x(1+\sqrt{3}) = 6\sqrt{3}-6 \\
+    x = \frac{6(\sqrt{3}-1)}{1+\sqrt{3}} \approx \frac{6(0,732)}{2,732} \approx 1,61\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+    El campo gravitatorio es nulo en el punto $\boldsymbol{P(1,61; 0)\,\textbf{m}}$.
+\end{cajaresultado}
+
+\paragraph*{2. Trabajo realizado}
+Calculamos las distancias:
+\begin{itemize}
+    \item $r_{BA}$ (distancia de B(-6,0) a A(6,0)): $r_{BA} = 12\,\text{m}$.
+    \item $r_{BC}$ (distancia de B(-6,0) a C(-6,6)): $r_{BC} = 6\,\text{m}$.
+\end{itemize}
+\begin{gather}
+    W_{A \to C} = (6,7\cdot10^{-11})(100)(300) \left( \frac{1}{6} - \frac{1}{12} \right) \\
+    W_{A \to C} = (2,01\cdot10^{-6}) \left( \frac{1}{12} \right) \approx 1,675\cdot10^{-7}\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo realizado por el campo es $\boldsymbol{W_{A \to C} \approx 1,675 \cdot 10^{-7}\,\textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Por el principio de superposición, el campo gravitatorio se anula en un punto del eje X situado a 1,61 m a la derecha del origen, más cerca de la masa menor. El trabajo realizado por el campo al desplazar la masa $M_1$ es positivo, lo que indica que el desplazamiento se ha producido a favor del campo (la masa se acerca a $M_2$), resultando en una disminución de la energía potencial del sistema.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:1B_2007_jun_ord}
+
+\begin{cajaenunciado}
+Sabiendo que el radio orbital de la luna es de $3,8\times10^{8}$ m y que tiene un periodo de 27 días, se quiere calcular:
+\begin{enumerate}
+    \item El radio de la órbita de un satélite de comunicaciones que da una vuelta a la Tierra cada 24 horas (satélite geoestacionario) (1 punto).
+    \item La velocidad de dicho satélite (1 punto).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Radio orbital de la Luna ($r_L$):} $r_L = 3,8\cdot10^8\,\text{m}$.
+    \item \textbf{Periodo de la Luna ($T_L$):} $T_L = 27\,\text{días} \times 24\,\text{h/día} \times 3600\,\text{s/h} = 2.332.800\,\text{s}$.
+    \item \textbf{Periodo del satélite ($T_S$):} $T_S = 24\,\text{h} \times 3600\,\text{s/h} = 86.400\,\text{s}$.
+    \item \textbf{Incógnitas:} Radio de la órbita del satélite ($r_S$) y velocidad del satélite ($v_S$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Órbitas de la Luna y un Satélite Geoestacionario} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Tierra en el centro. Dibujar dos órbitas circulares concéntricas. La órbita exterior representa a la Luna, con radio $r_L$ y periodo $T_L$. La órbita interior representa al satélite geoestacionario, con radio $r_S$ y periodo $T_S$. Etiquetar claramente todos los elementos."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbitas_luna_satelite.png}
+    }}
+    \caption{Esquema comparativo de las órbitas alrededor de la Tierra.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando la \textbf{Tercera Ley de Kepler}. Esta ley establece que para todos los cuerpos que orbitan alrededor de un mismo cuerpo central (en este caso, la Tierra), la relación entre el cuadrado del periodo orbital y el cubo del radio de la órbita es constante.
+$$ \frac{T^2}{r^3} = \text{constante} = \frac{4\pi^2}{GM_{Tierra}} $$
+La velocidad en un movimiento circular uniforme se calcula como $v = \frac{2\pi r}{T}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Radio de la órbita del satélite}
+Aplicamos la Tercera Ley de Kepler a la Luna y al satélite:
+\begin{gather}
+    \frac{T_L^2}{r_L^3} = \frac{T_S^2}{r_S^3}
+\end{gather}
+Despejamos el radio de la órbita del satélite, $r_S$:
+\begin{gather}
+    r_S^3 = r_L^3 \left(\frac{T_S}{T_L}\right)^2 \implies r_S = r_L \sqrt[3]{\left(\frac{T_S}{T_L}\right)^2}
+\end{gather}
+
+\paragraph*{2. Velocidad del satélite}
+Una vez calculado $r_S$, la velocidad se obtiene directamente de la fórmula del movimiento circular:
+\begin{gather}
+    v_S = \frac{2\pi r_S}{T_S}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Radio de la órbita}
+\begin{gather}
+    r_S = (3,8\cdot10^8\,\text{m}) \sqrt[3]{\left(\frac{86.400\,\text{s}}{2.332.800\,\text{s}}\right)^2} = (3,8\cdot10^8) \sqrt[3]{(0,037)^2} \approx (3,8\cdot10^8)(0,111) \\
+    r_S \approx 4,22\cdot10^7\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+    El radio de la órbita del satélite geoestacionario es $\boldsymbol{r_S \approx 4,22 \cdot 10^7\,\textbf{m}}$ (aproximadamente 42.200 km).
+\end{cajaresultado}
+
+\paragraph*{2. Velocidad del satélite}
+\begin{gather}
+    v_S = \frac{2\pi (4,22\cdot10^7\,\text{m})}{86.400\,\text{s}} \approx 3068\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad del satélite es $\boldsymbol{v_S \approx 3068\,\textbf{m/s}}$ (aproximadamente 3,07 km/s).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Utilizando los datos orbitales de la Luna como referencia y aplicando la Tercera Ley de Kepler, se ha determinado que un satélite geoestacionario debe situarse en una órbita circular de aproximadamente 42.200 km de radio. A esa distancia, para completar una órbita en 24 horas, debe mantener una velocidad constante de unos 3.068 m/s.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque II: Cuestiones de Ondas}
+\label{sec:ondas_2007_jun_ord}
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:2A_2007_jun_ord}
+
+\begin{cajaenunciado}
+La ecuación de una onda tiene la expresión: $y(x,t)=A \sin[2\pi bt - cx]$.
+\begin{enumerate}
+    \item ¿Qué representan los coeficientes b y c? ¿Cuáles son sus unidades en el Sistema Internacional? (1 punto)
+    \item ¿Qué interpretación tendría que el signo de dentro del paréntesis fuese positivo en lugar de negativo? (0,5 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La cuestión se resuelve comparando la expresión dada, $y(x,t) = A \sin(2\pi bt - cx)$, con las formas estándar de la ecuación de una onda armónica. Una de las formas más comunes es:
+$$ y(x,t) = A \sin(\omega t - kx) $$
+donde $\omega$ es la frecuencia angular y $k$ es el número de onda. Otra forma equivalente es:
+$$ y(x,t) = A \sin\left(2\pi f t - \frac{2\pi}{\lambda}x\right) = A \sin\left[2\pi\left(ft - \frac{x}{\lambda}\right)\right] $$
+donde $f$ es la frecuencia y $\lambda$ es la longitud de onda.
+
+\paragraph*{1. Significado de b y c}
+Para identificar los coeficientes, reescribimos la expresión dada factorizando $2\pi$:
+$$ y(x,t) = A \sin\left[2\pi\left(bt - \frac{c}{2\pi}x\right)\right] $$
+Comparando término a término con la segunda forma estándar:
+\begin{itemize}
+    \item El término que multiplica al tiempo, $t$, es la frecuencia, $f$. Por tanto, $\boldsymbol{b}$ \textbf{representa la frecuencia} de la onda. Su unidad en el SI es el Hercio ($\text{Hz}$), que equivale a $\text{s}^{-1}$.
+    \item El término que multiplica a la posición, $x$, en la forma $\sin(kx)$ es el número de onda $k$. En la expresión dada, $cx$ ocupa esa posición. Comparando con $\sin(\omega t - kx)$ vemos que $k=c$. Por tanto, $\boldsymbol{c}$ \textbf{representa el número de onda}, $k$. Su unidad en el SI es $\text{rad}/\text{m}$.
+\end{itemize}
+
+\paragraph*{2. Interpretación del signo}
+La fase de una onda que se propaga en el eje X es $\phi(x,t) = \omega t \mp kx$. Para que un punto de fase constante (por ejemplo, una cresta) se propague, su derivada total respecto al tiempo debe ser cero.
+$$ \frac{d\phi}{dt} = \omega \mp k \frac{dx}{dt} = 0 \implies v_p = \frac{dx}{dt} = \pm \frac{\omega}{k} $$
+\begin{itemize}
+    \item Un \textbf{signo negativo} en la fase, $(\omega t - kx)$, corresponde a una velocidad de propagación $v_p = +\omega/k$, lo que significa que la onda se propaga en el \textbf{sentido positivo del eje X}.
+    \item Un \textbf{signo positivo} en la fase, $(\omega t + kx)$, corresponde a una velocidad de propagación $v_p = -\omega/k$, lo que significa que la onda se propaga en el \textbf{sentido negativo del eje X}.
+\end{itemize}
+
+\begin{cajaresultado}
+1. El coeficiente \textbf{b} es la \textbf{frecuencia (f)} de la onda, medida en \textbf{Hz}. El coeficiente \textbf{c} es el \textbf{número de onda (k)}, medido en \textbf{rad/m}.
+2. Un signo positivo en lugar de negativo indicaría que la onda se propaga en el \textbf{sentido negativo del eje de las X}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La forma matemática de una ecuación de onda encapsula todas sus propiedades físicas. Mediante la comparación con las formas estándar, se identifica que el coeficiente del tiempo corresponde a la frecuencia y el coeficiente de la posición al número de onda. El signo relativo entre ambos términos determina la dirección de propagación de la perturbación.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:2B_2007_jun_ord}
+
+\begin{cajaenunciado}
+Una onda armónica viaja a $30\,\text{m/s}$ en la dirección positiva del eje X con una amplitud de $0,5\,\text{m}$ y una longitud de onda de $0,6\,\text{m}$. Escribir la ecuación del movimiento, como una función del tiempo, para un punto al que le llega la perturbación y está situado en $x=0,8\,\text{m}$ (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad de propagación ($v$):} $v = 30\,\text{m/s}$.
+    \item \textbf{Sentido de propagación:} Positivo del eje X.
+    \item \textbf{Amplitud ($A$):} $A = 0,5\,\text{m}$.
+    \item \textbf{Longitud de onda ($\lambda$):} $\lambda = 0,6\,\text{m}$.
+    \item \textbf{Posición de interés ($x_0$):} $x_0 = 0,8\,\text{m}$.
+    \item \textbf{Incógnita:} Ecuación de la elongación en función del tiempo para el punto $x_0$, es decir, $y(0,8, t)$.
+\end{itemize}
+No se dan condiciones iniciales (fase inicial), por lo que se puede asumir la forma más simple ($\phi_0=0$).
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación general de una onda armónica que se propaga en el sentido positivo del eje X es:
+$$ y(x,t) = A \sin(\omega t - kx + \phi_0) $$
+Para escribir la ecuación, necesitamos calcular la frecuencia angular ($\omega$) y el número de onda ($k$).
+\begin{itemize}
+    \item La frecuencia ($f$) se relaciona con la velocidad y la longitud de onda: $f = v/\lambda$.
+    \item La frecuencia angular es: $\omega = 2\pi f$.
+    \item El número de onda es: $k = 2\pi/\lambda$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Primero, calculamos los parámetros de la onda:
+\begin{gather}
+    \omega = 2\pi \frac{v}{\lambda} \\
+    k = \frac{2\pi}{\lambda}
+\end{gather}
+Asumiendo una fase inicial nula ($\phi_0=0$), la ecuación general de la onda es:
+\begin{gather}
+    y(x,t) = A \sin\left( \left(2\pi \frac{v}{\lambda}\right)t - \left(\frac{2\pi}{\lambda}\right)x \right)
+\end{gather}
+Para obtener la ecuación del movimiento para el punto específico $x=x_0$, simplemente sustituimos este valor en la ecuación general:
+\begin{gather}
+    y(x_0, t) = A \sin(\omega t - kx_0)
+\end{gather}
+Esta ecuación describe un Movimiento Armónico Simple para la partícula situada en $x_0$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos $\omega$ y $k$:
+\begin{gather}
+    f = \frac{30\,\text{m/s}}{0,6\,\text{m}} = 50\,\text{Hz} \\
+    \omega = 2\pi (50\,\text{Hz}) = 100\pi\,\text{rad/s} \\
+    k = \frac{2\pi}{0,6\,\text{m}} = \frac{10\pi}{3}\,\text{rad/m}
+\end{gather}
+La ecuación general de la onda es $y(x,t) = 0,5 \sin(100\pi t - \frac{10\pi}{3}x)$.
+Ahora sustituimos $x=0,8\,\text{m}$:
+\begin{gather}
+    y(0,8, t) = 0,5 \sin\left(100\pi t - \frac{10\pi}{3} \cdot 0,8\right) \\
+    y(0,8, t) = 0,5 \sin\left(100\pi t - \frac{8\pi}{3}\right)
+\end{gather}
+\begin{cajaresultado}
+    La ecuación del movimiento para el punto situado en $x=0,8\,\text{m}$ es:
+    $$ \boldsymbol{y(t) = 0,5 \sin\left(100\pi t - \frac{8\pi}{3}\right)} \,\textbf{(SI)} $$
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de las características de la onda (velocidad, amplitud, longitud de onda), se ha determinado su ecuación general. Al particularizar esta ecuación para la posición $x=0,8\,\text{m}$, se obtiene la ley que rige la oscilación de esa partícula específica del medio. Se observa que es un movimiento armónico simple con una fase inicial constante de $-8\pi/3$ radianes, que representa el desfase debido a su posición respecto al origen.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque III: Cuestiones de Óptica}
+\label{sec:optica_2007_jun_ord}
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:3A_2007_jun_ord}
+
+\begin{cajaenunciado}
+Un objeto se encuentra frente a un espejo convexo a una distancia d. Obtén mediante el diagrama de rayos la imagen que se forma indicando sus características (1 punto). Si cambias el valor de d ¿qué características de la imagen se modifican? (0,5 puntos)
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Formación de imagen en un espejo convexo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para un espejo esférico convexo. Dibuja el eje óptico horizontal. Dibuja el espejo convexo a la izquierda, con su vértice V en el eje. Marca el foco F' y el centro de curvatura C' a la derecha del espejo (en la zona virtual). Dibuja un objeto vertical (flecha hacia arriba) a la izquierda del espejo a una distancia 'd'. Traza dos rayos principales desde la punta del objeto: 1) Un rayo paralelo al eje óptico, que se refleja de tal manera que su prolongación hacia atrás pasa por el foco F'. 2) Un rayo dirigido hacia el centro de curvatura C', que incide perpendicularmente en el espejo y se refleja sobre sí mismo. El punto donde se cruzan las prolongaciones de los rayos reflejados (detrás del espejo) forma la punta de la imagen. Dibuja la imagen como una flecha discontinua. Etiquetar claramente objeto, imagen, F', C', V y d."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_convexo.png}
+    }}
+    \caption{Trazado de rayos para un objeto frente a un espejo convexo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Características de la imagen}
+La construcción gráfica mediante el trazado de rayos principales nos permite determinar las características de la imagen formada.
+\begin{itemize}
+    \item \textbf{Naturaleza:} La imagen se forma por la intersección de las \textbf{prolongaciones} de los rayos reflejados, no por los rayos mismos. Por lo tanto, es una imagen \textbf{Virtual}. No se podría proyectar en una pantalla.
+    \item \textbf{Orientación:} La imagen (flecha discontinua) apunta en la misma dirección que el objeto. Por tanto, es una imagen \textbf{Derecha} o no invertida.
+    \item \textbf{Tamaño:} La imagen formada es visiblemente más pequeña que el objeto. Por lo tanto, es una imagen \textbf{de menor tamaño} o reducida.
+\end{itemize}
+
+\paragraph*{Modificación con la distancia d}
+Las características cualitativas (\textbf{virtual, derecha y de menor tamaño}) son siempre las mismas para un espejo convexo, independientemente de la distancia $d$ a la que se coloque el objeto. Sin embargo, sí se modifican dos características cuantitativas:
+\begin{itemize}
+    \item \textbf{Posición de la imagen:} A medida que el objeto se acerca al espejo (disminuye $d$), la imagen virtual también se acerca al espejo y se forma más cerca del vértice V. Si el objeto está en el infinito, la imagen se forma en el foco.
+    \item \textbf{Tamaño de la imagen:} A medida que el objeto se acerca al espejo, el tamaño de la imagen virtual aumenta, aunque siempre permanece más pequeña que el objeto.
+\end{itemize}
+
+\begin{cajaresultado}
+La imagen formada por un espejo convexo es siempre \textbf{virtual, derecha y de menor tamaño} que el objeto.
+Al cambiar la distancia $d$, las características que se modifican son la \textbf{posición} y el \textbf{tamaño} de la imagen. Las características de ser virtual, derecha y reducida se mantienen siempre.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Los espejos convexos, debido a su curvatura divergente, siempre producen imágenes virtuales, derechas y reducidas. Esta propiedad los hace útiles como espejos retrovisores o en cruces de calles, ya que ofrecen un campo de visión más amplio, aunque los objetos se vean más pequeños y más lejos de lo que están. La posición y el tamaño de la imagen dependen de la distancia del objeto, pero su naturaleza no cambia.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:3B_2007_jun_ord}
+
+\begin{cajaenunciado}
+Un rayo de luz que viaja por un medio con velocidad de $2,5\times10^{8}\,\text{m/s}$ incide con un ángulo de 30°, con respecto a la normal, sobre otro medio donde su velocidad es de $2\times10^{8}\,\text{m/s}$. Calcula el ángulo de refracción (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad en el medio 1 ($v_1$):} $v_1 = 2,5 \cdot 10^8\,\text{m/s}$.
+    \item \textbf{Ángulo de incidencia ($\theta_1$):} $\theta_1 = 30^\circ$.
+    \item \textbf{Velocidad en el medio 2 ($v_2$):} $v_2 = 2 \cdot 10^8\,\text{m/s}$.
+    \item \textbf{Velocidad de la luz en el vacío ($c$):} $c = 3 \cdot 10^8\,\text{m/s}$ (valor estándar).
+    \item \textbf{Incógnita:} Ángulo de refracción ($\theta_2$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Refracción de la Luz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una interfaz horizontal separando dos medios. El medio 1 está arriba y el medio 2 abajo. Dibujar una línea normal perpendicular a la interfaz. Un rayo de luz incide desde el medio 1 con un ángulo $\theta_1=30^\circ$ respecto a la normal. Al pasar al medio 2, el rayo se refracta, acercándose a la normal, con un ángulo $\theta_2 < \theta_1$. Etiquetar los medios con sus velocidades ($v_1 > v_2$) e índices de refracción ($n_1 < n_2$) para mostrar que el rayo pasa a un medio ópticamente más denso."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{refraccion_snell.png}
+    }}
+    \caption{Esquema de la refracción del rayo de luz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se rige por la \textbf{Ley de Snell de la refracción}. Esta ley relaciona los índices de refracción de los dos medios ($n_1$ y $n_2$) con los ángulos de incidencia y refracción ($\theta_1$ y $\theta_2$):
+$$ n_1 \sin(\theta_1) = n_2 \sin(\theta_2) $$
+El \textbf{índice de refracción ($n$)} de un medio se define como el cociente entre la velocidad de la luz en el vacío ($c$) y la velocidad de la luz en ese medio ($v$):
+$$ n = \frac{c}{v} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sustituimos la definición del índice de refracción en la Ley de Snell:
+\begin{gather}
+    \left(\frac{c}{v_1}\right) \sin(\theta_1) = \left(\frac{c}{v_2}\right) \sin(\theta_2)
+\end{gather}
+La velocidad de la luz en el vacío, $c$, se cancela de ambos lados:
+\begin{gather}
+    \frac{\sin(\theta_1)}{v_1} = \frac{\sin(\theta_2)}{v_2}
+\end{gather}
+Despejamos el seno del ángulo de refracción:
+\begin{gather}
+    \sin(\theta_2) = \frac{v_2}{v_1} \sin(\theta_1)
+\end{gather}
+Finalmente, el ángulo de refracción es:
+\begin{gather}
+    \theta_2 = \arcsin\left(\frac{v_2}{v_1} \sin(\theta_1)\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \sin(\theta_2) = \frac{2 \cdot 10^8\,\text{m/s}}{2,5 \cdot 10^8\,\text{m/s}} \sin(30^\circ) = 0,8 \cdot (0,5) = 0,4 \\
+    \theta_2 = \arcsin(0,4) \approx 23,58^\circ
+\end{gather}
+\begin{cajaresultado}
+    El ángulo de refracción es $\boldsymbol{\theta_2 \approx 23,58^\circ}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando la Ley de Snell, se determina que el ángulo de refracción es de 23,58°. Como el rayo pasa de un medio donde viaja más rápido a uno donde viaja más lento (un medio ópticamente más denso), se desvía acercándose a la normal, lo cual es consistente con el resultado de que $\theta_2 < \theta_1$.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque IV: Cuestiones de Campo Eléctrico}
+\label{sec:elec_2007_jun_ord}
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:4A_2007_jun_ord}
+
+\begin{cajaenunciado}
+Una carga $q>0$ se encuentra bajo la acción de un campo eléctrico uniforme $\vec{E}$. Si la carga se desplaza en la misma dirección y sentido que el campo eléctrico, ¿qué ocurre con su energía potencial eléctrica? (1 punto). ¿Y si movemos la carga en dirección perpendicular al campo? (0,5 puntos). Justifica ambas respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La relación fundamental entre el trabajo realizado por un campo conservativo (como el campo eléctrico) y la variación de la energía potencial es:
+$$ W = -\Delta E_p = -(E_{p,final} - E_{p,inicial}) $$
+El trabajo realizado por una fuerza eléctrica constante $\vec{F}$ para un desplazamiento $\vec{d}$ se calcula como el producto escalar:
+$$ W = \vec{F} \cdot \vec{d} = Fd\cos(\alpha) $$
+donde $\vec{F} = q\vec{E}$.
+
+\paragraph*{1. Desplazamiento en la misma dirección y sentido que $\vec{E}$}
+En este caso, la fuerza sobre la carga positiva, $\vec{F}=q\vec{E}$, también tiene la misma dirección y sentido que el campo $\vec{E}$. El desplazamiento $\vec{d}$ es paralelo a la fuerza $\vec{F}$.
+\begin{itemize}
+    \item El ángulo entre la fuerza y el desplazamiento es $\alpha=0^\circ$, por lo que $\cos(0^\circ)=1$.
+    \item El trabajo realizado por el campo es positivo: $W = Fd > 0$.
+    \item La variación de la energía potencial es $\Delta E_p = -W$. Como $W>0$, entonces $\Delta E_p < 0$.
+\end{itemize}
+Una variación de energía potencial negativa significa que la energía potencial final es menor que la inicial. Por lo tanto, \textbf{la energía potencial eléctrica disminuye}.
+
+\paragraph*{2. Desplazamiento en dirección perpendicular a $\vec{E}$}
+En este caso, el desplazamiento $\vec{d}$ es perpendicular a la fuerza eléctrica $\vec{F}=q\vec{E}$.
+\begin{itemize}
+    \item El ángulo entre la fuerza y el desplazamiento es $\alpha=90^\circ$, por lo que $\cos(90^\circ)=0$.
+    \item El trabajo realizado por el campo es nulo: $W = Fd\cos(90^\circ) = 0$.
+    \item La variación de la energía potencial es $\Delta E_p = -W = 0$.
+\end{itemize}
+Una variación nula significa que la energía potencial final es igual a la inicial. Por lo tanto, \textbf{la energía potencial eléctrica no cambia}. El desplazamiento se realiza a lo largo de una línea equipotencial.
+
+\begin{cajaresultado}
+\begin{itemize}
+    \item Si la carga se mueve en la misma dirección y sentido que el campo, su \textbf{energía potencial disminuye}.
+    \item Si la carga se mueve en dirección perpendicular al campo, su \textbf{energía potencial no cambia}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo eléctrico realiza trabajo positivo sobre una carga positiva que se mueve en su misma dirección, lo que ocurre a expensas de la energía potencial del sistema, que disminuye. Por el contrario, no se realiza trabajo al mover una carga perpendicularmente a las líneas de campo, por lo que la energía potencial se mantiene constante. Esto es análogo a mover una masa en un campo gravitatorio: si cae, su energía potencial disminuye; si se mueve horizontalmente, no cambia.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:4B_2007_jun_ord}
+
+\begin{cajaenunciado}
+Una partícula con velocidad constante, masa m y carga q entra en una región donde existe un campo magnético uniforme $\vec{B}$, perpendicular a su velocidad. Realiza un dibujo de la trayectoria que seguirá la partícula (1 punto). ¿Cómo se ve afectada la trayectoria si en las mismas condiciones cambiamos únicamente el signo de la carga? (0,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Trayectoria para $q>0$} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una región con un campo magnético uniforme $\vec{B}$ entrando en el papel (cruces 'x'). Una partícula positiva ($q>0$) entra por la izquierda con un vector de velocidad horizontal $\vec{v}$. Usando la regla de la mano derecha, la fuerza de Lorentz $\vec{F}_m$ apunta inicialmente hacia arriba. Esta fuerza actúa como fuerza centrípeta, haciendo que la partícula describa una trayectoria circular en sentido antihorario. Dibujar la trayectoria circular y el vector fuerza en varios puntos, siempre apuntando hacia el centro del círculo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lorentz_positivo.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Trayectoria para $q<0$} \vspace{0.5cm} \textit{Prompt para la imagen:} "La misma configuración de campo magnético y velocidad inicial. La partícula ahora es negativa ($q<0$). La fuerza de Lorentz $\vec{F}_m$ apunta inicialmente hacia abajo (sentido opuesto al caso anterior). La partícula describe una trayectoria circular en sentido horario. Dibujar la trayectoria y el vector fuerza, que sigue apuntando al centro de la nueva trayectoria circular."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lorentz_negativo.png}
+    }}
+    \caption{Trayectorias de partículas con carga de signo opuesto.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza que actúa sobre la partícula es la \textbf{Fuerza de Lorentz}:
+$$ \vec{F}_m = q(\vec{v} \times \vec{B}) $$
+\paragraph*{1. Trayectoria de la partícula}
+Dado que la velocidad $\vec{v}$ es perpendicular al campo $\vec{B}$, el módulo de la fuerza magnética es máximo, $F_m = |q|vB$. La dirección de la fuerza, dada por el producto vectorial, es siempre perpendicular tanto a $\vec{v}$ como a $\vec{B}$.
+Una fuerza que es constantemente perpendicular a la velocidad no realiza trabajo y no cambia el módulo de la velocidad, pero sí cambia continuamente su dirección. Esta fuerza actúa como una \textbf{fuerza centrípeta} perfecta, obligando a la partícula a describir un \textbf{Movimiento Circular Uniforme (MCU)}.
+
+\paragraph*{2. Efecto del cambio de signo de la carga}
+La fuerza de Lorentz depende linealmente de la carga $q$. Si se cambia el signo de la carga ($q \to -q$), el vector fuerza se invierte:
+$$ \vec{F}'_m = (-q)(\vec{v} \times \vec{B}) = -[q(\vec{v} \times \vec{B})] = -\vec{F}_m $$
+La fuerza seguirá siendo una fuerza centrípeta del mismo módulo, por lo que la partícula seguirá describiendo un MCU con el mismo radio y la misma velocidad. Sin embargo, como el sentido de la fuerza se invierte, la trayectoria \textbf{se curvará en el sentido opuesto}. Si la carga positiva describía una circunferencia en sentido antihorario, la carga negativa describirá una en sentido horario, y viceversa.
+
+\begin{cajaresultado}
+\begin{itemize}
+    \item La trayectoria de la partícula es una \textbf{circunferencia}, descrita a velocidad constante (MCU).
+    \item Si se cambia el signo de la carga, la partícula seguirá describiendo una circunferencia del mismo radio, pero \textbf{en sentido contrario}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza magnética sobre una carga en movimiento, al ser siempre perpendicular a la velocidad, actúa como una fuerza centrípeta que da lugar a trayectorias circulares. El signo de la carga determina el sentido de esta fuerza y, por consiguiente, el sentido de giro de la trayectoria. Este principio es la base de funcionamiento de dispositivos como los espectrómetros de masas y los aceleradores de partículas.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque V: Problemas de Física Moderna}
+\label{sec:moderna_2007_jun_ord}
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:5A_2007_jun_ord}
+
+\begin{cajaenunciado}
+En una excavación se ha encontrado una herramienta de madera de roble. Sometida a la prueba del ${}^{14}C$ se observa que se desintegran 100 átomos cada hora, mientras que una muestra de madera de roble actual presenta una tasa de desintegración de 600 átomos/hora. Sabiendo que el período de semidesintegración del ${}^{14}C$ es de 5570 años, calcula la antigüedad de la herramienta (2 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Actividad de la muestra antigua ($A(t)$):} $A(t) = 100\,\text{átomos/hora}$.
+    \item \textbf{Actividad inicial ($A_0$):} Se asume igual a la de la muestra actual. $A_0 = 600\,\text{átomos/hora}$.
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 5570\,\text{años}$.
+    \item \textbf{Incógnita:} Antigüedad de la herramienta ($t$).
+\end{itemize}
+Nota: Las unidades de actividad son consistentes (ambas en átomos/hora), por lo que no es necesario convertirlas al SI (Bq) para el cálculo.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La datación por Carbono-14 se basa en la \textbf{ley de desintegración radiactiva}. La actividad de una muestra radiactiva (número de desintegraciones por segundo) disminuye exponencialmente con el tiempo según la ecuación:
+$$ A(t) = A_0 e^{-\lambda t} $$
+donde $A_0$ es la actividad inicial, $A(t)$ es la actividad en el instante $t$, y $\lambda$ es la constante de desintegración radiactiva.
+La constante de desintegración $\lambda$ se relaciona con el periodo de semidesintegración $T_{1/2}$ mediante:
+$$ \lambda = \frac{\ln(2)}{T_{1/2}} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Nuestro objetivo es despejar el tiempo $t$ de la ley de desintegración.
+\begin{gather}
+    \frac{A(t)}{A_0} = e^{-\lambda t}
+\end{gather}
+Tomamos logaritmos neperianos en ambos lados:
+\begin{gather}
+    \ln\left(\frac{A(t)}{A_0}\right) = -\lambda t
+\end{gather}
+Despejamos $t$:
+\begin{gather}
+    t = -\frac{1}{\lambda} \ln\left(\frac{A(t)}{A_0}\right) = \frac{1}{\lambda} \ln\left(\frac{A_0}{A(t)}\right)
+\end{gather}
+Sustituimos la expresión de $\lambda$:
+\begin{gather}
+    t = \frac{T_{1/2}}{\ln(2)} \ln\left(\frac{A_0}{A(t)}\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    t = \frac{5570\,\text{años}}{\ln(2)} \ln\left(\frac{600}{100}\right) = \frac{5570}{\ln(2)} \ln(6) \\
+    t \approx \frac{5570}{0,693} \cdot (1,792) \approx 8037,5 \cdot 1,792 \approx 14403\,\text{años}
+\end{gather}
+\begin{cajaresultado}
+    La antigüedad de la herramienta de madera es de aproximadamente $\boldsymbol{14.403\,\textbf{años}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La datación por radiocarbono se basa en que los organismos vivos mantienen una concentración constante de ${}^{14}C$. Al morir, dejan de intercambiar carbono y la cantidad de ${}^{14}C$ disminuye predeciblemente. Al comparar la actividad de la muestra antigua con la de una muestra actual, se ha determinado que la actividad se ha reducido a un sexto de la original. Aplicando la ley de decaimiento exponencial, esto corresponde a una antigüedad de unos 14.400 años.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:5B_2007_jun_ord}
+
+\begin{cajaenunciado}
+El trabajo de extracción de un metal es 3,3 eV. Calcula:
+\begin{enumerate}
+    \item La velocidad máxima con la que son emitidos los electrones del metal cuando sobre su superficie incide un haz de luz cuya longitud de onda es $\lambda=0,3\,\mu\text{m}$ (1,2 puntos).
+    \item La frecuencia umbral y la longitud de onda correspondiente (0,8 puntos).
+\end{enumerate}
+\textbf{Datos:} $h=6,6\times10^{-34}\,\text{J}\cdot\text{s}$, $c=3,0\times10^8\,\text{m/s}$, $e=1,6\times10^{-19}\,\text{C}$, $m_e=9,1\times10^{-31}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Trabajo de extracción ($W_{ext}$):} $W_{ext} = 3,3\,\text{eV} = 3,3 \cdot (1,6\cdot10^{-19}\,\text{J}) = 5,28\cdot10^{-19}\,\text{J}$.
+    \item \textbf{Longitud de onda incidente ($\lambda$):} $\lambda = 0,3\,\mu\text{m} = 0,3 \cdot 10^{-6}\,\text{m}$.
+    \item \textbf{Constantes:} $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$, $c=3,0\cdot10^8\,\text{m/s}$, $e=1,6\cdot10^{-19}\,\text{C}$, $m_e=9,1\cdot10^{-31}\,\text{kg}$.
+    \item \textbf{Incógnitas:} Velocidad máxima de los electrones ($v_{max}$), frecuencia umbral ($f_0$), longitud de onda umbral ($\lambda_0$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe por la \textbf{ecuación del efecto fotoeléctrico} de Einstein, que aplica la conservación de la energía a la interacción fotón-electrón:
+$$ E_{foton} = W_{ext} + E_{c,max} $$
+\begin{itemize}
+    \item La energía del fotón incidente es $E_{foton} = hf = \frac{hc}{\lambda}$.
+    \item $W_{ext}$ es la energía mínima para arrancar un electrón del metal.
+    \item $E_{c,max}$ es la energía cinética máxima de los electrones emitidos, $E_{c,max} = \frac{1}{2}m_e v_{max}^2$.
+    \item La \textbf{frecuencia umbral ($f_0$)} es la frecuencia mínima del fotón para producir el efecto, lo que ocurre cuando $E_{c,max}=0$. Así, $hf_0 = W_{ext}$.
+    \item La \textbf{longitud de onda umbral ($\lambda_0$)} es la máxima longitud de onda que puede producir el efecto, $\lambda_0 = c/f_0$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Velocidad máxima}
+De la ecuación de Einstein:
+\begin{gather}
+    \frac{hc}{\lambda} = W_{ext} + \frac{1}{2}m_e v_{max}^2
+\end{gather}
+Despejamos $v_{max}$:
+\begin{gather}
+    v_{max} = \sqrt{\frac{2}{m_e}\left(\frac{hc}{\lambda} - W_{ext}\right)}
+\end{gather}
+
+\paragraph*{2. Frecuencia y longitud de onda umbral}
+\begin{gather}
+    f_0 = \frac{W_{ext}}{h} \\
+    \lambda_0 = \frac{c}{f_0} = \frac{hc}{W_{ext}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Velocidad máxima}
+Primero calculamos la energía del fotón incidente:
+\begin{gather}
+    E_{foton} = \frac{(6,6\cdot10^{-34})(3\cdot10^8)}{0,3\cdot10^{-6}} = 6,6\cdot10^{-19}\,\text{J}
+\end{gather}
+Ahora calculamos la velocidad:
+\begin{gather}
+    v_{max} = \sqrt{\frac{2}{9,1\cdot10^{-31}}\left(6,6\cdot10^{-19} - 5,28\cdot10^{-19}\right)} \\
+    v_{max} = \sqrt{\frac{2}{9,1\cdot10^{-31}}(1,32\cdot10^{-19})} \approx \sqrt{2,9\cdot10^{11}} \approx 5,38\cdot10^5\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad máxima de los electrones emitidos es $\boldsymbol{v_{max} \approx 5,38 \cdot 10^5\,\textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph*{2. Umbrales}
+\begin{gather}
+    f_0 = \frac{5,28\cdot10^{-19}\,\text{J}}{6,6\cdot10^{-34}\,\text{J}\cdot\text{s}} = 0,8\cdot10^{15}\,\text{Hz} = 8\cdot10^{14}\,\text{Hz} \\
+    \lambda_0 = \frac{3\cdot10^8\,\text{m/s}}{8\cdot10^{14}\,\text{Hz}} = 0,375\cdot10^{-6}\,\text{m} = 375\,\text{nm}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia umbral es $\boldsymbol{f_0 = 8 \cdot 10^{14}\,\textbf{Hz}}$ y la longitud de onda correspondiente es $\boldsymbol{\lambda_0 = 375\,\textbf{nm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La luz incidente, con una energía de $6,6\cdot10^{-19}$ J por fotón, es superior al trabajo de extracción del metal ($5,28\cdot10^{-19}$ J), por lo que se produce efecto fotoeléctrico. La energía sobrante se invierte en energía cinética para los electrones, que son emitidos con una velocidad máxima de $5,38 \cdot 10^5$ m/s. El umbral para este metal se sitúa en una frecuencia de $8 \cdot 10^{14}$ Hz, correspondiente a una luz de 375 nm (ultravioleta cercano).
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque VI: Cuestiones de Física Moderna}
+\label{sec:moderna2_2007_jun_ord}
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:6A_2007_jun_ord}
+
+\begin{cajaenunciado}
+¿Qué es una serie o familia radiactiva? (1 punto). Cita un ejemplo (0,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Concepto de Serie Radiactiva}
+Una \textbf{serie o familia radiactiva} es una cadena de desintegraciones nucleares que comienza con un isótopo radiactivo de vida media muy larga (el "padre" o cabeza de serie) y, a través de una secuencia de emisiones alfa ($\alpha$) y beta ($\beta^-$), va transformándose en diferentes núcleos hijos, también radiactivos, hasta llegar finalmente a un isótopo estable, generalmente un isótopo del plomo.
+
+Cada paso en la serie implica la transformación de un nucleido en otro. Las desintegraciones alfa disminuyen el número másico (A) en 4 unidades y el número atómico (Z) en 2. Las desintegraciones beta menos no cambian el número másico (A) pero aumentan el número atómico (Z) en 1.
+
+\paragraph*{Ejemplo de una Serie Radiactiva}
+En la naturaleza existen tres series radiactivas principales. Un ejemplo clásico es la \textbf{Serie del Uranio-238}:
+\begin{itemize}
+    \item \textbf{Núcleo Padre:} Comienza con el Uranio-238 (${}^{238}_{92}\text{U}$), un isótopo muy abundante y con una vida media de unos 4.500 millones de años.
+    \item \textbf{Cadena de Desintegración:} Pasa por una larga secuencia de 14 desintegraciones (8 de tipo $\alpha$ y 6 de tipo $\beta^-$), generando isótopos intermedios como el Torio-234, Radio-226, Radón-222, etc.
+    \item \textbf{Núcleo Final Estable:} La serie termina en el Plomo-206 (${}^{206}_{82}\text{Pb}$), que es un isótopo estable.
+\end{itemize}
+
+\begin{cajaresultado}
+Una \textbf{serie radiactiva} es una secuencia de desintegraciones nucleares que parte de un isótopo padre inestable y, a través de sucesivas emisiones alfa y beta, culmina en un isótopo final estable.
+Un ejemplo es la \textbf{serie del Uranio-238}, que comienza con ${}^{238}\text{U}$ y finaliza en ${}^{206}\text{Pb}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las series radiactivas son un proceso natural por el cual los núcleos pesados e inestables de la corteza terrestre alcanzan la estabilidad a lo largo de escalas de tiempo geológicas. El estudio de estas series es fundamental para la geocronología (datación de rocas) y para entender el origen de los elementos y la radiactividad natural.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:6B_2007_jun_ord}
+
+\begin{cajaenunciado}
+Consideremos una partícula $\alpha$ y un protón que poseen la misma energía cinética, moviéndose ambos a velocidades mucho menores que las de la luz. ¿Qué relación existe entre la longitud de onda de De Broglie del protón y la de la partícula $\alpha$? (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partículas:} Protón ($p$) y partícula alfa ($\alpha$).
+    \item \textbf{Condición de energía:} Tienen la misma energía cinética, $E_{c,p} = E_{c,\alpha} = E_c$.
+    \item \textbf{Aproximación:} Velocidades no relativistas.
+    \item \textbf{Masas:} Una partícula alfa es un núcleo de Helio-4, formado por 2 protones y 2 neutrones. Su masa es aproximadamente 4 veces la masa del protón. $m_{\alpha} \approx 4m_p$.
+    \item \textbf{Incógnita:} Relación entre sus longitudes de onda de De Broglie ($\lambda_p$ y $\lambda_{\alpha}$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{hipótesis de De Broglie} asocia una longitud de onda a toda partícula en movimiento:
+$$ \lambda = \frac{h}{p} $$
+donde $h$ es la constante de Planck y $p$ es el momento lineal de la partícula.
+La \textbf{energía cinética no relativista} se relaciona con el momento lineal y la masa mediante:
+$$ E_c = \frac{p^2}{2m} \implies p = \sqrt{2mE_c} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Podemos expresar la longitud de onda de De Broglie en función de la energía cinética sustituyendo la expresión del momento:
+\begin{gather}
+    \lambda = \frac{h}{\sqrt{2mE_c}}
+\end{gather}
+Ahora escribimos esta ecuación para cada una de las partículas:
+\begin{gather}
+    \lambda_p = \frac{h}{\sqrt{2m_p E_{c,p}}} \\
+    \lambda_{\alpha} = \frac{h}{\sqrt{2m_{\alpha} E_{c,\alpha}}}
+\end{gather}
+Para encontrar la relación entre ellas, calculamos su cociente:
+\begin{gather}
+    \frac{\lambda_p}{\lambda_{\alpha}} = \frac{h/\sqrt{2m_p E_{c,p}}}{h/\sqrt{2m_{\alpha} E_{c,\alpha}}} = \frac{\sqrt{2m_{\alpha} E_{c,\alpha}}}{\sqrt{2m_p E_{c,p}}}
+\end{gather}
+Dado que $E_{c,p} = E_{c,\alpha}$, la energía cinética se cancela:
+\begin{gather}
+    \frac{\lambda_p}{\lambda_{\alpha}} = \sqrt{\frac{m_{\alpha}}{m_p}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos la relación de masas, $m_{\alpha} \approx 4m_p$:
+\begin{gather}
+    \frac{\lambda_p}{\lambda_{\alpha}} = \sqrt{\frac{4m_p}{m_p}} = \sqrt{4} = 2
+\end{gather}
+Esto significa que $\lambda_p = 2\lambda_{\alpha}$.
+
+\begin{cajaresultado}
+La longitud de onda de De Broglie del protón es \textbf{el doble} que la de la partícula alfa.
+$$ \boldsymbol{\lambda_p = 2\lambda_{\alpha}} $$
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para una misma energía cinética, la longitud de onda de De Broglie es inversamente proporcional a la raíz cuadrada de la masa de la partícula ($\lambda \propto 1/\sqrt{m}$). Como la partícula alfa es cuatro veces más masiva que el protón, su momento lineal es el doble, y por lo tanto, su longitud de onda asociada es la mitad que la del protón.
+\end{cajaconclusion}
+
+\newpage

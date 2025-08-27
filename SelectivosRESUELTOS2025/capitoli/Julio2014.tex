@@ -1,0 +1,914 @@
+% !TEX root = ../main.tex
+\chapter{Examen Julio 2014 - Convocatoria Extraordinaria}
+\label{chap:2014_jul_ext}
+
+\section{Opción A}
+\label{sec:A_2014_jul_ext}
+
+\subsection{Bloque I - Cuestión}
+\label{subsec:A1_2014_jul_ext}
+
+\begin{cajaenunciado}
+El planeta Tatooine, de masa m, se encuentra a una distancia r del centro de una estrella de masa M. Deduce la expresión de la velocidad del planeta en su órbita circular alrededor de la estrella y razona el valor que tendría dicha velocidad si la distancia a la estrella fuera 4r. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del planeta:} $m$
+    \item \textbf{Masa de la estrella:} $M$
+    \item \textbf{Radio orbital inicial:} $r$
+    \item \textbf{Radio orbital final:} $r' = 4r$
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Expresión de la velocidad orbital $v$ en función de $G, M, r$.
+            \item Valor de la nueva velocidad $v'$ en función de $v$.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Órbita planetaria} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una estrella masiva M en el centro. Un planeta pequeño de masa m en una órbita circular de radio r alrededor de la estrella. Dibujar el vector de la Fuerza Gravitatoria ($F_g$) que la estrella ejerce sobre el planeta, apuntando hacia el centro de la estrella. Etiquetar esta fuerza también como Fuerza Centrípeta ($F_c$). Dibujar el vector velocidad $\vec{v}$ del planeta, tangente a la órbita."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{orbita_circular.png}
+    }}
+    \caption{Modelo de un planeta en órbita circular.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para que un planeta describa una órbita circular, la fuerza de atracción gravitatoria que ejerce la estrella sobre él debe actuar como fuerza centrípeta, proporcionando la aceleración normal necesaria para curvar la trayectoria.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal:} La fuerza de atracción entre la estrella y el planeta es $F_g = G \frac{Mm}{r^2}$.
+    \item \textbf{Dinámica del Movimiento Circular Uniforme:} La fuerza centrípeta necesaria para mantener una órbita circular es $F_c = m \frac{v^2}{r}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Deducción de la velocidad orbital}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta:
+\begin{gather}
+    F_g = F_c \implies G \frac{Mm}{r^2} = m \frac{v^2}{r}
+\end{gather}
+Simplificamos la masa del planeta $m$ y un factor del radio $r$ para despejar la velocidad $v$:
+\begin{gather}
+    G \frac{M}{r} = v^2 \implies v = \sqrt{\frac{GM}{r}}
+\end{gather}
+
+\paragraph*{Cálculo de la nueva velocidad}
+Ahora consideramos una nueva órbita con radio $r' = 4r$. La nueva velocidad $v'$ será:
+\begin{gather}
+    v' = \sqrt{\frac{GM}{r'}} = \sqrt{\frac{GM}{4r}} = \frac{1}{\sqrt{4}}\sqrt{\frac{GM}{r}} = \frac{1}{2}\sqrt{\frac{GM}{r}}
+\end{gather}
+Comparando esta expresión con la velocidad original, obtenemos:
+\begin{gather}
+    v' = \frac{1}{2}v
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es de carácter simbólico y no requiere sustitución numérica.
+\begin{cajaresultado}
+La expresión de la velocidad del planeta en su órbita circular es $\boldsymbol{v = \sqrt{\frac{GM}{r}}}$. Si la distancia a la estrella fuera $4r$, la nueva velocidad sería la mitad de la original: $\boldsymbol{v' = \frac{v}{2}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La velocidad orbital de un planeta en órbita circular es inversamente proporcional a la raíz cuadrada del radio de su órbita. Por lo tanto, al cuadruplicar la distancia a la estrella, la velocidad orbital se reduce a la mitad. Esto demuestra que los planetas más lejanos se mueven más lentamente que los más cercanos.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque II - Cuestión}
+\label{subsec:A2_2014_jul_ext}
+
+\begin{cajaenunciado}
+Una partícula de masa $m=0,05\,\text{kg}$ realiza un movimiento armónico simple con una amplitud $A=0,2\,\text{m}$ y una frecuencia $f=2\,\text{Hz}$. Calcula el periodo, la velocidad máxima y la energía total. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la partícula ($m$):} $m=0,05\,\text{kg}$
+    \item \textbf{Amplitud ($A$):} $A=0,2\,\text{m}$
+    \item \textbf{Frecuencia ($f$):} $f=2\,\text{Hz}$
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Periodo ($T$).
+            \item Velocidad máxima ($v_{max}$).
+            \item Energía total ($E_T$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Movimiento Armónico Simple} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de un oscilador masa-resorte horizontal. Mostrar la masa en tres posiciones: en el centro (posición de equilibrio, x=0), y en los dos extremos (x=+A y x=-A). En la posición x=0, dibujar un vector de velocidad largo, etiquetado como $v_{max}$, y una nota indicando 'Energía Cinética Máxima'. En la posición x=+A, mostrar la velocidad como cero y una nota indicando 'Energía Potencial Máxima'."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{mas_energia.png}
+    }}
+    \caption{Conceptos de velocidad y energía en un M.A.S.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las magnitudes que describen un Movimiento Armónico Simple (M.A.S.) están relacionadas entre sí.
+\begin{itemize}
+    \item \textbf{Periodo ($T$):} Es el inverso de la frecuencia: $T = 1/f$.
+    \item \textbf{Frecuencia angular ($\omega$):} Se relaciona con la frecuencia: $\omega = 2\pi f$.
+    \item \textbf{Velocidad máxima ($v_{max}$):} En un M.A.S., la velocidad varía, alcanzando su valor máximo en la posición de equilibrio ($x=0$). Su módulo es $v_{max} = A\omega$.
+    \item \textbf{Energía total ($E_T$):} En ausencia de rozamiento, la energía mecánica total de un oscilador armónico se conserva. Es igual a la energía cinética máxima (en $x=0$) o a la energía potencial máxima (en $x=\pm A$). La expresión es $E_T = \frac{1}{2}m v_{max}^2 = \frac{1}{2}k A^2 = \frac{1}{2}m\omega^2A^2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\begin{gather}
+    T = \frac{1}{f} \\
+    \omega = 2\pi f \\
+    v_{max} = A \cdot (2\pi f) \\
+    E_T = \frac{1}{2}m(A \cdot 2\pi f)^2 = 2m\pi^2f^2A^2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Cálculo del Periodo}
+\begin{gather}
+    T = \frac{1}{2\,\text{Hz}} = 0,5\,\text{s}
+\end{gather}
+\begin{cajaresultado}
+    El periodo del movimiento es $\boldsymbol{T = 0,5\,\textbf{s}}$.
+\end{cajaresultado}
+
+\paragraph{Cálculo de la Velocidad Máxima}
+Primero calculamos la frecuencia angular: $\omega = 2\pi \cdot 2\,\text{Hz} = 4\pi\,\text{rad/s}$.
+\begin{gather}
+    v_{max} = (0,2\,\text{m}) \cdot (4\pi\,\text{rad/s}) = 0,8\pi\,\text{m/s} \approx 2,51\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad máxima de la partícula es $\boldsymbol{v_{max} = 0,8\pi\,\textbf{m/s} \approx 2,51\,\textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph{Cálculo de la Energía Total}
+\begin{gather}
+    E_T = \frac{1}{2}m\omega^2A^2 = \frac{1}{2}(0,05\,\text{kg})(4\pi\,\text{rad/s})^2(0,2\,\text{m})^2 \\
+    E_T = \frac{1}{2}(0,05)(16\pi^2)(0,04) = 0,016\pi^2\,\text{J} \approx 0,158\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía total del sistema es $\boldsymbol{E_T = 0,016\pi^2\,\textbf{J} \approx 0,158\,\textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de los datos fundamentales del movimiento (masa, amplitud y frecuencia), se han calculado las magnitudes derivadas. El periodo de oscilación es de 0,5 segundos. La partícula alcanza una velocidad máxima de 2,51 m/s al pasar por el centro, y su energía mecánica total, que se mantiene constante, es de aproximadamente 0,158 Julios.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque III - Problema}
+\label{subsec:A3_2014_jul_ext}
+
+\begin{cajaenunciado}
+Se sitúa un objeto de 9 cm de altura a una distancia de 10 cm a la izquierda de una lente de -5 dioptrías.
+a) Dibuja un esquema de rayos, con la posición del objeto, la lente y la imagen y explica el tipo de imagen que se forma. (1,2 puntos) 
+b) Calcula la posición de la imagen y su tamaño. (0,8 puntos) 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Altura del objeto ($y$):} $y = 9\,\text{cm} = 0,09\,\text{m}$.
+    \item \textbf{Posición del objeto ($s$):} A 10 cm a la izquierda de la lente. Según el convenio de signos DIN, $s = -10\,\text{cm} = -0,1\,\text{m}$.
+    \item \textbf{Potencia de la lente ($P$):} $P = -5\,\text{D}$. Como la potencia es negativa, se trata de una \textbf{lente divergente}.
+    \item \textbf{Distancia focal imagen ($f'$):} Se calcula a partir de la potencia: $f' = 1/P$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item a) Diagrama de rayos y características de la imagen.
+            \item b) Posición de la imagen ($s'$) y tamaño de la imagen ($y'$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Formación de imagen en lente divergente} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar el eje óptico horizontal. En el centro, una lente divergente (símbolo con puntas de flecha invertidas). La potencia es -5 D, por lo que la distancia focal es f'=-20cm. Marcar el foco imagen F' en x=-20cm y el foco objeto F en x=+20cm. Colocar el objeto (una flecha vertical de 9 cm de altura) en la posición s=-10 cm. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje óptico que, al refractarse, diverge de tal forma que su prolongación hacia atrás pasa por el foco imagen F'. 2) Un rayo que se dirige hacia el centro óptico y lo atraviesa sin desviarse. El punto donde se cruzan estos dos rayos (el segundo rayo real y la prolongación del primero) forma la punta de la imagen. La imagen debe ser virtual, derecha y más pequeña que el objeto."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{lente_divergente_imagen.png}
+    }}
+    \caption{Trazado de rayos para una lente divergente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve utilizando las ecuaciones fundamentales de las lentes delgadas.
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss para lentes:} Relaciona las posiciones del objeto ($s$) y la imagen ($s'$) con la distancia focal imagen ($f'$):
+    $$\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$$
+    \item \textbf{Ecuación del aumento lateral ($M$):} Relaciona los tamaños de la imagen ($y'$) y el objeto ($y$) con sus posiciones:
+    $$M = \frac{y'}{y} = \frac{s'}{s}$$
+    \item \textbf{Potencia de una lente ($P$):} Es la inversa de la distancia focal imagen expresada en metros: $P = 1/f'$.
+\end{itemize}
+\paragraph*{Características de la imagen}
+Del diagrama de rayos y los signos de los resultados, se deduce:
+\begin{itemize}
+    \item Si $s' < 0$, la imagen es \textbf{virtual} (se forma a la izquierda de la lente).
+    \item Si $s' > 0$, la imagen es \textbf{real} (se forma a la derecha).
+    \item Si $M > 0$, la imagen es \textbf{derecha}.
+    \item Si $M < 0$, la imagen es \textbf{invertida}.
+    \item Si $|M| > 1$, la imagen es \textbf{aumentada}. Si $|M| < 1$, es \textbf{reducida}.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Primero, calculamos la distancia focal a partir de la potencia: $f' = 1/P$.
+Luego, despejamos la posición de la imagen ($s'$) de la ecuación de Gauss:
+$$\frac{1}{s'} = \frac{1}{f'} + \frac{1}{s} \implies s' = \left(\frac{1}{f'} + \frac{1}{s}\right)^{-1} = \frac{s \cdot f'}{s + f'}$$
+Finalmente, calculamos el tamaño de la imagen ($y'$) a partir del aumento:
+$$y' = y \cdot M = y \cdot \frac{s'}{s}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Características de la imagen}
+Como se trata de una lente divergente, la imagen de un objeto real es siempre \textbf{virtual, derecha y de menor tamaño}, como se muestra en el diagrama de rayos.
+
+\paragraph{b) Posición y tamaño de la imagen}
+Calculamos la distancia focal en centímetros:
+$$f' = \frac{1}{-5\,\text{D}} = -0,2\,\text{m} = -20\,\text{cm}$$
+Calculamos la posición de la imagen $s'$:
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{-20\,\text{cm}} + \frac{1}{-10\,\text{cm}} = \frac{-1 - 2}{20} = -\frac{3}{20}\,\text{cm}^{-1} \\
+    s' = -\frac{20}{3}\,\text{cm} \approx -6,67\,\text{cm}
+\end{gather}
+Calculamos el tamaño de la imagen $y'$:
+\begin{gather}
+    M = \frac{s'}{s} = \frac{-20/3\,\text{cm}}{-10\,\text{cm}} = \frac{20}{30} = \frac{2}{3} \\
+    y' = y \cdot M = (9\,\text{cm}) \cdot \left(\frac{2}{3}\right) = 6\,\text{cm}
+\end{gather}
+
+\begin{cajaresultado}
+a) La imagen formada es \textbf{virtual, derecha y reducida}.
+b) La posición de la imagen es $\boldsymbol{s' = -6,67\,\textbf{cm}}$ (a 6,67 cm a la izquierda de la lente). Su tamaño es $\boldsymbol{y' = 6\,\textbf{cm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se ha confirmado, tanto gráfica como analíticamente, que una lente divergente de -5 dioptrías forma una imagen virtual, derecha y de menor tamaño de un objeto situado a 10 cm. La imagen se localiza a 6,67 cm de la lente, en el mismo lado que el objeto, y su altura se reduce de 9 cm a 6 cm.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque IV - Problema}
+\label{subsec:A4_2014_jul_ext}
+
+\begin{cajaenunciado}
+Un electrón se mueve dentro de un campo eléctrico uniforme $\vec{E}=E\vec{i}$, con $E>0$. El electrón parte del reposo desde el punto A, de coordenadas (0,0) cm, y llega al punto B con una velocidad de $10^{6}\,\text{m/s}$ después de recorrer 20 cm. Considerando que sobre el electrón no actúan otras fuerzas y sin tener en cuenta efectos relativistas:
+a) Discute cómo será la trayectoria del electrón y calcula las coordenadas del punto B (en centímetros). (0,8 puntos) 
+b) Calcula razonadamente el módulo del campo eléctrico. (1,2 puntos) 
+\textbf{Datos:} carga elemental, $e=1,60\cdot10^{-19}\,\text{C}$; masa del electrón, $m_{e}=9,1\cdot10^{-31}\,\text{kg}$. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partícula:} Electrón, carga $q = -e = -1,60 \cdot 10^{-19}\,\text{C}$, masa $m_e = 9,1 \cdot 10^{-31}\,\text{kg}$.
+    \item \textbf{Campo eléctrico:} $\vec{E} = E\vec{i}$ (uniforme, en la dirección +X).
+    \item \textbf{Condiciones iniciales:} Parte del reposo ($v_0 = 0$) desde el punto A(0,0).
+    \item \textbf{Condiciones finales:} Velocidad en B, $v_B = 10^6\,\text{m/s}$. Distancia recorrida, $d=20\,\text{cm} = 0,2\,\text{m}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item a) Tipo de trayectoria y coordenadas de B.
+            \item b) Módulo del campo eléctrico, $E$.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Movimiento de un electrón en un campo uniforme} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Dibujar líneas de campo eléctrico paralelas al eje X, apuntando hacia la derecha (sentido $+\vec{i}$), representando el campo $\vec{E}$. Colocar un electrón en el origen A(0,0) en reposo. Dibujar el vector fuerza eléctrica $\vec{F}_e$ sobre el electrón, que debe apuntar hacia la izquierda (sentido $-\vec{i}$), opuesto al campo. Dibujar la trayectoria del electrón como una línea recta a lo largo del eje X negativo, terminando en el punto B. Etiquetar el punto B con sus coordenadas."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{electron_campo_electrico.png}
+    }}
+    \caption{Esquema de la fuerza y trayectoria del electrón.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Trayectoria}
+La fuerza que actúa sobre el electrón es la fuerza eléctrica, dada por $\vec{F} = q\vec{E}$. Como el campo es uniforme, la fuerza será constante en módulo, dirección y sentido. Según la \textbf{Segunda Ley de Newton}, $\vec{F} = m\vec{a}$, la aceleración también será constante. Un movimiento con aceleración constante y velocidad inicial nula es un \textbf{Movimiento Rectilíneo Uniformemente Acelerado (MRUA)}. La trayectoria será una línea recta.
+
+\paragraph*{b) Módulo del campo}
+El módulo del campo se puede obtener combinando la dinámica con la cinemática, o mediante consideraciones energéticas.
+\begin{itemize}
+    \item \textbf{Método Dinámico/Cinemático:}
+        \begin{enumerate}
+            \item A partir de la ecuación del MRUA $v_f^2 = v_0^2 + 2ad$, se calcula la aceleración $a$.
+            \item Con la Segunda Ley de Newton, $|F| = ma$, se obtiene la fuerza.
+            \item Finalmente, de la definición de campo eléctrico, $E = |F|/|q|$, se despeja $E$.
+        \end{enumerate}
+    \item \textbf{Método Energético:}
+        El campo eléctrico es conservativo. El trabajo realizado por el campo, $W_{AB}$, es igual a la variación de la energía cinética, $\Delta E_c$ (Teorema de las fuerzas vivas).
+        $$W_{AB} = \Delta E_c = E_{c,B} - E_{c,A}$$
+        El trabajo también se define como $W_{AB} = \vec{F} \cdot \vec{d} = (q\vec{E}) \cdot \vec{d}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Trayectoria y coordenadas de B}
+La fuerza sobre el electrón es $\vec{F} = (-e)E\vec{i}$. Es una fuerza constante que apunta en la dirección $-\vec{i}$. Como parte del reposo desde el origen, el movimiento será rectilíneo a lo largo del eje X negativo.
+Después de recorrer una distancia $d$, la posición del electrón será $x = -d$.
+Las coordenadas del punto B son $(-d, 0)$.
+
+\paragraph{b) Módulo del campo E (Método Energético)}
+\begin{gather}
+    W_{AB} = \Delta E_c \implies \vec{F} \cdot \vec{d} = \frac{1}{2}m_e v_B^2 - 0 \\
+    (q\vec{E}) \cdot \vec{d} = \frac{1}{2}m_e v_B^2
+\end{gather}
+El desplazamiento es $\vec{d} = -d\vec{i}$. La fuerza es $\vec{F} = -eE\vec{i}$.
+\begin{gather}
+    (-eE\vec{i}) \cdot (-d\vec{i}) = \frac{1}{2}m_e v_B^2 \\
+    eEd = \frac{1}{2}m_e v_B^2 \implies E = \frac{m_e v_B^2}{2ed}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Coordenadas del punto B}
+La distancia recorrida es $d=20\,\text{cm}$. Como se mueve en el sentido -X, el punto final es $B = (-20, 0)\,\text{cm}$.
+\begin{cajaresultado}
+a) La trayectoria será una \textbf{línea recta} (MRUA). Las coordenadas del punto B son $\boldsymbol{(-20, 0)\,\textbf{cm}}$.
+\end{cajaresultado}
+
+\paragraph{b) Módulo del campo eléctrico}
+\begin{gather}
+    E = \frac{(9,1\cdot10^{-31}\,\text{kg})(10^6\,\text{m/s})^2}{2(1,60\cdot10^{-19}\,\text{C})(0,2\,\text{m})} \\
+    E = \frac{9,1\cdot10^{-31} \cdot 10^{12}}{0,64\cdot10^{-19}} = \frac{9,1\cdot10^{-19}}{0,64\cdot10^{-19}} \approx 14,22\,\text{N/C}
+\end{gather}
+\begin{cajaresultado}
+b) El módulo del campo eléctrico es $\boldsymbol{E \approx 14,22\,\textbf{N/C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Dado que el electrón tiene carga negativa, experimenta una fuerza en sentido opuesto al campo eléctrico, acelerando en la dirección -X. Al ser la fuerza constante, su trayectoria es rectilínea. A partir del teorema de la energía cinética, se ha determinado que un campo eléctrico de 14,22 N/C es necesario para acelerar el electrón hasta la velocidad de $10^6$ m/s en una distancia de 20 cm.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque V - Cuestión}
+\label{subsec:A5_2014_jul_ext}
+
+\begin{cajaenunciado}
+En la siguiente gráfica de número atómico frente a número de neutrones, se representan dos desintegraciones a y b que, partiendo del ${}^{231}\text{Th}$, producen isótopos de diferentes elementos. Escribe razonadamente el símbolo de cada isótopo con su número másico y atómico. Determina, en ambos casos, el tipo de desintegración radiactiva, indicando justificadamente la partícula radiactiva que se emite. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Gráfica:} Eje Y: Número atómico (Z). Eje X: Número de neutrones (N).
+    \item \textbf{Núcleo inicial:} ${}^{231}\text{Th}$ (Torio-231). De la tabla periódica, el Torio tiene Z=90. En la gráfica, el punto ${}^{231}\text{Th}$ se sitúa en Z=90 y N=141. (Comprobación: A = Z+N = 90+141=231, correcto).
+    \item \textbf{Proceso a:} ${}^{231}\text{Th} \rightarrow \text{Pa}$. El Protactinio (Pa) está en la gráfica en Z=91, N=140.
+    \item \textbf{Proceso b:} $\text{Pa} \rightarrow \text{Ac}$. El Actinio (Ac) está en la gráfica en Z=89, N=138.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Símbolo completo ($^{A}_{Z}\text{X}$) para Pa y Ac.
+            \item Tipo de desintegración y partícula emitida para los procesos a y b.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La figura es proporcionada en el enunciado del examen.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las reacciones nucleares se rigen por las \textbf{leyes de conservación de Soddy-Fajans}, que establecen que la suma total del número atómico (Z) y del número másico (A) debe ser la misma antes y después de la reacción.
+\begin{itemize}
+    \item \textbf{Desintegración Alfa ($\alpha$):} Se emite un núcleo de Helio ($^{4}_{2}\text{He}$). El núcleo hijo tiene $\Delta Z = -2$ y $\Delta A = -4$ (lo que implica $\Delta N = -2$).
+    \item \textbf{Desintegración Beta menos ($\beta^{-}$):} Se emite un electrón (${}^{0}_{-1}e$) y un antineutrino. Un neutrón se convierte en un protón. El núcleo hijo tiene $\Delta Z = +1$ y $\Delta A = 0$ (lo que implica $\Delta N = -1$).
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Identificación de los isótopos}
+\begin{itemize}
+    \item \textbf{Protactinio (Pa):} Z=91, N=140. Su número másico es $A = Z+N = 91+140 = 231$. El símbolo es ${}^{231}_{91}\text{Pa}$.
+    \item \textbf{Actinio (Ac):} Z=89, N=138. Su número másico es $A = Z+N = 89+138 = 227$. El símbolo es ${}^{227}_{89}\text{Ac}$.
+\end{itemize}
+\paragraph{Análisis del proceso a: ${}^{231}_{90}\text{Th} \rightarrow {}^{231}_{91}\text{Pa} + {}^{A}_{Z}X$}
+\begin{itemize}
+    \item Conservación de A: $231 = 231 + A \implies A=0$.
+    \item Conservación de Z: $90 = 91 + Z \implies Z=-1$.
+\end{itemize}
+La partícula emitida ${}^{0}_{-1}X$ es un electrón, característico de la desintegración beta menos.
+
+\paragraph{Análisis del proceso b: ${}^{231}_{91}\text{Pa} \rightarrow {}^{227}_{89}\text{Ac} + {}^{A}_{Z}Y$}
+\begin{itemize}
+    \item Conservación de A: $231 = 227 + A \implies A=4$.
+    \item Conservación de Z: $91 = 89 + Z \implies Z=2$.
+\end{itemize}
+La partícula emitida ${}^{4}_{2}Y$ es un núcleo de Helio, característico de la desintegración alfa.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No se requieren cálculos numéricos, solo la interpretación de la gráfica y la aplicación de las leyes de conservación.
+\begin{cajaresultado}
+Los símbolos de los isótopos son $\boldsymbol{{}^{231}_{91}\textbf{Pa}}$ y $\boldsymbol{{}^{227}_{89}\textbf{Ac}}$.
+\begin{itemize}
+    \item \textbf{Proceso a:} Es una \textbf{desintegración beta menos ($\beta^{-}$)}. La partícula emitida es un \textbf{electrón (${}^{0}_{-1}e$)}.
+    \item \textbf{Proceso b:} Es una \textbf{desintegración alfa ($\alpha$)}. La partícula emitida es un \textbf{núcleo de Helio (${}^{4}_{2}\text{He}$)}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La interpretación de la gráfica Z-N y la aplicación de las leyes de conservación nuclear permiten identificar las transformaciones. La transición del Torio-231 al Protactinio-231 ocurre mediante una desintegración beta menos, donde un neutrón se convierte en protón. Posteriormente, el Protactinio-231 decae a Actinio-227 mediante una desintegración alfa, perdiendo dos protones y dos neutrones.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque VI - Cuestión}
+\label{subsec:A6_2014_jul_ext}
+
+\begin{cajaenunciado}
+En la evolución de las estrellas, la reacción de fusión por la que el hidrógeno se convierte en helio es ${}_{7}^{15}\text{N} + {}_{1}^{1}\text{H} \rightarrow {}_{6}^{12}\text{C} + {}_{2}^{4}\text{He}$. Calcula el correspondiente defecto de masa (en kg). En la reacción anterior ¿se absorbe o se desprende energía? ¿Por qué? Determina el valor de dicha energía (en MeV). 
+\textbf{Datos:} masa del nitrógeno, $m\left({}_{7}^{15}\text{N}\right) = 15,0001\,\text{u}$; masa del hidrógeno, $m\left({}_{1}^{1}\text{H}\right)=1,0080\,\text{u}$; masa del carbono, $m\left({}_{6}^{12}\text{C}\right)=12,0000\,\text{u}$; masa del helio, $m\left({}_{2}^{4}\text{He}\right)=4,0026\,\text{u}$; unidad de masa atómica, $u=1,66\cdot10^{-27}\,\text{kg}$; velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$; carga elemental, $e=1,60\cdot10^{-19}\,\text{C}$. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Reacción:} ${}_{7}^{15}\text{N} + {}_{1}^{1}\text{H} \rightarrow {}_{6}^{12}\text{C} + {}_{2}^{4}\text{He}$
+    \item \textbf{Masas atómicas:}
+        \begin{itemize}
+            \item $m_N = 15,0001\,\text{u}$
+            \item $m_H = 1,0080\,\text{u}$
+            \item $m_C = 12,0000\,\text{u}$
+            \item $m_{He} = 4,0026\,\text{u}$
+        \end{itemize}
+    \item \textbf{Constantes:}
+        \begin{itemize}
+            \item $u = 1,66\cdot10^{-27}\,\text{kg}$
+            \item $c = 3\cdot10^{8}\,\text{m/s}$
+            \item $e = 1,60\cdot10^{-19}\,\text{C}$
+        \end{itemize}
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Defecto de masa ($\Delta m$) en kg.
+            \item Si la reacción es exotérmica o endotérmica.
+            \item Energía de la reacción ($E$) en MeV.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema de cálculo.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando el principio de equivalencia masa-energía de Einstein.
+\begin{itemize}
+    \item \textbf{Defecto de masa ($\Delta m$):} En una reacción nuclear, es la diferencia entre la masa total de los reactivos y la masa total de los productos:
+    $$\Delta m = m_{\text{reactivos}} - m_{\text{productos}}$$
+    \item \textbf{Energía de reacción ($E$):} La masa perdida (o ganada) se convierte en energía (o se consume energía) según la ecuación de Einstein:
+    $$E = \Delta m \cdot c^2$$
+    \item \textbf{Carácter de la reacción:}
+        \begin{itemize}
+            \item Si $\Delta m > 0$ (la masa final es menor que la inicial), se \textbf{desprende energía} (reacción exotérmica).
+            \item Si $\Delta m < 0$ (la masa final es mayor que la inicial), se \textbf{absorbe energía} (reacción endotérmica).
+        \end{itemize}
+    \item \textbf{Conversión de unidades:} Para pasar de Julios a MeV se utiliza la relación $1\,\text{MeV} = 1,60 \cdot 10^{-13}\,\text{J}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\begin{gather}
+    \Delta m = (m_N + m_H) - (m_C + m_{He}) \\
+    E = \Delta m \cdot c^2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Cálculo del defecto de masa ($\Delta m$)}
+Primero calculamos la masa de los reactivos y de los productos en unidades de masa atómica (u).
+\begin{gather}
+    m_{\text{reactivos}} = m_N + m_H = 15,0001\,\text{u} + 1,0080\,\text{u} = 16,0081\,\text{u} \\
+    m_{\text{productos}} = m_C + m_{He} = 12,0000\,\text{u} + 4,0026\,\text{u} = 16,0026\,\text{u}
+\end{gather}
+Ahora calculamos el defecto de masa en u:
+\begin{gather}
+    \Delta m = 16,0081\,\text{u} - 16,0026\,\text{u} = 0,0055\,\text{u}
+\end{gather}
+Convertimos el defecto de masa a kg:
+\begin{gather}
+    \Delta m_{\text{kg}} = 0,0055\,\text{u} \cdot (1,66\cdot10^{-27}\,\text{kg/u}) = 9,13\cdot10^{-30}\,\text{kg}
+\end{gather}
+\begin{cajaresultado}
+El defecto de masa es $\boldsymbol{\Delta m = 9,13\cdot10^{-30}\,\textbf{kg}}$.
+\end{cajaresultado}
+
+\paragraph{Energía de la reacción}
+Como $\Delta m > 0$, la masa ha disminuido, lo que significa que \textbf{se desprende energía} (la reacción es exotérmica).
+Calculamos la energía en Julios:
+\begin{gather}
+    E = \Delta m \cdot c^2 = (9,13\cdot10^{-30}\,\text{kg}) \cdot (3\cdot10^{8}\,\text{m/s})^2 = 8,217\cdot10^{-13}\,\text{J}
+\end{gather}
+Convertimos la energía a MeV:
+\begin{gather}
+    E_{\text{MeV}} = \frac{8,217\cdot10^{-13}\,\text{J}}{1,60\cdot10^{-19}\,\text{C} \cdot 10^6\,\text{eV/MeV}} = \frac{8,217\cdot10^{-13}\,\text{J}}{1,60\cdot10^{-13}\,\text{J/MeV}} \approx 5,14\,\text{MeV}
+\end{gather}
+\begin{cajaresultado}
+En la reacción \textbf{se desprende energía} porque el defecto de masa es positivo. El valor de dicha energía es $\boldsymbol{E \approx 5,14\,\textbf{MeV}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La reacción de fusión presenta un defecto de masa positivo de $9,13\cdot10^{-30}\,\text{kg}$, lo que indica que una parte de la masa de los reactivos se ha convertido en energía. Por ello, la reacción es exotérmica y libera 5,14 MeV de energía por cada núcleo de nitrógeno que se fusiona. Este proceso es un ejemplo de cómo las estrellas generan su energía.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Opción B}
+\label{sec:B_2014_jul_ext}
+
+\subsection{Bloque I - Problema}
+\label{subsec:B1_2014_jul_ext}
+
+\begin{cajaenunciado}
+Un objeto de masa $m_{1}=4m_{2}$ se encuentra situado en el origen de coordenadas, mientras que un segundo objeto de masa $m_{2}$ se encuentra en un punto de coordenadas (9,0) m. Considerando únicamente la interacción gravitatoria y suponiendo que son masas puntuales, calcula razonadamente:
+a) El punto en el que el campo gravitatorio es nulo. (1,2 puntos) 
+b) El vector momento angular de la masa $m_{2}$ con respecto al origen de coordenadas si $m_{2}=100\,\text{kg}$ y su velocidad es $\vec{v}=(0,50)\,\text{m/s}$. (0,8 puntos) 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa 1 ($m_1$):} $m_1 = 4m_2$, en la posición $\vec{r}_1=(0,0)\,\text{m}$.
+    \item \textbf{Masa 2 ($m_2$):} en la posición $\vec{r}_2=(9,0)\,\text{m}$.
+    \item \textbf{Incógnita a):} Punto P donde el campo gravitatorio total $\vec{g}_{total}$ es nulo.
+    \item \textbf{Datos b):} $m_2 = 100\,\text{kg}$, $\vec{v}=(0,50,0)\,\text{m/s}$.
+    \item \textbf{Incógnita b):} Momento angular $\vec{L}$ de $m_2$ respecto al origen.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo gravitatorio nulo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje X horizontal. Colocar una masa grande $m_1$ en el origen y una masa más pequeña $m_2$ en x=9. En un punto P situado entre las dos masas, dibujar el vector campo gravitatorio $\vec{g}_1$ (creado por $m_1$) apuntando hacia la izquierda (atractivo). Dibujar el vector campo $\vec{g}_2$ (creado por $m_2$) apuntando hacia la derecha (atractivo). Indicar que en el punto de campo nulo, estos dos vectores deben tener la misma longitud."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{campo_grav_nulo.png}
+    }}
+    \caption{Esquema de la anulación de los campos gravitatorios.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Campo Gravitatorio}
+Se utiliza el \textbf{Principio de Superposición}. El campo total en un punto es la suma vectorial de los campos creados por cada masa.
+$$\vec{g}_{total} = \vec{g}_1 + \vec{g}_2$$
+Para que el campo sea nulo, se debe cumplir que $\vec{g}_1 = -\vec{g}_2$. Esto implica que los campos deben tener igual módulo y sentido opuesto. Dado que las masas están en el eje X, el punto de campo nulo debe estar en el mismo eje. Entre las masas, los campos tienen sentidos opuestos, por lo que el punto estará en el segmento que las une.
+
+\paragraph{b) Momento Angular}
+El momento angular de una partícula puntual respecto a un punto (el origen) se define como el producto vectorial de su vector de posición y su momento lineal.
+$$\vec{L} = \vec{r} \times \vec{p} = \vec{r} \times (m\vec{v})$$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Punto de campo nulo}
+Sea P un punto de coordenadas $(x,0)$ situado entre las masas ($0<x<9$).
+El módulo del campo creado por $m_1$ es $|\vec{g}_1| = G \frac{m_1}{x^2} = G \frac{4m_2}{x^2}$.
+El módulo del campo creado por $m_2$ es $|\vec{g}_2| = G \frac{m_2}{(9-x)^2}$.
+Igualamos los módulos:
+\begin{gather}
+    G \frac{4m_2}{x^2} = G \frac{m_2}{(9-x)^2} \implies \frac{4}{x^2} = \frac{1}{(9-x)^2}
+\end{gather}
+Tomando la raíz cuadrada en ambos lados (con $x>0$ y $9-x>0$):
+\begin{gather}
+    \frac{2}{x} = \frac{1}{9-x} \implies 2(9-x) = x \implies 18 - 2x = x \implies 3x = 18 \implies x=6
+\end{gather}
+\paragraph{b) Momento angular}
+Las magnitudes vectoriales son: $\vec{r} = (9,0,0)\,\text{m}$ y $\vec{p} = m_2\vec{v} = m_2(0,50,0)\,\text{kg}\cdot\text{m/s}$.
+\begin{gather}
+    \vec{L} = \vec{r} \times \vec{p} = \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ r_x & r_y & r_z \\ p_x & p_y & p_z \end{vmatrix}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Punto de campo nulo}
+El cálculo simbólico ya dio el resultado numérico. El punto está en $x=6\,\text{m}$.
+\begin{cajaresultado}
+a) El punto en el que el campo gravitatorio es nulo es $\boldsymbol{(6, 0)\,\textbf{m}}$.
+\end{cajaresultado}
+
+\paragraph{b) Momento angular}
+Con $m_2=100\,\text{kg}$, el momento lineal es $\vec{p} = 100 \cdot (0,50,0) = (0, 5000, 0)\,\text{kg}\cdot\text{m/s}$.
+\begin{gather}
+    \vec{L} = \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ 9 & 0 & 0 \\ 0 & 5000 & 0 \end{vmatrix} = \vec{k}(9 \cdot 5000 - 0 \cdot 0) = 45000\vec{k}
+\end{gather}
+\begin{cajaresultado}
+b) El vector momento angular es $\boldsymbol{\vec{L} = 45000\vec{k}\,\textbf{kg}\cdot\textbf{m}^2/\textbf{s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se ha determinado que el punto de campo nulo se encuentra a 6 metros de la masa mayor y 3 metros de la menor, cumpliendo la relación de que la distancia es proporcional a la raíz cuadrada de la masa. Por otro lado, el momento angular de la masa $m_2$ es un vector perpendicular al plano del movimiento (XY), con un módulo de $45000\,\text{kg}\cdot\text{m}^2/\text{s}$, como corresponde a un movimiento en un plano.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque II - Problema}
+\label{subsec:B2_2014_jul_ext}
+
+\begin{cajaenunciado}
+Una onda se propaga según la función $y=2\sin[2\pi(t-x)]\,\text{cm}$, donde x está expresada en centímetros y t en segundos. Calcula razonadamente:
+a) El periodo, la frecuencia, la longitud de onda y el número de onda. (1,2 puntos) 
+b) La velocidad de propagación de la onda y la velocidad de vibración de una partícula situada en el punto $x=10\,\text{cm}$ en el instante $t=10\,\text{s}$. (0,8 puntos) 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+La ecuación de la onda es $y(x,t) = 2\sin[2\pi(t-x)]$ en cm.
+Para compararla con la forma estándar, distribuimos el factor $2\pi$:
+$$y(x,t) = 2\sin(2\pi t - 2\pi x)$$
+La forma estándar es $y(x,t) = A\sin(\omega t - kx)$. Por identificación directa de los términos (con cuidado de las unidades):
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 2\,\text{cm}$.
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = 2\pi\,\text{rad/s}$.
+    \item \textbf{Número de onda ($k$):} $k = 2\pi\,\text{rad/cm}$.
+    \item \textbf{Incógnitas:} $T, f, \lambda, k, v_p, v_{vib}(10, 10)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las propiedades de la onda se derivan de los parámetros $\omega$ y $k$:
+\begin{itemize}
+    \item \textbf{Frecuencia ($f$) y Periodo ($T$):} $\omega = 2\pi f = 2\pi/T$.
+    \item \textbf{Longitud de onda ($\lambda$):} $k = 2\pi/\lambda$.
+    \item \textbf{Velocidad de propagación ($v_p$):} $v_p = \lambda f = \omega/k$.
+    \item \textbf{Velocidad de vibración ($v_{vib}$):} Es la derivada parcial de la elongación con respecto al tiempo: $v_{vib}(x,t) = \frac{\partial y}{\partial t}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Parámetros de la onda}
+\begin{gather}
+    f = \frac{\omega}{2\pi} \quad ; \quad T = \frac{1}{f} \\
+    \lambda = \frac{2\pi}{k}
+\end{gather}
+\paragraph{b) Velocidades}
+\begin{gather}
+    v_p = \frac{\omega}{k} \\
+    v_{vib}(x,t) = \frac{\partial}{\partial t}[A\sin(\omega t - kx)] = A\omega\cos(\omega t - kx)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Parámetros de la onda}
+\begin{itemize}
+    \item \textbf{Número de onda ($k$):} Por inspección, $\boldsymbol{k = 2\pi\,\textbf{rad/cm}}$.
+    \item \textbf{Longitud de onda ($\lambda$):} $\lambda = \frac{2\pi}{k} = \frac{2\pi}{2\pi\,\text{rad/cm}} = \boldsymbol{1\,\textbf{cm}}$.
+    \item \textbf{Frecuencia ($f$):} $f = \frac{\omega}{2\pi} = \frac{2\pi\,\text{rad/s}}{2\pi} = \boldsymbol{1\,\textbf{Hz}}$.
+    \item \textbf{Periodo ($T$):} $T = \frac{1}{f} = \frac{1}{1\,\text{Hz}} = \boldsymbol{1\,\textbf{s}}$.
+\end{itemize}
+\begin{cajaresultado}
+a) Periodo: $\boldsymbol{T=1\,\textbf{s}}$; Frecuencia: $\boldsymbol{f=1\,\textbf{Hz}}$; Longitud de onda: $\boldsymbol{\lambda=1\,\textbf{cm}}$; Número de onda: $\boldsymbol{k=2\pi\,\textbf{rad/cm}}$.
+\end{cajaresultado}
+
+\paragraph{b) Velocidades}
+\begin{gather}
+    v_p = \frac{\omega}{k} = \frac{2\pi\,\text{rad/s}}{2\pi\,\text{rad/cm}} = 1\,\text{cm/s}
+\end{gather}
+La expresión para la velocidad de vibración es:
+\begin{gather}
+    v_{vib}(x,t) = 2 \cdot (2\pi)\cos(2\pi t - 2\pi x) = 4\pi\cos[2\pi(t-x)]\,\text{cm/s}
+\end{gather}
+Evaluamos en $x=10\,\text{cm}$ y $t=10\,\text{s}$:
+\begin{gather}
+    v_{vib}(10, 10) = 4\pi\cos[2\pi(10-10)] = 4\pi\cos(0) = 4\pi\,\text{cm/s}
+\end{gather}
+\begin{cajaresultado}
+b) La velocidad de propagación es $\boldsymbol{v_p = 1\,\textbf{cm/s}}$. La velocidad de vibración en el punto y tiempo dados es $\boldsymbol{v_{vib} = 4\pi\,\textbf{cm/s} \approx 12,57\,\textbf{cm/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la identificación de los términos en la ecuación de onda proporcionada, se han deducido todos los parámetros fundamentales que la caracterizan. La onda se propaga a 1 cm/s. La velocidad de vibración de una partícula del medio es variable, y en el instante y posición solicitados, la partícula se encontraba pasando por su posición de equilibrio con su velocidad máxima, que es de $4\pi$ cm/s.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque III - Cuestión}
+\label{subsec:B3_2014_jul_ext}
+
+\begin{cajaenunciado}
+Describe qué problema de visión tiene una persona que sufre de miopía. Explica razonadamente, con ayuda de un trazado de rayos, en qué consiste este problema. ¿Con qué tipo de lente debe corregirse y por qué? 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica y conceptual sobre el defecto visual de la miopía y su corrección.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Ojo Miope} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de un ojo humano. Dibujar rayos de luz paralelos, procedentes de un objeto lejano, que entran en el ojo. Mostrar cómo el sistema córnea-cristalino del ojo converge estos rayos en un punto focal que se encuentra delante de la retina. Indicar que la imagen formada en la retina es borrosa."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{ojo_miope.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Corrección de la Miopía} \vspace{0.5cm} \textit{Prompt para la imagen:} "El mismo esquema del ojo, pero con una lente divergente (forma bicóncava) colocada delante. Los rayos de luz paralelos del objeto lejano primero divergen ligeramente al pasar por la lente correctora. Después, el sistema del ojo los converge, pero ahora el punto focal se ha desplazado hacia atrás, cayendo exactamente sobre la retina, formando una imagen nítida."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{correccion_miopia.png}
+    }}
+    \caption{Esquema de la miopía y su corrección.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Descripción del problema (Miopía)}
+Una persona con miopía, también conocida como "corta de vista", ve claramente los objetos cercanos, pero percibe los objetos lejanos de forma borrosa.
+El problema reside en un \textbf{exceso de potencia refractiva} del ojo. Esto puede deberse a dos causas principales: que el globo ocular sea demasiado largo (miopía axial) o que el sistema óptico del ojo (córnea y cristalino) sea demasiado convergente (miopía refractiva).
+Como se ve en el trazado de rayos del "Ojo Miope", debido a este exceso de convergencia, los rayos de luz paralelos que provienen de un objeto lejano no se enfocan sobre la retina, sino en un punto \textbf{delante de ella}. Cuando estos rayos llegan a la retina, ya han vuelto a divergir, formando una imagen desenfocada.
+
+\paragraph*{Corrección de la Miopía}
+Para corregir este defecto, es necesario reducir la potencia total del sistema óptico. Esto se consigue utilizando una \textbf{lente divergente} (o cóncava).
+Como se ilustra en el esquema de corrección, la lente divergente se coloca delante del ojo (en gafas o lentillas). Esta lente hace que los rayos paralelos provenientes de objetos lejanos diverjan ligeramente antes de entrar en el ojo. De esta manera, el punto focal del sistema "lente correctora + ojo" se desplaza hacia atrás, haciéndolo coincidir exactamente con la retina y permitiendo así la formación de una imagen nítida.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Es una cuestión teórica y no requiere cálculos.
+\begin{cajaresultado}
+La miopía es un defecto de visión donde los objetos lejanos se enfocan \textbf{delante de la retina} debido a un exceso de convergencia del ojo. Se corrige con una \textbf{lente divergente}, que reduce la potencia total del sistema óptico y desplaza el foco hacia la retina.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La miopía es un problema de refracción que impide la visión nítida de objetos lejanos. El entendimiento de la óptica geométrica permite solucionar este problema de forma sencilla y eficaz mediante el uso de una lente divergente, que compensa el exceso de potencia del ojo y restaura el enfoque correcto sobre la retina.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque IV - Cuestión}
+\label{subsec:B4_2014_jul_ext}
+
+\begin{cajaenunciado}
+Un conductor rectilíneo, de longitud $L=10\,\text{m}$, transporta una corriente eléctrica de intensidad $I=5\,\text{A}$. Se encuentra en el seno de un campo magnético cuyo módulo es $B=1\,\text{T}$ y cuya dirección y sentido es el mostrado en los casos diferentes (a) y (b) de la figura. Escribe la expresión del vector fuerza magnética que actúa sobre un conductor rectilíneo y discute en cuál de estos dos casos será mayor su módulo. Calcula el vector fuerza magnética en dicho caso. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud del conductor ($L$):} $L=10\,\text{m}$.
+    \item \textbf{Intensidad de corriente ($I$):} $I=5\,\text{A}$.
+    \item \textbf{Módulo del campo magnético ($B$):} $B=1\,\text{T}$.
+    \item \textbf{Geometría:} Definimos un sistema de coordenadas donde el conductor está sobre el eje Y, y la corriente fluye en el sentido $+\vec{j}$. El vector longitud es $\vec{L} = 10\vec{j}\,\text{m}$.
+    \item \textbf{Caso (a):} El campo magnético $\vec{B}$ es paralelo a la corriente, $\vec{B}=1\vec{j}\,\text{T}$.
+    \item \textbf{Caso (b):} El campo magnético $\vec{B}$ es perpendicular a la corriente. Por la figura, apunta saliendo del papel, $\vec{B}=1\vec{k}\,\text{T}$.
+    \item \textbf{Incógnitas:} Expresión de la fuerza, caso de mayor módulo y cálculo del vector fuerza en ese caso.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La figura es proporcionada en el enunciado del examen.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza magnética que actúa sobre un segmento de conductor rectilíneo de longitud $\vec{L}$ por el que circula una corriente $I$ inmerso en un campo magnético $\vec{B}$ viene dada por la \textbf{Ley de Laplace}:
+$$\vec{F} = I(\vec{L} \times \vec{B})$$
+El módulo de esta fuerza es $F = I L B \sin(\theta)$, donde $\theta$ es el ángulo entre el vector longitud $\vec{L}$ y el vector campo magnético $\vec{B}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Discusión del módulo}
+El módulo de la fuerza, $F = I L B \sin(\theta)$, depende del seno del ángulo entre $\vec{L}$ y $\vec{B}$. Dado que $I, L, B$ son constantes en ambos casos, la fuerza será máxima cuando $\sin(\theta)$ sea máximo.
+\begin{itemize}
+    \item \textbf{Caso (a):} $\vec{L}$ y $\vec{B}$ son paralelos. El ángulo $\theta = 0^\circ$. Por lo tanto, $\sin(0^\circ)=0$ y la fuerza es nula.
+    \item \textbf{Caso (b):} $\vec{L}$ y $\vec{B}$ son perpendiculares. El ángulo $\theta = 90^\circ$. Por lo tanto, $\sin(90^\circ)=1$ y la fuerza tiene su valor máximo.
+\end{itemize}
+El módulo de la fuerza será mayor en el \textbf{caso (b)}.
+
+\paragraph*{Cálculo del vector fuerza en el caso (b)}
+Aplicamos la expresión vectorial:
+$$\vec{F} = I(\vec{L} \times \vec{B})$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+La expresión del vector fuerza magnética es $\boldsymbol{\vec{F} = I(\vec{L} \times \vec{B})}$. El módulo de la fuerza será mayor en el \textbf{caso (b)}, ya que la fuerza es máxima cuando la corriente y el campo son perpendiculares.
+\end{cajaresultado}
+
+Calculamos el vector fuerza para el caso (b):
+\begin{gather}
+    \vec{F} = 5\,\text{A} \cdot (10\vec{j}\,\text{m} \times 1\vec{k}\,\text{T}) \\
+    \vec{F} = 50 \cdot (\vec{j} \times \vec{k})
+\end{gather}
+Recordando el producto vectorial de los vectores unitarios cartesianos ($\vec{j} \times \vec{k} = \vec{i}$):
+\begin{gather}
+    \vec{F} = 50\vec{i}\,\text{N}
+\end{gather}
+\begin{cajaresultado}
+El vector fuerza magnética en el caso (b) es $\boldsymbol{\vec{F} = 50\vec{i}\,\textbf{N}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza de Laplace depende crucialmente de la orientación relativa entre la corriente y el campo magnético. Es nula cuando son paralelos y máxima cuando son perpendiculares. En el caso (b), donde son perpendiculares, se genera una fuerza de 50 N en la dirección del eje X, perpendicular tanto a la corriente como al campo magnético.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque V - Cuestión}
+\label{subsec:B5_2014_jul_ext}
+
+\begin{cajaenunciado}
+Una astronauta viaja en una nave que se aleja de la Tierra a una velocidad de 0,7c. En un cierto instante, la astronauta establece comunicación con la Tierra y canta la canción "Space Oddity", que dura 5 minutos según el reloj de la astronave. ¿Cuánto tiempo ha durado la canción para los interlocutores de la Tierra? Razona adecuadamente tu respuesta. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad de la nave ($v$):} $v = 0,7c$.
+    \item \textbf{Tiempo propio ($\Delta t_p$):} Es la duración de la canción medida en el sistema de referencia en reposo del suceso (el reloj de la astronauta). $\Delta t_p = 5\,\text{minutos}$.
+    \item \textbf{Incógnita:} Tiempo medido desde la Tierra ($\Delta t$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Dilatación del Tiempo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una ilustración en dos paneles. Panel de la izquierda ('Sistema Nave'): Una astronauta con un reloj que muestra un intervalo de 5 minutos. Panel de la derecha ('Sistema Tierra'): Un observador en la Tierra mirando la nave espacial que se aleja a gran velocidad. El reloj del observador terrestre muestra un intervalo de tiempo mayor que 5 minutos para el mismo evento. Incluir la frase 'Los relojes en movimiento corren más despacio'."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{dilatacion_tiempo_nave.png}
+    }}
+    \caption{Concepto de la dilatación del tiempo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se explica por la \textbf{dilatación del tiempo}, una de las consecuencias de la Teoría de la Relatividad Especial de Einstein. Esta teoría postula que el tiempo no es absoluto, sino que su transcurso depende del estado de movimiento del observador.
+La fórmula que relaciona el intervalo de tiempo propio ($\Delta t_p$), medido en el sistema de referencia donde el suceso ocurre en el mismo lugar, con el intervalo de tiempo ($\Delta t$) medido por un observador que ve el sistema moverse a una velocidad $v$, es:
+$$\Delta t = \gamma \Delta t_p$$
+donde $\gamma$ es el \textbf{factor de Lorentz}, definido como:
+$$\gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+Dado que $v<c$, el factor de Lorentz es siempre $\gamma \ge 1$. Esto significa que el tiempo medido por el observador en la Tierra ($\Delta t$) siempre será mayor que el tiempo medido por la astronauta ($\Delta t_p$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El procedimiento es calcular primero el factor de Lorentz $\gamma$ y luego aplicarlo a la fórmula de la dilatación del tiempo.
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - (0,7)^2}} \\
+    \Delta t = \gamma \cdot \Delta t_p
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos el factor de Lorentz:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - (0,7)^2}} = \frac{1}{\sqrt{1 - 0,49}} = \frac{1}{\sqrt{0,51}} \approx 1,40
+\end{gather}
+Ahora calculamos el tiempo medido desde la Tierra:
+\begin{gather}
+    \Delta t = 1,40 \cdot (5\,\text{minutos}) = 7\,\text{minutos}
+\end{gather}
+\begin{cajaresultado}
+Para los interlocutores de la Tierra, la canción ha durado $\boldsymbol{7\,\textbf{minutos}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido al efecto relativista de la dilatación del tiempo, un observador en la Tierra percibe que el tiempo en la nave espacial transcurre más lentamente. Por lo tanto, un evento que dura 5 minutos en el tiempo de la nave, se medirá desde la Tierra como un evento de mayor duración, en este caso, 7 minutos.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque VI - Cuestión}
+\label{subsec:B6_2014_jul_ext}
+
+\begin{cajaenunciado}
+Se tienen dos muestras radiactivas diferentes 1 y 2. La cantidad inicial de núcleos radiactivos es, respectivamente $N_{10}$ y $N_{20}$, y sus periodos de semidesintegración son $T_{1}$ y $T_{2}=2T_{1}$. Razona cuanto deberá valer la relación $N_{10}/N_{20}$ para que la actividad de ambas muestras sea la misma inicialmente (en $t=0$). ¿Serán iguales las actividades de ambas muestras en un instante t posterior? Razona la respuesta. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Muestra 1:} Número inicial de núcleos $N_{10}$, periodo de semidesintegración $T_1$.
+    \item \textbf{Muestra 2:} Número inicial de núcleos $N_{20}$, periodo de semidesintegración $T_2 = 2T_1$.
+    \item \textbf{Condición inicial:} Actividad inicial igual para ambas muestras, $A_{10} = A_{20}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Relación $N_{10}/N_{20}$.
+            \item Si las actividades serán iguales para $t > 0$.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para esta cuestión teórica.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Actividad ($A$):} La actividad de una muestra radiactiva es proporcional al número de núcleos radiactivos ($N$) y a la constante de desintegración ($\lambda$):
+    $$A = \lambda N$$
+    \item \textbf{Constante de desintegración ($\lambda$):} Se relaciona inversamente con el periodo de semidesintegración ($T$):
+    $$\lambda = \frac{\ln(2)}{T}$$
+    \item \textbf{Ley de desintegración radiactiva:} La actividad de una muestra disminuye exponencialmente con el tiempo:
+    $$A(t) = A_0 e^{-\lambda t}$$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Relación inicial de núcleos}
+La condición inicial es $A_{10} = A_{20}$. Usando la definición de actividad:
+\begin{gather}
+    \lambda_1 N_{10} = \lambda_2 N_{20}
+\end{gather}
+Expresamos las constantes de desintegración en función de los periodos:
+\begin{gather}
+    \frac{\ln(2)}{T_1} N_{10} = \frac{\ln(2)}{T_2} N_{20} \implies \frac{N_{10}}{T_1} = \frac{N_{20}}{T_2}
+\end{gather}
+Despejamos la relación pedida, $N_{10}/N_{20}$:
+\begin{gather}
+    \frac{N_{10}}{N_{20}} = \frac{T_1}{T_2}
+\end{gather}
+Sustituyendo la relación dada $T_2 = 2T_1$:
+\begin{gather}
+    \frac{N_{10}}{N_{20}} = \frac{T_1}{2T_1} = \frac{1}{2}
+\end{gather}
+
+\paragraph{Actividades en un instante posterior}
+Las actividades en un instante $t>0$ son:
+$$ A_1(t) = A_{10}e^{-\lambda_1 t} \quad ; \quad A_2(t) = A_{20}e^{-\lambda_2 t} $$
+Como por condición inicial $A_{10} = A_{20}$, podemos llamarlas $A_0$.
+$$ A_1(t) = A_0 e^{-\lambda_1 t} \quad ; \quad A_2(t) = A_0 e^{-\lambda_2 t} $$
+Para que $A_1(t) = A_2(t)$, se tendría que cumplir que $e^{-\lambda_1 t} = e^{-\lambda_2 t}$, lo que implica que $\lambda_1 = \lambda_2$.
+Sin embargo, $\lambda_1 = \frac{\ln(2)}{T_1}$ y $\lambda_2 = \frac{\ln(2)}{T_2} = \frac{\ln(2)}{2T_1} = \frac{\lambda_1}{2}$.
+Como $\lambda_1 \neq \lambda_2$, las actividades no serán iguales para ningún $t>0$.
+Dado que $\lambda_1 > \lambda_2$, el exponente negativo de la muestra 1 es mayor en magnitud, lo que significa que su actividad decaerá más rápidamente. Por lo tanto, para cualquier $t>0$, se cumplirá que $A_1(t) < A_2(t)$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es de carácter simbólico.
+\begin{cajaresultado}
+Para que la actividad inicial sea la misma, la relación de núcleos debe ser $\boldsymbol{N_{10}/N_{20} = 1/2}$.
+Las actividades \textbf{no serán iguales} en un instante posterior.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que dos muestras tengan la misma actividad inicial, la que tiene un periodo más corto (y por tanto decae más rápido, $\lambda_1 > \lambda_2$) debe tener inicialmente menos núcleos. En este caso, la muestra 1 necesita la mitad de núcleos que la muestra 2. Una vez que el tiempo comienza a transcurrir, precisamente porque la muestra 1 decae más rápido, su actividad disminuirá a un ritmo mayor que la de la muestra 2, por lo que sus actividades nunca volverán a ser iguales.
+\end{cajaconclusion}
+
+\newpage

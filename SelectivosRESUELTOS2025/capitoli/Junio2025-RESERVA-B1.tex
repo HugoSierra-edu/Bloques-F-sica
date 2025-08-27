@@ -1,0 +1,818 @@
+% !TEX root = ../main.tex
+% ======================================================================
+% CAPÍTULO: Examen Junio 2025 - Convocatoria de Reserva
+% ======================================================================
+\chapter{Examen Junio 2025 - Convocatoria de Reserva}
+\label{chap:2025_jun_res}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2025_jun_res}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2025_jun_res}
+
+\begin{cajaenunciado}
+La órbita de la Tierra alrededor del Sol es aproximadamente circular, tiene un radio de 149,6 millones de km y un periodo de 365,25 días. Deduce razonadamente:
+\begin{enumerate}
+    \item[a)] La expresión que permite calcular la masa del Sol, determina su valor y calcula la aceleración de la gravedad sobre su superficie. (1 punto)
+    \item[b)] La expresión de la velocidad mínima que necesitaría un objeto para que, al lanzarlo desde la superficie del Sol, se pueda alejar indefinidamente de éste. Calcula su valor. (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$; radio del Sol, $R_S=6,96\cdot10^{5}\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Antes de operar, es imprescindible identificar los datos y convertirlos al Sistema Internacional de unidades (SI).
+\begin{itemize}
+    \item \textbf{Constante de Gravitación Universal (G):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$
+    \item \textbf{Radio orbital de la Tierra ($r_T$):} $r_T = 149,6 \cdot 10^6 \text{ km} = 1,496 \cdot 10^{11} \text{ m}$
+    \item \textbf{Periodo orbital de la Tierra ($T_T$):}
+    $T_T = 365,25 \text{ días} \times \frac{24 \text{ h}}{1 \text{ día}} \times \frac{3600 \text{ s}}{1 \text{ h}} = 31.557.600 \text{ s} \approx 3,156 \cdot 10^7 \text{ s}$
+    \item \textbf{Radio del Sol ($R_S$):} $R_S = 6,96 \cdot 10^5 \text{ km} = 6,96 \cdot 10^8 \text{ m}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Masa del Sol ($M_S$).
+        \item Aceleración de la gravedad en la superficie del Sol ($g_S$).
+        \item Velocidad de escape desde la superficie del Sol ($v_e$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+Se realizan dos esquemas para visualizar los dos apartados del problema.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (a): Órbita Terrestre} \vspace{0.5cm} \textit{Prompt para la imagen:} "Esquema del Sol en el centro y la Tierra en una órbita circular. Se dibuja el vector de la Fuerza Gravitatoria ($F_g$) apuntando hacia el Sol, que actúa como Fuerza Centrípeta ($F_c$). El radio de la órbita está etiquetado como $r_T$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_terrestre.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (b): Velocidad de Escape} \vspace{0.5cm} \textit{Prompt para la imagen:} "Esquema del Sol con un objeto en su superficie. Se dibuja un vector de velocidad inicial ($v_e$) saliendo radialmente, indicando que el objeto escapa del campo gravitatorio del Sol. El radio del Sol está etiquetado como $R_S$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{velocidad_escape.png}
+    }}
+    \caption{Representación gráfica de los dos fenómenos estudiados.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Masa del Sol y gravedad en su superficie}
+Para una órbita circular, la fuerza que la causa (fuerza centrípeta, $F_c$) es la \textbf{Fuerza de Atracción Gravitatoria} ($F_g$). Se igualan ambas fuerzas.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal de Newton:} $F_g = G \frac{M m}{r^2}$.
+    \item \textbf{Dinámica del Movimiento Circular Uniforme:} $F_c = m a_c = m \omega^2 r$, donde la velocidad angular es $\omega = \frac{2\pi}{T}$.
+\end{itemize}
+La aceleración de la gravedad en la superficie se deduce de la Ley de Gravitación Universal, igualando el peso a la fuerza gravitatoria.
+
+\paragraph*{b) Velocidad de escape}
+Se basa en el \textbf{Principio de Conservación de la Energía Mecánica}. La velocidad de escape es la velocidad inicial mínima que debe tener un objeto para que su energía mecánica total sea cero, permitiéndole llegar al infinito ($E_p=0$) con velocidad nula ($E_c=0$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Expresión de la Masa del Sol ($M_S$) y gravedad ($g_S$)}
+Igualamos $F_g = F_c$ para la órbita de la Tierra (masa $m_T$):
+\begin{gather}
+    G \frac{M_S m_T}{r_T^2} = m_T \omega^2 r_T = m_T \left(\frac{2\pi}{T_T}\right)^2 r_T \nonumber \\[8pt]
+    M_S = \frac{4\pi^2 r_T^3}{G T_T^2}
+\end{gather}
+La gravedad en la superficie es: $g_S = G \frac{M_S}{R_S^2}$.
+
+\paragraph*{b) Expresión de la Velocidad de Escape ($v_e$)}
+$E_{M, \text{total}} = 0 \implies E_{c, \text{inicial}} + E_{p, \text{inicial}} = 0$:
+\begin{gather}
+    \frac{1}{2} m v_e^2 - G \frac{M_S m}{R_S} = 0 \implies v_e = \sqrt{\frac{2 G M_S}{R_S}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la Masa del Sol y su gravedad superficial}
+\begin{gather}
+    M_S = \frac{4\pi^2 (1,496 \cdot 10^{11})^3}{(6,67 \cdot 10^{-11})(3,156 \cdot 10^7)^2} \approx 1,99 \cdot 10^{30} \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    La masa del Sol es $\boldsymbol{M_S \approx 1,99 \cdot 10^{30} \, \textbf{kg}}$.
+\end{cajaresultado}
+\medskip
+\begin{gather}
+    g_S = (6,67 \cdot 10^{-11}) \frac{1,99 \cdot 10^{30}}{(6,96 \cdot 10^8)^2} \approx 274,1 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+    La aceleración de la gravedad en la superficie solar es $\boldsymbol{g_S \approx 274,1 \, \textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de la Velocidad de Escape}
+\begin{gather}
+    v_e = \sqrt{\frac{2 (6,67 \cdot 10^{-11}) (1,99 \cdot 10^{30})}{6,96 \cdot 10^8}} \approx 6,18 \cdot 10^5 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de escape desde la superficie del Sol es $\boldsymbol{v_e \approx 618 \, \textbf{km/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Aplicando la dinámica del movimiento circular a la órbita terrestre, se deduce una masa para el Sol de $\mathbf{1,99 \cdot 10^{30} \, kg}$, lo que resulta en una gravedad superficial de $\mathbf{274,1 \, m/s^2}$. Mediante la conservación de la energía, se establece que un objeto necesitaría una velocidad de escape de $\mathbf{618 \, km/s}$ para abandonar su campo gravitatorio.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2025_jun_res}
+
+\begin{cajaenunciado}
+En septiembre de 2023, la NASA y otras agencias espaciales celebraron el éxito de la misión OSIRIS-REx, que trajo muestras del asteroide Bennu a la Tierra. Se sabe que Bennu tiene un diámetro de aproximadamente 493 m y una masa estimada de $6\cdot10^{10}\,\text{kg}$.
+\begin{enumerate}
+    \item[a)] Se envió de vuelta a la Tierra un contenedor de 46 kg con muestras del asteroide. Este llegó a la atmósfera superior (133 km de altura) con una velocidad de $44500\,\text{km/h}$ e inició las maniobras de frenado. Finalmente aterrizó en un campo de pruebas en Utah ¿Cuánta energía mecánica perdió en el descenso, hasta aterrizar? (1 punto)
+    \item[b)] Calcula cuántas veces menos pesará este contenedor situado en la superficie de Bennu en comparación con su peso en la superficie de la Tierra. Supón que Bennu tiene forma esférica y es homogéneo. (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$; radio de la Tierra, $R_T=6370\,\text{km}$; masa de la Tierra, $M_T=6\cdot10^{24}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del contenedor ($m$):} $m = 46 \, \text{kg}$
+    \item \textbf{Datos Tierra:} $M_T = 6 \cdot 10^{24} \, \text{kg}$, $R_T = 6370 \text{ km} = 6,37 \cdot 10^6 \text{ m}$
+    \item \textbf{Datos Bennu:} $M_B = 6 \cdot 10^{10} \, \text{kg}$, $R_B = 493/2 = 246,5 \text{ m}$
+    \item \textbf{Condiciones iniciales (descenso):} $h_i = 133 \text{ km} = 1,33 \cdot 10^5 \text{ m}$, $v_i = 44500 \text{ km/h} \approx 12361,1 \, \text{m/s}$
+    \item \textbf{Condiciones finales (descenso):} $h_f = 0 \text{ m}$, $v_f = 0 \text{ m/s}$
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (a): Descenso a Tierra} \vspace{0.5cm} \textit{Prompt para la imagen:} "Esquema de la Tierra. Se muestra la trayectoria de un objeto desde una altura inicial $h_i$ con velocidad $v_i$ hasta la superficie ($h_f=0, v_f=0$), indicando la pérdida de energía por rozamiento con la atmósfera." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{descenso_tierra.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (b): Comparación de Pesos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Comparación visual de un mismo objeto sobre la superficie de la Tierra (planeta grande) y sobre el asteroide Bennu (cuerpo pequeño y esférico), mostrando que el vector peso $P_T$ es mucho mayor que el vector peso $P_B$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{comparacion_pesos.png}
+    }}
+    \caption{Representación de la pérdida de energía y la comparación de pesos.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Pérdida de Energía Mecánica}
+La energía perdida es la diferencia entre la energía mecánica inicial y la final: $E_{perd} = | \Delta E_M | = E_{M,i} - E_{M,f}$. La energía mecánica es la suma de la cinética ($E_c = \frac{1}{2}mv^2$) y la potencial ($E_p = -G\frac{Mm}{r}$).
+\paragraph*{b) Peso y Ley de Gravitación Universal}
+El peso es la fuerza gravitatoria en la superficie: $P = F_g = G\frac{M m}{R^2}$. Se pide calcular el ratio $P_T/P_B$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Energía Perdida}
+\begin{gather}
+    E_{M,i} = \frac{1}{2}mv_i^2 - G\frac{M_T m}{R_T+h_i} \quad ; \quad E_{M,f} = -G\frac{M_T m}{R_T} \\
+    E_{perd} = E_{M,i} - E_{M,f} = \frac{1}{2}mv_i^2 - G M_T m \left(\frac{1}{R_T+h_i} - \frac{1}{R_T}\right)
+\end{gather}
+\paragraph*{b) Ratio de Pesos}
+\begin{gather}
+    \frac{P_T}{P_B} = \frac{G M_T m / R_T^2}{G M_B m / R_B^2} = \frac{M_T R_B^2}{M_B R_T^2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la Energía Perdida}
+\begin{gather}
+    E_{M,i} = \frac{1}{2}(46)(12361,1)^2 - (6,67\cdot10^{-11})\frac{(6\cdot10^{24})(46)}{6,37\cdot10^6 + 1,33\cdot10^5} \approx 3,513 \cdot 10^9 - 2,83 \cdot 10^9 = 6,83 \cdot 10^8 \, \text{J} \nonumber \\
+    E_{M,f} = -(6,67\cdot10^{-11})\frac{(6\cdot10^{24})(46)}{6,37\cdot10^6} \approx -2,89 \cdot 10^9 \, \text{J} \nonumber \\
+    E_{perd} = (6,83 \cdot 10^8) - (-2,89 \cdot 10^9) \approx 3,57 \cdot 10^9 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía mecánica perdida en el descenso fue de $\boldsymbol{\approx 3,57 \cdot 10^9 \, J}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor del Ratio de Pesos}
+\begin{gather}
+    \frac{P_T}{P_B} = \frac{(6\cdot10^{24})(246,5)^2}{(6\cdot10^{10})(6,37\cdot10^6)^2} \approx 149700
+\end{gather}
+\begin{cajaresultado}
+    El contenedor pesa aproximadamente $\boldsymbol{150.000}$ veces más en la Tierra que en Bennu.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    a) Durante la reentrada atmosférica, el contenedor perdió $\mathbf{3,57 \cdot 10^9 \, J}$ de energía, disipada principalmente como calor por el rozamiento con el aire.
+    b) La relación de pesos de aproximadamente $\mathbf{150.000 : 1}$ pone de manifiesto la extraordinariamente débil gravedad del asteroide en comparación con la de la Tierra.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Campo Electromagnético}
+\label{sec:em_2025_jun_res_1}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2025_jun_res}
+
+\begin{cajaenunciado}
+Un dipolo eléctrico está formado por dos cargas, $+Q$ y $-Q$, separadas por una distancia $2d=0,1\,\text{m}$, siendo $Q=5\,\text{nC}$. La carga $+Q$ se sitúa en el punto $(-d, 0)$ y la carga $-Q$ en el punto $(d, 0)$. Calcula el valor del vector campo eléctrico en un punto P de coordenadas $(0,2d)$. Representa gráficamente los vectores campo eléctrico de cada carga y el total en dicho punto.
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Constante de Coulomb ($k$):} $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Distancia de separación ($2d$):} $2d = 0,1$ m $\implies d = 0,05$ m.
+    \item \textbf{Carga ($Q$):} $Q = 5 \text{ nC} = 5 \cdot 10^{-9}$ C.
+    \item \textbf{Posición carga $+Q$:} $P_1(-0,05, 0)$ m.
+    \item \textbf{Posición carga $-Q$:} $P_2(0,05, 0)$ m.
+    \item \textbf{Punto de cálculo (P):} $P(0, 2d) = P(0, 0,1)$ m.
+    \item \textbf{Incógnita:} Vector campo eléctrico total en P, $\vec{E}_T(P)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo eléctrico de un dipolo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de coordenadas XY. Una carga positiva $+Q$ se sitúa en $(-d, 0)$ y una carga negativa $-Q$ en $(d, 0)$. El punto P se encuentra en $(0, 2d)$ sobre el eje Y. Desde P, dibujar el vector $\vec{E}_+$ creado por $+Q$, apuntando hacia arriba y a la derecha (repulsivo). Desde P, dibujar el vector $\vec{E}_-$ creado por $-Q$, apuntando hacia abajo y a la derecha (atractivo). Dibujar el vector suma $\vec{E}_T$, que apunta horizontalmente hacia la derecha. Marcar la distancia $r$ desde cada carga hasta P. Señalar los ángulos que los vectores forman con los ejes." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{dipolo_campo.png}
+    }}
+    \caption{Representación gráfica de los vectores campo eléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica el \textbf{Principio de Superposición}. El campo eléctrico total en el punto P es la suma vectorial de los campos creados por cada carga individualmente: $\vec{E}_T = \vec{E}_+ + \vec{E}_-$.
+El campo creado por una carga puntual $q$ en un punto P es $\vec{E} = k \frac{q}{r^2} \vec{u}_r$, donde $r$ es la distancia de la carga al punto y $\vec{u}_r$ es un vector unitario que apunta desde la carga hacia el punto.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La distancia $r$ desde cada carga hasta el punto P es la misma: $r = \sqrt{d^2 + (2d)^2} = \sqrt{5d^2} = d\sqrt{5}$.
+Los vectores que van de las cargas al punto P son:
+$\vec{r}_+ = P - P_1 = (0 - (-d), 2d - 0) = (d, 2d)$.
+$\vec{r}_- = P - P_2 = (0 - d, 2d - 0) = (-d, 2d)$.
+Los campos son:
+\begin{gather}
+    \vec{E}_+ = k \frac{Q}{r^2} \frac{\vec{r}_+}{|\vec{r}_+|} = k \frac{Q}{(d\sqrt{5})^2} \frac{(d, 2d)}{d\sqrt{5}} = \frac{kQ}{5d^2\sqrt{5}} (d, 2d) \\
+    \vec{E}_- = k \frac{-Q}{r^2} \frac{\vec{r}_-}{|\vec{r}_-|} = -k \frac{Q}{(d\sqrt{5})^2} \frac{(-d, 2d)}{d\sqrt{5}} = -\frac{kQ}{5d^2\sqrt{5}} (-d, 2d)
+\end{gather}
+El campo total es la suma:
+\begin{gather}
+    \vec{E}_T = \frac{kQ}{5d^2\sqrt{5}} \left[ (d, 2d) - (-d, 2d) \right] = \frac{kQ}{5d^2\sqrt{5}} (2d, 0) = \frac{2kQ}{5d\sqrt{5}} \vec{i}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \vec{E}_T = \frac{2 \cdot (9\cdot10^9) \cdot (5\cdot10^{-9})}{5 \cdot (0,05) \cdot \sqrt{5}} \vec{i} = \frac{90}{0,25\sqrt{5}} \vec{i} \approx 160,99 \vec{i} \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    El vector campo eléctrico en el punto P es $\boldsymbol{\vec{E}_T \approx 161 \, \vec{i} \, \textbf{N/C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Debido a la simetría del problema, las componentes verticales de los campos creados por cada carga se anulan mutuamente en el punto P. Las componentes horizontales se suman, dando como resultado un campo eléctrico neto que apunta en la dirección positiva del eje X, con un módulo de $\mathbf{161 \, N/C}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2025_jun_res}
+
+\begin{cajaenunciado}
+En una región donde existe un campo magnético uniforme se observa la traza de dos partículas cuyas cargas eléctricas tienen el mismo valor absoluto y el mismo módulo de velocidad. Explica el motivo por el cual se curvan sus trayectorias. Razona cuál de estas dos partículas será positiva y cuál negativa. Realiza una representación gráfica de los vectores involucrados. Razona cuál de las dos partículas tendrá mayor masa.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo:} Magnético uniforme, $\vec{B}$, saliente del papel.
+    \item \textbf{Partículas:} $|q_1|=|q_2|$, $v_1=v_2$.
+    \item \textbf{Trayectorias:} Curvas. La 1 se curva "hacia arriba" y la 2 "hacia abajo". El radio de la 2 es mayor que el de la 1 ($R_2 > R_1$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Vectores en el campo magnético} \vspace{0.5cm} \textit{Prompt para la imagen:} "La imagen del enunciado. Sobre la trayectoria 1, en el punto '1', dibujar el vector velocidad $\vec{v}$ tangente a la curva (hacia arriba y a la derecha) y el vector fuerza magnética $\vec{F}_m$ apuntando hacia el centro de la curvatura (hacia la izquierda). Sobre la trayectoria 2, en el punto '2', dibujar el vector velocidad $\vec{v}$ tangente (hacia abajo y a la derecha) y el vector fuerza magnética $\vec{F}_m$ apuntando hacia el centro de su curvatura (hacia la derecha)." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{fuerza_lorentz_vectores.png}
+    }}
+    \caption{Representación de los vectores velocidad y fuerza para cada partícula.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Motivo de la curvatura}
+Las trayectorias se curvan debido a la \textbf{Fuerza de Lorentz} magnética, $\vec{F}_m = q(\vec{v} \times \vec{B})$, que actúa sobre cualquier carga en movimiento dentro de un campo magnético. Esta fuerza es siempre perpendicular tanto a la velocidad $\vec{v}$ como al campo $\vec{B}$, por lo que no cambia el módulo de la velocidad (no realiza trabajo), pero sí cambia continuamente su dirección, provocando una trayectoria curva.
+
+\paragraph*{Signo de las cargas}
+Se determina con la regla de la mano derecha (para cargas positivas) o izquierda (para negativas).
+\begin{itemize}
+    \item \textbf{Partícula 1:} $\vec{v}$ es aprox. hacia arriba, $\vec{B}$ es saliente. El producto $\vec{v} \times \vec{B}$ apunta hacia la derecha. Sin embargo, la fuerza $\vec{F}_m$ apunta hacia la izquierda. Como la fuerza es opuesta a $\vec{v} \times \vec{B}$, la carga $q_1$ debe ser \textbf{negativa}.
+    \item \textbf{Partícula 2:} $\vec{v}$ es aprox. hacia abajo, $\vec{B}$ es saliente. El producto $\vec{v} \times \vec{B}$ apunta hacia la derecha. La fuerza $\vec{F}_m$ también apunta hacia la derecha. Como la fuerza tiene el mismo sentido que $\vec{v} \times \vec{B}$, la carga $q_2$ debe ser \textbf{positiva}.
+\end{itemize}
+
+\paragraph*{Relación de masas}
+La fuerza de Lorentz actúa como fuerza centrípeta: $F_m = F_c \implies |q|vB = \frac{mv^2}{R}$. Despejando el radio de la trayectoria: $R = \frac{mv}{|q|B}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Dado que $|q|$, $v$ y $B$ son iguales para ambas partículas, el radio $R$ es directamente proporcional a la masa $m$: $R \propto m$.
+$$ \frac{R_1}{R_2} = \frac{m_1}{m_2} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+    La partícula \textbf{1 es negativa} y la partícula \textbf{2 es positiva}.
+\end{cajaresultado}
+De la observación de la figura, el radio de la trayectoria 2 es mayor que el de la 1 ($R_2 > R_1$).
+\begin{cajaresultado}
+    Como el radio es proporcional a la masa, la partícula con mayor radio de curvatura tendrá mayor masa. Por tanto, la \textbf{partícula 2 tiene mayor masa} que la partícula 1 ($m_2 > m_1$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Las trayectorias son curvas por la acción de la fuerza de Lorentz. Aplicando la regla vectorial, se deduce que la \textbf{partícula 1 es negativa} y la \textbf{2 es positiva}. La relación entre el radio de giro y la masa ($R=mv/|q|B$) implica que, a igualdad del resto de factores, la partícula más masiva describe una curva más abierta. Por lo tanto, la \textbf{partícula 2 tiene mayor masa}.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Inducción Electromagnética}
+\label{sec:em_2025_jun_res_2}
+% ----------------------------------------------------------------------
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2025_jun_res}
+
+\begin{cajaenunciado}
+La figura representa el valor del flujo magnético que atraviesa una espira plana. Responde razonadamente a las siguientes preguntas, enunciando la ley en la que te basas: ¿en qué tramo la fuerza electromotriz inducida tiene valor nulo? ¿Cuál es el valor de la fuerza electromotriz inducida en el tramo I? ¿En qué tramo es mayor el valor de la corriente eléctrica inducida en la espira?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+De la gráfica Flujo ($\Phi$) vs. Tiempo (t) se extrae:
+\begin{itemize}
+    \item \textbf{Tramo I (0 s a 1 s):} El flujo varía linealmente desde $\Phi(0)=0$ T·m² hasta $\Phi(1)=-1$ T·m².
+    \item \textbf{Tramo II (1 s a 2 s):} El flujo varía linealmente desde $\Phi(1)=-1$ T·m² hasta $\Phi(2)=-3$ T·m².
+    \item \textbf{Tramo III (2 s a 3 s):} El flujo permanece constante en $\Phi=-3$ T·m².
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La propia gráfica del enunciado es la representación del fenómeno.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La resolución se basa en la \textbf{Ley de Faraday-Lenz}:
+$$ \varepsilon = - \frac{d\Phi}{dt} $$
+Esta ley establece que una variación del flujo magnético a través de una espira induce una fuerza electromotriz (fem, $\varepsilon$) en ella. La fem es igual a la tasa de cambio del flujo magnético, con signo negativo (Ley de Lenz), que indica que la corriente inducida se opone a la variación del flujo que la crea.
+La corriente inducida ($I$) se relaciona con la fem a través de la \textbf{Ley de Ohm}: $I = \frac{\varepsilon}{R}$, donde R es la resistencia de la espira.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Dado que el flujo varía linealmente en los tramos I y II, la derivada $\frac{d\Phi}{dt}$ es constante y puede calcularse como la pendiente $\frac{\Delta\Phi}{\Delta t}$.
+\begin{itemize}
+    \item \textbf{Tramo I:} $\varepsilon_I = - \frac{\Phi(1) - \Phi(0)}{1 - 0}$
+    \item \textbf{Tramo II:} $\varepsilon_{II} = - \frac{\Phi(2) - \Phi(1)}{2 - 1}$
+    \item \textbf{Tramo III:} $\varepsilon_{III} = - \frac{d\Phi}{dt}$
+\end{itemize}
+La corriente inducida es mayor donde el valor absoluto de la fem es mayor.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{¿En qué tramo la fem es nula?}
+En el \textbf{Tramo III}, el flujo magnético es constante ($\Phi = -3$ T·m²). Por lo tanto, su derivada respecto al tiempo es cero.
+\begin{gather}
+    \frac{d\Phi}{dt} = 0 \implies \varepsilon_{III} = 0 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza electromotriz inducida es nula en el \textbf{Tramo III}, porque el flujo magnético no varía en el tiempo.
+\end{cajaresultado}
+
+\paragraph*{¿Cuál es el valor de la fem en el tramo I?}
+\begin{gather}
+    \varepsilon_I = - \frac{-1 - 0}{1 - 0} = -(-1) = 1 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+    El valor de la fuerza electromotriz inducida en el Tramo I es de $\boldsymbol{\varepsilon_I = 1 \, V}$.
+\end{cajaresultado}
+
+\paragraph*{¿En qué tramo es mayor la corriente inducida?}
+Calculamos la fem en el Tramo II para comparar:
+\begin{gather}
+    \varepsilon_{II} = - \frac{-3 - (-1)}{2 - 1} = - \frac{-2}{1} = 2 \, \text{V}
+\end{gather}
+Comparamos los valores absolutos de las fem: $|\varepsilon_I|=1$ V, $|\varepsilon_{II}|=2$ V, $|\varepsilon_{III}|=0$ V.
+Como $I = \varepsilon/R$ y R es constante, la corriente será mayor donde $|\varepsilon|$ sea mayor.
+\begin{cajaresultado}
+    La corriente eléctrica inducida es mayor en el \textbf{Tramo II}, ya que el valor absoluto de la fem inducida (2 V) es el máximo.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Aplicando la Ley de Faraday-Lenz, se concluye que la fem es nula en el Tramo III por no haber variación de flujo. En el Tramo I, la fem es de $\mathbf{+1 \, V}$. La corriente inducida es máxima en el \textbf{Tramo II}, ya que es donde la variación del flujo magnético por unidad de tiempo es más pronunciada, induciendo la mayor fem en módulo ($\mathbf{2 \, V}$).
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2025_jun_res}
+
+\begin{cajaenunciado}
+Se tienen dos corrientes paralelas y muy largas, tal y como muestra la figura. Indica razonadamente si en algún punto de la zona A el campo magnético total puede ser nulo. Deduce el valor del cociente $I_2/I_1$ si el campo magnético total en el punto P es nulo. Razona la dirección y el sentido del campo magnético en la zona C.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Configuración:} Dos hilos rectilíneos, largos y paralelos.
+    \item \textbf{Corrientes:} $I_1$ e $I_2$, ambas con sentido hacia abajo ($-y$).
+    \item \textbf{Punto P:} Situado entre los hilos. Distancia a $I_1$ es $r_1=2$ cm. Distancia a $I_2$ es $r_2=3-2=1$ cm.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo magnético de dos hilos} \vspace{0.5cm} \textit{Prompt para la imagen:} "La figura del enunciado.
+    En un punto de la zona A, dibujar el vector $\vec{B}_1$ (creado por $I_1$) como un círculo con una cruz (entrante) y el vector $\vec{B}_2$ (creado por $I_2$) también entrante.
+    En el punto P, dibujar $\vec{B}_1$ entrante y $\vec{B}_2$ como un círculo con un punto (saliente).
+    En un punto de la zona C, dibujar $\vec{B}_1$ saliente y $\vec{B}_2$ también saliente." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{campo_2hilos.png}
+    }}
+    \caption{Dirección de los campos magnéticos en las distintas zonas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utiliza la \textbf{Ley de Ampère} (o Biot-Savart) para el campo creado por un hilo infinito, $B = \frac{\mu_0 I}{2\pi r}$, la \textbf{regla de la mano derecha} para determinar la dirección y sentido del campo, y el \textbf{principio de superposición} para calcular el campo total $\vec{B}_T = \vec{B}_1 + \vec{B}_2$.
+
+\subsubsection*{4. Tratamiento Simbólico y Razonamiento}
+\paragraph*{Campo en la zona A}
+En cualquier punto de la zona A (a la izquierda de $I_1$), aplicando la regla de la mano derecha, tanto el campo $\vec{B}_1$ como el campo $\vec{B}_2$ apuntan hacia \textbf{dentro del papel} (sentido $-\vec{k}$). Al ser dos vectores con el mismo sentido, su suma nunca puede ser nula.
+
+\paragraph*{Cociente $I_2/I_1$ para que $\vec{B}(P)=0$}
+En el punto P, $\vec{B}_1$ va hacia dentro ($-\vec{k}$) y $\vec{B}_2$ va hacia fuera ($+\vec{k}$). Para que el campo total sea nulo, sus módulos deben ser iguales:
+\begin{gather}
+    B_1(P) = B_2(P) \implies \frac{\mu_0 I_1}{2\pi r_1} = \frac{\mu_0 I_2}{2\pi r_2} \implies \frac{I_1}{r_1} = \frac{I_2}{r_2} \implies \frac{I_2}{I_1} = \frac{r_2}{r_1}
+\end{gather}
+
+\paragraph*{Campo en la zona C}
+En cualquier punto de la zona C (a la derecha de $I_2$), el campo $\vec{B}_1$ apunta hacia \textbf{fuera del papel} ($+\vec{k}$) y el campo $\vec{B}_2$ también apunta hacia \textbf{fuera del papel} ($+\vec{k}$).
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+    No, el campo magnético total \textbf{no puede ser nulo en la zona A}, ya que los campos creados por ambas corrientes tienen el mismo sentido (entrante).
+\end{cajaresultado}
+\begin{gather}
+    \frac{I_2}{I_1} = \frac{1 \, \text{cm}}{2 \, \text{cm}} = 0,5
+\end{gather}
+\begin{cajaresultado}
+    El cociente de las corrientes debe ser $\boldsymbol{I_2/I_1 = 0,5}$.
+\end{cajaresultado}
+\begin{cajaresultado}
+    En la zona C, el campo magnético total tiene la dirección del \textbf{eje Z} y sentido \textbf{positivo} (saliendo del papel).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    El campo magnético solo puede anularse en la región entre los dos hilos. En la zona A, ambos campos se refuerzan en sentido entrante. Para que el campo sea nulo en P, la corriente $I_2$ debe ser la mitad de $I_1$. En la zona C, ambos campos se refuerzan en sentido saliente.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Vibraciones y Ondas}
+\label{sec:ondas_2025_jun_res}
+% ----------------------------------------------------------------------
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2025_jun_res}
+
+\begin{cajaenunciado}
+En la figura se muestra la propagación de una onda transversal sinusoidal para el instante $t=1$ s. La onda se mueve hacia la derecha sobre el eje x, su periodo es $T=2$ s y su amplitud $A=20$ cm. Si el punto O es el origen de coordenadas, determina razonadamente:
+\begin{enumerate}
+    \item[a)] La longitud de onda, la frecuencia angular, la velocidad de propagación, la fase inicial y escribe la función de onda. (1 punto)
+    \item[b)] La expresión de la velocidad de vibración. Calcula dicha velocidad para $t=10$ s y $x=1$ m. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A=20 \text{ cm} = 0,2$ m.
+    \item \textbf{Período ($T$):} $T=2$ s.
+    \item \textbf{Gráfica:} Es una "foto" de la onda en $t=1$ s. De ella se obtiene:
+        \begin{itemize}
+            \item \textbf{Longitud de onda ($\lambda$):} La distancia de dos ciclos completos es 40 cm. Por tanto, $\lambda = 20 \text{ cm} = 0,2$ m.
+            \item En $t=1$ s y $x=0$, la elongación es $y(0,1)=0$ y la pendiente es positiva (el punto está subiendo).
+        \end{itemize}
+    \item \textbf{Incógnitas:} $\lambda, \omega, v, \phi_0$, ecuación $y(x,t)$, expresión $v_y(x,t)$ y valor $v_y(1,10)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La propia gráfica del enunciado es la representación de la onda en $t=1$ s.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación de una onda armónica que se propaga hacia la derecha es $y(x,t) = A \sin(\omega t - kx + \phi_0)$.
+Las magnitudes se relacionan: $\omega = \frac{2\pi}{T}$, $k = \frac{2\pi}{\lambda}$, $v = \frac{\lambda}{T} = \frac{\omega}{k}$.
+La velocidad de vibración de un punto del medio es $v_y(x,t) = \frac{\partial y}{\partial t}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Parámetros y función de onda}
+Calculamos $\omega$ y $k$. Luego usamos la condición $y(0,1)=0$ para hallar $\phi_0$.
+\begin{gather}
+    y(0,1) = A \sin(\omega \cdot 1 - k \cdot 0 + \phi_0) = A \sin(\omega + \phi_0) = 0
+\end{gather}
+Esto implica $\omega + \phi_0 = n\pi$ para $n \in \mathbb{Z}$.
+La velocidad en ese punto es $v_y(0,1) = A\omega \cos(\omega + \phi_0) > 0$, lo que implica $\cos(n\pi)>0$. Esto solo ocurre para $n$ par ($n=0, 2, 4, ...$). Tomamos $n=0$.
+$\omega + \phi_0 = 0 \implies \phi_0 = -\omega$.
+
+\paragraph*{b) Velocidad de vibración}
+\begin{gather}
+    v_y(x,t) = \frac{\partial}{\partial t} [A \sin(\omega t - kx + \phi_0)] = A\omega \cos(\omega t - kx + \phi_0)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Parámetros y función de onda}
+\begin{gather}
+    \lambda = 0,2 \, \text{m} \\
+    \omega = \frac{2\pi}{2} = \pi \, \text{rad/s} \\
+    k = \frac{2\pi}{0,2} = 10\pi \, \text{rad/m} \\
+    v = \frac{0,2}{2} = 0,1 \, \text{m/s} \\
+    \phi_0 = -\omega = -\pi \, \text{rad}
+\end{gather}
+La función de onda es $y(x,t) = 0,2 \sin(\pi t - 10\pi x - \pi)$. Usando $\sin(\alpha-\pi)=-\sin(\alpha)$, se puede escribir como:
+\begin{cajaresultado}
+    $\boldsymbol{\lambda=0,2\,m; \omega=\pi\,rad/s; v=0,1\,m/s; \phi_0=-\pi\,rad}$.
+    Función de onda: $\boldsymbol{y(x,t) = -0,2 \sin(\pi t - 10\pi x)}$.
+\end{cajaresultado}
+
+\paragraph*{b) Velocidad de vibración}
+\begin{gather}
+    v_y(x,t) = -0,2\pi \cos(\pi t - 10\pi x)
+\end{gather}
+Para $t=10$ s y $x=1$ m:
+\begin{gather}
+    v_y(1,10) = -0,2\pi \cos(\pi \cdot 10 - 10\pi \cdot 1) = -0,2\pi \cos(0) = -0,2\pi \approx -0,628 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La expresión de la velocidad es $\boldsymbol{v_y(x,t) = -0,2\pi \cos(\pi t - 10\pi x)}$.
+    En $t=10$ s y $x=1$ m, la velocidad es $\boldsymbol{v_y \approx -0,628 \, m/s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    A partir de la gráfica y los datos, se han determinado los parámetros de la onda, resultando en la función $y(x,t) = -0,2 \sin(\pi t - 10\pi x)$. La velocidad de vibración de las partículas del medio viene dada por la derivada de esta función, y para el punto y el instante solicitados, su valor es de $\mathbf{-0,628 \, m/s}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2025_jun_res}
+
+\begin{cajaenunciado}
+Un objeto está situado 20 cm a la izquierda de una lente de -4 dioptrías. Se pide:
+\begin{enumerate}
+    \item[a)] Calcular la posición de la imagen. Realiza un trazado de rayos con la posición de la imagen, del objeto, de la lente y de los puntos focales. Indica las características de la imagen que se forma. (1 punto)
+    \item[b)] ¿Qué distancia y hacia dónde habría que mover el objeto para que la imagen tenga la mitad del tamaño del objeto y a derechas? (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Potencia de la lente ($P$):} $P = -4$ D. Es una lente \textbf{divergente}.
+    \item \textbf{Distancia focal ($f'$):} $f' = 1/P = 1/(-4) = -0,25 \text{ m} = -25$ cm.
+    \item \textbf{Posición inicial del objeto ($s_1$):} $s_1 = -20$ cm.
+    \item \textbf{Condición final:} Aumento $A_2 = +0,5$ (derecha y mitad de tamaño).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica (Apartado a)}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Trazado de Rayos para Lente Divergente} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente divergente. El eje óptico es horizontal. La lente se sitúa en el origen. El foco imagen F' está en x=-25 cm y el foco objeto F en x=+25 cm. Un objeto (flecha vertical hacia arriba) se coloca en x=-20 cm. Se dibujan dos rayos notables desde la punta del objeto:
+    1. Un rayo paralelo al eje que, tras refractarse, diverge de tal forma que su prolongación hacia atrás pasa por el foco imagen F'.
+    2. Un rayo que pasa por el centro óptico y no se desvía.
+    Las prolongaciones de los rayos divergentes se cruzan a la izquierda de la lente para formar una imagen (flecha vertical hacia arriba) más pequeña que el objeto." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_divergente.png}
+    }}
+    \caption{Formación de la imagen en la situación inicial.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utiliza la \textbf{Ecuación de las Lentes Delgadas} $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$ y la fórmula del \textbf{aumento lateral} $A = \frac{y'}{y} = \frac{s'}{s}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Posición de la imagen inicial ($s'_1$)}
+\begin{gather}
+    \frac{1}{s'_1} = \frac{1}{f'} + \frac{1}{s_1}
+\end{gather}
+\paragraph*{b) Nueva posición del objeto ($s_2$)}
+La condición es $A_2 = s'_2 / s_2 = 0,5 \implies s'_2 = 0,5 s_2$. Sustituimos esto en la ecuación de la lente:
+\begin{gather}
+    \frac{1}{0,5 s_2} - \frac{1}{s_2} = \frac{1}{f'} \implies \frac{2}{s_2} - \frac{1}{s_2} = \frac{1}{f'} \implies \frac{1}{s_2} = \frac{1}{f'} \implies s_2 = f'
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Posición y características de la imagen}
+\begin{gather}
+    \frac{1}{s'_1} = \frac{1}{-25} + \frac{1}{-20} = \frac{-4-5}{100} = -\frac{9}{100} \implies s'_1 = -\frac{100}{9} \approx -11,1 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    La imagen se forma en $\boldsymbol{s'_1 \approx -11,1 \, cm}$.
+    Características: \textbf{Virtual} ($s'<0$), \textbf{derecha} ($A = s'/s > 0$) y \textbf{menor} ($|A| < 1$).
+\end{cajaresultado}
+
+\paragraph*{b) Nueva posición y desplazamiento del objeto}
+\begin{gather}
+    s_2 = f' = -25 \, \text{cm}
+\end{gather}
+El desplazamiento es $\Delta s = s_2 - s_1 = -25 - (-20) = -5$ cm.
+\begin{cajaresultado}
+    Habría que mover el objeto \textbf{5 cm hacia la izquierda} (alejarlo de la lente).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    a) La lente divergente forma una imagen \textbf{virtual, derecha y menor} a \textbf{11,1 cm a la izquierda} de la lente.
+    b) Para que la imagen sea derecha y de la mitad del tamaño del objeto, este debe situarse exactamente sobre el foco objeto de la lente, es decir, en $s=-25$ cm. Esto requiere \textbf{alejar el objeto 5 cm} de su posición inicial.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Óptica (Obligatoria)}
+\label{sec:optica_2025_jun_res}
+% ----------------------------------------------------------------------
+\subsection{Pregunta 5 - OBLIGATORIA}
+\label{subsec:5_2025_jun_res}
+
+\begin{cajaenunciado}
+El 19/11/2024 aparecía en prensa la siguiente noticia: "Los berberechos de corazón (Corculum cardissa) crean una fibra óptica a través de su concha que ilumina su interior". Supongamos que podemos simular dicha fibra óptica como un cilindro lleno de una sustancia de índice de refracción $n_1=1,55$ y cuyo recubrimiento es una sustancia de índice de refracción $n_2$. Indica cómo se denomina el fenómeno que se produce en el punto B ¿Qué es el ángulo límite? Razona cuál de los índices $n_1$ o $n_2$ es mayor. Sabiendo que $n_0=1,33$, ¿con qué ángulo, $\varepsilon_1$, debe incidir un rayo de luz en el punto A para que pasando por el punto B salga por el punto C, tal como muestra la figura? Razona todas las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Índice de refracción del núcleo ($n_1$):} $n_1 = 1,55$.
+    \item \textbf{Índice de refracción del recubrimiento ($n_2$):} Desconocido.
+    \item \textbf{Índice de refracción del medio exterior ($n_0$):} $n_0 = 1,33$.
+    \item \textbf{Fenómeno en B:} La luz se refleja en la interfase $n_1 \rightarrow n_2$ y sigue dentro del núcleo.
+    \item \textbf{Incógnitas:} Nombre del fenómeno, definición de ángulo límite, relación entre $n_1$ y $n_2$, valor del ángulo de entrada $\varepsilon_1$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La propia figura del enunciado es la representación gráfica del problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Fenómeno en B y Ángulo Límite}
+El fenómeno que permite guiar la luz dentro de una fibra óptica es la \textbf{Reflexión Total Interna}. Ocurre cuando la luz, viajando de un medio más denso a uno menos denso ($n_1 > n_2$), incide con un ángulo superior al \textbf{ángulo límite} ($\theta_L$). El ángulo límite es el ángulo de incidencia para el cual el ángulo de refracción es de 90°.
+
+\paragraph*{Cálculo del ángulo de entrada}
+Se aplica la \textbf{Ley de Snell} en el punto A (interfase $n_0 \rightarrow n_1$): $n_0 \sin(\varepsilon_1) = n_1 \sin(\theta_A)$, donde $\theta_A$ es el ángulo de refracción dentro de la fibra. La geometría de la trayectoria determina el valor de $\theta_A$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\begin{itemize}
+    \item \textbf{Relación de índices:} Para que haya reflexión total, $n_1 > n_2$.
+    \item \textbf{Geometría:} En el triángulo rectángulo que tiene como catetos la distancia horizontal $d$ y la distancia vertical $d/2$, el ángulo de refracción $\theta_A$ (medido con la normal) cumple: $\tan(\theta_A) = \frac{d/2}{d} = \frac{1}{2}$.
+    \item \textbf{Ley de Snell en A:} $n_0 \sin(\varepsilon_1) = n_1 \sin(\theta_A)$. Despejamos $\varepsilon_1$.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Fenómeno, ángulo límite y relación de índices}
+\medskip
+\begin{cajaresultado}
+    El fenómeno en B es la \textbf{Reflexión Total Interna}. El ángulo límite es el ángulo de incidencia mínimo en un medio más denso para que no haya refracción. Para que este fenómeno ocurra, debe cumplirse que $\boldsymbol{n_1 > n_2}$.
+\end{cajaresultado}
+\paragraph*{Cálculo de $\varepsilon_1$}
+Primero, a partir de la geometría, hallamos $\theta_A$:
+\begin{gather}
+    \tan(\theta_A) = 0,5 \implies \theta_A = \arctan(0,5) \approx 26,57^\circ
+\end{gather}
+Ahora, aplicamos la Ley de Snell en el punto A:
+\begin{gather}
+    1,33 \cdot \sin(\varepsilon_1) = 1,55 \cdot \sin(26,57^\circ) \nonumber \\[8pt]
+    \sin(\varepsilon_1) = \frac{1,55 \cdot 0,447}{1,33} \approx 0,521 \nonumber \\[8pt]
+    \varepsilon_1 = \arcsin(0,521) \approx 31,4^\circ
+\end{gather}
+\begin{cajaresultado}
+    El ángulo de incidencia debe ser $\boldsymbol{\varepsilon_1 \approx 31,4^\circ}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    El guiado de la luz se produce por \textbf{reflexión total interna}, lo que exige que el núcleo sea más denso que el recubrimiento ($n_1>n_2$). A partir de la geometría de la trayectoria, se deduce el ángulo de propagación dentro de la fibra y, aplicando la Ley de Snell en la entrada, se calcula que el ángulo de incidencia externo debe ser de $\mathbf{31,4^\circ}$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Física Cuántica}
+\label{sec:cuantica_2025_jun_res}
+% ----------------------------------------------------------------------
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2025_jun_res}
+
+\begin{cajaenunciado}
+En la gráfica adjunta se representa el potencial de frenado, $V_F$, de los electrones emitidos por un metal en función de la frecuencia, f, de la luz que incide sobre él. Nombra y explica el fenómeno. Sabiendo que la ecuación de la recta es $V_F = 4,12\cdot10^{-15}f - 4,5$, determina el valor de la constante de Planck y el de la frecuencia umbral.
+\textbf{Dato:} carga elemental, $q=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Fenómeno:} Emisión de electrones por un metal al incidir luz.
+    \item \textbf{Ecuación de la recta experimental:} $V_F = (4,12\cdot10^{-15})f - 4,5$ (en unidades del SI).
+    \item \textbf{Carga elemental ($e$):} $e=1,6\cdot10^{-19}\,\text{C}$.
+    \item \textbf{Incógnitas:} Nombre y explicación del fenómeno, constante de Planck ($h$), frecuencia umbral ($f_0$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La propia gráfica del enunciado es la representación del fenómeno.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Nombre y explicación del fenómeno}
+El fenómeno es el \textbf{Efecto Fotoeléctrico}. Consiste en la emisión de electrones (llamados fotoelectrones) por parte de un material, generalmente metálico, cuando es iluminado con una radiación electromagnética de frecuencia suficientemente alta. La explicación de Einstein postula que la luz está cuantizada en paquetes de energía llamados fotones. La energía de cada fotón es $E=hf$. Al incidir sobre el metal, un fotón cede toda su energía a un electrón. Esta energía se invierte en liberar al electrón del metal (trabajo de extracción, $W_0$) y el resto se convierte en su energía cinética máxima ($E_{c,max}$).
+$$ hf = W_0 + E_{c,max} $$
+El potencial de frenado $V_F$ es el potencial eléctrico que hay que aplicar para detener a los electrones más energéticos, por lo que $E_{c,max} = eV_F$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sustituyendo $E_{c,max}$ en la ecuación de Einstein:
+\begin{gather}
+    hf = W_0 + eV_F
+\end{gather}
+Despejando el potencial de frenado $V_F$, obtenemos la ecuación de una recta:
+\begin{gather}
+    V_F = \frac{h}{e}f - \frac{W_0}{e}
+\end{gather}
+Esta es la ecuación teórica que se corresponde con la recta experimental $V_F = m f + n$.
+Comparando ambas, podemos identificar:
+\begin{itemize}
+    \item La pendiente de la recta es $m = \frac{h}{e}$.
+    \item La ordenada en el origen es $n = -\frac{W_0}{e}$.
+\end{itemize}
+La \textbf{frecuencia umbral ($f_0$)} es la frecuencia para la cual $V_F=0$ (la energía del fotón es justo la necesaria para arrancar el electrón, sin sobrante para energía cinética). Se calcula igualando a cero la ecuación: $0 = \frac{h}{e}f_0 - \frac{W_0}{e} \implies hf_0 = W_0$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la constante de Planck ($h$)}
+De la comparación de la ecuación teórica y la experimental, la pendiente es $m = 4,12\cdot10^{-15}$ V/Hz.
+\begin{gather}
+    \frac{h}{e} = 4,12\cdot10^{-15} \implies h = (4,12\cdot10^{-15}) \cdot e = (4,12\cdot10^{-15}) \cdot (1,6\cdot10^{-19}) \nonumber \\[8pt]
+    h \approx 6,592 \cdot 10^{-34} \, \text{J}\cdot\text{s}
+\end{gather}
+\begin{cajaresultado}
+    El valor de la constante de Planck obtenido es $\boldsymbol{h \approx 6,59 \cdot 10^{-34} \, J \cdot s}$.
+\end{cajaresultado}
+
+\paragraph*{Cálculo de la frecuencia umbral ($f_0$)}
+La frecuencia umbral es el punto de corte de la recta con el eje de abscisas (donde $V_F=0$).
+\begin{gather}
+    0 = (4,12\cdot10^{-15})f_0 - 4,5 \implies f_0 = \frac{4,5}{4,12\cdot10^{-15}} \approx 1,09 \cdot 10^{15} \, \text{Hz}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia umbral del metal es $\boldsymbol{f_0 \approx 1,09 \cdot 10^{15} \, Hz}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    El fenómeno descrito es el \textbf{efecto fotoeléctrico}. A partir de la ecuación de la recta experimental que relaciona el potencial de frenado con la frecuencia, y comparándola con la ecuación teórica de Einstein, se deduce un valor para la constante de Planck de $\mathbf{6,59 \cdot 10^{-34} \, J \cdot s}$ y una frecuencia umbral para el metal de $\mathbf{1,09 \cdot 10^{15} \, Hz}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2025_jun_res}
+
+\begin{cajaenunciado}
+Un puntero láser emite luz monocromática de frecuencia $f=5,6\cdot10^{14}$ Hz con una potencia $P=5$ mW. ¿Cuál es la energía de un fotón? Calcula cuántos fotones emite el puntero en un minuto ¿Qué longitud de onda tiene la radiación emitida?
+\textbf{Datos:} velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$; constante de Planck, $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Frecuencia ($f$):} $f=5,6\cdot10^{14}$ Hz.
+    \item \textbf{Potencia ($P$):} $P=5 \text{ mW} = 5 \cdot 10^{-3}$ W (o J/s).
+    \item \textbf{Tiempo ($t$):} $t = 1 \text{ min} = 60$ s.
+    \item \textbf{Constantes:} $c=3\cdot10^{8}\,\text{m/s}$, $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Emisión de fotones por un láser} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de un puntero láser emitiendo un haz de luz. El haz está representado como una corriente de partículas (círculos pequeños) para simbolizar los fotones. Cada fotón está etiquetado con su energía, $E=hf$." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{laser_fotones.png}
+    }}
+    \caption{Un haz de luz como un flujo de fotones.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Energía de un fotón (Ecuación de Planck):} $E_{fotón} = hf$.
+    \item \textbf{Potencia y Energía:} La potencia es la energía emitida por unidad de tiempo, $P = E_{total}/t$. Por tanto, la energía total emitida en un tiempo $t$ es $E_{total} = P \cdot t$.
+    \item \textbf{Número de fotones ($N$):} La energía total es la suma de las energías de todos los fotones emitidos: $E_{total} = N \cdot E_{fotón}$.
+    \item \textbf{Relación onda-partícula:} La longitud de onda se relaciona con la frecuencia mediante $\lambda = c/f$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\begin{gather}
+    E_{fotón} = hf \\
+    N = \frac{E_{total}}{E_{fotón}} = \frac{P \cdot t}{hf} \\
+    \lambda = \frac{c}{f}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Energía de un fotón}
+\begin{gather}
+    E_{fotón} = (6,63\cdot10^{-34}) \cdot (5,6\cdot10^{14}) \approx 3,71 \cdot 10^{-19} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía de un fotón es $\boldsymbol{E_{fotón} \approx 3,71 \cdot 10^{-19} \, J}$.
+\end{cajaresultado}
+
+\paragraph*{Número de fotones en un minuto}
+\begin{gather}
+    N = \frac{(5 \cdot 10^{-3} \, \text{J/s}) \cdot (60 \, \text{s})}{3,71 \cdot 10^{-19} \, \text{J/fotón}} \approx 8,08 \cdot 10^{17} \, \text{fotones}
+\end{gather}
+\begin{cajaresultado}
+    El puntero emite aproximadamente $\boldsymbol{8,08 \cdot 10^{17}}$ fotones en un minuto.
+\end{cajaresultado}
+
+\paragraph*{Longitud de onda}
+\begin{gather}
+    \lambda = \frac{3\cdot10^8}{5,6\cdot10^{14}} \approx 5,36 \cdot 10^{-7} \, \text{m} = 536 \, \text{nm}
+\end{gather}
+\begin{cajaresultado}
+    La longitud de onda de la radiación es $\boldsymbol{\lambda \approx 536 \, nm}$ (luz verde).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Cada fotón de la luz emitida por el láser tiene una energía de $\mathbf{3,71 \cdot 10^{-19} \, J}$. Dada la potencia del láser, en un minuto se emite un total de $\mathbf{8,08 \cdot 10^{17}}$ fotones. La frecuencia de la luz corresponde a una longitud de onda de $\mathbf{536 \, nm}$, que se encuentra en la región verde del espectro visible.
+\end{cajaconclusion}
+
+\newpage

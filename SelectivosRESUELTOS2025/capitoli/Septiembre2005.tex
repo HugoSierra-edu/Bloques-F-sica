@@ -1,0 +1,900 @@
+% !TEX root = ../main.tex
+% ======================================================================
+% CAPÍTULO: Examen Septiembre 2005 - Comunidad Valenciana
+% ======================================================================
+\chapter{Examen Septiembre 2005 - Comunidad Valenciana}
+\label{chap:2005_sep_cv}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2005_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:1A_2005_sep_cv}
+
+\begin{cajaenunciado}
+Un objeto de masa $m=1000\,\text{kg}$ se acerca en dirección radial a un planeta, de radio $R_{P}=6000\,\text{km}$, que tiene una gravedad $g=10\,\text{m/s}^2$ en su superficie. Cuando se observa este objeto por primera vez se encuentra a una distancia $R_{O}=6 R_{P}$ del centro del planeta. Se pide:
+\begin{enumerate}
+    \item[1.] ¿Qué energía potencial tiene ese objeto cuando se encuentra a la distancia $R_{o}$? (0,8 puntos)
+    \item[2.] Determina la velocidad inicial del objeto $v_{0}$, o sea cuando está a la distancia $R_{O}$, sabiendo que llega a la superficie del planeta con una velocidad $v=12\,\text{km/s}$. (1,2 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del objeto ($m$):} $m = 1000 \, \text{kg}$
+    \item \textbf{Radio del planeta ($R_P$):} $R_P = 6000 \text{ km} = 6 \cdot 10^6 \text{ m}$
+    \item \textbf{Gravedad superficial del planeta ($g$):} $g = 10 \text{ m/s}^2$
+    \item \textbf{Distancia inicial ($r_0$):} $r_0 = 6 R_P = 6 \cdot (6 \cdot 10^6 \text{ m}) = 3,6 \cdot 10^7 \text{ m}$
+    \item \textbf{Velocidad final en superficie ($v_f$):} $v_f = 12 \text{ km/s} = 1,2 \cdot 10^4 \text{ m/s}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Energía potencial inicial ($E_{p0}$).
+        \item Velocidad inicial ($v_0$).
+    \end{itemize}
+    \item \textbf{Cálculo auxiliar (Masa del Planeta, $M_P$):} A partir de la gravedad en superficie, $g = G \frac{M_P}{R_P^2}$, podemos obtener el producto $G M_P = g R_P^2$, que es útil para los cálculos.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Aproximación de un objeto a un planeta} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico en el centro. Un objeto se muestra en dos posiciones a lo largo de una línea radial que se acerca al planeta. La posición inicial está a una distancia $r_0 = 6R_P$ del centro, con un vector de velocidad inicial $v_0$ apuntando hacia el planeta. La posición final está en la superficie del planeta (distancia $R_P$ del centro), con un vector de velocidad final $v_f$ más grande, también apuntando hacia el planeta." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{acercamiento_planeta.png}
+    }}
+    \caption{Esquema de la trayectoria radial del objeto hacia el planeta.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1. Energía Potencial Gravitatoria}
+La energía potencial gravitatoria de un objeto de masa $m$ a una distancia $r$ del centro de un planeta de masa $M_P$ se define como $E_p = -G \frac{M_P m}{r}$, tomando el origen de potenciales ($E_p=0$) en el infinito.
+
+\paragraph*{2. Conservación de la Energía Mecánica}
+El campo gravitatorio es un campo conservativo. En ausencia de fuerzas no conservativas (como el rozamiento), la energía mecánica total del objeto ($E_M = E_c + E_p$) se conserva a lo largo de su trayectoria. Por lo tanto, la energía mecánica en la posición inicial ($r_0$) es igual a la energía mecánica en la posición final (superficie, $R_P$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Energía Potencial Inicial ($E_{p0}$)}
+La expresión es $E_{p0} = -G \frac{M_P m}{r_0}$. Para evitar calcular $M_P$ y $G$ por separado, usamos la relación $G M_P = g R_P^2$.
+\begin{gather}
+    E_{p0} = - \frac{(g R_P^2) m}{r_0} = - \frac{g R_P^2 m}{6 R_P} = - \frac{g R_P m}{6}
+\end{gather}
+\paragraph*{2. Velocidad Inicial ($v_0$)}
+Aplicamos la conservación de la energía mecánica: $E_{M, \text{inicial}} = E_{M, \text{final}}$.
+\begin{gather}
+    E_{c0} + E_{p0} = E_{cf} + E_{pf} \nonumber \\[8pt]
+    \frac{1}{2} m v_0^2 - G \frac{M_P m}{r_0} = \frac{1}{2} m v_f^2 - G \frac{M_P m}{R_P} \nonumber \\[8pt]
+    \frac{1}{2} v_0^2 - \frac{G M_P}{r_0} = \frac{1}{2} v_f^2 - \frac{G M_P}{R_P} \nonumber \\[8pt]
+    v_0 = \sqrt{v_f^2 + 2 G M_P \left( \frac{1}{r_0} - \frac{1}{R_P} \right)} = \sqrt{v_f^2 + 2 g R_P^2 \left( \frac{1}{6R_P} - \frac{1}{R_P} \right)}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Valor de la Energía Potencial Inicial}
+\begin{gather}
+    E_{p0} = - \frac{(10 \, \text{m/s}^2) (6 \cdot 10^6 \, \text{m}) (1000 \, \text{kg})}{6} = -1 \cdot 10^{10} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía potencial del objeto en la posición inicial es $\boldsymbol{E_{p0} = -1 \cdot 10^{10} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph*{2. Valor de la Velocidad Inicial}
+Primero, calculamos el término de la derecha:
+$2 g R_P^2 \left( \frac{1}{6R_P} - \frac{1}{R_P} \right) = 2 g R_P \left( \frac{1}{6} - 1 \right) = 2 g R_P \left( -\frac{5}{6} \right) = -\frac{5}{3} g R_P$
+\begin{gather}
+    v_0 = \sqrt{(1,2 \cdot 10^4)^2 - \frac{5}{3} (10) (6 \cdot 10^6)} = \sqrt{1,44 \cdot 10^8 - 1 \cdot 10^8} = \sqrt{0,44 \cdot 10^8} \nonumber \\[8pt]
+    v_0 \approx 6633,25 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad inicial del objeto era $\boldsymbol{v_0 \approx 6633,25 \, \textbf{m/s}}$ (o 6,63 km/s).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    La energía potencial del objeto a una distancia de seis radios planetarios es de $\mathbf{-1 \cdot 10^{10} \, J}$. Aplicando el principio de conservación de la energía mecánica, y conociendo su velocidad de impacto en la superficie, se deduce que su velocidad inicial en el punto de observación era de $\mathbf{6,63 \, km/s}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:1B_2005_sep_cv}
+
+\begin{cajaenunciado}
+Dos partículas puntuales con la misma masa $m_1=m_2=100\,\text{kg}$ se encuentran situadas en los puntos (0,0) m y (2,0) m, respectivamente. Se pide:
+\begin{enumerate}
+    \item[1.] ¿Qué valor tiene el potencial gravitatorio en el punto (1,0) m? Tómese el origen de potenciales en el infinito. Calcula el campo gravitatorio, módulo, dirección y sentido, que generan esas dos masas en el punto (1,0) m. (1 punto)
+    \item[2.] Si la masa $m_2$ se dejara en libertad, la fuerza gravitatoria haría que se acercara a la masa $m_1$. Si no actúa ninguna otra fuerza, ¿qué velocidad tendrá cuando esté a una distancia de 30 cm de $m_1$? (1 punto)
+\end{enumerate}
+\textbf{Dato:} $G=6,7\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Constante de Gravitación ($G$):} $G=6,7\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$
+    \item \textbf{Masa 1 ($m_1$):} $m_1 = 100 \, \text{kg}$ en $P_1(0,0)$ m.
+    \item \textbf{Masa 2 ($m_2$):} $m_2 = 100 \, \text{kg}$ en $P_2(2,0)$ m.
+    \item \textbf{Punto de cálculo ($P_c$):} $P_c(1,0)$ m.
+    \item \textbf{Distancia inicial ($r_i$):} $r_i = 2$ m (distancia entre $m_1$ y $m_2$).
+    \item \textbf{Distancia final ($r_f$):} $r_f = 30 \text{ cm} = 0,3$ m.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Potencial $V$ y campo $\vec{g}$ en $P_c$.
+        \item Velocidad final $v_f$ de la masa $m_2$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado 1: Campo y Potencial} \vspace{0.5cm} \textit{Prompt para la imagen:} "Eje de coordenadas X. Se sitúa la masa $m_1$ en el origen (0,0) y la masa $m_2$ en (2,0). En el punto medio $P_c(1,0)$, se dibujan dos vectores de campo gravitatorio: $\vec{g}_1$ apuntando hacia la izquierda (hacia $m_1$) y $\vec{g}_2$ apuntando hacia la derecha (hacia $m_2$). Los vectores son de igual módulo y se cancelan." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_potencial_2masas.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado 2: Conservación Energía} \vspace{0.5cm} \textit{Prompt para la imagen:} "Eje X. La masa $m_1$ está fija en el origen. La masa $m_2$ se muestra en dos posiciones: una inicial en $x=2$ m con $v_i=0$, y una final en $x=0.3$ m con un vector de velocidad $v_f$ apuntando hacia la izquierda." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{conservacion_energia_2masas.png}
+    }}
+    \caption{Esquemas para los dos apartados del problema.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1. Potencial y Campo Gravitatorio}
+Se aplica el \textbf{Principio de Superposición}. El potencial total en un punto es la suma escalar de los potenciales creados por cada masa. El campo total es la suma vectorial de los campos creados por cada masa.
+$V = V_1 + V_2 = -G\frac{m_1}{r_1} - G\frac{m_2}{r_2}$.
+$\vec{g} = \vec{g}_1 + \vec{g}_2$.
+
+\paragraph*{2. Velocidad por Conservación de Energía}
+Como la fuerza gravitatoria es conservativa, la energía mecánica del sistema de dos partículas se conserva. La energía inicial (solo potencial, ya que $m_2$ parte del reposo) es igual a la energía final (potencial + cinética).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Potencial y Campo en $P_c(1,0)$}
+Las distancias de $m_1$ y $m_2$ a $P_c$ son $r_1 = 1$ m y $r_2 = 1$ m.
+\begin{gather}
+    V(P_c) = -G\frac{m_1}{r_1} - G\frac{m_2}{r_2} \\
+    \vec{g}_1(P_c) = -G\frac{m_1}{r_1^2} \vec{i} \quad ; \quad \vec{g}_2(P_c) = +G\frac{m_2}{r_2^2} \vec{i} \nonumber \\[8pt]
+    \vec{g}(P_c) = \vec{g}_1 + \vec{g}_2
+\end{gather}
+\paragraph*{2. Velocidad de $m_2$}
+$E_{M, \text{inicial}} = E_{M, \text{final}}$
+\begin{gather}
+    E_{p,i} + E_{c,i} = E_{p,f} + E_{c,f} \nonumber \\[8pt]
+    -G\frac{m_1 m_2}{r_i} + 0 = -G\frac{m_1 m_2}{r_f} + \frac{1}{2} m_2 v_f^2 \nonumber \\[8pt]
+    v_f = \sqrt{2 G m_1 \left(\frac{1}{r_f} - \frac{1}{r_i}\right)}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Potencial y Campo}
+\begin{gather}
+    V(P_c) = -(6,7\cdot10^{-11}) \left( \frac{100}{1} + \frac{100}{1} \right) = -1,34 \cdot 10^{-8} \, \text{J/kg}
+\end{gather}
+\begin{cajaresultado}
+    El potencial gravitatorio en el punto (1,0) m es $\boldsymbol{V = -1,34 \cdot 10^{-8} \, \textbf{J/kg}}$.
+\end{cajaresultado}
+\medskip
+Como $m_1=m_2$ y $r_1=r_2$, los módulos de los campos son iguales, $|\vec{g}_1| = |\vec{g}_2|$, pero de sentidos opuestos.
+\begin{gather}
+    \vec{g}(P_c) = -G\frac{100}{1^2}\vec{i} + G\frac{100}{1^2}\vec{i} = 0
+\end{gather}
+\begin{cajaresultado}
+    El campo gravitatorio en el punto (1,0) m es $\boldsymbol{\vec{g} = 0 \, \textbf{N/kg}}$.
+\end{cajaresultado}
+
+\paragraph*{2. Velocidad de $m_2$}
+\begin{gather}
+    v_f = \sqrt{2 (6,7\cdot10^{-11})(100) \left(\frac{1}{0,3} - \frac{1}{2}\right)} \approx \sqrt{3,79 \cdot 10^{-8}} \nonumber \\[8pt]
+    v_f \approx 1,95 \cdot 10^{-4} \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de la masa $m_2$ será de $\boldsymbol{v_f \approx 1,95 \cdot 10^{-4} \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    1. Por superposición, el potencial en el punto medio es de $\mathbf{-1,34 \cdot 10^{-8} \, J/kg}$. Debido a la simetría, los campos creados por ambas masas se anulan mutuamente, resultando en un campo neto de $\mathbf{0 \, N/kg}$.
+    2. Por conservación de la energía mecánica, la energía potencial gravitatoria perdida por el sistema al acercarse las masas se convierte en energía cinética para la masa $m_2$, alcanzando una velocidad de $\mathbf{1,95 \cdot 10^{-4} \, m/s}$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Movimiento Ondulatorio y Armónico}
+\label{sec:mas_2005_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:2A_2005_sep_cv}
+
+\begin{cajaenunciado}
+Un cuerpo oscila con movimiento armónico simple cuya amplitud y período son, respectivamente, 10 cm y 4 s. En el instante inicial, $t=0\,\text{s}$, la elongación vale 10 cm. Determina la elongación en el instante $t=1\,\text{s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 10 \text{ cm} = 0,1 \text{ m}$
+    \item \textbf{Período ($T$):} $T = 4 \text{ s}$
+    \item \textbf{Condición inicial:} En $t=0$, la elongación $x(0) = 10 \text{ cm} = A$.
+    \item \textbf{Pulsación o frecuencia angular ($\omega$):} $\omega = \frac{2\pi}{T} = \frac{2\pi}{4} = \frac{\pi}{2} \text{ rad/s}$.
+    \item \textbf{Incógnita:} Elongación en $t=1$ s, $x(1)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Gráfica de Elongación vs. Tiempo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Gráfica de una función coseno. El eje vertical es la elongación 'x (m)' y va de -0.1 a +0.1. El eje horizontal es el tiempo 't (s)'. La curva empieza en su máximo valor, $x=0.1$ m, en $t=0$. El período de la oscilación es de 4 segundos, por lo que la curva completa un ciclo en $t=4$. Marcar el punto en la curva correspondiente a $t=1$ s y mostrar que su valor en el eje x es 0." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{mas_coseno.png}
+    }}
+    \caption{Representación del M.A.S. descrito.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación general de un Movimiento Armónico Simple (M.A.S.) es:
+$$ x(t) = A \cos(\omega t + \phi_0) $$
+donde $A$ es la amplitud, $\omega$ la pulsación y $\phi_0$ la fase inicial. La fase inicial se determina a partir de las condiciones iniciales del movimiento.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Primero, determinamos la fase inicial $\phi_0$ usando la condición $x(0)=A$.
+\begin{gather}
+    x(0) = A \cos(\omega \cdot 0 + \phi_0) = A \cos(\phi_0) \nonumber \\[8pt]
+    A = A \cos(\phi_0) \implies \cos(\phi_0) = 1 \implies \phi_0 = 0 \text{ rad}
+\end{gather}
+Por lo tanto, la ecuación de movimiento para este oscilador es:
+\begin{gather}
+    x(t) = A \cos(\omega t)
+\end{gather}
+Ahora, podemos usar esta ecuación para encontrar la elongación en cualquier instante $t$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores de $A$, $\omega$ y $t=1$ s en la ecuación de movimiento:
+\begin{gather}
+    x(1) = (0,1 \, \text{m}) \cdot \cos\left(\frac{\pi}{2} \frac{\text{rad}}{\text{s}} \cdot 1 \, \text{s}\right) = 0,1 \cdot \cos\left(\frac{\pi}{2}\right) \nonumber \\[8pt]
+    x(1) = 0,1 \cdot 0 = 0 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La elongación en el instante $t=1\,\text{s}$ es $\boldsymbol{x(1) = 0 \, \textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Dado que el movimiento se inicia en el punto de máxima elongación, la fase inicial es nula y el movimiento se describe por una función coseno. Al cabo de 1 segundo, que es exactamente un cuarto del período total (4 s), el cuerpo habrá completado un cuarto de oscilación y se encontrará en la \textbf{posición de equilibrio}, por lo que su elongación es cero.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:2B_2005_sep_cv}
+
+\begin{cajaenunciado}
+La gráfica adjunta muestra la energía potencial de un sistema provisto de un movimiento armónico simple de amplitud 9 cm, en función de su desplazamiento x respecto de la posición de equilibrio. Calcula la energía cinética del sistema para la posición de equilibrio $x=0$ cm. Calcula la energía total del sistema para la posición $x=2$ cm.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de movimiento:} Movimiento Armónico Simple (M.A.S.).
+    \item \textbf{Amplitud ($A$):} $A = 9 \text{ cm} = 0,09$ m.
+    \item \textbf{Gráfica:} Muestra $E_p$ en función de $x$. De la gráfica se extrae:
+        \begin{itemize}
+            \item En $x=0$, la energía potencial es $E_p(0) = 0$ J.
+            \item En la máxima elongación ($x = \pm A = \pm 9$ cm), la energía potencial es máxima, $E_{p,max} = 0,05$ J.
+        \end{itemize}
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Energía cinética en $x=0$, $E_c(0)$.
+        \item Energía total en $x=2$ cm, $E_T(2 \text{ cm})$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La propia gráfica del enunciado sirve como representación. Adicionalmente, se puede superponer la energía cinética y total.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Energías en un M.A.S.} \vspace{0.5cm} \textit{Prompt para la imagen:} "Gráfica de energía vs. desplazamiento. El eje X es 'x (cm)' de -9 a 9. El eje Y es 'Energía (J)'. Dibujar una parábola cóncava hacia arriba para la Energía Potencial ($E_p$), que va de 0.05 J en x=-9, a 0 J en x=0, y de vuelta a 0.05 J en x=9. Dibujar una parábola invertida para la Energía Cinética ($E_c$), que va de 0 J en x=-9, a 0.05 J en x=0, y de vuelta a 0 J en x=9. Dibujar una línea recta horizontal en Y=0.05 J para la Energía Total ($E_T$)." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{energias_mas.png}
+    }}
+    \caption{Gráfica de las energías potencial, cinética y total en un M.A.S.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En un M.A.S., la \textbf{Energía Mecánica Total ($E_T$)} es constante si no hay rozamiento. Es la suma de la energía cinética ($E_c$) y la potencial ($E_p$).
+$$ E_T = E_c + E_p = \text{constante} $$
+\begin{itemize}
+    \item La energía total se puede calcular en cualquier punto. Es más fácil en los extremos ($x=\pm A$), donde la velocidad es nula ($E_c=0$) y la energía potencial es máxima. Por tanto, $E_T = E_{p,max}$.
+    \item En la posición de equilibrio ($x=0$), la energía potencial es nula ($E_p=0$) y la energía cinética es máxima. Por tanto, $E_T = E_{c,max}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Energía Total}
+A partir de la gráfica, en $x=A=9$ cm, la energía potencial es máxima y la cinética es cero.
+\begin{gather}
+    E_T = E_c(A) + E_p(A) = 0 + E_{p,max}
+\end{gather}
+\paragraph*{Energía Cinética en $x=0$}
+En el punto de equilibrio, $E_p(0)=0$. Por conservación de la energía:
+\begin{gather}
+    E_T = E_c(0) + E_p(0) = E_c(0) + 0 \implies E_c(0) = E_T
+\end{gather}
+\paragraph*{Energía Total en $x=2$ cm}
+La energía mecánica total es constante en cualquier punto de la trayectoria.
+\begin{gather}
+    E_T(x=2\text{ cm}) = E_T(\text{en cualquier otro punto})
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la Energía Total}
+De la gráfica, para $x=9$ cm, $E_p = 0,05$ J.
+\begin{gather}
+    E_T = E_{p,max} = 0,05 \, \text{J}
+\end{gather}
+\paragraph*{Cálculo de la Energía Cinética en $x=0$}
+\begin{gather}
+    E_c(0) = E_T = 0,05 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía cinética del sistema para la posición de equilibrio es $\boldsymbol{E_c(0) = 0,05 \, \textbf{J}}$.
+\end{cajaresultado}
+\paragraph*{Cálculo de la Energía Total en $x=2$ cm}
+Como la energía total se conserva, su valor es el mismo en toda la oscilación.
+\begin{cajaresultado}
+    La energía total del sistema para la posición $x=2$ cm es $\boldsymbol{E_T = 0,05 \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    La energía total del sistema corresponde a la energía potencial máxima leída de la gráfica en el punto de amplitud, siendo de $\mathbf{0,05 \, J}$. Por el principio de conservación de la energía, este valor es constante durante toda la oscilación. En el punto de equilibrio ($x=0$), toda esta energía total se encuentra en forma de energía cinética, por lo que la energía cinética es también de $\mathbf{0,05 \, J}$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Óptica Geométrica}
+\label{sec:optica_2005_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 2 - OPCIÓN A}
+\label{subsec:3A_2005_sep_cv}
+
+\begin{cajaenunciado}
+Un rayo de luz incide perpendicularmente sobre una superficie que separa dos medios con índice de refracción $n_1$ y $n_2$. Determina la dirección del rayo refractado.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Condición de incidencia:} El rayo incide perpendicularmente a la superficie de separación (interfase).
+    \item \textbf{Ángulo de incidencia ($\theta_1$):} Los ángulos en óptica geométrica se miden con respecto a la recta normal a la superficie. Si el rayo es perpendicular a la superficie, es paralelo a la normal. Por lo tanto, el ángulo de incidencia es $\theta_1 = 0^\circ$.
+    \item \textbf{Índices de refracción:} $n_1$ (medio 1) y $n_2$ (medio 2).
+    \item \textbf{Incógnita:} Dirección del rayo refractado, es decir, el ángulo de refracción ($\theta_2$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Incidencia Perpendicular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de refracción. Una línea horizontal representa la interfase entre dos medios, etiquetados como 'Medio 1 ($n_1$)' arriba y 'Medio 2 ($n_2$)' abajo. Una línea de puntos vertical, la 'Normal', cruza la interfase. Un rayo de luz, el 'Rayo Incidente', viaja verticalmente hacia abajo, coincidiendo con la línea Normal. Después de cruzar la interfase, el 'Rayo Refractado' continúa viajando verticalmente hacia abajo sin ninguna desviación." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{incidencia_normal.png}
+    }}
+    \caption{Un rayo que incide perpendicularmente a la superficie no se desvía.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La relación entre los ángulos de incidencia y refracción viene dada por la \textbf{Ley de Snell de la Refracción}:
+$$ n_1 \sin(\theta_1) = n_2 \sin(\theta_2) $$
+Esta ley describe cómo cambia la dirección de un rayo de luz al pasar de un medio a otro con diferente índice de refracción.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sustituimos el valor del ángulo de incidencia, $\theta_1 = 0^\circ$, en la Ley de Snell:
+\begin{gather}
+    n_1 \sin(0^\circ) = n_2 \sin(\theta_2)
+\end{gather}
+Como $\sin(0^\circ) = 0$, la ecuación se simplifica:
+\begin{gather}
+    n_1 \cdot 0 = n_2 \sin(\theta_2) \implies 0 = n_2 \sin(\theta_2)
+\end{gather}
+Dado que el índice de refracción $n_2$ es, por definición, distinto de cero ($n_2 \ge 1$), la única posibilidad para que el producto sea cero es que $\sin(\theta_2) = 0$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Resolvemos la ecuación para $\theta_2$:
+\begin{gather}
+    \sin(\theta_2) = 0 \implies \theta_2 = \arcsin(0) = 0^\circ
+\end{gather}
+\begin{cajaresultado}
+    El ángulo de refracción es $\boldsymbol{\theta_2 = 0^\circ}$. Esto significa que el rayo refractado tiene la misma dirección que el rayo incidente.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Aplicando la Ley de Snell, se demuestra que si un rayo de luz incide perpendicularmente sobre la superficie que separa dos medios (es decir, con un ángulo de incidencia de 0° respecto a la normal), el ángulo de refracción también es de 0°. Por lo tanto, \textbf{el rayo no se desvía y continúa su propagación en la misma dirección y sentido}.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:3B_2005_sep_cv}
+
+\begin{cajaenunciado}
+¿Dónde se forma la imagen de un objeto situado a 20 cm de una lente de focal $f=10$ cm? Usa el método gráfico y el método analítico.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Focal positiva ($f'=+10$ cm), por lo tanto es una \textbf{lente convergente}.
+    \item \textbf{Distancia focal imagen ($f'$):} $f' = +10$ cm.
+    \item \textbf{Distancia objeto ($s$):} El objeto está a 20 cm. Según el criterio DIN, $s = -20$ cm.
+    \item \textbf{Incógnita:} Posición de la imagen ($s'$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica (Método Gráfico)}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Trazado de Rayos para Lente Convergente} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente convergente. El eje óptico es horizontal. La lente se sitúa en el origen. El foco objeto F está en x=-10 cm y el foco imagen F' en x=+10 cm. Un objeto (flecha vertical hacia arriba) se coloca en x=-20 cm (en -2F). Se dibujan tres rayos notables desde la punta del objeto:
+    1. Un rayo paralelo al eje que, tras refractarse, pasa por el foco imagen F'.
+    2. Un rayo que pasa por el centro óptico y no se desvía.
+    3. Un rayo que pasa por el foco objeto F y, tras refractarse, sale paralelo al eje.
+    Los tres rayos convergen en un punto para formar una imagen (flecha vertical hacia abajo) en x=+20 cm (en 2F'). La imagen es real, invertida y de igual tamaño que el objeto." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_convergente_2f.png}
+    }}
+    \caption{Método gráfico para determinar la posición de la imagen.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos (Método Analítico)}
+Se utiliza la \textbf{Ecuación Fundamental de las Lentes Delgadas} (ecuación de Gauss):
+$$ \frac{1}{s'} - \frac{1}{s} = \frac{1}{f'} $$
+donde $s$ es la distancia objeto, $s'$ es la distancia imagen y $f'$ es la distancia focal imagen.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Despejamos el término de la distancia imagen ($1/s'$) de la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{f'} + \frac{1}{s}
+\end{gather}
+Esta ecuación nos permitirá calcular $s'$ directamente.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores dados en la ecuación:
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{10 \, \text{cm}} + \frac{1}{-20 \, \text{cm}} = \frac{1}{10} - \frac{1}{20} \nonumber \\[8pt]
+    \frac{1}{s'} = \frac{2 - 1}{20} = \frac{1}{20} \nonumber \\[8pt]
+    s' = 20 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    La imagen se forma a $\boldsymbol{s' = +20 \, \textbf{cm}}$ de la lente.
+\end{cajaresultado}
+Como $s' > 0$, la imagen es \textbf{real} (se forma a la derecha de la lente). El aumento lateral es $A = s'/s = 20/(-20) = -1$, lo que indica que la imagen es \textbf{invertida} y de \textbf{igual tamaño} que el objeto.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Tanto el método gráfico (trazado de rayos) como el método analítico (ecuación de las lentes delgadas) coinciden. Al situar un objeto a una distancia del doble de la focal ($s=-2f'$) de una lente convergente, la imagen se forma al otro lado de la lente, también a una distancia del doble de la focal ($s'=+2f'$). La imagen es, por tanto, \textbf{real, invertida y de igual tamaño}, y se localiza a \textbf{20 cm} de la lente.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Campo Eléctrico y Magnético}
+\label{sec:em_2005_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 2 - OPCIÓN A}
+\label{subsec:4A_2005_sep_cv}
+
+\begin{cajaenunciado}
+Disponemos de un campo eléctrico uniforme $\vec{E}=-100\vec{k}\,\text{N/C}$.
+\begin{enumerate}
+    \item[1.] Indica cómo son las superficies equipotenciales de este campo. (0,5 puntos)
+    \item[2.] Calcula el trabajo que realiza el campo eléctrico para llevar una carga $q=-5\,\mu\text{C}$ desde el punto $P_1(1,3,2)\,\text{m}$ hasta el punto $P_2(2,0,4)\,\text{m}$. (1 punto)
+    \item[3.] Si liberamos la carga $q$ en el punto $P_2$ y la única fuerza que actúa es la del campo eléctrico, ¿en qué dirección y sentido se moverá? (0,5 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo eléctrico ($\vec{E}$):} $\vec{E} = (0, 0, -100) \, \text{N/C}$. Es uniforme y apunta en el sentido negativo del eje Z.
+    \item \textbf{Carga ($q$):} $q = -5 \, \mu\text{C} = -5 \cdot 10^{-6} \, \text{C}$.
+    \item \textbf{Punto inicial ($P_1$):} $P_1(1, 3, 2)$ m.
+    \item \textbf{Punto final ($P_2$):} $P_2(2, 0, 4)$ m.
+    \item \textbf{Vector desplazamiento ($\Delta\vec{r}$):} $\Delta\vec{r} = \vec{r_2} - \vec{r_1} = (2-1, 0-3, 4-2) = (1, -3, 2)$ m.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo Eléctrico Uniforme y Superficies Equipotenciales} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas 3D (X, Y, Z). Se dibujan varias flechas paralelas apuntando hacia abajo, en la dirección negativa del eje Z, para representar el campo eléctrico uniforme $\vec{E}$. Se dibujan varios planos horizontales, paralelos al plano XY, para representar las superficies equipotenciales. Estos planos son perpendiculares a los vectores del campo eléctrico. Se marcan los puntos $P_1(1,3,2)$ y $P_2(2,0,4)$ y se dibuja un vector de desplazamiento entre ellos." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_uniforme.png}
+    }}
+    \caption{Representación del campo, las superficies equipotenciales y los puntos del problema.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1. Superficies Equipotenciales}
+Una superficie equipotencial es el lugar geométrico de los puntos del espacio que tienen el mismo potencial eléctrico. En un campo eléctrico uniforme, las líneas de campo son paralelas y las superficies equipotenciales son siempre \textbf{perpendiculares} a las líneas de campo.
+
+\paragraph*{2. Trabajo realizado por el Campo Eléctrico}
+El trabajo realizado por un campo eléctrico uniforme $\vec{E}$ para mover una carga $q$ a lo largo de un desplazamiento $\Delta\vec{r}$ se calcula como:
+$$ W_{\vec{E}} = \vec{F}_e \cdot \Delta\vec{r} = (q\vec{E}) \cdot \Delta\vec{r} $$
+Alternativamente, se puede usar la diferencia de potencial: $W_{\vec{E}} = -q \Delta V = -q (V_2 - V_1)$. Para un campo uniforme, $\Delta V = -\vec{E} \cdot \Delta\vec{r}$.
+
+\paragraph*{3. Fuerza sobre una carga}
+La fuerza eléctrica $\vec{F}_e$ que un campo $\vec{E}$ ejerce sobre una carga $q$ es $\vec{F}_e = q\vec{E}$. La dirección y sentido del movimiento inicial (si parte del reposo) será la de esta fuerza.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Superficies Equipotenciales}
+Como $\vec{E}$ es paralelo al eje Z, las superficies perpendiculares a él son planos paralelos al plano XY. Su ecuación es $z = \text{constante}$.
+
+\paragraph*{2. Trabajo}
+\begin{gather}
+    W_{\vec{E}} = q (\vec{E} \cdot \Delta\vec{r})
+\end{gather}
+\paragraph*{3. Fuerza y Movimiento}
+\begin{gather}
+    \vec{F}_e = q\vec{E}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Descripción de las Superficies Equipotenciales}
+\begin{cajaresultado}
+    Las superficies equipotenciales son \textbf{planos infinitos paralelos al plano XY} (ecuación $z=k$), y por tanto, perpendiculares al vector campo eléctrico $\vec{E}$.
+\end{cajaresultado}
+
+\paragraph*{2. Cálculo del Trabajo}
+\begin{gather}
+    W_{\vec{E}} = (-5 \cdot 10^{-6} \, \text{C}) \cdot \left( (0, 0, -100 \, \text{N/C}) \cdot (1, -3, 2 \, \text{m}) \right) \nonumber \\[8pt]
+    W_{\vec{E}} = (-5 \cdot 10^{-6}) \cdot (0 \cdot 1 + 0 \cdot (-3) + (-100) \cdot 2) \nonumber \\[8pt]
+    W_{\vec{E}} = (-5 \cdot 10^{-6}) \cdot (-200) = 1 \cdot 10^{-3} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo realizado por el campo eléctrico es $\boldsymbol{W_{\vec{E}} = 10^{-3} \, \textbf{J}}$ (o 1 mJ).
+\end{cajaresultado}
+
+\paragraph*{3. Dirección y Sentido del Movimiento}
+\begin{gather}
+    \vec{F}_e = q\vec{E} = (-5 \cdot 10^{-6} \, \text{C}) \cdot (0, 0, -100 \, \text{N/C}) = (0, 0, +5 \cdot 10^{-4} \, \text{N}) = 5 \cdot 10^{-4} \vec{k} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza tiene la dirección del \textbf{eje Z} y el \textbf{sentido positivo}. Por lo tanto, la carga se moverá en esa dirección y sentido.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    1. Las superficies equipotenciales son planos de la forma $z=k$.
+    2. El trabajo realizado por el campo es positivo, de $\mathbf{1 \, mJ}$, lo que indica que el desplazamiento es a favor del campo para una carga negativa (hacia potenciales mayores).
+    3. Al ser una carga negativa, experimenta una fuerza opuesta al campo eléctrico, por lo que se moverá en la \textbf{dirección del eje Z y sentido positivo}.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 2 - OPCIÓN B}
+\label{subsec:4B_2005_sep_cv}
+
+\begin{cajaenunciado}
+Una partícula de $3,2\cdot10^{-27}\,\text{kg}$ de masa y carga positiva, pero de valor desconocido, es acelerada por una diferencia de potencial de $10^4\,\text{V}$. Seguidamente, penetra en una región donde existe un campo magnético uniforme de 0,2 T perpendicular al movimiento de la partícula. Si la partícula describe una trayectoria circular de 10 cm de radio, calcula:
+\begin{enumerate}
+    \item[1.] La carga de la partícula y el módulo de su velocidad. (1,4 puntos)
+    \item[2.] El módulo de la fuerza magnética que actúa sobre la partícula. (0,6 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la partícula ($m$):} $m = 3,2\cdot10^{-27} \, \text{kg}$
+    \item \textbf{Carga de la partícula ($q$):} Positiva, valor desconocido.
+    \item \textbf{Diferencia de potencial ($\Delta V$):} $\Delta V = 10^4 \, \text{V}$
+    \item \textbf{Campo magnético ($B$):} $B = 0,2 \, \text{T}$
+    \item \textbf{Radio de la trayectoria ($R$):} $R = 10 \text{ cm} = 0,1$ m
+    \item \textbf{Incógnitas:} Carga $q$, velocidad $v$, fuerza magnética $F_m$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Selector de velocidades y trayectoria circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama en dos partes. A la izquierda, una región con un campo eléctrico (placas de un condensador) que acelera una partícula positiva desde el reposo. A la derecha, una región con un campo magnético uniforme $\vec{B}$ entrando en el papel (representado por cruces). La partícula entra en esta región con una velocidad $\vec{v}$ horizontal. Se dibuja la trayectoria circular que sigue la partícula. En un punto de la trayectoria, se muestra el vector velocidad $\vec{v}$ (tangente), el vector de fuerza magnética $\vec{F}_m$ (apuntando hacia el centro del círculo) y el radio R." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espectrometro.png}
+    }}
+    \caption{Esquema del proceso de aceleración y posterior deflexión magnética.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1. Aceleración en Campo Eléctrico}
+Por el \textbf{teorema de la energía cinética}, el trabajo realizado por el campo eléctrico sobre la carga se invierte en aumentar su energía cinética. Si parte del reposo: $W_E = \Delta E_c \implies q \Delta V = \frac{1}{2} m v^2$.
+
+\paragraph*{2. Movimiento en Campo Magnético}
+La \textbf{fuerza de Lorentz} magnética, $\vec{F}_m = q(\vec{v} \times \vec{B})$, actúa sobre la partícula. Como $\vec{v}$ y $\vec{B}$ son perpendiculares, el módulo de la fuerza es $F_m = qvB$. Esta fuerza es siempre perpendicular a la velocidad, por lo que actúa como \textbf{fuerza centrípeta}, causando un Movimiento Circular Uniforme (MCU). $F_m = F_c \implies qvB = \frac{mv^2}{R}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Tenemos un sistema de dos ecuaciones con dos incógnitas ($q$ y $v$):
+\begin{gather}
+    q \Delta V = \frac{1}{2} m v^2 \label{eq:energia} \\
+    qvB = \frac{mv^2}{R} \implies qB = \frac{mv}{R} \label{eq:fuerza}
+\end{gather}
+De la ecuación (\ref{eq:fuerza}), podemos despejar la velocidad $v = \frac{qBR}{m}$.
+Sustituimos esta expresión de $v$ en la ecuación (\ref{eq:energia}) para hallar $q$:
+\begin{gather}
+    q \Delta V = \frac{1}{2} m \left(\frac{qBR}{m}\right)^2 = \frac{1}{2} m \frac{q^2 B^2 R^2}{m^2} = \frac{q^2 B^2 R^2}{2m} \nonumber \\[8pt]
+    q = \frac{2m \Delta V}{B^2 R^2}
+\end{gather}
+Una vez obtenida $q$, se calcula $v$. La fuerza magnética se calcula con $F_m = qvB$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Carga y Velocidad}
+\begin{gather}
+    q = \frac{2 (3,2\cdot10^{-27}) (10^4)}{(0,2)^2 (0,1)^2} = 1,6 \cdot 10^{-19} \, \text{C} \\
+    v = \frac{qBR}{m} = \frac{(1,6 \cdot 10^{-19})(0,2)(0,1)}{3,2\cdot10^{-27}} = 1 \cdot 10^6 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La carga de la partícula es $\boldsymbol{q = 1,6 \cdot 10^{-19} \, C}$ (la carga elemental) y su velocidad es $\boldsymbol{v = 10^6 \, m/s}$.
+\end{cajaresultado}
+
+\paragraph*{2. Fuerza Magnética}
+\begin{gather}
+    F_m = qvB = (1,6 \cdot 10^{-19})(10^6)(0,2) = 3,2 \cdot 10^{-14} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    El módulo de la fuerza magnética es $\boldsymbol{F_m = 3,2 \cdot 10^{-14} \, N}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Resolviendo el sistema de ecuaciones que plantean la conservación de la energía durante la aceleración y la dinámica del movimiento circular en el campo magnético, se determina que la partícula tiene una carga de $\mathbf{1,6 \cdot 10^{-19} \, C}$ (corresponde a un protón o un ión con carga +1e) y adquiere una velocidad de $\mathbf{10^6 \, m/s}$. La fuerza magnética constante que la hace girar tiene un módulo de $\mathbf{3,2 \cdot 10^{-14} \, N}$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Física Cuántica}
+\label{sec:cuantica_2005_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 3 - OPCIÓN A}
+\label{subsec:5A_2005_sep_cv}
+
+\begin{cajaenunciado}
+Enuncia el principio de incertidumbre de Heissenberg. ¿Cuál es su expresión matemática?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión puramente teórica sobre uno de los pilares de la Mecánica Cuántica. Se pide el enunciado conceptual y la formulación matemática.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Concepto del Principio de Incertidumbre} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama conceptual. A la izquierda, una partícula cuántica representada como una onda muy localizada (un pulso corto), con la etiqueta 'Posición precisa ($\Delta x$ pequeña)'. Debajo, otra etiqueta 'Momento impreciso ($\Delta p$ grande)'. A la derecha, la misma partícula representada como una onda sinusoidal extendida, con la etiqueta 'Posición imprecisa ($\Delta x$ grande)'. Debajo, una etiqueta 'Momento preciso ($\Delta p$ pequeño)'." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{incertidumbre.png}
+    }}
+    \caption{Relación inversa entre la incertidumbre en la posición y el momento.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Enunciado del Principio de Incertidumbre de Heisenberg}
+El Principio de Incertidumbre, o Principio de Indeterminación, de Werner Heisenberg (1927) es un resultado fundamental de la mecánica cuántica que establece una limitación intrínseca a la precisión con la que se pueden conocer simultáneamente ciertos pares de variables físicas conjugadas de una partícula.
+
+El enunciado más conocido se refiere al par posición-momento lineal:
+\begin{cajaconclusion}
+\textbf{Es imposible determinar simultáneamente y con precisión arbitraria la posición y el momento lineal de una partícula.}
+\end{cajaconclusion}
+\medskip
+Esto significa que cuanto mayor sea la certeza con la que se mide la posición de una partícula ($\Delta x$ pequeño), mayor será la incertidumbre en la medida de su momento lineal ($\Delta p$ grande), y viceversa. Esta limitación no se debe a la imperfección de los instrumentos de medida, sino que es una propiedad fundamental e inherente a la naturaleza ondulatoria de la materia.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Expresión Matemática}
+La relación de incertidumbre para la posición ($x$) y el momento lineal ($p_x$) en una dirección determinada se expresa matemáticamente mediante la siguiente inecuación:
+\begin{gather}
+    \Delta x \cdot \Delta p_x \ge \frac{\hbar}{2}
+\end{gather}
+donde:
+\begin{itemize}
+    \item $\Delta x$ es la incertidumbre o desviación estándar en la medida de la posición.
+    \item $\Delta p_x$ es la incertidumbre o desviación estándar en la medida del momento lineal.
+    \item $\hbar$ es la constante de Planck reducida, $\hbar = \frac{h}{2\pi}$, donde $h$ es la constante de Planck ($h \approx 6,626 \cdot 10^{-34} \, \text{J}\cdot\text{s}$).
+\end{itemize}
+A veces, la expresión se escribe de forma aproximada como $\Delta x \cdot \Delta p_x \ge h$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+
+\begin{cajaresultado}
+    \textbf{Enunciado:} Es imposible conocer simultáneamente con precisión absoluta la posición y el momento de una partícula.
+    \textbf{Expresión matemática:} $\boldsymbol{\Delta x \cdot \Delta p_x \ge \frac{\hbar}{2}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    El Principio de Incertidumbre de Heisenberg es una ley fundamental que refleja la dualidad onda-corpúsculo de la materia. Impone un límite fundamental a nuestro conocimiento de un sistema cuántico, estableciendo que la precisión en la medida de la posición es inversamente proporcional a la precisión en la medida del momento lineal, según la relación $\Delta x \cdot \Delta p_x \ge \hbar/2$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 3 - OPCIÓN B}
+\label{subsec:5B_2005_sep_cv}
+
+\begin{cajaenunciado}
+El trabajo de extracción para un metal es 2,5 eV. Calcula la frecuencia umbral y la longitud de onda correspondiente.
+\textbf{Datos:} $c=3,0\cdot10^8\,\text{m/s}$, $e=1,6\cdot10^{-19}\,\text{C}$, $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Trabajo de extracción ($W_{ext}$):} $W_{ext} = 2,5 \text{ eV}$.
+    \item \textbf{Constantes:} $c=3,0\cdot10^8\,\text{m/s}$, $e=1,6\cdot10^{-19}\,\text{C}$, $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+    \item \textbf{Conversión de unidades:} Primero, convertimos el trabajo de extracción a Julios.
+    $W_{ext} = 2,5 \text{ eV} \cdot \frac{1,6\cdot10^{-19} \text{ J}}{1 \text{ eV}} = 4 \cdot 10^{-19} \text{ J}$.
+    \item \textbf{Incógnitas:} Frecuencia umbral ($f_0$) y longitud de onda umbral ($\lambda_0$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un fotón de luz, representado como una onda con la etiqueta $E=hf_0$, incide sobre una superficie metálica. Desde el punto de impacto, un electrón es emitido, pero con velocidad cero, indicado con la etiqueta $E_c=0$. Se indica que la energía del fotón se ha invertido completamente en liberar al electrón, con una etiqueta $W_{ext}$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fotoelectrico_umbral.png}
+    }}
+    \caption{Esquema del fenómeno fotoeléctrico en la condición umbral.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se basa en la explicación de Einstein del \textbf{efecto fotoeléctrico}. La energía de un fotón incidente ($E=hf$) se invierte en dos partes: una para arrancar el electrón del metal (trabajo de extracción, $W_{ext}$) y el resto en darle energía cinética ($E_c$).
+$$ E = W_{ext} + E_c $$
+La \textbf{frecuencia umbral ($f_0$)} es la mínima frecuencia que debe tener un fotón para poder arrancar un electrón, aunque sea con energía cinética nula ($E_c=0$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+En la condición umbral, la energía del fotón es igual al trabajo de extracción:
+\begin{gather}
+    h f_0 = W_{ext} \implies f_0 = \frac{W_{ext}}{h}
+\end{gather}
+La longitud de onda umbral ($\lambda_0$) se relaciona con la frecuencia umbral a través de la velocidad de la luz, $c = \lambda_0 f_0$.
+\begin{gather}
+    \lambda_0 = \frac{c}{f_0}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Frecuencia Umbral}
+\begin{gather}
+    f_0 = \frac{4 \cdot 10^{-19} \, \text{J}}{6,6 \cdot 10^{-34} \, \text{J}\cdot\text{s}} \approx 6,06 \cdot 10^{14} \, \text{Hz}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia umbral del metal es $\boldsymbol{f_0 \approx 6,06 \cdot 10^{14} \, Hz}$.
+\end{cajaresultado}
+\paragraph*{Longitud de Onda Umbral}
+\begin{gather}
+    \lambda_0 = \frac{3,0 \cdot 10^8 \, \text{m/s}}{6,06 \cdot 10^{14} \, \text{Hz}} \approx 4,95 \cdot 10^{-7} \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La longitud de onda umbral correspondiente es $\boldsymbol{\lambda_0 \approx 495 \, nm}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    El trabajo de extracción define la energía mínima necesaria para liberar un fotoelectrón. Esta energía corresponde a una frecuencia umbral de $\mathbf{6,06 \cdot 10^{14} \, Hz}$. Cualquier radiación con una frecuencia inferior no producirá efecto fotoeléctrico. Dicha frecuencia se corresponde con una longitud de onda máxima de $\mathbf{495 \, nm}$, que se encuentra en la región del visible (color cian-verde).
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Física Nuclear y Radiactividad}
+\label{sec:nuclear_2005_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 4 - OPCIÓN A}
+\label{subsec:6A_2005_sep_cv}
+
+\begin{cajaenunciado}
+Dos partículas tienen asociada la misma longitud de onda de De Broglie. Sabiendo que la masa de una de ellas es triple que la de la otra, calcula la relación entre las velocidades de ambas partículas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partícula 1:} Masa $m_1$, velocidad $v_1$, longitud de onda $\lambda_1$.
+    \item \textbf{Partícula 2:} Masa $m_2$, velocidad $v_2$, longitud de onda $\lambda_2$.
+    \item \textbf{Condición 1 (Longitud de onda):} $\lambda_1 = \lambda_2$.
+    \item \textbf{Condición 2 (Masas):} $m_1 = 3 m_2$.
+    \item \textbf{Incógnita:} La relación entre las velocidades, por ejemplo $\frac{v_1}{v_2}$ o $\frac{v_2}{v_1}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Partículas con igual Longitud de Onda de De Broglie} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos partículas en movimiento. La Partícula 1 es grande, representando $m_1$. La Partícula 2 es pequeña, representando $m_2$. Ambas tienen asociada una onda sinusoidal de la misma longitud de onda, $\lambda$. El vector velocidad $v_1$ de la partícula grande es visiblemente más corto que el vector velocidad $v_2$ de la partícula pequeña." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{debroglie.png}
+    }}
+    \caption{Para tener la misma longitud de onda, la partícula más masiva debe ser más lenta.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se basa en la \textbf{hipótesis de De Broglie}, que postula que toda partícula en movimiento con momento lineal $p$ tiene asociada una onda, cuya longitud de onda $\lambda$ viene dada por la ecuación:
+$$ \lambda = \frac{h}{p} = \frac{h}{mv} $$
+donde $h$ es la constante de Planck, $m$ es la masa de la partícula y $v$ es su velocidad.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Aplicamos la ecuación de De Broglie a ambas partículas:
+\begin{gather}
+    \lambda_1 = \frac{h}{m_1 v_1} \\
+    \lambda_2 = \frac{h}{m_2 v_2}
+\end{gather}
+Como el enunciado nos dice que $\lambda_1 = \lambda_2$, podemos igualar las expresiones:
+\begin{gather}
+    \frac{h}{m_1 v_1} = \frac{h}{m_2 v_2}
+\end{gather}
+La constante de Planck $h$ se cancela, y nos queda una relación entre los momentos lineales:
+\begin{gather}
+    m_1 v_1 = m_2 v_2
+\end{gather}
+Ahora, usamos la relación de masas $m_1 = 3m_2$:
+\begin{gather}
+    (3 m_2) v_1 = m_2 v_2
+\end{gather}
+Cancelando $m_2$ (que es no nula), obtenemos la relación entre velocidades.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+De la ecuación anterior, despejamos la relación entre las velocidades:
+\begin{gather}
+    3 v_1 = v_2 \implies \frac{v_2}{v_1} = 3
+\end{gather}
+O, alternativamente:
+\begin{gather}
+    v_1 = \frac{v_2}{3}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de la partícula menos masiva ($v_2$) es el triple que la velocidad de la partícula más masiva ($v_1$). La relación es $\boldsymbol{v_2 = 3v_1}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Según la hipótesis de De Broglie, la longitud de onda es inversamente proporcional al momento lineal ($p=mv$). Para que dos partículas tengan la misma longitud de onda, deben tener el mismo momento lineal. Por lo tanto, si una partícula tiene el triple de masa que la otra, su velocidad debe ser un tercio de la de la partícula más ligera para que el producto $mv$ sea idéntico en ambos casos.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 4 - OPCIÓN B}
+\label{subsec:6B_2005_sep_cv}
+
+\begin{cajaenunciado}
+Calcula el período de semidesintegración de un núcleo radioactivo cuya actividad disminuye a la cuarta parte al cabo de 48 horas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Actividad inicial:} $A_0$.
+    \item \textbf{Tiempo transcurrido ($t$):} $t = 48$ horas.
+    \item \textbf{Actividad final ($A(t)$):} $A(t) = \frac{A_0}{4}$.
+    \item \textbf{Incógnita:} Período de semidesintegración ($T_{1/2}$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Decaimiento de la Actividad Radiactiva} \vspace{0.5cm} \textit{Prompt para la imagen:} "Gráfica de decaimiento exponencial con el tiempo 't (horas)' en el eje X y la Actividad 'A(t)' en el eje Y. La curva empieza en $A_0$ en $t=0$. Se marcan en el eje Y los niveles $A_0/2$ y $A_0/4$. Se trazan líneas desde estos puntos hasta la curva y hacia abajo al eje X. La línea desde $A_0/2$ marca el tiempo $T_{1/2}$. La línea desde $A_0/4$ marca el tiempo $t=48$ horas. La gráfica debe mostrar claramente que $48$ horas corresponde a dos veces $T_{1/2}$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{actividad_radiactiva.png}
+    }}
+    \caption{La actividad se reduce a la mitad en cada período de semidesintegración.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{Ley de la desintegración radiactiva} se aplica tanto al número de núcleos como a la actividad (número de desintegraciones por segundo) de una muestra:
+$$ A(t) = A_0 e^{-\lambda t} $$
+donde $\lambda$ es la constante de desintegración. El \textbf{período de semidesintegración ($T_{1/2}$)} es el tiempo necesario para que la actividad se reduzca a la mitad, y se relaciona con $\lambda$ mediante $T_{1/2} = \frac{\ln(2)}{\lambda}$.
+
+\paragraph*{Razonamiento conceptual alternativo}
+Por definición de $T_{1/2}$:
+\begin{itemize}
+    \item Después de un período $T_{1/2}$, la actividad es $A_0/2$.
+    \item Después de otro período $T_{1/2}$ (un tiempo total de $2T_{1/2}$), la actividad se vuelve a reducir a la mitad: $\frac{1}{2} \left(\frac{A_0}{2}\right) = \frac{A_0}{4}$.
+\end{itemize}
+Por lo tanto, el tiempo necesario para que la actividad se reduzca a la cuarta parte es exactamente dos períodos de semidesintegración.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Método 1: Analítico}
+\begin{gather}
+    \frac{A_0}{4} = A_0 e^{-\lambda \cdot 48} \implies \frac{1}{4} = e^{-48\lambda} \nonumber \\[8pt]
+    \ln\left(\frac{1}{4}\right) = -48\lambda \implies -\ln(4) = -48\lambda \implies \lambda = \frac{\ln(4)}{48} \nonumber \\[8pt]
+    T_{1/2} = \frac{\ln(2)}{\lambda} = \frac{\ln(2)}{\ln(4)/48} = \frac{48 \ln(2)}{\ln(2^2)} = \frac{48 \ln(2)}{2 \ln(2)}
+\end{gather}
+\paragraph*{Método 2: Conceptual}
+\begin{gather}
+    t = n \cdot T_{1/2} \quad \text{donde } A(t) = A_0 \left(\frac{1}{2}\right)^n \nonumber \\[8pt]
+    \frac{A_0}{4} = A_0 \left(\frac{1}{2}\right)^n \implies \left(\frac{1}{2}\right)^2 = \left(\frac{1}{2}\right)^n \implies n=2 \nonumber \\[8pt]
+    48 \text{ horas} = 2 \cdot T_{1/2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Usando cualquiera de los dos métodos:
+\begin{gather}
+    T_{1/2} = \frac{48 \text{ horas}}{2} = 24 \text{ horas}
+\end{gather}
+\begin{cajaresultado}
+    El período de semidesintegración del núcleo radioactivo es de $\boldsymbol{24 \, horas}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Que la actividad se reduzca a la cuarta parte significa que han transcurrido exactamente dos períodos de semidesintegración. Dado que este proceso ha tardado 48 horas, se deduce de forma directa que el período de semidesintegración de la muestra es la mitad de ese tiempo, es decir, \textbf{24 horas}.
+\end{cajaconclusion}
+
+\newpage

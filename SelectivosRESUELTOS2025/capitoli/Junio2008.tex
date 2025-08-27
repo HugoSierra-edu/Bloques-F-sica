@@ -1,0 +1,758 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2008 - Convocatoria Ordinaria}
+\label{chap:2008_jun_ord}
+
+\section{Bloque I: Problemas de Interacción Gravitatoria}
+\label{sec:grav_2008_jun_ord}
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:1A_2008_jun_ord}
+
+\begin{cajaenunciado}
+Una sonda espacial de 200 kg de masa se encuentra en órbita circular alrededor de la Luna, a 160 km de su superficie. Calcula:
+\begin{enumerate}
+    \item[1)] La energía mecánica y la velocidad orbital de la sonda (1,2 puntos).
+    \item[2)] La velocidad de escape de la atracción lunar desde esa posición (0,8 puntos).
+\end{enumerate}
+\textbf{Datos:} $G=6,7\cdot10^{-11}\,\text{Nm}^2/\text{kg}^2$; masa de la Luna, $M_L=7,4\cdot10^{22}\,\text{kg}$; radio de la Luna, $R_L=1740\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la sonda ($m$):} $m = 200\,\text{kg}$.
+    \item \textbf{Altura orbital ($h$):} $h = 160\,\text{km} = 1,6\cdot10^5\,\text{m}$.
+    \item \textbf{Constante de Gravitación Universal ($G$):} $G = 6,7\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+    \item \textbf{Masa de la Luna ($M_L$):} $M_L = 7,4\cdot10^{22}\,\text{kg}$.
+    \item \textbf{Radio de la Luna ($R_L$):} $R_L = 1740\,\text{km} = 1,74\cdot10^6\,\text{m}$.
+    \item \textbf{Radio orbital ($r$):} $r = R_L + h = 1,74\cdot10^6\,\text{m} + 1,6\cdot10^5\,\text{m} = 1,9\cdot10^6\,\text{m}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Energía mecánica ($E_M$).
+        \item Velocidad orbital ($v_{orb}$).
+        \item Velocidad de escape ($v_{esc}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Sonda en Órbita Lunar} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Luna, representada como una esfera de radio $R_L$. Una sonda espacial en una órbita circular de radio $r$ alrededor de la Luna. El radio orbital $r$ debe mostrarse como la suma del radio lunar $R_L$ y la altitud $h$. Dibujar el vector de velocidad orbital $\vec{v}_{orb}$ de la sonda, tangente a la trayectoria. Dibujar el vector de la Fuerza Gravitatoria $\vec{F}_g$ que la Luna ejerce sobre la sonda, apuntando hacia el centro de la Luna, y etiquetarlo también como Fuerza Centrípeta $\vec{F}_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{sonda_luna.png}
+    }}
+    \caption{Modelo de la sonda en órbita circular alrededor de la Luna.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{1) Órbita Circular y Energía Mecánica}
+Para que la sonda mantenga una órbita circular, la fuerza de atracción gravitatoria que ejerce la Luna debe actuar como fuerza centrípeta.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal:} $F_g = G \frac{M_L m}{r^2}$.
+    \item \textbf{Fuerza Centrípeta:} $F_c = m \frac{v_{orb}^2}{r}$.
+\end{itemize}
+La \textbf{energía mecánica total ($E_M$)} en la órbita es la suma de la energía cinética ($E_c$) y la energía potencial gravitatoria ($E_p$).
+$$ E_M = E_c + E_p = \frac{1}{2}mv_{orb}^2 - G\frac{M_L m}{r} $$
+\paragraph{2) Velocidad de Escape}
+La velocidad de escape es la velocidad mínima que debe tener la sonda para escapar del campo gravitatorio lunar. Se calcula aplicando el principio de conservación de la energía mecánica, estableciendo que la energía mecánica total en el infinito debe ser cero.
+$$ E_{M, escape} = \frac{1}{2}mv_{esc}^2 - G\frac{M_L m}{r} = 0 $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1) Velocidad Orbital y Energía Mecánica}
+Igualando $F_g = F_c$:
+\begin{gather}
+    G \frac{M_L m}{r^2} = m \frac{v_{orb}^2}{r} \implies v_{orb}^2 = \frac{G M_L}{r} \implies v_{orb} = \sqrt{\frac{G M_L}{r}}
+\end{gather}
+Sustituyendo $v_{orb}^2$ en la energía cinética: $E_c = \frac{1}{2}m\left(\frac{G M_L}{r}\right) = G\frac{M_L m}{2r}$.
+La energía mecánica total en órbita es:
+\begin{gather}
+    E_M = E_c + E_p = G\frac{M_L m}{2r} - G\frac{M_L m}{r} = -\frac{G M_L m}{2r}
+\end{gather}
+\paragraph{2) Velocidad de Escape}
+Despejamos $v_{esc}$ de la condición de escape:
+\begin{gather}
+    \frac{1}{2}mv_{esc}^2 = G\frac{M_L m}{r} \implies v_{esc}^2 = \frac{2G M_L}{r} \implies v_{esc} = \sqrt{\frac{2G M_L}{r}}
+\end{gather}
+Se observa que $v_{esc} = \sqrt{2} \cdot v_{orb}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1) Velocidad Orbital y Energía Mecánica}
+\begin{gather}
+    v_{orb} = \sqrt{\frac{(6,7\cdot10^{-11})(7,4\cdot10^{22})}{1,9\cdot10^6}} \approx \sqrt{2,609 \cdot 10^6} \approx 1615,3 \, \text{m/s} \\
+    E_M = -\frac{(6,7\cdot10^{-11})(7,4\cdot10^{22})(200)}{2 \cdot (1,9\cdot10^6)} = -\frac{9,916 \cdot 10^{13}}{3,8 \cdot 10^6} \approx -2,609 \cdot 10^7 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+La velocidad orbital es $\boldsymbol{v_{orb} \approx 1615,3 \, \textbf{m/s}}$ y la energía mecánica es $\boldsymbol{E_M \approx -2,61 \cdot 10^7 \, \textbf{J}}$.
+\end{cajaresultado}
+\paragraph{2) Velocidad de Escape}
+\begin{gather}
+    v_{esc} = \sqrt{\frac{2(6,7\cdot10^{-11})(7,4\cdot10^{22})}{1,9\cdot10^6}} \approx \sqrt{5,218 \cdot 10^6} \approx 2284,4 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad de escape desde esa órbita es $\boldsymbol{v_{esc} \approx 2284,4 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La dinámica orbital permite calcular que la sonda se mueve a 1615,3 m/s. Su energía mecánica es de -26,1 MJ; el signo negativo confirma que es un sistema ligado, atrapado por la gravedad lunar. Para liberarse de esta atracción, la sonda necesitaría alcanzar una velocidad de 2284,4 m/s, lo que haría que su energía mecánica total fuese cero.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:1B_2008_jun_ord}
+
+\begin{cajaenunciado}
+Disponemos de dos masas esféricas cuyos diámetros son 8 y 2 cm, respectivamente. Considerando únicamente la interacción gravitatoria entre estos dos cuerpos, calcula:
+\begin{enumerate}
+    \item[1)] La relación entre sus masas $m_1/m_2$ sabiendo que si ponemos ambos cuerpos en contacto el campo gravitatorio en el punto donde se tocan es nulo (1 punto).
+    \item[2)] El valor de cada masa sabiendo que el trabajo necesario para separar los cuerpos, desde la posición de contacto hasta otra donde sus centros distan 20 cm, es: $W=1,6\cdot10^{-12}\,\text{J}$ (1 punto).
+\end{enumerate}
+\textbf{Dato:} $G=6,7\cdot10^{-11}\,\text{Nm}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Diámetro esfera 1 ($D_1$):} $D_1=8\,\text{cm} \implies R_1 = 4\,\text{cm} = 0,04\,\text{m}$.
+    \item \textbf{Diámetro esfera 2 ($D_2$):} $D_2=2\,\text{cm} \implies R_2 = 1\,\text{cm} = 0,01\,\text{m}$.
+    \item \textbf{Condición 1:} Campo gravitatorio total nulo ($\vec{g}_{total}=0$) en el punto de contacto.
+    \item \textbf{Condición 2:} Trabajo externo ($W_{ext}$) para separar las masas.
+    \begin{itemize}
+        \item Distancia inicial (contacto): $r_i = R_1+R_2 = 0,04+0,01=0,05\,\text{m}$.
+        \item Distancia final: $r_f = 20\,\text{cm} = 0,2\,\text{m}$.
+        \item Trabajo: $W_{ext} = 1,6\cdot10^{-12}\,\text{J}$.
+    \end{itemize}
+    \item \textbf{Incógnitas:} Relación de masas $m_1/m_2$; valores de $m_1$ y $m_2$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Interacción de dos Masas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos esferas de diferentes tamaños, una con radio $R_1$ y masa $m_1$ y otra más pequeña con radio $R_2$ y masa $m_2$. Las esferas están en contacto. Marcar el punto P en la superficie de contacto. En el punto P, dibujar el vector de campo gravitatorio $\vec{g}_1$ (creado por $m_1$) apuntando hacia el centro de $m_1$. Dibujar el vector $\vec{g}_2$ (creado por $m_2$) apuntando hacia el centro de $m_2$. Indicar que para que el campo total sea nulo, estos dos vectores deben ser iguales en módulo y opuestos en dirección."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{masas_contacto.png}
+    }}
+    \caption{Condición de campo nulo en el punto de contacto.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{1) Campo Gravitatorio Nulo}
+Se aplica el \textbf{Principio de Superposición}. El campo total en el punto de contacto es la suma vectorial de los campos creados por cada masa. Para que sea nulo, los campos deben tener igual módulo y sentido opuesto.
+$$ \vec{g}_{total} = \vec{g}_1 + \vec{g}_2 = \vec{0} \implies |\vec{g}_1| = |\vec{g}_2| $$
+El campo creado por una masa esférica en un punto exterior es $g = G\frac{m}{d^2}$, donde $d$ es la distancia al centro.
+\paragraph{2) Trabajo de Separación}
+El trabajo realizado por una fuerza externa para mover un cuerpo en un campo conservativo es igual a la variación de la energía potencial del sistema.
+$$ W_{ext} = \Delta E_p = E_{p,final} - E_{p,inicial} $$
+La energía potencial gravitatoria de un sistema de dos masas es $E_p = -G\frac{m_1 m_2}{r}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1) Relación de masas}
+La condición $|\vec{g}_1| = |\vec{g}_2|$ en el punto de contacto P se escribe como:
+\begin{gather}
+    G\frac{m_1}{R_1^2} = G\frac{m_2}{R_2^2} \implies \frac{m_1}{m_2} = \frac{R_1^2}{R_2^2} = \left(\frac{R_1}{R_2}\right)^2
+\end{gather}
+\paragraph{2) Valor de las masas}
+\begin{gather}
+    W_{ext} = \left(-G\frac{m_1 m_2}{r_f}\right) - \left(-G\frac{m_1 m_2}{r_i}\right) = Gm_1m_2\left(\frac{1}{r_i} - \frac{1}{r_f}\right)
+\end{gather}
+Sustituimos $m_1 = m_2 \left(\frac{R_1}{R_2}\right)^2$ en la ecuación del trabajo y despejamos $m_2$.
+\begin{gather}
+    W_{ext} = G \left(m_2 \left(\frac{R_1}{R_2}\right)^2\right) m_2 \left(\frac{1}{r_i} - \frac{1}{r_f}\right) \implies m_2^2 = \frac{W_{ext}}{G \left(\frac{R_1}{R_2}\right)^2 \left(\frac{1}{r_i} - \frac{1}{r_f}\right)}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1) Relación de masas}
+\begin{gather}
+    \frac{m_1}{m_2} = \left(\frac{0,04\,\text{m}}{0,01\,\text{m}}\right)^2 = 4^2 = 16
+\end{gather}
+\begin{cajaresultado}
+La relación entre las masas es $\boldsymbol{m_1/m_2 = 16}$.
+\end{cajaresultado}
+\paragraph{2) Valor de las masas}
+\begin{gather}
+    m_2^2 = \frac{1,6\cdot10^{-12}}{ (6,7\cdot10^{-11}) \cdot (16) \cdot \left(\frac{1}{0,05} - \frac{1}{0,2}\right)} = \frac{1,6\cdot10^{-12}}{(1,072\cdot10^{-9}) \cdot (20-5)} = \frac{1,6\cdot10^{-12}}{1,608\cdot10^{-8}} \approx 9,95 \cdot 10^{-5} \, \text{kg}^2 \nonumber \\
+    m_2 = \sqrt{9,95 \cdot 10^{-5}} \approx 0,009975 \, \text{kg} \approx 0,01 \, \text{kg} \\
+    m_1 = 16 \cdot m_2 \approx 16 \cdot 0,01 = 0,16 \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+Los valores de las masas son $\boldsymbol{m_1 = 0,16 \, \textbf{kg}}$ y $\boldsymbol{m_2 = 0,01 \, \textbf{kg}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La condición de campo nulo permite establecer una relación cuadrática entre la razón de masas y la razón de radios, determinando que $m_1 = 16m_2$. El trabajo para separar las masas está directamente relacionado con el cambio en su energía potencial gravitatoria. Utilizando este dato y la relación de masas previamente encontrada, se calculan los valores individuales de las masas, resultando ser de 160 g y 10 g.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque II: Cuestiones de Ondas}
+\label{sec:ondas_2008_jun_ord}
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:2A_2008_jun_ord}
+
+\begin{cajaenunciado}
+Uno de los extremos de una cuerda de 6 m de longitud se hace oscilar armónicamente con una frecuencia de 60 Hz. Las ondas generadas alcanzan el otro extremo de la cuerda en 0,5 s. Determina la longitud de onda y el número de ondas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de la cuerda ($L$):} $L=6\,\text{m}$.
+    \item \textbf{Frecuencia ($f$):} $f=60\,\text{Hz}$.
+    \item \textbf{Tiempo de propagación ($t$):} $t=0,5\,\text{s}$ para recorrer la longitud $L$.
+    \item \textbf{Incógnitas:} Longitud de onda ($\lambda$) y número de onda ($k$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las propiedades de una onda armónica se relacionan mediante las siguientes definiciones:
+\begin{itemize}
+    \item \textbf{Velocidad de propagación ($v$):} Es la distancia recorrida por la onda por unidad de tiempo.
+    \item \textbf{Ecuación fundamental de las ondas:} Relaciona la velocidad de propagación, la longitud de onda y la frecuencia: $v = \lambda f$.
+    \item \textbf{Número de onda ($k$):} Es una medida de cuántos radianes de fase hay por unidad de distancia, y se relaciona con la longitud de onda por: $k = \frac{2\pi}{\lambda}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Calcular la velocidad de propagación ($v$)}
+\begin{gather}
+    v = \frac{L}{t}
+\end{gather}
+\paragraph{2. Calcular la longitud de onda ($\lambda$)}
+Despejamos $\lambda$ de la ecuación fundamental:
+\begin{gather}
+    \lambda = \frac{v}{f}
+\end{gather}
+\paragraph{3. Calcular el número de onda ($k$)}
+\begin{gather}
+    k = \frac{2\pi}{\lambda}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    v = \frac{6\,\text{m}}{0,5\,\text{s}} = 12\,\text{m/s} \\
+    \lambda = \frac{12\,\text{m/s}}{60\,\text{Hz}} = 0,2\,\text{m} \\
+    k = \frac{2\pi}{0,2\,\text{m}} = 10\pi \, \text{rad/m}
+\end{gather}
+\begin{cajaresultado}
+La longitud de onda es $\boldsymbol{\lambda=0,2\,\textbf{m}}$ y el número de ondas es $\boldsymbol{k=10\pi\,\textbf{rad/m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir del tiempo que tarda la perturbación en recorrer la cuerda, se ha determinado una velocidad de propagación de 12 m/s. Conociendo esta velocidad y la frecuencia de la fuente, se han calculado las características espaciales de la onda: una longitud de onda de 20 cm y un número de onda de $10\pi$ rad/m.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:2B_2008_jun_ord}
+\begin{cajaenunciado}
+Una masa m colgada de un muelle de constante elástica K y longitud L oscila armónicamente con frecuencia f. Seguidamente, la misma masa se cuelga de otro muelle que tiene la misma constante elástica K y longitud doble 2L. ¿Con qué frecuencia oscilará? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema trata sobre el Movimiento Armónico Simple (M.A.S.) de un sistema masa-muelle.
+La frecuencia de oscilación de un sistema masa-muelle depende de la masa ($m$) y de la constante elástica ($K$) del muelle. No depende de la amplitud de la oscilación ni de la longitud en reposo del muelle.
+La frecuencia angular ($\omega$) viene dada por:
+$$ \omega = \sqrt{\frac{K}{m}} $$
+La frecuencia ($f$) se relaciona con la frecuencia angular por $\omega = 2\pi f$. Por lo tanto:
+$$ 2\pi f = \sqrt{\frac{K}{m}} \implies f = \frac{1}{2\pi}\sqrt{\frac{K}{m}} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Situación 1}
+Una masa $m$ y un muelle de constante $K$ y longitud $L$. La frecuencia es:
+\begin{gather}
+    f_1 = \frac{1}{2\pi}\sqrt{\frac{K}{m}}
+\end{gather}
+\paragraph{Situación 2}
+La misma masa $m$ y un muelle con la misma constante elástica $K$, pero de longitud $2L$. La nueva frecuencia será:
+\begin{gather}
+    f_2 = \frac{1}{2\pi}\sqrt{\frac{K}{m}}
+\end{gather}
+Comparando ambas expresiones, vemos que $f_1 = f_2$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es cualitativo.
+\begin{cajaresultado}
+Oscilará con la \textbf{misma frecuencia} $f$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La frecuencia de oscilación de un sistema masa-muelle ideal está determinada exclusivamente por sus propiedades inerciales (la masa) y elásticas (la constante K). La longitud en reposo del muelle, L, no interviene en la ecuación de la frecuencia. Dado que tanto la masa como la constante elástica son las mismas en ambas situaciones, la frecuencia de oscilación no cambia.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque III: Cuestiones de Óptica}
+\label{sec:optica_2008_jun_ord}
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:3A_2008_jun_ord}
+\begin{cajaenunciado}
+Supongamos una lente delgada, convergente y de distancia focal 8 cm. Calcula la posición de la imagen de un objeto situado a 6 cm de la lente y especifica sus características.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Convergente.
+    \item \textbf{Distancia focal imagen ($f'$):} $f' = +8\,\text{cm}$ (positiva por ser convergente).
+    \item \textbf{Posición del objeto ($s$):} $s = -6\,\text{cm}$ (por convenio, a la izquierda de la lente).
+    \item \textbf{Incógnitas:} Posición de la imagen ($s'$) y sus características (real/virtual, derecha/invertida, mayor/menor).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Lente Convergente (Lupa)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente convergente. Dibuja el eje óptico. Marcar la lente, el foco imagen F' en x=+8cm y el foco objeto F en x=-8cm. Colocar un objeto (flecha vertical) en s=-6cm (entre F y la lente). Trazar dos rayos: 1) Rayo paralelo al eje que se refracta pasando por F'. 2) Rayo que pasa por el centro óptico y no se desvía. Mostrar que los rayos refractados divergen. Dibujar las prolongaciones de estos rayos hacia atrás (izquierda) con líneas discontinuas, mostrando que se cruzan para formar una imagen virtual, derecha y de mayor tamaño."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{lupa.png}
+    }}
+    \caption{Formación de la imagen con el objeto situado dentro de la distancia focal.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utilizan la ecuación de las lentes delgadas (ecuación de Gauss) y la fórmula del aumento lateral ($M$).
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss:} $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item \textbf{Aumento Lateral:} $M = \frac{y'}{y} = \frac{s'}{s}$
+\end{itemize}
+Las características de la imagen se deducen de los signos de $s'$ y $M$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Despejamos $s'$ de la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{f'} + \frac{1}{s} \implies s' = \left(\frac{1}{f'} + \frac{1}{s}\right)^{-1} = \frac{s f'}{s+f'}
+\end{gather}
+Calculamos el aumento $M$:
+\begin{gather}
+    M = \frac{s'}{s}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{8} + \frac{1}{-6} = \frac{3-4}{24} = -\frac{1}{24} \implies s' = -24 \, \text{cm} \\
+    M = \frac{s'}{s} = \frac{-24\,\text{cm}}{-6\,\text{cm}} = +4
+\end{gather}
+\begin{cajaresultado}
+La imagen se forma a $\boldsymbol{s' = -24 \, \textbf{cm}}$ (a 24 cm a la izquierda de la lente).
+Características de la imagen:
+\begin{itemize}
+    \item Es \textbf{virtual} (porque $s'<0$).
+    \item Es \textbf{derecha} (porque $M>0$).
+    \item Es de \textbf{mayor tamaño} (4 veces mayor, porque $|M|>1$).
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Cuando un objeto se coloca dentro de la distancia focal de una lente convergente, esta actúa como una lupa. El cálculo confirma este comportamiento: la lente produce una imagen virtual, derecha y aumentada, situada en el mismo lado de la lente que el objeto.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:3B_2008_jun_ord}
+\begin{cajaenunciado}
+¿Qué ley física prevé la reflexión total y en qué condiciones se produce? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Reflexión Total Interna} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de una interfaz horizontal entre un medio 1 (abajo, más denso, e.g., agua) y un medio 2 (arriba, menos denso, e.g., aire). Dibujar una línea normal perpendicular a la interfaz. Mostrar tres rayos saliendo de un punto en el medio 1: a) Un rayo con ángulo de incidencia pequeño que se refracta en el medio 2, alejándose de la normal. b) Un rayo con el ángulo de incidencia crítico ($\theta_c$) que se refracta a 90°, viajando rasante a la superficie. c) Un rayo con un ángulo de incidencia mayor que $\theta_c$ que se refleja completamente en la interfaz, sin rayo refractado."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{reflexion_total.png}
+    }}
+    \caption{Condiciones para la reflexión total interna.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Ley Física}
+La ley física que predice y gobierna el fenómeno de la reflexión total es la \textbf{Ley de Snell de la refracción}. Esta ley describe cómo cambia la dirección de un rayo de luz al pasar de un medio con índice de refracción $n_1$ a otro con índice $n_2$:
+$$ n_1 \sin(\theta_1) = n_2 \sin(\theta_2) $$
+donde $\theta_1$ es el ángulo de incidencia y $\theta_2$ es el ángulo de refracción, ambos medidos con respecto a la normal.
+
+\paragraph{Condiciones}
+El fenómeno de reflexión total interna ocurre cuando un rayo de luz no se refracta al llegar a la interfaz entre dos medios, sino que se refleja completamente de vuelta en el primer medio. Para que esto suceda, deben cumplirse dos condiciones:
+\begin{enumerate}
+    \item \textbf{La luz debe viajar de un medio de mayor índice de refracción a uno de menor índice de refracción.} Es decir, $n_1 > n_2$. Esto es necesario porque, según la Ley de Snell, solo en este caso el rayo refractado se aleja de la normal ($\theta_2 > \theta_1$).
+    \item \textbf{El ángulo de incidencia debe ser mayor que un ángulo crítico o ángulo límite ($\theta_c$).}
+\end{enumerate}
+
+\paragraph{Razonamiento}
+Si $n_1 > n_2$, a medida que aumentamos el ángulo de incidencia $\theta_1$, el ángulo de refracción $\theta_2$ también aumenta, pero más rápidamente. Existe un ángulo de incidencia, el ángulo crítico $\theta_c$, para el cual el ángulo de refracción es de $90^\circ$. Lo calculamos con la Ley de Snell:
+\begin{gather}
+    n_1 \sin(\theta_c) = n_2 \sin(90^\circ) = n_2 \cdot 1 \implies \sin(\theta_c) = \frac{n_2}{n_1}
+\end{gather}
+Si el ángulo de incidencia $\theta_1$ es mayor que este $\theta_c$, la Ley de Snell daría $\sin(\theta_2) > 1$, lo cual es matemáticamente imposible. Físicamente, esto significa que no hay rayo refractado; la luz no puede pasar al segundo medio y es reflejada en su totalidad.
+
+\begin{cajaresultado}
+La \textbf{Ley de Snell} predice la reflexión total. Las condiciones para que se produzca son:
+\begin{itemize}
+    \item La luz debe propagarse desde un medio más refringente a uno menos refringente ($\boldsymbol{n_1 > n_2}$).
+    \item El ángulo de incidencia debe ser mayor que el ángulo crítico ($\boldsymbol{\theta_1 > \theta_c}$), donde $\sin(\theta_c) = n_2/n_1$.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La reflexión total no es una ley independiente, sino una consecuencia directa de la Ley de Snell cuando se aplican las condiciones límite. Este fenómeno es fundamental para aplicaciones tecnológicas como la fibra óptica, donde la luz se guía a lo largo de grandes distancias mediante sucesivas reflexiones totales en el interior del cable.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque IV: Problemas de Interacción Electromagnética}
+\label{sec:em_2008_jun_ord}
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:4A_2008_jun_ord}
+\begin{cajaenunciado}
+Colocamos tres cargas iguales de valor $2\,\mu\text{C}$ en los puntos (1,0), (-1,0) y (0,1) m.
+\begin{enumerate}
+    \item[1)] Calcula el vector campo eléctrico en el punto (0,0) (1 punto).
+    \item[2)] ¿Cuál es el trabajo necesario para trasladar una carga eléctrica puntual de valor 1 µC desde el punto (0,0) al punto (0,-1) m? (1 punto).
+\end{enumerate}
+\textbf{Dato:} $K_{e}=9\cdot10^{9}\,\text{Nm}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = 2\,\mu\text{C} = 2\cdot10^{-6}\,\text{C}$ en $P_1(1,0)$.
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = 2\,\mu\text{C} = 2\cdot10^{-6}\,\text{C}$ en $P_2(-1,0)$.
+    \item \textbf{Carga 3 ($q_3$):} $q_3 = 2\,\mu\text{C} = 2\cdot10^{-6}\,\text{C}$ en $P_3(0,1)$.
+    \item \textbf{Punto de cálculo de campo (O):} $O(0,0)$.
+    \item \textbf{Carga de prueba ($q'$):} $q' = 1\,\mu\text{C} = 1\cdot10^{-6}\,\text{C}$.
+    \item \textbf{Puntos para el trabajo:} Inicio $O(0,0)$, Final $R(0,-1)$.
+    \item \textbf{Incógnitas:} $\vec{E}_{total}$ en O, y trabajo $W_{O \to R}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Eléctrico en el Origen} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Colocar tres cargas positivas idénticas q en (1,0), (-1,0) y (0,1). En el origen (0,0), dibujar los vectores campo eléctrico creados por cada carga: $\vec{E}_1$ (de la carga en (1,0)) apuntando hacia la izquierda. $\vec{E}_2$ (de la carga en (-1,0)) apuntando hacia la derecha. $\vec{E}_3$ (de la carga en (0,1)) apuntando hacia abajo. Mostrar que los vectores $\vec{E}_1$ y $\vec{E}_2$ se cancelan mutuamente por ser iguales en módulo y opuestos en dirección. El vector campo total $\vec{E}_{total}$ es igual a $\vec{E}_3$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{campo_tres_cargas.png}
+    }}
+    \caption{Superposición de campos eléctricos en el origen.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{1) Campo Eléctrico}
+Se aplica el \textbf{Principio de Superposición}. El campo eléctrico total en un punto es la suma vectorial de los campos creados por cada carga individual: $\vec{E}_{total} = \vec{E}_1 + \vec{E}_2 + \vec{E}_3$. El campo creado por una carga puntual $q$ es $\vec{E} = K\frac{q}{r^2}\vec{u}_r$.
+\paragraph{2) Trabajo Eléctrico}
+El trabajo realizado por el campo eléctrico para mover una carga $q'$ de un punto A a un punto B es $W_{A \to B} = q'(V_A - V_B)$. El potencial eléctrico creado por un sistema de cargas es la suma escalar de los potenciales individuales: $V = \sum K\frac{q_i}{r_i}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1) Campo en el origen O(0,0)}
+\begin{itemize}
+    \item $\vec{E}_1$ (de $q_1$ en (1,0)): $r=1\,\text{m}$, $\vec{u}_r = -\vec{i}$. $\vec{E}_1 = -K\frac{q_1}{1^2}\vec{i}$.
+    \item $\vec{E}_2$ (de $q_2$ en (-1,0)): $r=1\,\text{m}$, $\vec{u}_r = \vec{i}$. $\vec{E}_2 = K\frac{q_2}{1^2}\vec{i}$.
+    \item $\vec{E}_3$ (de $q_3$ en (0,1)): $r=1\,\text{m}$, $\vec{u}_r = -\vec{j}$. $\vec{E}_3 = -K\frac{q_3}{1^2}\vec{j}$.
+\end{itemize}
+Como $q_1=q_2$, los campos $\vec{E}_1$ y $\vec{E}_2$ se anulan. El campo total es $\vec{E}_{total} = \vec{E}_3 = -Kq_3\vec{j}$.
+\paragraph{2) Trabajo $W_{O \to R}$}
+$W_{O \to R} = q'(V_O - V_R)$.
+$V_O = K\frac{q_1}{1} + K\frac{q_2}{1} + K\frac{q_3}{1}$.
+Para el punto R(0,-1):
+Distancia a $q_1$: $d_{1R}=\sqrt{(1-0)^2+(0-(-1))^2} = \sqrt{2}\,\text{m}$.
+Distancia a $q_2$: $d_{2R}=\sqrt{(-1-0)^2+(0-(-1))^2} = \sqrt{2}\,\text{m}$.
+Distancia a $q_3$: $d_{3R}=\sqrt{(0-0)^2+(1-(-1))^2} = 2\,\text{m}$.
+$V_R = K\frac{q_1}{\sqrt{2}} + K\frac{q_2}{\sqrt{2}} + K\frac{q_3}{2}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1) Campo en el origen}
+\begin{gather}
+    \vec{E}_1 = -(9\cdot10^9)(2\cdot10^{-6})\vec{i} = -18000\vec{i}\,\text{N/C} \\
+    \vec{E}_2 = +(9\cdot10^9)(2\cdot10^{-6})\vec{i} = +18000\vec{i}\,\text{N/C} \\
+    \vec{E}_3 = -(9\cdot10^9)(2\cdot10^{-6})\vec{j} = -18000\vec{j}\,\text{N/C} \\
+    \vec{E}_{total} = \vec{E}_1 + \vec{E}_2 + \vec{E}_3 = -18000\vec{j}\,\text{N/C}
+\end{gather}
+\begin{cajaresultado}
+El campo eléctrico en el origen es $\boldsymbol{\vec{E} = -18000\vec{j} \, \textbf{N/C}}$.
+\end{cajaresultado}
+\paragraph{2) Trabajo}
+\begin{gather}
+    V_O = 3 \cdot K \cdot q_1 = 3 \cdot (9\cdot10^9) \cdot (2\cdot10^{-6}) = 54000\,\text{V} \\
+    V_R = K\left(\frac{2\cdot10^{-6}}{\sqrt{2}} + \frac{2\cdot10^{-6}}{\sqrt{2}} + \frac{2\cdot10^{-6}}{2}\right) = (9\cdot10^9)\left(\frac{4}{\sqrt{2}} + 1\right)\cdot10^{-6} \approx 34456\,\text{V} \\
+    W_{O \to R} = (1\cdot10^{-6})(54000 - 34456) = 1,9544\cdot10^{-2}\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+El trabajo necesario es $\boldsymbol{W \approx 1,95 \cdot 10^{-2} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido a la simetría de las cargas en el eje X, sus campos eléctricos se cancelan en el origen, resultando un campo neto debido únicamente a la carga del eje Y, que apunta hacia abajo. Para mover la carga de prueba, se calcula la diferencia de potencial entre el origen y el punto final, obteniendo un trabajo positivo, lo que indica que el desplazamiento se realiza en contra de la fuerza neta del campo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 2 - OPCIÓN B}
+\label{subsec:4B_2008_jun_ord}
+\begin{cajaenunciado}
+Sea una espira rectangular situada sobre el plano XY, con dos lados móviles de 1 m de longitud, que se mueven en sentidos opuestos agrandando la espira con velocidad $v=3\,\text{m/s}$. La espira está inmersa en un campo magnético de 1 T, inclinado $60^\circ$ respecto al eje Z, tal y como indica el dibujo. La longitud L inicial es 2 m.
+\begin{enumerate}
+    \item[1)] Calcula el flujo del campo magnético en la espira en el instante inicial (1 punto).
+    \item[2)] Calcula la fuerza electromotriz inducida (1 punto).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud lados móviles ($a$):} $a=1\,\text{m}$.
+    \item \textbf{Velocidad de cada lado ($v$):} $v=3\,\text{m/s}$ (en sentidos opuestos).
+    \item \textbf{Módulo del campo magnético ($B$):} $B=1\,\text{T}$.
+    \item \textbf{Ángulo del campo:} El campo forma $60^\circ$ con el eje Z. El vector superficie de la espira en el plano XY es $\vec{S}=S\vec{k}$ (paralelo a Z). Por tanto, el ángulo $\alpha$ entre $\vec{B}$ y $\vec{S}$ es $\alpha=60^\circ$.
+    \item \textbf{Longitud inicial ($L_0$):} $L_0=2\,\text{m}$.
+    \item \textbf{Incógnitas:} Flujo inicial ($\Phi_0$) y fuerza electromotriz inducida ($\mathcal{E}$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La figura del enunciado es la representación principal.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{1) Flujo Magnético}
+El flujo magnético ($\Phi_B$) a través de una superficie plana se define como:
+$$ \Phi_B = \vec{B} \cdot \vec{S} = B S \cos(\alpha) $$
+donde $S$ es el área de la espira y $\alpha$ es el ángulo entre el campo y el vector normal a la superficie.
+\paragraph{2) Fuerza Electromotriz Inducida}
+Se utiliza la \textbf{Ley de Faraday-Lenz} de la inducción electromagnética. La f.e.m. inducida ($\mathcal{E}$) es igual a la tasa de cambio del flujo magnético:
+$$ \mathcal{E} = -\frac{d\Phi_B}{dt} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1) Flujo Inicial}
+El área inicial es $S_0 = a \cdot L_0$. El flujo inicial es:
+\begin{gather}
+    \Phi_0 = B S_0 \cos(\alpha) = B (a L_0) \cos(\alpha)
+\end{gather}
+\paragraph{2) Fuerza Electromotriz Inducida}
+La longitud de la espira, $L(t)$, aumenta con el tiempo. Cada lado se mueve una distancia $vt$, por lo que el aumento total de longitud es $2vt$.
+$$ L(t) = L_0 + 2vt $$
+El área en función del tiempo es $S(t) = a \cdot L(t) = a(L_0+2vt)$. El flujo es:
+$$ \Phi_B(t) = B S(t) \cos(\alpha) = B a (L_0+2vt) \cos(\alpha) $$
+Derivamos el flujo respecto al tiempo para hallar la f.e.m.:
+\begin{gather}
+    \mathcal{E} = -\frac{d}{dt} \left[ B a (L_0+2vt) \cos(\alpha) \right] = - B a \cos(\alpha) \cdot \frac{d}{dt}(L_0+2vt) = -B a \cos(\alpha) \cdot (2v)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1) Flujo Inicial}
+\begin{gather}
+    S_0 = (1\,\text{m})(2\,\text{m}) = 2\,\text{m}^2 \\
+    \Phi_0 = (1\,\text{T})(2\,\text{m}^2)\cos(60^\circ) = 2 \cdot 0,5 = 1\,\text{Wb}
+\end{gather}
+\begin{cajaresultado}
+El flujo magnético inicial es $\boldsymbol{\Phi_0 = 1 \, \textbf{Wb}}$.
+\end{cajaresultado}
+\paragraph{2) Fuerza Electromotriz Inducida}
+\begin{gather}
+    \mathcal{E} = -B a (2v) \cos(\alpha) = -(1\,\text{T})(1\,\text{m})(2 \cdot 3\,\text{m/s})\cos(60^\circ) = -1 \cdot 1 \cdot 6 \cdot 0,5 = -3\,\text{V}
+\end{gather}
+El módulo de la f.e.m. es 3 V.
+\begin{cajaresultado}
+La fuerza electromotriz inducida es $\boldsymbol{\mathcal{E} = -3 \, \textbf{V}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El flujo magnético inicial a través de la espira es de 1 Wb. Al moverse los lados, el área de la espira aumenta a una tasa constante. Esta variación del área provoca una variación del flujo magnético. Según la ley de Faraday, esta variación de flujo induce una fuerza electromotriz constante de 3 V en la espira mientras los lados se muevan.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque V: Cuestiones de Física Moderna}
+\label{sec:mod1_2008_jun_ord}
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:5A_2008_jun_ord}
+\begin{cajaenunciado}
+Una nave espacial tiene una longitud de 50 m cuando se mide en reposo. Calcula la longitud que apreciará un observador desde la Tierra cuando la nave pasa a una velocidad de $3,6\cdot10^8\,\text{km/h}$.
+\textbf{Dato:} velocidad de la luz $c=3\cdot10^8\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud propia ($L_0$):} $L_0 = 50\,\text{m}$.
+    \item \textbf{Velocidad de la nave ($v$):} $v = 3,6\cdot10^8\,\text{km/h}$. Debemos convertirla a m/s.
+    $v = 3,6\cdot10^8 \frac{\text{km}}{\text{h}} \cdot \frac{1000\,\text{m}}{1\,\text{km}} \cdot \frac{1\,\text{h}}{3600\,\text{s}} = \frac{3,6\cdot10^{11}}{3600} = 1\cdot10^8\,\text{m/s}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c=3\cdot10^8\,\text{m/s}$.
+    \item \textbf{Incógnita:} Longitud medida desde la Tierra ($L$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno es la \textbf{contracción de la longitud}, una consecuencia de la Teoría de la Relatividad Especial. Establece que la longitud de un objeto en movimiento, medida por un observador en reposo, es menor que la longitud medida en el sistema de referencia propio del objeto (longitud propia, $L_0$). La relación es:
+$$ L = \frac{L_0}{\gamma} = L_0 \sqrt{1 - \frac{v^2}{c^2}} $$
+donde $\gamma$ es el factor de Lorentz.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La ecuación ya está en su forma final. Calculamos primero el cociente $v/c$.
+\begin{gather}
+    \frac{v}{c} = \frac{1\cdot10^8\,\text{m/s}}{3\cdot10^8\,\text{m/s}} = \frac{1}{3}
+\end{gather}
+Sustituimos en la fórmula de la contracción:
+\begin{gather}
+    L = L_0 \sqrt{1 - (v/c)^2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    L = 50\,\text{m} \cdot \sqrt{1 - (1/3)^2} = 50 \cdot \sqrt{1 - 1/9} = 50 \cdot \sqrt{8/9} = 50 \cdot \frac{2\sqrt{2}}{3} \approx 47,14\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+La longitud que apreciará el observador desde la Tierra es $\boldsymbol{L \approx 47,14 \, \textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A una velocidad de un tercio de la velocidad de la luz, los efectos relativistas son notables. El observador en la Tierra medirá una longitud para la nave que es aproximadamente 3 metros más corta que su longitud en reposo, debido al fenómeno de la contracción de la longitud de Lorentz.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:5B_2008_jun_ord}
+\begin{cajaenunciado}
+Un virus de masa $10^{-18}\,\text{g}$ se mueve por la sangre con una velocidad de $0,1\,\text{m/s}$. ¿Puede tener una longitud de onda asociada? Si es así, calcula su valor.
+\textbf{Dato:} $h=6,6\cdot10^{-34}\,\text{Js}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del virus ($m$):} $m = 10^{-18}\,\text{g} = 10^{-21}\,\text{kg}$.
+    \item \textbf{Velocidad del virus ($v$):} $v=0,1\,\text{m/s}$.
+    \item \textbf{Constante de Planck ($h$):} $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+    \item \textbf{Incógnitas:} Si tiene longitud de onda asociada y su valor ($\lambda$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La respuesta se basa en la \textbf{hipótesis de De Broglie}, que postula la dualidad onda-corpúsculo. Según esta hipótesis, toda partícula material en movimiento tiene una onda asociada. Por lo tanto, sí, el virus puede tener una longitud de onda asociada.
+La longitud de onda de De Broglie se calcula con la expresión:
+$$ \lambda = \frac{h}{p} = \frac{h}{mv} $$
+donde $p$ es el momento lineal de la partícula.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La fórmula ya está en su forma final para ser utilizada.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \lambda = \frac{6,6\cdot10^{-34}\,\text{J}\cdot\text{s}}{(10^{-21}\,\text{kg})(0,1\,\text{m/s})} = \frac{6,6\cdot10^{-34}}{10^{-22}} = 6,6 \cdot 10^{-12} \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+\textbf{Sí}, puede tener una longitud de onda asociada. Su valor es $\boldsymbol{\lambda = 6,6 \cdot 10^{-12} \, \textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Según la hipótesis de De Broglie, cualquier objeto con masa en movimiento, desde un electrón hasta un planeta, tiene una longitud de onda asociada. Para un virus, esta longitud de onda es de $6,6 \cdot 10^{-12}$ m (6,6 picómetros). Aunque es extremadamente pequeña, esta longitud de onda está en el rango de los rayos gamma y es, en principio, medible, a diferencia de los objetos macroscópicos cuya longitud de onda es tan diminuta que es físicamente indetectable.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque VI: Cuestiones de Física Nuclear}
+\label{sec:nuclear_2008_jun_ord}
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:6A_2008_jun_ord}
+\begin{cajaenunciado}
+Indica la partícula o partículas que faltan en las siguientes reacciones justificando la respuesta y escribiendo la reacción completa:
+\begin{enumerate}
+    \item[1)] $...? + {}_{4}^{9}\text{Be} \to {}_{6}^{12}\text{C} + {}_{0}^{1}\text{n}$ (0,7 puntos)
+    \item[2)] ${}_{0}^{1}\text{n} + {}_{92}^{235}\text{U} \to {}_{56}^{141}\text{Ba} + {}_{36}^{92}\text{Kr} + ...?$ (0,8 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para identificar las partículas desconocidas en las reacciones nucleares, se aplican las \textbf{leyes de conservación de Soddy-Fajans}:
+\begin{itemize}
+    \item \textbf{Conservación del número másico (A):} La suma de los superíndices (número de nucleones) debe ser la misma a ambos lados de la reacción.
+    \item \textbf{Conservación del número atómico (Z):} La suma de los subíndices (carga eléctrica o número de protones) debe ser la misma a ambos lados de la reacción.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1) Primera Reacción}
+Llamamos a la partícula desconocida ${}_{Z}^{A}X$. La reacción es ${}_{Z}^{A}X + {}_{4}^{9}\text{Be} \to {}_{6}^{12}\text{C} + {}_{0}^{1}\text{n}$.
+\begin{itemize}
+    \item Conservación de A: $A + 9 = 12 + 1 \implies A = 4$.
+    \item Conservación de Z: $Z + 4 = 6 + 0 \implies Z = 2$.
+\end{itemize}
+La partícula ${}_{2}^{4}X$ es un núcleo de Helio, es decir, una \textbf{partícula alfa ($\alpha$)}.
+
+\paragraph{2) Segunda Reacción}
+La reacción es ${}_{0}^{1}\text{n} + {}_{92}^{235}\text{U} \to {}_{56}^{141}\text{Ba} + {}_{36}^{92}\text{Kr} + k \cdot {}_{Z}^{A}X$.
+\begin{itemize}
+    \item Conservación de A: $1 + 235 = 141 + 92 + k \cdot A \implies 236 = 233 + k \cdot A \implies k \cdot A = 3$.
+    \item Conservación de Z: $0 + 92 = 56 + 36 + k \cdot Z \implies 92 = 92 + k \cdot Z \implies k \cdot Z = 0$.
+\end{itemize}
+Como debe emitirse alguna partícula ($k \neq 0$), la única solución para $k \cdot Z = 0$ es que $Z=0$.
+Si $Z=0$, entonces de $k \cdot A = 3$, la solución más plausible en una reacción de fisión es que se emitan $k=3$ partículas con $A=1$. La partícula ${}_{0}^{1}X$ es un \textbf{neutrón (${}_{0}^{1}\text{n}$)}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+\begin{enumerate}
+    \item La partícula que falta es una \textbf{partícula alfa}. La reacción completa es:
+    $$ \boldsymbol{{}_{2}^{4}\text{He} + {}_{4}^{9}\text{Be} \to {}_{6}^{12}\text{C} + {}_{0}^{1}\text{n}} $$
+    \item Faltan \textbf{tres neutrones}. La reacción completa es:
+    $$ \boldsymbol{{}_{0}^{1}\text{n} + {}_{92}^{235}\text{U} \to {}_{56}^{141}\text{Ba} + {}_{36}^{92}\text{Kr} + 3{}_{0}^{1}\text{n}} $$
+\end{enumerate}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las leyes de conservación de número másico y atómico son herramientas fundamentales para balancear cualquier reacción nuclear. En el primer caso, se identifica una partícula alfa como el proyectil en una reacción de transmutación. En el segundo caso, se identifica la emisión de tres neutrones, característico de una reacción de fisión nuclear en cadena.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:6B_2008_jun_ord}
+\begin{cajaenunciado}
+Define el trabajo de extracción en el efecto fotoeléctrico. Explica de qué magnitudes depende la energía máxima de los electrones emitidos.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama que muestra una superficie metálica. Incide sobre ella un fotón de luz (representado como un paquete de onda) con energía $E_{fotón}=hf$. El diagrama debe mostrar que una parte de esta energía, $W_0$, se usa para 'liberar' a un electrón del metal. La energía restante se convierte en la energía cinética máxima, $E_{c,max}$, del electrón emitido (fotoelectrón). Escribir la ecuación de Einstein $E_{fotón} = W_0 + E_{c,max}$ en el diagrama."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{efecto_fotoelectrico.png}
+    }}
+    \caption{Balance de energía en el efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Definición de Trabajo de Extracción}
+El \textbf{trabajo de extracción}, también llamado \textbf{función de trabajo} ($W_0$ o $\Phi$), es la \textbf{mínima energía necesaria para arrancar un electrón} de la superficie de un material conductor, generalmente un metal, venciendo las fuerzas que lo ligan al mismo.
+\begin{itemize}
+    \item Es una propiedad característica de cada material.
+    \item Está relacionado con una \textbf{frecuencia umbral} ($f_0$) a través de la constante de Planck: $W_0 = hf_0$. Si la luz incidente tiene una frecuencia menor que $f_0$, no se producirá el efecto fotoeléctrico, sin importar la intensidad de la luz.
+\end{itemize}
+
+\paragraph{Dependencia de la Energía Cinética Máxima}
+La explicación del efecto fotoeléctrico fue dada por Albert Einstein, basándose en la cuantización de la luz en forma de fotones. La \textbf{ecuación de Einstein para el efecto fotoeléctrico} describe el balance de energía en la interacción de un fotón con un electrón del metal:
+$$ E_{fotón} = W_0 + E_{c,max} $$
+donde $E_{fotón} = hf$ es la energía del fotón incidente, y $E_{c,max}$ es la energía cinética máxima con la que sale el electrón.
+Despejando la energía cinética máxima, obtenemos:
+$$ E_{c,max} = hf - W_0 $$
+De esta ecuación se deduce directamente de qué magnitudes depende la energía cinética máxima de los electrones emitidos:
+\begin{enumerate}
+    \item \textbf{De la frecuencia ($f$) de la radiación incidente:} La energía cinética máxima aumenta linealmente con la frecuencia de la luz. A mayor frecuencia, mayor energía del fotón y, por tanto, mayor la energía sobrante que se convierte en energía cinética.
+    \item \textbf{Del material del que está hecha la superficie:} A través del trabajo de extracción ($W_0$). Para una misma frecuencia de luz, un material con un trabajo de extracción menor emitirá electrones con mayor energía cinética.
+\end{enumerate}
+Es crucial destacar que la energía cinética máxima \textbf{no depende de la intensidad} de la radiación incidente. Una mayor intensidad significa más fotones, lo que resultará en más electrones emitidos (mayor corriente fotoeléctrica), pero la energía de cada uno de ellos no cambiará.
+
+\begin{cajaresultado}
+El \textbf{trabajo de extracción ($W_0$)} es la energía mínima requerida para liberar un electrón de la superficie de un material.
+La \textbf{energía cinética máxima} de los electrones emitidos depende linealmente de la \textbf{frecuencia de la luz incidente} y del \textbf{tipo de material} (a través de su trabajo de extracción).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El concepto de trabajo de extracción y la dependencia de la energía cinética de los fotoelectrones con la frecuencia de la luz (y no con su intensidad) fueron pruebas fundamentales de la naturaleza corpuscular de la luz. Estas observaciones, inexplicables por la teoría ondulatoria clásica, fueron explicadas por el modelo de fotones de Einstein, sentando una de las bases de la mecánica cuántica.
+\end{cajaconclusion}
+
+\newpage

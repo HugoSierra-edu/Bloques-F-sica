@@ -1,0 +1,861 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2006 - Convocatoria Ordinaria}
+\label{chap:2006_jun_ord}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Problemas de Campo Gravitatorio}
+\label{sec:grav_2006_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:1A_2006_jun_ord}
+
+\begin{cajaenunciado}
+Una sonda espacial de masa $m=1200\,\text{kg}$ se sitúa en una órbita circular de radio $r=6000\,\text{km}$, alrededor de un planeta. Si la energía cinética de la sonda es $E_{c}=5,4\cdot10^{9}\,\text{J}$, calcula:
+\begin{enumerate}
+    \item El período orbital de la sonda. (1 punto)
+    \item La masa del planeta. (1 punto)
+\end{enumerate}
+\textbf{Dato:} $G=6,67\cdot10^{-11}\,\text{Nm}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la sonda ($m$):} $m = 1200\,\text{kg}$.
+    \item \textbf{Radio orbital ($r$):} $r = 6000\,\text{km} = 6 \cdot 10^6\,\text{m}$.
+    \item \textbf{Energía cinética de la sonda ($E_c$):} $E_c = 5,4 \cdot 10^9\,\text{J}$.
+    \item \textbf{Constante de Gravitación Universal ($G$):} $G = 6,67 \cdot 10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Periodo orbital ($T$).
+        \item Masa del planeta ($M_p$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Sonda en órbita circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico en el centro. Una sonda espacial en una órbita circular de radio $r$ alrededor del planeta. Dibujar el vector velocidad $\vec{v}$ de la sonda, tangente a la órbita. Dibujar el vector Fuerza Gravitatoria $\vec{F}_g$ que el planeta ejerce sobre la sonda, apuntando hacia el centro del planeta. Etiquetar esta fuerza también como Fuerza Centrípeta $\vec{F}_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/grav_orbita_circular.png}
+    }}
+    \caption{Esquema de la sonda en órbita alrededor del planeta.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Apartado 1.} Para calcular el periodo, primero necesitamos la velocidad orbital. Esta se puede obtener a partir de la definición de energía cinética: $E_c = \frac{1}{2}mv^2$. Una vez conocida la velocidad, el periodo de un movimiento circular se obtiene de la relación $v = \frac{2\pi r}{T}$.
+
+\paragraph{Apartado 2.} Para que la sonda mantenga una órbita circular estable, la fuerza de atracción gravitatoria que ejerce el planeta debe ser igual a la fuerza centrípeta necesaria para el movimiento.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal:} $F_g = G \frac{M_p m}{r^2}$.
+    \item \textbf{Fuerza Centrípeta:} $F_c = m \frac{v^2}{r}$.
+\end{itemize}
+Igualando ambas fuerzas, se puede despejar la masa del planeta.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Período orbital de la sonda}
+A partir de la energía cinética, despejamos la velocidad orbital $v$:
+\begin{gather}
+    E_c = \frac{1}{2}mv^2 \implies v = \sqrt{\frac{2E_c}{m}}
+\end{gather}
+Con la velocidad, despejamos el periodo $T$:
+\begin{gather}
+    T = \frac{2\pi r}{v}
+\end{gather}
+
+\paragraph{2. Masa del planeta}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta:
+\begin{gather}
+    G \frac{M_p m}{r^2} = m \frac{v^2}{r} \implies G \frac{M_p}{r} = v^2
+\end{gather}
+Despejamos la masa del planeta, $M_p$:
+\begin{gather}
+    M_p = \frac{v^2 r}{G}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, calculamos la velocidad orbital de la sonda:
+\begin{gather}
+    v = \sqrt{\frac{2 \cdot (5,4 \cdot 10^9\,\text{J})}{1200\,\text{kg}}} = \sqrt{9 \cdot 10^6\,\text{m}^2/\text{s}^2} = 3000\,\text{m/s}
+\end{gather}
+
+\paragraph{1. Período orbital de la sonda}
+\begin{gather}
+    T = \frac{2\pi \cdot (6 \cdot 10^6\,\text{m})}{3000\,\text{m/s}} = 12566,37\,\text{s}
+\end{gather}
+\begin{cajaresultado}
+El período orbital de la sonda es de $\boldsymbol{12566,37\,\textbf{s}}$ (aproximadamente 3,49 horas).
+\end{cajaresultado}
+
+\paragraph{2. Masa del planeta}
+\begin{gather}
+    M_p = \frac{(3000\,\text{m/s})^2 \cdot (6 \cdot 10^6\,\text{m})}{6,67 \cdot 10^{-11}\,\text{N}\text{m}^2/\text{kg}^2} = \frac{5,4 \cdot 10^{13}}{6,67 \cdot 10^{-11}} \approx 8,096 \cdot 10^{23}\,\text{kg}
+\end{gather}
+\begin{cajaresultado}
+La masa del planeta es de $\boldsymbol{8,1 \cdot 10^{23}\,\textbf{kg}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la energía cinética y la masa de la sonda, se ha determinado su velocidad orbital, resultando ser de 3000 m/s. Con este dato, se ha calculado un periodo orbital de unas 3,5 horas. La dinámica del movimiento circular, que iguala la fuerza gravitatoria a la centrípeta, ha permitido calcular la masa del planeta, obteniendo un valor de $8,1 \cdot 10^{23}$ kg, ligeramente superior a la masa de Venus.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:1B_2006_jun_ord}
+
+\begin{cajaenunciado}
+Febos es un satélite que gira en una órbita circular de radio $r = 14460\,\text{km}$ alrededor del planeta Marte con un período de 14 horas, 39 minutos y 25 segundos. Sabiendo que el radio de Marte es $R_M = 3394\,\text{km}$, calcula:
+\begin{enumerate}
+    \item La aceleración de la gravedad en la superficie de Marte. (1.2 puntos)
+    \item La velocidad de escape de Marte de una nave espacial situada en Febos. (0,8 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Radio orbital de Febos ($r$):} $r = 14460\,\text{km} = 1,446 \cdot 10^7\,\text{m}$.
+    \item \textbf{Periodo orbital de Febos ($T$):} $T = 14\,\text{h} \cdot 3600\,\text{s/h} + 39\,\text{min} \cdot 60\,\text{s/min} + 25\,\text{s} = 50400 + 2340 + 25 = 52765\,\text{s}$.
+    \item \textbf{Radio de Marte ($R_M$):} $R_M = 3394\,\text{km} = 3,394 \cdot 10^6\,\text{m}$.
+    \item \textbf{Constante de Gravitación Universal ($G$):} $G = 6,67 \cdot 10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$. (No se da, pero es necesaria).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Gravedad en la superficie de Marte ($g_M$).
+        \item Velocidad de escape desde la órbita de Febos ($v_e$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Parámetros de Marte y Febos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta grande (Marte) con su radio $R_M$ indicado. Un satélite (Febos) en una órbita circular de radio $r$. En la superficie de Marte, dibujar un vector $\vec{g}_M$ apuntando hacia el centro. En la órbita de Febos, dibujar una nave espacial con un vector de velocidad de escape, $\vec{v}_e$, que apunta radialmente hacia afuera, alejándose de la órbita."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/grav_marte_febos.png}
+    }}
+    \caption{Esquema para el cálculo de la gravedad y la velocidad de escape.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Apartado 1.} Para calcular la gravedad en la superficie de Marte, $g_M = G \frac{M_M}{R_M^2}$, primero necesitamos determinar la masa de Marte, $M_M$. Podemos obtenerla a partir de los datos orbitales de Febos, aplicando la Tercera Ley de Kepler o igualando la fuerza gravitatoria a la fuerza centrípeta, como en el problema anterior.
+
+\paragraph{Apartado 2.} La velocidad de escape es la velocidad mínima que debe tener un objeto para escapar del campo gravitatorio de un astro. Se calcula mediante el principio de conservación de la energía mecánica, igualando la energía mecánica total del objeto a cero. La expresión para la velocidad de escape desde una distancia $r$ del centro del planeta es $v_e = \sqrt{\frac{2GM_M}{r}}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Aceleración de la gravedad en la superficie}
+Primero, obtenemos la masa de Marte ($M_M$) igualando $F_g=F_c$ para Febos:
+\begin{gather}
+    G \frac{M_M m_F}{r^2} = m_F \left(\frac{2\pi}{T}\right)^2 r \implies M_M = \frac{4\pi^2 r^3}{G T^2}
+\end{gather}
+Luego, usamos esta masa para calcular la gravedad en la superficie:
+\begin{gather}
+    g_M = G \frac{M_M}{R_M^2} = G \frac{1}{R_M^2} \left( \frac{4\pi^2 r^3}{G T^2} \right) = \frac{4\pi^2 r^3}{T^2 R_M^2}
+\end{gather}
+
+\paragraph{2. Velocidad de escape desde la órbita de Febos}
+Usamos la masa de Marte calculada en la fórmula de la velocidad de escape desde una distancia $r$:
+\begin{gather}
+    v_e = \sqrt{\frac{2GM_M}{r}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Aceleración de la gravedad en la superficie}
+Primero calculamos la masa de Marte:
+\begin{gather}
+    M_M = \frac{4\pi^2 (1,446 \cdot 10^7\,\text{m})^3}{(6,67 \cdot 10^{-11})(52765\,\text{s})^2} \approx \frac{1,196 \cdot 10^{23}}{1,857 \cdot 10^{-1}} \approx 6,44 \cdot 10^{23}\,\text{kg}
+\end{gather}
+Ahora calculamos la gravedad en su superficie:
+\begin{gather}
+    g_M = \frac{(6,67 \cdot 10^{-11})(6,44 \cdot 10^{23}\,\text{kg})}{(3,394 \cdot 10^6\,\text{m})^2} \approx \frac{4,296 \cdot 10^{13}}{1,152 \cdot 10^{13}} \approx 3,73\,\text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+La aceleración de la gravedad en la superficie de Marte es $\boldsymbol{g_M \approx 3,73\,\textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\paragraph{2. Velocidad de escape desde la órbita de Febos}
+\begin{gather}
+    v_e = \sqrt{\frac{2(6,67 \cdot 10^{-11})(6,44 \cdot 10^{23}\,\text{kg})}{1,446 \cdot 10^7\,\text{m}}} = \sqrt{\frac{8,59 \cdot 10^{13}}{1,446 \cdot 10^7}} \approx \sqrt{5,94 \cdot 10^6} \approx 2437\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad de escape desde la órbita de Febos es $\boldsymbol{v_e \approx 2437\,\textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Observando la órbita de su satélite Febos, hemos deducido que la masa de Marte es de $6,44 \cdot 10^{23}$ kg. Con este dato, se ha calculado que la aceleración de la gravedad en su superficie es de 3,73 m/s$^2$, aproximadamente un 38\% de la terrestre. Finalmente, se ha determinado que una nave que se encontrara en la órbita de Febos necesitaría alcanzar una velocidad de 2437 m/s para escapar de la atracción marciana.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Cuestiones de Ondas}
+\label{sec:ondas_2006_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:2A_2006_jun_ord}
+
+\begin{cajaenunciado}
+Una partícula de masa m oscila con frecuencia angular $\omega$ según un movimiento armónico simple de amplitud A. Deduce la expresión que proporciona la energía mecánica de esta partícula en función de los anteriores parámetros.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Sistema:} Partícula en Movimiento Armónico Simple (M.A.S.).
+    \item \textbf{Parámetros dados:} Masa ($m$), frecuencia angular ($\omega$), amplitud ($A$).
+    \item \textbf{Incógnita:} Expresión de la Energía Mecánica ($E_M$) en función de $m, \omega, A$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Energía en un M.A.S.} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de energía vs. posición (x) para un oscilador armónico. El eje x va de -A a +A. Dibujar una parábola cóncava hacia arriba para la Energía Potencial ($E_p$), que es cero en x=0 y máxima en x=\(\pm\)A. Dibujar una parábola cóncava hacia abajo para la Energía Cinética ($E_c$), que es máxima en x=0 y cero en x=\(\pm\)A. Dibujar una línea horizontal constante para la Energía Mecánica Total ($E_M$), mostrando que $E_M = E_c + E_p$ es constante e igual al valor máximo de $E_p$ o $E_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/ondas_energia_mas.png}
+    }}
+    \caption{Conservación y transformación de la energía en un M.A.S.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La energía mecánica total ($E_M$) de un sistema conservativo, como un oscilador armónico simple, es la suma de su energía cinética ($E_c$) y su energía potencial ($E_p$).
+\begin{itemize}
+    \item \textbf{Energía Cinética:} $E_c = \frac{1}{2}mv^2$.
+    \item \textbf{Energía Potencial Elástica:} $E_p = \frac{1}{2}kx^2$, donde $k$ es la constante recuperadora del oscilador.
+\end{itemize}
+En un M.A.S., la constante recuperadora $k$ está relacionada con la masa y la frecuencia angular por la expresión $\omega = \sqrt{\frac{k}{m}}$, de donde se deduce que $k = m\omega^2$. La energía mecánica total se conserva, es decir, su valor es constante en cualquier punto de la trayectoria.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La energía mecánica total es:
+\begin{gather}
+    E_M = E_c + E_p = \frac{1}{2}mv^2 + \frac{1}{2}kx^2
+\end{gather}
+Sustituimos $k=m\omega^2$:
+\begin{gather}
+    E_M = \frac{1}{2}mv^2 + \frac{1}{2}m\omega^2x^2
+\end{gather}
+Para deducir la expresión en función de los parámetros dados, podemos evaluar la energía en un punto de la trayectoria donde el cálculo sea sencillo. El punto más fácil es el extremo de la oscilación ($x=A$), donde la partícula se detiene momentáneamente ($v=0$).
+En $x=A$:
+\begin{itemize}
+    \item La energía cinética es nula: $E_c = \frac{1}{2}m(0)^2 = 0$.
+    \item La energía potencial es máxima: $E_p = \frac{1}{2}m\omega^2(A)^2$.
+\end{itemize}
+La energía mecánica total es la suma de ambas en ese punto:
+\begin{gather}
+    E_M = 0 + \frac{1}{2}m\omega^2A^2 = \frac{1}{2}m\omega^2A^2
+\end{gather}
+Dado que la energía mecánica se conserva, esta expresión es válida para cualquier punto de la trayectoria.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema no requiere sustitución numérica.
+\begin{cajaresultado}
+La expresión que proporciona la energía mecánica de la partícula es $\boldsymbol{E_M = \frac{1}{2}m\omega^2A^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La energía mecánica en un M.A.S. es constante y proporcional a la masa de la partícula, al cuadrado de la frecuencia angular y al cuadrado de la amplitud. La deducción se basa en que, en los extremos de la oscilación, toda la energía del sistema es potencial, permitiendo un cálculo directo de la energía total, que se mantendrá constante durante todo el movimiento.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:2B_2006_jun_ord}
+
+\begin{cajaenunciado}
+La amplitud de una onda que se desplaza en la dirección positiva del eje X es 20 cm, su frecuencia es 2,5 Hz y tiene una longitud de onda de 20 m. Escribe la ecuación que describe el movimiento de esta onda.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 20\,\text{cm} = 0,2\,\text{m}$.
+    \item \textbf{Frecuencia ($f$):} $f = 2,5\,\text{Hz}$.
+    \item \textbf{Longitud de onda ($\lambda$):} $\lambda = 20\,\text{m}$.
+    \item \textbf{Sentido de propagación:} Positivo del eje X.
+    \item \textbf{Incógnita:} Ecuación de la onda, $y(x,t)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Onda Armónica} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de una onda sinusoidal propagándose a lo largo del eje X. Etiquetar la amplitud (A=0,2 m) como la altura máxima de la onda y la longitud de onda ($\lambda=20$ m) como la distancia entre dos crestas consecutivas. Mostrar un vector $v$ indicando el sentido de propagación hacia la derecha (+X)."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/ondas_armonica.png}
+    }}
+    \caption{Representación de la onda y sus parámetros.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación general de una onda armónica que se propaga en el sentido positivo del eje X puede escribirse como:
+$$ y(x,t) = A \sin(\omega t - kx + \phi_0) $$
+donde $A$ es la amplitud, $\omega$ la frecuencia angular, $k$ el número de onda y $\phi_0$ la fase inicial. Para escribir la ecuación, debemos calcular $\omega$ y $k$ a partir de los datos proporcionados. La fase inicial $\phi_0$ no está determinada por el enunciado, por lo que podemos tomar la forma más simple, $\phi_0=0$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Calculamos la frecuencia angular $\omega$ y el número de onda $k$:
+\begin{gather}
+    \omega = 2\pi f \\
+    k = \frac{2\pi}{\lambda}
+\end{gather}
+Con estos valores, se construye la ecuación de la onda.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \omega = 2\pi \cdot (2,5\,\text{Hz}) = 5\pi\,\text{rad/s} \\
+    k = \frac{2\pi}{20\,\text{m}} = \frac{\pi}{10}\,\text{rad/m}
+\end{gather}
+Sustituyendo los valores de $A, \omega$ y $k$ en la ecuación general (con $\phi_0=0$):
+\begin{gather}
+    y(x,t) = 0,2 \sin\left(5\pi t - \frac{\pi}{10}x\right)
+\end{gather}
+\begin{cajaresultado}
+La ecuación que describe la onda, en unidades del SI, es $\boldsymbol{y(x,t) = 0,2 \sin\left(5\pi t - \frac{\pi}{10}x\right)}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la frecuencia y la longitud de onda dadas, se han calculado la frecuencia angular ($\omega=5\pi$ rad/s) y el número de onda ($k=\pi/10$ rad/m). Estos parámetros, junto con la amplitud, definen completamente la función de onda. La forma $A\sin(\omega t - kx)$ representa una onda que se propaga en la dirección positiva del eje X, cumpliendo todos los requisitos del enunciado.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Cuestiones de Óptica}
+\label{sec:optica_2006_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:3A_2006_jun_ord}
+
+\begin{cajaenunciado}
+Demuestra, mediante trazado de rayos, que una lente divergente no puede formar una imagen real de un objeto real. Considera los casos en que la distancia entre el objeto y la lente sea mayor y menor que la distancia focal.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica que requiere una demostración gráfica.
+\begin{itemize}
+    \item \textbf{Elemento óptico:} Lente delgada divergente.
+    \item \textbf{Objeto:} Objeto real (situado a la izquierda de la lente, $s<0$).
+    \item \textbf{Tarea:} Demostrar que la imagen no puede ser real ($s'>0$). Se deben analizar dos casos: $|s| > |f|$ y $|s| < |f|$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Caso 1: Objeto más lejos que el foco ($|s| > |f|$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente divergente. Dibujar el eje óptico y la lente. Marcar el foco imagen F' a la izquierda y el foco objeto F a la derecha. Colocar un objeto (flecha vertical) a la izquierda de F'. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje óptico, que se refracta de forma que su prolongación hacia atrás pasa por F'. 2) Un rayo que se dirige hacia el foco objeto F, que se refracta saliendo paralelo al eje. Mostrar que los rayos refractados divergen. Sus prolongaciones hacia atrás se cortan entre F' y la lente para formar una imagen virtual, derecha y más pequeña."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Caso 2: Objeto entre el foco y la lente ($|s| < |f|$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Similar al anterior, pero con el objeto situado entre el foco imagen F' y la lente. Trazar los mismos dos rayos: 1) Paralelo al eje, se refracta y su prolongación pasa por F'. 2) Que pasa por el centro óptico, sin desviarse. Mostrar de nuevo que los rayos refractados divergen y que sus prolongaciones hacia atrás forman una imagen virtual, derecha y más pequeña, situada entre el objeto y la lente."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Trazado de rayos para una lente divergente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Una \textbf{lente divergente} (bicóncava o plano-cóncava) es aquella que hace que los rayos de luz paralelos que la atraviesan se separen (diverjan). Su distancia focal imagen ($f'$) es, por convenio, negativa. El foco imagen F' es virtual, ya que es el punto del que parecen diverger los rayos.
+Una \textbf{imagen real} se forma en el punto donde los rayos de luz refractados convergen realmente. Podría proyectarse en una pantalla.
+Una \textbf{imagen virtual} se forma en el punto donde convergen las prolongaciones hacia atrás de los rayos refractados. No puede proyectarse.
+
+\paragraph{Demostración por trazado de rayos}
+En ambos casos representados en la figura:
+\begin{enumerate}
+    \item Se trazan los rayos principales saliendo de la punta del objeto.
+    \item Se observa que los rayos que emergen de la lente (rayos refractados) \textbf{siempre divergen} en el espacio a la derecha de la lente (espacio imagen).
+    \item Como los rayos refractados nunca se cortan en el espacio imagen, no es posible que formen una imagen real.
+    \item Para encontrar la imagen, debemos prolongar los rayos refractados hacia atrás, en el espacio objeto (a la izquierda de la lente).
+    \item Estas prolongaciones sí se cortan en un punto, formando una imagen que es siempre \textbf{virtual}, \textbf{derecha} y de \textbf{menor tamaño} que el objeto.
+\end{enumerate}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+La demostración es gráfica y conceptual, no numérica.
+\begin{cajaresultado}
+Como se demuestra en los trazados de rayos, para cualquier posición de un objeto real frente a una lente divergente, los rayos refractados divergen y nunca convergen en un punto para formar una imagen real. La imagen formada es siempre virtual.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La naturaleza de una lente divergente es esparcir la luz. Por este motivo, es físicamente imposible que los rayos provenientes de un objeto real converjan tras atravesarla. La imagen formada por una lente divergente de un objeto real es, sin excepción, virtual, derecha y de menor tamaño, independientemente de la posición del objeto.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:3B_2006_jun_ord}
+
+\begin{cajaenunciado}
+Para poder observar con detalle objetos pequeños puede emplearse una lupa. ¿Qué tipo de lente es, convergente o divergente? ¿Dónde debe situarse el objeto a observar? ¿Cómo es la imagen que se forma, real o virtual?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre el funcionamiento de la lupa.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Funcionamiento de la Lupa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente convergente funcionando como lupa. Dibujar el eje óptico y la lente. Marcar el foco imagen F' a la derecha y el foco objeto F a la izquierda. Colocar un objeto pequeño (flecha vertical) entre el foco objeto F y la lente. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje, que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico sin desviarse. Mostrar que los rayos refractados divergen. Sus prolongaciones hacia atrás (líneas discontinuas) se cortan para formar una imagen virtual, derecha y de mayor tamaño que el objeto."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Formación de la imagen en una lupa.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El propósito de una lupa es producir una imagen \textbf{aumentada} de un objeto cercano.
+
+\paragraph{1. ¿Qué tipo de lente es?}
+Para obtener una imagen de mayor tamaño que el objeto, se necesita una lente \textbf{convergente}. Las lentes divergentes, como se vio en la cuestión anterior, siempre producen imágenes de menor tamaño.
+
+\paragraph{2. ¿Dónde debe situarse el objeto?}
+Una lente convergente puede producir imágenes reales o virtuales dependiendo de la posición del objeto. Para que funcione como lupa, la imagen debe ser virtual y derecha (para poder observarla a través de la lente). Esta condición se cumple únicamente cuando el objeto se sitúa \textbf{entre el foco objeto (F) y el centro óptico de la lente}.
+
+\paragraph{3. ¿Cómo es la imagen que se forma?}
+Como se deduce del trazado de rayos y de las condiciones de uso, la imagen formada por una lupa es:
+\begin{itemize}
+    \item \textbf{Virtual:} Se forma por la prolongación de los rayos, no puede proyectarse. La observamos "dentro" de la lente.
+    \item \textbf{Derecha:} Tiene la misma orientación que el objeto.
+    \item \textbf{De mayor tamaño:} Es el propósito de la lupa.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica.
+\begin{cajaresultado}
+\begin{itemize}
+    \item Una lupa es una lente \textbf{convergente}.
+    \item El objeto debe situarse \textbf{entre el foco y la lente}.
+    \item La imagen que se forma es \textbf{virtual}, derecha y aumentada.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El funcionamiento de la lupa es una aplicación específica de las lentes convergentes. Al colocar el objeto a una distancia inferior a la distancia focal, se consigue una imagen virtual, derecha y de mayor tamaño, permitiendo la observación detallada de objetos pequeños.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Cuestiones de Campo Eléctrico}
+\label{sec:elec_2006_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:4A_2006_jun_ord}
+
+\begin{cajaenunciado}
+¿Qué relación hay entre el potencial y el campo eléctricos? ¿Cómo se expresa matemáticamente esa relación en el caso de un campo eléctrico uniforme?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre los conceptos de campo y potencial eléctrico.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Relación Campo-Potencial} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una región del espacio con un campo eléctrico uniforme, $\vec{E}$, apuntando hacia la derecha, representado por líneas de campo paralelas y equidistantes. Dibujar dos superficies equipotenciales (planos verticales), una $V_A$ y otra $V_B$ a su derecha, separadas por una distancia $d$. Indicar que $V_A > V_B$. El vector $\vec{E}$ debe ser perpendicular a las superficies equipotenciales y apuntar en el sentido de los potenciales decrecientes."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Campo eléctrico uniforme y superficies equipotenciales.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Relación general entre Potencial y Campo}
+El campo eléctrico $\vec{E}$ y el potencial eléctrico $V$ son dos formas diferentes de describir la misma alteración del espacio creada por una distribución de cargas. Están íntimamente relacionados.
+\begin{itemize}
+    \item El campo eléctrico es un \textbf{campo vectorial} que describe la fuerza por unidad de carga en cada punto.
+    \item El potencial eléctrico es un \textbf{campo escalar} que describe la energía potencial por unidad de carga en cada punto.
+\end{itemize}
+La relación matemática fundamental es que \textbf{el campo eléctrico es el gradiente del potencial eléctrico cambiado de signo}.
+$$ \vec{E} = -\vec{\nabla}V $$
+Esto significa que el vector campo eléctrico $\vec{E}$:
+\begin{enumerate}
+    \item Es siempre \textbf{perpendicular a las superficies equipotenciales} (superficies donde $V$ es constante).
+    \item Apunta en la dirección y sentido en que el \textbf{potencial eléctrico disminuye más rápidamente}.
+\end{enumerate}
+De forma integral, la diferencia de potencial entre dos puntos A y B es el trabajo por unidad de carga realizado por el campo para mover una carga de A a B, y se calcula como la integral de línea del campo eléctrico:
+$$ V_A - V_B = \int_A^B \vec{E} \cdot d\vec{l} $$
+
+\paragraph{Relación en un campo eléctrico uniforme}
+Un campo eléctrico uniforme es aquel en el que el vector $\vec{E}$ es constante en módulo, dirección y sentido en toda la región.
+En este caso, la relación integral se simplifica enormemente. Si nos movemos una distancia $d$ en la misma dirección y sentido que el campo, desde un punto A a un punto B:
+$$ V_A - V_B = \int_A^B E \cdot dl \cos(0^\circ) = E \int_A^B dl = E \cdot d $$
+Reordenando, el módulo del campo eléctrico se puede expresar como la diferencia de potencial dividida por la distancia:
+$$ E = \frac{V_A - V_B}{d} = -\frac{\Delta V}{d} $$
+donde $\Delta V = V_B - V_A$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica.
+\begin{cajaresultado}
+\begin{itemize}
+    \item El campo eléctrico es el gradiente del potencial cambiado de signo ($\vec{E} = -\vec{\nabla}V$).
+    \item En un campo uniforme, el módulo del campo es igual a la diferencia de potencial entre dos puntos dividida por la distancia que los separa en la dirección del campo ($E = -\frac{\Delta V}{d}$).
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo y el potencial eléctricos son dos caras de la misma moneda. El campo, una magnitud vectorial, deriva del potencial, una magnitud escalar. El campo eléctrico siempre apunta de zonas de mayor potencial a zonas de menor potencial, y su intensidad indica cuán rápido varía dicho potencial en el espacio.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:4B_2006_jun_ord}
+
+\begin{cajaenunciado}
+Menciona dos aplicaciones del electromagnetismo. Indica con qué fenómeno electromagnético se encuentran relacionadas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica que pide nombrar y explicar brevemente dos aplicaciones del electromagnetismo y el principio físico subyacente.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El electromagnetismo, unificado por las ecuaciones de Maxwell, describe la interacción entre cargas eléctricas y campos eléctricos y magnéticos. Sus aplicaciones son innumerables en la tecnología moderna.
+
+\paragraph{Aplicación 1: Generador Eléctrico}
+\begin{itemize}
+    \item \textbf{Descripción:} Un generador eléctrico es un dispositivo que convierte energía mecánica en energía eléctrica. Es el fundamento de la producción de electricidad en las centrales eléctricas (hidroeléctricas, térmicas, nucleares, eólicas, etc.).
+    \item \textbf{Fenómeno relacionado:} La \textbf{inducción electromagnética (Ley de Faraday-Lenz)}. El principio de funcionamiento consiste en hacer girar una espira (un conjunto de cables conductores) dentro de un campo magnético (o viceversa). Al girar, el flujo magnético que atraviesa la espira varía con el tiempo. Según la ley de Faraday, esta variación de flujo induce una fuerza electromotriz (un voltaje) en los extremos de la espira, generando una corriente eléctrica alterna.
+\end{itemize}
+
+\paragraph{Aplicación 2: Motor Eléctrico}
+\begin{itemize}
+    \item \textbf{Descripción:} Un motor eléctrico es un dispositivo que convierte energía eléctrica en energía mecánica (movimiento de rotación). Se encuentra en una vasta gama de aparatos, desde electrodomésticos (batidoras, ventiladores) hasta vehículos eléctricos y maquinaria industrial.
+    \item \textbf{Fenómeno relacionado:} La \textbf{fuerza de Lorentz}. El principio de funcionamiento es, en cierto modo, el inverso del generador. Se hace pasar una corriente eléctrica a través de una espira que se encuentra en el seno de un campo magnético. Según la ley de Lorentz, los lados de la espira por los que circula la corriente experimentan una fuerza magnética ($\vec{F} = I(\vec{L} \times \vec{B})$). Estas fuerzas crean un par de torsión que hace girar la espira, produciendo el movimiento mecánico.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica.
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Generador eléctrico:} Basado en la \textbf{inducción electromagnética}, convierte energía mecánica en eléctrica.
+    \item \textbf{Motor eléctrico:} Basado en la \textbf{fuerza de Lorentz}, convierte energía eléctrica en mecánica.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Los generadores y los motores eléctricos son dos aplicaciones fundamentales y simétricas del electromagnetismo. Mientras que el generador utiliza el movimiento en un campo magnético para inducir una corriente, el motor utiliza una corriente en un campo magnético para producir movimiento. Ambos dispositivos son pilares de la sociedad tecnológica actual.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Problemas de Física Moderna}
+\label{sec:moderna_2006_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:5A_2006_jun_ord}
+
+\begin{cajaenunciado}
+La gráfica de la figura adjunta representa el potencial de frenado, $V_f$, de una célula fotoeléctrica en función de la frecuencia, $\nu$, de la luz incidente. La ordenada en el origen tiene el valor -2 V.
+\begin{enumerate}
+    \item Deduce la expresión teórica de $V_f$ en función de $\nu$. (1 punto)
+    \item ¿Qué parámetro característico de la célula fotoeléctrica podemos determinar a partir de la ordenada en el origen? Determina su valor y razona la respuesta. (0.5 puntos)
+    \item ¿Qué valor tendrá la pendiente de la recta de la figura? Dedúcelo. (0,5 puntos)
+\end{enumerate}
+\textbf{Datos:} $e=1,6\cdot10^{-19}\,\text{C}$; $h=6,6\cdot10^{-34}\,\text{Js}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Gráfica:} Potencial de frenado ($V_f$) frente a frecuencia ($\nu$). Es una línea recta.
+    \item \textbf{Ordenada en el origen:} El punto donde la recta corta el eje $V_f$ es $-2\,\text{V}$. Esto corresponde al valor de $V_f$ cuando $\nu=0$.
+    \item \textbf{Carga del electrón ($e$):} $e=1,6\cdot10^{-19}\,\text{C}$.
+    \item \textbf{Constante de Planck ($h$):} $h=6,6\cdot10^{-34}\,\text{Js}$.
+    \item \textbf{Incógnitas:} Expresión de $V_f(\nu)$, parámetro de la ordenada en el origen, y valor de la pendiente.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La figura del enunciado es la representación gráfica principal del problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se basa en la explicación de Einstein del \textbf{efecto fotoeléctrico}.
+La energía de un fotón incidente ($E_{foton}$) se invierte en dos partes: una parte para arrancar el electrón del metal, llamada \textbf{trabajo de extracción} o \textbf{función de trabajo} ($W_0$), y el resto se convierte en la \textbf{energía cinética máxima} ($E_{c,max}$) del electrón emitido (fotoelectrón).
+$$ E_{foton} = W_0 + E_{c,max} $$
+La energía del fotón es $E_{foton} = h\nu$. El potencial de frenado $V_f$ es el potencial eléctrico que hay que aplicar para detener a los fotoelectrones más energéticos, por lo que se relaciona con su energía cinética máxima mediante $E_{c,max} = e|V_f|$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Expresión teórica de $V_f(\nu)$}
+Partimos de la ecuación de Einstein:
+\begin{gather}
+    h\nu = W_0 + E_{c,max}
+\end{gather}
+Sustituimos $E_{c,max} = e|V_f|$. El potencial de frenado es negativo, $V_f < 0$, por lo que $|V_f| = -V_f$.
+\begin{gather}
+    h\nu = W_0 - eV_f
+\end{gather}
+Despejamos el potencial de frenado $V_f$:
+\begin{gather}
+    eV_f = W_0 - h\nu \implies V_f = \frac{W_0}{e} - \frac{h}{e}\nu
+\end{gather}
+Reordenando para que se asemeje a la ecuación de una recta $y=mx+b$, donde $y=V_f$ y $x=\nu$:
+\begin{gather}
+    V_f(\nu) = \left(\frac{h}{e}\right)\nu - \frac{W_0}{e}
+\end{gather}
+
+\paragraph{2. Parámetro de la ordenada en el origen}
+La ordenada en el origen es el valor de la función cuando la variable independiente es cero. En nuestro caso, es el valor teórico de $V_f$ cuando $\nu=0$.
+De la ecuación deducida, si $\nu=0$, entonces $V_f(0) = -\frac{W_0}{e}$.
+Por tanto, la ordenada en el origen nos permite determinar el \textbf{trabajo de extracción ($W_0$)} del metal.
+
+\paragraph{3. Pendiente de la recta}
+Comparando la ecuación $V_f(\nu) = \left(\frac{h}{e}\right)\nu - \frac{W_0}{e}$ con la forma explícita de la recta $y=mx+b$, la pendiente $m$ es el coeficiente que multiplica a la variable del eje X (la frecuencia $\nu$).
+Por lo tanto, la pendiente de la recta es el cociente entre la constante de Planck y la carga del electrón, $\boldsymbol{h/e}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+
+\begin{cajaresultado}
+La expresión teórica, que tiene la forma de una recta, es $\boldsymbol{V_f(\nu) = \frac{h}{e}\nu - \frac{W_0}{e}}$.
+\end{cajaresultado}
+
+\paragraph{2. Valor del trabajo de extracción}
+Se nos da que la ordenada en el origen es $-2\,\text{V}$.
+\begin{gather}
+    V_f(0) = -\frac{W_0}{e} = -2\,\text{V} \implies W_0 = 2 \cdot e = 2\,\text{eV}
+\end{gather}
+En julios:
+\begin{gather}
+    W_0 = 2 \cdot (1,6\cdot10^{-19}\,\text{C}) = 3,2\cdot10^{-19}\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+El parámetro es el \textbf{trabajo de extracción}, $W_0$. Su valor es $\boldsymbol{W_0 = 2\,\textbf{eV}}$ o $\boldsymbol{3,2\cdot10^{-19}\,\textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph{3. Valor de la pendiente}
+\begin{gather}
+    \text{Pendiente} = \frac{h}{e} = \frac{6,6\cdot10^{-34}\,\text{Js}}{1,6\cdot10^{-19}\,\text{C}} = 4,125\cdot10^{-15}\,\text{V}\cdot\text{s}
+\end{gather}
+\begin{cajaresultado}
+La pendiente de la recta tiene un valor de $\boldsymbol{4,125\cdot10^{-15}\,\textbf{V}\cdot\textbf{s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La ecuación de Einstein para el efecto fotoeléctrico predice una relación lineal entre el potencial de frenado y la frecuencia, lo que coincide con la gráfica. El análisis de la ecuación de la recta permite extraer información física fundamental: la pendiente es una constante universal ($h/e$) y la ordenada en el origen está directamente relacionada con el trabajo de extracción del material, una propiedad característica del mismo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 2 - OPCIÓN B}
+\label{subsec:5B_2006_jun_ord}
+
+\begin{cajaenunciado}
+\begin{enumerate}
+    \item Calcula la actividad de una muestra radiactiva de masa 5g que tiene una constante radiactiva $\lambda=3\cdot10^{-9}\,\text{s}^{-1}$ y cuya masa atómica es 200 u. (1,2 puntos)
+    \item ¿Cuántos años deberíamos esperar para que la masa radiactiva de la muestra se reduzca a la décima parte de la inicial? (0,8 puntos)
+\end{enumerate}
+\textbf{Dato:} $N_A=6,0\cdot10^{23}\,\text{mol}^{-1}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa inicial de la muestra ($m_0$):} $m_0 = 5\,\text{g}$.
+    \item \textbf{Constante radiactiva ($\lambda$):} $\lambda = 3 \cdot 10^{-9}\,\text{s}^{-1}$.
+    \item \textbf{Masa atómica:} 200 u. Esto implica que la \textbf{Masa molar ($M$)} es $M \approx 200\,\text{g/mol}$.
+    \item \textbf{Número de Avogadro ($N_A$):} $N_A = 6,0 \cdot 10^{23}\,\text{mol}^{-1}$.
+    \item \textbf{Condición para apartado 2:} $m(t) = m_0/10$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Actividad inicial ($A_0$).
+        \item Tiempo $t$ para que la masa se reduzca a la décima parte.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Decaimiento Radioactivo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de la masa de una muestra radiactiva en función del tiempo. El eje Y es la masa ($m$) y el eje X es el tiempo ($t$). Dibujar una curva de decaimiento exponencial que comience en $m_0=5g$ en $t=0$. Marcar un punto en la curva donde la masa se ha reducido a la décima parte, $m(t)=m_0/10$, y etiquetar el tiempo correspondiente en el eje X como 't'."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Curva de decaimiento exponencial de la muestra.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Apartado 1.} La \textbf{actividad ($A$)} de una muestra es el número de desintegraciones por segundo. Se calcula como $A = \lambda N$, donde $N$ es el número de núcleos radiactivos. Para calcular la actividad inicial ($A_0$), primero debemos calcular el número inicial de núcleos ($N_0$) en la muestra a partir de su masa.
+
+\paragraph{Apartado 2.} La \textbf{ley de desintegración radiactiva} describe cómo disminuye el número de núcleos (y por tanto la masa) de una muestra con el tiempo:
+$$ N(t) = N_0 e^{-\lambda t} \quad \text{o} \quad m(t) = m_0 e^{-\lambda t} $$
+Usaremos esta ley para encontrar el tiempo $t$ solicitado.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Actividad inicial ($A_0$)}
+Primero, calculamos el número inicial de núcleos $N_0$:
+\begin{gather}
+    N_0 = \frac{m_0}{M} \cdot N_A
+\end{gather}
+Luego, calculamos la actividad inicial:
+\begin{gather}
+    A_0 = \lambda N_0
+\end{gather}
+
+\paragraph{2. Tiempo de decaimiento}
+Partimos de la ley de decaimiento para la masa y aplicamos la condición $m(t) = m_0/10$:
+\begin{gather}
+    \frac{m_0}{10} = m_0 e^{-\lambda t} \implies \frac{1}{10} = e^{-\lambda t}
+\end{gather}
+Para despejar $t$, aplicamos logaritmo neperiano a ambos lados:
+\begin{gather}
+    \ln\left(\frac{1}{10}\right) = -\lambda t \implies -\ln(10) = -\lambda t \implies t = \frac{\ln(10)}{\lambda}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Actividad inicial ($A_0$)}
+\begin{gather}
+    N_0 = \frac{5\,\text{g}}{200\,\text{g/mol}} \cdot (6,0 \cdot 10^{23}\,\text{mol}^{-1}) = 0,025 \cdot (6,0 \cdot 10^{23}) = 1,5 \cdot 10^{22}\,\text{núcleos}
+\end{gather}
+\begin{gather}
+    A_0 = (3 \cdot 10^{-9}\,\text{s}^{-1}) \cdot (1,5 \cdot 10^{22}\,\text{núcleos}) = 4,5 \cdot 10^{13}\,\text{Bq}
+\end{gather}
+\begin{cajaresultado}
+La actividad inicial de la muestra es $\boldsymbol{4,5 \cdot 10^{13}\,\textbf{Bq}}$.
+\end{cajaresultado}
+
+\paragraph{2. Tiempo de decaimiento}
+\begin{gather}
+    t = \frac{\ln(10)}{3 \cdot 10^{-9}\,\text{s}^{-1}} \approx \frac{2,3026}{3 \cdot 10^{-9}} \approx 7,675 \cdot 10^8\,\text{s}
+\end{gather}
+Convertimos el resultado a años:
+\begin{gather}
+    t_{\text{años}} = \frac{7,675 \cdot 10^8\,\text{s}}{365,25\,\text{días/año} \cdot 24\,\text{h/día} \cdot 3600\,\text{s/h}} \approx 24,32\,\text{años}
+\end{gather}
+\begin{cajaresultado}
+Deberíamos esperar $\boldsymbol{\approx 24,3\,\textbf{años}}$ para que la masa se reduzca a la décima parte.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La muestra de 5 gramos contiene $1,5 \cdot 10^{22}$ núcleos, lo que, dada su constante de desintegración, produce una actividad inicial de 45 TeraBecquerels. El decaimiento de esta muestra sigue una ley exponencial, y se ha calculado que se necesitarán 24,3 años para que el 90\% de la masa inicial se haya desintegrado.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Cuestiones de Física Nuclear}
+\label{sec:nuclear_2006_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:6A_2006_jun_ord}
+
+\begin{cajaenunciado}
+La fisión de un núcleo de ${}^{235}_{92}\text{U}$ se desencadena al absorber un neutrón, produciéndose un isótopo de Xe con número atómico 54, un isótopo de Sr con número másico 94 y 2 neutrones. Escribe la reacción ajustada.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Núcleo objetivo:} Uranio-235 (${}^{235}_{92}\text{U}$).
+    \item \textbf{Partícula de bombardeo:} Un neutrón (${}^{1}_{0}\text{n}$).
+    \item \textbf{Productos de la fisión:}
+    \begin{itemize}
+        \item Un isótopo de Xenón (Xe), con Z=54. Su número másico A es desconocido.
+        \item Un isótopo de Estroncio (Sr), con A=94. Su número atómico Z es desconocido.
+        \item Dos neutrones ($2 \cdot {}^{1}_{0}\text{n}$).
+    \end{itemize}
+    \item \textbf{Incógnita:} La ecuación nuclear completa y ajustada.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Fisión del Uranio-235} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un neutrón lento se aproxima a un gran núcleo de Uranio-235. En un segundo paso, el neutrón es absorbido, formando un núcleo inestable de U-236 en un estado excitado. En el tercer paso, el núcleo inestable se deforma y se divide violentamente en dos fragmentos más pequeños (núcleos de Xe y Sr) y emite dos neutrones rápidos. Mostrar una liberación de energía en forma de destello."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Representación esquemática del proceso de fisión.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para ajustar o balancear una reacción nuclear, se deben aplicar las \textbf{leyes de conservación de Soddy-Fajans}:
+\begin{enumerate}
+    \item \textbf{Conservación del número másico (A):} La suma de los números másicos de los reactivos debe ser igual a la suma de los números másicos de los productos.
+    \item \textbf{Conservación del número atómico (Z) (o de la carga):} La suma de los números atómicos de los reactivos debe ser igual a la suma de los números atómicos de los productos.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Escribimos la reacción con las incógnitas para los números másicos y atómicos de los productos:
+$$ {}^{235}_{92}\text{U} + {}^{1}_{0}\text{n} \longrightarrow {}^{A}_{54}\text{Xe} + {}^{94}_{Z}\text{Sr} + 2 \cdot {}^{1}_{0}\text{n} $$
+
+\paragraph{Ajuste del número másico (A)}
+La suma de los superíndices a la izquierda debe ser igual a la suma de los superíndices a la derecha.
+\begin{gather}
+    235 + 1 = A + 94 + 2 \cdot 1 \\
+    236 = A + 96 \implies A = 236 - 96 = 140
+\end{gather}
+
+\paragraph{Ajuste del número atómico (Z)}
+La suma de los subíndices a la izquierda debe ser igual a la suma de los subíndices a la derecha.
+\begin{gather}
+    92 + 0 = 54 + Z + 2 \cdot 0 \\
+    92 = 54 + Z \implies Z = 92 - 54 = 38
+\end{gather}
+El isótopo de Xenón es ${}^{140}_{54}\text{Xe}$ y el de Estroncio es ${}^{94}_{38}\text{Sr}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituyendo los valores de A y Z encontrados, la reacción ajustada es:
+$$ {}^{235}_{92}\text{U} + {}^{1}_{0}\text{n} \longrightarrow {}^{140}_{54}\text{Xe} + {}^{94}_{38}\text{Sr} + 2 {}^{1}_{0}\text{n} $$
+\begin{cajaresultado}
+La reacción nuclear ajustada es: $\boldsymbol{{}^{235}_{92}\textbf{U} + {}^{1}_{0}\textbf{n} \longrightarrow {}^{140}_{54}\textbf{Xe} + {}^{94}_{38}\textbf{Sr} + 2 {}^{1}_{0}\textbf{n}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando las leyes de conservación del número másico y del número atómico, se han determinado los nucleones y protones de los isótopos resultantes. El proceso completo describe la fisión de un núcleo de uranio-235 inducida por un neutrón, que da como resultado dos núcleos más ligeros (Xenón-140 y Estroncio-94) y la liberación de dos neutrones adicionales, capaces de continuar una reacción en cadena.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:6B_2006_jun_ord}
+
+\begin{cajaenunciado}
+Explica por qué la masa de un núcleo atómico es menor que la suma de las masas de las partículas que lo constituyen.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión puramente teórica sobre el concepto de defecto de masa y energía de enlace.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Defecto de Masa y Energía de Enlace} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama conceptual de 'antes y después'. A la izquierda ('Componentes separados'), mostrar varios protones (círculos rojos) y neutrones (círculos grises) libres y en reposo. Poner una balanza imaginaria debajo que marque una masa $M_{componentes}$. A la derecha ('Núcleo formado'), mostrar las mismas partículas unidas formando un núcleo compacto. Poner una balanza debajo que marque una masa $M_{núcleo}$, visiblemente menor que la anterior. Dibujar una flecha saliendo del proceso de unión, etiquetada como 'Energía de enlace liberada, $E_b = \Delta m c^2$'."
+    \vspace{0.5cm} % \includegraphics[]{...}
+    }}
+    \caption{Ilustración del concepto de defecto de masa.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La respuesta a esta pregunta se fundamenta en uno de los principios más importantes de la física moderna: la \textbf{equivalencia entre masa y energía}, formulada por Albert Einstein.
+
+\paragraph{1. Equivalencia Masa-Energía ($E=mc^2$)}
+Esta ecuación establece que la masa y la energía son dos manifestaciones de la misma entidad física y pueden convertirse la una en la otra. Una pequeña cantidad de masa puede liberar una enorme cantidad de energía, y viceversa.
+
+\paragraph{2. Formación de un Núcleo y Energía de Enlace}
+Un núcleo atómico está formado por protones y neutrones (nucleones) que se mantienen unidos por la \textbf{fuerza nuclear fuerte}. Para formar el núcleo, los nucleones deben ser agrupados, venciendo la repulsión eléctrica entre los protones. Al hacerlo, el sistema pasa de un estado de mayor energía (nucleones separados) a uno de menor energía (núcleo ligado y estable).
+Por el principio de conservación de la energía, esta diferencia de energía debe ser liberada al exterior, generalmente en forma de radiación gamma. Esta energía liberada se denomina \textbf{energía de enlace nuclear ($E_b$)}.
+
+\paragraph{3. El Defecto de Masa}
+Según la ecuación de Einstein, si el sistema ha perdido una cantidad de energía $E_b$, su masa debe haber disminuido en una cantidad $\Delta m$ tal que:
+$$ E_b = (\Delta m) c^2 $$
+Esta pérdida de masa, $\Delta m$, se conoce como \textbf{defecto de masa}. Es la diferencia entre la suma de las masas de los protones y neutrones por separado y la masa real del núcleo ya formado.
+$$ \Delta m = (Z \cdot m_{protón} + N \cdot m_{neutrón}) - M_{núcleo} $$
+Como se libera energía ($E_b > 0$), el defecto de masa es siempre positivo ($\Delta m > 0$), lo que implica que:
+$$ (Z \cdot m_{protón} + N \cdot m_{neutrón}) > M_{núcleo} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica.
+\begin{cajaresultado}
+La masa de un núcleo es menor que la suma de las masas de sus partículas constituyentes porque, durante la formación del núcleo, se libera una cantidad de energía (la energía de enlace) para crear un sistema estable. Según la relación $E=mc^2$ de Einstein, esta pérdida de energía se corresponde con una pérdida de masa, conocida como defecto de masa.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El hecho de que un núcleo pese menos que la suma de sus partes es una consecuencia directa de la equivalencia masa-energía. La "masa faltante" no se ha perdido, sino que se ha convertido en la energía de enlace que mantiene cohesionado al núcleo, siendo una medida directa de su estabilidad. Este principio es la base de la energía liberada en las reacciones nucleares.
+\end{cajaconclusion}
+
+\newpage

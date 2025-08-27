@@ -1,0 +1,779 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2009 - Convocatoria Extraordinaria}
+\label{chap:2009_sep_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2009_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:1A_2009_sep_ext}
+
+\begin{cajaenunciado}
+Determina la aceleración de la gravedad en la superficie de Marte sabiendo que su densidad media es 0,72 veces la densidad media de la Tierra y que el radio de dicho planeta es 0,53 veces el radio terrestre (1,5 puntos).
+\textbf{Dato:} aceleración de la gravedad en la superficie terrestre $g=9,8\,\text{m/s}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Relación de densidades ($\rho$):} $\rho_M = 0,72 \cdot \rho_T$
+    \item \textbf{Relación de radios ($R$):} $R_M = 0,53 \cdot R_T$
+    \item \textbf{Gravedad en la Tierra ($g_T$):} $g_T = 9,8 \, \text{m/s}^2$
+    \item \textbf{Incógnita:} Aceleración de la gravedad en Marte ($g_M$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Comparación Tierra-Marte} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos esferas una al lado de la otra. La de la izquierda, más grande, representa a la Tierra, con su radio $R_T$ indicado. La de la derecha, más pequeña, representa a Marte, con su radio $R_M$ indicado. Sobre la superficie de cada planeta, dibujar un vector de aceleración de la gravedad, $g_T$ y $g_M$, apuntando hacia el centro del respectivo planeta. Incluir etiquetas de texto que indiquen las relaciones de radio y densidad: $R_M = 0,53 R_T$ y $\rho_M = 0,72 \rho_T$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{comparacion_tierra_marte.png}
+    }}
+    \caption{Esquema para la comparación de la gravedad superficial.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La aceleración de la gravedad en la superficie de un planeta se deriva de la Ley de Gravitación Universal, siendo la fuerza por unidad de masa.
+$$ g = G \frac{M}{R^2} $$
+La masa ($M$) de un planeta se puede expresar en función de su densidad media ($\rho$) y su volumen ($V = \frac{4}{3}\pi R^3$):
+$$ M = \rho \cdot V = \rho \cdot \frac{4}{3}\pi R^3 $$
+Sustituyendo la masa en la fórmula de la gravedad, obtenemos una expresión que depende de la densidad y el radio:
+$$ g = G \frac{\rho \cdot \frac{4}{3}\pi R^3}{R^2} = \frac{4}{3}\pi G \rho R $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Escribimos la expresión de la gravedad para la Tierra y para Marte:
+$$ g_T = \frac{4}{3}\pi G \rho_T R_T $$
+$$ g_M = \frac{4}{3}\pi G \rho_M R_M $$
+Para resolver el problema, la forma más sencilla es establecer un cociente entre ambas expresiones, lo que permite cancelar las constantes:
+$$ \frac{g_M}{g_T} = \frac{\frac{4}{3}\pi G \rho_M R_M}{\frac{4}{3}\pi G \rho_T R_T} = \frac{\rho_M R_M}{\rho_T R_T} = \left(\frac{\rho_M}{\rho_T}\right) \left(\frac{R_M}{R_T}\right) $$
+De esta relación, podemos despejar la gravedad en Marte:
+$$ g_M = g_T \cdot \left(\frac{\rho_M}{\rho_T}\right) \left(\frac{R_M}{R_T}\right) $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores de las relaciones dadas en el enunciado y el valor de la gravedad terrestre:
+\begin{gather}
+    g_M = (9,8 \, \text{m/s}^2) \cdot (0,72) \cdot (0,53) \approx 3,74 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+La aceleración de la gravedad en la superficie de Marte es $\boldsymbol{g_M \approx 3,74 \, \textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Expresando la gravedad superficial en función del radio y la densidad del planeta, y utilizando un cociente para eliminar las constantes, se ha calculado la gravedad en Marte. El resultado, $\mathbf{3,74 \, m/s^2}$, es consistente con el hecho de que Marte es un planeta más pequeño y menos denso que la Tierra.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:1B_2009_sep_ext}
+
+\begin{cajaenunciado}
+Dos masas puntuales M y m se encuentran separadas una distancia d. Indica si el campo o el potencial gravitatorios creados por estas masas pueden ser nulos en algún punto del segmento que las une. Justifica la respuesta (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre las propiedades de los campos y potenciales gravitatorios generados por un sistema de dos masas.
+\begin{itemize}
+    \item \textbf{Sistema:} Dos masas puntuales, M y m.
+    \item \textbf{Región de estudio:} El segmento de recta que une las dos masas.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Posibilidad de que el campo gravitatorio ($\vec{g}$) sea nulo.
+            \item Posibilidad de que el potencial gravitatorio ($V$) sea nulo.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo y Potencial entre dos masas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje horizontal X. Colocar una masa M en el origen y una masa m en la posición x=d. En un punto P intermedio, dibujar el vector de campo gravitatorio $\vec{g}_M$, que es atractivo y apunta hacia la izquierda. En el mismo punto P, dibujar el vector de campo $\vec{g}_m$, que es atractivo y apunta hacia la derecha. Mostrar que estos dos vectores se oponen. En un texto aparte, indicar que el potencial $V = V_M + V_m$ es la suma de dos valores negativos."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{campo_potencial_masas.png}
+    }}
+    \caption{Análisis del campo y potencial en el segmento que une las masas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Campo Gravitatorio ($\vec{g}$):} Es una magnitud \textbf{vectorial}. El campo total en un punto es la suma vectorial de los campos creados por cada masa (Principio de Superposición). El campo creado por una masa siempre es atractivo, es decir, apunta hacia la masa que lo crea.
+    \item \textbf{Potencial Gravitatorio ($V$):} Es una magnitud \textbf{escalar}. El potencial total es la suma algebraica de los potenciales individuales. Por convenio, el potencial gravitatorio creado por una masa es siempre negativo ($V = -G \frac{M}{r}$) y se anula en el infinito.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Campo Gravitatorio}
+En cualquier punto del segmento que une las masas, el campo $\vec{g}_M$ creado por la masa M apuntará hacia M, y el campo $\vec{g}_m$ creado por la masa m apuntará hacia m. Por lo tanto, los dos vectores de campo tienen la misma dirección pero sentidos opuestos.
+Para que el campo total sea nulo, la suma vectorial debe ser cero, lo que en este caso implica que sus módulos deben ser iguales:
+$$ |\vec{g}_M| = |\vec{g}_m| $$
+Si $x$ es la distancia desde M al punto nulo, la distancia desde m será $(d-x)$. La condición es:
+$$ G \frac{M}{x^2} = G \frac{m}{(d-x)^2} $$
+Esta ecuación tiene una solución para $x$ en el intervalo $(0, d)$. Por lo tanto, \textbf{sí existe un punto} donde el campo es nulo.
+
+\paragraph*{Potencial Gravitatorio}
+El potencial total en un punto del segmento es la suma de los potenciales creados por cada masa:
+$$ V_{total} = V_M + V_m = \left(-G \frac{M}{x}\right) + \left(-G \frac{m}{d-x}\right) = -G \left(\frac{M}{x} + \frac{m}{d-x}\right) $$
+Dado que $G, M, m, x$ y $(d-x)$ son todas cantidades positivas, los dos términos dentro del paréntesis son positivos. Su suma es positiva, y con el signo negativo exterior, el potencial total es siempre negativo.
+La única forma de que el potencial sea nulo es en el infinito. Por lo tanto, \textbf{no existe ningún punto} en el segmento donde el potencial sea nulo.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Campo Gravitatorio:} \textbf{SÍ} puede ser nulo. Existe un único punto en el segmento que une las masas donde los campos, al ser de sentidos opuestos, se anulan mutuamente.
+    \item \textbf{Potencial Gravitatorio:} \textbf{NO} puede ser nulo. Al ser una magnitud escalar siempre negativa (por convenio), la suma de los potenciales de ambas masas será siempre negativa y distinta de cero.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La naturaleza vectorial del campo gravitatorio permite la cancelación de los campos en un punto intermedio entre las masas. En cambio, la naturaleza escalar y aditiva del potencial (siempre negativo) impide que este se anule en cualquier punto del espacio finito.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Ondas}
+\label{sec:ondas_2009_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 2 - OPCIÓN A}
+\label{subsec:2A_2009_sep_ext}
+
+\begin{cajaenunciado}
+Indica, justificando la respuesta, qué magnitud o magnitudes características de un movimiento ondulatorio (amplitud, frecuencia, velocidad de propagación y longitud de onda) pueden variar sin que cambie el valor del período de dicho movimiento (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión puramente conceptual sobre las relaciones entre las magnitudes que caracterizan una onda.
+\begin{itemize}
+    \item \textbf{Condición:} El periodo ($T$) del movimiento ondulatorio es constante.
+    \item \textbf{Magnitudes a analizar:} Amplitud ($A$), frecuencia ($f$), velocidad de propagación ($v$), longitud de onda ($\lambda$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las magnitudes de una onda se relacionan entre sí mediante las siguientes ecuaciones fundamentales:
+\begin{itemize}
+    \item \textbf{Relación Periodo-Frecuencia:} La frecuencia es la inversa del periodo.
+    $$ f = \frac{1}{T} $$
+    \item \textbf{Ecuación fundamental de las ondas:} La velocidad de propagación es el producto de la longitud de onda por la frecuencia.
+    $$ v = \lambda \cdot f $$
+    \item \textbf{Amplitud:} La amplitud ($A$) determina la energía de la onda, pero es, en principio, independiente de las otras magnitudes cinemáticas.
+\end{itemize}
+
+\subsubsection*{4. Análisis y Justificación}
+Analicemos cada magnitud bajo la condición de que $T$ es constante:
+\begin{itemize}
+    \item \textbf{Frecuencia ($f$):} Puesto que $f = 1/T$, si el periodo $T$ es constante, la frecuencia $f$ también debe ser \textbf{constante} e igual a $1/T$. Por lo tanto, no puede variar.
+    \item \textbf{Amplitud ($A$):} La amplitud de una onda no depende del periodo. Representa la máxima elongación y está relacionada con la energía de la onda. Por lo tanto, la amplitud \textbf{SÍ puede variar} independientemente del periodo. Una onda puede tener el mismo periodo y frecuencia que otra pero una amplitud mayor o menor.
+    \item \textbf{Velocidad de propagación ($v$) y Longitud de onda ($\lambda$):} Estas dos magnitudes están ligadas por la relación $v = \lambda \cdot f$. Como hemos establecido que $f$ es constante, $v$ y $\lambda$ son directamente proporcionales. Esto significa que \textbf{SÍ pueden variar}, pero no de forma independiente: si la velocidad de propagación $v$ cambia (por ejemplo, si la onda cambia de medio), la longitud de onda $\lambda$ debe cambiar en la misma proporción para mantener la frecuencia constante.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+Si el periodo de una onda es constante, las magnitudes que pueden variar son la \textbf{amplitud}, la \textbf{velocidad de propagación} y la \textbf{longitud de onda}. La frecuencia, sin embargo, debe permanecer constante.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El periodo y la frecuencia son magnitudes intrínsecamente ligadas e inversas; si una es constante, la otra también lo es. La amplitud es independiente de ellas. La velocidad y la longitud de onda están acopladas a través de la frecuencia, por lo que pueden variar, pero siempre de forma conjunta y proporcional.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:2B_2009_sep_ext}
+
+\begin{cajaenunciado}
+La propagación de una onda en una cuerda se expresa de la forma: $y(x,t)=0,3\cos(300\pi t-10x+\frac{\pi}{2})$. Donde x se expresa en metros y t en segundos. Calcula la frecuencia (0,8 puntos) y la longitud de onda (0,7 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se nos proporciona la ecuación de una onda armónica y se nos pide extraer dos de sus parámetros característicos.
+\begin{itemize}
+    \item \textbf{Ecuación de la onda:} $y(x,t)=0,3\cos(300\pi t-10x+\frac{\pi}{2})$
+    \item \textbf{Unidades:} Todas en el Sistema Internacional (metros y segundos).
+    \item \textbf{Incógnitas:} Frecuencia ($f$) y longitud de onda ($\lambda$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación general de una onda armónica que se propaga en el sentido positivo del eje X se puede escribir como:
+$$ y(x,t) = A\cos(\omega t - kx + \phi_0) $$
+donde:
+\begin{itemize}
+    \item $A$ es la amplitud.
+    \item $\omega$ es la frecuencia angular o pulsación.
+    \item $k$ es el número de onda.
+    \item $\phi_0$ es la fase inicial.
+\end{itemize}
+Las magnitudes que buscamos se relacionan con $\omega$ y $k$ de la siguiente manera:
+\begin{itemize}
+    \item La \textbf{frecuencia ($f$)} se obtiene de la frecuencia angular: $\omega = 2\pi f \implies f = \frac{\omega}{2\pi}$.
+    \item La \textbf{longitud de onda ($\lambda$)} se obtiene del número de onda: $k = \frac{2\pi}{\lambda} \implies \lambda = \frac{2\pi}{k}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El primer paso es identificar los valores de $\omega$ y $k$ comparando la ecuación dada con la forma general.
+Ecuación dada: $y(x,t)=0,3\cos(300\pi t-10x+\frac{\pi}{2})$
+Forma general: $y(x,t) = A\cos(\omega t - kx + \phi_0)$
+Por identificación directa de los términos:
+\begin{itemize}
+    \item El término que multiplica a $t$ es $\omega \implies \omega = 300\pi \, \text{rad/s}$.
+    \item El término que multiplica a $x$ es $k \implies k = 10 \, \text{rad/m}$.
+\end{itemize}
+Ahora aplicamos las fórmulas para encontrar $f$ y $\lambda$.
+$$ f = \frac{\omega}{2\pi} $$
+$$ \lambda = \frac{2\pi}{k} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la Frecuencia}
+\begin{gather}
+    f = \frac{300\pi \, \text{rad/s}}{2\pi \, \text{rad}} = 150 \, \text{Hz}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia de la onda es $\boldsymbol{f = 150 \, \textbf{Hz}}$.
+\end{cajaresultado}
+
+\paragraph*{Cálculo de la Longitud de Onda}
+\begin{gather}
+    \lambda = \frac{2\pi \, \text{rad}}{10 \, \text{rad/m}} = \frac{\pi}{5} \, \text{m} \approx 0,628 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La longitud de onda es $\boldsymbol{\lambda = \frac{\pi}{5} \, \textbf{m} \approx 0,628 \, \textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la comparación directa de la ecuación de onda proporcionada con su forma teórica general, se han identificado la frecuencia angular y el número de onda. A partir de estos parámetros, se han calculado la frecuencia ($\mathbf{150 \, Hz}$) y la longitud de onda ($\mathbf{\pi/5 \, m}$) de la onda.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Óptica}
+\label{sec:optica_2009_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 3 - OPCIÓN A}
+\label{subsec:3A_2009_sep_ext}
+
+\begin{cajaenunciado}
+El depósito de la figura, cuyo fondo es un espejo, se encuentra parcialmente relleno con un aceite de índice de refracción $n_{aceite}=1,45$. En su borde se coloca un láser que emite un rayo luminoso que forma un ángulo $\alpha=45^{\circ}$ con la vertical.
+\begin{enumerate}
+    \item[1)] Traza el rayo luminoso que, tras reflejarse en el fondo del depósito, vuelve a emerger al aire. Determina el valor del ángulo que forma el rayo respecto a la vertical en el interior del aceite (1 punto).
+    \item[2)] Calcula la posición del punto en el que el rayo alcanza el espejo (1 punto).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Medio de incidencia:} Aire, con índice de refracción $n_{aire} \approx 1$.
+    \item \textbf{Ángulo de incidencia ($\theta_i$):} $\theta_i = 45^\circ$ con la normal (vertical).
+    \item \textbf{Medio de refracción:} Aceite, con índice de refracción $n_{aceite} = 1,45$.
+    \item \textbf{Profundidad del aceite ($h$):} De la figura, $h = 40 \, \text{cm} = 0,4 \, \text{m}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Ángulo de refracción en el aceite ($\theta_r$).
+            \item Posición horizontal ($x$) donde el rayo incide en el espejo del fondo.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Trayectoria del rayo en el depósito} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un corte transversal de un depósito. La mitad superior es 'aire' y la inferior 'aceite'. El fondo es un 'espejo'. Un rayo láser incide desde el borde superior izquierdo con un ángulo de 45º respecto a la vertical. El rayo se refracta en la interfaz aire-aceite, acercándose a la normal con un ángulo $\theta_r$. El rayo continúa hasta el espejo del fondo, recorriendo una distancia horizontal 'x'. Luego, se refleja en el espejo con el mismo ángulo ($\theta_r$). Sigue una trayectoria simétrica hacia arriba, se refracta en la interfaz aceite-aire saliendo con 45º y emerge del depósito. Etiquetar claramente los ángulos $\theta_i=45^\circ$, $\theta_r$, la profundidad del aceite $h=40$ cm y la distancia horizontal $x$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{laser_aceite_espejo.png}
+    }}
+    \caption{Trazado de la trayectoria del rayo luminoso.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ley de la Refracción (Ley de Snell):} Para la interfaz aire-aceite, relaciona los ángulos de incidencia y refracción con los índices de refracción.
+    $$ n_{aire} \sin(\theta_i) = n_{aceite} \sin(\theta_r) $$
+    \item \textbf{Trigonometría:} En el triángulo rectángulo formado por el rayo refractado, la vertical y la horizontal, la tangente del ángulo de refracción relaciona la profundidad del aceite ($h$) con la distancia horizontal recorrida ($x$).
+    $$ \tan(\theta_r) = \frac{x}{h} $$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Cálculo del ángulo de refracción ($\theta_r$)}
+Despejamos $\sin(\theta_r)$ de la Ley de Snell:
+$$ \sin(\theta_r) = \frac{n_{aire}}{n_{aceite}} \sin(\theta_i) $$
+$$ \theta_r = \arcsin\left(\frac{n_{aire}}{n_{aceite}} \sin(\theta_i)\right) $$
+
+\paragraph{2. Cálculo de la posición de incidencia ($x$)}
+Despejamos $x$ de la relación trigonométrica:
+$$ x = h \cdot \tan(\theta_r) $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Ángulo en el aceite}
+\begin{gather}
+    \sin(\theta_r) = \frac{1}{1,45} \sin(45^\circ) \approx \frac{0,7071}{1,45} \approx 0,4877 \\
+    \theta_r = \arcsin(0,4877) \approx 29,19^\circ
+\end{gather}
+\begin{cajaresultado}
+El ángulo que forma el rayo con la vertical en el interior del aceite es $\boldsymbol{\theta_r \approx 29,19^\circ}$.
+\end{cajaresultado}
+
+\paragraph{2. Posición en el espejo}
+\begin{gather}
+    x = (0,4 \, \text{m}) \cdot \tan(29,19^\circ) \approx 0,4 \cdot 0,5588 \approx 0,2235 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+El rayo alcanza el espejo en un punto situado a $\boldsymbol{22,35 \, \textbf{cm}}$ del punto de entrada, medido horizontalmente.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando la Ley de Snell, se determina que el rayo de luz se desvía al entrar en el aceite, formando un ángulo de $\mathbf{29,19^\circ}$ con la vertical. Conociendo este ángulo y la profundidad del aceite, la trigonometría básica nos permite calcular que el rayo incide sobre el espejo del fondo a una distancia horizontal de $\mathbf{22,35 \, cm}$ desde el punto de entrada.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 3 - OPCIÓN B}
+\label{subsec:3B_2009_sep_ext}
+
+\begin{cajaenunciado}
+Disponemos de una lente divergente de distancia focal 6 cm y colocamos un objeto de 4 cm de altura a una distancia de 12 cm de la lente. Obtén, mediante el trazado de rayos, la imagen del objeto indicando qué clase de imagen se forma (1 punto). Calcula la posición y el tamaño de la imagen (1 punto).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Divergente. Su distancia focal imagen es negativa.
+    \item \textbf{Distancia focal imagen ($f'$):} $f' = -6 \, \text{cm}$.
+    \item \textbf{Tamaño del objeto ($y$):} $y = 4 \, \text{cm}$.
+    \item \textbf{Posición del objeto ($s$):} El objeto está a la izquierda de la lente. $s = -12 \, \text{cm}$.
+    \item \textbf{Incógnitas:} Trazado de rayos, características de la imagen, posición ($s'$) y tamaño ($y'$) de la imagen.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Formación de imagen en lente divergente} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un eje óptico horizontal. En el centro, una lente divergente (símbolo con puntas de flecha invertidas). Marcar el foco imagen F' en x=-6 cm y el foco objeto F en x=+6 cm. Colocar un objeto (flecha vertical de 4 cm de altura) en la posición s=-12 cm. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje óptico, que se refracta de tal forma que su prolongación hacia atrás pasa por F'. 2) Un rayo que apunta hacia el centro óptico y pasa sin desviarse. El punto donde se cruzan el rayo (2) y la prolongación del rayo (1) forma la punta de la imagen. Dibujar la imagen como una flecha con línea discontinua para indicar que es virtual. Etiquetar objeto, imagen, F, F', s, y s'."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{lente_divergente_problema.png}
+    }}
+    \caption{Trazado de rayos para una lente divergente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para los cálculos numéricos, se utilizan las ecuaciones de las lentes delgadas:
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss:} $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item \textbf{Ecuación del Aumento Lateral ($M$):} $M = \frac{y'}{y} = \frac{s'}{s}$
+\end{itemize}
+A partir del trazado de rayos y de los signos de los resultados, se determinan las características de la imagen:
+\begin{itemize}
+    \item $s' < 0 \implies$ Imagen virtual.
+    \item $M > 0 \implies$ Imagen derecha.
+    \item $|M| < 1 \implies$ Imagen de menor tamaño.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Posición de la imagen ($s'$)}
+Despejamos $1/s'$ de la ecuación de Gauss:
+$$ \frac{1}{s'} = \frac{1}{f'} + \frac{1}{s} \implies s' = \left(\frac{1}{f'} + \frac{1}{s}\right)^{-1} = \frac{f's}{s+f'} $$
+\paragraph{Tamaño de la imagen ($y'$)}
+A partir del aumento lateral:
+$$ y' = y \cdot M = y \cdot \frac{s'}{s} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Cálculo de la posición de la imagen}
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{-6} + \frac{1}{-12} = -\frac{2}{12} - \frac{1}{12} = -\frac{3}{12} = -\frac{1}{4} \\
+    s' = -4 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+La imagen se forma a $\boldsymbol{4 \, \textbf{cm}}$ a la izquierda de la lente.
+\end{cajaresultado}
+\paragraph{Cálculo del tamaño de la imagen}
+\begin{gather}
+    y' = y \cdot \frac{s'}{s} = (4 \, \text{cm}) \cdot \frac{-4 \, \text{cm}}{-12 \, \text{cm}} = 4 \cdot \frac{1}{3} = \frac{4}{3} \approx 1,33 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+El tamaño de la imagen es de $\boldsymbol{\approx 1,33 \, \textbf{cm}}$.
+\end{cajaresultado}
+\paragraph{Características de la imagen}
+El trazado de rayos y los cálculos muestran que la imagen es \textbf{Virtual} ($s'<0$), \textbf{Derecha} ($y'>0$) y de \textbf{menor tamaño} ($|y'|<|y|$).
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Tanto el trazado de rayos como el cálculo analítico coinciden. Para un objeto de 4 cm situado a 12 cm de una lente divergente de -6 cm de focal, se forma una imagen virtual, derecha y reducida a un tamaño de 1,33 cm, localizada a 4 cm de la lente, en el mismo lado que el objeto.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Electromagnetismo}
+\label{sec:em_2009_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 4 - OPCIÓN A}
+\label{subsec:4A_2009_sep_ext}
+
+\begin{cajaenunciado}
+Una carga eléctrica q, con movimiento rectilíneo uniforme de velocidad $\vec{v}$, penetra en una región del espacio donde existe un campo magnético uniforme $\vec{B}$. Explica el tipo de movimiento que experimentará en los siguientes casos: a) $\vec{v}$ paralelo a $\vec{B}$ (0,7 puntos) y b) $\vec{v}$ perpendicular a $\vec{B}$ (0,8 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica sobre el movimiento de una partícula cargada en un campo magnético uniforme.
+\begin{itemize}
+    \item \textbf{Partícula:} Carga $q$, velocidad $\vec{v}$.
+    \item \textbf{Campo:} Magnético uniforme, $\vec{B}$.
+    \item \textbf{Casos a analizar:}
+        \begin{itemize}
+            \item a) $\vec{v} \parallel \vec{B}$
+            \item b) $\vec{v} \perp \vec{B}$
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{a) $\vec{v} \parallel \vec{B}$} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una región con líneas de campo magnético $\vec{B}$ uniformes y horizontales apuntando a la derecha. Una partícula cargada $q$ entra en esta región con un vector velocidad $\vec{v}$ también horizontal y a la derecha. Mostrar que la trayectoria de la partícula es una línea recta, sin desviarse. Incluir una nota de texto: $\vec{F}_m = q(\vec{v} \times \vec{B}) = \vec{0}$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{movimiento_paralelo.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{b) $\vec{v} \perp \vec{B}$} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una región con un campo magnético uniforme $\vec{B}$ entrando en el papel (representado por cruces 'x'). Una partícula cargada positiva $q$ entra por la izquierda con un vector velocidad horizontal $\vec{v}$. Usando la regla de la mano derecha, la fuerza magnética $\vec{F}_m$ apunta inicialmente hacia arriba. Esta fuerza actúa como fuerza centrípeta, haciendo que la partícula describa una trayectoria circular en sentido antihorario. Dibujar la trayectoria circular y el vector fuerza en varios puntos, siempre apuntando hacia el centro del círculo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{movimiento_circular.png}
+    }}
+    \caption{Trayectorias de una carga en un campo magnético.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza que un campo magnético ejerce sobre una partícula cargada en movimiento viene descrita por la \textbf{Fuerza de Lorentz}:
+$$ \vec{F}_m = q (\vec{v} \times \vec{B}) $$
+El módulo de esta fuerza es $F_m = |q|vB\sin(\theta)$, donde $\theta$ es el ángulo entre los vectores velocidad y campo magnético. La dirección de la fuerza es siempre perpendicular al plano que contiene a $\vec{v}$ y $\vec{B}$.
+
+\subsubsection*{4. Análisis de los Casos}
+\paragraph*{a) Velocidad paralela al campo ($\vec{v} \parallel \vec{B}$)}
+En este caso, el ángulo $\theta$ entre la velocidad y el campo magnético es de $0^\circ$ (o $180^\circ$). El seno de este ángulo es cero: $\sin(0^\circ) = 0$.
+Por lo tanto, el producto vectorial $\vec{v} \times \vec{B}$ es el vector nulo.
+$$ \vec{F}_m = q(\vec{0}) = \vec{0} $$
+Al no actuar ninguna fuerza sobre la partícula, según la Primera Ley de Newton, ésta continuará su movimiento sin cambios.
+\begin{cajaresultado}
+Si la velocidad es paralela al campo, la fuerza magnética es nula y la partícula describe un \textbf{Movimiento Rectilíneo Uniforme (MRU)}.
+\end{cajaresultado}
+
+\paragraph*{b) Velocidad perpendicular al campo ($\vec{v} \perp \vec{B}$)}
+En este caso, el ángulo $\theta$ es de $90^\circ$, y $\sin(90^\circ)=1$. El módulo de la fuerza magnética es máximo y constante: $F_m = |q|vB$.
+La dirección de esta fuerza es siempre perpendicular tanto a $\vec{v}$ como a $\vec{B}$. Una fuerza que actúa constantemente perpendicular a la velocidad no realiza trabajo, por lo que no cambia el módulo de la velocidad (la energía cinética es constante). Sin embargo, cambia continuamente la dirección de la velocidad.
+Esta fuerza constante y perpendicular a la velocidad actúa como una \textbf{fuerza centrípeta}, obligando a la partícula a seguir una trayectoria circular.
+\begin{cajaresultado}
+Si la velocidad es perpendicular al campo, la fuerza magnética actúa como fuerza centrípeta, y la partícula describe un \textbf{Movimiento Circular Uniforme (MCU)}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La trayectoria de una partícula cargada en un campo magnético depende crucialmente de la orientación de su velocidad. Si la velocidad es paralela al campo, no hay interacción y la partícula sigue en línea recta. Si es perpendicular, la fuerza de Lorentz provoca un movimiento circular uniforme.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 4 - OPCIÓN B}
+\label{subsec:4B_2009_sep_ext}
+
+\begin{cajaenunciado}
+Enuncia la ley de Faraday-Henry (ley de la inducción electromagnética) (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se pide el enunciado de la ley fundamental de la inducción electromagnética.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Inducción Electromagnética} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema que ilustra la ley de Faraday-Lenz. Dibujar una espira conductora circular y un amperímetro conectado a ella. A la derecha de la espira, dibujar un imán de barra. En un primer panel, 'Acercamiento', mostrar el imán moviéndose hacia la espira, con el polo Norte por delante. Esto aumenta el flujo magnético a través de la espira. El amperímetro debe marcar una corriente inducida $I_{ind}$. Las líneas del campo magnético del imán atraviesan la espira. En un segundo panel, 'Alejamiento', el imán se aleja, disminuyendo el flujo, y el amperímetro marca una corriente en sentido contrario."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{ley_faraday_lenz.png}
+    }}
+    \caption{Ilustración del principio de inducción electromagnética.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Enunciado de la Ley de Faraday-Henry y Lenz}
+La \textbf{Ley de Inducción de Faraday-Henry} (a menudo llamada simplemente Ley de Faraday) establece que siempre que el flujo magnético ($\Phi_B$) a través de una superficie delimitada por un circuito cerrado varía con el tiempo, se induce en dicho circuito una \textbf{fuerza electromotriz (fem, $\varepsilon$)} cuya magnitud es igual a la rapidez con la que cambia el flujo magnético.
+
+Matemáticamente, se expresa como:
+$$ \varepsilon = - \frac{d\Phi_B}{dt} $$
+
+\paragraph*{Significado de la Ley}
+\begin{itemize}
+    \item \textbf{Causa del fenómeno:} La ley establece que no es el campo magnético en sí, sino su \textbf{variación en el tiempo}, lo que genera una corriente eléctrica. El flujo magnético, $\Phi_B = \int \vec{B} \cdot d\vec{S}$, puede variar por un cambio en la intensidad del campo, en el área de la espira, o en la orientación relativa entre ambos.
+    \item \textbf{Magnitud de la fem ($\varepsilon$):} La magnitud de la fem inducida (y por tanto, de la corriente inducida si el circuito tiene una resistencia R, $I = \varepsilon/R$) es directamente proporcional a la \textbf{rapidez} del cambio del flujo. Un cambio de flujo más rápido induce una fem mayor.
+    \item \textbf{Sentido de la corriente (Ley de Lenz):} El signo negativo en la fórmula es la expresión matemática de la \textbf{Ley de Lenz}. Esta ley establece que el sentido de la corriente inducida es tal que el campo magnético creado por ella se opone a la variación del flujo magnético original que la produjo. Es, en esencia, una manifestación del principio de conservación de la energía aplicado al electromagnetismo.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+La ley de Faraday-Henry afirma que la fuerza electromotriz inducida en un circuito es igual a la tasa de cambio, con signo negativo, del flujo magnético que lo atraviesa: $\boldsymbol{\varepsilon = - \frac{d\Phi_B}{dt}}$. Esto significa que un flujo magnético variable genera una corriente eléctrica cuyo propio campo magnético se opone a dicha variación.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La ley de Faraday-Henry es uno de los pilares del electromagnetismo, ya que conecta los fenómenos eléctricos y magnéticos. Describe cómo un campo magnético variable puede ser la fuente de un campo eléctrico (que impulsa la corriente), sentando las bases para el funcionamiento de generadores, motores, transformadores y un sinfín de tecnologías.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Física Moderna}
+\label{sec:moderna_2009_sep_ext_1}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 5 - OPCIÓN A}
+\label{subsec:5A_2009_sep_ext}
+
+\begin{cajaenunciado}
+Calcula la energía cinética y velocidad máximas de los electrones que se arrancan de una superficie de sodio cuyo trabajo de extracción vale $W_{o}=2,28$ eV, cuando se ilumina con luz de longitud de onda:
+1) 410 nm. (1 punto)
+2) 560 nm. (1 punto)
+\textbf{Datos:} $c=3,0\cdot10^{8}\,\text{m/s}$, $e=1,6\cdot10^{-19}\,\text{C}$, $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$, $m_e=9,1\cdot10^{-31}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Trabajo de extracción del Sodio ($W_o$):} $W_o = 2,28 \, \text{eV}$.
+    \item \textbf{Longitud de onda 1 ($\lambda_1$):} $\lambda_1 = 410 \, \text{nm} = 4,1 \cdot 10^{-7} \, \text{m}$.
+    \item \textbf{Longitud de onda 2 ($\lambda_2$):} $\lambda_2 = 560 \, \text{nm} = 5,6 \cdot 10^{-7} \, \text{m}$.
+    \item \textbf{Constantes:} $c$, $e$, $h$, $m_e$.
+    \item \textbf{Incógnitas:} Energía cinética máxima ($E_{c,max}$) y velocidad máxima ($v_{max}$) de los fotoelectrones para cada caso.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Este problema se resuelve aplicando la ecuación de Einstein para el \textbf{efecto fotoeléctrico}:
+$$ E_{c,max} = E_{foton} - W_o $$
+donde:
+\begin{itemize}
+    \item $E_{c,max}$ es la energía cinética máxima de los electrones emitidos (fotoelectrones).
+    \item $E_{foton}$ es la energía del fotón de luz incidente, que se calcula como $E_{foton} = hf = \frac{hc}{\lambda}$.
+    \item $W_o$ es el trabajo de extracción o función trabajo, la energía mínima necesaria para arrancar un electrón del metal.
+\end{itemize}
+Para que se produzca el efecto fotoeléctrico, la energía del fotón debe ser mayor que el trabajo de extracción ($E_{foton} > W_o$). Si no es así, no se emiten electrones.
+La velocidad se calcula a partir de la energía cinética mediante la fórmula clásica $E_c = \frac{1}{2}mv^2$, que es válida si la velocidad resultante no es relativista.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Paso previo: Conversión de unidades}
+Es conveniente trabajar en una única unidad de energía. Convertimos el trabajo de extracción a Julios:
+$$ W_o \, (\text{J}) = W_o \, (\text{eV}) \cdot e \, (\text{C}) $$
+\paragraph{Análisis de cada caso}
+Para cada longitud de onda $\lambda$:
+\begin{enumerate}
+    \item Calcular la energía del fotón: $E_{foton} = \frac{hc}{\lambda}$.
+    \item Comparar $E_{foton}$ con $W_o$.
+    \item Si $E_{foton} > W_o$:
+        \begin{itemize}
+            \item Calcular la energía cinética: $E_{c,max} = E_{foton} - W_o$.
+            \item Calcular la velocidad: $v_{max} = \sqrt{\frac{2E_{c,max}}{m_e}}$.
+        \end{itemize}
+    \item Si $E_{foton} \le W_o$, no hay emisión.
+\end{enumerate}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Conversión del trabajo de extracción}
+$$ W_o = 2,28 \, \text{eV} \cdot (1,6 \cdot 10^{-19} \, \text{J/eV}) = 3,648 \cdot 10^{-19} \, \text{J} $$
+\paragraph{1) Luz de $\lambda_1 = 410$ nm}
+Energía del fotón:
+$$ E_1 = \frac{(6,6 \cdot 10^{-34})(3 \cdot 10^8)}{4,1 \cdot 10^{-7}} = \frac{19,8 \cdot 10^{-26}}{4,1 \cdot 10^{-7}} \approx 4,83 \cdot 10^{-19} \, \text{J} $$
+Como $E_1 > W_o$ ($4,83 \cdot 10^{-19} > 3,648 \cdot 10^{-19}$), sí hay efecto fotoeléctrico.
+Energía cinética:
+$$ E_{c1} = E_1 - W_o = (4,83 - 3,648) \cdot 10^{-19} = 1,182 \cdot 10^{-19} \, \text{J} $$
+Velocidad:
+$$ v_1 = \sqrt{\frac{2 \cdot (1,182 \cdot 10^{-19})}{9,1 \cdot 10^{-31}}} \approx \sqrt{0,2598 \cdot 10^{12}} \approx 5,1 \cdot 10^5 \, \text{m/s} $$
+\begin{cajaresultado}
+    Para $\lambda_1=410$ nm: $\boldsymbol{E_{c,max} \approx 1,18 \cdot 10^{-19} \, \textbf{J}}$ y $\boldsymbol{v_{max} \approx 5,1 \cdot 10^5 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph{2) Luz de $\lambda_2 = 560$ nm}
+Energía del fotón:
+$$ E_2 = \frac{(6,6 \cdot 10^{-34})(3 \cdot 10^8)}{5,6 \cdot 10^{-7}} = \frac{19,8 \cdot 10^{-26}}{5,6 \cdot 10^{-7}} \approx 3,54 \cdot 10^{-19} \, \text{J} $$
+Como $E_2 < W_o$ ($3,54 \cdot 10^{-19} < 3,648 \cdot 10^{-19}$), la energía del fotón no es suficiente para arrancar electrones.
+\begin{cajaresultado}
+    Para $\lambda_2=560$ nm: \textbf{No se arrancan electrones} (no hay efecto fotoeléctrico). La energía cinética y la velocidad son nulas.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La existencia del efecto fotoeléctrico depende de una frecuencia (o longitud de onda) umbral. Para el sodio, la luz de 410 nm es suficientemente energética para arrancar electrones, cediéndoles una energía cinética de $\mathbf{1,18 \cdot 10^{-19} \, J}$. Sin embargo, la luz de 560 nm tiene una energía por fotón inferior al trabajo de extracción del material, por lo que no es capaz de producir la fotoemisión.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 5 - OPCIÓN B}
+\label{subsec:5B_2009_sep_ext}
+
+\begin{cajaenunciado}
+La arena de una playa está contaminada con ${}_{92}^{235}\text{U}$. Una muestra de arena presenta una actividad de 163 desintegraciones por segundo.
+1) Determina la masa de uranio que queda por desintegrar en la muestra de arena. (1 punto)
+2) ¿Cuánto tiempo será necesario para que la actividad de dicha muestra se reduzca a 150 desintegraciones por segundo? (1 punto)
+\textbf{Dato:} El período de semidesintegración del ${}_{92}^{235}\text{U}$ es $6,9\cdot10^8$ años y el número de Avogadro es $6,0\cdot10^{23}$ mol$^{-1}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Isótopo:} Uranio-235 (${}^{235}_{92}\text{U}$). Su masa molar es $M \approx 235 \, \text{g/mol}$.
+    \item \textbf{Actividad inicial ($A_0$):} $A_0 = 163 \, \text{Bq}$ (desintegraciones/s).
+    \item \textbf{Actividad final ($A(t)$):} $A(t) = 150 \, \text{Bq}$.
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 6,9 \cdot 10^8 \, \text{años}$.
+    \item \textbf{Número de Avogadro ($N_A$):} $N_A = 6,0 \cdot 10^{23} \, \text{mol}^{-1}$.
+    \item \textbf{Incógnitas:} Masa inicial de Uranio ($m_0$) y tiempo ($t$) para que la actividad baje a 150 Bq.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Relación Actividad-Núcleos:} La actividad ($A$) es proporcional al número de núcleos radiactivos ($N$) presentes: $A = \lambda N$.
+    \item \textbf{Constante de desintegración ($\lambda$):} Se relaciona con el periodo de semidesintegración: $\lambda = \frac{\ln(2)}{T_{1/2}}$.
+    \item \textbf{Relación Núcleos-Masa:} La masa de una muestra se relaciona con el número de núcleos a través de la masa molar ($M$) y el número de Avogadro ($N_A$): $m = N \cdot \frac{M}{N_A}$.
+    \item \textbf{Ley de decaimiento radiactivo:} La actividad de una muestra disminuye exponencialmente con el tiempo: $A(t) = A_0 e^{-\lambda t}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Masa de Uranio}
+\begin{enumerate}
+    \item Convertir $T_{1/2}$ a segundos para que las unidades sean consistentes con Bq (s$^{-1}$).
+    \item Calcular la constante de desintegración $\lambda = \frac{\ln(2)}{T_{1/2}}$.
+    \item Calcular el número inicial de núcleos $N_0$ a partir de la actividad inicial: $N_0 = \frac{A_0}{\lambda}$.
+    \item Calcular la masa $m_0$ a partir de $N_0$: $m_0 = N_0 \frac{M}{N_A}$.
+\end{enumerate}
+
+\paragraph{2. Tiempo de decaimiento}
+Despejamos el tiempo $t$ de la ley de decaimiento:
+$$ A(t) = A_0 e^{-\lambda t} \implies \frac{A(t)}{A_0} = e^{-\lambda t} $$
+$$ \ln\left(\frac{A(t)}{A_0}\right) = -\lambda t \implies t = -\frac{1}{\lambda} \ln\left(\frac{A(t)}{A_0}\right) = \frac{1}{\lambda} \ln\left(\frac{A_0}{A(t)}\right) $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Masa de Uranio}
+Primero, la constante de desintegración $\lambda$ en s$^{-1}$:
+$$ T_{1/2} = 6,9 \cdot 10^8 \, \text{años} \times (3,1536 \cdot 10^7 \, \text{s/año}) \approx 2,176 \cdot 10^{16} \, \text{s} $$
+$$ \lambda = \frac{\ln(2)}{2,176 \cdot 10^{16} \, \text{s}} \approx \frac{0,693}{2,176 \cdot 10^{16}} \approx 3,185 \cdot 10^{-17} \, \text{s}^{-1} $$
+Número inicial de núcleos:
+$$ N_0 = \frac{A_0}{\lambda} = \frac{163 \, \text{s}^{-1}}{3,185 \cdot 10^{-17} \, \text{s}^{-1}} \approx 5,118 \cdot 10^{18} \, \text{núcleos} $$
+Masa inicial:
+$$ m_0 = (5,118 \cdot 10^{18} \, \text{núcleos}) \cdot \frac{235 \, \text{g/mol}}{6,0 \cdot 10^{23} \, \text{núcleos/mol}} \approx 2,0 \cdot 10^{-3} \, \text{g} $$
+\begin{cajaresultado}
+    La masa de uranio en la muestra es de $\boldsymbol{\approx 2,0 \, \textbf{mg}}$.
+\end{cajaresultado}
+
+\paragraph{2. Tiempo de decaimiento}
+$$ t = \frac{1}{3,185 \cdot 10^{-17} \, \text{s}^{-1}} \ln\left(\frac{163}{150}\right) \approx (3,14 \cdot 10^{16} \, \text{s}) \cdot \ln(1,0867) \approx (3,14 \cdot 10^{16}) \cdot 0,0831 \approx 2,61 \cdot 10^{15} \, \text{s} $$
+Convertimos este tiempo a años:
+$$ t = \frac{2,61 \cdot 10^{15} \, \text{s}}{3,1536 \cdot 10^7 \, \text{s/año}} \approx 8,27 \cdot 10^7 \, \text{años} $$
+\begin{cajaresultado}
+    Serán necesarios $\boldsymbol{\approx 8,27 \cdot 10^7 \, \textbf{años}}$ para que la actividad se reduzca a 150 Bq.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A pesar de que la actividad de la muestra parece pequeña (163 Bq), corresponde a una cantidad medible de material radiactivo, aproximadamente $\mathbf{2 \, mg}$ de Uranio-235. Debido al larguísimo periodo de semidesintegración de este isótopo, la actividad decae muy lentamente; se necesitarían casi $\mathbf{83 \, millones \, de \, años}$ para que la actividad descendiera de 163 a 150 Bq.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Física Cuántica y Nuclear}
+\label{sec:moderna_2009_sep_ext_2}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 6 - OPCIÓN A}
+\label{subsec:6A_2009_sep_ext}
+
+\begin{cajaenunciado}
+Enuncia la hipótesis de De Broglie (1 punto). Menciona un experimento que confirme la hipótesis de De Broglie (0,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre la dualidad onda-corpúsculo de la materia.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Hipótesis de De Broglie}
+En 1924, Louis de Broglie propuso en su tesis doctoral una hipótesis revolucionaria que generalizaba la dualidad onda-partícula, ya observada para la luz, a todas las partículas de materia. La hipótesis se enuncia de la siguiente forma:
+
+\textit{Toda partícula en movimiento, con una cantidad de movimiento $p$, lleva asociada una onda, denominada "onda de materia", cuya longitud de onda $\lambda$ está relacionada con su momento lineal mediante la expresión:}
+$$ \lambda = \frac{h}{p} $$
+donde $h$ es la constante de Planck, y $p=mv$ para una partícula no relativista.
+
+El significado profundo de esta hipótesis es que la materia no es ni puramente corpuscular ni puramente ondulatoria, sino que exhibe ambos comportamientos dependiendo del experimento que se realice.
+
+\paragraph*{Experimento de Confirmación}
+La confirmación experimental de la hipótesis de De Broglie llegó en 1927 con el \textbf{experimento de Davisson y Germer}. En este experimento, se disparó un haz de electrones de energía conocida contra un cristal de níquel. Se observó que los electrones no se dispersaban al azar, sino que lo hacían en direcciones específicas, formando un patrón de máximos y mínimos de intensidad.
+
+Este patrón era idéntico a un \textbf{patrón de difracción}, un fenómeno exclusivamente ondulatorio que se produce cuando las ondas interactúan con una estructura periódica (como los átomos en un cristal). La longitud de onda calculada a partir del patrón de difracción coincidía perfectamente con la longitud de onda predicha por la fórmula de De Broglie para la energía de los electrones utilizados. Este experimento fue la prueba concluyente de la naturaleza ondulatoria de los electrones y, por extensión, de la materia.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Hipótesis de De Broglie:} Toda partícula con momento lineal $p$ tiene una longitud de onda asociada $\boldsymbol{\lambda = h/p}$.
+    \item \textbf{Confirmación Experimental:} El \textbf{experimento de Davisson y Germer} (1927), que demostró la difracción de electrones al incidir sobre un cristal de níquel.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La hipótesis de De Broglie extendió la dualidad onda-corpúsculo a toda la materia, unificando la física de la luz y de las partículas. El experimento de Davisson-Germer proporcionó la evidencia empírica irrefutable de esta idea, convirtiéndola en uno de los pilares fundamentales de la mecánica cuántica.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 6 - OPCIÓN B}
+\label{subsec:6B_2009_sep_ext}
+
+\begin{cajaenunciado}
+Al bombardear un isótopo de aluminio con partículas $\alpha$ se obtiene el isótopo del fósforo ${}_{15}^{30}\text{P}$ y un neutrón. Determina de qué isótopo de aluminio se trata (1,5 puntos).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se nos pide identificar un reactivo en una reacción nuclear a partir de los demás componentes.
+\begin{itemize}
+    \item \textbf{Reactivos:}
+        \begin{itemize}
+            \item Isótopo de Aluminio desconocido: ${}_{Z}^{A}\text{Al}$. Para el Aluminio, el número atómico es $Z=13$. Así que es ${}_{13}^{A}\text{Al}$.
+            \item Partícula alfa ($\alpha$): Es un núcleo de Helio, ${}_{2}^{4}\text{He}$.
+        \end{itemize}
+    \item \textbf{Productos:}
+        \begin{itemize}
+            \item Isótopo de Fósforo: ${}_{15}^{30}\text{P}$.
+            \item Neutrón ($n$): ${}_{0}^{1}\text{n}$.
+        \end{itemize}
+    \item \textbf{Incógnita:} El número másico $A$ del isótopo de Aluminio.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para identificar el isótopo, debemos aplicar las \textbf{leyes de conservación en las reacciones nucleares} (también conocidas como leyes de Soddy-Fajans):
+\begin{enumerate}
+    \item \textbf{Conservación del número másico (A):} La suma de los números másicos de los reactivos debe ser igual a la suma de los números másicos de los productos.
+    \item \textbf{Conservación del número atómico (Z) (o de la carga):} La suma de los números atómicos de los reactivos debe ser igual a la suma de los números atómicos de los productos.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Escribimos la reacción nuclear completa, dejando $A$ y $Z$ del Aluminio como incógnitas:
+$$ {}_{Z}^{A}\text{Al} + {}_{2}^{4}\text{He} \to {}_{15}^{30}\text{P} + {}_{0}^{1}\text{n} $$
+Ahora, aplicamos las leyes de conservación.
+\paragraph{Conservación de Z (número de protones)}
+$$ Z + 2 = 15 + 0 $$
+$$ Z = 15 - 2 = 13 $$
+El resultado $Z=13$ confirma que el elemento es Aluminio, como decía el enunciado.
+
+\paragraph{Conservación de A (número de nucleones)}
+$$ A + 4 = 30 + 1 $$
+$$ A + 4 = 31 $$
+$$ A = 31 - 4 = 27 $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Los cálculos simbólicos ya nos dan el resultado final. El isótopo de Aluminio tiene número atómico $Z=13$ y número másico $A=27$.
+\begin{cajaresultado}
+El isótopo de aluminio que se bombardea es el \textbf{Aluminio-27}, $\boldsymbol{{}_{13}^{27}\text{Al}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la aplicación de las leyes de conservación de la carga y del número de nucleones en la reacción nuclear descrita, se ha determinado de forma unívoca que el isótopo de aluminio que participa como reactivo es el ${}_{13}^{27}\text{Al}$.
+\end{cajaconclusion}
+
+\newpage

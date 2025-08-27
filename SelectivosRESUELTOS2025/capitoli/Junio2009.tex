@@ -1,0 +1,773 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2009 - Convocatoria Ordinaria}
+\label{chap:2009_jun_ord}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Problemas de Interacción Gravitatoria}
+\label{sec:grav_2009_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:1A_2009_jun_ord}
+
+\begin{cajaenunciado}
+Un sistema estelar es una agrupación de varias estrellas que interaccionan gravitatoriamente. En un sistema estelar binario, una de las estrellas, situada en el origen de coordenadas, tiene masa $m_{1}=1\cdot10^{30}$ kg, y la otra tiene masa $m_{2}=2\cdot10^{30}$ kg y se encuentra sobre el eje X en la posición (d,0), con $d=2\cdot10^{6}$ km. Suponiendo que dichas estrellas se pueden considerar masas puntuales, calcula:
+\begin{enumerate}
+    \item[1)] El módulo, dirección y sentido del campo gravitatorio en el punto intermedio entre las dos estrellas. (0,7 puntos)
+    \item[2)] El punto sobre el eje X para el cual el potencial gravitatorio debido a la masa $m_{1}$ es igual al de la masa $m_{2}$. (0,7 puntos)
+    \item[3)] El módulo, dirección y sentido del momento angular de $m_{2}$ respecto al origen, sabiendo que su velocidad es (0,v), siendo $v=3\cdot10^{5}$ m/s. (0,6 puntos)
+\end{enumerate}
+\textbf{Dato:} Constante de gravitación $G=6,67\cdot10^{-11}\,\text{Nm}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la estrella 1 ($m_1$):} $m_1 = 1 \cdot 10^{30} \, \text{kg}$, situada en P1(0,0).
+    \item \textbf{Masa de la estrella 2 ($m_2$):} $m_2 = 2 \cdot 10^{30} \, \text{kg}$.
+    \item \textbf{Distancia entre estrellas ($d$):} $d = 2 \cdot 10^{6} \, \text{km} = 2 \cdot 10^{9} \, \text{m}$. La posición de $m_2$ es P2($2 \cdot 10^9$, 0).
+    \item \textbf{Velocidad de $m_2$ ($\vec{v}_2$):} $\vec{v}_2 = (3 \cdot 10^5) \vec{j} \, \text{m/s}$.
+    \item \textbf{Constante de Gravitación Universal ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Campo gravitatorio $\vec{g}$ en el punto medio ($x=d/2$).
+        \item Punto $x$ donde $V_1 = V_2$.
+        \item Momento angular $\vec{L}$ de $m_2$ respecto al origen.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Sistema Estelar Binario} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje X horizontal. En el origen (0,0), dibujar una estrella pequeña etiquetada como $m_1$. En la posición (d,0), dibujar una estrella más grande etiquetada como $m_2$. En el punto medio P(d/2,0), dibujar dos vectores de campo gravitatorio: $\vec{g}_1$ apuntando hacia la izquierda (hacia $m_1$) y $\vec{g}_2$ apuntando hacia la derecha (hacia $m_2$). Mostrar que el vector resultante $\vec{g}_{total}$ apunta hacia la derecha, ya que $m_2 > m_1$. Para el apartado 3, mostrar la estrella $m_2$ en (d,0) con un vector velocidad $\vec{v}_2$ apuntando verticalmente hacia arriba."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{sistema_binario.png}
+    }}
+    \caption{Esquema del sistema binario y los campos en el punto medio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Campo Gravitatorio ($\vec{g}$):} El campo creado por una masa $m$ es $\vec{g} = -G\frac{m}{r^2}\vec{u}_r$, donde $\vec{u}_r$ es el vector unitario desde la masa al punto. Por el principio de superposición, el campo total es la suma vectorial $\vec{g}_{total} = \vec{g}_1 + \vec{g}_2$.
+    \item \textbf{Potencial Gravitatorio ($V$):} Es una magnitud escalar, $V = -G\frac{m}{r}$.
+    \item \textbf{Momento Angular ($\vec{L}$):} Para una partícula puntual, se define como el producto vectorial de su vector de posición $\vec{r}$ y su momento lineal $\vec{p}=m\vec{v}$: $\vec{L} = \vec{r} \times \vec{p}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Campo en el punto medio (P)}
+El punto P está en $x=d/2$. La distancia a ambas masas es $r=d/2$.
+\begin{itemize}
+    \item Campo de $m_1$: $\vec{g}_1 = -G\frac{m_1}{(d/2)^2}(-\vec{i}) = G\frac{4m_1}{d^2}\vec{i}$.
+    \item Campo de $m_2$: $\vec{g}_2 = -G\frac{m_2}{(d/2)^2}(+\vec{i}) = -G\frac{4m_2}{d^2}\vec{i}$.
+\end{itemize}
+\begin{gather}
+    \vec{g}_{total} = \vec{g}_1 + \vec{g}_2 = G\frac{4}{d^2}(m_1 - m_2)\vec{i}
+\end{gather}
+\paragraph{2. Punto de igual potencial}
+Buscamos un punto $P(x,0)$ tal que $V_1(P) = V_2(P)$. Las distancias son $|x|$ y $|d-x|$.
+\begin{gather}
+    -G\frac{m_1}{|x|} = -G\frac{m_2}{|d-x|} \implies \frac{m_1}{|x|} = \frac{m_2}{|d-x|} \implies m_1|d-x| = m_2|x|
+\end{gather}
+\paragraph{3. Momento angular de $m_2$}
+El vector de posición de $m_2$ es $\vec{r}_2 = d\vec{i}$. El momento lineal es $\vec{p}_2 = m_2 \vec{v}_2 = m_2 v \vec{j}$.
+\begin{gather}
+    \vec{L}_2 = \vec{r}_2 \times \vec{p}_2 = (d\vec{i}) \times (m_2 v \vec{j}) = d m_2 v (\vec{i} \times \vec{j}) = d m_2 v \vec{k}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Campo en el punto medio}
+\begin{gather}
+    \vec{g}_{total} = (6,67\cdot10^{-11})\frac{4}{(2\cdot10^9)^2}(1\cdot10^{30} - 2\cdot10^{30})\vec{i} \\
+    \vec{g}_{total} = (6,67\cdot10^{-11})\frac{4}{4\cdot10^{18}}(-1\cdot10^{30})\vec{i} = -6,67\cdot10^{-11-18+30}\vec{i} = -6,67 \cdot 10^1 \vec{i} \, \text{N/kg}
+\end{gather}
+\begin{cajaresultado}
+El campo gravitatorio es $\boldsymbol{\vec{g} = -66,7 \vec{i} \, \textbf{N/kg}}$. Su módulo es 66,7 N/kg, dirección eje X y sentido negativo.
+\end{cajaresultado}
+
+\paragraph{2. Punto de igual potencial}
+\begin{gather}
+    (1\cdot10^{30})|d-x| = (2\cdot10^{30})|x| \implies |d-x| = 2|x|
+\end{gather}
+Si $0<x<d$: $d-x=2x \implies d=3x \implies x=d/3$.
+$x = (2\cdot10^9)/3 \approx 0,67\cdot10^9$ m.
+\begin{cajaresultado}
+El potencial es igual en el punto $\boldsymbol{x = d/3 \approx 6,67\cdot10^5 \, \textbf{km}}$ del origen.
+\end{cajaresultado}
+
+\paragraph{3. Momento angular de $m_2$}
+\begin{gather}
+    \vec{L}_2 = (2\cdot10^9 \, \text{m}) (2\cdot10^{30} \, \text{kg}) (3\cdot10^5 \, \text{m/s}) \vec{k} = 12 \cdot 10^{44} \vec{k} = 1,2 \cdot 10^{45} \vec{k} \, \text{kg}\cdot\text{m}^2/\text{s}
+\end{gather}
+\begin{cajaresultado}
+El momento angular es $\boldsymbol{\vec{L}_2 = 1,2 \cdot 10^{45} \vec{k} \, \textbf{kg}\cdot\textbf{m}^2/\textbf{s}}$. Su módulo es $1,2\cdot10^{45}$ SI, dirección eje Z y sentido positivo.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se han aplicado los principios de superposición para campos y potenciales, y la definición de momento angular. En el punto medio, el campo neto apunta hacia la estrella más masiva. El punto de igual potencial se encuentra más cerca de la estrella menos masiva. El momento angular de la segunda estrella es perpendicular al plano de su posición y velocidad.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:1B_2009_jun_ord}
+
+\begin{cajaenunciado}
+Hay tres medidas que se pueden realizar con relativa facilidad en la superficie de la Tierra: la aceleración de la gravedad en dicha superficie ($9,8\,\text{m/s}^2$), el radio terrestre ($6,37\cdot10^6$ m) y el periodo de la órbita lunar (27 días, 7 h, 44 s).
+\begin{enumerate}
+    \item[1)] Utilizando exclusivamente estos valores y suponiendo que se desconoce la masa de la Tierra, calcula la distancia entre el centro de la Tierra y el centro de la Luna. (1,2 puntos)
+    \item[2)] Calcula la densidad de la Tierra sabiendo que $G=6,67\cdot10^{-11}\,\text{Nm}^2/\text{kg}^2$. (0,8 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Gravedad en superficie ($g_0$):} $g_0 = 9,8 \, \text{m/s}^2$.
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6,37 \cdot 10^6 \, \text{m}$.
+    \item \textbf{Periodo de la Luna ($T_L$):} $T_L = 27\,\text{d} \cdot 86400\,\text{s/d} + 7\,\text{h} \cdot 3600\,\text{s/h} + 44\,\text{s} = 2332800 + 25200 + 44 = 2358044 \, \text{s} \approx 2,36 \cdot 10^6 \, \text{s}$.
+    \item \textbf{Constante de Gravitación ($G$):} $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnitas:} Distancia Tierra-Luna ($r_{TL}$) y densidad de la Tierra ($\rho_T$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Órbita Lunar y Densidad Terrestre} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos esquemas. Izquierda: La Tierra y la Luna. La Luna en una órbita circular de radio $r_{TL}$ alrededor de la Tierra. Indicar que la fuerza gravitatoria ($F_g$) sobre la Luna proporciona la fuerza centrípeta ($F_c$). Derecha: Una sección de la Tierra mostrando su radio $R_T$ y su masa $M_T$, con la indicación de que su densidad es $\rho_T = M_T/V_T$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_luna_tierra.png}
+    }}
+    \caption{Modelos para el cálculo de la distancia orbital y la densidad.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Gravedad en superficie:} La intensidad del campo gravitatorio en la superficie terrestre es $g_0 = G\frac{M_T}{R_T^2}$.
+    \item \textbf{Dinámica orbital:} Para la órbita circular de la Luna, la fuerza gravitatoria es la fuerza centrípeta: $F_g = F_c \implies G\frac{M_T m_L}{r_{TL}^2} = m_L \left(\frac{2\pi}{T_L}\right)^2 r_{TL}$.
+    \item \textbf{Densidad:} La densidad de un cuerpo esférico es $\rho = \frac{M}{V} = \frac{M}{\frac{4}{3}\pi R^3}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Distancia Tierra-Luna}
+De la dinámica orbital de la Luna, obtenemos una expresión para el producto $GM_T$:
+\begin{gather}
+    G M_T = \frac{4\pi^2 r_{TL}^3}{T_L^2}
+\end{gather}
+De la gravedad en la superficie, obtenemos otra expresión para $GM_T$:
+\begin{gather}
+    g_0 = \frac{GM_T}{R_T^2} \implies GM_T = g_0 R_T^2
+\end{gather}
+Igualamos ambas expresiones y despejamos $r_{TL}$:
+\begin{gather}
+    \frac{4\pi^2 r_{TL}^3}{T_L^2} = g_0 R_T^2 \implies r_{TL} = \sqrt[3]{\frac{g_0 R_T^2 T_L^2}{4\pi^2}}
+\end{gather}
+\paragraph{2. Densidad de la Tierra}
+De la expresión de la gravedad, despejamos la masa de la Tierra, $M_T$:
+\begin{gather}
+    M_T = \frac{g_0 R_T^2}{G}
+\end{gather}
+Sustituimos esta masa en la fórmula de la densidad:
+\begin{gather}
+    \rho_T = \frac{M_T}{\frac{4}{3}\pi R_T^3} = \frac{g_0 R_T^2 / G}{\frac{4}{3}\pi R_T^3} = \frac{3 g_0}{4\pi G R_T}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Distancia Tierra-Luna}
+\begin{gather}
+    r_{TL} = \sqrt[3]{\frac{(9,8)(6,37\cdot10^6)^2(2,36\cdot10^6)^2}{4\pi^2}} \approx \sqrt[3]{\frac{2,21 \cdot 10^{27}}{39,48}} \approx \sqrt[3]{5,6 \cdot 10^{25}} \\
+    r_{TL} \approx 3,825 \cdot 10^8 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+La distancia entre el centro de la Tierra y el centro de la Luna es $\boldsymbol{r_{TL} \approx 3,83 \cdot 10^8 \, \textbf{m}}$ (unos 383.000 km).
+\end{cajaresultado}
+
+\paragraph{2. Densidad de la Tierra}
+\begin{gather}
+    M_T = \frac{(9,8)(6,37\cdot10^6)^2}{6,67\cdot10^{-11}} \approx 5,96 \cdot 10^{24} \, \text{kg} \\
+    \rho_T = \frac{M_T}{\frac{4}{3}\pi (6,37\cdot10^6)^3} = \frac{5,96 \cdot 10^{24}}{1,08 \cdot 10^{21}} \approx 5515 \, \text{kg/m}^3
+\end{gather}
+\begin{cajaresultado}
+La densidad de la Tierra es $\boldsymbol{\rho_T \approx 5515 \, \textbf{kg/m}^3}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Combinando la ley de la gravitación con la dinámica del movimiento circular, y utilizando únicamente datos medibles desde la Tierra, es posible deducir parámetros astronómicos como la distancia a la Luna. Asimismo, conociendo G, se puede calcular la masa y la densidad media de nuestro planeta, obteniendo un valor de unos 5515 kg/m$^3$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Cuestiones de Ondas}
+\label{sec:ondas_2009_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 2 - OPCIÓN A}
+\label{subsec:2A_2009_jun_ord}
+
+\begin{cajaenunciado}
+Explica el efecto Doppler y pon un ejemplo.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Efecto Doppler} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una ambulancia moviéndose rápidamente de izquierda a derecha con la sirena encendida. Dibuja los frentes de onda sonoros como círculos. Hacia la derecha, en la dirección del movimiento, los frentes de onda deben estar comprimidos, representando una longitud de onda corta y alta frecuencia. Hacia la izquierda, detrás de la ambulancia, los frentes de onda deben estar expandidos, representando una longitud de onda larga y baja frecuencia. Un observador a la derecha escucha un sonido agudo (alta frecuencia), mientras que un observador a la izquierda escucha un sonido grave (baja frecuencia)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{efecto_doppler.png}
+    }}
+    \caption{Ilustración del efecto Doppler para una fuente sonora en movimiento.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El \textbf{efecto Doppler} es el cambio en la frecuencia y la longitud de onda de una onda percibida por un observador que se encuentra en movimiento relativo con respecto a la fuente de la onda.
+
+\paragraph{Explicación del fenómeno}
+Cuando la distancia entre la fuente y el observador disminuye, la frecuencia percibida es mayor que la frecuencia emitida (sonido más agudo para ondas sonoras, corrimiento al azul para la luz). Cuando la distancia aumenta, la frecuencia percibida es menor que la emitida (sonido más grave, corrimiento al rojo).
+
+\paragraph{Causa física}
+La razón de este cambio es que el movimiento relativo altera la tasa a la que los frentes de onda llegan al observador.
+\begin{itemize}
+    \item \textbf{Acercamiento:} Si la fuente se mueve hacia el observador, cada nuevo frente de onda se emite desde una posición más cercana. Esto hace que los frentes de onda lleguen al observador "comprimidos", es decir, con un intervalo de tiempo menor entre ellos, lo que se interpreta como una mayor frecuencia.
+    \item \textbf{Alejamiento:} Si la fuente se aleja, cada frente de onda tiene que recorrer una distancia mayor que el anterior para llegar al observador. Esto "estira" la separación entre frentes de onda, resultando en una menor frecuencia percibida.
+\end{itemize}
+
+\paragraph{Ejemplo}
+El ejemplo más común es el sonido de la \textbf{sirena de una ambulancia} o de un coche de policía. Cuando el vehículo se acerca a nosotros, el tono de la sirena se percibe más agudo de lo que sería si estuviera parado. En el instante en que nos adelanta y comienza a alejarse, notamos un cambio brusco a un tono más grave.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El efecto Doppler es una propiedad fundamental de todo tipo de ondas y es crucial en numerosas aplicaciones tecnológicas y científicas. Se manifiesta como una variación en la frecuencia percibida de una onda debido al movimiento relativo entre la fuente y el observador. Es la base de los radares de velocidad, la ecografía médica y la medición del alejamiento de las galaxias en astronomía.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:2B_2009_jun_ord}
+
+\begin{cajaenunciado}
+La amplitud de una onda que se desplaza en el sentido positivo del eje X es 20 cm, la frecuencia 2,5 Hz y la longitud de onda 20 m. Escribe la función $y(x,t)$ que describe el movimiento de la onda, sabiendo que $y(0,0)=0$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 20 \, \text{cm} = 0,2 \, \text{m}$.
+    \item \textbf{Frecuencia ($f$):} $f = 2,5 \, \text{Hz}$.
+    \item \textbf{Longitud de onda ($\lambda$):} $\lambda = 20 \, \text{m}$.
+    \item \textbf{Sentido de propagación:} Sentido positivo del eje X.
+    \item \textbf{Condición inicial:} $y(0,0)=0$.
+    \item \textbf{Incógnita:} Ecuación de la onda $y(x,t)$.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La forma general de una onda armónica que se propaga en el sentido positivo del eje X es:
+$$ y(x,t) = A \sin(\omega t - kx + \phi_0) $$
+Necesitamos calcular los parámetros $\omega$ (frecuencia angular), $k$ (número de onda) y $\phi_0$ (fase inicial) a partir de los datos proporcionados.
+\begin{itemize}
+    \item $\omega = 2\pi f$
+    \item $k = 2\pi / \lambda$
+    \item $\phi_0$ se determina con la condición inicial $y(0,0)=0$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph{1. Cálculo de $\omega$ y $k$}
+\begin{gather}
+    \omega = 2\pi f = 2\pi (2,5) = 5\pi \, \text{rad/s} \\
+    k = \frac{2\pi}{\lambda} = \frac{2\pi}{20} = \frac{\pi}{10} \, \text{rad/m}
+\end{gather}
+
+\paragraph{2. Cálculo de $\phi_0$}
+La ecuación tiene la forma $y(x,t) = 0,2 \sin(5\pi t - \frac{\pi}{10}x + \phi_0)$.
+Aplicamos la condición $y(0,0)=0$:
+\begin{gather}
+    y(0,0) = 0,2 \sin(5\pi \cdot 0 - \frac{\pi}{10} \cdot 0 + \phi_0) = 0,2 \sin(\phi_0) = 0
+\end{gather}
+Esto implica que $\sin(\phi_0) = 0$, lo que es cierto para $\phi_0 = 0$ o $\phi_0 = \pi$. Cualquiera de las dos elecciones es válida, pero la más simple es tomar $\phi_0 = 0$.
+
+\paragraph{3. Ecuación de la onda}
+Sustituyendo todos los valores en la ecuación general:
+\begin{gather}
+    y(x,t) = 0,2 \sin\left(5\pi t - \frac{\pi}{10}x\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+La función que describe la onda es $\boldsymbol{y(x,t) = 0,2 \sin\left(5\pi t - \frac{\pi}{10}x\right)}$ (en unidades del SI).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de las características dadas de la onda (amplitud, frecuencia, longitud de onda), se han calculado los parámetros angulares $\omega$ y $k$. La condición inicial $y(0,0)=0$ permite establecer una fase inicial nula, definiendo completamente la ecuación de la onda.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Cuestiones de Óptica}
+\label{sec:optica_2009_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 3 - OPCIÓN A}
+\label{subsec:3A_2009_jun_ord}
+
+\begin{cajaenunciado}
+Una persona utiliza una lente cuya potencia $P=-2$ dioptrías. Explica qué defecto visual padece, el tipo de lente que utiliza y el motivo por el que dicha lente proporciona una corrección de su defecto.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Corrección de la Miopía} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos diagramas de un ojo. El de la izquierda, etiquetado 'Ojo Miope', muestra rayos de luz paralelos que entran en el ojo y convergen en un punto focal delante de la retina. El de la derecha, etiquetado 'Ojo Corregido', muestra una lente divergente (bicóncava) colocada delante del ojo. Los rayos paralelos primero se separan ligeramente al pasar por esta lente y luego, al entrar en el ojo, el cristalino los converge exactamente sobre la retina."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{correccion_miopia.png}
+    }}
+    \caption{Esquema de la miopía y su corrección.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} La potencia de una lente, $P$, es la inversa de su distancia focal imagen en metros ($P=1/f'$). Por convenio, una potencia \textbf{negativa} ($P < 0$) corresponde a una \textbf{lente divergente} (cóncava).
+    \item \textbf{Defecto visual (Miopía):} La miopía es un defecto de refracción en el que el ojo tiene un exceso de potencia convergente. Esto causa que las imágenes de objetos lejanos se formen \textbf{delante de la retina}, resultando en una visión borrosa de lejos.
+    \item \textbf{Corrección:} Para corregir la miopía, se necesita disminuir la potencia convergente del sistema óptico del ojo. Esto se logra colocando delante del ojo una lente divergente, que desvía los rayos de luz hacia afuera antes de que entren en el ojo. Esta divergencia inicial compensa el exceso de convergencia del cristalino, permitiendo que la imagen final se forme nítidamente sobre la retina.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica un cálculo numérico, la solución es conceptual.
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Defecto visual:} La persona padece \textbf{miopía}.
+    \item \textbf{Tipo de lente:} Utiliza una \textbf{lente divergente} (con potencia negativa de -2 D).
+    \item \textbf{Motivo:} La lente divergente reduce la potencia refractiva total del sistema ojo-lente, compensando el exceso de convergencia del ojo miope y desplazando el punto focal hacia atrás, hasta situarlo correctamente sobre la retina.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Una lente de -2 dioptrías es una lente divergente. Este tipo de lentes se prescribe para corregir la miopía, un defecto visual caracterizado por un exceso de convergencia. La lente divergente actúa "abriendo" los rayos de luz antes de que lleguen al ojo, lo que permite que el sistema óptico del ojo, demasiado potente, los enfoque correctamente sobre la retina.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 3 - OPCIÓN B}
+\label{subsec:3B_2009_jun_ord}
+
+\begin{cajaenunciado}
+Explica de forma concisa el significado físico del índice de refracción y cómo influye el cambio de dicho índice en la trayectoria de un rayo.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Ley de Snell de la Refracción} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de la refracción de la luz. Mostrar una superficie de separación horizontal entre dos medios, 'Medio 1 ($n_1$)' arriba y 'Medio 2 ($n_2$)' abajo, con $n_2 > n_1$. Dibujar la línea normal perpendicular a la superficie. Un rayo de luz incide desde el Medio 1 con un ángulo de incidencia $\theta_1$ respecto a la normal. Al pasar al Medio 2, el rayo se desvía, acercándose a la normal con un ángulo de refracción $\theta_2 < \theta_1$. Etiquetar claramente los medios, la normal y los ángulos."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{ley_snell.png}
+    }}
+    \caption{Desviación de un rayo de luz al cambiar de medio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Significado físico del índice de refracción ($n$)}
+El índice de refracción de un medio es una magnitud adimensional que describe cómo se propaga la luz a través de ese medio. Su significado físico principal es que mide la \textbf{reducción de la velocidad de la luz} en ese medio en comparación con su velocidad en el vacío. Se define como el cociente:
+$$ n = \frac{c}{v} $$
+donde $c$ es la velocidad de la luz en el vacío (la máxima posible) y $v$ es la velocidad de la luz en el medio.
+Como $v \le c$, el índice de refracción es siempre $n \ge 1$. Un valor de $n$ más alto significa que la luz viaja más lentamente en ese medio (se dice que el medio es "ópticamente más denso").
+
+\paragraph{Influencia en la trayectoria de un rayo}
+Cuando un rayo de luz atraviesa la interfaz entre dos medios con diferentes índices de refracción, su trayectoria se desvía en un fenómeno llamado \textbf{refracción}. La relación entre el ángulo de incidencia ($\theta_1$) y el de refracción ($\theta_2$) viene dada por la \textbf{Ley de Snell}:
+$$ n_1 \sin(\theta_1) = n_2 \sin(\theta_2) $$
+La influencia es la siguiente:
+\begin{itemize}
+    \item Si la luz pasa de un medio de menor índice a uno de \textbf{mayor índice} ($n_1 < n_2$), el rayo \textbf{se acerca a la normal} ($\theta_2 < \theta_1$).
+    \item Si la luz pasa de un medio de mayor índice a uno de \textbf{menor índice} ($n_1 > n_2$), el rayo \textbf{se aleja de la normal} ($\theta_2 > \theta_1$).
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El índice de refracción $n$ cuantifica la velocidad de la luz en un medio. Un cambio en este índice al pasar de un medio a otro provoca la refracción, es decir, una desviación en la trayectoria del rayo de luz. Esta desviación, gobernada por la Ley de Snell, es la base del funcionamiento de lentes, prismas y otros dispositivos ópticos.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Cuestiones de Campo Magnético}
+\label{sec:em_2009_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 4 - OPCIÓN A}
+\label{subsec:4A_2009_jun_ord}
+
+\begin{cajaenunciado}
+En una región del espacio existe un campo magnético uniforme dirigido en el sentido negativo del eje Z. Indica la dirección y el sentido de la fuerza que actúa sobre una carga en los siguientes casos:
+\begin{enumerate}
+    \item[1)] La carga es positiva y se mueve en el sentido positivo del eje Z.
+    \item[2)] La carga es negativa y se mueve en el sentido positivo del eje X.
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fuerza de Lorentz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de ejes coordenados 3D (X, Y, Z). Dibujar vectores de campo magnético $\vec{B}$ apuntando en la dirección -Z. Para el caso 1), mostrar una carga positiva con un vector velocidad $\vec{v}$ también en la dirección -Z; indicar que la fuerza $\vec{F}$ es cero. Para el caso 2), mostrar una carga negativa con un vector velocidad $\vec{v}$ en la dirección +X. Usando la regla de la mano izquierda, mostrar que $\vec{v} \times \vec{B}$ apunta en la dirección +Y, pero como la carga es negativa, el vector fuerza $\vec{F}$ apunta en la dirección opuesta, es decir, -Y."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_lorentz_ejes.png}
+    }}
+    \caption{Aplicación de la Fuerza de Lorentz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza que un campo magnético $\vec{B}$ ejerce sobre una partícula de carga $q$ que se mueve con una velocidad $\vec{v}$ viene dada por la \textbf{Fuerza de Lorentz}:
+$$ \vec{F}_m = q (\vec{v} \times \vec{B}) $$
+La dirección y el sentido de esta fuerza se determinan mediante la regla de la mano derecha (o izquierda) para el producto vectorial, teniendo en cuenta que si la carga $q$ es negativa, el sentido de la fuerza es opuesto al resultado del producto vectorial.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+En ambos casos, el campo magnético es $\vec{B} = -B_0\vec{k}$.
+
+\paragraph{1) Carga positiva, $\vec{v} = v\vec{k}$}
+La velocidad es $\vec{v} = v\vec{k}$ y la carga es $q>0$.
+El producto vectorial es:
+$$ \vec{v} \times \vec{B} = (v\vec{k}) \times (-B_0\vec{k}) = -vB_0(\vec{k} \times \vec{k}) $$
+Dado que el producto vectorial de un vector por sí mismo es nulo ($\vec{k} \times \vec{k} = \vec{0}$):
+$$ \vec{F}_m = q(\vec{0}) = \vec{0} $$
+\begin{cajaresultado}
+La fuerza magnética es \textbf{nula}, ya que la velocidad es paralela al campo magnético.
+\end{cajaresultado}
+
+\paragraph{2) Carga negativa, $\vec{v} = v\vec{i}$}
+La velocidad es $\vec{v} = v\vec{i}$ y la carga es $q<0$ (por ejemplo, $q=-e$).
+El producto vectorial es:
+$$ \vec{v} \times \vec{B} = (v\vec{i}) \times (-B_0\vec{k}) = -vB_0(\vec{i} \times \vec{k}) $$
+Sabiendo que $\vec{i} \times \vec{k} = -\vec{j}$:
+$$ \vec{v} \times \vec{B} = -vB_0(-\vec{j}) = vB_0\vec{j} $$
+Ahora calculamos la fuerza:
+$$ \vec{F}_m = q (vB_0\vec{j}) $$
+Como $q$ es negativa, la fuerza tendrá sentido opuesto al vector $\vec{j}$.
+$$ \vec{F}_m \text{ apunta en la dirección del eje Y, sentido negativo } (-\vec{j}) $$
+\begin{cajaresultado}
+La fuerza tiene la \textbf{dirección del eje Y} y el \textbf{sentido negativo}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza de Lorentz depende del producto vectorial entre la velocidad y el campo magnético. Si ambos vectores son paralelos, la fuerza es nula. Si son perpendiculares, la fuerza es máxima y perpendicular a ambos, con un sentido que además depende del signo de la carga.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 4 - OPCIÓN B}
+\label{subsec:4B_2009_jun_ord}
+
+\begin{cajaenunciado}
+Dos cargas puntuales iguales de $3\,\mu\text{C}$ están situadas sobre el eje Y, una se encuentra en el punto (0, -d) y la otra en el punto (0, d), siendo $d=6$ m. Una tercera carga de $2\,\mu\text{C}$ se sitúa sobre el eje X en $x=8$ m. Encuentra la fuerza ejercida sobre esta última carga.
+\textbf{Dato:} Constante eléctrica $K=9\cdot10^9\,\text{N}\cdot\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = 3 \, \mu\text{C} = 3 \cdot 10^{-6} \, \text{C}$ en P1(0, 6). (Error en enunciado, debe ser d=6m, no -d)
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = 3 \, \mu\text{C} = 3 \cdot 10^{-6} \, \text{C}$ en P2(0, -6).
+    \item \textbf{Carga 3 ($q_3$):} $q_3 = 2 \, \mu\text{C} = 2 \cdot 10^{-6} \, \text{C}$ en P3(8, 0).
+    \item \textbf{Constante de Coulomb ($K$):} $K=9\cdot10^9\,\text{N}\cdot\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnita:} Fuerza total $\vec{F}_3$ sobre la carga $q_3$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fuerza sobre una Carga} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de ejes XY. Carga $q_1$ en (0,6), carga $q_2$ en (0,-6), y carga $q_3$ en (8,0). Todas las cargas son positivas. Dibujar el vector fuerza $\vec{F}_{1\to3}$ sobre $q_3$, que es repulsivo y apunta desde $q_1$ a $q_3$. Dibujar el vector fuerza $\vec{F}_{2\to3}$, que es repulsivo y apunta desde $q_2$ a $q_3$. Mostrar que por simetría, las componentes verticales de estas dos fuerzas se anulan, y las componentes horizontales se suman, dando un vector de fuerza total $\vec{F}_{total}$ que apunta en la dirección +X."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_simetria.png}
+    }}
+    \caption{Suma de fuerzas sobre la carga $q_3$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica el \textbf{Principio de Superposición} y la \textbf{Ley de Coulomb}. La fuerza total sobre $q_3$ es la suma vectorial de las fuerzas ejercidas por $q_1$ y $q_2$:
+$$ \vec{F}_{total,3} = \vec{F}_{1\to3} + \vec{F}_{2\to3} $$
+La fuerza entre dos cargas es $\vec{F} = K\frac{q_a q_b}{r^2}\vec{u}_r$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La distancia de $q_1$ y $q_2$ a $q_3$ es la misma por simetría:
+$$ r = \sqrt{(8-0)^2 + (0-6)^2} = \sqrt{64+36} = \sqrt{100} = 10 \, \text{m} $$
+Los vectores fuerza son:
+\begin{itemize}
+    \item $\vec{F}_{1\to3}$: El vector unitario de P1 a P3 es $\vec{u}_{13} = \frac{8\vec{i}-6\vec{j}}{10}$.
+    \item $\vec{F}_{2\to3}$: El vector unitario de P2 a P3 es $\vec{u}_{23} = \frac{8\vec{i}+6\vec{j}}{10}$.
+\end{itemize}
+$$ \vec{F}_{total,3} = K\frac{q_1q_3}{r^2}\vec{u}_{13} + K\frac{q_2q_3}{r^2}\vec{u}_{23} $$
+Como $q_1=q_2=q$, la expresión se simplifica:
+$$ \vec{F}_{total,3} = K\frac{qq_3}{r^2} \left( \frac{8\vec{i}-6\vec{j}}{10} + \frac{8\vec{i}+6\vec{j}}{10} \right) = K\frac{qq_3}{r^2} \left( \frac{16\vec{i}}{10} \right) = 1,6 \cdot K\frac{qq_3}{r^2}\vec{i} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \vec{F}_{total,3} = 1,6 \cdot (9\cdot10^9) \frac{(3\cdot10^{-6})(2\cdot10^{-6})}{10^2} \vec{i} \\
+    \vec{F}_{total,3} = 1,6 \cdot (9\cdot10^9) \frac{6\cdot10^{-12}}{100} \vec{i} = \frac{86,4 \cdot 10^{-3}}{100} \vec{i} = 8,64 \cdot 10^{-4} \vec{i} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+La fuerza ejercida sobre la tercera carga es $\boldsymbol{\vec{F} = 8,64 \cdot 10^{-4} \vec{i} \, \textbf{N}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido a la disposición simétrica de las cargas $q_1$ y $q_2$ respecto al eje X, las componentes verticales de las fuerzas que ejercen sobre $q_3$ se anulan mutuamente. Las componentes horizontales se suman, resultando en una fuerza neta repulsiva dirigida a lo largo del eje X positivo.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Problemas de Física Moderna}
+\label{sec:moderna_2009_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 5 - OPCIÓN A}
+\label{subsec:5A_2009_jun_ord}
+
+\begin{cajaenunciado}
+Al incidir luz de longitud de onda $\lambda=621,5$ nm sobre la superficie de una fotocélula, los electrones de ésta son emitidos con una energía cinética de 0,14 eV. Calcula:
+\begin{enumerate}
+    \item[1)] El trabajo de extracción de la fotocélula. (0,8 puntos)
+    \item[2)] La frecuencia umbral. (0,4 puntos)
+    \item[3)] ¿Cuál será la energía cinética si la longitud de onda es $\lambda_{1}=\lambda/2$? ¿y si la longitud de onda es $\lambda_{2}=2\lambda$? (0,8 puntos).
+\end{enumerate}
+\textbf{Datos:} carga del electrón $e=1,6\cdot10^{-19}\,\text{C}$; constante de Planck $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$; velocidad de la luz $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda incidente ($\lambda$):} $\lambda = 621,5 \, \text{nm} = 6,215 \cdot 10^{-7} \, \text{m}$.
+    \item \textbf{Energía cinética máxima ($E_{c,max}$):} $E_{c,max} = 0,14 \, \text{eV}$.
+    \item \textbf{Constantes:} $e=1,6\cdot10^{-19}\,\text{C}$, $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$, $c=3\cdot10^{8}\,\text{m/s}$.
+    \item \textbf{Incógnitas:} Trabajo de extracción ($\Phi$), frecuencia umbral ($f_0$), $E_c$ para $\lambda/2$ y $2\lambda$.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se rige por la \textbf{ecuación del efecto fotoeléctrico} de Einstein:
+$$ E_{foton} = \Phi + E_{c,max} $$
+donde:
+\begin{itemize}
+    \item $E_{foton} = hf = \frac{hc}{\lambda}$ es la energía del fotón incidente.
+    \item $\Phi$ es el trabajo de extracción (o función de trabajo), la energía mínima para arrancar un electrón del metal.
+    \item $E_{c,max}$ es la energía cinética máxima de los electrones emitidos (fotoelectrones).
+\end{itemize}
+La \textbf{frecuencia umbral ($f_0$)} es la mínima frecuencia que debe tener un fotón para producir el efecto, y corresponde a una energía cinética nula. Se relaciona con el trabajo de extracción por $\Phi = h f_0$.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph{1. Trabajo de extracción ($\Phi$)}
+Primero calculamos la energía del fotón incidente en Joules y luego la convertimos a eV.
+\begin{gather}
+    E_{foton} = \frac{hc}{\lambda} = \frac{(6,6\cdot10^{-34})(3\cdot10^8)}{6,215\cdot10^{-7}} \approx 3,18 \cdot 10^{-19} \, \text{J} \\
+    E_{foton, eV} = \frac{3,18 \cdot 10^{-19} \, \text{J}}{1,6\cdot10^{-19} \, \text{J/eV}} \approx 1,99 \, \text{eV}
+\end{gather}
+Ahora despejamos $\Phi$ de la ecuación de Einstein:
+\begin{gather}
+    \Phi = E_{foton} - E_{c,max} = 1,99 \, \text{eV} - 0,14 \, \text{eV} = 1,85 \, \text{eV}
+\end{gather}
+\begin{cajaresultado}
+El trabajo de extracción de la fotocélula es $\boldsymbol{\Phi = 1,85 \, \textbf{eV}}$.
+\end{cajaresultado}
+
+\paragraph{2. Frecuencia umbral ($f_0$)}
+Convertimos $\Phi$ a Joules: $\Phi = 1,85 \, \text{eV} \cdot 1,6\cdot10^{-19} \, \text{J/eV} \approx 2,96 \cdot 10^{-19} \, \text{J}$.
+\begin{gather}
+    f_0 = \frac{\Phi}{h} = \frac{2,96 \cdot 10^{-19} \, \text{J}}{6,6\cdot10^{-34} \, \text{J}\cdot\text{s}} \approx 4,48 \cdot 10^{14} \, \text{Hz}
+\end{gather}
+\begin{cajaresultado}
+La frecuencia umbral es $\boldsymbol{f_0 \approx 4,48 \cdot 10^{14} \, \textbf{Hz}}$.
+\end{cajaresultado}
+
+\paragraph{3. Nuevas energías cinéticas}
+\begin{itemize}
+    \item \textbf{Caso $\lambda_1 = \lambda/2$:} La energía del fotón se duplica. $E_{foton,1} = 2 \cdot E_{foton} = 2 \cdot 1,99 \approx 3,98 \, \text{eV}$.
+    \begin{gather}
+        E_{c,1} = E_{foton,1} - \Phi = 3,98 \, \text{eV} - 1,85 \, \text{eV} = 2,13 \, \text{eV}
+    \end{gather}
+    \item \textbf{Caso $\lambda_2 = 2\lambda$:} La energía del fotón se reduce a la mitad. $E_{foton,2} = E_{foton}/2 = 1,99/2 \approx 0,995 \, \text{eV}$.
+    Comparamos esta energía con el trabajo de extracción: $E_{foton,2} (0,995\,\text{eV}) < \Phi (1,85\,\text{eV})$.
+    Como la energía del fotón es insuficiente para arrancar electrones, no hay efecto fotoeléctrico.
+    \begin{gather}
+        E_{c,2} = 0
+    \end{gather}
+\end{itemize}
+\begin{cajaresultado}
+Para $\lambda_1=\lambda/2$, la energía cinética es $\boldsymbol{E_{c,1} = 2,13 \, \textbf{eV}}$. Para $\lambda_2=2\lambda$, \textbf{no se emiten electrones} ($E_{c,2}=0$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El efecto fotoeléctrico demuestra la naturaleza cuántica de la luz. Se ha calculado que el metal tiene un trabajo de extracción de 1,85 eV. Acortar la longitud de onda aumenta la energía de los fotones y, por tanto, la de los electrones emitidos. Alargarla la disminuye, y si la energía del fotón cae por debajo del trabajo de extracción, el fenómeno cesa por completo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 5 - OPCIÓN B}
+\label{subsec:5B_2009_jun_ord}
+
+\begin{cajaenunciado}
+Se mide la actividad de 20 gramos de una sustancia radiactiva comprobándose que al cabo de 10 horas ha disminuido un 10\%. Calcula:
+\begin{enumerate}
+    \item[1)] La constante de desintegración de la sustancia radiactiva. (1,2 puntos)
+    \item[2)] la masa de sustancia radiactiva que quedará sin desintegrar al cabo de 2 días. (0,8 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa inicial ($m_0$):} $m_0 = 20 \, \text{g}$.
+    \item \textbf{Condición de decaimiento:} En $t_1 = 10 \, \text{horas}$, la actividad disminuye un 10\%. Esto significa que $A(t_1) = 0,90 \cdot A_0$. Como la actividad $A$ y la masa $m$ son proporcionales al número de núcleos $N$, también implica que $m(t_1) = 0,90 \cdot m_0$.
+    \item \textbf{Tiempo final ($t_2$):} $t_2 = 2 \, \text{días} = 48 \, \text{horas}$.
+    \item \textbf{Incógnitas:} Constante de desintegración ($\lambda$) y masa final $m(t_2)$.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ley de desintegración radiactiva describe cómo la cantidad de una sustancia radiactiva disminuye con el tiempo. Puede expresarse en términos del número de núcleos $N(t)$, la actividad $A(t)$ o la masa $m(t)$:
+$$ m(t) = m_0 e^{-\lambda t} $$
+donde $m_0$ es la masa inicial, $m(t)$ es la masa en el instante $t$, y $\lambda$ es la constante de desintegración.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Constante de desintegración ($\lambda$)}
+Usamos la condición para $t_1=10$ horas:
+\begin{gather}
+    m(t_1) = m_0 e^{-\lambda t_1} \implies 0,90 m_0 = m_0 e^{-\lambda \cdot 10} \\
+    0,90 = e^{-10\lambda}
+\end{gather}
+Para despejar $\lambda$, tomamos logaritmos neperianos en ambos lados:
+\begin{gather}
+    \ln(0,90) = -10\lambda \implies \lambda = -\frac{\ln(0,90)}{10}
+\end{gather}
+\paragraph{2. Masa a las 48 horas}
+Usamos la misma ley de desintegración con el valor de $\lambda$ ya calculado y $t_2=48$ horas:
+\begin{gather}
+    m(t_2) = m_0 e^{-\lambda t_2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Constante de desintegración}
+\begin{gather}
+    \lambda = -\frac{\ln(0,90)}{10} \approx -\frac{-0,10536}{10} \approx 0,010536 \, \text{horas}^{-1}
+\end{gather}
+\begin{cajaresultado}
+La constante de desintegración es $\boldsymbol{\lambda \approx 0,01054 \, \textbf{horas}^{-1}}$.
+\end{cajaresultado}
+
+\paragraph{2. Masa a los 2 días}
+\begin{gather}
+    m(48) = (20 \, \text{g}) \cdot e^{-0,010536 \cdot 48} = 20 \cdot e^{-0,5057} \approx 20 \cdot (0,603) \approx 12,06 \, \text{g}
+\end{gather}
+\begin{cajaresultado}
+La masa que quedará sin desintegrar será de $\boldsymbol{m \approx 12,06 \, \textbf{g}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La ley de decaimiento exponencial permite modelar la desintegración radiactiva. A partir del dato de que la masa se reduce al 90\% en 10 horas, se ha determinado la constante de desintegración de la sustancia. Con esta constante, se ha predicho que de los 20 gramos iniciales, quedarán aproximadamente 12,06 gramos después de 2 días.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Cuestiones de Física Moderna}
+\label{sec:moderna2_2009_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 6 - OPCIÓN A}
+\label{subsec:6A_2009_jun_ord}
+
+\begin{cajaenunciado}
+Una nave parte hacia un planeta situado a 8 años luz de la Tierra, viajando a una velocidad de 0,8c. Suponiendo despreciables los tiempos empleados en aceleraciones y cambio de sentido, calcula el tiempo invertido en el viaje de ida y vuelta para un observador en la Tierra y para el astronauta que viaja en la nave.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Distancia propia (medida desde la Tierra):} $L_0 = 8$ años-luz.
+    \item \textbf{Velocidad de la nave ($v$):} $v = 0,8c$.
+    \item \textbf{Incógnitas:} Tiempo del viaje de ida y vuelta medido en la Tierra ($\Delta t_{Tierra}$) y tiempo medido por el astronauta ($\Delta t_{nave}$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Este problema se resuelve aplicando dos consecuencias de la Relatividad Especial:
+\begin{itemize}
+    \item \textbf{Tiempo medido desde un sistema de referencia "fijo" (Tierra):} Se calcula con la cinemática clásica, usando la distancia medida en ese sistema. $\Delta t = \text{Distancia}/\text{Velocidad}$.
+    \item \textbf{Dilatación del tiempo:} El tiempo transcurre más lentamente para un observador en movimiento. El tiempo medido en la nave ($\Delta t_{nave}$), que es el tiempo propio, está relacionado con el tiempo medido en la Tierra ($\Delta t_{Tierra}$) mediante la fórmula:
+    $$ \Delta t_{Tierra} = \gamma \Delta t_{nave} $$
+    donde $\gamma$ es el factor de Lorentz: $\gamma = \frac{1}{\sqrt{1-v^2/c^2}}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph{1. Tiempo para el observador en la Tierra}
+El viaje es de ida y vuelta, por lo que la distancia total es $2 \cdot L_0 = 16$ años-luz.
+\begin{gather}
+    \Delta t_{Tierra} = \frac{\text{Distancia total}}{v} = \frac{16 \, \text{años-luz}}{0,8c} = \frac{16}{0,8} \, \frac{\text{años-luz}}{c} = 20 \, \text{años}
+\end{gather}
+\begin{cajaresultado}
+Para un observador en la Tierra, el viaje de ida y vuelta dura \textbf{20 años}.
+\end{cajaresultado}
+
+\paragraph{2. Tiempo para el astronauta}
+Primero, calculamos el factor de Lorentz $\gamma$:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - (0,8c)^2/c^2}} = \frac{1}{\sqrt{1 - 0,64}} = \frac{1}{\sqrt{0,36}} = \frac{1}{0,6} = \frac{5}{3} \approx 1,67
+\end{gather}
+Ahora, aplicamos la fórmula de la dilatación del tiempo:
+\begin{gather}
+    \Delta t_{nave} = \frac{\Delta t_{Tierra}}{\gamma} = \frac{20 \, \text{años}}{5/3} = \frac{60}{5} = 12 \, \text{años}
+\end{gather}
+\begin{cajaresultado}
+Para el astronauta que viaja en la nave, el viaje de ida y vuelta dura \textbf{12 años}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Este es un ejemplo clásico de la dilatación del tiempo. Mientras que en la Tierra han transcurrido 20 años, para el astronauta que viaja a una velocidad relativista solo han pasado 12 años. Este efecto, conocido como la "paradoja de los gemelos", es una consecuencia directa de que el tiempo no es absoluto, sino que depende del estado de movimiento del observador.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 6 - OPCIÓN B}
+\label{subsec:6B_2009_jun_ord}
+
+\begin{cajaenunciado}
+La masa del núcleo de deuterio ${}^{2}\text{H}$ es de 2,0136 u y la del ${}^{4}\text{He}$ es de 4,0026 u. Explica si el proceso por el que se obtendría energía sería la fisión del ${}^{4}\text{He}$ en dos núcleos de deuterio o la fusión de dos núcleos de deuterio para dar ${}^{4}\text{He}$. Justifica adecuadamente tu respuesta.
+\textbf{Datos:} Unidad de masa atómica $u=1,66\cdot10^{-27}$ kg, velocidad de la luz $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La obtención de energía en las reacciones nucleares se basa en la \textbf{equivalencia masa-energía} de Einstein, $E=mc^2$. Se libera energía en una reacción si la masa total de los productos finales es \textbf{menor} que la masa total de los reactivos iniciales. Esta diferencia de masa, llamada \textbf{defecto de masa ($\Delta m$)}, se convierte en la energía liberada en la reacción.
+$$ E_{liberada} = \Delta m \cdot c^2 = (m_{reactivos} - m_{productos}) \cdot c^2 $$
+Para que se libere energía, se debe cumplir que $m_{reactivos} > m_{productos}$.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+Analizamos los dos procesos posibles:
+
+\paragraph{Proceso 1: Fusión}
+Dos núcleos de deuterio se fusionan para dar un núcleo de helio.
+$$ {}^{2}\text{H} + {}^{2}\text{H} \longrightarrow {}^{4}\text{He} $$
+\begin{itemize}
+    \item \textbf{Masa de los reactivos:} $m_{reactivos} = 2 \cdot m({}^{2}\text{H}) = 2 \cdot 2,0136 \, \text{u} = 4,0272 \, \text{u}$.
+    \item \textbf{Masa de los productos:} $m_{productos} = m({}^{4}\text{He}) = 4,0026 \, \text{u}$.
+\end{itemize}
+Comparamos las masas: $m_{reactivos} (4,0272 \, \text{u}) > m_{productos} (4,0026 \, \text{u})$.
+Como la masa disminuye en este proceso, \textbf{la fusión libera energía}.
+
+\paragraph{Proceso 2: Fisión}
+Un núcleo de helio se fisiona para dar dos núcleos de deuterio.
+$$ {}^{4}\text{He} \longrightarrow {}^{2}\text{H} + {}^{2}\text{H} $$
+\begin{itemize}
+    \item \textbf{Masa de los reactivos:} $m_{reactivos} = m({}^{4}\text{He}) = 4,0026 \, \text{u}$.
+    \item \textbf{Masa de los productos:} $m_{productos} = 2 \cdot m({}^{2}\text{H}) = 4,0272 \, \text{u}$.
+\end{itemize}
+Comparamos las masas: $m_{reactivos} (4,0026 \, \text{u}) < m_{productos} (4,0272 \, \text{u})$.
+Como la masa aumenta en este proceso, \textbf{la fisión consumiría energía} (requeriría un aporte de energía para ocurrir).
+
+\subsubsection*{5. Resultado}
+\begin{cajaresultado}
+El proceso por el que se obtendría energía es la \textbf{fusión} de dos núcleos de deuterio para dar helio.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La justificación reside en el defecto de masa. La suma de las masas de dos núcleos de deuterio es mayor que la masa de un núcleo de helio. Según la relación $E=mc^2$, esta "pérdida" de masa durante la fusión se convierte en una gran cantidad de energía liberada. El proceso inverso, la fisión del helio, requeriría que se aportara esa misma cantidad de energía para "crear" la masa adicional de los productos.
+\end{cajaconclusion}
+
+\newpage

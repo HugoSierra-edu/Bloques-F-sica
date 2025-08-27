@@ -1,0 +1,1038 @@
+```latex
+% !TEX root = ../main.tex
+\chapter{Examen Julio 2025 - Convocatoria Extraordinaria}
+\label{chap:2025_jul_ord}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2025_jul_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2025_jul_ord}
+
+\begin{cajaenunciado}
+En el año 1969 el módulo de mando Columbia de la misión Apolo 11, tripulada por el astronauta Michael Collins, orbitaba con trayectoria circular, a 100 km de altura sobre la superficie de la Luna y con un periodo de 118 minutos. Mientras, Neil Armstrong y Edwin Aldrin, los otros dos tripulantes, caminaban sobre la Luna. Determina razonadamente:
+\begin{enumerate}
+    \item[a)] La expresión para calcular la masa de la Luna y obtén su valor. Determina la velocidad de escape desde la superficie lunar. (1 punto)
+    \item[b)] La velocidad con la que el módulo de aterrizaje Eagle, tripulado por Aldrin y Armstrong, debe despegar de la superficie lunar para llegar a la órbita del módulo Columbia y con la misma velocidad a la que orbita el Columbia. (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$; radio de la Luna, $R_{L}=1,74\cdot10^{3}\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es fundamental convertir todas las unidades al Sistema Internacional (SI) para asegurar la coherencia en los cálculos.
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \item \textbf{Constante de Gravitación Universal (G):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Radio de la Luna ($R_L$):} $R_L = 1,74 \cdot 10^3 \text{ km} = 1,74 \cdot 10^6 \text{ m}$.
+    \item \textbf{Altura de la órbita ($h$):} $h = 100 \text{ km} = 1 \cdot 10^5 \text{ m}$.
+    \item \textbf{Radio de la órbita ($r_{orb}$):} $r_{orb} = R_L + h = 1,74 \cdot 10^6 + 0,1 \cdot 10^6 = 1,84 \cdot 10^6 \text{ m}$.
+    \item \textbf{Periodo orbital ($T$):} $T = 118 \text{ min} \times \frac{60 \text{ s}}{1 \text{ min}} = 7080 \text{ s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \setlength{\itemsep}{0pt}
+        \item Masa de la Luna ($M_L$).
+        \item Velocidad de escape desde la superficie lunar ($v_{esc}$).
+        \item Velocidad de despegue del módulo Eagle ($v_{despegue}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+Se proponen dos diagramas para ilustrar los apartados del problema.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{%
+        \centering \textbf{Apartado (a): Órbita y Escape}
+        \vspace{0.5cm}
+        \textit{Prompt para la imagen:} "Un esquema de la Luna. Alrededor, una órbita circular a una altura 'h' sobre la superficie, donde se encuentra el módulo Columbia. La fuerza gravitatoria Fg sobre el módulo debe señalar hacia el centro de la Luna. Desde la superficie de la Luna, dibujar un vector de velocidad de escape 'vesc' saliendo radialmente."
+        \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_luna_orbita.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{%
+        \centering \textbf{Apartado (b): Ascenso del Eagle}
+        \vspace{0.5cm}
+        \textit{Prompt para la imagen:} "Diagrama de la Luna mostrando la trayectoria del módulo Eagle desde la superficie hasta la órbita del Columbia. Etiquetar el punto inicial en la superficie (Punto 1) con velocidad 'v\_despegue' y el punto final en la órbita (Punto 2) con la velocidad orbital 'v\_orb'."
+        \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_luna_ascenso.png}
+    }}
+    \caption{Representaciones de la órbita del módulo Columbia y el ascenso del Eagle.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Masa de la Luna y Velocidad de Escape}
+Para un cuerpo en órbita circular, la fuerza centrípeta que mantiene el movimiento es la fuerza de atracción gravitatoria. Se igualan las expresiones de ambas fuerzas (2ª Ley de Newton). La velocidad de escape se deduce del principio de conservación de la energía mecánica, imponiendo que la energía mecánica total en el infinito sea nula.
+
+\paragraph*{b) Velocidad de Despegue del Eagle}
+Se aplica el principio de conservación de la energía mecánica para el módulo Eagle entre dos puntos: el punto de despegue en la superficie lunar y el punto de encuentro en la órbita del Columbia. La energía mecánica total en el punto 1 (superficie) debe ser igual a la energía mecánica total en el punto 2 (órbita).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Masa de la Luna ($M_L$) y Velocidad de Escape ($v_{esc}$)}
+Para la órbita circular del Columbia, la fuerza gravitatoria ($F_g$) es igual a la fuerza centrípeta ($F_c$):
+\begin{gather}
+    F_g = F_c \implies G \frac{M_L m}{(R_L+h)^2} = m \frac{v_{orb}^2}{R_L+h}
+\end{gather}
+Sabiendo que para un movimiento circular $v_{orb} = \omega r_{orb} = \frac{2\pi}{T}(R_L+h)$, sustituimos:
+\begin{gather}
+    G \frac{M_L}{(R_L+h)^2} = \left(\frac{2\pi}{T}\right)^2 (R_L+h) \implies M_L = \frac{4\pi^2 (R_L+h)^3}{G T^2}
+\end{gather}
+Para la velocidad de escape, la energía mecánica inicial en la superficie debe ser igual a la energía mecánica final en el infinito (que es cero):
+\begin{gather}
+    E_{M,i} = E_{M,f} \implies \frac{1}{2} m v_{esc}^2 - G \frac{M_L m}{R_L} = 0 \implies v_{esc} = \sqrt{\frac{2 G M_L}{R_L}}
+\end{gather}
+\paragraph*{b) Velocidad de Despegue del Eagle ($v_{despegue}$)}
+Por conservación de la energía mecánica entre la superficie (1) y la órbita (2):
+\begin{gather}
+    E_{M,1} = E_{M,2} \implies \frac{1}{2} m v_{despegue}^2 - G \frac{M_L m}{R_L} = \frac{1}{2} m v_{orb}^2 - G \frac{M_L m}{R_L+h}
+\end{gather}
+Donde $v_{orb}$ es la velocidad del Columbia en su órbita, que podemos obtener de la ecuación (1): $v_{orb} = \sqrt{\frac{G M_L}{R_L+h}}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la Masa de la Luna y Velocidad de Escape}
+\begin{gather}
+    M_L = \frac{4\pi^2 (1,84 \cdot 10^6)^3}{(6,67 \cdot 10^{-11})(7080)^2} \approx 7,35 \cdot 10^{22} \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    La masa de la Luna es $\boldsymbol{M_L \approx 7,35 \cdot 10^{22} \, kg}$.
+\end{cajaresultado}
+\medskip
+\begin{gather}
+    v_{esc} = \sqrt{\frac{2 (6,67 \cdot 10^{-11}) (7,35 \cdot 10^{22})}{1,74 \cdot 10^6}} \approx 2374,5 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de escape desde la superficie lunar es $\boldsymbol{v_{esc} \approx 2,37 \cdot 10^3 \, m/s}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de la Velocidad de Despegue del Eagle}
+Primero calculamos la velocidad orbital del Columbia:
+\begin{gather}
+    v_{orb} = \frac{2\pi r_{orb}}{T} = \frac{2\pi (1,84 \cdot 10^6)}{7080} \approx 1633,2 \, \text{m/s}
+\end{gather}
+Ahora aplicamos la conservación de la energía, despejando $v_{despegue}^2$:
+\begin{gather}
+    v_{despegue}^2 = v_{orb}^2 + 2 G M_L \left(\frac{1}{R_L} - \frac{1}{R_L+h}\right) \nonumber \\
+    v_{despegue}^2 = (1633,2)^2 + 2(6,67\cdot 10^{-11})(7,35\cdot 10^{22}) \left(\frac{1}{1,74\cdot 10^6} - \frac{1}{1,84\cdot 10^6}\right) \approx 3,06 \cdot 10^6 \, (\text{m/s})^2 \nonumber \\
+    v_{despegue} = \sqrt{3,06 \cdot 10^6} \approx 1749,3 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de despegue del módulo Eagle debe ser $\boldsymbol{v_{despegue} \approx 1749,3 \, m/s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    A partir de los datos orbitales del módulo Columbia, se ha deducido una masa para la Luna de $\mathbf{7,35 \cdot 10^{22} \, kg}$. Con este valor, se determina que la velocidad de escape desde su superficie es de $\mathbf{2374,5 \, m/s}$. Finalmente, aplicando la conservación de la energía, se concluye que el módulo Eagle necesitó una velocidad de despegue de $\mathbf{1749,3 \, m/s}$ para alcanzar la órbita de encuentro.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2025_jul_ord}
+
+\begin{cajaenunciado}
+Un nanosatélite artificial, de masa 1 kg, gira alrededor de la Tierra describiendo una órbita elíptica. Sabiendo que la Tierra está situada en uno de los focos de la elipse y que en el punto de la órbita más lejano (apogeo) el módulo del momento angular del nanosatélite vale $5,6\cdot10^{10}\,\text{kg}\cdot\text{m}^2/\text{s}$:
+\begin{enumerate}
+    \item[a)] Calcula razonadamente el módulo de su velocidad en dicho punto. En el punto de la órbita más cercano a la Tierra (perigeo), ¿la velocidad es mayor o menor que en el apogeo? Justifica la respuesta.
+    \item[b)] Determina las energías cinética y potencial gravitatoria del satélite en el apogeo, así como la energía mecánica del satélite. Supón que el nanosatélite solo se ve afectado por el campo gravitatorio terrestre.
+\end{enumerate}
+\textbf{Datos:} distancia del apogeo al centro de la Tierra, $r_{a}=7000$ km; constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$; masa de la Tierra, $M_{T}=6\cdot10^{24}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Realizamos la conversión de los datos al Sistema Internacional.
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \item \textbf{Masa del nanosatélite ($m$):} $m = 1 \text{ kg}$.
+    \item \textbf{Momento angular en el apogeo ($L_a$):} $L_a = 5,6 \cdot 10^{10} \, \text{kg}\cdot\text{m}^2/\text{s}$.
+    \item \textbf{Distancia del apogeo ($r_a$):} $r_a = 7000 \text{ km} = 7 \cdot 10^6 \text{ m}$.
+    \item \textbf{Constante de Gravitación Universal ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Masa de la Tierra ($M_T$):} $M_T = 6 \cdot 10^{24} \text{ kg}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \setlength{\itemsep}{0pt}
+        \item Velocidad en el apogeo ($v_a$).
+        \item Comparación de velocidad en el perigeo ($v_p$) vs apogeo ($v_a$).
+        \item Energía cinética en el apogeo ($E_{c,a}$).
+        \item Energía potencial en el apogeo ($E_{p,a}$).
+        \item Energía mecánica total ($E_M$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Órbita Elíptica} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar una elipse horizontal. En el foco izquierdo, situar la Tierra. Etiquetar el punto más alejado de la trayectoria como 'Apogeo' ($r_a$, $v_a$) y el más cercano como 'Perigeo' ($r_p$, $v_p$). Dibujar los vectores velocidad en ambos puntos, tangentes a la trayectoria. El vector $v_p$ debe ser visiblemente más largo que el vector $v_a$. Los vectores de posición $r_a$ y $r_p$ deben estar dibujados desde el centro de la Tierra." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_orbita_eliptica.png}
+    }}
+    \caption{Esquema de la órbita elíptica del nanosatélite.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Velocidad en Apogeo y Perigeo}
+La definición del momento angular de una partícula respecto a un punto es $\vec{L} = \vec{r} \times \vec{p} = \vec{r} \times (m\vec{v})$. En el apogeo y el perigeo de una órbita, los vectores de posición $\vec{r}$ y velocidad $\vec{v}$ son perpendiculares, por lo que el módulo del momento angular se simplifica a $L = mrv$.
+La fuerza gravitatoria es una fuerza central, lo que implica que el momento angular del satélite se conserva a lo largo de toda la órbita ($L_a = L_p$). Este es el contenido de la Segunda Ley de Kepler.
+
+\paragraph*{b) Energías en la Órbita}
+La energía cinética se calcula con la expresión $E_c = \frac{1}{2}mv^2$. La energía potencial gravitatoria para un sistema de dos masas es $E_p = -G\frac{Mm}{r}$. La energía mecánica total es la suma de ambas, $E_M = E_c + E_p$, y se conserva a lo largo de la órbita ya que el campo gravitatorio es conservativo.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Velocidad en el Apogeo y Perigeo}
+A partir del módulo del momento angular en el apogeo:
+\begin{gather}
+    L_a = m r_a v_a \sin(90^\circ) = m r_a v_a \implies v_a = \frac{L_a}{m r_a}
+\end{gather}
+Por la conservación del momento angular, $L_a = L_p$, lo que implica:
+\begin{gather}
+    m r_a v_a = m r_p v_p \implies r_a v_a = r_p v_p
+\end{gather}
+Dado que por definición $r_a > r_p$, para que se mantenga la igualdad, necesariamente debe cumplirse que $v_a < v_p$.
+
+\paragraph*{b) Energías en el Apogeo}
+\begin{gather}
+    E_{c,a} = \frac{1}{2} m v_a^2 \\
+    E_{p,a} = -G \frac{M_T m}{r_a} \\
+    E_M = E_{c,a} + E_{p,a}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Velocidad en el apogeo y comparación con el perigeo}
+\begin{gather}
+    v_a = \frac{5,6 \cdot 10^{10}}{(1)(7 \cdot 10^6)} = 8000 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad del nanosatélite en el apogeo es $\boldsymbol{v_a = 8000 \, m/s}$.
+\end{cajaresultado}
+\medskip
+Como se justificó simbólicamente, al ser $r_a > r_p$, la conservación del momento angular exige que la velocidad en el perigeo sea mayor que en el apogeo.
+
+\paragraph*{b) Energías en el apogeo}
+\begin{gather}
+    E_{c,a} = \frac{1}{2} (1) (8000)^2 = 3,2 \cdot 10^7 \, \text{J} \\
+    E_{p,a} = -(6,67 \cdot 10^{-11}) \frac{(6 \cdot 10^{24})(1)}{7 \cdot 10^6} \approx -5,72 \cdot 10^7 \, \text{J} \\
+    E_M = (3,2 \cdot 10^7) + (-5,72 \cdot 10^7) = -2,52 \cdot 10^7 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    En el apogeo:
+    \begin{itemize}
+        \item Energía Cinética: $\boldsymbol{E_{c,a} = 3,2 \cdot 10^7 \, J}$
+        \item Energía Potencial: $\boldsymbol{E_{p,a} \approx -5,72 \cdot 10^7 \, J}$
+        \item Energía Mecánica Total: $\boldsymbol{E_M \approx -2,52 \cdot 10^7 \, J}$
+    \end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    La velocidad en el apogeo, calculada a partir del momento angular, es de $\mathbf{8000 \, m/s}$. Debido a la conservación del momento angular (2ª Ley de Kepler), la velocidad en el perigeo es mayor. La energía mecánica total de la órbita es de $\mathbf{-2,52 \cdot 10^7 \, J}$, un valor negativo como corresponde a una órbita cerrada (elíptica), y se conserva en todo punto de la trayectoria.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Campo Electromagnético}
+\label{sec:em_2025_jul_ord}
+% ----------------------------------------------------------------------
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2025_jul_ord}
+
+\begin{cajaenunciado}
+Representa razonadamente los vectores campo eléctrico que generan en el punto P cada una de las tres cargas indicadas en la figura. Razona qué vector de la figura representa el campo eléctrico total en dicho punto P. Si se conoce que el potencial eléctrico que produce la carga positiva +Q en el punto P es de 100 V, ¿cuál es el potencial eléctrico en P?
+(La figura muestra tres cargas: $+Q$ en $(-d,0)$, $-Q$ en $(d,0)$ y $-2Q$ en $(0,d)$. El punto P está en el origen $(0,0)$).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = +Q$ en la posición $\vec{r}_1 = (-d, 0)$.
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = -Q$ en la posición $\vec{r}_2 = (d, 0)$.
+    \item \textbf{Carga 3 ($q_3$):} $q_3 = -2Q$ en la posición $\vec{r}_3 = (0, d)$.
+    \item \textbf{Punto de cálculo:} $P = (0, 0)$.
+    \item \textbf{Dato de potencial:} El potencial creado por $q_1$ en P es $V_1 = 100 \text{ V}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \setlength{\itemsep}{0pt}
+        \item Representación de los vectores campo eléctrico $\vec{E}_1, \vec{E}_2, \vec{E}_3$ en P.
+        \item Identificación del vector campo total $\vec{E}_T$.
+        \item Potencial total $V_T$ en P.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{%
+        \centering \textbf{Vectores Campo Eléctrico en P}
+        \vspace{0.5cm}
+        \textit{Prompt para la imagen:} "Sistema de coordenadas cartesianas. En el punto (-d, 0) situar una carga '+Q'. En (d, 0) una carga '-Q'. En (0, d) una carga '-2Q'. En el origen P(0,0), dibujar tres vectores de campo: E1 (de +Q) apuntando hacia la derecha (+x). E2 (de -Q) también apuntando hacia la derecha (+x). E3 (de -2Q) apuntando hacia arriba (+y). El vector E3 debe ser el doble de largo que E1. Dibujar el vector resultante E\_T como la suma vectorial de los tres, apuntando hacia el primer cuadrante."
+        \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_campo_3cargas.png}
+    }}
+    \caption{Esquema de las cargas y los vectores campo eléctrico generados en el punto P.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Campo Eléctrico}
+El campo eléctrico $\vec{E}$ creado por una carga puntual $q$ en un punto P es un vector cuya dirección es radial. Si la carga es positiva, el vector apunta hacia afuera de la carga; si es negativa, apunta hacia la carga. Su módulo es $E = k \frac{|q|}{r^2}$.
+\paragraph*{Principio de Superposición}
+El campo eléctrico total en un punto debido a una distribución de cargas es la suma vectorial de los campos creados por cada carga individual: $\vec{E}_T = \sum_i \vec{E}_i$. El potencial eléctrico total es la suma escalar de los potenciales individuales: $V_T = \sum_i V_i$.
+\paragraph*{Potencial Eléctrico}
+El potencial eléctrico $V$ creado por una carga puntual $q$ a una distancia $r$ es una magnitud escalar dada por $V = k \frac{q}{r}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Vectores Campo Eléctrico en P}
+La distancia de cada carga al punto P es $d$.
+\begin{itemize}
+    \item \textbf{Campo de $q_1 = +Q$:} Carga positiva, el campo es de repulsión. $\vec{E}_1 = k \frac{Q}{d^2} \vec{i}$.
+    \item \textbf{Campo de $q_2 = -Q$:} Carga negativa, el campo es de atracción. $\vec{E}_2 = k \frac{Q}{d^2} \vec{i}$.
+    \item \textbf{Campo de $q_3 = -2Q$:} Carga negativa, el campo es de atracción. $\vec{E}_3 = k \frac{2Q}{d^2} \vec{j}$.
+\end{itemize}
+El campo total es la suma vectorial:
+\begin{gather}
+    \vec{E}_T = \vec{E}_1 + \vec{E}_2 + \vec{E}_3 = \left( k \frac{Q}{d^2} + k \frac{Q}{d^2} \right) \vec{i} + \left( k \frac{2Q}{d^2} \right) \vec{j} = k \frac{2Q}{d^2} (\vec{i} + \vec{j})
+\end{gather}
+El vector resultante tiene componentes $x$ e $y$ positivas y de igual módulo, por lo que apunta en la dirección de la bisectriz del primer cuadrante (45º). Este es el vector etiquetado como \textbf{I}.
+
+\paragraph*{Potencial Eléctrico Total en P}
+\begin{itemize}
+    \item $V_1 = k \frac{+Q}{d} = 100 \text{ V}$
+    \item $V_2 = k \frac{-Q}{d} = -V_1 = -100 \text{ V}$
+    \item $V_3 = k \frac{-2Q}{d} = -2 \left( k \frac{Q}{d} \right) = -2 V_1 = -200 \text{ V}$
+\end{itemize}
+\begin{gather}
+    V_T = V_1 + V_2 + V_3
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Identificación del vector campo total}
+Como se razonó simbólicamente, la componente x del campo total es $E_x = 2kQ/d^2$ y la componente y es $E_y = 2kQ/d^2$. Al ser ambas positivas y de igual magnitud, el vector resultante $\vec{E}_T$ forma un ángulo de 45º con el eje x, correspondiendo al \textbf{vector I}.
+
+\paragraph*{Cálculo del potencial total}
+\begin{gather}
+    V_T = 100 + (-100) + (-200) = -200 \text{ V}
+\end{gather}
+\begin{cajaresultado}
+    El vector que representa el campo eléctrico total es el \textbf{I}. El potencial eléctrico total en el punto P es $\boldsymbol{V_T = -200 \, V}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Mediante la aplicación del principio de superposición, se determina que el campo eléctrico resultante en P tiene componentes x e y positivas de igual magnitud, correspondiendo al vector \textbf{I}. Por otro lado, la suma escalar de los potenciales generados por cada carga, aprovechando el dato proporcionado, da como resultado un potencial total de $\mathbf{-200 \, V}$ en el punto P.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2025_jul_ord}
+
+\begin{cajaenunciado}
+Una partícula con carga $q=-10^{-6}\,\text{C}$ tiene un movimiento rectilíneo uniforme en sentido positivo del eje x, en una región en la que actúan un campo eléctrico y un campo magnético. La velocidad de la partícula es $v=15\,\text{km/s}$ y el campo magnético es $\vec{B}=-0,8\vec{k}\,\text{T}$. Calcula razonadamente la fuerza eléctrica, $\vec{F}_{E}$, que actúa sobre la partícula y el vector campo eléctrico, $\vec{E}$. Representa las fuerzas que actúan sobre la partícula y los vectores campo eléctrico y magnético.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \item \textbf{Carga de la partícula ($q$):} $q = -1 \cdot 10^{-6} \text{ C}$.
+    \item \textbf{Velocidad de la partícula ($\vec{v}$):} $\vec{v} = 15 \text{ km/s} \cdot \vec{i} = 1,5 \cdot 10^4 \vec{i} \, \text{m/s}$.
+    \item \textbf{Campo magnético ($\vec{B}$):} $\vec{B} = -0,8 \vec{k} \text{ T}$.
+    \item \textbf{Condición del movimiento:} Movimiento Rectilíneo Uniforme (MRU).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \setlength{\itemsep}{0pt}
+        \item Fuerza eléctrica ($\vec{F}_E$).
+        \item Campo eléctrico ($\vec{E}$).
+        \item Representación gráfica de los vectores.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{%
+        \centering \textbf{Selector de Velocidades}
+        \vspace{0.5cm}
+        \textit{Prompt para la imagen:} "Sistema de coordenadas 3D (x, y, z). Una carga negativa 'q' se mueve con un vector velocidad 'v' a lo largo del eje +x. El vector de campo magnético 'B' apunta en la dirección -z. El vector de fuerza magnética 'Fm' apunta en la dirección -y. Para que el movimiento sea rectilíneo y uniforme, el vector de fuerza eléctrica 'Fe' debe anular a la magnética, apuntando en la dirección +y. Dado que la carga es negativa, el vector de campo eléctrico 'E' debe apuntar en sentido opuesto a la fuerza eléctrica, es decir, en la dirección -y."
+        \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_selector_velocidades.png}
+    }}
+    \caption{Esquema de las fuerzas y campos sobre la partícula.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Fuerza de Lorentz}
+La fuerza total que un campo electromagnético ejerce sobre una carga $q$ que se mueve con velocidad $\vec{v}$ es la Fuerza de Lorentz: $\vec{F} = \vec{F}_E + \vec{F}_M = q\vec{E} + q(\vec{v} \times \vec{B})$.
+
+\medskip
+\paragraph*{Primera Ley de Newton}
+Si una partícula se mueve con MRU, su aceleración es nula ($\vec{a}=0$). Según la Primera Ley de Newton, la fuerza neta sobre la partícula debe ser cero ($\sum \vec{F} = 0$).
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La condición de MRU implica que la fuerza neta es cero:
+\begin{gather}
+    \vec{F}_{neta} = \vec{F}_E + \vec{F}_M = 0 \implies \vec{F}_E = -\vec{F}_M
+\end{gather}
+Primero calculamos la fuerza magnética $\vec{F}_M$:
+\begin{gather}
+    \vec{F}_M = q(\vec{v} \times \vec{B})
+\end{gather}
+El producto vectorial es:
+\begin{gather}
+    \vec{v} \times \vec{B} = (v_x \vec{i}) \times (B_z \vec{k}) = v_x B_z (\vec{i} \times \vec{k}) = v_x B_z (-\vec{j})
+\end{gather}
+Sustituyendo en la fuerza magnética:
+\begin{gather}
+    \vec{F}_M = q (v_x B_z) (-\vec{j})
+\end{gather}
+La fuerza eléctrica será entonces:
+\begin{gather}
+    \vec{F}_E = - [q (v_x B_z) (-\vec{j})] = q v_x B_z \vec{j}
+\end{gather}
+Finalmente, el campo eléctrico se obtiene de la definición de fuerza eléctrica, $\vec{F}_E = q \vec{E}$:
+\begin{gather}
+    \vec{E} = \frac{\vec{F}_E}{q} = \frac{q v_x B_z \vec{j}}{q} = v_x B_z \vec{j}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos primero la fuerza magnética:
+\begin{gather}
+    \vec{F}_M = (-10^{-6}) \left[ (1,5 \cdot 10^4 \vec{i}) \times (-0,8 \vec{k}) \right] = (-10^{-6}) [ -1,2 \cdot 10^4 (\vec{i} \times \vec{k}) ] \nonumber \\
+    \vec{F}_M = (-10^{-6}) [ -1,2 \cdot 10^4 (-\vec{j}) ] = (-10^{-6}) [ 1,2 \cdot 10^4 \vec{j} ] = -1,2 \cdot 10^{-2} \vec{j} \, \text{N}
+\end{gather}
+La fuerza eléctrica debe ser opuesta para que la suma sea cero:
+\begin{gather}
+    \vec{F}_E = -\vec{F}_M = -(-1,2 \cdot 10^{-2} \vec{j} \, \text{N}) = 1,2 \cdot 10^{-2} \vec{j} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza eléctrica que actúa sobre la partícula es $\boldsymbol{\vec{F}_E = 1,2 \cdot 10^{-2} \vec{j} \, N}$.
+\end{cajaresultado}
+\medskip
+Calculamos el campo eléctrico:
+\begin{gather}
+    \vec{E} = \frac{\vec{F}_E}{q} = \frac{1,2 \cdot 10^{-2} \vec{j}}{-10^{-6}} = -1,2 \cdot 10^4 \vec{j} \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    El vector campo eléctrico es $\boldsymbol{\vec{E} = -1,2 \cdot 10^4 \vec{j} \, N/C}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Para que la partícula cargada describa un MRU, la fuerza neta sobre ella debe ser nula. Esto implica que la fuerza eléctrica debe cancelar exactamente a la fuerza magnética. La fuerza magnética calculada apunta en la dirección $-\vec{j}$, por lo que la fuerza eléctrica debe tener el mismo módulo y apuntar en la dirección $+\vec{j}$. Dado que la carga es negativa, el campo eléctrico debe apuntar en dirección opuesta a la fuerza eléctrica, es decir, en la dirección $-\vec{j}$. Esta configuración de campos se conoce como selector de velocidades.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2025_jul_ord}
+
+\begin{cajaenunciado}
+Dos cargas puntuales $q_A$ y $q_B$ se sitúan en los puntos $A(-1,0)$ m y $B(1,0)$ m, respectivamente. Sabiendo que el vector campo eléctrico en el punto $C(0,1)$ m es $\vec{E}=1,1\vec{j}$ kN/C, calcula razonadamente:
+\begin{enumerate}
+    \item[a)] El valor de ambas cargas. (1 punto) 
+    \item[b)] La energía potencial eléctrica de una carga $q'=5,0\cdot10^{-6}$ C situada en el punto C y el trabajo realizado al desplazar dicha carga desde el punto C al punto $D(0,-1)$ m. (1 punto) 
+\end{enumerate}
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$. 
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \item \textbf{Posición carga A:} $A = (-1, 0)$ m.
+    \item \textbf{Posición carga B:} $B = (1, 0)$ m.
+    \item \textbf{Punto C:} $C = (0, 1)$ m.
+    \item \textbf{Punto D:} $D = (0, -1)$ m.
+    \item \textbf{Campo eléctrico en C:} $\vec{E}_C = 1,1 \vec{j} \text{ kN/C} = 1100 \vec{j} \text{ N/C}$.
+    \item \textbf{Carga de prueba:} $q' = 5,0 \cdot 10^{-6} \text{ C}$.
+    \item \textbf{Constante de Coulomb ($k$):} $k = 9 \cdot 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \setlength{\itemsep}{0pt}
+        \item Cargas $q_A$ y $q_B$.
+        \item Energía potencial $U_C$ en C.
+        \item Trabajo $W_{C \to D}$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{%
+        \centering \textbf{Campo de dos cargas}
+        \vspace{0.5cm}
+        \textit{Prompt para la imagen:} "Sistema de coordenadas cartesianas. Situar dos cargas, qA en (-1,0) y qB en (1,0). En el punto C(0,1), dibujar el vector campo eléctrico E\_A creado por qA (apuntando desde A hacia C) y el vector E\_B creado por qB (apuntando desde B hacia C). Dibujar el vector resultante E\_C, que es la suma vectorial de E\_A y E\_B, apuntando verticalmente hacia arriba en la dirección +y. Mostrar gráficamente que las componentes horizontales de E\_A y E\_B se cancelan."
+        \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_campo_2cargas.png}
+    }}
+    \caption{Esquema de las cargas y los vectores campo en el punto C.}
+\end{figure}
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Valor de las Cargas}
+Se aplica el principio de superposición. El campo total en C es la suma vectorial de los campos creados por $q_A$ y $q_B$. Por la simetría del problema y la dirección del campo resultante (solo componente $\vec{j}$), se puede deducir la relación entre las cargas.
+\paragraph*{b) Energía Potencial y Trabajo}
+La energía potencial eléctrica $U$ de una carga $q'$ en un punto donde el potencial es $V$ es $U = q'V$. El potencial $V$ en un punto es la suma escalar de los potenciales creados por las cargas fuente. El trabajo realizado por el campo para mover una carga $q'$ de un punto C a un punto D es $W_{C \to D} = - \Delta U = -(U_D - U_C)$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+
+\paragraph*{a) Cálculo de las cargas}
+Primero, se observa por la geometría del problema que las distancias desde las cargas A y B hasta el punto C son idénticas:
+\begin{gather*}
+    r_{AC} = r_{BC} = \sqrt{1^2 + 1^2} = \sqrt{2} \, \text{m}
+\end{gather*}
+
+Los vectores unitarios en la dirección de cada carga al punto C son:
+\begin{itemize}
+    \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item $\vec{u}_{AC} = \frac{1}{\sqrt{2}}(\vec{i}+\vec{j})$
+    \item $\vec{u}_{BC} = \frac{1}{\sqrt{2}}(-\vec{i}+\vec{j})$
+\end{itemize}
+
+\medskip
+El campo eléctrico total en C es la suma de los campos individuales:
+$$ \vec{E}_C = \vec{E}_A + \vec{E}_B = k \frac{q_A}{r_{AC}^2} \vec{u}_{AC} + k \frac{q_B}{r_{BC}^2} \vec{u}_{BC} $$
+Sustituyendo los valores y agrupando componentes:
+\begin{align*}
+    \vec{E}_C &= k \frac{q_A}{2} \left( \frac{\vec{i}+\vec{j}}{\sqrt{2}} \right) + k \frac{q_B}{2} \left( \frac{-\vec{i}+\vec{j}}{\sqrt{2}} \right) \\
+    &= \frac{k}{2\sqrt{2}} \left[ (q_A-q_B)\vec{i} + (q_A+q_B)\vec{j} \right]
+\end{align*}
+El enunciado indica que $\vec{E}_C$ es puramente vertical, por lo que su componente horizontal debe ser nula:
+$$ q_A - q_B = 0 \implies q_A = q_B = q $$
+Con esto, la componente vertical del campo, $E_y$, es:
+$$ E_y = \frac{k}{2\sqrt{2}}(q+q) = \frac{k(2q)}{2\sqrt{2}} = \frac{kq}{\sqrt{2}} $$
+Despejando el valor de la carga $q$:
+\begin{gather}
+    q = \frac{\sqrt{2} \, E_y}{k}
+\end{gather}
+
+\paragraph*{b) Energía y Trabajo}
+El potencial eléctrico en el punto C es la suma escalar de los potenciales de cada carga:
+$$ V_C = V_A(C) + V_B(C) = k\frac{q_A}{r_{AC}} + k\frac{q_B}{r_{BC}} $$
+Como $q_A=q_B=q$ y $r_{AC}=r_{BC}=\sqrt{2}$:
+$$ V_C = \frac{k q}{\sqrt{2}} + \frac{k q}{\sqrt{2}} = \frac{2kq}{\sqrt{2}} = \sqrt{2}kq $$
+La energía potencial de una carga $q'$ situada en C sería $U_C = q' V_C$.
+
+\medskip
+Por simetría, la distancia del punto D(0,-1) a las cargas A y B es la misma que para C, por lo que el potencial es idéntico: $V_D = V_C$.
+
+\medskip
+El trabajo realizado por el campo para mover la carga $q'$ de C a D es:
+\begin{gather*}
+    W_{C \to D} = - \Delta U = -(U_D - U_C) = -q'(V_D - V_C)
+\end{gather*}
+Dado que $V_D = V_C$, el trabajo es nulo:
+\begin{gather*}
+    W_{C \to D} = -q'(V_C - V_C) = 0
+\end{gather*}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de las cargas}
+$q_A = q_B = q$.
+\begin{gather}
+    q = \frac{\sqrt{2} \cdot 1100}{9 \cdot 10^9} \approx 1,73 \cdot 10^{-7} \, \text{C}
+\end{gather}
+\begin{cajaresultado}
+    El valor de ambas cargas es $\boldsymbol{q_A = q_B \approx 1,73 \cdot 10^{-7} \, C}$.
+\end{cajaresultado}
+\paragraph*{b) Energía Potencial y Trabajo}
+Calculamos el potencial en C:
+\begin{gather}
+    V_C = \frac{2 \cdot (9 \cdot 10^9) \cdot (1,73 \cdot 10^{-7})}{\sqrt{2}} \approx 2200 \, \text{V}
+\end{gather}
+La energía potencial en C es:
+\begin{gather}
+    U_C = (5,0 \cdot 10^{-6}) \cdot (2200) = 0,011 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía potencial eléctrica en el punto C es $\boldsymbol{U_C = 0,011 \, J}$.
+\end{cajaresultado}
+\medskip
+Como $V_D = V_C$, el trabajo realizado es:
+\begin{gather}
+    W_{C \to D} = -q'(V_C - V_C) = 0 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo realizado al desplazar la carga de C a D es $\boldsymbol{W_{C \to D} = 0 \, J}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    La simetría del problema y la dirección vertical del campo eléctrico resultante en C implican que las cargas $q_A$ y $q_B$ deben ser iguales y positivas, con un valor de $\mathbf{1,73 \cdot 10^{-7} \, C}$ cada una. La energía potencial de la carga $q'$ en C es de $\mathbf{0,011 \, J}$. Dado que los puntos C y D son equipotenciales debido a la misma simetría, el trabajo realizado por el campo para mover la carga entre ellos es nulo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2025_jul_ord}
+
+\begin{cajaenunciado}
+Dos conductores largos y rectilíneos situados en los ejes x e y, trasportan las corrientes $I_1=15$ A e $I_2=10$ A respectivamente, como se muestra en la figura. Calcula:
+\begin{enumerate}
+    \item[a)] El campo magnético en el punto P (2,2,0) cm.
+    \item[b)] La fuerza magnética (módulo, dirección y sentido) sobre un protón, que en el punto P, se mueve con una velocidad de $5,0\cdot10^{6}$ m/s paralela y del mismo sentido que la corriente eléctrica $I_2$.
+\end{enumerate}
+\textbf{Dato:} permeabilidad magnética en el vacío, $\mu_{0}=4\pi\cdot10^{-7}\,\text{T}\cdot\text{m/A}$; carga eléctrica del protón, $q_p=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Corriente 1 ($I_1$):} Situada en el eje x, sentido $+\vec{i}$. $I_1 = 15 \text{ A}$.
+    \item \textbf{Corriente 2 ($I_2$):} Situada en el eje y, sentido $+\vec{j}$. $I_2 = 10 \text{ A}$.
+    \item \textbf{Punto de cálculo (P):} $P(2,2,0) \text{ cm} = (0,02, 0,02, 0) \text{ m}$.
+    \item \textbf{Velocidad del protón ($\vec{v}$):} $\vec{v} = 5,0 \cdot 10^6 \vec{j} \, \text{m/s}$.
+    \item \textbf{Carga del protón ($q_p$):} $q_p = 1,6 \cdot 10^{-19} \text{ C}$.
+    \item \textbf{Permeabilidad del vacío ($\mu_0$):} $\mu_0 = 4\pi \cdot 10^{-7} \, \text{T}\cdot\text{m/A}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Campo magnético total en P ($\vec{B}_P$).
+        \item Fuerza magnética sobre el protón ($\vec{F}_m$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Campo magnético de dos hilos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista superior del plano XY. Dibujar un hilo conductor sobre el eje x con una flecha de corriente I1 hacia la derecha. Dibujar otro hilo sobre el eje y con una flecha de corriente I2 hacia arriba. Marcar el punto P(2,2). Aplicando la regla de la mano derecha para el hilo 1, dibujar el vector campo B1 en P entrando en la página (símbolo de una cruz en un círculo). Aplicando la regla de la mano derecha para el hilo 2, dibujar el vector campo B2 en P saliendo de la página (símbolo de un punto en un círculo)." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_campo_hilos.png}
+    }}
+    \caption{Esquema de las corrientes y los campos magnéticos generados en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo Magnético}
+El campo magnético creado por un conductor rectilíneo e infinito viene dado por la Ley de Biot-Savart (o más sencillamente, por la Ley de Ampère). El módulo del campo a una distancia $r$ del hilo es $B = \frac{\mu_0 I}{2\pi r}$. La dirección y el sentido se determinan mediante la regla de la mano derecha. El campo total en un punto es la suma vectorial de los campos creados por cada conductor (principio de superposición).
+
+\paragraph*{b) Fuerza Magnética}
+La fuerza que un campo magnético $\vec{B}$ ejerce sobre una carga $q$ que se mueve con una velocidad $\vec{v}$ es la Fuerza de Lorentz: $\vec{F}_m = q(\vec{v} \times \vec{B})$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Campo magnético en P}
+El punto P está a una distancia $r_1=y_P=0,02$ m del hilo 1 y a una distancia $r_2=x_P=0,02$ m del hilo 2.
+\begin{itemize}
+    \item \textbf{Campo de $I_1$:} Según la regla de la mano derecha, el campo $\vec{B}_1$ en P apunta en el sentido $-\vec{k}$. Su módulo es $B_1 = \frac{\mu_0 I_1}{2\pi y_P}$.
+    \item \textbf{Campo de $I_2$:} Según la regla de la mano derecha, el campo $\vec{B}_2$ en P apunta en el sentido $+\vec{k}$. Su módulo es $B_2 = \frac{\mu_0 I_2}{2\pi x_P}$.
+\end{itemize}
+El campo total es la suma vectorial:
+\begin{gather}
+    \vec{B}_P = \vec{B}_1 + \vec{B}_2 = -\frac{\mu_0 I_1}{2\pi y_P} \vec{k} + \frac{\mu_0 I_2}{2\pi x_P} \vec{k} = \frac{\mu_0}{2\pi} \left( \frac{I_2}{x_P} - \frac{I_1}{y_P} \right) \vec{k}
+\end{gather}
+\paragraph*{b) Fuerza magnética sobre el protón}
+\begin{gather}
+    \vec{F}_m = q_p (\vec{v} \times \vec{B}_P)
+\end{gather}
+Donde $\vec{v} = v \vec{j}$ y $\vec{B}_P = B_P \vec{k}$. El producto vectorial es $\vec{j} \times \vec{k} = \vec{i}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor del campo magnético en P}
+Como $x_P = y_P = r = 0,02$ m:
+\begin{gather}
+    \vec{B}_P = \frac{4\pi \cdot 10^{-7}}{2\pi \cdot 0,02} (10 - 15) \vec{k} = 10^{-5} (-5) \vec{k} = -5 \cdot 10^{-5} \vec{k} \, \text{T}
+\end{gather}
+\begin{cajaresultado}
+    El campo magnético en el punto P es $\boldsymbol{\vec{B}_P = -5 \cdot 10^{-5} \vec{k} \, T}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de la fuerza magnética}
+\begin{gather}
+    \vec{F}_m = (1,6 \cdot 10^{-19}) \left[ (5,0 \cdot 10^6 \vec{j}) \times (-5 \cdot 10^{-5} \vec{k}) \right] \nonumber \\
+    \vec{F}_m = (1,6 \cdot 10^{-19}) \left[ -25 \cdot 10^1 (\vec{j} \times \vec{k}) \right] = (1,6 \cdot 10^{-19}) [-250 \vec{i}] \nonumber \\
+    \vec{F}_m = -4 \cdot 10^{-17} \vec{i} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza magnética sobre el protón es $\boldsymbol{\vec{F}_m = -4 \cdot 10^{-17} \vec{i} \, N}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Aplicando el principio de superposición y la ley de Ampère, el campo magnético neto en el punto P resulta ser de $\mathbf{-5 \cdot 10^{-5} \, T}$ en la dirección del eje Z negativo. Posteriormente, al aplicar la ley de la fuerza de Lorentz sobre el protón, se obtiene una fuerza de $\mathbf{-4 \cdot 10^{-17} \, N}$ en la dirección del eje X negativo, es decir, una fuerza que desvía al protón hacia la izquierda.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Vibraciones y Ondas}
+\label{sec:vib_ond_2025_jul_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 4 - OBLIGATORIA}
+\label{subsec:4_2025_jul_ord}
+
+\begin{cajaenunciado}
+Al explotar el último de los petardos de una mascletà que se disparó en Alicante con motivo de Les Fogueres de Sant Joan, se midió un nivel sonoro de 90 dB a una distancia de 75 m del petardo. Suponiendo que las ondas sonoras son esféricas, calcula razonadamente la intensidad de la onda sonora a dicha distancia, la potencia sonora del petardo y la intensidad de la onda sonora a 125 m.
+\textbf{Dato:} intensidad sonora umbral, $I_{0}=10^{-12}\,\text{W/m}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Nivel sonoro ($\beta_1$):} $\beta_1 = 90 \text{ dB}$.
+    \item \textbf{Distancia 1 ($r_1$):} $r_1 = 75 \text{ m}$.
+    \item \textbf{Distancia 2 ($r_2$):} $r_2 = 125 \text{ m}$.
+    \item \textbf{Intensidad umbral ($I_0$):} $I_0 = 10^{-12} \text{ W/m}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Intensidad a 75 m ($I_1$).
+        \item Potencia sonora del petardo ($P$).
+        \item Intensidad a 125 m ($I_2$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Ondas Esféricas Sonoras} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un punto central, etiquetado 'Fuente sonora (P)', emitiendo frentes de onda esféricos concéntricos. Dibujar dos de estos frentes de onda. Marcar un punto sobre el primer frente de onda a una distancia r1=75m del centro, y etiquetarlo con I1 y beta1. Marcar otro punto sobre el segundo frente de onda, más alejado, a una distancia r2=125m, y etiquetarlo con I2." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_ondas_esfericas.png}
+    }}
+    \caption{Propagación de la onda sonora esférica.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Nivel de Intensidad Sonora}
+El nivel de intensidad sonora ($\beta$) en decibelios (dB) se define en relación a la intensidad umbral de audición ($I_0$) mediante la expresión: $\beta = 10 \log_{10} \left( \frac{I}{I_0} \right)$.
+\paragraph*{Intensidad y Potencia de Ondas Esféricas}
+Para una fuente puntual que emite ondas esféricas de forma isótropa (igual en todas las direcciones), la potencia sonora ($P$) se distribuye sobre la superficie de una esfera de radio $r$. La intensidad ($I$), definida como potencia por unidad de área, a una distancia $r$ de la fuente es: $I = \frac{P}{A} = \frac{P}{4\pi r^2}$. De esta relación se deduce que la intensidad es inversamente proporcional al cuadrado de la distancia ($I \propto 1/r^2$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Cálculo de $I_1$ a partir de $\beta_1$}
+Despejamos $I_1$ de la fórmula del nivel sonoro:
+\begin{gather}
+    \frac{\beta_1}{10} = \log_{10} \left( \frac{I_1}{I_0} \right) \implies 10^{\beta_1/10} = \frac{I_1}{I_0} \implies I_1 = I_0 \cdot 10^{\beta_1/10}
+\end{gather}
+\paragraph*{Cálculo de la Potencia $P$}
+A partir de la intensidad $I_1$ a la distancia $r_1$:
+\begin{gather}
+    P = I_1 \cdot 4\pi r_1^2
+\end{gather}
+\paragraph*{Cálculo de la Intensidad $I_2$}
+Usando la potencia calculada y la nueva distancia $r_2$:
+\begin{gather}
+    I_2 = \frac{P}{4\pi r_2^2}
+\end{gather}
+Alternativamente, usando la relación de proporcionalidad: $\frac{I_2}{I_1} = \frac{r_1^2}{r_2^2} \implies I_2 = I_1 \left( \frac{r_1}{r_2} \right)^2$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Intensidad a 75 m}
+\begin{gather}
+    I_1 = 10^{-12} \cdot 10^{90/10} = 10^{-12} \cdot 10^9 = 10^{-3} \, \text{W/m}^2
+\end{gather}
+\begin{cajaresultado}
+    La intensidad de la onda sonora a 75 m es $\boldsymbol{I_1 = 10^{-3} \, W/m^2}$.
+\end{cajaresultado}
+\paragraph*{Potencia sonora del petardo}
+\begin{gather}
+    P = (10^{-3}) \cdot 4\pi (75)^2 \approx 70,69 \, \text{W}
+\end{gather}
+\begin{cajaresultado}
+    La potencia sonora del petardo es $\boldsymbol{P \approx 70,69 \, W}$.
+\end{cajaresultado}
+\paragraph*{Intensidad a 125 m}
+\begin{gather}
+    I_2 = \frac{70,69}{4\pi (125)^2} \approx 3,6 \cdot 10^{-4} \, \text{W/m}^2
+\end{gather}
+\begin{cajaresultado}
+    La intensidad de la onda sonora a 125 m es $\boldsymbol{I_2 = 3,6 \cdot 10^{-4} \, W/m^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    A partir de un nivel sonoro de 90 dB a 75 m, se deduce una intensidad sonora de $\mathbf{10^{-3} \, W/m^2}$. Asumiendo una propagación esférica, esto corresponde a una potencia de la fuente de $\mathbf{70,69 \, W}$. Con esta potencia, y debido a que la intensidad disminuye con el cuadrado de la distancia, a 125 m la intensidad se reduce a $\mathbf{3,6 \cdot 10^{-4} \, W/m^2}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2025_jul_ord}
+
+\begin{cajaenunciado}
+En la figura adjunta se representa la posición de una partícula de masa 1 kg que describe un movimiento armónico simple sobre el eje x. Obtén razonadamente la frecuencia angular, la energía mecánica de la partícula y su velocidad en el instante $t=2$ s.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+De la gráfica se extraen los siguientes datos:
+\begin{itemize}
+    \item \textbf{Masa de la partícula ($m$):} $m = 1 \text{ kg}$.
+    \item \textbf{Amplitud ($A$):} El valor máximo de la elongación es $A = 10 \text{ cm} = 0,1 \text{ m}$.
+    \item \textbf{Periodo ($T$):} El tiempo para completar una oscilación es $T = 2 \text{ s}$.
+    \item \textbf{Instante de cálculo ($t$):} $t = 2 \text{ s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Frecuencia angular ($\omega$).
+        \item Energía mecánica ($E_M$).
+        \item Velocidad en $t=2$ s ($v(2)$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Gráfica x(t) del M.A.S.} \vspace{0.5cm} \textit{Prompt para la imagen:} "Recrear la gráfica proporcionada en el enunciado. Un sistema de ejes con 'x (cm)' en el eje vertical y 't (s)' en el horizontal. Dibujar una función sinusoidal que comienza en x=0, alcanza un máximo de 10 en t=0.5, vuelve a cero en t=1, alcanza un mínimo de -10 en t=1.5, y vuelve a cero en t=2, completando un ciclo. La forma es de un seno, no de un coseno." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_mas.png}
+    }}
+    \caption{Gráfica posición-tiempo del movimiento armónico simple.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Cinemática del M.A.S.}
+La posición de una partícula en un M.A.S. se describe por $x(t) = A \sin(\omega t + \phi_0)$. La velocidad es la derivada de la posición: $v(t) = A\omega \cos(\omega t + \phi_0)$. La frecuencia angular $\omega$ está relacionada con el periodo $T$ mediante $\omega = \frac{2\pi}{T}$.
+\paragraph*{Dinámica y Energía del M.A.S.}
+La energía mecánica total en un M.A.S. es constante y puede calcularse como la energía cinética máxima o la energía potencial máxima: $E_M = \frac{1}{2} k A^2 = \frac{1}{2} m \omega^2 A^2$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Frecuencia Angular ($\omega$)}
+Se calcula directamente a partir del periodo medido en la gráfica:
+\begin{gather}
+    \omega = \frac{2\pi}{T}
+\end{gather}
+\paragraph*{Energía Mecánica ($E_M$)}
+Utilizando la amplitud y la frecuencia angular:
+\begin{gather}
+    E_M = \frac{1}{2} m \omega^2 A^2
+\end{gather}
+\paragraph*{Velocidad en $t=2$ s}
+Observando la gráfica, en $t=2$ s la partícula se encuentra en la posición de equilibrio ($x=0$) y moviéndose hacia un máximo positivo. En la posición de equilibrio, la velocidad es máxima. La ecuación de la posición es $x(t) = A \sin(\omega t)$ ya que para $t=0, x=0$. La velocidad es $v(t) = A\omega \cos(\omega t)$. Evaluamos en $t=T$.
+\begin{gather}
+    v(T) = A\omega \cos(\omega T) = A\omega \cos\left(\frac{2\pi}{T} T\right) = A\omega \cos(2\pi) = A\omega = v_{max}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Frecuencia Angular}
+\begin{gather}
+    \omega = \frac{2\pi}{2} = \pi \, \text{rad/s}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia angular del movimiento es $\boldsymbol{\omega = \pi \, rad/s}$.
+\end{cajaresultado}
+\paragraph*{Energía Mecánica}
+\begin{gather}
+    E_M = \frac{1}{2} (1) (\pi)^2 (0,1)^2 = \frac{0,01 \pi^2}{2} \approx 0,049 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía mecánica de la partícula es $\boldsymbol{E_M \approx 0,049 \, J}$.
+\end{cajaresultado}
+\paragraph*{Velocidad en $t=2$ s}
+\begin{gather}
+    v(2) = A \omega = (0,1)(\pi) = 0,1\pi \approx 0,314 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad en el instante $t=2$ s es $\boldsymbol{v(2) \approx 0,314 \, m/s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    A partir de la gráfica se obtiene un periodo de 2 s, lo que corresponde a una frecuencia angular de $\mathbf{\pi \, rad/s}$. Con la amplitud de 0,1 m, la energía mecánica total del sistema es de $\mathbf{0,049 \, J}$. En el instante $t=2$ s, la partícula completa un ciclo y pasa por la posición de equilibrio con su velocidad máxima, cuyo valor es de $\mathbf{0,314 \, m/s}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2025_jul_ord}
+
+\begin{cajaenunciado}
+En la imagen de la derecha, un haz láser que se propaga por el aire incide sobre la cara plana de un vidrio cuyo índice de refracción es n. Utilizando la información de la imagen, determina n y la velocidad de la luz en ese medio.
+(La imagen muestra un rayo incidente con un ángulo de 40º respecto a la superficie y un rayo refractado con un ángulo de 64,63º respecto a la superficie).
+\textbf{Datos:} velocidad de la luz en el aire, $c=3\cdot10^{8}\,\text{m/s}$; índice de refracción del aire, $n_a=1,00$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es crucial notar que los ángulos dados en la figura son con respecto a la superficie, no a la normal.
+\begin{itemize}
+    \item \textbf{Medio 1:} Aire, con índice de refracción $n_1 = n_a = 1,00$.
+    \item \textbf{Medio 2:} Vidrio, con índice de refracción $n_2 = n$.
+    \item \textbf{Ángulo de incidencia (respecto a la normal):} $\theta_1 = 90^\circ - 40^\circ = 50^\circ$.
+    \item \textbf{Ángulo de refracción (respecto a la normal):} $\theta_2 = 90^\circ - 64,63^\circ = 25,37^\circ$.
+    \item \textbf{Velocidad de la luz en el vacío/aire ($c$):} $c \approx 3 \cdot 10^8 \text{ m/s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Índice de refracción del vidrio ($n$).
+        \item Velocidad de la luz en el vidrio ($v$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Ley de Snell de la Refracción} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar una interfaz horizontal separando dos medios: 'Aire (n_a)' arriba y 'Vidrio (n)' abajo. Trazar una línea normal (discontinua) perpendicular a la interfaz. Dibujar un rayo de luz incidente que llega desde el aire, formando un ángulo $\theta_1=50^\circ$ con la normal. Dibujar el rayo refractado que se propaga por el vidrio, acercándose a la normal, formando un ángulo $\theta_2=25,37^\circ$ con ella. Indicar también los ángulos complementarios de 40º y 64,63º con la interfaz, como en la figura original." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_snell.png}
+    }}
+    \caption{Esquema de la refracción del haz láser.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Ley de Snell de la Refracción}
+Cuando la luz pasa de un medio con índice de refracción $n_1$ a otro con índice $n_2$, los ángulos de incidencia ($\theta_1$) y refracción ($\theta_2$), medidos con respecto a la normal, se relacionan mediante la Ley de Snell: $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$.
+\paragraph*{Índice de Refracción}
+El índice de refracción absoluto ($n$) de un medio es el cociente entre la velocidad de la luz en el vacío ($c$)  la velocidad de la luz en dicho medio ($v$): $n = \frac{c}{v}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Cálculo del índice de refracción $n$}
+Despejamos $n_2=n$ de la Ley de Snell:
+\begin{gather}
+    n = n_1 \frac{\sin(\theta_1)}{\sin(\theta_2)}
+\end{gather}
+\paragraph*{Cálculo de la velocidad de la luz $v$}
+Despejamos $v$ de la definición de índice de refracción:
+\begin{gather}
+    v = \frac{c}{n}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Índice de refracción del vidrio}
+\begin{gather}
+    n = 1,00 \cdot \frac{\sin(50^\circ)}{\sin(25,37^\circ)} \approx 1,00 \cdot \frac{0,7660}{0,4284} \approx 1,788
+\end{gather}
+\begin{cajaresultado}
+    El índice de refracción del vidrio es $\boldsymbol{n \approx 1,79}$.
+\end{cajaresultado}
+\paragraph*{Velocidad de la luz en el vidrio}
+\begin{gather}
+    v = \frac{3 \cdot 10^8}{1,788} \approx 1,678 \cdot 10^8 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de la luz en ese medio es $\boldsymbol{v \approx 1,68 \cdot 10^8 \, m/s}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Tras corregir los ángulos para medirlos respecto a la normal, se aplica la Ley de Snell para determinar el índice de refracción del vidrio, obteniendo un valor de $\mathbf{n \approx 1,79}$. A partir de este índice, se calcula que la velocidad de propagación de la luz en el interior del vidrio se reduce a $\mathbf{1,68 \cdot 10^8 \, m/s}$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Física Moderna}
+\label{sec:fis_mod_2025_jul_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2025_jul_ord}
+
+\begin{cajaenunciado}
+Se ilumina la superficie de un metal con luz monocromática y se comprueba que este emite electrones. Nombra y explica el fenómeno ¿Cómo varía la energía cinética de los electrones emitidos si se aumenta la frecuencia de la luz incidente? ¿Qué cambia si se aumenta la intensidad de dicha luz sin modificar la frecuencia? Razona las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión puramente teórica sobre un fenómeno físico. No hay datos numéricos para procesar.
+\begin{itemize}
+    \item \textbf{Fenómeno:} Emisión de electrones por un metal iluminado.
+    \item \textbf{Incógnitas conceptuales:}
+    \begin{itemize}
+        \item Nombre y explicación del fenómeno.
+        \item Efecto de aumentar la frecuencia de la luz.
+        \item Efecto de aumentar la intensidad de la luz.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Esquema de una superficie metálica. Un fotón (representado como una onda con una etiqueta $E_{fotón} = hf$) incide sobre la superficie. Desde el punto de incidencia, un electrón (etiquetado $e^-$) es emitido con una velocidad $v$. Indicar que una parte de la energía del fotón se usa para superar el 'Trabajo de extracción' ($W_0$) del metal y el resto se convierte en 'Energía cinética' ($E_c$) del electrón." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_fotoelectrico.png}
+    }}
+    \caption{Diagrama conceptual del efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Nombre y Explicación del Fenómeno}
+El fenómeno se denomina \textbf{efecto fotoeléctrico}. La explicación la proporcionó Albert Einstein en 1905, basándose en la hipótesis de Planck de la cuantización de la energía. Einstein propuso que la luz no es una onda continua, sino que está compuesta por "paquetes" de energía llamados fotones. La energía de cada fotón es directamente proporcional a la frecuencia de la luz, $E_{fotón} = hf$, donde $h$ es la constante de Planck.
+Cuando un fotón incide sobre el metal, transfiere toda su energía a un único electrón. Para que el electrón escape del metal, debe superar una barrera de energía mínima llamada \textbf{trabajo de extracción} o \textbf{función de trabajo} ($W_0$), que es una propiedad característica de cada metal. Si la energía del fotón es mayor que el trabajo de extracción ($hf > W_0$), el electrón es emitido. La energía sobrante se convierte en la energía cinética del electrón emitido (fotoelectrón).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La conservación de la energía en la interacción fotón-electrón se expresa mediante la ecuación de Einstein para el efecto fotoeléctrico:
+\begin{gather}
+    E_{fotón} = W_0 + E_{c,max} \implies E_{c,max} = hf - W_0
+\end{gather}
+Donde $E_{c,max}$ es la energía cinética máxima de los electrones emitidos. La emisión solo ocurre si $hf \ge W_0$, lo que define una \textbf{frecuencia umbral} $f_0 = W_0/h$.
+
+\paragraph*{Variación con la frecuencia ($f$)}
+De la ecuación (21), se observa que si la frecuencia $f$ aumenta, y siendo $h$ y $W_0$ constantes, la energía cinética máxima de los electrones emitidos ($E_{c,max}$) \textbf{aumenta linealmente}.
+
+\paragraph*{Variación con la intensidad de la luz}
+La intensidad de la luz monocromática está relacionada con el número de fotones que inciden por unidad de tiempo y área. Aumentar la intensidad (sin cambiar la frecuencia) significa que inciden \textbf{más fotones} por segundo, pero la energía de cada fotón individual ($hf$) permanece constante. Por lo tanto, si $hf > W_0$, se emitirán \textbf{más electrones} por segundo (aumentando la corriente fotoeléctrica), pero la energía cinética máxima de cada uno de ellos, que solo depende de la frecuencia, \textbf{no cambiará}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Este apartado no aplica, ya que es una cuestión teórica.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    El fenómeno es el \textbf{efecto fotoeléctrico}, explicado por la naturaleza corpuscular de la luz. Si se aumenta la \textbf{frecuencia} de la luz, la energía de cada fotón aumenta, y por tanto, la \textbf{energía cinética máxima} de los electrones emitidos también aumenta. Si se aumenta la \textbf{intensidad} de la luz, aumenta el \textbf{número de fotones} incidentes, lo que resulta en la emisión de un \textbf{mayor número de electrones}, pero su energía cinética máxima individual permanece inalterada.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2025_jul_ord}
+
+\begin{cajaenunciado}
+El hipotético módulo espacial de la figura tiene una masa en reposo $M_0=10^4$ kg y una longitud propia $L_0=11,0$ m. Se mueve en una dirección a lo largo de su longitud con una velocidad v relativa a la base de control situada en la Tierra. Respecto a dicha base, se mide la longitud del módulo espacial y su resultado es $L=10,0$ m. ¿Cuál es la velocidad v con la que se mueve el módulo espacial respecto a la base de control? ¿Y su energía total relativista?
+\textbf{Dato:} velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa en reposo ($M_0$):} $M_0 = 10^4 \text{ kg}$.
+    \item \textbf{Longitud propia ($L_0$):} $L_0 = 11,0 \text{ m}$.
+    \item \textbf{Longitud medida ($L$):} $L = 10,0 \text{ m}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3 \cdot 10^8 \text{ m/s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Velocidad del módulo ($v$).
+        \item Energía total relativista ($E$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Contracción de la Longitud} \vspace{0.5cm} \textit{Prompt para la imagen:} "Crear dos recuadros. El de la izquierda, etiquetado 'Sistema en Reposo (S')', muestra el módulo espacial con su longitud L0=11.0 m. El de la derecha, etiquetado 'Sistema de la Tierra (S)', muestra el mismo módulo moviéndose hacia la derecha con una velocidad v. En este recuadro, el módulo debe aparecer visiblemente más corto, con su longitud etiquetada como L=10.0 m." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafico_relatividad.png}
+    }}
+    \caption{Ilustración de la contracción de la longitud desde dos sistemas de referencia.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Los postulados de la Relatividad Especial de Einstein conducen a dos consecuencias clave para este problema:
+\paragraph*{Contracción de la Longitud}
+La longitud de un objeto en movimiento ($L$) medida por un observador en reposo es menor que su longitud propia ($L_0$, medida en el sistema de referencia del objeto). La relación viene dada por: $L = \frac{L_0}{\gamma}$, donde $\gamma$ es el factor de Lorentz.
+\paragraph*{Energía Total Relativista}
+La energía total de una partícula o un objeto incluye su energía en reposo ($E_0=M_0c^2$) y su energía cinética. La expresión de la energía total es: $E = \gamma M_0 c^2$.
+El factor de Lorentz se define como $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}$. Siempre es $\gamma \ge 1$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Cálculo de la velocidad $v$}
+Primero, calculamos el factor de Lorentz $\gamma$ a partir de la contracción de la longitud:
+\begin{gather}
+    \gamma = \frac{L_0}{L}
+\end{gather}
+Luego, despejamos la velocidad $v$ de la definición de $\gamma$:
+\begin{gather}
+    \gamma^2 = \frac{1}{1 - v^2/c^2} \implies 1 - \frac{v^2}{c^2} = \frac{1}{\gamma^2} \implies \frac{v^2}{c^2} = 1 - \frac{1}{\gamma^2} \nonumber \\
+    v = c \sqrt{1 - \frac{1}{\gamma^2}}
+\end{gather}
+\paragraph*{Cálculo de la energía total $E$}
+Utilizamos directamente la fórmula de la energía total relativista con el factor $\gamma$ ya calculado:
+\begin{gather}
+    E = \gamma M_0 c^2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la velocidad}
+\begin{gather}
+    \gamma = \frac{11,0}{10,0} = 1,1
+\end{gather}
+Ahora sustituimos $\gamma$ para hallar $v$:
+\begin{gather}
+    v = (3 \cdot 10^8) \sqrt{1 - \frac{1}{1,1^2}} = (3 \cdot 10^8) \sqrt{1 - \frac{1}{1,21}} \approx (3 \cdot 10^8) \sqrt{0,1736} \nonumber \\
+    v \approx (3 \cdot 10^8) \cdot 0,4166 \approx 1,25 \cdot 10^8 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad del módulo espacial es $\boldsymbol{v \approx 1,25 \cdot 10^8 \, m/s}$ (aproximadamente un 41,7\% de la velocidad de la luz).
+\end{cajaresultado}
+
+\paragraph*{Cálculo de la energía total relativista}
+\begin{gather}
+    E = (1,1) \cdot (10^4) \cdot (3 \cdot 10^8)^2 = 1,1 \cdot 10^4 \cdot 9 \cdot 10^{16} = 9,9 \cdot 10^{20} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía total relativista del módulo es $\boldsymbol{E = 9,9 \cdot 10^{20} \, J}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Debido al fenómeno de la contracción de la longitud, la longitud medida de 10,0 m para un objeto con longitud propia de 11,0 m implica que se está moviendo a una velocidad relativista de $\mathbf{1,25 \cdot 10^8 \, m/s}$. A esta velocidad, su energía total, que incluye su considerable energía en reposo y su energía cinética, alcanza el valor de $\mathbf{9,9 \cdot 10^{20} \, J}$.
+\end{cajaconclusion}
+
+\newpage

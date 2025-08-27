@@ -1,0 +1,953 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2021 - Convocatoria Ordinaria}
+\label{chap:2021_jun_ord}
+
+% ======================================================================
+
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2020_sep_ext}
+
+% ======================================================================
+
+\subsection{Cuestión 1}
+\label{subsec:C1_2021_jun_ord}
+
+\begin{cajaenunciado}
+Un cuerpo que se encuentra en un campo gravitatorio se mueve entre dos puntos A y B de una superficie equipotencial ¿qué trabajo realiza la fuerza gravitatoria para mover el cuerpo entre A y B?
+Si la energía potencial del cuerpo en B es de -800 J y seguidamente pasa del punto B a un punto C, donde su energía potencial es de -1000 J, discute si su energía cinética es mayor en B o en C.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tramo A $\to$ B:} Los puntos A y B pertenecen a la misma superficie equipotencial.
+    \item \textbf{Tramo B $\to$ C:}
+    \begin{itemize}
+        \item Energía potencial en B: $E_{p,B} = -800 \, \text{J}$
+        \item Energía potencial en C: $E_{p,C} = -1000 \, \text{J}$
+    \end{itemize}
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Trabajo realizado por la fuerza gravitatoria de A a B ($W_{A \to B}$).
+        \item Comparación entre la energía cinética en B ($E_{c,B}$) y en C ($E_{c,C}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Movimiento en Campo Gravitatorio} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de líneas de campo gravitatorio apuntando hacia abajo. Se muestra una línea equipotencial horizontal (superficie equipotencial S1) con dos puntos A y B sobre ella. Se dibuja una trayectoria de un cuerpo desde A hasta B. Luego, se muestra otra superficie equipotencial S2 por debajo de S1, con un punto C en ella. Se dibuja una trayectoria desde B hasta C. Etiquetar claramente los puntos A, B, C y las superficies S1 y S2." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{mov_gravitatorio.png}
+    }}
+    \caption{Esquema del movimiento entre superficies equipotenciales.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Trabajo de la fuerza gravitatoria} El campo gravitatorio es un campo conservativo. El trabajo realizado por la fuerza conservativa (fuerza gravitatoria, $F_g$) para mover una masa $m$ entre dos puntos es igual al negativo de la variación de la energía potencial: $W = -\Delta E_p$. Por definición, una superficie equipotencial es el lugar geométrico de los puntos del espacio que tienen el mismo potencial gravitatorio ($V$). Por tanto, la energía potencial $E_p = m \cdot V$ es constante en todos sus puntos.
+
+\paragraph*{Conservación de la Energía Mecánica} Al ser la fuerza gravitatoria la única que realiza trabajo (o si las demás fuerzas no realizan trabajo), la energía mecánica total del cuerpo se conserva. El Teorema de las Fuerzas Vivas establece que el trabajo total realizado sobre un cuerpo es igual a la variación de su energía cinética ($W_{neto} = \Delta E_c$). Si solo actúan fuerzas conservativas, $W_{g} = -\Delta E_p$, por lo que $\Delta E_c = -\Delta E_p$, que es la expresión del principio de conservación de la energía mecánica: $\Delta E_c + \Delta E_p = 0$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Cálculo del trabajo entre A y B}
+Dado que A y B están en la misma superficie equipotencial, sus potenciales gravitatorios son idénticos: $V_A = V_B$. La variación de energía potencial es:
+\begin{gather}
+    \Delta E_{p, A \to B} = E_{p,B} - E_{p,A} = m V_B - m V_A = m(V_B - V_A) = 0
+\end{gather}
+El trabajo realizado por la fuerza gravitatoria es, por tanto:
+\begin{gather}
+    W_{A \to B} = -\Delta E_{p, A \to B} = 0
+\end{gather}
+
+\paragraph*{Comparación de la energía cinética en B y C}
+Aplicamos el principio de conservación de la energía mecánica al trayecto de B a C, ya que solo la fuerza gravitatoria conservativa realiza trabajo.
+\begin{gather}
+    \Delta E_c + \Delta E_p = 0 \implies E_{c,C} - E_{c,B} + E_{p,C} - E_{p,B} = 0 \nonumber \\
+    E_{c,C} - E_{c,B} = -(E_{p,C} - E_{p,B}) = E_{p,B} - E_{p,C}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Trabajo entre A y B}
+Como se demostró simbólicamente, el trabajo es nulo.
+\begin{cajaresultado}
+    El trabajo realizado por la fuerza gravitatoria para mover el cuerpo entre A y B es \boldsymbol{$W_{A \to B} = 0 \, \textbf{J}$}.
+\end{cajaresultado}
+
+\paragraph*{Energía cinética en B vs C}
+Sustituimos los valores de energía potencial en la ecuación deducida:
+\begin{gather}
+    E_{c,C} - E_{c,B} = (-800 \, \text{J}) - (-1000 \, \text{J}) = 200 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La variación de energía cinética es positiva ($E_{c,C} - E_{c,B} > 0$), lo que implica que \boldsymbol{$E_{c,C} > E_{c,B}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El trabajo para mover una masa entre dos puntos de una misma superficie equipotencial es siempre nulo, ya que no hay variación de energía potencial.
+En el trayecto de B a C, la energía potencial disminuye (se hace más negativa), lo que, por el principio de conservación de la energía mecánica, implica un aumento equivalente de la energía cinética. Por lo tanto, la energía cinética es mayor en el punto C.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1}
+\label{subsec:P1_2021_jun_ord}
+\begin{cajaenunciado}
+La masa del planeta K2-72 es 2,21 veces la masa de la Tierra y su radio es 1,29 veces el radio de la Tierra.
+\begin{enumerate}
+    \item[a)] ¿Cuál es el valor de la intensidad de campo gravitatorio en la superficie de K2-72? ¿Cuál es la fuerza gravitatoria que K2-72 ejerce sobre una persona de 70 kg en reposo sobre su superficie? (1 punto)
+    \item[b)] Determina la distancia desde el centro de K2-72 para la cual la intensidad de campo gravitatorio es 0,16 veces el valor en su superficie. Deduce y calcula la velocidad que tendría un satélite en órbita circular a dicha distancia. (1 punto)
+\end{enumerate}
+\textbf{Datos:} campo gravitatorio de la Tierra en su superficie, $g_0=9,8\,\text{m/s}^2$; radio terrestre, $R_T=6,37\cdot10^6\,\text{m}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Relaciones Planeta K2-72 (K) y Tierra (T):}
+    \begin{itemize}
+        \item Masas: $M_K = 2,21 \, M_T$
+        \item Radios: $R_K = 1,29 \, R_T$
+    \end{itemize}
+    \item \textbf{Datos de la Tierra:}
+    \begin{itemize}
+        \item Gravedad superficial: $g_T = 9,8 \, \text{m/s}^2$
+        \item Radio: $R_T = 6,37 \cdot 10^6 \, \text{m}$
+    \end{itemize}
+    \item \textbf{Masa de la persona:} $m_p = 70 \, \text{kg}$.
+    \item \textbf{Condición en apartado b):} $g(r) = 0,16 \, g_K$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Gravedad en la superficie de K2-72 ($g_K$).
+        \item Fuerza sobre la persona en K2-72 ($F_p$).
+        \item Distancia orbital $r$.
+        \item Velocidad orbital $v_{orb}$ a dicha distancia.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (a): Gravedad Superficial} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema del planeta esférico K2-72. En su superficie, una persona de pie. Dibujar un vector apuntando hacia el centro del planeta, etiquetado como $\vec{g}_K$ y $\vec{F}_p$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{gravedad_k72.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (b): Órbita de Satélite} \vspace{0.5cm} \textit{Prompt para la imagen:} "El mismo planeta K2-72 en el centro. Dibujar una órbita circular a una distancia $r$ del centro. Sobre la órbita, un pequeño satélite. Dibujar el vector velocidad orbital $\vec{v}_{orb}$ (tangente a la órbita) y el vector fuerza gravitatoria $\vec{F}_g$ (apuntando al centro del planeta), indicando que actúa como fuerza centrípeta." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_k72.png}
+    }}
+    \caption{Representación de los fenómenos estudiados en K2-72.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Intensidad de Campo Gravitatorio y Fuerza Gravitatoria}
+La intensidad del campo gravitatorio ($g$) en la superficie de un cuerpo esférico de masa $M$ y radio $R$ viene dada por la Ley de Gravitación Universal: $g = G \frac{M}{R^2}$. La fuerza gravitatoria (peso) sobre un objeto de masa $m$ en ese punto es $F_g = m \cdot g$.
+
+\paragraph*{b) Campo Gravitatorio a una distancia r y Velocidad Orbital}
+La intensidad del campo a una distancia $r$ del centro del planeta es $g(r) = G \frac{M}{r^2}$. Para un satélite en órbita circular, la fuerza gravitatoria es la responsable del movimiento, actuando como fuerza centrípeta. Al igualar ambas expresiones ($F_g = F_c$), se puede deducir la velocidad orbital.
+$G \frac{M m_{sat}}{r^2} = m_{sat} \frac{v_{orb}^2}{r}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Gravedad en K2-72 ($g_K$) y Fuerza ($F_p$)}
+Expresamos $g_K$ en función de $g_T$:
+\begin{gather}
+    g_K = G \frac{M_K}{R_K^2} = G \frac{2,21 M_T}{(1,29 R_T)^2} = \frac{2,21}{1,29^2} \left( G \frac{M_T}{R_T^2} \right) = \frac{2,21}{1,29^2} g_T \\
+    F_p = m_p \cdot g_K
+\end{gather}
+\paragraph*{b) Distancia $r$ y Velocidad orbital $v_{orb}$}
+La condición es $g(r) = 0,16 g_K$.
+\begin{gather}
+    G \frac{M_K}{r^2} = 0,16 \left( G \frac{M_K}{R_K^2} \right) \implies \frac{1}{r^2} = \frac{0,16}{R_K^2} \implies r^2 = \frac{R_K^2}{0,16} \implies r = \frac{R_K}{\sqrt{0,16}} = \frac{R_K}{0,4} = 2,5 R_K
+\end{gather}
+Para la velocidad orbital, partimos de la igualdad entre fuerza gravitatoria y centrípeta:
+\begin{gather}
+    G \frac{M_K m_{sat}}{r^2} = m_{sat} \frac{v_{orb}^2}{r} \implies v_{orb} = \sqrt{\frac{G M_K}{r}}
+\end{gather}
+También podemos usar la relación $g(r) = v_{orb}^2 / r \implies v_{orb} = \sqrt{g(r) \cdot r}$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de $g_K$ y $F_p$}
+\begin{gather}
+    g_K = \frac{2,21}{1,29^2} \cdot (9,8 \, \text{m/s}^2) \approx 1,327 \cdot (9,8 \, \text{m/s}^2) \approx 13,01 \, \text{m/s}^2 \\
+    F_p = (70 \, \text{kg}) \cdot (13,01 \, \text{m/s}^2) \approx 910,7 \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La intensidad del campo gravitatorio en la superficie de K2-72 es \boldsymbol{$g_K \approx 13,01 \, \textbf{m/s}^2$}.
+\end{cajaresultado}
+\begin{cajaresultado}
+    La fuerza gravitatoria sobre la persona es \boldsymbol{$F_p \approx 910,7 \, \textbf{N}$}.
+\end{cajaresultado}
+\paragraph*{b) Valor de $r$ y $v_{orb}$}
+Primero calculamos el radio $R_K$ y la distancia $r$:
+\begin{gather}
+    R_K = 1,29 \cdot R_T = 1,29 \cdot (6,37 \cdot 10^6 \, \text{m}) \approx 8,22 \cdot 10^6 \, \text{m} \\
+    r = 2,5 \cdot R_K = 2,5 \cdot (8,22 \cdot 10^6 \, \text{m}) \approx 2,055 \cdot 10^7 \, \text{m}
+\end{gather}
+Ahora calculamos la velocidad usando $v_{orb} = \sqrt{g(r) \cdot r}$:
+\begin{gather}
+    g(r) = 0,16 \cdot g_K = 0,16 \cdot (13,01 \, \text{m/s}^2) \approx 2,08 \, \text{m/s}^2 \\
+    v_{orb} = \sqrt{(2,08 \, \text{m/s}^2) \cdot (2,055 \cdot 10^7 \, \text{m})} \approx \sqrt{4,27 \cdot 10^7} \approx 6537 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La distancia desde el centro de K2-72 es \boldsymbol{$r \approx 2,055 \cdot 10^7 \, \textbf{m}$}.
+\end{cajaresultado}
+\begin{cajaresultado}
+    La velocidad orbital del satélite a esa distancia es \boldsymbol{$v_{orb} \approx 6537 \, \textbf{m/s}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El planeta K2-72, al ser más masivo y solo un poco más grande que la Tierra, posee una gravedad superficial un 33\% mayor, de $13,01 \, \text{m/s}^2$. A una distancia de 2,5 veces su radio ($2,055 \cdot 10^7 \, \text{m}$), la gravedad se reduce a 0,16 veces la superficial, y un satélite necesitaría una velocidad de $6537 \, \text{m/s}$ para mantener una órbita circular.
+\end{cajaconclusion}
+
+\newpage
+% ----------------------------------------------------------------------
+\section{Bloque II: Interacción Electromagnética}
+\label{sec:grav_2020_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 2}
+\label{subsec:C2_2021_jun_ord}
+
+\begin{cajaenunciado}
+Enuncia el teorema de Gauss para el campo eléctrico. Determina el flujo eléctrico a través de la superficie cerrada de la figura.
+Las cargas son $q_{1}=8,85\,\text{pC}$ y $q_{2}=-2q_{1}$ y se encuentran en el vacío.
+\textbf{Dato:} constante dieléctrica del vacío, $\epsilon_{0}=8,85\cdot10^{-12}\,\text{C}^2/\text{N}\cdot\text{m}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = 8,85 \, \text{pC} = 8,85 \cdot 10^{-12} \, \text{C}$. Esta carga está en el interior de la superficie gaussiana.
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = -2q_1 = -2 \cdot (8,85 \cdot 10^{-12} \, \text{C}) = -1,77 \cdot 10^{-11} \, \text{C}$. Esta carga está en el exterior de la superficie.
+    \item \textbf{Constante dieléctrica del vacío ($\epsilon_0$):} $\epsilon_0 = 8,85 \cdot 10^{-12} \, \text{C}^2/(\text{N}\cdot\text{m}^2)$.
+    \item \textbf{Incógnita:} Flujo eléctrico ($\Phi_E$) a través de la superficie cerrada.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Superficie Gaussiana con Cargas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama 3D de una superficie esférica cerrada y transparente (superficie gaussiana). En el centro exacto de la esfera, colocar una carga puntual positiva etiquetada como '$q_1$'. Fuera de la esfera, a una distancia aproximada de un radio por encima de ella, colocar una carga puntual negativa etiquetada como '$q_2$'. Dibujar líneas de campo eléctrico saliendo radialmente de $q_1$ y atravesando la superficie. Dibujar líneas de campo entrando radialmente en $q_2$, mostrando cómo algunas de estas líneas atraviesan la superficie gaussiana (entrando por un lado y saliendo por el otro)." \vspace{0.5cm} % \includegraphics[width=0.6\linewidth]{gauss_cargas.png}
+    }}
+    \caption{Esquema de las cargas y la superficie gaussiana.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Teorema de Gauss para el campo eléctrico}
+El teorema de Gauss establece que el flujo eléctrico total ($\Phi_E$) a través de cualquier superficie cerrada (conocida como superficie gaussiana) es directamente proporcional a la carga eléctrica neta ($Q_{int}$) encerrada dentro de dicha superficie, dividida por la permitividad dieléctrica del vacío ($\epsilon_0$).
+Matemáticamente, se expresa como:
+$$ \Phi_E = \oint_S \vec{E} \cdot d\vec{S} = \frac{Q_{int}}{\epsilon_0} $$
+Este teorema es una de las cuatro ecuaciones de Maxwell y es fundamental en el electromagnetismo. Implica que las cargas exteriores a la superficie gaussiana no contribuyen al flujo neto a través de ella, aunque sí modifican el campo eléctrico $\vec{E}$ en cada punto de la superficie.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Para aplicar el teorema de Gauss a la situación del problema, primero debemos identificar la carga neta encerrada en la superficie esférica.
+\begin{itemize}
+    \item La carga $q_1$ se encuentra en el interior de la superficie.
+    \item La carga $q_2$ se encuentra en el exterior.
+\end{itemize}
+Por lo tanto, la carga neta interior es únicamente $q_1$.
+\begin{gather}
+    Q_{int} = q_1
+\end{gather}
+Sustituyendo esto en la ley de Gauss, la expresión para el flujo eléctrico es:
+\begin{gather}
+    \Phi_E = \frac{q_1}{\epsilon_0}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores numéricos proporcionados en la expresión final.
+\begin{gather}
+    \Phi_E = \frac{8,85 \cdot 10^{-12} \, \text{C}}{8,85 \cdot 10^{-12} \, \frac{\text{C}^2}{\text{N}\cdot\text{m}^2}} = 1 \, \frac{\text{N}\cdot\text{m}^2}{\text{C}}
+\end{gather}
+\begin{cajaresultado}
+    El flujo eléctrico a través de la superficie cerrada es \boldsymbol{$\Phi_E = 1 \, \textbf{N}\cdot\textbf{m}^2/\textbf{C}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Según el teorema de Gauss, solo las cargas encerradas por una superficie cerrada contribuyen al flujo eléctrico neto a través de ella. En este caso, únicamente la carga $q_1$ está en el interior. Al aplicar la fórmula, se obtiene un flujo de $1 \, \text{N}\cdot\text{m}^2/\text{C}$. La carga exterior $q_2$ no aporta al flujo neto, ya que las líneas de campo que genera entran y salen de la superficie, resultando en una contribución nula.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 3}
+\label{subsec:C3_2021_jun_ord}
+
+\begin{cajaenunciado}
+Considera una espira conductora plana sobre la superficie del papel. Esta se encuentra en el seno de un campo magnético uniforme de módulo $B=1\,\text{T}$, que es perpendicular al paper y con sentido saliente. Aumentamos la superficie de la espira de $2\,\text{cm}^2$ a $4\,\text{cm}^2$ en 10 s, sin que deje de ser plana y perpendicular al campo. Calcula la variación de flujo magnético y la fuerza electromotriz media inducida en la espira. Justifica e indica claramente con un dibujo el sentido de la corriente eléctrica inducida.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo magnético ($B$):} $B = 1 \, \text{T}$ (uniforme, perpendicular y saliente).
+    \item \textbf{Superficie inicial ($S_i$):} $S_i = 2 \, \text{cm}^2 = 2 \cdot 10^{-4} \, \text{m}^2$.
+    \item \textbf{Superficie final ($S_f$):} $S_f = 4 \, \text{cm}^2 = 4 \cdot 10^{-4} \, \text{m}^2$.
+    \item \textbf{Intervalo de tiempo ($\Delta t$):} $\Delta t = 10 \, \text{s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Variación de flujo magnético ($\Delta \Phi_B$).
+        \item Fuerza electromotriz media inducida ($\varepsilon_{med}$).
+        \item Sentido de la corriente inducida ($I_{ind}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Corriente Inducida por Variación de Flujo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama que muestra un campo magnético uniforme saliendo del plano del papel, representado por puntos (círculos con un punto en el centro). Sobre este campo, dibujar una espira conductora. Mostrar dos estados: a la izquierda, la espira con un área pequeña etiquetada '$S_i$'. A la derecha, la misma espira con un área mayor etiquetada '$S_f$'. Dibujar un vector '$B_{ext}$' saliente. Dibujar un vector '$B_{ind}$' entrante (representado por cruces) dentro de la espira final. Usando la regla de la mano derecha para $B_{ind}$, dibujar una flecha curva en la espira que indique el sentido de la corriente inducida '$I_{ind}$', que debe ser en sentido horario." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{ley_lenz.png}
+    }}
+    \caption{Justificación del sentido de la corriente inducida según la ley de Lenz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Flujo Magnético} El flujo magnético ($\Phi_B$) a través de una superficie plana $S$ en un campo magnético uniforme $\vec{B}$ se define como el producto escalar $\Phi_B = \vec{B} \cdot \vec{S}$. Si el campo es perpendicular a la superficie, el ángulo entre $\vec{B}$ y el vector normal $\vec{S}$ es $0^\circ$, por lo que la expresión se simplifica a $\Phi_B = B \cdot S$.
+
+\paragraph*{Ley de Faraday-Lenz} La ley de Faraday establece que una variación del flujo magnético a través de un circuito cerrado induce una fuerza electromotriz (f.e.m. o $\varepsilon$) en él. La f.e.m. media es $\varepsilon_{med} = -\frac{\Delta \Phi_B}{\Delta t}$. El signo negativo es una consecuencia de la Ley de Lenz, que establece que la corriente inducida y su campo magnético asociado se oponen a la variación del flujo magnético que los origina.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Variación de Flujo Magnético}
+El flujo magnético inicial es $\Phi_{B,i} = B \cdot S_i$ y el final es $\Phi_{B,f} = B \cdot S_f$. La variación de flujo es:
+\begin{gather}
+    \Delta \Phi_B = \Phi_{B,f} - \Phi_{B,i} = B \cdot S_f - B \cdot S_i = B (S_f - S_i)
+\end{gather}
+\paragraph*{b) Fuerza Electromotriz Media Inducida}
+Aplicando la ley de Faraday para la f.e.m. media:
+\begin{gather}
+    \varepsilon_{med} = - \frac{\Delta \Phi_B}{\Delta t} = - \frac{B (S_f - S_i)}{\Delta t}
+\end{gather}
+\paragraph*{c) Sentido de la Corriente}
+El campo magnético externo ($\vec{B}_{ext}$) es saliente. Al aumentar la superficie, el flujo magnético saliente aumenta ($\Delta \Phi_B > 0$). Según la ley de Lenz, la espira generará una corriente inducida ($I_{ind}$) que creará un campo magnético inducido ($\vec{B}_{ind}$) que se oponga a este aumento. Por tanto, $\vec{B}_{ind}$ debe tener sentido entrante. Aplicando la regla de la mano derecha, un campo entrante es generado por una corriente que circula en \textbf{sentido horario}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Variación de Flujo Magnético}
+\begin{gather}
+    \Delta \Phi_B = (1 \, \text{T}) \cdot (4 \cdot 10^{-4} \, \text{m}^2 - 2 \cdot 10^{-4} \, \text{m}^2) = 2 \cdot 10^{-4} \, \text{Wb}
+\end{gather}
+\begin{cajaresultado}
+    La variación de flujo magnético es \boldsymbol{$\Delta \Phi_B = 2 \cdot 10^{-4} \, \textbf{Wb}$}.
+\end{cajaresultado}
+
+\paragraph*{b) Fuerza Electromotriz Media Inducida}
+\begin{gather}
+    \varepsilon_{med} = - \frac{2 \cdot 10^{-4} \, \text{Wb}}{10 \, \text{s}} = -2 \cdot 10^{-5} \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza electromotriz media inducida en la espira es \boldsymbol{$\varepsilon_{med} = -2 \cdot 10^{-5} \, \textbf{V}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El aumento de la superficie de la espira provoca un incremento del flujo magnético saliente de $2 \cdot 10^{-4} \, \text{Wb}$. De acuerdo con la Ley de Faraday-Lenz, esta variación en 10 segundos induce una f.e.m. media de $-2 \cdot 10^{-5} \, \text{V}$. El signo negativo y la Ley de Lenz implican que la corriente inducida circula en sentido horario para generar un campo magnético entrante que se oponga al aumento del flujo original.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 4}
+\label{subsec:C4_2021_jun_ord}
+
+\begin{cajaenunciado}
+La figura muestra dos conductores rectilíneos, indefinidos y paralelos entre sí, por los que circulan corrientes eléctricas del mismo valor $(I_1 = I_2)$ y de sentidos contrarios. Indica la dirección y sentido del campo magnético total en el punto P. Si en el punto P se tiene una carga $q > 0$, con velocidad perpendicular al plano XY, ¿qué fuerza magnética recibe dicha carga? Responde razonada y claramente las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Corrientes:} $I_1 = I_2 = I$. $I_1$ tiene sentido $+Y$. $I_2$ tiene sentido $-Y$.
+    \item \textbf{Punto de estudio:} P, situado en el mismo plano que los conductores.
+    \item \textbf{Carga de prueba:} $q > 0$.
+    \item \textbf{Velocidad de la carga:} $\vec{v}$ es perpendicular al plano XY, por lo que $\vec{v} = v \vec{k}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Dirección y sentido del campo magnético total en P ($\vec{B}_{total}$).
+        \item Fuerza magnética sobre la carga q ($\vec{F}_m$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campos y Fuerza de Lorentz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Dibujar un conductor vertical en $x=-a$ con una corriente $I_1$ apuntando hacia arriba (+Y). Dibujar otro conductor vertical en $x=a$ con una corriente $I_2$ apuntando hacia abajo (-Y). Marcar un punto P en el eje X, por ejemplo en $x=-2a$. Usando la regla de la mano derecha, dibujar el vector campo magnético $\vec{B}_1$ creado por $I_1$ en P, que debe ser entrante (una cruz). Usando la regla de la mano derecha, dibujar el vector campo magnético $\vec{B}_2$ creado por $I_2$ en P, que también debe ser entrante (una cruz). Mostrar que el vector $\vec{B}_{total} = \vec{B}_1 + \vec{B}_2$ es también entrante. Indicar un vector velocidad $\vec{v}$ para una carga $q$ en P, saliendo del plano (un punto). Explicar que como $\vec{v}$ y $\vec{B}_{total}$ son paralelos, la fuerza $\vec{F}_m$ es cero." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{campos_lorentz.png}
+    }}
+    \caption{Determinación del campo total y la fuerza magnética.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Campo magnético de un conductor rectilíneo} Un conductor rectilíneo e indefinido por el que circula una corriente $I$ crea un campo magnético a su alrededor. La dirección y el sentido del campo en un punto se determinan mediante la \textbf{regla de la mano derecha}: si el pulgar apunta en el sentido de la corriente, los demás dedos indican el sentido de las líneas de campo circulares.
+
+\paragraph*{Principio de Superposición} El campo magnético total en un punto debido a varias fuentes es la suma vectorial de los campos magnéticos creados por cada fuente individual en ese punto: $\vec{B}_{total} = \sum_i \vec{B}_i$.
+
+\paragraph*{Fuerza de Lorentz} Una carga eléctrica $q$ que se mueve con una velocidad $\vec{v}$ en un campo magnético $\vec{B}$ experimenta una fuerza magnética, llamada Fuerza de Lorentz, dada por la expresión: $\vec{F}_m = q(\vec{v} \times \vec{B})$. La dirección de esta fuerza es perpendicular tanto a la velocidad como al campo magnético.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Dirección y sentido de $\vec{B}_{total}$ en P}
+Vamos a analizar la contribución de cada conductor en el punto P:
+\begin{itemize}
+    \item \textbf{Campo $\vec{B}_1$ (creado por $I_1$):} La corriente $I_1$ sube (sentido $+Y$). El punto P está a su izquierda. Aplicando la regla de la mano derecha, el campo magnético $\vec{B}_1$ en P apunta hacia \textbf{dentro del papel} (sentido $-Z$).
+    \item \textbf{Campo $\vec{B}_2$ (creado por $I_2$):} La corriente $I_2$ baja (sentido $-Y$). El punto P está a su izquierda. Aplicando la regla de la mano derecha, el campo magnético $\vec{B}_2$ en P también apunta hacia \textbf{dentro del papel} (sentido $-Z$).
+\end{itemize}
+Al aplicar el principio de superposición, el campo magnético total es la suma vectorial de ambos:
+\begin{gather}
+    \vec{B}_{total, P} = \vec{B}_1 + \vec{B}_2
+\end{gather}
+Dado que tanto $\vec{B}_1$ como $\vec{B}_2$ apuntan en la misma dirección y sentido (entrante, $-Z$), el campo total $\vec{B}_{total}$ también tendrá esa dirección y sentido.
+
+\paragraph*{b) Fuerza magnética sobre la carga $q$}
+La carga $q$ se mueve con una velocidad $\vec{v}$ perpendicular al plano XY. Asumamos que es saliente (sentido $+Z$). Entonces, $\vec{v} = v\vec{k}$. El campo magnético total en P, como hemos determinado, es entrante (sentido $-Z$), por lo que $\vec{B}_{total} = -B_{total}\vec{k}$.
+La fuerza de Lorentz es:
+\begin{gather}
+    \vec{F}_m = q(\vec{v} \times \vec{B}_{total}) = q( (v\vec{k}) \times (-B_{total}\vec{k}) )
+\end{gather}
+El producto vectorial de dos vectores paralelos (o antiparalelos) es siempre el vector nulo.
+\begin{gather}
+    \vec{k} \times (-\vec{k}) = \vec{0}
+\end{gather}
+Por lo tanto, la fuerza magnética es cero.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es cualitativo y no requiere cálculos numéricos. Los resultados se derivan del razonamiento simbólico.
+
+\begin{cajaresultado}
+    La dirección del campo magnético total en el punto P es \textbf{perpendicular al plano del papel}, y su sentido es \textbf{entrante}.
+\end{cajaresultado}
+
+\begin{cajaresultado}
+    La fuerza magnética que recibe la carga $q$ es \textbf{nula} ($\boldsymbol{\vec{F}_m = \vec{0}}$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Ambos conductores generan en el punto P un campo magnético con la misma dirección y sentido (perpendicular al papel y entrante), por lo que el campo total resultante también lo es.
+Una carga que se mueve en la misma dirección (o en la opuesta) que las líneas de un campo magnético no experimenta fuerza magnética, ya que el producto vectorial de su velocidad y el campo es nulo. Por ello, la fuerza sobre la carga $q$ es cero.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 2}
+\label{subsec:P2_2021_jun_ord}
+\begin{cajaenunciado}
+Sean dos cargas puntuales de valores $q_1 = 2\,\mu\text{C}$ y $q_2 = -1,6\,\mu\text{C}$ situadas en los puntos A(0,0) m y B(0,3) m, respectivamente. Calcula:
+\begin{enumerate}
+    \item[a)] El vector campo eléctrico creado por cada una de las dos cargas y el vector campo eléctrico total en el punto C(4,3) m. (1 punto)
+    \item[b)] El trabajo que realiza el campo al trasladar una carga $q_3 = -1\,\text{nC}$ desde C hasta un punto D donde la energía potencial electrostática de dicha carga vale $-1,62 \cdot 10^{-6}\,\text{J}$. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^9\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = 2 \, \mu\text{C} = 2 \cdot 10^{-6} \, \text{C}$ en A(0,0).
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = -1,6 \, \mu\text{C} = -1,6 \cdot 10^{-6} \, \text{C}$ en B(0,3).
+    \item \textbf{Carga 3 ($q_3$):} $q_3 = -1 \, \text{nC} = -1 \cdot 10^{-9} \, \text{C}$.
+    \item \textbf{Punto de cálculo:} C(4,3).
+    \item \textbf{Energía potencial en D:} $E_{p,D} = -1,62 \cdot 10^{-6} \, \text{J}$.
+    \item \textbf{Constante de Coulomb ($k$):} $k = 9 \cdot 10^9 \, \text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item $\vec{E}_1$ y $\vec{E}_2$ en C.
+        \item $\vec{E}_{total}$ en C.
+        \item Trabajo para mover $q_3$ de C a D ($W_{C \to D}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo Eléctrico y Potencial} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Colocar una carga positiva $q_1$ en el origen A(0,0). Colocar una carga negativa $q_2$ en B(0,3). Marcar el punto C(4,3). Dibujar el vector de posición $\vec{r}_{AC}$ desde A hasta C. Dibujar el vector campo $\vec{E}_1$ en C, saliendo de $q_1$ y a lo largo de $\vec{r}_{AC}$. Dibujar el vector de posición $\vec{r}_{BC}$ desde B hasta C. Dibujar el vector campo $\vec{E}_2$ en C, apuntando hacia $q_2$ a lo largo de $\vec{r}_{BC}$. Dibujar la suma vectorial $\vec{E}_{total} = \vec{E}_1 + \vec{E}_2$ usando la regla del paralelogramo." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{campo_electrico_cargas.png}
+    }}
+    \caption{Vectores de campo eléctrico en el punto C.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo Eléctrico y Principio de Superposición}
+El campo eléctrico $\vec{E}$ creado por una carga puntual $q$ en un punto P se calcula con la ley de Coulomb: $\vec{E} = k \frac{q}{r^2}\vec{u}_r$, donde $r$ es la distancia de la carga al punto y $\vec{u}_r$ es un vector unitario que apunta desde la carga hacia el punto. El campo total en un punto debido a varias cargas es la suma vectorial (principio de superposición) de los campos individuales.
+
+\paragraph*{b) Trabajo y Energía Potencial}
+El campo eléctrico es conservativo. El trabajo $W$ realizado por el campo para mover una carga $q_3$ entre dos puntos C y D es igual al negativo de la variación de su energía potencial electrostática: $W_{C \to D} = -\Delta E_p = -(E_{p,D} - E_{p,C})$. La energía potencial de una carga $q_3$ en un punto P es $E_p = q_3 \cdot V_P$, donde $V_P$ es el potencial eléctrico en dicho punto. El potencial en P debido a un conjunto de cargas es la suma escalar de los potenciales creados por cada carga: $V_P = \sum_i k \frac{q_i}{r_i}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Vectores Campo Eléctrico}
+Primero definimos los vectores de posición y sus módulos:
+\begin{itemize}
+    \item $\vec{r}_{AC} = C - A = (4,3) - (0,0) = 4\vec{i} + 3\vec{j} \, \text{m}$; \quad $|\vec{r}_{AC}| = \sqrt{4^2+3^2} = 5 \, \text{m}$
+    \item $\vec{r}_{BC} = C - B = (4,3) - (0,3) = 4\vec{i} + 0\vec{j} \, \text{m}$; \quad $|\vec{r}_{BC}| = 4 \, \text{m}$
+\end{itemize}
+Los vectores unitarios son $\vec{u}_{AC} = \frac{\vec{r}_{AC}}{|\vec{r}_{AC}|} = \frac{4\vec{i} + 3\vec{j}}{5}$ y $\vec{u}_{BC} = \frac{4\vec{i}}{4} = \vec{i}$.
+\begin{gather}
+    \vec{E}_1 = k \frac{q_1}{|\vec{r}_{AC}|^2} \vec{u}_{AC} \quad ; \quad \vec{E}_2 = k \frac{q_2}{|\vec{r}_{BC}|^2} \vec{u}_{BC} \\
+    \vec{E}_{total} = \vec{E}_1 + \vec{E}_2
+\end{gather}
+\paragraph*{b) Trabajo $W_{C \to D}$}
+\begin{gather}
+    W_{C \to D} = E_{p,C} - E_{p,D} = (q_3 \cdot V_C) - E_{p,D}
+\end{gather}
+Necesitamos calcular el potencial $V_C$:
+\begin{gather}
+    V_C = V_1(C) + V_2(C) = k \frac{q_1}{|\vec{r}_{AC}|} + k \frac{q_2}{|\vec{r}_{BC}|} = k \left( \frac{q_1}{|\vec{r}_{AC}|} + \frac{q_2}{|\vec{r}_{BC}|} \right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Vectores Campo Eléctrico}
+\begin{gather}
+    \vec{E}_1 = (9\cdot10^9) \frac{2\cdot10^{-6}}{5^2} \left(\frac{4}{5}\vec{i} + \frac{3}{5}\vec{j}\right) = 720 (0,8\vec{i} + 0,6\vec{j}) = 576\vec{i} + 432\vec{j} \, \text{N/C} \\
+    \vec{E}_2 = (9\cdot10^9) \frac{-1,6\cdot10^{-6}}{4^2} (\vec{i}) = -900\vec{i} \, \text{N/C} \\
+    \vec{E}_{total} = (576\vec{i} + 432\vec{j}) + (-900\vec{i}) = -324\vec{i} + 432\vec{j} \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    $\boldsymbol{\vec{E}_1 = (576\vec{i} + 432\vec{j}) \, \textbf{N/C}}$ y $\boldsymbol{\vec{E}_2 = -900\vec{i} \, \textbf{N/C}}$.
+\end{cajaresultado}
+\begin{cajaresultado}
+    El campo total es $\boldsymbol{\vec{E}_{total} = (-324\vec{i} + 432\vec{j}) \, \textbf{N/C}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Trabajo $W_{C \to D}$}
+Calculamos primero el potencial $V_C$:
+\begin{gather}
+    V_C = (9\cdot10^9) \left( \frac{2\cdot10^{-6}}{5} + \frac{-1,6\cdot10^{-6}}{4} \right) = (9\cdot10^9)(0,4\cdot10^{-6} - 0,4\cdot10^{-6}) = 0 \, \text{V}
+\end{gather}
+Ahora calculamos la energía potencial $E_{p,C}$ y el trabajo:
+\begin{gather}
+    E_{p,C} = q_3 \cdot V_C = (-1\cdot10^{-9} \, \text{C}) \cdot (0 \, \text{V}) = 0 \, \text{J} \\
+    W_{C \to D} = E_{p,C} - E_{p,D} = 0 - (-1,62 \cdot 10^{-6} \, \text{J}) = 1,62 \cdot 10^{-6} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo realizado por el campo es $\boldsymbol{W_{C \to D} = 1,62 \cdot 10^{-6} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la aplicación vectorial de la ley de Coulomb y el principio de superposición, se determina que el campo eléctrico total en el punto C es $\vec{E}_{total} = (-324\vec{i} + 432\vec{j}) \, \text{N/C}$.
+Casualmente, el punto C se encuentra en una superficie de potencial nulo ($V_C=0$). Por lo tanto, la energía potencial de $q_3$ en C es cero. El trabajo realizado por el campo para mover la carga hasta D, donde su energía potencial es negativa, es un trabajo positivo de $1,62 \cdot 10^{-6} \, \text{J}$.
+\end{cajaconclusion}
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Ondas}
+\label{sec:grav_2020_sep_ext}
+% ----------------------------------------------------------------------
+
+% Add other questions following the same structure...
+\subsection{Cuestión 5}
+\label{subsec:C5_2021_jun_ord}
+\begin{cajaenunciado}
+Considera una onda trasversal en una cuerda descrita por $y(x,t)=0,01\,\cos[2\pi(10t-x)]\,\text{m}$, donde x se expresa en metros y t en segundos. Calcula la velocidad de vibración en función de x y t. Dado el punto de la cuerda situado en $x_1=0,75\,\text{m}$, encuentra un punto $x_2$, que en un mismo instante t, tenga la misma velocidad de vibración que $x_1$ y el mismo valor y. Indica el razonamiento seguido.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ecuación de la onda:} $y(x,t) = 0,01 \cos[2\pi(10t - x)]$ (en unidades del SI).
+    \item \textbf{Punto de referencia:} $x_1 = 0,75 \, \text{m}$.
+    \item \textbf{Condición:} Encontrar un punto $x_2$ tal que para cualquier instante $t$, se cumpla que $y(x_1, t) = y(x_2, t)$ y $v_y(x_1, t) = v_y(x_2, t)$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresión de la velocidad de vibración ($v_y(x,t)$).
+        \item Posición del punto $x_2$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Estado de Vibración en una Onda} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar el perfil de una onda sinusoidal en un instante fijo t (eje Y vs eje X). Marcar un punto $x_1$ en la onda. Marcar otro punto $x_2$ que esté exactamente una longitud de onda ($\lambda$) más adelante, mostrando que tiene la misma elongación (y) y la misma pendiente (relacionada con la velocidad de vibración). Etiquetar la distancia entre $x_1$ y $x_2$ como $\lambda$. Etiquetar los ejes, $x_1$, $x_2$ y $\lambda$." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{onda_longitud.png}
+    }}
+    \caption{Puntos con idéntico estado de vibración en una onda.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Velocidad de vibración} La velocidad de vibración ($v_y$) de una partícula del medio en un movimiento ondulatorio corresponde a la derivada parcial de la elongación ($y$) con respecto al tiempo ($t$).
+\paragraph*{Periodicidad espacial de una onda} Una onda es una perturbación que se propaga y es periódica tanto en el tiempo (periodo $T$) como en el espacio (longitud de onda $\lambda$). Dos puntos del medio tienen el mismo estado de vibración (misma elongación y misma velocidad de vibración) si la distancia que los separa es un múltiplo entero de la longitud de onda. La longitud de onda $\lambda$ se relaciona con el número de onda $k$ mediante la expresión $\lambda = 2\pi/k$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Velocidad de vibración $v_y(x,t)$}
+Se obtiene derivando la ecuación de la onda $y(x,t)$ respecto al tiempo:
+\begin{gather}
+    v_y(x,t) = \frac{\partial y(x,t)}{\partial t} = \frac{\partial}{\partial t} \left( 0,01 \cos[2\pi(10t - x)] \right) \nonumber \\
+    v_y(x,t) = -0,01 \sin[2\pi(10t - x)] \cdot (2\pi \cdot 10) = -0,2\pi \sin[2\pi(10t - x)]
+\end{gather}
+\paragraph*{b) Posición del punto $x_2$}
+Para que dos puntos $x_1$ y $x_2$ tengan el mismo estado de vibración en todo instante $t$, la fase de la onda en ambos puntos debe diferir en un múltiplo entero de $2\pi$.
+La fase de la onda es $\phi(x,t) = 2\pi(10t - x)$.
+\begin{gather}
+    \phi(x_1, t) - \phi(x_2, t) = n \cdot 2\pi \quad \text{con } n \in \mathbb{Z} \nonumber \\
+    2\pi(10t - x_1) - 2\pi(10t - x_2) = n \cdot 2\pi \nonumber \\
+    (10t - x_1) - (10t - x_2) = n \nonumber \\
+    x_2 - x_1 = n \implies x_2 = x_1 + n
+\end{gather}
+Esta condición es equivalente a decir que la distancia entre los puntos es un múltiplo de la longitud de onda, $|x_2 - x_1| = |n|\lambda$.
+De la ecuación de la onda $y(x,t) = A \cos(\omega t - kx)$, comparando con la forma dada $y(x,t)=0,01 \cos(20\pi t - 2\pi x)$, identificamos el número de onda $k=2\pi \, \text{rad/m}$.
+La longitud de onda es:
+\begin{gather}
+    \lambda = \frac{2\pi}{k} = \frac{2\pi}{2\pi} = 1 \, \text{m}
+\end{gather}
+Por lo tanto, los puntos con el mismo estado de vibración son $x_2 = x_1 + n \lambda$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Velocidad de vibración}
+La expresión ya fue hallada simbólicamente.
+\begin{cajaresultado}
+    La velocidad de vibración es \boldsymbol{$v_y(x,t) = -0,2\pi \sin[2\pi(10t - x)] \, \textbf{m/s}$}.
+\end{cajaresultado}
+
+\paragraph*{b) Posición del punto $x_2$}
+Buscamos un punto $x_2$ distinto de $x_1$. Tomamos el caso más sencillo, con $n=1$.
+\begin{gather}
+    x_2 = x_1 + 1 \cdot \lambda = 0,75 \, \text{m} + 1 \cdot (1 \, \text{m}) = 1,75 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    Un punto $x_2$ que cumple las condiciones es \boldsymbol{$x_2 = 1,75 \, \textbf{m}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La velocidad de vibración se obtiene derivando la elongación respecto al tiempo. Para que dos puntos tengan el mismo estado de vibración (misma elongación y velocidad) en todo momento, deben estar separados por una distancia igual a un múltiplo entero de la longitud de onda. Dado que la longitud de onda de esta onda es de 1 m, un punto que cumple la condición es $x_2=1,75\,\text{m}$, que está una longitud de onda por delante de $x_1$.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Cuestión 6}
+\label{subsec:C6_2021_jun_ord}
+
+\begin{cajaenunciado}
+La figura muestra un objeto y su imagen a través de una cierta lente interpuesta entre el objeto y el observador. Especifica las características de la imagen que se aprecian en la figura, en relación con el objeto. Indica qué tipo de lente es y realiza un trazado de rayos que explique lo que se muestra en la figura.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Este es un problema cualitativo basado en la interpretación de una imagen.
+\begin{itemize}
+    \item \textbf{Objeto:} El texto "Agua destilada" visto sin la lente.
+    \item \textbf{Imagen:} El mismo texto visto a través de la lente.
+    \item \textbf{Observaciones a partir de la figura:}
+    \begin{itemize}
+        \item La imagen es de \textbf{mayor tamaño} que el objeto (efecto lupa).
+        \item La imagen está \textbf{derecha} (no está invertida).
+        \item La imagen se ve a través de la lente, lo que significa que se forma del mismo lado que el objeto. Es una imagen \textbf{virtual}.
+    \end{itemize}
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Características de la imagen.
+        \item Tipo de lente.
+        \item Trazado de rayos justificativo.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Trazado de Rayos para Lente Convergente (Efecto Lupa)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un eje óptico horizontal. En el centro, dibujar una lente convergente (símbolo de doble flecha convexa). Marcar el foco objeto F a la izquierda y el foco imagen F' a la derecha, a la misma distancia de la lente. Colocar un objeto (una flecha vertical) entre el foco objeto F y la lente. Realizar el trazado de tres rayos principales desde la punta de la flecha: 1) Un rayo paralelo al eje óptico que, al refractarse, pasa por el foco imagen F'. 2) Un rayo que pasa por el centro óptico y no se desvía. 3) Un rayo que pasa por el foco objeto F y se refracta paralelo al eje. Mostrar que los rayos refractados divergen. Dibujar las prolongaciones de estos rayos refractados hacia atrás (a la izquierda de la lente) con líneas discontinuas. Mostrar que las prolongaciones se cruzan en un punto, formando una imagen virtual, derecha y de mayor tamaño. Etiquetar claramente objeto, imagen, lente, F y F'." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{lupa_convergente.png}
+    }}
+    \caption{Trazado de rayos que justifica la formación de la imagen observada.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Formación de imágenes en lentes delgadas}
+Las características de una imagen formada por una lente dependen del tipo de lente (convergente o divergente) y de la posición del objeto respecto al foco.
+\begin{itemize}
+    \item \textbf{Lentes convergentes:} Pueden formar imágenes reales e invertidas (si el objeto está más allá del foco) o imágenes virtuales, derechas y de mayor tamaño (si el objeto está entre el foco y la lente).
+    \item \textbf{Lentes divergentes:} Siempre forman imágenes virtuales, derechas y de menor tamaño, sin importar la posición del objeto.
+\end{itemize}
+La combinación de características observada en la figura (virtual, derecha y de mayor tamaño) es exclusiva de una \textbf{lente convergente} funcionando como lupa.
+
+\paragraph*{Trazado de rayos}
+La construcción gráfica de la imagen se realiza siguiendo la trayectoria de al menos dos de los tres rayos principales que parten de la punta del objeto:
+\begin{enumerate}
+    \item El rayo que incide paralelo al eje óptico se refracta pasando por el foco imagen (F').
+    \item El rayo que pasa por el centro óptico no sufre desviación.
+    \item El rayo que pasa por el foco objeto (F) se refracta emergiendo paralelo al eje óptico.
+\end{enumerate}
+La imagen se forma en el punto donde se cruzan los rayos refractados (imagen real) o sus prolongaciones (imagen virtual).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El problema es enteramente cualitativo y no requiere desarrollo algebraico.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No se requieren cálculos numéricos. Los resultados se exponen a continuación.
+\begin{cajaresultado}
+    Las características de la imagen son: \textbf{virtual}, \textbf{derecha} y de \textbf{mayor tamaño} que el objeto.
+\end{cajaresultado}
+\begin{cajaresultado}
+    El tipo de lente que produce esta imagen es una \textbf{lente convergente}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La imagen observada es virtual, derecha y ampliada. Esta combinación de características solo puede ser producida por una lente convergente cuando el objeto se sitúa entre el foco objeto y el centro óptico de la lente. El trazado de rayos confirma que, en esta configuración, los rayos refractados divergen y son sus prolongaciones las que forman la imagen con las propiedades observadas, justificando así el efecto de lupa.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Problema 3}
+\label{subsec:P3_2021_jun_ord}
+
+\begin{cajaenunciado}
+Un objeto se sitúa 10 cm a la izquierda de una lente de -5 dioptrías.
+\begin{enumerate}
+    \item[a)] Calcula la posición de la imagen. Dibuja un trazado de rayos, con la posición del objeto, la lente, los puntos focales y la imagen. Explica el tipo de imagen que se forma. (1 punto)
+    \item[b)] ¿Qué distancia y hacia dónde habría que mover el objeto para que la imagen tenga 1/3 del tamaño del objeto y a derechas? (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Potencia de la lente ($P$):} $P = -5$ dioptrías. El signo negativo indica que es una lente divergente.
+    \item \textbf{Posición inicial del objeto ($s_1$):} 10 cm a la izquierda. Según el convenio de signos, $s_1 = -10 \, \text{cm} = -0,1 \, \text{m}$.
+    \item \textbf{Condición apartado (b):} Aumento $M_2 = +1/3$. El signo positivo indica que la imagen es derecha.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Posición de la imagen inicial ($s'_1$) y sus características.
+        \item[b)] Nueva posición del objeto ($s_2$) y distancia a moverlo.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Trazado de Rayos para Lente Divergente} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un eje óptico horizontal. En el centro, dibujar una lente divergente (símbolo de doble flecha cóncava). Marcar el foco objeto F a la derecha y el foco imagen F' a la izquierda, a una distancia de 20 cm de la lente. Colocar un objeto (flecha vertical) en s=-10 cm (entre F' y la lente). Realizar el trazado de dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje óptico que se refracta de tal forma que su prolongación hacia atrás pasa por el foco imagen F'. 2) Un rayo que pasa por el centro óptico y no se desvía. Mostrar que los rayos refractados divergen. Su intersección (del rayo 2 con la prolongación del rayo 1) forma una imagen virtual, derecha y de menor tamaño a la izquierda de la lente. Etiquetar objeto, imagen, lente, F, F', s y s'." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{lente_divergente.png}
+    }}
+    \caption{Trazado de rayos para la situación del apartado (a).}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Ecuación de las Lentes Delgadas}
+La relación entre la posición del objeto ($s$), la posición de la imagen ($s'$) y la distancia focal ($f$) de una lente delgada viene dada por la ecuación de Gauss:
+$$ \frac{1}{s'} - \frac{1}{s} = \frac{1}{f} $$
+La distancia focal se relaciona con la potencia de la lente ($P$) mediante $f = 1/P$.
+
+\paragraph*{Aumento Lateral}
+El aumento lateral ($M$) es la relación entre el tamaño de la imagen ($y'$) y el del objeto ($y$). También se relaciona con las posiciones:
+$$ M = \frac{y'}{y} = \frac{s'}{s} $$
+Una imagen es derecha si $M>0$ e invertida si $M<0$. Es virtual si $s'<0$ y real si $s'>0$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Posición y características de la imagen}
+Primero, calculamos la distancia focal:
+\begin{gather}
+    f = \frac{1}{P}
+\end{gather}
+Luego, despejamos la posición de la imagen $s'_1$ de la ecuación de las lentes:
+\begin{gather}
+    \frac{1}{s'_1} = \frac{1}{f} + \frac{1}{s_1} \implies s'_1 = \left( \frac{1}{f} + \frac{1}{s_1} \right)^{-1} = \frac{f \cdot s_1}{f + s_1}
+\end{gather}
+El aumento $M_1$ se calcula como $M_1 = s'_1 / s_1$.
+
+\paragraph*{b) Nueva posición del objeto}
+Se impone la condición $M_2 = s'_2 / s_2 = +1/3$, de donde $s'_2 = s_2/3$. Sustituimos esta relación en la ecuación de las lentes para la nueva posición $s_2$:
+\begin{gather}
+    \frac{1}{s'_2} - \frac{1}{s_2} = \frac{1}{f} \implies \frac{1}{s_2/3} - \frac{1}{s_2} = \frac{1}{f} \nonumber \\
+    \frac{3}{s_2} - \frac{1}{s_2} = \frac{1}{f} \implies \frac{2}{s_2} = \frac{1}{f} \implies s_2 = 2f
+\end{gather}
+La distancia a mover el objeto será la diferencia entre las posiciones final e inicial: $\Delta s = |s_2 - s_1|$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Posición y características de la imagen}
+\begin{gather}
+    f = \frac{1}{-5 \, \text{dpt}} = -0,2 \, \text{m} = -20 \, \text{cm} \\
+    \frac{1}{s'_1} = \frac{1}{-20 \, \text{cm}} + \frac{1}{-10 \, \text{cm}} = -\frac{1}{20} - \frac{2}{20} = -\frac{3}{20} \, \text{cm}^{-1} \implies s'_1 = -\frac{20}{3} \approx -6,67 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    La posición de la imagen es \boldsymbol{$s'_1 \approx -6,67 \, \textbf{cm}$}, es decir, 6,67 cm a la izquierda de la lente.
+\end{cajaresultado}
+Calculamos el aumento para determinar las características:
+$M_1 = \frac{s'_1}{s_1} = \frac{-6,67}{-10} = +0,667$.
+\begin{itemize}
+    \item $s'_1 < 0 \implies$ Imagen \textbf{virtual}.
+    \item $M_1 > 0 \implies$ Imagen \textbf{derecha}.
+    \item $|M_1| < 1 \implies$ Imagen de \textbf{menor tamaño}.
+\end{itemize}
+
+\paragraph*{b) Nueva posición del objeto y desplazamiento}
+\begin{gather}
+    s_2 = 2f = 2 \cdot (-20 \, \text{cm}) = -40 \, \text{cm}
+\end{gather}
+El objeto debe situarse a 40 cm a la izquierda de la lente.
+La distancia que hay que moverlo es:
+\begin{gather}
+    \Delta s = |s_2 - s_1| = |-40 \, \text{cm} - (-10 \, \text{cm})| = |-30 \, \text{cm}| = 30 \, \text{cm}
+\end{gather}
+Como la posición pasa de -10 cm a -40 cm, el movimiento es hacia la izquierda.
+\begin{cajaresultado}
+    Habría que mover el objeto \textbf{30 cm hacia la izquierda}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La lente de -5 dioptrías es divergente con una focal de -20 cm. Al situar el objeto a 10 cm, se forma una imagen virtual, derecha y reducida a 6,67 cm de la lente. Para que la imagen sea derecha y tenga un tercio del tamaño del objeto, este debe ser alejado de la lente hasta una nueva posición de 40 cm a la izquierda, lo que supone un desplazamiento de 30 cm hacia la izquierda respecto a su posición original.
+\end{cajaconclusion}
+
+\newpage
+% ----------------------------------------------------------------------
+\section{Bloque IV: Física S.XX}
+\label{sec:grav_2020_sep_ext}
+% ----------------------------------------------------------------------
+
+\newpage
+\subsection{Cuestión 7}
+\label{subsec:C7_2021_jun_ord}
+
+\begin{cajaenunciado}
+Completa, razonando la resolución, los números atómico y másico del núcleo X y del núcleo Ac en la serie radiactiva indicada. Identifica X. ¿Cómo se llama el tipo de desintegración que da lugar a este núcleo? ¿Cómo se llama el tipo de desintegración que da lugar a la partícula $_{-1}^{0}e$?
+$$ {}_{90}^{232}\text{Th} \rightarrow {}_{88}^{228}\text{Ra} + {}_{\text{Z}}^{\text{A}}\text{X} $$
+$$ {}_{88}^{228}\text{Ra} \rightarrow {}_{\text{Z}'}^{\text{A}'}\text{Ac} + {}_{-1}^{0}e $$
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Primera desintegración:} Torio-232 ($_{90}^{232}\text{Th}$) decae a Radio-228 ($_{88}^{228}\text{Ra}$) emitiendo una partícula X.
+    \item \textbf{Segunda desintegración:} Radio-228 ($_{88}^{228}\text{Ra}$) decae a un isótopo de Actinio (Ac, Z=89) emitiendo un electrón ($_{-1}^{0}e$).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Números másico (A) y atómico (Z) de la partícula X.
+        \item Identidad de X y nombre de la primera desintegración.
+        \item Números másico (A') y atómico (Z') del núcleo de Ac.
+        \item Nombre de la segunda desintegración.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Decaimiento Alfa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un núcleo grande (por ejemplo, con 90 protones y 142 neutrones) etiquetado como $^{232}$Th. Mostrar una pequeña agrupación de 2 protones y 2 neutrones (partícula alfa) siendo emitida desde el núcleo. El núcleo resultante, más pequeño, se etiqueta como $^{228}$Ra." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{deca_alfa.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Decaimiento Beta} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un núcleo etiquetado como $^{228}$Ra. Dentro del núcleo, mostrar un neutrón transformándose en un protón y un electrón. Mostrar el electrón ($e^-$) siendo emitido del núcleo a alta velocidad. El núcleo resultante, etiquetado como $^{228}$Ac, tiene un protón más y un neutrón menos que el original." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{deca_beta.png}
+    }}
+    \caption{Representación esquemática de los decaimientos alfa y beta.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Leyes de Conservación en Desintegraciones Nucleares (Leyes de Soddy-Fajans)}
+En cualquier reacción nuclear, se deben conservar dos cantidades fundamentales:
+\begin{enumerate}
+    \item \textbf{El número másico (A):} La suma de los números másicos de los reactivos debe ser igual a la suma de los números másicos de los productos.
+    \item \textbf{El número atómico (Z) o carga eléctrica:} La suma de los números atómicos de los reactivos debe ser igual a la suma de los números atómicos de los productos.
+\end{enumerate}
+\paragraph*{Tipos de Desintegración}
+\begin{itemize}
+    \item \textbf{Desintegración Alfa ($\alpha$):} Emisión de un núcleo de Helio ($_{2}^{4}\text{He}$). El núcleo hijo tiene A-4 y Z-2.
+    \item \textbf{Desintegración Beta ($\beta^-$):} Emisión de un electrón ($_{-1}^{0}e$). Un neutrón del núcleo se convierte en un protón. El núcleo hijo tiene el mismo A y Z+1.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Primera Desintegración}
+$$ {}_{90}^{232}\text{Th} \rightarrow {}_{88}^{228}\text{Ra} + {}_{\text{Z}}^{\text{A}}\text{X} $$
+\begin{itemize}
+    \item Conservación del número másico A: $232 = 228 + A$
+    \item Conservación del número atómico Z: $90 = 88 + Z$
+\end{itemize}
+\paragraph*{Segunda Desintegración}
+$$ {}_{88}^{228}\text{Ra} \rightarrow {}_{\text{Z}'}^{\text{A}'}\text{Ac} + {}_{-1}^{0}e $$
+\begin{itemize}
+    \item Conservación del número másico A': $228 = A' + 0$
+    \item Conservación del número atómico Z': $88 = Z' + (-1)$
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Primera Desintegración}
+\begin{gather}
+    A = 232 - 228 = 4 \\
+    Z = 90 - 88 = 2
+\end{gather}
+La partícula X es ${}_{2}^{4}\text{X}$. Un núcleo con Z=2 y A=4 es un núcleo de Helio, también conocido como partícula Alfa.
+\begin{cajaresultado}
+    La partícula X es \boldsymbol{${}_{2}^{4}\text{He}$} (partícula Alfa). La desintegración es una \textbf{desintegración Alfa}.
+\end{cajaresultado}
+
+\paragraph*{Segunda Desintegración}
+\begin{gather}
+    A' = 228 \\
+    Z' = 88 - (-1) = 89
+\end{gather}
+El núcleo resultante es ${}_{89}^{228}\text{Ac}$. La emisión de un electrón ($_{-1}^{0}e$) se denomina desintegración Beta.
+\begin{cajaresultado}
+    El núcleo de Actinio es \boldsymbol{${}_{89}^{228}\text{Ac}$}. La desintegración es una \textbf{desintegración Beta} (concretamente, $\beta^-$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando las leyes de conservación del número másico y atómico, se determina que la partícula X emitida en la primera reacción es una partícula alfa (${}_{2}^{4}\text{He}$), por lo que el proceso es una desintegración alfa. En la segunda reacción, el Radio-228 emite una partícula beta ($_{-1}^{0}e$) para convertirse en Actinio-228 (${}_{89}^{228}\text{Ac}$), en un proceso de desintegración beta.
+\end{cajaconclusion}
+
+\subsection{Problema 4}
+\label{subsec:P4_2021_jun_ord}
+
+\begin{cajaenunciado}
+\begin{enumerate}
+    \item[a)] Define periodo de semidesintegración. A la vista de la figura, calcula el periodo de semidesintegración del ${}^{56}\text{Ni}$ y razona si es mayor o menor que el del ${}^{131}\text{Cs}$. ¿Qué tiempo debe pasar para que el número de núcleos de ${}^{131}\text{Cs}$ disminuya un 75\%? (1 punto)
+    \item[b)] Si la masa inicial de ${}^{56}\text{Ni}$ es de $10^{-3}\,\text{pg}$, determina el número de núcleos que quedan sin desintegrar a los 15 días. (1 punto)
+\end{enumerate}
+\textbf{Dato:} masa de un núcleo de ${}^{56}\text{Ni}: 93 \cdot 10^{-24}\,\text{g}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Datos del gráfico:}
+    \begin{itemize}
+        \item ${}^{56}\text{Ni}$ (línea discontinua): Actividad inicial $A_{0,Ni} \approx 40$ Bq.
+        \item ${}^{131}\text{Cs}$ (línea continua): Actividad inicial $A_{0,Cs} = 60$ Bq.
+    \end{itemize}
+    \item \textbf{Masa inicial de Níquel-56 ($m_0$):} $m_0 = 10^{-3} \, \text{pg} = 10^{-3} \cdot 10^{-12} \, \text{g} = 10^{-15} \, \text{g}$.
+    \item \textbf{Masa de un núcleo de Níquel-56 ($m_{nuc}$):} $m_{nuc} = 93 \cdot 10^{-24} \, \text{g}$.
+    \item \textbf{Tiempo para apartado (b):} $t = 15$ días.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Definición de $T_{1/2}$. $T_{1/2}$ para Ni y Cs. Comparación. Tiempo para que N de Cs sea el 25\%.
+        \item[b)] Número de núcleos de Ni restantes a los 15 días ($N(15)$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La resolución se basa en la interpretación del gráfico proporcionado en el enunciado, por lo que no se requiere una nueva representación. Se analizarán los puntos clave de dicha gráfica.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Periodo de Semidesintegración ($T_{1/2}$)}
+Es una constante característica de cada isótopo radiactivo. Se define como el tiempo necesario para que se desintegre la mitad de los núcleos radiactivos presentes en una muestra inicial. De forma equivalente, es el tiempo que tarda la actividad de la muestra en reducirse a la mitad de su valor inicial.
+
+\paragraph*{b) Ley de Desintegración Radiactiva}
+El número de núcleos $N$ que quedan sin desintegrar en un instante $t$ sigue una ley exponencial:
+$$ N(t) = N_0 e^{-\lambda t} $$
+donde $N_0$ es el número de núcleos iniciales y $\lambda$ es la constante de desintegración. La constante $\lambda$ y el periodo de semidesintegración $T_{1/2}$ están relacionados por $\lambda = \frac{\ln 2}{T_{1/2}}$. Sustituyendo, la ley de decaimiento se puede expresar como:
+$$ N(t) = N_0 \left(\frac{1}{2}\right)^{t/T_{1/2}} = N_0 \cdot 2^{-t/T_{1/2}} $$
+Esta misma ley se aplica a la masa ($m(t) = m_0 \cdot 2^{-t/T_{1/2}}$) y a la actividad ($A(t) = A_0 \cdot 2^{-t/T_{1/2}}$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Cálculo de $T_{1/2}$ y tiempo de decaimiento del 75\%}
+Para encontrar $T_{1/2}$ en la gráfica, se busca el tiempo $t$ para el cual la actividad es $A(t) = A_0/2$.
+Para que el número de núcleos disminuya un 75\%, el número de núcleos restantes es el 25\% del inicial, es decir, $N(t) = 0,25 N_0 = N_0/4$.
+\begin{gather}
+    \frac{N_0}{4} = N_0 \left(\frac{1}{2}\right)^{t/T_{1/2, Cs}} \implies \left(\frac{1}{2}\right)^2 = \left(\frac{1}{2}\right)^{t/T_{1/2, Cs}} \implies 2 = \frac{t}{T_{1/2, Cs}} \implies t = 2 \cdot T_{1/2, Cs}
+\end{gather}
+
+\paragraph*{b) Número de núcleos de Ni restantes}
+El número de núcleos en un tiempo $t$ es $N(t) = \frac{m(t)}{m_{nuc}}$. La masa en el tiempo $t$ es $m(t) = m_0 \cdot 2^{-t/T_{1/2, Ni}}$.
+Combinando ambas:
+\begin{gather}
+    N(t) = \frac{m_0 \cdot 2^{-t/T_{1/2, Ni}}}{m_{nuc}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Periodos de semidesintegración y tiempo de decaimiento}
+\begin{itemize}
+    \item \textbf{Níquel-56:} $A_{0,Ni} \approx 40$ Bq. La mitad, 20 Bq, se alcanza en $t=6$ días. Por tanto, \boldsymbol{$T_{1/2, Ni} \approx 6$ días}.
+    \item \textbf{Cesio-131:} $A_{0,Cs} = 60$ Bq. La mitad, 30 Bq, se alcanza en $t=10$ días. Por tanto, \boldsymbol{$T_{1/2, Cs} = 10$ días}.
+\end{itemize}
+Comparando ambos, $6 < 10$, por lo que el periodo de semidesintegración del Ni es \textbf{menor} que el del Cs.
+Tiempo para que el Cs disminuya un 75\%:
+\begin{gather}
+    t = 2 \cdot T_{1/2, Cs} = 2 \cdot 10 \, \text{días} = 20 \, \text{días}
+\end{gather}
+\begin{cajaresultado}
+    $T_{1/2, Ni} \approx 6$ días; $T_{1/2, Cs} = 10$ días. El del Ni es menor. El Cs tarda \textbf{20 días} en disminuir su número de núcleos un 75\%.
+\end{cajaresultado}
+
+\paragraph*{b) Número de núcleos de Ni a los 15 días}
+Usamos $t=15$ días y $T_{1/2, Ni}=6$ días.
+\begin{gather}
+    N(15) = \frac{10^{-15} \, \text{g} \cdot 2^{-15/6}}{93 \cdot 10^{-24} \, \text{g}} = \frac{10^{-15} \cdot 2^{-2,5}}{93 \cdot 10^{-24}} \approx \frac{10^{-15} \cdot 0,1768}{93 \cdot 10^{-24}} \approx \frac{1,768 \cdot 10^{-16}}{93 \cdot 10^{-24}} \approx 1,90 \cdot 10^6 \text{ núcleos}
+\end{gather}
+\begin{cajaresultado}
+    El número de núcleos de ${}^{56}\text{Ni}$ que quedan a los 15 días es aproximadamente \boldsymbol{$1,90 \cdot 10^6$} núcleos.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El periodo de semidesintegración es el tiempo que tarda una muestra radiactiva en reducir su número de núcleos a la mitad. A partir de la gráfica, se obtiene que $T_{1/2, Ni} \approx 6$ días y $T_{1/2, Cs} = 10$ días. Para que el número de núcleos de Cs se reduzca en un 75\% (es decir, queden el 25\%), deben transcurrir dos periodos de semidesintegración, lo que equivale a 20 días. Partiendo de una masa inicial de $10^{-3}$ pg de Ni, tras 15 días (2,5 periodos) quedan sin desintegrar $1,90 \cdot 10^6$ núcleos.
+\end{cajaconclusion}
+
+\newpage

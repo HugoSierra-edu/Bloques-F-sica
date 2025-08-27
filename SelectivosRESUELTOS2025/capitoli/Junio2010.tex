@@ -1,0 +1,832 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2010 - Convocatoria Ordinaria}
+\label{chap:2010_jun_ord}
+
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2010_jun_ord}
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:1A_2010_jun_ord}
+\begin{cajaenunciado}
+Un planeta gira alrededor del sol con una trayectoria elíptica. Razona en qué punto de dicha trayectoria la velocidad del planeta es máxima.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica sobre el movimiento orbital.
+\begin{itemize}
+    \item \textbf{Sistema:} Un planeta orbitando alrededor del Sol.
+    \item \textbf{Trayectoria:} Elíptica.
+    \item \textbf{Incógnita:} Punto de la órbita donde la velocidad del planeta es máxima.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Órbita Elíptica y Conservación del Momento Angular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar una elipse horizontal. Colocar el Sol en el foco izquierdo de la elipse. Dibujar un planeta en dos posiciones: en el perihelio (punto más cercano al Sol) y en el afelio (punto más lejano). En cada posición, dibujar el vector de posición $\vec{r}$ desde el Sol hasta el planeta y el vector velocidad $\vec{v}$, tangente a la trayectoria. El vector velocidad en el perihelio, $\vec{v}_P$, debe ser visiblemente más largo que el vector velocidad en el afelio, $\vec{v}_A$. Etiquetar claramente Perihelio y Afelio."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_eliptica_velocidad.png}
+    }}
+    \caption{Velocidad del planeta en el perihelio y el afelio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El razonamiento se basa en el \textbf{Principio de Conservación del Momento Angular}. La fuerza de atracción gravitatoria que ejerce el Sol sobre el planeta es una fuerza central, es decir, su dirección siempre pasa por el centro del Sol (el centro de fuerzas).
+$$ \vec{F}_g = -G\frac{M_S m_p}{r^2}\vec{u}_r $$
+El momento de esta fuerza ($\vec{\tau}$) respecto al Sol es nulo, ya que el vector de posición $\vec{r}$ y el vector de fuerza $\vec{F}_g$ son paralelos:
+$$ \vec{\tau} = \vec{r} \times \vec{F}_g = \vec{0} $$
+Como el momento de la fuerza es la derivada temporal del momento angular ($\vec{L}$), si $\vec{\tau}=0$, entonces el momento angular del planeta respecto al Sol permanece constante durante toda la órbita.
+$$ \vec{\tau} = \frac{d\vec{L}}{dt} = 0 \implies \vec{L} = \text{constante} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El momento angular se define como $\vec{L} = \vec{r} \times \vec{p} = \vec{r} \times (m\vec{v})$. Su módulo es:
+\begin{gather}
+    L = |\vec{r} \times m\vec{v}| = r \cdot mv \cdot \sin(\theta)
+\end{gather}
+donde $\theta$ es el ángulo entre el vector de posición $\vec{r}$ y el vector velocidad $\vec{v}$. En los dos puntos más significativos de la elipse, el perihelio (distancia mínima, $r_P$) y el afelio (distancia máxima, $r_A$), el vector de posición y el de velocidad son perpendiculares ($\theta=90^\circ$, $\sin(\theta)=1$).
+Por la conservación del momento angular, su módulo debe ser el mismo en cualquier punto, por ejemplo, en el perihelio y en el afelio:
+\begin{gather}
+    L_P = L_A \implies r_P \cdot m \cdot v_P = r_A \cdot m \cdot v_A \implies r_P v_P = r_A v_A
+\end{gather}
+De esta relación podemos despejar la velocidad en un punto en función de otro:
+\begin{gather}
+    v_P = v_A \frac{r_A}{r_P}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No se requiere un cálculo numérico, sino un razonamiento. De la ecuación $v = L/(rm)$, como $L$ y $m$ son constantes, la velocidad $v$ es inversamente proporcional a la distancia $r$ al Sol.
+$$ v \propto \frac{1}{r} $$
+Por lo tanto, la velocidad será máxima cuando la distancia sea mínima. El punto de la trayectoria elíptica más cercano al Sol se denomina \textbf{perihelio}.
+
+\begin{cajaresultado}
+La velocidad del planeta es máxima en el \textbf{perihelio}, que es el punto de la órbita más cercano al Sol.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido a que la fuerza gravitatoria es una fuerza central, el momento angular del planeta se conserva. Esto implica que el producto de su distancia al Sol por su velocidad es constante en los puntos más cercano y más lejano de la órbita. En consecuencia, para compensar la disminución de la distancia en el perihelio, la velocidad del planeta debe aumentar hasta alcanzar su valor máximo. Este hecho es también la base de la Segunda Ley de Kepler.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:1B_2010_jun_ord}
+\begin{cajaenunciado}
+Un objeto de masa $m_1$ se encuentra situado en el origen de coordenadas, mientras que un segundo objeto de masa $m_2$ se encuentra en un punto de coordenadas (8, 0) m. Considerando únicamente la interacción gravitatoria y suponiendo que son masas puntuales, calcula:
+\begin{enumerate}
+    \item[a)] La relación entre las masas $m_1/m_2$ si el campo gravitatorio en el punto (2, 0) m es nulo (1,2 puntos).
+    \item[b)] El módulo, dirección y sentido del momento angular de la masa $m_2$ con respecto al origen de coordenadas si $m_2 = 200$ kg y su velocidad es $(0, 100)$ m/s (0,8 puntos).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa 1 ($m_1$):} En el origen, P1(0, 0).
+    \item \textbf{Masa 2 ($m_2$):} En P2(8, 0) m.
+    \item \textbf{Apartado a):}
+    \begin{itemize}
+        \item \textbf{Punto de campo nulo (P):} P(2, 0) m.
+        \item \textbf{Condición:} $\vec{g}_{total}(P) = \vec{0}$.
+        \item \textbf{Incógnita:} Relación $m_1/m_2$.
+    \end{itemize}
+    \item \textbf{Apartado b):}
+    \begin{itemize}
+        \item \textbf{Masa 2:} $m_2 = 200$ kg.
+        \item \textbf{Velocidad de $m_2$:} $\vec{v}_2 = (0, 100)$ m/s $= 100\vec{j}$ m/s.
+        \item \textbf{Posición de $m_2$:} $\vec{r}_2 = (8, 0)$ m $= 8\vec{i}$ m.
+        \item \textbf{Incógnita:} Momento angular de $m_2$ respecto al origen, $\vec{L}_2$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{a) Campo Gravitatorio Nulo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje X horizontal. Colocar una masa $m_1$ en x=0 y una masa $m_2$ en x=8. Marcar el punto P en x=2. En P, dibujar el vector campo $\vec{g}_1$ (creado por $m_1$), que es atractivo y apunta hacia la izquierda. Dibujar el vector campo $\vec{g}_2$ (creado por $m_2$), que es atractivo y apunta hacia la derecha. Para que el campo total sea nulo, ambos vectores deben tener la misma longitud."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_grav_nulo.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{b) Momento Angular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Mostrar la masa $m_2$ en la posición (8,0). Dibujar su vector de posición $\vec{r}_2$ desde el origen hasta (8,0). Dibujar su vector velocidad $\vec{v}_2$ como una flecha vertical hacia arriba. Indicar que el momento angular $\vec{L}_2 = \vec{r}_2 \times m_2\vec{v}_2$ es un vector perpendicular al plano XY, y por la regla de la mano derecha, apunta hacia fuera del papel (eje +Z)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{momento_angular_masa.png}
+    }}
+    \caption{Esquemas para los apartados a) y b).}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Campo Gravitatorio}
+Se utiliza el \textbf{Principio de Superposición}. El campo total en el punto P es la suma vectorial de los campos creados por cada masa: $\vec{g}_{total} = \vec{g}_1 + \vec{g}_2$. Para que el campo sea nulo, se debe cumplir que $\vec{g}_1 = -\vec{g}_2$. Esto implica que los campos deben tener el mismo módulo y sentidos opuestos. El campo creado por una masa M a una distancia r es $g = G M/r^2$.
+
+\paragraph{b) Momento Angular}
+El momento angular $\vec{L}$ de una partícula de masa $m$ con velocidad $\vec{v}$ y vector de posición $\vec{r}$ respecto a un punto (el origen) se define como el producto vectorial:
+$$ \vec{L} = \vec{r} \times \vec{p} = \vec{r} \times (m\vec{v}) $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Relación de masas}
+Los vectores $\vec{g}_1$ y $\vec{g}_2$ en el punto P(2,0) ya tienen sentidos opuestos, como se ve en la figura. Por lo tanto, para que se anulen, sus módulos deben ser iguales: $|\vec{g}_1| = |\vec{g}_2|$.
+\begin{gather}
+    G\frac{m_1}{r_1^2} = G\frac{m_2}{r_2^2}
+\end{gather}
+donde $r_1$ es la distancia de $m_1$ a P ($r_1 = 2-0 = 2$ m) y $r_2$ es la distancia de $m_2$ a P ($r_2 = 8-2 = 6$ m).
+\begin{gather}
+    \frac{m_1}{r_1^2} = \frac{m_2}{r_2^2} \implies \frac{m_1}{m_2} = \frac{r_1^2}{r_2^2} = \left(\frac{r_1}{r_2}\right)^2
+\end{gather}
+
+\paragraph{b) Momento Angular}
+Calculamos el producto vectorial usando las componentes de los vectores $\vec{r}_2 = 8\vec{i}$ y $\vec{v}_2 = 100\vec{j}$:
+\begin{gather}
+    \vec{L}_2 = m_2 (\vec{r}_2 \times \vec{v}_2) = m_2 ((8\vec{i}) \times (100\vec{j}))
+\end{gather}
+El cálculo también se puede hacer con un determinante:
+\begin{gather}
+    \vec{L}_2 = m_2 \begin{vmatrix}
+    \vec{i} & \vec{j} & \vec{k} \\
+    8 & 0 & 0 \\
+    0 & 100 & 0
+    \end{vmatrix}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Relación de masas}
+\begin{gather}
+    \frac{m_1}{m_2} = \left(\frac{2\,\text{m}}{6\,\text{m}}\right)^2 = \left(\frac{1}{3}\right)^2 = \frac{1}{9}
+\end{gather}
+\begin{cajaresultado}
+La relación entre las masas es $\boldsymbol{m_1/m_2 = 1/9}$.
+\end{cajaresultado}
+
+\paragraph{b) Momento Angular}
+\begin{gather}
+    \vec{L}_2 = 200 \cdot (8 \cdot 100 (\vec{i} \times \vec{j})) = 200 \cdot (800 \vec{k}) = 160000 \vec{k} \, \text{kg}\cdot\text{m}^2/\text{s}
+\end{gather}
+\begin{cajaresultado}
+El momento angular es $\boldsymbol{\vec{L}_2 = 160000\vec{k} \, \textbf{kg}\cdot\textbf{m}^2/\textbf{s}}$. Su módulo es $160000$ unidades SI, su dirección es el eje Z y su sentido es positivo.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) La condición de campo nulo en un punto intermedio entre dos masas permite establecer una relación directa entre sus masas y las distancias al punto, determinándose que $m_1$ debe ser la novena parte de $m_2$.
+b) El momento angular, al ser un producto vectorial, resulta en un vector perpendicular al plano del movimiento. Para la masa $m_2$ moviéndose en el plano XY, su momento angular respecto al origen es un vector a lo largo del eje Z.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque II: Movimiento Armónico Simple}
+\label{sec:mas_2010_jun_ord}
+
+\subsection{Problema 2 - OPCIÓN A}
+\label{subsec:2A_2010_jun_ord}
+\begin{cajaenunciado}
+Un cuerpo realiza un movimiento armónico simple. La amplitud del movimiento es $A=2$ cm, el periodo $T=200$ ms y la elongación en el instante inicial es $y(0)=+1$ cm.
+\begin{enumerate}
+    \item[a)] Escribe la ecuación de la elongación del movimiento en cualquier instante $y(t)$. (1 punto)
+    \item[b)] Representa gráficamente dicha elongación en función del tiempo. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Convertimos todos los datos al Sistema Internacional (SI):
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 2\,\text{cm} = 0,02\,\text{m}$.
+    \item \textbf{Periodo ($T$):} $T = 200\,\text{ms} = 0,2\,\text{s}$.
+    \item \textbf{Condición inicial:} $y(t=0) = +1\,\text{cm} = +0,01\,\text{m}$.
+    \item \textbf{Incógnitas:} Ecuación de la elongación $y(t)$ y su representación gráfica.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La representación gráfica es uno de los objetivos del problema (apartado b). El prompt se centrará en el resultado final.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{b) Gráfica de la Elongación $y(t)$} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un gráfico con el tiempo 't' (en segundos) en el eje horizontal y la elongación 'y' (en cm) en el eje vertical. Dibujar una onda cosenoidal. La onda debe oscilar entre y=+2 cm y y=-2 cm. El valor en t=0 debe ser y=+1 cm. Un ciclo completo debe tardar T=0.2 s. Marcar los puntos clave: El primer máximo (y=+2) debe ocurrir en t=T/6 \approx 0.033 s. El primer cruce por cero (y=0) en t=T/3 \approx 0.067 s. El primer mínimo (y=-2) en t=2T/3 \approx 0.133 s. El segundo cruce por cero en t=5T/6 \approx 0.167 s. El ciclo termina en t=T=0.2 s, donde y=+1 cm de nuevo. Etiquetar claramente los ejes, la amplitud y el periodo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafica_mas.png}
+    }}
+    \caption{Representación gráfica de la elongación en función del tiempo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación general de un Movimiento Armónico Simple (M.A.S.) es:
+$$ y(t) = A \cos(\omega t + \phi_0) $$
+(Se puede usar seno, pero coseno es habitual). Necesitamos determinar los parámetros $A$, $\omega$ y $\phi_0$.
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} Se da en el enunciado.
+    \item \textbf{Frecuencia angular ($\omega$):} Se relaciona con el periodo $T$ mediante $\omega = 2\pi/T$.
+    \item \textbf{Fase inicial ($\phi_0$):} Se calcula a partir de la condición inicial $y(0)$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Ecuación de la elongación}
+Primero, calculamos la frecuencia angular:
+\begin{gather}
+    \omega = \frac{2\pi}{T}
+\end{gather}
+Luego, usamos la condición inicial para encontrar la fase inicial $\phi_0$:
+\begin{gather}
+    y(0) = A \cos(\omega \cdot 0 + \phi_0) = A \cos(\phi_0) \nonumber \\
+    \cos(\phi_0) = \frac{y(0)}{A} \implies \phi_0 = \arccos\left(\frac{y(0)}{A}\right)
+\end{gather}
+La función arccos da valores entre $0$ y $\pi$. Para determinar el signo correcto, se necesitaría información sobre la velocidad inicial. Si no se da, se toma la solución principal por convenio.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Ecuación de la elongación}
+Calculamos $\omega$:
+\begin{gather}
+    \omega = \frac{2\pi}{0,2\,\text{s}} = 10\pi \, \text{rad/s}
+\end{gather}
+Calculamos $\phi_0$:
+\begin{gather}
+    \cos(\phi_0) = \frac{0,01\,\text{m}}{0,02\,\text{m}} = \frac{1}{2} \nonumber \\
+    \phi_0 = \arccos(1/2) = \pm \frac{\pi}{3} \, \text{rad}
+\end{gather}
+Como no se indica el signo de la velocidad inicial, podemos elegir cualquiera de las dos fases. Escogeremos $\phi_0 = -\pi/3$ rad, que corresponde a una velocidad inicial positiva (alejándose del origen). La ecuación final es:
+\begin{gather}
+    y(t) = 0,02 \cos(10\pi t - \pi/3)
+\end{gather}
+\begin{cajaresultado}
+La ecuación de la elongación en unidades del SI es $\boldsymbol{y(t) = 0,02 \cos(10\pi t - \pi/3)}$.
+\end{cajaresultado}
+
+\paragraph{b) Representación Gráfica}
+La gráfica corresponde a la función coseno obtenida, con $A=0,02$ m (o 2 cm), $T=0,2$ s y un desfase que hace que en $t=0$, $y=1$ cm. La gráfica se muestra en la `\subsubsection*{2. Representación Gráfica}`.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la amplitud, el periodo y la elongación inicial, se han determinado todos los parámetros de la ecuación del M.A.S. La frecuencia angular es de $10\pi$ rad/s y la fase inicial es de $-\pi/3$ rad. La gráfica de la elongación frente al tiempo muestra la oscilación cosenoidal del cuerpo, que se repite cada 0,2 segundos.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 2 - OPCIÓN B}
+\label{subsec:2B_2010_jun_ord}
+\begin{cajaenunciado}
+Una partícula realiza un movimiento armónico simple. Si la frecuencia se duplica, manteniendo la amplitud constante, ¿qué ocurre con el periodo, la velocidad máxima y la energía total? Justifica la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica sobre las relaciones entre las magnitudes de un M.A.S.
+\begin{itemize}
+    \item \textbf{Condición inicial:} La partícula tiene frecuencia $f$, amplitud $A$, periodo $T$, velocidad máxima $v_{max}$ y energía total $E_T$.
+    \item \textbf{Condición final:} La nueva frecuencia es $f' = 2f$. La amplitud se mantiene, $A' = A$.
+    \item \textbf{Incógnitas:} Cómo cambian el periodo ($T'$), la velocidad máxima ($v'_{max}$) y la energía total ($E'_T$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las magnitudes de un M.A.S. se definen como:
+\begin{itemize}
+    \item \textbf{Periodo ($T$):} Es el inverso de la frecuencia. $T = 1/f$.
+    \item \textbf{Velocidad máxima ($v_{max}$):} Se alcanza en el centro de la oscilación ($x=0$) y su valor es $v_{max} = A\omega = A(2\pi f)$.
+    \item \textbf{Energía total ($E_T$):} Se conserva y es igual a la energía cinética máxima o la energía potencial máxima. $E_T = \frac{1}{2}mv_{max}^2 = \frac{1}{2}m(A\omega)^2 = \frac{1}{2}m A^2 (2\pi f)^2 = 2\pi^2 m A^2 f^2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Se comparan las magnitudes en la situación final (con $f' = 2f$) con las de la situación inicial.
+\paragraph{Periodo}
+$$ T' = \frac{1}{f'} = \frac{1}{2f} = \frac{1}{2} T $$
+\paragraph{Velocidad máxima}
+$$ v'_{max} = A \omega' = A (2\pi f') = A (2\pi (2f)) = 2 (A \cdot 2\pi f) = 2 v_{max} $$
+\paragraph{Energía total}
+$$ E'_T = \frac{1}{2}m A^2 (\omega')^2 = \frac{1}{2}m A^2 (2\pi f')^2 = \frac{1}{2}m A^2 (2\pi \cdot 2f)^2 = 4 \left( \frac{1}{2}m A^2 (2\pi f)^2 \right) = 4 E_T $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No se requiere cálculo numérico.
+\begin{cajaresultado}
+Al duplicar la frecuencia manteniendo la amplitud constante:
+\begin{itemize}
+    \item El \textbf{periodo se reduce a la mitad} ($T' = T/2$).
+    \item La \textbf{velocidad máxima se duplica} ($v'_{max} = 2v_{max}$).
+    \item La \textbf{energía total se cuadruplica} ($E'_T = 4E_T$).
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las magnitudes que caracterizan un M.A.S. están fuertemente interrelacionadas a través de la frecuencia. Al duplicar la frecuencia, la partícula oscila el doble de rápido, por lo que su periodo se divide por dos. Para recorrer la misma amplitud en menos tiempo, su velocidad máxima debe duplicarse. Finalmente, como la energía total es proporcional al cuadrado de la velocidad máxima (o al cuadrado de la frecuencia), esta se cuadruplica.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque III: Óptica}
+\label{sec:optica_2010_jun_ord}
+
+\subsection{Cuestión 3 - OPCIÓN A}
+\label{subsec:3A_2010_jun_ord}
+\begin{cajaenunciado}
+Un rayo de luz se propaga por una fibra de cuarzo con velocidad de $2 \cdot 10^8$ m/s, como muestra la figura. Teniendo en cuenta que el medio que rodea a la fibra es aire, calcula el ángulo mínimo con el que el rayo debe incidir sobre la superficie de separación cuarzo-aire para que éste quede confinado en el interior de la fibra.
+\textbf{Datos:} índice de refracción del aire $n_{A}=1$; velocidad de la luz en el aire $c=3 \cdot 10^8$ m/s.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad de la luz en cuarzo ($v_{cuarzo}$):} $v_{cuarzo} = 2 \cdot 10^8$ m/s.
+    \item \textbf{Medio 1:} Cuarzo (índice $n_{cuarzo}$).
+    \item \textbf{Medio 2:} Aire (índice $n_{aire} = 1$).
+    \item \textbf{Velocidad de la luz en el vacío/aire ($c$):} $c = 3 \cdot 10^8$ m/s.
+    \item \textbf{Fenómeno:} Confinamiento de la luz en la fibra, lo que corresponde a la reflexión total interna.
+    \item \textbf{Incógnita:} Ángulo mínimo de incidencia para la reflexión total, que es el ángulo crítico o ángulo límite ($\theta_c$). La figura lo llama $\theta_m$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Reflexión Total Interna en Fibra Óptica} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de la interfaz entre dos medios: 'Cuarzo' abajo y 'Aire' arriba. Dibujar la línea normal, perpendicular a la interfaz. Mostrar un rayo de luz viajando desde el cuarzo que incide en la interfaz con el ángulo crítico, $\theta_c$. El rayo refractado debe viajar rasante a la superficie, formando un ángulo de refracción de 90 grados con la normal. Etiquetar claramente $n_{cuarzo}$, $n_{aire}$, $\theta_c$ y el ángulo de refracción de 90°."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{reflexion_total_fibra.png}
+    }}
+    \caption{Condición del ángulo crítico para la reflexión total.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El confinamiento de la luz dentro de la fibra óptica se logra mediante el fenómeno de la \textbf{reflexión total interna}. Para que esto ocurra, la luz debe incidir en la interfaz cuarzo-aire con un ángulo de incidencia (medido desde la normal) mayor o igual que el \textbf{ángulo crítico}, $\theta_c$.
+El ángulo crítico es aquel ángulo de incidencia para el cual el ángulo de refracción es de 90°. La relación entre los ángulos y los índices de refracción viene dada por la \textbf{Ley de Snell}:
+$$ n_1 \sin(\theta_1) = n_2 \sin(\theta_2) $$
+El índice de refracción de un medio, $n$, se define como $n = c/v$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Primero, calculamos el índice de refracción del cuarzo ($n_{cuarzo}$).
+\begin{gather}
+    n_{cuarzo} = \frac{c}{v_{cuarzo}}
+\end{gather}
+Luego, aplicamos la Ley de Snell para la condición del ángulo crítico ($\theta_1 = \theta_c$, $\theta_2 = 90^\circ$), donde el medio 1 es el cuarzo y el medio 2 es el aire.
+\begin{gather}
+    n_{cuarzo} \sin(\theta_c) = n_{aire} \sin(90^\circ)
+\end{gather}
+Como $\sin(90^\circ) = 1$, despejamos $\theta_c$:
+\begin{gather}
+    \sin(\theta_c) = \frac{n_{aire}}{n_{cuarzo}} \implies \theta_c = \arcsin\left(\frac{n_{aire}}{n_{cuarzo}}\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos el índice de refracción del cuarzo:
+\begin{gather}
+    n_{cuarzo} = \frac{3 \cdot 10^8 \, \text{m/s}}{2 \cdot 10^8 \, \text{m/s}} = 1,5
+\end{gather}
+Ahora calculamos el ángulo crítico $\theta_c$:
+\begin{gather}
+    \sin(\theta_c) = \frac{1}{1,5} = \frac{2}{3} \approx 0,667 \\
+    \theta_c = \arcsin(2/3) \approx 41,81^\circ
+\end{gather}
+\begin{cajaresultado}
+El ángulo mínimo de incidencia para que el rayo quede confinado es el ángulo crítico, $\boldsymbol{\theta_c \approx 41,81^\circ}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que la luz quede atrapada dentro de una fibra de cuarzo rodeada de aire, debe producirse el fenómeno de reflexión total interna. Esto requiere que el ángulo de incidencia en la pared interior sea mayor que el ángulo crítico. Calculando los índices de refracción y aplicando la ley de Snell, se determina que este ángulo crítico es de aproximadamente $41,81^\circ$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 3 - OPCIÓN B}
+\label{subsec:3B_2010_jun_ord}
+\begin{cajaenunciado}
+Un objeto de 1 cm de altura se sitúa entre el centro de curvatura y el foco de un espejo cóncavo. La imagen proyectada sobre una pantalla plana situada a 2 m del objeto es tres veces mayor que el objeto.
+\begin{enumerate}
+    \item[a)] Dibuja el trazado de rayos (0,6 puntos).
+    \item[b)] Calcula la distancia del objeto y de la imagen al espejo (0,6 puntos).
+    \item[c)] Calcula el radio del espejo y la distancia focal (0,8 puntos).
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de espejo:} Cóncavo.
+    \item \textbf{Tamaño del objeto ($y$):} $y = 1$ cm.
+    \item \textbf{Posición del objeto:} Entre el centro de curvatura (C) y el foco (F).
+    \item \textbf{Imagen:} Se proyecta sobre una pantalla, lo que significa que es una imagen \textbf{real}. Es tres veces mayor que el objeto. El trazado de rayos para un objeto entre C y F en un espejo cóncavo produce una imagen invertida.
+    \item \textbf{Aumento lateral ($A_L$):} $A_L = -3$ (negativo porque es invertida).
+    \item \textbf{Distancia entre objeto e imagen:} $d = |s' - s| = 2$ m $= 200$ cm.
+    \item \textbf{Incógnitas:} Distancias $s$ y $s'$, radio $R$ y distancia focal $f$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{a) Trazado de Rayos para Espejo Cóncavo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un eje óptico horizontal. A la derecha, un espejo cóncavo con su vértice V, foco F y centro de curvatura C a la izquierda. Colocar un objeto (flecha vertical) de altura 'y' entre C y F. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje óptico que se refleja pasando por F. 2) Un rayo que pasa por F y se refleja paralelo al eje. El punto donde se cruzan los rayos reflejados, a la izquierda de C, forma la punta de una imagen de altura 'y''. La imagen debe ser real, invertida y de mayor tamaño."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_concavo_problema.png}
+    }}
+    \caption{Formación de una imagen real, invertida y aumentada.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utilizan las ecuaciones de los espejos esféricos (convenio de signos DIN):
+\begin{itemize}
+    \item \textbf{Aumento Lateral:} $A_L = -s'/s$.
+    \item \textbf{Ecuación de Gauss:} $1/s' + 1/s = 1/f$.
+    \item \textbf{Relación focal-radio:} $f = R/2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{b) Distancias $s$ y $s'$}
+Tenemos un sistema de dos ecuaciones con dos incógnitas ($s$ y $s'$).
+\begin{gather}
+    A_L = -3 \implies -3 = -s'/s \implies s' = 3s \\
+    |s' - s| = 200
+\end{gather}
+Dado que el objeto es real ($s<0$) y la imagen es real ($s'<0$), y la imagen se forma más lejos que el objeto, la distancia es $|s'| - |s| = 200$, que se traduce en $-s' - (-s) = 200 \implies s - s' = 200$.
+Sustituimos la primera ecuación en la segunda:
+\begin{gather}
+    s - (3s) = 200 \implies -2s = 200 \implies s = -100 \, \text{cm}
+\end{gather}
+Y a partir de aquí, calculamos $s'$:
+\begin{gather}
+    s' = 3s = 3(-100) = -300 \, \text{cm}
+\end{gather}
+\paragraph{c) Focal y Radio}
+Con $s$ y $s'$ conocidos, usamos la ecuación de Gauss para hallar $f$:
+\begin{gather}
+    \frac{1}{f} = \frac{1}{s'} + \frac{1}{s}
+\end{gather}
+Y finalmente, el radio: $R=2f$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{b) Distancias $s$ y $s'$}
+Los cálculos ya se realizaron en el paso anterior.
+\begin{cajaresultado}
+La distancia del objeto al espejo es de 100 cm ($\boldsymbol{s = -100\,\textbf{cm}}$). La distancia de la imagen al espejo es de 300 cm ($\boldsymbol{s' = -300\,\textbf{cm}}$).
+\end{cajaresultado}
+\paragraph{c) Focal y Radio}
+\begin{gather}
+    \frac{1}{f} = \frac{1}{-300} + \frac{1}{-100} = \frac{-1 - 3}{300} = -\frac{4}{300} = -\frac{1}{75} \\
+    f = -75 \, \text{cm}
+\end{gather}
+\begin{gather}
+    R = 2f = 2(-75) = -150 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+El radio del espejo es de 150 cm ($\boldsymbol{R = -150\,\textbf{cm}}$) y la distancia focal es de 75 cm ($\boldsymbol{f = -75\,\textbf{cm}}$).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de las propiedades de la imagen (real, invertida, aumento de -3) y la distancia objeto-imagen, se ha deducido un sistema de ecuaciones que permite determinar las posiciones del objeto y la imagen. Con estos valores, la ecuación de Gauss revela que el espejo cóncavo debe tener una distancia focal de -75 cm y, por tanto, un radio de curvatura de -150 cm.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque IV: Campo Eléctrico}
+\label{sec:em_2010_jun_ord}
+
+\subsection{Problema 4 - OPCIÓN A}
+\label{subsec:4A_2010_jun_ord}
+\begin{cajaenunciado}
+Un electrón se mueve dentro de un campo eléctrico uniforme $\vec{E}=E(-\vec{j})$. El electrón parte del reposo desde el punto A, de coordenadas (1, 0) m, y llega al punto B con una velocidad de $10^7$ m/s después de recorrer 50 cm.
+\begin{enumerate}
+    \item[a)] Indica la trayectoria del electrón y las coordenadas del punto B (1 punto).
+    \item[b)] Calcula el módulo del campo eléctrico (1 punto).
+\end{enumerate}
+\textbf{Datos:} carga del electrón $e=1,6 \cdot 10^{-19}$ C; masa del electrón $m_e=9,1 \cdot 10^{-31}$ kg.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partícula:} Electrón, carga $q = -e = -1,6 \cdot 10^{-19}$ C, masa $m_e = 9,1 \cdot 10^{-31}$ kg.
+    \item \textbf{Campo eléctrico:} $\vec{E} = -E\vec{j}$ (uniforme, dirección eje Y, sentido negativo).
+    \item \textbf{Condiciones iniciales:} Parte del reposo ($\vec{v}_A = 0$) desde A(1, 0) m.
+    \item \textbf{Condiciones finales:} Velocidad en B, $v_B = 10^7$ m/s.
+    \item \textbf{Distancia recorrida:} $d_{AB} = 50$ cm $= 0,5$ m.
+    \item \textbf{Incógnitas:} Trayectoria, coordenadas de B y módulo del campo $E$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Movimiento de un electrón en campo uniforme} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Dibujar líneas de campo eléctrico uniformes y paralelas apuntando hacia abajo (sentido -Y). Marcar el punto inicial A en (1,0). El electrón tiene carga negativa. El campo $\vec{E}$ apunta hacia abajo, por lo que la fuerza eléctrica $\vec{F}=q\vec{E}$ sobre el electrón apunta hacia arriba. Como el electrón parte del reposo, se acelerará hacia arriba. Dibujar una trayectoria rectilínea vertical hacia arriba desde A hasta un punto B. Etiquetar las coordenadas de A y B."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{electron_campo_electrico.png}
+    }}
+    \caption{Trayectoria del electrón acelerado por el campo eléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Trayectoria}
+La fuerza sobre el electrón es $\vec{F} = q\vec{E}$. Como el campo es uniforme, la fuerza es constante. Según la segunda ley de Newton, $\vec{F}=m\vec{a}$, la aceleración también será constante. Un movimiento que parte del reposo bajo una aceleración constante es un Movimiento Rectilíneo Uniformemente Acelerado (MRUA). La dirección del movimiento será la de la fuerza.
+
+\paragraph{b) Módulo del campo}
+Se puede resolver de dos maneras:
+\begin{enumerate}
+    \item \textbf{Por cinemática:} Usando la ecuación de MRUA $v_f^2 - v_i^2 = 2ad$, se calcula la aceleración $a$. Luego, con $F=ma$ y $F=|q|E$, se despeja $E$.
+    \item \textbf{Por energías (más directo):} El campo eléctrico es conservativo. El trabajo realizado por el campo es igual a la variación de la energía cinética: $W_{A \to B} = \Delta E_c$. El trabajo también es $W_{A \to B} = q \Delta V = q(-\vec{E} \cdot \Delta\vec{r})$.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Trayectoria y coordenadas de B}
+La fuerza sobre el electrón ($q=-e$) en el campo $\vec{E}=-E\vec{j}$ es:
+\begin{gather}
+    \vec{F} = (-e)(-E\vec{j}) = eE\vec{j}
+\end{gather}
+La fuerza apunta en el sentido positivo del eje Y. Como parte del reposo, la trayectoria es una línea recta en esa dirección. El desplazamiento es $\Delta\vec{r} = d_{AB}\vec{j}$.
+El punto final B se obtiene sumando el desplazamiento al punto inicial A:
+\begin{gather}
+    \vec{r}_B = \vec{r}_A + \Delta\vec{r}
+\end{gather}
+\paragraph{b) Módulo del campo}
+Usando el teorema de la energía cinética: $\Delta E_c = W_{A \to B}$.
+\begin{gather}
+    \frac{1}{2}m_e v_B^2 - \frac{1}{2}m_e v_A^2 = \vec{F} \cdot \Delta\vec{r} \nonumber \\
+    \frac{1}{2}m_e v_B^2 - 0 = (eE\vec{j}) \cdot (d_{AB}\vec{j}) = eEd_{AB}
+\end{gather}
+Despejamos el módulo del campo, $E$:
+\begin{gather}
+    E = \frac{m_e v_B^2}{2e d_{AB}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Trayectoria y coordenadas de B}
+La trayectoria es \textbf{rectilínea y vertical}, en el sentido $+Y$. El punto B está 0,5 m por encima de A.
+$$ \vec{r}_B = (1\vec{i} + 0\vec{j}) + 0,5\vec{j} = 1\vec{i} + 0,5\vec{j} $$
+Las coordenadas de B son (1, 0.5) m.
+\begin{cajaresultado}
+La trayectoria es una \textbf{línea recta vertical} en el sentido positivo del eje Y. Las coordenadas del punto B son \textbf{(1, 0.5) m}.
+\end{cajaresultado}
+\paragraph{b) Módulo del campo}
+\begin{gather}
+    E = \frac{(9,1 \cdot 10^{-31}\,\text{kg}) (10^7\,\text{m/s})^2}{2 (1,6 \cdot 10^{-19}\,\text{C}) (0,5\,\text{m})} = \frac{9,1 \cdot 10^{-17}}{1,6 \cdot 10^{-19}} \approx 568,75 \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+El módulo del campo eléctrico es $\boldsymbol{E \approx 568,75 \, \textbf{N/C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza eléctrica sobre el electrón es opuesta al campo, provocando una aceleración constante hacia arriba y una trayectoria rectilínea. A partir de la ganancia de energía cinética del electrón y la distancia recorrida, se deduce que el módulo del campo eléctrico uniforme responsable de esta aceleración es de 568,75 N/C.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 4 - OPCIÓN B}
+\label{subsec:4B_2010_jun_ord}
+\begin{cajaenunciado}
+¿Qué energía libera una tormenta eléctrica en la que se transfieren 50 rayos entre las nubes y el suelo? Supón que la diferencia de potencial media entre las nubes y el suelo es de $10^9$ V y que la cantidad de carga media transferida en cada rayo es de 25 C.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Número de rayos ($N$):} $N = 50$.
+    \item \textbf{Diferencia de potencial ($|\Delta V|$):} $|\Delta V| = 10^9$ V.
+    \item \textbf{Carga por rayo ($q$):} $q = 25$ C.
+    \item \textbf{Incógnita:} Energía total liberada ($E_{total}$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Descarga Eléctrica (Rayo)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un paisaje con nubes de tormenta en la parte superior y el suelo en la parte inferior. La base de las nubes debe estar etiquetada como 'polo negativo' y el suelo como 'polo positivo', indicando una gran diferencia de potencial $\Delta V$. Dibujar un rayo como una descarga eléctrica brillante que viaja desde la nube al suelo. Indicar que el rayo transfiere una carga 'q'."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{rayo_tormenta.png}
+    }}
+    \caption{Modelo físico de una descarga eléctrica atmosférica.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La energía potencial eléctrica ($E_p$) de una carga $q$ en un punto con potencial eléctrico $V$ es $E_p = qV$.
+La energía liberada cuando una carga $q$ se mueve a través de una diferencia de potencial $\Delta V$ es igual al trabajo realizado por el campo eléctrico, y corresponde a la disminución de la energía potencial del sistema.
+La energía liberada en una sola descarga (un rayo) es:
+$$ E_{rayo} = |W| = |q \Delta V| $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La energía total liberada en la tormenta será la energía de un rayo multiplicada por el número total de rayos.
+\begin{gather}
+    E_{total} = N \cdot E_{rayo} = N \cdot q \cdot |\Delta V|
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero calculamos la energía de un solo rayo:
+\begin{gather}
+    E_{rayo} = (25\,\text{C}) \cdot (10^9\,\text{V}) = 25 \cdot 10^9 \, \text{J} = 2,5 \cdot 10^{10} \, \text{J}
+\end{gather}
+Ahora, la energía total para los 50 rayos:
+\begin{gather}
+    E_{total} = 50 \cdot (2,5 \cdot 10^{10} \, \text{J}) = 125 \cdot 10^{10} \, \text{J} = 1,25 \cdot 10^{12} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+La energía total liberada por la tormenta es de $\boldsymbol{1,25 \cdot 10^{12} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Cada rayo, al transferir 25 Coulombs a través de una diferencia de potencial de mil millones de voltios, libera una cantidad de energía de 25 GigaJoules. En una tormenta con 50 de estas descargas, la energía total liberada asciende a 1,25 TeraJoules, una cifra que evidencia el enorme poder de los fenómenos eléctricos atmosféricos.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque V: Física Moderna I}
+\label{sec:moderna1_2010_jun_ord}
+
+\subsection{Cuestión 5 - OPCIÓN A}
+\label{subsec:5A_2010_jun_ord}
+\begin{cajaenunciado}
+Si se duplica la frecuencia de la radiación que incide sobre un metal ¿se duplica la energía cinética de los electrones extraídos? Justifica brevemente la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La respuesta se basa en la \textbf{ecuación del efecto fotoeléctrico} de Einstein:
+$$ E_c = hf - W_0 $$
+donde:
+\begin{itemize}
+    \item $E_c$ es la energía cinética máxima de los electrones emitidos (fotoelectrones).
+    \item $h$ es la constante de Planck.
+    \item $f$ es la frecuencia de la radiación incidente.
+    \item $hf$ es la energía del fotón incidente.
+    \item $W_0$ es el trabajo de extracción o función de trabajo, una constante que depende del material y representa la energía mínima para arrancar un electrón del metal.
+\end{itemize}
+La ecuación muestra una relación lineal entre la energía cinética y la frecuencia, pero no de proporcionalidad directa (no es de la forma $E_c = k \cdot f$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Analicemos la relación.
+\paragraph{Situación inicial}
+La energía cinética para una frecuencia $f$ es:
+\begin{gather}
+    E_{c,1} = hf - W_0
+\end{gather}
+\paragraph{Situación final}
+La nueva frecuencia es $f' = 2f$. La nueva energía cinética es:
+\begin{gather}
+    E_{c,2} = h(2f) - W_0 = 2hf - W_0
+\end{gather}
+Para que la energía cinética se duplicara, debería cumplirse que $E_{c,2} = 2 E_{c,1}$. Veamos si es cierto:
+$$ 2 E_{c,1} = 2(hf - W_0) = 2hf - 2W_0 $$
+Comparando $E_{c,2}$ con $2E_{c,1}$:
+$$ \underbrace{2hf - W_0}_{E_{c,2}} \neq \underbrace{2hf - 2W_0}_{2E_{c,1}} $$
+Las dos expresiones no son iguales (a menos que $W_0=0$, lo cual es físicamente imposible). De hecho, como $W_0 > 0$, siempre se cumple que:
+$$ 2hf - W_0 > 2hf - 2W_0 \implies E_{c,2} > 2E_{c,1} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+\textbf{No}, la energía cinética de los electrones extraídos \textbf{no se duplica}, sino que resulta ser \textbf{más del doble}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La relación entre la energía cinética de los fotoelectrones y la frecuencia de la luz incidente es lineal afín, no una proporcionalidad directa. La presencia del trabajo de extracción ($W_0$) en la ecuación de Einstein hace que al duplicar la frecuencia, la energía cinética aumente en una cantidad mayor al doble de la original. Concretamente, $E_{c,2} = 2E_{c,1} + W_0$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 5 - OPCIÓN B}
+\label{subsec:5B_2010_jun_ord}
+\begin{cajaenunciado}
+Calcula la longitud de onda de una línea espectral correspondiente a una transición entre dos niveles electrónicos cuya diferencia de energía es de 2 eV.
+\textbf{Datos:} constante de Planck $h=6,63 \cdot 10^{-34}$ J·s, carga del electrón $e=1,6 \cdot 10^{-19}$ C, velocidad de la luz $c=3 \cdot 10^8$ m/s.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Diferencia de energía ($\Delta E$):} $\Delta E = 2$ eV.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,63 \cdot 10^{-34}$ J·s.
+    \item \textbf{Carga elemental ($e$):} $e = 1,6 \cdot 10^{-19}$ C.
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3 \cdot 10^8$ m/s.
+    \item \textbf{Incógnita:} Longitud de onda ($\lambda$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Según los postulados de la física cuántica (modelo de Bohr), cuando un electrón realiza una transición de un nivel de energía superior a uno inferior, la diferencia de energía se emite en forma de un único fotón.
+La energía de este fotón, $E_{foton}$, es igual a la diferencia de energía de los niveles, $\Delta E$.
+La energía de un fotón se relaciona con su frecuencia ($f$) y su longitud de onda ($\lambda$) mediante la ecuación de Planck-Einstein:
+$$ E_{foton} = hf = \frac{hc}{\lambda} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Igualamos la diferencia de energía de los niveles con la energía del fotón emitido:
+\begin{gather}
+    \Delta E = \frac{hc}{\lambda}
+\end{gather}
+Despejamos la longitud de onda, $\lambda$:
+\begin{gather}
+    \lambda = \frac{hc}{\Delta E}
+\end{gather}
+Es crucial que todas las unidades sean consistentes. Como $h$ y $c$ están en el SI, debemos convertir la energía $\Delta E$ de electronvoltios (eV) a Julios (J) antes de sustituirla.
+$$ \Delta E \, (\text{J}) = \Delta E \, (\text{eV}) \times e \, (\text{C}) $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, convertimos la energía a Julios:
+\begin{gather}
+    \Delta E = 2\,\text{eV} \times (1,6 \cdot 10^{-19}\,\text{J/eV}) = 3,2 \cdot 10^{-19}\,\text{J}
+\end{gather}
+Ahora, calculamos la longitud de onda:
+\begin{gather}
+    \lambda = \frac{(6,63 \cdot 10^{-34}\,\text{J·s}) \cdot (3 \cdot 10^8\,\text{m/s})}{3,2 \cdot 10^{-19}\,\text{J}} = \frac{19,89 \cdot 10^{-26}}{3,2 \cdot 10^{-19}} \approx 6,216 \cdot 10^{-7} \, \text{m}
+\end{gather}
+Es común expresar esta longitud de onda en nanómetros (nm):
+$$ \lambda = 6,216 \cdot 10^{-7} \, \text{m} = 621,6 \, \text{nm} $$
+(Esta longitud de onda corresponde a luz visible, en la región del naranja-rojo).
+\begin{cajaresultado}
+La longitud de onda de la línea espectral es $\boldsymbol{\lambda \approx 621,6 \, \textbf{nm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La cuantización de los niveles de energía en los átomos implica que la luz solo puede ser emitida en longitudes de onda discretas. Una transición con una diferencia de energía de 2 eV resulta en la emisión de un fotón de luz visible con una longitud de onda de 621,6 nm, lo que aparecería como una línea brillante de color naranja-rojo en un espectro de emisión.
+\end{cajaconclusion}
+
+\newpage
+
+\section{Bloque VI: Física Moderna II}
+\label{sec:moderna2_2010_jun_ord}
+
+\subsection{Cuestión 6 - OPCIÓN A}
+\label{subsec:6A_2010_jun_ord}
+\begin{cajaenunciado}
+Calcula la longitud de onda de De Broglie de una pelota de 500 g que se mueve a 2 m/s y explica su significado. ¿Sería posible observar la difracción de dicha onda? Justifica la respuesta.
+\textbf{Dato:} Constante de Planck $h=6,63 \cdot 10^{-34}$ J·s.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la pelota ($m$):} $m = 500$ g $= 0,5$ kg.
+    \item \textbf{Velocidad de la pelota ($v$):} $v = 2$ m/s.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,63 \cdot 10^{-34}$ J·s.
+    \item \textbf{Incógnitas:} Longitud de onda de De Broglie ($\lambda$), su significado y la observabilidad de su difracción.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Significado de la longitud de onda de De Broglie}
+En 1924, Louis de Broglie propuso la \textbf{hipótesis de la dualidad onda-corpúsculo}, que postula que toda partícula material en movimiento tiene asociada una onda. El significado es que la materia, al igual que la luz, no se comporta exclusivamente como partícula, sino que puede exhibir propiedades ondulatorias como la difracción y la interferencia. La longitud de onda de esta "onda de materia" se calcula como:
+$$ \lambda = \frac{h}{p} = \frac{h}{mv} $$
+donde $p$ es el momento lineal de la partícula.
+\paragraph{Condición para la difracción}
+Los fenómenos ondulatorios como la difracción son observables únicamente cuando la longitud de onda es de un orden de magnitud comparable o mayor que el tamaño de los obstáculos o rendijas con los que interactúa la onda.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La ecuación para la longitud de onda es directa:
+\begin{gather}
+    \lambda = \frac{h}{mv}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \lambda = \frac{6,63 \cdot 10^{-34}\,\text{J·s}}{(0,5\,\text{kg}) \cdot (2\,\text{m/s})} = \frac{6,63 \cdot 10^{-34}}{1} = 6,63 \cdot 10^{-34} \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+La longitud de onda de De Broglie de la pelota es $\boldsymbol{\lambda = 6,63 \cdot 10^{-34} \, \textbf{m}}$.
+\end{cajaresultado}
+\paragraph{Observabilidad de la difracción}
+La longitud de onda calculada es extraordinariamente pequeña. Es muchos órdenes de magnitud más pequeña que cualquier objeto físico conocido, incluido el tamaño de un protón (aprox. $10^{-15}$ m). No existen rendijas ni obstáculos de un tamaño tan diminuto que puedan hacer difractar una onda de esta longitud.
+\begin{cajaresultado}
+\textbf{No sería posible observar la difracción} de dicha onda. La longitud de onda es tan extremadamente pequeña que es imposible encontrar un obstáculo de tamaño comparable para que el fenómeno sea apreciable.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La dualidad onda-corpúsculo es un principio universal, pero sus efectos ondulatorios solo son relevantes en el dominio cuántico. Para objetos macroscópicos como una pelota, la longitud de onda de De Broglie es tan infinitesimalmente pequeña ($6,63 \cdot 10^{-34}$ m) que cualquier comportamiento ondulatorio es completamente indetectable. Por esta razón, en el mundo macroscópico, la mecánica clásica de partículas es una descripción perfectamente válida.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 6 - OPCIÓN B}
+\label{subsec:6B_2010_jun_ord}
+\begin{cajaenunciado}
+Si la actividad de una muestra radiactiva se reduce un 75% en 6 días, ¿cuál es su periodo de semidesintegración? Justifica brevemente tu respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tiempo transcurrido ($t$):} $t = 6$ días.
+    \item \textbf{Reducción de la actividad:} La actividad se reduce un 75%. Esto significa que la actividad final, $A(t)$, es el 25% de la actividad inicial, $A_0$.
+    \item \textbf{Condición:} $A(t=6\,\text{días}) = (1 - 0,75) A_0 = 0,25 A_0 = A_0/4$.
+    \item \textbf{Incógnita:} Periodo de semidesintegración ($T_{1/2}$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{actividad ($A$)} de una muestra radiactiva decae exponencialmente con el tiempo según la misma ley que el número de núcleos:
+$$ A(t) = A_0 e^{-\lambda t} $$
+donde $A_0$ es la actividad inicial y $\lambda$ es la constante de desintegración.
+Una forma alternativa de la ley de decaimiento, que es muy útil cuando se trabaja con mitades, cuartos, etc., es:
+$$ A(t) = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}} $$
+El \textbf{periodo de semidesintegración ($T_{1/2}$)} es, por definición, el tiempo que debe transcurrir para que la actividad de la muestra se reduzca a la mitad de su valor inicial.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Método 1: Razonamiento directo}
+Reducirse a $A_0/4$ es lo mismo que reducirse a la mitad dos veces:
+$$ A_0 \xrightarrow{T_{1/2}} \frac{A_0}{2} \xrightarrow{T_{1/2}} \frac{A_0}{4} $$
+El tiempo total transcurrido para que la actividad se reduzca a la cuarta parte es, por tanto, dos veces el periodo de semidesintegración.
+\begin{gather}
+    t = 2 \cdot T_{1/2}
+\end{gather}
+\paragraph{Método 2: Usando la ecuación}
+Sustituimos la condición $A(t) = A_0/4$ en la ley de decaimiento:
+\begin{gather}
+    \frac{A_0}{4} = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}} \implies \frac{1}{4} = \left(\frac{1}{2}\right)^{t/T_{1/2}}
+\end{gather}
+Como $1/4 = (1/2)^2$, podemos igualar los exponentes:
+\begin{gather}
+    2 = \frac{t}{T_{1/2}} \implies T_{1/2} = \frac{t}{2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Usando la relación obtenida en el paso anterior y el tiempo dado:
+\begin{gather}
+    T_{1/2} = \frac{6 \, \text{días}}{2} = 3 \, \text{días}
+\end{gather}
+\begin{cajaresultado}
+El periodo de semidesintegración de la muestra es de \textbf{3 días}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La actividad de una muestra radiactiva se reduce a la mitad cada vez que transcurre un periodo de semidesintegración. Para que la actividad se reduzca a una cuarta parte de la inicial, deben haber transcurrido dos de estos periodos. Como este proceso ha tardado 6 días, se deduce lógicamente que el periodo de semidesintegración es de 3 días.
+\end{cajaconclusion}
+
+\newpage

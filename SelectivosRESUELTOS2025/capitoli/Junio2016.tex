@@ -1,0 +1,744 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2016 - Soluciones por Bloques}
+\label{chap:2016_jun_ord_bloques}
+
+% ======================================================================
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2016_jun_ord}
+% ======================================================================
+
+\subsection{Problema (Opción A)}
+\label{subsec:A1_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Se sitúan dos cuerpos de masa $m_{1}=2\,\text{kg}$ y $m_{2}=4\,\text{kg}$ en dos vértices de un triángulo equilátero de lado $d=2\,\text{m}$. Calcula:
+\begin{enumerate}
+    \item[a)] El campo gravitatorio en el tercer vértice, $P(0,\sqrt{3})\,\text{m}$, debido a cada una de las masas y el campo total. (1 punto)
+    \item[b)] La energía potencial gravitatoria de un cuerpo de masa $m_{3}=5\,\text{g}$ situada en P y el trabajo necesario para trasladarla hasta el infinito. (1 punto)
+\end{enumerate}
+\textbf{Dato:} $G=6,67\cdot10^{-11}\,\text{Nm}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa 1 ($m_1$):} $m_1 = 2\,\text{kg}$. Dada la geometría, su posición es $P_1(-1, 0)\,\text{m}$.
+    \item \textbf{Masa 2 ($m_2$):} $m_2 = 4\,\text{kg}$. Dada la geometría, su posición es $P_2(1, 0)\,\text{m}$.
+    \item \textbf{Punto de cálculo (P):} $P(0, \sqrt{3})\,\text{m}$.
+    \item \textbf{Distancia entre masas y P ($d$):} $d=2\,\text{m}$. Se puede comprobar: $d_{1P} = \sqrt{(0-(-1))^2 + (\sqrt{3}-0)^2} = \sqrt{1+3} = 2\,\text{m}$.
+    \item \textbf{Masa de prueba ($m_3$):} $m_3 = 5\,\text{g} = 5\cdot10^{-3}\,\text{kg}$.
+    \item \textbf{Constante G:} $G=6,67\cdot10^{-11}\,\text{Nm}^2/\text{kg}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item a) Campos $\vec{g}_1$, $\vec{g}_2$ y $\vec{g}_{total}$ en P.
+        \item b) Energía potencial $E_p$ de $m_3$ en P y trabajo $W_{P \to \infty}$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Gravitatorio en P} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Marcar la masa $m_1$ en (-1,0) y la masa $m_2$ en (1,0). Marcar el punto P en $(0, \sqrt{3})$. Dibujar el vector de campo gravitatorio $\vec{g}_1$ en P, apuntando desde P hacia $m_1$. Dibujar el vector $\vec{g}_2$ en P, apuntando desde P hacia $m_2$. Dibujar el vector resultante $\vec{g}_{total}$ en P, que será la suma vectorial de los anteriores."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{grav_junio_2016.png}
+    }}
+    \caption{Superposición de campos gravitatorios en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Campo Gravitatorio}
+Se aplica el \textbf{Principio de Superposición}. El campo total en P es la suma vectorial de los campos creados por cada masa: $\vec{g}_{total} = \vec{g}_1 + \vec{g}_2$.
+El campo creado por una masa puntual $M$ es $\vec{g} = -G\frac{M}{r^2}\vec{u}_r$, donde $\vec{u}_r$ es el vector unitario que va desde la masa M al punto donde se calcula el campo. De forma más directa, es un vector de módulo $G\frac{M}{r^2}$ que apunta hacia la masa M.
+
+\paragraph{b) Energía Potencial y Trabajo}
+La energía potencial gravitatoria de un sistema de varias masas es la suma de las energías potenciales de cada par: $E_p = U_{13} + U_{23}$. El potencial en un punto es $V = \sum V_i = \sum -G\frac{m_i}{r_i}$, y la energía potencial de una masa de prueba $m_3$ es $E_p = m_3 \cdot V_{total}$.
+El trabajo realizado por el campo para mover una masa entre dos puntos es $W = -\Delta E_p$. El trabajo que debe realizar un agente externo es $W_{ext} = \Delta E_p = E_{p,final} - E_{p,inicial}$. Para llevar la masa al infinito, $E_{p,final}=0$. Por tanto, $W_{P \to \infty} = -E_{p,P}$. El enunciado pregunta por el "trabajo necesario", que se interpreta como el trabajo externo.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+
+\paragraph{a) Campo Gravitatorio}
+Los módulos de los campos gravitatorios generados por cada masa en el punto P vienen dados por:
+\begin{gather*}
+    |\vec{g}_1| = G\frac{m_1}{d^2} \\
+    |\vec{g}_2| = G\frac{m_2}{d^2}
+\end{gather*}
+Los vectores unitarios que apuntan desde el punto P hacia cada una de las masas son:
+\begin{gather*}
+    \vec{u}_{P1} = \frac{(-1-0)\vec{i} + (0-\sqrt{3})\vec{j}}{2} = -\frac{1}{2}\vec{i} - \frac{\sqrt{3}}{2}\vec{j} \\
+    \vec{u}_{P2} = \frac{(1-0)\vec{i} + (0-\sqrt{3})\vec{j}}{2} = \frac{1}{2}\vec{i} - \frac{\sqrt{3}}{2}\vec{j}
+\end{gather*}
+Los campos vectoriales se obtienen multiplicando el módulo por el vector unitario correspondiente:
+\begin{align*}
+    \vec{g}_1 &= |\vec{g}_1|\vec{u}_{P1} = G\frac{m_1}{d^2}\left(-\frac{1}{2}\vec{i} - \frac{\sqrt{3}}{2}\vec{j}\right) \\
+    \vec{g}_2 &= |\vec{g}_2|\vec{u}_{P2} = G\frac{m_2}{d^2}\left(\frac{1}{2}\vec{i} - \frac{\sqrt{3}}{2}\vec{j}\right)
+\end{align*}
+El campo total, por el principio de superposición, es la suma vectorial de ambos:
+\begin{align*}
+    \vec{g}_{total} &= \vec{g}_1 + \vec{g}_2 \\
+    \vec{g}_{total} &= \frac{G}{d^2}\left[ \left(\frac{m_2}{2}-\frac{m_1}{2}\right)\vec{i} - \left(\frac{m_1\sqrt{3}}{2}+\frac{m_2\sqrt{3}}{2}\right)\vec{j} \right]
+\end{align*}
+
+\paragraph{b) Energía Potencial y Trabajo}
+El potencial total en P es la suma escalar de los potenciales individuales:
+\begin{gather*}
+    V_P = V_1 + V_2 = -G\frac{m_1}{d} - G\frac{m_2}{d} = -\frac{G}{d}(m_1+m_2)
+\end{gather*}
+La energía potencial de la masa $m_3$ en dicho punto es:
+\begin{gather*}
+    E_{p,P} = m_3 V_P
+\end{gather*}
+El trabajo necesario (realizado por un agente externo) para trasladar la masa al infinito es igual a la variación de su energía potencial, que es $-E_{p,P}$ (ya que $E_{p,\infty}=0$):
+\begin{gather*}
+    W_{P \to \infty} = \Delta E_p = E_{p,\infty} - E_{p,P} = -E_{p,P}
+\end{gather*}
+
+
+\hrule
+\vspace{1em}
+
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+
+\paragraph{a) Campo Gravitatorio}
+Sustituimos los valores numéricos en las expresiones simbólicas:
+\begin{align*}
+    |\vec{g}_1| &= (6,67\cdot10^{-11}) \frac{2}{2^2} = 3,335\cdot10^{-11}\,\text{N/kg} \\
+    |\vec{g}_2| &= (6,67\cdot10^{-11}) \frac{4}{2^2} = 6,67\cdot10^{-11}\,\text{N/kg}
+\end{align*}
+Los campos vectoriales son:
+\begin{align*}
+    \vec{g}_1 &= (3,335\cdot10^{-11})(-0,5\vec{i} - 0,866\vec{j}) = (-1,67\vec{i} - 2,89\vec{j})\cdot10^{-11}\,\text{N/kg} \\
+    \vec{g}_2 &= (6,67\cdot10^{-11})(0,5\vec{i} - 0,866\vec{j}) = (3,34\vec{i} - 5,78\vec{j})\cdot10^{-11}\,\text{N/kg}
+\end{align*}
+El campo total resultante es:
+\begin{align*}
+    \vec{g}_{total} &= \vec{g}_1 + \vec{g}_2 \\
+    &= (-1,67+3,34)\cdot10^{-11}\vec{i} + (-2,89-5,78)\cdot10^{-11}\vec{j} \\
+    &= (1,67\vec{i} - 8,67\vec{j})\cdot10^{-11}\,\text{N/kg}
+\end{align*}
+
+\begin{cajaresultado}
+    $\boldsymbol{\vec{g}_1 = (-1,67\vec{i} - 2,89\vec{j})\cdot10^{-11}\,\textbf{N/kg}}$ \\
+    $\boldsymbol{\vec{g}_2 = (3,34\vec{i} - 5,78\vec{j})\cdot10^{-11}\,\textbf{N/kg}}$ \\
+    $\boldsymbol{\vec{g}_{total} = (1,67\vec{i} - 8,67\vec{j})\cdot10^{-11}\,\textbf{N/kg}}$
+\end{cajaresultado}
+
+\paragraph{b) Energía Potencial y Trabajo}
+Calculamos el potencial total en el punto P:
+\begin{align*}
+    V_P &= -\frac{6,67\cdot10^{-11}}{2}(2+4) = -2,001\cdot10^{-10}\,\text{J/kg}
+\end{align*}
+La energía potencial de la masa $m_3$ es:
+\begin{align*}
+    E_{p,P} &= (5\cdot10^{-3}\,\text{kg})(-2,001\cdot10^{-10}\,\text{J/kg}) \approx -1,00\cdot10^{-12}\,\text{J}
+\end{align*}
+El trabajo necesario para llevarla al infinito es:
+\begin{align*}
+    W_{P \to \infty} = -E_{p,P} \approx 1,00\cdot10^{-12}\,\text{J}
+\end{align*}
+
+\begin{cajaresultado}
+    La energía potencial es $\boldsymbol{E_p \approx -1,00\cdot10^{-12}\,\textbf{J}}$. \\
+    El trabajo necesario es $\boldsymbol{W \approx 1,00\cdot10^{-12}\,\textbf{J}}$.
+\end{cajaresultado}
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo gravitatorio total en el punto P es la suma vectorial de las contribuciones de cada masa, resultando en un vector que apunta principalmente hacia abajo y ligeramente hacia la derecha. La energía potencial de una tercera masa en P es negativa, indicando que está ligada al sistema. El trabajo necesario para liberarla (llevarla al infinito) es positivo e igual en magnitud a su energía potencial inicial.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión (Opción B)}
+\label{subsec:B1_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Deduce razonadamente la expresión que relaciona el radio y el periodo de una órbita circular. El planeta Júpiter tarda 4300 días terrestres en describir una órbita alrededor del Sol. Calcula el radio de esa órbita suponiendo que es circular.
+\textbf{Datos:} constante de gravitación universal, $G=6,67\cdot10^{-11}N~m^{2}/kg^{2};$ masa del Sol, $M_{s}=2,00\cdot10^{30}kg$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Periodo de Júpiter ($T$):} $T = 4300\,\text{días} = 4300 \cdot 24 \cdot 3600\,\text{s} = 3,7152 \cdot 10^8\,\text{s}$.
+    \item \textbf{Masa del Sol ($M_S$):} $M_S = 2,00\cdot10^{30}\,\text{kg}$.
+    \item \textbf{Constante G:} $G=6,67\cdot10^{-11}\,\text{Nm}^2/\text{kg}^2$.
+    \item \textbf{Incógnitas:} Deducción de la Tercera Ley de Kepler y radio de la órbita de Júpiter ($r$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para un planeta en órbita circular alrededor del Sol, la fuerza de atracción gravitatoria ejercida por el Sol es la responsable de proporcionar la fuerza centrípeta necesaria para mantener el movimiento circular.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal:} $F_g = G \frac{M_S m}{r^2}$.
+    \item \textbf{Fuerza Centrípeta:} $F_c = m a_c = m \frac{v^2}{r}$.
+\end{itemize}
+La velocidad orbital $v$ se relaciona con el radio $r$ y el periodo $T$ por $v = \frac{2\pi r}{T}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Deducción de la relación}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta: $F_g = F_c$.
+\begin{gather}
+    G \frac{M_S m}{r^2} = m \frac{v^2}{r}
+\end{gather}
+Sustituimos $v = \frac{2\pi r}{T}$:
+\begin{gather}
+    G \frac{M_S m}{r^2} = m \frac{(2\pi r/T)^2}{r} = m \frac{4\pi^2 r^2}{T^2 r} = m \frac{4\pi^2 r}{T^2}
+\end{gather}
+Reorganizamos la expresión para relacionar $T^2$ y $r^3$:
+\begin{gather}
+    G M_S T^2 = 4\pi^2 r^3 \implies \frac{T^2}{r^3} = \frac{4\pi^2}{G M_S}
+\end{gather}
+Esta es la Tercera Ley de Kepler para órbitas circulares. Para calcular el radio, despejamos $r$:
+\begin{gather}
+    r^3 = \frac{G M_S T^2}{4\pi^2} \implies r = \sqrt[3]{\frac{G M_S T^2}{4\pi^2}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    r = \sqrt[3]{\frac{(6,67\cdot10^{-11})(2,00\cdot10^{30})(3,7152\cdot10^8)^2}{4\pi^2}} \nonumber \\
+    r = \sqrt[3]{\frac{1,842\cdot10^{47}}{39,48}} \approx \sqrt[3]{4,666\cdot10^{45}} \approx 7,75\cdot10^{11}\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+La expresión que relaciona el periodo y el radio es la \textbf{Tercera Ley de Kepler}: $\boldsymbol{\frac{T^2}{r^3} = \frac{4\pi^2}{G M_S}}$.
+El radio de la órbita de Júpiter es $\boldsymbol{r \approx 7,75\cdot10^{11}\,\textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La Tercera Ley de Kepler, deducida a partir de la dinámica newtoniana, permite calcular parámetros orbitales como el radio a partir del periodo y la masa del cuerpo central. El cálculo muestra que Júpiter orbita el Sol a una distancia de aproximadamente 775 millones de kilómetros.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque II: Electromagnetismo}
+\label{sec:em_2016_jun_ord}
+% ======================================================================
+
+\subsection{Cuestión (Opción A)}
+\label{subsec:A4_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Un electrón entra en una región del espacio donde existe un campo magnético uniforme $\vec{B}$. ¿Qué tipo de trayectoria describirá dentro del campo magnético si su velocidad es paralela a dicho campo? ¿Y si su velocidad es perpendicular al campo? Razona las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza que un campo magnético $\vec{B}$ ejerce sobre una partícula cargada $q$ que se mueve con una velocidad $\vec{v}$ viene dada por la \textbf{Fuerza de Lorentz}:
+$$ \vec{F}_m = q (\vec{v} \times \vec{B}) $$
+El módulo de esta fuerza es $|\vec{F}_m| = |q|vB\sin(\theta)$, donde $\theta$ es el ángulo entre el vector velocidad y el vector campo magnético. La dirección de la fuerza es siempre perpendicular tanto a $\vec{v}$ como a $\vec{B}$.
+
+\paragraph{Caso 1: Velocidad paralela al campo ($\vec{v} \parallel \vec{B}$)}
+En este caso, el ángulo $\theta$ entre la velocidad y el campo es $0^\circ$ o $180^\circ$. En ambos casos, $\sin(\theta) = 0$.
+El producto vectorial $\vec{v} \times \vec{B}$ es el vector nulo. Por lo tanto, la fuerza magnética sobre el electrón es cero:
+$$ \vec{F}_m = 0 $$
+Según la primera ley de Newton, si no actúa ninguna fuerza sobre el electrón, este mantendrá su estado de movimiento.
+\begin{cajaresultado}
+Si la velocidad es paralela al campo, el electrón describirá un \textbf{Movimiento Rectilíneo Uniforme (MRU)}, sin ser afectado por el campo magnético.
+\end{cajaresultado}
+
+\paragraph{Caso 2: Velocidad perpendicular al campo ($\vec{v} \perp \vec{B}$)}
+En este caso, el ángulo $\theta=90^\circ$ y $\sin(90^\circ)=1$. El módulo de la fuerza de Lorentz es máximo y constante: $|\vec{F}_m| = |q|vB$.
+La dirección de esta fuerza es siempre perpendicular a la velocidad $\vec{v}$. Una fuerza que actúa constantemente de forma perpendicular a la velocidad no realiza trabajo y, por tanto, no cambia el módulo de la velocidad (la celeridad), pero sí cambia continuamente su dirección. Esta es la definición de una \textbf{fuerza centrípeta}.
+\begin{cajaresultado}
+Si la velocidad es perpendicular al campo, la fuerza de Lorentz actuará como fuerza centrípeta y el electrón describirá un \textbf{Movimiento Circular Uniforme (MCU)}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La trayectoria de una carga en un campo magnético depende crucialmente de la orientación de su velocidad. Si es paralela, la fuerza es nula y la trayectoria es rectilínea. Si es perpendicular, la fuerza es máxima y constante en módulo, actuando como una fuerza centrípeta que curva la trayectoria en un círculo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema (Opción B)}
+\label{subsec:B4_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Tres cargas eléctricas iguales de valor $3\,\mu C$ se sitúan en los puntos (1,0) m, (-1,0) m y (0,-1) m.
+\begin{enumerate}
+    \item[a)] Dibuja en el punto (0,0) los vectores campo eléctrico generados por cada una de las cargas. Calcula el vector campo eléctrico resultante en dicho punto. (1 punto)
+    \item[b)] Calcula el trabajo realizado en el desplazamiento de una carga eléctrica puntual de $1\,\mu C$ entre (0,0) m y (0,1) m. Razona si la carga se puede mover espontáneamente a dicho punto (0,1) m. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de Coulomb: $k_{e}=9\cdot10^{9}Nm^{2}/C^{2}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Cargas fuente:} $q_1 = 3\,\mu\text{C}$ en $P_1(1,0)$, $q_2 = 3\,\mu\text{C}$ en $P_2(-1,0)$, $q_3 = 3\,\mu\text{C}$ en $P_3(0,-1)$.
+    \item \textbf{Carga de prueba:} $q' = 1\,\mu\text{C}$.
+    \item \textbf{Puntos de interés:} Origen O(0,0) y punto D(0,1).
+    \item \textbf{Constante k:} $k=9\cdot10^9\,\text{Nm}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:} $\vec{E}_{total}$ en O, y trabajo $W_{O \to D}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Eléctrico en el Origen} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Colocar tres cargas positivas iguales 'q' en (1,0), (-1,0) y (0,-1). En el origen (0,0), dibujar los tres vectores de campo eléctrico: $\vec{E}_1$ (de la carga en (1,0)) apuntando hacia la izquierda. $\vec{E}_2$ (de la carga en (-1,0)) apuntando hacia la derecha. $\vec{E}_3$ (de la carga en (0,-1)) apuntando hacia arriba. Mostrar que $\vec{E}_1$ y $\vec{E}_2$ se cancelan mutuamente."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{campo_electrico_junio_2016.png}
+    }}
+    \caption{Vectores de campo eléctrico en el origen.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Campo eléctrico}
+Se usa el Principio de Superposición: $\vec{E}_{total} = \vec{E}_1+\vec{E}_2+\vec{E}_3$.
+\paragraph{b) Trabajo}
+El trabajo realizado por el campo es $W = -\Delta E_p = q'(V_{inicial}-V_{final})$. Si $W>0$, el movimiento es espontáneo. Si $W<0$, no es espontáneo. El potencial en un punto es la suma escalar de los potenciales creados por cada carga: $V = \sum k\frac{q_i}{r_i}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Campo en el origen O(0,0)}
+$\vec{E}_1 = k\frac{q_1}{1^2}(-\vec{i})$, $\vec{E}_2 = k\frac{q_2}{1^2}(+\vec{i})$, $\vec{E}_3 = k\frac{q_3}{1^2}(+\vec{j})$.
+Como $q_1=q_2=q$, $\vec{E}_1+\vec{E}_2 = 0$.
+$\vec{E}_{total,O} = \vec{E}_3 = k\frac{q}{1^2}\vec{j}$.
+
+\paragraph{b) Trabajo de O(0,0) a D(0,1)}
+$W_{O \to D} = q'(V_O - V_D)$.
+$V_O = k\frac{q_1}{1} + k\frac{q_2}{1} + k\frac{q_3}{1} = 3kq$.
+Para el punto D(0,1): $d_{1D} = \sqrt{(1-0)^2+(0-1)^2}=\sqrt{2}$, $d_{2D}=\sqrt{(-1-0)^2+(0-1)^2}=\sqrt{2}$, $d_{3D}=|1-(-1)|=2$.
+$V_D = k\frac{q_1}{\sqrt{2}} + k\frac{q_2}{\sqrt{2}} + k\frac{q_3}{2} = kq\left(\frac{2}{\sqrt{2}} + \frac{1}{2}\right) = kq(\sqrt{2}+0,5)$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Campo en el origen}
+\begin{gather}
+    \vec{E}_{total,O} = (9\cdot10^9)\frac{3\cdot10^{-6}}{1^2}\vec{j} = 27000\vec{j}\,\text{N/C}
+\end{gather}
+\begin{cajaresultado}
+El campo resultante es $\boldsymbol{\vec{E}_{total} = 27000\vec{j}\,\textbf{N/C}}$.
+\end{cajaresultado}
+
+\paragraph{b) Trabajo}
+$V_O = 3(9\cdot10^9)(3\cdot10^{-6}) = 81000\,\text{V}$.
+$V_D = (9\cdot10^9)(3\cdot10^{-6})(\sqrt{2}+0,5) \approx 27000(1,914) \approx 51678\,\text{V}$.
+$W_{O \to D} = (1\cdot10^{-6})(81000 - 51678) = 2,93\cdot10^{-2}\,\text{J}$.
+Como $W>0$, el movimiento \textbf{es espontáneo}.
+\begin{cajaresultado}
+El trabajo realizado es $\boldsymbol{W \approx 2,93\cdot10^{-2}\,\textbf{J}}$. El movimiento es espontáneo.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Por simetría, el campo en el origen es generado únicamente por la carga del eje Y, apuntando hacia arriba. El potencial es mayor en el origen que en el punto (0,1), por lo que el campo eléctrico realiza un trabajo positivo para mover una carga positiva entre estos puntos, indicando que el movimiento es espontáneo.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque III: Ondas y Óptica}
+\label{sec:ondas_opt_2016_jun_ord}
+% ======================================================================
+
+\subsection{Cuestión de Ondas (Opción A)}
+\label{subsec:A2_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Define periodo y amplitud de un oscilador armónico. En las gráficas (a) y (b) se representan las posiciones, $y(t)$, frente al tiempo de dos osciladores. ¿Cuál de ellos tiene mayor frecuencia? Justifica la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Definiciones}
+\begin{itemize}
+    \item \textbf{Amplitud (A):} Es el valor máximo de la elongación, es decir, la máxima distancia que la partícula oscilante alcanza respecto a su posición de equilibrio. Se mide en unidades de longitud.
+    \item \textbf{Periodo (T):} Es el tiempo que tarda la partícula en completar una oscilación completa y volver a su estado inicial de movimiento (misma posición y misma velocidad). Se mide en unidades de tiempo.
+\end{itemize}
+
+\paragraph{Análisis de las gráficas}
+La frecuencia ($f$) es la inversa del periodo ($f=1/T$) y representa el número de oscilaciones por unidad de tiempo. Para determinar qué oscilador tiene mayor frecuencia, debemos comparar sus periodos.
+
+\begin{itemize}
+    \item \textbf{Oscilador (a):} Observando la gráfica, una oscilación completa (por ejemplo, de un máximo en $t \approx 1\,\text{ms}$ a otro en $t \approx 4\,\text{ms}$) tarda aproximadamente $T_a = 4-1 = 3\,\text{ms}$.
+    \item \textbf{Oscilador (b):} En esta gráfica, una oscilación completa (de un máximo en $t=0$ a otro en $t \approx 1\,\text{ms}$) tarda $T_b \approx 1\,\text{ms}$. Se observan aproximadamente 10 oscilaciones en 10 ms.
+\end{itemize}
+
+Como $T_a > T_b$, al ser la frecuencia la inversa del periodo, se cumple que $f_a < f_b$.
+
+\begin{cajaresultado}
+El \textbf{oscilador (b)} tiene mayor frecuencia.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La frecuencia y el periodo son magnitudes inversamente proporcionales. A partir de la representación gráfica, se puede observar directamente que el oscilador (b) completa sus ciclos en menos tiempo que el oscilador (a), es decir, tiene un periodo menor. Por consiguiente, el oscilador (b) realiza más oscilaciones por unidad de tiempo, lo que significa que su frecuencia es mayor.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión de Óptica (Opción A)}
+\label{subsec:A3_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Se tiene un objeto real y una lente convergente en aire, y se desea formar una imagen virtual, derecha y mayor. ¿Dónde habría que colocar dicho objeto? Responde utilizando el trazado de rayos. Explica la trayectoria de cada uno de los rayos.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Uso de Lente Convergente como Lupa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente convergente. Dibujar el eje óptico. Marcar la lente, su centro óptico (O), el foco objeto (F) a la izquierda y el foco imagen (F') a la derecha. Colocar un objeto (flecha vertical hacia arriba) entre el foco objeto F y la lente. Trazar dos rayos desde la punta del objeto: 1) Un rayo que incide paralelo al eje óptico. 2) Un rayo que pasa por el centro óptico. Explicar y mostrar sus trayectorias tras la lente. Dibujar las prolongaciones de los rayos refractados hacia atrás (líneas discontinuas) hasta que se crucen para formar la imagen. Etiquetar objeto, imagen, F y F'."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{lente_convergente_lupa.png}
+    }}
+    \caption{Formación de una imagen virtual, derecha y mayor con una lente convergente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Posición del Objeto}
+Para que una lente convergente forme una imagen virtual, derecha y de mayor tamaño (es decir, para que actúe como una lupa), el objeto real debe colocarse \textbf{entre el foco objeto (F) y el centro óptico de la lente}.
+
+\paragraph{Explicación del Trazado de Rayos}
+Se utilizan al menos dos de los tres rayos principales para construir la imagen:
+\begin{enumerate}
+    \item \textbf{Rayo 1 (paralelo al eje):} Un rayo que parte de la punta del objeto y viaja paralelo al eje óptico, al atravesar la lente convergente, se refracta de tal manera que pasa por el \textbf{foco imagen (F')}.
+    \item \textbf{Rayo 2 (central):} Un rayo que parte de la punta del objeto y pasa por el \textbf{centro óptico (O)} de la lente no sufre desviación y continúa su camino en línea recta.
+\end{enumerate}
+
+\paragraph{Formación de la Imagen}
+Al observar los dos rayos refractados, se ve que divergen; nunca se cruzarán en el lado de la imagen. Sin embargo, si prolongamos estos rayos hacia atrás (hacia el lado del objeto), sus prolongaciones sí se cruzan en un punto. Este punto de intersección es donde se forma la \textbf{imagen virtual}. Como se forma por encima del eje óptico, es una imagen \textbf{derecha}, y como se forma más lejos de la lente que el objeto, es una imagen \textbf{de mayor tamaño}.
+
+\begin{cajaresultado}
+El objeto debe colocarse \textbf{entre el foco objeto y la lente}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La posición del objeto con respecto a la distancia focal de una lente convergente determina las características de la imagen. La única configuración que produce una imagen virtual, derecha y aumentada es cuando el objeto se sitúa a una distancia de la lente menor que su distancia focal, que es el principio de funcionamiento de una lupa.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema de Ondas (Opción B)}
+\label{subsec:B2_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Una persona de masa 70 kg está de pie en una plataforma que oscila verticalmente alrededor de su posición de equilibrio, comportándose como un oscilador armónico simple. Su posición inicial es $y(0)=A~sin(\pi/3)$ cm donde $A=1,5$ cm, y su velocidad inicial $v_{y}(0)=0,6~cos(\pi/3)m/s$. Calcula razonadamente:
+\begin{enumerate}
+    \item[a)] La pulsación o frecuencia angular y la posición de la persona en función del tiempo, $y(t)$. (1 punto)
+    \item[b)] La energía mecánica de dicho oscilador en cualquier instante. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa ($m$):} $m=70\,\text{kg}$.
+    \item \textbf{Amplitud ($A$):} $A=1,5\,\text{cm} = 0,015\,\text{m}$.
+    \item \textbf{Posición inicial:} $y(0) = A \sin(\pi/3)\,\text{cm}$.
+    \item \textbf{Velocidad inicial:} $v_y(0) = 0,6 \cos(\pi/3)\,\text{m/s}$.
+    \item \textbf{Incógnitas:} Frecuencia angular ($\omega$), ecuación de la posición $y(t)$ y Energía mecánica ($E_M$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las ecuaciones generales para un Movimiento Armónico Simple (M.A.S.) son:
+\begin{itemize}
+    \item \textbf{Posición:} $y(t) = A\sin(\omega t + \phi_0)$
+    \item \textbf{Velocidad:} $v_y(t) = \frac{dy}{dt} = A\omega\cos(\omega t + \phi_0)$
+\end{itemize}
+La energía mecánica total de un oscilador armónico es constante y vale:
+$$ E_M = E_{c,max} = \frac{1}{2}m v_{max}^2 = \frac{1}{2}m (A\omega)^2 = \frac{1}{2}kA^2 $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Pulsación y Ecuación de posición}
+Evaluamos las ecuaciones generales en $t=0$:
+$y(0) = A\sin(\phi_0)$
+$v_y(0) = A\omega\cos(\phi_0)$
+Comparando estas expresiones con los datos del enunciado:
+$y(0) = A\sin(\pi/3)$ y $v_y(0) = 0,6\cos(\pi/3)$, podemos deducir que la fase inicial es $\phi_0 = \pi/3$.
+Una vez conocida $\phi_0$, podemos usar la ecuación de la velocidad para despejar $\omega$:
+\begin{gather}
+    v_y(0) = A\omega\cos(\phi_0) \implies \omega = \frac{v_y(0)}{A\cos(\phi_0)}
+\end{gather}
+Con $\omega$ y $\phi_0$ conocidas, se escribe la ecuación completa $y(t)$.
+
+\paragraph{b) Energía mecánica}
+\begin{gather}
+    E_M = \frac{1}{2}m A^2 \omega^2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Pulsación y Ecuación de posición}
+De la comparación directa, la fase inicial es $\boldsymbol{\phi_0 = \pi/3\,\textbf{rad}}$.
+Usamos la velocidad inicial (en m/s) y la amplitud (en m) para hallar $\omega$:
+\begin{gather}
+    0,6\cos(\pi/3) = (0,015)\omega\cos(\pi/3) \implies 0,6 = 0,015 \omega \nonumber \\
+    \omega = \frac{0,6}{0,015} = 40\,\text{rad/s}
+\end{gather}
+La ecuación de la posición es:
+$y(t) = 0,015\sin(40t + \pi/3)\,\text{m}$.
+\begin{cajaresultado}
+La frecuencia angular es $\boldsymbol{\omega = 40\,\textbf{rad/s}}$.
+La posición en función del tiempo es $\boldsymbol{y(t) = 0,015\sin(40t + \pi/3)}$ (en SI).
+\end{cajaresultado}
+
+\paragraph{b) Energía mecánica}
+\begin{gather}
+    E_M = \frac{1}{2}(70\,\text{kg})(0,015\,\text{m})^2(40\,\text{rad/s})^2 = 35 \cdot (2,25\cdot10^{-4}) \cdot 1600 = 12,6\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+La energía mecánica del oscilador es $\boldsymbol{E_M = 12,6\,\textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la comparación de las condiciones iniciales con las ecuaciones generales del M.A.S., se han determinado la fase inicial y la frecuencia angular del movimiento. Con estos parámetros, la energía mecánica del sistema, que permanece constante durante la oscilación, se ha calculado en 12,6 J.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión de Óptica (Opción B)}
+\label{subsec:B3_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Un rayo incide sobre la superficie de separación de dos medios. El primer medio tiene un índice de refracción $n_{1}$, el segundo un índice de refracción $n_{2}$, de tal forma que $n_{1}<n_{2}$. ¿Se puede producir el fenómeno de reflexión total? Y si ocurriese que $n_{1}=1,6$ y $n_{2}=1,3$ ¿cuál sería el ángulo límite? Razona las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno de la refracción se rige por la \textbf{Ley de Snell}: $n_1\sin(\theta_1) = n_2\sin(\theta_2)$.
+El fenómeno de la \textbf{reflexión total interna} ocurre cuando un rayo de luz, viajando de un medio a otro, no se refracta sino que se refleja completamente en la interfaz. Para que esto ocurra, deben cumplirse dos condiciones:
+\begin{enumerate}
+    \item La luz debe viajar desde un medio de mayor índice de refracción a uno de menor índice ($n_1 > n_2$).
+    \item El ángulo de incidencia $\theta_1$ debe ser mayor que un ángulo crítico, llamado \textbf{ángulo límite} ($\theta_L$ o $\theta_c$).
+\end{enumerate}
+
+\paragraph{Caso 1: $n_1 < n_2$}
+El rayo de luz viaja de un medio menos denso a uno más denso ópticamente. Según la Ley de Snell:
+$$ \sin(\theta_2) = \frac{n_1}{n_2}\sin(\theta_1) $$
+Como $n_1/n_2 < 1$, se cumple que $\sin(\theta_2) < \sin(\theta_1)$, lo que implica que $\theta_2 < \theta_1$. El rayo siempre se acerca a la normal. El ángulo de refracción $\theta_2$ nunca puede llegar a $90^\circ$.
+\begin{cajaresultado}
+Cuando $n_1 < n_2$, \textbf{no se puede producir} el fenómeno de reflexión total.
+\end{cajaresultado}
+
+\paragraph{Caso 2: $n_1=1,6$ y $n_2=1,3$}
+En este caso, se cumple la primera condición: $n_1 > n_2$. Por tanto, sí es posible la reflexión total.
+El ángulo límite $\theta_L$ es el ángulo de incidencia para el cual el ángulo de refracción es $90^\circ$.
+\begin{gather}
+    n_1\sin(\theta_L) = n_2\sin(90^\circ) \implies \sin(\theta_L) = \frac{n_2}{n_1}
+\end{gather}
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \sin(\theta_L) = \frac{1,3}{1,6} = 0,8125 \\
+    \theta_L = \arcsin(0,8125) \approx 54,34^\circ
+\end{gather}
+\begin{cajaresultado}
+Si $n_1=1,6$ y $n_2=1,3$, el ángulo límite es $\boldsymbol{\theta_L \approx 54,34^\circ}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La reflexión total interna es un fenómeno que solo puede ocurrir cuando la luz intenta pasar de un medio más refringente a uno menos refringente. En caso contrario, el rayo siempre se refracta acercándose a la normal. Para la transición de un medio de índice 1,6 a uno de 1,3, la reflexión total ocurrirá para cualquier ángulo de incidencia superior a 54,34º.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque IV: Física del Siglo XX}
+\label{sec:moderna_2016_jun_ord}
+% ======================================================================
+
+\subsection{Problema (Opción A)}
+\label{subsec:A5_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Para el estudio de tumores mediante tomografía de emisión, se utiliza el isótopo radiactivo ${}_{9}^{18}F$ que se desintegra según la reacción ${}_{9}^{18}F\rightarrow{}_{8}^{18}O+Y$. Se genera una muestra inyectable cuya actividad inicial es $A_{0}=800~MBq$. Para que el producto sea efectivo (pueda efectuarse la tomografía) la muestra debe inyectarse al paciente con una actividad mínima $A = 300 MBq$.
+\begin{enumerate}
+    \item[a)] Determina Y e indica el tipo de desintegración radiactiva. Calcula la masa de ${}_{9}^{18}F$ (en picogramos) en la muestra inicial. (1 punto)
+    \item[b)] Calcula el tiempo máximo (en minutos) que puede transcurrir desde que se genera la muestra hasta que se inyecta. (1 punto)
+\end{enumerate}
+\textbf{Datos:} Periodo de semidesintegración del ${}_{9}^{18}F$: 109,8 min; masa de un átomo de ${}_{9}^{18}F$: 18,00 u; unidad de masa atómica: $u=1,66\cdot10^{-27}kg$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Reacción:} ${}_{9}^{18}F\rightarrow{}_{8}^{18}O+{}_{Z}^{A}Y$.
+    \item \textbf{Actividad inicial ($A_0$):} $A_0 = 800\,\text{MBq} = 8\cdot10^8\,\text{Bq}$ (desintegraciones/s).
+    \item \textbf{Actividad mínima ($A$):} $A = 300\,\text{MBq} = 3\cdot10^8\,\text{Bq}$.
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 109,8\,\text{min} = 6588\,\text{s}$.
+    \item \textbf{Masa atómica del Flúor-18:} $m_{atom} = 18\,\text{u} = 18 \cdot 1,66\cdot10^{-27}\,\text{kg} = 2,988\cdot10^{-26}\,\text{kg}$.
+    \item \textbf{Incógnitas:} Partícula Y, tipo de desintegración, masa inicial ($m_0$) y tiempo máximo de uso ($t$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Reacción y masa inicial}
+La identidad de la partícula Y se determina aplicando las \textbf{leyes de conservación de Soddy-Fajans} (conservación del número másico A y del número atómico Z).
+La \textbf{actividad} se relaciona con el número de núcleos ($N$) y la constante de desintegración ($\lambda$) mediante $A = \lambda N$. La constante $\lambda$ se relaciona con el periodo de semidesintegración por $\lambda = \ln(2)/T_{1/2}$.
+
+\paragraph{b) Tiempo de uso}
+El decaimiento de la actividad sigue la \textbf{ley de desintegración radiactiva}: $A(t) = A_0 e^{-\lambda t}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Partícula Y y masa inicial}
+Conservación de A: $18 = 18 + A \implies A=0$.
+Conservación de Z: $9 = 8 + Z \implies Z=1$.
+La partícula ${}_{1}^{0}Y$ es un positrón ($e^+$ o $\beta^+$).
+Para la masa: $\lambda = \frac{\ln(2)}{T_{1/2}}$. $N_0 = \frac{A_0}{\lambda}$. $m_0 = N_0 \cdot m_{atom}$.
+\begin{gather}
+    m_0 = \frac{A_0 \cdot T_{1/2}}{\ln(2)} \cdot m_{atom}
+\end{gather}
+\paragraph{b) Tiempo máximo}
+\begin{gather}
+    A = A_0 e^{-\lambda t} \implies \frac{A}{A_0} = e^{-\lambda t} \implies \ln\left(\frac{A}{A_0}\right) = -\lambda t \nonumber \\
+    t = -\frac{1}{\lambda}\ln\left(\frac{A}{A_0}\right) = \frac{\ln(A_0/A)}{\lambda} = \frac{T_{1/2}\ln(A_0/A)}{\ln(2)}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Partícula Y y masa inicial}
+La partícula Y es un \textbf{positrón} (${}_{1}^{0}e^+$). El tipo de desintegración es una \textbf{emisión beta positiva ($\beta^+$)}.
+Constante de desintegración (en min$^{-1}$ para facilitar el apartado b):
+$\lambda = \frac{\ln(2)}{109,8\,\text{min}} \approx 6,313\cdot10^{-3}\,\text{min}^{-1} = 1,052\cdot10^{-4}\,\text{s}^{-1}$.
+Número de núcleos iniciales:
+$N_0 = \frac{A_0}{\lambda} = \frac{8\cdot10^8\,\text{s}^{-1}}{1,052\cdot10^{-4}\,\text{s}^{-1}} \approx 7,60\cdot10^{12}\,\text{núcleos}$.
+Masa inicial:
+$m_0 = (7,60\cdot10^{12}\,\text{núcleos}) \cdot (2,988\cdot10^{-26}\,\text{kg/núcleo}) \approx 2,27\cdot10^{-13}\,\text{kg}$.
+En picogramos: $m_0 = 2,27\cdot10^{-13}\,\text{kg} \cdot \frac{10^{12}\,\text{pg}}{10^{-3}\,\text{kg}} = 227\,\text{pg}$.
+\begin{cajaresultado}
+La partícula Y es un \textbf{positrón} ($\boldsymbol{\beta^+}$). La masa inicial de la muestra es de $\boldsymbol{\approx 227\,\textbf{pg}}$.
+\end{cajaresultado}
+
+\paragraph{b) Tiempo máximo}
+\begin{gather}
+    t = \frac{109,8\,\text{min}}{\ln(2)}\ln\left(\frac{800}{300}\right) \approx \frac{109,8}{0,693} \cdot \ln(2,667) \approx 158,4 \cdot 0,981 \approx 155,4\,\text{min}
+\end{gather}
+\begin{cajaresultado}
+El tiempo máximo que puede transcurrir es de $\boldsymbol{\approx 155,4\,\textbf{minutos}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La desintegración del Flúor-18 es una emisión de positrones, fundamental para la técnica PET. La actividad radiactiva requerida se consigue con una masa ínfima de isótopo, del orden de picogramos. Debido a su relativamente corto periodo de semidesintegración, la muestra tiene una vida útil limitada, debiendo ser utilizada en este caso antes de que transcurran unas dos horas y media.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión (Opción A)}
+\label{subsec:A6_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+En una experiencia de efecto fotoeléctrico, se hace incidir luz de longitud de onda $\lambda_{1}$ sobre una placa de potasio y se emiten electrones cuya velocidad máxima es $v_{1}$. Si la longitud de onda umbral para el potasio es $\lambda_{0}$ y la luz incidente tiene una longitud de onda $\lambda_{2}$ tal que $\lambda_{0}>\lambda_{2}>\lambda_{1},$ la velocidad máxima, $v_{2}$, de los electrones, ¿será mayor o menor que $v_{1}$? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe por la \textbf{ecuación del efecto fotoeléctrico de Einstein}:
+$$ E_{c,max} = E_{fotón} - W_0 $$
+donde $E_{c,max}$ es la energía cinética máxima de los electrones emitidos, $E_{fotón}$ es la energía del fotón incidente, y $W_0$ es el trabajo de extracción (o función trabajo), una constante para cada material.
+La energía del fotón es inversamente proporcional a su longitud de onda $\lambda$: $E_{fotón} = hf = \frac{hc}{\lambda}$.
+El trabajo de extracción se relaciona con la longitud de onda umbral $\lambda_0$ por $W_0 = \frac{hc}{\lambda_0}$.
+Por tanto, la ecuación se puede escribir como:
+$$ \frac{1}{2}mv_{max}^2 = \frac{hc}{\lambda} - \frac{hc}{\lambda_0} $$
+
+\subsubsection*{4. Razonamiento}
+Se nos da la relación entre las longitudes de onda: $\lambda_0 > \lambda_2 > \lambda_1$.
+Como la energía de un fotón ($E = hc/\lambda$) es inversamente proporcional a la longitud de onda, esta relación implica una relación inversa para las energías de los fotones correspondientes:
+$$ E_2 < E_1 $$
+(La condición $\lambda_0 > \lambda_2$ y $\lambda_0 > \lambda_1$ asegura que en ambos casos se produce el efecto fotoeléctrico, ya que la energía de los fotones es mayor que el trabajo de extracción).
+
+La energía cinética de los electrones emitidos es la energía del fotón que excede el trabajo de extracción. Como $W_0$ es el mismo en ambos casos (el material es potasio), la energía cinética será mayor para el fotón que tenga más energía.
+$$ E_1 > E_2 \implies E_1 - W_0 > E_2 - W_0 \implies E_{c,1} > E_{c,2} $$
+Dado que la energía cinética es $E_c = \frac{1}{2}mv^2$, una mayor energía cinética implica una mayor velocidad máxima.
+$$ E_{c,1} > E_{c,2} \implies \frac{1}{2}mv_1^2 > \frac{1}{2}mv_2^2 \implies v_1 > v_2 $$
+
+\begin{cajaresultado}
+La velocidad máxima de los electrones, $v_2$, será \textbf{menor} que $v_1$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En el efecto fotoeléctrico, una menor longitud de onda de la luz incidente significa fotones de mayor energía. Dado que $\lambda_2 > \lambda_1$, los fotones de la segunda experiencia tienen menos energía que los de la primera. Al incidir sobre el mismo material, esta menor energía de los fotones se traduce en una menor energía cinética sobrante para los electrones emitidos y, por lo tanto, en una menor velocidad máxima.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión (Opción B)}
+\label{subsec:B5_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Un electrón se mueve a una velocidad 0,9c. Calcula la energía en reposo, la energía total y la energía cinética relativista.
+\textbf{Dato:} velocidad de la luz en el vacío, $c=3\cdot10^{8}m/s$; masa del electrón, $m_e=9,1\cdot10^{-31}$ kg.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplican las fórmulas de la relatividad especial de Einstein.
+\begin{itemize}
+    \item \textbf{Energía en reposo ($E_0$):} Es la energía asociada a la masa en reposo de la partícula. $E_0 = m_e c^2$.
+    \item \textbf{Energía total ($E$):} Es la energía total de la partícula en movimiento. $E = \gamma m_e c^2$, donde $\gamma$ es el factor de Lorentz: $\gamma = \frac{1}{\sqrt{1-v^2/c^2}}$.
+    \item \textbf{Energía cinética ($E_c$):} Es la diferencia entre la energía total y la energía en reposo. $E_c = E - E_0 = (\gamma-1)m_e c^2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+Primero calculamos el factor de Lorentz para $v=0,9c$:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1-(0,9c)^2/c^2}} = \frac{1}{\sqrt{1-0,81}} = 
+    \approx 2,294
+\end{gather}
+\paragraph{Energía en reposo}
+\begin{gather}
+    E_0 = (9,1\cdot10^{-31}\,\text{kg})(3\cdot10^8\,\text{m/s})^2 = 8,19\cdot10^{-14}\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+La energía en reposo es $\boldsymbol{E_0 = 8,19\cdot10^{-14}\,\textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph{Energía total}
+\begin{gather}
+    E = \gamma E_0 \approx 2,294 \cdot (8,19\cdot10^{-14}\,\text{J}) \approx 1,88\cdot10^{-13}\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+La energía total es $\boldsymbol{E \approx 1,88\cdot10^{-13}\,\textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph{Energía cinética}
+\begin{gather}
+    E_c = E - E_0 \approx (1,88-0,819)\cdot10^{-13}\,\text{J} \approx 1,06\cdot10^{-13}\,\text{J} \\
+    \text{o bien: } E_c = (\gamma-1)E_0 \approx (1,294)(8,19\cdot10^{-14}\,\text{J}) \approx 1,06\cdot10^{-13}\,\text{J}
+\end{gather}
+\begin{cajaresultado}
+La energía cinética es $\boldsymbol{E_c \approx 1,06\cdot10^{-13}\,\textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A velocidades cercanas a la de la luz, la energía de una partícula aumenta drásticamente. Para un electrón al 90\% de la velocidad de la luz, su energía total es más del doble de su energía en reposo. Su energía cinética es incluso mayor que su propia energía en reposo, un resultado imposible en la mecánica clásica.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión (Opción B)}
+\label{subsec:B6_2016_jun_ord_re}
+
+\begin{cajaenunciado}
+Define la energía de enlace por nucleón. La energía de enlace por nucleón del hierro ${}^{56}Fe$ es de 8,79 MeV/nucleón y disminuye progresivamente al aumentar el número de nucleones hasta alcanzar los 7,59 MeV/nucleón para el uranio ${}^{235}U$. Explica cuál de los dos núcleos es más estable y por qué es posible obtener energía al fisionar átomos de uranio. Razona las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Energía de enlace por nucleón}
+La \textbf{energía de enlace ($E_e$)} de un núcleo es la energía liberada cuando sus protones y neutrones (nucleones) se unen para formarlo, o equivalentemente, la energía necesaria para separar el núcleo en sus nucleones constituyentes. Proviene del defecto de masa ($\Delta m$) a través de $E_e = \Delta m c^2$.
+La \textbf{energía de enlace por nucleón} es la energía de enlace total dividida por el número de nucleones ($A$): $E_e/A$. Esta magnitud es una medida directa de la \textbf{estabilidad nuclear}. Cuanto mayor es la energía de enlace por nucleón, más estable es el núcleo.
+
+\paragraph{Comparación de estabilidad}
+Se nos dan los valores:
+\begin{itemize}
+    \item $E_e/A$ para ${}^{56}Fe$ = 8,79 MeV/nucleón
+    \item $E_e/A$ para ${}^{235}U$ = 7,59 MeV/nucleón
+\end{itemize}
+Como $8,79 > 7,59$, el núcleo de hierro es más estable que el de uranio.
+\begin{cajaresultado}
+El núcleo de \textbf{hierro-56 es más estable} porque tiene una mayor energía de enlace por nucleón.
+\end{cajaresultado}
+
+\paragraph{Obtención de energía por fisión}
+La \textbf{fisión nuclear} es el proceso en el que un núcleo pesado, como el de uranio, se divide en dos o más núcleos más ligeros. Estos fragmentos de fisión tienen números másicos intermedios, más cercanos al del hierro.
+Esto significa que los productos de la fisión tienen una energía de enlace por nucleón \textbf{mayor} que la del núcleo original de uranio. Al pasar de un estado menos ligado (Uranio) a estados más ligados (productos), la diferencia de energía de enlace se libera. La masa total de los productos es menor que la masa del uranio inicial, y esa diferencia de masa se convierte en una gran cantidad de energía según $E=\Delta m c^2$.
+
+\begin{cajaresultado}
+Es posible obtener energía de la fisión del uranio porque los núcleos resultantes son más estables (tienen mayor energía de enlace por nucleón). La transición de un estado de menor enlace a uno de mayor enlace libera la diferencia de energía.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La estabilidad nuclear se mide por la energía de enlace por nucleón. El hierro-56, cercano al pico de la curva de estabilidad, es mucho más estable que el uranio-235. La fisión nuclear es energéticamente favorable porque permite que un núcleo pesado y poco estable como el uranio se transforme en núcleos más ligeros y estables, liberando la energía correspondiente a este aumento de estabilidad.
+\end{cajaconclusion}
+
+\newpage

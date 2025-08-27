@@ -1,0 +1,796 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2011 - Convocatoria Extraordinaria}
+\label{chap:2011_sep_ext}
+
+% ======================================================================
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2011_sep_ext}
+% ======================================================================
+
+\subsection{Problema  - OPCIÓN A}
+\label{subsec:1A_2011_sep_ext}
+
+\begin{cajaenunciado}
+La distancia entre el Sol y Mercurio es de $58\cdot10^{6}$ km y entre el Sol y la Tierra es de $150\cdot10^{6}$ km. Suponiendo que las órbitas de ambos planetas alrededor del Sol son circulares, calcula la velocidad orbital de:
+\begin{enumerate}
+    \item[a)] La Tierra. (1 punto)
+    \item[b)] Mercurio. (1 punto)
+\end{enumerate}
+Justifica los cálculos adecuadamente.
+\textbf{Datos:} Masa del Sol, $M_S = 1,99 \cdot 10^{30}$ kg; Constante de Gravitación Universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Los datos del problema, convertidos al Sistema Internacional (SI), son:
+\begin{itemize}
+    \item \textbf{Radio orbital de Mercurio ($r_M$):} $r_M = 58 \cdot 10^6 \, \text{km} = 5,8 \cdot 10^{10} \, \text{m}$.
+    \item \textbf{Radio orbital de la Tierra ($r_T$):} $r_T = 150 \cdot 10^6 \, \text{km} = 1,5 \cdot 10^{11} \, \text{m}$.
+    \item \textbf{Masa del Sol ($M_S$):} $M_S = 1,99 \cdot 10^{30} \, \text{kg}$.
+    \item \textbf{Constante de Gravitación ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnitas:} Velocidad orbital de la Tierra ($v_T$) y de Mercurio ($v_M$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Órbitas Planetarias} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema del Sol en el centro del sistema de coordenadas. Dibujar dos órbitas circulares concéntricas. La órbita interior representa a Mercurio, con su radio $r_M$. La órbita exterior representa a la Tierra, con su radio $r_T$. Sobre cada órbita, dibujar el planeta correspondiente con un vector velocidad tangencial ($\vec{v}_M$ y $\vec{v}_T$) y un vector de fuerza gravitatoria ($\vec{F}_g$) apuntando hacia el Sol."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{orbitas_sol.png}
+    }}
+    \caption{Modelo de las órbitas circulares de la Tierra y Mercurio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para que un planeta mantenga una órbita circular, la fuerza de atracción gravitatoria que ejerce el Sol debe ser igual a la fuerza centrípeta requerida para dicho movimiento.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal:} La fuerza con la que el Sol atrae a un planeta de masa $m$ es $F_g = G \frac{M_S m}{r^2}$.
+    \item \textbf{Fuerza Centrípeta:} La fuerza necesaria para mantener un cuerpo en una trayectoria circular es $F_c = m \frac{v^2}{r}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta:
+\begin{gather}
+    F_g = F_c \implies G \frac{M_S m}{r^2} = m \frac{v^2}{r}
+\end{gather}
+La masa del planeta ($m$) se simplifica. Despejamos la velocidad orbital ($v$):
+\begin{gather}
+    G \frac{M_S}{r} = v^2 \implies v = \sqrt{\frac{G M_S}{r}}
+\end{gather}
+Esta expresión general se aplicará a cada planeta.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Velocidad orbital de la Tierra}
+\begin{gather}
+    v_T = \sqrt{\frac{(6,67 \cdot 10^{-11})(1,99 \cdot 10^{30})}{1,5 \cdot 10^{11}}} \approx \sqrt{8,8486 \cdot 10^8} \approx 29746 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad orbital de la Tierra es $\boldsymbol{v_T \approx 29746 \, \textbf{m/s}}$ (o 29,75 km/s).
+\end{cajaresultado}
+
+\paragraph{b) Velocidad orbital de Mercurio}
+\begin{gather}
+    v_M = \sqrt{\frac{(6,67 \cdot 10^{-11})(1,99 \cdot 10^{30})}{5,8 \cdot 10^{10}}} \approx \sqrt{2,289 \cdot 10^9} \approx 47844 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad orbital de Mercurio es $\boldsymbol{v_M \approx 47844 \, \textbf{m/s}}$ (o 47,84 km/s).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La velocidad orbital de un planeta depende inversamente de la raíz cuadrada del radio de su órbita. Por tanto, los planetas más cercanos al Sol, como Mercurio, se mueven a una velocidad mayor que los planetas más lejanos, como la Tierra. Los cálculos muestran que Mercurio orbita a unos 47,8 km/s, mientras que la Tierra lo hace a unos 29,7 km/s.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:1B_2011_sep_ext}
+
+\begin{cajaenunciado}
+El Apolo 11 fue la primera misión espacial tripulada que aterrizó en la Luna. Calcula el campo gravitatorio en que se encontraba el vehículo espacial cuando había recorrido $2/3$ de la distancia desde la Tierra hasta la Luna (considere solo el campo originado por ambos cuerpos).
+\textbf{Datos:} Distancia Tierra-Luna, $d=3,84\cdot10^{5}$ km; masa de la Tierra, $M_{T}=5,9\cdot10^{24}$ kg; masa de la Luna, $M_{L}=7,4\cdot10^{22}$ kg; constante de gravitación universal $G=6,67\cdot10^{-11}Nm^{2}/kg^{2}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la Tierra ($M_T$):} $M_T = 5,9 \cdot 10^{24}$ kg.
+    \item \textbf{Masa de la Luna ($M_L$):} $M_L = 7,4 \cdot 10^{22}$ kg.
+    \item \textbf{Distancia Tierra-Luna ($d$):} $d = 3,84 \cdot 10^5 \, \text{km} = 3,84 \cdot 10^8 \, \text{m}$.
+    \item \textbf{Punto de interés (P):} Situado a una distancia $r_T = \frac{2}{3}d$ de la Tierra.
+    \item \textbf{Distancia de la Luna al punto P ($r_L$):} $r_L = d - r_T = d - \frac{2}{3}d = \frac{1}{3}d$.
+    \item \textbf{Constante G:} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnita:} Campo gravitatorio total, $\vec{g}_P$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Gravitatorio Tierra-Luna} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje horizontal. A la izquierda, un círculo grande representando la Tierra. A la derecha, un círculo más pequeño representando la Luna. Marcar el punto P en el segmento que los une, a 2/3 de la distancia desde la Tierra. En el punto P, dibujar el vector de campo gravitatorio $\vec{g}_T$ creado por la Tierra, apuntando hacia la Tierra (izquierda). Dibujar el vector $\vec{g}_L$ creado por la Luna, apuntando hacia la Luna (derecha). El vector $\vec{g}_T$ debe ser visiblemente más largo que $\vec{g}_L$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{campo_tierra_luna.png}
+    }}
+    \caption{Superposición de campos gravitatorios en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica el \textbf{Principio de Superposición}. El campo gravitatorio total en un punto es la suma vectorial de los campos creados por cada masa individualmente: $\vec{g} = \sum \vec{g}_i$.
+El campo gravitatorio creado por una masa puntual M a una distancia r es $\vec{g} = -G \frac{M}{r^2} \vec{u}_r$, donde $\vec{u}_r$ es el vector unitario que va desde la masa M al punto.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Definimos un eje unidimensional con la Tierra en el origen ($x=0$) y la Luna en $x=d$. El punto P está en $x_P = \frac{2}{3}d$.
+El campo creado por la Tierra en P, $\vec{g}_T$, es atractivo y apunta hacia la Tierra (sentido $-\vec{i}$). El campo creado por la Luna en P, $\vec{g}_L$, es atractivo y apunta hacia la Luna (sentido $+\vec{i}$).
+\begin{gather}
+    \vec{g}_{total} = \vec{g}_T + \vec{g}_L = -G\frac{M_T}{r_T^2}\vec{i} + G\frac{M_L}{r_L^2}\vec{i} = G\left( \frac{M_L}{r_L^2} - \frac{M_T}{r_T^2} \right) \vec{i}
+\end{gather}
+Donde $\vec{i}$ es el vector unitario que va de la Tierra a la Luna.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos las distancias:
+$r_T = \frac{2}{3}(3,84 \cdot 10^8) = 2,56 \cdot 10^8$ m.
+$r_L = \frac{1}{3}(3,84 \cdot 10^8) = 1,28 \cdot 10^8$ m.
+Calculamos el campo total:
+\begin{gather}
+    \vec{g}_{total} = 6,67 \cdot 10^{-11} \left( \frac{7,4 \cdot 10^{22}}{(1,28 \cdot 10^8)^2} - \frac{5,9 \cdot 10^{24}}{(2,56 \cdot 10^8)^2} \right) \vec{i} \nonumber \\
+    \vec{g}_{total} = 6,67 \cdot 10^{-11} (4,516 \cdot 10^6 - 8,998 \cdot 10^7) \vec{i} \approx -5,7 \cdot 10^{-3} \vec{i} \, \text{N/kg}
+\end{gather}
+\begin{cajaresultado}
+    El campo gravitatorio en el punto especificado es $\boldsymbol{\vec{g} \approx -5,7 \cdot 10^{-3} \vec{i} \, \textbf{N/kg}}$. Su módulo es de $5,7 \cdot 10^{-3}$ N/kg y está dirigido \textbf{hacia la Tierra}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En el punto situado a 2/3 de la distancia Tierra-Luna, tanto la Tierra como la Luna ejercen una atracción gravitatoria en sentidos opuestos. Debido a la mayor masa de la Tierra, su campo gravitatorio es dominante. El campo neto es la resta de ambos y resulta en una intensidad de $5,7 \cdot 10^{-3}$ N/kg dirigida hacia la Tierra.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque II: Movimiento Ondulatorio}
+\label{sec:ondas_2011_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión  - OPCIÓN A}
+\label{subsec:2A_2011_sep_ext}
+
+\begin{cajaenunciado}
+Calcula los valores máximos de la posición, velocidad y aceleración de un punto que oscila según la función $x=\cos(2\pi t+\varphi_{0})$ metros, donde t se expresa en segundos.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de analizar una ecuación de Movimiento Armónico Simple (M.A.S.).
+\begin{itemize}
+    \item \textbf{Ecuación de la elongación ($x$):} $x(t) = \cos(2\pi t + \phi_0)$ en metros.
+    \item \textbf{Incógnitas:} Valor máximo de la posición ($x_{max}$), velocidad ($v_{max}$) y aceleración ($a_{max}$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La forma general de la ecuación de un M.A.S. es $x(t) = A\cos(\omega t + \phi_0)$.
+\begin{itemize}
+    \item La \textbf{velocidad} ($v$) es la derivada de la posición respecto al tiempo: $v(t) = \frac{dx}{dt} = -A\omega\sin(\omega t + \phi_0)$.
+    \item La \textbf{aceleración} ($a$) es la derivada de la velocidad respecto al tiempo: $a(t) = \frac{dv}{dt} = -A\omega^2\cos(\omega t + \phi_0)$.
+\end{itemize}
+Los valores máximos de estas magnitudes se obtienen cuando las funciones seno o coseno valen $\pm 1$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Comparando la ecuación dada, $x(t) = \cos(2\pi t + \phi_0)$, con la forma general, identificamos los parámetros:
+\begin{itemize}
+    \item \textbf{Amplitud (A):} $A = 1$ m.
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = 2\pi$ rad/s.
+\end{itemize}
+Los valores máximos (en módulo) son:
+\begin{itemize}
+    \item \textbf{Posición máxima:} $|x_{max}| = A$.
+    \item \textbf{Velocidad máxima:} $|v_{max}| = A\omega$.
+    \item \textbf{Aceleración máxima:} $|a_{max}| = A\omega^2$.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    |x_{max}| = 1 \, \text{m} \\
+    |v_{max}| = (1 \, \text{m})(2\pi \, \text{rad/s}) = 2\pi \, \text{m/s} \\
+    |a_{max}| = (1 \, \text{m})(2\pi \, \text{rad/s})^2 = 4\pi^2 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+Los valores máximos son:
+\begin{itemize}
+    \item Posición máxima: $\boldsymbol{|x_{max}| = 1 \, \textbf{m}}$
+    \item Velocidad máxima: $\boldsymbol{|v_{max}| = 2\pi \, \textbf{m/s} \approx 6,28 \, \textbf{m/s}}$
+    \item Aceleración máxima: $\boldsymbol{|a_{max}| = 4\pi^2 \, \textbf{m/s}^2 \approx 39,48 \, \textbf{m/s}^2}$
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la ecuación del movimiento, se identifican la amplitud (1 m) y la frecuencia angular ($2\pi$ rad/s). Derivando sucesivamente la función de posición se obtienen las expresiones para la velocidad y la aceleración. Los valores máximos de estas magnitudes corresponden a la amplitud de sus respectivas funciones, resultando ser $1$ m, $2\pi$ m/s y $4\pi^2$ m/s$^2$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema  - OPCIÓN B}
+\label{subsec:2B_2011_sep_ext}
+
+\begin{cajaenunciado}
+Una partícula de masa $m=2$ kg, describe un movimiento armónico simple cuya elongación viene expresada por la función: $x=0,6\sin(24\pi t)$ metros, donde t se expresa en segundos. Calcula:
+\begin{enumerate}
+    \item[a)] La constante elástica del oscilador y su energía mecánica total. (1 punto)
+    \item[b)] El primer instante de tiempo en que la energía cinética y la energía potencial de la partícula son iguales. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la partícula ($m$):} $m = 2$ kg.
+    \item \textbf{Ecuación de la elongación ($x$):} $x(t) = 0,6\sin(24\pi t)$ en SI.
+    \item \textbf{Incógnitas:} Constante elástica ($k$), Energía mecánica ($E_M$), y el primer instante $t>0$ donde $E_c = E_p$.
+\end{itemize}
+De la ecuación, identificamos:
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 0,6$ m.
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = 24\pi$ rad/s.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Energías en un M.A.S.} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de Energía vs. Posición para un M.A.S. Dibujar una parábola cóncava hacia arriba para la Energía Potencial ($E_p = \frac{1}{2}kx^2$), que es cero en el centro y máxima en los extremos $\pm A$. Dibujar una parábola cóncava hacia abajo para la Energía Cinética ($E_c = E_M - E_p$), que es máxima en el centro y cero en los extremos. Dibujar una línea horizontal para la Energía Mecánica Total ($E_M$). Marcar los puntos donde las curvas de $E_c$ y $E_p$ se cruzan, indicando que en esos puntos $x = \pm A/\sqrt{2}$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{energias_mas.png}
+    }}
+    \caption{Relación entre energías en un Movimiento Armónico Simple.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Constante elástica ($k$):} En un M.A.S., la frecuencia angular se relaciona con la masa y la constante elástica mediante $\omega = \sqrt{k/m}$.
+    \item \textbf{Energía Mecánica ($E_M$):} Es constante y su valor es igual a la energía potencial máxima o la energía cinética máxima: $E_M = \frac{1}{2}kA^2 = \frac{1}{2}m\omega^2A^2$.
+    \item \textbf{Energías Cinética y Potencial:} $E_c = \frac{1}{2}mv^2$ y $E_p = \frac{1}{2}kx^2$. La suma $E_c+E_p=E_M$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Constante elástica y Energía mecánica}
+De la relación de la frecuencia angular, despejamos $k$:
+\begin{gather}
+    \omega^2 = \frac{k}{m} \implies k = m\omega^2
+\end{gather}
+La energía mecánica total se calcula con:
+\begin{gather}
+    E_M = \frac{1}{2}kA^2
+\end{gather}
+\paragraph{b) Instante en que $E_c = E_p$}
+Si $E_c = E_p$, y sabiendo que $E_c + E_p = E_M$, entonces $2E_p = E_M$.
+\begin{gather}
+    2 \left( \frac{1}{2}kx^2 \right) = \frac{1}{2}kA^2 \implies kx^2 = \frac{1}{2}kA^2 \implies x^2 = \frac{A^2}{2} \implies x = \pm \frac{A}{\sqrt{2}}
+\end{gather}
+Buscamos el primer instante $t>0$ para el cual esto se cumple. Sustituimos en la ecuación de la elongación:
+\begin{gather}
+    0,6\sin(24\pi t) = \pm \frac{0,6}{\sqrt{2}} \implies \sin(24\pi t) = \pm \frac{1}{\sqrt{2}}
+\end{gather}
+El primer valor positivo para el argumento que cumple esto es cuando $24\pi t = \pi/4$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Constante elástica y Energía mecánica}
+\begin{gather}
+    k = (2 \, \text{kg})(24\pi \, \text{rad/s})^2 = 2 \cdot 576\pi^2 = 1152\pi^2 \, \text{N/m} \approx 11369 \, \text{N/m} \\
+    E_M = \frac{1}{2}(1152\pi^2 \, \text{N/m})(0,6 \, \text{m})^2 = 576\pi^2 \cdot 0,36 = 207,36\pi^2 \, \text{J} \approx 2046 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La constante elástica es $\boldsymbol{k = 1152\pi^2 \, \textbf{N/m} \approx 11369 \, \textbf{N/m}}$. La energía mecánica total es $\boldsymbol{E_M = 207,36\pi^2 \, \textbf{J} \approx 2046 \, \textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph{b) Instante de tiempo}
+Buscamos el primer $t>0$ tal que $\sin(24\pi t) = 1/\sqrt{2}$.
+\begin{gather}
+    24\pi t = \arcsin\left(\frac{1}{\sqrt{2}}\right) = \frac{\pi}{4} \\
+    t = \frac{\pi/4}{24\pi} = \frac{1}{96} \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+    El primer instante en que las energías cinética y potencial son iguales es $\boldsymbol{t = \frac{1}{96} \, \textbf{s} \approx 0,0104 \, \textbf{s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la ecuación del M.A.S. se han determinado los parámetros fundamentales que permiten calcular la constante elástica del sistema y su energía mecánica total. La condición de igualdad entre energía cinética y potencial se da cuando la elongación es $A/\sqrt{2}$, lo que ocurre por primera vez en el instante $t=1/96$ segundos.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque III: Óptica}
+\label{sec:optica_2011_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:3A_2011_sep_ext}
+
+\begin{cajaenunciado}
+Calcula el valor máximo del ángulo $\beta$ de la figura, para que un submarinista que se encuentra bajo el agua pueda ver una pelota que flota en la superficie. Justifica brevemente la respuesta.
+\textbf{Datos:} Velocidad de la luz en el agua, $v_{agua}=2,3\cdot10^{8}m/s;$ velocidad de la luz en el aire, $v_{aire}=3,0\cdot10^{8}m/s$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+El problema describe el fenómeno del ángulo límite o ángulo crítico de la refracción.
+\begin{itemize}
+    \item \textbf{Medio 1 (incidencia):} Aire (donde está la pelota).
+    \item \textbf{Medio 2 (refracción):} Agua (donde está el submarinista).
+    \item \textbf{Velocidad en aire ($v_{aire}$):} $3,0 \cdot 10^8$ m/s (coincide con $c$).
+    \item \textbf{Velocidad en agua ($v_{agua}$):} $2,3 \cdot 10^8$ m/s.
+    \item \textbf{Incógnita:} Ángulo máximo de visión, $\beta_{max}$. Este corresponde al ángulo de refracción en el agua cuando el rayo de luz proveniente de la pelota incide desde el aire con el mayor ángulo posible, que es un ángulo rasante de $90^\circ$ (ángulo $\alpha$ en la figura).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fenómeno del Ángulo Límite} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una interfaz horizontal separando Aire (arriba) y Agua (abajo). Dibujar una línea normal perpendicular a la interfaz. Un rayo de luz se origina en una pelota en la superficie, en el aire, y viaja rasante a la superficie (ángulo de incidencia $\alpha=90^\circ$ con la normal). Al entrar en el agua, este rayo se refracta acercándose a la normal, formando el ángulo límite o crítico ($\beta_{max}$) con la normal. Mostrar a un submarinista cuyo ojo está en la trayectoria de este rayo refractado."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{angulo_limite.png}
+    }}
+    \caption{El ángulo máximo de visión corresponde a la refracción de un rayo incidente rasante.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se rige por la \textbf{Ley de Snell de la refracción}:
+$$n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$$
+El \textbf{índice de refracción ($n$)} de un medio se define como $n = c/v$, donde $c$ es la velocidad de la luz en el vacío.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Primero, calculamos los índices de refracción del aire y del agua.
+\begin{gather}
+    n_{aire} = \frac{c}{v_{aire}} \\
+    n_{agua} = \frac{c}{v_{agua}}
+\end{gather}
+Aplicamos la Ley de Snell. El rayo va del aire al agua. El ángulo de incidencia máximo es $\theta_1 = \alpha = 90^\circ$. El ángulo de refracción correspondiente será el ángulo máximo de visión, $\theta_2 = \beta_{max}$.
+\begin{gather}
+    n_{aire} \sin(90^\circ) = n_{agua} \sin(\beta_{max})
+\end{gather}
+Como $\sin(90^\circ)=1$, podemos despejar $\sin(\beta_{max})$:
+\begin{gather}
+    \sin(\beta_{max}) = \frac{n_{aire}}{n_{agua}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    n_{aire} = \frac{3,0 \cdot 10^8}{3,0 \cdot 10^8} = 1 \\
+    n_{agua} = \frac{3,0 \cdot 10^8}{2,3 \cdot 10^8} \approx 1,304
+\end{gather}
+Ahora calculamos el ángulo $\beta_{max}$:
+\begin{gather}
+    \sin(\beta_{max}) = \frac{1}{1,304} \approx 0,767 \\
+    \beta_{max} = \arcsin(0,767) \approx 50,1^\circ
+\end{gather}
+\begin{cajaresultado}
+    El valor máximo del ángulo $\beta$ es $\boldsymbol{\approx 50,1^\circ}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que el submarinista pueda ver la pelota, la luz debe pasar del aire al agua. El caso límite ocurre para un rayo de luz que proviene de la pelota y llega a la superficie del agua con un ángulo de incidencia rasante ($90^\circ$). Al refractarse, este rayo define un cono de visión para el submarinista. El semiángulo de este cono es el ángulo crítico, calculado en aproximadamente $50,1^\circ$ mediante la Ley de Snell.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:3B_2011_sep_ext}
+
+\begin{cajaenunciado}
+¿Dónde debe situarse un objeto delante de un espejo cóncavo para que su imagen sea real? ¿Y para que sea virtual? Razone la respuesta utilizando únicamente las construcciones geométricas que considere oportunas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+La respuesta a esta cuestión se basa enteramente en el trazado de rayos para distintas posiciones del objeto.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Imagen Real ($s < -f$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de un espejo cóncavo con su eje óptico, foco F y centro de curvatura C. Colocar un objeto vertical a la izquierda del foco F (por ejemplo, en C). Trazar dos rayos principales: 1) Un rayo paralelo al eje que se refleja pasando por F. 2) Un rayo que pasa por F y se refleja paralelo al eje. Mostrar que los rayos reflejados se cruzan delante del espejo, formando una imagen real e invertida."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_concavo_real.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Imagen Virtual ($-f < s < 0$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "El mismo espejo cóncavo. Colocar un objeto vertical entre el foco F y el vértice del espejo V. Trazar dos rayos principales: 1) Un rayo paralelo al eje que se refleja pasando por F. 2) Un rayo que incide como si proviniera de F y se refleja paralelo al eje (es más fácil trazar el rayo que pasa por el centro C y se refleja sobre sí mismo). Mostrar que los rayos reflejados divergen. Trazar sus prolongaciones (líneas discontinuas) hacia atrás del espejo, mostrando que se cruzan para formar una imagen virtual, derecha y de mayor tamaño."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_concavo_virtual.png}
+    }}
+    \caption{Formación de imágenes reales y virtuales en un espejo cóncavo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La formación de imágenes en espejos esféricos se describe mediante el trazado de rayos, que se basa en las leyes de la reflexión. Una imagen es \textbf{real} si se forma por la intersección de los rayos de luz reflejados. Una imagen es \textbf{virtual} si se forma por la intersección de las prolongaciones de los rayos reflejados.
+
+\paragraph{Caso 1: Imagen Real}
+Como se observa en el diagrama de la izquierda, para que los rayos reflejados converjan en un punto delante del espejo, es necesario que el objeto esté situado a una distancia del espejo \textbf{mayor que la distancia focal}. Esto incluye colocar el objeto en el foco (imagen en el infinito), entre el foco y el centro de curvatura, en el centro de curvatura, o más allá del centro de curvatura.
+
+\paragraph{Caso 2: Imagen Virtual}
+Como se observa en el diagrama de la derecha, para que los rayos reflejados diverjan y sus prolongaciones se corten detrás del espejo, es necesario que el objeto esté situado \textbf{entre el foco y el vértice del espejo}.
+
+\begin{cajaresultado}
+\begin{itemize}
+    \item Para obtener una imagen \textbf{real}, el objeto debe situarse a una distancia del espejo \textbf{mayor o igual a la distancia focal} (es decir, sobre el foco o a la izquierda del mismo).
+    \item Para obtener una imagen \textbf{virtual}, el objeto debe situarse \textbf{entre el foco y el espejo}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La naturaleza de la imagen formada por un espejo cóncavo depende crucialmente de la posición del objeto relativa al foco. El foco actúa como un punto de separación: los objetos colocados más lejos del foco producen imágenes reales, mientras que los objetos colocados más cerca del foco producen imágenes virtuales.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque IV: Electromagnetismo}
+\label{sec:em_2011_sep_ext}
+% ======================================================================
+
+\subsection{Problema - OPCIÓN A}
+\label{subsec:4A_2011_sep_ext}
+
+\begin{cajaenunciado}
+Un electrón entra con velocidad constante $\vec{v}=10\vec{i}$ m/s en una región del espacio en la que existen un campo eléctrico uniforme $\vec{E}=20\vec{j}$ N/C y un campo magnético uniforme $\vec{B}=B_{o}\vec{k}$ T.
+\begin{enumerate}
+    \item[a)] Calcula y representa los vectores fuerza que actúan sobre el electrón (dirección y sentido), en el instante en el que entra en esta región del espacio. (1 punto)
+    \item[b)] Calcula el valor de $B_{0}$ necesario para que el movimiento del electrón sea rectilíneo y uniforme. (1 punto)
+\end{enumerate}
+Nota: Desprecia el campo gravitatorio. \textbf{Dato:} $e = 1,6\cdot10^{-19}$ C.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partícula:} Electrón, carga $q = -e = -1,6 \cdot 10^{-19}$ C.
+    \item \textbf{Velocidad inicial ($\vec{v}$):} $\vec{v} = 10 \vec{i}$ m/s.
+    \item \textbf{Campo eléctrico ($\vec{E}$):} $\vec{E} = 20 \vec{j}$ N/C.
+    \item \textbf{Campo magnético ($\vec{B}$):} $\vec{B} = B_0 \vec{k}$ T.
+    \item \textbf{Incógnitas:} a) Fuerza eléctrica ($\vec{F}_e$) y magnética ($\vec{F}_m$). b) Valor de $B_0$ para que el movimiento sea rectilíneo y uniforme (MRU).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fuerzas sobre un electrón} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XYZ. El eje X apunta a la derecha, el Y hacia arriba y el Z saliendo del papel. Dibujar el vector velocidad $\vec{v}$ del electrón sobre el eje X. Dibujar el vector campo eléctrico $\vec{E}$ sobre el eje Y. Dibujar el vector campo magnético $\vec{B}$ sobre el eje Z. Calcular y dibujar las fuerzas: 1) La fuerza eléctrica $\vec{F}_e=q\vec{E}$ apunta en sentido contrario a $\vec{E}$ (hacia abajo, $-\vec{j}$), ya que la carga es negativa. 2) La fuerza magnética $\vec{F}_m=q(\vec{v}\times\vec{B})$: $\vec{v}\times\vec{B}$ es $\vec{i}\times\vec{k}=-\vec{j}$. Multiplicado por $q<0$, el resultado es en dirección $+\vec{j}$ (hacia arriba)."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{selector_velocidades.png}
+    }}
+    \caption{Diagrama de fuerzas en un selector de velocidades.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza total sobre la carga es la \textbf{Fuerza de Lorentz}: $\vec{F} = \vec{F}_e + \vec{F}_m = q\vec{E} + q(\vec{v} \times \vec{B})$.
+Para que el movimiento sea rectilíneo y uniforme, la fuerza neta debe ser cero ($\vec{F}=0$), lo que implica que la fuerza eléctrica y la magnética deben cancelarse mutuamente: $\vec{F}_e = -\vec{F}_m$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Cálculo de las fuerzas}
+\begin{itemize}
+    \item \textbf{Fuerza Eléctrica ($\vec{F}_e$):}
+    \begin{gather}
+        \vec{F}_e = q\vec{E} = (-e)(E_y \vec{j})
+    \end{gather}
+    \item \textbf{Fuerza Magnética ($\vec{F}_m$):}
+    \begin{gather}
+        \vec{v} \times \vec{B} = (v_x \vec{i}) \times (B_0 \vec{k}) = v_x B_0 (\vec{i}\times\vec{k}) = -v_x B_0 \vec{j} \\
+        \vec{F}_m = q(\vec{v} \times \vec{B}) = (-e)(-v_x B_0 \vec{j}) = e v_x B_0 \vec{j}
+    \end{gather}
+\end{itemize}
+\paragraph{b) Condición de MRU}
+\begin{gather}
+    \vec{F}_e + \vec{F}_m = \vec{0} \implies -eE_y\vec{j} + ev_xB_0\vec{j} = \vec{0} \\
+    (-eE_y + ev_xB_0)\vec{j} = \vec{0} \implies eE_y = ev_xB_0 \implies B_0 = \frac{E_y}{v_x}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Vectores fuerza}
+\begin{gather}
+    \vec{F}_e = (-1,6 \cdot 10^{-19})(20\vec{j}) = -3,2 \cdot 10^{-18} \vec{j} \, \text{N} \\
+    \vec{F}_m = (1,6 \cdot 10^{-19})(10)B_0 \vec{j} = 1,6 \cdot 10^{-18} B_0 \vec{j} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza eléctrica es $\boldsymbol{\vec{F}_e = -3,2 \cdot 10^{-18} \vec{j} \, \textbf{N}}$. La fuerza magnética es $\boldsymbol{\vec{F}_m = 1,6 \cdot 10^{-18} B_0 \vec{j} \, \textbf{N}}$.
+\end{cajaresultado}
+
+\paragraph{b) Valor de $B_0$}
+\begin{gather}
+    B_0 = \frac{20 \, \text{N/C}}{10 \, \text{m/s}} = 2 \, \text{T}
+\end{gather}
+\begin{cajaresultado}
+    El valor del campo magnético debe ser $\boldsymbol{B_0 = 2 \, \textbf{T}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En la configuración dada, la fuerza eléctrica tira del electrón hacia abajo, mientras que la fuerza magnética lo empuja hacia arriba. Para que la trayectoria no se desvíe, estas dos fuerzas deben tener exactamente el mismo módulo. Esta condición se cumple cuando el campo magnético es de 2 T. Este dispositivo se conoce como selector de velocidades.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:4B_2011_sep_ext}
+
+\begin{cajaenunciado}
+Una carga puntual q que se encuentra en un punto A es trasladada a un punto B, siendo el potencial electrostático en A mayor que en B. Discuta cómo varía la energía potencial de dicha carga dependiendo de su signo.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Desplazamiento:} de un punto A a un punto B.
+    \item \textbf{Condición de potencial:} $V_A > V_B$.
+    \item \textbf{Carga de prueba:} $q$.
+    \item \textbf{Incógnita:} Signo de la variación de energía potencial, $\Delta E_p = E_{p,B} - E_{p,A}$, para $q>0$ y para $q<0$.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La variación de la energía potencial electrostática ($\Delta E_p$) de una carga $q$ que se mueve entre dos puntos está relacionada con la diferencia de potencial eléctrico ($\Delta V = V_B - V_A$) entre dichos puntos mediante la expresión:
+$$\Delta E_p = q \cdot \Delta V = q(V_B - V_A)$$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Se nos da la condición $V_A > V_B$, lo que implica que la diferencia de potencial $\Delta V = V_B - V_A$ es negativa.
+$$\Delta V < 0$$
+Analizamos el signo de $\Delta E_p$ para los dos casos posibles del signo de $q$.
+
+\paragraph{Caso 1: La carga $q$ es positiva ($q>0$)}
+\begin{gather}
+    \Delta E_p = q(V_B - V_A) = (\text{positivo}) \cdot (\text{negativo}) < 0
+\end{gather}
+La energía potencial de la carga disminuye. Esto es lógico, ya que una carga positiva se mueve espontáneamente de zonas de mayor potencial a zonas de menor potencial.
+
+\paragraph{Caso 2: La carga $q$ es negativa ($q<0$)}
+\begin{gather}
+    \Delta E_p = q(V_B - V_A) = (\text{negativo}) \cdot (\text{negativo}) > 0
+\end{gather}
+La energía potencial de la carga aumenta. Esto también es lógico, ya que para mover una carga negativa de una zona de mayor potencial a una de menor, se debe realizar un trabajo externo en contra de la fuerza del campo.
+
+\begin{cajaresultado}
+\begin{itemize}
+    \item Si la carga $q$ es \textbf{positiva}, su energía potencial \textbf{disminuye} ($\Delta E_p < 0$).
+    \item Si la carga $q$ es \textbf{negativa}, su energía potencial \textbf{aumenta} ($\Delta E_p > 0$).
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El cambio en la energía potencial depende tanto de la diferencia de potencial entre los puntos como del signo de la carga que se mueve. Una carga positiva "cae" a potenciales más bajos, perdiendo energía potencial. Por el contrario, una carga negativa es "atraída" hacia potenciales más altos, por lo que moverla a un potencial más bajo requiere un aporte de energía externa, aumentando su energía potencial.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque V: Física Moderna}
+\label{sec:moderna_2011_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:5A_2011_sep_ext}
+
+\begin{cajaenunciado}
+Escribe la expresión del principio de incertidumbre de Heisenberg. Explica lo que significa cada término de dicha expresión.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El \textbf{Principio de Incertidumbre (o de Indeterminación) de Heisenberg} es uno de los pilares fundamentales de la mecánica cuántica. Establece un límite fundamental a la precisión con la que se pueden conocer simultáneamente ciertos pares de variables físicas de una partícula.
+
+\paragraph*{Expresión Matemática}
+La forma más conocida del principio se refiere a la posición y al momento lineal de una partícula. Para la componente x, la expresión es:
+$$\Delta x \cdot \Delta p_x \ge \frac{\hbar}{2}$$
+
+\paragraph*{Significado de los Términos}
+\begin{itemize}
+    \item $\boldsymbol{\Delta x}$: Representa la \textbf{incertidumbre} o \textbf{indeterminación} en la medida de la \textbf{posición} de la partícula a lo largo del eje x. No es un error de medida, sino una propiedad intrínseca de la naturaleza cuántica de la partícula. Es una medida de la dispersión de los posibles resultados si se midiera la posición muchas veces.
+    \item $\boldsymbol{\Delta p_x}$: Representa la \textbf{incertidumbre} en la medida del \textbf{momento lineal} (cantidad de movimiento) de la partícula a lo largo del mismo eje x. Mide la dispersión de los posibles valores del momento.
+    \item $\boldsymbol{\ge}$: El signo de "mayor o igual que" indica que el producto de las incertidumbres tiene un límite inferior; nunca puede ser cero.
+    \item $\boldsymbol{\hbar}$: Es la \textbf{constante de Planck reducida}, definida como $\hbar = h/(2\pi)$, donde $h$ es la constante de Planck ($h \approx 6,626 \cdot 10^{-34}$ J·s). Es una constante fundamental de la naturaleza que marca la escala a la que los efectos cuánticos se vuelven importantes.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El Principio de Incertidumbre de Heisenberg significa que es imposible determinar simultáneamente y con precisión infinita la posición y el momento lineal de una partícula. Cuanto mayor sea la certeza con la que se conoce una de las variables (por ejemplo, si $\Delta x$ es muy pequeño), mayor será la incertidumbre inherente en la otra ($\Delta p_x$ será grande), y viceversa. Esto refleja la dualidad onda-partícula y el carácter probabilístico de la mecánica cuántica, en contraposición con la visión determinista de la física clásica.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema  - OPCIÓN B}
+\label{subsec:5B_2011_sep_ext}
+
+\begin{cajaenunciado}
+Desde la Tierra se lanza una nave espacial que se mueve con una velocidad constante de valor el 70\% de la velocidad de la luz. La nave transmite datos a la Tierra mediante una radio alimentada por una batería, que dura 15 años medidos en un sistema en reposo.
+\begin{enumerate}
+    \item[a)] ¿Cuánto tiempo dura la batería de la nave, según el sistema de referencia de la Tierra? ¿En cuál de los dos sistemas de referencia se mide un tiempo dilatado? (1 punto)
+    \item[b)] Según el sistema de referencia de la nave, ¿a qué distancia se encuentra la Tierra en el instante en que la batería se agota? (1 punto)
+\end{enumerate}
+Justifica brevemente las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad de la nave ($v$):} $v = 0,70 c$.
+    \item \textbf{Tiempo propio ($\Delta t_0$):} Es la duración de la batería medida en su propio sistema en reposo (la nave). $\Delta t_0 = 15$ años.
+    \item \textbf{Incógnitas:}
+    \begin{enumerate}
+        \item[a)] Duración de la batería medida desde la Tierra ($\Delta t$) y sistema donde el tiempo se dilata.
+        \item[b)] Distancia a la Tierra medida desde la nave en el momento del agotamiento.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Dilatación del Tiempo y Contracción de la Longitud} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos paneles. Panel Izquierdo (Vista desde la Tierra): Se ve una nave espacial alejándose. Un reloj en la Tierra marca un tiempo $\Delta t$. Un reloj en la nave, visto desde la Tierra, parece avanzar más lento. Panel Derecho (Vista desde la Nave): Se ve a la Tierra alejándose a velocidad v. Un reloj en la nave marca el tiempo propio $\Delta t_0$. La distancia a la Tierra se mide en este sistema de referencia."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{relatividad_nave.png}
+    }}
+    \caption{Comparación de los sistemas de referencia de la Tierra y la nave.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve con los principios de la Relatividad Especial.
+\begin{itemize}
+    \item \textbf{Dilatación del Tiempo:} Un intervalo de tiempo medido en un sistema de referencia en movimiento ($\Delta t$) es siempre mayor que el intervalo de tiempo medido en el sistema de referencia en reposo del evento (tiempo propio $\Delta t_0$). La relación es $\Delta t = \gamma \Delta t_0$.
+    \item \textbf{Factor de Lorentz ($\gamma$):} $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}$. Siempre $\gamma \ge 1$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Tiempo medido desde la Tierra}
+Primero se calcula el factor de Lorentz $\gamma$. Luego se aplica la fórmula de la dilatación del tiempo:
+\begin{gather}
+    \Delta t = \gamma \Delta t_0
+\end{gather}
+El tiempo dilatado es el medido por el observador que ve al reloj en movimiento, es decir, el observador en la Tierra.
+\paragraph{b) Distancia medida desde la nave}
+Desde el sistema de referencia de la nave, la Tierra se aleja a una velocidad $v$. El tiempo transcurrido en la nave es el tiempo propio $\Delta t_0$. La distancia es simplemente:
+\begin{gather}
+    d_{nave} = v \cdot \Delta t_0
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Tiempo medido desde la Tierra}
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - (0,7c)^2/c^2}} = \frac{1}{\sqrt{1 - 0,49}} = \frac{1}{\sqrt{0,51}} \approx 1,40 \\
+    \Delta t = (1,40) \cdot (15 \, \text{años}) \approx 21 \, \text{años}
+\end{gather}
+\begin{cajaresultado}
+    Según el sistema de referencia de la Tierra, la batería dura $\boldsymbol{\approx 21}$ \textbf{años}. El tiempo dilatado se mide en el \textbf{sistema de referencia de la Tierra}.
+\end{cajaresultado}
+
+\paragraph{b) Distancia medida desde la nave}
+La distancia se puede expresar en años-luz.
+\begin{gather}
+    d_{nave} = (0,70 c) \cdot (15 \, \text{años}) = 10,5 \text{ años-luz}
+\end{gather}
+\begin{cajaresultado}
+    Según el sistema de referencia de la nave, la Tierra se encuentra a una distancia de $\boldsymbol{10,5}$ \textbf{años-luz}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido al fenómeno de la dilatación del tiempo, un observador en la Tierra mide que la batería de la nave dura 21 años, mientras que para la tripulación de la nave solo han pasado 15 años. El "tiempo en movimiento" de la nave transcurre más lento desde la perspectiva terrestre. Para la tripulación, en su tiempo propio de 15 años, la Tierra se habrá alejado una distancia de 10,5 años-luz.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque VI: Física Cuántica y Nuclear}
+\label{sec:cuantica_nuclear_2011_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:6A_2011_sep_ext}
+
+\begin{cajaenunciado}
+El ${}^{124}_{55}Cs$ es un isótopo radiactivo cuyo periodo de semidesintegración es de 30,8 s. Si inicialmente se tiene una muestra con $3\cdot10^{16}$ núcleos de este isótopo, ¿Cuántos núcleos habrá 2 minutos después?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Isótopo:} Cesio-124 (${}^{124}_{55}Cs$).
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 30,8$ s.
+    \item \textbf{Número inicial de núcleos ($N_0$):} $N_0 = 3 \cdot 10^{16}$ núcleos.
+    \item \textbf{Tiempo transcurrido ($t$):} $t = 2$ minutos $= 120$ s.
+    \item \textbf{Incógnita:} Número de núcleos restantes, $N(t)$.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La desintegración radiactiva se rige por la ley de decaimiento exponencial. El número de núcleos $N$ que quedan después de un tiempo $t$ se puede calcular a partir del número inicial $N_0$ y el periodo de semidesintegración $T_{1/2}$ mediante la fórmula:
+$$N(t) = N_0 \left(\frac{1}{2}\right)^{\frac{t}{T_{1/2}}}$$
+Alternativamente, se puede usar la forma $N(t) = N_0 e^{-\lambda t}$, donde la constante de desintegración $\lambda = \frac{\ln(2)}{T_{1/2}}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La fórmula ya está lista para su uso. Calcularemos primero el exponente, que es el número de periodos de semidesintegración transcurridos.
+\begin{gather}
+    n = \frac{t}{T_{1/2}}
+\end{gather}
+Y luego se aplica la ley:
+\begin{gather}
+    N(t) = N_0 \left(\frac{1}{2}\right)^{n}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    n = \frac{120 \, \text{s}}{30,8 \, \text{s}} \approx 3,896 \\
+    N(120) = (3 \cdot 10^{16}) \left(\frac{1}{2}\right)^{3,896} \approx (3 \cdot 10^{16}) \cdot (0,0672) \approx 2,016 \cdot 10^{15} \, \text{núcleos}
+\end{gather}
+\begin{cajaresultado}
+    A los 2 minutos quedarán aproximadamente $\boldsymbol{2,02 \cdot 10^{15}}$ \textbf{núcleos}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Dado que el tiempo transcurrido (120 s) es casi cuatro veces el periodo de semidesintegración (30,8 s), la muestra se ha reducido significativamente. Después de cada periodo, el número de núcleos se reduce a la mitad. Tras 3,896 de estos periodos, el número de núcleos de Cesio-124 ha disminuido de $3 \cdot 10^{16}$ a aproximadamente $2,02 \cdot 10^{15}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:6B_2011_sep_ext}
+
+\begin{cajaenunciado}
+La longitud de onda de De Broglie de un electrón coincide con la de un fotón cuya energía (en el vacío) es de $10^{8}$ eV. Calcula la longitud de onda del electrón y su energía cinética expresada en eV.
+\textbf{Datos:} Constante de Planck $h=6,63\cdot10^{-34}$ J s; velocidad de la luz en el vacío $c=3\cdot10^{8}$ m/s; masa del electrón $m_{e}=9,1\cdot10^{-31}$ kg; carga elemental $e=1,6\cdot10^{-19}$ C.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Condición:} $\lambda_{electrón} = \lambda_{fotón}$.
+    \item \textbf{Energía del fotón ($E_{fotón}$):} $E_{fotón} = 10^8$ eV.
+    \item \textbf{Constantes:} $h$, $c$, $m_e$, $e$.
+    \item \textbf{Incógnitas:} Longitud de onda del electrón ($\lambda_e$) y su energía cinética ($E_{c,e}$) en eV.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Energía del fotón:} $E_{fotón} = \frac{hc}{\lambda_{fotón}}$.
+    \item \textbf{Longitud de onda de De Broglie:} $\lambda_e = \frac{h}{p_e}$, donde $p_e$ es el momento lineal del electrón.
+    \item \textbf{Energía Cinética Relativista:} La energía del fotón (100 MeV) es muy superior a la energía en reposo del electrón ($m_e c^2 \approx 0,511$ MeV). Por tanto, el electrón será altamente relativista. No se puede usar la fórmula clásica $E_c=p^2/(2m)$. Se debe usar la relación relativista entre energía y momento:
+    $$E_e^2 = (p_e c)^2 + (m_e c^2)^2$$
+    La energía cinética es la diferencia entre la energía total y la energía en reposo:
+    $$E_{c,e} = E_e - m_e c^2$$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Longitud de onda}
+Primero, convertimos la energía del fotón a Julios. Luego, calculamos su longitud de onda:
+\begin{gather}
+    \lambda_{fotón} = \frac{hc}{E_{fotón}}
+\end{gather}
+Por la condición del problema, $\lambda_e = \lambda_{fotón}$.
+\paragraph{2. Energía cinética del electrón}
+A partir de $\lambda_e$, calculamos el momento del electrón $p_e = h/\lambda_e$. Luego, calculamos su energía total $E_e$ usando la relación relativista y finalmente su energía cinética.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Longitud de onda}
+$E_{foton} = 10^8 \, \text{eV} \cdot \frac{1,6 \cdot 10^{-19} \, \text{J}}{1 \, \text{eV}} = 1,6 \cdot 10^{-11} \, \text{J}$.
+\begin{gather}
+    \lambda_e = \lambda_{foton} = \frac{(6,63 \cdot 10^{-34})(3 \cdot 10^8)}{1,6 \cdot 10^{-11}} \approx 1,243 \cdot 10^{-14} \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La longitud de onda del electrón es $\boldsymbol{\lambda_e \approx 1,24 \cdot 10^{-14} \, \textbf{m}}$.
+\end{cajaresultado}
+\paragraph{2. Energía cinética del electrón}
+Calculamos el término $(p_e c)$:
+\begin{gather}
+    p_e = \frac{h}{\lambda_e} = \frac{6,63 \cdot 10^{-34}}{1,243 \cdot 10^{-14}} \approx 5,334 \cdot 10^{-20} \, \text{kg}\cdot\text{m/s} \\
+    p_e c = (5,334 \cdot 10^{-20})(3 \cdot 10^8) = 1,6 \cdot 10^{-11} \, \text{J}
+\end{gather}
+Nótese que $p_e c \approx E_{foton}$, como era de esperar.
+Calculamos la energía en reposo del electrón, $m_e c^2$:
+\begin{gather}
+    m_e c^2 = (9,1 \cdot 10^{-31})(3 \cdot 10^8)^2 = 8,19 \cdot 10^{-14} \, \text{J}
+\end{gather}
+Ahora la energía total del electrón:
+\begin{gather}
+    E_e = \sqrt{(p_e c)^2 + (m_e c^2)^2} = \sqrt{(1,6 \cdot 10^{-11})^2 + (8,19 \cdot 10^{-14})^2} \approx 1,6002 \cdot 10^{-11} \, \text{J}
+\end{gather}
+La energía cinética es:
+\begin{gather}
+    E_{c,e} = E_e - m_e c^2 = 1,6002 \cdot 10^{-11} - 8,19 \cdot 10^{-14} \approx 1,592 \cdot 10^{-11} \, \text{J}
+\end{gather}
+Finalmente, convertimos a eV:
+\begin{gather}
+    E_{c,e} (\text{eV}) = \frac{1,592 \cdot 10^{-11} \, \text{J}}{1,6 \cdot 10^{-19} \, \text{J/eV}} \approx 0,995 \cdot 10^8 \, \text{eV} \approx 9,95 \cdot 10^7 \, \text{eV}
+\end{gather}
+\begin{cajaresultado}
+    La energía cinética del electrón es $\boldsymbol{\approx 9,95 \cdot 10^7 \, \textbf{eV}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La longitud de onda asociada a un fotón de 100 MeV es de $1,24 \cdot 10^{-14}$ m. Un electrón con la misma longitud de onda tiene un momento tal que su energía cinética es prácticamente igual a la energía del fotón. Esto se debe a que a energías tan altas, la energía cinética del electrón es mucho mayor que su energía en reposo ($0,511$ MeV), por lo que se comporta de manera ultra-relativista, y su energía total es casi enteramente cinética ($E \approx pc$).
+\end{cajaconclusion}
+
+\newpage

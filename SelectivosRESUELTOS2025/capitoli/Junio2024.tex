@@ -1,0 +1,1118 @@
+```latex
+% !TEX root = ../main.tex
+% ======================================================================
+% CAPÍTULO: Examen Junio 2024 - Convocatoria Ordinaria
+% ======================================================================
+\chapter{Examen Junio 2024 - Convocatoria Ordinaria}
+\label{chap:2024_jun_ord}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2024_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{CUESTIÓN 1}
+\label{subsec:C1_2024_jun_ord}
+
+\begin{cajaenunciado}
+Define velocidad de escape de un planeta y deduce su expresión, ¿cuánto cambia dicha velocidad si se duplica la masa del cuerpo que escapa? Justifica la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+El problema es de carácter teórico y no proporciona datos numéricos. Las magnitudes a utilizar son:
+\begin{itemize}
+    \item \textbf{Constante de Gravitación Universal:} $G$
+    \item \textbf{Masa del planeta:} $M$
+    \item \textbf{Radio del planeta:} $R$
+    \item \textbf{Masa del cuerpo que escapa:} $m$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Definición y expresión de la velocidad de escape ($v_e$).
+        \item Influencia de la masa del cuerpo ($m$) en la velocidad de escape.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Lanzamiento de un cuerpo desde un planeta} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico de masa M y radio R en el espacio. Desde su superficie, se lanza un pequeño objeto de masa m con un vector de velocidad inicial vertical etiquetado como $v_e$. Dibuja una trayectoria punteada que muestra cómo el objeto se aleja indefinidamente del planeta, superando su atracción gravitatoria. Indica que en el infinito ($r \to \infty$), la velocidad final es nula ($v_f = 0$) y la energía potencial también es nula ($E_{p,f} = 0$)." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{velocidad_escape_planeta.png}
+    }}
+    \caption{Esquema conceptual de la velocidad de escape.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El concepto de velocidad de escape se fundamenta en el \textbf{Principio de Conservación de la Energía Mecánica}. Un cuerpo escapa del campo gravitatorio de un planeta si su energía mecánica total es igual o superior a cero. La velocidad de escape es la velocidad mínima necesaria para que esto ocurra, lo que corresponde a una energía mecánica total exactamente nula.
+
+La energía mecánica ($E_M$) es la suma de la energía cinética ($E_c$) y la energía potencial gravitatoria ($E_p$).
+\begin{itemize}
+    \item \textbf{Energía Cinética:} $E_c = \frac{1}{2} m v^2$
+    \item \textbf{Energía Potencial Gravitatoria:} $E_p = -G \frac{M m}{r}$, donde se toma el origen de potenciales en el infinito ($E_p=0$ cuando $r \to \infty$).
+\end{itemize}
+La condición para escapar es que el cuerpo llegue al infinito ($r \to \infty$) con velocidad nula ($v_f=0$). En este punto, tanto su energía cinética como potencial son cero, por lo que su energía mecánica final es $E_{M,f} = 0$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Definición y Deducción}
+La velocidad de escape $v_e$ es la velocidad inicial mínima que debe tener un cuerpo en la superficie de un planeta para alejarse indefinidamente de él.
+Aplicando el principio de conservación de la energía mecánica entre el punto de lanzamiento (superficie del planeta, $r=R$) y el infinito ($r \to \infty$):
+\begin{gather}
+    E_{M, \text{inicial}} = E_{M, \text{final}} \\
+    E_{c,i} + E_{p,i} = E_{c,f} + E_{p,f} \nonumber
+\end{gather}
+Sustituyendo las expresiones y las condiciones de escape ($v_f=0$ y $r_f \to \infty$):
+\begin{gather}
+    \frac{1}{2} m v_e^2 - G \frac{M m}{R} = 0 + 0 \\
+    \frac{1}{2} m v_e^2 = G \frac{M m}{R} \nonumber
+\end{gather}
+Despejamos la velocidad de escape $v_e$:
+\begin{gather}
+    v_e = \sqrt{\frac{2 G M}{R}}
+\end{gather}
+
+\paragraph*{Influencia de la masa del cuerpo ($m$)}
+En la deducción anterior, la masa del cuerpo que escapa ($m$) aparece en ambos términos de la ecuación de energía y, por lo tanto, se cancela. La expresión final para $v_e$ depende de la masa ($M$) y el radio ($R$) del cuerpo central (el planeta), pero no de la masa ($m$) del objeto que es lanzado.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema no requiere cálculos numéricos. El resultado es la expresión simbólica deducida.
+\begin{cajaresultado}
+    La expresión de la velocidad de escape es: $\boldsymbol{v_e = \sqrt{\frac{2 G M}{R}}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La velocidad de escape es la velocidad mínima requerida para que un objeto venza la atracción gravitatoria de un cuerpo masivo, como un planeta. Su valor se obtiene al igualar la energía mecánica inicial del objeto a cero, que es la energía que tendría en el infinito y en reposo. Como se demuestra en la deducción, la velocidad de escape es \textbf{independiente de la masa del objeto que se lanza}. Por lo tanto, si se duplica la masa de dicho cuerpo, la velocidad de escape \textbf{no cambia}.
+\end{cajaconclusion}
+
+\newpage
+\subsection{CUESTIÓN 2}
+\label{subsec:C2_2024_jun_ord}
+
+\begin{cajaenunciado}
+Un satélite artificial se encuentra a una altura de 500 km sobre la superficie de un planeta. El campo gravitatorio en la superficie del planeta es de $8\,\text{m/s}^2$, ¿cuál es la aceleración de la gravedad a la altura a la que se encuentra el satélite artificial? ¿A qué altura sobre la superficie del planeta el valor de la aceleración de la gravedad se reduce a la mitad del valor en su superficie?
+\textbf{Dato:} radio del planeta, $R=5000$ km. Utiliza exclusivamente los datos aportados en el enunciado.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Procedemos a listar los datos y convertirlos al Sistema Internacional (SI).
+\begin{itemize}
+    \item \textbf{Altura del satélite ($h_{sat}$):} $h_{sat} = 500 \text{ km} = 5 \cdot 10^5 \text{ m}$
+    \item \textbf{Radio del planeta ($R$):} $R = 5000 \text{ km} = 5 \cdot 10^6 \text{ m}$
+    \item \textbf{Aceleración de la gravedad en superficie ($g_0$):} $g_0 = 8 \text{ m/s}^2$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Aceleración de la gravedad a la altura del satélite ($g_{sat}$).
+        \item Altura ($h'$) a la que la gravedad es la mitad de la superficial ($g' = g_0/2$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo gravitatorio a distintas alturas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico de radio R. Dibuja dos puntos fuera del planeta. El primer punto representa un satélite a una altura $h_{sat}$ sobre la superficie, con un vector de gravedad $g_{sat}$ apuntando hacia el centro del planeta. El segundo punto está a una altura desconocida $h'$, con un vector de gravedad $g'$ también apuntando al centro, pero visiblemente más corto que el vector $g_0$ que se origina en la superficie. Etiqueta claramente R, $h_{sat}$ y $h'$." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{gravedad_alturas.png}
+    }}
+    \caption{Esquema de la aceleración de la gravedad a diferentes alturas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La solución se basa en la \textbf{Ley de Gravitación Universal de Newton}. La aceleración de la gravedad (o intensidad del campo gravitatorio) creada por un planeta de masa $M$ a una distancia $r$ de su centro es:
+$$ g(r) = G \frac{M}{r^2} $$
+En la superficie del planeta, la distancia al centro es $r=R$, por lo que $g_0 = G \frac{M}{R^2}$. A una altura $h$ sobre la superficie, la distancia al centro es $r = R+h$, y la gravedad es $g(h) = G \frac{M}{(R+h)^2}$.
+Como el enunciado no proporciona la masa del planeta $M$ ni la constante $G$, la estrategia será resolver el problema mediante cocientes, eliminando así estas constantes.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Aceleración de la gravedad a la altura del satélite ($g_{sat}$)}
+Dividimos la expresión de la gravedad a la altura $h_{sat}$ entre la expresión de la gravedad en la superficie:
+\begin{gather}
+    \frac{g_{sat}}{g_0} = \frac{G \frac{M}{(R+h_{sat})^2}}{G \frac{M}{R^2}} = \frac{R^2}{(R+h_{sat})^2} = \left(\frac{R}{R+h_{sat}}\right)^2
+\end{gather}
+De aquí, podemos despejar $g_{sat}$:
+\begin{gather}
+    g_{sat} = g_0 \left(\frac{R}{R+h_{sat}}\right)^2
+\end{gather}
+
+\paragraph*{b) Altura $h'$ donde la gravedad es $g_0/2$}
+Usamos la misma relación, pero ahora la incógnita es la altura, que llamaremos $h'$, y sabemos que $g' = g_0/2$:
+\begin{gather}
+    \frac{g'}{g_0} = \frac{g_0/2}{g_0} = \frac{1}{2} = \left(\frac{R}{R+h'}\right)^2
+\end{gather}
+Para despejar $h'$, primero eliminamos el cuadrado:
+\begin{gather}
+    \frac{1}{\sqrt{2}} = \frac{R}{R+h'} \implies R+h' = R\sqrt{2} \implies h' = R\sqrt{2} - R = R(\sqrt{2}-1)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de $g_{sat}$}
+Sustituimos los valores numéricos en la ecuación (2):
+\begin{gather}
+    g_{sat} = 8 \cdot \left(\frac{5 \cdot 10^6}{5 \cdot 10^6 + 5 \cdot 10^5}\right)^2 = 8 \cdot \left(\frac{5 \cdot 10^6}{5.5 \cdot 10^6}\right)^2 = 8 \cdot \left(\frac{10}{11}\right)^2 \approx 6.61 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+    La aceleración de la gravedad a la altura del satélite es $\boldsymbol{g_{sat} \approx 6.61 \, \textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de $h'$}
+Sustituimos el valor del radio en la ecuación (4):
+\begin{gather}
+    h' = (5 \cdot 10^6) \cdot (\sqrt{2}-1) \approx 2.071 \cdot 10^6 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La gravedad se reduce a la mitad a una altura de $\boldsymbol{h' \approx 2071 \, \textbf{km}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Utilizando la ley de la gravitación universal y estableciendo una proporción entre la gravedad en la superficie y en un punto exterior, hemos calculado que la aceleración de la gravedad a 500 km de altura es de $6.61 \, \text{m/s}^2$. Siguiendo el mismo razonamiento, se ha determinado que la altura necesaria para que la gravedad se reduzca a la mitad de su valor superficial es de aproximadamente 2071 km. Esto demuestra la disminución de la intensidad del campo gravitatorio con el cuadrado de la distancia al centro del planeta.
+\end{cajaconclusion}
+
+\newpage
+% ----------------------------------------------------------------------
+\section{Bloque II: Campo Electromagnético}
+\label{sec:em_2024_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{CUESTIÓN 3}
+\label{subsec:C3_2024_jun_ord}
+
+\begin{cajaenunciado}
+La línea discontinua de la figura representa la trayectoria de una carga, q, entre las posiciones 1 y 2 dentro de un campo magnético uniforme $\vec{B}$. Escribe el nombre y la expresión de la fuerza que el campo ejerce sobre dicha carga. Determina razonadamente el signo de la carga. Explica cuál sería la forma de la trayectoria si por el punto 1 entrara un neutrón con velocidad v.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+El problema se basa en la interpretación de una figura.
+\begin{itemize}
+    \item \textbf{Campo magnético ($\vec{B}$):} Uniforme y perpendicular al plano del papel, saliendo hacia el observador (representado por $\odot$).
+    \item \textbf{Velocidad inicial de la carga ($\vec{v}$):} En el punto 1, el vector velocidad es vertical y hacia arriba.
+    \item \textbf{Trayectoria:} La carga se desvía hacia la derecha, describiendo un arco de circunferencia.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Nombre y expresión de la fuerza magnética.
+        \item Signo de la carga $q$.
+        \item Trayectoria de un neutrón en las mismas condiciones.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Análisis de fuerzas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Recreación de la figura del enunciado. Campo magnético uniforme saliente (círculos con punto). Una partícula entra por el punto 1 con un vector velocidad $\vec{v}$ apuntando hacia arriba. La trayectoria se curva hacia la derecha. Dibuja el vector fuerza $\vec{F}_m$ en el punto 1, apuntando hacia el centro de la curvatura (hacia la derecha). Añade los ejes de coordenadas: eje X horizontal a la derecha, eje Y vertical hacia arriba, eje Z saliendo del plano." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{fuerza_lorentz.png}
+    }}
+    \caption{Aplicación de la Regla de la Mano Derecha.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Fuerza magnética}
+La fuerza que un campo magnético $\vec{B}$ ejerce sobre una carga puntual $q$ que se mueve con una velocidad $\vec{v}$ se conoce como \textbf{Fuerza de Lorentz}. Esta fuerza es siempre perpendicular tanto a la velocidad de la partícula como al campo magnético, y su módulo es proporcional a la carga, la velocidad y el campo.
+
+\paragraph*{Trayectoria de partículas cargadas}
+Dado que la fuerza de Lorentz es siempre perpendicular a la velocidad, no realiza trabajo sobre la partícula y no cambia el módulo de su velocidad (es decir, no altera su energía cinética). Actúa como una fuerza centrípeta, obligando a la partícula a describir una trayectoria circular (o helicoidal si hubiera una componente de velocidad paralela a $\vec{B}$).
+
+\paragraph*{Partículas neutras}
+Las partículas sin carga eléctrica neta, como el neutrón, no interactúan con los campos magnéticos.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Nombre y expresión de la fuerza}
+El nombre de la fuerza es \textbf{Fuerza de Lorentz}. Su expresión vectorial es:
+\begin{gather}
+    \vec{F}_m = q (\vec{v} \times \vec{B})
+\end{gather}
+
+\paragraph*{Determinación del signo de la carga}
+Para determinar el signo, aplicamos la Regla de la Mano Derecha al producto vectorial $\vec{v} \times \vec{B}$.
+\begin{itemize}
+    \item El vector velocidad $\vec{v}$ apunta hacia arriba (dirección $+\hat{j}$).
+    \item El vector campo magnético $\vec{B}$ sale del papel (dirección $+\hat{k}$).
+    \item El producto vectorial $\vec{v} \times \vec{B}$ resulta en un vector que apunta hacia la derecha (dirección $+\hat{i}$): $(\hat{j} \times \hat{k} = \hat{i})$.
+\end{itemize}
+La trayectoria observada muestra que la partícula es desviada hacia la derecha, lo que significa que la fuerza $\vec{F}_m$ también apunta hacia la derecha (dirección $+\hat{i}$).
+Comparando la dirección de la fuerza $\vec{F}_m$ con la dirección del producto vectorial $\vec{v} \times \vec{B}$, vemos que ambas tienen el mismo sentido.
+$$ \vec{F}_m \text{ y } (\vec{v} \times \vec{B}) \text{ tienen la misma dirección y sentido.} $$
+Esto solo es posible si el escalar $q$ en la ecuación $\vec{F}_m = q(\vec{v} \times \vec{B})$ es positivo.
+
+\paragraph*{Trayectoria de un neutrón}
+Un neutrón es una partícula sin carga eléctrica ($q=0$). Si aplicamos la ley de Lorentz:
+\begin{gather}
+    \vec{F}_m = 0 \cdot (\vec{v} \times \vec{B}) = 0
+\end{gather}
+Al no actuar ninguna fuerza sobre él, por el principio de inercia, el neutrón no se desviaría y continuaría su movimiento en línea recta con velocidad constante.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Este problema es cualitativo y no requiere sustitución numérica.
+\begin{cajaresultado}
+    El signo de la carga $\boldsymbol{q}$ \textbf{es positivo}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza que actúa sobre la partícula es la Fuerza de Lorentz, $\vec{F}_m = q (\vec{v} \times \vec{B})$. Al aplicar la regla de la mano derecha, se determina que el producto vectorial $\vec{v} \times \vec{B}$ apunta en la misma dirección que la fuerza centrípeta que causa la desviación, por lo que la carga $q$ debe ser positiva. Un neutrón, al no tener carga eléctrica, no experimentaría ninguna fuerza magnética y seguiría una trayectoria rectilínea sin desviarse.
+\end{cajaconclusion}
+
+\newpage
+\subsection{CUESTIÓN 4}
+\label{subsec:C4_2024_jun_ord}
+
+\begin{cajaenunciado}
+Un hilo conductor rectilíneo de gran longitud, situado a lo largo del eje X, transporta una corriente de intensidad $I=50$ A en sentido positivo. Determina las coordenadas de los puntos sobre el eje Y en los que el módulo del vector campo magnético generado sea $B=10^{-5}$ T. Representa la corriente, las líneas de campo magnético y el vector campo magnético, $\vec{B}$, en dichos puntos. Escribe la expresión vectorial del campo magnético en dichos puntos.
+\textbf{Dato:} permeabilidad magnética en el vacío, $\mu_{0}=4\pi\cdot10^{-7}$ T m/A.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Intensidad de corriente ($I$):} $I = 50 \text{ A}$. La corriente fluye en la dirección $+X$.
+    \item \textbf{Módulo del campo magnético ($B$):} $B = 10^{-5} \text{ T}$.
+    \item \textbf{Constante de permeabilidad magnética del vacío ($\mu_0$):} $\mu_0 = 4\pi \cdot 10^{-7} \text{ T}\cdot\text{m}/\text{A}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Coordenadas de los puntos $P(0,y,0)$ donde $B = 10^{-5} \text{ T}$.
+        \item Representación gráfica.
+        \item Expresión vectorial de $\vec{B}$ en dichos puntos.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo magnético de un hilo rectilíneo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista en perspectiva 3D con ejes X, Y, Z. Dibuja un hilo conductor infinito a lo largo del eje X. Una flecha sobre el hilo indica que la corriente I fluye en la dirección +X. Dibuja dos líneas de campo magnético circulares y concéntricas al hilo en el plano YZ, con flechas indicando el sentido antihorario (visto desde el eje +X) según la regla de la mano derecha. Marca dos puntos en el eje Y: $P_1(0, y_1, 0)$ con $y_1>0$ y $P_2(0, y_2, 0)$ con $y_2<0$. En $P_1$, dibuja el vector $\vec{B}_1$ tangente a la línea de campo, apuntando en la dirección -Z. En $P_2$, dibuja el vector $\vec{B}_2$ tangente a la línea de campo, apuntando en la dirección +Z." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{hilo_rectilineo.png}
+    }}
+    \caption{Representación del campo magnético alrededor del hilo conductor.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El campo magnético generado por una corriente rectilínea, indefinida y uniforme viene descrito por la \textbf{Ley de Biot-Savart}, cuya aplicación a este caso particular nos da una expresión simplificada para el módulo del campo a una distancia $d$ del hilo:
+$$ B = \frac{\mu_0 I}{2\pi d} $$
+La dirección y el sentido del vector campo magnético $\vec{B}$ en cualquier punto del espacio se determinan mediante la \textbf{Regla de la Mano Derecha}: si el pulgar apunta en el sentido de la corriente, los demás dedos, al cerrarse, indican el sentido de las líneas de campo, que son circunferencias concéntricas al hilo. El vector $\vec{B}$ es siempre tangente a estas líneas de campo.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Coordenadas de los puntos}
+Los puntos sobre el eje Y están a una distancia $d = |y|$ del hilo conductor que yace sobre el eje X. Usando la ley de Biot-Savart, podemos despejar esta distancia $d$:
+\begin{gather}
+    B = \frac{\mu_0 I}{2\pi d} \implies d = \frac{\mu_0 I}{2\pi B}
+\end{gather}
+Dado que $d = |y|$, habrá dos puntos sobre el eje Y que cumplan esta condición: uno con coordenada $y_1 = d$ y otro con $y_2 = -d$.
+
+\paragraph*{b) Expresión vectorial del campo}
+Aplicando la Regla de la Mano Derecha:
+\begin{itemize}
+    \item Para el punto $P_1(0, d, 0)$ sobre el semieje Y positivo, el campo magnético apunta en la dirección negativa del eje Z. Por tanto, $\vec{B}_1 = -B \hat{k}$.
+    \item Para el punto $P_2(0, -d, 0)$ sobre el semieje Y negativo, el campo magnético apunta en la dirección positiva del eje Z. Por tanto, $\vec{B}_2 = B \hat{k}$.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la distancia $d$}
+Sustituimos los valores numéricos en la ecuación (1):
+\begin{gather}
+    d = \frac{(4\pi \cdot 10^{-7}) \cdot 50}{2\pi \cdot 10^{-5}} = \frac{2 \cdot 10^{-7} \cdot 50}{10^{-5}} = 100 \cdot 10^{-2} = 1 \, \text{m}
+\end{gather}
+Los puntos son aquellos cuya distancia al origen es 1 m sobre el eje Y.
+\begin{cajaresultado}
+    Las coordenadas de los puntos son $\boldsymbol{P_1(0, 1, 0) \, \textbf{m}}$ y $\boldsymbol{P_2(0, -1, 0) \, \textbf{m}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Vectores campo magnético}
+El módulo del campo en estos puntos es $B = 10^{-5}$ T.
+\begin{cajaresultado}
+    Los vectores campo magnético son:
+    \begin{itemize}
+        \item En $P_1(0, 1, 0)$: $\boldsymbol{\vec{B}_1 = -10^{-5} \, \hat{k} \, \textbf{T}}$
+        \item En $P_2(0, -1, 0)$: $\boldsymbol{\vec{B}_2 = +10^{-5} \, \hat{k} \, \textbf{T}}$
+    \end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando la ley de Biot-Savart para un hilo rectilíneo, se ha determinado que los puntos sobre el eje Y donde el campo magnético tiene un módulo de $10^{-5}$ T son $(0, 1, 0)$ y $(0, -1, 0)$. La dirección y sentido del campo en cada punto se han obtenido mediante la regla de la mano derecha, resultando en vectores opuestos a lo largo del eje Z, lo que refleja la naturaleza circular de las líneas de campo magnético alrededor del conductor.
+\end{cajaconclusion}
+
+\newpage
+% ----------------------------------------------------------------------
+\section{Bloque III: Vibraciones y Ondas}
+\label{sec:vib_2024_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{CUESTIÓN 5}
+\label{subsec:C5_2024_jun_ord}
+
+\begin{cajaenunciado}
+En la gráfica adjunta se muestra la energía cinética en función del tiempo de una partícula con movimiento armónico simple. Deduce razonadamente el valor de la energía mecánica del cuerpo, su energía potencial en el instante $t=0,4$ s, el periodo del movimiento y la frecuencia angular.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+La información se extrae directamente de la gráfica proporcionada.
+\begin{itemize}
+    \item \textbf{Movimiento:} Movimiento Armónico Simple (M.A.S.).
+    \item \textbf{Gráfica:} Energía Cinética ($E_c$) en Julios (J) vs. Tiempo ($t$) en segundos (s).
+    \item \textbf{Valor máximo de $E_c$:} De la gráfica, $E_{c,max} = 1 \text{ J}$.
+    \item \textbf{Valor de $E_c$ en $t=0.4\text{ s}$:} De la gráfica, $E_c(0.4\text{ s}) = 0 \text{ J}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Energía mecánica ($E_M$).
+        \item Energía potencial en $t=0.4$ s ($E_p(0.4\text{ s})$).
+        \item Periodo del movimiento ($T$).
+        \item Frecuencia angular ($\omega$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Energías en un M.A.S.} \vspace{0.5cm} \textit{Prompt para la imagen:} "Genera un gráfico conceptual de las energías en un M.A.S. en función de la posición x. Dibuja una parábola cóncava hacia arriba para la Energía Potencial ($E_p$), que es cero en x=0 y máxima en x=A y x=-A. Dibuja una parábola cóncava hacia abajo para la Energía Cinética ($E_c$), que es máxima en x=0 y cero en x=A y x=-A. Dibuja una línea horizontal constante para la Energía Mecánica Total ($E_M$). Asegúrate de que $E_M = E_c + E_p$ en todo momento. Etiqueta claramente cada curva." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{energias_mas.png}
+    }}
+    \caption{Relación entre las energías cinética, potencial y mecánica en un M.A.S.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En un Movimiento Armónico Simple (M.A.S.), la \textbf{energía mecánica total ($E_M$)} se conserva, y es la suma de la energía cinética ($E_c$) y la energía potencial elástica ($E_p$).
+$$ E_M = E_c + E_p = \text{constante} $$
+La energía cinética es máxima cuando la partícula pasa por la posición de equilibrio ($x=0$), donde la velocidad es máxima. En este punto, la energía potencial es nula.
+La energía potencial es máxima en los extremos de la trayectoria ($x=\pm A$), donde la velocidad (y por tanto la energía cinética) es nula.
+Por lo tanto, la energía mecánica total es igual a la energía cinética máxima, y también igual a la energía potencial máxima:
+$$ E_M = E_{c,max} = E_{p,max} $$
+La frecuencia de oscilación de la energía (cinética o potencial) en un M.A.S. es el doble de la frecuencia del movimiento. Por lo tanto, el periodo de la energía ($T_E$) es la mitad del periodo del movimiento ($T$): $T_E = T/2$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Energía Mecánica ($E_M$)}
+A partir de la gráfica, identificamos el valor máximo de la energía cinética. Por el principio de conservación de la energía:
+\begin{gather}
+    E_M = E_{c,max}
+\end{gather}
+
+\paragraph*{b) Energía Potencial ($E_p$) en $t=0.4$ s}
+En cualquier instante, $E_p(t) = E_M - E_c(t)$. En el instante $t=0.4$ s:
+\begin{gather}
+    E_p(0.4\text{ s}) = E_M - E_c(0.4\text{ s})
+\end{gather}
+
+\paragraph*{c) Periodo del Movimiento ($T$)}
+De la gráfica, medimos el periodo de la oscilación de la energía cinética, $T_E$. Por ejemplo, entre dos mínimos consecutivos (en $t=0$ y $t=0.4$ s). El periodo del movimiento es el doble:
+\begin{gather}
+    T = 2 \cdot T_E
+\end{gather}
+
+\paragraph*{d) Frecuencia Angular ($\omega$)}
+La frecuencia angular se relaciona con el periodo:
+\begin{gather}
+    \omega = \frac{2\pi}{T}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de $E_M$}
+De la gráfica, $E_{c,max} = 1$ J.
+\begin{cajaresultado}
+    La energía mecánica del cuerpo es $\boldsymbol{E_M = 1 \, \textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de $E_p(0.4\text{ s})$}
+De la gráfica, $E_c(0.4\text{ s}) = 0$ J. Usando la ec. (2):
+\begin{gather}
+    E_p(0.4\text{ s}) = 1 - 0 = 1 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía potencial en $t=0.4$ s es $\boldsymbol{E_p = 1 \, \textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph*{c) Valor de $T$}
+La gráfica muestra que la energía cinética completa un ciclo entre $t=0.2$ s (máximo) y $t=0.6$ s (siguiente máximo). Por lo tanto, el periodo de la energía es $T_E = 0.6 - 0.2 = 0.4$ s. El periodo del movimiento es:
+\begin{gather}
+    T = 2 \cdot 0.4 = 0.8 \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+    El periodo del movimiento es $\boldsymbol{T = 0.8 \, \textbf{s}}$.
+\end{cajaresultado}
+
+\paragraph*{d) Valor de $\omega$}
+Usando la ec. (4):
+\begin{gather}
+    \omega = \frac{2\pi}{0.8} = \frac{5}{2}\pi = 2.5\pi \, \text{rad/s}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia angular es $\boldsymbol{\omega = 2.5\pi \, \textbf{rad/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir del análisis de la gráfica de energía cinética frente al tiempo, y aplicando el principio de conservación de la energía mecánica en un M.A.S., se ha deducido que la energía mecánica total del sistema es de 1 J. En el instante $t=0.4$ s, la energía cinética es nula, por lo que toda la energía mecánica se encuentra en forma de energía potencial (1 J). Además, observando la periodicidad de la energía, se determinó un periodo de movimiento de 0.8 s, lo que corresponde a una frecuencia angular de $2.5\pi$ rad/s.
+\end{cajaconclusion}
+
+\newpage
+\subsection{CUESTIÓN 6}
+\label{subsec:C6_2024_jun_ord}
+
+\begin{cajaenunciado}
+Un rayo de luz se propaga por una fibra de cuarzo rodeada de aire. Tras incidir sobre la superficie cuarzo-aire con un ángulo $\theta=41,8^{\circ}$, se propaga paralelamente al eje de la fibra como indica la figura. Explica qué ocurre si el ángulo de incidencia es mayor que $41,8^{\circ}$ y nombra el fenómeno. Calcula el indice de refracción del cuarzo.
+\textbf{Dato:} índice de refracción del aire, $n_{a}=1,00$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Medio de incidencia:} Cuarzo (índice $n_q$).
+    \item \textbf{Medio de refracción:} Aire (índice $n_a$).
+    \item \textbf{Índice de refracción del aire ($n_a$):} $n_a = 1.00$.
+    \item \textbf{Ángulo de incidencia ($\theta_i$):} $\theta_i = \theta = 41.8^\circ$.
+    \item \textbf{Ángulo de refracción ($\theta_r$):} El rayo se propaga paralelamente a la superficie, lo que implica que el ángulo de refracción, medido con respecto a la normal, es de $90^\circ$. $\theta_r = 90^\circ$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Fenómeno para ángulos de incidencia mayores que $\theta$.
+        \item Índice de refracción del cuarzo ($n_q$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Reflexión Total Interna} \vspace{0.5cm} \textit{Prompt para la imagen:} "Crea un diagrama de tres partes que muestre la interfaz entre dos medios, cuarzo (abajo, $n_q$) y aire (arriba, $n_a$), con $n_q > n_a$. 1) A la izquierda, un rayo incide desde el cuarzo con un ángulo $\theta_1 < \theta_c$. Muestra el rayo reflejado y el rayo refractado que se aleja de la normal. 2) En el centro, un rayo incide con el ángulo crítico, $\theta_i = \theta_c = 41.8^\circ$. Muestra el rayo refractado viajando a lo largo de la interfaz ($\theta_r=90^\circ$). 3) A la derecha, un rayo incide con un ángulo $\theta_2 > \theta_c$. Muestra que no hay refracción y que toda la luz se refleja de nuevo en el cuarzo (reflexión total interna)." \vspace{0.5cm} % \includegraphics[width=0.95\linewidth]{reflexion_total.png}
+    }}
+    \caption{Comportamiento de la luz en la interfaz cuarzo-aire.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se rige por la \textbf{Ley de Snell de la refracción}, que relaciona los ángulos de incidencia ($\theta_i$) y refracción ($\theta_r$) con los índices de refracción de los dos medios ($n_1$ y $n_2$):
+$$ n_1 \sin(\theta_i) = n_2 \sin(\theta_r) $$
+Cuando la luz viaja de un medio más denso a uno menos denso (es decir, $n_1 > n_2$), el rayo refractado se aleja de la normal. Existe un ángulo de incidencia, llamado \textbf{ángulo crítico o ángulo límite} ($\theta_c$), para el cual el ángulo de refracción es de $90^\circ$.
+Si el ángulo de incidencia es mayor que el ángulo crítico ($\theta_i > \theta_c$), la refracción no es posible (el seno del ángulo de refracción sería mayor que 1). En este caso, toda la luz se refleja de nuevo en el primer medio. Este fenómeno se llama \textbf{Reflexión Total Interna}.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Descripción del fenómeno}
+En la situación descrita, el rayo de luz incide con $\theta = 41.8^\circ$ y el rayo refractado sale con un ángulo de $90^\circ$. Esto significa que el ángulo de incidencia dado es, por definición, el ángulo crítico: $\theta_c = 41.8^\circ$.
+Si el ángulo de incidencia es mayor que este valor ($\theta_i > \theta_c$), la luz no se refractará hacia el aire. En su lugar, se reflejará completamente en la superficie de separación, permaneciendo dentro del cuarzo. Este fenómeno se llama \textbf{Reflexión Total Interna}.
+
+\paragraph*{b) Cálculo del índice de refracción del cuarzo ($n_q$)}
+Aplicamos la Ley de Snell para la condición del ángulo crítico. El medio 1 es el cuarzo ($n_1=n_q$) y el medio 2 es el aire ($n_2=n_a$).
+\begin{gather}
+    n_q \sin(\theta_c) = n_a \sin(90^\circ)
+\end{gather}
+Como $\sin(90^\circ)=1$, podemos despejar $n_q$:
+\begin{gather}
+    n_q = \frac{n_a}{\sin(\theta_c)}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores dados en la ecuación (2):
+\begin{gather}
+    n_q = \frac{1.00}{\sin(41.8^\circ)} \approx \frac{1.00}{0.6665} \approx 1.50
+\end{gather}
+\begin{cajaresultado}
+    El índice de refracción del cuarzo es $\boldsymbol{n_q \approx 1.50}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El ángulo de $41.8^\circ$ es el ángulo crítico para la interfaz cuarzo-aire. Si un rayo incide con un ángulo mayor, experimentará el fenómeno de \textbf{Reflexión Total Interna}, quedándose atrapado dentro de la fibra de cuarzo. Este es el principio de funcionamiento de la fibra óptica. Aplicando la Ley de Snell a la condición de ángulo crítico, se ha calculado que el índice de refracción del cuarzo es de aproximadamente 1.50.
+\end{cajaconclusion}
+
+\newpage
+% ----------------------------------------------------------------------
+\section{Bloque IV: Física relativista, cuántica, nuclear y de partículas}
+\label{sec:fismod_2024_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{CUESTIÓN 7}
+\label{subsec:C7_2024_jun_ord}
+
+\begin{cajaenunciado}
+Explica qué es la dualidad onda-corpúsculo y escribe la expresión de la longitud de onda de De Broglie. Calcula la longitud de onda de De Broglie de una espora del hongo Pilobolus kleinii que se mueve a una velocidad de $20\,\text{m/s}$ sabiendo que la masa de un millón de esporas es de 1,0 g.
+\textbf{Dato:} constante de Planck, $h=6,6\cdot10^{-34}$ J s.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad de la espora ($v$):} $v = 20 \text{ m/s}$.
+    \item \textbf{Masa de $N=10^6$ esporas ($M_{total}$):} $M_{total} = 1.0 \text{ g} = 1.0 \cdot 10^{-3} \text{ kg}$.
+    \item \textbf{Masa de una espora ($m$):} $m = \frac{M_{total}}{N} = \frac{1.0 \cdot 10^{-3} \text{ kg}}{10^6} = 1.0 \cdot 10^{-9} \text{ kg}$.
+    \item \textbf{Constante de Planck ($h$):} $h = 6.6 \cdot 10^{-34} \text{ J}\cdot\text{s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Explicación de la dualidad onda-corpúsculo.
+        \item Expresión de la longitud de onda de De Broglie.
+        \item Valor numérico de la longitud de onda de la espora ($\lambda$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Dualidad Onda-Corpúsculo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Crea una imagen conceptual dividida en dos. A la izquierda, muestra partículas clásicas (como pequeñas esferas) moviéndose en línea recta. A la derecha, muestra ondas (como ondas sinusoidales) propagándose. Dibuja una flecha de doble sentido entre ambas representaciones con la etiqueta 'Dualidad Onda-Corpúsculo'. Debajo, escribe la ecuación de De Broglie, $\lambda = h/p$, conectando una propiedad ondulatoria ($\lambda$) con una propiedad corpuscular (momento lineal, p)." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{dualidad.png}
+    }}
+    \caption{Concepto de la dualidad onda-corpúsculo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Dualidad onda-corpúsculo}
+La dualidad onda-corpúsculo es un principio fundamental de la mecánica cuántica que establece que todas las partículas (electrones, protones, átomos, etc.) pueden exhibir comportamientos tanto de partícula como de onda. Dependiendo del experimento que se realice, una misma entidad cuántica puede manifestarse como un objeto localizado y discreto (corpúsculo) o como una onda extendida en el espacio. Por ejemplo, el efecto fotoeléctrico demuestra la naturaleza corpuscular de la luz (fotones), mientras que el experimento de la doble rendija con electrones demuestra su naturaleza ondulatoria.
+
+\paragraph*{Hipótesis y Longitud de Onda de De Broglie}
+En 1924, Louis de Broglie propuso en su hipótesis que, si la luz (que se creía una onda) podía comportarse como partícula, entonces las partículas de materia debían también tener propiedades ondulatorias. Asoció una longitud de onda $\lambda$ a cualquier partícula con momento lineal $p$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Expresión de la longitud de onda de De Broglie}
+La expresión que relaciona la longitud de onda $\lambda$ asociada a una partícula con su momento lineal $p$ es:
+\begin{gather}
+    \lambda = \frac{h}{p}
+\end{gather}
+donde $h$ es la constante de Planck. Para una partícula no relativista de masa $m$ que se mueve a una velocidad $v$, el momento lineal es $p=mv$. Por lo tanto, la expresión se puede escribir como:
+\begin{gather}
+    \lambda = \frac{h}{mv}
+\end{gather}
+
+\paragraph*{Cálculo para la espora}
+Se utilizará la ecuación (2) con los datos proporcionados para la espora del hongo.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero, calculamos la masa de una única espora en el SI:
+$$ m = \frac{1.0 \text{ g}}{1,000,000} = 1.0 \cdot 10^{-6} \text{ g} = 1.0 \cdot 10^{-9} \text{ kg} $$
+Ahora, sustituimos los valores en la ecuación de De Broglie:
+\begin{gather}
+    \lambda = \frac{6.6 \cdot 10^{-34} \text{ J}\cdot\text{s}}{(1.0 \cdot 10^{-9} \text{ kg}) \cdot (20 \text{ m/s})} = \frac{6.6 \cdot 10^{-34}}{2.0 \cdot 10^{-8}} = 3.3 \cdot 10^{-26} \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La longitud de onda de De Broglie de la espora es $\boldsymbol{\lambda = 3.3 \cdot 10^{-26} \, \textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La dualidad onda-corpúsculo postula que toda la materia presenta propiedades de onda y de partícula, siendo la longitud de onda de De Broglie ($\lambda=h/p$) la que cuantifica esta propiedad ondulatoria. El cálculo para una espora macroscópica da como resultado una longitud de onda extraordinariamente pequeña, del orden de $10^{-26}$ metros. Este valor es tan ínfimo que es completamente indetectable por cualquier medio experimental, lo que explica por qué los objetos de nuestro día a día no manifiestan sus propiedades ondulatorias.
+\end{cajaconclusion}
+
+\newpage
+\subsection{CUESTIÓN 8}
+\label{subsec:C8_2024_jun_ord}
+
+\begin{cajaenunciado}
+Explica brevemente en qué consisten la radiación alfa y la radiación beta y cómo se modifica el núcleo atómico que las emite. Halla razonadamente el número atómico y el número másico del elemento final producido a partir del ${}_{86}^{222}\text{Rn}$, después de que emita una partícula $\alpha$ y a continuación el producto emita una partícula $\beta^{-}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Núcleo inicial:} Radón-222 (${}_{86}^{222}\text{Rn}$).
+    \begin{itemize}
+        \item Número másico inicial ($A_0$): 222.
+        \item Número atómico inicial ($Z_0$): 86.
+    \end{itemize}
+    \item \textbf{Secuencia de desintegración:}
+    \begin{enumerate}
+        \item Emisión de una partícula alfa ($\alpha$).
+        \item Emisión de una partícula beta menos ($\beta^-$).
+    \end{enumerate}
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Explicación de la radiación $\alpha$ y $\beta$.
+        \item Número atómico ($Z_f$) y másico ($A_f$) del núcleo final.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Cadena de Desintegración} \vspace{0.5cm} \textit{Prompt para la imagen:} "Crea un diagrama de flujo que muestre una cadena de desintegración nuclear. Comienza con una caja grande etiquetada 'Núcleo Padre (${}_{Z}^{A}X$)', por ejemplo, ${}_{86}^{222}\text{Rn}$. Dibuja una flecha hacia la derecha etiquetada 'Emisión $\alpha$ (${}_{2}^{4}\text{He}$)' que apunta a una segunda caja etiquetada 'Núcleo Hijo 1 (${}_{Z-2}^{A-4}Y$)'. Desde esta segunda caja, dibuja otra flecha hacia la derecha etiquetada 'Emisión $\beta^-$ (${}_{-1}^{0}e$)' que apunta a una tercera caja etiquetada 'Núcleo Final (${}_{Z-1}^{A-4}W$)'. Rellena los números atómicos y másicos para el caso del Radón-222." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{desintegracion.png}
+    }}
+    \caption{Esquema de la secuencia de desintegraciones nucleares.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las desintegraciones nucleares se rigen por las \textbf{leyes de conservación de la carga eléctrica y del número de nucleones (leyes de Soddy-Fajans)}. Esto significa que la suma de los números atómicos (Z, número de protones) y la suma de los números másicos (A, número de protones + neutrones) deben ser iguales antes y después de la desintegración.
+
+\paragraph*{Radiación Alfa ($\alpha$)}
+Consiste en la emisión de un núcleo de Helio-4, formado por dos protones y dos neutrones (${}_{2}^{4}\text{He}$). Ocurre típicamente en núcleos muy pesados e inestables. Al emitir una partícula alfa, el núcleo padre se transforma en un núcleo hijo cuyo número másico ha disminuido en 4 unidades ($A \to A-4$) y su número atómico ha disminuido en 2 unidades ($Z \to Z-2$).
+
+\paragraph*{Radiación Beta ($\beta^-$)}
+Consiste en la emisión de un electrón de alta energía (${}_{-1}^{0}e$) procedente del núcleo. Este proceso ocurre cuando un neutrón del núcleo se transforma en un protón, un electrón y un antineutrino electrónico. El electrón (partícula $\beta^-$) es expulsado del núcleo. Como resultado, el número másico del núcleo no cambia ($A \to A$), pero su número atómico aumenta en 1 unidad ($Z \to Z+1$), ya que ahora tiene un protón más.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sea un núcleo inicial ${}_{Z_0}^{A_0}\text{X}$.
+\paragraph*{1. Desintegración Alfa}
+El núcleo padre ${}_{Z_0}^{A_0}\text{X}$ emite una partícula $\alpha$ y se convierte en un núcleo intermedio ${}_{Z_1}^{A_1}\text{Y}$.
+\begin{gather}
+    {}_{Z_0}^{A_0}\text{X} \longrightarrow {}_{Z_1}^{A_1}\text{Y} + {}_{2}^{4}\text{He}
+\end{gather}
+Por las leyes de conservación:
+\begin{itemize}
+    \item $A_0 = A_1 + 4 \implies A_1 = A_0 - 4$
+    \item $Z_0 = Z_1 + 2 \implies Z_1 = Z_0 - 2$
+\end{itemize}
+
+\paragraph*{2. Desintegración Beta}
+El núcleo intermedio ${}_{Z_1}^{A_1}\text{Y}$ emite una partícula $\beta^-$ y se convierte en el núcleo final ${}_{Z_f}^{A_f}\text{W}$.
+\begin{gather}
+    {}_{Z_1}^{A_1}\text{Y} \longrightarrow {}_{Z_f}^{A_f}\text{W} + {}_{-1}^{0}e + \bar{\nu}_e
+\end{gather}
+Por las leyes de conservación:
+\begin{itemize}
+    \item $A_1 = A_f + 0 \implies A_f = A_1$
+    \item $Z_1 = Z_f - 1 \implies Z_f = Z_1 + 1$
+\end{itemize}
+Combinando ambas desintegraciones, el núcleo final tendrá $A_f = A_0 - 4$ y $Z_f = (Z_0 - 2) + 1 = Z_0 - 1$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Aplicamos las transformaciones al núcleo de Radón-222 (${}_{86}^{222}\text{Rn}$).
+\paragraph*{1. Desintegración Alfa}
+\begin{gather}
+    {}_{86}^{222}\text{Rn} \longrightarrow {}_{86-2}^{222-4}\text{Y} + {}_{2}^{4}\text{He} \implies {}_{84}^{218}\text{Po}
+\end{gather}
+El núcleo intermedio es Polonio-218.
+
+\paragraph*{2. Desintegración Beta}
+\begin{gather}
+    {}_{84}^{218}\text{Po} \longrightarrow {}_{84+1}^{218}\text{W} + {}_{-1}^{0}e \implies {}_{85}^{218}\text{At}
+\end{gather}
+El núcleo final es Astato-218.
+
+\begin{cajaresultado}
+    El elemento final producido tiene:
+    \begin{itemize}
+        \item \textbf{Número másico:} $\boldsymbol{A_f = 218}$
+        \item \textbf{Número atómico:} $\boldsymbol{Z_f = 85}$
+    \end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las desintegraciones nucleares alfa y beta transforman un núcleo inestable en otro más estable, conservando siempre el número total de nucleones y la carga eléctrica. Tras la secuencia de una emisión alfa seguida de una emisión beta, el núcleo de Radón-222 se transforma en un núcleo con un número másico de 218 y un número atómico de 85, que corresponde al isótopo Astato-218.
+\end{cajaconclusion}
+
+\newpage
+\subsection{PROBLEMA 1}
+\label{subsec:P1_2024_jun_ord}
+
+\begin{cajaenunciado}
+Dos cargas puntuales, $q_{1}=4\,\mu\text{C}$ y $q_{2}=-2\,\mu\text{C}$, se encuentran ubicadas en las coordenadas (0,0) m y (1,0) m respectivamente.
+\begin{enumerate}
+    \item[a)] Calcula razonadamente el vector campo eléctrico total en el punto (1, 1) m. Representa gráficamente en dicho punto los vectores campo eléctrico involucrados. (1 punto)
+    \item[b)] Razona por qué el campo total sobre puntos del eje X sólo se puede anular cuando $x>1$ m. Calcula razonadamente el punto en que dicho campo se anula. (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de Coulomb, $k=9\cdot10^{9}$ N m$^2$C$^{-2}$.
+\end{cajaenunciado}
+\hrule
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = 4 \, \mu\text{C} = 4 \cdot 10^{-6} \text{ C}$. Posición $\vec{r}_{q1} = (0,0)$ m.
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = -2 \, \mu\text{C} = -2 \cdot 10^{-6} \text{ C}$. Posición $\vec{r}_{q2} = (1,0)$ m.
+    \item \textbf{Punto de cálculo (P):} $\vec{r}_P = (1,1)$ m.
+    \item \textbf{Constante de Coulomb ($k$):} $k = 9 \cdot 10^9 \text{ N}\cdot\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Vector campo eléctrico total en P, $\vec{E}_T(P)$.
+        \item Punto del eje X donde $\vec{E}_T = 0$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.48\textwidth}{\centering \textbf{Apartado (a): Campo en P(1,1)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de coordenadas XY. Dibuja una carga positiva $q_1$ en el origen (0,0) y una carga negativa $q_2$ en (1,0). Marca el punto P en (1,1). Desde $q_1$ (positiva), dibuja un vector $\vec{E}_1$ en P que apunta alejándose de $q_1$ (en la dirección de la línea que une $q_1$ y P). Desde $q_2$ (negativa), dibuja un vector $\vec{E}_2$ en P que apunta directamente hacia $q_2$ (verticalmente hacia abajo). Dibuja el vector resultante $\vec{E}_T$ como la suma vectorial de $\vec{E}_1$ y $\vec{E}_2$ usando la regla del paralelogramo." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_punto_p.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.48\textwidth}{\centering \textbf{Apartado (b): Campo en el eje X} \vspace{0.5cm} \textit{Prompt para la imagen:} "Eje de coordenadas X. Coloca la carga $q_1$ en x=0 y $q_2$ en x=1. Dibuja vectores de campo para tres regiones: 1) Para x<0, $\vec{E}_1$ apunta a la izquierda y $\vec{E}_2$ a la derecha. 2) Para 0<x<1, $\vec{E}_1$ apunta a la derecha y $\vec{E}_2$ a la derecha. 3) Para x>1, $\vec{E}_1$ apunta a la derecha y $\vec{E}_2$ a la izquierda. Indica que solo en la región x>1 los campos se oponen y pueden anularse." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_eje_x.png}
+    }}
+    \caption{Representación de los campos eléctricos.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El campo eléctrico creado por una carga puntual $q$ en un punto P se calcula con la \textbf{Ley de Coulomb}:
+$$ \vec{E} = k \frac{q}{r^2} \hat{u}_r = k \frac{q}{|\vec{r}|^3} \vec{r} $$
+donde $\vec{r}$ es el vector que va desde la carga hasta el punto P, y $\hat{u}_r$ es el vector unitario en esa dirección.
+El campo total en un punto debido a varias cargas es la suma vectorial de los campos creados por cada carga individual, según el \textbf{Principio de Superposición}.
+$$ \vec{E}_T = \sum_i \vec{E}_i $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Campo total en P(1,1)}
+Calculamos los vectores de posición desde cada carga hasta el punto P:
+\begin{itemize}
+    \item $\vec{r}_1 = \vec{r}_P - \vec{r}_{q1} = (1-0)\hat{i} + (1-0)\hat{j} = \hat{i} + \hat{j}$ m. Su módulo es $|\vec{r}_1| = \sqrt{1^2+1^2} = \sqrt{2}$ m.
+    \item $\vec{r}_2 = \vec{r}_P - \vec{r}_{q2} = (1-1)\hat{i} + (1-0)\hat{j} = 0\hat{i} + \hat{j} = \hat{j}$ m. Su módulo es $|\vec{r}_2| = 1$ m.
+\end{itemize}
+Aplicamos la ley de Coulomb para cada campo:
+\begin{gather}
+    \vec{E}_1 = k \frac{q_1}{|\vec{r}_1|^3} \vec{r}_1 \\
+    \vec{E}_2 = k \frac{q_2}{|\vec{r}_2|^3} \vec{r}_2
+\end{gather}
+El campo total es la suma: $\vec{E}_T = \vec{E}_1 + \vec{E}_2$.
+
+\paragraph*{b) Punto de anulación en el eje X}
+Sea un punto genérico del eje X, $P'(x,0)$.
+\begin{itemize}
+    \item \textbf{Región $x<0$:} El campo $\vec{E}_1$ (creado por $q_1>0$) apunta hacia la izquierda ($-\hat{i}$). El campo $\vec{E}_2$ (creado por $q_2<0$) apunta hacia la derecha ($+\hat{i}$). Pueden anularse. Sin embargo, en esta región, cualquier punto está más cerca de $q_2$ que de $q_1$, y además $|q_1|>|q_2|$. El campo de la carga mayor en magnitud y más lejana nunca podrá anular al de la carga menor y más cercana.
+    \item \textbf{Región $0<x<1$:} $\vec{E}_1$ apunta hacia la derecha ($+\hat{i}$). $\vec{E}_2$ también apunta hacia la derecha (hacia $q_2$). Dos vectores con el mismo sentido no pueden anularse.
+    \item \textbf{Región $x>1$:} $\vec{E}_1$ apunta hacia la derecha ($+\hat{i}$). $\vec{E}_2$ apunta hacia la izquierda ($-\hat{i}$). Aquí sí pueden anularse. La condición es que sus módulos sean iguales.
+\end{itemize}
+Las distancias son $d_1 = x$ y $d_2 = x-1$. La condición de anulación es $|\vec{E}_1| = |\vec{E}_2|$:
+\begin{gather}
+    k \frac{|q_1|}{x^2} = k \frac{|q_2|}{(x-1)^2} \implies \frac{|q_1|}{|q_2|} = \left(\frac{x}{x-1}\right)^2
+\end{gather}
+Resolviendo para $x$:
+\begin{gather}
+    \sqrt{\frac{|q_1|}{|q_2|}} = \frac{x}{x-1} \implies x \left(1-\sqrt{\frac{|q_1|}{|q_2|}}\right) = - \sqrt{\frac{|q_1|}{|q_2|}} \implies x = \frac{\sqrt{|q_1|/|q_2|}}{\sqrt{|q_1|/|q_2|}-1}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de $\vec{E}_T$ en P(1,1)}
+\begin{gather}
+    \vec{E}_1 = (9 \cdot 10^9) \frac{4 \cdot 10^{-6}}{(\sqrt{2})^3} (\hat{i} + \hat{j}) = \frac{36 \cdot 10^3}{2\sqrt{2}}(\hat{i} + \hat{j}) \approx (12728\hat{i} + 12728\hat{j}) \, \text{N/C} \\
+    \vec{E}_2 = (9 \cdot 10^9) \frac{-2 \cdot 10^{-6}}{1^3} (\hat{j}) = -18000\hat{j} \, \text{N/C}
+\end{gather}
+Sumando ambos vectores:
+\begin{gather}
+    \vec{E}_T = (12728\hat{i} + 12728\hat{j}) + (-18000\hat{j}) = 12728\hat{i} - 5272\hat{j} \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    El vector campo eléctrico total es $\boldsymbol{\vec{E}_T = (1.27 \cdot 10^4 \hat{i} - 5.27 \cdot 10^3 \hat{j}) \, \textbf{N/C}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de $x$ donde $\vec{E}_T=0$}
+Calculamos el cociente de las cargas: $\sqrt{\frac{|q_1|}{|q_2|}} = \sqrt{\frac{4}{2}} = \sqrt{2}$.
+Sustituimos en la ecuación (4):
+\begin{gather}
+    x = \frac{\sqrt{2}}{\sqrt{2}-1} = \frac{\sqrt{2}(\sqrt{2}+1)}{(\sqrt{2}-1)(\sqrt{2}+1)} = \frac{2+\sqrt{2}}{2-1} = 2+\sqrt{2} \approx 3.41 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    El campo eléctrico total se anula en el punto del eje X de coordenadas $\boldsymbol{(2+\sqrt{2}, 0) \, \textbf{m}}$, aproximadamente en $\boldsymbol{(3.41, 0) \, \textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando el principio de superposición, se ha calculado el campo eléctrico en el punto (1,1) m como la suma vectorial de los campos generados por cada carga. Para encontrar el punto de anulación en el eje X, se ha razonado que solo es posible en la región $x>1$, donde los campos creados por las dos cargas son de sentido opuesto. La igualación de sus módulos ha permitido determinar la posición exacta, que resulta estar más alejada de la carga de mayor magnitud, como era de esperar.
+\end{cajaconclusion}
+
+\newpage
+\subsection{PROBLEMA 2}
+\label{subsec:P2_2024_jun_ord}
+
+\begin{cajaenunciado}
+Una ballena azul emite un sonido de frecuencia 25 Hz por agua de mar. Se considera que es una onda armónica y unidimensional que se propaga en el sentido positivo del eje X a una velocidad de $1500\,\text{m/s}$. En $t=0$ s y $x=0$ m la función de onda se encuentra en un máximo, de valor $32\,\mu\text{m}$. Determina:
+\begin{enumerate}
+    \item[a)] La longitud de onda y la fase inicial. Escribe la función de onda en unidades del Sistema Internacional. Utiliza la función seno para resolver el problema. (1 punto)
+    \item[b)] El valor de la función de onda y la velocidad de vibración de una partícula del medio situada en $x=300$ m para el instante $t=1$ s. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Frecuencia ($f$):} $f = 25 \text{ Hz}$.
+    \item \textbf{Velocidad de propagación ($v$):} $v = 1500 \text{ m/s}$.
+    \item \textbf{Sentido de propagación:} Sentido positivo del eje X.
+    \item \textbf{Amplitud ($A$):} $A = 32 \, \mu\text{m} = 32 \cdot 10^{-6} \text{ m}$.
+    \item \textbf{Condición inicial:} En $(x,t)=(0,0)$, la elongación es máxima, $y(0,0)=A$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Longitud de onda ($\lambda$).
+        \item Fase inicial ($\phi_0$).
+        \item Función de onda $y(x,t)$.
+        \item Elongación $y(300, 1)$.
+        \item Velocidad de vibración $v_y(300, 1)$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Onda armónica} \vspace{0.5cm} \textit{Prompt para la imagen:} "Crea un gráfico de una onda sinusoidal que represente la función de onda $y(x,t)$. El eje vertical es la elongación 'y' y el horizontal es la posición 'x'. La onda debe tener una amplitud 'A' y una longitud de onda '$\lambda$' claramente marcadas. Dibuja una flecha horizontal grande apuntando a la derecha para indicar la velocidad de propagación 'v'. En el origen (x=0), la onda debe estar en su cresta para reflejar la condición inicial de fase." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_armonica.png}
+    }}
+    \caption{Representación de la onda armónica propagándose.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Una onda armónica unidimensional que se propaga en el sentido positivo del eje X se describe por la ecuación:
+$$ y(x,t) = A \sin(\omega t - kx + \phi_0) $$
+donde:
+\begin{itemize}
+    \item $A$ es la amplitud.
+    \item $\omega$ es la frecuencia angular, $\omega = 2\pi f$.
+    \item $k$ es el número de onda, $k = 2\pi / \lambda$.
+    \item $\phi_0$ es la fase inicial.
+\end{itemize}
+La velocidad de propagación $v$ se relaciona con estas magnitudes: $v = \lambda f = \omega / k$.
+La velocidad de vibración ($v_y$) de una partícula del medio no es la velocidad de la onda, sino la derivada de la elongación respecto al tiempo:
+$$ v_y(x,t) = \frac{\partial y}{\partial t} = A\omega \cos(\omega t - kx + \phi_0) $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Parámetros de la onda}
+Calculamos los parámetros necesarios para la función de onda.
+\begin{itemize}
+    \item \textbf{Longitud de onda ($\lambda$):} A partir de la relación $v = \lambda f$.
+        \begin{gather} \lambda = \frac{v}{f} \end{gather}
+    \item \textbf{Frecuencia angular ($\omega$):}
+        \begin{gather} \omega = 2\pi f \end{gather}
+    \item \textbf{Número de onda ($k$):}
+        \begin{gather} k = \frac{2\pi}{\lambda} \end{gather}
+    \item \textbf{Fase inicial ($\phi_0$):} Usamos la condición $y(0,0)=A$.
+        \begin{gather}
+            A = A \sin(\omega \cdot 0 - k \cdot 0 + \phi_0) \implies 1 = \sin(\phi_0)
+        \end{gather}
+        La solución más simple es $\phi_0 = \pi/2$ rad.
+\end{itemize}
+La función de onda es: $y(x,t) = A \sin(\omega t - kx + \pi/2)$.
+
+\paragraph*{b) Elongación y velocidad en un punto e instante}
+Para calcular $y$ y $v_y$ en $(x_1, t_1) = (300 \text{ m}, 1 \text{ s})$, sustituimos estos valores en las ecuaciones correspondientes:
+\begin{gather}
+    y(x_1, t_1) = A \sin(\omega t_1 - kx_1 + \phi_0) \\
+    v_y(x_1, t_1) = A\omega \cos(\omega t_1 - kx_1 + \phi_0)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Cálculo de parámetros y función de onda}
+\begin{gather}
+    \lambda = \frac{1500 \text{ m/s}}{25 \text{ Hz}} = 60 \text{ m} \\
+    \omega = 2\pi \cdot 25 = 50\pi \text{ rad/s} \\
+    k = \frac{2\pi}{60} = \frac{\pi}{30} \text{ rad/m}
+\end{gather}
+La fase inicial es $\phi_0 = \pi/2$ rad.
+\begin{cajaresultado}
+    La longitud de onda es $\boldsymbol{\lambda=60 \, \textbf{m}}$ y la fase inicial es $\boldsymbol{\phi_0 = \pi/2 \, \textbf{rad}}$.
+\end{cajaresultado}
+La función de onda es:
+\begin{cajaresultado}
+    $\boldsymbol{y(x,t) = 32 \cdot 10^{-6} \sin\left(50\pi t - \frac{\pi}{30}x + \frac{\pi}{2}\right)}$ \textbf{(SI)}.
+\end{cajaresultado}
+
+\paragraph*{b) Cálculo de $y$ y $v_y$ en $x=300$ m, $t=1$ s}
+Primero calculamos el argumento del seno/coseno (la fase):
+$$ \phi = 50\pi \cdot 1 - \frac{\pi}{30} \cdot 300 + \frac{\pi}{2} = 50\pi - 10\pi + \frac{\pi}{2} = 40\pi + \frac{\pi}{2} $$
+Como $40\pi$ son 20 vueltas completas, es equivalente a una fase de $\pi/2$.
+\begin{gather}
+    y(300,1) = 32 \cdot 10^{-6} \sin\left(\frac{\pi}{2}\right) = 32 \cdot 10^{-6} \cdot 1 = 32 \cdot 10^{-6} \, \text{m}
+\end{gather}
+\begin{gather}
+    v_y(300,1) = (32 \cdot 10^{-6})(50\pi) \cos\left(\frac{\pi}{2}\right) = (1600\pi \cdot 10^{-6}) \cdot 0 = 0 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    En $x=300$ m y $t=1$ s:
+    \begin{itemize}
+        \item La elongación es $\boldsymbol{y = 32 \cdot 10^{-6} \, \textbf{m} = 32 \, \mu\textbf{m}}$.
+        \item La velocidad de vibración es $\boldsymbol{v_y = 0 \, \textbf{m/s}}$.
+    \end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de los datos fundamentales de la onda (frecuencia, velocidad y amplitud), se han determinado sus parámetros característicos (longitud de onda, frecuencia angular y número de onda). La condición inicial de elongación máxima en el origen ha fijado la fase inicial en $\pi/2$ rad. El cálculo en el punto e instante especificados revela que la partícula se encuentra en un máximo de su elongación ($32 \, \mu\text{m}$), y por tanto, su velocidad de vibración es momentáneamente nula, lo que es coherente con el comportamiento de un oscilador armónico en un extremo de su trayectoria.
+\end{cajaconclusion}
+
+\newpage
+\subsection{PROBLEMA 3}
+\label{subsec:P3_2024_jun_ord}
+
+\begin{cajaenunciado}
+En la figura se representa una lente delgada L, un objeto O y la posición de la imagen O' que se produce.
+\begin{enumerate}
+    \item[a)] Calcula la potencia de la lente, la distancia focal y razona si la lente es convergente o divergente. (1 punto)
+    \item[b)] Realiza un trazado de rayos y razona las características de la imagen. Calcula numéricamente su tamaño. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Los datos se extraen de la cuadrícula de la figura, donde cada división representa 2 cm.
+\begin{itemize}
+    \item \textbf{Distancia objeto ($s$):} El objeto está 2 divisiones a la izquierda de la lente. $s = -2 \times 2 \text{ cm} = -4 \text{ cm} = -0.04 \text{ m}$. (Signo negativo por convenio DIN).
+    \item \textbf{Distancia imagen ($s'$):} La imagen está 6 divisiones a la derecha de la lente. $s' = +6 \times 2 \text{ cm} = +12 \text{ cm} = +0.12 \text{ m}$. (Signo positivo, se forma a la derecha).
+    \item \textbf{Tamaño objeto ($y$):} El objeto tiene una altura de 1 división. $y = +1 \times 2 \text{ cm} = +2 \text{ cm} = +0.02 \text{ m}$. (Signo positivo, está por encima del eje).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Potencia ($P$) y distancia focal ($f$).
+        \item Tipo de lente.
+        \item Trazado de rayos y características de la imagen.
+        \item Tamaño de la imagen ($y'$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Trazado de rayos para lente convergente} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibuja un eje óptico horizontal. En el centro, dibuja una lente convergente (línea vertical con flechas hacia afuera en los extremos). Marca el foco objeto F a la izquierda y el foco imagen F' a la derecha de la lente. Coloca un objeto (una flecha vertical 'O' apuntando hacia arriba) a la izquierda de F. Realiza el trazado de tres rayos principales desde la punta del objeto: 1) Un rayo paralelo al eje que, tras pasar por la lente, se desvía pasando por F'. 2) Un rayo que pasa por el centro de la lente y no se desvía. 3) Un rayo que pasa por F y, tras atravesar la lente, sale paralelo al eje. Los tres rayos deben converger en un punto a la derecha de la lente, formando la imagen invertida 'O''." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{trazado_rayos_convergente.png}
+    }}
+    \caption{Diagrama de trazado de rayos para la formación de la imagen.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La formación de imágenes en lentes delgadas se describe por la \textbf{Ecuación de Gauss}:
+$$ \frac{1}{s'} - \frac{1}{s} = \frac{1}{f} $$
+donde $f$ es la distancia focal. La \textbf{potencia de una lente} ($P$) es la inversa de su distancia focal expresada en metros, y se mide en dioptrías (D): $P = 1/f$.
+El \textbf{aumento lateral} ($M$) relaciona los tamaños y posiciones de la imagen y el objeto:
+$$ M = \frac{y'}{y} = \frac{s'}{s} $$
+Por convenio:
+\begin{itemize}
+    \item Lentes convergentes tienen $f>0$.
+    \item Lentes divergentes tienen $f<0$.
+    \item Imágenes reales tienen $s'>0$.
+    \item Imágenes virtuales tienen $s'<0$.
+    \item Imágenes derechas tienen $M>0$.
+    \item Imágenes invertidas tienen $M<0$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Distancia focal y potencia}
+A partir de la ecuación de Gauss, la distancia focal $f$ se despeja directamente:
+\begin{gather}
+    \frac{1}{f} = \frac{1}{s'} - \frac{1}{s}
+\end{gather}
+La potencia $P$ es simplemente:
+\begin{gather}
+    P = \frac{1}{f}
+\end{gather}
+El signo de $f$ (o $P$) determinará si la lente es convergente o divergente.
+
+\paragraph*{b) Tamaño y características de la imagen}
+El tamaño de la imagen $y'$ se despeja de la fórmula del aumento lateral:
+\begin{gather}
+    y' = y \cdot \frac{s'}{s}
+\end{gather}
+Las características de la imagen (real/virtual, derecha/invertida, mayor/menor) se deducen de los signos y valores de $s'$ y del aumento $M$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Cálculo de $f$ y $P$}
+Sustituimos los valores de $s$ y $s'$ (en metros) en la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{f} = \frac{1}{0.12} - \frac{1}{-0.04} = \frac{1}{0.12} + \frac{1}{0.04} = \frac{1+3}{0.12} = \frac{4}{0.12} = \frac{100}{3} \approx 33.33 \, \text{m}^{-1}
+\end{gather}
+La potencia es $P = 1/f$.
+\begin{cajaresultado}
+    La potencia de la lente es $\boldsymbol{P \approx +33.3 \, \textbf{D}}$.
+\end{cajaresultado}
+La distancia focal es $f = 1/P = 0.03$ m.
+\begin{cajaresultado}
+    La distancia focal es $\boldsymbol{f = +3 \, \textbf{cm}}$.
+\end{cajaresultado}
+Como la distancia focal (y la potencia) es positiva, la lente es \textbf{convergente}.
+
+\paragraph*{b) Cálculo de $y'$ y características}
+Usamos la fórmula del aumento para hallar $y'$:
+\begin{gather}
+    y' = y \cdot \frac{s'}{s} = (2 \text{ cm}) \cdot \frac{12 \text{ cm}}{-4 \text{ cm}} = 2 \cdot (-3) = -6 \text{ cm}
+\end{gather}
+\begin{cajaresultado}
+    El tamaño de la imagen es $\boldsymbol{y' = -6 \, \textbf{cm}}$.
+\end{cajaresultado}
+Análisis de las características:
+\begin{itemize}
+    \item Como $s'=+12$ cm $> 0$, la imagen es \textbf{real}.
+    \item Como $y'=-6$ cm tiene signo opuesto a $y$, la imagen está \textbf{invertida}.
+    \item Como $|y'|=6$ cm $> |y|=2$ cm, la imagen es de \textbf{mayor tamaño}.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de las posiciones del objeto y la imagen dadas en la figura, la aplicación de la ecuación de Gauss revela que la lente tiene una distancia focal de +3 cm y una potencia de +33.3 D. Al ser la focal positiva, se concluye que la lente es convergente. El trazado de rayos y el cálculo del aumento confirman que la imagen formada es real, invertida y de mayor tamaño que el objeto (concretamente, de 6 cm de altura).
+\end{cajaconclusion}
+
+\newpage
+\subsection{PROBLEMA 4}
+\label{subsec:P4_2024_jun_ord}
+
+\begin{cajaenunciado}
+Los muones son partículas elementales, con carga eléctrica negativa, que se forman en las partes altas de la atmósfera y se mueven a velocidades relativistas hacia la superficie de la Tierra. Un muon se forma a 9000 m de altura sobre la superficie de la Tierra y desciende verticalmente con una velocidad $v=0,9978\,c$. Calcula razonadamente:
+\begin{enumerate}
+    \item[a)] La energía en reposo y la energía total del muon en electronvoltios. (1 punto)
+    \item[b)] El intervalo de tiempo que tarda dicho muon en alcanzar la superficie, medido en un sistema de referencia ligado a la Tierra y medido en un sistema de referencia que viaje con el muon. (1 punto)
+\end{enumerate}
+\textbf{Datos:} velocidad de la luz en el vacío, $c=3\cdot10^{8}$ m/s; masa (en reposo) del muon, $m=1,8\cdot10^{-28}$ kg; carga elemental, $q=1,6\cdot10^{-19}$ C.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Altura de formación ($L_0$):} $L_0 = 9000 \text{ m}$. Esta es la distancia propia, medida en el sistema de referencia de la Tierra.
+    \item \textbf{Velocidad del muon ($v$):} $v = 0.9978c$.
+    \item \textbf{Masa en reposo del muon ($m$):} $m = 1.8 \cdot 10^{-28} \text{ kg}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3 \cdot 10^8 \text{ m/s}$.
+    \item \textbf{Carga elemental ($e$):} $e = 1.6 \cdot 10^{-19} \text{ C}$. Se usa para la conversión de J a eV.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Energía en reposo ($E_0$) y energía total ($E_T$) en eV.
+        \item Tiempo de viaje medido en la Tierra ($\Delta t$).
+        \item Tiempo de viaje medido por el muon ($\Delta t_0$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Dilatación del Tiempo y Contracción de la Longitud} \vspace{0.5cm} \textit{Prompt para la imagen:} "Crea una ilustración con dos paneles. Panel izquierdo (Sistema de Referencia de la Tierra): muestra la atmósfera terrestre. Un muon se crea en la parte superior y viaja una distancia $L_0 = 9000$ m hacia la superficie. Un reloj en la Tierra mide un tiempo $\Delta t$. Panel derecho (Sistema de Referencia del Muon): desde la perspectiva del muon, él está en reposo. La atmósfera de la Tierra se mueve hacia él a velocidad v. La distancia que recorre la atmósfera está contraída a $L < L_0$. Un reloj que viaja con el muon mide un tiempo propio $\Delta t_0 < \Delta t$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{relatividad_muon.png}
+    }}
+    \caption{Comparación de las mediciones en el sistema de la Tierra y el sistema del muon.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Este problema se resuelve aplicando los principios de la \textbf{Relatividad Especial de Einstein}.
+\paragraph*{a) Energía relativista}
+\begin{itemize}
+    \item \textbf{Energía en reposo ($E_0$):} Es la energía intrínseca de una partícula por el hecho de tener masa. Se calcula con la famosa ecuación $E_0 = mc^2$.
+    \item \textbf{Energía total ($E_T$):} Es la energía de una partícula en movimiento. Es la suma de su energía en reposo y su energía cinética. $E_T = \gamma mc^2$, donde $\gamma$ es el factor de Lorentz.
+    \item \textbf{Factor de Lorentz ($\gamma$):} $\gamma = \frac{1}{\sqrt{1 - (v/c)^2}}$. Siempre es $\gamma \ge 1$.
+\end{itemize}
+
+\paragraph*{b) Cinemática relativista}
+\begin{itemize}
+    \item \textbf{Dilatación del tiempo:} El tiempo medido en un sistema de referencia en movimiento ($\Delta t$) es siempre mayor que el tiempo propio ($\Delta t_0$), medido en el sistema de referencia donde el suceso ocurre en el mismo lugar. $\Delta t = \gamma \Delta t_0$. El tiempo de vida del muon, medido en su propio sistema, es un tiempo propio.
+    \item \textbf{Contracción de la longitud:} La longitud de un objeto en movimiento ($L$) es siempre menor que su longitud propia ($L_0$), medida en el sistema donde el objeto está en reposo. $L = L_0 / \gamma$. La altura de la atmósfera es una longitud propia para un observador en la Tierra.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Energías}
+Primero calculamos el factor de Lorentz $\gamma$:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1-(v/c)^2}}
+\end{gather}
+Las energías son:
+\begin{gather}
+    E_0 = mc^2 \\
+    E_T = \gamma E_0 = \gamma mc^2
+\end{gather}
+Para convertir de Julios a electronvoltios, dividimos por la carga elemental $e$.
+
+\paragraph*{b) Intervalos de tiempo}
+\begin{itemize}
+    \item \textbf{Tiempo medido en la Tierra ($\Delta t$):} Un observador en la Tierra ve al muon recorrer la distancia $L_0$ a velocidad $v$.
+        \begin{gather} \Delta t = \frac{L_0}{v} \end{gather}
+    \item \textbf{Tiempo medido por el muon ($\Delta t_0$):} Este es el tiempo propio, y está relacionado con el tiempo medido en la Tierra por la dilatación del tiempo.
+        \begin{gather} \Delta t_0 = \frac{\Delta t}{\gamma} \end{gather}
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo del factor de Lorentz $\gamma$}
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - (0.9978c/c)^2}} = \frac{1}{\sqrt{1 - 0.9978^2}} \approx \frac{1}{\sqrt{0.004395}} \approx \frac{1}{0.0663} \approx 15.08
+\end{gather}
+
+\paragraph*{a) Energías en eV}
+\begin{gather}
+    E_0 = (1.8 \cdot 10^{-28} \text{ kg})(3 \cdot 10^8 \text{ m/s})^2 = 1.62 \cdot 10^{-11} \text{ J} \\
+    E_0 \text{ (en eV)} = \frac{1.62 \cdot 10^{-11} \text{ J}}{1.6 \cdot 10^{-19} \text{ C}} \approx 1.01 \cdot 10^8 \text{ eV} = 101 \text{ MeV}
+\end{gather}
+\begin{cajaresultado}
+    La energía en reposo del muon es $\boldsymbol{E_0 \approx 1.01 \cdot 10^8 \, \textbf{eV}}$ (o 101 MeV).
+\end{cajaresultado}
+\begin{gather}
+    E_T = \gamma E_0 \approx 15.08 \cdot (1.01 \cdot 10^8 \text{ eV}) \approx 1.52 \cdot 10^9 \text{ eV} = 1520 \text{ MeV}
+\end{gather}
+\begin{cajaresultado}
+    La energía total del muon es $\boldsymbol{E_T \approx 1.52 \cdot 10^9 \, \textbf{eV}}$ (o 1.52 GeV).
+\end{cajaresultado}
+
+\paragraph*{b) Intervalos de tiempo}
+\begin{gather}
+    \Delta t = \frac{L_0}{v} = \frac{9000 \text{ m}}{0.9978 \cdot (3 \cdot 10^8 \text{ m/s})} \approx \frac{9000}{2.9934 \cdot 10^8} \approx 3.006 \cdot 10^{-5} \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+    El tiempo medido en la Tierra es $\boldsymbol{\Delta t \approx 3.01 \cdot 10^{-5} \, \textbf{s}}$.
+\end{cajaresultado}
+\begin{gather}
+    \Delta t_0 = \frac{\Delta t}{\gamma} \approx \frac{3.006 \cdot 10^{-5} \text{ s}}{15.08} \approx 1.99 \cdot 10^{-6} \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+    El tiempo medido por el muon es $\boldsymbol{\Delta t_0 \approx 1.99 \cdot 10^{-6} \, \textbf{s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La alta velocidad del muon implica un factor de Lorentz significativamente mayor que 1, lo que hace que su energía total ($1.52$ GeV) sea unas 15 veces su energía en reposo (101 MeV). Este mismo factor es responsable de la dilatación del tiempo: mientras que un observador en la Tierra mide un tiempo de viaje de $30.1 \, \mu\text{s}$, el "reloj interno" del muon solo registraría $1.99 \, \mu\text{s}$. Este efecto es crucial para explicar por qué los muones, a pesar de tener una vida media muy corta en reposo (aprox. 2.2 $\mu$s), tienen tiempo suficiente para llegar a la superficie de la Tierra.
+\end{cajaconclusion}
+
+\newpage

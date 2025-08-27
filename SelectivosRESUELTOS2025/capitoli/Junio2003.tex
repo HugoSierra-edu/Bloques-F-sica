@@ -1,0 +1,892 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2003 - Convocatoria Ordinaria}
+\label{chap:2003_jun_ord}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Cuestiones de Campo Gravitatorio}
+\label{sec:grav_2003_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2003_jun_ord}
+
+\begin{cajaenunciado}
+Calcula el cociente entre la energía potencial y la energía cinética de un satélite en órbita circular.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica que requiere la deducción de una relación entre magnitudes energéticas. Las magnitudes involucradas son:
+\begin{itemize}
+    \item \textbf{Energía Cinética ($E_c$)}
+    \item \textbf{Energía Potencial Gravitatoria ($E_p$)}
+    \item \textbf{Masa del cuerpo central ($M$)}
+    \item \textbf{Masa del satélite ($m$)}
+    \item \textbf{Radio de la órbita ($r$)}
+    \item \textbf{Velocidad orbital ($v$)}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Satélite en Órbita Circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta grande en el centro y un satélite pequeño en una órbita circular de radio r. Dibujar el vector velocidad $\vec{v}$ del satélite, tangente a la órbita. Dibujar el vector de la fuerza gravitatoria $\vec{F}_g$ sobre el satélite, apuntando hacia el centro del planeta. Indicar que esta fuerza actúa como fuerza centrípeta, $\vec{F}_g = \vec{F}_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_circular_energia.png}
+    }}
+    \caption{Esquema de un satélite en órbita para el análisis energético.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para resolver la cuestión, se deben utilizar las siguientes expresiones:
+\begin{itemize}
+    \item \textbf{Energía Cinética:} $E_c = \frac{1}{2}mv^2$.
+    \item \textbf{Energía Potencial Gravitatoria:} $E_p = -G\frac{Mm}{r}$.
+    \item \textbf{Dinámica del Movimiento Circular Uniforme:} Para una órbita circular, la fuerza gravitatoria es la que provee la fuerza centrípeta necesaria para mantener al satélite en su trayectoria.
+    $$F_g = F_c \implies G\frac{Mm}{r^2} = m\frac{v^2}{r}$$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Partimos de la igualdad entre la fuerza gravitatoria y la fuerza centrípeta para encontrar una expresión para la energía cinética en función de los parámetros de la órbita.
+$$G\frac{Mm}{r^2} = m\frac{v^2}{r}$$
+Multiplicando ambos lados por $r$, obtenemos una expresión para $mv^2$:
+$$mv^2 = G\frac{Mm}{r}$$
+Ahora, sustituimos esto en la fórmula de la energía cinética:
+$$E_c = \frac{1}{2}mv^2 = \frac{1}{2} G\frac{Mm}{r}$$
+Ya tenemos las expresiones para $E_p$ y $E_c$ en términos de $G, M, m$ y $r$. Ahora podemos calcular su cociente:
+$$\frac{E_p}{E_c} = \frac{-G\frac{Mm}{r}}{\frac{1}{2}G\frac{Mm}{r}}$$
+Simplificando la expresión, se cancelan todos los términos excepto el $-1$ y el $1/2$:
+$$\frac{E_p}{E_c} = -2$$
+Este resultado se conoce como el \textbf{Teorema del Virial} para el caso de una fuerza de tipo $1/r^2$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El resultado es una constante adimensional, no depende de ningún valor numérico.
+\begin{cajaresultado}
+El cociente entre la energía potencial y la energía cinética de un satélite en órbita circular es $\boldsymbol{-2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La relación $\mathbf{E_p = -2E_c}$ es una propiedad fundamental de cualquier sistema ligado por una fuerza gravitatoria en una órbita circular. Esto implica que la energía mecánica total del satélite es $E_M = E_c + E_p = E_c - 2E_c = -E_c$, es decir, la energía total es negativa y igual a la mitad de la energía potencial. Esto confirma que el sistema está ligado; se necesitaría aportar una energía igual a $E_c$ para que el satélite escapara de la órbita.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2003_jun_ord}
+
+\begin{cajaenunciado}
+Una partícula puntual de masa 3M se coloca en el origen de un cierto sistema de coordenadas, mientras que otra de masa M se coloca sobre el eje X a una distancia de 1 m respecto del origen. Calcula las coordenadas del punto donde el campo gravitatorio es nulo.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa 1 ($m_1$):} $m_1 = 3M$
+    \item \textbf{Posición de $m_1$:} $\vec{r}_1 = (0,0)$ m
+    \item \textbf{Masa 2 ($m_2$):} $m_2 = M$
+    \item \textbf{Posición de $m_2$:} $\vec{r}_2 = (1,0)$ m
+    \item \textbf{Incógnita:} Coordenadas del punto $P(x,y)$ donde el campo gravitatorio total es nulo, $\vec{g}_{total} = \vec{0}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo Gravitatorio Nulo} \vspace{0.5cm} \textit{Prompt para la imagen:} "El eje X horizontal. Una masa grande etiquetada '3M' en el origen (0,0). Una masa más pequeña etiquetada 'M' en el punto (1,0). Dibujar un punto 'P' en el eje X entre las dos masas. En el punto P, dibujar dos vectores de campo gravitatorio: $\vec{g}_1$ apuntando hacia la izquierda (hacia 3M) y $\vec{g}_2$ apuntando hacia la derecha (hacia M). Indicar que en el punto de campo nulo, estos dos vectores deben tener la misma magnitud y sentidos opuestos."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_nulo_masas.png}
+    }}
+    \caption{Esquema de los campos gravitatorios generados por las dos masas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El campo gravitatorio total en un punto es la suma vectorial de los campos creados por cada masa individualmente (\textbf{Principio de Superposición}).
+$$\vec{g}_{total} = \vec{g}_1 + \vec{g}_2$$
+El campo gravitatorio creado por una masa puntual $m$ a una distancia $r$ es un vector que apunta hacia la masa y cuyo módulo es $g = G\frac{m}{r^2}$.
+Para que el campo total sea nulo, los vectores $\vec{g}_1$ y $\vec{g}_2$ deben ser iguales en módulo y de sentido opuesto. Esto solo puede ocurrir en un punto situado sobre la línea que une las dos masas. Fuera de esta línea, los vectores $\vec{g}_1$ y $\vec{g}_2$ nunca serían antiparalelos.
+Además, como las dos fuerzas son atractivas, el punto debe estar \textbf{entre} las dos masas. Si estuviera fuera, a la izquierda de 3M o a la derecha de M, ambos vectores de campo apuntarían en el mismo sentido y no podrían anularse.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sea $P(x,0)$ el punto en el eje X donde el campo es nulo. Este punto se encuentra a una distancia $x$ de la masa $m_1$ y a una distancia $(1-x)$ de la masa $m_2$.
+La condición de campo nulo es que los módulos de los campos sean iguales:
+$$|\vec{g}_1| = |\vec{g}_2|$$
+$$G\frac{m_1}{x^2} = G\frac{m_2}{(1-x)^2}$$
+Sustituyendo las masas $m_1=3M$ y $m_2=M$:
+$$\frac{3M}{x^2} = \frac{M}{(1-x)^2}$$
+Simplificando $M$:
+$$\frac{3}{x^2} = \frac{1}{(1-x)^2}$$
+$$3(1-x)^2 = x^2$$
+Tomando la raíz cuadrada en ambos lados (solo nos interesa la solución positiva ya que las distancias lo son):
+$$\sqrt{3}(1-x) = x$$
+$$\sqrt{3} - \sqrt{3}x = x$$
+$$\sqrt{3} = x(1+\sqrt{3})$$
+$$x = \frac{\sqrt{3}}{1+\sqrt{3}}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos el valor de $x$:
+\begin{gather}
+    x = \frac{\sqrt{3}}{1+\sqrt{3}} = \frac{\sqrt{3}(1-\sqrt{3})}{(1+\sqrt{3})(1-\sqrt{3})} = \frac{\sqrt{3}-3}{1-3} = \frac{\sqrt{3}-3}{-2} = \frac{3-\sqrt{3}}{2} \\
+    x \approx \frac{3 - 1,732}{2} = \frac{1,268}{2} = 0,634 \, \text{m}
+\end{gather}
+El punto se encuentra en $x \approx 0,634$ m. Como habíamos deducido, este valor está entre 0 y 1.
+\begin{cajaresultado}
+Las coordenadas del punto donde el campo gravitatorio es nulo son $\boldsymbol{(\frac{3-\sqrt{3}}{2}, 0)}$, aproximadamente $\boldsymbol{(0,634, 0)}$ metros.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El punto de campo nulo se encuentra en la línea que une las masas y está más cerca de la masa más pequeña, como era de esperar. En el punto $\mathbf{x \approx 0,634 \, m}$, la mayor atracción de la masa 3M, debida a su mayor magnitud, se ve compensada exactamente por la menor distancia a la masa M, resultando en un equilibrio de fuerzas gravitatorias y un campo neto nulo.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Cuestiones de Movimiento Armónico Simple}
+\label{sec:mas_2003_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2003_jun_ord}
+
+\begin{cajaenunciado}
+Un cuerpo dotado de un movimiento armónico simple de 10 cm de amplitud, tarda 0,2 s en describir una oscilación completa. Si en el instante $t=0$ s su velocidad era nula y la elongación positiva, determina:
+\begin{enumerate}
+    \item[1.] La ecuación que representa el movimiento del cuerpo.
+    \item[2.] La velocidad del cuerpo en el instante $t=0,25$ s.
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 10 \text{ cm} = 0,1 \text{ m}$
+    \item \textbf{Periodo ($T$):} $T = 0,2 \text{ s}$
+    \item \textbf{Condiciones iniciales ($t=0$):}
+        \begin{itemize}
+            \item Velocidad nula: $v(0) = 0$
+            \item Elongación positiva: $x(0) > 0$
+        \end{itemize}
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Ecuación del movimiento $x(t)$.
+            \item Velocidad en $t=0,25$ s, $v(0,25)$.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Gráfica de un M.A.S.} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una gráfica de elongación (x) frente a tiempo (t). Dibujar una curva cosenoidal que empiece en su máximo valor positivo A en t=0. La curva debe completar una oscilación en t=T=0,2s. Marcar la amplitud A=0,1m en el eje vertical. La función representada debe ser $x(t) = A \cos(\omega t)$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{mas_coseno.png}
+    }}
+    \caption{Representación de la elongación en función del tiempo para las condiciones dadas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación general de un Movimiento Armónico Simple (M.A.S.) es:
+$$x(t) = A \sin(\omega t + \phi_0) \quad \text{o} \quad x(t) = A \cos(\omega t + \phi_0')$$
+La velocidad se obtiene derivando la posición respecto al tiempo:
+$$v(t) = \frac{dx}{dt} = A\omega \cos(\omega t + \phi_0)$$
+La frecuencia angular $\omega$ se relaciona con el periodo $T$ mediante $\omega = \frac{2\pi}{T}$.
+Las condiciones iniciales nos permitirán determinar la fase inicial $\phi_0$. La condición $v(0)=0$ y $x(0)>0$ implica que en $t=0$ el cuerpo se encuentra en uno de los extremos de la oscilación (concretamente, en el extremo positivo). Esta situación se describe más sencillamente con la función coseno, $x(t) = A\cos(\omega t)$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Ecuación del movimiento}
+Primero calculamos la frecuencia angular $\omega$:
+$$\omega = \frac{2\pi}{T}$$
+Como las condiciones iniciales son $x(0)=+A$, la ecuación del movimiento es:
+$$x(t) = A \cos(\omega t)$$
+La ecuación de la velocidad será:
+$$v(t) = \frac{dx}{dt} = -A\omega \sin(\omega t)$$
+
+\paragraph*{2. Velocidad en $t=0,25$ s}
+Sustituimos $t=0,25$ s en la ecuación de la velocidad.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de $\omega$ y la ecuación de movimiento}
+\begin{gather}
+    \omega = \frac{2\pi}{0,2} = 10\pi \, \text{rad/s}
+\end{gather}
+Sustituyendo $A$ y $\omega$ en la ecuación de la posición:
+$$x(t) = 0,1 \cos(10\pi t)$$
+\begin{cajaresultado}
+    La ecuación del movimiento es $\boldsymbol{x(t) = 0,1 \cos(10\pi t)}$ (en unidades del SI).
+\end{cajaresultado}
+
+\paragraph*{Cálculo de la velocidad en $t=0,25$ s}
+La ecuación de la velocidad es $v(t) = -A\omega \sin(\omega t) = -0,1 \cdot 10\pi \sin(10\pi t) = -\pi \sin(10\pi t)$.
+\begin{gather}
+    v(0,25) = -\pi \sin(10\pi \cdot 0,25) = -\pi \sin(2,5\pi) = -\pi \sin(\frac{5\pi}{2})
+\end{gather}
+Recordando que $\sin(\frac{5\pi}{2}) = \sin(\frac{\pi}{2} + 2\pi) = \sin(\frac{\pi}{2}) = 1$.
+$$v(0,25) = -\pi \cdot 1 = -\pi \approx -3,14 \, \text{m/s}$$
+\begin{cajaresultado}
+    La velocidad del cuerpo en $t=0,25$ s es $\boldsymbol{v = -\pi \approx -3,14 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las condiciones iniciales del problema definen un movimiento cosenoidal. La ecuación del M.A.S. es $\mathbf{x(t) = 0,1 \cos(10\pi t)}$. En el instante $t=0,25$ s, que corresponde a un cuarto de periodo después de pasar por el centro, el cuerpo se encuentra en el extremo negativo de su trayectoria, moviéndose con su velocidad máxima en sentido negativo, $\mathbf{v = -\pi \, m/s}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2003_jun_ord}
+
+\begin{cajaenunciado}
+Una partícula realiza un movimiento armónico simple. Si la frecuencia disminuye a la mitad, manteniendo la amplitud constante, ¿qué ocurre con el periodo, la velocidad máxima y la energía total?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre las relaciones entre los parámetros de un M.A.S.
+\begin{itemize}
+    \item \textbf{Frecuencia inicial ($f_1$)}
+    \item \textbf{Frecuencia final ($f_2$):} $f_2 = f_1 / 2$
+    \item \textbf{Amplitud ($A$):} Constante.
+    \item \textbf{Incógnitas:} Cómo cambian el periodo ($T$), la velocidad máxima ($v_{max}$) y la energía total ($E_T$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere representación gráfica.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las magnitudes de un M.A.S. se relacionan de la siguiente manera:
+\begin{itemize}
+    \item \textbf{Periodo ($T$):} Es el inverso de la frecuencia. $T = 1/f$.
+    \item \textbf{Velocidad máxima ($v_{max}$):} Se alcanza en el centro de la oscilación ($x=0$) y su valor es $v_{max} = A\omega = A(2\pi f)$.
+    \item \textbf{Energía total ($E_T$):} Es la energía cinética máxima (o potencial máxima) y es constante. $E_T = \frac{1}{2}mv_{max}^2 = \frac{1}{2}m(A\omega)^2 = \frac{1}{2}kA^2 = 2\pi^2mf^2A^2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Analizamos cómo cambia cada magnitud al pasar de un estado 1 (con $f_1$) a un estado 2 (con $f_2 = f_1/2$).
+\paragraph*{Periodo ($T$)}
+$$T_1 = \frac{1}{f_1} \quad ; \quad T_2 = \frac{1}{f_2} = \frac{1}{f_1/2} = 2 \frac{1}{f_1} = 2T_1$$
+El periodo se duplica.
+
+\paragraph*{Velocidad máxima ($v_{max}$)}
+$$v_{max,1} = A(2\pi f_1) \quad ; \quad v_{max,2} = A(2\pi f_2) = A(2\pi \frac{f_1}{2}) = \frac{1}{2} (A(2\pi f_1)) = \frac{1}{2}v_{max,1}$$
+La velocidad máxima se reduce a la mitad.
+
+\paragraph*{Energía total ($E_T$)}
+$$E_{T,1} = \frac{1}{2}m(A\omega_1)^2 = 2\pi^2mf_1^2A^2$$
+$$E_{T,2} = 2\pi^2mf_2^2A^2 = 2\pi^2m(\frac{f_1}{2})^2A^2 = \frac{1}{4}(2\pi^2mf_1^2A^2) = \frac{1}{4}E_{T,1}$$
+La energía total se reduce a la cuarta parte.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+\begin{itemize}
+    \item El \textbf{periodo se duplica}.
+    \item La \textbf{velocidad máxima se reduce a la mitad}.
+    \item La \textbf{energía total se reduce a la cuarta parte}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al disminuir la frecuencia de un M.A.S. a la mitad, el movimiento se vuelve más lento, tardando el doble en completar cada ciclo. Como consecuencia, la velocidad máxima alcanzada es menor. Dado que la energía total es proporcional al cuadrado de la frecuencia (y de la velocidad máxima), esta disminuye de forma más acusada, quedando reducida a un cuarto de su valor original.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Cuestiones de Óptica}
+\label{sec:optica_2003_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2003_jun_ord}
+
+\begin{cajaenunciado}
+Un coleccionista de sellos desea utilizar una lente convergente de distancia focal 5 cm como lupa para observar detenidamente algunos ejemplares de su colección. Calcula la distancia a la que debe colocar los sellos respecto de la lente si se desea obtener una imagen virtual diez veces mayor que la original.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Convergente.
+    \item \textbf{Distancia focal ($f$):} $f = +5 \, \text{cm}$ (positiva para lentes convergentes).
+    \item \textbf{Tipo de imagen:} Virtual.
+    \item \textbf{Aumento lateral ($A_L$):} La imagen es virtual, por lo que debe ser derecha ($A_L > 0$). Es diez veces mayor, por tanto $A_L = +10$.
+    \item \textbf{Incógnita:} Posición del objeto (sello), $s$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Lupa (Lente Convergente)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar el eje óptico horizontal y una lente convergente (símbolo de doble flecha) en el centro. Marcar los focos F (a la izquierda) y F' (a la derecha) a 5 cm del centro. Colocar un objeto (sello) entre el foco F y la lente. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje que se refracta pasando por F'. 2) Un rayo que pasa por el centro de la lente y no se desvía. Las prolongaciones de estos dos rayos hacia la izquierda divergen y se cruzan en un punto, formando una imagen virtual, derecha y de mayor tamaño."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lupa_convergente.png}
+    }}
+    \caption{Formación de imagen en una lupa.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utilizan las ecuaciones de las lentes delgadas:
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss para lentes:} $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f}$.
+    \item \textbf{Ecuación del aumento lateral:} $A_L = \frac{s'}{s}$.
+\end{itemize}
+El convenio de signos es el mismo que para los espejos.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Tenemos un sistema de dos ecuaciones con dos incógnitas ($s$ y $s'$).
+De la ecuación del aumento, despejamos $s'$:
+$$A_L = \frac{s'}{s} \implies s' = A_L \cdot s$$
+Sustituimos esta expresión en la ecuación de Gauss:
+$$\frac{1}{A_L \cdot s} - \frac{1}{s} = \frac{1}{f}$$
+Sacamos factor común $1/s$:
+$$\frac{1}{s} \left( \frac{1}{A_L} - 1 \right) = \frac{1}{f}$$
+$$\frac{1}{s} \left( \frac{1 - A_L}{A_L} \right) = \frac{1}{f}$$
+Despejamos $s$:
+$$s = f \left( \frac{1 - A_L}{A_L} \right)$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores $f=+5$ cm y $A_L=+10$:
+\begin{gather}
+    s = 5 \left( \frac{1 - 10}{10} \right) = 5 \left( \frac{-9}{10} \right) = -4,5 \, \text{cm}
+\end{gather}
+El signo negativo indica que el objeto se coloca a la izquierda de la lente, como debe ser para un objeto real. La distancia es 4,5 cm.
+\begin{cajaresultado}
+    El sello debe colocarse a una distancia de $\boldsymbol{4,5}$ \textbf{cm} de la lente.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que una lente convergente actúe como lupa, produciendo una imagen virtual y aumentada, el objeto debe situarse entre el foco y la lente. El cálculo confirma esta condición, ya que la distancia obtenida, $\mathbf{4,5 \, cm}$, es menor que la distancia focal de 5 cm.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2003_jun_ord}
+
+\begin{cajaenunciado}
+¿Qué características tiene la imagen que se forma en un espejo cóncavo si el objeto se encuentra a una distancia mayor que el radio de curvatura? Dibújalo.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre formación de imágenes.
+\begin{itemize}
+    \item \textbf{Tipo de espejo:} Cóncavo ($R<0, f<0$).
+    \item \textbf{Posición del objeto ($s$):} A una distancia mayor que el radio. En nuestro convenio, $|s| > |R|$. Como $s$ y $R$ son negativos, esto significa $s < R$. (Por ejemplo, si R=-20cm, s=-30cm).
+    \item \textbf{Incógnitas:} Características de la imagen (real/virtual, derecha/invertida, mayor/menor).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Objeto más allá del Centro de Curvatura} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar el eje óptico horizontal. Un espejo cóncavo a la derecha. Marcar su vértice V, foco F y centro C a la izquierda. Colocar un objeto (flecha vertical hacia arriba) a la izquierda de C. Trazar dos rayos notables desde la punta del objeto: 1) Un rayo paralelo al eje se refleja pasando por F. 2) Un rayo que pasa por C se refleja sobre sí mismo. El punto donde se cruzan los rayos reflejados, entre C y F, forma la punta de la imagen. La imagen resultante debe ser visiblemente más pequeña que el objeto e invertida."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_concavo_lejos.png}
+    }}
+    \caption{Trazado de rayos para un objeto situado más allá del centro de curvatura.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Utilizamos la ecuación de Gauss y la del aumento lateral para deducir las características de la imagen de forma analítica.
+$$\frac{1}{s'} + \frac{1}{s} = \frac{1}{f} = \frac{2}{R}$$
+$$A_L = -\frac{s'}{s}$$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Naturaleza (real/virtual)}
+Despejamos $1/s'$: $\frac{1}{s'} = \frac{1}{f} - \frac{1}{s}$.
+Como el objeto está más allá del centro ($s < R = 2f$), tenemos que $s < 2f$. Dado que $s$ y $f$ son negativos, esto implica $\frac{1}{s} > \frac{1}{2f}$.
+Entonces: $\frac{1}{s'} = \frac{1}{f} - \frac{1}{s} < \frac{1}{f} - \frac{1}{2f} = \frac{1}{2f}$.
+Como $f<0$, $1/s'$ es un número negativo mayor que $1/f$. Por tanto, $s'$ es negativo ($f < s' < 0$).
+Si $s' < 0$, la imagen es \textbf{real}.
+
+\paragraph*{Orientación (derecha/invertida)}
+Calculamos el aumento $A_L = -s'/s$. Como $s<0$ y $s'<0$, el cociente $s'/s$ es positivo. Por lo tanto, $A_L$ es negativo.
+Si $A_L < 0$, la imagen es \textbf{invertida}.
+
+\paragraph*{Tamaño (mayor/menor)}
+Queremos comparar $|A_L|$ con 1.
+De $\frac{1}{s'} + \frac{1}{s} = \frac{1}{f}$, multiplicamos por $s'$: $1 + \frac{s'}{s} = \frac{s'}{f}$.
+$1 - A_L = \frac{s'}{f}$. Como $f < s' < 0$, el cociente $s'/f$ es positivo y menor que 1.
+$0 < 1 - A_L < 1$.
+$A_L = 1 - s'/f$. Como $s'<f<0$, tenemos que $s'/f > 1$. Por tanto $A_L < 0$.
+Para el tamaño, de $\frac{1}{s'} = \frac{s-f}{sf}$, tenemos $s'=\frac{sf}{s-f}$.
+$A_L = -\frac{s'}{s} = -\frac{f}{s-f} = \frac{f}{f-s}$.
+Como $s < 2f < f < 0$, el denominador $f-s$ es positivo. Y $f$ es negativo. $A_L < 0$.
+Además, $|f-s| > |f|$, por lo que $|A_L| = \frac{|f|}{|f-s|} < 1$.
+Si $|A_L| < 1$, la imagen es de \textbf{menor tamaño}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+La imagen formada es \textbf{real}, \textbf{invertida} y de \textbf{menor tamaño} que el objeto. Se forma entre el centro de curvatura y el foco.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Tanto el trazado de rayos como el análisis de las ecuaciones confirman las características de la imagen. Esta configuración es la que se utiliza en los telescopios reflectores para formar una imagen real y reducida de los astros lejanos en el plano focal del espejo.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Problemas de Electromagnetismo}
+\label{sec:em_2003_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2003_jun_ord}
+
+\begin{cajaenunciado}
+En el rectángulo mostrado en la figura los lados tienen una longitud de 5 cm y 15 cm, y las cargas son $q_1 = -5,0\,\mu\text{C}$ y $q_2 = +2,0\,\mu\text{C}$.
+\begin{enumerate}
+    \item[1.] Calcula el módulo, la dirección y el sentido del campo eléctrico en los vértices A y B. (1 punto)
+    \item[2.] Calcula el potencial eléctrico en los vértices A y B. (0,6 puntos)
+    \item[3.] Determina el trabajo que realiza la fuerza del campo eléctrico para trasladar a una tercera carga de $+3,0\,\mu\text{C}$ desde el punto A hasta el punto B. (0,4 puntos)
+\end{enumerate}
+\textbf{Dato:} $K=9\times10^9\,\text{Nm}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = -5,0 \cdot 10^{-6} \, \text{C}$, situada en el vértice inferior izquierdo (origen).
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = +2,0 \cdot 10^{-6} \, \text{C}$, situada en el vértice inferior derecho.
+    \item \textbf{Dimensiones:} lado corto (eje y) = 5 cm = 0,05 m; lado largo (eje x) = 15 cm = 0,15 m.
+    \item \textbf{Coordenadas de los puntos:}
+        \begin{itemize}
+            \item $q_1$ en $(0, 0)$
+            \item $q_2$ en $(0.15, 0)$
+            \item A en $(0, 0.05)$
+            \item B en $(0.15, 0.05)$
+        \end{itemize}
+    \item \textbf{Carga de prueba ($q_3$):} $q_3 = +3,0 \cdot 10^{-6} \, \text{C}$.
+    \item \textbf{Constante de Coulomb ($K$):} $K=9\times10^9\,\text{Nm}^2/\text{C}^2$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campos y Potenciales en un Rectángulo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un rectángulo con vértices etiquetados. Carga $q_1$ (negativa) en el origen (esquina inferior izquierda). Carga $q_2$ (positiva) en la esquina inferior derecha. En el vértice A (esquina superior izquierda), dibujar dos vectores de campo: $\vec{E}_1$ apuntando hacia abajo (hacia $q_1$) y $\vec{E}_2$ apuntando desde $q_2$ hacia A. Dibujar el vector resultante $\vec{E}_A$. Hacer lo mismo para el vértice B (esquina superior derecha): dibujar $\vec{E}_1$ apuntando desde B hacia $q_1$ y $\vec{E}_2$ apuntando hacia arriba (desde $q_2$). Dibujar el vector resultante $\vec{E}_B$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_rectangulo.png}
+    }}
+    \caption{Vectores de campo eléctrico en los vértices A y B.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Campo Eléctrico ($\vec{E}$):} El campo total es la suma vectorial de los campos creados por cada carga (Principio de Superposición). El módulo del campo creado por una carga puntual $q$ a una distancia $r$ es $E = K\frac{|q|}{r^2}$.
+    \item \textbf{Potencial Eléctrico ($V$):} El potencial total es la suma escalar de los potenciales creados por cada carga: $V = \sum K\frac{q_i}{r_i}$.
+    \item \textbf{Trabajo Eléctrico ($W$):} El trabajo realizado por el campo para mover una carga $q_3$ desde un punto A a un punto B es $W_{A \to B} = q_3 (V_A - V_B)$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph*{1. Campo Eléctrico en A y B}
+\subparagraph*{En el punto A (0, 0.05):}
+Distancias: $r_{1A} = 0,05$ m; $r_{2A} = \sqrt{0,15^2 + 0,05^2} = \sqrt{0,025} \approx 0,158$ m.
+Módulos:
+$E_{1A} = K\frac{|q_1|}{r_{1A}^2} = 9\cdot10^9 \frac{5\cdot10^{-6}}{0,05^2} = 1,8 \cdot 10^7$ N/C. Vector: $\vec{E}_{1A} = -1,8 \cdot 10^7 \vec{j}$ N/C.
+$E_{2A} = K\frac{|q_2|}{r_{2A}^2} = 9\cdot10^9 \frac{2\cdot10^{-6}}{0,025} = 7,2 \cdot 10^5$ N/C.
+Vector $\vec{E}_{2A}$: Ángulo $\alpha = \arctan(\frac{0,05}{0,15}) \approx 18,43^\circ$.
+$\vec{E}_{2A} = E_{2A}(-\cos\alpha \vec{i} + \sin\alpha \vec{j}) = 7,2\cdot10^5(-0,949\vec{i} + 0,316\vec{j}) \approx (-6,83\cdot10^5\vec{i} + 2,28\cdot10^5\vec{j})$ N/C.
+$\vec{E}_A = \vec{E}_{1A} + \vec{E}_{2A} = -6,83\cdot10^5\vec{i} + (2,28\cdot10^5 - 1,8\cdot10^7)\vec{j} = \boldsymbol{(-6,83\cdot10^5\vec{i} - 1,78\cdot10^7\vec{j})}$ \textbf{N/C}.
+
+\subparagraph*{En el punto B (0.15, 0.05):}
+Distancias: $r_{1B} = r_{2A} \approx 0,158$ m; $r_{2B} = 0,05$ m.
+Módulos:
+$E_{1B} = K\frac{|q_1|}{r_{1B}^2} = 9\cdot10^9 \frac{5\cdot10^{-6}}{0,025} = 1,8 \cdot 10^6$ N/C.
+Vector $\vec{E}_{1B}$: $\vec{E}_{1B} = E_{1B}(-\cos\alpha \vec{i} - \sin\alpha \vec{j}) \approx (-1,71\cdot10^6\vec{i} - 5,70\cdot10^5\vec{j})$ N/C.
+$E_{2B} = K\frac{|q_2|}{r_{2B}^2} = 9\cdot10^9 \frac{2\cdot10^{-6}}{0,05^2} = 7,2 \cdot 10^6$ N/C. Vector: $\vec{E}_{2B} = 7,2 \cdot 10^6 \vec{j}$ N/C.
+$\vec{E}_B = \vec{E}_{1B} + \vec{E}_{2B} = -1,71\cdot10^6\vec{i} + (7,2\cdot10^6 - 5,70\cdot10^5)\vec{j} = \boldsymbol{(-1,71\cdot10^6\vec{i} + 6,63\cdot10^6\vec{j})}$ \textbf{N/C}.
+
+\paragraph*{2. Potencial Eléctrico en A y B}
+\subparagraph*{En el punto A:}
+$V_A = K\frac{q_1}{r_{1A}} + K\frac{q_2}{r_{2A}} = 9\cdot10^9(\frac{-5\cdot10^{-6}}{0,05} + \frac{2\cdot10^{-6}}{0,158}) = 9\cdot10^9(-10^{-4} + 1,266\cdot10^{-5}) \approx \boldsymbol{-7,86 \cdot 10^5}$ \textbf{V}.
+
+\subparagraph*{En el punto B:}
+$V_B = K\frac{q_1}{r_{1B}} + K\frac{q_2}{r_{2B}} = 9\cdot10^9(\frac{-5\cdot10^{-6}}{0,158} + \frac{2\cdot10^{-6}}{0,05}) = 9\cdot10^9(-3,165\cdot10^{-5} + 4\cdot10^{-5}) \approx \boldsymbol{+7,52 \cdot 10^4}$ \textbf{V}.
+
+\paragraph*{3. Trabajo para mover $q_3$ de A a B}
+\begin{gather}
+    W_{A \to B} = q_3(V_A - V_B) = (3\cdot10^{-6})(-7,86\cdot10^5 - 7,52\cdot10^4) \\
+    W_{A \to B} = (3\cdot10^{-6})(-8,612\cdot10^5) \approx \boldsymbol{-2,58} \, \textbf{J}.
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Los cálculos se han realizado en el apartado anterior.
+\begin{cajaresultado}
+1. $\vec{E}_A \approx (-6,83\cdot10^5\vec{i} - 1,78\cdot10^7\vec{j})$ N/C.
+   $\vec{E}_B \approx (-1,71\cdot10^6\vec{i} + 6,63\cdot10^6\vec{j})$ N/C.
+2. $V_A \approx -7,86 \cdot 10^5$ V; $V_B \approx +7,52 \cdot 10^4$ V.
+3. El trabajo realizado por el campo es $W_{A \to B} \approx -2,58$ J.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se han calculado los campos y potenciales en los puntos A y B mediante el principio de superposición. El trabajo para mover la carga $q_3$ de A a B es negativo, lo que significa que un agente externo debe realizar un trabajo de 2,58 J contra el campo eléctrico para efectuar dicho traslado.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2003_jun_ord}
+
+\begin{cajaenunciado}
+En el plano XY se tiene una espira circular de radio $a=2$ cm. Simultáneamente se tiene un campo magnético uniforme cuya dirección forma un ángulo de $30^\circ$ con el semieje Z positivo y cuya intensidad es $B=3e^{-t/2}$ T, donde t es el tiempo en segundos.
+\begin{enumerate}
+    \item[1.] Calcula el flujo del campo magnético en la espira, y su valor en $t=0$ s. (0,8 puntos)
+    \item[2.] Calcula la fuerza electromotriz inducida en la espira en $t=0$ s. (0,8 puntos)
+    \item[3.] Indica, mediante un dibujo, el sentido de la corriente inducida en la espira. Razona la respuesta. (0,4 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Radio de la espira ($a$):} $a = 2 \text{ cm} = 0,02 \text{ m}$.
+    \item \textbf{Área de la espira ($S$):} $S = \pi a^2$.
+    \item \textbf{Campo magnético ($B(t)$):} $B(t) = 3e^{-t/2}$ T.
+    \item \textbf{Ángulo ($\theta$):} El ángulo entre $\vec{B}$ y el eje Z es $30^\circ$. El vector superficie $\vec{S}$ de la espira en el plano XY es paralelo al eje Z. Por tanto, $\theta = 30^\circ$.
+    \item \textbf{Incógnitas:} Flujo $\Phi(t)$, $\Phi(0)$, f.e.m. $\varepsilon(0)$ y sentido de la corriente inducida.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Flujo Magnético en una Espira} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de ejes coordenados XYZ. Dibujar una espira circular en el plano XY, centrada en el origen. Dibujar el vector superficie $\vec{S}$ de la espira, paralelo al eje Z. Dibujar un vector de campo magnético uniforme $\vec{B}$ que forma un ángulo de 30 grados con el eje Z. Indicar que el flujo magnético depende de la componente de $\vec{B}$ que es paralela a $\vec{S}$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{flujo_espira_inclinada.png}
+    }}
+    \caption{Esquema para el cálculo del flujo magnético.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Flujo Magnético ($\Phi$):} Para un campo uniforme y una superficie plana, el flujo es $\Phi = \vec{B} \cdot \vec{S} = B S \cos(\theta)$.
+    \item \textbf{Ley de Faraday-Lenz:} La fuerza electromotriz (f.e.m.) inducida es la tasa de cambio del flujo magnético con el tiempo: $\varepsilon = -\frac{d\Phi}{dt}$.
+    \item \textbf{Ley de Lenz:} El sentido de la corriente inducida es tal que el campo magnético que crea se opone a la variación del flujo que la originó.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Flujo magnético}
+El área es $S = \pi a^2$. El flujo en función del tiempo es:
+$$\Phi(t) = B(t) S \cos(\theta) = (3e^{-t/2})(\pi a^2)\cos(30^\circ)$$
+\paragraph*{2. Fuerza electromotriz inducida}
+Derivamos el flujo respecto al tiempo:
+$$\varepsilon(t) = -\frac{d\Phi}{dt} = - \frac{d}{dt} \left[ (3e^{-t/2})(\pi a^2)\cos(30^\circ) \right]$$
+Como $\pi, a, \cos(30^\circ)$ son constantes, las sacamos de la derivada:
+$$\varepsilon(t) = -3\pi a^2 \cos(30^\circ) \frac{d}{dt}(e^{-t/2}) = -3\pi a^2 \cos(30^\circ) \left(-\frac{1}{2}e^{-t/2}\right)$$
+$$\varepsilon(t) = \frac{3}{2}\pi a^2 \cos(30^\circ) e^{-t/2}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo del Flujo}
+Área: $S = \pi (0,02)^2 = 4\pi \cdot 10^{-4} \, \text{m}^2$.
+$\cos(30^\circ) = \sqrt{3}/2$.
+$$\Phi(t) = (3e^{-t/2})(4\pi \cdot 10^{-4})(\frac{\sqrt{3}}{2}) = 6\sqrt{3}\pi \cdot 10^{-4} e^{-t/2} \, \text{Wb}$$
+En $t=0$:
+$$\Phi(0) = 6\sqrt{3}\pi \cdot 10^{-4} e^0 \approx 3,26 \cdot 10^{-3} \, \text{Wb}$$
+\begin{cajaresultado}
+    El flujo es $\boldsymbol{\Phi(t) = 6\sqrt{3}\pi \cdot 10^{-4} e^{-t/2}}$ \textbf{Wb}. En $t=0$, $\boldsymbol{\Phi(0) \approx 3,26 \cdot 10^{-3}}$ \textbf{Wb}.
+\end{cajaresultado}
+
+\paragraph*{Cálculo de la f.e.m.}
+$$\varepsilon(t) = \frac{3}{2}\pi (0,02)^2 (\frac{\sqrt{3}}{2}) e^{-t/2} = 3\sqrt{3}\pi \cdot 10^{-4} e^{-t/2} \, \text{V}$$
+En $t=0$:
+$$\varepsilon(0) = 3\sqrt{3}\pi \cdot 10^{-4} e^0 \approx 1,63 \cdot 10^{-3} \, \text{V}$$
+\begin{cajaresultado}
+    La f.e.m. inducida en $t=0$ es $\boldsymbol{\varepsilon(0) \approx 1,63 \cdot 10^{-3}}$ \textbf{V} (1,63 mV).
+\end{cajaresultado}
+
+\paragraph*{3. Sentido de la corriente}
+En $t=0$, la componente Z del campo magnético es positiva (apunta hacia arriba) y está disminuyendo de intensidad (porque $e^{-t/2}$ es una función decreciente). El flujo magnético hacia arriba está disminuyendo.
+Según la Ley de Lenz, la corriente inducida debe crear un campo magnético propio que se oponga a esta disminución, es decir, debe crear un campo magnético hacia arriba.
+Usando la regla de la mano derecha, para que el campo inducido apunte hacia arriba, la corriente debe circular en \textbf{sentido antihorario} vista desde arriba.
+\begin{cajaresultado}
+    La corriente inducida circula en \textbf{sentido antihorario}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Un campo magnético variable en el tiempo induce una f.e.m. en la espira, cuyo valor inicial es de $\mathbf{1,63 \, mV}$. Dado que el flujo magnético que atraviesa la espira está disminuyendo, la corriente inducida circulará en sentido antihorario para generar un campo propio que contrarreste dicha disminución, cumpliendo así la Ley de Lenz.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Problemas de Física Moderna}
+\label{sec:moderna_2003_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2003_jun_ord}
+
+\begin{cajaenunciado}
+El trabajo de extracción del platino es $1,01\times10^{-18}\,\text{J}$. El efecto fotoeléctrico se produce en el platino cuando la luz que incide tiene una longitud de onda menor que 198 nm.
+\begin{enumerate}
+    \item[1.] Calcula la energía cinética máxima de los electrones emitidos en caso de iluminar el platino con luz de 150 nm. (1 punto)
+    \item[2.] Por otra parte, el trabajo de extracción del níquel es $8\times10^{-19}\,\text{J}$. ¿Se observará el efecto fotoeléctrico en el níquel con luz de 480 nm? (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Trabajo de extracción del Platino ($\phi_{Pt}$):} $\phi_{Pt} = 1,01 \cdot 10^{-18} \, \text{J}$.
+    \item \textbf{Longitud de onda umbral del Platino ($\lambda_{0,Pt}$):} $198 \text{ nm} = 1,98 \cdot 10^{-7} \text{ m}$.
+    \item \textbf{Luz incidente en Platino ($\lambda_{inc,Pt}$):} $150 \text{ nm} = 1,50 \cdot 10^{-7} \text{ m}$.
+    \item \textbf{Trabajo de extracción del Níquel ($\phi_{Ni}$):} $\phi_{Ni} = 8 \cdot 10^{-19} \, \text{J}$.
+    \item \textbf{Luz incidente en Níquel ($\lambda_{inc,Ni}$):} $480 \text{ nm} = 4,80 \cdot 10^{-7} \text{ m}$.
+    \item \textbf{Constantes:} $h \approx 6,63\cdot10^{-34}\,\text{J s}$, $c = 3\cdot10^8\,\text{m/s}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema de cálculo.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Efecto Fotoeléctrico (Ecuación de Einstein):} La energía de un fotón incidente se invierte en el trabajo de extracción y en la energía cinética del fotoelectrón.
+    $$E_{fotón} = \phi + E_{c,max}$$
+    \item \textbf{Energía del fotón:} Se relaciona con su frecuencia $f$ y longitud de onda $\lambda$.
+    $$E_{fotón} = hf = h\frac{c}{\lambda}$$
+    \item \textbf{Condición para el efecto fotoeléctrico:} Para que se produzca, la energía del fotón debe ser mayor o igual que el trabajo de extracción ($E_{fotón} \ge \phi$), lo que es equivalente a que la longitud de onda incidente sea menor o igual que la longitud de onda umbral ($\lambda_{inc} \le \lambda_0$).
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Energía cinética en Platino}
+$$E_{c,max} = E_{fotón} - \phi_{Pt} = h\frac{c}{\lambda_{inc,Pt}} - \phi_{Pt}$$
+\paragraph*{2. Efecto fotoeléctrico en Níquel}
+Calculamos la energía del fotón incidente: $E_{fotón,Ni} = h\frac{c}{\lambda_{inc,Ni}}$.
+Comparamos esta energía con el trabajo de extracción $\phi_{Ni}$. Si $E_{fotón,Ni} > \phi_{Ni}$, se observará el efecto.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Energía cinética en Platino}
+Energía del fotón incidente:
+$$E_{fotón,Pt} = \frac{(6,63\cdot10^{-34})(3\cdot10^8)}{1,50\cdot10^{-7}} = 1,326 \cdot 10^{-18} \, \text{J}$$
+Energía cinética máxima:
+$$E_{c,max} = (1,326 \cdot 10^{-18}) - (1,01 \cdot 10^{-18}) = 3,16 \cdot 10^{-19} \, \text{J}$$
+\begin{cajaresultado}
+    La energía cinética máxima de los electrones emitidos por el platino es $\boldsymbol{3,16 \cdot 10^{-19}}$ \textbf{J}.
+\end{cajaresultado}
+
+\paragraph*{2. Efecto fotoeléctrico en Níquel}
+Energía del fotón incidente:
+$$E_{fotón,Ni} = \frac{(6,63\cdot10^{-34})(3\cdot10^8)}{4,80\cdot10^{-7}} \approx 4,14 \cdot 10^{-19} \, \text{J}$$
+Comparamos con el trabajo de extracción:
+$$E_{fotón,Ni} = 4,14 \cdot 10^{-19} \, \text{J} \quad < \quad \phi_{Ni} = 8 \cdot 10^{-19} \, \text{J}$$
+Como la energía del fotón es menor que el trabajo de extracción, no es suficiente para arrancar los electrones.
+\begin{cajaresultado}
+    \textbf{No se observará} el efecto fotoeléctrico en el níquel con luz de 480 nm.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para el platino, la luz de 150 nm es suficientemente energética para producir el efecto fotoeléctrico, dejando un excedente de energía de $\mathbf{3,16 \cdot 10^{-19} \, J}$ para los electrones. Sin embargo, para el níquel, la luz de 480 nm tiene una energía de solo $\mathbf{4,14 \cdot 10^{-19} \, J}$, insuficiente para superar la barrera energética de $\mathbf{8 \cdot 10^{-19} \, J}$ que impone su trabajo de extracción, por lo que no se emitirán electrones.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2003_jun_ord}
+
+\begin{cajaenunciado}
+Se pretende enviar una muestra de 2 g del material radiactivo ${}^{90}\text{Sr}$ a un planeta de otro sistema estelar situado a 40 años-luz de la tierra mediante una nave que viaja a una velocidad $v=0,9c$. El periodo de semidesintegración del material es de 29 años.
+\begin{enumerate}
+    \item[1.] Calcula el tiempo que tarda la nave en llegar al planeta para un observador que viaja en la nave. (1 punto)
+    \item[2.] Determina los gramos de material que llegan sin desintegrar. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa inicial de la muestra ($m_0$):} $m_0 = 2 \, \text{g}$
+    \item \textbf{Distancia propia al planeta ($L_0$):} $L_0 = 40 \, \text{años-luz}$
+    \item \textbf{Velocidad de la nave ($v$):} $v = 0,9c$
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 29 \, \text{años}$
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Tiempo de viaje medido en la nave ($\Delta t_0$, tiempo propio).
+            \item Masa final del material ($m_f$).
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Viaje Relativista} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos sistemas de referencia. S (Tierra) y S' (Nave). La nave se aleja de la Tierra a velocidad $v=0,9c$ hacia un planeta. En S, la distancia es $L_0$ y el tiempo de viaje es $\Delta t$. En S', el tiempo de viaje es el tiempo propio $\Delta t_0$. Indicar las fórmulas de dilatación del tiempo y contracción de la longitud."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{viaje_relativista.png}
+    }}
+    \caption{Esquema de los sistemas de referencia para el viaje intergaláctico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1. Tiempo de viaje}
+Este problema involucra la \textbf{Teoría de la Relatividad Especial}.
+El tiempo medido por un observador en la Tierra ($\Delta t$, tiempo impropio) y el tiempo medido por un observador en la nave ($\Delta t_0$, tiempo propio) están relacionados por la \textbf{dilatación del tiempo}:
+$$\Delta t = \gamma \Delta t_0 = \frac{\Delta t_0}{\sqrt{1-v^2/c^2}}$$
+El tiempo medido desde la Tierra se calcula de forma clásica: $\Delta t = L_0/v$.
+
+\paragraph*{2. Desintegración radiactiva}
+La desintegración del material radiactivo ocurre en el sistema de referencia de la nave. Por lo tanto, el tiempo que debemos usar en la ley de desintegración es el tiempo propio de la nave, $\Delta t_0$.
+La \textbf{ley de desintegración radiactiva} establece que la masa de una muestra en un instante $t$ es:
+$$m(t) = m_0 e^{-\lambda t}$$
+La constante de desintegración $\lambda$ se relaciona con el periodo de semidesintegración $T_{1/2}$ mediante:
+$$\lambda = \frac{\ln(2)}{T_{1/2}}$$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Tiempo de viaje propio ($\Delta t_0$)}
+Primero calculamos el tiempo medido desde la Tierra:
+$$\Delta t = \frac{L_0}{v}$$
+Luego, usamos la dilatación del tiempo para encontrar el tiempo propio:
+$$\Delta t_0 = \frac{\Delta t}{\gamma} = \Delta t \sqrt{1-v^2/c^2} = \frac{L_0}{v}\sqrt{1-v^2/c^2}$$
+
+\paragraph*{2. Masa final ($m_f$)}
+Calculamos la constante de desintegración $\lambda$:
+$$\lambda = \frac{\ln(2)}{T_{1/2}}$$
+La masa final será:
+$$m_f = m_0 e^{-\lambda \Delta t_0}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo del tiempo de viaje}
+Tiempo medido desde la Tierra:
+$$\Delta t = \frac{40 \text{ años-luz}}{0,9c} = \frac{40}{0,9} \text{ años} \approx 44,44 \text{ años}$$
+Tiempo medido en la nave (tiempo propio):
+\begin{gather}
+    \Delta t_0 = 44,44 \cdot \sqrt{1 - (0,9)^2} = 44,44 \cdot \sqrt{1 - 0,81} = 44,44 \cdot \sqrt{0,19} \approx 44,44 \cdot 0,436 \approx 19,37 \text{ años}
+\end{gather}
+\begin{cajaresultado}
+    El tiempo que tarda la nave en llegar para un observador en ella es $\boldsymbol{\approx 19,37}$ \textbf{años}.
+\end{cajaresultado}
+
+\paragraph*{Cálculo de la masa final}
+Constante de desintegración (dejamos las unidades en años$^{-1}$ ya que el tiempo está en años):
+$$\lambda = \frac{\ln(2)}{29} \approx 0,0239 \text{ años}^{-1}$$
+Masa final:
+\begin{gather}
+    m_f = 2 \cdot e^{-0,0239 \cdot 19,37} = 2 \cdot e^{-0,463} \approx 2 \cdot 0,629 \approx 1,26 \, \text{g}
+\end{gather}
+\begin{cajaresultado}
+    Llegan sin desintegrar aproximadamente $\boldsymbol{1,26}$ \textbf{gramos} del material.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido a la dilatación del tiempo, para los tripulantes de la nave y para la muestra radiactiva, el viaje de 40 años-luz dura solo $\mathbf{19,37}$ años. Este es el tiempo durante el cual la muestra se desintegra. Si un observador en la Tierra calculara la masa restante, usaría 44,44 años y obtendría una masa final mucho menor. El resultado correcto es el que se mide en el sistema de referencia propio de la muestra, por lo que llegan $\mathbf{1,26 \, g}$ de Estroncio-90 al destino.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Cuestiones de Física Nuclear}
+\label{sec:nuclear_2003_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2003_jun_ord}
+
+\begin{cajaenunciado}
+El ${}^{14}_6\text{C}$ es un isótopo radiactivo del carbono utilizado para determinar la antigüedad de objetos. Calcula la energía de ligadura media por nucleón, en MeV, de un núcleo de ${}^{14}_6\text{C}$.
+\textbf{Datos:} Masas atómicas, n: 1,0087 u, ${}^1_1$H: 1,0073 u, ${}^{14}_6$C: 14,0032 u; Carga del protón, $e=1,602\times10^{-19}\,\text{C}$; Velocidad de la luz en el vacío, $c=3\times10^8\,\text{m/s}$; Masa del protón $m_p=1,66\times10^{-27}\,\text{kg}$. (Nota: Se asume que la masa del ${}^1_1$H es la del protón y que la masa del protón dada es la conversión de u a kg).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Núcleo:} Carbono-14 (${}^{14}_6\text{C}$), con Z=6 protones y N=14-6=8 neutrones.
+    \item \textbf{Masa del ${}^{14}\text{C}$:} $m_C = 14,0032 \, \text{u}$.
+    \item \textbf{Masa del protón ($m_p$):} $m_p \approx m_H = 1,0073 \, \text{u}$.
+    \item \textbf{Masa del neutrón ($m_n$):} $m_n = 1,0087 \, \text{u}$.
+    \item \textbf{Conversión u-MeV:} $1 \, \text{u} \approx 931,5 \, \text{MeV}/c^2$.
+    \item \textbf{Incógnita:} Energía de enlace por nucleón ($E_e/A$) en MeV.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{energía de enlace por nucleón} es una medida de la estabilidad de un núcleo. Se calcula en dos pasos:
+\begin{enumerate}
+    \item Calcular el \textbf{defecto de masa ($\Delta m$)}, que es la diferencia entre la suma de las masas de los protones y neutrones constituyentes y la masa real del núcleo.
+    $$\Delta m = (Z \cdot m_p + N \cdot m_n) - m_{núcleo}$$
+    \item Convertir este defecto de masa en energía usando la fórmula de Einstein, $E_e = \Delta m \cdot c^2$, y luego dividir por el número másico A.
+    $$\frac{E_e}{A} = \frac{\Delta m \cdot c^2}{A}$$
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+$$\frac{E_e}{A} = \frac{[(6 \cdot m_p + 8 \cdot m_n) - m_C] \cdot c^2}{14}$$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo del defecto de masa}
+\begin{gather}
+    \Delta m = [6(1,0073) + 8(1,0087)] - 14,0032 \\
+    \Delta m = [6,0438 + 8,0696] - 14,0032 = 14,1134 - 14,0032 = 0,1102 \, \text{u}
+\end{gather}
+\paragraph*{Cálculo de la energía de enlace por nucleón}
+Usando el factor de conversión $1 \, \text{u} \approx 931,5 \, \text{MeV}/c^2$:
+\begin{gather}
+    E_e = 0,1102 \, \text{u} \cdot 931,5 \, \text{MeV/u} \approx 102,64 \, \text{MeV} \\
+    \frac{E_e}{A} = \frac{102,64 \, \text{MeV}}{14} \approx 7,33 \, \text{MeV/nucleón}
+\end{gather}
+\begin{cajaresultado}
+    La energía de ligadura media por nucleón para el ${}^{14}\text{C}$ es $\boldsymbol{\approx 7,33}$ \textbf{MeV/nucleón}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El valor de $\mathbf{7,33 \, MeV}$ por nucleón representa la energía promedio que se necesitaría para extraer un protón o un neutrón del núcleo de Carbono-14. Este valor, al compararlo con el de otros núcleos, permite evaluar su estabilidad relativa.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2003_jun_ord}
+
+\begin{cajaenunciado}
+Un dispositivo utilizado en medicina para combatir, mediante radioterapia, ciertos tipos de tumor contiene una muestra de 0,50 g de ${}^{60}_{27}\text{Co}$. El periodo de semidesintegración de este elemento es 5,27 años. Determina la actividad, en desintegraciones por segundo, de la muestra de material radiactivo.
+\textbf{Dato:} $u=1,66\times10^{-27}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la muestra ($m$):} $m = 0,50 \text{ g} = 5 \cdot 10^{-4} \text{ kg}$.
+    \item \textbf{Nucleido:} Cobalto-60 (${}^{60}_{27}\text{Co}$). Su masa molar es $M \approx 60 \, \text{g/mol}$.
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 5,27 \text{ años} = 5,27 \cdot 365,25 \cdot 24 \cdot 3600 \text{ s} \approx 1,66 \cdot 10^8 \text{ s}$.
+    \item \textbf{Número de Avogadro ($N_A$):} $N_A = 6,022 \cdot 10^{23} \, \text{mol}^{-1}$.
+    \item \textbf{Incógnita:} Actividad ($A$) en Bq (desintegraciones/s).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{actividad ($A$)} de una muestra radiactiva es $A = \lambda N$, donde $N$ es el número de núcleos radiactivos y $\lambda$ es la constante de desintegración.
+\begin{enumerate}
+    \item \textbf{Calcular el número de núcleos ($N$):} Se obtiene a partir de la masa de la muestra, la masa molar y el número de Avogadro.
+    $$N = \frac{m}{M} N_A$$
+    \item \textbf{Calcular la constante de desintegración ($\lambda$):} Se relaciona con el periodo de semidesintegración.
+    $$\lambda = \frac{\ln(2)}{T_{1/2}}$$
+    \item \textbf{Calcular la actividad ($A$):} $A = \lambda N$.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+$$A = \left( \frac{\ln(2)}{T_{1/2}} \right) \cdot \left( \frac{m}{M} N_A \right)$$
+Es fundamental que $T_{1/2}$ esté en segundos para que la actividad resulte en Bq.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo del número de núcleos ($N$)}
+\begin{gather}
+    N = \frac{0,50 \, \text{g}}{60 \, \text{g/mol}} \cdot (6,022 \cdot 10^{23} \, \text{mol}^{-1}) \approx 5,018 \cdot 10^{21} \, \text{núcleos}
+\end{gather}
+\paragraph*{Cálculo de la constante de desintegración ($\lambda$)}
+\begin{gather}
+    T_{1/2} = 5,27 \text{ años} \cdot (3,156 \cdot 10^7 \text{ s/año}) \approx 1,663 \cdot 10^8 \text{ s} \\
+    \lambda = \frac{\ln(2)}{1,663 \cdot 10^8 \text{ s}} \approx 4,168 \cdot 10^{-9} \, \text{s}^{-1}
+\end{gather}
+\paragraph*{Cálculo de la actividad ($A$)}
+\begin{gather}
+    A = (4,168 \cdot 10^{-9} \, \text{s}^{-1}) \cdot (5,018 \cdot 10^{21}) \approx 2,09 \cdot 10^{13} \, \text{Bq}
+\end{gather}
+\begin{cajaresultado}
+    La actividad de la muestra es $\boldsymbol{\approx 2,09 \cdot 10^{13}}$ \textbf{Bq} (desintegraciones/s).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Una muestra de medio gramo de Cobalto-60, un isótopo comúnmente usado en radioterapia, posee una actividad extremadamente alta de aproximadamente 21 TeraBecquerels. Esta intensa emisión de radiación es lo que lo hace efectivo para destruir tejidos tumorales, pero también subraya la necesidad de un manejo y blindaje extremadamente cuidadosos.
+\end{cajaconclusion}
+
+\newpage

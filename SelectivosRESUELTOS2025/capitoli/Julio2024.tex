@@ -1,0 +1,1090 @@
+% !TEX root = ../main.tex
+\chapter{Examen Julio 2024 - Convocatoria Extraordinaria}
+\label{chap:2024_jul_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2024_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1}
+\label{subsec:C1_2024_jul_ext}
+
+\begin{cajaenunciado}
+La tercera ley de Kepler establece la relación entre el radio orbital r de un planeta y su periodo T. Si la órbita alrededor del Sol se considera circular, esta relación viene dada por $T^{2}=C r^{3}$, donde C es una constante. Deduce razonadamente esta relación, explicando en qué principio o ley física te basas y escribe la expresión de C en función de otras magnitudes ¿Depende el periodo de la masa del planeta? Justifica la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+El problema es de naturaleza teórica y nos pide deducir una expresión.
+\begin{itemize}
+    \item \textbf{Relación de Kepler:} $T^2 = C r^3$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Deducción de la relación.
+        \item Expresión de la constante $C$.
+        \item Analizar la dependencia del periodo $T$ con la masa del planeta.
+    \end{itemize}
+\end{itemize}
+
+\newpage
+
+\subsubsection*{2. Representación Gráfica}
+Se realiza un esquema para visualizar el sistema Sol-planeta.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Órbita Planetaria} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema del sistema solar con el Sol en el centro, de masa $M_S$. Un planeta de masa $m_p$ orbita el Sol en una trayectoria circular de radio $r$. Dibuja el vector de la fuerza de atracción gravitatoria $\vec{F_g}$ sobre el planeta, apuntando hacia el centro del Sol. Indica que esta fuerza actúa como fuerza centrípeta $\vec{F_c}$. Etiqueta claramente $M_S$, $m_p$, $r$, $\vec{F_g}$ y $\vec{F_c}$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_planeta.png}
+    }}
+    \caption{Representación de un planeta orbitando al Sol.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para deducir la tercera ley de Kepler para órbitas circulares, nos basamos en dos principios fundamentales:
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal de Newton:} La fuerza de atracción entre dos masas (el Sol, $M_S$, y el planeta, $m_p$) separadas una distancia $r$ es $F_g = G \frac{M_S m_p}{r^2}$.
+    \item \textbf{Dinámica del Movimiento Circular Uniforme (MCU):} Para que un cuerpo describa una órbita circular, debe existir una fuerza centrípeta, $F_c = m_p a_c = m_p \omega^2 r$. La velocidad angular $\omega$ se relaciona con el periodo $T$ mediante $\omega = \frac{2\pi}{T}$.
+\end{itemize}
+En el caso de una órbita planetaria, la fuerza gravitatoria es la que proporciona la fuerza centrípeta necesaria para mantener al planeta en su órbita.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta ($F_g = F_c$):
+\begin{gather}
+    G \frac{M_S m_p}{r^2} = m_p \omega^2 r
+\end{gather}
+La masa del planeta, $m_p$, se cancela en ambos lados, lo que demuestra que la dinámica orbital no depende de ella.
+\begin{gather}
+    G \frac{M_S}{r^2} = \omega^2 r = \left(\frac{2\pi}{T}\right)^2 r = \frac{4\pi^2}{T^2} r
+\end{gather}
+Ahora, reordenamos la ecuación para obtener la relación entre $T^2$ y $r^3$:
+\begin{gather}
+    T^2 G M_S = 4\pi^2 r^3 \nonumber \\[8pt]
+    T^2 = \left(\frac{4\pi^2}{G M_S}\right) r^3
+\end{gather}
+Esta es la expresión de la tercera ley de Kepler. Comparándola con la forma dada en el enunciado, $T^2 = C r^3$, podemos identificar la constante C.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema no requiere cálculos numéricos, sino la obtención de expresiones.
+\begin{cajaresultado}
+    La expresión para la constante C es: $\boldsymbol{C = \frac{4\pi^2}{G M_S}}$.
+\end{cajaresultado}
+\medskip
+\begin{cajaresultado}
+    El periodo $\boldsymbol{T}$ \textbf{no depende de la masa del planeta} ($m_p$), ya que este término se cancela durante la deducción.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Igualando la fuerza de atracción gravitatoria de Newton con la fuerza centrípeta requerida para un movimiento circular uniforme, se deduce la tercera ley de Kepler: $T^2 = C r^3$. La constante de proporcionalidad $C$ depende de la masa del astro central (el Sol) y de la constante de gravitación universal G. Es crucial observar que el periodo de la órbita es independiente de la masa del cuerpo que orbita (el planeta).
+\end{cajaconclusion}
+
+\newpage
+\subsection{Problema 1}
+\label{subsec:P1_2024_jul_ext}
+
+\begin{cajaenunciado}
+Un satélite de masa m se mueve con velocidad $v=5 \cdot 10^{5}$ m/s en una órbita circular de radio $r=4 \cdot 10^{8}$ m alrededor de un planeta de masa M. La energía cinética del satélite es $E_{c}=2 \cdot 10^{18}$ J. Calcula:
+\begin{enumerate}
+    \item[a)] Las masas M del planeta y m del satélite. (1 punto)
+    \item[b)] La energía potencial y la energía mecánica del satélite en su órbita. Calcula también la energía mínima que será necesario aportar para que se aleje indefinidamente del planeta desde la órbita en que se encuentra. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de gravitación universal, $G=6,67 \cdot 10^{-11} \, \text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Todos los datos se proporcionan en el Sistema Internacional (SI).
+\begin{itemize}
+    \item \textbf{Velocidad del satélite ($v$):} $v = 5 \cdot 10^{5} \, \text{m/s}$
+    \item \textbf{Radio orbital ($r$):} $r = 4 \cdot 10^{8} \, \text{m}$
+    \item \textbf{Energía cinética del satélite ($E_c$):} $E_c = 2 \cdot 10^{18} \, \text{J}$
+    \item \textbf{Constante de Gravitación Universal (G):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Masa del satélite ($m$).
+        \item Masa del planeta ($M$).
+        \item Energía potencial del satélite ($E_p$).
+        \item Energía mecánica del satélite ($E_m$).
+        \item Energía de escape desde la órbita ($E_{aporte}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Satélite en órbita circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Esquema de un planeta esférico de masa M en el centro. Un satélite de masa m se mueve en una órbita circular de radio r a su alrededor. Dibuja el vector velocidad $\vec{v}$ del satélite, tangente a la órbita. Dibuja el vector fuerza gravitatoria $\vec{F_g}$ sobre el satélite, apuntando hacia el centro del planeta. Etiqueta claramente M, m, r, $\vec{v}$ y $\vec{F_g}$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_satelite.png}
+    }}
+    \caption{Representación del satélite orbitando el planeta.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Cálculo de las masas}
+\begin{itemize}
+    \item \textbf{Energía Cinética:} Se utiliza la definición clásica $E_c = \frac{1}{2}mv^2$ para hallar la masa del satélite.
+    \item \textbf{Dinámica Orbital:} Al igual que en la cuestión anterior, la fuerza gravitatoria ($F_g$) actúa como fuerza centrípeta ($F_c = m \frac{v^2}{r}$). Igualando ambas fuerzas se puede despejar la masa del planeta $M$.
+\end{itemize}
+\paragraph*{b) Energías del sistema}
+\begin{itemize}
+    \item \textbf{Energía Potencial Gravitatoria:} Viene dada por la expresión $E_p = -G \frac{Mm}{r}$.
+    \item \textbf{Energía Mecánica:} Es la suma de la energía cinética y potencial: $E_m = E_c + E_p$.
+    \item \textbf{Energía de Escape:} Para que un objeto se aleje indefinidamente, su energía mecánica final debe ser nula ($E_{m,f} = 0$). La energía a aportar es la diferencia entre esta energía final y la energía mecánica orbital inicial: $E_{aporte} = E_{m,f} - E_{m,i} = -E_{m,i}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Masas del satélite y del planeta}
+De la definición de energía cinética, despejamos la masa del satélite $m$:
+\begin{gather}
+    E_c = \frac{1}{2} m v^2 \implies m = \frac{2 E_c}{v^2}
+\end{gather}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta: $G \frac{M m}{r^2} = m \frac{v^2}{r}$. Despejamos la masa del planeta $M$:
+\begin{gather}
+    M = \frac{v^2 r}{G}
+\end{gather}
+\paragraph*{b) Energías y energía de escape}
+La energía potencial es:
+\begin{gather}
+    E_p = -G \frac{Mm}{r}
+\end{gather}
+La energía mecánica es:
+\begin{gather}
+    E_m = E_c + E_p = \frac{1}{2} m v^2 - G \frac{Mm}{r}
+\end{gather}
+La energía que se debe aportar es:
+\begin{gather}
+    E_{aporte} = -E_m = -(E_c + E_p)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de las masas}
+\begin{gather}
+    m = \frac{2 \cdot (2 \cdot 10^{18})}{(5 \cdot 10^5)^2} = \frac{4 \cdot 10^{18}}{25 \cdot 10^{10}} = 1,6 \cdot 10^7 \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    La masa del satélite es $\boldsymbol{m = 1,6 \cdot 10^7 \, \textbf{kg}}$.
+\end{cajaresultado}
+\medskip
+\begin{gather}
+    M = \frac{(5 \cdot 10^5)^2 \cdot (4 \cdot 10^8)}{6,67 \cdot 10^{-11}} = \frac{(25 \cdot 10^{10}) \cdot (4 \cdot 10^8)}{6,67 \cdot 10^{-11}} = \frac{100 \cdot 10^{18}}{6,67 \cdot 10^{-11}} \approx 1,5 \cdot 10^{31} \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    La masa del planeta es $\boldsymbol{M \approx 1,5 \cdot 10^{31} \, \textbf{kg}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor de las energías}
+\begin{gather}
+    E_p = -(6,67 \cdot 10^{-11}) \frac{(1,5 \cdot 10^{31}) \cdot (1,6 \cdot 10^7)}{4 \cdot 10^8} = -4 \cdot 10^{18} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía potencial del satélite es $\boldsymbol{E_p = -4 \cdot 10^{18} \, \textbf{J}}$.
+\end{cajaresultado}
+\medskip
+La energía mecánica es la suma de la cinética (dada) y la potencial:
+\begin{gather}
+    E_m = E_c + E_p = (2 \cdot 10^{18}) + (-4 \cdot 10^{18}) = -2 \cdot 10^{18} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía mecánica del satélite es $\boldsymbol{E_m = -2 \cdot 10^{18} \, \textbf{J}}$.
+\end{cajaresultado}
+\medskip
+La energía necesaria para escapar es:
+\begin{gather}
+    E_{aporte} = -E_m = -(-2 \cdot 10^{18}) = 2 \cdot 10^{18} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía mínima a aportar para que escape es $\boldsymbol{E_{aporte} = 2 \cdot 10^{18} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    A partir de la energía cinética y la velocidad se ha determinado la masa del satélite ($1,6 \cdot 10^7 \, \text{kg}$). Mediante la dinámica de las órbitas circulares se ha hallado la masa del planeta ($1,5 \cdot 10^{31} \, \text{kg}$). La energía potencial en la órbita es de $-4 \cdot 10^{18} \, \text{J}$, lo que resulta en una energía mecánica total de $-2 \cdot 10^{18} \, \text{J}$. Para que el satélite escape del campo gravitatorio, es necesario aportarle una energía igual al valor absoluto de su energía mecánica, es decir, $2 \cdot 10^{18} \, \text{J}$.
+\end{cajaconclusion}
+
+\newpage
+% ----------------------------------------------------------------------
+\section{Bloque II: Campo Electromagnético}
+\label{sec:em_2024_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 2}
+\label{subsec:C2_2024_jul_ext}
+
+\begin{cajaenunciado}
+Dos corrientes eléctricas paralelas y de gran longitud están separadas entre sí una distancia 4d. La corriente $I_{1}=6$ A está dirigida hacia arriba, como aparece en la figura. Determina el valor y sentido de la corriente $I_{2}$, para que el campo magnético resultante en el punto P sea nulo. ¿Qué fuerza actuará sobre una carga eléctrica negativa que, pasando por P, se mueva en la misma dirección que las corrientes eléctricas? Razona todas las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Corriente 1 ($I_1$):} $I_1 = 6 \, \text{A}$, sentido hacia arriba.
+    \item \textbf{Distancia del hilo 1 a P:} $r_1 = 4d - d = 3d$.
+    \item \textbf{Distancia del hilo 2 a P:} $r_2 = d$.
+    \item \textbf{Condición:} Campo magnético total en P es nulo, $\vec{B}_P = \vec{0}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Valor y sentido de la corriente $I_2$.
+        \item Fuerza sobre una carga negativa ($q<0$) que se mueve en P con velocidad $\vec{v}$ paralela a las corrientes.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Campos magnéticos de dos hilos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista superior de dos hilos conductores rectilíneos y paralelos. El hilo 1 (izquierda) tiene una corriente $I_1$ saliendo de la página (punto). El hilo 2 (derecha) tiene una corriente $I_2$ saliendo de la página (punto). El punto P está entre ellos. Dibuja el vector campo magnético $\vec{B_1}$ creado por $I_1$ en P, que debe ser un vector hacia abajo. Dibuja el vector campo magnético $\vec{B_2}$ creado por $I_2$ en P, que debe ser un vector hacia arriba. Para que se anulen, deben ser opuestos. Etiqueta las distancias $3d$ y $d$ desde los hilos a P."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campos_hilos.png}
+    }}
+    \caption{Esquema de los campos para que el campo total sea nulo en P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ley de Biot-Savart (campo de un hilo infinito):} El módulo del campo magnético creado por un conductor rectilíneo e infinito a una distancia $r$ es $B = \frac{\mu_0 I}{2\pi r}$. La dirección y sentido se determinan mediante la \textbf{regla de la mano derecha}.
+    \item \textbf{Principio de Superposición:} El campo magnético total en un punto es la suma vectorial de los campos creados por cada fuente individual: $\vec{B}_P = \vec{B}_1 + \vec{B}_2$.
+    \item \textbf{Fuerza de Lorentz:} La fuerza que experimenta una carga $q$ que se mueve con velocidad $\vec{v}$ en un campo magnético $\vec{B}$ es $\vec{F} = q(\vec{v} \times \vec{B})$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Valor y sentido de $I_2$}
+Aplicando la regla de la mano derecha, la corriente $I_1$ (hacia arriba) crea en P un campo $\vec{B}_1$ que entra en el plano del papel. Para que el campo total $\vec{B}_P$ sea nulo, el campo $\vec{B}_2$ creado por la corriente $I_2$ debe ser igual en módulo y de sentido contrario, es decir, saliendo del plano del papel. Para que $I_2$ cree un campo saliente en P, por la regla de la mano derecha, la corriente $I_2$ también debe ir \textbf{hacia arriba}.
+\smallskip
+La condición de anulación es $B_1 = B_2$:
+\begin{gather}
+    \frac{\mu_0 I_1}{2\pi r_1} = \frac{\mu_0 I_2}{2\pi r_2} \implies \frac{I_1}{r_1} = \frac{I_2}{r_2}
+\end{gather}
+Sustituyendo las distancias $r_1=3d$ y $r_2=d$:
+\begin{gather}
+    \frac{I_1}{3d} = \frac{I_2}{d} \implies I_2 = \frac{I_1}{3}
+\end{gather}
+\paragraph*{Fuerza sobre la carga}
+La fuerza de Lorentz es $\vec{F} = q(\vec{v} \times \vec{B}_P)$. Como la condición del problema es que el campo magnético total en P es nulo ($\vec{B}_P = \vec{0}$):
+\begin{gather}
+    \vec{F} = q(\vec{v} \times \vec{0}) = \vec{0}
+\end{gather}
+La fuerza será nula independientemente del valor de la carga o de su velocidad.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    I_2 = \frac{6 \, \text{A}}{3} = 2 \, \text{A}
+\end{gather}
+\begin{cajaresultado}
+    El valor de la corriente es $\boldsymbol{I_2 = 2 \, \textbf{A}}$ y su sentido es \textbf{hacia arriba}, igual que $I_1$.
+\end{cajaresultado}
+\medskip
+\begin{cajaresultado}
+    La fuerza que actuará sobre la carga eléctrica negativa en el punto P es \textbf{nula}, $\boldsymbol{\vec{F} = \vec{0}}$, porque el campo magnético en dicho punto es cero.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Para que el campo magnético se anule en el punto P, la corriente $I_2$ debe generar un campo opuesto al de $I_1$. Esto requiere que $I_2$ tenga el mismo sentido (hacia arriba) y una magnitud de 2 A. Dado que el campo magnético resultante en P es nulo, cualquier carga que pase por ese punto, sin importar su velocidad o signo, no experimentará ninguna fuerza magnética, de acuerdo con la expresión de la Fuerza de Lorentz.
+\end{cajaconclusion}
+\newpage
+\subsection{Cuestión 3}
+\label{subsec:C3_2024_jul_ext}
+
+\begin{cajaenunciado}
+Dos partículas idénticas de carga $q=1$ µC y masa $m=1$ g, se encuentran inicialmente en reposo y separadas por una distancia $d=1$ m. Calcula la energía mecánica de una de las partículas. Supongamos que una de las partículas permanece fija mientras que la otra se deja libre, ¿cuál es su energía mecánica cuando se encuentra a una distancia de la otra partícula que es diez veces la inicial? Justifica la respuesta. Calcula su velocidad en dicho punto. Nota: considera sólo la interacción electrostática.
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^{9} \, \text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga de las partículas ($q$):} $q = 1 \, \mu\text{C} = 1 \cdot 10^{-6} \, \text{C}$.
+    \item \textbf{Masa de las partículas ($m$):} $m = 1 \, \text{g} = 1 \cdot 10^{-3} \, \text{kg}$.
+    \item \textbf{Distancia inicial ($d_i$):} $d_i = 1 \, \text{m}$.
+    \item \textbf{Velocidad inicial ($v_i$):} $v_i = 0 \, \text{m/s}$ (parten del reposo).
+    \item \textbf{Distancia final ($d_f$):} $d_f = 10 \cdot d_i = 10 \, \text{m}$.
+    \item \textbf{Constante de Coulomb ($k$):} $k=9\cdot10^{9} \, \text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Energía mecánica inicial de una partícula ($E_{m,i}$).
+        \item Energía mecánica final de la partícula móvil ($E_{m,f}$).
+        \item Velocidad final de la partícula móvil ($v_f$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Repulsión de dos cargas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema que muestra dos momentos. En el 'Estado Inicial', dos cargas positivas idénticas ($+q$) están separadas una distancia $d_i$, en reposo. Una carga está anclada (fija). En el 'Estado Final', la carga móvil se ha desplazado a una distancia $d_f$ de la carga fija y se mueve con una velocidad $\vec{v}_f$ debido a la fuerza de repulsión electrostática. Dibuja un vector de fuerza $\vec{F}_e$ sobre la carga móvil, alejándose de la carga fija."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{repulsion_cargas.png}
+    }}
+    \caption{Esquema del proceso de separación de las cargas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando el \textbf{Principio de Conservación de la Energía Mecánica}.
+\begin{itemize}
+    \item El campo electrostático es un campo conservativo. Esto significa que la energía mecánica total de una partícula que se mueve en él permanece constante, siempre que no actúen fuerzas no conservativas (como el rozamiento).
+    \item La \textbf{Energía Mecánica ($E_m$)} es la suma de la energía cinética ($E_c$) y la energía potencial electrostática ($E_p$): $E_m = E_c + E_p$.
+    \item La \textbf{Energía Cinética} es $E_c = \frac{1}{2}mv^2$.
+    \item La \textbf{Energía Potencial Eléctrica} de un sistema de dos cargas puntuales $q_1$ y $q_2$ separadas una distancia $d$ es $E_p = k \frac{q_1 q_2}{d}$.
+\end{itemize}
+La "energía mecánica de una de las partículas" en el estado inicial se refiere a la energía del sistema, ya que ambas están en reposo y la energía potencial es una propiedad del par de partículas.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Energía Mecánica Inicial}
+En el estado inicial, ambas partículas están en reposo, por lo que la energía cinética del sistema es nula ($E_{c,i} = 0$). La energía mecánica inicial es puramente potencial:
+\begin{gather}
+    E_{m,i} = E_{c,i} + E_{p,i} = 0 + k \frac{q^2}{d_i}
+\end{gather}
+\paragraph*{Energía Mecánica y Velocidad Final}
+Por el principio de conservación de la energía, la energía mecánica de la partícula móvil en cualquier punto de su trayectoria es la misma que la inicial:
+\begin{gather}
+    E_{m,f} = E_{m,i}
+\end{gather}
+En el estado final, la energía mecánica tiene un componente cinético y uno potencial:
+\begin{gather}
+    E_{m,f} = E_{c,f} + E_{p,f} = \frac{1}{2}mv_f^2 + k \frac{q^2}{d_f}
+\end{gather}
+Igualando $E_{m,i} = E_{m,f}$:
+\begin{gather}
+    k \frac{q^2}{d_i} = \frac{1}{2}mv_f^2 + k \frac{q^2}{d_f}
+\end{gather}
+De aquí, despejamos la velocidad final $v_f$:
+\begin{gather}
+    \frac{1}{2}mv_f^2 = k q^2 \left(\frac{1}{d_i} - \frac{1}{d_f}\right) \implies v_f = \sqrt{\frac{2kq^2}{m}\left(\frac{1}{d_i} - \frac{1}{d_f}\right)}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de las energías}
+\begin{gather}
+    E_{m,i} = (9\cdot10^{9}) \frac{(1\cdot10^{-6})^2}{1} = 9 \cdot 10^{-3} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía mecánica inicial de la partícula (y del sistema) es $\boldsymbol{E_{m,i} = 9 \cdot 10^{-3} \, \textbf{J}}$.
+\end{cajaresultado}
+\medskip
+Por el principio de conservación:
+\begin{cajaresultado}
+    La energía mecánica cuando se encuentra a diez veces la distancia inicial es \textbf{la misma}, $\boldsymbol{E_{m,f} = 9 \cdot 10^{-3} \, \textbf{J}}$, porque el campo electrostático es conservativo.
+\end{cajaresultado}
+\paragraph*{Cálculo de la velocidad final}
+\begin{gather}
+    v_f = \sqrt{\frac{2(9\cdot10^{9})(1\cdot10^{-6})^2}{1\cdot10^{-3}}\left(\frac{1}{1} - \frac{1}{10}\right)} = \sqrt{\frac{18 \cdot 10^{-3}}{10^{-3}}(0,9)} = \sqrt{18 \cdot 0,9} = \sqrt{16,2} \approx 4,02 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de la partícula en dicho punto es $\boldsymbol{v_f \approx 4,02 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    La energía mecánica inicial del sistema es de $9 \cdot 10^{-3}$ J, puramente potencial. Debido a que la fuerza electrostática es conservativa, esta energía se mantiene constante durante todo el movimiento. Al alejarse la partícula móvil, parte de la energía potencial inicial se convierte en energía cinética, alcanzando una velocidad de 4,02 m/s a una distancia de 10 metros.
+\end{cajaconclusion}
+\newpage
+\newpage
+\subsection{Cuestión 4}
+\label{subsec:C4_2024_jul_ext}
+
+\begin{cajaenunciado}
+Una espira circular de radio 30 cm, contenida en el plano XY, se encuentra en una zona con un campo magnético uniforme $\vec{B}=5\vec{k}$ T. Durante 0,1 s el campo magnético aumenta de forma constante hasta valer 10$\vec{k}$ T, ¿cuánto valdrá la fuerza electromotriz inducida durante el proceso? Indica cuál será el sentido de la corriente inducida en la espira mediante una figura. Justifica las respuestas indicando la ley física en que te basas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Radio de la espira ($r$):} $r = 30 \, \text{cm} = 0,3 \, \text{m}$.
+    \item \textbf{Plano de la espira:} Plano XY.
+    \item \textbf{Vector superficie ($\vec{S}$):} Paralelo al eje Z, $\vec{S} = S\vec{k}$.
+    \item \textbf{Campo magnético inicial ($\vec{B}_i$):} $\vec{B}_i = 5\vec{k} \, \text{T}$.
+    \item \textbf{Campo magnético final ($\vec{B}_f$):} $\vec{B}_f = 10\vec{k} \, \text{T}$.
+    \item \textbf{Intervalo de tiempo ($\Delta t$):} $\Delta t = 0,1 \, \text{s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Fuerza electromotriz inducida ($\varepsilon$).
+        \item Sentido de la corriente inducida ($I_{ind}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Corriente inducida en una espira} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista en perspectiva de una espira circular en el plano XY. El eje Z es perpendicular y sale de la página. Dibuja vectores de campo magnético $\vec{B}$ iniciales, más cortos, apuntando en la dirección +Z. Dibuja vectores de campo magnético $\vec{B}$ finales, más largos, también en +Z, para indicar que el flujo magnético saliente está aumentando. Dibuja una flecha curva sobre la espira que represente la corriente inducida $I_{ind}$. Según la ley de Lenz, esta corriente debe crear un campo magnético inducido $\vec{B}_{ind}$ que se oponga al aumento, por lo que $\vec{B}_{ind}$ debe apuntar en la dirección -Z. Por la regla de la mano derecha, la corriente $I_{ind}$ debe fluir en sentido horario."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espira_fem.png}
+    }}
+    \caption{Aumento del flujo magnético y sentido de la corriente inducida.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La resolución se basa en la \textbf{Ley de Faraday-Lenz}:
+\begin{itemize}
+    \item \textbf{Ley de Faraday:} La fuerza electromotriz (fem, $\varepsilon$) inducida en un circuito cerrado es igual a la tasa de cambio temporal del flujo magnético ($\Phi_B$) que lo atraviesa, con signo negativo: $\varepsilon = -\frac{d\Phi_B}{dt}$. Para cambios discretos, se usa la aproximación: $\varepsilon = -\frac{\Delta\Phi_B}{\Delta t}$.
+    \item \textbf{Flujo Magnético ($\Phi_B$):} Para un campo uniforme $\vec{B}$ y una superficie plana $\vec{S}$, el flujo es el producto escalar $\Phi_B = \vec{B} \cdot \vec{S} = B S \cos\theta$. En este caso, $\vec{B}$ y $\vec{S}$ son paralelos ($\theta=0$), por lo que $\Phi_B = B S$.
+    \item \textbf{Ley de Lenz (el signo negativo):} El sentido de la corriente inducida es tal que el campo magnético que esta corriente crea se opone a la variación del flujo magnético que la originó.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La superficie de la espira es $S = \pi r^2$. El flujo magnético inicial es $\Phi_i = B_i S$ y el final es $\Phi_f = B_f S$.
+La variación del flujo es:
+\begin{gather}
+    \Delta\Phi_B = \Phi_f - \Phi_i = (B_f - B_i) S = (\Delta B) S
+\end{gather}
+La fuerza electromotriz inducida es, por tanto:
+\begin{gather}
+    \varepsilon = - \frac{\Delta\Phi_B}{\Delta t} = - \frac{(B_f - B_i) \pi r^2}{\Delta t}
+\end{gather}
+Para el sentido de la corriente: El flujo magnético a través de la espira en la dirección $+\vec{k}$ está aumentando. Según la ley de Lenz, la corriente inducida creará un campo magnético inducido $\vec{B}_{ind}$ en la dirección $-\vec{k}$ para oponerse a este aumento. Aplicando la regla de la mano derecha, para que una corriente en la espira cree un campo en la dirección $-\vec{k}$ (entrante), la corriente debe circular en \textbf{sentido horario}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero calculamos la superficie $S$:
+\begin{gather}
+    S = \pi (0,3)^2 = 0,09\pi \approx 0,2827 \, \text{m}^2
+\end{gather}
+Ahora calculamos la fem inducida (nos interesa su valor absoluto):
+\begin{gather}
+    |\varepsilon| = \left| - \frac{(10 - 5) \cdot 0,09\pi}{0,1} \right| = \frac{5 \cdot 0,09\pi}{0,1} = 50 \cdot 0,09\pi = 4,5\pi \approx 14,14 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza electromotriz inducida en la espira es $\boldsymbol{|\varepsilon| \approx 14,14 \, \textbf{V}}$.
+\end{cajaresultado}
+\medskip
+\begin{cajaresultado}
+    El sentido de la corriente inducida es \textbf{horario} al ser vista desde el semieje Z positivo.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Basándonos en la Ley de Faraday-Lenz, el aumento del campo magnético a través de la espira provoca una variación en el flujo magnético, lo que induce una fuerza electromotriz de aproximadamente 14,14 V. La ley de Lenz dicta que la corriente inducida debe oponerse a este cambio; como el flujo saliente (dirección $\vec{k}$) aumenta, la corriente generará un campo entrante, lo que corresponde a un sentido de circulación horario.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Problema 2}
+\label{subsec:P2_2024_jul_ext}
+
+\begin{cajaenunciado}
+Dada la distribución de cargas de la figura, calcula:
+\begin{enumerate}
+    \item[a)] El valor de la carga q para que el campo eléctrico sea nulo en el punto (0,1) m. (1 punto)
+    \item[b)] El trabajo necesario para llevar una carga de 5 µC desde el infinito (donde tiene energía cinética nula) hasta el punto (0,1) m. (1 punto)
+\end{enumerate}
+\textbf{Datos:} Cargas $q_1=1\,\mu C$ en (-1,0) m, $q_2=1\,\mu C$ en (1,0) m y $q$ en (0,0) m. Constante de Coulomb, $k=9 \cdot 10^{9} \, \text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $1 \, \mu\text{C} = 1 \cdot 10^{-6} \, \text{C}$ en $P_1(-1, 0)$.
+    \item \textbf{Carga 2 ($q_2$):} $1 \, \mu\text{C} = 1 \cdot 10^{-6} \, \text{C}$ en $P_2(1, 0)$.
+    \item \textbf{Carga 3 ($q$):} Desconocida, en $P_q(0, 0)$.
+    \item \textbf{Punto de interés (P):} $P(0, 1)$.
+    \item \textbf{Carga a mover ($q'$):} $5 \, \mu\text{C} = 5 \cdot 10^{-6} \, \text{C}$.
+    \item \textbf{Constante de Coulomb ($k$):} $k=9 \cdot 10^{9} \, \text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Carga $q$ tal que $\vec{E}_{total}(P) = \vec{0}$.
+        \item Trabajo $W_{\infty \to P}$ para mover la carga $q'$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo eléctrico de tres cargas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas cartesianas XY. Dibuja tres cargas: $q_1$ en (-1,0), $q_2$ en (1,0) y $q$ en (0,0). Marca el punto P en (0,1). Dibuja los vectores de campo eléctrico en P: $\vec{E}_1$ (desde $q_1$) y $\vec{E}_2$ (desde $q_2$). Sus componentes horizontales se cancelan y las verticales se suman. Dibuja el vector suma $\vec{E}_{12}$. Para que el campo total sea nulo, el campo $\vec{E}_q$ creado por q debe ser opuesto a $\vec{E}_{12}$. Dibuja $\vec{E}_q$ apuntando hacia abajo, lo que implica que $q$ debe ser negativa."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_cargas.png}
+    }}
+    \caption{Suma vectorial de campos eléctricos en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Campo eléctrico nulo}
+\begin{itemize}
+    \item \textbf{Campo Eléctrico de una Carga Puntual:} $\vec{E} = k \frac{Q}{r^2} \hat{u}_r$, donde $\hat{u}_r$ es el vector unitario que apunta desde la carga $Q$ al punto.
+    \item \textbf{Principio de Superposición:} El campo total es la suma vectorial de los campos individuales: $\vec{E}_{total} = \vec{E}_1 + \vec{E}_2 + \vec{E}_q$.
+\end{itemize}
+\paragraph*{b) Trabajo electrostático}
+\begin{itemize}
+    \item \textbf{Potencial Eléctrico de Cargas Puntuales:} $V = \sum_i k \frac{Q_i}{r_i}$.
+    \item \textbf{Trabajo y Energía Potencial:} El trabajo realizado por el campo para mover una carga $q'$ de A a B es $W_{A \to B} = - \Delta E_p = -q'(V_B - V_A)$. El trabajo realizado por un agente externo es $W_{ext} = -W_{campo} = q'(V_B - V_A)$. Se asume que se pide este último. Para traer una carga desde el infinito ($V_\infty = 0$), el trabajo es $W_{\infty \to P} = q'(V_P - V_\infty) = q'V_P$.
+\end{itemize}
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Cálculo de la carga q}
+Primero, definimos los vectores de posición desde cada carga hasta el punto de interés P(0,1) y calculamos sus módulos:
+\begin{itemize}
+    \item \textbf{Desde $q_1$ en (-1,0):} $\vec{r}_1 = (0,1) - (-1,0) = (1,1) \, \text{m} \implies |\vec{r}_1| = \sqrt{1^2+1^2} = \sqrt{2} \, \text{m}$.
+    \item \textbf{Desde $q_2$ en (1,0):} $\vec{r}_2 = (0,1) - (1,0) = (-1,1) \, \text{m} \implies |\vec{r}_2| = \sqrt{(-1)^2+1^2} = \sqrt{2} \, \text{m}$.
+    \item \textbf{Desde $q$ en (0,0):} $\vec{r}_q = (0,1) - (0,0) = (0,1) \, \text{m} \implies |\vec{r}_q| = 1 \, \text{m}$.
+\end{itemize}
+
+\medskip
+A continuación, escribimos la expresión vectorial para el campo eléctrico creado por cada carga en el punto P, usando la fórmula $\vec{E} = k \frac{q}{r^3}\vec{r}$:
+\begin{align*}
+    \vec{E}_1 &= k \frac{q_1}{|\vec{r}_1|^3} \vec{r}_1 = k \frac{q_1}{(\sqrt{2})^3} (1,1) = k \frac{q_1}{2\sqrt{2}} (\vec{i} + \vec{j}) \\
+    \vec{E}_2 &= k \frac{q_2}{|\vec{r}_2|^3} \vec{r}_2 = k \frac{q_2}{(\sqrt{2})^3} (-1,1) = k \frac{q_2}{2\sqrt{2}} (-\vec{i} + \vec{j}) \\
+    \vec{E}_q &= k \frac{q}{|\vec{r}_q|^3} \vec{r}_q = k \frac{q}{1^3} (0,1) = k q \, \vec{j}
+\end{align*}
+
+\medskip
+El campo total en P es la suma vectorial (principio de superposición):
+$$ \vec{E}_{total} = \vec{E}_1 + \vec{E}_2 + \vec{E}_q $$
+Agrupando las componentes $\vec{i}$ y $\vec{j}$:
+$$ \vec{E}_{total} = \left( k \frac{q_1}{2\sqrt{2}} - k \frac{q_2}{2\sqrt{2}} \right) \vec{i} + \left( k \frac{q_1}{2\sqrt{2}} + k \frac{q_2}{2\sqrt{2}} + kq \right) \vec{j} $$
+Dado que $q_1=q_2$, la componente horizontal (eje X) se anula. Para que el campo total sea nulo, la componente vertical (eje Y) también debe ser cero:
+\begin{gather}
+    k \frac{q_1}{2\sqrt{2}} + k \frac{q_1}{2\sqrt{2}} + kq = 0 \implies k \frac{2q_1}{2\sqrt{2}} + kq = 0 \nonumber \\[8pt]
+    \frac{q_1}{\sqrt{2}} + q = 0 \implies q = -\frac{q_1}{\sqrt{2}}
+\end{gather}
+\paragraph*{b) Cálculo del trabajo}
+Primero calculamos el potencial en P debido a las tres cargas (usando la carga $q$ calculada):
+\begin{gather}
+    V_P = V_1 + V_2 + V_q = k\frac{q_1}{|\vec{r}_1|} + k\frac{q_2}{|\vec{r}_2|} + k\frac{q}{|\vec{r}_q|} = k\left(\frac{q_1}{\sqrt{2}} + \frac{q_2}{\sqrt{2}} + \frac{q}{1}\right)
+\end{gather}
+El trabajo para traer $q'$ desde el infinito es:
+\begin{gather}
+    W_{\infty \to P} = q' V_P
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la carga q}
+\begin{gather}
+    q = -\frac{1 \cdot 10^{-6}}{\sqrt{2}} \approx -0,707 \cdot 10^{-6} \, \text{C} = -0,707 \, \mu\text{C}
+\end{gather}
+\begin{cajaresultado}
+    El valor de la carga es $\boldsymbol{q \approx -0,707 \, \mu\textbf{C}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor del trabajo}
+Para este apartado, es importante notar que el trabajo se calcula en la situación del apartado a), donde $\vec{E}(P)=0$. Sin embargo, esto no implica que el potencial $V(P)$ sea cero. Si se trajera una carga a un punto donde el campo es nulo, no se necesitaría hacer fuerza *en ese punto final*, pero sí durante todo el trayecto. El trabajo depende de la diferencia de potencial.
+\begin{gather}
+    V_P = (9 \cdot 10^9) \left( \frac{1 \cdot 10^{-6}}{\sqrt{2}} + \frac{1 \cdot 10^{-6}}{\sqrt{2}} - \frac{0,707 \cdot 10^{-6}}{1} \right) \nonumber \\[8pt]
+    V_P = (9 \cdot 10^9) \left( \frac{2 \cdot 10^{-6}}{\sqrt{2}} - \frac{1/\sqrt{2} \cdot 10^{-6}}{1} \right) = (9 \cdot 10^9) \left( \sqrt{2} \cdot 10^{-6} - \frac{\sqrt{2}}{2} \cdot 10^{-6} \right) \nonumber \\[8pt]
+    V_P = (9 \cdot 10^9) \left( \frac{\sqrt{2}}{2} \cdot 10^{-6} \right) \approx 6363,96 \, \text{V}
+\end{gather}
+Ahora, el trabajo:
+\begin{gather}
+    W_{\infty \to P} = (5 \cdot 10^{-6} \, \text{C}) \cdot (6363,96 \, \text{V}) \approx 0,0318 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo necesario es $\boldsymbol{W \approx 0,0318 \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    a) Para anular el campo eléctrico en el punto (0,1), la carga $q$ situada en el origen debe ser negativa y de valor $-0,707 \, \mu\text{C}$, para cancelar la componente vertical del campo creado por $q_1$ y $q_2$.
+    b) A pesar de que el campo es nulo en el punto final, el potencial no lo es. El trabajo realizado por un agente externo para traer una carga de $5 \, \mu\text{C}$ desde el infinito hasta dicho punto es positivo, de unos 0,0318 J, ya que se mueve en contra del campo eléctrico a lo largo del trayecto.
+\end{cajaconclusion}
+
+\newpage
+% ----------------------------------------------------------------------
+\section{Bloque III: Vibraciones y Ondas}
+\label{sec:ondas_2024_jul_ext}
+% ----------------------------------------------------------------------
+\subsection{Cuestión 5}
+\label{subsec:C5_2024_jul_ext}
+
+\begin{cajaenunciado}
+Un objeto de 10 cm de altura está situado a 1 m del vértice de un espejo esférico convexo de 1 m de distancia focal. Calcula la posición y el tamaño de la imagen que se forma. Indica las características de la imagen con la ayuda de un esquema de rayos.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es crucial aplicar correctamente el convenio de signos (norma DIN).
+\begin{itemize}
+    \item \textbf{Altura del objeto ($y$):} $y = 10 \, \text{cm} = 0,1 \, \text{m}$.
+    \item \textbf{Posición del objeto ($s$):} El objeto está a la izquierda del espejo, $s = -1 \, \text{m}$.
+    \item \textbf{Distancia focal ($f$):} Para un espejo \textbf{convexo}, el foco es virtual (detrás del espejo), por lo tanto, $f = -1 \, \text{m}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Posición de la imagen ($s'$).
+        \item Tamaño de la imagen ($y'$).
+        \item Características de la imagen.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Trazado de rayos en un espejo convexo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibuja un espejo esférico convexo (curvado hacia afuera). Dibuja el eje óptico horizontal. Marca el vértice (V), el foco (F) y el centro de curvatura (C) a la derecha del espejo (virtuales). Sitúa un objeto vertical (una flecha, 'y') a la izquierda del espejo. Dibuja los tres rayos principales desde la punta de la flecha: 1) Un rayo paralelo al eje que se refleja como si viniera del foco F. 2) Un rayo dirigido hacia el foco F que se refleja paralelo al eje. 3) Un rayo dirigido hacia el centro de curvatura C que se refleja sobre sí mismo. Las prolongaciones de los tres rayos reflejados deben converger en un punto detrás del espejo. Dibuja la imagen (flecha 'y'') en ese punto de convergencia. La imagen debe ser más pequeña, derecha y estar entre el vértice y el foco."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_convexo.png}
+    }}
+    \caption{Formación de imagen en un espejo convexo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La formación de imágenes en espejos esféricos se rige por dos ecuaciones fundamentales:
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss (ecuación de los espejos):} Relaciona la posición del objeto ($s$), la posición de la imagen ($s'$) y la distancia focal ($f$).
+    $$ \frac{1}{s'} + \frac{1}{s} = \frac{1}{f} $$
+    \item \textbf{Ecuación del Aumento Lateral (M):} Relaciona los tamaños y las posiciones del objeto y la imagen.
+    $$ M = \frac{y'}{y} = -\frac{s'}{s} $$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Posición de la imagen ($s'$)}
+Reordenamos la ecuación de Gauss para despejar $s'$:
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{f} - \frac{1}{s} = \frac{s - f}{sf} \implies s' = \frac{sf}{s - f}
+\end{gather}
+\paragraph*{Tamaño de la imagen ($y'$)}
+De la ecuación del aumento, despejamos $y'$:
+\begin{gather}
+    y' = y \left(-\frac{s'}{s}\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la posición de la imagen}
+\begin{gather}
+    s' = \frac{(-1 \, \text{m})(-1 \, \text{m})}{(-1 \, \text{m}) - (-1 \, \text{m})} = \frac{1}{-1+1} \rightarrow \text{Error en la entrada.}
+\end{gather}
+Revisión: el enunciado dice `distancia focal de 1m`. Un espejo convexo siempre tiene `f < 0`. La posición del objeto es `s = -1m`. Si `f = -1m`. Esto es un convenio de signos distinto al habitual (DIN). Siguiendo este criterio:
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{f} - \frac{1}{s} = \frac{1}{1} - \frac{1}{-1} = 1 - (-1) = 2 \, \text{m}^{-1} \implies s' = \frac{1}{2} = 0,5 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La imagen se forma a $\boldsymbol{s' = 0,5 \, \textbf{m}}$ del vértice. El signo positivo indica que está detrás del espejo (es una imagen virtual).
+\end{cajaresultado}
+\paragraph*{Cálculo del tamaño de la imagen}
+\begin{gather}
+    y' = (0,1 \, \text{m}) \left(-\frac{0,5 \, \text{m}}{-1 \, \text{m}}\right) = 0,1 \cdot (0,5) = 0,05 \, \text{m} = 5 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    El tamaño de la imagen es $\boldsymbol{y' = 5 \, \textbf{cm}}$. El signo positivo indica que la imagen está derecha.
+\end{cajaresultado}
+\paragraph*{Características de la imagen}
+\begin{itemize}
+    \item $s' > 0$: La imagen es \textbf{virtual} (se forma detrás del espejo).
+    \item $y' > 0$: La imagen es \textbf{derecha} (tiene la misma orientación que el objeto).
+    \item $|M| = |y'/y| = 5/10 = 0,5 < 1$: La imagen es de \textbf{menor tamaño} que el objeto.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Utilizando la ecuación de los espejos esféricos y la del aumento lateral, se determina que la imagen se forma a 0,5 m por detrás del espejo y tiene una altura de 5 cm. El análisis de los signos de la posición y el tamaño, así como el trazado de rayos, confirman que la imagen producida por un espejo convexo en estas condiciones es siempre virtual, derecha y de menor tamaño que el objeto.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Cuestión 6}
+\label{subsec:C6_2024_jul_ext}
+
+\begin{cajaenunciado}
+Un rayo de luz monocromática pasa de un medio 1 de índice de refracción $n_1$ a otro medio 2 con índice de refracción $n_2$. Si se cumple que $n_1 > n_2$, indica y razona cómo cambia la velocidad, v, la frecuencia, f, y la longitud de onda, $\lambda$, del rayo al pasar del medio 1 al medio 2.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+El problema es conceptual y se basa en la relación entre las propiedades de una onda.
+\begin{itemize}
+    \item \textbf{Condición:} La luz pasa de un medio más refringente a uno menos refringente ($n_1 > n_2$).
+    \item \textbf{Incógnitas:} Analizar el cambio en:
+    \begin{itemize}
+        \item Velocidad de propagación ($v$).
+        \item Frecuencia ($f$).
+        \item Longitud de onda ($\lambda$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Refracción de la luz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de refracción. Una línea vertical separa dos medios, etiquetados como Medio 1 ($n_1$) a la izquierda y Medio 2 ($n_2$) a la derecha, con la indicación $n_1 > n_2$. Dibuja un rayo de luz incidente desde el Medio 1 que llega a la interfaz con un ángulo de incidencia $\theta_1$ respecto a la normal. Dibuja el rayo refractado en el Medio 2, desviándose y alejándose de la normal, con un ángulo de refracción $\theta_2 > \theta_1$. Representa la onda en el Medio 1 con una longitud de onda $\lambda_1$ (más corta) y en el Medio 2 con una longitud de onda $\lambda_2$ (más larga)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{refraccion_luz.png}
+    }}
+    \caption{Cambio de propiedades de la luz al pasar a un medio menos denso.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Índice de refracción ($n$):} Se define como el cociente entre la velocidad de la luz en el vacío ($c$) y la velocidad de la luz en el medio ($v$): $n = \frac{c}{v}$.
+    \item \textbf{Frecuencia de una onda ($f$):} La frecuencia de una onda luminosa es una característica intrínseca determinada por la fuente que la emite. \textbf{No cambia} cuando la luz pasa de un medio a otro.
+    \item \textbf{Relación fundamental de las ondas:} La velocidad, la frecuencia y la longitud de onda están relacionadas por la ecuación $v = \lambda \cdot f$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Cambio en la velocidad ($v$)}
+De la definición de índice de refracción, $v = \frac{c}{n}$.
+En el medio 1, $v_1 = \frac{c}{n_1}$.
+En el medio 2, $v_2 = \frac{c}{n_2}$.
+Como se nos da que $n_1 > n_2$, al estar el índice de refracción en el denominador, la relación de velocidades será la inversa: $v_1 < v_2$. Por lo tanto, \textbf{la velocidad aumenta}.
+
+\paragraph*{Cambio en la frecuencia ($f$)}
+La frecuencia es una propiedad de la fuente de luz y no se ve alterada por el medio que atraviesa.
+$f_1 = f_2 = f$. Por lo tanto, \textbf{la frecuencia no cambia}.
+
+\paragraph*{Cambio en la longitud de onda ($\lambda$)}
+De la relación $v = \lambda f$, podemos despejar $\lambda = \frac{v}{f}$.
+En el medio 1, $\lambda_1 = \frac{v_1}{f}$.
+En el medio 2, $\lambda_2 = \frac{v_2}{f}$.
+Como hemos deducido que $v_2 > v_1$ y la frecuencia $f$ es constante, se sigue que $\lambda_2 > \lambda_1$. Por lo tanto, \textbf{la longitud de onda aumenta}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es cualitativo y no requiere cálculos numéricos. Los resultados son las conclusiones del razonamiento.
+
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Velocidad (v):} $\boldsymbol{v_2 > v_1}$. La velocidad de la luz \textbf{aumenta}.
+    \item \textbf{Frecuencia (f):} $\boldsymbol{f_2 = f_1}$. La frecuencia \textbf{permanece constante}.
+    \item \textbf{Longitud de onda ($\lambda$):} $\boldsymbol{\lambda_2 > \lambda_1}$. La longitud de onda \textbf{aumenta}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Cuando un rayo de luz pasa de un medio de mayor índice de refracción a uno de menor índice ($n_1 > n_2$), su velocidad de propagación aumenta, ya que esta es inversamente proporcional a $n$. La frecuencia de la onda, determinada por la fuente, no se modifica. Como consecuencia del aumento de la velocidad y la constancia de la frecuencia, la longitud de onda ($\lambda = v/f$) también debe aumentar.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Problema 3}
+\label{subsec:P3_2024_jul_ext}
+
+\begin{cajaenunciado}
+El agua contenida en un depósito está separada del aire por una placa plana horizontal de vidrio, de espesor $e=10$ cm. Un rayo de luz monocromática de frecuencia $f=3\cdot10^{14}$ Hz, procedente de una lámpara situada en el interior del depósito, incide sobre el vidrio con un ángulo $\theta=45^{\circ}$ respecto de la normal. Calcula razonadamente:
+\begin{enumerate}
+    \item[a)] El ángulo de refracción entre el agua y el vidrio y el ángulo de refracción entre el vidrio y el aire. Representa los rayos en los tres medios. (1 punto)
+    \item[b)] El ángulo de incidencia máximo de entrada del rayo desde el agua a la placa de vidrio, $\theta_{m}$, para que salga de ésta al aire, así como el tiempo que tarda el rayo en propagarse a través del vidrio cuando incide con este ángulo $\theta_{m}$. Calcula también la longitud de onda del rayo en el interior de la placa de vidrio. (1 punto)
+\end{enumerate}
+\textbf{Datos:} $n_{agua}=1,33$; $n_{vidrio}=1,62$; $n_{aire}=1,00$; velocidad de la luz en el aire, $c=3\cdot10^{8}$ m/s.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Índices de refracción:} $n_a = 1,33$ (agua), $n_v = 1,62$ (vidrio), $n_{aire} = 1,00$.
+    \item \textbf{Espesor del vidrio ($e$):} $e = 10 \, \text{cm} = 0,1 \, \text{m}$.
+    \item \textbf{Frecuencia de la luz ($f$):} $f = 3 \cdot 10^{14} \, \text{Hz}$.
+    \item \textbf{Ángulo de incidencia en agua ($\theta_a$):} $\theta_a = 45^\circ$.
+    \item \textbf{Velocidad de la luz en el vacío/aire ($c$):} $c \approx 3 \cdot 10^8 \, \text{m/s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item [a)] Ángulo en vidrio ($\theta_v$), ángulo en aire ($\theta_{aire}$).
+        \item [b)] Ángulo máximo en agua ($\theta_m$), tiempo en el vidrio ($t_v$), longitud de onda en el vidrio ($\lambda_v$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Trayectoria del rayo de luz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama con tres capas horizontales. La inferior es 'Agua ($n_a$)', la del medio es 'Vidrio ($n_v$)', y la superior es 'Aire ($n_{aire}$)'. Dibuja un rayo de luz que parte del agua y llega a la interfaz agua-vidrio con un ángulo $\theta_a$. Como $n_v > n_a$, el rayo se refracta acercándose a la normal, con un ángulo $\theta_v < \theta_a$. Este rayo atraviesa el vidrio y llega a la interfaz vidrio-aire. Como $n_{aire} < n_v$, el rayo se refracta alejándose de la normal con un ángulo $\theta_{aire} > \theta_v$. Etiqueta todos los ángulos y medios."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{refraccion_tres_medios.png}
+    }}
+    \caption{Refracción de la luz a través de una placa de vidrio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ley de Snell de la Refracción:} Cuando la luz pasa de un medio 1 a un medio 2, los ángulos de incidencia ($\theta_1$) y refracción ($\theta_2$) se relacionan por: $n_1 \sin\theta_1 = n_2 \sin\theta_2$.
+    \item \textbf{Ángulo Límite y Reflexión Total Interna:} Cuando la luz pasa de un medio más denso a uno menos denso ($n_1 > n_2$), existe un ángulo de incidencia, llamado ángulo límite ($\theta_L$), para el cual el ángulo de refracción es $90^\circ$. Se calcula como $\sin\theta_L = n_2/n_1$. Para ángulos mayores, la luz no se refracta, sino que se refleja totalmente.
+    \item \textbf{Propagación de la luz:} La velocidad de la luz en un medio es $v=c/n$. La longitud de onda es $\lambda=v/f$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Ángulos de refracción}
+\begin{itemize}
+    \item \textbf{Interfaz Agua-Vidrio:} $n_a \sin\theta_a = n_v \sin\theta_v \implies \theta_v = \arcsin\left(\frac{n_a}{n_v}\sin\theta_a\right)$.
+    \item \textbf{Interfaz Vidrio-Aire:} El ángulo de incidencia en esta interfaz es el mismo que el de refracción de la anterior, $\theta_v$.
+    $n_v \sin\theta_v = n_{aire} \sin\theta_{aire} \implies \theta_{aire} = \arcsin\left(\frac{n_v}{n_{aire}}\sin\theta_v\right)$.
+    Sustituyendo $\sin\theta_v$: $\theta_{aire} = \arcsin\left(\frac{n_v}{n_{aire}}\frac{n_a}{n_v}\sin\theta_a\right) = \arcsin\left(\frac{n_a}{n_{aire}}\sin\theta_a\right)$.
+\end{itemize}
+\paragraph*{b) Ángulo máximo, tiempo y longitud de onda}
+\begin{itemize}
+    \item \textbf{Ángulo máximo ($\theta_m$):} Para que el rayo salga al aire, el ángulo de salida debe ser como máximo $90^\circ$. Este es el caso límite. La refracción crítica ocurre en la interfaz vidrio-aire. El ángulo de incidencia en el vidrio para que $\theta_{aire}=90^\circ$ es el ángulo límite $\theta_{L(v \to aire)}$.
+    $n_v \sin\theta_{L(v \to aire)} = n_{aire} \sin(90^\circ) \implies \sin\theta_{L(v \to aire)} = \frac{n_{aire}}{n_v}$.
+    El ángulo $\theta_m$ en el agua que produce este ángulo en el vidrio es:
+    $n_a \sin\theta_m = n_v \sin\theta_{L(v \to aire)} = n_v \left(\frac{n_{aire}}{n_v}\right) = n_{aire} \implies \theta_m = \arcsin\left(\frac{n_{aire}}{n_a}\right)$.
+    \item \textbf{Tiempo en el vidrio ($t_v$):} El rayo atraviesa el vidrio con el ángulo $\theta_v$ correspondiente a $\theta_m$. La distancia recorrida es $d = e / \cos\theta_v$. La velocidad es $v_v = c/n_v$. El tiempo es $t_v = d/v_v$.
+    \item \textbf{Longitud de onda en el vidrio ($\lambda_v$):} $\lambda_v = v_v/f = (c/n_v)/f$.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Ángulos de refracción}
+\begin{gather}
+    \theta_v = \arcsin\left(\frac{1,33}{1,62}\sin(45^\circ)\right) \approx \arcsin(0,580) \approx 35,49^\circ \\
+    \theta_{aire} = \arcsin\left(\frac{1,33}{1,00}\sin(45^\circ)\right) \approx \arcsin(0,940) \approx 70,13^\circ
+\end{gather}
+\begin{cajaresultado}
+    El ángulo de refracción en el vidrio es $\boldsymbol{\theta_v \approx 35,49^\circ}$ y el de salida al aire es $\boldsymbol{\theta_{aire} \approx 70,13^\circ}$.
+\end{cajaresultado}
+
+\paragraph*{b) Ángulo máximo y otras magnitudes}
+\begin{gather}
+    \theta_m = \arcsin\left(\frac{1,00}{1,33}\right) \approx \arcsin(0,7518) \approx 48,75^\circ
+\end{gather}
+Para este $\theta_m$, el ángulo en el vidrio es $\theta_{v,max} = \theta_{L(v \to aire)} = \arcsin\left(\frac{1,00}{1,62}\right) \approx 38,12^\circ$.
+Distancia recorrida en el vidrio: $d = \frac{0,1}{\cos(38,12^\circ)} \approx 0,127 \, \text{m}$.
+Velocidad en el vidrio: $v_v = \frac{3\cdot10^8}{1,62} \approx 1,85 \cdot 10^8 \, \text{m/s}$.
+Tiempo en el vidrio: $t_v = \frac{d}{v_v} = \frac{0,127}{1,85 \cdot 10^8} \approx 6,87 \cdot 10^{-10} \, \text{s}$.
+Longitud de onda en el vidrio: $\lambda_v = \frac{v_v}{f} = \frac{1,85 \cdot 10^8}{3 \cdot 10^{14}} \approx 6,17 \cdot 10^{-7} \, \text{m} = 617 \, \text{nm}$.
+
+\begin{cajaresultado}
+    El ángulo de incidencia máximo es $\boldsymbol{\theta_m \approx 48,75^\circ}$.
+    El tiempo que tarda en atravesar el vidrio es $\boldsymbol{t_v \approx 0,687 \, \textbf{ns}}$.
+    La longitud de onda en el vidrio es $\boldsymbol{\lambda_v \approx 617 \, \textbf{nm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Aplicando la ley de Snell sucesivamente, para una incidencia de $45^\circ$ desde el agua, el rayo se refracta a $35,49^\circ$ en el vidrio y emerge al aire a $70,13^\circ$. El ángulo máximo de incidencia en el agua para que la luz pueda escapar al aire es de $48,75^\circ$, determinado por la reflexión total interna en la interfaz vidrio-aire. Con este ángulo, el rayo tarda unos 0,687 ns en cruzar la placa, y su longitud de onda dentro del vidrio es de 617 nm.
+\end{cajaconclusion}
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Física Relativista, Cuántica y Nuclear}
+\label{sec:moderna_2024_jul_ext}
+% ----------------------------------------------------------------------
+\subsection{Cuestión 7}
+\label{subsec:C7_2024_jul_ext}
+
+\begin{cajaenunciado}
+Supongamos que se realiza la fusión nuclear de un núcleo de deuterio con un núcleo de tritio, ${}_{1}^{2}H + {}_{1}^{3}H\rightarrow{}_{Z}^{A}X+{}_{b}^{a}Y$. Determina A, Z, a y b e indica razonadamente qué partículas son X e Y. En cada reacción se generan 17,6 MeV de energía. Utilizando la anterior reacción de fusión, ¿cuántos gramos de deuterio se necesitarían para generar la energía eléctrica consumida en un año por los hogares en una ciudad como Alicante?
+\textbf{Datos:} masa del deuterio: $m_{D}=3,34\cdot10^{-27}$ kg; energía consumida, $E_{tot}=1,62\cdot10^{15}$ J; $1 \, \text{MeV} = 1,6\cdot10^{-13}$ J.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Reacción:} ${}_{1}^{2}H + {}_{1}^{3}H \rightarrow {}_{Z}^{A}X + {}_{b}^{a}Y$.
+    \item \textbf{Energía por reacción ($E_{reac}$):} $17,6 \, \text{MeV} = 17,6 \cdot 1,6\cdot10^{-13} \, \text{J} = 2,816 \cdot 10^{-12} \, \text{J}$.
+    \item \textbf{Energía total a generar ($E_{tot}$):} $1,62 \cdot 10^{15} \, \text{J}$.
+    \item \textbf{Masa de un núcleo de deuterio ($m_D$):} $3,34 \cdot 10^{-27} \, \text{kg}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Identificación de las partículas X e Y (y sus números A, Z, a, b).
+        \item Masa total de deuterio necesaria ($M_{D,tot}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Reacción de Fusión Deuterio-Tritio} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama esquemático de una reacción nuclear. A la izquierda, un núcleo de Deuterio (1 protón, 1 neutrón) y un núcleo de Tritio (1 protón, 2 neutrones) se acercan. Una flecha indica la fusión. A la derecha, se muestran los productos: un núcleo de Helio-4 (partícula Alfa: 2 protones, 2 neutrones) y un neutrón libre, que salen despedidos con alta energía. Añade una etiqueta 'Energía liberada' para indicar que el proceso es exotérmico."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fusion_DT.png}
+    }}
+    \caption{Esquema de la reacción de fusión nuclear.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En cualquier reacción nuclear se conservan dos cantidades fundamentales:
+\begin{itemize}
+    \item \textbf{Conservación del número másico (A):} La suma de los superíndices (número de nucleones) debe ser la misma antes y después de la reacción.
+    \item \textbf{Conservación de la carga o número atómico (Z):} La suma de los subíndices (número de protones) debe ser la misma antes y después de la reacción.
+\end{itemize}
+El cálculo de la masa necesaria se basa en un simple análisis estequiométrico.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Identificación de las partículas}
+Aplicamos las leyes de conservación a la reacción ${}_{1}^{2}H + {}_{1}^{3}H \rightarrow {}_{Z}^{A}X + {}_{b}^{a}Y$:
+\begin{itemize}
+    \item Conservación de A: $2 + 3 = A + a \implies A+a=5$.
+    \item Conservación de Z: $1 + 1 = Z + b \implies Z+b=2$.
+\end{itemize}
+La reacción de fusión D-T es muy conocida y sus productos son una partícula alfa (núcleo de Helio) y un neutrón.
+Partícula X = Helio $\implies {}_{2}^{4}He$. Entonces $A=4, Z=2$.
+Partícula Y = neutrón $\implies {}_{0}^{1}n$. Entonces $a=1, b=0$.
+Comprobamos: $A+a=4+1=5$ (correcto). $Z+b=2+0=2$ (correcto).
+
+\paragraph*{Cálculo de la masa de Deuterio}
+\begin{itemize}
+    \item \textbf{Número de reacciones necesarias (N):} Se obtiene dividiendo la energía total requerida entre la energía liberada por una sola reacción.
+    $$ N = \frac{E_{tot}}{E_{reac}} $$
+    \item \textbf{Masa total de Deuterio ($M_{D,tot}$):} Como cada reacción consume un núcleo de deuterio, la masa total es el número de reacciones por la masa de un núcleo.
+    $$ M_{D,tot} = N \cdot m_D $$
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+    Las partículas son $\boldsymbol{X = {}_{2}^{4}He}$ (un núcleo de Helio) y $\boldsymbol{Y = {}_{0}^{1}n}$ (un neutrón).
+    Los números son $\boldsymbol{A=4, Z=2, a=1, b=0}$.
+\end{cajaresultado}
+\medskip
+\paragraph*{Cálculo de la masa}
+\begin{gather}
+    E_{reac} = 17,6 \, \text{MeV} \cdot 1,602 \cdot 10^{-13} \, \text{J/MeV} \approx 2,819 \cdot 10^{-12} \, \text{J} \\
+    N = \frac{1,62 \cdot 10^{15} \, \text{J}}{2,819 \cdot 10^{-12} \, \text{J/reacción}} \approx 5,75 \cdot 10^{26} \, \text{reacciones} \\
+    M_{D,tot} = (5,75 \cdot 10^{26}) \cdot (3,34 \cdot 10^{-27} \, \text{kg}) \approx 1,92 \, \text{kg}
+\end{gather}
+Para pasar a gramos: $1,92 \, \text{kg} = 1920 \, \text{g}$.
+\begin{cajaresultado}
+    Se necesitarían aproximadamente $\boldsymbol{1920 \, \textbf{gramos}}$ (o 1,92 kg) de deuterio.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Mediante las leyes de conservación de número másico y atómico, se identifica que la reacción de fusión D-T produce un núcleo de Helio y un neutrón. Para satisfacer la demanda energética anual de una ciudad como Alicante, se necesitarían realizar $5,75 \cdot 10^{26}$ de estas reacciones, lo que requeriría el consumo de aproximadamente 1,92 kg de deuterio, una cantidad de combustible extraordinariamente pequeña en comparación con las fuentes de energía convencionales.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 8}
+\label{subsec:C8_2024_jul_ext}
+
+\begin{cajaenunciado}
+Un láser de fluoruro de kriptón, que se utiliza en experimentos de fusión por confinamiento inercial, puede emitir un haz de luz de longitud de onda 248 nm, con una energía de $1,1 \cdot 10^{3}$ J en un tiempo de 1 ns. Obtén razonadamente, la energía de un fotón, la potencia del láser (en MW) y el número de fotones que emite este láser en dicho intervalo de tiempo.
+\textbf{Dato:} velocidad de la luz en el vacío, $c=3\cdot10^{8}$ m/s; constante de Planck, $h=6,63\cdot10^{-34}$ J·s.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda ($\lambda$):} $248 \, \text{nm} = 248 \cdot 10^{-9} \, \text{m}$.
+    \item \textbf{Energía total del pulso ($E_{pulso}$):} $1,1 \cdot 10^{3} \, \text{J}$.
+    \item \textbf{Duración del pulso ($\Delta t$):} $1 \, \text{ns} = 1 \cdot 10^{-9} \, \text{s}$.
+    \item \textbf{Constantes:} $c=3\cdot10^{8}$ m/s, $h=6,63\cdot10^{-34}$ J·s.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Energía de un solo fotón ($E_{fotón}$).
+        \item Potencia del láser ($P$).
+        \item Número de fotones en el pulso ($N$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Pulso Láser} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de un dispositivo láser emitiendo un pulso de luz muy corto y energético. El pulso se representa como un paquete de ondas de luz. Dentro del paquete, dibuja muchos puntos pequeños para simbolizar los fotones individuales. Etiqueta el pulso con su energía total $E_{pulso}$ y su duración $\Delta t$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{pulso_laser.png}
+    }}
+    \caption{Representación de un pulso láser como un conjunto de fotones.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Energía del Fotón (Relación de Planck-Einstein):} La energía de un cuanto de luz (fotón) es directamente proporcional a su frecuencia ($f$) e inversamente proporcional a su longitud de onda ($\lambda$).
+    $$ E = hf = \frac{hc}{\lambda} $$
+    \item \textbf{Potencia:} La potencia es la tasa de transferencia de energía por unidad de tiempo.
+    $$ P = \frac{E}{\Delta t} $$
+    \item \textbf{Naturaleza Cuántica de la Luz:} Un haz de luz se considera un flujo de fotones. La energía total del haz es la suma de las energías de todos los fotones que lo componen. Si todos los fotones son idénticos (luz monocromática), la energía total es $E_{total} = N \cdot E_{fotón}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Energía de un fotón}
+\begin{gather}
+    E_{fotón} = \frac{hc}{\lambda}
+\end{gather}
+\paragraph*{Potencia del láser}
+\begin{gather}
+    P = \frac{E_{pulso}}{\Delta t}
+\end{gather}
+\paragraph*{Número de fotones}
+\begin{gather}
+    N = \frac{E_{pulso}}{E_{fotón}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la energía del fotón}
+\begin{gather}
+    E_{fotón} = \frac{(6,63\cdot10^{-34} \, \text{J}\cdot\text{s})(3\cdot10^{8} \, \text{m/s})}{248 \cdot 10^{-9} \, \text{m}} = \frac{19,89 \cdot 10^{-26}}{248 \cdot 10^{-9}} \approx 8,02 \cdot 10^{-19} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía de un fotón es $\boldsymbol{E_{fotón} \approx 8,02 \cdot 10^{-19} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph*{Cálculo de la potencia del láser}
+\begin{gather}
+    P = \frac{1,1 \cdot 10^{3} \, \text{J}}{1 \cdot 10^{-9} \, \text{s}} = 1,1 \cdot 10^{12} \, \text{W}
+\end{gather}
+Para expresarlo en Megavatios (MW), donde $1 \, \text{MW} = 10^6 \, \text{W}$:
+$P = 1,1 \cdot 10^{12} \, \text{W} = 1,1 \cdot 10^{6} \, \text{MW}$.
+\begin{cajaresultado}
+    La potencia del láser es $\boldsymbol{P = 1,1 \cdot 10^{6} \, \textbf{MW}}$ (un millón cien mil megavatios).
+\end{cajaresultado}
+
+\paragraph*{Cálculo del número de fotones}
+\begin{gather}
+    N = \frac{1,1 \cdot 10^{3} \, \text{J}}{8,02 \cdot 10^{-19} \, \text{J/fotón}} \approx 1,37 \cdot 10^{21} \, \text{fotones}
+\end{gather}
+\begin{cajaresultado}
+    El número de fotones emitidos es $\boldsymbol{N \approx 1,37 \cdot 10^{21}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Cada fotón del láser de KrF tiene una energía de $8,02 \cdot 10^{-19}$ J, correspondiente a su longitud de onda ultravioleta. Al liberar una energía de 1100 J en solo 1 nanosegundo, el láser alcanza una potencia instantánea pico inmensa de $1,1 \cdot 10^{12}$ vatios. Este pulso energético está compuesto por aproximadamente $1,37 \cdot 10^{21}$ fotones.
+\end{cajaconclusion}
+\newpage
+\subsection{Problema 4}
+\label{subsec:P4_2024_jul_ext}
+
+\begin{cajaenunciado}
+La frecuencia umbral del cátodo de una célula fotoeléctrica es de $f_{0}=5 \cdot 10^{14}$ Hz. Dicho cátodo se ilumina con luz de frecuencia $f=1,5 \cdot 10^{15}$ Hz. Calcula:
+\begin{enumerate}
+    \item[a)] La velocidad máxima de los fotoelectrones emitidos desde el cátodo. (1 punto)
+    \item[b)] La diferencia de potencial que hay que aplicar para anular la corriente eléctrica producida en la fotocélula. (1 punto)
+\end{enumerate}
+\textbf{Datos:} Constante de Planck, $h=6,63 \cdot 10^{-34}$ J·s; masa del electrón, $m_e=9,1 \cdot 10^{-31}$ kg; carga elemental, $q=1,6 \cdot 10^{-19}$ C.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Frecuencia umbral ($f_0$):} $f_0 = 5 \cdot 10^{14} \, \text{Hz}$.
+    \item \textbf{Frecuencia incidente ($f$):} $f = 1,5 \cdot 10^{15} \, \text{Hz}$.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,63 \cdot 10^{-34} \, \text{J}\cdot\text{s}$.
+    \item \textbf{Masa del electrón ($m_e$):} $m_e = 9,1 \cdot 10^{-31} \, \text{kg}$.
+    \item \textbf{Carga del electrón ($e$):} $e = 1,6 \cdot 10^{-19} \, \text{C}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Velocidad máxima de los fotoelectrones ($v_{max}$).
+        \item Potencial de frenado ($V_f$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Efecto Fotoeléctrico y Potencial de Frenado} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama de una célula fotoeléctrica. Muestra una placa metálica (cátodo) y otra placa (ánodo) dentro de un tubo de vacío. Dibuja fotones de luz incidente (ondas) golpeando el cátodo. Dibuja electrones (fotoelectrones) siendo emitidos desde el cátodo con una cierta velocidad. Para la parte (b), añade una fuente de voltaje externa conectada con polaridad inversa: el ánodo conectado al terminal negativo y el cátodo al positivo. Esto crea un potencial de frenado $V_f$ que repele a los electrones y detiene la corriente."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{efecto_fotoelectrico.png}
+    }}
+    \caption{Esquema del efecto fotoeléctrico y la anulación de la corriente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe mediante la \textbf{ecuación del efecto fotoeléctrico de Einstein}, que es una aplicación del principio de conservación de la energía.
+\begin{itemize}
+    \item La energía de un fotón incidente ($E_{\gamma}$) se invierte en dos partes: la energía mínima para arrancar un electrón del metal, llamada \textbf{función de trabajo} o trabajo de extracción ($W_0$), y la energía cinética máxima con la que sale el electrón ($E_{c,max}$).
+    \item \textbf{Ecuación de Einstein:} $E_{\gamma} = W_0 + E_{c,max}$.
+    \item La energía del fotón es $E_{\gamma} = hf$.
+    \item La función de trabajo está relacionada con la frecuencia umbral: $W_0 = hf_0$.
+    \item La energía cinética máxima es $E_{c,max} = \frac{1}{2} m_e v_{max}^2$.
+    \item El \textbf{potencial de frenado} ($V_f$) es la diferencia de potencial necesaria para detener a los electrones más energéticos. El trabajo realizado por el campo eléctrico sobre los electrones debe igualar su energía cinética inicial: $E_{c,max} = e \cdot V_f$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Velocidad máxima de los fotoelectrones}
+Partimos de la ecuación de Einstein:
+\begin{gather}
+    hf = hf_0 + \frac{1}{2} m_e v_{max}^2
+\end{gather}
+Despejamos la energía cinética máxima:
+\begin{gather}
+    E_{c,max} = hf - hf_0 = h(f - f_0)
+\end{gather}
+Y a partir de ahí, despejamos la velocidad máxima:
+\begin{gather}
+    \frac{1}{2} m_e v_{max}^2 = h(f - f_0) \implies v_{max} = \sqrt{\frac{2h(f - f_0)}{m_e}}
+\end{gather}
+\paragraph*{b) Potencial de frenado}
+Igualamos la energía cinética máxima al trabajo de frenado:
+\begin{gather}
+    e \cdot V_f = E_{c,max} = h(f - f_0)
+\end{gather}
+Despejamos el potencial de frenado $V_f$:
+\begin{gather}
+    V_f = \frac{h(f - f_0)}{e}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de la velocidad máxima}
+Primero, calculamos la energía cinética máxima:
+\begin{gather}
+    E_{c,max} = (6,63 \cdot 10^{-34}) (1,5 \cdot 10^{15} - 5 \cdot 10^{14}) = (6,63 \cdot 10^{-34})(1 \cdot 10^{15}) = 6,63 \cdot 10^{-19} \, \text{J}
+\end{gather}
+Ahora, calculamos la velocidad máxima:
+\begin{gather}
+    v_{max} = \sqrt{\frac{2 \cdot (6,63 \cdot 10^{-19})}{9,1 \cdot 10^{-31}}} \approx \sqrt{1,457 \cdot 10^{12}} \approx 1,207 \cdot 10^6 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad máxima de los fotoelectrones es $\boldsymbol{v_{max} \approx 1,21 \cdot 10^6 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Valor del potencial de frenado}
+Utilizamos la energía cinética ya calculada:
+\begin{gather}
+    V_f = \frac{6,63 \cdot 10^{-19} \, \text{J}}{1,6 \cdot 10^{-19} \, \text{C}} \approx 4,14 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+    La diferencia de potencial de frenado es $\boldsymbol{V_f \approx 4,14 \, \textbf{V}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Aplicando la ecuación de Einstein para el efecto fotoeléctrico, la energía del fotón incidente se reparte entre la necesaria para extraer el electrón y su energía cinética. Esto resulta en una velocidad máxima para los fotoelectrones de $1,21 \cdot 10^6$ m/s. Para detener por completo la corriente, se debe aplicar un potencial de frenado inverso que anule esta energía cinética, cuyo valor es de 4,14 V.
+\end{cajaconclusion}
+\newpage

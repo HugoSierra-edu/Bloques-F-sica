@@ -1,0 +1,850 @@
+```latex
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2017 - Convocatoria Ordinaria}
+\label{chap:2017_jun_ord}
+
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2017_jun_ord}
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:B1A_2017_jun_ord}
+
+\begin{cajaenunciado}
+Calcula razonadamente la velocidad de escape desde la superficie de un planeta cuyo radio es 2 veces el de la Tierra y su masa es 8 veces la de la Tierra.
+\textbf{Dato:} velocidad de escape desde la superficie de la Tierra, $v_T=11,2\,\text{km/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Radio del planeta ($R_P$):} $R_P = 2 R_T$.
+    \item \textbf{Masa del planeta ($M_P$):} $M_P = 8 M_T$.
+    \item \textbf{Velocidad de escape en la Tierra ($v_T$):} $v_T = 11,2\,\text{km/s} = 11200\,\text{m/s}$.
+    \item \textbf{Incógnita:} Velocidad de escape en el planeta ($v_P$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Velocidad de Escape} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos planetas uno al lado del otro para comparación. A la izquierda, el planeta Tierra de radio $R_T$ y masa $M_T$. Un cohete en su superficie con un vector de velocidad de escape $\vec{v}_T$. A la derecha, un planeta más grande de radio $R_P=2R_T$ y masa $M_P=8M_T$. Un cohete en su superficie con un vector de velocidad de escape $\vec{v}_P$. Indicar que en ambos casos, la energía mecánica total en el lanzamiento debe ser cero para que el cohete escape."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{escape_planetas.png}
+    }}
+    \caption{Comparativa del lanzamiento desde la Tierra y el nuevo planeta.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La \textbf{velocidad de escape} es la velocidad mínima que debe tener un objeto en la superficie de un astro para escapar de su atracción gravitatoria. Se calcula aplicando el principio de \textbf{conservación de la energía mecánica}.
+La energía mecánica total del objeto es la suma de su energía cinética y su energía potencial gravitatoria: $E_M = E_c + E_p = \frac{1}{2}mv^2 - G\frac{Mm}{R}$.
+La condición para escapar es que la energía mecánica total sea nula. El objeto llega al infinito ($r\to\infty$, $E_p \to 0$) con velocidad nula ($v \to 0$, $E_c \to 0$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Aplicando la conservación de la energía en el momento del lanzamiento desde la superficie:
+\begin{gather}
+    E_{M, \text{superficie}} = E_{M, \text{infinito}} = 0 \\
+    \frac{1}{2}mv_e^2 - G\frac{Mm}{R} = 0 \implies \frac{1}{2}v_e^2 = G\frac{M}{R}
+\end{gather}
+De aquí se obtiene la expresión general para la velocidad de escape:
+\begin{gather}
+    v_e = \sqrt{\frac{2GM}{R}}
+\end{gather}
+Para la Tierra: $v_T = \sqrt{\frac{2GM_T}{R_T}}$.
+Para el planeta: $v_P = \sqrt{\frac{2GM_P}{R_P}} = \sqrt{\frac{2G(8M_T)}{(2R_T)}} = \sqrt{4 \frac{2GM_T}{R_T}} = 2 \sqrt{\frac{2GM_T}{R_T}} = 2v_T$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos el valor de la velocidad de escape de la Tierra en la relación encontrada:
+\begin{gather}
+    v_P = 2 \cdot (11,2\,\text{km/s}) = 22,4\,\text{km/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad de escape desde la superficie del planeta es $\boldsymbol{22,4\,\textbf{km/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La velocidad de escape es proporcional a la raíz cuadrada de la relación masa/radio ($v_e \propto \sqrt{M/R}$). Al aumentar la masa en un factor 8 y el radio en un factor 2, esta relación aumenta en un factor $8/2 = 4$. La raíz cuadrada de 4 es 2, por lo que la velocidad de escape del nuevo planeta es el doble que la de la Tierra.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:B1B_2017_jun_ord}
+
+\begin{cajaenunciado}
+Un esquiador puede utilizar dos rutas diferentes para descender entre un punto inicial y otro final. La ruta 1 es rectilínea y la 2 es sinuosa y presenta cambios de pendiente. ¿Es distinto el trabajo debido a la fuerza gravitatoria sobre el esquiador según el camino elegido? Justifica la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica sobre el trabajo realizado por la fuerza gravitatoria.
+\begin{itemize}
+    \item \textbf{Fuerza a analizar:} Fuerza gravitatoria (peso del esquiador).
+    \item \textbf{Puntos:} Un punto inicial A (a mayor altura) y un punto final B (a menor altura).
+    \item \textbf{Caminos:} Dos trayectorias diferentes que conectan A y B.
+    \item \textbf{Incógnita:} Si el trabajo realizado por la fuerza gravitatoria ($W_g$) es diferente para cada camino.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Trabajo de una Fuerza Conservativa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una ladera de una montaña. Marcar un punto A en la parte superior y un punto B más abajo. Dibujar dos trayectorias distintas que conecten A con B: una línea recta (Ruta 1) y una línea curva y sinuosa (Ruta 2). En un punto intermedio de cada trayectoria, dibujar al esquiador y el vector de su peso $\vec{P}$ apuntando siempre verticalmente hacia abajo. Indicar la diferencia de altura $\Delta h = h_A - h_B$ entre los puntos inicial y final."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_conservativa.png}
+    }}
+    \caption{Dos trayectorias distintas entre los mismos puntos inicial y final.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La clave para resolver esta cuestión es el concepto de \textbf{campo de fuerzas conservativo}. Un campo de fuerzas es conservativo si el trabajo realizado por la fuerza del campo para mover un cuerpo entre dos puntos es \textbf{independiente de la trayectoria} seguida.
+El campo gravitatorio es un campo conservativo.
+El trabajo realizado por una fuerza conservativa es igual al negativo de la variación de la energía potencial asociada:
+$$ W_{\text{cons}} = -\Delta E_p = -(E_{p, \text{final}} - E_{p, \text{inicial}}) $$
+Para el campo gravitatorio, la energía potencial es $E_p = mgh$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El trabajo realizado por la fuerza gravitatoria (el peso) al mover al esquiador desde el punto inicial A hasta el punto final B es:
+\begin{gather}
+    W_g = -(E_{p,B} - E_{p,A}) = E_{p,A} - E_{p,B} = mgh_A - mgh_B = mg(h_A - h_B)
+\end{gather}
+Como se puede observar, la expresión del trabajo solo depende de la masa del esquiador, de la aceleración de la gravedad y de las alturas inicial y final. No depende de la forma de la trayectoria que se ha seguido para ir de A a B.
+Por lo tanto, el trabajo será el mismo para la ruta 1 y para la ruta 2.
+$$ W_{g, \text{ruta 1}} = W_{g, \text{ruta 2}} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es puramente cualitativo y no requiere cálculos numéricos.
+\begin{cajaresultado}
+\textbf{No}, el trabajo debido a la fuerza gravitatoria sobre el esquiador \textbf{no es distinto} según el camino elegido. Es exactamente el mismo en ambos casos.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza gravitatoria es una fuerza conservativa, lo que implica que el trabajo que realiza al desplazar un objeto entre dos puntos depende exclusivamente de las posiciones inicial y final (en concreto, de la diferencia de altura), y no del camino recorrido. Por ello, el esquiador experimentará el mismo trabajo por parte de la gravedad independientemente de la ruta que escoja para descender.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque II: Ondas}
+\label{sec:ondas_2017_jun_ord}
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:B2A_2017_jun_ord}
+
+\begin{cajaenunciado}
+Explica la diferencia existente entre la velocidad de propagación de una onda y la velocidad de oscilación de un punto de dicha onda.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica que pide diferenciar dos conceptos relacionados con el movimiento ondulatorio.
+\begin{itemize}
+    \item \textbf{Concepto 1:} Velocidad de propagación de la onda ($v_p$).
+    \item \textbf{Concepto 2:} Velocidad de oscilación o vibración de una partícula del medio ($v_{osc}$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Velocidades en una Onda Transversal} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una onda sinusoidal en una cuerda propagándose hacia la derecha. Dibujar un vector horizontal largo, $\vec{v}_p$, que represente la velocidad de propagación de la onda. Sobre la cresta de la onda, mostrar una partícula del medio con un vector de velocidad de oscilación $\vec{v}_{osc}$ nulo (punto de retorno). En un punto de la cuerda con elongación cero y pendiente negativa, dibujar un vector $\vec{v}_{osc}$ apuntando verticalmente hacia abajo. En un punto con elongación cero y pendiente positiva, dibujar un vector $\vec{v}_{osc}$ apuntando verticalmente hacia arriba. Dejar claro que $\vec{v}_p$ es horizontal y constante, mientras que $\vec{v}_{osc}$ es vertical y variable."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{velocidades_onda.png}
+    }}
+    \caption{Diferencia entre la velocidad de propagación de la onda y la velocidad de oscilación de una partícula del medio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Velocidad de Propagación ($v_p$)}
+Es la velocidad a la que la \textbf{perturbación} (la onda en sí, la energía) viaja a través del medio.
+\begin{itemize}
+    \item Para una onda en un medio homogéneo, esta velocidad es \textbf{constante} y su valor depende de las propiedades del medio (por ejemplo, la tensión y la densidad en una cuerda, o la compresibilidad y densidad en el aire para el sonido).
+    \item Se relaciona con la longitud de onda ($\lambda$) y la frecuencia ($f$) de la onda mediante la ecuación fundamental: $v_p = \lambda \cdot f$.
+    \item En una onda transversal, la dirección de $v_p$ es perpendicular a la dirección de la vibración de las partículas.
+\end{itemize}
+
+\paragraph*{Velocidad de Oscilación ($v_{osc}$)}
+Es la velocidad con la que se mueven las \textbf{partículas del medio} alrededor de su posición de equilibrio.
+\begin{itemize}
+    \item Las partículas del medio no viajan con la onda, solo oscilan.
+    \item Esta velocidad \textbf{no es constante}, sino que varía en el tiempo. Las partículas describen un Movimiento Armónico Simple (M.A.S.).
+    \item La velocidad es máxima cuando la partícula pasa por la posición de equilibrio ($y=0$) y es nula en los puntos de máxima elongación (crestas y valles, $y=\pm A$).
+    \item Se calcula como la derivada de la elongación con respecto al tiempo. Para una onda $y(x,t) = A\sin(kx - \omega t)$, la velocidad de oscilación es $v_{osc} = \frac{\partial y}{\partial t} = -A\omega\cos(kx - \omega t)$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\begin{itemize}
+    \item Velocidad de propagación: $v_p = \frac{\omega}{k} = \text{constante}$
+    \item Velocidad de oscilación: $v_{osc}(x,t) = \frac{\partial y}{\partial t} = -A\omega\cos(kx - \omega t) = \text{variable}$
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, es una cuestión teórica.
+\begin{cajaresultado}
+La \textbf{velocidad de propagación} es la velocidad constante a la que viaja la energía de la onda a través del medio. La \textbf{velocidad de oscilación} es la velocidad variable con la que las partículas del medio vibran alrededor de sus posiciones de equilibrio. La primera describe el avance de la onda, la segunda el movimiento de la materia.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Es crucial no confundir el movimiento de la onda con el movimiento de las partículas que la transportan. La velocidad de propagación es una característica de la onda en su conjunto y es constante, mientras que la velocidad de oscilación describe el M.A.S. de cada partícula individual del medio, y por tanto, es variable en el tiempo.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:B2B_2017_jun_ord}
+
+\begin{cajaenunciado}
+Una onda sonora de frecuencia f se propaga por un medio (1) con velocidad $v_1$. En un cierto punto, la onda pasa a otro medio (2) en el que la velocidad de propagación es $v_2 = v_1/2$. Determina razonadamente los valores de la frecuencia, el periodo y la longitud de onda en el medio (2) en función de los que tiene la onda en el medio (1).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Medio 1:} Frecuencia $f_1$, periodo $T_1$, longitud de onda $\lambda_1$, velocidad $v_1$.
+    \item \textbf{Medio 2:} Velocidad $v_2 = v_1/2$.
+    \item \textbf{Incógnitas:} Frecuencia $f_2$, periodo $T_2$ y longitud de onda $\lambda_2$ en el medio 2, en función de las magnitudes del medio 1.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Cambio de Medio de una Onda} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una onda sinusoidal viajando de izquierda a derecha. Dibujar una línea vertical que separe el 'Medio 1' del 'Medio 2'. En el Medio 1, la onda tiene una longitud de onda $\lambda_1$. Al pasar al Medio 2, la onda se ve 'comprimida', con una longitud de onda $\lambda_2$ más corta. Indicar que la velocidad $v_2 < v_1$. Escribir la nota 'La frecuencia $f$ permanece constante' a lo largo de toda la trayectoria."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_cambio_medio.png}
+    }}
+    \caption{Comportamiento de una onda al cambiar de medio de propagación.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El principio fundamental que rige este fenómeno es que, cuando una onda pasa de un medio a otro, su \textbf{frecuencia (f) no cambia}. La frecuencia está determinada por la fuente que genera la onda y no por el medio por el que se propaga.
+Las otras magnitudes, como la velocidad de propagación y la longitud de onda, sí dependen del medio y se ajustan según la relación fundamental de las ondas: $v = \lambda \cdot f$.
+El periodo ($T$) es el inverso de la frecuencia ($T=1/f$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Frecuencia}
+Como la frecuencia es una propiedad de la fuente y no cambia con el medio:
+\begin{gather}
+    f_2 = f_1
+\end{gather}
+
+\paragraph{Periodo}
+Dado que el periodo es el inverso de la frecuencia, si la frecuencia no cambia, el periodo tampoco:
+\begin{gather}
+    T_2 = \frac{1}{f_2} = \frac{1}{f_1} = T_1
+\end{gather}
+
+\paragraph{Longitud de onda}
+La longitud de onda se adapta a la nueva velocidad para mantener la frecuencia constante.
+Para el medio 1: $\lambda_1 = v_1 / f_1$.
+Para el medio 2: $\lambda_2 = v_2 / f_2$.
+Sustituyendo las relaciones conocidas ($v_2 = v_1/2$ y $f_2 = f_1$):
+\begin{gather}
+    \lambda_2 = \frac{v_1/2}{f_1} = \frac{1}{2} \left(\frac{v_1}{f_1}\right) = \frac{1}{2} \lambda_1
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema no requiere valores numéricos.
+\begin{cajaresultado}
+\begin{itemize}
+    \item Frecuencia en el medio 2: $\boldsymbol{f_2 = f_1}$ (no cambia).
+    \item Periodo en el medio 2: $\boldsymbol{T_2 = T_1}$ (no cambia).
+    \item Longitud de onda en el medio 2: $\boldsymbol{\lambda_2 = \lambda_1 / 2}$ (se reduce a la mitad).
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al pasar a un medio donde la velocidad de propagación es la mitad, la frecuencia y el periodo de la onda sonora se mantienen constantes, ya que dependen de la fuente emisora. Para satisfacer la relación $v = \lambda f$, la longitud de onda debe ajustarse, reduciéndose también a la mitad de su valor original.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque III: Óptica Geométrica}
+\label{sec:optica_2017_jun_ord}
+
+\subsection{Problema - OPCIÓN A}
+\label{subsec:B3A_2017_jun_ord}
+\begin{cajaenunciado}
+Una placa de vidrio se sitúa horizontalmente sobre la superficie del agua contenida en un depósito, de forma que la parte superior de la placa está en contacto con el aire, tal como muestra la figura. Un rayo de luz incide desde el aire a la cara superior del vidrio formando un ángulo $\alpha=60^{\circ}$ con la vertical.
+\begin{enumerate}
+    \item[a)] Calcula el ángulo de refracción del rayo de luz al pasar del vidrio al agua. (1 punto)
+    \item[b)] Deduce la expresión de la distancia (AB) de desviación del rayo de luz tras atravesar el vidrio, y calcula su valor numérico. La placa de vidrio tiene un espesor $d=20$ mm. (1 punto)
+\end{enumerate}
+\textbf{Datos:} índice de refracción del agua $n_{agua}=1,3$; índice de refracción del aire: $n_{aire}=1$; índice de refracción del vidrio: $n_{vidrio}=1,5$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Medio 1 (Aire):} $n_a = 1$.
+    \item \textbf{Medio 2 (Vidrio):} $n_v = 1,5$. Espesor $d = 20\,\text{mm} = 0,02\,\text{m}$.
+    \item \textbf{Medio 3 (Agua):} $n_{ag} = 1,3$.
+    \item \textbf{Ángulo de incidencia inicial:} $\theta_a = \alpha = 60^\circ$.
+    \item \textbf{Incógnitas:} a) Ángulo de refracción en el agua ($\theta_{ag}$). b) Distancia de desviación AB.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Refracción en Múltiples Medios} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama que muestre tres capas horizontales: Aire, Vidrio y Agua. Una línea normal vertical atraviesa las tres capas. Un rayo de luz incide desde el aire con un ángulo $\theta_a=60^\circ$. El rayo se refracta al entrar en el vidrio, acercándose a la normal con un ángulo $\theta_v$. El rayo viaja en línea recta a través del vidrio de espesor 'd'. Al llegar a la interfaz vidrio-agua, el rayo se vuelve a refractar, alejándose de la normal con un ángulo $\theta_{ag}$. Etiquetar todos los ángulos e índices de refracción. Resaltar el triángulo rectángulo dentro del vidrio que tiene como catetos el espesor 'd' y la desviación 'AB'."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{refraccion_capas.png}
+    }}
+    \caption{Trayectoria del rayo de luz a través de las tres capas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe mediante la \textbf{Ley de Snell de la refracción}, que se aplica en cada una de las dos interfaces (aire-vidrio y vidrio-agua).
+La ley establece: $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$.
+Para la desviación AB, se utiliza la trigonometría básica en el triángulo rectángulo formado por la trayectoria del rayo dentro del vidrio.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Ángulo de refracción en el agua}
+Aplicamos la Ley de Snell a la primera interfaz (aire-vidrio):
+\begin{gather}
+    n_a \sin(\theta_a) = n_v \sin(\theta_v) \label{eq:snell1_jun17a}
+\end{gather}
+Como las caras de la placa de vidrio son paralelas, el ángulo de refracción en la primera cara, $\theta_v$, es igual al ángulo de incidencia en la segunda cara (vidrio-agua).
+Aplicamos la Ley de Snell a la segunda interfaz (vidrio-agua):
+\begin{gather}
+    n_v \sin(\theta_v) = n_{ag} \sin(\theta_{ag}) \label{eq:snell2_jun17a}
+\end{gather}
+Combinando ambas ecuaciones (\ref{eq:snell1_jun17a}) y (\ref{eq:snell2_jun17a}), obtenemos una relación directa entre el medio inicial y el final:
+\begin{gather}
+    n_a \sin(\theta_a) = n_{ag} \sin(\theta_{ag})
+\end{gather}
+Despejamos el ángulo en el agua, $\theta_{ag}$:
+\begin{gather}
+    \sin(\theta_{ag}) = \frac{n_a}{n_{ag}} \sin(\theta_a) \implies \theta_{ag} = \arcsin\left(\frac{n_a}{n_{ag}} \sin(\theta_a)\right)
+\end{gather}
+
+\paragraph{b) Distancia de desviación AB}
+Dentro del vidrio, se forma un triángulo rectángulo donde el espesor $d$ es el cateto adyacente al ángulo $\theta_v$, y la desviación AB es el cateto opuesto. Por tanto:
+\begin{gather}
+    \tan(\theta_v) = \frac{AB}{d} \implies AB = d \cdot \tan(\theta_v)
+\end{gather}
+Para usar esta fórmula, primero debemos calcular $\theta_v$ a partir de la ecuación (\ref{eq:snell1_jun17a}).
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Ángulo de refracción en el agua}
+\begin{gather}
+    \theta_{ag} = \arcsin\left(\frac{1}{1,3} \sin(60^\circ)\right) = \arcsin\left(\frac{0,866}{1,3}\right) = \arcsin(0,666) \approx 41,77^\circ
+\end{gather}
+\begin{cajaresultado}
+El ángulo de refracción al pasar del vidrio al agua es $\boldsymbol{\theta_{ag} \approx 41,77^\circ}$.
+\end{cajaresultado}
+
+\paragraph{b) Distancia de desviación AB}
+Primero calculamos $\theta_v$ de la ecuación (\ref{eq:snell1_jun17a}):
+\begin{gather}
+    1 \cdot \sin(60^\circ) = 1,5 \cdot \sin(\theta_v) \implies \sin(\theta_v) = \frac{\sin(60^\circ)}{1,5} \approx 0,577 \implies \theta_v = \arcsin(0,577) \approx 35,26^\circ
+\end{gather}
+Ahora calculamos AB:
+\begin{gather}
+    AB = (0,02\,\text{m}) \cdot \tan(35,26^\circ) \approx (0,02\,\text{m}) \cdot (0,707) \approx 0,01414\,\text{m} = 14,14\,\text{mm}
+\end{gather}
+\begin{cajaresultado}
+La distancia de desviación es $\boldsymbol{AB \approx 14,14\,\textbf{mm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La aplicación sucesiva de la Ley de Snell muestra que el ángulo de refracción final en el agua es de 41,77$^{\circ}$. Este resultado solo depende de los medios inicial y final, no del medio intermedio (vidrio). Sin embargo, la presencia del vidrio sí causa un desplazamiento lateral del rayo. Este desplazamiento, calculado por trigonometría, es de 14,14 mm.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Problema - OPCIÓN B}
+\label{subsec:B3B_2017_jun_ord}
+\begin{cajaenunciado}
+Se sitúa un objeto de 5 cm de tamaño a una distancia de 20 cm de una lente delgada convergente de distancia focal 10 cm, como muestra la figura.
+\begin{enumerate}
+    \item[a)] Indica las características de la imagen a partir del trazado de rayos. (1 punto)
+    \item[b)] Calcula el tamaño y la posición de la imagen y la potencia de la lente. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Convergente, por tanto $f' > 0$.
+    \item \textbf{Tamaño del objeto ($y$):} $y = 5\,\text{cm}$.
+    \item \textbf{Posición del objeto ($s$):} $s = -20\,\text{cm}$ (por convenio, a la izquierda de la lente).
+    \item \textbf{Distancia focal imagen ($f'$):} $f' = +10\,\text{cm}$.
+    \item \textbf{Incógnitas:} a) Características de la imagen por trazado de rayos. b) $s'$, $y'$, y Potencia ($P$).
+\end{itemize}
+Se observa que el objeto está situado al doble de la distancia focal, $s = -2f'$.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Formación de Imagen en Lente Convergente ($s=-2f'$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar el eje óptico. En el centro, una lente convergente (símbolo con flechas hacia afuera). Marcar el foco imagen F' en x=+10cm y el foco objeto F en x=-10cm. Colocar un objeto (flecha vertical de 5 cm de altura) en la posición s=-20cm. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico y no se desvía. Mostrar que los rayos se cruzan en la posición s'=+20cm, formando una imagen. Etiquetar objeto, imagen, F y F'."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_convergente_2f.png}
+    }}
+    \caption{Trazado de rayos para un objeto en $s=-2f'$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para los cálculos se utiliza la \textbf{ecuación de las lentes delgadas (ecuación de Gauss)} y la fórmula del \textbf{aumento lateral}. La potencia de la lente es la inversa de su distancia focal en metros.
+\begin{itemize}
+    \item Ecuación de Gauss: $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item Aumento Lateral: $M = \frac{y'}{y} = \frac{s'}{s}$
+    \item Potencia: $P = \frac{1}{f'(\text{m})}$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Características de la imagen}
+Del trazado de rayos se observa que la imagen es:
+\begin{itemize}
+    \item \textbf{Real}: Se forma por la intersección de los rayos refractados.
+    \item \textbf{Invertida}: Está orientada hacia abajo.
+    \item \textbf{De igual tamaño} que el objeto.
+\end{itemize}
+
+\paragraph{b) Cálculo de posición, tamaño y potencia}
+Despejamos $s'$ de la ecuación de Gauss: $\frac{1}{s'} = \frac{1}{f'} + \frac{1}{s}$.
+Calculamos el aumento $M = s'/s$ y el tamaño de la imagen $y' = M \cdot y$.
+Calculamos la potencia $P=1/f'$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Características de la imagen}
+\begin{cajaresultado}
+La imagen formada es \textbf{real}, \textbf{invertida} y de \textbf{igual tamaño} que el objeto.
+\end{cajaresultado}
+
+\paragraph{b) Cálculos}
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{10} + \frac{1}{-20} = \frac{2-1}{20} = \frac{1}{20} \implies s' = +20\,\text{cm}
+\end{gather}
+\begin{gather}
+    M = \frac{s'}{s} = \frac{+20\,\text{cm}}{-20\,\text{cm}} = -1 \\
+    y' = M \cdot y = (-1) \cdot (5\,\text{cm}) = -5\,\text{cm}
+\end{gather}
+\begin{gather}
+    P = \frac{1}{f'(\text{m})} = \frac{1}{0,10\,\text{m}} = +10\,\text{D}
+\end{gather}
+\begin{cajaresultado}
+La posición de la imagen es $\boldsymbol{s' = +20\,\textbf{cm}}$, su tamaño es $\boldsymbol{y' = -5\,\textbf{cm}}$ (5 cm, invertida), y la potencia de la lente es $\boldsymbol{P = +10\,\textbf{D}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Tanto el trazado de rayos como los cálculos analíticos confirman que para un objeto situado al doble de la distancia focal de una lente convergente, la imagen se forma al doble de la distancia focal en el lado opuesto. La imagen resultante es real, invertida y de idéntico tamaño al objeto. La potencia de la lente es de +10 dioptrías.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque IV: Electromagnetismo}
+\label{sec:em_2017_jun_ord}
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:B4A_2017_jun_ord}
+\begin{cajaenunciado}
+Una partícula de carga $q=3~\mu C$ que se mueve con velocidad $\vec{v}=2\cdot10^{3}\vec{i}\,\text{m/s}$ entra en una región del espacio en la que hay un campo eléctrico uniforme $\vec{E}=-3\vec{j}\,\text{N/C}$ y también un campo magnético uniforme $\vec{B}=4\vec{k}\,\text{mT}$. Calcula el vector fuerza total que actúa sobre esa partícula y representa todos los vectores involucrados (haz coincidir el plano XY con el plano del papel).
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga ($q$):} $q = 3\,\mu\text{C} = 3 \cdot 10^{-6}\,\text{C}$.
+    \item \textbf{Velocidad ($\vec{v}$):} $\vec{v} = 2 \cdot 10^3 \vec{i}\,\text{m/s}$.
+    \item \textbf{Campo eléctrico ($\vec{E}$):} $\vec{E} = -3\vec{j}\,\text{N/C}$.
+    \item \textbf{Campo magnético ($\vec{B}$):} $\vec{B} = 4\vec{k}\,\text{mT} = 4 \cdot 10^{-3} \vec{k}\,\text{T}$.
+    \item \textbf{Incógnita:} Vector fuerza total ($\vec{F}_T$) y representación gráfica.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fuerza de Lorentz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas 3D (ejes X, Y, Z). Una partícula cargada 'q' en el origen. El vector velocidad $\vec{v}$ apunta a lo largo del eje X positivo. El vector campo eléctrico $\vec{E}$ apunta a lo largo del eje Y negativo. El vector campo magnético $\vec{B}$ apunta a lo largo del eje Z positivo. Dibujar el vector fuerza eléctrica $\vec{F}_e$ que actúa sobre 'q', apuntando en la misma dirección que $\vec{E}$ (eje Y negativo). Dibujar el vector fuerza magnética $\vec{F}_m$ resultado de $\vec{v} \times \vec{B}$, que también apunta a lo largo del eje Y negativo. Finalmente, dibujar el vector fuerza total $\vec{F}_T$ como la suma de $\vec{F}_e$ y $\vec{F}_m$, apuntando también en el eje Y negativo pero con mayor módulo."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_lorentz.png}
+    }}
+    \caption{Representación de los vectores implicados en el cálculo de la fuerza de Lorentz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza total sobre una carga en una región con campos eléctrico y magnético viene dada por la \textbf{expresión de la fuerza de Lorentz}:
+$$ \vec{F}_T = \vec{F}_e + \vec{F}_m = q\vec{E} + q(\vec{v} \times \vec{B}) $$
+Se calcula por separado la fuerza eléctrica y la fuerza magnética y luego se suman vectorialmente.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Fuerza Eléctrica ($\vec{F}_e$)}
+\begin{gather}
+    \vec{F}_e = q\vec{E}
+\end{gather}
+\paragraph{Fuerza Magnética ($\vec{F}_m$)}
+\begin{gather}
+    \vec{v} \times \vec{B} = (v_x\vec{i}) \times (B_z\vec{k}) = v_x B_z (\vec{i} \times \vec{k}) = v_x B_z (-\vec{j}) \\
+    \vec{F}_m = q ( -v_x B_z \vec{j} )
+\end{gather}
+\paragraph{Fuerza Total ($\vec{F}_T$)}
+\begin{gather}
+    \vec{F}_T = q\vec{E} - q v_x B_z \vec{j} = (qE_y - qv_x B_z)\vec{j}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Cálculo de la fuerza eléctrica}
+\begin{gather}
+    \vec{F}_e = (3 \cdot 10^{-6}\,\text{C})(-3\vec{j}\,\text{N/C}) = -9 \cdot 10^{-6}\vec{j}\,\text{N}
+\end{gather}
+\paragraph{Cálculo de la fuerza magnética}
+\begin{gather}
+    \vec{F}_m = (3 \cdot 10^{-6}\,\text{C})((2 \cdot 10^3 \vec{i}\,\text{m/s}) \times (4 \cdot 10^{-3} \vec{k}\,\text{T})) \\
+    \vec{F}_m = (3 \cdot 10^{-6}) (8) (\vec{i} \times \vec{k}) = 24 \cdot 10^{-6} (-\vec{j}) = -24 \cdot 10^{-6}\vec{j}\,\text{N}
+\end{gather}
+\paragraph{Cálculo de la fuerza total}
+\begin{gather}
+    \vec{F}_T = \vec{F}_e + \vec{F}_m = (-9 \cdot 10^{-6}\vec{j}) + (-24 \cdot 10^{-6}\vec{j}) = -33 \cdot 10^{-6}\vec{j}\,\text{N}
+\end{gather}
+\begin{cajaresultado}
+El vector fuerza total que actúa sobre la partícula es $\boldsymbol{\vec{F}_T = -3,3 \cdot 10^{-5}\vec{j}\,\textbf{N}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La partícula experimenta dos fuerzas, ambas en la misma dirección y sentido. La fuerza eléctrica, debida al campo eléctrico, y la fuerza magnética, resultado del producto vectorial de la velocidad y el campo magnético. La suma de ambas da una fuerza total de $-3,3 \cdot 10^{-5}$ N en la dirección del eje Y negativo.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Problema - OPCIÓN B}
+\label{subsec:B4B_2017_jun_ord}
+\begin{cajaenunciado}
+Un electrón se mueve dentro de un campo eléctrico uniforme $\vec{E}=-E\vec{i}$. El electrón parte del reposo desde el punto A, de coordenadas (0, 1) m, y llega al punto B con una velocidad de $10^{6}\,\text{m/s}$ después de recorrer 1 m.
+\begin{enumerate}
+    \item[a)] Indica la trayectoria que seguirá el electrón y las coordenadas del punto B. (1 punto)
+    \item[b)] Calcula razonadamente el trabajo realizado por el campo eléctrico sobre la carga desde A a B y el valor del campo eléctrico. (1 punto)
+\end{enumerate}
+\textbf{Datos:} carga elemental, $e=1,6\cdot10^{-19}\,\text{C}$; masa del electrón, $m_{e}=9,1\cdot10^{-31}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partícula:} Electrón, carga $q=-e=-1,6\cdot10^{-19}\,\text{C}$, masa $m_e=9,1\cdot10^{-31}\,\text{kg}$.
+    \item \textbf{Campo eléctrico:} $\vec{E}=-E\vec{i}$ (uniforme, apunta en dirección -X).
+    \item \textbf{Condición inicial:} Parte del reposo ($v_A=0$) desde A(0, 1) m.
+    \item \textbf{Condición final:} Llega a B con velocidad $v_B=10^6\,\text{m/s}$ después de recorrer una distancia $d=1\,\text{m}$.
+    \item \textbf{Incógnitas:} a) Trayectoria y coordenadas de B. b) Trabajo $W_{A \to B}$ y módulo del campo $E$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Movimiento de un Electrón en un Campo Eléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Dibujar líneas de campo eléctrico uniformes y paralelas apuntando hacia la izquierda (dirección -X). Marcar el punto inicial A(0,1). Dibujar un electrón en A. Calcular la fuerza $\vec{F}=q\vec{E}$ sobre el electrón, mostrando que apunta hacia la derecha (dirección +X). Como el electrón parte del reposo, la trayectoria es una línea recta horizontal a lo largo de la línea y=1. Marcar el punto final B después de recorrer 1 metro, en B(1,1)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{electron_campo_electrico.png}
+    }}
+    \caption{Trayectoria rectilínea del electrón acelerado por el campo eléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Fuerza eléctrica:} $\vec{F} = q\vec{E}$. Al ser el campo uniforme, la fuerza es constante.
+    \item \textbf{Segunda Ley de Newton:} $\vec{F} = m\vec{a}$. Esto implica que el movimiento será un M.R.U.A.
+    \item \textbf{Teorema de la Energía Cinética:} El trabajo realizado por la fuerza neta sobre una partícula es igual a la variación de su energía cinética: $W_{neto} = \Delta E_c$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Trayectoria y coordenadas de B}
+La fuerza sobre el electrón es $\vec{F} = (-e)(-E\vec{i}) = eE\vec{i}$.
+Como la fuerza es constante y en la dirección +X, y el electrón parte del reposo, su movimiento será rectilíneo en la dirección de la fuerza. La trayectoria es una recta horizontal.
+El punto A es (0, 1). Si recorre 1 m en la dirección +X, el punto B tendrá coordenadas (0+1, 1).
+
+\paragraph{b) Trabajo y valor del campo}
+Aplicamos el teorema de la energía cinética:
+\begin{gather}
+    W_{A \to B} = E_{c,B} - E_{c,A} = \frac{1}{2}m_e v_B^2 - 0
+\end{gather}
+El trabajo realizado por el campo eléctrico constante en un desplazamiento rectilíneo es $W = \vec{F} \cdot \Delta\vec{r}$.
+El desplazamiento es $\Delta\vec{r} = (1\vec{i})\,\text{m}$.
+\begin{gather}
+    W_{A \to B} = (eE\vec{i}) \cdot (1\vec{i}) = eE
+\end{gather}
+Igualando ambas expresiones para el trabajo, podemos despejar $E$:
+\begin{gather}
+    eE = \frac{1}{2}m_e v_B^2 \implies E = \frac{m_e v_B^2}{2e}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Trayectoria y coordenadas}
+\begin{cajaresultado}
+La trayectoria es una \textbf{línea recta} sobre la horizontal y=1 m, en el sentido positivo del eje X. Las coordenadas del punto B son \textbf{(1, 1) m}.
+\end{cajaresultado}
+
+\paragraph{b) Trabajo y campo}
+\begin{gather}
+    W_{A \to B} = \frac{1}{2}(9,1\cdot10^{-31}\,\text{kg})(10^6\,\text{m/s})^2 = 4,55 \cdot 10^{-19}\,\text{J}
+\end{gather}
+\begin{gather}
+    E = \frac{W_{A \to B}}{e} = \frac{4,55 \cdot 10^{-19}\,\text{J}}{1,6\cdot10^{-19}\,\text{C}} \approx 2,84\,\text{N/C}
+\end{gather}
+\begin{cajaresultado}
+El trabajo realizado por el campo es $\boldsymbol{W_{A \to B} = 4,55 \cdot 10^{-19}\,\textbf{J}}$. El valor del campo eléctrico es $\boldsymbol{E \approx 2,84\,\textbf{N/C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza eléctrica sobre el electrón es constante y en la dirección +X, provocando un M.R.U.A. horizontal. A partir del teorema de la energía cinética, se calcula que el trabajo realizado para acelerar el electrón hasta $10^6$ m/s es de $4,55 \cdot 10^{-19}$ J. Este trabajo, a su vez, permite determinar que el módulo del campo eléctrico es de 2,84 N/C.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque V: Física Moderna}
+\label{sec:moderna_2017_jun_ord}
+
+\subsection{Cuestión - OPCIÓN A}
+\label{subsec:B5A_2017_jun_ord}
+\begin{cajaenunciado}
+Calcula la energía total en kilovatios-hora (kWh) que se obtiene como resultado de la fisión de 2 g de ${}^{235}\text{U}$, suponiendo que todos los núcleos se fisionan y que en cada reacción se liberan 200 MeV.
+\textbf{Datos:} número de Avogadro, $N_{A}=6\cdot10^{23}$; carga elemental, $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de Uranio-235:} $m = 2\,\text{g}$.
+    \item \textbf{Masa molar del U-235 ($M$):} $M \approx 235\,\text{g/mol}$.
+    \item \textbf{Energía por fisión ($E_{reac}$):} $E_{reac} = 200\,\text{MeV}$.
+    \item \textbf{Número de Avogadro ($N_A$):} $N_A = 6 \cdot 10^{23}\,\text{mol}^{-1}$.
+    \item \textbf{Carga elemental ($e$):} $e = 1,6 \cdot 10^{-19}\,\text{C}$.
+    \item \textbf{Incógnita:} Energía total ($E_T$) en kWh.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema de cálculo.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema requiere un cálculo escalonado:
+\begin{enumerate}
+    \item Calcular el número de moles de U-235 en la muestra.
+    \item Calcular el número total de núcleos de U-235 usando el número de Avogadro.
+    \item Calcular la energía total liberada en MeV, asumiendo que cada núcleo se fisiona.
+    \item Convertir la energía total de MeV a Julios y, finalmente, a kilovatios-hora (kWh).
+\end{enumerate}
+Conversiones necesarias: $1\,\text{MeV} = 10^6 \cdot 1,6 \cdot 10^{-19}\,\text{J}$ y $1\,\text{kWh} = 3,6 \cdot 10^6\,\text{J}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\begin{gather}
+    \text{Número de núcleos, } N = \frac{m}{M} \cdot N_A \\
+    \text{Energía total en MeV, } E_T(\text{MeV}) = N \cdot E_{reac} \\
+    \text{Energía total en Julios, } E_T(\text{J}) = E_T(\text{MeV}) \cdot 10^6 \cdot e \\
+    \text{Energía total en kWh, } E_T(\text{kWh}) = \frac{E_T(\text{J})}{3,6 \cdot 10^6}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    N = \frac{2\,\text{g}}{235\,\text{g/mol}} \cdot (6 \cdot 10^{23}\,\text{mol}^{-1}) \approx 5,106 \cdot 10^{21}\,\text{núcleos} \\
+    E_T(\text{MeV}) = (5,106 \cdot 10^{21}\,\text{núcleos}) \cdot (200\,\text{MeV/núcleo}) \approx 1,021 \cdot 10^{24}\,\text{MeV} \\
+    E_T(\text{J}) = (1,021 \cdot 10^{24}\,\text{MeV}) \cdot (1,6 \cdot 10^{-13}\,\text{J/MeV}) \approx 1,634 \cdot 10^{11}\,\text{J} \\
+    E_T(\text{kWh}) = \frac{1,634 \cdot 10^{11}\,\text{J}}{3,6 \cdot 10^6\,\text{J/kWh}} \approx 45389\,\text{kWh}
+\end{gather}
+\begin{cajaresultado}
+La energía total obtenida es de aproximadamente $\boldsymbol{45389\,\textbf{kWh}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fisión nuclear libera una cantidad inmensa de energía a partir de una pequeña cantidad de masa. La fisión completa de tan solo 2 gramos de Uranio-235 libera más de 45.000 kWh, una cantidad de energía equivalente al consumo eléctrico medio de más de una docena de hogares españoles durante todo un año, lo que demuestra la altísima densidad energética del combustible nuclear.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:B5B_2017_jun_ord}
+\begin{cajaenunciado}
+La gráfica de la derecha representa el número de núcleos radiactivos de una muestra en función del tiempo en años. Utilizando los datos de la gráfica, deduce razonadamente el periodo de semidesintegración de la muestra y determina el número de periodos de semidesintegración necesarios para que sólo queden 250 núcleos por desintegrar.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Gráfica:} Número de núcleos radiactivos $N(t)$ en función del tiempo $t$ en años.
+    \item \textbf{Dato inicial (de la gráfica):} En $t=0$, el número de núcleos es $N_0 = 1000$.
+    \item \textbf{Incógnita 1:} Periodo de semidesintegración ($T_{1/2}$).
+    \item \textbf{Incógnita 2:} Número de periodos de semidesintegración para que queden $N=250$ núcleos.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+El enunciado proporciona la gráfica necesaria para resolver el problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Periodo de Semidesintegración ($T_{1/2}$)}
+El periodo de semidesintegración (o semiperiodo) es, por definición, el tiempo que debe transcurrir para que el número de núcleos radiactivos en una muestra se reduzca a la mitad de su valor inicial.
+\paragraph{Ley de Desintegración Radiactiva}
+El número de núcleos $N$ que quedan en un instante $t$ se relaciona con el número inicial $N_0$ y el periodo de semidesintegración $T_{1/2}$ mediante la expresión:
+$$ N(t) = N_0 \left(\frac{1}{2}\right)^{n} $$
+donde $n = t/T_{1/2}$ es el número de periodos de semidesintegración transcurridos.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Cálculo de $T_{1/2}$}
+Se busca en la gráfica el tiempo $t$ para el cual $N(t) = N_0/2$. Este tiempo será $T_{1/2}$.
+\paragraph{Cálculo del número de periodos}
+Se quiere encontrar el número de periodos $n$ para que $N=250$.
+Se usa la ley de desintegración:
+\begin{gather}
+    250 = 1000 \left(\frac{1}{2}\right)^{n} \\
+    \frac{250}{1000} = \frac{1}{4} = \left(\frac{1}{2}\right)^{n}
+\end{gather}
+Se resuelve para $n$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Periodo de semidesintegración}
+Observando la gráfica:
+\begin{itemize}
+    \item El número inicial de núcleos es $N_0 = 1000$.
+    \item La mitad de este valor es $N = 500$.
+    \item Buscamos el tiempo en el eje horizontal que corresponde a $N=500$ en el eje vertical.
+    \item Se observa que para $N=500$, el tiempo es $t=5$ años.
+\end{itemize}
+\begin{cajaresultado}
+El periodo de semidesintegración de la muestra es $\boldsymbol{T_{1/2} = 5\,\textbf{años}}$.
+\end{cajaresultado}
+
+\paragraph{Número de periodos}
+Se resuelve la ecuación:
+\begin{gather}
+    \left(\frac{1}{2}\right)^{2} = \left(\frac{1}{2}\right)^{n} \implies n=2
+\end{gather}
+Alternativamente, se puede razonar por pasos:
+Después de un primer periodo ($t=5$ años), quedarán $1000/2 = 500$ núcleos.
+Después de un segundo periodo ($t=10$ años), quedarán $500/2 = 250$ núcleos.
+\begin{cajaresultado}
+Se necesitan \textbf{2 periodos de semidesintegración} para que queden 250 núcleos.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La interpretación directa de la gráfica de decaimiento permite determinar el periodo de semidesintegración, que es el tiempo necesario para que la población de núcleos se reduzca a la mitad, resultando en 5 años. Para que la población se reduzca a una cuarta parte (de 1000 a 250), deben transcurrir exactamente dos de estos periodos.
+\end{cajaconclusion}
+\newpage
+
+\section{Bloque VI: Física Nuclear y de Partículas}
+\label{sec:nuclear_2017_jun_ord}
+
+\subsection{Problema - OPCIÓN A}
+\label{subsec:B6A_2017_jun_ord}
+\begin{cajaenunciado}
+El cátodo de una célula fotoeléctrica tiene una longitud de onda umbral de 750 nm. Sobre su superficie incide un haz de luz de longitud de onda 250 nm. Calcula:
+\begin{enumerate}
+    \item[a)] La velocidad máxima de los fotoelectrones emitidos desde el cátodo. (1 punto)
+    \item[b)] La diferencia de potencial que hay que aplicar para anular la corriente producida en la fotocélula. (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de Planck, $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$; masa del electrón, $m_{e}=9,1\cdot10^{-31}\,\text{kg}$; velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{ms}^{-1}$; carga elemental, $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda umbral ($\lambda_0$):} $\lambda_0 = 750\,\text{nm} = 7,5 \cdot 10^{-7}\,\text{m}$.
+    \item \textbf{Longitud de onda incidente ($\lambda$):} $\lambda = 250\,\text{nm} = 2,5 \cdot 10^{-7}\,\text{m}$.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,63 \cdot 10^{-34}\,\text{J}\cdot\text{s}$.
+    \item \textbf{Masa del electrón ($m_e$):} $m_e = 9,1 \cdot 10^{-31}\,\text{kg}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3 \cdot 10^8\,\text{m/s}$.
+    \item \textbf{Carga elemental ($e$):} $e = 1,6 \cdot 10^{-19}\,\text{C}$.
+    \item \textbf{Incógnitas:} a) Velocidad máxima de los fotoelectrones ($v_{max}$). b) Potencial de frenado ($V_f$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de una célula fotoeléctrica. Un fotón de luz incide sobre una placa metálica (cátodo). El fotón transfiere su energía a un electrón, que es eyectado del metal con una cierta energía cinética y viaja hacia otra placa (ánodo). Mostrar que la energía del fotón ($E=hc/\lambda$) se invierte en el trabajo de extracción ($W_0=hc/\lambda_0$) y la energía cinética del electrón ($E_c$)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{efecto_fotoelectrico.png}
+    }}
+    \caption{Diagrama del efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se explica mediante la \textbf{ecuación del efecto fotoeléctrico de Einstein}:
+$$ E_{\text{fotón}} = W_0 + E_{c,max} $$
+donde $E_{\text{fotón}}$ es la energía del fotón incidente ($hc/\lambda$), $W_0$ es el trabajo de extracción o función de trabajo del material ($hc/\lambda_0$), y $E_{c,max}$ es la energía cinética máxima de los electrones emitidos ($\frac{1}{2}m_e v_{max}^2$).
+El \textbf{potencial de frenado} ($V_f$) es la diferencia de potencial que hay que aplicar para detener a los electrones más energéticos. La energía que aporta el campo eléctrico, $e \cdot V_f$, debe igualar la energía cinética máxima de los electrones: $e \cdot V_f = E_{c,max}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Velocidad máxima}
+De la ecuación de Einstein:
+\begin{gather}
+    E_{c,max} = E_{\text{fotón}} - W_0 = \frac{hc}{\lambda} - \frac{hc}{\lambda_0} = hc\left(\frac{1}{\lambda} - \frac{1}{\lambda_0}\right)
+\end{gather}
+Sabiendo que $E_{c,max} = \frac{1}{2}m_e v_{max}^2$:
+\begin{gather}
+    \frac{1}{2}m_e v_{max}^2 = hc\left(\frac{1}{\lambda} - \frac{1}{\lambda_0}\right) \implies v_{max} = \sqrt{\frac{2hc}{m_e}\left(\frac{1}{\lambda} - \frac{1}{\lambda_0}\right)}
+\end{gather}
+\paragraph{b) Potencial de frenado}
+\begin{gather}
+    V_f = \frac{E_{c,max}}{e} = \frac{hc}{e}\left(\frac{1}{\lambda} - \frac{1}{\lambda_0}\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Velocidad máxima}
+Primero calculamos la energía cinética máxima:
+\begin{gather}
+    E_{c,max} = (6,63\cdot10^{-34})(3\cdot10^8)\left(\frac{1}{2,5\cdot10^{-7}} - \frac{1}{7,5\cdot10^{-7}}\right) \\
+    E_{c,max} = (1,989\cdot10^{-25})\left(4\cdot10^6 - 1,333\cdot10^6\right) = (1,989\cdot10^{-25})(2,667\cdot10^6) \approx 5,305\cdot10^{-19}\,\text{J}
+\end{gather}
+Ahora calculamos la velocidad:
+\begin{gather}
+    v_{max} = \sqrt{\frac{2 \cdot (5,305\cdot10^{-19}\,\text{J})}{9,1\cdot10^{-31}\,\text{kg}}} = \sqrt{1,166\cdot10^{12}} \approx 1,08 \cdot 10^6\,\text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad máxima de los fotoelectrones es $\boldsymbol{v_{max} \approx 1,08 \cdot 10^6\,\textbf{m/s}}$.
+\end{cajaresultado}
+\paragraph{b) Potencial de frenado}
+\begin{gather}
+    V_f = \frac{5,305\cdot10^{-19}\,\text{J}}{1,6\cdot10^{-19}\,\text{C}} \approx 3,32\,\text{V}
+\end{gather}
+\begin{cajaresultado}
+La diferencia de potencial que hay que aplicar es $\boldsymbol{V_f \approx 3,32\,\textbf{V}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La energía del fotón incidente (correspondiente a 250 nm) es superior al trabajo de extracción del material (correspondiente a 750 nm), por lo que se produce el efecto fotoeléctrico. La energía sobrante se convierte en energía cinética de los electrones, que son emitidos con una velocidad máxima de $1,08 \cdot 10^6$ m/s. Para frenar por completo estos electrones, se necesita aplicar un potencial de frenado de 3,32 V.
+\end{cajaconclusion}
+\newpage
+
+\subsection{Cuestión - OPCIÓN B}
+\label{subsec:B6B_2017_jun_ord}
+\begin{cajaenunciado}
+Indica razonadamente qué partícula se emite en cada uno de los pasos de la siguiente serie radiactiva, e identifícala con algún tipo de desintegración.
+$$ {}_{90}^{231}\text{Th} \to {}_{91}^{231}\text{Pa} \to {}_{89}^{227}\text{Ac} $$
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Primera desintegración:} ${}_{90}^{231}\text{Th} \to {}_{91}^{231}\text{Pa} + {}_{Z_1}^{A_1}X_1$.
+    \item \textbf{Segunda desintegración:} ${}_{91}^{231}\text{Pa} \to {}_{89}^{227}\text{Ac} + {}_{Z_2}^{A_2}X_2$.
+    \item \textbf{Incógnita:} Identificar las partículas $X_1$ y $X_2$ y el tipo de desintegración.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En cualquier reacción nuclear, se deben cumplir las \textbf{leyes de conservación de Soddy-Fajans}:
+\begin{enumerate}
+    \item \textbf{Conservación del número másico (A):} La suma de los números másicos de los reactivos debe ser igual a la suma de los números másicos de los productos.
+    \item \textbf{Conservación del número atómico (Z):} La suma de los números atómicos de los reactivos debe ser igual a la suma de los números atómicos de los productos.
+\end{enumerate}
+Las partículas radiactivas más comunes son:
+\begin{itemize}
+    \item \textbf{Partícula alfa ($\alpha$):} Un núcleo de Helio, ${}_{2}^{4}\text{He}$.
+    \item \textbf{Partícula beta menos ($\beta^-$):} Un electrón, ${}_{-1}^{0}\text{e}$.
+    \item \textbf{Partícula beta más ($\beta^+$):} Un positrón, ${}_{+1}^{0}\text{e}$.
+    \item \textbf{Radiación gamma ($\gamma$):} Un fotón de alta energía, ${}_{0}^{0}\gamma$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Primera desintegración: ${}_{90}^{231}\text{Th} \to {}_{91}^{231}\text{Pa}$}
+\begin{itemize}
+    \item Conservación de A: $231 = 231 + A_1 \implies A_1 = 0$.
+    \item Conservación de Z: $90 = 91 + Z_1 \implies Z_1 = -1$.
+\end{itemize}
+La partícula emitida es ${}_{-1}^{0}X_1$, que corresponde a un electrón.
+
+\paragraph{Segunda desintegración: ${}_{91}^{231}\text{Pa} \to {}_{89}^{227}\text{Ac}$}
+\begin{itemize}
+    \item Conservación de A: $231 = 227 + A_2 \implies A_2 = 4$.
+    \item Conservación de Z: $91 = 89 + Z_2 \implies Z_2 = 2$.
+\end{itemize}
+La partícula emitida es ${}_{2}^{4}X_2$, que corresponde a un núcleo de Helio.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No aplica, el resultado es la identificación de las partículas.
+\begin{cajaresultado}
+\begin{itemize}
+    \item En el primer paso (${}_{90}^{231}\text{Th} \to {}_{91}^{231}\text{Pa}$), se emite una partícula $\boldsymbol{{}_{-1}^{0}\text{e}}$, un electrón. Se trata de una \textbf{desintegración beta menos ($\beta^-$)}.
+    \item En el segundo paso (${}_{91}^{231}\text{Pa} \to {}_{89}^{227}\text{Ac}$), se emite una partícula $\boldsymbol{{}_{2}^{4}\text{He}}$, un núcleo de Helio. Se trata de una \textbf{desintegración alfa ($\alpha$)}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la aplicación de las leyes de conservación del número másico y el número atómico, se ha identificado la secuencia de desintegración. El Torio-231 se transforma en Protactinio-231 emitiendo una partícula beta menos (un neutrón se convierte en un protón). Posteriormente, el Protactinio-231 decae a Actinio-227 mediante la emisión de una partícula alfa.
+\end{cajaconclusion}
+\newpage
+```

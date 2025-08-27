@@ -1,0 +1,894 @@
+% !TEX root = ../main.tex
+\chapter{Examen Julio 2021 - Convocatoria Extraordinaria}
+\label{chap:2021_jul_ext}
+
+% ======================================================================
+\section{Cuestiones}
+\label{sec:cuestiones_2021_jul_ext}
+% ======================================================================
+
+\subsection{Cuestión 1}
+\label{subsec:C1_2021_jul_ext}
+
+\begin{cajaenunciado}
+Explica qué se entiende por fuerza conservativa y su relación con el concepto de energía potencial ¿Es lo mismo la energía potencial gravitatoria que el potencial gravitatorio? ¿En qué unidades del SI se mide cada una de estas dos magnitudes? Justifica las respuestas a partir de sus definiciones.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Este es un problema puramente teórico. Las incógnitas son las definiciones y distinciones entre varios conceptos físicos.
+\begin{itemize}
+    \item \textbf{Conceptos a definir:} Fuerza conservativa, Energía potencial.
+    \item \textbf{Conceptos a diferenciar:} Energía potencial gravitatoria, Potencial gravitatorio.
+    \item \textbf{Unidades a especificar:} Unidades del SI para la energía potencial y el potencial gravitatorio.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Trabajo de una Fuerza Conservativa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama que muestra un punto de inicio A y un punto final B en un campo de fuerza. Dibujar dos trayectorias diferentes y arbitrarias (una curva y otra más directa) que conecten A con B. Escribir la ecuación 'W(A->B) por trayectoria 1 = W(A->B) por trayectoria 2', para ilustrar la independencia del camino. Al lado, dibujar una trayectoria cerrada que empiece en A, vaya a B y vuelva a A, con la ecuación 'W(ciclo) = 0'." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{fuerza_conservativa.png}
+    }}
+    \caption{Independencia del camino para una fuerza conservativa.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Fuerza Conservativa y Energía Potencial}
+Una \textbf{fuerza es conservativa} si el trabajo que realiza para mover un objeto entre dos puntos es independiente de la trayectoria seguida. El trabajo solo depende de la posición inicial y final. Una consecuencia directa de esto es que el trabajo realizado por una fuerza conservativa a lo largo de una trayectoria cerrada es siempre nulo.
+
+La existencia de una fuerza conservativa permite definir una función escalar llamada \textbf{energía potencial ($E_p$)}. La relación fundamental es que el trabajo realizado por la fuerza conservativa ($W_c$) es igual al negativo de la variación de la energía potencial:
+$$ W_{c} = -\Delta E_p = -(E_{p, final} - E_{p, inicial}) $$
+Esta relación es la que conecta ambos conceptos: a toda fuerza conservativa se le puede asociar una energía potencial.
+
+\paragraph*{Energía Potencial Gravitatoria vs. Potencial Gravitatorio}
+No son el mismo concepto, aunque están íntimamente relacionados.
+\begin{itemize}
+    \item La \textbf{Energía Potencial Gravitatoria ($E_p$)} es una propiedad del \textit{sistema} formado por dos o más masas (por ejemplo, un planeta y un satélite). Representa la energía almacenada en el sistema debido a su configuración espacial y depende de la masa del objeto que se sitúa en el campo. Su valor es $E_p = m \cdot V$.
+    \item El \textbf{Potencial Gravitatorio ($V$)} es una propiedad del \textit{campo} gravitatorio en un punto del espacio, creado por una masa fuente. Representa la energía potencial por unidad de masa en ese punto. Es una característica del espacio que rodea a la masa fuente, independientemente de si hay o no otra masa allí.
+\end{itemize}
+
+\paragraph*{Unidades del Sistema Internacional (SI)}
+\begin{itemize}
+    \item La \textbf{Energía Potencial Gravitatoria}, al ser una forma de energía, se mide en \textbf{Julios (J)} en el SI.
+    \item El \textbf{Potencial Gravitatorio}, al ser energía por unidad de masa, se mide en \textbf{Julios por kilogramo (J/kg)} en el SI.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El problema es conceptual y no requiere tratamiento simbólico más allá de las definiciones.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+No se requieren cálculos numéricos.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Una fuerza conservativa es aquella cuyo trabajo no depende de la trayectoria, lo que permite definir una energía potencial asociada ($E_p$). No deben confundirse la energía potencial gravitatoria (energía de un sistema, en Joules) y el potencial gravitatorio (propiedad de un punto del campo, en J/kg). La primera es el producto de la masa de un objeto por el valor del segundo en su posición: $E_p = m \cdot V$.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 2}
+\label{subsec:C2_2021_jul_ext}
+
+\begin{cajaenunciado}
+Cuatro cargas puntuales están situadas en los vértices A, B, C y D de un cuadrado de 2 m de lado, como se indica en la figura. Si $q=\sqrt{2}/2$ nC, calcula y representa los vectores campo eléctrico generados por cada una de las cargas y el total, en el centro del cuadrado, punto O.
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Geometría:} Cuadrado de lado $L = 2 \, \text{m}$. El punto O es el centro.
+    \item \textbf{Cargas:} $q_A = q_B = q = \frac{\sqrt{2}}{2} \, \text{nC} = \frac{\sqrt{2}}{2} \cdot 10^{-9} \, \text{C}$.
+    $q_C = q_D = -q = -\frac{\sqrt{2}}{2} \cdot 10^{-9} \, \text{C}$.
+    \item \textbf{Constante de Coulomb:} $k = 9 \cdot 10^9 \, \text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:} Vectores $\vec{E}_A, \vec{E}_B, \vec{E}_C, \vec{E}_D$ y $\vec{E}_{total}$ en el punto O.
+\end{itemize}
+La distancia $r$ desde cualquier vértice al centro O es la mitad de la diagonal del cuadrado: $d = \sqrt{L^2+L^2} = L\sqrt{2}$.
+$r = \frac{d}{2} = \frac{2\sqrt{2}}{2} = \sqrt{2} \, \text{m}$.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo Eléctrico en el Centro del Cuadrado} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un cuadrado con vértices A, B, C, D en sentido anti-horario empezando desde abajo a la izquierda. Colocar cargas +q en A y B, y -q en C y D. En el centro O, dibujar los cuatro vectores de campo eléctrico: $\vec{E}_A$ apuntando de A hacia O (repulsivo); $\vec{E}_B$ apuntando de B hacia O (repulsivo); $\vec{E}_C$ apuntando de O hacia C (atractivo); $\vec{E}_D$ apuntando de O hacia D (atractivo). Mostrar gráficamente que $\vec{E}_A$ y $\vec{E}_C$ se suman, y $\vec{E}_B$ y $\vec{E}_D$ se suman. Luego, mostrar la suma vectorial final $\vec{E}_{total}$, que debe apuntar horizontalmente hacia la derecha." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{campo_cuadrado.png}
+    }}
+    \caption{Suma vectorial de los campos eléctricos en el punto O.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El campo eléctrico $\vec{E}$ creado por una carga puntual es $\vec{E} = k \frac{q}{r^2}\vec{u}_r$, donde $\vec{u}_r$ es un vector unitario que apunta desde la carga hacia el punto de cálculo. Si la carga es positiva, el campo es repulsivo (mismo sentido que $\vec{u}_r$), y si es negativa, es atractivo (sentido opuesto a $\vec{u}_r$).
+El campo total en el punto O es la suma vectorial de los campos creados por cada una de las cuatro cargas (Principio de Superposición).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El módulo del campo creado por cada carga es el mismo, ya que $|q|$ y $r$ son iguales para todas:
+\begin{gather}
+    |\vec{E}| = |\vec{E}_A| = |\vec{E}_B| = |\vec{E}_C| = |\vec{E}_D| = k \frac{|q|}{r^2}
+\end{gather}
+Definimos un sistema de coordenadas con O en el origen (0,0), A(-1,-1), B(-1,1), C(1,1) y D(1,-1).
+\begin{itemize}
+    \item $\vec{E}_A$: repulsivo, apunta de A hacia O. $\vec{E}_A = |\vec{E}|(\frac{1}{\sqrt{2}}\vec{i} + \frac{1}{\sqrt{2}}\vec{j})$
+    \item $\vec{E}_B$: repulsivo, apunta de B hacia O. $\vec{E}_B = |\vec{E}|(\frac{1}{\sqrt{2}}\vec{i} - \frac{1}{\sqrt{2}}\vec{j})$
+    \item $\vec{E}_C$: atractivo, apunta de O hacia C. $\vec{E}_C = |\vec{E}|(\frac{1}{\sqrt{2}}\vec{i} + \frac{1}{\sqrt{2}}\vec{j})$
+    \item $\vec{E}_D$: atractivo, apunta de O hacia D. $\vec{E}_D = |\vec{E}|(\frac{1}{\sqrt{2}}\vec{i} - \frac{1}{\sqrt{2}}\vec{j})$
+\end{itemize}
+Sumamos los vectores:
+$\vec{E}_{total} = \vec{E}_A + \vec{E}_B + \vec{E}_C + \vec{E}_D$. Las componentes verticales (en $\vec{j}$) se cancelan dos a dos.
+\begin{gather}
+    \vec{E}_{total} = 4 \cdot \left(|\vec{E}|\frac{1}{\sqrt{2}}\right) \vec{i} = \frac{4}{\sqrt{2}}|\vec{E}|\vec{i} = 2\sqrt{2}|\vec{E}|\vec{i}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero calculamos el módulo $|\vec{E}|$:
+\begin{gather}
+    |\vec{E}| = (9\cdot10^9) \frac{\frac{\sqrt{2}}{2}\cdot10^{-9}}{(\sqrt{2})^2} = \frac{9\cdot\frac{\sqrt{2}}{2}}{2} = \frac{9\sqrt{2}}{4} \, \text{N/C}
+\end{gather}
+Los vectores individuales son:
+\begin{itemize}
+    \item $\vec{E}_A = \frac{9\sqrt{2}}{4}(\frac{1}{\sqrt{2}}\vec{i} + \frac{1}{\sqrt{2}}\vec{j}) = (2,25\vec{i} + 2,25\vec{j}) \, \text{N/C}$
+    \item $\vec{E}_B = \frac{9\sqrt{2}}{4}(\frac{1}{\sqrt{2}}\vec{i} - \frac{1}{\sqrt{2}}\vec{j}) = (2,25\vec{i} - 2,25\vec{j}) \, \text{N/C}$
+    \item $\vec{E}_C = \frac{9\sqrt{2}}{4}(\frac{1}{\sqrt{2}}\vec{i} + \frac{1}{\sqrt{2}}\vec{j}) = (2,25\vec{i} + 2,25\vec{j}) \, \text{N/C}$
+    \item $\vec{E}_D = \frac{9\sqrt{2}}{4}(\frac{1}{\sqrt{2}}\vec{i} - \frac{1}{\sqrt{2}}\vec{j}) = (2,25\vec{i} - 2,25\vec{j}) \, \text{N/C}$
+\end{itemize}
+Ahora el campo total:
+\begin{gather}
+    \vec{E}_{total} = 2\sqrt{2} \left( \frac{9\sqrt{2}}{4} \right) \vec{i} = \frac{18 \cdot 2}{4} \vec{i} = 9 \vec{i} \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    Los campos individuales son:
+    \boldsymbol{$\vec{E}_A = \vec{E}_C = (2,25\vec{i} + 2,25\vec{j})\,$ N/C} y
+    \boldsymbol{$\vec{E}_B = \vec{E}_D = (2,25\vec{i} - 2,25\vec{j})\,$ N/C}.
+\end{cajaresultado}
+\begin{cajaresultado}
+    El campo eléctrico total en el centro del cuadrado es \boldsymbol{$\vec{E}_{total} = 9\vec{i} \, \textbf{N/C}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Debido a la simetría de la configuración, los campos de las cargas opuestas por la diagonal se refuerzan o cancelan parcialmente. Los campos de A y C se suman, al igual que los de B y D. Al realizar la suma vectorial total, las componentes verticales se anulan completamente, resultando en un campo neto que apunta horizontalmente hacia la derecha, con un módulo de 9 N/C.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 3}
+\label{subsec:C3_2021_jul_ext}
+
+\begin{cajaenunciado}
+Una partícula de carga $q<0$ entra con velocidad $\vec{v}$ en una región en la que hay un campo magnético uniforme normal al plano del papel, tal y como se muestra en la figura. Escribe la expresión del vector fuerza magnética que actúa sobre la carga. Razona si la trayectoria mostrada es correcta y representa razonadamente, en el punto P, los vectores velocidad y fuerza magnética.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partícula:} Carga $q < 0$.
+    \item \textbf{Velocidad inicial ($\vec{v}_{in}$):} Hacia la derecha, en el plano del papel.
+    \item \textbf{Campo magnético ($\vec{B}$):} Uniforme, perpendicular al papel y entrante.
+    \item \textbf{Trayectoria mostrada:} Semicircular y curvada hacia arriba.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresión de la fuerza magnética.
+        \item Veracidad de la trayectoria.
+        \item Representación de $\vec{v}$ y $\vec{F}_m$ en el punto P.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Fuerza de Lorentz sobre Carga Negativa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XYZ. El campo magnético $\vec{B}$ apunta en la dirección -Z (entrante, representado por cruces). Una partícula con carga 'q<0' entra desde la izquierda con velocidad $\vec{v}$ en la dirección +X. Usando la regla de la mano izquierda, mostrar que la fuerza magnética $\vec{F}_m = q(\vec{v} \times \vec{B})$ apunta en la dirección -Y (hacia abajo). Dibujar la trayectoria correcta, que es una curva semicircular hacia abajo. Marcar un punto P en el vértice inferior de la trayectoria. En P, el vector velocidad $\vec{v}_P$ es tangente a la curva (apunta en dirección -X). El vector fuerza $\vec{F}_{m,P}$ apunta hacia el centro de la curvatura (en la dirección +Y)." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{fuerza_lorentz_neg.png}
+    }}
+    \caption{Análisis correcto de la trayectoria y los vectores en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Fuerza de Lorentz}
+La fuerza magnética que actúa sobre una partícula de carga $q$ que se mueve con velocidad $\vec{v}$ en un campo magnético $\vec{B}$ viene dada por la expresión de la Fuerza de Lorentz:
+$$ \vec{F}_m = q(\vec{v} \times \vec{B}) $$
+La dirección de esta fuerza es siempre perpendicular tanto a la velocidad como al campo magnético. Para determinar su sentido, se utiliza la \textbf{regla de la mano derecha}: los dedos índice, corazón y pulgar apuntan en las direcciones de $\vec{v}$, $\vec{B}$ y $\vec{F}_m$ respectivamente. \textbf{Importante:} Si la carga $q$ es negativa, el sentido de la fuerza es el opuesto al que indica la regla de la mano derecha.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Expresión de la Fuerza Magnética}
+La expresión vectorial es, como se ha indicado, $\vec{F}_m = q(\vec{v} \times \vec{B})$.
+
+\paragraph*{b) Análisis de la Trayectoria}
+Definamos un sistema de referencia: $\vec{v}_{in} = v\vec{i}$, $\vec{B} = -B\vec{k}$.
+Calculamos el producto vectorial:
+$$ \vec{v} \times \vec{B} = (v\vec{i}) \times (-B\vec{k}) = -vB (\vec{i} \times \vec{k}) = -vB(-\vec{j}) = vB\vec{j} $$
+Sustituimos en la fuerza de Lorentz:
+$$ \vec{F}_m = q(vB\vec{j}) $$
+Dado que el enunciado dice que la carga es negativa ($q<0$), el vector fuerza $\vec{F}_m$ tendrá la misma dirección que $\vec{j}$ pero \textbf{sentido contrario}. Por lo tanto, la fuerza inicial apunta hacia abajo ($\vec{F}_m$ en sentido $-\vec{j}$).
+Una fuerza inicial hacia abajo provocaría una trayectoria curvada hacia abajo. La trayectoria mostrada en la figura, curvada hacia arriba, es incorrecta. Sería la trayectoria correcta para una carga positiva.
+
+\paragraph*{c) Vectores en el punto P}
+Asumiendo la trayectoria de la figura (incorrecta para q<0), el punto P está en el vértice de la semicircunferencia.
+\begin{itemize}
+    \item \textbf{Vector velocidad ($\vec{v}_P$):} Es siempre tangente a la trayectoria. En el punto P, la partícula se mueve horizontalmente hacia la izquierda. $\vec{v}_P = -v\vec{i}$.
+    \item \textbf{Vector fuerza magnética ($\vec{F}_{m,P}$):} Actúa como fuerza centrípeta, por lo que siempre apunta hacia el centro de la trayectoria circular. En el punto P, el centro está debajo, por lo que la fuerza apunta hacia abajo. $\vec{F}_{m,P}$ tiene sentido $-\vec{j}$.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es cualitativo y no requiere sustitución numérica.
+\begin{cajaresultado}
+    La expresión de la fuerza es \boldsymbol{$\vec{F}_m = q(\vec{v} \times \vec{B})$}. La trayectoria mostrada es \textbf{incorrecta}, ya que para una carga negativa la fuerza inicial sería hacia abajo.
+\end{cajaresultado}
+\begin{cajaresultado}
+    En el punto P de la trayectoria mostrada, el vector velocidad es tangente a ella (\textbf{hacia la izquierda}) y el vector fuerza es centrípeto (\textbf{hacia abajo}).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza de Lorentz sobre la carga negativa la desviaría inicialmente hacia abajo, por lo que la trayectoria mostrada es incorrecta. Si analizamos la trayectoria de la figura, en el punto P la velocidad es tangencial (horizontal a la izquierda) y la fuerza magnética es centrípeta (vertical hacia abajo), manteniendo la partícula en su trayectoria curva.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 4}
+\label{subsec:C4_2021_jul_ext}
+
+\begin{cajaenunciado}
+Una espira rectangular se sitúa en las cercanías de un hilo conductor rectilíneo de gran longitud, recorrido por una corriente eléctrica cuya intensidad aumenta con el tiempo. Razona por qué aparecerá una corriente en la espira, indica cuál será su sentido y enuncia la ley del electromagnetismo que explica este fenómeno.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de un problema teórico sobre inducción electromagnética.
+\begin{itemize}
+    \item \textbf{Sistema:} Un hilo rectilíneo con corriente $I(t)$ creciente y una espira rectangular cercana.
+    \item \textbf{Condición:} La intensidad $I$ aumenta con el tiempo.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Causa de la corriente inducida.
+        \item Sentido de dicha corriente.
+        \item Ley física que lo describe.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Inducción en una Espira} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un hilo conductor vertical muy largo con una corriente $I(t)$ apuntando hacia arriba. A la derecha del hilo, dibujar una espira rectangular. Usando la regla de la mano derecha, mostrar que el campo magnético $\vec{B}$ creado por el hilo atraviesa la espira en sentido entrante (representado por cruces). Indicar que como $I(t)$ aumenta, el flujo magnético $\Phi_B$ a través de la espira también aumenta. Según la ley de Lenz, se debe generar un campo inducido $\vec{B}_{ind}$ en sentido saliente (puntos). Usando la regla de la mano derecha para $\vec{B}_{ind}$, dibujar una flecha curva en la espira que indique el sentido antihorario de la corriente inducida $I_{ind}$." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{induccion_espira.png}
+    }}
+    \caption{Aplicación de la Ley de Faraday-Lenz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Ley del electromagnetismo que explica el fenómeno}
+El fenómeno se explica mediante la \textbf{Ley de Faraday-Lenz}. Esta ley fundamental del electromagnetismo establece que siempre que varía el flujo magnético ($\Phi_B$) a través de la superficie de un circuito cerrado, se induce en dicho circuito una fuerza electromotriz (f.e.m., $\varepsilon$) y, por tanto, una corriente eléctrica.
+La f.e.m. inducida es directamente proporcional a la rapidez con la que cambia el flujo:
+$$ \varepsilon = - \frac{d\Phi_B}{dt} $$
+El signo negativo corresponde a la \textbf{Ley de Lenz}.
+
+\paragraph*{Razón por la que aparece una corriente inducida}
+\begin{enumerate}
+    \item El hilo conductor con corriente $I(t)$ crea un campo magnético $\vec{B}$ a su alrededor, cuyas líneas de campo son círculos concéntricos al hilo.
+    \item Este campo magnético atraviesa la superficie de la espira rectangular, creando un flujo magnético $\Phi_B$ a través de ella.
+    \item Como la intensidad $I$ aumenta con el tiempo, el módulo del campo magnético $B$ también aumenta.
+    \item Este aumento de $B$ provoca una variación (un aumento) del flujo magnético a través de la espira ($\frac{d\Phi_B}{dt} \neq 0$).
+    \item Según la Ley de Faraday-Lenz, esta variación de flujo induce una f.e.m. en la espira, que a su vez genera una corriente eléctrica inducida.
+\end{enumerate}
+
+\paragraph*{Sentido de la corriente inducida (Ley de Lenz)}
+La Ley de Lenz establece que el sentido de la corriente inducida es tal que el campo magnético que esta crea ($\vec{B}_{ind}$) se opone a la variación del flujo magnético que la originó.
+\begin{enumerate}
+    \item Asumiendo que la corriente $I$ en el hilo sube, la regla de la mano derecha nos dice que el campo magnético $\vec{B}$ que atraviesa la espira es \textbf{entrante} al plano del papel.
+    \item Como $I$ aumenta, el flujo magnético entrante está aumentando.
+    \item Para oponerse a este aumento, la corriente inducida en la espira debe generar un campo magnético inducido $\vec{B}_{ind}$ que sea \textbf{saliente} del plano del papel.
+    \item Aplicando de nuevo la regla de la mano derecha a la espira, un campo saliente es generado por una corriente que circula en sentido \textbf{antihorario}.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+El problema es enteramente cualitativo.
+
+\subsubsection*{5. Conclusión}
+\begin{cajaconclusion}
+Aparecerá una corriente inducida en la espira debido a que la corriente creciente en el hilo genera un campo magnético y un flujo magnético variables en el tiempo a través de la espira. El fenómeno se rige por la \textbf{Ley de Faraday-Lenz}. El sentido de esta corriente será \textbf{antihorario}, ya que debe generar un campo magnético que se oponga al aumento del flujo magnético entrante creado por el hilo.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 5}
+\label{subsec:C5_2021_jul_ext}
+
+\begin{cajaenunciado}
+Escribe la expresión del nivel sonoro (en dB) en función de la intensidad de un sonido. Un auricular produce en la entrada del oído un nivel sonoro de 80 dB. Calcula la intensidad sonora en ese punto en $\text{W/m}^2$.
+\textbf{Dato:} Intensidad umbral de referencia $I_0=10^{-12}\,\text{W/m}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Nivel sonoro ($\beta$):} $\beta = 80 \, \text{dB}$.
+    \item \textbf{Intensidad umbral de audición ($I_0$):} $I_0 = 10^{-12} \, \text{W/m}^2$.
+    \item \textbf{Incógnita:} Intensidad sonora ($I$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Nivel de Intensidad Sonora}
+El oído humano percibe el sonido en una escala logarítmica. Por ello, se define el nivel de intensidad sonora ($\beta$) en decibelios (dB) mediante la siguiente expresión:
+$$ \beta (\text{dB}) = 10 \log_{10}\left(\frac{I}{I_0}\right) $$
+donde $I$ es la intensidad del sonido y $I_0$ es la intensidad umbral de audición, que es la mínima intensidad que un oído humano promedio puede detectar.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Para calcular la intensidad $I$ a partir del nivel sonoro $\beta$, debemos despejarla de la ecuación:
+\begin{gather}
+    \beta = 10 \log_{10}\left(\frac{I}{I_0}\right) \nonumber \\
+    \frac{\beta}{10} = \log_{10}\left(\frac{I}{I_0}\right) \nonumber \\
+\end{gather}
+Aplicando la definición de logaritmo (exponenciación), obtenemos:
+\begin{gather}
+    10^{\beta/10} = \frac{I}{I_0} \nonumber \\
+    I = I_0 \cdot 10^{\beta/10}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores dados en la expresión despejada:
+\begin{gather}
+    I = (10^{-12} \, \text{W/m}^2) \cdot 10^{80/10} = 10^{-12} \cdot 10^8 = 10^{-4} \, \text{W/m}^2
+\end{gather}
+\begin{cajaresultado}
+    La intensidad sonora en ese punto es \boldsymbol{$I = 10^{-4} \, \textbf{W/m}^2$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La relación entre el nivel de intensidad sonora en decibelios y la intensidad en $\text{W/m}^2$ es logarítmica. Invirtiendo esta relación, se calcula que un nivel sonoro de 80 dB, típico de un entorno con mucho tráfico o un despertador, corresponde a una intensidad física de $10^{-4} \, \text{W/m}^2$.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 6}
+\label{subsec:C6_2021_jul_ext}
+
+\begin{cajaenunciado}
+Deduce la relación entre la distancia objeto, s, y la distancia focal imagen, $f'$, de una lente para que la imagen sea invertida y de doble tamaño que el objeto.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Condición 1:} La imagen es \textbf{invertida}. Esto implica que el aumento lateral $M$ es negativo.
+    \item \textbf{Condición 2:} La imagen es de \textbf{doble tamaño} que el objeto. Esto implica que el valor absoluto del aumento es 2, $|M|=2$.
+    \item \textbf{Aumento lateral (M):} Combinando ambas condiciones, $M = -2$.
+    \item \textbf{Incógnita:} Relación entre la posición del objeto ($s$) y la distancia focal imagen ($f'$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Imagen Real, Invertida y Aumentada} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un eje óptico horizontal. En el centro, una lente convergente. Marcar el foco objeto F a la izquierda y el foco imagen F' a la derecha. Colocar un objeto (flecha vertical hacia arriba) entre F y 2F (por ejemplo, en s = -1.5f'). Realizar el trazado de dos rayos: 1) Un rayo paralelo al eje que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico sin desviarse. Mostrar que los rayos se cruzan a la derecha de la lente, formando una imagen real (flecha vertical hacia abajo), invertida y de mayor tamaño. Etiquetar F, F', s, s'." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{lente_invertida.png}
+    }}
+    \caption{Trazado de rayos para M=-2 (lente convergente).}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para resolver el problema, se necesitan dos ecuaciones fundamentales de la óptica geométrica para lentes delgadas:
+\begin{enumerate}
+    \item \textbf{Ecuación del aumento lateral ($M$):} Relaciona el aumento con las posiciones de objeto e imagen.
+    $$ M = \frac{s'}{s} $$
+    \item \textbf{Ecuación de Gauss de las lentes delgadas:} Relaciona las posiciones de objeto e imagen con la distancia focal.
+    $$ \frac{1}{s'} - \frac{1}{s} = \frac{1}{f'} $$
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El objetivo es combinar las dos ecuaciones para eliminar la variable $s'$ y obtener una relación entre $s$ y $f'$.
+Paso 1: Usar la condición de aumento para expresar $s'$ en función de $s$.
+\begin{gather}
+    M = -2 \implies \frac{s'}{s} = -2 \implies s' = -2s
+\end{gather}
+Paso 2: Sustituir esta expresión de $s'$ en la ecuación de Gauss.
+\begin{gather}
+    \frac{1}{(-2s)} - \frac{1}{s} = \frac{1}{f'}
+\end{gather}
+Paso 3: Operar algebraicamente para despejar la relación pedida.
+\begin{gather}
+    -\frac{1}{2s} - \frac{2}{2s} = \frac{1}{f'} \nonumber \\
+    -\frac{3}{2s} = \frac{1}{f'} \nonumber \\
+    -3f' = 2s \implies s = -\frac{3}{2}f'
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es puramente simbólico y no requiere valores numéricos.
+\begin{cajaresultado}
+    La relación deducida es \boldsymbol{$s = -\frac{3}{2}f'$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para obtener una imagen invertida ($M<0$) y de doble tamaño ($|M|=2$), se debe cumplir que la posición de la imagen sea $s'=-2s$. Al introducir esta condición en la ecuación de las lentes delgadas, se deduce que el objeto debe situarse en la posición $s = -1,5 f'$. Dado que la posición del objeto $s$ debe ser negativa (objeto real), esto implica que la distancia focal $f'$ debe ser positiva, por lo que la lente ha de ser convergente, y el objeto debe situarse entre una y dos veces la distancia focal.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 7}
+\label{subsec:C7_2021_jul_ext}
+
+\begin{cajaenunciado}
+Describe en qué consiste la hipermetropía. Explica razonadamente el fenómeno con ayuda de un trazado de rayos. ¿Con qué tipo de lente debe corregirse y por qué?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica sobre defectos de la visión.
+\begin{itemize}
+    \item \textbf{Defecto a describir:} Hipermetropía.
+    \item \textbf{Requisitos:} Explicación, trazado de rayos y método de corrección.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Ojo Hipermétrope} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de un ojo humano visto de perfil. Mostrar rayos de luz paralelos (de un objeto lejano) entrando en el ojo a través de la córnea y el cristalino. Dibujar cómo estos rayos convergen en un punto focal situado *detrás* de la retina." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{ojo_hipermetrope.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Corrección con Lente} \vspace{0.5cm} \textit{Prompt para la imagen:} "El mismo esquema del ojo hipermétrope, pero ahora con una lente convergente (convexa) colocada delante. Mostrar cómo la lente convergente empieza a desviar los rayos paralelos hacia adentro antes de que lleguen al ojo. El cristalino del ojo luego termina de converger los rayos, y ahora el punto focal cae exactamente sobre la retina." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{correccion_hipermetropia.png}
+    }}
+    \caption{Esquema de la hipermetropía y su corrección.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Descripción de la Hipermetropía}
+La hipermetropía es un defecto refractivo del ojo que causa que las imágenes de objetos cercanos se vean borrosas, aunque la visión de lejos puede ser buena. El problema reside en que el sistema óptico del ojo (córnea y cristalino) no tiene suficiente potencia de convergencia, o el globo ocular es demasiado corto. Como resultado, cuando el ojo está en un estado relajado, los rayos de luz paralelos que provienen de un objeto lejano no se enfocan sobre la retina, sino en un punto imaginario detrás de ella. Para ver nítidamente, el ojo hipermétrope debe hacer un esfuerzo de acomodación constante (contraer el músculo ciliar para aumentar la curvatura y potencia del cristalino), incluso para ver de lejos, lo que puede provocar fatiga visual y dolores de cabeza.
+
+\paragraph*{Trazado de Rayos}
+Como se muestra en la figura de la izquierda, los rayos paralelos que inciden en el ojo son refractados por el cristalino, pero su punto de convergencia (foco) queda más allá de la retina. La imagen formada en la retina es un círculo borroso en lugar de un punto nítido.
+
+\paragraph*{Tipo de Lente para la Corrección}
+Para corregir la hipermetropía, es necesario aumentar la potencia de convergencia del sistema óptico. Esto se logra colocando una \textbf{lente convergente} (convexa) delante del ojo (en gafas o lentillas). Esta lente realiza una primera convergencia de los rayos de luz antes de que entren en el ojo. De esta manera, el cristalino ya no necesita hacer un esfuerzo tan grande, y la imagen final puede formarse correctamente sobre la retina. La lente convergente "ayuda" al sistema óptico del ojo a enfocar la luz.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+El problema es enteramente cualitativo.
+
+\subsubsection*{5. Conclusión}
+\begin{cajaconclusion}
+La hipermetropía es un defecto visual donde el ojo enfoca las imágenes detrás de la retina, generalmente por falta de potencia de convergencia o por un globo ocular corto. Esto provoca una visión borrosa de cerca. Se corrige anteponiendo una \textbf{lente convergente}, que añade la potencia refractiva necesaria para que el punto focal se desplace hacia adelante y se sitúe exactamente sobre la retina, permitiendo una visión nítida.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 8}
+\label{subsec:C8_2021_jul_ext}
+
+\begin{cajaenunciado}
+Escribe las expresiones de la energía total y de la energía cinética de un cuerpo, en relación con su velocidad relativista, explicando la diferencia entre ambas energías. Una partícula cuya energía en reposo es $E_0 = 135\,\text{MeV}$, se mueve con una velocidad $v=0,5c$. Calcula la energía relativista de la partícula en MeV y su energía cinética en julios.
+\textbf{Dato:} carga elemental, $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Energía en reposo ($E_0$):} $E_0 = 135 \, \text{MeV}$.
+    \item \textbf{Velocidad de la partícula ($v$):} $v=0,5c$.
+    \item \textbf{Carga elemental ($e$):} $e = 1,6 \cdot 10^{-19} \, \text{C}$ (necesaria para la conversión de eV a J).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresiones de energía total ($E$) y cinética ($E_c$).
+        \item Diferencia entre $E$ y $E_c$.
+        \item Valor de $E$ en MeV.
+        \item Valor de $E_c$ en Julios.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Expresiones de la Energía Relativista}
+Según la Teoría de la Relatividad Especial de Einstein:
+\begin{itemize}
+    \item \textbf{Energía en Reposo ($E_0$):} Es la energía intrínseca de una partícula por el hecho de tener masa ($m_0$). Se calcula como $E_0 = m_0 c^2$.
+    \item \textbf{Energía Total Relativista ($E$):} Es la energía total de una partícula en movimiento. Aumenta con la velocidad. Se calcula como $E = \gamma m_0 c^2 = \gamma E_0$, donde $\gamma$ es el factor de Lorentz $\gamma = (1-v^2/c^2)^{-1/2}$.
+    \item \textbf{Energía Cinética Relativista ($E_c$):} Es la energía debida al movimiento. Se define como la diferencia entre la energía total y la energía en reposo. $E_c = E - E_0 = (\gamma - 1)m_0 c^2 = (\gamma - 1)E_0$.
+\end{itemize}
+\paragraph*{Diferencia entre Energía Total y Cinética}
+La \textbf{energía total} de una partícula incluye tanto su energía intrínseca debida a su masa (energía en reposo) como la energía adicional que posee por estar en movimiento (energía cinética). La \textbf{energía cinética} es, por tanto, solo la parte de la energía total que se debe a la velocidad de la partícula. En física clásica, la energía en reposo no se considera y la energía total de una partícula libre es simplemente su energía cinética.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Paso 1: Calcular el factor de Lorentz $\gamma$.
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - (v/c)^2}}
+\end{gather}
+Paso 2: Calcular la energía total $E$.
+\begin{gather}
+    E = \gamma E_0
+\end{gather}
+Paso 3: Calcular la energía cinética $E_c$ en MeV.
+\begin{gather}
+    E_c = E - E_0
+\end{gather}
+Paso 4: Convertir $E_c$ de MeV a Julios.
+$1 \, \text{MeV} = 10^6 \, \text{eV} = 10^6 \cdot (1,6 \cdot 10^{-19} \, \text{J})$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Paso 1:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - (0,5c/c)^2}} = \frac{1}{\sqrt{1 - 0,25}} = \frac{1}{\sqrt{0,75}} \approx 1,1547
+\end{gather}
+Paso 2:
+\begin{gather}
+    E = 1,1547 \cdot (135 \, \text{MeV}) \approx 155,88 \, \text{MeV}
+\end{gather}
+\begin{cajaresultado}
+    La energía total relativista de la partícula es \boldsymbol{$E \approx 155,88 \, \textbf{MeV}$}.
+\end{cajaresultado}
+Paso 3 y 4:
+\begin{gather}
+    E_c = 155,88 \, \text{MeV} - 135 \, \text{MeV} = 20,88 \, \text{MeV} \\
+    E_c (\text{J}) = 20,88 \cdot 10^6 \, \text{eV} \times \frac{1,6 \cdot 10^{-19} \, \text{J}}{1 \, \text{eV}} \approx 3,34 \cdot 10^{-12} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía cinética de la partícula es \boldsymbol{$E_c \approx 3,34 \cdot 10^{-12} \, \textbf{J}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La energía total de una partícula en movimiento incluye su energía en reposo más su energía cinética. Para la partícula dada, que se mueve al 50\% de la velocidad de la luz, su energía total aumenta de 135 MeV a 155,88 MeV. El incremento, que corresponde a la energía cinética, es de 20,88 MeV, equivalentes a $3,34 \cdot 10^{-12}$ J.
+\end{cajaconclusion}
+\newpage
+% ======================================================================
+\section{Problemas}
+\label{sec:problemas_2021_jul_ext}
+% ======================================================================
+
+\subsection{Problema 1}
+\label{subsec:P1_2021_jul_ext}
+
+\begin{cajaenunciado}
+La Estación Espacial Internacional tiene una masa $m=4\cdot10^5\,\text{kg}$ y describe una órbita circular alrededor de la Tierra a una altura sobre su superficie $h=400\,\text{km}$.
+\begin{enumerate}
+    \item[a)] Calcula las energías potencial, cinética y mecánica de la Estación en su movimiento por dicha órbita. (1 punto)
+    \item[b)] Calcula la energía que se debe aportar a la estación para que se sitúe en una órbita en la que su energía mecánica sea $E=-2\cdot10^{12}\,\text{J}$. Calcula su velocidad en dicha órbita. (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2\text{kg}^{-2}$; masa de la Tierra, $M_T=6\cdot10^{24}\,\text{kg}$; radio de la Tierra, $R_T=6,4\cdot10^6\,\text{m}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa de la Estación (m):} $m = 4 \cdot 10^5 \, \text{kg}$.
+    \item \textbf{Altura orbital inicial ($h_1$):} $h_1 = 400 \, \text{km} = 4 \cdot 10^5 \, \text{m}$.
+    \item \textbf{Energía mecánica final ($E_{m2}$):} $E_{m2} = -2 \cdot 10^{12} \, \text{J}$.
+    \item \textbf{Constantes:} $G = 6,67 \cdot 10^{-11} \, \text{N}\text{m}^2\text{kg}^{-2}$, $M_T = 6 \cdot 10^{24} \, \text{kg}$, $R_T = 6,4 \cdot 10^6 \, \text{m}$.
+    \item \textbf{Radio orbital inicial ($r_1$):} $r_1 = R_T + h_1 = 6,4 \cdot 10^6 + 0,4 \cdot 10^6 = 6,8 \cdot 10^6 \, \text{m}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] $E_{p1}, E_{c1}, E_{m1}$.
+        \item[b)] Energía a aportar ($\Delta E$), velocidad en la nueva órbita ($v_2$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Cambio de Órbita de la ISS} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama de la Tierra en el centro. Dibujar una primera órbita circular a un radio $r_1$ con la Estación Espacial Internacional (ISS) en ella. Etiquetar esta órbita como 'Órbita 1'. Dibujar una segunda órbita circular, más alejada, a un radio $r_2 > r_1$, etiquetada como 'Órbita 2'. Mostrar una flecha en espiral que represente la trayectoria de transferencia desde la órbita 1 a la 2, etiquetada como '$\Delta E$ aportada'." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{cambio_orbita.png}
+    }}
+    \caption{Esquema del cambio de órbita de la estación espacial.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Energías en Órbita Circular}
+Para un satélite de masa $m$ en órbita circular de radio $r$ alrededor de una masa central $M$:
+\begin{itemize}
+    \item \textbf{Energía Potencial:} $E_p = -G\frac{Mm}{r}$.
+    \item \textbf{Energía Cinética:} Se deduce igualando la fuerza gravitatoria a la centrípeta: $G\frac{Mm}{r^2} = \frac{mv^2}{r} \implies mv^2 = G\frac{Mm}{r}$. La energía cinética es $E_c = \frac{1}{2}mv^2 = G\frac{Mm}{2r}$.
+    \item \textbf{Energía Mecánica:} Es la suma de ambas, $E_m = E_p + E_c = -G\frac{Mm}{r} + G\frac{Mm}{2r} = -G\frac{Mm}{2r}$.
+\end{itemize}
+De estas relaciones se deduce el \textbf{Teorema del Virial} para órbitas circulares: $E_c = -E_m = -\frac{1}{2}E_p$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Energías en la primera órbita ($r_1$)}
+\begin{gather}
+    E_{p1} = -G\frac{M_T m}{r_1} \\
+    E_{c1} = G\frac{M_T m}{2r_1} \\
+    E_{m1} = -G\frac{M_T m}{2r_1}
+\end{gather}
+\paragraph*{b) Energía aportada y velocidad en la segunda órbita}
+La energía a aportar es la diferencia entre la energía mecánica final y la inicial:
+\begin{gather}
+    \Delta E = E_{m2} - E_{m1}
+\end{gather}
+La velocidad en la nueva órbita ($v_2$) se relaciona con su energía cinética ($E_{c2}$). Usando el teorema del virial para la nueva órbita, sabemos que $E_{c2} = -E_{m2}$.
+\begin{gather}
+    E_{c2} = \frac{1}{2} m v_2^2 \implies v_2 = \sqrt{\frac{2 E_{c2}}{m}} = \sqrt{\frac{-2 E_{m2}}{m}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Energías en la órbita inicial}
+\begin{gather}
+    E_{p1} = -(6,67\cdot10^{-11}) \frac{(6\cdot10^{24})(4\cdot10^5)}{6,8\cdot10^6} \approx -2,354 \cdot 10^{13} \, \text{J} \\
+    E_{c1} = -\frac{1}{2} E_{p1} \approx -\frac{1}{2}(-2,354 \cdot 10^{13}) \approx 1,177 \cdot 10^{13} \, \text{J} \\
+    E_{m1} = E_{p1} + E_{c1} \approx -2,354 \cdot 10^{13} + 1,177 \cdot 10^{13} \approx -1,177 \cdot 10^{13} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    $E_{p1} \approx -2,35 \cdot 10^{13} \, \text{J}$, $E_{c1} \approx 1,18 \cdot 10^{13} \, \text{J}$, $E_{m1} \approx -1,18 \cdot 10^{13} \, \text{J}$.
+\end{cajaresultado}
+\paragraph*{b) Energía aportada y nueva velocidad}
+\begin{gather}
+    \Delta E = (-2 \cdot 10^{12} \, \text{J}) - (-1,177 \cdot 10^{13} \, \text{J}) = -2 \cdot 10^{12} + 11,77 \cdot 10^{12} = 9,77 \cdot 10^{12} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía que se debe aportar es \boldsymbol{$\Delta E \approx 9,77 \cdot 10^{12} \, \textbf{J}$}.
+\end{cajaresultado}
+Ahora calculamos la nueva velocidad $v_2$:
+\begin{gather}
+    v_2 = \sqrt{\frac{-2(-2\cdot10^{12})}{4\cdot10^5}} = \sqrt{\frac{4\cdot10^{12}}{4\cdot10^5}} = \sqrt{10^7} \approx 3162 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad en la nueva órbita es \boldsymbol{$v_2 \approx 3162 \, \textbf{m/s}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En su órbita inicial a 400 km de altura, la Estación Espacial Internacional tiene una energía mecánica de $-1,18 \cdot 10^{13}$ J. Para moverla a una órbita superior con una energía de $-2 \cdot 10^{12}$ J (una energía mayor, al ser menos negativa), es necesario suministrarle $9,77 \cdot 10^{12}$ J. En esta nueva órbita, que está más alejada de la Tierra, la estación se moverá más lentamente, a una velocidad de 3162 m/s.
+\end{cajaconclusion}
+\newpage
+\subsection{Problema 2}
+\label{subsec:P2_2021_jul_ext}
+
+\begin{cajaenunciado}
+Una partícula con carga negativa entra con velocidad constante $\vec{v}=2\cdot10^5\vec{j}\,\text{m/s}$ en una región del espacio en la que hay un campo eléctrico uniforme $\vec{E}=4\cdot10^4\vec{i}\,\text{N/C}$ y un campo magnético uniforme $\vec{B}=-B\vec{k}\,\text{T}$, siendo $B>0$.
+\begin{enumerate}
+    \item[a)] Calcula el valor de B necesario para que el movimiento de la partícula sea rectilíneo y uniforme. Representa claramente los vectores $\vec{v}$, $\vec{E}$, $\vec{B}$, la fuerza magnética y la fuerza eléctrica. (1 punto)
+    \item[b)] En un instante dado se anula el campo eléctrico y el módulo de la fuerza que actúa sobre la partícula a partir de ese instante es $6,4\cdot10^{-15}\,\text{N}$. Determina el valor de la carga de la partícula. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga de la partícula (q):} $q < 0$.
+    \item \textbf{Velocidad ($\vec{v}$):} $\vec{v} = 2 \cdot 10^5 \vec{j} \, \text{m/s}$.
+    \item \textbf{Campo eléctrico ($\vec{E}$):} $\vec{E} = 4 \cdot 10^4 \vec{i} \, \text{N/C}$.
+    \item \textbf{Campo magnético ($\vec{B}$):} $\vec{B} = -B\vec{k} \, \text{T}$, con $B > 0$.
+    \item \textbf{Condición (a):} Movimiento rectilíneo y uniforme (MRU).
+    \item \textbf{Fuerza en (b):} $|F| = 6,4 \cdot 10^{-15} \, \text{N}$ (cuando $\vec{E}=0$).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Módulo del campo magnético $B$.
+        \item[b)] Valor de la carga $q$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Selector de Velocidades} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XYZ. Dibujar un vector velocidad $\vec{v}$ a lo largo del eje Y positivo. Dibujar un vector campo eléctrico $\vec{E}$ a lo largo del eje X positivo. Dibujar un vector campo magnético $\vec{B}$ a lo largo del eje Z negativo (entrante). Para una carga negativa q, dibujar el vector fuerza eléctrica $\vec{F}_e$ en sentido opuesto a $\vec{E}$ (a lo largo de -X). Usando la regla de la mano izquierda para una carga negativa (o la derecha y luego invirtiendo), mostrar que la fuerza magnética $\vec{F}_m = q(\vec{v} \times \vec{B})$ apunta a lo largo del eje X positivo. Dibujar $\vec{F}_e$ y $\vec{F}_m$ como vectores opuestos de igual longitud." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{selector_velocidad.png}
+    }}
+    \caption{Esquema de las fuerzas en el selector de velocidades.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Fuerza de Lorentz}
+Una partícula cargada que se mueve en una región con campos eléctrico y magnético experimenta la fuerza de Lorentz, que es la suma de la fuerza eléctrica y la magnética:
+$$ \vec{F} = \vec{F}_e + \vec{F}_m = q\vec{E} + q(\vec{v} \times \vec{B}) $$
+\paragraph*{Condición de Selector de Velocidades}
+Para que una partícula siga un movimiento rectilíneo y uniforme (MRU), la fuerza neta sobre ella debe ser cero, según la primera ley de Newton. Esto ocurre cuando la fuerza eléctrica y la fuerza magnética se cancelan mutuamente: $\vec{F}_e = -\vec{F}_m$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Cálculo de B}
+Calculamos las dos fuerzas por separado:
+\begin{itemize}
+    \item Fuerza eléctrica: $\vec{F}_e = q\vec{E} = q(4 \cdot 10^4 \vec{i})$.
+    \item Fuerza magnética: $\vec{F}_m = q(\vec{v} \times \vec{B}) = q((2 \cdot 10^5 \vec{j}) \times (-B\vec{k})) = -qB(2 \cdot 10^5)(\vec{j} \times \vec{k}) = -qB(2 \cdot 10^5)\vec{i}$.
+\end{itemize}
+Imponemos la condición de fuerza neta nula: $\vec{F}_e + \vec{F}_m = 0$.
+\begin{gather}
+    q(4 \cdot 10^4 \vec{i}) - qB(2 \cdot 10^5)\vec{i} = 0
+\end{gather}
+Como $q \neq 0$, podemos dividir toda la ecuación por $q$:
+\begin{gather}
+    4 \cdot 10^4 - B(2 \cdot 10^5) = 0 \implies B = \frac{4 \cdot 10^4}{2 \cdot 10^5}
+\end{gather}
+\paragraph*{b) Valor de la carga q}
+Cuando $\vec{E}=0$, la única fuerza es la magnética: $\vec{F} = \vec{F}_m$. Su módulo es:
+\begin{gather}
+    |\vec{F}| = |\vec{F}_m| = |-qB(2\cdot10^5)\vec{i}| = |q| B v
+\end{gather}
+Despejamos $|q|$ de esta expresión. El signo de $q$ lo conocemos por el enunciado.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Valor de B}
+\begin{gather}
+    B = \frac{4 \cdot 10^4}{2 \cdot 10^5} = 0,2 \, \text{T}
+\end{gather}
+\begin{cajaresultado}
+    El valor del campo magnético necesario es \boldsymbol{$B = 0,2 \, \textbf{T}$}.
+\end{cajaresultado}
+\paragraph*{b) Valor de la carga q}
+\begin{gather}
+    6,4 \cdot 10^{-15} = |q| \cdot (0,2) \cdot (2 \cdot 10^5) = |q| \cdot (4 \cdot 10^4) \\
+    |q| = \frac{6,4 \cdot 10^{-15}}{4 \cdot 10^4} = 1,6 \cdot 10^{-19} \, \text{C}
+\end{gather}
+Como el enunciado especifica que la carga es negativa, $q = -1,6 \cdot 10^{-19} \, \text{C}$.
+\begin{cajaresultado}
+    El valor de la carga de la partícula es $\boldsymbol{q = -1,6 \cdot 10^{-19} \, \textbf{C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que la partícula no se desvíe, la fuerza eléctrica (hacia $-X$ por ser $q<0$) debe ser compensada por la fuerza magnética (hacia $+X$), lo que requiere un campo magnético de 0,2 T. Al anularse el campo eléctrico, la partícula queda sometida únicamente a la fuerza magnética, de cuyo módulo se deduce que el valor de la carga es el de un electrón, $-1,6 \cdot 10^{-19}$ C.
+\end{cajaconclusion}
+\newpage
+\subsection{Problema 3}
+\label{subsec:P3_2021_jul_ext}
+
+\begin{cajaenunciado}
+A través de una lente delgada se observa el ojo de una persona. Sabiendo que la lente se sitúa a 4 cm del ojo y teniendo en cuenta los datos de la figura (Objeto: 2,0 cm; Imagen a través de la lente: 3,0 cm), determina:
+\begin{enumerate}
+    \item[a)] La posición de la imagen, la distancia focal imagen de la lente y su potencia en dioptrías. Realiza un trazado de rayos que presente la situación mostrada. (1 punto)
+    \item[b)] ¿La lente es convergente o divergente? ¿La imagen es real o virtual? ¿De qué tamaño se verá el ojo si alejamos la lente del ojo 1,5 cm más? (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tamaño del objeto (ojo, y):} $y = 2,0 \, \text{cm}$.
+    \item \textbf{Tamaño de la imagen ($y'$):} $y' = 3,0 \, \text{cm}$.
+    \item \textbf{Posición inicial del objeto ($s_1$):} El ojo está a 4 cm de la lente, $s_1 = -4,0 \, \text{cm} = -0,04 \, \text{m}$.
+    \item \textbf{Nueva posición del objeto ($s_2$):} Se aleja 1,5 cm, $s_2 = -(4,0 + 1,5) = -5,5 \, \text{cm}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Posición de la imagen ($s'_1$), distancia focal ($f'$), potencia ($P$), trazado de rayos.
+        \item[b)] Tipo de lente, tipo de imagen, nuevo tamaño de la imagen ($y'_2$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Trazado de Rayos (Lupa)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un eje óptico horizontal. En el centro, una lente convergente. Marcar el foco imagen F' a +12 cm y el foco objeto F a -12 cm. Colocar un objeto vertical de 2 cm de alto en la posición s=-4 cm. Trazar un rayo desde la punta del objeto, paralelo al eje, que se refracta pasando por F'. Trazar un segundo rayo desde la punta del objeto que pasa por el centro óptico sin desviarse. Prolongar ambos rayos refractados hacia atrás con líneas discontinuas. Mostrar que se cruzan en s'=-6 cm, formando una imagen virtual, derecha y de 3 cm de alto. Etiquetar F, F', s, s', y, y'." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{lente_ojo.png}
+    }}
+    \caption{Trazado de rayos para la formación de la imagen del ojo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplican la \textbf{ecuación de las lentes delgadas} y la fórmula del \textbf{aumento lateral}.
+$$ \frac{1}{s'} - \frac{1}{s} = \frac{1}{f'} \quad ; \quad M = \frac{y'}{y} = \frac{s'}{s} $$
+La potencia $P$ se calcula como $P = 1/f'$ (con $f'$ en metros).
+Una lente es convergente si $f' > 0$ y divergente si $f' < 0$. Una imagen es virtual si $s' < 0$ y real si $s' > 0$. La imagen es derecha (no invertida), como se ve en la foto, por lo que el aumento $M$ es positivo.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Posición de la imagen, focal y potencia}
+Calculamos el aumento $M$ a partir de los tamaños.
+\begin{gather}
+    M = \frac{y'}{y}
+\end{gather}
+Usamos $M$ para encontrar la posición de la imagen $s'_1$.
+\begin{gather}
+    M = \frac{s'_1}{s_1} \implies s'_1 = M \cdot s_1
+\end{gather}
+Con $s_1$ y $s'_1$, usamos la ecuación de las lentes para hallar $f'$.
+\begin{gather}
+    \frac{1}{f'} = \frac{1}{s'_1} - \frac{1}{s_1} \implies f' = \left( \frac{1}{s'_1} - \frac{1}{s_1} \right)^{-1} \\
+    P = \frac{1}{f' (\text{en m})}
+\end{gather}
+\paragraph*{b) Tipo de lente e imagen. Nuevo tamaño}
+El signo de $f'$ nos dirá si es convergente/divergente. El signo de $s'_1$ si es real/virtual.
+Para la nueva posición $s_2$, calculamos primero la nueva posición de la imagen $s'_2$ usando la focal $f'$ ya conocida.
+\begin{gather}
+    \frac{1}{s'_2} = \frac{1}{f'} + \frac{1}{s_2} \implies s'_2 = \left( \frac{1}{f'} + \frac{1}{s_2} \right)^{-1}
+\end{gather}
+Calculamos el nuevo aumento $M_2 = s'_2/s_2$ y finalmente el nuevo tamaño $y'_2 = M_2 \cdot y$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Parámetros de la lente}
+\begin{gather}
+    M = \frac{3,0 \, \text{cm}}{2,0 \, \text{cm}} = +1,5 \\
+    s'_1 = 1,5 \cdot (-4,0 \, \text{cm}) = -6,0 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    La posición de la imagen es \boldsymbol{$s'_1 = -6,0 \, \textbf{cm}$}.
+\end{cajaresultado}
+\begin{gather}
+    \frac{1}{f'} = \frac{1}{-6,0} - \frac{1}{-4,0} = -\frac{1}{6} + \frac{1}{4} = \frac{-2+3}{12} = \frac{1}{12} \, \text{cm}^{-1} \implies f' = +12 \, \text{cm} = 0,12 \, \text{m} \\
+    P = \frac{1}{0,12 \, \text{m}} \approx +8,33 \, \text{D}
+\end{gather}
+\begin{cajaresultado}
+    La distancia focal es \boldsymbol{$f' = +12 \, \textbf{cm}$} y la potencia es \boldsymbol{$P \approx +8,33 \, \textbf{D}$}.
+\end{cajaresultado}
+\paragraph*{b) Análisis y nuevo tamaño}
+Como $f'>0$, la lente es \textbf{convergente}. Como $s'_1 < 0$, la imagen es \textbf{virtual}.
+Para $s_2 = -5,5 \, \text{cm}$:
+\begin{gather}
+    \frac{1}{s'_2} = \frac{1}{12} + \frac{1}{-5,5} = 0,08333 - 0,18182 = -0,09849 \implies s'_2 \approx -10,15 \, \text{cm} \\
+    M_2 = \frac{s'_2}{s_2} = \frac{-10,15}{-5,5} \approx +1,845 \\
+    y'_2 = M_2 \cdot y = 1,845 \cdot 2,0 \, \text{cm} \approx 3,69 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    La lente es \textbf{convergente}, la imagen es \textbf{virtual}. Al alejar la lente, el ojo se verá con un tamaño de \boldsymbol{$y'_2 \approx 3,69 \, \textbf{cm}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La lente actúa como una lupa, produciendo una imagen virtual y aumentada. Se trata de una lente convergente con una focal de +12 cm y una potencia de +8,33 D. Al alejar la lente del ojo 1,5 cm adicionales (hasta s=-5,5 cm), el efecto de aumento se incrementa, y el tamaño de la imagen virtual del ojo pasa a ser de 3,69 cm.
+\end{cajaconclusion}
+\newpage
+\subsection{Problema 4}
+\label{subsec:P4_2021_jul_ext}
+
+\begin{cajaenunciado}
+Tras un episodio de "tormenta seca" o calima, se recoge y analiza una muestra de polvo y se concluye que contiene Cs-137, un isótopo radiactivo asociado a alguna prueba nuclear realizada hace 60 años. La actividad de la muestra, debida exclusivamente al Cs-137, es de 0,08 Bq (muy baja). Determina:
+\begin{enumerate}
+    \item[a)] El número de núcleos y la masa de Cs-137 contenida en la muestra (expresa el resultado en picogramos). (1 punto)
+    \item[b)] La actividad de la muestra hace 60 años, justo tras la prueba nuclear. (1 punto)
+\end{enumerate}
+\textbf{Datos:} periodo de semidesintegración del Cs-137, $T_{1/2}=30,2$ años; masa de un núcleo de Cs-137, $m_{nuc}=2,27\cdot10^{-25}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Actividad actual ($A$):} $A = 0,08 \, \text{Bq} = 0,08 \, \text{desintegraciones/s}$.
+    \item \textbf{Tiempo transcurrido ($t$):} $t = 60$ años.
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 30,2$ años.
+    \item \textbf{Masa de un núcleo ($m_{nuc}$):} $m_{nuc} = 2,27 \cdot 10^{-25} \, \text{kg}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Número de núcleos actual ($N$) y masa actual ($m$).
+        \item[b)] Actividad inicial ($A_0$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Decaimiento Radiactivo del Cs-137} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una gráfica de decaimiento exponencial con el eje Y etiquetado como 'Actividad (Bq)' y el eje X como 'Tiempo (años)'. La curva empieza en un punto $A_0$ en $t=-60$ años. La curva desciende exponencialmente. Marcar el punto actual en $t=0$, con un valor de $A=0,08$ Bq. Marcar el periodo de semidesintegración en el eje X ($T_{1/2}=30,2$ años)." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{decaimiento_cs137.png}
+    }}
+    \caption{Curva de decaimiento para la muestra de Cs-137.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Relación Actividad-Número de Núcleos}
+La actividad $A$ de una muestra radiactiva es proporcional al número de núcleos radiactivos $N$ presentes: $A = \lambda N$, donde $\lambda$ es la constante de desintegración.
+\paragraph*{Ley de Desintegración Radiactiva}
+El número de núcleos y la actividad de una muestra disminuyen exponencialmente con el tiempo según la ley:
+$$ A(t) = A_0 e^{-\lambda t} $$
+donde $A_0$ es la actividad inicial. La constante $\lambda$ se relaciona con el periodo de semidesintegración $T_{1/2}$ mediante $\lambda = \frac{\ln 2}{T_{1/2}}$. La ley también puede escribirse como:
+$$ A(t) = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Número de núcleos y masa actuales}
+Primero calculamos la constante de desintegración $\lambda$. Es crucial que las unidades de tiempo sean consistentes.
+\begin{gather}
+    \lambda = \frac{\ln 2}{T_{1/2}}
+\end{gather}
+Luego, a partir de la actividad actual $A$, calculamos el número de núcleos $N$:
+\begin{gather}
+    N = \frac{A}{\lambda}
+\end{gather}
+Finalmente, la masa total es el número de núcleos por la masa de un núcleo:
+\begin{gather}
+    m = N \cdot m_{nuc}
+\end{gather}
+\paragraph*{b) Actividad inicial}
+Usando la ley de decaimiento, despejamos la actividad inicial $A_0$. Aquí consideramos el tiempo actual como $t=60$ años después del inicial.
+\begin{gather}
+    A_0 = \frac{A}{e^{-\lambda t}} = A e^{\lambda t} = A \cdot 2^{t/T_{1/2}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Número de núcleos y masa actuales}
+Convertimos $T_{1/2}$ a segundos para ser consistentes con el Bq (s$^{-1}$):
+\begin{gather}
+    T_{1/2} = 30,2 \, \text{años} \times \frac{365,25 \, \text{días}}{1 \, \text{año}} \times \frac{24 \, \text{h}}{1 \, \text{día}} \times \frac{3600 \, \text{s}}{1 \, \text{h}} \approx 9,53 \cdot 10^8 \, \text{s} \\
+    \lambda = \frac{\ln 2}{9,53 \cdot 10^8 \, \text{s}} \approx 7,27 \cdot 10^{-10} \, \text{s}^{-1} \\
+    N = \frac{0,08 \, \text{s}^{-1}}{7,27 \cdot 10^{-10} \, \text{s}^{-1}} \approx 1,10 \cdot 10^8 \text{ núcleos}
+\end{gather}
+\begin{cajaresultado}
+    El número de núcleos de Cs-137 en la muestra es \boldsymbol{$N \approx 1,10 \cdot 10^8$} núcleos.
+\end{cajaresultado}
+\begin{gather}
+    m = (1,10 \cdot 10^8 \, \text{núcleos}) \cdot (2,27 \cdot 10^{-25} \, \text{kg/núcleo}) \approx 2,50 \cdot 10^{-17} \, \text{kg}
+\end{gather}
+Convertimos a picogramos: $1 \, \text{pg} = 10^{-15} \, \text{kg}$.
+$ m = 2,50 \cdot 10^{-17} \, \text{kg} \times \frac{1 \, \text{pg}}{10^{-15} \, \text{kg}} = 0,025 \, \text{pg}$.
+\begin{cajaresultado}
+    La masa de Cs-137 es \boldsymbol{$m \approx 0,025 \, \textbf{pg}$}.
+\end{cajaresultado}
+\paragraph*{b) Actividad inicial}
+Es más sencillo usar la fórmula con $T_{1/2}$ directamente en años, ya que $t$ está en años.
+\begin{gather}
+    A_0 = A \cdot 2^{t/T_{1/2}} = (0,08 \, \text{Bq}) \cdot 2^{60/30,2} \approx (0,08 \, \text{Bq}) \cdot 2^{1,98675} \approx 0,08 \cdot 3,966 \approx 0,317 \, \text{Bq}
+\end{gather}
+\begin{cajaresultado}
+    La actividad de la muestra hace 60 años era \boldsymbol{$A_0 \approx 0,317 \, \textbf{Bq}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La bajísima actividad actual de 0,08 Bq corresponde a una cantidad de $1,10 \cdot 10^8$ núcleos de Cs-137, cuya masa es de tan solo 0,025 picogramos. Teniendo en cuenta que han transcurrido 60 años (casi dos periodos de semidesintegración), la actividad original de la muestra justo después de la prueba nuclear era considerablemente mayor, de aproximadamente 0,317 Bq.
+\end{cajaconclusion}
+\newpage

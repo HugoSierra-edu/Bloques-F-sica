@@ -1,0 +1,938 @@
+% !TEX root = ../main.tex
+\chapter{Examen Julio 2020 - Convocatoria Extraordinaria (Reorganizado por Bloques)}
+\label{chap:2020_jul_ext_bloques}
+
+% ======================================================================
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2020_jul_ext}
+% ======================================================================
+
+\subsection{Cuestión 1}
+\label{subsec:C1_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+Entre un cuerpo de masa m y otro de masa $M>m$ (ambas puntuales) existe solo la interacción gravitatoria. ¿Es la fuerza gravitatoria que ejerce M sobre m mayor que la que ejerce m sobre M? ¿Es la aceleración de ambos cuerpos igual en módulo? ¿Y en dirección y sentido? Razona adecuadamente las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Sistema:} Dos masas puntuales, $m$ y $M$.
+    \item \textbf{Condición:} $M > m$.
+    \item \textbf{Interacción:} Únicamente gravitatoria.
+    \item \textbf{Incógnitas (comparación):}
+    \begin{itemize}
+        \item Fuerza de M sobre m ($\vec{F}_{M \to m}$) vs. fuerza de m sobre M ($\vec{F}_{m \to M}$).
+        \item Aceleración de m ($\vec{a}_m$) vs. aceleración de M ($\vec{a}_M$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Par de Interacción Gravitatoria} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama que muestra dos esferas en el espacio. Una grande, etiquetada 'M', y una más pequeña, etiquetada 'm'. Dibujar un vector de fuerza $\vec{F}_{m \to M}$ sobre la masa M, apuntando hacia m. Dibujar un vector de fuerza $\vec{F}_{M \to m}$ sobre la masa m, apuntando hacia M. Los dos vectores deben tener la misma longitud pero direcciones opuestas, a lo largo de la línea que une los centros. Etiquetar los vectores aceleración $\vec{a}_M$ y $\vec{a}_m$ en la misma dirección que sus respectivas fuerzas, pero con el vector $\vec{a}_m$ visiblemente más largo que $\vec{a}_M$." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{accion_reaccion_grav.png}
+    }}
+    \caption{Fuerzas y aceleraciones entre las masas M y m.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Ley de Gravitación Universal de Newton}
+La fuerza de atracción entre dos masas puntuales $m_1$ y $m_2$ separadas por una distancia $r$ tiene un módulo de $F = G \frac{m_1 m_2}{r^2}$. La fuerza es siempre atractiva y actúa a lo largo de la línea que une las masas.
+
+\paragraph*{Tercera Ley de Newton (Principio de Acción y Reacción)}
+Si un cuerpo A ejerce una fuerza sobre un cuerpo B ($\vec{F}_{A \to B}$), entonces el cuerpo B ejerce una fuerza sobre A ($\vec{F}_{B \to A}$) de igual módulo y dirección, pero de sentido contrario. Matemáticamente: $\vec{F}_{A \to B} = -\vec{F}_{B \to A}$. Estas dos fuerzas forman un par acción-reacción.
+
+\paragraph*{Segunda Ley de Newton (Principio Fundamental de la Dinámica)}
+La fuerza neta sobre un cuerpo es igual al producto de su masa por la aceleración que experimenta: $\vec{F}_{neta} = m\vec{a}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Comparación de las fuerzas}
+Según la Ley de Gravitación Universal, el módulo de la fuerza que M ejerce sobre m es $|\vec{F}_{M \to m}| = G \frac{Mm}{r^2}$. El módulo de la fuerza que m ejerce sobre M es $|\vec{F}_{m \to M}| = G \frac{mM}{r^2}$. Es evidente que los módulos son idénticos.
+Según la Tercera Ley de Newton, estas dos fuerzas son un par acción-reacción, por lo tanto:
+\begin{gather}
+    |\vec{F}_{M \to m}| = |\vec{F}_{m \to M}| \\
+    \vec{F}_{M \to m} = -\vec{F}_{m \to M}
+\end{gather}
+
+\paragraph*{Comparación de las aceleraciones}
+Aplicamos la Segunda Ley de Newton a cada cuerpo por separado:
+\begin{itemize}
+    \item Para la masa m: $\vec{F}_{M \to m} = m \vec{a}_m \implies \vec{a}_m = \frac{\vec{F}_{M \to m}}{m}$
+    \item Para la masa M: $\vec{F}_{m \to M} = M \vec{a}_M \implies \vec{a}_M = \frac{\vec{F}_{m \to M}}{M}$
+\end{itemize}
+\begin{itemize}
+    \item \textbf{Módulo:} Como $|\vec{F}_{M \to m}| = |\vec{F}_{m \to M}| = F$ y por enunciado $M>m$, se tiene que:
+    $|\vec{a}_m| = \frac{F}{m}$ y $|\vec{a}_M| = \frac{F}{M}$. Dado que $m < M$, se concluye que $|\vec{a}_m| > |\vec{a}_M|$.
+    \item \textbf{Dirección y sentido:} La dirección de la aceleración de cada cuerpo es la misma que la de la fuerza que actúa sobre él. Como $\vec{F}_{M \to m}$ y $\vec{F}_{m \to M}$ tienen la misma dirección pero sentidos opuestos, las aceleraciones $\vec{a}_m$ y $\vec{a}_M$ también tendrán la misma dirección pero sentidos opuestos.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es cualitativo.
+\begin{cajaresultado}
+    La fuerza que M ejerce sobre m \textbf{no es mayor} que la que m ejerce sobre M. Son \textbf{iguales en módulo} y de sentido opuesto, por la 3ª Ley de Newton.
+\end{cajaresultado}
+\begin{cajaresultado}
+    Las aceleraciones \textbf{no son iguales en módulo}; la del cuerpo de menor masa ($m$) es mayor. Tienen la \textbf{misma dirección} pero \textbf{sentidos opuestos}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En virtud de la Tercera Ley de Newton, las fuerzas de interacción gravitatoria entre dos cuerpos siempre forman un par acción-reacción, siendo iguales en módulo y de sentidos contrarios. Sin embargo, según la Segunda Ley de Newton, una misma fuerza produce una aceleración mayor en el cuerpo de menor masa. Por tanto, aunque las fuerzas son idénticas en módulo, las aceleraciones no lo son.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Problema 1}
+\label{subsec:P1_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+Syncom 3 fue un satélite de telecomunicaciones de masa 40 kg, que describía órbitas circulares a una altura de 35800 km sobre la superficie terrestre.
+\begin{enumerate}
+    \item[a)] Deduce la expresión de la velocidad orbital de un satélite y calcula el valor en este caso, así como el periodo de la órbita (en horas). (1 punto)
+    \item[b)] Calcula las energías potencial y cinética del satélite en su movimiento por dicha órbita. Calcula la energía que se debe aportar al satélite para que se sitúe en una órbita en la que su energía mecánica sea $E=-9,5\cdot10^7\,\text{J}$. (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2\text{kg}^{-2}$; masa de la Tierra, $M_T=6\cdot10^{24}\,\text{kg}$; radio de la Tierra, $R_T=6,4\cdot10^6\,\text{m}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa del satélite ($m$):} $m = 40 \, \text{kg}$.
+    \item \textbf{Altura orbital inicial ($h_1$):} $h_1 = 35800 \, \text{km} = 3,58 \cdot 10^7 \, \text{m}$.
+    \item \textbf{Datos de la Tierra:} $M_T = 6 \cdot 10^{24} \, \text{kg}$, $R_T = 6,4 \cdot 10^6 \, \text{m}$.
+    \item \textbf{Constante G:} $G = 6,67 \cdot 10^{-11} \, \text{N}\text{m}^2/\text{kg}^2$.
+    \item \textbf{Radio orbital inicial ($r_1$):} $r_1 = R_T + h_1 = 6,4 \cdot 10^6 \, \text{m} + 35,8 \cdot 10^6 \, \text{m} = 4,22 \cdot 10^7 \, \text{m}$.
+    \item \textbf{Energía mecánica final ($E_{m2}$):} $E_{m2} = -9,5 \cdot 10^7 \, \text{J}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Velocidad orbital ($v_1$) y periodo ($T_1$) en la órbita inicial.
+        \item[b)] Energías potencial ($E_{p1}$) y cinética ($E_{c1}$) iniciales. Energía a aportar ($\Delta E$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Satélite en Órbita Geoestacionaria} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama de la Tierra en el centro. Dibujar una órbita circular a gran altitud, etiquetada con el radio $r_1 = R_T + h_1$. Sobre la órbita, dibujar un satélite (Syncom 3). Mostrar el vector velocidad orbital $\vec{v}_1$ (tangente a la órbita) y el vector fuerza gravitatoria $\vec{F}_g$ (apuntando al centro de la Tierra), indicando que esta fuerza actúa como fuerza centrípeta $\vec{F}_c$." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{orbita_geo.png}
+    }}
+    \caption{Esquema de las fuerzas sobre el satélite en órbita circular.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Velocidad y Periodo Orbital}
+Para un satélite en órbita circular, la fuerza de atracción gravitatoria ($F_g$) es la única fuerza que actúa y proporciona la fuerza centrípeta ($F_c$) necesaria para el movimiento. Igualando ambas fuerzas (2ª Ley de Newton):
+$$ F_g = F_c \implies G\frac{M_T m}{r^2} = m\frac{v^2}{r} $$
+De aquí se deduce la velocidad orbital. El periodo ($T$) es el tiempo que se tarda en completar una órbita, y se calcula a partir de la velocidad y la longitud de la circunferencia: $T = \frac{2\pi r}{v}$.
+
+\paragraph*{b) Energías en Órbita y Transición}
+Las energías de un satélite en órbita circular son:
+\begin{itemize}
+    \item \textbf{Energía Potencial:} $E_p = -G\frac{M_T m}{r}$.
+    \item \textbf{Energía Cinética:} $E_c = \frac{1}{2} m v^2 = G\frac{M_T m}{2r}$.
+\end{itemize}
+La energía mecánica total es $E_m = E_p + E_c = -G\frac{M_T m}{2r}$. La energía que hay que aportar para cambiar de una órbita a otra es la diferencia entre las energías mecánicas final e inicial: $\Delta E = E_{m,final} - E_{m,inicial}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Velocidad y Periodo}
+De la igualdad $F_g = F_c$, despejamos la velocidad orbital $v$:
+\begin{gather}
+    v = \sqrt{\frac{G M_T}{r}}
+\end{gather}
+Sustituyendo esta expresión en la fórmula del periodo:
+\begin{gather}
+    T = \frac{2\pi r}{v} = \frac{2\pi r}{\sqrt{G M_T/r}} = 2\pi \sqrt{\frac{r^3}{G M_T}}
+\end{gather}
+
+\paragraph*{b) Energías}
+Las expresiones son las ya mencionadas:
+\begin{gather}
+    E_{p1} = -G\frac{M_T m}{r_1} \quad ; \quad E_{c1} = G\frac{M_T m}{2r_1} \\
+    \Delta E = E_{m2} - E_{m1} = E_{m2} - (E_{p1} + E_{c1})
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Velocidad y Periodo en la órbita inicial}
+\begin{gather}
+    v_1 = \sqrt{\frac{(6,67\cdot10^{-11})(6\cdot10^{24})}{4,22\cdot10^7}} \approx \sqrt{9,48\cdot10^6} \approx 3079 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad orbital del satélite es \boldsymbol{$v_1 \approx 3079 \, \textbf{m/s}$}.
+\end{cajaresultado}
+\begin{gather}
+    T_1 = \frac{2\pi (4,22\cdot10^7)}{3079} \approx 86105 \, \text{s} \\
+    T_1 (\text{h}) = 86105 \, \text{s} \times \frac{1 \, \text{h}}{3600 \, \text{s}} \approx 23,9 \, \text{h}
+\end{gather}
+\begin{cajaresultado}
+    El periodo de la órbita es \boldsymbol{$T_1 \approx 23,9 \, \textbf{h}$}.
+\end{cajaresultado}
+
+\paragraph*{b) Energías y transición}
+\begin{gather}
+    E_{c1} = \frac{1}{2}(40)(3079)^2 \approx 1,896 \cdot 10^8 \, \text{J} \\
+    E_{p1} = -2 \cdot E_{c1} \approx -2 \cdot (1,896 \cdot 10^8) \approx -3,792 \cdot 10^8 \, \text{J} \\
+    E_{m1} = E_{p1} + E_{c1} \approx -1,896 \cdot 10^8 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    $E_{p1} \approx -3,79 \cdot 10^8 \, \text{J}$ y $E_{c1} \approx 1,90 \cdot 10^8 \, \text{J}$.
+\end{cajaresultado}
+\begin{gather}
+    \Delta E = (-9,5\cdot10^7) - (-1,896\cdot10^8) = 9,46 \cdot 10^7 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    La energía que se debe aportar es \boldsymbol{$\Delta E \approx 9,46 \cdot 10^7 \, \textbf{J}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El satélite Syncom 3, en su órbita a 35800 km de altura, se movía a una velocidad de 3079 m/s, con un periodo de 23,9 horas (una órbita casi geoestacionaria). Para moverlo a una órbita de mayor energía (menos negativa), se requiere un aporte de $9,46 \cdot 10^7$ J.
+\end{cajaconclusion}
+
+\newpage
+% ======================================================================
+\section{Bloque II: Interacción Electromagnética}
+\label{sec:em_2020_jul_ext}
+% ======================================================================
+
+\subsection{Cuestión 2}
+\label{subsec:C2_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+Se colocan dos cargas puntuales, $q$ y $-2q$, en los vértices de un cuadrado de 1 m de lado, como aparece en la figura. Si $q=2\sqrt{2}$ nC, calcula y representa claramente el vector campo eléctrico en el punto P debido a cada carga, así como el vector campo eléctrico resultante generado por dichas cargas en el punto P.
+\textbf{Dato:} constante de Coulomb $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Geometría:} Cuadrado de lado $L=1 \, \text{m}$.
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = q = 2\sqrt{2} \, \text{nC} = 2\sqrt{2} \cdot 10^{-9} \, \text{C}$.
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = -2q = -4\sqrt{2} \cdot 10^{-9} \, \text{C}$.
+    \item \textbf{Coordenadas:} Asignamos un sistema de referencia. Sea el vértice con $q_2$ en el origen (0,0). Entonces, el punto P está en (0,1) y la carga $q_1$ está en (1,1).
+    \item \textbf{Constante de Coulomb:} $k = 9 \cdot 10^9 \, \text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:} $\vec{E}_1$, $\vec{E}_2$ y $\vec{E}_{total}$ en el punto P(0,1).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo Eléctrico en el Vértice de un Cuadrado} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Dibujar un cuadrado con vértices en (0,0), (1,0), (1,1) y (0,1). Colocar una carga negativa '-2q' en el origen (0,0). Colocar una carga positiva '+q' en (1,1). Marcar el punto P en (0,1). Dibujar el vector campo $\vec{E}_1$ en P, creado por +q, que es repulsivo y apunta horizontalmente hacia la izquierda (en dirección -X). Dibujar el vector campo $\vec{E}_2$ en P, creado por -2q, que es atractivo y apunta verticalmente hacia abajo (en dirección -Y). Dibujar el vector resultante $\vec{E}_{total}$ como la suma vectorial de $\vec{E}_1$ y $\vec{E}_2$, apuntando hacia abajo y a la izquierda." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{campo_cuadrado_vertice.png}
+    }}
+    \caption{Vectores de campo eléctrico en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El campo eléctrico $\vec{E}$ creado por una carga puntual Q en un punto se calcula con la ley de Coulomb: $\vec{E} = k \frac{Q}{r^2}\vec{u}_r$, donde $r$ es la distancia de la carga al punto y $\vec{u}_r$ es un vector unitario que apunta desde la carga al punto. El campo total es la suma vectorial de los campos individuales (Principio de Superposición).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Campo $\vec{E}_1$ (creado por $q_1$ en (1,1))}
+El vector que va de la carga $q_1$ al punto P(0,1) es $\vec{r}_1 = (0-1)\vec{i} + (1-1)\vec{j} = -\vec{i}$.
+La distancia es $|\vec{r}_1|=1\,\text{m}$. El vector unitario es $\vec{u}_1 = -\vec{i}$.
+\begin{gather}
+    \vec{E}_1 = k \frac{q_1}{r_1^2} \vec{u}_1
+\end{gather}
+\paragraph*{Campo $\vec{E}_2$ (creado por $q_2$ en (0,0))}
+El vector que va de la carga $q_2$ al punto P(0,1) es $\vec{r}_2 = (0-0)\vec{i} + (1-0)\vec{j} = \vec{j}$.
+La distancia es $|\vec{r}_2|=1\,\text{m}$. El vector unitario es $\vec{u}_2 = \vec{j}$.
+\begin{gather}
+    \vec{E}_2 = k \frac{q_2}{r_2^2} \vec{u}_2
+\end{gather}
+\paragraph*{Campo total}
+\begin{gather}
+    \vec{E}_{total} = \vec{E}_1 + \vec{E}_2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \vec{E}_1 = (9\cdot10^9) \frac{2\sqrt{2}\cdot10^{-9}}{1^2}(-\vec{i}) = -18\sqrt{2}\,\vec{i} \, \text{N/C} \\
+    \vec{E}_2 = (9\cdot10^9) \frac{-4\sqrt{2}\cdot10^{-9}}{1^2}(\vec{j}) = -36\sqrt{2}\,\vec{j} \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    $\boldsymbol{\vec{E}_1 = -18\sqrt{2}\,\vec{i} \, \textbf{N/C} \approx -25,46\vec{i} \, \textbf{N/C}}$. \\
+    $\boldsymbol{\vec{E}_2 = -36\sqrt{2}\,\vec{j} \, \textbf{N/C} \approx -50,91\vec{j} \, \textbf{N/C}}$.
+\end{cajaresultado}
+El campo total es la suma de ambos:
+\begin{gather}
+    \vec{E}_{total} = (-18\sqrt{2}\,\vec{i} - 36\sqrt{2}\,\vec{j}) \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    El campo eléctrico resultante es \boldsymbol{$\vec{E}_{total} = (-18\sqrt{2}\,\vec{i} - 36\sqrt{2}\,\vec{j}) \, \textbf{N/C}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La carga positiva $q$ genera en P un campo repulsivo horizontal hacia la izquierda, mientras que la carga negativa $-2q$ genera un campo atractivo vertical hacia abajo. La superposición de ambos da como resultado un campo eléctrico total de $(-18\sqrt{2}\,\vec{i} - 36\sqrt{2}\,\vec{j}) \, \text{N/C}$, que apunta hacia el tercer cuadrante.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 3}
+\label{subsec:C3_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+Por un conductor rectilíneo indefinido circula una corriente de intensidad I. Escribe y representa el vector campo magnético $\vec{B}$ en puntos que se encuentran a una distancia r del hilo. Explica como cambia dicho vector si los puntos se encuentran a una distancia 2r.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Fuente:} Hilo rectilíneo indefinido con corriente $I$.
+    \item \textbf{Posiciones:} Puntos a distancia $r$ y a distancia $2r$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresión y representación del vector $\vec{B}(r)$.
+        \item Relación entre $\vec{B}(2r)$ y $\vec{B}(r)$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo Magnético de un Hilo Rectilíneo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un hilo conductor vertical con una corriente I fluyendo hacia arriba. Dibujar dos círculos concéntricos al hilo, uno con radio 'r' y otro con radio '2r'. Sobre el círculo de radio 'r', dibujar un vector $\vec{B}(r)$ tangente al círculo en sentido antihorario. Sobre el círculo de radio '2r', dibujar un vector $\vec{B}(2r)$ también tangente y antihorario, pero visiblemente más corto que $\vec{B}(r)$. Utilizar el símbolo de la regla de la mano derecha para justificar la dirección." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{campo_hilo_rectilineo.png}
+    }}
+    \caption{Líneas de campo magnético alrededor de un conductor rectilíneo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Ley de Biot-Savart (o Ley de Ampère)}
+Para un conductor rectilíneo e indefinido, el módulo del campo magnético a una distancia perpendicular $r$ del hilo viene dado por la expresión:
+$$ B = \frac{\mu_0 I}{2\pi r} $$
+donde $\mu_0$ es la permeabilidad magnética del vacío.
+\paragraph*{Dirección del Campo Magnético}
+La dirección del vector $\vec{B}$ es siempre tangente a las líneas de campo, que son circunferencias concéntricas en planos perpendiculares al hilo. El sentido de circulación viene determinado por la \textbf{regla de la mano derecha}: si el pulgar apunta en el sentido de la corriente $I$, los demás dedos se curvan indicando el sentido del campo magnético $\vec{B}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Vector Campo Magnético}
+En coordenadas cilíndricas, si el hilo va por el eje Z, el campo se expresa como $\vec{B} = \frac{\mu_0 I}{2\pi r} \vec{u}_\theta$, donde $\vec{u}_\theta$ es el vector unitario en la dirección acimutal (tangencial).
+
+\paragraph*{Cambio con la distancia}
+Sea $B_1$ el módulo del campo a una distancia $r_1=r$:
+\begin{gather}
+    B_1 = \frac{\mu_0 I}{2\pi r}
+\end{gather}
+Sea $B_2$ el módulo del campo a una distancia $r_2=2r$:
+\begin{gather}
+    B_2 = \frac{\mu_0 I}{2\pi (2r)} = \frac{1}{2} \left( \frac{\mu_0 I}{2\pi r} \right) = \frac{1}{2} B_1
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es cualitativo.
+\begin{cajaresultado}
+    El vector campo magnético a una distancia $r$ tiene un módulo \boldsymbol{$B = \frac{\mu_0 I}{2\pi r}$}, dirección \textbf{tangencial} a la circunferencia de radio $r$ centrada en el hilo, y su sentido lo da la regla de la mano derecha.
+\end{cajaresultado}
+\begin{cajaresultado}
+    Si la distancia se duplica a $2r$, la dirección del vector no cambia, pero su módulo \textbf{se reduce a la mitad}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo magnético generado por un hilo rectilíneo es circular y su intensidad es inversamente proporcional a la distancia al hilo. Por lo tanto, al duplicar la distancia, la dirección del campo en el nuevo punto sigue siendo tangencial, pero su módulo se ve reducido a la mitad del valor original.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 4}
+\label{subsec:C4_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+Se tiene una espira circular en el interior de un campo magnético uniforme y constante como muestra la figura a). Si el área de la espira circular disminuye hasta hacerse la mitad ¿se induce corriente eléctrica en la espira? ¿en qué sentido? Si la forma de la espira pasa a ser ovalada, dejando invariante su área (figura b), ¿se induce corriente eléctrica? Escribe y explica la ley del electromagnetismo en la que te basas y responde razonadamente.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo magnético ($\vec{B}$):} Uniforme, constante y entrante.
+    \item \textbf{Caso a):} La espira circular reduce su área a la mitad ($S_f = S_i/2$).
+    \item \textbf{Caso b):} La espira circular cambia a forma ovalada, pero mantiene su área ($S_f = S_i$).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Si se induce corriente en el caso a) y en qué sentido.
+        \item Si se induce corriente en el caso b).
+        \item Ley física que lo explica.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Inducción por Variación de Área} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un campo magnético uniforme entrante (cruces). En el 'Caso a)', mostrar una espira circular grande que se encoge hasta una espira más pequeña. Indicar que el flujo entrante disminuye ($\Delta\Phi_B < 0$). Según la Ley de Lenz, se debe generar un campo inducido $\vec{B}_{ind}$ también entrante para oponerse a la disminución. Dibujar una flecha de corriente inducida $I_{ind}$ en sentido horario. En el 'Caso b)', mostrar una espira circular que se deforma en una elipse de la misma área, e indicar que $\Delta\Phi_B = 0$ y por tanto $I_{ind} = 0$." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{induccion_area.png}
+    }}
+    \caption{Análisis de la inducción de corriente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Ley de Faraday-Lenz}
+La ley que rige este fenómeno es la Ley de Faraday-Lenz. Establece que se induce una fuerza electromotriz ($\varepsilon$), y por tanto una corriente, en un circuito cerrado siempre que haya una variación del flujo magnético ($\Phi_B$) que lo atraviesa. La f.e.m. es $\varepsilon = -d\Phi_B/dt$.
+El \textbf{flujo magnético} se define como $\Phi_B = \int \vec{B} \cdot d\vec{S}$. Para un campo uniforme y una superficie plana, $\Phi_B = B \cdot S \cdot \cos(\alpha)$, donde $\alpha$ es el ángulo entre el campo $\vec{B}$ y el vector normal a la superficie $\vec{S}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La variación de flujo puede deberse a un cambio en $B$, en $S$ o en $\alpha$. En este problema, $B$ es constante y $\alpha=0$ (campo perpendicular a la espira), por lo que $\Phi_B = B \cdot S$.
+La f.e.m. inducida será: $\varepsilon = -\frac{d(B \cdot S)}{dt} = -B \frac{dS}{dt}$.
+
+\paragraph*{Análisis del Caso a)}
+El área de la espira cambia, disminuye de $S_i$ a $S_f = S_i/2$. Por lo tanto, $dS/dt \neq 0$ durante el cambio. Esto provoca una variación del flujo magnético.
+\begin{gather}
+    \Delta\Phi_B = \Phi_f - \Phi_i = B \cdot S_f - B \cdot S_i = B(S_i/2 - S_i) = -B S_i / 2 \neq 0
+\end{gather}
+Como el flujo magnético varía, \textbf{sí se induce una corriente eléctrica}.
+Para determinar el sentido (Ley de Lenz): El flujo magnético entrante está disminuyendo. Para oponerse a esta disminución, la corriente inducida debe crear un campo magnético inducido $\vec{B}_{ind}$ en el mismo sentido que el original, es decir, \textbf{entrante}. Aplicando la regla de la mano derecha, una corriente en sentido \textbf{horario} genera un campo entrante.
+
+\paragraph*{Análisis del Caso b)}
+El área de la espira no cambia ($S_f=S_i$). Por lo tanto, el flujo magnético permanece constante:
+\begin{gather}
+    \Delta\Phi_B = B \cdot S_f - B \cdot S_i = B(S_i - S_i) = 0
+\end{gather}
+Como el flujo magnético no varía, \textbf{no se induce corriente eléctrica}.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es cualitativo.
+\begin{cajaresultado}
+    \textbf{Caso a):} \textbf{Sí se induce corriente}, ya que al cambiar el área, cambia el flujo magnético. El sentido de la corriente es \textbf{horario}.
+\end{cajaresultado}
+\begin{cajaresultado}
+    \textbf{Caso b):} \textbf{No se induce corriente}, porque a pesar del cambio de forma, el área y por tanto el flujo magnético permanecen constantes.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La inducción de corriente se rige por la Ley de Faraday-Lenz y solo ocurre si hay una variación del flujo magnético. Al disminuir el área, el flujo disminuye y se induce una corriente horaria para contrarrestar dicho cambio. Al cambiar la forma manteniendo el área constante, el flujo no varía y, por consiguiente, no se induce ninguna corriente.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Problema 2}
+\label{subsec:P2_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+Un ion con carga $q=3,2\cdot10^{-19}\,\text{C}$, entra con velocidad constante $\vec{v}=20\vec{j}\,\text{m/s}$ en una región del espacio en la que existen un campo magnético uniforme $\vec{B}=-20\vec{i}\,\text{T}$ y un campo eléctrico uniforme $\vec{E}$. Desprecia el campo gravitatorio.
+\begin{enumerate}
+    \item[a)] Calcula el valor del vector $\vec{E}$ necesario para que el movimiento del ion sea rectilíneo y uniforme. (1 punto)
+    \item[b)] Calcula los vectores fuerza que actúan sobre el ion (dirección y sentido) en esta región del espacio. Representa claramente los vectores, $\vec{v}$, $\vec{B}$, $\vec{E}$ y dichos vectores fuerza. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga del ion ($q$):} $q = 3,2 \cdot 10^{-19} \, \text{C}$ (positiva).
+    \item \textbf{Velocidad ($\vec{v}$):} $\vec{v} = 20\vec{j} \, \text{m/s}$.
+    \item \textbf{Campo magnético ($\vec{B}$):} $\vec{B} = -20\vec{i} \, \text{T}$.
+    \item \textbf{Condición:} Movimiento rectilíneo y uniforme (MRU).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Vector campo eléctrico $\vec{E}$.
+        \item[b)] Vectores fuerza eléctrica ($\vec{F}_e$) y magnética ($\vec{F}_m$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Fuerzas en un Selector de Velocidades} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XYZ. Dibujar el vector velocidad $\vec{v}$ a lo largo del eje Y positivo. Dibujar el vector campo magnético $\vec{B}$ a lo largo del eje X negativo. Usando la regla de la mano derecha, calcular la dirección de la fuerza magnética $\vec{F}_m = q(\vec{v} \times \vec{B})$, que debe apuntar en la dirección Z positiva. Para que la fuerza neta sea cero, la fuerza eléctrica $\vec{F}_e$ debe ser igual y opuesta, apuntando en la dirección Z negativa. Como la carga q es positiva, el campo eléctrico $\vec{E}$ también debe apuntar en la dirección Z negativa. Representar todos los cinco vectores: $\vec{v}$ (en +Y), $\vec{B}$ (en -X), $\vec{E}$ (en -Z), $\vec{F}_m$ (en +Z), y $\vec{F}_e$ (en -Z)." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{selector_velocidad_2.png}
+    }}
+    \caption{Representación vectorial de los campos y fuerzas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para que una partícula cargada se mueva con MRU en una región con campos $\vec{E}$ y $\vec{B}$, la fuerza neta sobre ella debe ser nula (1ª Ley de Newton). La fuerza total es la Fuerza de Lorentz:
+$$ \vec{F}_{total} = \vec{F}_e + \vec{F}_m = q\vec{E} + q(\vec{v} \times \vec{B}) $$
+La condición de MRU implica $\vec{F}_{total} = 0$, lo que nos lleva a:
+$$ q\vec{E} + q(\vec{v} \times \vec{B}) = 0 \implies \vec{E} = -(\vec{v} \times \vec{B}) $$
+Esta configuración de campos se conoce como un selector de velocidades.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Cálculo del campo eléctrico $\vec{E}$}
+Calculamos primero el producto vectorial $\vec{v} \times \vec{B}$:
+\begin{gather}
+    \vec{v} \times \vec{B} = (20\vec{j}) \times (-20\vec{i}) = -400 (\vec{j} \times \vec{i})
+\end{gather}
+Recordando que $\vec{j} \times \vec{i} = -\vec{k}$:
+\begin{gather}
+    \vec{v} \times \vec{B} = -400(-\vec{k}) = 400\vec{k} \, \text{(en unidades del SI)}
+\end{gather}
+Ahora aplicamos la condición del selector de velocidades:
+\begin{gather}
+    \vec{E} = -(\vec{v} \times \vec{B}) = -(400\vec{k}) = -400\vec{k} \, \text{N/C}
+\end{gather}
+\paragraph*{b) Cálculo de los vectores fuerza}
+\begin{gather}
+    \vec{F}_e = q\vec{E} \\
+    \vec{F}_m = q(\vec{v} \times \vec{B})
+\end{gather}
+Como $\vec{E} = -(\vec{v} \times \vec{B})$, se deduce que $\vec{F}_e = - \vec{F}_m$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Vector campo eléctrico}
+El cálculo ya se ha realizado simbólicamente.
+\begin{cajaresultado}
+    El campo eléctrico necesario es \boldsymbol{$\vec{E} = -400\vec{k} \, \textbf{N/C}$}.
+\end{cajaresultado}
+\paragraph*{b) Vectores fuerza}
+\begin{gather}
+    \vec{F}_e = (3,2\cdot10^{-19})(-400\vec{k}) = -1,28\cdot10^{-16}\vec{k} \, \text{N} \\
+    \vec{F}_m = q(\vec{v} \times \vec{B}) = (3,2\cdot10^{-19})(400\vec{k}) = 1,28\cdot10^{-16}\vec{k} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza eléctrica es \boldsymbol{$\vec{F}_e = -1,28\cdot10^{-16}\vec{k} \, \textbf{N}$} y la fuerza magnética es \boldsymbol{$\vec{F}_m = 1,28\cdot10^{-16}\vec{k} \, \textbf{N}$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que el ion no se desvíe, se requiere un campo eléctrico $\vec{E} = -400\vec{k}$ N/C. Este campo genera una fuerza eléctrica $\vec{F}_e$ que es exactamente opuesta a la fuerza magnética $\vec{F}_m$ producida por el campo magnético. Ambas fuerzas tienen un módulo de $1,28\cdot10^{-16}$ N y actúan a lo largo del eje Z, pero en sentidos contrarios, resultando en una fuerza neta nula.
+\end{cajaconclusion}
+\newpage
+% ======================================================================
+\section{Bloque III: Ondas y Óptica}
+\label{sec:ondas_2020_jul_ext}
+% ======================================================================
+
+\subsection{Cuestión 5}
+\label{subsec:C5_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+Escribe la expresión del nivel sonoro (en dB) en función de la intensidad de un sonido. A una cierta distancia del punto de explosión de un petardo se mide una intensidad de $1\,\text{W/m}^2$. ¿Qué nivel de intensidad en dB tendremos en este punto? Calcula la intensidad en $\text{W/m}^2$ que se medirá al duplicar la distancia. (Considera que la onda sonora es esférica).
+\textbf{Dato:} Intensidad umbral de referencia $I_0=10^{-12}\,\text{W/m}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Intensidad inicial ($I_1$):} $I_1 = 1 \, \text{W/m}^2$ a una distancia $r_1$.
+    \item \textbf{Distancia final ($r_2$):} $r_2 = 2r_1$.
+    \item \textbf{Intensidad umbral ($I_0$):} $I_0 = 10^{-12} \, \text{W/m}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Nivel sonoro ($\beta_1$) en el primer punto.
+        \item Intensidad sonora ($I_2$) en el segundo punto.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Atenuación de la Intensidad Sonora} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama de un punto fuente isótropo (un petardo explotando) emitiendo frentes de onda esféricos. Dibujar una primera superficie esférica de radio $r_1$ y área $A_1=4\pi r_1^2$. Dibujar una segunda esfera concéntrica, más grande, de radio $r_2=2r_1$ y área $A_2=4\pi r_2^2$. Indicar que la misma potencia $P$ atraviesa ambas superficies, de modo que la intensidad $I=P/A$ disminuye con el cuadrado de la distancia." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{atenuacion_sonido.png}
+    }}
+    \caption{Propagación esférica de una onda sonora.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Nivel de Intensidad Sonora ($\beta$)}
+La percepción humana del sonido sigue una escala logarítmica. El nivel de intensidad sonora se define como:
+$$ \beta (\text{dB}) = 10 \log_{10}\left(\frac{I}{I_0}\right) $$
+donde $I$ es la intensidad del sonido y $I_0$ es la intensidad de referencia o umbral de audición.
+
+\paragraph*{Ley de la Inversa del Cuadrado para Ondas Esféricas}
+Para una onda que se propaga esféricamente desde una fuente puntual, la intensidad $I$ disminuye con el cuadrado de la distancia $r$ a la fuente, ya que la potencia $P$ de la fuente se distribuye sobre un área cada vez mayor ($A=4\pi r^2$).
+$$ I = \frac{P}{4\pi r^2} $$
+Para dos puntos a distancias $r_1$ y $r_2$, la relación entre sus intensidades es: $I_1 \cdot 4\pi r_1^2 = I_2 \cdot 4\pi r_2^2 \implies I_1 r_1^2 = I_2 r_2^2$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Nivel de intensidad en el primer punto}
+Se aplica directamente la definición de nivel sonoro para $I_1$.
+\begin{gather}
+    \beta_1 = 10 \log_{10}\left(\frac{I_1}{I_0}\right)
+\end{gather}
+\paragraph*{b) Intensidad al duplicar la distancia}
+A partir de la ley de la inversa del cuadrado:
+\begin{gather}
+    I_2 = I_1 \left(\frac{r_1}{r_2}\right)^2
+\end{gather}
+Sustituyendo $r_2 = 2r_1$:
+\begin{gather}
+    I_2 = I_1 \left(\frac{r_1}{2r_1}\right)^2 = I_1 \left(\frac{1}{2}\right)^2 = \frac{I_1}{4}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Nivel de intensidad en el primer punto}
+\begin{gather}
+    \beta_1 = 10 \log_{10}\left(\frac{1}{10^{-12}}\right) = 10 \log_{10}(10^{12}) = 10 \cdot 12 = 120 \, \text{dB}
+\end{gather}
+\begin{cajaresultado}
+    El nivel de intensidad sonora es \boldsymbol{$\beta_1 = 120 \, \textbf{dB}$}.
+\end{cajaresultado}
+\paragraph*{b) Intensidad al duplicar la distancia}
+\begin{gather}
+    I_2 = \frac{1 \, \text{W/m}^2}{4} = 0,25 \, \text{W/m}^2
+\end{gather}
+\begin{cajaresultado}
+    La intensidad al duplicar la distancia es \boldsymbol{$I_2 = 0,25 \, \textbf{W/m}^2$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Una intensidad de $1\,\text{W/m}^2$ corresponde a un nivel sonoro muy elevado de 120 dB, el umbral del dolor. Dado que la intensidad de una onda esférica disminuye con el cuadrado de la distancia, al duplicar la distancia al foco emisor la intensidad se reduce a una cuarta parte, resultando en un valor de $0,25\,\text{W/m}^2$.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 6}
+\label{subsec:C6_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+Deduce la relación entre la distancia objeto, s, y la distancia focal, f', de una lente convergente para que la imagen sea invertida y con un tamaño tres veces mayor que el del objeto.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Convergente, lo que implica $f' > 0$.
+    \item \textbf{Condición 1:} Imagen \textbf{invertida}, lo que implica Aumento Lateral $M < 0$.
+    \item \textbf{Condición 2:} Tamaño \textbf{tres veces mayor}, lo que implica $|M|=3$.
+    \item \textbf{Aumento lateral (M):} Combinando las condiciones, $M = -3$.
+    \item \textbf{Incógnita:} Relación entre la posición del objeto $s$ y la distancia focal imagen $f'$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Imagen Real, Invertida y Aumentada (M=-3)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un eje óptico horizontal. En el centro, una lente convergente. Marcar el foco objeto F a la izquierda y el foco imagen F' a la derecha. Colocar un objeto (flecha vertical hacia arriba) en la posición $s = -4/3 f'$ (es decir, entre F y 2F). Realizar el trazado de dos rayos: 1) Un rayo paralelo al eje que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico sin desviarse. Mostrar que los rayos se cruzan a la derecha de la lente, formando una imagen real (flecha vertical hacia abajo), invertida y de un tamaño visiblemente mayor (el triple). Etiquetar F, F', s, s'." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{lente_m_negativo.png}
+    }}
+    \caption{Trazado de rayos para una lente convergente con M=-3.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se utilizan las dos ecuaciones fundamentales de las lentes delgadas:
+\begin{enumerate}
+    \item \textbf{Ecuación de Gauss:} $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item \textbf{Aumento Lateral:} $M = \frac{s'}{s}$
+\end{enumerate}
+El objetivo es combinar ambas ecuaciones para encontrar una relación entre $s$ y $f'$ que cumpla la condición $M=-3$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Paso 1: Usamos la condición del aumento para relacionar $s'$ y $s$.
+\begin{gather}
+    M = -3 \implies \frac{s'}{s} = -3 \implies s' = -3s
+\end{gather}
+Paso 2: Sustituimos esta relación en la ecuación de Gauss.
+\begin{gather}
+    \frac{1}{(-3s)} - \frac{1}{s} = \frac{1}{f'}
+\end{gather}
+Paso 3: Resolvemos la ecuación para $s$.
+\begin{gather}
+    -\frac{1}{3s} - \frac{3}{3s} = \frac{1}{f'} \nonumber \\
+    -\frac{4}{3s} = \frac{1}{f'} \nonumber \\
+    -4f' = 3s \implies s = -\frac{4}{3}f'
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es puramente simbólico.
+\begin{cajaresultado}
+    La relación deducida es \boldsymbol{$s = -\frac{4}{3}f'$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para obtener una imagen invertida y triplicada en tamaño con una lente convergente, la posición del objeto $s$ debe ser igual a $-4/3$ de la distancia focal imagen $f'$. Esto significa que el objeto real debe situarse a la izquierda de la lente, a una distancia de $4/3$ de la focal, es decir, entre el foco objeto y el doble del foco objeto.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Cuestión 7}
+\label{subsec:C7_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+En una revisión optométrica indican a una persona que, para ver bien objetos lejanos, debería ponerse una gafa de lentes de -1,5 dioptrías. Razona si tiene miopía o hipermetropía y por qué se corrige con dicho tipo de lente. Explica razonadamente el fenómeno y su corrección con ayuda de un trazado de rayos.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Problema de visión:} Dificultad para ver objetos lejanos.
+    \item \textbf{Corrección:} Lentes con Potencia $P = -1,5$ dioptrías.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Tipo de ametropía (miopía o hipermetropía).
+        \item Justificación de la corrección.
+        \item Trazado de rayos del defecto y su corrección.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Ojo Míope} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de un ojo humano de perfil. Mostrar rayos de luz paralelos de un objeto lejano entrando en el ojo. Dibujar cómo estos rayos convergen en un punto focal situado *delante* de la retina, debido a un exceso de potencia del cristalino o a un globo ocular demasiado largo." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{ojo_miope.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Corrección con Lente} \vspace{0.5cm} \textit{Prompt para la imagen:} "El mismo ojo míope, pero con una lente divergente (cóncava) delante. Mostrar cómo la lente divergente abre ligeramente los rayos paralelos antes de que entren al ojo. El cristalino del ojo luego los converge, y ahora el punto focal se desplaza hacia atrás, cayendo exactamente sobre la retina." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{correccion_miopia.png}
+    }}
+    \caption{Esquema de la miopía y su corrección.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Tipo de Lente}
+La potencia $P$ de una lente está relacionada con su distancia focal $f'$ por $P=1/f'$. Una potencia negativa ($P = -1,5\,\text{D}$) implica una distancia focal negativa. Las lentes con distancia focal negativa son \textbf{lentes divergentes}.
+
+\paragraph*{Miopía e Hipermetropía}
+\begin{itemize}
+    \item \textbf{Miopía:} Es un defecto refractivo donde el ojo tiene un exceso de potencia de convergencia (o es demasiado largo). Los objetos lejanos se enfocan \textit{delante} de la retina, causando visión borrosa de lejos. Se corrige con una lente \textbf{divergente}, que resta potencia al sistema óptico.
+    \item \textbf{Hipermetropía:} Es un defecto donde el ojo tiene una falta de potencia de convergencia. Los objetos lejanos se enfocan \textit{detrás} de la retina. Se corrige con una lente \textbf{convergente}.
+\end{itemize}
+
+\paragraph*{Análisis del caso}
+La persona tiene problemas para ver de lejos y se le prescribe una lente de potencia negativa, es decir, una lente divergente. Esta combinación corresponde a la \textbf{miopía}.
+
+\paragraph*{Explicación y Corrección}
+Un ojo miope converge demasiado los rayos de luz. Para corregirlo, se coloca una lente divergente delante. Esta lente hace que los rayos paralelos de un objeto lejano diverjan ligeramente antes de entrar en el ojo. De este modo, el punto focal efectivo del sistema "lente+ojo" se retrasa, haciéndolo coincidir con la retina y permitiendo una visión nítida.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+El problema es cualitativo.
+
+\subsubsection*{5. Conclusión}
+\begin{cajaconclusion}
+La persona tiene \textbf{miopía}, ya que este defecto se caracteriza por la dificultad para enfocar objetos lejanos y se corrige con lentes de potencia negativa. Las lentes de -1,5 dioptrías son divergentes; su función es reducir la potencia de convergencia del sistema óptico del ojo, desplazando el punto de enfoque hacia atrás hasta situarlo sobre la retina.
+\end{cajaconclusion}
+\newpage
+\subsection{Problema 3}
+\label{subsec:P3_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+Se hace incidir un haz de luz blanca sobre una lámina plano-paralela de un cierto material, cuyo índice de refracción para la luz roja es $n_r=1,19$ y para la luz violeta $n_v=1,23$.
+\begin{enumerate}
+    \item[a)] Explica qué sucede cuando el rayo incidente de luz blanca entra en la lámina e identifica cuál de los rayos 1 y 2 corresponde al rojo y cuál al violeta. Razona la respuesta en base a la ley física que rige este fenómeno. (1 punto)
+    \item[b)] Tras incidir en la cara superior de la lámina, el rayo 2 prosigue paralelo a ella, como se ve en la figura. Determina el ángulo, i, con el que incide sobre esta cara y el ángulo de entrada, ε. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Medio 1 y 3:} Aire, con $n_{aire}=1$.
+    \item \textbf{Medio 2 (lámina):} Material dispersivo.
+    \item \textbf{Índices de refracción:} $n_{rojo}=1,19$ y $n_{violeta}=1,23$.
+    \item \textbf{Condición (b):} El rayo 2 emerge de la cara superior con un ángulo de refracción de 90º (paralelo a la superficie).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Fenómeno físico y correspondencia de los rayos 1 y 2 con los colores.
+        \item[b)] Ángulo de incidencia en la cara superior ($i$) y ángulo de entrada en la lámina ($\varepsilon$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Dispersión y Reflexión Total Interna} \vspace{0.5cm} \textit{Prompt para la imagen:} "Replicar el diagrama del enunciado. Un bloque rectangular de un material. Un rayo de luz blanca incide desde el aire (abajo a la izquierda) con un ángulo $\varepsilon$ respecto a la normal. Dentro del material, el rayo se separa en dos: rayo 1 (rojo) y rayo 2 (violeta). El rayo violeta (2) debe estar más desviado, más cercano a la normal que el rayo rojo (1). Ambos rayos viajan hasta la cara superior. El rayo violeta (2) incide en la cara superior con un ángulo $i$ y se refracta saliendo paralelo a la superficie (ángulo de 90º). El rayo rojo (1) también incide en la cara superior. Etiquetar todos los ángulos y rayos." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{dispersion_lamina.png}
+    }}
+    \caption{Trayectoria de los rayos de luz a través de la lámina.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Dispersión Cromática y Ley de Snell}
+El fenómeno que ocurre es la \textbf{dispersión cromática}. Sucede porque el índice de refracción de un material ($n$) depende de la longitud de onda ($\lambda$) de la luz. La luz blanca es una mezcla de todas las longitudes de onda del espectro visible. Al entrar en la lámina, cada color se refracta con un ángulo ligeramente distinto, separándose.
+La \textbf{Ley de Snell} rige la refracción: $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$.
+Como el índice de refracción para el violeta es mayor que para el rojo ($n_v > n_r$), para un mismo ángulo de incidencia $\varepsilon$, la luz violeta se desviará más (tendrá un ángulo de refracción menor) que la luz roja.
+
+\paragraph*{b) Reflexión Total Interna y Ángulo Crítico}
+Cuando la luz viaja de un medio más denso ($n_2$) a uno menos denso ($n_1$), si el ángulo de incidencia es mayor que un cierto \textbf{ángulo crítico} ($i_c$), la luz no se refracta sino que se refleja completamente. El ángulo crítico es aquel para el cual el ángulo de refracción es de 90º.
+$$ n_2 \sin(i_c) = n_1 \sin(90^\circ) \implies \sin(i_c) = \frac{n_1}{n_2} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Identificación de los rayos}
+Según Snell: $n_{aire} \sin(\varepsilon) = n_{material} \sin(\theta_r)$. Como $n_{violeta} > n_{rojo}$, para el mismo $\varepsilon$, se debe cumplir que $\sin(\theta_{r,violeta}) < \sin(\theta_{r,rojo})$, y por tanto $\theta_{r,violeta} < \theta_{r,rojo}$. El rayo más desviado hacia la normal es el violeta. En la figura, el rayo 2 está más desviado que el 1.
+
+\paragraph*{b) Cálculo de ángulos}
+La condición de que el rayo 2 salga paralelo a la superficie implica que el ángulo de incidencia $i$ es el ángulo crítico para ese color.
+\begin{gather}
+    \sin(i) = \frac{n_{aire}}{n_{rayo \, 2}}
+\end{gather}
+Por la geometría de la lámina plano-paralela, el ángulo de refracción en la primera cara ($\theta_{r2}$) y el ángulo de incidencia en la segunda ($i$) son ángulos alternos internos entre paralelas (las normales), por lo que son iguales: $\theta_{r2}=i$.
+Finalmente, aplicamos Snell en la primera cara para encontrar $\varepsilon$:
+\begin{gather}
+    n_{aire} \sin(\varepsilon) = n_{rayo \, 2} \sin(\theta_{r2})
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Identificación de los rayos}
+Como $n_v > n_r$, el rayo violeta se desvía más. Por tanto, \textbf{el rayo 2 es el violeta y el rayo 1 es el rojo}.
+
+\paragraph*{b) Cálculo de ángulos}
+El rayo 2 es el violeta, por lo que usamos $n_v=1,23$.
+\begin{gather}
+    \sin(i) = \frac{1}{1,23} \approx 0,813 \implies i = \arcsin(0,813) \approx 54,39^\circ
+\end{gather}
+Por geometría, el ángulo de refracción en la primera cara para el rayo violeta es $\theta_{r,violeta} = i \approx 54,39^\circ$.
+Ahora aplicamos Snell en la entrada:
+\begin{gather}
+    1 \cdot \sin(\varepsilon) = 1,23 \cdot \sin(54,39^\circ) \approx 1,23 \cdot 0,813 \approx 0,9999 \\
+    \varepsilon = \arcsin(0,9999) \approx 90^\circ
+\end{gather}
+Un ángulo de entrada de 90º (incidencia rasante).
+\begin{cajaresultado}
+    El ángulo de incidencia en la cara superior es \boldsymbol{$i \approx 54,39^\circ$} y el ángulo de entrada es \boldsymbol{$\varepsilon \approx 90^\circ$}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al entrar en la lámina, la luz blanca se dispersa. Como el índice de refracción del violeta es mayor, este se desvía más; por tanto el rayo 2 es el violeta y el 1 el rojo. Para que el rayo violeta experimente reflexión total interna con un ángulo de salida de 90º, debe incidir en la segunda cara con el ángulo crítico ($54,39^\circ$), lo cual, por la geometría del sistema y la ley de Snell, requiere que el haz de luz blanca inicial incida sobre la lámina con un ángulo rasante de 90º.
+\end{cajaconclusion}
+\newpage
+% ======================================================================
+\section{Bloque IV: Física del Siglo XX}
+\label{sec:xx_2020_jul_ext}
+% ======================================================================
+
+\subsection{Cuestión 8}
+\label{subsec:C8_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+La energía relativista de una partícula es $3/\sqrt{8}$ veces su energía en reposo. Calcula su velocidad en función de la velocidad de la luz en el vacío, c. Si se duplica dicha velocidad, ¿se duplica su energía? Responde razonadamente.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Relación de energías:} Energía total $E = \frac{3}{\sqrt{8}} E_0$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Velocidad de la partícula ($v$) en función de $c$.
+        \item Si al duplicar $v$, la energía $E$ también se duplica.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Energía Relativista vs. Velocidad} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una gráfica con el eje X etiquetado como 'v/c' (de 0 a 1) y el eje Y como 'Energía Total / E_0' (es decir, el factor $\gamma$). Dibujar la curva de $\gamma = 1/\sqrt{1-(v/c)^2}$. La curva debe empezar en 1 para v/c=0 y crecer de forma asintótica hacia el infinito a medida que v/c se acerca a 1. Marcar el punto (1/3, 1.06) y el punto (2/3, 1.34) para mostrar visualmente que duplicar la velocidad no duplica la energía (el aumento de energía es más que el doble)." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{energia_relativista.png}
+    }}
+    \caption{Relación no lineal entre la energía total y la velocidad.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La energía total relativista $E$ de una partícula se relaciona con su energía en reposo $E_0$ a través del factor de Lorentz, $\gamma$:
+$$ E = \gamma E_0 $$
+donde $\gamma$ depende de la velocidad $v$ de la partícula:
+$$ \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} $$
+La relación entre energía y velocidad no es lineal.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Cálculo de la velocidad $v$}
+A partir de la relación dada y la definición de energía total:
+\begin{gather}
+    E = \gamma E_0 = \frac{3}{\sqrt{8}} E_0 \implies \gamma = \frac{3}{\sqrt{8}}
+\end{gather}
+Ahora, usamos la definición de $\gamma$ para despejar $v$:
+\begin{gather}
+    \frac{1}{\sqrt{1 - v^2/c^2}} = \frac{3}{\sqrt{8}} \implies \sqrt{1 - v^2/c^2} = \frac{\sqrt{8}}{3} \nonumber \\
+    1 - \frac{v^2}{c^2} = \left(\frac{\sqrt{8}}{3}\right)^2 = \frac{8}{9} \nonumber \\
+    \frac{v^2}{c^2} = 1 - \frac{8}{9} = \frac{1}{9} \implies v = \sqrt{\frac{c^2}{9}} = \frac{c}{3}
+\end{gather}
+
+\paragraph*{b) Comprobación al duplicar la velocidad}
+La nueva velocidad es $v' = 2v = 2c/3$. Calculemos el nuevo factor de Lorentz, $\gamma'$, y la nueva energía, $E'$.
+\begin{gather}
+    \gamma' = \frac{1}{\sqrt{1 - (v'/c)^2}} = \frac{1}{\sqrt{1 - (2c/3c)^2}} = \frac{1}{\sqrt{1 - 4/9}} = \frac{1}{\sqrt{5/9}} = \frac{3}{\sqrt{5}} \\
+    E' = \gamma' E_0 = \frac{3}{\sqrt{5}} E_0
+\end{gather}
+Comparamos $E'$ con $2E$:
+$$ 2E = 2 \left( \frac{3}{\sqrt{8}} E_0 \right) = \frac{6}{\sqrt{8}} E_0 $$
+Como $\frac{3}{\sqrt{5}} \approx 1,34$ y $\frac{6}{\sqrt{8}} \approx 2,12$, es evidente que $E' \neq 2E$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es simbólico.
+\begin{cajaresultado}
+    La velocidad de la partícula es \boldsymbol{$v = \frac{c}{3}$}.
+\end{cajaresultado}
+\begin{cajaresultado}
+    No, al duplicar la velocidad, la energía \textbf{no se duplica}. La nueva energía es $E' = \frac{3}{\sqrt{5}}E_0$, que es distinta de $2E = \frac{6}{\sqrt{8}}E_0$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Resolviendo la ecuación de la energía relativista, se obtiene que la partícula se mueve a un tercio de la velocidad de la luz. La relación entre energía y velocidad en relatividad no es lineal; la energía crece mucho más rápido que la velocidad a medida que esta se acerca a $c$. Por ello, al duplicar la velocidad de $c/3$ a $2c/3$, el aumento en la energía es superior al doble.
+\end{cajaconclusion}
+\newpage
+\subsection{Problema 4}
+\label{subsec:P4_2020_jul_ext_b}
+
+\begin{cajaenunciado}
+El ${}^{222}\text{Rn}$ (radón 222) es un gas radiactivo natural. Se realizan medidas para determinar la masa y la actividad de dicho gas.
+\begin{enumerate}
+    \item[a)] Determina la actividad en becquerel de un cierto volumen de aire si la masa de ${}^{222}\text{Rn}$ que se mide es de 0,02 pg. (1 punto)
+    \item[b)] La actividad medida en otro volumen de aire es de 228 Bq. Si dicho volumen se aísla, y se vuelve a medir al cabo de 11,4 días ¿Cuánta actividad, debida al ${}^{222}\text{Rn}$ se tendrá? ¿Cuánto valdrá la masa de ${}^{222}\text{Rn}$ correspondiente? (1 punto)
+\end{enumerate}
+\textbf{Dato:} masa de un átomo de ${}^{222}\text{Rn}$: $3,7\cdot10^{-25}$ kg; periodo de semidesintegración del ${}^{222}\text{Rn}$: 3,8 días.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Isótopo:} Radón-222 (${}^{222}\text{Rn}$).
+    \item \textbf{Masa de un átomo ($m_{atomo}$):} $m_{atomo} = 3,7 \cdot 10^{-25} \, \text{kg}$.
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 3,8$ días.
+    \item \textbf{Datos (a):} Masa inicial $m_a = 0,02 \, \text{pg} = 0,02 \cdot 10^{-12} \, \text{g} = 2 \cdot 10^{-17} \, \text{kg}$.
+    \item \textbf{Datos (b):} Actividad inicial $A_0 = 228 \, \text{Bq}$. Tiempo transcurrido $t = 11,4$ días.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Actividad $A_a$ correspondiente a la masa $m_a$.
+        \item[b)] Actividad final $A(t)$ y masa final $m(t)$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Ley de Decaimiento Radiactivo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una gráfica de decaimiento exponencial con el eje Y etiquetado 'Actividad (Bq)' y el eje X 'Tiempo (días)'. La curva empieza en $A_0=228$ Bq en $t=0$. Marcar el periodo de semidesintegración en el eje X, $T_{1/2}=3,8$ días. Mostrar que en $t=3,8$ días, la actividad es $A_0/2=114$ Bq. Mostrar que en $t=7,6$ días, la actividad es $A_0/4=57$ Bq. Mostrar que en $t=11,4$ días, la actividad es $A_0/8=28,5$ Bq." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{decaimiento_radon.png}
+    }}
+    \caption{Curva de actividad del Radón-222 en función del tiempo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Actividad y Constante de Desintegración}
+La actividad $A$ de una muestra es el número de desintegraciones por segundo y es proporcional al número de núcleos radiactivos $N$ presentes ($A = \lambda N$). La constante de desintegración $\lambda$ se relaciona con el periodo de semidesintegración $T_{1/2}$ mediante $\lambda = \frac{\ln 2}{T_{1/2}}$. El número de núcleos $N$ se puede calcular a partir de la masa total de la muestra $m$ y la masa de un solo átomo ($N=m/m_{atomo}$).
+
+\paragraph*{Ley de Desintegración Radiactiva}
+La actividad de una muestra disminuye exponencialmente con el tiempo:
+$$ A(t) = A_0 e^{-\lambda t} = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}} $$
+La masa también sigue esta misma ley: $m(t) = m_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Actividad a partir de la masa}
+\begin{gather}
+    N_a = \frac{m_a}{m_{atomo}} \\
+    \lambda = \frac{\ln 2}{T_{1/2}} \\
+    A_a = \lambda N_a = \frac{\ln 2}{T_{1/2}} \frac{m_a}{m_{atomo}}
+\end{gather}
+\paragraph*{b) Actividad y masa finales}
+El tiempo transcurrido es un múltiplo del periodo: $t = 11,4 = 3 \times 3,8 = 3 \cdot T_{1/2}$.
+\begin{gather}
+    A(t) = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}} = A_0 \left(\frac{1}{2}\right)^3 = \frac{A_0}{8}
+\end{gather}
+Una vez obtenida la actividad final, podemos encontrar la masa final. Primero calculamos la masa inicial $m_0$ a partir de $A_0$.
+\begin{gather}
+    N_0 = \frac{A_0}{\lambda} \implies m_0 = N_0 \cdot m_{atomo} = \frac{A_0}{\lambda} m_{atomo}
+\end{gather}
+Y la masa final será:
+\begin{gather}
+    m(t) = \frac{m_0}{8}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Actividad de la muestra de 0,02 pg}
+Primero convertimos $T_{1/2}$ a segundos para que las unidades sean consistentes.
+\begin{gather}
+    T_{1/2} = 3,8 \, \text{días} \times \frac{24 \cdot 3600 \, \text{s}}{1 \, \text{día}} = 328320 \, \text{s} \\
+    \lambda = \frac{\ln 2}{328320 \, \text{s}} \approx 2,11 \cdot 10^{-6} \, \text{s}^{-1} \\
+    N_a = \frac{2 \cdot 10^{-17} \, \text{kg}}{3,7 \cdot 10^{-25} \, \text{kg/átomo}} \approx 5,405 \cdot 10^7 \, \text{átomos} \\
+    A_a = (2,11 \cdot 10^{-6} \, \text{s}^{-1}) \cdot (5,405 \cdot 10^7 \, \text{átomos}) \approx 114,1 \, \text{Bq}
+\end{gather}
+\begin{cajaresultado}
+    La actividad de la muestra es \boldsymbol{$A_a \approx 114,1 \, \textbf{Bq}$}.
+\end{cajaresultado}
+\paragraph*{b) Actividad y masa tras 11,4 días}
+Han transcurrido exactamente 3 periodos de semidesintegración.
+\begin{gather}
+    A(11,4 \text{ d}) = \frac{A_0}{2^3} = \frac{228 \, \text{Bq}}{8} = 28,5 \, \text{Bq}
+\end{gather}
+\begin{cajaresultado}
+    La actividad final será de \boldsymbol{$A(t) = 28,5 \, \textbf{Bq}$}.
+\end{cajaresultado}
+Como la masa es proporcional a la actividad (y al número de núcleos), también se habrá reducido a la octava parte. Primero calculamos la masa inicial $m_0$ correspondiente a $A_0=228$ Bq:
+\begin{gather}
+    N_0 = \frac{A_0}{\lambda} = \frac{228}{2,11 \cdot 10^{-6}} \approx 1,08 \cdot 10^8 \, \text{átomos} \\
+    m_0 = N_0 \cdot m_{atomo} = (1,08 \cdot 10^8) \cdot (3,7 \cdot 10^{-25}) \approx 4,0 \cdot 10^{-17} \, \text{kg}
+\end{gather}
+La masa final será:
+\begin{gather}
+    m(t) = \frac{m_0}{8} = \frac{4,0 \cdot 10^{-17} \, \text{kg}}{8} = 5,0 \cdot 10^{-18} \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    La masa final correspondiente es \boldsymbol{$m(t) = 5,0 \cdot 10^{-18} \, \textbf{kg}$} (ó 0,005 pg).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Una diminuta masa de 0,02 picogramos de Radón-222 contiene más de 50 millones de átomos, lo que genera una actividad considerable de 114,1 Bq. Para la segunda muestra, tras 11,4 días (que son exactamente 3 periodos de semidesintegración), tanto la actividad como la masa se reducen a un octavo de su valor inicial, resultando en una actividad final de 28,5 Bq y una masa de $5,0 \cdot 10^{-18}$ kg.
+\end{cajaconclusion}
+\newpage

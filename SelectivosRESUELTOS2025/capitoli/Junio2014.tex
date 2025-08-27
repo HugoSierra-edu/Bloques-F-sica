@@ -1,0 +1,938 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2014 - Convocatoria Ordinaria}
+\label{chap:2014_jun_ord}
+
+% ======================================================================
+\section{Opción A}
+\label{sec:A_2014_jun_ord}
+% ======================================================================
+
+\subsection{Bloque I - Cuestión}
+\label{subsec:A1_2014_jun_ord}
+
+\begin{cajaenunciado}
+La Luna tarda 27 días y 8 horas aproximadamente en completar una órbita circular alrededor de la Tierra, con un radio de $3,84\cdot10^{5}\,\text{km}$. Calcula razonadamente la masa de la Tierra.
+\textbf{Dato:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es fundamental convertir todos los datos al Sistema Internacional (SI) para asegurar la coherencia de las unidades en los cálculos.
+\begin{itemize}
+    \item \textbf{Periodo orbital de la Luna ($T$):} El periodo es de 27 días y 8 horas.
+    \begin{itemize}
+        \item $T_{dias} = 27 \, \text{días} \times \frac{24 \, \text{h}}{1 \, \text{día}} \times \frac{3600 \, \text{s}}{1 \, \text{h}} = 2.332.800 \, \text{s}$.
+        \item $T_{horas} = 8 \, \text{h} \times \frac{3600 \, \text{s}}{1 \, \text{h}} = 28.800 \, \text{s}$.
+        \item $T = 2.332.800 + 28.800 = 2.361.600 \, \text{s} \approx 2,36 \cdot 10^6 \, \text{s}$.
+    \end{itemize}
+    \item \textbf{Radio orbital de la Luna ($R$):} $R = 3,84 \cdot 10^5 \, \text{km} \times \frac{1000 \, \text{m}}{1 \, \text{km}} = 3,84 \cdot 10^8 \, \text{m}$.
+    \item \textbf{Constante de Gravitación Universal ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnita:} La masa de la Tierra ($M_T$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Órbita de la Luna alrededor de la Tierra} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta grande, la Tierra, en el centro. Un satélite más pequeño, la Luna, en una órbita circular de radio R a su alrededor. Dibujar el vector de Fuerza Gravitatoria ($F_g$) que la Tierra ejerce sobre la Luna, apuntando hacia el centro de la Tierra. Añadir una etiqueta que indique que esta fuerza gravitatoria actúa como Fuerza Centrípeta ($F_c$) para mantener la órbita."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/grav_orbita_terrestre.png}
+    }}
+    \caption{Modelo físico para el cálculo de la masa de la Tierra.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El movimiento de la Luna en una órbita circular alrededor de la Tierra se debe a que la fuerza de atracción gravitatoria que ejerce la Tierra sobre la Luna actúa como la fuerza centrípeta necesaria para mantener dicho movimiento. Para resolver el problema, igualaremos las expresiones de ambas fuerzas.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal de Newton:} La fuerza de atracción entre la Tierra (masa $M_T$) y la Luna (masa $m_L$) viene dada por:
+    $$F_g = G \frac{M_T m_L}{R^2}$$
+    \item \textbf{Fuerza Centrípeta:} Para un cuerpo de masa $m_L$ que describe un movimiento circular uniforme con radio $R$ y velocidad angular $\omega$, la fuerza centrípeta es:
+    $$F_c = m_L a_c = m_L \omega^2 R$$
+    La velocidad angular $\omega$ se relaciona con el periodo orbital $T$ mediante la expresión $\omega = \frac{2\pi}{T}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Al igualar la fuerza gravitatoria y la fuerza centrípeta ($F_g = F_c$):
+\begin{gather}
+    G \frac{M_T m_L}{R^2} = m_L \omega^2 R
+\end{gather}
+La masa de la Luna, $m_L$, se cancela en ambos lados de la ecuación, lo que indica que el resultado no depende de ella. Sustituimos la velocidad angular $\omega$ en función del periodo $T$:
+\begin{gather}
+    G \frac{M_T}{R^2} = \left(\frac{2\pi}{T}\right)^2 R = \frac{4\pi^2}{T^2} R
+\end{gather}
+Reorganizamos la ecuación para despejar nuestra incógnita, la masa de la Tierra ($M_T$):
+\begin{gather}
+    G M_T T^2 = 4\pi^2 R^3 \implies M_T = \frac{4\pi^2 R^3}{G T^2}
+\end{gather}
+Esta es la expresión final que usaremos para el cálculo numérico.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los datos en unidades del SI en la expresión obtenida:
+\begin{gather}
+    M_T = \frac{4\pi^2 (3,84 \cdot 10^8 \, \text{m})^3}{(6,67 \cdot 10^{-11} \, \text{N}\text{m}^2/\text{kg}^2) (2,36 \cdot 10^6 \, \text{s})^2} \nonumber \\
+    M_T = \frac{4\pi^2 (5,66 \cdot 10^{25})}{(6,67 \cdot 10^{-11})(5,57 \cdot 10^{12})} \approx \frac{2,23 \cdot 10^{27}}{3,72 \cdot 10^2} \approx 6,0 \cdot 10^{24} \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    La masa de la Tierra calculada es $\boldsymbol{M_T \approx 6,0 \cdot 10^{24} \, \textbf{kg}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando la dinámica del movimiento circular y la Ley de Gravitación Universal, se puede determinar la masa del cuerpo central de un sistema orbital (la Tierra) a partir de los parámetros orbitales de un cuerpo que lo orbita (la Luna). El valor obtenido de $6,0 \cdot 10^{24}$ kg es consistente con el valor aceptado para la masa terrestre.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque II - Cuestión}
+\label{subsec:A2_2014_jun_ord}
+
+\begin{cajaenunciado}
+Explica brevemente qué es el efecto Doppler. Indica alguna situación física en la que se ponga de manifiesto este fenómeno.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica que requiere la definición del efecto Doppler y la descripción de un ejemplo práctico.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Efecto Doppler} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una ambulancia con su sirena encendida moviéndose rápidamente hacia la derecha. Dibuja los frentes de onda que emite como círculos. Debido al movimiento, los frentes de onda deben estar comprimidos en la dirección del movimiento (delante de la ambulancia) y expandidos en la dirección opuesta (detrás). Coloca un observador delante de la ambulancia, etiquetado como 'Frecuencia alta (sonido agudo)', y otro observador detrás, etiquetado como 'Frecuencia baja (sonido grave)'."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{esquemas/ondas_doppler.png}
+    }}
+    \caption{Ilustración del efecto Doppler para una fuente sonora en movimiento.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Definición del Efecto Doppler}
+El efecto Doppler es el cambio en la frecuencia y la longitud de onda aparentes de una onda, percibido por un observador, debido al movimiento relativo entre la fuente emisora de la onda y el propio observador.
+\begin{itemize}
+    \item Cuando la fuente y el observador se \textbf{acercan}, la frecuencia percibida es \textbf{mayor} que la frecuencia real emitida. En el caso del sonido, esto se percibe como un tono más agudo.
+    \item Cuando la fuente y el observador se \textbf{alejan}, la frecuencia percibida es \textbf{menor} que la frecuencia real emitida. En el caso del sonido, esto se percibe como un tono más grave.
+\end{itemize}
+La causa física de este fenómeno es que el movimiento relativo altera la velocidad con la que los frentes de onda sucesivos llegan al observador. Si se acercan, los frentes de onda llegan con menos tiempo de separación (mayor frecuencia); si se alejan, llegan más espaciados en el tiempo (menor frecuencia).
+
+\paragraph{Ejemplo Físico}
+Un ejemplo cotidiano y claro del efecto Doppler es el sonido de la \textbf{sirena de una ambulancia} o de un coche de policía al pasar junto a nosotros.
+\begin{itemize}
+    \item \textbf{Mientras la ambulancia se acerca:} El sonido de la sirena se percibe con un tono más alto y agudo de lo que sería si estuviera en reposo. Esto se debe a que los frentes de onda sonora se "comprimen" en la dirección del movimiento.
+    \item \textbf{Justo en el momento de pasar a nuestro lado:} Percibimos el tono real de la sirena.
+    \item \textbf{Mientras la ambulancia se aleja:} El tono de la sirena se percibe como más bajo y grave. Los frentes de onda llegan a nuestro oído más espaciados.
+\end{itemize}
+Este efecto no solo se aplica al sonido, sino también a la luz. En astronomía, el efecto Doppler de la luz de las galaxias (corrimiento al rojo) es la evidencia fundamental de la expansión del universo.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El efecto Doppler es una propiedad fundamental de todas las ondas que se manifiesta como un cambio en la frecuencia percibida cuando hay movimiento relativo entre la fuente y el observador. El cambio de tono de la sirena de una ambulancia al pasar es el ejemplo más representativo de este fenómeno en nuestra vida diaria.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque III - Problema}
+\label{subsec:A3_2014_jun_ord}
+
+\begin{cajaenunciado}
+El espejo retrovisor exterior que se utiliza en un camión es tal que, para un objeto real situado a 3 m, produce una imagen derecha que es cuatro veces más pequeña.
+\begin{enumerate}
+    \item[a)] Determina la posición de la imagen, el radio de curvatura del espejo y su distancia focal. El espejo ¿es cóncavo o convexo? (1,2 puntos)
+    \item[b)] Realiza un trazado de rayos donde se señale claramente la posición y el tamaño, tanto del objeto como de la imagen ¿Es la imagen real o virtual? (0,8 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se extraen los datos del enunciado y se aplica el convenio de signos DIN.
+\begin{itemize}
+    \item \textbf{Posición del objeto ($s$):} Es un objeto real, situado a 3 m del espejo. $s = -3 \, \text{m}$.
+    \item \textbf{Características de la imagen:} Es derecha y cuatro veces más pequeña que el objeto.
+    \begin{itemize}
+        \item "Derecha" implica que el aumento lateral es positivo.
+        \item "Cuatro veces más pequeña" implica que el módulo del aumento es $1/4$.
+    \end{itemize}
+    \item \textbf{Aumento Lateral ($A_L$):} $A_L = + \frac{1}{4} = +0,25$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Posición de la imagen ($s'$), radio de curvatura ($R$), distancia focal ($f$), tipo de espejo.
+        \item[b)] Trazado de rayos, naturaleza de la imagen (real o virtual).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Trazado de rayos para un espejo convexo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para un espejo esférico convexo. Dibuja el eje óptico horizontal. Dibuja el espejo convexo a la derecha, curvado hacia afuera. Marca el foco F y el centro de curvatura C a la derecha del espejo (en la zona virtual). Dibuja un objeto real (flecha vertical hacia arriba) a la izquierda del espejo. Traza dos rayos principales desde la punta del objeto: 1) Un rayo paralelo al eje óptico que se refleja de tal manera que su prolongación hacia atrás pasa por el foco F. 2) Un rayo dirigido hacia el centro de curvatura C que incide perpendicularmente y se refleja sobre sí mismo. El punto donde se cruzan las prolongaciones de los rayos reflejados forma la punta de la imagen. Dibuja la imagen como una flecha discontinua, que debe ser virtual, derecha y más pequeña."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/optica_espejo_convexo.png}
+    }}
+    \caption{Formación de una imagen en un espejo convexo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para resolver el problema se utilizan las ecuaciones fundamentales de los espejos esféricos:
+\begin{itemize}
+    \item \textbf{Ecuación del aumento lateral:} Relaciona el aumento con las posiciones del objeto y la imagen.
+    $$A_L = -\frac{s'}{s}$$
+    \item \textbf{Ecuación de Gauss para espejos:} Relaciona las posiciones del objeto y la imagen con la distancia focal.
+    $$\frac{1}{s} + \frac{1}{s'} = \frac{1}{f}$$
+    \item \textbf{Relación focal-radio:} La distancia focal es la mitad del radio de curvatura.
+    $$f = \frac{R}{2}$$
+\end{itemize}
+El tipo de espejo y la naturaleza de la imagen se deducen del signo de las magnitudes calculadas:
+\begin{itemize}
+    \item \textbf{Espejo convexo:} $f > 0$, $R > 0$. Siempre forma imágenes virtuales, derechas y de menor tamaño para objetos reales.
+    \item \textbf{Espejo cóncavo:} $f < 0$, $R < 0$. Puede formar imágenes reales o virtuales.
+    \item \textbf{Imagen virtual:} $s' > 0$. \textbf{Imagen real:} $s' < 0$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Posición de la imagen y tipo de espejo}
+A partir de la ecuación del aumento, despejamos la posición de la imagen $s'$:
+\begin{gather}
+    A_L = -\frac{s'}{s} \implies s' = -A_L \cdot s
+\end{gather}
+Una vez calculado $s'$, usamos la ecuación de Gauss para despejar la distancia focal $f$:
+\begin{gather}
+    \frac{1}{f} = \frac{1}{s} + \frac{1}{s'} \implies f = \left( \frac{1}{s} + \frac{1}{s'} \right)^{-1} = \frac{s \cdot s'}{s + s'}
+\end{gather}
+El signo de $f$ nos dirá si el espejo es cóncavo o convexo. Finalmente, el radio de curvatura es:
+\begin{gather}
+    R = 2f
+\end{gather}
+\paragraph{b) Naturaleza de la imagen}
+La naturaleza de la imagen (real o virtual) se determina directamente a partir del signo de la posición de la imagen, $s'$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Cálculos}
+\begin{itemize}
+    \item \textbf{Posición de la imagen ($s'$):}
+    \begin{gather}
+        s' = -(+0,25) \cdot (-3 \, \text{m}) = +0,75 \, \text{m}
+    \end{gather}
+    \item \textbf{Distancia focal ($f$):}
+    \begin{gather}
+        \frac{1}{f} = \frac{1}{-3} + \frac{1}{0,75} = -\frac{1}{3} + \frac{4}{3} = \frac{3}{3} = 1 \, \text{m}^{-1} \implies f = +1 \, \text{m}
+    \end{gather}
+    \item \textbf{Radio de curvatura ($R$):}
+    \begin{gather}
+        R = 2f = 2 \cdot (1 \, \text{m}) = +2 \, \text{m}
+    \end{gather}
+\end{itemize}
+\begin{cajaresultado}
+La posición de la imagen es $\boldsymbol{s' = +0,75 \, \textbf{m}}$. La distancia focal es $\boldsymbol{f = +1 \, \textbf{m}}$ y el radio de curvatura es $\boldsymbol{R = +2 \, \textbf{m}}$. Dado que la distancia focal es positiva y la imagen es derecha y de menor tamaño, el espejo es \textbf{convexo}.
+\end{cajaresultado}
+\paragraph{b) Naturaleza de la imagen}
+Como $s' = +0,75$ m es un valor positivo, la imagen se forma a la derecha del espejo (en la zona virtual).
+\begin{cajaresultado}
+La imagen es \textbf{virtual}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las características de la imagen (derecha, virtual y de menor tamaño) son consistentes con las de un espejo convexo, como se usa típicamente en los retrovisores de vehículos para ampliar el campo de visión. Los cálculos confirman que el espejo tiene una distancia focal de +1 m y un radio de curvatura de +2 m, y que la imagen se forma 75 cm por detrás de la superficie del espejo.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque IV - Problema}
+\label{subsec:A4_2014_jun_ord}
+
+\begin{cajaenunciado}
+Por dos conductores rectilíneos, indefinidos y paralelos entre sí, circulan corrientes continuas de intensidades $I_1$ e $I_2$, respectivamente, como muestra la figura. La distancia de separación entre ambos es $d=2$ cm.
+\begin{enumerate}
+    \item[a)] Sabiendo que $I_1 = 1$ A, calcula el valor de $I_2$ para que, en un punto equidistante a ambos conductores, el campo magnético total sea $\vec{B} = -10^{-5} \vec{k}$ T. (1 punto)
+    \item[b)] Calcula la fuerza $\vec{F}$ (módulo, dirección y sentido) sobre una carga $q=1 \, \mu\text{C}$ que pasa por dicho punto, con una velocidad $\vec{v} = 10^6 \vec{j}$ m/s. Representa los vectores $\vec{v}$, $\vec{B}$ y $\vec{F}$. (1 punto)
+\end{enumerate}
+\textbf{Dato:} permeabilidad magnética del vacío, $\mu_0 = 4\pi \cdot 10^{-7}$ T m/A.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Corriente 1 ($I_1$):} $I_1 = 1$ A. Su sentido es $+\vec{j}$ (hacia arriba).
+    \item \textbf{Corriente 2 ($I_2$):} Incógnita. Su sentido es $+\vec{j}$ (hacia arriba).
+    \item \textbf{Separación de los conductores ($d$):} $d = 2 \text{ cm} = 0,02 \text{ m}$.
+    \item \textbf{Punto de cálculo (P):} Punto medio entre los conductores. La distancia de cada conductor a P es $r = d/2 = 1 \text{ cm} = 0,01 \text{ m}$.
+    \item \textbf{Campo magnético total en P ($\vec{B}_{tot}$):} $\vec{B}_{tot} = -10^{-5} \vec{k}$ T.
+    \item \textbf{Carga de prueba ($q$):} $q = 1 \, \mu\text{C} = 10^{-6}$ C.
+    \item \textbf{Velocidad de la carga ($\vec{v}$):} $\vec{v} = 10^6 \vec{j}$ m/s.
+    \item \textbf{Constante:} $\mu_0 = 4\pi \cdot 10^{-7}$ T m/A.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{a) Campos magnéticos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista superior del plano XZ. El eje X es horizontal. Un conductor con corriente $I_1$ sale del papel en $x=-0.01$ (punto con círculo). Otro conductor con $I_2$ sale del papel en $x=+0.01$. El punto P está en el origen (0,0). Aplicando la regla de la mano derecha, dibujar el vector campo $\vec{B}_1$ en P, creado por $I_1$, apuntando en la dirección $-\vec{k}$ (hacia abajo en el plano XZ). Dibujar el vector $\vec{B}_2$ en P, creado por $I_2$, apuntando en la dirección $+\vec{k}$ (hacia arriba). Mostrar el vector suma $\vec{B}_{total}$ apuntando hacia abajo, indicando que $|\vec{B}_1| > |\vec{B}_2|$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/em_campos_hilos.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{b) Fuerza de Lorentz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de coordenadas 3D (XYZ). El vector velocidad $\vec{v}$ apunta a lo largo del eje Y positivo. El vector campo magnético total $\vec{B}$ apunta a lo largo del eje Z negativo. El vector fuerza $\vec{F} = q(\vec{v} \times \vec{B})$ se calcula con la regla de la mano derecha: $\vec{j} \times (-\vec{k}) = -\vec{i}$. Dibujar el vector $\vec{F}$ apuntando a lo largo del eje X negativo. Etiquetar todos los vectores."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/em_lorentz.png}
+    }}
+    \caption{Representación de los campos magnéticos y la fuerza de Lorentz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Campo magnético de hilos rectilíneos}
+El módulo del campo magnético creado por un conductor rectilíneo e indefinido a una distancia $r$ viene dado por la \textbf{Ley de Ampère} (o Biot-Savart):
+$$B = \frac{\mu_0 I}{2\pi r}$$
+La dirección y el sentido se determinan con la \textbf{regla de la mano derecha}. El campo total en un punto es la suma vectorial de los campos creados por cada conductor (\textbf{Principio de Superposición}).
+\paragraph{b) Fuerza magnética}
+La fuerza que un campo magnético $\vec{B}$ ejerce sobre una carga $q$ que se mueve con velocidad $\vec{v}$ es la \textbf{Fuerza de Lorentz}:
+$$\vec{F} = q(\vec{v} \times \vec{B})$$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Cálculo de $I_2$}
+En el punto P, equidistante de ambos hilos:
+\begin{itemize}
+    \item El hilo 1 (izquierda) crea un campo $\vec{B}_1$ que, por la regla de la mano derecha, apunta en la dirección $-\vec{k}$.
+    \item El hilo 2 (derecha) crea un campo $\vec{B}_2$ que apunta en la dirección $+\vec{k}$.
+\end{itemize}
+El campo total es la suma vectorial:
+\begin{gather}
+    \vec{B}_{tot} = \vec{B}_1 + \vec{B}_2 = \left( -\frac{\mu_0 I_1}{2\pi r} \right)\vec{k} + \left( \frac{\mu_0 I_2}{2\pi r} \right)\vec{k} = \frac{\mu_0}{2\pi r}(I_2 - I_1)\vec{k}
+\end{gather}
+Se nos da $\vec{B}_{tot}$. Igualamos y despejamos $I_2$:
+\begin{gather}
+    \frac{\mu_0}{2\pi r}(I_2 - I_1) = -10^{-5}
+\end{gather}
+\paragraph{b) Cálculo de la fuerza $\vec{F}$}
+Se aplica directamente la fórmula de la Fuerza de Lorentz:
+\begin{gather}
+    \vec{F} = q(\vec{v} \times \vec{B}_{tot})
+\end{gather}
+El cálculo se realiza mediante el producto vectorial de los vectores unitarios.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Cálculo de $I_2$}
+Sustituimos los valores conocidos en la ecuación del campo total:
+\begin{gather}
+    \frac{4\pi \cdot 10^{-7}}{2\pi \cdot 0,01}(I_2 - 1) = -10^{-5} \nonumber \\
+    2 \cdot 10^{-5} (I_2 - 1) = -10^{-5} \nonumber \\
+    I_2 - 1 = -\frac{10^{-5}}{2 \cdot 10^{-5}} = -0,5 \nonumber \\
+    I_2 = 1 - 0,5 = 0,5 \, \text{A}
+\end{gather}
+\begin{cajaresultado}
+    El valor de la corriente debe ser $\boldsymbol{I_2 = 0,5 \, \textbf{A}}$.
+\end{cajaresultado}
+
+\paragraph{b) Cálculo de la fuerza $\vec{F}$}
+\begin{gather}
+    \vec{F} = (10^{-6} \, \text{C}) \left( (10^6 \vec{j}) \times (-10^{-5} \vec{k}) \right) \nonumber \\
+    \vec{F} = 10^{-6} \cdot 10^6 \cdot (-10^{-5}) (\vec{j} \times \vec{k}) \nonumber \\
+    \vec{F} = -10^{-5} (\vec{i}) = -10^{-5} \vec{i} \, \text{N}
+\end{gather}
+El módulo de la fuerza es $F = 10^{-5}$ N, la dirección es el eje X, y el sentido es el negativo.
+\begin{cajaresultado}
+    La fuerza sobre la carga es $\boldsymbol{\vec{F} = -10^{-5} \vec{i} \, \textbf{N}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Dado que los campos de los dos hilos se oponen en el punto medio y el campo resultante es en la dirección de $\vec{B}_1$ (sentido $-\vec{k}$), la corriente $I_1$ debe ser mayor que $I_2$. El cálculo muestra que $I_2$ debe ser 0,5 A. La fuerza de Lorentz sobre una carga que se mueve perpendicularmente a este campo magnético es a su vez perpendicular a ambos, resultando en una fuerza de $10^{-5}$ N en la dirección $-\vec{i}$.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque V - Cuestión}
+\label{subsec:A5_2014_jun_ord}
+
+\begin{cajaenunciado}
+Se desea identificar las partículas que emite una sustancia radiactiva. Para ello se hacen pasar entre las placas de un condensador cargado y se observa que unas se desvían en dirección a la placa positiva y otras no se desvían. Razona el tipo de emisión radiactiva y partículas que la constituyen, en cada caso.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica sobre la naturaleza de las emisiones radiactivas y su interacción con un campo eléctrico.
+\begin{itemize}
+    \item \textbf{Dispositivo:} Un campo eléctrico uniforme (entre las placas de un condensador).
+    \item \textbf{Observación 1:} Un tipo de partícula se desvía hacia la placa positiva.
+    \item \textbf{Observación 2:} Otro tipo de partícula no se desvía.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Radiación en un campo eléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema que muestra las dos placas de un condensador, la superior con carga positiva (+) y la inferior con carga negativa (-), creando un campo eléctrico vertical hacia abajo. Desde la izquierda, un haz de radiación entra en la región del campo. El haz se separa en tres trayectorias: 1) Partículas alfa ($\alpha$), cargadas positivamente, se desvían hacia la placa negativa. 2) Partículas beta ($\beta^-$), cargadas negativamente, se desvían más bruscamente hacia la placa positiva. 3) Rayos gamma ($\gamma$), sin carga, continúan en línea recta sin desviarse. Etiquetar claramente cada tipo de partícula y las placas."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/nuclear_radiacion_campo_E.png}
+    }}
+    \caption{Comportamiento de las radiaciones alfa, beta y gamma en un campo eléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La resolución se basa en la \textbf{fuerza eléctrica} sobre partículas cargadas y en el conocimiento de los tres tipos principales de emisión radiactiva.
+\begin{itemize}
+    \item \textbf{Fuerza Eléctrica:} Un campo eléctrico $\vec{E}$ ejerce una fuerza $\vec{F} = q\vec{E}$ sobre una partícula con carga $q$.
+    \begin{itemize}
+        \item Si $q > 0$, la fuerza tiene el mismo sentido que el campo.
+        \item Si $q < 0$, la fuerza tiene sentido opuesto al campo.
+        \item Si $q = 0$, la fuerza es nula.
+    \end{itemize}
+    \item \textbf{Tipos de Emisión Radiactiva:}
+    \begin{itemize}
+        \item \textbf{Radiación Alfa ($\alpha$):} Son núcleos de Helio ($^4_2\text{He}$), formados por 2 protones y 2 neutrones. Tienen carga positiva ($q=+2e$).
+        \item \textbf{Radiación Beta ($\beta$):} Pueden ser electrones ($\beta^-$) o positrones ($\beta^+$). La más común, $\beta^-$, son electrones con carga negativa ($q=-e$).
+        \item \textbf{Radiación Gamma ($\gamma$):} Son fotones de muy alta energía. No tienen masa ni carga eléctrica ($q=0$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{4. Análisis de los Casos}
+\paragraph{Partículas desviadas hacia la placa positiva}
+La placa positiva atrae a las cargas negativas. Por lo tanto, estas partículas deben tener carga eléctrica negativa. De los tipos de radiación comunes, la que está constituida por partículas con carga negativa es la \textbf{emisión beta negativa ($\beta^-$)}, que consiste en un flujo de \textbf{electrones}.
+
+\paragraph{Partículas que no se desvían}
+Si las partículas no se desvían al atravesar el campo eléctrico, es porque la fuerza eléctrica sobre ellas es nula. Esto implica que no tienen carga eléctrica. La emisión radiactiva que consiste en partículas sin carga es la \textbf{radiación gamma ($\gamma$)}, que está formada por \textbf{fotones} de alta energía.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El experimento permite identificar dos tipos de emisiones basándose en su carga eléctrica:
+\begin{itemize}
+    \item Las partículas que se desvían hacia la placa positiva son \textbf{electrones}, correspondientes a una \textbf{emisión beta ($\beta^-$)}.
+    \item Las partículas que no sufren desviación son \textbf{fotones}, correspondientes a una \textbf{emisión gamma ($\gamma$)}.
+\end{itemize}
+(Si se hubiera observado una desviación hacia la placa negativa, se trataría de una emisión alfa).
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque VI - Cuestión}
+\label{subsec:A6_2014_jun_ord}
+
+\begin{cajaenunciado}
+En febrero de este año 2014, en la National Ignition Facility, se ha conseguido por primera vez la fusión nuclear energéticamente rentable a partir de la reacción ${}_1^2\text{H} + {}_1^3\text{H} \to {}_Z^A\text{X} + {}_0^1\text{n}$. Determina Z, A y el nombre del elemento X que se produce. Calcula la energía (en MeV) que se genera en dicha reacción.
+\textbf{Datos:} masa del deuterio, $m({}_1^2\text{H})=2,0141\,\text{u}$; masa del tritio, $m({}_1^3\text{H})=3,0160\,\text{u}$; masa del neutrón, $m({}_0^1\text{n})=1,0087\,\text{u}$; masa del núcleo desconocido, $m({}_Z^A\text{X})=4,0026\,\text{u}$; velocidad de la luz en el vacío, $c=3\cdot10^8\,\text{m/s}$; unidad de masa atómica, $u=1,66\cdot10^{-27}\,\text{kg}$; carga elemental, $e=1,60\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Reacción Nuclear:} ${}_1^2\text{H} + {}_1^3\text{H} \to {}_Z^A\text{X} + {}_0^1\text{n}$
+    \item \textbf{Masas atómicas:}
+    \begin{itemize}
+        \item $m_D = 2,0141\,\text{u}$
+        \item $m_T = 3,0160\,\text{u}$
+        \item $m_n = 1,0087\,\text{u}$
+        \item $m_X = 4,0026\,\text{u}$
+    \end{itemize}
+    \item \textbf{Constantes:} $c$, $u$ (en kg), $e$.
+    \item \textbf{Incógnitas:} Número másico A, número atómico Z, elemento X, y energía liberada $\Delta E$ en MeV.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Identificación de la partícula}
+Para identificar el núcleo resultante X, se aplican las \textbf{leyes de conservación de la carga y del número de nucleones} (leyes de Soddy-Fajans):
+\begin{itemize}
+    \item La suma de los números másicos (superíndices) debe ser igual antes y después de la reacción.
+    \item La suma de los números atómicos (subíndices) debe ser igual antes y después de la reacción.
+\end{itemize}
+\paragraph{Cálculo de la energía}
+La energía liberada en la reacción se debe a la conversión de parte de la masa de los reactivos en energía, según la \textbf{equivalencia masa-energía de Einstein}.
+\begin{itemize}
+    \item Primero se calcula el \textbf{defecto de masa ($\Delta m$)} de la reacción: la diferencia entre la masa total de los reactivos y la masa total de los productos.
+    $$\Delta m = m_{\text{reactivos}} - m_{\text{productos}} = (m_D + m_T) - (m_X + m_n)$$
+    \item Luego, se aplica la ecuación de Einstein para hallar la energía en Julios:
+    $$\Delta E = \Delta m \cdot c^2$$
+    \item Finalmente, se convierte la energía de Julios a Megaelectronvoltios (MeV) usando el factor de conversión $1 \, \text{MeV} = 1,60 \cdot 10^{-13} \, \text{J}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Identificación de X}
+\begin{gather}
+    2 + 3 = A + 1 \implies A = 4 \\
+    1 + 1 = Z + 0 \implies Z = 2
+\end{gather}
+El elemento con número atómico $Z=2$ es el Helio. Por lo tanto, X es un núcleo de Helio-4.
+\paragraph{Energía de la reacción}
+\begin{gather}
+    \Delta m = (m({}_1^2\text{H}) + m({}_1^3\text{H})) - (m({}_2^4\text{He}) + m({}_0^1\text{n})) \\
+    \Delta E_J = (\Delta m_u) \cdot (1,66 \cdot 10^{-27} \, \text{kg/u}) \cdot c^2 \\
+    \Delta E_{MeV} = \frac{\Delta E_J}{1,60 \cdot 10^{-13} \, \text{J/MeV}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Identificación de X}
+Como $A=4$ y $Z=2$, el núcleo es ${}_2^4\text{He}$.
+\begin{cajaresultado}
+    El núcleo producido es $\boldsymbol{A=4}$, $\boldsymbol{Z=2}$, que corresponde a un núcleo de \textbf{Helio} (${}_2^4\text{He}$), también conocido como partícula alfa.
+\end{cajaresultado}
+\paragraph{Cálculo de la Energía}
+Calculamos el defecto de masa en unidades de masa atómica (u):
+\begin{gather}
+    \Delta m = (2,0141 + 3,0160) - (4,0026 + 1,0087) \nonumber \\
+    \Delta m = 5,0301 - 5,0113 = 0,0188 \, \text{u}
+\end{gather}
+Convertimos el defecto de masa a kg:
+\begin{gather}
+    \Delta m_{kg} = 0,0188 \, \text{u} \times 1,66 \cdot 10^{-27} \, \text{kg/u} = 3,1208 \cdot 10^{-29} \, \text{kg}
+\end{gather}
+Calculamos la energía liberada en Julios:
+\begin{gather}
+    \Delta E_J = (3,1208 \cdot 10^{-29} \, \text{kg}) \cdot (3 \cdot 10^8 \, \text{m/s})^2 = 2,8087 \cdot 10^{-12} \, \text{J}
+\end{gather}
+Finalmente, convertimos la energía a MeV:
+\begin{gather}
+    \Delta E_{MeV} = \frac{2,8087 \cdot 10^{-12} \, \text{J}}{1,60 \cdot 10^{-13} \, \text{J/MeV}} \approx 17,55 \, \text{MeV}
+\end{gather}
+\begin{cajaresultado}
+    La energía generada en la reacción es $\boldsymbol{\Delta E \approx 17,55 \, \textbf{MeV}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las leyes de conservación nuclear identifican el producto de la fusión deuterio-tritio como un núcleo de Helio y un neutrón. Durante esta reacción, se produce un defecto de masa de 0,0188 u, que se convierte en una gran cantidad de energía. El cálculo muestra que se liberan 17,55 MeV por cada reacción de fusión, lo que subraya el enorme potencial energético de este tipo de procesos.
+\end{cajaconclusion}
+
+\newpage
+% ======================================================================
+\section{Opción B}
+\label{sec:B_2014_jun_ord}
+% ======================================================================
+
+\subsection{Bloque I - Cuestión}
+\label{subsec:B1_2014_jun_ord}
+
+\begin{cajaenunciado}
+Nos encontramos en la superficie de la Luna. Ponemos una piedra sobre una báscula en reposo y ésta indica 1,58 N. Determina razonadamente la intensidad de campo gravitatorio en la superficie lunar y la masa de la piedra sabiendo que el radio de la Luna es 0,27 veces el radio de la Tierra y que la masa de la Luna es 1/85 la masa de la Tierra.
+\textbf{Dato:} aceleración de la gravedad en la superficie terrestre, $g_{Tierra} = 9,8 \, \text{m/s}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Peso de la piedra en la Luna ($P_L$):} $P_L = 1,58$ N.
+    \item \textbf{Relación de radios:} $R_L = 0,27 \, R_T$.
+    \item \textbf{Relación de masas:} $M_L = \frac{1}{85} \, M_T$.
+    \item \textbf{Gravedad en la Tierra ($g_T$):} $g_T = 9,8 \, \text{m/s}^2$.
+    \item \textbf{Incógnitas:} Intensidad del campo gravitatorio lunar ($g_L$) y masa de la piedra ($m$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La intensidad del campo gravitatorio (o aceleración de la gravedad) en la superficie de un astro de masa $M$ y radio $R$ viene dada por la \textbf{Ley de Gravitación Universal}:
+$$g = G \frac{M}{R^2}$$
+El \textbf{peso} de un objeto de masa $m$ en la superficie de dicho astro se calcula mediante la \textbf{Segunda Ley de Newton}:
+$$P = m \cdot g$$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Intensidad del campo gravitatorio lunar ($g_L$)}
+Podemos establecer una relación entre la gravedad lunar y la terrestre sin necesidad de conocer $G$, $M_T$ o $R_T$.
+\begin{gather}
+    g_L = G \frac{M_L}{R_L^2} \\
+    g_T = G \frac{M_T}{R_T^2}
+\end{gather}
+Dividiendo ambas expresiones:
+\begin{gather}
+    \frac{g_L}{g_T} = \frac{G \frac{M_L}{R_L^2}}{G \frac{M_T}{R_T^2}} = \frac{M_L}{M_T} \left( \frac{R_T}{R_L} \right)^2
+\end{gather}
+Sustituimos las relaciones dadas en el enunciado:
+\begin{gather}
+    \frac{g_L}{g_T} = \left(\frac{1}{85}\right) \left( \frac{1}{0,27} \right)^2 = \frac{1}{85 \cdot (0,27)^2}
+\end{gather}
+Despejando $g_L$:
+\begin{gather}
+    g_L = g_T \cdot \frac{1}{85 \cdot (0,27)^2}
+\end{gather}
+\paragraph{Masa de la piedra ($m$)}
+Una vez conocida $g_L$, la masa de la piedra se obtiene fácilmente de la medida de su peso en la Luna:
+\begin{gather}
+    P_L = m \cdot g_L \implies m = \frac{P_L}{g_L}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Cálculo de $g_L$}
+\begin{gather}
+    g_L = 9,8 \, \text{m/s}^2 \cdot \frac{1}{85 \cdot 0,0729} = 9,8 \cdot \frac{1}{6,1965} \approx 1,58 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+    La intensidad del campo gravitatorio en la superficie lunar es $\boldsymbol{g_L \approx 1,58 \, \textbf{m/s}^2}$.
+\end{cajaresultado}
+\paragraph{Cálculo de la masa $m$}
+\begin{gather}
+    m = \frac{1,58 \, \text{N}}{1,58 \, \text{m/s}^2} = 1 \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    La masa de la piedra es $\boldsymbol{m = 1 \, \textbf{kg}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Utilizando la relación entre las masas y radios de la Luna y la Tierra, se ha determinado que la gravedad en la superficie lunar es de aproximadamente 1,58 m/s², un valor que es alrededor de 1/6 de la gravedad terrestre. Conociendo este valor, se deduce que la piedra que pesa 1,58 N en la Luna tiene una masa de 1 kg.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque II - Problema}
+\label{subsec:B2_2014_jun_ord}
+
+\begin{cajaenunciado}
+La función que representa una onda sísmica es $y(x,t) = 2 \sin(\frac{\pi}{5}t - 2,2x)$, donde x e y están expresadas en metros y t en segundos. Calcula razonadamente:
+\begin{enumerate}
+    \item[a)] La amplitud, el periodo, la frecuencia y la longitud de onda. (1 punto)
+    \item[b)] La velocidad de un punto situado a 2 m del foco emisor, para $t=10$ s. Un instante t para el que dicho punto tenga velocidad nula. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+La ecuación de la onda proporcionada es $y(x,t) = 2 \sin(\frac{\pi}{5}t - 2,2x)$.
+La comparamos con la forma estándar de una onda armónica que se propaga en el sentido positivo del eje X:
+$$y(x,t) = A \sin(\omega t - kx)$$
+Por identificación directa de los términos:
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} $A = 2$ m.
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = \frac{\pi}{5}$ rad/s.
+    \item \textbf{Número de onda ($k$):} $k = 2,2$ rad/m.
+\end{itemize}
+Para el apartado b):
+\begin{itemize}
+    \item \textbf{Posición ($x$):} $x = 2$ m.
+    \item \textbf{Instante ($t$):} $t = 10$ s.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Parámetros de la onda}
+Las características de la onda se derivan de los parámetros $A$, $\omega$ y $k$:
+\begin{itemize}
+    \item El \textbf{Periodo ($T$)} se relaciona con la frecuencia angular: $T = \frac{2\pi}{\omega}$.
+    \item La \textbf{Frecuencia ($f$)} es la inversa del periodo: $f = \frac{1}{T} = \frac{\omega}{2\pi}$.
+    \item La \textbf{Longitud de onda ($\lambda$)} se relaciona con el número de onda: $\lambda = \frac{2\pi}{k}$.
+\end{itemize}
+\paragraph{b) Velocidad transversal}
+La velocidad de vibración de un punto del medio (velocidad transversal, $v_y$) no es la velocidad de propagación de la onda, sino la derivada de la elongación con respecto al tiempo:
+$$v_y(x,t) = \frac{\partial y(x,t)}{\partial t}$$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Parámetros de la onda}
+Las fórmulas son directas:
+\begin{gather}
+    T = \frac{2\pi}{\omega} \quad ; \quad f = \frac{1}{T} \quad ; \quad \lambda = \frac{2\pi}{k}
+\end{gather}
+\paragraph{b) Velocidad transversal}
+Derivamos la función de onda respecto al tiempo:
+\begin{gather}
+    v_y(x,t) = \frac{\partial}{\partial t} [A \sin(\omega t - kx)] = A\omega \cos(\omega t - kx)
+\end{gather}
+Para encontrar un instante $t$ en el que la velocidad es nula, igualamos la expresión a cero:
+\begin{gather}
+    A\omega \cos(\omega t - kx) = 0 \implies \cos(\omega t - kx) = 0
+\end{gather}
+El coseno de un ángulo es cero cuando el ángulo es un múltiplo semientero impar de $\pi$:
+\begin{gather}
+    \omega t - kx = (2n+1)\frac{\pi}{2} \quad \text{con } n = 0, 1, 2, ...
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Parámetros de la onda}
+\begin{itemize}
+    \item \textbf{Amplitud:} $A = 2$ m.
+    \item \textbf{Periodo:} $T = \frac{2\pi}{\pi/5} = 10$ s.
+    \item \textbf{Frecuencia:} $f = \frac{1}{10} = 0,1$ Hz.
+    \item \textbf{Longitud de onda:} $\lambda = \frac{2\pi}{2,2} \approx 2,86$ m.
+\end{itemize}
+\begin{cajaresultado}
+Amplitud: $\boldsymbol{A=2\,\textbf{m}}$; Periodo: $\boldsymbol{T=10\,\textbf{s}}$; Frecuencia: $\boldsymbol{f=0,1\,\textbf{Hz}}$; Longitud de onda: $\boldsymbol{\lambda \approx 2,86\,\textbf{m}}$.
+\end{cajaresultado}
+
+\paragraph{b) Velocidad transversal y tiempo de velocidad nula}
+La expresión para la velocidad transversal es:
+\begin{gather}
+    v_y(x,t) = 2 \cdot \frac{\pi}{5} \cos\left(\frac{\pi}{5}t - 2,2x\right) = \frac{2\pi}{5} \cos\left(\frac{\pi}{5}t - 2,2x\right)
+\end{gather}
+Evaluamos en $x=2$ m y $t=10$ s:
+\begin{gather}
+    v_y(2, 10) = \frac{2\pi}{5} \cos\left(\frac{\pi}{5}(10) - 2,2(2)\right) = \frac{2\pi}{5} \cos(2\pi - 4,4) \approx 1,257 \cos(-4,4) \approx -0,356 \, \text{m/s}
+\end{gather}
+Para encontrar un instante de velocidad nula en $x=2$ m:
+\begin{gather}
+    \frac{\pi}{5}t - 2,2(2) = (2n+1)\frac{\pi}{2} \implies \frac{\pi}{5}t - 4,4 = (2n+1)\frac{\pi}{2}
+\end{gather}
+Para la solución más simple, tomamos $n=0$:
+\begin{gather}
+    \frac{\pi}{5}t - 4,4 = \frac{\pi}{2} \implies \frac{\pi}{5}t = \frac{\pi}{2} + 4,4 \approx 1,57 + 4,4 = 5,97 \nonumber \\
+    t = \frac{5 \cdot 5,97}{\pi} \approx 9,5 \, \text{s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad en $x=2$ m y $t=10$ s es $\boldsymbol{v_y \approx -0,356 \, \textbf{m/s}}$. Un instante en el que la velocidad es nula en ese punto es $\boldsymbol{t \approx 9,5 \, \textbf{s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La identificación de los términos en la ecuación de onda permite caracterizarla completamente. La velocidad de un punto del medio oscila armónicamente, siendo distinta de la velocidad de propagación de la onda. Se ha calculado que en el instante y posición dados, el punto se mueve con una velocidad de -0,356 m/s, y se anula en instantes periódicos, siendo el primero de ellos aproximadamente a los 9,5 segundos.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque III - Cuestión}
+\label{subsec:B3_2014_jun_ord}
+
+\begin{cajaenunciado}
+¿Qué características tiene la imagen que se forma con una lente divergente si se tiene un objeto situado en el foco imagen de la lente? Justifica la respuesta con la ayuda de un trazado de rayos.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica y gráfica sobre la formación de imágenes en lentes divergentes.
+\begin{itemize}
+    \item \textbf{Elemento óptico:} Lente divergente ($f' < 0$).
+    \item \textbf{Posición del objeto ($s$):} El objeto está situado en el foco imagen ($F'$). Para una lente divergente, el foco imagen está a la izquierda de la lente, por lo que $s = f'$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Trazado de rayos para lente divergente} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente delgada divergente. Dibuja el eje óptico horizontal. Dibuja la lente divergente en el centro (con símbolos de flechas hacia adentro). Marca el foco imagen F' a la izquierda de la lente y el foco objeto F a la derecha. Coloca un objeto (flecha vertical hacia arriba) en la posición del foco imagen F'. Traza dos rayos principales desde la punta del objeto: 1) Un rayo que incide paralelo al eje óptico y se refracta de tal forma que su prolongación hacia atrás pasa por F'. 2) Un rayo que pasa por el centro óptico y no se desvía. El punto donde se cruzan el rayo no desviado y la prolongación del rayo refractado forma la punta de la imagen. Dibuja la imagen como una flecha discontinua."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/optica_lente_divergente.png}
+    }}
+    \caption{Formación de imagen con lente divergente para un objeto en el foco imagen.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La justificación se basa en el \textbf{trazado de rayos} para lentes delgadas y en las \textbf{ecuaciones de las lentes}.
+\paragraph{Trazado de rayos}
+\begin{enumerate}
+    \item Un rayo que incide sobre la lente \textbf{paralelo al eje óptico} se refracta de manera que su prolongación hacia atrás pasa por el foco imagen ($F'$).
+    \item Un rayo que pasa por el \textbf{centro óptico} de la lente no sufre desviación.
+\end{enumerate}
+La imagen se forma en el punto donde se cruzan los rayos refractados (si es real) o sus prolongaciones (si es virtual).
+\paragraph{Análisis con Ecuaciones}
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss:} $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item \textbf{Aumento Lateral:} $A_L = \frac{s'}{s}$
+\end{itemize}
+Las características de la imagen se deducen de los signos y valores de $s'$ y $A_L$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sustituimos la condición del objeto, $s = f'$, en la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{s'} - \frac{1}{f'} = \frac{1}{f'} \implies \frac{1}{s'} = \frac{2}{f'} \implies s' = \frac{f'}{2}
+\end{gather}
+Ahora calculamos el aumento lateral:
+\begin{gather}
+    A_L = \frac{s'}{s} = \frac{f'/2}{f'} = +\frac{1}{2}
+\end{gather}
+
+\subsubsection*{5. Características de la Imagen}
+Del análisis gráfico y de las ecuaciones, obtenemos las siguientes características:
+\begin{itemize}
+    \item \textbf{Naturaleza:} Como $f'$ para una lente divergente es negativo, $s' = f'/2$ también es negativo. Esto significa que la imagen se forma a la izquierda de la lente. Se forma por la intersección de las prolongaciones de los rayos, por lo tanto, la imagen es \textbf{virtual}.
+    \item \textbf{Orientación:} El aumento lateral es $A_L = +0,5$. Al ser positivo, la imagen está en la misma orientación que el objeto, es decir, es \textbf{derecha}.
+    \item \textbf{Tamaño:} El módulo del aumento es $|A_L| = 0,5$. Como es menor que 1, la imagen es \textbf{de menor tamaño} que el objeto (concretamente, la mitad).
+\end{itemize}
+\begin{cajaresultado}
+La imagen formada es \textbf{virtual, derecha y de menor tamaño} que el objeto.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Tanto el trazado de rayos como las ecuaciones de las lentes delgadas demuestran de forma consistente que una lente divergente, para un objeto situado en su foco imagen, forma una imagen virtual, derecha y reducida a la mitad, situada en la mitad de la distancia focal. De hecho, una lente divergente siempre forma imágenes con estas tres características (virtual, derecha, menor tamaño) para cualquier objeto real.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque IV - Cuestión}
+\label{subsec:B4_2014_jun_ord}
+
+\begin{cajaenunciado}
+Sabiendo que la intensidad de campo eléctrico en el punto P es nula, determina razonadamente la relación entre las cargas $q_1/q_2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+De la figura que acompaña al enunciado se extraen las posiciones relativas:
+\begin{itemize}
+    \item \textbf{Carga $q_1$:} Situada a una distancia $a$ a la izquierda del punto P.
+    \item \textbf{Carga $q_2$:} Situada a una distancia $a/2$ a la derecha del punto P.
+    \item \textbf{Condición:} El campo eléctrico total en el punto P es nulo: $\vec{E}_P = \vec{0}$.
+    \item \textbf{Incógnita:} La relación $q_1/q_2$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo eléctrico nulo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje horizontal. Colocar una carga $q_1$ a la izquierda, un punto P en el medio y una carga $q_2$ a la derecha. En el punto P, dibujar dos vectores de campo eléctrico, $\vec{E}_1$ (creado por $q_1$) y $\vec{E}_2$ (creado por $q_2$). Para que la suma sea cero, los dos vectores deben ser de igual longitud y apuntar en sentidos opuestos. Si $\vec{E}_1$ apunta a la derecha, $q_1$ debe ser positiva (campo repulsivo). Si $\vec{E}_2$ apunta a la izquierda, $q_2$ también debe ser positiva (campo repulsivo). Etiquetar las distancias $a$ y $a/2$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{esquemas/em_campo_nulo.png}
+    }}
+    \caption{Condición para la anulación del campo eléctrico en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica el \textbf{Principio de Superposición} para el campo eléctrico. Para que el campo total en el punto P sea nulo, la suma vectorial de los campos creados por cada carga debe ser cero:
+$$\vec{E}_P = \vec{E}_1 + \vec{E}_2 = \vec{0}$$
+Esto implica que los vectores campo $\vec{E}_1$ y $\vec{E}_2$ deben tener:
+\begin{enumerate}
+    \item La misma dirección (lo cual es cierto, ya que están sobre la misma línea).
+    \item Sentidos opuestos.
+    \item Módulos iguales.
+\end{enumerate}
+El módulo del campo eléctrico creado por una carga puntual $q$ a una distancia $d$ es $E = k \frac{|q|}{d^2}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Análisis de los signos}
+Para que los campos $\vec{E}_1$ y $\vec{E}_2$ tengan sentidos opuestos en el punto P (que está entre ellos), ambas cargas deben tener el \textbf{mismo signo}.
+\begin{itemize}
+    \item Si ambas son positivas, $\vec{E}_1$ apunta a la derecha y $\vec{E}_2$ a la izquierda (opuestos).
+    \item Si ambas son negativas, $\vec{E}_1$ apunta a la izquierda y $\vec{E}_2$ a la derecha (opuestos).
+\end{itemize}
+En cualquier caso, la relación $q_1/q_2$ será positiva.
+
+\paragraph{Igualdad de módulos}
+La condición principal es que los módulos de los campos sean iguales: $|\vec{E}_1| = |\vec{E}_2|$.
+\begin{gather}
+    k \frac{|q_1|}{d_1^2} = k \frac{|q_2|}{d_2^2}
+\end{gather}
+Las distancias son $d_1 = a$ y $d_2 = a/2$. Sustituyendo:
+\begin{gather}
+    \frac{|q_1|}{a^2} = \frac{|q_2|}{(a/2)^2} = \frac{|q_2|}{a^2/4} = 4 \frac{|q_2|}{a^2}
+\end{gather}
+Simplificando el término $a^2$ y reordenando para encontrar la relación de los módulos:
+\begin{gather}
+    |q_1| = 4|q_2| \implies \frac{|q_1|}{|q_2|} = 4
+\end{gather}
+Como hemos deducido que las cargas tienen el mismo signo, la relación entre las cargas es positiva.
+\begin{gather}
+    \frac{q_1}{q_2} = 4
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema no requiere sustitución numérica.
+\begin{cajaresultado}
+    La relación entre las cargas es $\boldsymbol{\frac{q_1}{q_2} = 4}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que el campo eléctrico se anule en un punto situado entre dos cargas, estas deben ser del mismo signo. La condición de que los módulos de los campos sean iguales lleva a la conclusión de que la carga $q_1$, al estar al doble de distancia, debe ser cuatro veces mayor en magnitud que la carga $q_2$ para compensar el factor $1/d^2$ de la ley de Coulomb.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque V - Cuestión}
+\label{subsec:B5_2014_jun_ord}
+
+\begin{cajaenunciado}
+Se quiere realizar un experimento de difracción utilizando un haz de electrones, y se sabe que la longitud de onda de De Broglie óptima de los electrones sería de 1 nm. Calcula la cantidad de movimiento y la energía cinética (no relativista), expresada en eV, que deben tener los electrones.
+\textbf{Datos:} carga elemental, $e=1,60\cdot10^{-19}\,\text{C}$; constante de Planck, $h=6,63\cdot10^{-34}\,\text{J s}$; masa del electrón, $m_e=9,1\cdot10^{-31}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partícula:} Electrón.
+    \item \textbf{Longitud de onda de De Broglie ($\lambda$):} $\lambda = 1 \, \text{nm} = 10^{-9}$ m.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,63 \cdot 10^{-34}$ J·s.
+    \item \textbf{Masa del electrón ($m_e$):} $m_e = 9,1 \cdot 10^{-31}$ kg.
+    \item \textbf{Carga elemental ($e$):} $e = 1,60 \cdot 10^{-19}$ C.
+    \item \textbf{Incógnitas:} Cantidad de movimiento ($p$) y Energía cinética ($E_c$) en eV.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Hipótesis de De Broglie:} Relaciona la longitud de onda de una partícula con su momento lineal o cantidad de movimiento ($p$).
+    $$\lambda = \frac{h}{p}$$
+    \item \textbf{Energía Cinética (no relativista):} Se relaciona con la cantidad de movimiento y la masa de la partícula.
+    $$E_c = \frac{p^2}{2m_e}$$
+    Se debe comprobar que la velocidad resultante es mucho menor que la de la luz para que esta aproximación sea válida.
+    \item \textbf{Conversión de energía:} Para pasar de Julios (J) a electronvoltios (eV), se divide por el valor de la carga elemental.
+    $$E_c (\text{eV}) = \frac{E_c (\text{J})}{e}$$
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Cantidad de movimiento ($p$)}
+Se despeja directamente de la ecuación de De Broglie:
+\begin{gather}
+    p = \frac{h}{\lambda}
+\end{gather}
+\paragraph{Energía cinética ($E_c$)}
+Una vez obtenido $p$, se calcula la energía cinética en Julios:
+\begin{gather}
+    E_c = \frac{p^2}{2m_e}
+\end{gather}
+Luego se convierte a electronvoltios:
+\begin{gather}
+    E_{c,eV} = \frac{1}{e} \left( \frac{p^2}{2m_e} \right) = \frac{h^2}{2e m_e \lambda^2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Cantidad de movimiento}
+\begin{gather}
+    p = \frac{6,63 \cdot 10^{-34} \, \text{J s}}{10^{-9} \, \text{m}} = 6,63 \cdot 10^{-25} \, \text{kg m/s}
+\end{gather}
+\begin{cajaresultado}
+    La cantidad de movimiento de los electrones es $\boldsymbol{p = 6,63 \cdot 10^{-25} \, \textbf{kg m/s}}$.
+\end{cajaresultado}
+\paragraph{Energía cinética}
+Primero calculamos la energía en Julios:
+\begin{gather}
+    E_c = \frac{(6,63 \cdot 10^{-25})^2}{2 \cdot (9,1 \cdot 10^{-31})} = \frac{4,39569 \cdot 10^{-49}}{1,82 \cdot 10^{-30}} \approx 2,415 \cdot 10^{-19} \, \text{J}
+\end{gather}
+(Comprobación: $v = p/m_e \approx 7,3 \cdot 10^5$ m/s, que es $\ll c$, por lo que el uso de la fórmula no relativista es correcto).
+Ahora convertimos a eV:
+\begin{gather}
+    E_{c,eV} = \frac{2,415 \cdot 10^{-19} \, \text{J}}{1,60 \cdot 10^{-19} \, \text{C}} \approx 1,51 \, \text{eV}
+\end{gather}
+\begin{cajaresultado}
+    La energía cinética de los electrones es $\boldsymbol{E_c \approx 1,51 \, \textbf{eV}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La dualidad onda-corpúsculo, expresada en la hipótesis de De Broglie, permite calcular las propiedades cinemáticas de una partícula a partir de sus propiedades ondulatorias. Para que un electrón manifieste una longitud de onda de 1 nm, debe tener una cantidad de movimiento de $6,63 \cdot 10^{-25}$ kg m/s y una energía cinética de aproximadamente 1,51 eV.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque VI - Problema}
+\label{subsec:B6_2014_jun_ord}
+
+\begin{cajaenunciado}
+En un experimento de efecto fotoeléctrico, la luz incide sobre un cátodo que puede ser de cerio (Ce) o de niobio (Nb). Al representar la energía cinética máxima de los electrones frente a la frecuencia $f$ de la luz, se obtienen las rectas mostradas en la figura. Responde razonadamente para qué metal se tiene:
+\begin{enumerate}
+    \item[a)] El mayor trabajo de extracción de electrones. Calcula su valor. (1 punto)
+    \item[b)] El mayor valor de la energía cinética máxima de los electrones si la frecuencia de la luz incidente es $20 \cdot 10^{14}$ Hz, en ambos casos. Calcula su valor. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de Planck, $h = 6,63 \cdot 10^{-34}$ J·s.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+De la gráfica se extraen las frecuencias umbral ($f_0$), que son los puntos donde la recta corta el eje de abscisas (donde $E_c^{max}=0$).
+\begin{itemize}
+    \item \textbf{Frecuencia umbral del Cerio ($f_{0,Ce}$):} $f_{0,Ce} = 7 \cdot 10^{14}$ Hz.
+    \item \textbf{Frecuencia umbral del Niobio ($f_{0,Nb}$):} $f_{0,Nb} = 10 \cdot 10^{14}$ Hz.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,63 \cdot 10^{-34}$ J·s.
+    \item \textbf{Frecuencia incidente para (b):} $f_{inc} = 20 \cdot 10^{14}$ Hz.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se describe mediante la \textbf{ecuación del efecto fotoeléctrico de Einstein}:
+$$E_c^{max} = E_{fotón} - W_0 = hf - W_0$$
+donde:
+\begin{itemize}
+    \item $E_c^{max}$ es la energía cinética máxima de los electrones emitidos.
+    \item $hf$ es la energía del fotón incidente.
+    \item $W_0$ es el \textbf{trabajo de extracción} o \textbf{función de trabajo}, que es la energía mínima necesaria para arrancar un electrón del metal. Es una propiedad característica de cada material.
+\end{itemize}
+El trabajo de extracción se relaciona con la \textbf{frecuencia umbral ($f_0$)} mediante:
+$$W_0 = hf_0$$
+La frecuencia umbral es la mínima frecuencia de la luz que puede producir el efecto fotoeléctrico.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Trabajo de extracción}
+El trabajo de extracción es directamente proporcional a la frecuencia umbral ($W_0 = hf_0$). Por tanto, el metal que tenga la mayor frecuencia umbral en la gráfica tendrá el mayor trabajo de extracción. Su valor se calcula con dicha fórmula.
+
+\paragraph{b) Energía cinética máxima}
+La energía cinética se calcula con la ecuación de Einstein, $E_c^{max} = hf - W_0 = h(f - f_0)$. Para una frecuencia incidente $f$ dada (que sea mayor que ambas $f_0$), el metal que tenga el \textbf{menor} trabajo de extracción (y por tanto, la menor frecuencia umbral) dará lugar a una \textbf{mayor} energía cinética máxima para los electrones, ya que una menor parte de la energía del fotón se "gasta" en arrancar el electrón.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Mayor trabajo de extracción}
+De la gráfica, observamos que $f_{0,Nb} > f_{0,Ce}$ ($10 \cdot 10^{14} > 7 \cdot 10^{14}$). Por lo tanto, el \textbf{Niobio (Nb)} tiene el mayor trabajo de extracción.
+Calculamos su valor:
+\begin{gather}
+    W_{0,Nb} = h \cdot f_{0,Nb} = (6,63 \cdot 10^{-34} \, \text{J s}) \cdot (10 \cdot 10^{14} \, \text{Hz}) = 6,63 \cdot 10^{-19} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+El \textbf{Niobio (Nb)} tiene el mayor trabajo de extracción. Su valor es $\boldsymbol{W_{0,Nb} = 6,63 \cdot 10^{-19} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\paragraph{b) Mayor energía cinética máxima}
+Para $f_{inc} = 20 \cdot 10^{14}$ Hz, el metal con la menor frecuencia umbral, el \textbf{Cerio (Ce)}, presentará la mayor energía cinética máxima.
+Calculamos su valor:
+\begin{gather}
+    E_{c,Ce}^{max} = h(f_{inc} - f_{0,Ce}) = (6,63 \cdot 10^{-34}) \cdot (20 \cdot 10^{14} - 7 \cdot 10^{14}) \nonumber \\
+    E_{c,Ce}^{max} = (6,63 \cdot 10^{-34}) \cdot (13 \cdot 10^{14}) = 8,619 \cdot 10^{-19} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+El \textbf{Cerio (Ce)} presenta la mayor energía cinética máxima. Su valor es $\boldsymbol{E_{c,Ce}^{max} \approx 8,62 \cdot 10^{-19} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La gráfica del efecto fotoeléctrico permite determinar propiedades fundamentales de los metales. El Niobio requiere más energía para liberar electrones (mayor trabajo de extracción, $6,63 \cdot 10^{-19}$ J) que el Cerio. Consecuentemente, cuando se ilumina con la misma luz de alta frecuencia, los electrones arrancados del Cerio disponen de más energía sobrante, alcanzando una energía cinética máxima mayor ($8,62 \cdot 10^{-19}$ J).
+\end{cajaconclusion}
+
+\newpage

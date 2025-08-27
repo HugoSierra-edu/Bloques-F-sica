@@ -1,0 +1,814 @@
+
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2011 - Convocatoria Ordinaria}
+\label{chap:2011_jun_ord}
+
+% ----------------------------------------------------------------------
+\section{Opción A}
+\label{sec:A_2011_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Bloque I: Problema}
+\label{subsec:A1_2011_jun_ord}
+
+\begin{cajaenunciado}
+Se quiere situar un satélite en órbita circular a una distancia de 450 km desde la superficie de la Tierra.
+\begin{enumerate}
+    \item[a)] Calcula la velocidad que debe tener el satélite en esa órbita. (1 punto)
+    \item[b)] Calcula la velocidad con la que debe lanzarse desde la superficie terrestre para que alcance esa órbita con esa velocidad (supón que no actúa rozamiento alguno). (1 punto)
+\end{enumerate}
+\textbf{Datos:} Radio de la Tierra, $R_{T}=6370\,\text{km}$; masa de la Tierra, $M_{T}=5,9\cdot10^{24}\,\text{kg}$; constante de gravitación universal $G=6,67\cdot10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Altura sobre la superficie ($h$):} $h = 450\,\text{km} = 4,5 \cdot 10^5\,\text{m}$.
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6370\,\text{km} = 6,37 \cdot 10^6\,\text{m}$.
+    \item \textbf{Masa de la Tierra ($M_T$):} $M_T = 5,9 \cdot 10^{24}\,\text{kg}$.
+    \item \textbf{Constante de Gravitación ($G$):} $G = 6,67 \cdot 10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Radio orbital ($r$):} $r = R_T + h = 6,37 \cdot 10^6\,\text{m} + 0,45 \cdot 10^6\,\text{m} = 6,82 \cdot 10^6\,\text{m}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item a) Velocidad orbital ($v_{orb}$).
+        \item b) Velocidad de lanzamiento desde la superficie ($v_{lanz}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Satélite en Órbita} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico (Tierra) de radio $R_T$. Un satélite en una órbita circular de radio $r$ alrededor del planeta. El radio $r$ se muestra como la suma de $R_T$ y la altitud $h$. Dibujar el vector velocidad $\vec{v}_{orb}$ del satélite, tangente a la órbita. Dibujar el vector Fuerza Gravitatoria $\vec{F}_g$ apuntando hacia el centro de la Tierra, y etiquetarlo también como Fuerza Centrípeta $\vec{F}_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbita_satelite.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Lanzamiento} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico (Tierra) de radio $R_T$. Un cohete en la superficie con un vector velocidad inicial $\vec{v}_{lanz}$. Dibujar una trayectoria de transferencia que lleve al cohete hasta la órbita circular de radio $r$. Mostrar que la energía mecánica se conserva entre el punto de lanzamiento (superficie) y la llegada a la órbita."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lanzamiento_satelite.png}
+    }}
+    \caption{Esquemas de la órbita y el lanzamiento del satélite.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Velocidad orbital}
+Para que el satélite mantenga una órbita circular, la fuerza de atracción gravitatoria que ejerce la Tierra debe actuar como fuerza centrípeta.
+$$ F_g = F_c $$
+La Ley de Gravitación Universal nos da la fuerza gravitatoria $F_g = G \frac{M_T m}{r^2}$, y la dinámica del movimiento circular nos da la fuerza centrípeta $F_c = m \frac{v_{orb}^2}{r}$.
+
+\paragraph{b) Velocidad de lanzamiento}
+Se aplica el \textbf{Principio de Conservación de la Energía Mecánica} entre el punto de lanzamiento en la superficie terrestre (punto 1) y el punto en la órbita (punto 2), ya que el campo gravitatorio es conservativo.
+$$ E_{M,1} = E_{M,2} $$
+La energía mecánica total es la suma de la energía cinética y la energía potencial gravitatoria: $ E_M = E_c + E_p = \frac{1}{2}mv^2 - G\frac{M_T m}{R} $.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Velocidad orbital}
+Igualando la fuerza gravitatoria y la centrípeta:
+\begin{gather}
+    G \frac{M_T m}{r^2} = m \frac{v_{orb}^2}{r}
+\end{gather}
+Simplificando la masa del satélite $m$ y un radio $r$, y despejando la velocidad orbital:
+\begin{gather}
+    v_{orb} = \sqrt{\frac{G M_T}{r}} = \sqrt{\frac{G M_T}{R_T+h}}
+\end{gather}
+
+\paragraph{b) Velocidad de lanzamiento}
+Aplicamos la conservación de la energía mecánica:
+$$ E_{c,1} + E_{p,1} = E_{c,2} + E_{p,2} $$
+\begin{gather}
+    \frac{1}{2}mv_{lanz}^2 - G\frac{M_T m}{R_T} = \frac{1}{2}mv_{orb}^2 - G\frac{M_T m}{r}
+\end{gather}
+Simplificamos la masa del satélite $m$ y despejamos $v_{lanz}^2$:
+\begin{gather}
+    v_{lanz}^2 = v_{orb}^2 + 2GM_T\left(\frac{1}{R_T} - \frac{1}{r}\right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Velocidad orbital}
+\begin{gather}
+    v_{orb} = \sqrt{\frac{(6,67\cdot10^{-11})(5,9\cdot10^{24})}{6,82 \cdot 10^6}} \approx \sqrt{5,77 \cdot 10^7} \approx 7596 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad del satélite en la órbita debe ser $\boldsymbol{v_{orb} \approx 7596 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph{b) Velocidad de lanzamiento}
+\begin{gather}
+    v_{lanz}^2 = (7596)^2 + 2(6,67\cdot10^{-11})(5,9\cdot10^{24})\left(\frac{1}{6,37\cdot10^6} - \frac{1}{6,82\cdot10^6}\right) \nonumber \\
+    v_{lanz}^2 \approx 5,77 \cdot 10^7 + (7,87 \cdot 10^{14})(1,57 \cdot 10^{-7} - 1,46 \cdot 10^{-7}) \nonumber \\
+    v_{lanz}^2 \approx 5,77 \cdot 10^7 + 8,65 \cdot 10^6 = 6,635 \cdot 10^7 \nonumber \\
+    v_{lanz} \approx \sqrt{6,635 \cdot 10^7} \approx 8145 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad de lanzamiento desde la superficie debe ser $\boldsymbol{v_{lanz} \approx 8145 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para mantener una órbita circular estable a 450 km de altura, el satélite debe tener una velocidad orbital de unos 7596 m/s, determinada por la dinámica del movimiento circular bajo la fuerza de la gravedad. Para alcanzar dicha órbita, se requiere una velocidad de lanzamiento inicial de 8145 m/s, calculada aplicando el principio de conservación de la energía mecánica entre la superficie y la órbita final.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque II: Problema}
+\label{subsec:A2_2011_jun_ord}
+
+\begin{cajaenunciado}
+Una partícula realiza el movimiento armónico representado en la figura:
+\begin{enumerate}
+    \item[a)] Obtén la amplitud, la frecuencia angular y la fase inicial de este movimiento. Escribe la ecuación del movimiento en función del tiempo. (1 punto)
+    \item[b)] Calcula la velocidad y la aceleración de la partícula en $t=2$ s. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+A partir de la gráfica de elongación (cm) frente a tiempo (s):
+\begin{itemize}
+    \item \textbf{Amplitud ($A$):} El valor máximo de la elongación. Se lee del eje Y que $A=1\,\text{cm} = 0,01\,\text{m}$.
+    \item \textbf{Periodo ($T$):} Tiempo de un ciclo completo. Se observa que la onda va de un máximo en $t \approx 0,25$ s a otro en $t \approx 1,25$ s. Por tanto, $T = 1,25 - 0,25 = 1\,\text{s}$. También se puede ver que medio ciclo dura $0,75 - 0,25 = 0,5$ s, por lo que $T=1$ s.
+    \item \textbf{Condición inicial:} En $t=0$, la elongación es $y(0) \approx 0,4$ cm. No es un punto fácil de determinar, pero observamos que $y(0)$ no es ni cero ni un extremo.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item a) $A$, $\omega$, $\phi_0$ y la ecuación $y(t)$.
+        \item b) $v(2)$ y $a(2)$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La figura del enunciado es la representación gráfica principal del problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Un Movimiento Armónico Simple (M.A.S.) se describe por las siguientes ecuaciones:
+\begin{itemize}
+    \item \textbf{Elongación:} $y(t) = A\sin(\omega t + \phi_0)$.
+    \item \textbf{Velocidad:} $v(t) = \frac{dy}{dt} = A\omega\cos(\omega t + \phi_0)$.
+    \item \textbf{Aceleración:} $a(t) = \frac{dv}{dt} = -A\omega^2\sin(\omega t + \phi_0) = -\omega^2 y(t)$.
+\end{itemize}
+Los parámetros se relacionan:
+\begin{itemize}
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = \frac{2\pi}{T}$.
+\end{itemize}
+La fase inicial $\phi_0$ se determina a partir de una condición conocida, por ejemplo, $y(0)$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Parámetros y ecuación del movimiento}
+La amplitud $A$ y el periodo $T$ se leen de la gráfica.
+La frecuencia angular se calcula: $\omega = 2\pi/T$.
+Para la fase inicial, usamos la forma $y(t) = A\sin(\omega t + \phi_0)$ y una condición visible. Por ejemplo, en $t=0,25$ s, la elongación es máxima, $y(0,25)=A$.
+$$ A\sin(\omega \cdot 0,25 + \phi_0) = A \implies \sin(\omega \cdot 0,25 + \phi_0) = 1 $$
+Esto implica que el argumento del seno debe ser $\pi/2$.
+$$ \omega \cdot 0,25 + \phi_0 = \frac{\pi}{2} \implies \phi_0 = \frac{\pi}{2} - 0,25\omega $$
+
+\paragraph{b) Velocidad y aceleración}
+Se derivan las expresiones para $v(t)$ y $a(t)$ y se evalúan en el instante $t=2$ s.
+$$ v(t=2) = A\omega\cos(\omega \cdot 2 + \phi_0) $$
+$$ a(t=2) = -A\omega^2\sin(\omega \cdot 2 + \phi_0) $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Parámetros y ecuación}
+\begin{itemize}
+    \item \textbf{Amplitud:} $A = 1\,\text{cm} = 0,01\,\text{m}$.
+    \item \textbf{Periodo:} $T = 1\,\text{s}$.
+    \item \textbf{Frecuencia angular:} $\omega = \frac{2\pi}{1\,\text{s}} = 2\pi\,\text{rad/s}$.
+    \item \textbf{Fase inicial:} $\phi_0 = \frac{\pi}{2} - 0,25(2\pi) = \frac{\pi}{2} - \frac{\pi}{2} = 0\,\text{rad}$.
+\end{itemize}
+La ecuación del movimiento es (en SI):
+$$ y(t) = 0,01\sin(2\pi t) $$
+\begin{cajaresultado}
+Amplitud: $\boldsymbol{A=0,01\,\textbf{m}}$. Frecuencia angular: $\boldsymbol{\omega=2\pi\,\textbf{rad/s}}$. Fase inicial: $\boldsymbol{\phi_0=0\,\textbf{rad}}$.
+Ecuación: $\boldsymbol{y(t) = 0,01\sin(2\pi t)}$ (SI).
+\end{cajaresultado}
+
+\paragraph{b) Velocidad y aceleración en $t=2$ s}
+\begin{gather}
+    v(t) = 0,01(2\pi)\cos(2\pi t) = 0,02\pi\cos(2\pi t) \\
+    v(2) = 0,02\pi\cos(2\pi \cdot 2) = 0,02\pi\cos(4\pi) = 0,02\pi \cdot 1 \approx 0,0628 \, \text{m/s} \\
+    a(t) = -0,01(2\pi)^2\sin(2\pi t) = -0,04\pi^2\sin(2\pi t) \\
+    a(2) = -0,04\pi^2\sin(2\pi \cdot 2) = -0,04\pi^2\sin(4\pi) = 0 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+En $t=2$ s, la velocidad es $\boldsymbol{v(2) \approx 0,0628 \, \textbf{m/s}}$ y la aceleración es $\boldsymbol{a(2) = 0 \, \textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La inspección de la gráfica ha permitido determinar los parámetros fundamentales del M.A.S. (amplitud de 1 cm y periodo de 1 s), llevando a la ecuación $y(t) = 0,01\sin(2\pi t)$. En el instante $t=2$ s, que corresponde a la finalización de dos ciclos completos, la partícula se encuentra en la posición de equilibrio ($y=0$), moviéndose con su velocidad máxima ($v \approx 0,063$ m/s) y con aceleración nula.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque III: Cuestión}
+\label{subsec:A3_2011_jun_ord}
+
+\begin{cajaenunciado}
+Explica brevemente en qué consiste el fenómeno de difracción de una onda, ¿Qué condición debe cumplirse para que se pueda observar la difracción de una onda a través de una rendija?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Difracción de una onda} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos diagramas uno al lado del otro. Izquierda: 'Rendija grande ($\text{a} \gg \lambda$)' Un frente de onda plano incide sobre una barrera con una rendija muy ancha. La mayor parte de la onda pasa a través sin desviarse, solo se observa una ligera curvatura en los bordes. Derecha: 'Rendija pequeña ($\text{a} \approx \lambda$)' Un frente de onda plano incide sobre una barrera con una rendija estrecha, de anchura 'a' comparable a la longitud de onda '$\lambda$'. Al pasar, la onda se abre en un patrón de frentes de onda semicirculares, como si la rendija fuera una nueva fuente de ondas."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{difraccion_condicion.png}
+    }}
+    \caption{Comparación de la difracción según el tamaño de la rendija.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Fenómeno de Difracción}
+La difracción es un fenómeno intrínsecamente ondulatorio que consiste en la desviación de la propagación rectilínea de una onda cuando esta se encuentra con un obstáculo o pasa a través de una abertura. En esencia, es la capacidad de las ondas para "curvarse" o "doblarse" al rodear los bordes de un objeto.
+
+Según el \textbf{Principio de Huygens}, cada punto de un frente de onda se puede considerar como un emisor de ondas secundarias esféricas. La envolvente de estas ondas secundarias constituye el nuevo frente de onda. Cuando una onda pasa por una abertura, los puntos del frente de onda en la abertura actúan como nuevas fuentes, permitiendo que la onda se propague en direcciones diferentes a la original, incluso "invadiendo" la región de sombra geométrica.
+
+\paragraph{Condición para la Observación de la Difracción}
+La difracción siempre ocurre, pero para que sus efectos sean apreciables y fácilmente observables, es necesario que el tamaño de la abertura o del obstáculo ($a$) sea del mismo orden de magnitud, o menor, que la longitud de onda ($\lambda$) de la onda incidente.
+$$ a \approx \lambda \quad \text{o} \quad a < \lambda $$
+Si la abertura es mucho más grande que la longitud de onda ($a \gg \lambda$), la desviación de la propagación rectilínea es insignificante y la onda se comporta como si viajara en línea recta, proyectando una sombra nítida.
+
+\begin{cajaresultado}
+El fenómeno de la difracción es la desviación de las ondas al pasar por una abertura o rodear un obstáculo. La condición para que sea observable es que el tamaño de la abertura sea \textbf{comparable o menor a la longitud de onda} de la onda.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La difracción es una propiedad fundamental de las ondas que evidencia su capacidad para alterar su dirección de propagación al interactuar con objetos. La condición clave para su observación, $a \approx \lambda$, explica por qué no percibimos la difracción de la luz en nuestra vida diaria (ya que $\lambda_{luz}$ es muy pequeña) pero sí la del sonido (cuya $\lambda$ es del orden de metros).
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque IV: Cuestión}
+\label{subsec:A4_2011_jun_ord}
+
+\begin{cajaenunciado}
+Dos cargas puntuales de valores $q_{1}=-16\,\mu\text{C}$ y $q_{2}=2\,\mu\text{C}$ y vectores de posición $\vec{r}_{1}=-4\vec{i}\,\text{m}$ y $\vec{r}_{2}=1\vec{i}\,\text{m}$ ejercen una fuerza total $\vec{F}=-2,7\cdot10^{-3}\vec{i}\,\text{N}$ sobre una carga positiva $q_3$ situada en el origen de coordenadas. Calcula el valor de esta carga.
+\textbf{Dato:} Constante de Coulomb $k=9\cdot10^{9}\,\text{N}\cdot\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = -16\,\mu\text{C} = -16 \cdot 10^{-6}\,\text{C}$, en $\vec{r}_1 = -4\vec{i}\,\text{m}$.
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = 2\,\mu\text{C} = 2 \cdot 10^{-6}\,\text{C}$, en $\vec{r}_2 = 1\vec{i}\,\text{m}$.
+    \item \textbf{Carga de prueba ($q_3$):} $q_3 > 0$, situada en el origen, $\vec{r}_3 = \vec{0}$.
+    \item \textbf{Fuerza total sobre $q_3$:} $\vec{F}_{total,3} = -2,7 \cdot 10^{-3}\vec{i}\,\text{N}$.
+    \item \textbf{Constante de Coulomb ($k$):} $k = 9 \cdot 10^9\,\text{N}\cdot\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnita:} Valor de la carga $q_3$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Eléctrico en el Origen} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje X horizontal. Colocar la carga $q_1 (-16\mu C)$ en x=-4. Colocar la carga $q_2 (+2\mu C)$ en x=1. En el origen (x=0), dibujar los vectores de campo eléctrico: 1) El vector $\vec{E}_1$ (creado por $q_1$) debe ser atractivo, apuntando hacia la izquierda ($-\vec{i}$). 2) El vector $\vec{E}_2$ (creado por $q_2$) debe ser repulsivo, también apuntando hacia la izquierda ($-\vec{i}$). Dibujar el vector campo total $\vec{E}_{total}$ como la suma de los dos, apuntando hacia la izquierda."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campo_en_origen.png}
+    }}
+    \caption{Superposición de campos eléctricos en el origen de coordenadas.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica el \textbf{Principio de Superposición}. La fuerza total sobre $q_3$ es la suma vectorial de las fuerzas individuales ejercidas por $q_1$ y $q_2$: $\vec{F}_{total,3} = \vec{F}_{1\to3} + \vec{F}_{2\to3}$.
+Alternativamente, se puede calcular el campo eléctrico total en el origen, $\vec{E}_{origen} = \vec{E}_1 + \vec{E}_2$, y luego usar la relación fundamental:
+$$ \vec{F}_{total,3} = q_3 \cdot \vec{E}_{origen} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Calculamos el campo eléctrico total en el origen.
+\begin{itemize}
+    \item Campo de $q_1$: distancia $r_1=4$ m. $\vec{E}_1 = k\frac{q_1}{r_1^2}(-\vec{i})$. El $(-\vec{i})$ es porque $q_1$ está en $x<0$ y el campo en el origen apunta hacia la carga.
+    \item Campo de $q_2$: distancia $r_2=1$ m. $\vec{E}_2 = k\frac{q_2}{r_2^2}(-\vec{i})$. El $(-\vec{i})$ es porque $q_2$ está en $x>0$ y es positiva, por lo que el campo en el origen se aleja de ella.
+\end{itemize}
+$$ \vec{E}_{origen} = \left( k\frac{-q_1}{r_1^2} + k\frac{-q_2}{r_2^2} \right)\vec{i} = -k\left( \frac{q_1}{r_1^2} + \frac{q_2}{r_2^2} \right)\vec{i} $$
+No, el razonamiento de los vectores es más simple:
+$$ \vec{E} = k\frac{q}{r^2}\hat{u}_r $$
+donde $\hat{u}_r$ es el unitario desde la carga fuente al punto.
+$\vec{E}_1 = k\frac{q_1}{(0-(-4))^2}\vec{i}$. Como $q_1<0$, $\vec{E}_1$ va en sentido $-\vec{i}$.
+$\vec{E}_2 = k\frac{q_2}{(0-1)^2}(-\vec{i})$. Como $q_2>0$, $\vec{E}_2$ va en sentido $-\vec{i}$.
+$$ \vec{E}_{origen} = \vec{E}_1 + \vec{E}_2 = k\frac{q_1}{4^2}\vec{i} + k\frac{q_2}{1^2}\vec{i} $$
+Este es el error. Las cargas están en el eje x.
+$$ E_x = k\frac{q_1}{(x-x_1)^2} + k\frac{q_2}{(x-x_2)^2} $$
+Para el origen ($x=0$):
+$E_x = k\frac{-16\mu C}{(0 - (-4))^2} + k\frac{2\mu C}{(0-1)^2} = k(-\frac{16}{16} - \frac{2}{1})\mu C = -3k\mu C$.
+No. La forma vectorial es la más segura.
+$$ \vec{E}_{origen} = k \frac{q_1}{|\vec{r}_3-\vec{r}_1|^3}(\vec{r}_3-\vec{r}_1) + k \frac{q_2}{|\vec{r}_3-\vec{r}_2|^3}(\vec{r}_3-\vec{r}_2) $$
+$$ \vec{E}_{origen} = k \frac{q_1}{4^3}(4\vec{i}) + k \frac{q_2}{1^3}(-1\vec{i}) = k \left(\frac{q_1}{16} - q_2\right)\vec{i} $$
+Despejamos $q_3$ de la ecuación de la fuerza:
+$$ q_3 = \frac{F_{total,x}}{E_{origen,x}} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    E_{origen,x} = (9\cdot10^9) \left(\frac{-16\cdot10^{-6}}{16} - (2\cdot10^{-6})\right) \\
+    E_{origen,x} = (9\cdot10^9) (-1\cdot10^{-6} - 2\cdot10^{-6}) = (9\cdot10^9)(-3\cdot10^{-6}) = -27000 \, \text{N/C}
+\end{gather}
+Ahora, calculamos $q_3$:
+\begin{gather}
+    q_3 = \frac{-2,7\cdot10^{-3}\,\text{N}}{-27000\,\text{N/C}} = \frac{2,7\cdot10^{-3}}{2,7\cdot10^{4}} = 1\cdot10^{-7} \, \text{C}
+\end{gather}
+\begin{cajaresultado}
+El valor de la carga es $\boldsymbol{q_3 = 10^{-7}\,\textbf{C}}$ (o 0,1 $\mu$C).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las dos cargas fuente generan un campo eléctrico total en el origen de $-27000\vec{i}$ N/C. Para que una carga positiva $q_3$ experimente una fuerza en la dirección de este campo (sentido $-\vec{i}$), como indica el enunciado, su valor debe ser positivo. El cálculo preciso, dividiendo la fuerza experimentada por el campo en ese punto, arroja un valor de $10^{-7}$ C.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque V: Cuestión}
+\label{subsec:A5_2011_jun_ord}
+
+\begin{cajaenunciado}
+Una partícula viaja a una velocidad cuyo módulo vale 0,98 veces la velocidad de la luz en el vacío. ¿Cuál es la relación entre su masa relativista y su masa en reposo? ¿Qué sucedería con la masa relativista si la partícula pudiera viajar a la velocidad de la luz? Razona tu respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad de la partícula ($v$):} $v = 0,98c$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item Relación entre masa relativista y masa en reposo ($m/m_0$).
+            \item Valor de la masa relativista si $v=c$.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La cuestión se responde con la teoría de la Relatividad Especial de Einstein. La masa de un objeto no es una constante, sino que depende de su velocidad.
+\paragraph{Masa Relativista}
+La \textbf{masa relativista ($m$)} de una partícula que se mueve a velocidad $v$ está relacionada con su \textbf{masa en reposo ($m_0$)} (la masa medida en su propio sistema de referencia) mediante la siguiente expresión:
+$$ m = \gamma m_0 $$
+donde $\gamma$ (gamma) es el \textbf{factor de Lorentz}, definido como:
+$$ \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} $$
+Como $v$ es siempre menor que $c$, el denominador es siempre menor o igual a 1, lo que implica que $\gamma \ge 1$. Por tanto, la masa relativista es siempre mayor o igual a la masa en reposo.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Relación de masas}
+La relación pedida es simplemente el factor de Lorentz $\gamma$.
+$$ \frac{m}{m_0} = \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} $$
+\paragraph{Caso $v \to c$}
+Se debe analizar el límite de la expresión de la masa relativista cuando la velocidad $v$ tiende a la velocidad de la luz $c$.
+$$ \lim_{v \to c} m = \lim_{v \to c} \frac{m_0}{\sqrt{1 - \frac{v^2}{c^2}}} $$
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Relación de masas para $v=0,98c$}
+\begin{gather}
+    \frac{m}{m_0} = \gamma = \frac{1}{\sqrt{1 - \frac{(0,98c)^2}{c^2}}} = \frac{1}{\sqrt{1 - (0,98)^2}} = \frac{1}{\sqrt{1 - 0,9604}} = \frac{1}{\sqrt{0,0396}} \approx 5,025
+\end{gather}
+\begin{cajaresultado}
+La relación entre la masa relativista y la masa en reposo es $\boldsymbol{m/m_0 \approx 5,025}$.
+\end{cajaresultado}
+
+\paragraph{Caso $v \to c$}
+Cuando $v$ se acerca a $c$, el cociente $v^2/c^2$ se acerca a 1. El término dentro de la raíz, $(1-v^2/c^2)$, se acerca a 0. El denominador de la fracción, $\sqrt{1-v^2/c^2}$, también se acerca a 0.
+$$ \lim_{v \to c} \frac{m_0}{\sqrt{1 - \frac{v^2}{c^2}}} = \frac{m_0}{0} \to \infty $$
+\begin{cajaresultado}
+Si la partícula pudiera viajar a la velocidad de la luz, su masa relativista \textbf{tendería a infinito}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La masa de una partícula aumenta con su velocidad. A un 98\% de la velocidad de la luz, su masa ya es más de 5 veces su masa en reposo. El hecho de que la masa relativista tienda a infinito cuando la velocidad tiende a $c$ es la razón por la cual ninguna partícula con masa en reposo puede alcanzar la velocidad de la luz, ya que se requeriría una fuerza y una energía infinitas para seguir acelerándola.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque VI: Cuestión}
+\label{subsec:A6_2011_jun_ord}
+
+\begin{cajaenunciado}
+Si la longitud de onda asociada a un protón es de 0,1 nm, calcula su velocidad y su energía cinética.
+\textbf{Datos:} Constante de Planck, $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$; masa del protón, $m_{p}=1,67\cdot10^{-27}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda de De Broglie ($\lambda$):} $\lambda = 0,1\,\text{nm} = 0,1 \cdot 10^{-9}\,\text{m} = 10^{-10}\,\text{m}$.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,63 \cdot 10^{-34}\,\text{J}\cdot\text{s}$.
+    \item \textbf{Masa del protón ($m_p$):} $m_p = 1,67 \cdot 10^{-27}\,\text{kg}$.
+    \item \textbf{Incógnitas:} Velocidad ($v$) y energía cinética ($E_c$) del protón.
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Hipótesis de De Broglie:} Toda partícula en movimiento tiene asociada una onda. La longitud de onda se relaciona con el momento lineal ($p=mv$) de la partícula mediante la ecuación:
+    $$ \lambda = \frac{h}{p} = \frac{h}{mv} $$
+    \item \textbf{Energía Cinética:} La energía cinética se relaciona con el momento lineal y la masa. Se debe usar la fórmula clásica $E_c = \frac{1}{2}mv^2 = \frac{p^2}{2m}$ si la velocidad es no relativista ($v \ll c$). Si la velocidad es cercana a $c$, se necesitaría la fórmula relativista.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Velocidad del protón}
+De la ecuación de De Broglie, despejamos primero el momento lineal $p$, y luego la velocidad $v$:
+\begin{gather}
+    p = \frac{h}{\lambda} \\
+    v = \frac{p}{m_p} = \frac{h}{\lambda m_p}
+\end{gather}
+
+\paragraph{Energía cinética}
+Calcularemos la velocidad primero para verificar si podemos usar la fórmula clásica. Si $v \ll c$, entonces:
+\begin{gather}
+    E_c = \frac{1}{2}m_p v^2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Velocidad del protón}
+\begin{gather}
+    v = \frac{6,63 \cdot 10^{-34}\,\text{J}\cdot\text{s}}{(10^{-10}\,\text{m}) (1,67 \cdot 10^{-27}\,\text{kg})} = \frac{6,63 \cdot 10^{-34}}{1,67 \cdot 10^{-37}} \approx 3970 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+La velocidad del protón es $\boldsymbol{v \approx 3970 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph{Energía cinética}
+La velocidad calculada ($v \approx 4 \cdot 10^3$ m/s) es mucho menor que la velocidad de la luz ($c = 3 \cdot 10^8$ m/s). Por lo tanto, el uso de la fórmula de la energía cinética clásica está justificado.
+\begin{gather}
+    E_c = \frac{1}{2}(1,67 \cdot 10^{-27}\,\text{kg}) (3970 \, \text{m/s})^2 \approx \frac{1}{2}(1,67 \cdot 10^{-27})(1,576 \cdot 10^7) \approx 1,317 \cdot 10^{-20} \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+La energía cinética del protón es $\boldsymbol{E_c \approx 1,32 \cdot 10^{-20} \, \textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La dualidad onda-corpúsculo, expresada en la hipótesis de De Broglie, permite calcular las propiedades cinemáticas de una partícula a partir de sus propiedades ondulatorias. Para un protón con una longitud de onda de 0,1 nm, se obtiene una velocidad no relativista de aproximadamente 3970 m/s y una energía cinética de $1,32 \cdot 10^{-20}$ J.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Opción B}
+\label{sec:B_2011_jun_ord}
+% ----------------------------------------------------------------------
+
+\subsection{Bloque I: Cuestión}
+\label{subsec:B1_2011_jun_ord}
+
+\begin{cajaenunciado}
+Suponiendo que el planeta Neptuno describe una órbita circular alrededor del Sol y que tarda 165 años terrestres en recorrerla, calcula el radio de dicha órbita.
+\textbf{Datos:} Constante de gravitación universal $G=6,67\cdot10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2$; masa del Sol, $M_{S}=1,99\cdot10^{30}\,\text{kg}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Periodo orbital de Neptuno ($T$):} $T = 165 \, \text{años terrestres}$. Convertimos a segundos:
+    $T = 165 \, \text{años} \times 365,25 \, \text{días/año} \times 24 \, \text{h/día} \times 3600 \, \text{s/h} \approx 5,20 \cdot 10^9 \, \text{s}$.
+    \item \textbf{Masa del Sol ($M_S$):} $M_S = 1,99 \cdot 10^{30}\,\text{kg}$.
+    \item \textbf{Constante de Gravitación ($G$):} $G = 6,67 \cdot 10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnita:} Radio orbital de Neptuno ($R$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Órbita de Neptuno} \vspace{0.5cm} \textit{Prompt para la imagen:} "El Sol en el centro de un sistema de coordenadas. Un planeta (Neptuno) en una órbita circular de radio R a su alrededor. Dibujar el vector de Fuerza Gravitatoria ($F_g$) que el Sol ejerce sobre Neptuno, apuntando hacia el Sol. Etiquetar esta fuerza también como Fuerza Centrípeta ($F_c$)."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{orbita_neptuno.png}
+    }}
+    \caption{Modelo físico para el cálculo del radio orbital.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando la \textbf{Tercera Ley de Kepler}, que se deduce al igualar la fuerza de atracción gravitatoria del Sol con la fuerza centrípeta necesaria para el movimiento circular de Neptuno.
+$$ F_g = F_c $$
+$$ G \frac{M_S m_N}{R^2} = m_N \frac{v^2}{R} $$
+También podemos usar la forma que relaciona directamente el radio con el periodo:
+$$ G \frac{M_S m_N}{R^2} = m_N \omega^2 R = m_N \left(\frac{2\pi}{T}\right)^2 R $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Partiendo de la igualdad de fuerzas en su forma con el periodo:
+\begin{gather}
+    G \frac{M_S}{R^2} = \frac{4\pi^2}{T^2} R
+\end{gather}
+Reorganizamos la ecuación para despejar el radio orbital $R$:
+\begin{gather}
+    G M_S T^2 = 4\pi^2 R^3 \implies R = \sqrt[3]{\frac{G M_S T^2}{4\pi^2}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    R = \sqrt[3]{\frac{(6,67 \cdot 10^{-11})(1,99 \cdot 10^{30})(5,20 \cdot 10^9)^2}{4\pi^2}} \nonumber \\
+    R = \sqrt[3]{\frac{(1,327 \cdot 10^{20})(2,704 \cdot 10^{19})}{39,48}} \approx \sqrt[3]{9,11 \cdot 10^{37}} \approx 4,5 \cdot 10^{12} \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+El radio de la órbita de Neptuno es $\boldsymbol{R \approx 4,5 \cdot 10^{12} \, \textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La Tercera Ley de Kepler establece una relación directa entre el periodo orbital de un planeta y el radio de su órbita. Utilizando esta ley, y conociendo el largo periodo de Neptuno (165 años), se calcula que su distancia media al Sol es de aproximadamente $4,5 \cdot 10^{12}$ metros, lo que lo sitúa en los confines del sistema solar.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque II: Cuestión}
+\label{subsec:B2_2011_jun_ord}
+
+\begin{cajaenunciado}
+Una onda sinusoidal viaja por un medio en el que su velocidad de propagación es $v_{1}$. En un punto de su trayectoria cambia el medio de propagación y la velocidad pasa a ser $v_{2}=2v_{1}$. Explica cómo cambian la amplitud, la frecuencia y la longitud de onda. Razona brevemente las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Onda al cambiar de medio} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama que muestra dos medios, Medio 1 y Medio 2, separados por una interfaz vertical. Una onda sinusoidal incide desde la izquierda (Medio 1) con longitud de onda $\lambda_1$ y amplitud $A_1$. Al cruzar la interfaz, parte de la onda se refleja (onda reflejada, con amplitud $A_r < A_1$) y parte se transmite (onda refractada, en Medio 2). La onda refractada tiene una longitud de onda $\lambda_2 = 2\lambda_1$ (visiblemente más larga) y una amplitud $A_2 < A_1$. Indicar que la frecuencia $f$ permanece constante en los tres tramos."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_cambio_medio.png}
+    }}
+    \caption{Reflexión y refracción de una onda en una interfaz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Cuando una onda pasa de un medio a otro (fenómeno de refracción), algunas de sus propiedades cambian mientras que otras permanecen constantes.
+\begin{itemize}
+    \item \textbf{Frecuencia ($f$):} La frecuencia de una onda está determinada por la fuente que la genera y \textbf{no cambia} al pasar de un medio a otro. Los puntos de la frontera entre los dos medios deben oscilar con la misma frecuencia para mantener la continuidad, actuando como una nueva fuente para el segundo medio.
+    
+    \item \textbf{Longitud de onda ($\lambda$):} La velocidad, la frecuencia y la longitud de onda están relacionadas por la ecuación fundamental $v = \lambda f$. Como la velocidad $v$ cambia y la frecuencia $f$ permanece constante, la longitud de onda $\lambda$ debe cambiar necesariamente.
+    
+    \item \textbf{Amplitud ($A$):} Al llegar a la interfaz entre los dos medios, parte de la energía de la onda incidente se refleja y parte se transmite. Como la energía de una onda es proporcional al cuadrado de su amplitud ($E \propto A^2$), la energía de la onda transmitida será menor que la de la onda incidente. Por lo tanto, su amplitud también debe disminuir.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Longitud de onda}
+En el medio 1: $v_1 = \lambda_1 f$.
+En el medio 2: $v_2 = \lambda_2 f$.
+Como $f$ es constante, podemos establecer una relación:
+$$ \frac{v_1}{\lambda_1} = \frac{v_2}{\lambda_2} \implies \lambda_2 = \lambda_1 \frac{v_2}{v_1} $$
+Dado que $v_2 = 2v_1$, entonces $\lambda_2 = \lambda_1 \frac{2v_1}{v_1} = 2\lambda_1$.
+
+\begin{cajaresultado}
+\begin{itemize}
+    \item \textbf{Frecuencia:} Permanece \textbf{constante}.
+    \item \textbf{Longitud de onda:} Se \textbf{duplica} ($\lambda_2 = 2\lambda_1$).
+    \item \textbf{Amplitud:} \textbf{Disminuye}, ya que parte de la energía de la onda se refleja en la interfaz.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al pasar a un medio donde la velocidad de propagación se duplica, la frecuencia de la onda (impuesta por la fuente) no se altera. Como consecuencia de la relación $v=\lambda f$, la longitud de onda debe duplicarse para acomodar el aumento de velocidad. La amplitud, relacionada con la energía, necesariamente disminuye, ya que la energía de la onda incidente se reparte entre la onda reflejada y la transmitida.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque III: Cuestión}
+\label{subsec:B3_2011_jun_ord}
+
+\begin{cajaenunciado}
+Dibuja el esquema de rayos de un objeto situado frente a un espejo esférico convexo. ¿Dónde está situada la imagen y qué características tiene? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Formación de imagen en espejo convexo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para un espejo esférico convexo. Dibuja el eje óptico horizontal. Dibuja el espejo convexo a la derecha, con su superficie curvada hacia afuera. Marca el vértice V en el eje. Marca el foco F y el centro de curvatura C a la derecha del espejo (detrás de la superficie reflectante). Dibuja un objeto vertical (flecha hacia arriba) a la izquierda del espejo. Traza dos rayos principales desde la punta del objeto: 1) Un rayo paralelo al eje óptico que se refleja como si proviniera del foco F (dibuja la prolongación del rayo reflejado hacia F con una línea discontinua). 2) Un rayo dirigido hacia el centro de curvatura C que se refleja sobre sí mismo (dibuja la prolongación hacia C con una línea discontinua). El punto donde se cruzan las prolongaciones de los rayos reflejados forma la punta de la imagen. Dibuja la imagen como una flecha discontinua. Etiqueta claramente el objeto, la imagen, F, C y V."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_convexo.png}
+    }}
+    \caption{Trazado de rayos para un objeto frente a un espejo convexo.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La construcción de la imagen se basa en el comportamiento de los rayos principales al reflejarse en un espejo convexo:
+\begin{enumerate}
+    \item \textbf{Rayo paralelo:} Un rayo que incide paralelo al eje óptico se refleja de tal manera que su prolongación pasa por el foco (F), que en un espejo convexo es virtual (está detrás del espejo).
+    \item \textbf{Rayo focal:} Un rayo que incide en dirección al foco (F) se refleja paralelo al eje óptico.
+    \item \textbf{Rayo radial:} Un rayo que incide en dirección al centro de curvatura (C) lo hace perpendicularmente a la superficie y se refleja sobre sí mismo, sin desviación.
+\end{enumerate}
+
+\subsubsection*{4. Características de la Imagen}
+Del diagrama de rayos se deducen las siguientes características de la imagen, que son siempre las mismas para un espejo convexo con un objeto real, independientemente de la posición del objeto:
+\begin{itemize}
+    \item \textbf{Posición:} La imagen se forma siempre \textbf{detrás del espejo}, entre el vértice (V) y el foco (F).
+    \item \textbf{Naturaleza:} La imagen se forma por la intersección de las \textit{prolongaciones} de los rayos reflejados, no por los rayos mismos. Por lo tanto, la imagen es siempre \textbf{virtual}. No se puede proyectar en una pantalla.
+    \item \textbf{Orientación:} La imagen está en la misma orientación que el objeto (la flecha apunta hacia arriba). Es una imagen \textbf{derecha} (o directa).
+    \item \textbf{Tamaño:} La imagen es siempre más pequeña que el objeto. Es una imagen \textbf{de menor tamaño} (reducida).
+\end{itemize}
+
+\begin{cajaresultado}
+La imagen formada por un espejo convexo está situada \textbf{detrás del espejo, entre el vértice y el foco}. Sus características son siempre: \textbf{Virtual, Derecha y de menor tamaño}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El trazado de rayos demuestra de manera inequívoca que los espejos convexos, debido a su naturaleza divergente, siempre producen imágenes virtuales, derechas y más pequeñas que el objeto. Esta propiedad los hace útiles como espejos retrovisores en vehículos o en cruces con poca visibilidad, ya que ofrecen un campo de visión más amplio, aunque los objetos se vean más pequeños y más lejanos de lo que están.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque IV: Problema}
+\label{subsec:B4_2011_jun_ord}
+
+\begin{cajaenunciado}
+En una región del espacio hay dos campos, uno eléctrico y otro magnético, constantes y perpendiculares entre sí. El campo magnético aplicado es de 100 mT. Se lanza un haz de protones dentro de esta región, en dirección perpendicular a ambos campos y con velocidad $\vec{v}=10^{6}\vec{i}\,\text{m/s}$. Calcula:
+\begin{enumerate}
+    \item[a)] La fuerza de Lorentz que actúa sobre los protones. (1 punto)
+    \item[b)] El campo eléctrico que es necesario aplicar para que el haz de protones no se desvíe. (1 punto)
+\end{enumerate}
+En ambos apartados obtén el módulo, dirección y sentido de los vectores y represéntalos gráficamente, razonando brevemente la respuesta.
+\textbf{Dato:} Carga elemental $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Partículas:} Protones (carga $q = +e = 1,6 \cdot 10^{-19}\,\text{C}$).
+    \item \textbf{Velocidad:} $\vec{v} = 10^6 \vec{i}\,\text{m/s}$.
+    \item \textbf{Campo magnético ($B$):} $B = 100\,\text{mT} = 0,1\,\text{T}$. Es perpendicular a $\vec{v}$. Por conveniencia, lo situamos en el eje Z: $\vec{B} = 0,1 \vec{k}\,\text{T}$.
+    \item \textbf{Campo eléctrico ($\vec{E}$):} Perpendicular a $\vec{v}$ y $\vec{B}$. Estará en el eje Y: $\vec{E} = E\vec{j}$.
+    \item \textbf{Incógnitas:}
+        \begin{itemize}
+            \item a) Fuerza de Lorentz (asumiendo $\vec{E}=0$).
+            \item b) $\vec{E}$ necesario para que la fuerza neta sea cero.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Selector de Velocidades} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de ejes coordenados 3D. Un protón se mueve a lo largo del eje X positivo ($\vec{v}=v\vec{i}$). Hay un campo magnético uniforme apuntando en la dirección Z positiva ($\vec{B}=B\vec{k}$). Usando la regla de la mano derecha, dibujar el vector de fuerza magnética $\vec{F}_m$ que actúa sobre el protón, que debe apuntar en la dirección Y positiva. Para anular esta fuerza, dibujar un vector de campo eléctrico $\vec{E}$ apuntando en la dirección Y negativa, de modo que la fuerza eléctrica $\vec{F}_e=q\vec{E}$ apunte también en la dirección Y negativa y tenga el mismo módulo que $\vec{F}_m$."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{selector_velocidades.png}
+    }}
+    \caption{Diagrama de fuerzas y campos para un selector de velocidades.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza total sobre una partícula cargada en una región con campos eléctrico y magnético es la \textbf{Fuerza de Lorentz}:
+$$ \vec{F} = \vec{F}_e + \vec{F}_m = q\vec{E} + q(\vec{v} \times \vec{B}) $$
+\begin{itemize}
+    \item \textbf{Apartado a):} Se calcula la parte magnética de la fuerza, $\vec{F}_m = q(\vec{v} \times \vec{B})$.
+    \item \textbf{Apartado b):} Para que el haz no se desvíe, la fuerza neta debe ser nula: $\vec{F} = 0$. Esto implica que la fuerza eléctrica y la magnética deben ser iguales en módulo y de sentido opuesto: $\vec{F}_e = -\vec{F}_m$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Fuerza de Lorentz (magnética)}
+Con la configuración de ejes elegida ($\vec{v} = v\vec{i}$, $\vec{B} = B\vec{k}$):
+\begin{gather}
+    \vec{F}_m = q(v\vec{i} \times B\vec{k}) = qvB (\vec{i} \times \vec{k})
+\end{gather}
+Recordando que $\vec{i} \times \vec{k} = -\vec{j}$.
+\begin{gather}
+    \vec{F}_m = -qvB\vec{j}
+\end{gather}
+
+\paragraph{b) Campo eléctrico para fuerza nula}
+La condición es $\vec{F}_e + \vec{F}_m = 0 \implies q\vec{E} = -\vec{F}_m$.
+\begin{gather}
+    q\vec{E} = -(-qvB\vec{j}) = qvB\vec{j} \implies \vec{E} = vB\vec{j}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Fuerza magnética}
+\begin{gather}
+    \vec{F}_m = -(1,6\cdot10^{-19})(10^6)(0,1)\vec{j} = -1,6\cdot10^{-14}\vec{j}\,\text{N}
+\end{gather}
+\begin{cajaresultado}
+La fuerza de Lorentz es $\boldsymbol{\vec{F}_m = -1,6\cdot10^{-14}\vec{j}\,\textbf{N}}$. Su módulo es $1,6\cdot10^{-14}\,\text{N}$, dirección el eje Y y sentido negativo.
+\end{cajaresultado}
+
+\paragraph{b) Campo eléctrico}
+\begin{gather}
+    \vec{E} = (10^6\,\text{m/s})(0,1\,\text{T})\vec{j} = 10^5\vec{j}\,\text{V/m}
+\end{gather}
+\begin{cajaresultado}
+El campo eléctrico necesario es $\boldsymbol{\vec{E} = 10^5\vec{j}\,\textbf{V/m}}$. Su módulo es $10^5\,\text{V/m}$, dirección el eje Y y sentido positivo.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Un protón que se mueve en el campo magnético especificado experimenta una fuerza magnética de $1,6\cdot10^{-14}$ N en la dirección $-\vec{j}$. Para contrarrestar esta fuerza y permitir que el protón siga una trayectoria rectilínea, se debe aplicar un campo eléctrico que genere una fuerza eléctrica de igual módulo y sentido opuesto. Esto se logra con un campo $\vec{E}$ de $10^5$ V/m en la dirección $+\vec{j}$. Esta configuración se conoce como un selector de velocidades.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque V: Problema}
+\label{subsec:B5_2011_jun_ord}
+
+\begin{cajaenunciado}
+En un experimento de efecto fotoeléctrico, cuando la luz que incide sobre un determinado metal tiene una longitud de onda de 550 nm, el módulo de la velocidad máxima con la que salen emitidos los electrones es de $2,96\cdot10^{5}\,\text{m/s}$.
+\begin{enumerate}
+    \item[a)] Calcula la energía de los fotones, la energía cinética máxima de los electrones y la función trabajo del metal (todas las energías en electronvolt). (0,9 puntos)
+    \item[b)] Calcula la longitud de onda umbral del metal. (0,5 puntos)
+    \item[c)] Representa gráficamente la energía cinética máxima de los electrones en función de la frecuencia de los fotones, indicando el significado de la pendiente y de los cortes con los ejes. (0,6 puntos)
+\end{enumerate}
+\textbf{Datos:} Carga elemental $e=1,6\cdot10^{-19}\,\text{C}$; masa del electrón $m_{e}=9,1\cdot10^{-31}\,\text{kg}$; velocidad de la luz $c=3\cdot10^{8}\,\text{m/s}$; constante de Planck $h=6.63\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda incidente ($\lambda$):} $\lambda = 550\,\text{nm} = 5,5 \cdot 10^{-7}\,\text{m}$.
+    \item \textbf{Velocidad máxima de los electrones ($v_{max}$):} $v_{max} = 2,96 \cdot 10^5\,\text{m/s}$.
+    \item \textbf{Incógnitas:} $E_{foton}$, $E_{c,max}$, $W_0$ (en eV), $\lambda_0$ y gráfica $E_c$ vs $f$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica (para el apartado c)}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Gráfica del Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico con la frecuencia $f$ en el eje horizontal y la energía cinética máxima $E_{c,max}$ en el eje vertical. Dibujar una línea recta con pendiente positiva que no pasa por el origen. La recta corta el eje horizontal en un punto etiquetado como 'frecuencia umbral, $f_0$'. La recta corta el eje vertical en un punto etiquetado como '$-W_0$' (menos la función trabajo). Indicar que la pendiente de la recta es la constante de Planck, $h$."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{grafica_fotoelectrico.png}
+    }}
+    \caption{Relación lineal entre la energía cinética máxima y la frecuencia.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se basa en la \textbf{ecuación del efecto fotoeléctrico de Einstein}:
+$$ E_{foton} = W_0 + E_{c,max} $$
+donde:
+\begin{itemize}
+    \item $E_{foton} = hf = \frac{hc}{\lambda}$ es la energía del fotón incidente.
+    \item $W_0 = hf_0 = \frac{hc}{\lambda_0}$ es la función trabajo o trabajo de extracción del metal (energía mínima para arrancar un electrón).
+    \item $E_{c,max} = \frac{1}{2}m_e v_{max}^2$ es la energía cinética máxima de los electrones emitidos.
+\end{itemize}
+Para convertir de Julios a eV se usa: $E (\text{eV}) = \frac{E (\text{J})}{e}$.
+
+\subsubsection*{4. Tratamiento Simbólico y Numérico}
+\paragraph{a) Energías}
+1. \textbf{Energía del fotón ($E_{foton}$):}
+$$ E_{fotón} = \frac{hc}{\lambda} = \frac{(6,63\cdot10^{-34})(3\cdot10^8)}{5,5\cdot10^{-7}} \approx 3,616 \cdot 10^{-19}\,\text{J} $$
+$$ E_{foton} (\text{eV}) = \frac{3,616\cdot10^{-19}}{1,6\cdot10^{-19}} \approx 2,26\,\text{eV} $$
+2. \textbf{Energía cinética máxima ($E_{c,max}$):}
+$$ E_{c,max} = \frac{1}{2}m_e v_{max}^2 = \frac{1}{2}(9,1\cdot10^{-31})(2,96\cdot10^5)^2 \approx 3,99 \cdot 10^{-20}\,\text{J} $$
+$$ E_{c,max} (\text{eV}) = \frac{3,99\cdot10^{-20}}{1,6\cdot10^{-19}} \approx 0,25\,\text{eV} $$
+3. \textbf{Función trabajo ($W_0$):}
+$$ W_0 = E_{fotón} - E_{c,max} = 2,26\,\text{eV} - 0,25\,\text{eV} = 2,01\,\text{eV} $$
+\begin{cajaresultado}
+$E_{foton} \approx \boldsymbol{2,26\,\textbf{eV}}$, $E_{c,max} \approx \boldsymbol{0,25\,\textbf{eV}}$, $W_0 \approx \boldsymbol{2,01\,\textbf{eV}}$.
+\end{cajaresultado}
+
+\paragraph{b) Longitud de onda umbral ($\lambda_0$)}
+$$ W_0 = \frac{hc}{\lambda_0} \implies \lambda_0 = \frac{hc}{W_0} $$
+(Usar $W_0$ en Julios: $2,01\,\text{eV} \cdot 1,6\cdot10^{-19}\,\text{J/eV} = 3,216 \cdot 10^{-19}\,\text{J}$)
+$$ \lambda_0 = \frac{(6,63\cdot10^{-34})(3\cdot10^8)}{3,216\cdot10^{-19}} \approx 6,18 \cdot 10^{-7}\,\text{m} = 618\,\text{nm} $$
+\begin{cajaresultado}
+La longitud de onda umbral es $\boldsymbol{\lambda_0 \approx 618\,\textbf{nm}}$.
+\end{cajaresultado}
+
+\paragraph{c) Gráfica e interpretación}
+La ecuación de Einstein se puede reescribir como $E_{c,max} = hf - W_0$.
+Esta es la ecuación de una recta, $y = mx + n$, donde:
+\begin{itemize}
+    \item La variable independiente es la frecuencia $f$ (eje X).
+    \item La variable dependiente es la energía cinética máxima $E_{c,max}$ (eje Y).
+    \item \textbf{Pendiente ($m$):} La pendiente de la recta es la \textbf{constante de Planck, $h$}.
+    \item \textbf{Corte con el eje Y (ordenada en el origen):} El punto de corte es $\boldsymbol{-W_0}$ (la función trabajo con signo negativo).
+    \item \textbf{Corte con el eje X (raíz):} Ocurre cuando $E_{c,max}=0$. En ese punto, $hf-W_0=0 \implies f=W_0/h$. Este punto es la \textbf{frecuencia umbral, $f_0$}.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El análisis del experimento, basado en la ecuación de Einstein, permite caracterizar el metal, determinando su función trabajo (2,01 eV) y su longitud de onda umbral (618 nm). La relación lineal entre la energía cinética de los electrones y la frecuencia de la luz incidente es una de las pruebas fundamentales del modelo corpuscular de la luz, donde la pendiente de la recta representa una constante universal, la constante de Planck.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Bloque VI: Cuestión}
+\label{subsec:B6_2011_jun_ord}
+
+\begin{cajaenunciado}
+La gammagrafía es una técnica que se utiliza en el diagnóstico de tumores. En ella se inyecta al paciente una sustancia que contiene un isótopo del Tecnecio que es emisor de radiación gamma y cuyo periodo de semidesintegración es de 6 horas. Haz una estimación razonada del tiempo que debe transcurrir para que la actividad en el paciente sea inferior al 6\% de la actividad que tenía en el momento de ser inyectado.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Isótopo:} Tecnecio (emisor gamma).
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 6\,\text{horas}$.
+    \item \textbf{Condición final:} La actividad final $A(t)$ debe ser el 6\% de la actividad inicial $A_0$.
+    $$ A(t) = 0,06 \cdot A_0 $$
+    \item \textbf{Incógnita:} Tiempo transcurrido ($t$).
+\end{itemize}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El decaimiento de la actividad de una muestra radiactiva sigue una ley exponencial, idéntica a la del número de núcleos.
+La \textbf{ley de desintegración radiactiva} para la actividad es:
+$$ A(t) = A_0 e^{-\lambda t} $$
+donde $A_0$ es la actividad inicial, $A(t)$ es la actividad en el instante $t$, y $\lambda$ es la constante de desintegración.
+La constante de desintegración $\lambda$ se relaciona con el periodo de semidesintegración $T_{1/2}$ mediante:
+$$ \lambda = \frac{\ln(2)}{T_{1/2}} $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sustituimos la condición del enunciado en la ley de decaimiento:
+\begin{gather}
+    0,06 A_0 = A_0 e^{-\lambda t}
+\end{gather}
+Simplificamos $A_0$ y aplicamos logaritmo neperiano a ambos lados para despejar el tiempo $t$:
+\begin{gather}
+    0,06 = e^{-\lambda t} \implies \ln(0,06) = -\lambda t \implies t = -\frac{\ln(0,06)}{\lambda}
+\end{gather}
+Sustituimos la expresión de $\lambda$:
+\begin{gather}
+    t = -\frac{\ln(0,06)}{\frac{\ln(2)}{T_{1/2}}} = -T_{1/2} \frac{\ln(0,06)}{\ln(2)}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Usando la expresión final con $T_{1/2} = 6$ horas:
+\begin{gather}
+    t = - (6\,\text{horas}) \frac{\ln(0,06)}{\ln(2)} \approx - (6\,\text{horas}) \frac{-2,813}{0,693} \approx 6 \cdot (4,059) \approx 24,35\,\text{horas}
+\end{gather}
+\begin{cajaresultado}
+Debe transcurrir un tiempo de aproximadamente $\boldsymbol{24,35 \, \textbf{horas}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La actividad de una sustancia radiactiva decae exponencialmente. Para el isótopo de Tecnecio con un periodo de 6 horas, la actividad se reduce a la mitad cada 6 horas. El cálculo muestra que se necesitan poco más de 4 periodos de semidesintegración (aproximadamente 24,35 horas) para que la actividad residual en el paciente sea inferior al 6\% de la dosis inicial, garantizando que la exposición a la radiación disminuya a niveles seguros en un tiempo razonable.
+\end{cajaconclusion}
+
+\newpage

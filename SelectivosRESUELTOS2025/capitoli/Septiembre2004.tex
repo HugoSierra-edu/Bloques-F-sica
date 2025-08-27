@@ -1,0 +1,537 @@
+% !TEX root = ../main.tex
+% ======================================================================
+% CAPÍTULO: Examen Septiembre 2004 - Comunidad Valenciana
+% ======================================================================
+\chapter{Examen Septiembre 2004 - Comunidad Valenciana}
+\label{chap:2004_sep_cv}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2004_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:1A_2004_sep_cv}
+
+\begin{cajaenunciado}
+La órbita de una de las lunas de Júpiter, Io, es aproximadamente circular con un radio de $4,20\cdot10^{8}$ m. El período de la órbita vale $1,53\cdot10^{5}$ s. Se pide:
+\begin{enumerate}
+    \item[1.] El radio de la órbita circular de la luna de Júpiter Calisto que tiene un período de $1,44\cdot10^{6}$ s. (0,6 puntos)
+    \item[2.] La masa de Júpiter. (0,7 puntos)
+    \item[3.] El valor de la aceleración de la gravedad en la superficie de Júpiter. (0,7 puntos)
+\end{enumerate}
+\textbf{Datos:} Radio de Júpiter $R_{J}=71400$ km; $G=6.67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Antes de operar, es imprescindible identificar los datos y convertirlos al Sistema Internacional de unidades (SI).
+\begin{itemize}
+    \item \textbf{Constante de Gravitación Universal (G):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$
+    \item \textbf{Radio orbital de Io ($r_{Io}$):} $r_{Io} = 4,20 \cdot 10^{8} \text{ m}$
+    \item \textbf{Periodo orbital de Io ($T_{Io}$):} $T_{Io} = 1,53 \cdot 10^{5} \text{ s}$
+    \item \textbf{Periodo orbital de Calisto ($T_{Cal}$):} $T_{Cal} = 1,44 \cdot 10^{6} \text{ s}$
+    \item \textbf{Radio de Júpiter ($R_J$):} $R_J = 71400 \text{ km} = 7,14 \cdot 10^{7} \text{ m}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Radio orbital de Calisto ($r_{Cal}$).
+        \item Masa de Júpiter ($M_J$).
+        \item Aceleración de la gravedad en la superficie de Júpiter ($g_J$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Órbitas de Io y Calisto alrededor de Júpiter} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema del planeta Júpiter en el centro. Alrededor, dos órbitas circulares concéntricas. La órbita interior está etiquetada como 'Órbita de Io' con radio $r_{Io}$. La órbita exterior está etiquetada como 'Órbita de Calisto' con radio $r_{Cal}$. En la luna Io, se dibuja un vector de Fuerza Gravitatoria ($F_g$) apuntando hacia Júpiter, que actúa como Fuerza Centrípeta ($F_c$)." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{orbitas_jupiter.png}
+    }}
+    \caption{Representación gráfica del sistema planetario de Júpiter con sus lunas Io y Calisto.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{1. Radio orbital de Calisto}
+Se aplica la \textbf{Tercera Ley de Kepler}, que establece que para todos los cuerpos que orbitan alrededor de un mismo cuerpo central, la relación entre el cuadrado de sus períodos orbitales y el cubo de sus radios orbitales es constante.
+
+\paragraph*{2. Masa de Júpiter}
+Para una órbita circular, la fuerza que la causa (fuerza centrípeta, $F_c$) es la \textbf{Fuerza de Atracción Gravitatoria} ($F_g$). Se igualan ambas expresiones, combinando la Ley de Gravitación Universal de Newton y la dinámica del Movimiento Circular Uniforme (MCU).
+
+\paragraph*{3. Gravedad en la superficie de Júpiter}
+Se calcula aplicando la \textbf{Ley de Gravitación Universal} para un objeto de masa $m$ situado en la superficie del planeta, donde el peso ($P=mg_J$) es igual a la fuerza gravitatoria.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Radio orbital de Calisto ($r_{Cal}$)}
+Según la 3ª Ley de Kepler:
+\begin{gather}
+    \frac{T_{Io}^2}{r_{Io}^3} = \frac{T_{Cal}^2}{r_{Cal}^3} \implies r_{Cal}^3 = r_{Io}^3 \frac{T_{Cal}^2}{T_{Io}^2} \nonumber \\[8pt]
+    r_{Cal} = r_{Io} \sqrt[3]{\left(\frac{T_{Cal}}{T_{Io}}\right)^2}
+\end{gather}
+\paragraph*{2. Masa de Júpiter ($M_J$)}
+Igualamos $F_g = F_c$ para la órbita de Io (masa $m_{Io}$):
+\begin{gather}
+    G \frac{M_J m_{Io}}{r_{Io}^2} = m_{Io} a_c = m_{Io} \omega_{Io}^2 r_{Io} = m_{Io} \left(\frac{2\pi}{T_{Io}}\right)^2 r_{Io} \nonumber \\[8pt]
+    M_J = \frac{4\pi^2 r_{Io}^3}{G T_{Io}^2}
+\end{gather}
+\paragraph*{3. Gravedad en la superficie de Júpiter ($g_J$)}
+\begin{gather}
+    F_g = P \implies G \frac{M_J m}{R_J^2} = m g_J \nonumber \\[8pt]
+    g_J = G \frac{M_J}{R_J^2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Valor del radio orbital de Calisto}
+\begin{gather}
+    r_{Cal} = (4,20 \cdot 10^8) \sqrt[3]{\left(\frac{1,44 \cdot 10^6}{1,53 \cdot 10^5}\right)^2} \approx 1,88 \cdot 10^9 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    El radio de la órbita de Calisto es $\boldsymbol{r_{Cal} \approx 1,88 \cdot 10^9 \, \textbf{m}}$.
+\end{cajaresultado}
+
+\paragraph*{2. Valor de la Masa de Júpiter}
+\begin{gather}
+    M_J = \frac{4\pi^2 (4,20 \cdot 10^8)^3}{(6,67 \cdot 10^{-11})(1,53 \cdot 10^5)^2} \approx 1,87 \cdot 10^{27} \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    La masa de Júpiter es $\boldsymbol{M_J \approx 1,87 \cdot 10^{27} \, \textbf{kg}}$.
+\end{cajaresultado}
+
+\paragraph*{3. Valor de la gravedad en la superficie de Júpiter}
+\begin{gather}
+    g_J = (6,67 \cdot 10^{-11}) \frac{1,87 \cdot 10^{27}}{(7,14 \cdot 10^7)^2} \approx 24,48 \, \text{m/s}^2
+\end{gather}
+\begin{cajaresultado}
+    La aceleración de la gravedad en la superficie de Júpiter es $\boldsymbol{g_J \approx 24,48 \, \textbf{m/s}^2}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Utilizando la 3ª Ley de Kepler, se ha determinado que el radio orbital de Calisto es de $\mathbf{1,88 \cdot 10^9 \, m}$. A partir de la dinámica orbital de Io, se ha calculado la masa de Júpiter, obteniendo un valor de $\mathbf{1,87 \cdot 10^{27} \, kg}$. Finalmente, la aceleración de la gravedad en su superficie es de $\mathbf{24,48 \, m/s^2}$, aproximadamente 2,5 veces la de la Tierra.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Ondas}
+\label{sec:ondas_2004_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:2A_2004_sep_cv}
+
+\begin{cajaenunciado}
+Una onda acústica se propaga en el aire. Explica la diferencia entre la velocidad de una partícula del aire que transmite dicha onda y la velocidad de la onda.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica que requiere diferenciar dos conceptos de velocidad en el contexto de un movimiento ondulatorio.
+\begin{itemize}
+    \item \textbf{Fenómeno:} Propagación de una onda sonora (longitudinal) en el aire.
+    \item \textbf{Conceptos a diferenciar:}
+    \begin{itemize}
+        \item Velocidad de la onda o de propagación ($v_{onda}$).
+        \item Velocidad de vibración de una partícula del medio ($v_{partícula}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Velocidades en una Onda Longitudinal} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de una onda sonora propagándose de izquierda a derecha en el aire. Se muestran zonas de compresión (partículas juntas) y rarefacción (partículas separadas). El vector de velocidad de la onda, $v_{onda}$, es grande, constante y apunta hacia la derecha. Sobre varias partículas individuales, se dibujan pequeños vectores de velocidad de partícula, $v_{partícula}$, que oscilan horizontalmente alrededor de sus posiciones de equilibrio. Algunos apuntan a la derecha, otros a la izquierda y algunos son nulos en los extremos de su oscilación." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_sonora.png}
+    }}
+    \caption{Diferencia entre la velocidad de propagación de la onda y la velocidad de vibración de las partículas del medio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Una onda es una perturbación que se propaga a través de un medio (o del vacío) transportando energía y momento, pero sin transporte neto de materia. En una onda mecánica, como el sonido, las partículas del medio actúan como osciladores acoplados.
+
+\paragraph*{Velocidad de la onda ($v_{onda}$)}
+Es la velocidad a la que se propaga la perturbación a través del medio. Depende exclusivamente de las propiedades del medio, como su elasticidad y densidad (para el aire, depende principalmente de la temperatura). Se trata de una \textbf{velocidad constante} para un medio homogéneo.
+
+\paragraph*{Velocidad de la partícula ($v_{partícula}$)}
+Es la velocidad con la que oscilan las partículas del medio alrededor de su posición de equilibrio. Cada partícula describe un \textbf{Movimiento Armónico Simple (M.A.S.)}. Por tanto, su velocidad \textbf{no es constante}, sino que varía sinusoidalmente con el tiempo. Es máxima cuando la partícula pasa por su posición de equilibrio y es nula en los puntos de máxima elongación (amplitud).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Si la elongación de una partícula que describe un M.A.S. es $x(t) = A \sin(\omega t + \phi_0)$, su velocidad de vibración es la derivada temporal:
+\begin{gather}
+    v_{partícula}(t) = \frac{dx}{dt} = A\omega \cos(\omega t + \phi_0)
+\end{gather}
+Esta ecuación muestra que $v_{partícula}$ es variable y depende del tiempo y de la posición de la partícula en su ciclo de oscilación. Su valor máximo es $v_{max} = A\omega$.
+
+Por otro lado, la velocidad de propagación de la onda es constante y viene dada por la relación:
+\begin{gather}
+    v_{onda} = \frac{\lambda}{T} = \lambda f
+\end{gather}
+donde $\lambda$ es la longitud de onda y $T$ es el período.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Esta es una cuestión cualitativa, por lo que no hay sustitución numérica. La clave es la diferencia conceptual.
+
+\begin{cajaresultado}
+    \textbf{Velocidad de la onda:} Constante, depende del medio. Representa el avance del frente de onda.
+    \textbf{Velocidad de la partícula:} Variable (M.A.S.), depende del tiempo. Representa el movimiento oscilatorio local de la materia.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    En una onda acústica, la \textbf{velocidad de la onda} es la rapidez constante con la que la energía sonora viaja por el aire, mientras que la \textbf{velocidad de una partícula} es la rapidez variable con la que dicha partícula oscila en torno a su punto de equilibrio. Son dos conceptos fundamentalmente distintos: el primero describe la propagación de la perturbación y el segundo, la respuesta del medio a esa perturbación.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Óptica Geométrica}
+\label{sec:optica_2004_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 2 - OPCIÓN A}
+\label{subsec:3A_2004_sep_cv}
+
+\begin{cajaenunciado}
+Una lente convergente forma la imagen de un objeto sobre una pantalla colocada a 12 cm de la lente. Cuando se aleja la lente 2 cm del objeto, la pantalla ha de acercarse 2 cm hacia el objeto para restablecer el enfoque. ¿Cuál es la distancia focal de la lente?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se analizan las dos situaciones descritas, aplicando el criterio de signos DIN (objeto a la izquierda, luz viaja a la derecha).
+\begin{itemize}
+    \item \textbf{Situación 1:}
+        \begin{itemize}
+            \item Distancia imagen ($s'_1$): La imagen es real (se proyecta en pantalla), luego $s'_1 = +12 \text{ cm}$.
+            \item Distancia objeto ($s_1$): Es desconocida y negativa, $s_1 = -|s_1|$.
+        \end{itemize}
+    \item \textbf{Situación 2:}
+        \begin{itemize}
+            \item Nueva distancia objeto ($s_2$): La lente se aleja 2 cm del objeto, por lo que la nueva distancia objeto es $s_2 = s_1 - 2 \text{ cm} = -(|s_1| + 2) \text{ cm}$.
+            \item Nueva distancia imagen ($s'_2$): La pantalla se acerca 2 cm, luego $s'_2 = s'_1 - 2 \text{ cm} = +10 \text{ cm}$.
+        \end{itemize}
+    \item \textbf{Incógnita:} Distancia focal imagen ($f'$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Formación de imagen en dos posiciones} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos diagramas de rayos superpuestos o uno al lado del otro para una lente convergente.
+    \textbf{Diagrama 1 (negro):} Un objeto a una distancia $s_1$ de la lente. Los rayos (paralelo al eje, focal y central) convergen para formar una imagen real e invertida a una distancia $s'_1 = 12$ cm.
+    \textbf{Diagrama 2 (rojo):} El objeto se desplaza a la izquierda a una nueva posición $s_2$. La lente permanece en el origen. Los nuevos rayos convergen para formar una imagen real e invertida más pequeña en una posición más cercana $s'_2 = 10$ cm." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_convergente.png}
+    }}
+    \caption{Esquema de las dos situaciones descritas en el problema.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando la \textbf{Ecuación Fundamental de las Lentes Delgadas} (o ecuación de Gauss) a las dos situaciones descritas. La distancia focal ($f'$) es una característica intrínseca de la lente y, por lo tanto, es la misma en ambos casos.
+$$ \frac{1}{s'} - \frac{1}{s} = \frac{1}{f'} $$
+donde $s$ es la distancia objeto, $s'$ es la distancia imagen y $f'$ es la distancia focal imagen.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Se plantea un sistema de dos ecuaciones con dos incógnitas ($s_1$ y $f'$).
+
+\paragraph*{Ecuación para la Situación 1}
+\begin{gather}
+    \frac{1}{12} - \frac{1}{s_1} = \frac{1}{f'}
+\end{gather}
+\paragraph*{Ecuación para la Situación 2}
+\begin{gather}
+    \frac{1}{10} - \frac{1}{s_2} = \frac{1}{f'} \quad \text{con } s_2 = s_1 - 2
+\end{gather}
+Igualamos ambas expresiones para $1/f'$:
+\begin{gather}
+    \frac{1}{12} - \frac{1}{s_1} = \frac{1}{10} - \frac{1}{s_1 - 2}
+\end{gather}
+Ahora, se resuelve esta ecuación para $s_1$. Una vez obtenido $s_1$, se sustituye en cualquiera de las dos ecuaciones iniciales para hallar $f'$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Reagrupamos la ecuación para $s_1$:
+\begin{gather}
+    \frac{1}{s_1 - 2} - \frac{1}{s_1} = \frac{1}{10} - \frac{1}{12} \nonumber \\[8pt]
+    \frac{s_1 - (s_1 - 2)}{s_1(s_1 - 2)} = \frac{6 - 5}{60} \nonumber \\[8pt]
+    \frac{2}{s_1^2 - 2s_1} = \frac{1}{60} \implies s_1^2 - 2s_1 = 120 \nonumber \\[8pt]
+    s_1^2 - 2s_1 - 120 = 0
+\end{gather}
+Resolviendo la ecuación de segundo grado:
+$s_1 = \frac{-(-2) \pm \sqrt{(-2)^2 - 4(1)(-120)}}{2(1)} = \frac{2 \pm \sqrt{4 + 480}}{2} = \frac{2 \pm 22}{2}$.
+Las dos soluciones son $s_1 = 12$ cm y $s_1 = -10$ cm. Como el objeto es real, su posición debe ser negativa ($s<0$), por lo que elegimos $s_1 = -10$ cm.
+
+Ahora calculamos $f'$ usando la primera ecuación:
+\begin{gather}
+    \frac{1}{f'} = \frac{1}{12} - \frac{1}{-10} = \frac{1}{12} + \frac{1}{10} = \frac{5+6}{60} = \frac{11}{60} \nonumber \\[8pt]
+    f' = \frac{60}{11} \approx 5,45 \, \text{cm}
+\end{gather}
+\begin{cajaresultado}
+    La distancia focal de la lente es $\boldsymbol{f' \approx 5,45 \, \textbf{cm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Planteando un sistema de ecuaciones basado en la Ecuación de las Lentes Delgadas para las dos configuraciones descritas, se ha determinado que la posición inicial del objeto era de -10 cm. A partir de este dato, se deduce que la lente convergente tiene una distancia focal de $\mathbf{+5,45 \, cm}$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Campo Eléctrico}
+\label{sec:electrico_2004_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 3 - OPCIÓN A}
+\label{subsec:4A_2004_sep_cv}
+
+\begin{cajaenunciado}
+El potencial y el campo eléctrico a cierta distancia de una carga puntual valen 600 V y 200 N/C, respectivamente. ¿Cuál es la distancia a la carga puntual? ¿Cuál es el valor de la carga?
+\textbf{Dato:} $K_{e}=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Constante de Coulomb ($K_e$):} $K_e = 9 \cdot 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2$
+    \item \textbf{Potencial eléctrico ($V$):} $V = 600 \text{ V}$
+    \item \textbf{Módulo del Campo eléctrico ($E$):} $E = 200 \text{ N/C}$
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Distancia a la carga ($r$).
+        \item Valor de la carga ($q$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo y Potencial de una Carga Puntual} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una carga puntual positiva, $q$, en el origen. A una distancia $r$ se encuentra un punto P. En el punto P, se dibuja un vector de campo eléctrico, $\vec{E}$, apuntando radialmente hacia afuera. Se dibujan líneas equipotenciales circulares y concéntricas alrededor de la carga $q$. La línea que pasa por P está etiquetada con el valor $V=600$ V." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{campo_potencial.png}
+    }}
+    \caption{Representación del campo y potencial en un punto P debido a una carga $q$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve utilizando las expresiones para el módulo del \textbf{campo eléctrico} y el \textbf{potencial eléctrico} creados por una carga puntual $q$ en un punto situado a una distancia $r$.
+\begin{itemize}
+    \item \textbf{Potencial eléctrico:} $V = K_e \frac{q}{r}$
+    \item \textbf{Módulo del Campo eléctrico:} $E = K_e \frac{|q|}{r^2}$
+\end{itemize}
+Dado que el potencial es positivo ($V>0$), la carga $q$ que lo crea también debe ser positiva. Por lo tanto, podemos prescindir del valor absoluto en la fórmula del campo.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Tenemos un sistema de dos ecuaciones con dos incógnitas ($q$ y $r$):
+\begin{gather}
+    V = K_e \frac{q}{r} \label{eq:potencial} \\
+    E = K_e \frac{q}{r^2} \label{eq:campo}
+\end{gather}
+Para hallar la distancia $r$, una estrategia eficiente es dividir la ecuación del potencial (\ref{eq:potencial}) entre la del campo (\ref{eq:campo}):
+\begin{gather}
+    \frac{V}{E} = \frac{K_e q/r}{K_e q/r^2} = \frac{r^2}{r} = r
+\end{gather}
+Una vez conocida $r$, podemos despejar la carga $q$ de la ecuación del potencial:
+\begin{gather}
+    q = \frac{V \cdot r}{K_e}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de la distancia $r$}
+\begin{gather}
+    r = \frac{V}{E} = \frac{600 \, \text{V}}{200 \, \text{N/C}} = 3 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+    La distancia a la carga puntual es $\boldsymbol{r = 3 \, \textbf{m}}$.
+\end{cajaresultado}
+
+\paragraph*{Cálculo de la carga $q$}
+\begin{gather}
+    q = \frac{(600 \, \text{V}) \cdot (3 \, \text{m})}{9 \cdot 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2} = 2 \cdot 10^{-7} \, \text{C}
+\end{gather}
+\begin{cajaresultado}
+    El valor de la carga es $\boldsymbol{q = 2 \cdot 10^{-7} \, \textbf{C}}$ (o 200 nC).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Mediante la relación entre el potencial y el campo eléctrico generados por una carga puntual, se ha determinado que el punto en cuestión se encuentra a una distancia de $\mathbf{3 \, m}$ de la carga. Posteriormente, utilizando la definición de potencial, se ha calculado que el valor de dicha carga es de $\mathbf{+2 \cdot 10^{-7} \, C}$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Física Moderna - Radiactividad}
+\label{sec:nuclear1_2004_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 2 - OPCIÓN A}
+\label{subsec:5A_2004_sep_cv}
+
+\begin{cajaenunciado}
+Se preparan 250 g de una sustancia radioactiva y al cabo de 24 horas se ha desintegrado el 15\% de la masa original. Se pide:
+\begin{enumerate}
+    \item[1.] La constante de desintegración de la sustancia. (1 punto)
+    \item[2.] El período de semidesintegración de la sustancia, así como su vida media. (0,4 puntos)
+    \item[3.] La masa que quedará sin desintegrar al cabo de 10 días. (0,6 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa inicial ($m_0$):} $m_0 = 250 \text{ g}$
+    \item \textbf{Tiempo transcurrido ($t_1$):} $t_1 = 24 \text{ h}$
+    \item \textbf{Masa desintegrada en $t_1$:} $15\%$ de $m_0$.
+    \item \textbf{Masa restante en $t_1$ ($m_1$):} $m_1 = m_0 - 0,15 m_0 = 0,85 m_0$.
+    \item \textbf{Tiempo para el cálculo final ($t_2$):} $t_2 = 10 \text{ días} = 10 \cdot 24 = 240 \text{ h}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Constante de desintegración ($\lambda$).
+        \item Período de semidesintegración ($T_{1/2}$).
+        \item Vida media ($\tau$).
+        \item Masa restante a los 10 días ($m_2$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Curva de Desintegración Radiactiva} \vspace{0.5cm} \textit{Prompt para la imagen:} "Gráfica de decaimiento exponencial con el tiempo 't' en el eje X y la masa 'm(t)' en el eje Y. La curva empieza en $m_0=250$ g en $t=0$. Se marcan dos puntos en la curva: el punto (24 h, 212.5 g) y el punto (10 días, $m_2$). También se indica en el eje Y el valor de $m_0/2$ y se traza una línea hasta la curva y hacia abajo al eje X para marcar el período de semidesintegración, $T_{1/2}$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{desintegracion.png}
+    }}
+    \caption{Representación de la ley de desintegración radiactiva.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La resolución se basa en la \textbf{Ley de la desintegración radiactiva}, que establece que el número de núcleos (o la masa) de una muestra radiactiva disminuye exponencialmente con el tiempo.
+$$ m(t) = m_0 e^{-\lambda t} $$
+Donde $\lambda$ es la constante de desintegración. A partir de $\lambda$, se definen:
+\begin{itemize}
+    \item \textbf{Período de semidesintegración ($T_{1/2}$):} Tiempo necesario para que la masa se reduzca a la mitad. $T_{1/2} = \frac{\ln(2)}{\lambda}$.
+    \item \textbf{Vida media ($\tau$):} Promedio de vida de los núcleos de la muestra. $\tau = \frac{1}{\lambda}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Constante de desintegración ($\lambda$)}
+Aplicamos la ley de desintegración para $t_1=24$ h:
+\begin{gather}
+    0,85 m_0 = m_0 e^{-\lambda t_1} \implies 0,85 = e^{-\lambda t_1} \nonumber \\[8pt]
+    \ln(0,85) = -\lambda t_1 \implies \lambda = -\frac{\ln(0,85)}{t_1}
+\end{gather}
+\paragraph*{2. Período de semidesintegración ($T_{1/2}$) y vida media ($\tau$)}
+\begin{gather}
+    T_{1/2} = \frac{\ln(2)}{\lambda} \quad ; \quad \tau = \frac{1}{\lambda}
+\end{gather}
+\paragraph*{3. Masa restante a los 10 días ($m_2$)}
+\begin{gather}
+    m_2 = m(t_2) = m_0 e^{-\lambda t_2}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{1. Valor de la constante de desintegración}
+\begin{gather}
+    \lambda = -\frac{\ln(0,85)}{24 \, \text{h}} \approx 0,00677 \, \text{h}^{-1}
+\end{gather}
+\begin{cajaresultado}
+    La constante de desintegración es $\boldsymbol{\lambda \approx 0,00677 \, h^{-1}}$.
+\end{cajaresultado}
+
+\paragraph*{2. Valor del período de semidesintegración y vida media}
+\begin{gather}
+    T_{1/2} = \frac{\ln(2)}{0,00677 \, \text{h}^{-1}} \approx 102,36 \, \text{h} \\
+    \tau = \frac{1}{0,00677 \, \text{h}^{-1}} \approx 147,7 \, \text{h}
+\end{gather}
+\begin{cajaresultado}
+    El período de semidesintegración es $\boldsymbol{T_{1/2} \approx 102,36 \, h}$ y la vida media es $\boldsymbol{\tau \approx 147,7 \, h}$.
+\end{cajaresultado}
+
+\paragraph*{3. Valor de la masa restante a los 10 días}
+\begin{gather}
+    m_2 = (250 \, \text{g}) \cdot e^{-(0,00677 \, \text{h}^{-1}) \cdot (240 \, \text{h})} \approx 49,22 \, \text{g}
+\end{gather}
+\begin{cajaresultado}
+    La masa que quedará sin desintegrar al cabo de 10 días es $\boldsymbol{m_2 \approx 49,22 \, \textbf{g}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    A partir del dato de que el 15\% de la muestra se desintegra en 24 horas, se ha calculado una constante de desintegración de $\mathbf{0,00677 \, h^{-1}}$. Esto corresponde a un período de semidesintegración de $\mathbf{102,36 \, h}$ y una vida media de $\mathbf{147,7 \, h}$. Con esta constante, se predice que después de 10 días (240 horas), quedarán $\mathbf{49,22 \, g}$ de la sustancia original.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Física Nuclear}
+\label{sec:nuclear2_2004_sep_cv}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 4 - OPCIÓN A}
+\label{subsec:6A_2004_sep_cv}
+
+\begin{cajaenunciado}
+Completa las siguientes reacciones nucleares, determinando el número atómico y el número másico del elemento desconocido X.
+\begin{enumerate}
+    \item ${}_{6}^{14}C \rightarrow X + e^{-} + \overline{\nu}_e$
+    \item ${}_{1}^{2}H + {}_{1}^{3}H \rightarrow X + {}_{0}^{1}n$
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se deben identificar los números atómicos (Z, subíndice) y másicos (A, superíndice) de todas las partículas conocidas en cada reacción para determinar los del núcleo desconocido X.
+\begin{itemize}
+    \item \textbf{Reacción 1 (Desintegración Beta):}
+        \begin{itemize}
+            \item Núcleo inicial: Carbono-14 ($A=14, Z=6$).
+            \item Partículas emitidas: Electrón ($A=0, Z=-1$) y antineutrino electrónico ($A=0, Z=0$).
+        \end{itemize}
+    \item \textbf{Reacción 2 (Fusión Nuclear):}
+        \begin{itemize}
+            \item Núcleos iniciales: Deuterio ($A=2, Z=1$) y Tritio ($A=3, Z=1$).
+            \item Partícula emitida: Neutrón ($A=1, Z=0$).
+        \end{itemize}
+    \item \textbf{Incógnita:} El núcleo X ($ {}_{Z}^{A}X $) en cada caso.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{1. Desintegración Beta Menos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un núcleo de Carbono-14 (6 protones, 8 neutrones) a la izquierda. Una flecha de reacción apunta hacia la derecha. A la derecha, se muestra un núcleo de Nitrógeno-14 (7 protones, 7 neutrones) etiquetado como 'X', junto con un electrón ($e^-$) y un antineutrino ($\overline{\nu}_e$) que se alejan." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{beta_decay.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{2. Fusión Deuterio-Tritio} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un núcleo de Deuterio (1 protón, 1 neutrón) y un núcleo de Tritio (1 protón, 2 neutrones) a la izquierda, moviéndose uno hacia el otro. Una flecha de reacción apunta a la derecha. A la derecha, se muestra un núcleo de Helio-4 (2 protones, 2 neutrones) etiquetado como 'X' y un neutrón libre, ambos alejándose con alta energía." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fusion.png}
+    }}
+    \caption{Esquema de las dos reacciones nucleares.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para equilibrar cualquier reacción nuclear, se deben aplicar las \textbf{Leyes de Conservación de Soddy-Fajans}:
+\begin{enumerate}
+    \item \textbf{Conservación del número másico (A):} La suma de los números másicos de los reactivos debe ser igual a la suma de los números másicos de los productos.
+    \item \textbf{Conservación del número atómico (Z) o carga eléctrica:} La suma de los números atómicos de los reactivos debe ser igual a la suma de los números atómicos de los productos.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{1. Reacción ${}_{6}^{14}C \rightarrow {}_{Z}^{A}X + {}_{-1}^{0}e^{-} + {}_{0}^{0}\overline{\nu}_e$}
+\begin{itemize}
+    \item \textbf{Conservación de A:} $14 = A + 0 + 0 \implies A = 14$.
+    \item \textbf{Conservación de Z:} $6 = Z + (-1) + 0 \implies Z = 6 + 1 = 7$.
+\end{itemize}
+El elemento con $Z=7$ es el Nitrógeno (N).
+
+\paragraph*{2. Reacción ${}_{1}^{2}H + {}_{1}^{3}H \rightarrow {}_{Z}^{A}X + {}_{0}^{1}n$}
+\begin{itemize}
+    \item \textbf{Conservación de A:} $2 + 3 = A + 1 \implies A = 5 - 1 = 4$.
+    \item \textbf{Conservación de Z:} $1 + 1 = Z + 0 \implies Z = 2$.
+\end{itemize}
+El elemento con $Z=2$ es el Helio (He).
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El resultado es la identificación de los núcleos X en ambas reacciones.
+
+\paragraph*{Reacción 1}
+\begin{cajaresultado}
+    El elemento desconocido es ${}_{7}^{14}N$ (Nitrógeno-14). La reacción completa es:
+    $\boldsymbol{{}_{6}^{14}C \rightarrow {}_{7}^{14}N + e^{-} + \overline{\nu}_e}$
+\end{cajaresultado}
+
+\paragraph*{Reacción 2}
+\begin{cajaresultado}
+    El elemento desconocido es ${}_{2}^{4}He$ (Helio-4 o partícula alfa). La reacción completa es:
+    $\boldsymbol{{}_{1}^{2}H + {}_{1}^{3}H \rightarrow {}_{2}^{4}He + {}_{0}^{1}n}$
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+    Aplicando las leyes de conservación del número másico y atómico, se han completado las reacciones nucleares. La primera es una desintegración beta menos, donde el Carbono-14 se transmuta en \textbf{Nitrógeno-14}. La segunda es una de las reacciones de fusión más importantes, donde el Deuterio y el Tritio se fusionan para producir \textbf{Helio-4} y un neutrón, liberando una gran cantidad de energía.
+\end{cajaconclusion}
+
+\newpage

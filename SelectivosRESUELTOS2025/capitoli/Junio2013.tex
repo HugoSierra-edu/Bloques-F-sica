@@ -1,0 +1,989 @@
+% !TEX root = ../main.tex
+\chapter{Examen Junio 2013 - Convocatoria Ordinaria}
+\label{chap:2013_jun_ord}
+
+% ======================================================================
+\section{Opción A}
+\label{sec:A_2013_jun_ord}
+% ======================================================================
+
+\subsection{Bloque I - Problema}
+\label{subsec:I_A_2013_jun_ord}
+
+\begin{cajaenunciado}
+En el mes de febrero de este año, la Agencia Espacial Europea colocó en órbita circular alrededor de la Tierra un nuevo satélite denominado Amazonas 3. Sabiendo que la velocidad de dicho satélite es de $3072\,\text{m/s}$, calcula:
+\begin{enumerate}
+    \item[a)] La altura h a la que se encuentra desde la superficie terrestre (en kilómetros). (1 punto)
+    \item[b)] Su periodo (en horas). (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2$; masa de la Tierra, $M_{T}=6\cdot10^{24}\,\text{kg}$; radio de la Tierra, $R_{T}=6400\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Los datos proporcionados en el enunciado, expresados en el Sistema Internacional (SI), son:
+\begin{itemize}
+    \item \textbf{Velocidad orbital del satélite ($v$):} $v = 3072 \, \text{m/s}$.
+    \item \textbf{Constante de Gravitación Universal ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Masa de la Tierra ($M_T$):} $M_T = 6 \cdot 10^{24} \, \text{kg}$.
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6400 \, \text{km} = 6,4 \cdot 10^6 \, \text{m}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item a) Altura sobre la superficie ($h$).
+        \item b) Periodo orbital ($T$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Satélite en Órbita Circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un esquema de la Tierra en el centro, con su radio $R_T$ indicado. Un satélite en una órbita circular de radio $r$ alrededor de la Tierra. El radio orbital $r$ se muestra como la suma del radio terrestre $R_T$ y la altitud $h$. Dibujar el vector velocidad $\vec{v}$ del satélite, tangente a la órbita. Dibujar el vector de la Fuerza Gravitatoria ($\vec{F}_g$) que la Tierra ejerce sobre el satélite, apuntando hacia el centro de la Tierra, y etiquetarlo también como Fuerza Centrípeta ($\vec{F}_c$)."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{orbita_satelite_tierra.png}
+    }}
+    \caption{Modelo de un satélite en órbita circular alrededor de la Tierra.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para que el satélite describa una órbita circular a velocidad constante, la fuerza de atracción gravitatoria que la Tierra ejerce sobre él debe ser la causa del movimiento, es decir, debe actuar como fuerza centrípeta.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal:} La fuerza de atracción entre la Tierra y el satélite (de masa $m$) es $F_g = G \frac{M_T m}{r^2}$, donde $r$ es el radio de la órbita.
+    \item \textbf{Dinámica del Movimiento Circular Uniforme (MCU):} La fuerza centrípeta necesaria para mantener la órbita es $F_c = m \frac{v^2}{r}$.
+    \item \textbf{Relación Cinemática del MCU:} El periodo orbital $T$ se relaciona con la velocidad y el radio mediante $v = \frac{2\pi r}{T}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Altura de la órbita}
+Igualamos la fuerza gravitatoria a la fuerza centrípeta, $F_g = F_c$:
+\begin{gather}
+    G \frac{M_T m}{r^2} = m \frac{v^2}{r}
+\end{gather}
+La masa del satélite, $m$, se simplifica. Podemos despejar el radio orbital $r$:
+\begin{gather}
+    G \frac{M_T}{r} = v^2 \implies r = \frac{G M_T}{v^2}
+\end{gather}
+La altura $h$ sobre la superficie terrestre se obtiene restando el radio de la Tierra al radio orbital:
+\begin{gather}
+    h = r - R_T
+\end{gather}
+
+\paragraph{b) Periodo orbital}
+A partir de la relación cinemática del MCU, despejamos el periodo $T$:
+\begin{gather}
+    T = \frac{2\pi r}{v}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Altura de la órbita}
+Sustituimos los datos para calcular el radio orbital $r$:
+\begin{gather}
+    r = \frac{(6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2) \cdot (6 \cdot 10^{24} \, \text{kg})}{(3072 \, \text{m/s})^2} \approx \frac{4,002 \cdot 10^{14}}{9,437 \cdot 10^6} \approx 4,241 \cdot 10^7 \, \text{m}
+\end{gather}
+Ahora calculamos la altura $h$ y la expresamos en kilómetros:
+\begin{gather}
+    h = (4,241 \cdot 10^7 \, \text{m}) - (6,4 \cdot 10^6 \, \text{m}) = 3,601 \cdot 10^7 \, \text{m} = 36010 \, \text{km}
+\end{gather}
+\begin{cajaresultado}
+    La altura del satélite sobre la superficie terrestre es $\boldsymbol{h \approx 36010 \, \textbf{km}}$.
+\end{cajaresultado}
+
+\paragraph{b) Periodo orbital}
+Utilizamos el valor de $r$ calculado para hallar el periodo $T$ en segundos, y luego lo convertimos a horas:
+\begin{gather}
+    T = \frac{2\pi \cdot (4,241 \cdot 10^7 \, \text{m})}{3072 \, \text{m/s}} \approx 86734 \, \text{s} \\
+    T_{\text{horas}} = 86734 \, \text{s} \cdot \frac{1 \, \text{h}}{3600 \, \text{s}} \approx 24,09 \, \text{h}
+\end{gather}
+\begin{cajaresultado}
+    El periodo del satélite es $\boldsymbol{T \approx 24,09 \, \textbf{h}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando la dinámica del movimiento circular, se ha determinado que para mantener una velocidad orbital de 3072 m/s, el satélite debe encontrarse a una altitud de aproximadamente 36010 km. El periodo de rotación a esta altitud es de unas 24 horas, lo que indica que se trata de un satélite geoestacionario.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque II - Cuestión}
+\label{subsec:II_A_2013_jun_ord}
+
+\begin{cajaenunciado}
+La gráfica adjunta representa la energía cinética, en función del tiempo, de un cuerpo sometido solamente a la fuerza de un muelle de constante elástica $k=100\,\text{N/m}$. Determina razonadamente el valor de la energía mecánica del cuerpo, de su energía potencial máxima y de la amplitud del movimiento.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+A partir de la gráfica y el enunciado, extraemos los siguientes datos:
+\begin{itemize}
+    \item \textbf{Constante elástica del muelle ($k$):} $k=100 \, \text{N/m}$.
+    \item \textbf{Energía cinética máxima ($E_{c,max}$):} Se lee del valor máximo en el eje vertical de la gráfica. $E_{c,max} = 2,0 \, \text{J}$.
+    \item \textbf{Oscilación de la energía:} La energía cinética oscila entre un valor mínimo de 0 J y un máximo de 2,0 J.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Energía mecánica ($E_M$).
+        \item Energía potencial máxima ($E_{p,max}$).
+        \item Amplitud del movimiento ($A$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Energías en un M.A.S.} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de energía vs. posición para un M.A.S. El eje X es la posición, de -A a +A. El eje Y es la energía. Dibujar una parábola cóncava hacia arriba para la Energía Potencial ($E_p = \frac{1}{2}kx^2$), que es máxima en $\pm A$ y cero en $x=0$. Dibujar una parábola cóncava hacia abajo para la Energía Cinética ($E_c$), que es máxima en $x=0$ y cero en $\pm A$. Dibujar una línea horizontal constante para la Energía Mecánica Total ($E_M$), que es la suma de las dos anteriores."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{energias_mas.png}
+    }}
+    \caption{Intercambio de energía cinética y potencial en un oscilador armónico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El movimiento de un cuerpo sometido a la fuerza de un muelle es un Movimiento Armónico Simple (M.A.S.). Al no haber fuerzas no conservativas, la energía mecánica total se conserva.
+\begin{itemize}
+    \item \textbf{Energía Mecánica ($E_M$):} Es la suma de la energía cinética y la potencial: $E_M = E_c + E_p = \text{constante}$.
+    \item \textbf{Energía Cinética ($E_c$):} $E_c = \frac{1}{2}mv^2$. Es máxima cuando la velocidad es máxima (en la posición de equilibrio, $x=0$) y nula en los extremos ($x=\pm A$).
+    \item \textbf{Energía Potencial Elástica ($E_p$):} $E_p = \frac{1}{2}kx^2$. Es máxima en los extremos ($x=\pm A$) y nula en la posición de equilibrio ($x=0$).
+    \item \textbf{Conservación de la Energía:} En los extremos, toda la energía es potencial: $E_M = E_{p,max} = \frac{1}{2}kA^2$. En el centro, toda la energía es cinética: $E_M = E_{c,max}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Energía Mecánica y Potencial Máxima}
+Por el principio de conservación de la energía, la energía mecánica total del sistema es igual a la energía cinética máxima, valor que se puede leer directamente de la gráfica.
+\begin{gather}
+    E_M = E_{c,max}
+\end{gather}
+La energía potencial máxima es también igual a la energía mecánica total.
+\begin{gather}
+    E_{p,max} = E_M
+\end{gather}
+
+\paragraph{Amplitud del movimiento}
+La energía mecánica también es igual a la energía potencial máxima, que se expresa en función de la amplitud.
+\begin{gather}
+    E_M = \frac{1}{2}kA^2
+\end{gather}
+Despejando la amplitud $A$:
+\begin{gather}
+    A = \sqrt{\frac{2E_M}{k}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Energías}
+De la gráfica, leemos el valor máximo de la energía cinética:
+\begin{gather}
+    E_{c,max} = 2,0 \, \text{J}
+\end{gather}
+Por lo tanto:
+\begin{gather}
+    E_M = 2,0 \, \text{J} \\
+    E_{p,max} = 2,0 \, \text{J}
+\end{gather}
+
+\paragraph{Amplitud}
+Sustituimos los valores de $E_M$ y $k$:
+\begin{gather}
+    A = \sqrt{\frac{2 \cdot (2,0 \, \text{J})}{100 \, \text{N/m}}} = \sqrt{\frac{4}{100}} = \sqrt{0,04} = 0,2 \, \text{m}
+\end{gather}
+\begin{cajaresultado}
+\begin{itemize}
+    \item La energía mecánica del cuerpo es $\boldsymbol{E_M = 2,0 \, \textbf{J}}$.
+    \item La energía potencial máxima es $\boldsymbol{E_{p,max} = 2,0 \, \textbf{J}}$.
+    \item La amplitud del movimiento es $\boldsymbol{A = 0,2 \, \textbf{m}}$.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La gráfica de la energía cinética nos proporciona directamente la energía mecánica total del sistema, que es de 2,0 J. En un sistema conservativo, este valor es también el de la energía potencial máxima. A partir de la expresión de la energía potencial máxima, se deduce que la amplitud del movimiento es de 0,2 metros.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque III - Cuestión}
+\label{subsec:III_A_2013_jun_ord}
+
+\begin{cajaenunciado}
+Para la higiene personal y el maquillaje se utilizan espejos en los que, al mirarnos, vemos nuestra imagen aumentada. Indica el tipo de espejo del que se trata y razona tu respuesta mediante un esquema de rayos, señalando claramente la posición y el tamaño del objeto y de la imagen.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión conceptual que requiere identificar un sistema óptico a partir de sus propiedades y justificarlo gráficamente.
+\begin{itemize}
+    \item \textbf{Sistema óptico:} Un espejo.
+    \item \textbf{Propiedad de la imagen:} Aumentada.
+    \item \textbf{Consideración adicional:} Para poder vernos a nosotros mismos, la imagen debe ser derecha (no invertida). Una imagen invertida no sería útil para maquillarse. Por lo tanto, las características de la imagen son: \textbf{aumentada} y \textbf{derecha}.
+    \item \textbf{Incógnitas:} Tipo de espejo y diagrama de rayos justificativo.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+El trazado de rayos es la parte central de la justificación.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Formación de Imagen en Espejo Cóncavo (Lupa)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para un espejo esférico cóncavo. Dibuja el eje óptico horizontal. A la derecha, el espejo cóncavo con su vértice V. A la izquierda del vértice, marcar el foco F y el centro de curvatura C. Dibujar un objeto vertical (una flecha representando una cara) situado entre el foco F y el vértice V. Trazar dos rayos principales desde la punta del objeto: 1) Un rayo paralelo al eje óptico, que se refleja pasando por el foco F. 2) Un rayo que incide pasando por el foco F se refleja paralelo al eje (este rayo es difícil de trazar, usar otro). CORRECCIÓN: Usar el rayo que se dirige hacia el centro de curvatura C y se refleja sobre sí mismo, o el que incide en el vértice y se refleja simétricamente. MEJOR: 1) Rayo paralelo se refleja por F. 2) Rayo que incide en el vértice V se refleja con el mismo ángulo respecto al eje. Mostrar que los rayos reflejados divergen. Dibujar sus prolongaciones con líneas discontinuas por detrás del espejo. El punto donde se cruzan las prolongaciones es la punta de la imagen. Dibujar la imagen: será virtual, derecha y de mayor tamaño."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_maquillaje.png}
+    }}
+    \caption{Trazado de rayos para un espejo de maquillaje.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para obtener una imagen aumentada, se deben analizar los tipos de espejos:
+\begin{itemize}
+    \item \textbf{Espejo plano:} Forma imágenes virtuales, derechas y de igual tamaño que el objeto ($|A_L|=1$). No sirve.
+    \item \textbf{Espejo convexo:} Forma siempre imágenes virtuales, derechas y de menor tamaño que el objeto ($|A_L|<1$). Tampoco sirve.
+    \item \textbf{Espejo cóncavo:} Puede formar distintos tipos de imágenes dependiendo de la posición del objeto. Para que la imagen sea virtual, derecha y aumentada, el objeto debe colocarse \textbf{entre el foco y el vértice del espejo}.
+\end{itemize}
+Por lo tanto, el espejo de maquillaje debe ser un \textbf{espejo cóncavo}.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La justificación es cualitativa y gráfica, pero se puede reforzar con las ecuaciones. Para un espejo cóncavo, la distancia focal $f$ es negativa. Si el objeto se sitúa en $s$ tal que $-f > -s > 0$, la ecuación de Gauss $\frac{1}{s'} = \frac{1}{f} - \frac{1}{s}$ da un valor de $s' > 0$ (imagen virtual). El aumento $A_L = -s'/s$ será positivo (imagen derecha) y mayor que 1 (imagen aumentada).
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+Se trata de un \textbf{espejo cóncavo}. La justificación se basa en que es el único tipo de espejo capaz de formar una imagen \textbf{virtual, derecha y de mayor tamaño}, que son las características necesarias para un espejo de maquillaje. Esto ocurre cuando el usuario sitúa su cara a una distancia del espejo menor que la distancia focal, como se demuestra en el diagrama de rayos.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La necesidad de obtener una imagen aumentada y derecha para el uso en maquillaje descarta los espejos planos y convexos. La única solución es un espejo cóncavo, utilizado de tal forma que el objeto (la cara) se coloque dentro de su distancia focal. El diagrama de rayos confirma que en esta configuración se produce la imagen virtual ampliada deseada.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque IV - Cuestión}
+\label{subsec:IV_A_2013_jun_ord}
+
+\begin{cajaenunciado}
+Una carga eléctrica $q_1=2\,\text{mC}$ se encuentra fija en el punto (-1,0) cm y otra $q_2=-2\,\text{mC}$ se encuentra fija en el punto (1,0) cm. Representa en el plano XY las posiciones de las cargas, el campo eléctrico de cada carga y el campo eléctrico total en el punto (0,1) cm. Calcula el vector campo eléctrico total en dicho punto.
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^9\,\text{N}\cdot\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es fundamental convertir todas las unidades al Sistema Internacional (SI).
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = 2 \, \text{mC} = 2 \cdot 10^{-3} \, \text{C}$.
+    \item \textbf{Posición de $q_1$ ($\vec{r}_1$):} $(-1,0) \, \text{cm} = (-0,01, 0) \, \text{m}$.
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = -2 \, \text{mC} = -2 \cdot 10^{-3} \, \text{C}$.
+    \item \textbf{Posición de $q_2$ ($\vec{r}_2$):} $(1,0) \, \text{cm} = (0,01, 0) \, \text{m}$.
+    \item \textbf{Punto de cálculo (P):} $\vec{r}_P = (0,1) \, \text{cm} = (0, 0,01) \, \text{m}$.
+    \item \textbf{Constante de Coulomb ($k$):} $k=9\cdot10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnita:} Vector campo eléctrico total en P, $\vec{E}_P$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo Eléctrico de un Dipolo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Colocar una carga positiva $q_1$ en (-0.01, 0) y una carga negativa $q_2$ en (+0.01, 0). Marcar el punto P en (0, 0.01). En el punto P, dibujar el vector de campo eléctrico $\vec{E}_1$ creado por $q_1$, que es repulsivo y apunta desde $q_1$ hacia P (diagonal hacia arriba y a la derecha). Dibujar el vector de campo eléctrico $\vec{E}_2$ creado por $q_2$, que es atractivo y apunta desde P hacia $q_2$ (diagonal hacia abajo y a la derecha). Mostrar que las componentes verticales de los vectores se anulan y las componentes horizontales se suman, resultando en un vector de campo total $\vec{E}_P$ que apunta horizontalmente hacia la derecha."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{dipolo_campo_eje_y.png}
+    }}
+    \caption{Diagrama de vectores de campo eléctrico en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El campo eléctrico en un punto del espacio debido a una distribución de cargas puntuales se calcula mediante el \textbf{Principio de Superposición}. El campo total es la suma vectorial de los campos creados por cada carga individual. El campo creado por una carga puntual $q$ en un punto P se calcula con la Ley de Coulomb:
+$$ \vec{E} = k \frac{q}{r^2} \vec{u}_r $$
+donde $r$ es la distancia de la carga al punto P y $\vec{u}_r$ es el vector unitario que apunta desde la carga hacia el punto P.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El campo total en P es $\vec{E}_P = \vec{E}_1 + \vec{E}_2$.
+Primero calculamos los vectores de posición desde cada carga hasta P y sus módulos.
+\begin{itemize}
+    \item \textbf{Para $q_1$:} El vector $\vec{r}_{1P}$ va desde $(-0,01, 0)$ hasta $(0, 0,01)$.
+    $\vec{r}_{1P} = (0 - (-0,01))\vec{i} + (0,01 - 0)\vec{j} = 0,01\vec{i} + 0,01\vec{j}$ m.
+    La distancia es $r_1 = |\vec{r}_{1P}| = \sqrt{(0,01)^2 + (0,01)^2} = \sqrt{2 \cdot 10^{-4}} = \sqrt{2} \cdot 10^{-2}$ m.
+    El vector unitario es $\vec{u}_{1P} = \frac{\vec{r}_{1P}}{r_1} = \frac{0,01\vec{i} + 0,01\vec{j}}{\sqrt{2} \cdot 10^{-2}} = \frac{1}{\sqrt{2}}(\vec{i} + \vec{j})$.
+    \item \textbf{Para $q_2$:} El vector $\vec{r}_{2P}$ va desde $(0,01, 0)$ hasta $(0, 0,01)$.
+    $\vec{r}_{2P} = (0 - 0,01)\vec{i} + (0,01 - 0)\vec{j} = -0,01\vec{i} + 0,01\vec{j}$ m.
+    La distancia es $r_2 = |\vec{r}_{2P}| = \sqrt{(-0,01)^2 + (0,01)^2} = \sqrt{2} \cdot 10^{-2}$ m.
+    El vector unitario es $\vec{u}_{2P} = \frac{\vec{r}_{2P}}{r_2} = \frac{-0,01\vec{i} + 0,01\vec{j}}{\sqrt{2} \cdot 10^{-2}} = \frac{1}{\sqrt{2}}(-\vec{i} + \vec{j})$.
+\end{itemize}
+Ahora escribimos los vectores campo:
+\begin{gather}
+    \vec{E}_1 = k \frac{q_1}{r_1^2} \vec{u}_{1P} \quad ; \quad \vec{E}_2 = k \frac{q_2}{r_2^2} \vec{u}_{2P}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos cada vector campo. Nótese que $r_1^2 = r_2^2 = 2 \cdot 10^{-4} \, \text{m}^2$.
+\begin{gather}
+    \vec{E}_1 = (9\cdot10^9) \frac{2 \cdot 10^{-3}}{2 \cdot 10^{-4}} \frac{1}{\sqrt{2}}(\vec{i} + \vec{j}) = (9 \cdot 10^{10}) \frac{1}{\sqrt{2}}(\vec{i} + \vec{j}) \, \text{N/C} \\
+    \vec{E}_2 = (9\cdot10^9) \frac{-2 \cdot 10^{-3}}{2 \cdot 10^{-4}} \frac{1}{\sqrt{2}}(-\vec{i} + \vec{j}) = (-9 \cdot 10^{10}) \frac{1}{\sqrt{2}}(-\vec{i} + \vec{j}) \, \text{N/C}
+\end{gather}
+Sumamos los vectores:
+\begin{gather}
+    \vec{E}_P = \frac{9 \cdot 10^{10}}{\sqrt{2}} [(\vec{i} + \vec{j}) - (-\vec{i} + \vec{j})] = \frac{9 \cdot 10^{10}}{\sqrt{2}} [\vec{i} + \vec{j} + \vec{i} - \vec{j}] \nonumber \\
+    \vec{E}_P = \frac{9 \cdot 10^{10}}{\sqrt{2}} (2\vec{i}) = \frac{18 \cdot 10^{10}}{\sqrt{2}}\vec{i} = 9\sqrt{2} \cdot 10^{10} \vec{i} \approx 1,27 \cdot 10^{11} \vec{i} \, \text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    El vector campo eléctrico total en el punto (0,1) cm es $\boldsymbol{\vec{E}_P \approx 1,27 \cdot 10^{11} \vec{i} \, \textbf{N/C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Por la simetría de la configuración, las componentes verticales de los campos eléctricos creados por cada carga se anulan mutuamente. Las componentes horizontales, ambas apuntando en el sentido positivo del eje X, se suman. El resultado es un campo eléctrico total muy intenso dirigido horizontalmente hacia la derecha.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque V - Cuestión}
+\label{subsec:V_A_2013_jun_ord}
+
+\begin{cajaenunciado}
+¿A qué velocidad debe moverse una partícula relativista para que su energía total sea un 10\% mayor que su energía en reposo? Expresa el resultado en función de la velocidad de la luz en el vacío, c.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión de relatividad especial. La información se puede traducir a una ecuación:
+\begin{itemize}
+    \item \textbf{Condición de energía:} Energía total ($E$) es un 10\% mayor que la energía en reposo ($E_0$).
+    $E = E_0 + 0,10 \cdot E_0 = 1,1 \cdot E_0$.
+    \item \textbf{Incógnita:} La velocidad de la partícula ($v$) en función de $c$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Energía Relativista} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de la energía total (E) de una partícula en función de su velocidad (v). El eje X es la velocidad, de 0 a c. El eje Y es la energía. La curva empieza en v=0 con un valor de $E_0=m_0c^2$ y crece asintóticamente hacia el infinito a medida que v se acerca a c. Marcar el punto inicial $(0, E_0)$ y otro punto en la curva que corresponda a $E = 1,1 E_0$, mostrando que la velocidad 'v' asociada es una fracción significativa de 'c'."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{energia_relativista.png}
+    }}
+    \caption{Relación entre la energía total y la velocidad de una partícula.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La solución se basa en las definiciones de energía de la Teoría de la Relatividad Especial de Einstein.
+\begin{itemize}
+    \item \textbf{Energía en reposo ($E_0$):} Es la energía que posee una partícula por el hecho de tener masa, $E_0 = m_0c^2$, donde $m_0$ es la masa en reposo.
+    \item \textbf{Energía total ($E$):} Es la energía de la partícula cuando se mueve a una velocidad $v$. Se relaciona con la energía en reposo a través del factor de Lorentz, $\gamma$.
+    $$ E = \gamma m_0c^2 = \gamma E_0 $$
+    \item \textbf{Factor de Lorentz ($\gamma$):} Se define como $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}$. Siempre $\gamma \ge 1$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Partimos de la condición del enunciado y la fórmula de la energía total:
+\begin{gather}
+    E = 1,1 \cdot E_0 \\
+    \gamma E_0 = 1,1 \cdot E_0
+\end{gather}
+Cancelando $E_0$, obtenemos directamente el valor del factor de Lorentz:
+\begin{gather}
+    \gamma = 1,1
+\end{gather}
+Ahora, usamos la definición de $\gamma$ para despejar la velocidad $v$:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - v^2/c^2}} \implies \gamma^2 = \frac{1}{1 - v^2/c^2} \nonumber \\
+    1 - \frac{v^2}{c^2} = \frac{1}{\gamma^2} \implies \frac{v^2}{c^2} = 1 - \frac{1}{\gamma^2} \nonumber \\
+    v = c \sqrt{1 - \frac{1}{\gamma^2}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos el valor $\gamma = 1,1$ en la expresión de la velocidad:
+\begin{gather}
+    v = c \sqrt{1 - \frac{1}{(1,1)^2}} = c \sqrt{1 - \frac{1}{1,21}} = c \sqrt{\frac{1,21 - 1}{1,21}} \nonumber \\
+    v = c \sqrt{\frac{0,21}{1,21}} = c \frac{\sqrt{0,21}}{\sqrt{1,21}} = c \frac{\sqrt{0,21}}{1,1} \approx c \cdot 0,4167
+\end{gather}
+\begin{cajaresultado}
+    La partícula debe moverse a una velocidad de $\boldsymbol{v \approx 0,417 c}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Para que la energía total de una partícula sea un 10\% superior a su energía en reposo, el factor de Lorentz debe ser $\gamma=1,1$. Este valor corresponde a una velocidad de aproximadamente el 41,7\% de la velocidad de la luz. Esto demuestra que se necesitan velocidades relativistas significativas para que la energía cinética sea una fracción apreciable de la energía en reposo.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque VI - Problema}
+\label{subsec:VI_A_2013_jun_ord}
+
+\begin{cajaenunciado}
+En una cueva, junto a restos humanos, se ha hallado un fragmento de madera. Sometido a la prueba del $^{14}\text{C}$ se observa que presenta una actividad de 200 desintegraciones/segundo. Por otro lado se sabe que esta madera tenía una actividad de 800 desintegraciones/segundo cuando se depositó en la cueva. Sabiendo que el período de semidesintegración del $^{14}\text{C}$ es de 5730 años, calcula:
+\begin{enumerate}
+    \item[a)] La antigüedad del fragmento. (1 punto)
+    \item[b)] El número de átomos y la masa en gramos de $^{14}\text{C}$ que todavía queda en el fragmento. (1 punto)
+\end{enumerate}
+\textbf{Datos:} número de Avogadro, $N_{A}=6,02\cdot10^{23}$; masa molar del $^{14}\text{C}$, $m_{M}=14\,\text{g/mol}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Actividad actual ($A(t)$):} $A(t) = 200 \, \text{desintegraciones/s} = 200 \, \text{Bq}$.
+    \item \textbf{Actividad inicial ($A_0$):} $A_0 = 800 \, \text{desintegraciones/s} = 800 \, \text{Bq}$.
+    \item \textbf{Periodo de semidesintegración ($T_{1/2}$):} $T_{1/2} = 5730 \, \text{años}$.
+    \item \textbf{Número de Avogadro ($N_A$):} $N_A = 6,02 \cdot 10^{23} \, \text{mol}^{-1}$.
+    \item \textbf{Masa molar de $^{14}\text{C}$ ($M$):} $M = 14 \, \text{g/mol}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item a) Antigüedad del fragmento ($t$).
+        \item b) Número actual de átomos de $^{14}\text{C}$ ($N(t)$) y su masa ($m(t)$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Decaimiento Radiactivo del Carbono-14} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de decaimiento exponencial con el eje Y representando la Actividad (en Bq) y el eje X el Tiempo (en años). La curva empieza en $A_0 = 800$ en $t=0$. Marcar el punto $t_1 = 5730$ años, donde la actividad ha bajado a $A_0/2 = 400$. Marcar el punto $t_2 = 2 \cdot 5730 = 11460$ años, donde la actividad ha bajado a $A_0/4 = 200$. La solución del problema corresponde a este punto $t_2$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{datacion_carbono14.png}
+    }}
+    \caption{Curva de decaimiento de la actividad del $^{14}\text{C}$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ley de desintegración radiactiva:} La actividad de una muestra disminuye exponencialmente con el tiempo según la ley $A(t) = A_0 e^{-\lambda t}$, donde $\lambda$ es la constante de desintegración.
+    \item \textbf{Constante de desintegración ($\lambda$):} Se relaciona con el periodo de semidesintegración ($T_{1/2}$) mediante la expresión $\lambda = \frac{\ln(2)}{T_{1/2}}$.
+    \item \textbf{Relación Actividad-Número de núcleos:} La actividad es proporcional al número de núcleos radiactivos presentes: $A = \lambda N$.
+    \item \textbf{Relación Número de núcleos-Masa:} El número de núcleos ($N$) se relaciona con la masa ($m$), la masa molar ($M$) y el número de Avogadro ($N_A$) mediante $N = \frac{m}{M} N_A$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Antigüedad del fragmento ($t$)}
+Partimos de la ley de desintegración:
+\begin{gather}
+    A(t) = A_0 e^{-\lambda t} \implies \frac{A(t)}{A_0} = e^{-\lambda t}
+\end{gather}
+Tomando logaritmos neperianos en ambos lados y despejando $t$:
+\begin{gather}
+    \ln\left(\frac{A(t)}{A_0}\right) = -\lambda t \implies t = -\frac{1}{\lambda} \ln\left(\frac{A(t)}{A_0}\right) = \frac{1}{\lambda} \ln\left(\frac{A_0}{A(t)}\right)
+\end{gather}
+Sustituyendo $\lambda = \frac{\ln(2)}{T_{1/2}}$:
+\begin{gather}
+    t = \frac{T_{1/2}}{\ln(2)} \ln\left(\frac{A_0}{A(t)}\right)
+\end{gather}
+
+\paragraph{b) Número de átomos y masa actuales}
+Primero, debemos calcular la constante de desintegración $\lambda$ en unidades del SI.
+\begin{gather}
+    \lambda = \frac{\ln(2)}{T_{1/2, \text{en segundos}}}
+\end{gather}
+Luego, usamos la relación $A(t) = \lambda N(t)$ para despejar el número de átomos $N(t)$:
+\begin{gather}
+    N(t) = \frac{A(t)}{\lambda}
+\end{gather}
+Finalmente, calculamos la masa $m(t)$ correspondiente:
+\begin{gather}
+    m(t) = N(t) \cdot \frac{M}{N_A}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Antigüedad del fragmento}
+\begin{gather}
+    t = \frac{5730 \, \text{años}}{\ln(2)} \ln\left(\frac{800}{200}\right) = \frac{5730}{\ln(2)} \ln(4) = \frac{5730}{\ln(2)} \cdot 2\ln(2) = 2 \cdot 5730 = 11460 \, \text{años}
+\end{gather}
+\begin{cajaresultado}
+    La antigüedad del fragmento es de $\boldsymbol{11460 \, \textbf{años}}$.
+\end{cajaresultado}
+
+\paragraph{b) Número de átomos y masa actuales}
+Primero, convertimos $T_{1/2}$ a segundos:
+\begin{gather}
+    T_{1/2} = 5730 \, \text{años} \cdot \frac{365,25 \, \text{días}}{1 \, \text{año}} \cdot \frac{24 \, \text{h}}{1 \, \text{día}} \cdot \frac{3600 \, \text{s}}{1 \, \text{h}} \approx 1,809 \cdot 10^{11} \, \text{s}
+\end{gather}
+Calculamos $\lambda$:
+\begin{gather}
+    \lambda = \frac{\ln(2)}{1,809 \cdot 10^{11} \, \text{s}} \approx 3,83 \cdot 10^{-12} \, \text{s}^{-1}
+\end{gather}
+Calculamos el número de átomos $N(t)$:
+\begin{gather}
+    N(t) = \frac{A(t)}{\lambda} = \frac{200 \, \text{s}^{-1}}{3,83 \cdot 10^{-12} \, \text{s}^{-1}} \approx 5,22 \cdot 10^{13} \, \text{átomos}
+\end{gather}
+Calculamos la masa $m(t)$:
+\begin{gather}
+    m(t) = (5,22 \cdot 10^{13} \, \text{átomos}) \cdot \frac{14 \, \text{g/mol}}{6,02 \cdot 10^{23} \, \text{átomos/mol}} \approx 1,21 \cdot 10^{-9} \, \text{g}
+\end{gather}
+\begin{cajaresultado}
+    El número de átomos de $^{14}\text{C}$ que quedan es $\boldsymbol{N \approx 5,22 \cdot 10^{13} \, \textbf{átomos}}$ y su masa es $\boldsymbol{m \approx 1,21 \cdot 10^{-9} \, \textbf{g}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La actividad de la muestra se ha reducido a una cuarta parte de la original, lo que indica que han transcurrido exactamente dos periodos de semidesintegración, resultando en una antigüedad de 11460 años. La actividad residual de 200 Bq corresponde a una cantidad de $5,22 \cdot 10^{13}$ átomos de $^{14}\text{C}$, cuya masa es de apenas 1,21 nanogramos, lo que demuestra la sensibilidad de la técnica de datación por radiocarbono.
+\end{cajaconclusion}
+
+\newpage
+% ======================================================================
+\section{Opción B}
+\label{sec:B_2013_jun_ord}
+% ======================================================================
+
+\subsection{Bloque I - Cuestión}
+\label{subsec:I_B_2013_jun_ord}
+
+\begin{cajaenunciado}
+Para escalar cierta montaña, un alpinista puede emplear dos caminos diferentes, uno de pendiente suave y otro más empinado. ¿Es distinto el valor del trabajo realizado por la fuerza gravitatoria sobre el cuerpo del montañero según el camino elegido? Razona la respuesta.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica sobre el concepto de trabajo y fuerzas conservativas.
+\begin{itemize}
+    \item \textbf{Fuerza a analizar:} Fuerza gravitatoria ($\vec{F}_g$).
+    \item \textbf{Proceso:} Desplazamiento de un cuerpo (alpinista) entre dos puntos (base y cima de la montaña).
+    \item \textbf{Condición:} Se comparan dos trayectorias distintas para el mismo desplazamiento.
+    \item \textbf{Incógnita:} Si el trabajo realizado por $\vec{F}_g$ depende de la trayectoria.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Trabajo en un Campo Conservativo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un perfil de una montaña. Marcar un punto A en la base (altura $h_A$) y un punto B en la cima (altura $h_B$). Dibujar dos trayectorias diferentes que conecten A y B: la 'Ruta 1' (camino suave y largo) y la 'Ruta 2' (camino empinado y corto). Indicar que, a pesar de las diferentes longitudes y formas de los caminos, el trabajo realizado por la fuerza de la gravedad solo depende de la diferencia de altura $\Delta h = h_B - h_A$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{trabajo_conservativo.png}
+    }}
+    \caption{Independencia del camino para el trabajo gravitatorio.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La respuesta se basa en la naturaleza del campo gravitatorio.
+\begin{itemize}
+    \item \textbf{Campo de Fuerzas Conservativo:} Un campo de fuerzas es conservativo si el trabajo realizado por la fuerza del campo para mover una partícula entre dos puntos cualesquiera es \textbf{independiente de la trayectoria} seguida. Dicho trabajo depende únicamente de las posiciones inicial y final.
+    \item El \textbf{campo gravitatorio es conservativo}.
+    \item \textbf{Trabajo y Energía Potencial:} Para un campo conservativo, se puede definir una energía potencial ($E_p$) tal que el trabajo realizado por el campo es igual al negativo de la variación de la energía potencial:
+    $$ W_{\text{conservativo}} = -\Delta E_p = -(E_{p, \text{final}} - E_{p, \text{inicial}}) $$
+\end{itemize}
+En el caso del campo gravitatorio cerca de la superficie, $E_p = mgh$, por lo que el trabajo es $W_g = -mg(h_{\text{final}} - h_{\text{inicial}})$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Sean A y B los puntos de partida y llegada del alpinista, con alturas $h_A$ y $h_B$. El trabajo realizado por la fuerza gravitatoria es:
+\begin{gather}
+    W_{g, A \to B} = - \Delta E_p = - (mgh_B - mgh_A) = -mg(h_B - h_A)
+\end{gather}
+Esta expresión muestra que el trabajo depende únicamente de la masa del alpinista, la aceleración de la gravedad y la diferencia de altura entre el punto final y el inicial. No contiene ninguna información sobre el camino recorrido. Por tanto, para el camino 1 y el camino 2, el trabajo será el mismo.
+\begin{gather}
+    W_{\text{camino 1}} = W_{\text{camino 2}} = -mg\Delta h
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+\textbf{No es distinto}. El valor del trabajo realizado por la fuerza gravitatoria es \textbf{exactamente el mismo} para ambos caminos.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La fuerza gravitatoria es una fuerza conservativa. Esto significa, por definición, que el trabajo que realiza al desplazar un objeto entre dos puntos no depende del camino que se siga, sino únicamente de las posiciones inicial y final. Como tanto el camino suave como el empinado comienzan y terminan en los mismos puntos (base y cima), el trabajo realizado por la gravedad es idéntico en ambos casos.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque II - Cuestión}
+\label{subsec:II_B_2013_jun_ord}
+
+\begin{cajaenunciado}
+La velocidad de una masa puntual cuyo movimiento es armónico simple viene dada, en unidades del SI, por la expresión $v(t)=-0,01\pi \sin[\pi(\frac{t}{2}+\frac{1}{4})]$. Calcula el periodo, la amplitud y la fase inicial del movimiento.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Ecuación de la velocidad:} $v(t)=-0,01\pi \sin[\pi(\frac{t}{2}+\frac{1}{4})]$ (SI).
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Periodo ($T$).
+        \item Amplitud ($A$).
+        \item Fase inicial ($\phi_0$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Relación entre x(t) y v(t) en un M.A.S.} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dos gráficos uno encima del otro, con el mismo eje de tiempo. El gráfico superior muestra la posición $x(t)$ como una función coseno. El gráfico inferior muestra la velocidad $v(t)$ como una función seno negativa. Mostrar que los máximos de velocidad ocurren cuando la posición es cero, y la velocidad es cero en los extremos de la elongación, ilustrando el desfase de $\pi/2$ entre posición y velocidad."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{mas_posicion_velocidad.png}
+    }}
+    \caption{Gráficas de posición y velocidad para un M.A.S.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las ecuaciones generales para la posición y la velocidad en un Movimiento Armónico Simple (M.A.S.) son:
+\begin{itemize}
+    \item \textbf{Posición:} $x(t) = A \cos(\omega t + \phi_0)$
+    \item \textbf{Velocidad:} $v(t) = \frac{dx}{dt} = -A\omega \sin(\omega t + \phi_0)$
+\end{itemize}
+El periodo se relaciona con la frecuencia angular mediante $T = \frac{2\pi}{\omega}$.
+La tarea consiste en comparar la expresión dada con la forma general de la velocidad para identificar los parámetros $A, \omega$ y $\phi_0$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Primero, reescribimos la expresión del enunciado para que se parezca a la forma canónica:
+\begin{gather}
+    v(t) = -0,01\pi \sin\left(\frac{\pi}{2}t + \frac{\pi}{4}\right)
+\end{gather}
+Comparando esta expresión con la forma general $v(t) = -A\omega \sin(\omega t + \phi_0)$, podemos identificar los siguientes términos por simple inspección:
+\begin{itemize}
+    \item \textbf{Frecuencia angular ($\omega$):} El término que multiplica a $t$ dentro del seno.
+    $\omega = \frac{\pi}{2} \, \text{rad/s}$.
+    \item \textbf{Fase inicial ($\phi_0$):} El término constante dentro del argumento del seno.
+    $\phi_0 = \frac{\pi}{4} \, \text{rad}$.
+    \item \textbf{Amplitud de velocidad ($v_{max} = A\omega$):} El término que multiplica a la función seno.
+    $A\omega = 0,01\pi \, \text{m/s}$.
+\end{itemize}
+A partir de estos valores, podemos calcular las magnitudes solicitadas.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Periodo (T)}
+Usamos la frecuencia angular que hemos identificado:
+\begin{gather}
+    T = \frac{2\pi}{\omega} = \frac{2\pi}{\pi/2} = 4 \, \text{s}
+\end{gather}
+
+\paragraph{Amplitud (A)}
+Usamos la relación $A\omega = 0,01\pi$ y el valor de $\omega$:
+\begin{gather}
+    A \cdot \left(\frac{\pi}{2}\right) = 0,01\pi \implies A = \frac{0,01\pi}{\pi/2} = 0,01 \cdot 2 = 0,02 \, \text{m}
+\end{gather}
+
+\paragraph{Fase inicial ($\phi_0$)}
+La identificamos directamente del argumento de la función seno.
+\begin{gather}
+    \phi_0 = \frac{\pi}{4} \, \text{rad}
+\end{gather}
+\begin{cajaresultado}
+\begin{itemize}
+    \item El periodo del movimiento es $\boldsymbol{T = 4 \, \textbf{s}}$.
+    \item La amplitud es $\boldsymbol{A = 0,02 \, \textbf{m}}$.
+    \item La fase inicial es $\boldsymbol{\phi_0 = \frac{\pi}{4} \, \textbf{rad}}$.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la comparación de la ecuación de velocidad proporcionada con la forma teórica general del M.A.S., se han identificado todos los parámetros fundamentales del movimiento. El oscilador tiene un periodo de 4 segundos, una amplitud de 2 centímetros y una fase inicial de $\pi/4$ radianes.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque III - Problema}
+\label{subsec:III_B_2013_jun_ord}
+
+\begin{cajaenunciado}
+Sea una lente delgada convergente, de distancia focal 8 cm. Se sitúa una flecha de 4 cm de longitud a una distancia de 16 cm de la lente, como muestra la figura.
+\begin{enumerate}
+    \item[a)] Indica las características de la imagen a partir del trazado de rayos. (1 punto)
+    \item[b)] Calcula el tamaño, la posición de la imagen y la potencia de la lente. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tipo de lente:} Convergente.
+    \item \textbf{Distancia focal imagen ($f'$):} Por ser convergente, es positiva. $f' = +8 \, \text{cm}$.
+    \item \textbf{Tamaño del objeto ($y$):} $y = 4 \, \text{cm}$.
+    \item \textbf{Posición del objeto ($s$):} El objeto está a la izquierda de la lente. Según el convenio de signos, $s = -16 \, \text{cm}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item a) Características de la imagen y diagrama de rayos.
+        \item b) Posición de la imagen ($s'$), tamaño de la imagen ($y'$) y potencia de la lente ($P$).
+    \end{itemize}
+\end{itemize}
+Notamos que el objeto está situado exactamente al doble de la distancia focal ($s = -2f'$).
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Formación de Imagen en Lente Convergente ($s=-2f'$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para una lente convergente delgada. Dibuja el eje óptico horizontal. Representa la lente con una línea vertical y flechas en los extremos. Marcar el foco imagen F' en x=+8 cm y el foco objeto F en x=-8 cm. Dibujar un objeto vertical (flecha de 4 cm de altura) en la posición s=-16 cm. Trazar dos rayos principales desde la punta del objeto: 1) Un rayo paralelo al eje óptico, que se refracta pasando por el foco imagen F'. 2) Un rayo que pasa por el centro óptico de la lente y no se desvía. El punto donde se cruzan los dos rayos refractados forma la punta de la imagen. Dibujar la imagen resultante. Etiquetar claramente objeto, imagen, F y F'."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{lente_2f.png}
+    }}
+    \caption{Diagrama de rayos para el objeto situado en $s=-2f'$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Para resolver el problema analíticamente, utilizamos las ecuaciones de las lentes delgadas:
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss para lentes:} $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item \textbf{Aumento Lateral ($M$):} $M = \frac{y'}{y} = \frac{s'}{s}$
+    \item \textbf{Potencia de la lente ($P$):} $P = \frac{1}{f'}$, con $f'$ expresada en metros.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Características de la imagen (del diagrama de rayos)}
+Del diagrama de rayos se observa que la imagen formada tiene las siguientes características:
+\begin{itemize}
+    \item \textbf{Naturaleza:} Se forma por la intersección de los rayos de luz reales, por lo tanto es una imagen \textbf{real}.
+    \item \textbf{Orientación:} Está orientada hacia abajo, por lo tanto es \textbf{invertida}.
+    \item \textbf{Tamaño:} Tiene el mismo tamaño que el objeto.
+\end{itemize}
+
+\paragraph{b) Cálculos analíticos}
+Despejamos la posición de la imagen $s'$ de la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{f'} + \frac{1}{s}
+\end{gather}
+Calculamos el aumento lateral $M$ y, a partir de él, el tamaño de la imagen $y'$:
+\begin{gather}
+    M = \frac{s'}{s} \implies y' = M \cdot y
+\end{gather}
+Calculamos la potencia a partir de la distancia focal en metros.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Posición y tamaño de la imagen}
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{8} + \frac{1}{-16} = \frac{2}{16} - \frac{1}{16} = \frac{1}{16} \, \text{cm}^{-1} \implies s' = +16 \, \text{cm}
+\end{gather}
+El signo positivo confirma que la imagen es real (se forma a la derecha de la lente).
+\begin{gather}
+    M = \frac{s'}{s} = \frac{+16 \, \text{cm}}{-16 \, \text{cm}} = -1 \\
+    y' = M \cdot y = (-1) \cdot (4 \, \text{cm}) = -4 \, \text{cm}
+\end{gather}
+El aumento -1 confirma que la imagen es invertida y de igual tamaño.
+
+\paragraph{Potencia de la lente}
+Primero, convertimos la distancia focal a metros: $f' = 8 \, \text{cm} = 0,08 \, \text{m}$.
+\begin{gather}
+    P = \frac{1}{0,08 \, \text{m}} = 12,5 \, \text{dioptrías}
+\end{gather}
+\begin{cajaresultado}
+a) La imagen es \textbf{real, invertida y de igual tamaño} que el objeto.
+b) La posición de la imagen es $\boldsymbol{s' = +16 \, \textbf{cm}}$. El tamaño de la imagen es $\boldsymbol{y' = -4 \, \textbf{cm}}$. La potencia de la lente es $\boldsymbol{P = +12,5 \, \textbf{D}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Tanto el análisis gráfico mediante el trazado de rayos como el cálculo analítico con las ecuaciones de las lentes delgadas coinciden. Cuando un objeto se sitúa frente a una lente convergente a una distancia igual al doble de la distancia focal, se forma una imagen real, invertida y de igual tamaño a la misma distancia al otro lado de la lente.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque IV - Problema}
+\label{subsec:IV_B_2013_jun_ord}
+
+\begin{cajaenunciado}
+Dos cables rectilíneos y muy largos, paralelos entre sí y contenidos en el plano XY, transportan corrientes eléctricas $I_1 = 2\,\text{A}$ e $I_2 = 3\,\text{A}$ con los sentidos representados en la figura adjunta. Determina:
+\begin{enumerate}
+    \item[a)] el campo magnético total (módulo, dirección y sentido) en el punto P. (1 punto)
+    \item[b)] La fuerza (módulo, dirección y sentido) sobre un electrón que pasa por dicho punto P con una velocidad $\vec{v}=-10^6 \vec{i} \, \text{m/s}$. (1 punto)
+\end{enumerate}
+\textbf{Datos:} permeabilidad magnética del vacío, $\mu_0=4\pi\cdot10^{-7}\,\text{T}\cdot\text{m/A}$; carga elemental, $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Corriente 1 ($I_1$):} $I_1=2$ A. Por la figura, está en $x=0$ y su sentido es $+\vec{j}$.
+    \item \textbf{Corriente 2 ($I_2$):} $I_2=3$ A. Por la figura, está en $x=20\,\text{cm}=0,2\,\text{m}$ y su sentido es $+\vec{j}$.
+    \item \textbf{Punto de cálculo (P):} Situado a 23 cm a la derecha de $I_2$, en $x=20+23=43\,\text{cm}=0,43\,\text{m}$.
+    \item \textbf{Carga de prueba:} Un electrón, $q=-e = -1,6\cdot10^{-19}\,\text{C}$.
+    \item \textbf{Velocidad del electrón:} $\vec{v}=-10^6 \vec{i} \, \text{m/s}$.
+    \item \textbf{Constante:} $\mu_0 = 4\pi\cdot10^{-7}\,\text{T}\cdot\text{m/A}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item a) Campo magnético total en P, $\vec{B}_P$.
+        \item b) Fuerza magnética sobre el electrón, $\vec{F}_m$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Campo Magnético de dos hilos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista superior del plano XY (el eje Z sale del papel). El eje X es horizontal y el Y vertical. Dibujar dos puntos en el eje X, en $x=0$ y $x=0.2$, representando los cables con corriente saliendo del plano (sentido +Z, asumiendo que el plano del papel es XZ y la corriente va por Y). Marcar el punto P en $x=0.43$. Usar la regla de la mano derecha: el campo $\vec{B}_1$ creado por $I_1$ en P es perpendicular a la línea que los une y forma círculos. CORRECCIÓN: La figura del examen muestra el plano XY, y las corrientes van en el sentido Y. El campo magnético estará en el plano XZ. En el punto P (sobre el eje X), el campo de $I_1$ (corriente +Y) apunta hacia dentro del plano (sentido $-\vec{k}$). El campo de $I_2$ (corriente +Y) también apunta hacia dentro del plano (sentido $-\vec{k}$). Dibujar ambos vectores $\vec{B}_1$ y $\vec{B}_2$ en P, ambos en el sentido $-\vec{k}$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{campo_hilos_paralelos_xy.png}
+    }}
+    \caption{Superposición de campos magnéticos en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{a) Campo Magnético}
+Se aplica el \textbf{Principio de Superposición}: el campo total es la suma vectorial de los campos creados por cada hilo. El campo magnético creado por un hilo rectilíneo e infinito viene dado por la \textbf{Ley de Biot-Savart}:
+$$ B = \frac{\mu_0 I}{2\pi d} $$
+La dirección del campo es perpendicular tanto al hilo como a la línea que une el hilo y el punto, y su sentido se determina con la \textbf{regla de la mano derecha}.
+
+\paragraph{b) Fuerza Magnética}
+La fuerza que experimenta una carga en movimiento en un campo magnético viene dada por la \textbf{Fuerza de Lorentz}:
+$$ \vec{F}_m = q(\vec{v} \times \vec{B}) $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{a) Campo magnético en P}
+Ambas corrientes ($I_1, I_2$) van en el sentido $+\vec{j}$. El punto P está en el eje X.
+\begin{itemize}
+    \item \textbf{Campo de $I_1$ en P:} La distancia es $d_1 = 0,43 \, \text{m}$. Aplicando la regla de la mano derecha, el campo apunta en el sentido negativo del eje Z. $\vec{B}_1 = -\frac{\mu_0 I_1}{2\pi d_1}\vec{k}$.
+    \item \textbf{Campo de $I_2$ en P:} La distancia es $d_2 = 0,23 \, \text{m}$. Aplicando la regla de la mano derecha, el campo también apunta en el sentido negativo del eje Z. $\vec{B}_2 = -\frac{\mu_0 I_2}{2\pi d_2}\vec{k}$.
+\end{itemize}
+El campo total es la suma:
+\begin{gather}
+    \vec{B}_P = \vec{B}_1 + \vec{B}_2 = -\left( \frac{\mu_0 I_1}{2\pi d_1} + \frac{\mu_0 I_2}{2\pi d_2} \right)\vec{k} = -\frac{\mu_0}{2\pi}\left( \frac{I_1}{d_1} + \frac{I_2}{d_2} \right)\vec{k}
+\end{gather}
+
+\paragraph{b) Fuerza sobre el electrón}
+Sustituimos los vectores en la ley de Lorentz, con $q=-e$:
+\begin{gather}
+    \vec{F}_m = (-e) \left( (v_x \vec{i}) \times (B_z \vec{k}) \right) = -e \cdot v_x \cdot B_z (\vec{i} \times \vec{k})
+\end{gather}
+Recordando que $\vec{i} \times \vec{k} = -\vec{j}$:
+\begin{gather}
+    \vec{F}_m = -e \cdot v_x \cdot B_z (-\vec{j}) = e \cdot v_x \cdot B_z \vec{j}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{a) Campo magnético}
+\begin{gather}
+    \vec{B}_P = -\frac{4\pi\cdot10^{-7}}{2\pi}\left( \frac{2}{0,43} + \frac{3}{0,23} \right)\vec{k} = -2\cdot10^{-7} (4,65 + 13,04)\vec{k} \nonumber \\
+    \vec{B}_P = -2\cdot10^{-7} (17,69)\vec{k} \approx -3,54 \cdot 10^{-6} \vec{k} \, \text{T}
+\end{gather}
+\begin{cajaresultado}
+El campo magnético total en P es $\boldsymbol{\vec{B}_P \approx -3,54 \cdot 10^{-6} \vec{k} \, \textbf{T}}$. Su módulo es $3,54\,\mu\text{T}$, dirección el eje Z y sentido hacia dentro del plano XY.
+\end{cajaresultado}
+
+\paragraph{b) Fuerza sobre el electrón}
+Tenemos $v_x = -10^6$ m/s y $B_z = -3,54 \cdot 10^{-6}$ T.
+\begin{gather}
+    \vec{F}_m = (1,6\cdot10^{-19}) \cdot (-10^6) \cdot (-3,54 \cdot 10^{-6}) \vec{j} \nonumber \\
+    \vec{F}_m \approx 5,66 \cdot 10^{-19} \vec{j} \, \text{N}
+\end{gather}
+\begin{cajaresultado}
+La fuerza sobre el electrón es $\boldsymbol{\vec{F}_m \approx 5,66 \cdot 10^{-19} \vec{j} \, \textbf{N}}$. Su módulo es $5,66 \cdot 10^{-19}\,\text{N}$, dirección el eje Y y sentido positivo.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Dado que ambas corrientes fluyen en el mismo sentido, los campos magnéticos que generan en el punto P se suman, resultando en un campo neto de $3,54\,\mu\text{T}$ dirigido hacia dentro del plano. Un electrón que se mueve en sentido $-X$ a través de este campo experimenta una fuerza de Lorentz dirigida en el sentido $+Y$ de $5,66 \cdot 10^{-19}\,\text{N}$.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque V - Cuestión}
+\label{subsec:V_B_2013_jun_ord}
+
+\begin{cajaenunciado}
+En la gráfica adjunta se representa la energía cinética máxima de los electrones emitidos por un metal en función de la frecuencia de la luz incidente sobre él. ¿Cómo se denomina el fenómeno físico al que se refiere la gráfica? Indica la frecuencia umbral del metal. ¿Qué ocurre si sobre el metal incide luz de longitud de onda $0,6\,\mu\text{m}$?
+\textbf{Datos:} constante de Planck, $h=6,63\cdot10^{-34}\,\text{J}\cdot\text{s}$; velocidad de la luz en el vacío, $c=3\cdot10^8\,\text{m/s}$; carga elemental, $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Gráfica:} Energía cinética máxima ($E_{c,max}$) en eV vs Frecuencia ($f$) en $10^{15}$ Hz.
+    \item \textbf{Longitud de onda a probar ($\lambda$):} $\lambda = 0,6 \, \mu\text{m} = 0,6 \cdot 10^{-6} \, \text{m}$.
+    \item \textbf{Constantes:} $h, c, e$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Nombre del fenómeno.
+        \item Frecuencia umbral ($f_0$).
+        \item Qué ocurre para la longitud de onda dada.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Esquema del Efecto Fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una placa metálica. Inciden sobre ella dos tipos de luz representados como paquetes de energía (fotones). Un fotón de luz roja (baja frecuencia, $f < f_0$) golpea la placa pero no ocurre nada. Un fotón de luz azul (alta frecuencia, $f > f_0$) golpea la placa y arranca un electrón, que sale disparado con una cierta energía cinética. Etiquetar la energía del fotón como $hf$, el trabajo de extracción como $W_0$, y la energía del electrón como $E_c$."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{efecto_fotoelectrico.png}
+    }}
+    \caption{Representación conceptual del efecto fotoeléctrico.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Nombre del fenómeno:} La emisión de electrones por un metal al ser iluminado es el \textbf{efecto fotoeléctrico}.
+    \item \textbf{Ecuación de Einstein para el efecto fotoeléctrico:} La energía de un fotón incidente ($E_{\text{fotón}} = hf$) se invierte en liberar al electrón del metal (trabajo de extracción, $W_0$) y en darle energía cinética ($E_{c,max}$).
+    $$ hf = W_0 + E_{c,max} $$
+    \item \textbf{Frecuencia Umbral ($f_0$):} Es la frecuencia mínima que debe tener la luz para poder arrancar electrones. Corresponde al caso en que $E_{c,max}=0$. Por tanto, $hf_0 = W_0$. La gráfica de $E_{c,max}$ vs $f$ es una recta que corta el eje de abscisas (frecuencia) en $f_0$.
+    \item \textbf{Condición de emisión:} Para que se produzca el efecto fotoeléctrico, es necesario que $f \ge f_0$ o, equivalentemente, que la longitud de onda $\lambda \le \lambda_0$, donde $\lambda_0 = c/f_0$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Nombre del fenómeno y Frecuencia Umbral}
+Se identifican directamente de la teoría y de la lectura de la gráfica en el punto donde $E_{c,max} = 0$.
+
+\paragraph{Análisis de la longitud de onda}
+Primero, se calcula la frecuencia $f$ correspondiente a la longitud de onda $\lambda=0,6\,\mu\text{m}$:
+\begin{gather}
+    f = \frac{c}{\lambda}
+\end{gather}
+Luego, se compara esta frecuencia $f$ con la frecuencia umbral $f_0$ leída de la gráfica.
+\begin{itemize}
+    \item Si $f > f_0$, se produce efecto fotoeléctrico.
+    \item Si $f \le f_0$, no se produce efecto fotoeléctrico.
+\end{itemize}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Nombre y Frecuencia Umbral}
+El fenómeno es el \textbf{efecto fotoeléctrico}.
+De la gráfica, observamos que la recta corta el eje de frecuencias cuando la energía cinética es cero. Este punto es:
+\begin{gather}
+    f_0 = 1 \cdot 10^{15} \, \text{Hz}
+\end{gather}
+
+\paragraph{Análisis de $\lambda=0,6\,\mu\text{m}$}
+Calculamos la frecuencia correspondiente:
+\begin{gather}
+    f = \frac{3 \cdot 10^8 \, \text{m/s}}{0,6 \cdot 10^{-6} \, \text{m}} = 5 \cdot 10^{14} \, \text{Hz}
+\end{gather}
+Comparamos esta frecuencia con la umbral:
+\begin{gather}
+    f = 5 \cdot 10^{14} \, \text{Hz} \quad < \quad f_0 = 1 \cdot 10^{15} \, \text{Hz}
+\end{gather}
+Como la frecuencia de la luz incidente es menor que la frecuencia umbral, \textbf{no se produce efecto fotoeléctrico}.
+\begin{cajaresultado}
+\begin{itemize}
+    \item El fenómeno se denomina \textbf{efecto fotoeléctrico}.
+    \item La frecuencia umbral del metal es $\boldsymbol{f_0 = 10^{15} \, \textbf{Hz}}$.
+    \item Si incide luz de $\lambda=0,6\,\mu\text{m}$ (cuya frecuencia es $5 \cdot 10^{14} \, \text{Hz}$), \textbf{no ocurre nada}, ya que su frecuencia es inferior a la umbral y los fotones no tienen energía suficiente para arrancar electrones.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La gráfica representa la relación lineal entre la energía cinética de los fotoelectrones y la frecuencia de la luz, una de las evidencias clave del efecto fotoeléctrico. La frecuencia umbral del metal es de $10^{15}$ Hz. Una luz con una longitud de onda de 0,6 $\mu$m tiene una frecuencia de $5 \cdot 10^{14}$ Hz, que es insuficiente para superar el trabajo de extracción del metal, por lo que no se observará emisión de electrones.
+\end{cajaconclusion}
+
+\newpage
+\subsection{Bloque VI - Cuestión}
+\label{subsec:VI_B_2013_jun_ord}
+
+\begin{cajaenunciado}
+Indica razonadamente qué tipo de desintegración tiene lugar en cada uno de los pasos de la siguiente serie radiactiva:
+$$ {}_{92}^{238}\text{U} \to {}_{90}^{234}\text{Th} \to {}_{91}^{234}\text{Pa} $$
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se nos pide analizar dos desintegraciones nucleares sucesivas:
+\begin{itemize}
+    \item \textbf{Paso 1:} Uranio-238 ($^{238}\text{U}$) se desintegra en Torio-234 ($^{234}\text{Th}$).
+    \item \textbf{Paso 2:} Torio-234 ($^{234}\text{Th}$) se desintegra en Protactinio-234 ($^{234}\text{Pa}$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Desintegración Alfa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un núcleo grande (etiquetado $^{238}$U) emitiendo una partícula más pequeña compuesta por 2 protones y 2 neutrones (etiquetada como partícula $\alpha$ o $^{4}$He). El núcleo restante es ligeramente más pequeño (etiquetado $^{234}$Th). Mostrar que Z disminuye en 2 y A en 4."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{alpha_decay.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Desintegración Beta} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un núcleo (etiquetado $^{234}$Th). Dentro del núcleo, un neutrón se transforma en un protón. El núcleo emite un electrón (partícula $\beta^-$) y un antineutrino. El núcleo resultante tiene un protón más y un neutrón menos (etiquetado $^{234}$Pa). Mostrar que Z aumenta en 1 y A permanece constante."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{beta_decay.png}
+    }}
+    \caption{Esquemas de las desintegraciones alfa y beta.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+En cualquier reacción nuclear, se deben conservar el número másico (A, superíndice) y el número atómico (Z, subíndice).
+\begin{itemize}
+    \item \textbf{Desintegración Alfa ($\alpha$):} El núcleo emite una partícula alfa, que es un núcleo de Helio (${}_2^4\text{He}$).
+    El núcleo hijo tendrá: $A' = A - 4$ y $Z' = Z - 2$.
+    \item \textbf{Desintegración Beta Negativa ($\beta^-$):} Un neutrón del núcleo se convierte en un protón, y se emite un electrón (${}_{-1}^0\text{e}$) y un antineutrino.
+    El núcleo hijo tendrá: $A' = A$ y $Z' = Z + 1$.
+    \item \textbf{Desintegración Beta Positiva ($\beta^+$):} Un protón del núcleo se convierte en un neutrón, y se emite un positrón (${}_{+1}^0\text{e}$) y un neutrino.
+    El núcleo hijo tendrá: $A' = A$ y $Z' = Z - 1$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Paso 1: ${}_{92}^{238}\text{U} \to {}_{90}^{234}\text{Th}$}
+Analizamos la variación de A y Z:
+\begin{itemize}
+    \item Variación del número másico: $\Delta A = 238 - 234 = 4$.
+    \item Variación del número atómico: $\Delta Z = 92 - 90 = 2$.
+\end{itemize}
+Una disminución de 4 en A y de 2 en Z corresponde a la emisión de una partícula ${}_2^4\text{X}$, que es una partícula alfa.
+La reacción es: ${}_{92}^{238}\text{U} \to {}_{90}^{234}\text{Th} + {}_2^4\text{He}$.
+
+\paragraph{Paso 2: ${}_{90}^{234}\text{Th} \to {}_{91}^{234}\text{Pa}$}
+Analizamos la variación de A y Z:
+\begin{itemize}
+    \item Variación del número másico: $\Delta A = 234 - 234 = 0$.
+    \item Variación del número atómico: $\Delta Z = 91 - 90 = +1$.
+\end{itemize}
+Un número másico constante y un aumento de 1 en Z corresponde a la emisión de una partícula ${}_{-1}^0\text{X}$, que es un electrón (desintegración beta negativa).
+La reacción es: ${}_{90}^{234}\text{Th} \to {}_{91}^{234}\text{Pa} + {}_{-1}^0\text{e} + \bar{\nu}_e$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{cajaresultado}
+\begin{itemize}
+    \item En el primer paso, ${}_{92}^{238}\text{U} \to {}_{90}^{234}\text{Th}$, tiene lugar una \textbf{desintegración alfa ($\alpha$)}.
+    \item En el segundo paso, ${}_{90}^{234}\text{Th} \to {}_{91}^{234}\text{Pa}$, tiene lugar una \textbf{desintegración beta negativa ($\beta^-$)}.
+\end{itemize}
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando las leyes de conservación de Soddy-Fajans, se puede identificar de forma inequívoca el tipo de partícula emitida en cada desintegración. La transformación de Uranio a Torio implica una pérdida de 4 nucleones (2 protones y 2 neutrones), característica de una emisión alfa. La posterior transformación de Torio a Protactinio, donde se mantiene la masa pero aumenta la carga, es la firma de una desintegración beta negativa.
+\end{cajaconclusion}
+
+\newpage

@@ -1,0 +1,94 @@
+% ======================================================================
+% ARCHIVO DE PAQUETES CENTRALIZADO Y UNIFICADO
+% Impaginazione/packages.tex
+% ======================================================================
+
+% --- GENERALES Y DE DOCUMENTO ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[inner=4cm, outer=3cm]{geometry}
+\usepackage{enumitem}
+
+% --- CONFIGURACIÓN DE IDIOMA Y SILABEO (CORREGIDA Y SIMPLIFICADA) ---
+% La opción 'main=spanish' es la forma moderna de asegurar que el idioma
+% principal y sus reglas de silabeo (guiones) se carguen correctamente.
+\usepackage[main=spanish]{babel}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[svgnames]{xcolor}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{appendix}
+\usepackage{lipsum}
+
+% --- MATEMÁTICAS ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{braket}
+
+% --- PORTADA, CABECERAS Y PIES DE PÁGINA ---
+\usepackage{frontespizio}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{24.1638pt}
+\fancyhf{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RO]{\rightmark}
+\fancyfoot[LE,RO]{\thepage}
+
+% --- PAQUETES AÑADIDOS PARA EL FORMATO DE LAS SOLUCIONES ---
+\usepackage[many]{tcolorbox}
+\usepackage{float}
+\usepackage{eso-pic}
+\usepackage{hyperref}
+\hypersetup{ colorlinks=true, linkcolor=black, urlcolor=blue }
+
+% --- BIBLIOGRAFÍA, ÍNDICES Y GLOSARIOS ---
+\usepackage[style=numeric]{biblatex}
+\addbibresource{biblio.bib}
+
+\newenvironment{abstracto}% <--- He cambiado el nombre a "abstracto" para no entrar en conflicto
+    {\cleardoublepage%
+        \thispagestyle{empty}%
+        \null \vfill\begin{center}%
+            \bfseries Resumen \end{center}}%
+        {\vfill\null}
+
+\usepackage{imakeidx}
+\makeindex
+\usepackage{nomencl}
+\makenomenclature
+\usepackage{glossaries}
+\makeglossaries
+
+% --- CONFIGURACIONES PERSONALIZADAS PARA LAS CAJAS ---
+\newtcolorbox{cajaenunciado}{
+    fonttitle=\bfseries, colframe=black, colback=white, boxrule=0.5pt, arc=0mm, title=Enunciado del Problema
+}
+\newtcolorbox{cajaresultado}{
+    fonttitle=\bfseries, colframe=black, colback=white, boxrule=0.5pt, arc=0mm, title=Resultado Final
+}
+\newtcolorbox{cajaconclusion}{
+    fonttitle=\bfseries, colframe=black, colback=white, boxrule=0.5pt, arc=0mm, title=Conclusión
+}
+% --- CONFIGURACIÓN PARA EL FORMATO DE TÍTULOS DE CAPÍTULO ---
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+  {\normalfont\Large\bfseries\centering} % Formato general del bloque
+  {\chaptertitlename\ \thechapter}        % El texto "Capítulo X"
+  {0pt}                                  % Separación horizontal (no necesaria)
+  {\vspace{1em}}                         % Espacio vertical para "bajar" el número
+
+\titlespacing*{\chapter}
+  {0pt}   % Sangría izquierda
+  {20pt}  % Espacio VERTICAL ANTES del título (reducido para subirlo)
+  {40pt}  % Espacio VERTICAL DESPUÉS del título
+
+% --- PAQUETES PARA DIBUJO VECTORIAL (AÑADIDO) ---
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, patterns, decorations.pathmorphing, calc}
+

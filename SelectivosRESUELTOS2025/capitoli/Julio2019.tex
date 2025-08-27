@@ -1,0 +1,925 @@
+% !TEX root = ../main.tex
+\chapter{Examen Julio 2019 - Convocatoria Extraordinaria}
+\label{chap:2019_jul_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Campo Gravitatorio}
+\label{sec:grav_2019_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 1 - OPCIÓN A}
+\label{subsec:1A_2019_jul_ext}
+
+\begin{cajaenunciado}
+Explica brevemente el concepto de velocidad de escape de un planeta y deduce su expresión en función del radio R del planeta y de la aceleración de la gravedad en su superficie, $g_0$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Concepto a definir:} Velocidad de escape ($v_e$).
+    \item \textbf{Variables para la deducción:} Radio del planeta ($R$) y gravedad en su superficie ($g_0$).
+    \item \textbf{Incógnita:} Expresión de $v_e$ en función de $R$ y $g_0$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Lanzamiento para Velocidad de Escape} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta esférico de radio R. En su superficie, un proyectil es lanzado verticalmente hacia arriba con una velocidad inicial $\vec{v}_e$. Dibujar una trayectoria que muestra al proyectil alejándose indefinidamente, con una nota que indique 'En $r=\infty$, $v_f=0$ y $E_p=0$'. Esto ilustra la condición de que la energía mecánica total en el infinito es cero." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{velocidad_escape_planeta.png}
+    }}
+    \caption{Concepto de velocidad de escape.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Concepto de Velocidad de Escape}
+La velocidad de escape es la velocidad mínima inicial que se debe proporcionar a un objeto, sin propulsión adicional, para que pueda superar el campo gravitatorio de un astro y alejarse indefinidamente de él. "Alejarse indefinidamente" significa que el objeto puede alcanzar una distancia infinita del astro. La condición límite para la velocidad mínima es que el objeto llegue al infinito con una velocidad final nula.
+
+\paragraph*{Principio de Conservación de la Energía Mecánica}
+El campo gravitatorio es conservativo. Por tanto, la energía mecánica total de un objeto que se mueve en él se conserva. La energía mecánica ($E_m$) es la suma de la energía cinética ($E_c$) y la energía potencial gravitatoria ($E_p$).
+$$ E_m = E_c + E_p = \frac{1}{2}mv^2 - G\frac{Mm}{r} = \text{constante} $$
+Para que el objeto escape, su energía mecánica total debe ser mayor o igual a cero. La condición de velocidad mínima corresponde a una energía mecánica total exactamente nula.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Aplicamos la conservación de la energía mecánica entre el punto de lanzamiento (la superficie del planeta, radio R) y el infinito.
+\begin{gather}
+    E_{m, \text{superficie}} = E_{m, \text{infinito}} \nonumber \\
+    \frac{1}{2}mv_e^2 - G\frac{Mm}{R} = 0
+\end{gather}
+Donde la energía en el infinito es cero porque tanto la energía cinética ($v_f=0$) como la potencial ($\lim_{r \to \infty} -G\frac{Mm}{r} = 0$) son nulas.
+De la ecuación anterior, despejamos $v_e$:
+\begin{gather}
+    \frac{1}{2}mv_e^2 = G\frac{Mm}{R} \implies v_e = \sqrt{\frac{2GM}{R}}
+\end{gather}
+Ahora, relacionamos esta expresión con la gravedad en la superficie, $g_0$. La definición de $g_0$ es la fuerza por unidad de masa en la superficie:
+\begin{gather}
+    g_0 = \frac{F_g}{m} = \frac{G M m/R^2}{m} = \frac{GM}{R^2} \implies GM = g_0 R^2
+\end{gather}
+Sustituimos $GM$ en la expresión de la velocidad de escape:
+\begin{gather}
+    v_e = \sqrt{\frac{2(g_0 R^2)}{R}} = \sqrt{2g_0 R}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es puramente simbólico.
+\begin{cajaresultado}
+    La expresión de la velocidad de escape en función del radio y la gravedad en la superficie es $\boldsymbol{v_e = \sqrt{2g_0 R}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La velocidad de escape es la necesaria para que la energía mecánica total de un objeto sea nula, permitiéndole así alcanzar el infinito. Mediante el principio de conservación de la energía, se deduce que $v_e = \sqrt{2GM/R}$. Utilizando la definición de la aceleración de la gravedad en la superficie, $g_0 = GM/R^2$, se puede reescribir la velocidad de escape como $v_e = \sqrt{2g_0 R}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 1 - OPCIÓN B}
+\label{subsec:1B_2019_jul_ext}
+
+\begin{cajaenunciado}
+Se sitúan dos masas puntuales de 1 kg en las posiciones (-3,0) m y (3,0) m de un sistema de coordenadas cartesiano. Calcula para el punto (0,4) m:
+\begin{enumerate}
+    \item[a)] Los vectores campo gravitatorio que generan cada una de ellas y el vector campo gravitatorio total. Razona si existe algún punto de esta configuración donde se anula el campo gravitatorio y en caso afirmativo identifícalo. (1 punto)
+    \item[b)] El potencial gravitatorio debido a cada una de las masas y el potencial total. Razona si existe algún punto donde el potencial gravitatorio se anula. (1 punto)
+\end{enumerate}
+\textbf{Dato:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Masa 1 ($m_1$):} $m_1 = 1 \, \text{kg}$ en la posición P1(-3, 0).
+    \item \textbf{Masa 2 ($m_2$):} $m_2 = 1 \, \text{kg}$ en la posición P2(3, 0).
+    \item \textbf{Punto de cálculo (P):} P(0, 4).
+    \item \textbf{Constante G:} $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnitas:} $\vec{g}_1, \vec{g}_2, \vec{g}_{total}$ en P. $V_1, V_2, V_{total}$ en P. Puntos donde $\vec{g}=0$ y $V=0$.
+\end{itemize}
+La distancia de cada masa al punto P es la misma: $r = \sqrt{3^2 + 4^2} = \sqrt{9+16} = \sqrt{25}=5\,\text{m}$.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campo y Potencial Gravitatorio} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Colocar una masa $m_1$ en (-3,0) y otra masa $m_2$ en (3,0). Marcar el punto P en (0,4). Dibujar el vector campo gravitatorio $\vec{g}_1$ en P, que es atractivo y apunta desde P hacia $m_1$. Dibujar el vector $\vec{g}_2$ en P, que apunta desde P hacia $m_2$. Mostrar que la suma vectorial $\vec{g}_{total}$ apunta verticalmente hacia abajo, ya que las componentes horizontales se cancelan." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{campo_grav_masas.png}
+    }}
+    \caption{Suma vectorial de los campos gravitatorios en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Campo Gravitatorio ($\vec{g}$):} Es una magnitud vectorial. El campo creado por una masa $M$ en un punto es $\vec{g} = -G\frac{M}{r^2}\vec{u}_r$, donde $\vec{u}_r$ es el vector unitario que va desde la masa hacia el punto. El campo total es la suma vectorial de los campos individuales (Principio de Superposición).
+    \item \textbf{Potencial Gravitatorio ($V$):} Es una magnitud escalar. El potencial creado por una masa $M$ es $V = -G\frac{M}{r}$. El potencial total es la suma escalar de los potenciales individuales.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Campo Gravitatorio en P(0,4)}
+\begin{itemize}
+    \item $\vec{g}_1$ (de $m_1$ en (-3,0)): El vector de P a $m_1$ es $(-3-0)\vec{i}+(0-4)\vec{j} = -3\vec{i}-4\vec{j}$. El unitario es $\frac{-3\vec{i}-4\vec{j}}{5}$. El campo apunta en esta dirección: $\vec{g}_1 = G\frac{m_1}{r^2}\frac{-3\vec{i}-4\vec{j}}{5}$.
+    \item $\vec{g}_2$ (de $m_2$ en (3,0)): El vector de P a $m_2$ es $(3-0)\vec{i}+(0-4)\vec{j} = 3\vec{i}-4\vec{j}$. El unitario es $\frac{3\vec{i}-4\vec{j}}{5}$. El campo es $\vec{g}_2 = G\frac{m_2}{r^2}\frac{3\vec{i}-4\vec{j}}{5}$.
+\end{itemize}
+El campo total es $\vec{g}_{total} = \vec{g}_1 + \vec{g}_2$. Las componentes $\vec{i}$ se cancelan.
+\begin{gather}
+    \vec{g}_{total} = G\frac{m}{r^2}\left(-\frac{4}{5}\vec{j} - \frac{4}{5}\vec{j}\right) = -G\frac{m}{r^2}\frac{8}{5}\vec{j}
+\end{gather}
+El campo se anula en el punto medio entre las dos masas, el origen (0,0), por simetría.
+
+\paragraph*{b) Potencial Gravitatorio en P(0,4)}
+\begin{gather}
+    V_1 = -G\frac{m_1}{r} \quad ; \quad V_2 = -G\frac{m_2}{r} \\
+    V_{total} = V_1 + V_2 = -2G\frac{m}{r}
+\end{gather}
+El potencial, al ser la suma de dos términos siempre negativos (para $r$ finito), nunca puede ser cero, excepto en el infinito.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Campo Gravitatorio}
+\begin{gather}
+    |\vec{g}_1| = |\vec{g}_2| = (6,67\cdot10^{-11})\frac{1}{5^2} \approx 2,67\cdot10^{-12}\,\text{N/kg} \\
+    \vec{g}_1 = (2,67\cdot10^{-12})(-0,6\vec{i}-0,8\vec{j}) = (-1,60\cdot10^{-12}\vec{i} - 2,14\cdot10^{-12}\vec{j})\,\text{N/kg} \\
+    \vec{g}_2 = (2,67\cdot10^{-12})(0,6\vec{i}-0,8\vec{j}) = (1,60\cdot10^{-12}\vec{i} - 2,14\cdot10^{-12}\vec{j})\,\text{N/kg} \\
+    \vec{g}_{total} = -2 \cdot (2,14\cdot10^{-12})\vec{j} = -4,28\cdot10^{-12}\vec{j}\,\text{N/kg}
+\end{gather}
+\begin{cajaresultado}
+    $\boldsymbol{\vec{g}_1 \approx (-1,60\vec{i} - 2,14\vec{j})\cdot10^{-12}\,\textbf{N/kg}}$. $\boldsymbol{\vec{g}_2 \approx (1,60\vec{i} - 2,14\vec{j})\cdot10^{-12}\,\textbf{N/kg}}$.
+    El campo total es $\boldsymbol{\vec{g}_{total} \approx -4,28\cdot10^{-12}\vec{j}\,\textbf{N/kg}}$. Se anula en el origen \textbf{(0,0)}.
+\end{cajaresultado}
+\paragraph*{b) Potencial Gravitatorio}
+\begin{gather}
+    V_1 = V_2 = -(6,67\cdot10^{-11})\frac{1}{5} = -1,33\cdot10^{-11}\,\text{J/kg} \\
+    V_{total} = 2 \cdot V_1 = -2,67\cdot10^{-11}\,\text{J/kg}
+\end{gather}
+\begin{cajaresultado}
+    $V_1 = V_2 \approx -1,33\cdot10^{-11}\,\textbf{J/kg}$. El potencial total es $\boldsymbol{V_{total} \approx -2,67\cdot10^{-11}\,\textbf{J/kg}}$. \textbf{No se anula} en ningún punto del espacio (excepto en el infinito).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+En el punto (0,4), las componentes horizontales de los campos gravitatorios se anulan por simetría, resultando en un campo total que apunta verticalmente hacia abajo. El único punto donde el campo es nulo es el origen (0,0). El potencial gravitatorio, al ser una magnitud escalar y siempre negativa, no se anula en ningún punto finito del espacio; su valor en P es la suma de los potenciales individuales.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Campo Eléctrico}
+\label{sec:elec_2019_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 2 - OPCIÓN A}
+\label{subsec:2A_2019_jul_ext}
+
+\begin{cajaenunciado}
+Las posiciones, respecto al origen de coordenadas, de dos cargas $q_1 = -4\,\mu\text{C}$ y $q_2 = -6\,\mu\text{C}$ son, respectivamente, $\vec{r}_1=3\vec{j}\,\text{m}$ y $\vec{r}_2=-3\vec{j}\,\text{m}$. Calcula el valor de una carga $q$, situada en el origen de coordenadas, si la fuerza eléctrica total que actúa sobre ella es $\vec{F}=2\cdot10^{-3}\vec{j}\,\text{N}$.
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^9\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = -4 \, \mu\text{C} = -4 \cdot 10^{-6} \, \text{C}$, en la posición P1(0, 3).
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = -6 \, \mu\text{C} = -6 \cdot 10^{-6} \, \text{C}$, en la posición P2(0, -3).
+    \item \textbf{Carga de prueba ($q$):} Situada en el origen O(0, 0).
+    \item \textbf{Fuerza total sobre $q$ ($\vec{F}_{total}$):} $\vec{F}_{total} = 2 \cdot 10^{-3}\vec{j} \, \text{N}$.
+    \item \textbf{Constante $k$:} $k=9\cdot10^9\,\text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnita:} El valor de la carga $q$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Fuerza sobre una Carga en el Origen} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un sistema de coordenadas XY. Colocar una carga $q_1$ en (0,3) y una carga $q_2$ en (0,-3). Colocar una carga de prueba 'q' en el origen (0,0). Dibujar el vector campo eléctrico $\vec{E}_1$ en el origen, creado por $q_1$, apuntando hacia arriba (atractivo, ya que $q_1$ es negativa). Dibujar el vector campo eléctrico $\vec{E}_2$ en el origen, creado por $q_2$, apuntando hacia abajo (atractivo, ya que $q_2$ es negativa). Mostrar el vector campo total $\vec{E}_{total}$ en el origen, que será la suma de los dos anteriores." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{fuerza_origen.png}
+    }}
+    \caption{Campo eléctrico en el origen debido a las cargas $q_1$ y $q_2$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La fuerza total que actúa sobre la carga $q$ es la suma vectorial de las fuerzas ejercidas por $q_1$ y $q_2$ (Principio de Superposición). Una forma equivalente es calcular el campo eléctrico total $\vec{E}_{total}$ en el origen y luego usar la relación $\vec{F}_{total} = q \cdot \vec{E}_{total}$.
+El campo eléctrico creado por una carga fuente $Q$ en un punto P es $\vec{E} = k \frac{Q}{r^2}\vec{u}_r$, donde $\vec{u}_r$ es el vector unitario que va desde la carga fuente $Q$ hasta el punto P.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El campo total en el origen (O) es $\vec{E}_O = \vec{E}_1 + \vec{E}_2$.
+\begin{itemize}
+    \item \textbf{Campo $\vec{E}_1$}: Creado por $q_1$ en P1(0,3). La distancia es $r_1=3\,\text{m}$. El vector que va desde P1 a O es $-3\vec{j}$, por lo que $\vec{u}_1 = -\vec{j}$.
+    $$ \vec{E}_1 = k \frac{q_1}{r_1^2} \vec{u}_1 $$
+    \item \textbf{Campo $\vec{E}_2$}: Creado por $q_2$ en P2(0,-3). La distancia es $r_2=3\,\text{m}$. El vector que va desde P2 a O es $3\vec{j}$, por lo que $\vec{u}_2 = \vec{j}$.
+    $$ \vec{E}_2 = k \frac{q_2}{r_2^2} \vec{u}_2 $$
+\end{itemize}
+Sumamos ambos para obtener $\vec{E}_O$:
+\begin{gather}
+    \vec{E}_O = k \frac{q_1}{r_1^2} (-\vec{j}) + k \frac{q_2}{r_2^2} (\vec{j}) = k \left( -\frac{q_1}{r_1^2} + \frac{q_2}{r_2^2} \right) \vec{j}
+\end{gather}
+Finalmente, despejamos $q$ de la ecuación de la fuerza:
+\begin{gather}
+    \vec{F}_{total} = q \vec{E}_O \implies q = \frac{F_{total,y}}{E_{O,y}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos el campo eléctrico en el origen:
+\begin{gather}
+    \vec{E}_O = (9\cdot10^9) \left( -\frac{-4\cdot10^{-6}}{3^2} + \frac{-6\cdot10^{-6}}{3^2} \right) \vec{j} \nonumber \\
+    \vec{E}_O = (9\cdot10^9) \left( \frac{4\cdot10^{-6}}{9} - \frac{6\cdot10^{-6}}{9} \right) \vec{j} = (9\cdot10^9) \left( -\frac{2\cdot10^{-6}}{9} \right) \vec{j} \nonumber \\
+    \vec{E}_O = -2\cdot10^3 \vec{j} \, \text{N/C}
+\end{gather}
+Ahora calculamos la carga $q$:
+\begin{gather}
+    2\cdot10^{-3}\vec{j} = q \cdot (-2\cdot10^3 \vec{j}) \implies q = \frac{2\cdot10^{-3}}{-2\cdot10^3} = -1 \cdot 10^{-6} \, \text{C}
+\end{gather}
+\begin{cajaresultado}
+    El valor de la carga es $\boldsymbol{q = -1 \, \mu\textbf{C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las dos cargas fuente, al ser negativas, crean un campo eléctrico neto en el origen que apunta hacia abajo (sentido $-\vec{j}$), con un valor de $-2000\vec{j}$ N/C. Para que una carga $q$ situada en ese punto experimente una fuerza hacia arriba (sentido $+\vec{j}$), la carga $q$ debe ser negativa, de acuerdo con $\vec{F}=q\vec{E}$. El cálculo exacto revela que su valor es de $-1\,\mu\text{C}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 2 - OPCIÓN B}
+\label{subsec:2B_2019_jul_ext}
+\begin{cajaenunciado}
+Explica brevemente qué es un campo de fuerzas conservativo. Una carga positiva se encuentra en el seno de un campo electrostático. El trabajo realizado por el campo para desplazarla entre los puntos A y B de la figura es de 0,01 J si se sigue el camino (1) ¿Cuál es el trabajo si se sigue el camino (2)? ¿En qué punto, A o B, es mayor el potencial eléctrico? Razona las respuestas.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo:} Electrostático (que es conservativo).
+    \item \textbf{Carga de prueba ($q$):} $q > 0$.
+    \item \textbf{Trabajo por el camino (1):} $W_{A \to B}^{(1)} = 0,01 \, \text{J}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Trabajo por el camino (2), $W_{A \to B}^{(2)}$.
+        \item Comparación de potencial eléctrico entre A y B ($V_A$ vs $V_B$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La figura es proporcionada en el enunciado. Representa dos puntos A y B y dos trayectorias diferentes, (1) y (2), que los conectan.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Campo de Fuerzas Conservativo}
+Un campo de fuerzas es conservativo si el trabajo realizado por la fuerza del campo para mover una partícula entre dos puntos cualesquiera es independiente de la trayectoria seguida. Depende únicamente de los puntos inicial y final. Una consecuencia es que el trabajo a lo largo de cualquier trayectoria cerrada es nulo. El campo electrostático es un campo conservativo.
+
+\paragraph*{Trabajo y Potencial Eléctrico}
+El trabajo realizado por el campo eléctrico ($W$) para mover una carga $q$ desde un punto A a un punto B está relacionado con la diferencia de potencial eléctrico ($\Delta V = V_B - V_A$) entre esos puntos mediante la expresión:
+$$ W_{A \to B} = -q\Delta V = -q(V_B - V_A) = q(V_A - V_B) $$
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Trabajo por el camino (2)}
+Dado que el campo electrostático es conservativo, el trabajo no depende del camino:
+\begin{gather}
+    W_{A \to B}^{(2)} = W_{A \to B}^{(1)}
+\end{gather}
+\paragraph*{Comparación de potencial}
+Partimos de la relación entre trabajo y potencial:
+\begin{gather}
+    W_{A \to B} = q(V_A - V_B)
+\end{gather}
+Conocemos el signo de $W_{A \to B}$ (positivo) y el de $q$ (positivo). A partir de esto, podemos deducir el signo de la diferencia $(V_A - V_B)$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Trabajo por el camino (2)}
+\begin{gather}
+    W_{A \to B}^{(2)} = 0,01 \, \text{J}
+\end{gather}
+\begin{cajaresultado}
+    El trabajo si se sigue el camino (2) es el mismo: $\boldsymbol{W_{A \to B}^{(2)} = 0,01 \, \textbf{J}}$.
+\end{cajaresultado}
+\paragraph*{Comparación de potencial}
+\begin{gather}
+    0,01 = q(V_A - V_B)
+\end{gather}
+Como $q > 0$ y el resultado es positivo, el término $(V_A - V_B)$ debe ser positivo.
+\begin{gather}
+    V_A - V_B > 0 \implies V_A > V_B
+\end{gather}
+\begin{cajaresultado}
+    El potencial eléctrico es mayor en el punto \textbf{A}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El campo electrostático es conservativo, por lo que el trabajo realizado para mover la carga de A a B es de 0,01 J, independientemente de la trayectoria. Como el campo realiza un trabajo positivo para mover una carga positiva de A a B, significa que la carga se ha movido a una región de menor energía potencial y, por tanto, de menor potencial eléctrico. En consecuencia, el potencial en A es mayor que en B.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Campo Magnético}
+\label{sec:mag_2019_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 3 - OPCIÓN A}
+\label{subsec:3A_2019_jul_ext}
+
+\begin{cajaenunciado}
+Dos hilos rectilíneos indefinidos, paralelos y separados una distancia $d=2$ cm conducen las corrientes $I_1$ e $I_2$, con los sentidos representados en la figura. En el punto P, equidistante a ambos hilos, el modulo del campo magnético creado sólo por la corriente $I_1$ es 0,06 mT, y el del campo total debido a las dos corrientes es 0,04 mT. Ambos campos (el debido a $I_1$ y el total) tienen la misma dirección y sentido.
+\begin{enumerate}
+    \item[a)] Calcula razonadamente el campo magnético generado por la corriente $I_2$ y representa claramente todos los vectores campo magnético involucrados. (1 punto)
+    \item[b)] Calcula el valor de las corrientes $I_1$ e $I_2$. (1 punto)
+\end{enumerate}
+\textbf{Dato:} permeabilidad magnética del vacío, $\mu_0=4\pi\cdot10^{-7}\,\text{T}\text{m/A}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Geometría:} Dos hilos paralelos separados $d=2\,\text{cm}=0,02\,\text{m}$. Punto P equidistante. La distancia de cada hilo a P es $r=d/2=1\,\text{cm}=0,01\,\text{m}$.
+    \item \textbf{Corrientes:} $I_1$ e $I_2$ son paralelas (mismo sentido, hacia arriba).
+    \item \textbf{Campos en P:}
+    \begin{itemize}
+        \item Módulo de $\vec{B}_1$: $|\vec{B}_1| = 0,06\,\text{mT} = 6\cdot10^{-5}\,\text{T}$.
+        \item Módulo de $\vec{B}_{total}$: $|\vec{B}_{total}| = 0,04\,\text{mT} = 4\cdot10^{-5}\,\text{T}$.
+        \item Dirección y sentido: $\vec{B}_1$ y $\vec{B}_{total}$ tienen la misma dirección y sentido.
+    \end{itemize}
+    \item \textbf{Constante:} $\mu_0 = 4\pi\cdot10^{-7}\,\text{T}\text{m/A}$.
+    \item \textbf{Incógnitas:} $\vec{B}_2$ en P, y los valores de $I_1$ e $I_2$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Superposición de Campos Magnéticos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista superior de dos hilos conductores paralelos, representados como puntos (corriente saliendo del papel). Marcar el hilo 1 a la izquierda y el hilo 2 a la derecha. En el punto medio P, dibujar el vector $\vec{B}_1$ (creado por el hilo 1) apuntando hacia la derecha. Dibujar el vector $\vec{B}_2$ (creado por el hilo 2) apuntando hacia la izquierda. Dibujar el vector $\vec{B}_{total}$ como la suma de los dos, también apuntando hacia la derecha pero más corto que $\vec{B}_1$, para mostrar que $\vec{B}_2$ se opone a $\vec{B}_1$." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{campos_hilos_paralelos.png}
+    }}
+    \caption{Vectores de campo magnético en el punto P. Se ha girado el plano para mayor claridad.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El campo magnético creado por un hilo rectilíneo indefinido a una distancia $r$ viene dado en módulo por la Ley de Biot-Savart:
+$$ B = \frac{\mu_0 I}{2\pi r} $$
+La dirección y sentido del campo se obtiene por la regla de la mano derecha. El campo total en un punto es la suma vectorial de los campos creados por cada fuente (Principio de Superposición).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Campo magnético $\vec{B}_2$}
+En el punto P:
+\begin{itemize}
+    \item $\vec{B}_1$: Creado por $I_1$. Aplicando la regla de la mano derecha, el campo apunta hacia \textbf{dentro} del papel.
+    \item $\vec{B}_2$: Creado por $I_2$. Aplicando la regla de la mano derecha, el campo apunta hacia \textbf{fuera} del papel.
+\end{itemize}
+Los vectores son antiparalelos. El campo total es $\vec{B}_{total} = \vec{B}_1 + \vec{B}_2$.
+Definimos el sentido entrante como positivo. Entonces $B_1 = +|\vec{B}_1|$ y $B_2 = -|\vec{B}_2|$.
+El enunciado dice que $\vec{B}_1$ y $\vec{B}_{total}$ tienen el mismo sentido. Por tanto, el sentido entrante es el dominante y $B_{total}$ también es positivo.
+\begin{gather}
+    B_{total} = B_1 + B_2 \implies |\vec{B}_{total}| = |\vec{B}_1| - |\vec{B}_2|
+\end{gather}
+Despejamos el módulo de $B_2$: $|\vec{B}_2| = |\vec{B}_1| - |\vec{B}_{total}|$. Su dirección es perpendicular al plano y su sentido es saliente.
+
+\paragraph*{b) Cálculo de las corrientes}
+Usamos la ley de Biot-Savart para cada hilo, con $r=0,01\,\text{m}$.
+\begin{gather}
+    I_1 = \frac{2\pi r |\vec{B}_1|}{\mu_0} \quad ; \quad I_2 = \frac{2\pi r |\vec{B}_2|}{\mu_0}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Campo $\vec{B}_2$}
+\begin{gather}
+    |\vec{B}_2| = (6\cdot10^{-5}\,\text{T}) - (4\cdot10^{-5}\,\text{T}) = 2\cdot10^{-5}\,\text{T}
+\end{gather}
+\begin{cajaresultado}
+    El campo magnético generado por $I_2$ tiene un módulo de $\boldsymbol{2\cdot10^{-5}\,\textbf{T}}$ y sentido \textbf{saliente} del papel (opuesto a $\vec{B}_1$).
+\end{cajaresultado}
+\paragraph*{b) Corrientes $I_1$ e $I_2$}
+\begin{gather}
+    I_1 = \frac{2\pi (0,01) (6\cdot10^{-5})}{4\pi\cdot10^{-7}} = \frac{2 (0,01) (6\cdot10^{-5})}{4\cdot10^{-7}} = \frac{12\cdot10^{-7}}{4\cdot10^{-7}} = 3 \, \text{A} \\
+    I_2 = \frac{2\pi (0,01) (2\cdot10^{-5})}{4\pi\cdot10^{-7}} = \frac{2 (0,01) (2\cdot10^{-5})}{4\cdot10^{-7}} = \frac{4\cdot10^{-7}}{4\cdot10^{-7}} = 1 \, \text{A}
+\end{gather}
+\begin{cajaresultado}
+    Las corrientes son $\boldsymbol{I_1 = 3\,\textbf{A}}$ e $\boldsymbol{I_2 = 1\,\textbf{A}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Dado que los campos de los dos hilos son opuestos en el punto P, y el campo total tiene el mismo sentido que el de $I_1$, el campo de $I_2$ debe ser de menor módulo y sentido contrario. Se calcula que $\vec{B}_2$ tiene un módulo de 0,02 mT y sentido saliente. A partir de los módulos de los campos y la distancia, se calculan las intensidades de corriente, resultando ser $I_1=3$ A e $I_2=1$ A.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 3 - OPCIÓN B}
+\label{subsec:3B_2019_jul_ext}
+
+\begin{cajaenunciado}
+Una espira plana de superficie $5\,\text{cm}^2$ está situada en el seno de un campo magnético uniforme de $B=1\,\text{mT}$ perpendicular al plano de la espira. Calcula el flujo magnético a través de la espira en esta situación y cuando la espira ha girado un ángulo $\alpha=45^\circ$. Razona si se genera una fuerza electromotriz en la espira mientras gira.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Superficie de la espira ($S$):} $S=5\,\text{cm}^2 = 5 \cdot 10^{-4}\,\text{m}^2$.
+    \item \textbf{Campo magnético ($B$):} $B=1\,\text{mT} = 10^{-3}\,\text{T}$.
+    \item \textbf{Situación inicial:} Campo perpendicular a la espira. El ángulo $\alpha$ entre $\vec{B}$ y el vector normal $\vec{S}$ es $\alpha_1=0^\circ$.
+    \item \textbf{Situación final:} La espira ha girado 45º. El ángulo es $\alpha_2=45^\circ$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Flujo magnético inicial ($\Phi_1$).
+        \item Flujo magnético final ($\Phi_2$).
+        \item Si se genera f.e.m. durante el giro.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Situación Inicial ($\alpha=0^\circ$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Vista en perspectiva de una espira circular. Dibujar un campo magnético uniforme $\vec{B}$ con vectores verticales apuntando hacia arriba. El vector normal a la superficie de la espira, $\vec{S}$, también apunta verticalmente hacia arriba, paralelo a $\vec{B}$. Indicar que $\alpha=0^\circ$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{flujo_cero.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Situación Final ($\alpha=45^\circ$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "La misma configuración, pero la espira está girada 45 grados. El vector normal $\vec{S}$ ahora forma un ángulo de 45 grados con el campo magnético vertical $\vec{B}$. Etiquetar el ángulo $\alpha=45^\circ$." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{flujo_45.png}
+    }}
+    \caption{Flujo magnético a través de la espira en dos orientaciones.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Flujo Magnético ($\Phi_B$)}
+El flujo del campo magnético a través de una superficie plana se define como el producto del módulo del campo, el área de la superficie y el coseno del ángulo que forman el vector campo y el vector normal a la superficie.
+$$ \Phi_B = B \cdot S \cdot \cos(\alpha) $$
+\paragraph*{Ley de Inducción de Faraday-Lenz}
+Se genera una fuerza electromotriz (f.e.m., $\varepsilon$) en una espira siempre que haya una variación del flujo magnético que la atraviesa en el tiempo.
+$$ \varepsilon = -\frac{d\Phi_B}{dt} $$
+Si el flujo cambia, se induce f.e.m. Si el flujo es constante, no se induce f.e.m.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Cálculo de los flujos}
+\begin{gather}
+    \Phi_1 = B \cdot S \cdot \cos(\alpha_1) \\
+    \Phi_2 = B \cdot S \cdot \cos(\alpha_2)
+\end{gather}
+\paragraph*{Generación de f.e.m.}
+Mientras la espira gira, el ángulo $\alpha$ cambia con el tiempo. Por lo tanto, el flujo magnético $\Phi_B(t) = B \cdot S \cdot \cos(\alpha(t))$ es una función del tiempo. Su derivada respecto al tiempo no será nula:
+$$ \varepsilon(t) = -\frac{d}{dt}[B S \cos(\alpha(t))] = -BS \frac{d(\cos(\alpha(t)))}{dt} \neq 0 $$
+Como el flujo varía durante el giro, sí se genera una f.e.m.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Flujo magnético inicial ($\alpha_1 = 0^\circ$)}
+\begin{gather}
+    \Phi_1 = (10^{-3}\,\text{T}) \cdot (5 \cdot 10^{-4}\,\text{m}^2) \cdot \cos(0^\circ) = 5 \cdot 10^{-7} \cdot 1 = 5 \cdot 10^{-7} \, \text{Wb}
+\end{gather}
+\begin{cajaresultado}
+    El flujo magnético inicial es $\boldsymbol{\Phi_1 = 5 \cdot 10^{-7}\,\textbf{Wb}}$.
+\end{cajaresultado}
+\paragraph*{Flujo magnético final ($\alpha_2 = 45^\circ$)}
+\begin{gather}
+    \Phi_2 = (10^{-3}\,\text{T}) \cdot (5 \cdot 10^{-4}\,\text{m}^2) \cdot \cos(45^\circ) = 5 \cdot 10^{-7} \cdot \frac{\sqrt{2}}{2} \approx 3,54 \cdot 10^{-7} \, \text{Wb}
+\end{gather}
+\begin{cajaresultado}
+    El flujo magnético final es $\boldsymbol{\Phi_2 \approx 3,54 \cdot 10^{-7}\,\textbf{Wb}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El flujo magnético depende de la orientación de la espira. Inicialmente es de $5 \cdot 10^{-7}$ Wb y, tras girar 45º, disminuye a $3,54 \cdot 10^{-7}$ Wb. Precisamente porque el flujo magnético cambia durante el proceso de giro, la Ley de Faraday-Lenz asegura que \textbf{sí se genera una fuerza electromotriz} en la espira mientras está girando.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Ondas}
+\label{sec:ondas_2019_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 4 - OPCIÓN A}
+\label{subsec:4A_2019_jul_ext}
+
+\begin{cajaenunciado}
+El gráfico representa una onda armónica en un instante arbitrario t propagándose hacia la derecha del eje X con una velocidad de $2\,\text{m/s}$. Determina razonadamente la amplitud y la frecuencia de la onda. ¿Cuál es la diferencia de fase entre dos puntos de la onda situados en $x_2=5\,\text{m}$ y $x_1=4\,\text{m}$?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Gráfico:} Representación de la elongación $y$ en función de la posición $x$ en un instante fijo ($y(x)$).
+    \item \textbf{Velocidad de propagación ($v$):} $v = 2 \, \text{m/s}$.
+    \item \textbf{Puntos para diferencia de fase:} $x_1 = 4 \, \text{m}$ y $x_2 = 5 \, \text{m}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Amplitud ($A$).
+        \item Frecuencia ($f$).
+        \item Diferencia de fase ($\Delta\phi$) entre $x_1$ y $x_2$.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+El enunciado proporciona la representación gráfica necesaria para la resolución.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Parámetros de una Onda}
+\begin{itemize}
+    \item \textbf{Amplitud (A):} Es la máxima elongación o desplazamiento de las partículas del medio respecto a su posición de equilibrio. Se lee directamente del gráfico como el valor máximo de $y$.
+    \item \textbf{Longitud de onda ($\lambda$):} Es la distancia mínima entre dos puntos que se encuentran en el mismo estado de vibración. Se puede leer del gráfico como la distancia de un ciclo completo.
+    \item \textbf{Frecuencia (f):} Es el número de oscilaciones por unidad de tiempo. Se relaciona con la velocidad y la longitud de onda mediante la ecuación fundamental de las ondas: $v = \lambda f$.
+    \item \textbf{Diferencia de Fase ($\Delta\phi$):} La fase de una onda en un punto $x$ es $(kx - \omega t + \phi_0)$. La diferencia de fase entre dos puntos $x_1$ y $x_2$ en un mismo instante se debe solo a su separación espacial: $\Delta\phi = k(x_2 - x_1)$, donde $k$ es el número de onda, $k=2\pi/\lambda$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Amplitud y Frecuencia}
+La amplitud $A$ se extrae del valor máximo de "Elongación (mm)" en el eje Y.
+La longitud de onda $\lambda$ se extrae del eje X.
+La frecuencia se calcula a partir de $v$ y $\lambda$:
+\begin{gather}
+    f = \frac{v}{\lambda}
+\end{gather}
+\paragraph*{Diferencia de Fase}
+La diferencia de fase se calcula como:
+\begin{gather}
+    \Delta\phi = k(x_2-x_1) = \frac{2\pi}{\lambda}(x_2-x_1)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Amplitud y Frecuencia}
+Del gráfico:
+\begin{itemize}
+    \item El valor máximo de la elongación es 3 mm. \quad $A=3\,\text{mm} = 3\cdot10^{-3}\,\text{m}$.
+    \item Un ciclo completo de la onda (por ejemplo, de un máximo en $x=0$ al siguiente en $x=4\,\text{m}$) tiene una longitud de 4 m. \quad $\lambda=4\,\text{m}$.
+\end{itemize}
+Ahora calculamos la frecuencia:
+\begin{gather}
+    f = \frac{2\,\text{m/s}}{4\,\text{m}} = 0,5\,\text{Hz}
+\end{gather}
+\begin{cajaresultado}
+    La amplitud es $\boldsymbol{A=3\,\textbf{mm}}$ y la frecuencia es $\boldsymbol{f=0,5\,\textbf{Hz}}$.
+\end{cajaresultado}
+\paragraph*{Diferencia de Fase}
+\begin{gather}
+    \Delta\phi = \frac{2\pi}{4\,\text{m}}(5\,\text{m} - 4\,\text{m}) = \frac{2\pi}{4}(1) = \frac{\pi}{2} \, \text{rad}
+\end{gather}
+\begin{cajaresultado}
+    La diferencia de fase entre los dos puntos es $\boldsymbol{\Delta\phi = \frac{\pi}{2}\,\textbf{rad}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de la inspección directa del gráfico, se determina una amplitud de 3 mm y una longitud de onda de 4 m. Utilizando la velocidad de propagación dada, se calcula una frecuencia de 0,5 Hz. La diferencia de fase entre dos puntos separados por 1 m para esta onda es de $\pi/2$ radianes, lo que equivale a un cuarto de ciclo.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 4 - OPCIÓN B}
+\label{subsec:4B_2019_jul_ext}
+\begin{cajaenunciado}
+Una onda sinusoidal transversal en una cuerda se propaga en el sentido positivo del eje X con una velocidad de $1\,\text{m/s}$ y un periodo de 0,2 s. En el instante inicial, el punto de la cuerda situado en el origen de coordenadas tiene una elongación positiva igual a su amplitud.
+\begin{enumerate}
+    \item[a)] Calcula los valores de la frecuencia angular, el número de onda y la fase inicial. (1 punto).
+    \item[b)] Si la amplitud de la onda es de 0,1 m, escribe la función de onda $y(x,t)$. ¿Qué elongación tiene el punto de la cuerda $x=0,2\,\text{m}$ en el instante $t=0,4\,\text{s}$? (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Sentido de propagación:} Positivo del eje X.
+    \item \textbf{Velocidad de propagación ($v$):} $v = 1\,\text{m/s}$.
+    \item \textbf{Periodo ($T$):} $T=0,2\,\text{s}$.
+    \item \textbf{Condición inicial:} En $t=0$, para $x=0$, la elongación es máxima y positiva, $y(0,0)=+A$.
+    \item \textbf{Amplitud ($A$):} $A=0,1\,\text{m}$.
+    \item \textbf{Punto a evaluar:} $x=0,2\,\text{m}$ en $t=0,4\,\text{s}$.
+    \item \textbf{Incógnitas:} $\omega, k, \phi_0, y(x,t)$ e $y(0,2; 0,4)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La ecuación general de una onda armónica que se propaga en el sentido positivo del eje X es:
+$$ y(x,t) = A\sin(\omega t - kx + \phi_0) \quad \text{o} \quad y(x,t) = A\cos(\omega t - kx + \phi_0') $$
+Los parámetros se relacionan de la siguiente forma:
+\begin{itemize}
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = 2\pi f = \frac{2\pi}{T}$.
+    \item \textbf{Número de onda ($k$):} $k = \frac{2\pi}{\lambda}$.
+    \item \textbf{Relación fundamental:} $v = \lambda f = \frac{\omega}{k}$.
+    \item \textbf{Fase inicial ($\phi_0$):} Se determina a partir de las condiciones iniciales del problema.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Parámetros de la onda}
+\begin{gather}
+    \omega = \frac{2\pi}{T} \\
+    k = \frac{\omega}{v}
+\end{gather}
+Para la fase inicial, usamos la condición $y(0,0)=+A$. Si escogemos la forma coseno para la función de onda, $y(x,t) = A\cos(\omega t - kx + \phi_0')$:
+\begin{gather}
+    y(0,0) = A\cos(0-0+\phi_0') = A\cos(\phi_0') = +A \implies \cos(\phi_0')=1 \implies \phi_0'=0
+\end{gather}
+\paragraph*{b) Ecuación de onda y elongación}
+La ecuación será $y(x,t) = A\cos(\omega t - kx)$. Para hallar la elongación en un punto y tiempo concretos, se sustituyen los valores en la ecuación.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Parámetros}
+\begin{gather}
+    \omega = \frac{2\pi}{0,2} = 10\pi \, \text{rad/s} \\
+    k = \frac{10\pi \, \text{rad/s}}{1\,\text{m/s}} = 10\pi \, \text{rad/m}
+\end{gather}
+La fase inicial, con la función coseno, es $\phi_0'=0$.
+\begin{cajaresultado}
+    $\boldsymbol{\omega = 10\pi\,\textbf{rad/s}}$, $\boldsymbol{k=10\pi\,\textbf{rad/m}}$, $\boldsymbol{\phi_0 = 0}$ (para la función coseno).
+\end{cajaresultado}
+\paragraph*{b) Ecuación y elongación}
+Con $A=0,1$ m, la ecuación de la onda es:
+\begin{gather}
+    y(x,t) = 0,1 \cos(10\pi t - 10\pi x)
+\end{gather}
+Sustituimos $x=0,2$ y $t=0,4$:
+\begin{gather}
+    y(0.2, 0.4) = 0,1 \cos(10\pi \cdot 0,4 - 10\pi \cdot 0,2)  = 0,1 \cos(2\pi) = 0,1 \cdot 1 = 0,1\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+    La función de onda es $\boldsymbol{y(x,t) = 0,1 \cos(10\pi t - 10\pi x)}$ (SI). La elongación en el punto y tiempo pedidos es $\boldsymbol{y=0,1\,\textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir del periodo y la velocidad de propagación se obtienen la frecuencia angular ($\omega=10\pi$ rad/s) y el número de onda ($k=10\pi$ rad/m). La condición inicial de elongación máxima en el origen determina una fase inicial nula para una función coseno. La elongación en $x=0,2$ m y $t=0,4$ s es de 0,1 m, que coincide con la amplitud, indicando que ese punto se encuentra en un máximo de su oscilación en ese instante.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque V: Óptica}
+\label{sec:optica_2019_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 5 - OPCIÓN A}
+\label{subsec:5A_2019_jul_ext}
+
+\begin{cajaenunciado}
+Para observar una hormiga de 3 mm de longitud se usa una lupa de distancia focal $f'=12$ cm situada a una distancia de 6 cm respecto a la hormiga.
+\begin{enumerate}
+    \item[a)] Calcula la posición, respecto a la lupa, a la que se encuentra la imagen y el tamaño con el que veremos la hormiga. (1 punto)
+    \item[b)] Representa el diagrama de rayos, señalando claramente la posición y tamaño de objeto e imagen. Indica cómo es la imagen ¿real o virtual? ¿derecha o invertida? (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Tamaño del objeto (hormiga, $y$):} $y=3\,\text{mm} = 0,3\,\text{cm}$.
+    \item \textbf{Lente:} Una lupa es una lente convergente, por lo que su distancia focal imagen es positiva. $f' = +12\,\text{cm}$.
+    \item \textbf{Posición del objeto ($s$):} La hormiga está a 6 cm de la lupa. Según el convenio de signos, $s = -6\,\text{cm}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item[a)] Posición de la imagen ($s'$) y tamaño de la imagen ($y'$).
+        \item[b)] Diagrama de rayos y características de la imagen.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Diagrama de Rayos de una Lupa} \vspace{0.5cm} \textit{Prompt para la imagen:} "Dibujar un eje óptico horizontal. En el centro, una lente convergente. Marcar el foco imagen F' en x=+12 cm y el foco objeto F en x=-12 cm. Colocar un objeto (flecha vertical de 3 mm de altura) en la posición s=-6 cm. Trazar dos rayos desde la punta del objeto: 1) Un rayo paralelo al eje óptico, que se refracta pasando por F'. 2) Un rayo que pasa por el centro óptico sin desviarse. Mostrar que los rayos refractados divergen. Dibujar las prolongaciones de estos rayos hacia atrás (a la izquierda de la lente) con líneas discontinuas, mostrando que se cruzan en s'=-12 cm, formando una imagen virtual, derecha y de 6 mm de altura. Etiquetar objeto, imagen, F, F', s, s'." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{lupa_problema.png}
+    }}
+    \caption{Trazado de rayos para la hormiga observada con la lupa.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se emplean las ecuaciones de las lentes delgadas:
+\begin{itemize}
+    \item \textbf{Ecuación de Gauss:} $\frac{1}{s'} - \frac{1}{s} = \frac{1}{f'}$
+    \item \textbf{Aumento Lateral:} $M = \frac{y'}{y} = \frac{s'}{s}$
+\end{itemize}
+Las características de la imagen se determinan a partir de los signos de $s'$ y $M$:
+\begin{itemize}
+    \item $s' < 0 \implies$ Imagen virtual.
+    \item $M > 0 \implies$ Imagen derecha.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Posición y tamaño de la imagen}
+Despejamos $1/s'$ de la ecuación de Gauss:
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{f'} + \frac{1}{s} \implies s' = \left(\frac{1}{f'} + \frac{1}{s}\right)^{-1}
+\end{gather}
+Calculamos el aumento $M$ y luego el tamaño de la imagen $y'$.
+\begin{gather}
+    M = \frac{s'}{s} \implies y' = M \cdot y = \frac{s'}{s} y
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Posición y tamaño}
+\begin{gather}
+    \frac{1}{s'} = \frac{1}{12} + \frac{1}{-6} = \frac{1}{12} - \frac{2}{12} = -\frac{1}{12} \, \text{cm}^{-1} \implies s' = -12\,\text{cm}
+\end{gather}
+\begin{cajaresultado}
+    La imagen se encuentra a \textbf{12 cm de la lupa}, en el mismo lado que la hormiga.
+\end{cajaresultado}
+\begin{gather}
+    M = \frac{s'}{s} = \frac{-12\,\text{cm}}{-6\,\text{cm}} = +2 \\
+    y' = M \cdot y = 2 \cdot (3\,\text{mm}) = 6\,\text{mm}
+\end{gather}
+\begin{cajaresultado}
+    El tamaño de la imagen de la hormiga es de $\boldsymbol{6\,\textbf{mm}}$.
+\end{cajaresultado}
+
+\paragraph*{b) Características de la imagen}
+A partir de los resultados numéricos:
+\begin{itemize}
+    \item Como $s'=-12$ cm es negativo, la imagen es \textbf{virtual}.
+    \item Como $M=+2$ es positivo, la imagen es \textbf{derecha}.
+\end{itemize}
+\begin{cajaresultado}
+    La imagen es \textbf{virtual}, \textbf{derecha} y de mayor tamaño que el objeto.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al colocar la hormiga a 6 cm de una lupa de 12 cm de distancia focal (es decir, entre el foco y la lente), se forma una imagen virtual a -12 cm de la lente. Esta imagen es derecha y tiene un tamaño de 6 mm, el doble del tamaño original, lo que confirma el efecto de aumento de la lupa.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 5 - OPCIÓN B}
+\label{subsec:5B_2019_jul_ext}
+\begin{cajaenunciado}
+El esquema de la figura representa una lente, un objeto y dos rayos (1 y 2) que, procedentes del extremo del objeto (flecha), salen de la lente tal y como se muestra. Determina, a partir de un trazado de rayos, la posición, tamaño de la imagen y aumento, posición de los puntos focales y la potencia de la lente. ¿La imagen es real o virtual?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Este problema se resuelve interpretando geométricamente el diagrama proporcionado. La cuadrícula tiene una escala de 2 cm por división.
+\begin{itemize}
+    \item \textbf{Objeto (O):} Situado a 4 divisiones a la izquierda de la lente. $s = -4 \cdot 2\,\text{cm} = -8\,\text{cm}$. Su altura es de 2 divisiones. $y = 2 \cdot 2\,\text{cm} = 4\,\text{cm}$.
+    \item \textbf{Rayo emergente (1):} Sale paralelo al eje.
+    \item \textbf{Rayo emergente (2):} Su prolongación hacia atrás forma la imagen.
+    \item \textbf{Incógnitas:} Posición ($s'$) y tamaño ($y'$) de la imagen, aumento ($M$), focos ($f, f'$), potencia ($P$) y tipo de imagen.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+El propio enunciado proporciona el diagrama base. La solución consiste en completarlo y analizarlo.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplican las reglas del trazado de rayos para lentes delgadas de forma inversa y directa:
+\begin{enumerate}
+    \item Un rayo que sale \textbf{paralelo al eje} (rayo 1) debe haber entrado pasando por el \textbf{foco objeto (F)}.
+    \item Un rayo que entra \textbf{paralelo al eje} sale pasando (o su prolongación) por el \textbf{foco imagen (F')}.
+\end{enumerate}
+La imagen se forma donde se cruzan los rayos salientes o sus prolongaciones.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Trazado de rayos y deducción geométrica}
+\begin{itemize}
+    \item \textbf{Imagen:} Se forma en la intersección de las prolongaciones de los rayos emergentes. La prolongación del rayo (2) ya está dibujada. La del rayo (1) es una recta horizontal. El cruce está a 2 divisiones a la izquierda y 1 división de altura.
+        \begin{itemize}
+            \item Posición imagen: $s' = -2 \cdot 2\,\text{cm} = -4\,\text{cm}$.
+            \item Tamaño imagen: $y' = 1 \cdot 2\,\text{cm} = 2\,\text{cm}$.
+        \end{itemize}
+    \item \textbf{Foco Imagen (F'):} Un rayo que incide paralelo al eje desde el objeto debe refractarse como el rayo (2). La prolongación de este rayo (2) corta el eje óptico a 4 divisiones a la izquierda de la lente. Por tanto, el foco imagen está en ese punto. $f' = -4 \cdot 2\,\text{cm} = -8\,\text{cm}$.
+    \item \textbf{Tipo de lente:} Como $f'<0$, la lente es \textbf{divergente}.
+\end{itemize}
+Con los valores de $s, s', y, y'$ podemos verificar la consistencia y calcular el resto de magnitudes.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{itemize}
+    \item \textbf{Posición y tamaño de la imagen:} $s'=-4\,\text{cm}$, $y'=2\,\text{cm}$.
+    \item \textbf{Aumento:} $M = \frac{y'}{y} = \frac{2}{4} = +0,5$. (Comprobación: $M = s'/s = -4/-8 = +0,5$).
+    \item \textbf{Puntos focales:} $f'=-8\,\text{cm}$. Para una lente delgada, $f = -f' = +8\,\text{cm}$.
+    \item \textbf{Potencia:} $P = \frac{1}{f' (\text{en m})} = \frac{1}{-0,08\,\text{m}} = -12,5\,\text{D}$.
+    \item \textbf{Tipo de imagen:} Como $s'<0$, la imagen es \textbf{virtual}.
+\end{itemize}
+\begin{cajaresultado}
+    Posición imagen: $\boldsymbol{s'=-4\,\textbf{cm}}$, Tamaño imagen: $\boldsymbol{y'=2\,\textbf{cm}}$, Aumento: $\boldsymbol{M=0,5}$.
+    Foco imagen: $\boldsymbol{f'=-8\,\textbf{cm}}$, Foco objeto: $\boldsymbol{f=+8\,\textbf{cm}}$. Potencia: $\boldsymbol{P=-12,5\,\textbf{D}}$.
+    La imagen es \textbf{virtual}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la interpretación del trazado de rayos y la geometría de la cuadrícula, se deduce que se trata de una lente divergente con una distancia focal de -8 cm. El objeto de 4 cm de alto situado a 8 cm de la lente forma una imagen virtual, derecha y reducida a la mitad (2 cm de alto), situada a 4 cm de la lente.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque VI: Física Moderna}
+\label{sec:mod_2019_jul_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Pregunta 6 - OPCIÓN A}
+\label{subsec:6A_2019_jul_ext}
+
+\begin{cajaenunciado}
+Escribe la expresión de la longitud de onda de De Broglie y explica su significado. Calcula la longitud de onda de De Broglie de una bacteria que se mueve a una velocidad de $66\,\mu\text{m/s}$, sabiendo que la masa de un millón de bacterias es de $1\,\mu\text{g}$.
+\textbf{Dato:} constante de Planck, $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad de la bacteria ($v$):} $v = 66\,\mu\text{m/s} = 6,6 \cdot 10^{-5}\,\text{m/s}$.
+    \item \textbf{Masa de $10^6$ bacterias:} $m_{total} = 1\,\mu\text{g} = 10^{-6}\,\text{g} = 10^{-9}\,\text{kg}$.
+    \item \textbf{Constante de Planck ($h$):} $h = 6,6 \cdot 10^{-34}\,\text{J}\cdot\text{s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresión y significado de la longitud de onda de De Broglie.
+        \item Valor de $\lambda$ para una bacteria.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema conceptual y de cálculo.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Hipótesis y Longitud de Onda de De Broglie}
+En 1924, Louis de Broglie propuso la hipótesis de la \textbf{dualidad onda-corpúsculo}, que postula que toda partícula en movimiento lleva asociada una onda. El significado de esta hipótesis es que la materia, al igual que la luz, presenta un doble comportamiento: en algunas interacciones se manifiesta como partícula (con masa y momento lineal definidos) y en otras como onda (con fenómenos de difracción e interferencia).
+La expresión matemática para la longitud de onda de esta "onda de materia" es:
+$$ \lambda = \frac{h}{p} = \frac{h}{mv} $$
+donde $h$ es la constante de Planck, $p$ es el momento lineal de la partícula, $m$ su masa y $v$ su velocidad.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Primero, calculamos la masa de una única bacteria ($m_{bacteria}$).
+\begin{gather}
+    m_{bacteria} = \frac{m_{total}}{N_{bacterias}}
+\end{gather}
+Luego, aplicamos la fórmula de De Broglie para calcular la longitud de onda.
+\begin{gather}
+    \lambda = \frac{h}{m_{bacteria} \cdot v}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos la masa de una bacteria:
+\begin{gather}
+    m_{bacteria} = \frac{10^{-9}\,\text{kg}}{10^6} = 10^{-15}\,\text{kg}
+\end{gather}
+Ahora calculamos la longitud de onda:
+\begin{gather}
+    \lambda = \frac{6,6 \cdot 10^{-34}\,\text{J}\cdot\text{s}}{(10^{-15}\,\text{kg}) \cdot (6,6 \cdot 10^{-5}\,\text{m/s})} = \frac{6,6 \cdot 10^{-34}}{6,6 \cdot 10^{-20}} = 10^{-14}\,\text{m}
+\end{gather}
+\begin{cajaresultado}
+    La longitud de onda de De Broglie de la bacteria es $\boldsymbol{\lambda = 10^{-14}\,\textbf{m}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La hipótesis de De Broglie ($\lambda=h/p$) asigna una naturaleza ondulatoria a toda partícula en movimiento. Al calcular esta longitud de onda para un objeto macroscópico como una bacteria, se obtiene un valor extremadamente pequeño ($10^{-14}$ m), mucho menor que el tamaño de la propia bacteria. Esto explica por qué los efectos ondulatorios de la materia solo son observables a escala cuántica (electrones, etc.) y son completamente indetectables en el mundo macroscópico.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Pregunta 6 - OPCIÓN B}
+\label{subsec:6B_2019_jul_ext}
+
+\begin{cajaenunciado}
+En la nucleosíntesis estelar de estrellas masivas, el núcleo de la estrella, al contraerse, provoca la siguiente desintegración: ${}_{10}^{20}\text{Ne} \to {}_{8}^{16}\text{O} + X$. Determina razonadamente qué partícula es X. En esta reacción se consume una energía de 4,7 MeV. Calcula la energía consumida, en julios, cuando se desintegra un mol de núcleos de neón.
+\textbf{Datos:} número de Avogadro, $N_A = 6\cdot10^{23}\,\text{mol}^{-1}$; carga elemental, $e=1,6\cdot10^{-19}\,\text{C}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Reacción nuclear:} ${}_{10}^{20}\text{Ne} \to {}_{8}^{16}\text{O} + {}_{Z}^{A}X$.
+    \item \textbf{Energía por reacción ($\Delta E_{reac}$):} $4,7\,\text{MeV}$ (consumida).
+    \item \textbf{Cantidad de Neón:} 1 mol.
+    \item \textbf{Constantes:} $N_A = 6\cdot10^{23}\,\text{mol}^{-1}$, $e = 1,6\cdot10^{-19}\,\text{C}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Identidad de la partícula X.
+        \item Energía total consumida para 1 mol, en Julios.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+No se requiere una representación gráfica para este problema.
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Leyes de Conservación Nuclear (Leyes de Soddy-Fajans)}
+En toda reacción nuclear se conservan:
+\begin{itemize}
+    \item El \textbf{número másico (A)}, suma de protones y neutrones.
+    \item El \textbf{número atómico (Z)}, o número de protones (y por tanto la carga).
+\end{itemize}
+\paragraph*{Conversión de Unidades de Energía}
+La relación entre electronvoltios (eV) y Julios (J) viene dada por la carga elemental: $1\,\text{eV} = 1,6\cdot10^{-19}\,\text{J}$. Por tanto, $1\,\text{MeV} = 10^6\,\text{eV} = 1,6\cdot10^{-13}\,\text{J}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Identificación de la partícula X}
+Aplicamos las leyes de conservación a la reacción ${}_{10}^{20}\text{Ne} \to {}_{8}^{16}\text{O} + {}_{Z}^{A}X$:
+\begin{itemize}
+    \item Conservación de A: $20 = 16 + A \implies A = 4$.
+    \item Conservación de Z: $10 = 8 + Z \implies Z = 2$.
+\end{itemize}
+La partícula ${}_{2}^{4}X$ es un núcleo de Helio, también conocido como partícula alfa ($\alpha$).
+
+\paragraph*{b) Energía total para un mol}
+La energía total consumida es la energía por reacción multiplicada por el número de reacciones, que en este caso es el número de átomos en un mol ($N_A$).
+\begin{gather}
+    E_{total} = \Delta E_{reac} \times N_A
+\end{gather}
+Es necesario convertir $\Delta E_{reac}$ a Julios antes de multiplicar.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Partícula X}
+El cálculo es directo a partir de las leyes de conservación.
+\begin{cajaresultado}
+    La partícula X es un núcleo de Helio $\boldsymbol{{}_{2}^{4}\text{He}}$ (una partícula alfa).
+\end{cajaresultado}
+
+\paragraph*{b) Energía total}
+Primero convertimos la energía por reacción a Julios:
+\begin{gather}
+    \Delta E_{reac, J} = 4,7\,\text{MeV} \times \frac{10^6\,\text{eV}}{1\,\text{MeV}} \times \frac{1,6\cdot10^{-19}\,\text{J}}{1\,\text{eV}} = 7,52 \cdot 10^{-13}\,\text{J}
+\end{gather}
+Ahora calculamos la energía total para un mol:
+\begin{gather}
+    E_{total} = (7,52 \cdot 10^{-13}\,\text{J/núcleo}) \cdot (6\cdot10^{23}\,\text{núcleos/mol}) = 4,512 \cdot 10^{11}\,\text{J/mol}
+\end{gather}
+\begin{cajaresultado}
+    La energía consumida al desintegrarse un mol de Neón es $\boldsymbol{E_{total} \approx 4,51 \cdot 10^{11}\,\textbf{J}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las leyes de conservación de número másico y atómico permiten identificar la partícula X como una partícula alfa. La energía consumida en esta reacción nuclear es de 4,7 MeV por cada núcleo de Neón que se desintegra. Escalando este valor para un mol de Neón, la energía total consumida asciende a la considerable cifra de $4,51 \cdot 10^{11}$ Julios.
+\end{cajaconclusion}
+\newpage

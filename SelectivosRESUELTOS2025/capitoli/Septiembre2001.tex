@@ -1,0 +1,810 @@
+% !TEX root = ../main.tex
+\chapter{Examen Septiembre 2001 - Convocatoria Extraordinaria}
+\label{chap:2001_sep_ext}
+
+% ======================================================================
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2001_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:1A_2001_sep_ext}
+
+\begin{cajaenunciado}
+Enunciar las leyes de Kepler. Demostrar la tercera de ellas, para el caso de órbitas circulares, a partir de las leyes de la mecánica newtoniana.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se trata de una cuestión teórica que requiere la enunciación de las tres leyes de Kepler y la demostración de la tercera ley para el caso particular de órbitas circulares.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Leyes de Kepler} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama dividido en tres. 1) Primera Ley: Una elipse con el Sol en uno de sus focos y un planeta orbitando sobre ella. 2) Segunda Ley: La misma elipse, mostrando dos áreas barridas por el radio vector del planeta en tiempos iguales; las áreas deben ser iguales, mostrando que el planeta se mueve más rápido en el perihelio y más lento en el afelio. 3) Tercera Ley: Dos planetas en órbitas circulares de diferentes radios ($r_1, r_2$) alrededor del Sol." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{leyes_kepler.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Demostración 3ª Ley} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta de masa $m$ en una órbita circular de radio $R$ alrededor del Sol de masa $M_S$. Dibujar el vector de la Fuerza Gravitatoria ($F_g$) apuntando hacia el Sol, y etiquetarlo también como Fuerza Centrípeta ($F_c$)." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{demostracion_kepler.png}
+    }}
+    \caption{Representación de las leyes de Kepler y el modelo para la demostración.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Enunciado de las Leyes de Kepler}
+Johannes Kepler, a partir de los datos observacionales de Tycho Brahe, formuló tres leyes que describen el movimiento de los planetas alrededor del Sol:
+\begin{itemize}
+    \item \textbf{Primera Ley (Ley de las Órbitas):} Todos los planetas se mueven en órbitas elípticas, con el Sol situado en uno de los focos de la elipse.
+    \item \textbf{Segunda Ley (Ley de las Áreas):} La línea que une un planeta con el Sol (radio vector) barre áreas iguales en intervalos de tiempo iguales. Esto implica que la velocidad orbital del planeta no es constante; es máxima en el perihelio (punto más cercano al Sol) y mínima en el afelio (punto más lejano).
+    \item \textbf{Tercera Ley (Ley de los Periodos):} El cuadrado del periodo orbital de cualquier planeta es directamente proporcional al cubo del semieje mayor de su órbita elíptica. Para todos los planetas del sistema solar, la relación $\frac{T^2}{a^3}$ es constante.
+\end{itemize}
+
+\paragraph{Fundamentos para la Demostración}
+La demostración se basa en la física de Newton, que proporciona la causa de este movimiento:
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal:} La fuerza de atracción entre el Sol (masa $M_S$) y un planeta (masa $m$) es $F_g = G \frac{M_S m}{R^2}$.
+    \item \textbf{Dinámica del Movimiento Circular Uniforme (MCU):} Para una órbita circular, la fuerza centrípeta necesaria es $F_c = m a_c = m \frac{v^2}{R} = m \omega^2 R$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Para una órbita circular, la fuerza gravitatoria es la fuerza centrípeta.
+\begin{gather}
+    F_g = F_c \implies G \frac{M_S m}{R^2} = m \omega^2 R
+\end{gather}
+La masa del planeta $m$ se simplifica. La velocidad angular $\omega$ se relaciona con el periodo orbital $T$ mediante $\omega = \frac{2\pi}{T}$. Sustituimos esta relación en la ecuación:
+\begin{gather}
+    G \frac{M_S}{R^2} = \left(\frac{2\pi}{T}\right)^2 R = \frac{4\pi^2}{T^2} R
+\end{gather}
+Ahora, reorganizamos la ecuación para agrupar los periodos a un lado y los radios al otro:
+\begin{gather}
+    G M_S T^2 = 4\pi^2 R^3
+\end{gather}
+Finalmente, despejamos la relación que enuncia la tercera ley de Kepler:
+\begin{gather}
+    \frac{T^2}{R^3} = \frac{4\pi^2}{G M_S}
+\end{gather}
+Como $G$, $M_S$ y $4\pi^2$ son constantes, se demuestra que la relación $\frac{T^2}{R^3}$ es constante para todos los cuerpos que orbitan alrededor de la misma masa central $M_S$.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las leyes de Kepler describen cinemáticamente el movimiento planetario. La mecánica de Newton proporciona la justificación dinámica, demostrando que la Tercera Ley de Kepler es una consecuencia directa de la Ley de Gravitación Universal, donde la constante de proporcionalidad depende únicamente de la masa del cuerpo central (el Sol).
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:1B_2001_sep_ext}
+
+\begin{cajaenunciado}
+El satélite Europa tiene un periodo de rotación alrededor de Júpiter de 85 horas y su órbita, prácticamente circular, tiene un radio de $6,67\times10^5$ km. Calcular la masa de Júpiter.
+\textbf{Dato:} $G=6,67\times10^{-11}$ S.I.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es fundamental convertir todos los datos al Sistema Internacional (SI) antes de operar.
+\begin{itemize}
+    \item \textbf{Periodo orbital de Europa ($T$):} $T = 85 \, \text{h} \times \frac{3600 \, \text{s}}{1 \, \text{h}} = 306000 \, \text{s} = 3,06 \cdot 10^5 \, \text{s}$.
+    \item \textbf{Radio orbital de Europa ($R$):} $R = 6,67 \cdot 10^5 \, \text{km} \times \frac{1000 \, \text{m}}{1 \, \text{km}} = 6,67 \cdot 10^8 \, \text{m}$.
+    \item \textbf{Constante de Gravitación Universal ($G$):} $G = 6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2$.
+    \item \textbf{Incógnita:} Masa de Júpiter ($M_J$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.6\textwidth}{\centering \textbf{Órbita de Europa alrededor de Júpiter} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un planeta grande, Júpiter, en el centro. Un satélite pequeño, Europa, en una órbita circular de radio R a su alrededor. Dibujar el vector de Fuerza Gravitatoria ($F_g$) que Júpiter ejerce sobre Europa, apuntando hacia el centro de Júpiter. Añadir una etiqueta que indique que esta fuerza actúa como Fuerza Centrípeta ($F_c$)." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{orbita_europa.png}
+    }}
+    \caption{Modelo físico para el cálculo de la masa de Júpiter.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El movimiento orbital de Europa alrededor de Júpiter se explica igualando la fuerza de atracción gravitatoria que ejerce Júpiter con la fuerza centrípeta necesaria para mantener la órbita circular.
+\begin{itemize}
+    \item \textbf{Ley de Gravitación Universal de Newton:} $F_g = G \frac{M_J m_E}{R^2}$.
+    \item \textbf{Fuerza Centrípeta:} $F_c = m_E a_c = m_E \omega^2 R = m_E \left(\frac{2\pi}{T}\right)^2 R$.
+\end{itemize}
+Donde $M_J$ es la masa de Júpiter y $m_E$ es la masa de Europa.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Al igualar ambas fuerzas, $F_g = F_c$:
+\begin{gather}
+    G \frac{M_J m_E}{R^2} = m_E \left(\frac{2\pi}{T}\right)^2 R
+\end{gather}
+La masa del satélite Europa, $m_E$, se cancela de ambos lados. Reorganizamos la ecuación para despejar la incógnita, la masa de Júpiter ($M_J$):
+\begin{gather}
+    G M_J = \frac{4\pi^2 R^3}{T^2} \implies M_J = \frac{4\pi^2 R^3}{G T^2}
+\end{gather}
+Esta es la expresión final que usaremos para el cálculo.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los datos en unidades del SI en la expresión obtenida:
+\begin{gather}
+    M_J = \frac{4\pi^2 (6,67 \cdot 10^8 \, \text{m})^3}{(6,67 \cdot 10^{-11} \, \text{N}\cdot\text{m}^2/\text{kg}^2) (3,06 \cdot 10^5 \, \text{s})^2} \nonumber \\
+    M_J = \frac{4\pi^2 (2,964 \cdot 10^{26})}{(6,67 \cdot 10^{-11})(9,3636 \cdot 10^{10})} \approx \frac{1,17 \cdot 10^{28}}{6,245 \cdot 10^{-0}} \approx 1,87 \cdot 10^{27} \, \text{kg}
+\end{gather}
+\begin{cajaresultado}
+    La masa de Júpiter es $\boldsymbol{M_J \approx 1,87 \cdot 10^{27} \, \textbf{kg}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la aplicación de la Ley de Gravitación Universal y la dinámica del movimiento circular, es posible determinar la masa de un cuerpo central (como un planeta) a partir de los parámetros orbitales (radio y periodo) de un cuerpo que lo orbita (un satélite). El cálculo arroja una masa para Júpiter de aproximadamente $1,87 \times 10^{27}$ kg.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque II: Ondas}
+\label{sec:ondas_2001_sep_ext}
+% ======================================================================
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:2A_2001_sep_ext}
+
+\begin{cajaenunciado}
+Dada la función de onda, $y=6\sin(2\pi (5t-0,1x))\,\text{cm}$, donde x está expresada en centímetros y t en segundos, determinar:
+\begin{enumerate}
+    \item La longitud de onda, el periodo, la frecuencia y el número de onda. (0.8 puntos)
+    \item La velocidad de propagación y la de vibración del punto situado en $x=10$ cm en el instante $t=1\,\text{s}$. (0,8 puntos)
+    \item Indica el sentido de la propagación de la onda y expresa la ecuación de otra onda idéntica a la anterior, pero propagándose en sentido contrario. (0.4 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+La ecuación de la onda es $y(x,t) = 6\sin(2\pi (5t-0,1x))\,\text{cm}$. Es conveniente expandir el argumento para compararlo con la forma estándar $y(x,t) = A\sin(\omega t - kx)$.
+\begin{itemize}
+    \item Ecuación expandida: $y(x,t) = 6\sin(10\pi t - 0,2\pi x)\,\text{cm}$.
+    \item \textbf{Amplitud ($A$):} $A = 6 \, \text{cm} = 0,06 \, \text{m}$.
+    \item \textbf{Frecuencia angular ($\omega$):} $\omega = 10\pi \, \text{rad/s}$.
+    \item \textbf{Número de onda ($k$):} $k = 0,2\pi \, \text{rad/cm}$. ¡Atención a las unidades!
+    \item \textbf{Punto para el apartado 2:} $x = 10 \, \text{cm}$, $t = 1 \, \text{s}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Onda Armónica} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un gráfico de una onda sinusoidal propagándose a lo largo del eje X. Etiquetar la amplitud (A) como la altura máxima de la onda y la longitud de onda ($\lambda$) como la distancia entre dos crestas consecutivas. Mostrar un vector $v_p$ indicando el sentido de propagación hacia la derecha (+X). En un punto específico de la onda, dibujar un vector vertical $v_y$ que represente la velocidad de vibración de ese punto del medio." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{onda_armonica.png}
+    }}
+    \caption{Parámetros de una onda armónica.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las propiedades de la onda se derivan de los parámetros $\omega$ y $k$:
+\begin{itemize}
+    \item Frecuencia: $f = \omega / (2\pi)$. Periodo: $T = 1/f = 2\pi / \omega$.
+    \item Longitud de onda: $\lambda = 2\pi / k$.
+    \item Velocidad de propagación: $v_p = \lambda f = \omega / k$.
+    \item Velocidad de vibración (transversal): $v_y(x,t) = \frac{\partial y}{\partial t}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Parámetros de la onda}
+$ T = \frac{2\pi}{\omega} $, $ f = \frac{1}{T} $, $ \lambda = \frac{2\pi}{k} $.
+\paragraph{2. Velocidades}
+$ v_p = \frac{\omega}{k} $.
+$ v_y(x,t) = \frac{\partial}{\partial t} [A\sin(\omega t - kx)] = A\omega\cos(\omega t - kx) $.
+\paragraph{3. Sentido de propagación}
+El signo negativo entre los términos $\omega t$ y $kx$ indica propagación en el sentido \textbf{positivo} del eje X. Para una onda idéntica en sentido contrario, el signo debe ser positivo: $y'(x,t) = A\sin(\omega t + kx)$.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Parámetros de la onda}
+\begin{itemize}
+    \item \textbf{Número de onda (k):} Por inspección, $k = \boldsymbol{0,2\pi \, \textbf{rad/cm}}$.
+    \item \textbf{Longitud de onda ($\lambda$):} $\lambda = \frac{2\pi}{k} = \frac{2\pi}{0,2\pi \, \text{rad/cm}} = \boldsymbol{10 \, \textbf{cm}}$.
+    \item \textbf{Periodo (T):} $T = \frac{2\pi}{\omega} = \frac{2\pi}{10\pi \, \text{rad/s}} = \boldsymbol{0,2 \, \textbf{s}}$.
+    \item \textbf{Frecuencia (f):} $f = \frac{1}{T} = \frac{1}{0,2 \, \text{s}} = \boldsymbol{5 \, \textbf{Hz}}$.
+\end{itemize}
+\begin{cajaresultado}
+    $k=0,2\pi\,\text{rad/cm}$, $\lambda=10\,\text{cm}$, $T=0,2\,\text{s}$ y $f=5\,\text{Hz}$.
+\end{cajaresultado}
+
+\paragraph{2. Velocidades}
+\begin{itemize}
+    \item \textbf{Velocidad de propagación ($v_p$):} $v_p = \frac{\omega}{k} = \frac{10\pi \, \text{rad/s}}{0,2\pi \, \text{rad/cm}} = \boldsymbol{50 \, \textbf{cm/s}}$.
+    \item \textbf{Velocidad de vibración ($v_y$):} $v_y(x,t) = 6 \cdot (10\pi) \cos(10\pi t - 0,2\pi x) = 60\pi \cos(10\pi t - 0,2\pi x) \, \text{cm/s}$.
+    Sustituyendo $x=10$ cm y $t=1$ s:
+    $ v_y(10, 1) = 60\pi \cos(10\pi \cdot 1 - 0,2\pi \cdot 10) = 60\pi \cos(10\pi - 2\pi) = 60\pi \cos(8\pi) $.
+    Como $\cos(2n\pi)=1$, $v_y(10,1) = 60\pi \approx \boldsymbol{188,5 \, \textbf{cm/s}}$.
+\end{itemize}
+\begin{cajaresultado}
+    $v_p = 50\,\text{cm/s}$ y $v_y(10,1) \approx 188,5\,\text{cm/s}$.
+\end{cajaresultado}
+
+\paragraph{3. Sentido y nueva ecuación}
+El signo "-" en $(5t-0,1x)$ indica propagación en el \textbf{sentido +X}.
+La ecuación para una onda en sentido contrario (-X) es:
+$ y'(x,t) = 6\sin(2\pi(5t+0,1x))\,\text{cm} $.
+\begin{cajaresultado}
+    La onda se propaga en el \textbf{sentido positivo del eje X}. La ecuación de la onda en sentido contrario es $\boldsymbol{y'(x,t) = 6\sin(2\pi(5t+0,1x))\,\textbf{cm}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El análisis de los parámetros de la función de onda permite caracterizarla completamente. Se ha determinado que la onda se propaga a 50 cm/s en el sentido +X. La velocidad de vibración de un punto del medio no es constante, sino que oscila armónicamente, alcanzando su valor máximo de $60\pi$ cm/s en el instante y posición especificados.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:2B_2001_sep_ext}
+
+\begin{cajaenunciado}
+A lo largo de un resorte se produce una onda longitudinal con la ayuda de un vibrador de 50 Hz de frecuencia. Si la distancia entre dos compresiones sucesivas en el muelle es de 16 cm. Determinar:
+\begin{enumerate}
+    \item La velocidad de la onda. (0.8 puntos)
+    \item Supuesta la onda armónica y que se propaga en el sentido positivo del eje OY, escribe su ecuación, suponiendo que en $t=0$ el foco se encuentra en la posición de máxima elongación y positiva, con una amplitud de 5 cm. (1,2 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Frecuencia ($f$):} $f = 50 \, \text{Hz}$.
+    \item \textbf{Longitud de onda ($\lambda$):} La distancia entre dos compresiones sucesivas en una onda longitudinal es, por definición, la longitud de onda. $\lambda = 16 \, \text{cm} = 0,16 \, \text{m}$.
+    \item \textbf{Amplitud ($A$):} $A = 5 \, \text{cm} = 0,05 \, \text{m}$.
+    \item \textbf{Sentido de propagación:} Sentido positivo del eje OY.
+    \item \textbf{Condición inicial:} Para el foco ($y=0$), en $t=0$, la elongación es máxima y positiva ($s(0,0) = +A$).
+    \item \textbf{Incógnitas:} Velocidad de la onda ($v$) y ecuación de la onda $s(y,t)$. (Usamos 's' para la elongación longitudinal para no confundir con el eje 'y').
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Onda Longitudinal} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un resorte (muelle) en reposo. Debajo, el mismo resorte con una onda longitudinal propagándose. Mostrar zonas de 'compresión' (espiras juntas) y 'rarefacción' (espiras separadas). Etiquetar la distancia entre dos compresiones sucesivas como la longitud de onda, $\lambda=16$ cm. Un vector $v$ indica la propagación hacia la derecha (+Y)." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{onda_longitudinal.png}
+    }}
+    \caption{Esquema de una onda longitudinal en un resorte.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Velocidad de propagación:} Se relaciona con la frecuencia y la longitud de onda mediante la ecuación fundamental de las ondas: $v = \lambda f$.
+    \item \textbf{Ecuación de onda armónica:} La forma general para una onda que se propaga en el sentido +Y es $s(y,t) = A\sin(\omega t - ky + \phi_0)$ o $A\cos(\omega t - ky + \phi_0')$. La fase inicial $\phi_0$ se determina a partir de las condiciones iniciales.
+    \item \textbf{Parámetros angulares:} $\omega = 2\pi f$ y $k = 2\pi / \lambda$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{1. Velocidad de la onda}
+\begin{gather}
+    v = \lambda f
+\end{gather}
+\paragraph{2. Ecuación de la onda}
+Primero se calculan $\omega$ y $k$:
+\begin{gather}
+    \omega = 2\pi f \quad ; \quad k = \frac{2\pi}{\lambda}
+\end{gather}
+La ecuación general es $s(y,t) = A\cos(\omega t - ky + \delta)$. Se usa la función coseno porque la elongación es máxima en el inicio.
+La condición inicial es $s(0,0)=+A$.
+\begin{gather}
+    s(0,0) = A\cos(\omega \cdot 0 - k \cdot 0 + \delta) = A\cos(\delta) = +A \nonumber \\
+    \cos(\delta) = 1 \implies \delta = 0
+\end{gather}
+Por lo tanto, la ecuación específica es:
+\begin{gather}
+    s(y,t) = A\cos(\omega t - ky)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{1. Velocidad de la onda}
+\begin{gather}
+    v = (0,16 \, \text{m}) \cdot (50 \, \text{Hz}) = 8 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    La velocidad de la onda es $\boldsymbol{v = 8 \, \textbf{m/s}}$.
+\end{cajaresultado}
+
+\paragraph{2. Ecuación de la onda}
+Calculamos los parámetros angulares:
+\begin{gather}
+    \omega = 2\pi (50 \, \text{Hz}) = 100\pi \, \text{rad/s} \\
+    k = \frac{2\pi}{0,16 \, \text{m}} = 12,5\pi \, \text{rad/m}
+\end{gather}
+Sustituyendo $A$, $\omega$ y $k$ en la ecuación (con todas las unidades en el SI):
+\begin{gather}
+    s(y,t) = 0,05 \cos(100\pi t - 12,5\pi y) \quad (\text{SI})
+\end{gather}
+\begin{cajaresultado}
+    La ecuación de la onda en unidades del SI es $\boldsymbol{s(y,t) = 0,05 \cos(100\pi t - 12,5\pi y)}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+A partir de las propiedades fundamentales de la onda (frecuencia y distancia entre compresiones), se ha determinado que se propaga a 8 m/s. Las condiciones iniciales del foco vibrador (elongación máxima en t=0) permiten definir completamente la fase de la onda, resultando en una función coseno sin desfase inicial para describir el desplazamiento longitudinal de las partículas del resorte.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque IV: Campo Eléctrico y Magnético}
+\label{sec:em_2001_sep_ext}
+% ======================================================================
+
+\subsection{Problema 1 - OPCIÓN A}
+\label{subsec:4A_2001_sep_ext}
+
+\begin{cajaenunciado}
+Una carga de $-3\,\mu\text{C}$ está localizada en el origen de coordenadas; una segunda carga de $4\,\mu\text{C}$ está localizada a 20 cm de la primera, sobre el eje OX positivo, y una tercera carga Q está situada a 32 cm de la primera sobre el eje OX positivo. La fuerza total que actúa sobre la carga de $4\,\mu\text{C}$ es de 120 N en la dirección positiva del eje OX. Determinar el valor de la carga Q.
+\textbf{Dato:} $K=9\times10^{9}$ S.I.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Se definen las cargas y sus posiciones en el SI.
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $q_1 = -3 \, \mu\text{C} = -3 \cdot 10^{-6} \, \text{C}$. Posición: $x_1 = 0 \, \text{m}$.
+    \item \textbf{Carga 2 ($q_2$):} $q_2 = +4 \, \mu\text{C} = +4 \cdot 10^{-6} \, \text{C}$. Posición: $x_2 = 20 \, \text{cm} = 0,2 \, \text{m}$.
+    \item \textbf{Carga 3 ($q_3$):} $q_3 = Q$. Posición: $x_3 = 32 \, \text{cm} = 0,32 \, \text{m}$.
+    \item \textbf{Fuerza neta sobre $q_2$:} $\vec{F}_{net,2} = +120 \vec{i} \, \text{N}$.
+    \item \textbf{Constante de Coulomb ($K$):} $K = 9 \cdot 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnita:} Valor de la carga $Q$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Fuerzas sobre Cargas Colineales} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un eje X horizontal. Colocar la carga $q_1 (-)$ en el origen. Colocar la carga $q_2 (+)$ en $x=0.2$ m. Colocar la carga $q_3 (Q)$ en $x=0.32$ m. Dibujar los vectores de fuerza que actúan SOBRE $q_2$: 1) El vector $\vec{F}_{1 \to 2}$ (fuerza de $q_1$ sobre $q_2$) apuntando hacia la izquierda (atractiva). 2) El vector $\vec{F}_{3 \to 2}$ (fuerza de $q_3$ sobre $q_2$) apuntando hacia la izquierda. 3) El vector de la fuerza neta $\vec{F}_{net,2}$ apuntando hacia la derecha, con una etiqueta de '120 N'. Aclarar que para que $\vec{F}_{net,2}$ apunte a la derecha, la fuerza $\vec{F}_{3 \to 2}$ debe ser repulsiva y más grande que $\vec{F}_{1 \to 2}$. Corregir el dibujo: $F_{3 \to 2}$ debe apuntar a la izquierda (repulsiva, ya que $x_3>x_2$). ¡No! Error en el razonamiento. Para que $\vec{F}_{3 \to 2}$ sea repulsiva y aleje a $q_2$ de $q_3$, debe apuntar a la izquierda. Si es atractiva, apuntará a la derecha. Revisar el problema."
+    \textit{Corrección del Prompt:} "Un eje X horizontal. Carga $q_1 (-3\mu C)$ en $x=0$. Carga $q_2 (+4\mu C)$ en $x=0.2$. Carga $q_3 (Q)$ en $x=0.32$. Vectores de fuerza sobre $q_2$: El vector $\vec{F}_{1 \to 2}$ es atractivo, apunta a la izquierda ($-\vec{i}$). El vector de fuerza neta $\vec{F}_{net,2}$ es de 120 N y apunta a la derecha ($+\vec{i}$). Para que la suma dé un vector hacia la derecha, el vector $\vec{F}_{3 \to 2}$ debe apuntar a la derecha y ser mayor en magnitud que $\vec{F}_{1 \to 2}$. Para que $\vec{F}_{3 \to 2}$ apunte a la derecha (hacia $q_3$), la fuerza debe ser atractiva, por lo tanto $Q$ debe ser negativa. Dibuja $\vec{F}_{1 \to 2}$ corto a la izquierda, $\vec{F}_{3 \to 2}$ largo a la derecha, y el resultante $\vec{F}_{net,2}$ mediano a la derecha."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerzas_colineales.png}
+    }}
+    \caption{Diagrama de fuerzas sobre la carga $q_2$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Se aplica el \textbf{Principio de Superposición} para las fuerzas eléctricas. La fuerza total sobre una carga es la suma vectorial de las fuerzas ejercidas por todas las demás cargas. La fuerza entre dos cargas puntuales viene dada por la \textbf{Ley de Coulomb}:
+$$ \vec{F}_{1 \to 2} = K \frac{q_1 q_2}{r^2} \vec{u}_r $$
+donde $\vec{u}_r$ es el vector unitario que va desde la carga fuente ($q_1$) a la carga de prueba ($q_2$).
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La fuerza neta sobre $q_2$ es $\vec{F}_{net,2} = \vec{F}_{1 \to 2} + \vec{F}_{3 \to 2}$. Como todas las cargas están en el eje X, podemos trabajar con componentes escalares:
+$$ F_{net,2} = F_{1 \to 2} + F_{3 \to 2} $$
+\begin{itemize}
+    \item \textbf{Fuerza de $q_1$ sobre $q_2$ ($\vec{F}_{1 \to 2}$):} Las cargas tienen signos opuestos, por lo que la fuerza es atractiva. $q_1$ atrae a $q_2$ hacia la izquierda (sentido $-\vec{i}$). Su módulo es:
+    $$ |\vec{F}_{1 \to 2}| = K \frac{|q_1 q_2|}{(x_2 - x_1)^2} $$
+    \item \textbf{Fuerza de $q_3$ sobre $q_2$ ($\vec{F}_{3 \to 2}$):} Desconocemos el signo de Q.
+\end{itemize}
+La ecuación vectorial completa es:
+\begin{gather}
+    \vec{F}_{net,2} = K \frac{q_1 q_2}{(x_2-x_1)^2} \vec{i} + K \frac{q_3 q_2}{(x_2-x_3)^2} \vec{i}
+\end{gather}
+Ojo con el vector unitario. La fuerza que $j$ ejerce sobre $i$ es $\vec{F}_{j \to i} = K \frac{q_j q_i}{|\vec{r}_i - \vec{r}_j|^3} (\vec{r}_i - \vec{r}_j)$.
+$$ \vec{F}_{net,2} = \underbrace{K \frac{q_1 q_2}{(x_2-x_1)^2} \vec{i}}_{\text{Fuerza de 1 sobre 2}} + \underbrace{K \frac{Q q_2}{(x_2-x_3)^2} \vec{i}}_{\text{Fuerza de 3 sobre 2}} $$
+Dado que $q_1q_2 < 0$, el primer término es negativo. Despejamos el término que contiene Q:
+\begin{gather}
+    K \frac{Q q_2}{(x_2-x_3)^2} \vec{i} = \vec{F}_{net,2} - K \frac{q_1 q_2}{(x_2-x_1)^2} \vec{i} \\
+    Q = \frac{(x_2-x_3)^2}{K q_2} \left( F_{net,2} - K \frac{q_1 q_2}{(x_2-x_1)^2} \right)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Primero calculamos la fuerza $\vec{F}_{1 \to 2}$:
+\begin{gather}
+    F_{1 \to 2} = (9\cdot 10^9) \frac{(-3\cdot 10^{-6})(4\cdot 10^{-6})}{(0,2-0)^2} = \frac{-0,108}{0,04} = -2,7 \, \text{N}
+\end{gather}
+Esta fuerza es de 2,7 N en el sentido $-\vec{i}$. Ahora usamos la ecuación de superposición:
+\begin{gather}
+    F_{net,2} = F_{1 \to 2} + F_{3 \to 2} \implies +120 \, \text{N} = -2,7 \, \text{N} + F_{3 \to 2} \nonumber \\
+    F_{3 \to 2} = 120 + 2,7 = +122,7 \, \text{N}
+\end{gather}
+La fuerza que $q_3$ ejerce sobre $q_2$ es de 122,7 N en el sentido $+\vec{i}$. Como $q_2$ está en $x=0,2$ y $q_3$ en $x=0,32$, el sentido $+\vec{i}$ apunta hacia $q_3$. Esto significa que la fuerza es atractiva, por lo que $Q$ debe tener signo opuesto a $q_2$. $Q$ debe ser \textbf{negativa}.
+Usamos la ley de Coulomb para $F_{3 \to 2}$ y despejamos $Q$:
+\begin{gather}
+    F_{3 \to 2} = K \frac{Q q_2}{(x_2-x_3)^2} \implies Q = \frac{F_{3 \to 2} \cdot (x_2-x_3)^2}{K q_2} \nonumber \\
+    Q = \frac{(122,7 \, \text{N}) \cdot (0,2 - 0,32)^2}{(9\cdot 10^9) \cdot (4\cdot 10^{-6})} = \frac{122,7 \cdot (-0,12)^2}{36000} = \frac{1,76688}{36000} \approx 4,9 \cdot 10^{-5} \, \text{C}
+\end{gather}
+Como hemos razonado que debe ser negativa, $Q = -4,9 \cdot 10^{-5} \, \text{C} = -49 \, \mu\text{C}$.
+\begin{cajaresultado}
+    El valor de la carga Q es $\boldsymbol{Q \approx -49 \, \mu\textbf{C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Aplicando el principio de superposición, la fuerza neta sobre la segunda carga es la suma de las fuerzas ejercidas por la primera y la tercera. Al conocer la fuerza neta y la fuerza de la primera carga, se deduce la fuerza que debe ejercer la tercera. A partir de esta fuerza y la distancia, la Ley de Coulomb permite determinar que la carga desconocida Q debe ser de aproximadamente -49 $\mu$C.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1 - OPCIÓN B}
+\label{subsec:4B_2001_sep_ext}
+
+\begin{cajaenunciado}
+La espira rectangular mostrada en la figura, uno de cuyos lados es móvil, se encuentra inmersa en el seno de un campo magnético uniforme, perpendicular al plano de la espira y dirigido hacia dentro del papel. El módulo del campo magnético es $B=1\,\text{T}$. El lado móvil, de longitud $a=10\,\text{cm}$, se desplaza con velocidad constante $v=2\,\text{m/s}$. Se pide calcular la fuerza electromotriz inducida en la espira.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Campo magnético ($B$):} $B = 1 \, \text{T}$ (uniforme, perpendicular y hacia dentro).
+    \item \textbf{Longitud del lado móvil ($a$):} $a = 10 \, \text{cm} = 0,1 \, \text{m}$.
+    \item \textbf{Velocidad del lado móvil ($v$):} $v = 2 \, \text{m/s}$ (constante).
+    \item \textbf{Incógnita:} Fuerza electromotriz inducida ($\mathcal{E}$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Inducción Electromagnética} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una espira rectangular formada por tres lados fijos en forma de 'U' y un cuarto lado que es una barra móvil. La barra móvil tiene longitud 'a' y se desplaza hacia la derecha con un vector velocidad 'v'. Toda la espira está en una región con un campo magnético uniforme, representado por cruces (X) para indicar que apunta hacia dentro del papel. Etiquetar la anchura variable de la espira como 'x'." \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{fem_inducida.png}
+    }}
+    \caption{Generación de una f.e.m. por variación del flujo magnético.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe por la \textbf{Ley de Faraday-Lenz de la inducción electromagnética}.
+\begin{itemize}
+    \item \textbf{Ley de Faraday:} La fuerza electromotriz (f.e.m.) inducida en un circuito cerrado es igual a la tasa de cambio del flujo magnético a través del circuito, con signo negativo: $\mathcal{E} = - \frac{d\Phi_B}{dt}$.
+    \item \textbf{Flujo Magnético ($\Phi_B$):} Para un campo uniforme y perpendicular a una superficie, el flujo es el producto del módulo del campo por el área de la superficie: $\Phi_B = B \cdot A$.
+    \item \textbf{Ley de Lenz (el signo negativo):} La corriente inducida en la espira circulará en un sentido tal que el campo magnético que ella misma crea se opone a la variación del flujo que la originó.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El área de la espira está cambiando debido al movimiento del lado móvil. Si llamamos $x$ a la distancia del lado móvil desde el lado izquierdo fijo, el área de la espira en cualquier instante es $A(t) = a \cdot x(t)$.
+El flujo magnético a través de la espira es:
+\begin{gather}
+    \Phi_B(t) = B \cdot A(t) = B \cdot a \cdot x(t)
+\end{gather}
+Ahora aplicamos la Ley de Faraday para calcular la f.e.m. inducida:
+\begin{gather}
+    \mathcal{E} = - \frac{d\Phi_B}{dt} = - \frac{d}{dt}(Bax)
+\end{gather}
+Como $B$ y $a$ son constantes, podemos sacarlas de la derivada:
+\begin{gather}
+    \mathcal{E} = -Ba \frac{dx}{dt}
+\end{gather}
+El término $\frac{dx}{dt}$ es la velocidad con la que cambia la anchura, que es precisamente la velocidad $v$ del lado móvil. Por lo tanto:
+\begin{gather}
+    \mathcal{E} = -Bav
+\end{gather}
+La pregunta pide calcular "la fuerza electromotriz", que se suele referir a su módulo.
+\begin{gather}
+    |\mathcal{E}| = Bav
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Sustituimos los valores dados en la ecuación para el módulo de la f.e.m.:
+\begin{gather}
+    |\mathcal{E}| = (1 \, \text{T}) \cdot (0,1 \, \text{m}) \cdot (2 \, \text{m/s}) = 0,2 \, \text{V}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza electromotriz inducida en la espira es de $\boldsymbol{0,2 \, \textbf{V}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Al desplazar el lado móvil de la espira, el área que esta encierra aumenta, lo que provoca un aumento del flujo magnético que la atraviesa. Según la Ley de Faraday-Lenz, esta variación de flujo induce una fuerza electromotriz de 0,2 V en la espira. La corriente inducida circularía en sentido horario para crear un campo magnético hacia fuera, oponiéndose al aumento de flujo hacia dentro.
+\end{cajaconclusion}
+
+\newpage
+% ======================================================================
+\section{Bloque III: Óptica Geométrica}
+\label{sec:optica_2001_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:3A_2001_sep_ext}
+
+\begin{cajaenunciado}
+Sea un espejo cóncavo, si se coloca frente a él un objeto a una distancia mayor que su radio de curvatura, se pide:
+\begin{enumerate}
+    \item Dibujar el diagrama de rayos. (0.9 puntos)
+    \item Características de la imagen. (0.6 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión gráfica y conceptual sobre formación de imágenes en espejos cóncavos.
+\begin{itemize}
+    \item \textbf{Elemento óptico:} Espejo esférico cóncavo.
+    \item \textbf{Posición del objeto ($s_o$):} A una distancia mayor que el radio de curvatura ($s_o > R$). Dado que el radio es el doble de la distancia focal ($R=2f$), esto significa que el objeto está más alejado del espejo que su centro de curvatura C.
+    \item \textbf{Tarea:} Construir el diagrama de rayos y describir la imagen.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+El diagrama de rayos es la parte central de la resolución.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Formación de imagen en espejo cóncavo ($s_o > R$)} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de trazado de rayos para un espejo esférico cóncavo. Dibuja el eje óptico horizontal. Dibuja el espejo cóncavo a la derecha, con su vértice V en el eje. Marca el foco F y el centro de curvatura C a la izquierda del espejo, con C al doble de distancia que F desde V. Dibuja un objeto vertical (flecha hacia arriba) a la izquierda de C. Traza los tres rayos principales desde la punta del objeto: 1) Un rayo paralelo al eje óptico que se refleja pasando por el foco F. 2) Un rayo que pasa por el centro de curvatura C y se refleja sobre sí mismo. 3) Un rayo que pasa por el foco F y se refleja paralelo al eje óptico. El punto donde se cruzan los tres rayos reflejados forma la punta de la imagen. Dibuja la imagen como una flecha sólida. Etiqueta claramente el objeto (o), la imagen (i), F, C y V." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{espejo_concavo_so_mayor_R.png}
+    }}
+    \caption{Trazado de rayos para un objeto situado más allá del centro de curvatura.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La construcción de la imagen se realiza mediante el trazado de rayos principales, cuyo comportamiento es conocido:
+\begin{enumerate}
+    \item \textbf{Rayo paralelo:} Un rayo que incide paralelo al eje óptico se refleja pasando por el foco (F).
+    \item \textbf{Rayo focal:} Un rayo que incide pasando por el foco (F) se refleja paralelo al eje óptico.
+    \item \textbf{Rayo radial:} Un rayo que incide pasando por el centro de curvatura (C) incide perpendicularmente al espejo y se refleja sobre sí mismo, sin desviación.
+\end{enumerate}
+La imagen se forma donde los rayos reflejados se cruzan.
+
+\subsubsection*{4. Características de la imagen}
+Observando el punto donde convergen los rayos reflejados en el diagrama, se determinan las características de la imagen formada:
+\begin{itemize}
+    \item \textbf{Naturaleza:} La imagen se forma por la intersección de los propios rayos de luz reflejados. Por tanto, es una imagen \textbf{real}. Podría ser proyectada sobre una pantalla situada en esa posición.
+    \item \textbf{Orientación:} La imagen está orientada en sentido contrario al objeto (la flecha apunta hacia abajo). Por tanto, es una imagen \textbf{invertida}.
+    \item \textbf{Tamaño:} La imagen formada es visiblemente más pequeña que el objeto original. Por tanto, es una imagen \textbf{de menor tamaño} (reducida).
+\end{itemize}
+La imagen se forma entre el centro de curvatura C y el foco F.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Cuando un objeto se coloca frente a un espejo cóncavo a una distancia superior a su radio de curvatura, el diagrama de rayos muestra que la imagen formada es \textbf{Real, Invertida y de menor tamaño} que el objeto.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:3B_2001_sep_ext}
+
+\begin{cajaenunciado}
+Enuncia la ley de la refracción (ley de Snell). ¿En qué consiste el fenómeno de la reflexión total? Particularizarlo para el caso de la transición agua-aire.
+\textbf{Dato:} $n_{agua}=1.33$
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica sobre la ley de Snell y el fenómeno de la reflexión total interna.
+\begin{itemize}
+    \item \textbf{Leyes a enunciar:} Ley de Snell, Reflexión Total.
+    \item \textbf{Caso particular:} Interfaz agua-aire.
+    \item \textbf{Índice de refracción del agua:} $n_{agua} = 1,33$.
+    \item \textbf{Índice de refracción del aire:} $n_{aire} \approx 1$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Reflexión Total Interna} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de la interfaz horizontal entre 'Agua ($n_1=1.33$)' abajo y 'Aire ($n_2=1$)' arriba. Dibuja la línea normal. Dibuja tres rayos originándose desde un punto en el agua: 1) Un rayo con un ángulo de incidencia pequeño que se refracta en el aire, alejándose de la normal. 2) Un rayo con un ángulo de incidencia igual al ángulo crítico ($\theta_c$) que se refracta a 90°, viajando rasante a la superficie. 3) Un rayo con un ángulo de incidencia mayor que $\theta_c$ que no se refracta, sino que se refleja completamente de vuelta en el agua (reflexión total). Etiqueta claramente $\theta_c$ y los medios." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{reflexion_total.png}
+    }}
+    \caption{Fenómeno de la reflexión total en la interfaz agua-aire.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Ley de la Refracción (Ley de Snell)}
+Cuando un rayo de luz atraviesa la superficie de separación (interfaz) entre dos medios transparentes con diferentes índices de refracción ($n_1$ y $n_2$), su trayectoria se desvía. La Ley de Snell relaciona el ángulo de incidencia ($\theta_1$) y el ángulo de refracción ($\theta_2$), medidos ambos respecto a la línea normal a la superficie:
+$$ n_1 \sin(\theta_1) = n_2 \sin(\theta_2) $$
+
+\paragraph{Fenómeno de la Reflexión Total}
+La reflexión total interna es un fenómeno que ocurre cuando la luz intenta pasar de un medio más denso ópticamente a uno menos denso. Para que ocurra, deben cumplirse dos condiciones:
+\begin{enumerate}
+    \item El rayo de luz debe viajar desde un medio con mayor índice de refracción hacia un medio con menor índice de refracción ($n_1 > n_2$).
+    \item El ángulo de incidencia $\theta_1$ debe ser mayor que un valor crítico, llamado \textbf{ángulo límite} o \textbf{ángulo crítico} ($\theta_c$).
+\end{enumerate}
+Cuando $\theta_1 > \theta_c$, no hay refracción y toda la luz es reflejada de vuelta al primer medio, como si la superficie fuera un espejo perfecto.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph{Cálculo del Ángulo Crítico}
+El ángulo crítico $\theta_c$ es el ángulo de incidencia para el cual el ángulo de refracción es exactamente $90^\circ$. Si $\theta_1 = \theta_c$, entonces $\theta_2 = 90^\circ$. Sustituyendo en la Ley de Snell:
+\begin{gather}
+    n_1 \sin(\theta_c) = n_2 \sin(90^\circ)
+\end{gather}
+Como $\sin(90^\circ) = 1$:
+\begin{gather}
+    n_1 \sin(\theta_c) = n_2 \implies \sin(\theta_c) = \frac{n_2}{n_1}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph{Caso particular Agua-Aire}
+La luz pasa del agua ($n_1 = 1,33$) al aire ($n_2 = 1$). Como $n_1 > n_2$, el fenómeno de reflexión total es posible. Calculamos el ángulo crítico:
+\begin{gather}
+    \sin(\theta_c) = \frac{n_{aire}}{n_{agua}} = \frac{1}{1,33} \approx 0,7518 \\
+    \theta_c = \arcsin(0,7518) \approx 48,75^\circ
+\end{gather}
+\begin{cajaresultado}
+    Para la transición agua-aire, el ángulo crítico es $\boldsymbol{\theta_c \approx 48,75^\circ}$. Cualquier rayo que incida desde el agua con un ángulo mayor a este será totalmente reflejado.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La Ley de Snell rige la refracción de la luz. Una consecuencia directa de esta ley es el fenómeno de la reflexión total, que ocurre cuando la luz viaja de un medio denso a uno menos denso con un ángulo de incidencia superior al ángulo crítico. Para la interfaz agua-aire, este ángulo es de aproximadamente $48,75^\circ$, un principio clave en aplicaciones como la fibra óptica.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque V: Física Moderna: Relatividad y Nuclear}
+\label{sec:moderna_relatividad_2001_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:5A_2001_sep_ext}
+
+\begin{cajaenunciado}
+Comenta la veracidad o falsedad de las siguientes afirmaciones, razonando la respuesta:
+\begin{enumerate}
+    \item La velocidad de la luz depende del estado de movimiento de la fuente que la emite. (0.5 puntos)
+    \item Dos sucesos simultáneos lo son en cualquier sistema de referencia. (0.5 puntos)
+    \item Si aplicamos una fuerza constante durante un tiempo ilimitado a una partícula de masa en reposo $m_0$, la energía cinética máxima que se alcanza es $1/2 m_0 c^2$. (0.5 puntos)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+Las tres afirmaciones se analizan bajo los principios de la Teoría de la Relatividad Especial de Einstein, que se basa en dos postulados fundamentales:
+\begin{enumerate}
+    \item \textbf{Principio de Relatividad:} Las leyes de la física son las mismas en todos los sistemas de referencia inerciales.
+    \item \textbf{Principio de Constancia de la Velocidad de la Luz:} La velocidad de la luz en el vacío ($c$) es la misma para todos los observadores inerciales, independientemente del movimiento de la fuente de luz o del observador.
+\end{enumerate}
+
+\paragraph{1. La velocidad de la luz depende del estado de movimiento de la fuente.}
+\textbf{FALSO.} Esta afirmación contradice directamente el segundo postulado de la Relatividad Especial. La velocidad de la luz en el vacío, $c$, es una constante universal. No importa si la fuente de luz se acerca, se aleja o está en reposo respecto al observador; la velocidad medida de esa luz será siempre $c$. Este es uno de los conceptos más anti-intuitivos pero fundamentales de la física moderna.
+
+\paragraph{2. Dos sucesos simultáneos lo son en cualquier sistema de referencia.}
+\textbf{FALSO.} La simultaneidad es relativa. Dos sucesos que son observados como simultáneos en un sistema de referencia inercial S, en general, no serán simultáneos para un observador en otro sistema de referencia S' que se mueva con respecto a S. Que dos eventos ocurran "a la vez" depende del estado de movimiento del observador. Este fenómeno se conoce como la \textit{relatividad de la simultaneidad}.
+
+\paragraph{3. Si aplicamos una fuerza constante..., la energía cinética máxima... es $1/2 m_0 c^2$.}
+\textbf{FALSO.} Esta afirmación contiene dos errores fundamentales.
+\begin{itemize}
+    \item \textbf{Error 1 (Fórmula de la energía):} La expresión $E_c = \frac{1}{2}mv^2$ es la fórmula de la energía cinética clásica, válida solo para velocidades mucho menores que $c$. La fórmula relativista correcta es $E_c = (\gamma - 1)m_0 c^2$, donde $\gamma = 1/\sqrt{1-v^2/c^2}$.
+    \item \textbf{Error 2 (Límite de energía):} Según la relatividad, ninguna partícula con masa en reposo puede alcanzar la velocidad de la luz. A medida que la velocidad de una partícula se acerca a $c$, su factor de Lorentz $\gamma$ tiende a infinito, y por lo tanto, su energía cinética también tiende a infinito. No existe una "energía cinética máxima"; se requeriría una cantidad infinita de energía para acelerar la partícula hasta la velocidad $c$.
+\end{itemize}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Las tres afirmaciones son falsas, ya que entran en conflicto directo con los principios y consecuencias de la Teoría de la Relatividad Especial. La velocidad de la luz es constante, la simultaneidad es relativa y la energía cinética de una partícula masiva no tiene un límite superior, tendiendo a infinito a medida que su velocidad se aproxima a la de la luz.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:5B_2001_sep_ext}
+
+\begin{cajaenunciado}
+¿Es la masa de una partícula $\alpha$ igual a la suma de las masas de dos neutrones y dos protones? ¿Por qué?.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre la masa de los núcleos atómicos.
+\begin{itemize}
+    \item \textbf{Partícula $\alpha$:} Es el núcleo de un átomo de Helio-4 ($^4_2\text{He}$).
+    \item \textbf{Componentes:} 2 protones y 2 neutrones (nucleones).
+    \item \textbf{Pregunta:} Si $M_{partícula\,\alpha} = 2 \cdot m_{protón} + 2 \cdot m_{neutrón}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Defecto de Masa y Energía de Enlace} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama conceptual de 'antes y después'. A la izquierda ('Antes'), mostrar dos esferas rojas (protones) y dos esferas grises (neutrones) separadas y en reposo. Poner una balanza debajo de ellas que marque una masa $M_{componentes}$. A la derecha ('Después'), mostrar las cuatro esferas unidas formando un núcleo compacto (partícula alfa). Poner una balanza debajo que marque una masa $M_{núcleo}$, visiblemente menor que la anterior. Dibujar una flecha saliendo del proceso de unión, etiquetada como 'Energía de enlace liberada, $E_b = \Delta m c^2$'." \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{defecto_masa.png}
+    }}
+    \caption{Ilustración del concepto de defecto de masa.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La respuesta se basa en la equivalencia masa-energía de Einstein ($E=mc^2$) y los conceptos de física nuclear de \textbf{energía de enlace} y \textbf{defecto de masa}.
+
+La afirmación es \textbf{FALSA}.
+
+\paragraph{Razón: El Defecto de Masa}
+Experimentalmente se comprueba que la masa de un núcleo atómico estable es \textit{siempre menor} que la suma de las masas de sus nucleones constituyentes (protones y neutrones) cuando están libres. Esta diferencia de masa se denomina \textbf{defecto de masa ($\Delta m$)}.
+
+Para la partícula alfa:
+$$ \Delta m = (2 \cdot m_{protón} + 2 \cdot m_{neutrón}) - M_{partícula\,\alpha} $$
+donde $\Delta m > 0$.
+
+\paragraph{Energía de Enlace}
+Este "defecto" de masa no es que la masa desaparezca, sino que se ha convertido en energía. Según la ecuación de Einstein, esta masa $\Delta m$ se libera en forma de energía cuando los nucleones se unen para formar el núcleo. Esta energía liberada es la \textbf{energía de enlace nuclear ($E_b$)}, que es la energía que mantiene unido al núcleo.
+$$ E_b = (\Delta m) c^2 $$
+La energía de enlace es también, por definición, la energía que se necesitaría suministrar al núcleo para separar todos sus nucleones y dejarlos libres y en reposo. Un núcleo es más estable cuanto mayor es su energía de enlace por nucleón.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+No, la masa de una partícula alfa es \textbf{menor} que la suma de las masas de dos protones y dos neutrones. La diferencia, conocida como defecto de masa, se corresponde con la energía de enlace nuclear que fue liberada al formarse el núcleo y que es responsable de mantener unidos a los nucleones en contra de la repulsión eléctrica de los protones.
+\end{cajaconclusion}
+
+\newpage
+
+% ======================================================================
+\section{Bloque VI: Física Moderna: Relatividad y Cuántica}
+\label{sec:moderna_cuantica_2001_sep_ext}
+% ======================================================================
+
+\subsection{Cuestión 1 - OPCIÓN A}
+\label{subsec:6A_2001_sep_ext}
+
+\begin{cajaenunciado}
+Si la vida media de los piones en reposo es de $2,6\times10^{-8}\,\text{s}$. ¿a qué velocidad deben viajar los piones para que su vida media, medida en el laboratorio, sea de $4,2\times10^{-8}\,\text{s}$?
+\textbf{Dato:} Velocidad de la luz en el vacío, $c=3\times10^{8}\,\text{m/s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Vida media propia ($\Delta t_0$):} Es el tiempo medido en el sistema de referencia en reposo del pión. $\Delta t_0 = 2,6 \cdot 10^{-8} \, \text{s}$.
+    \item \textbf{Vida media dilatada ($\Delta t$):} Es el tiempo medido en el sistema de referencia del laboratorio, desde donde se ve al pión moverse. $\Delta t = 4,2 \cdot 10^{-8} \, \text{s}$.
+    \item \textbf{Velocidad de la luz ($c$):} $c = 3 \cdot 10^8 \, \text{m/s}$.
+    \item \textbf{Incógnita:} La velocidad de los piones ($v$).
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Dilatación del Tiempo} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una ilustración en dos paneles. Panel 1 (Sistema en reposo): Un pión estático con un reloj al lado que marca un intervalo de tiempo $\Delta t_0 = 2.6 \times 10^{-8}$ s. Panel 2 (Sistema del Laboratorio): El mismo pión viajando a una alta velocidad $v$. Un observador en el laboratorio mide el mismo proceso con su reloj, que marca un intervalo de tiempo mayor, $\Delta t = 4.2 \times 10^{-8}$ s. El lema 'El tiempo en movimiento transcurre más lento' debe aparecer." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{dilatacion_tiempo.png}
+    }}
+    \caption{Concepto de dilatación del tiempo para una partícula en movimiento.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno descrito es la \textbf{dilatación del tiempo}, una consecuencia de la Teoría de la Relatividad Especial. Establece que el tiempo medido en un sistema de referencia en movimiento ($\Delta t$) es mayor que el tiempo medido en el sistema de referencia propio del suceso ($\Delta t_0$). La relación es:
+$$ \Delta t = \gamma \Delta t_0 $$
+donde $\gamma$ es el factor de Lorentz: $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}$. Siempre $\gamma \ge 1$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+El primer paso es calcular el factor de Lorentz $\gamma$ a partir de los tiempos.
+\begin{gather}
+    \gamma = \frac{\Delta t}{\Delta t_0}
+\end{gather}
+Una vez conocido $\gamma$, se despeja la velocidad $v$ de la definición de $\gamma$:
+\begin{gather}
+    \gamma = \frac{1}{\sqrt{1 - v^2/c^2}} \implies \gamma^2 = \frac{1}{1 - v^2/c^2} \nonumber \\
+    1 - \frac{v^2}{c^2} = \frac{1}{\gamma^2} \implies \frac{v^2}{c^2} = 1 - \frac{1}{\gamma^2} \nonumber \\
+    v = c \sqrt{1 - \frac{1}{\gamma^2}}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Calculamos $\gamma$:
+\begin{gather}
+    \gamma = \frac{4,2 \cdot 10^{-8} \, \text{s}}{2,6 \cdot 10^{-8} \, \text{s}} = \frac{42}{26} = \frac{21}{13} \approx 1,615
+\end{gather}
+Ahora calculamos la velocidad $v$:
+\begin{gather}
+    v = c \sqrt{1 - \frac{1}{(21/13)^2}} = c \sqrt{1 - \frac{13^2}{21^2}} = c \sqrt{1 - \frac{169}{441}} = c \sqrt{\frac{441 - 169}{441}} \nonumber \\
+    v = c \sqrt{\frac{272}{441}} \approx c \cdot (0,784) = (3 \cdot 10^8 \, \text{m/s}) \cdot 0,784 \approx 2,35 \cdot 10^8 \, \text{m/s}
+\end{gather}
+\begin{cajaresultado}
+    Los piones deben viajar a una velocidad de $\boldsymbol{v \approx 2,35 \cdot 10^8 \, \textbf{m/s}}$ (o aproximadamente 0,784c).
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La dilatación del tiempo es un efecto relativista bien comprobado experimentalmente. Para que la vida media de los piones, medida en el laboratorio, se alargue de 2,6 a 4,2 $\times 10^{-8}$ s, estos deben viajar a una velocidad cercana a la de la luz, concretamente al 78,4\% de $c$. A esta velocidad, el "tiempo" del pión transcurre más lentamente desde la perspectiva del laboratorio.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 1 - OPCIÓN B}
+\label{subsec:6B_2001_sep_ext}
+
+\begin{cajaenunciado}
+Explicar brevemente el efecto Compton y comentar si de él se puede extraer alguna conclusión sobre la naturaleza de la luz.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Cuestión teórica sobre el efecto Compton y sus implicaciones.
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Dispersión de Compton} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama que muestra un fotón incidente (representado como un paquete de onda con energía $E=h\nu$ y momento $p=h/\lambda$) que colisiona con un electrón en reposo. Después de la colisión, un fotón dispersado emerge en un ángulo $\theta$ con menor energía ($E'<E$) y mayor longitud de onda ($\lambda'>\lambda$). El electrón es dispersado (electrón de retroceso) en un ángulo $\phi$ con una cierta energía cinética. Etiquetar todas las partículas y sus propiedades antes y después de la colisión." \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{efecto_compton.png}
+    }}
+    \caption{Esquema de la interacción fotón-electrón en el efecto Compton.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph{Explicación del Efecto Compton}
+El efecto Compton, descubierto por Arthur Compton en 1923, consiste en la dispersión de radiación electromagnética de alta energía (como rayos X o rayos gamma) al colisionar con electrones libres o débilmente ligados en un material.
+La observación clave fue que la radiación dispersada tiene una longitud de onda mayor (y por lo tanto, menor frecuencia y menor energía) que la radiación incidente. Además, este cambio en la longitud de onda depende del ángulo de dispersión $\theta$ del fotón, pero no del material utilizado.
+
+La física clásica ondulatoria no podía explicar este cambio en la longitud de onda; predecía que los electrones oscilarían a la misma frecuencia que la onda incidente y re-irradiarían luz de la misma frecuencia.
+
+\paragraph{Análisis de la Colisión}
+Compton explicó el fenómeno tratando la interacción no como una onda con un electrón, sino como una \textbf{colisión elástica entre dos partículas}: un fotón y un electrón. En este modelo, se conservan tanto la energía total como el momento lineal total del sistema.
+\begin{itemize}
+    \item El fotón incidente tiene energía $E=h\nu$ y momento $p=h/\lambda$.
+    \item Parte de la energía y el momento del fotón se transfieren al electrón, que sale disparado (electrón de retroceso).
+    \item El fotón dispersado, al haber perdido energía, tiene una frecuencia menor ($\nu' < \nu$) y, en consecuencia, una longitud de onda mayor ($\lambda' > \lambda$).
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+La aplicación de las leyes de conservación de la energía y el momento (en su forma relativista) conduce a la \textbf{ecuación de Compton}, que describe el cambio en la longitud de onda:
+\begin{gather}
+    \Delta \lambda = \lambda' - \lambda = \frac{h}{m_e c}(1 - \cos\theta)
+\end{gather}
+donde $h$ es la constante de Planck, $m_e$ es la masa en reposo del electrón, $c$ es la velocidad de la luz y $\theta$ es el ángulo de dispersión del fotón.
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion} 
+\paragraph{Conclusión sobre la Naturaleza de la Luz}
+El efecto Compton fue una prueba crucial y definitiva de la \textbf{naturaleza corpuscular de la luz}. Mientras que el efecto fotoeléctrico demostraba que la energía de la luz está cuantizada en fotones, el efecto Compton fue más allá al demostrar que estos fotones también poseen \textbf{momento lineal} ($p=h/\lambda$) y que participan en colisiones como si fueran partículas materiales.
+
+Por lo tanto, la conclusión fundamental es que la luz exhibe una \textbf{dualidad onda-partícula}: en fenómenos de propagación e interferencia se comporta como una onda, pero en fenómenos de interacción con la materia a nivel atómico (como el efecto fotoeléctrico y el efecto Compton) se comporta como un flujo de partículas (fotones).
+\end{cajaconclusion} 

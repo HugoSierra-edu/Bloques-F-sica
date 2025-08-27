@@ -1,0 +1,893 @@
+% !TEX root = ../main.tex
+% ======================================================================
+% CAPÍTULO: Examen Septiembre 2020 - Convocatoria Extraordinaria
+% ======================================================================
+\chapter{Examen Septiembre 2020 - Convocatoria Extraordinaria}
+\label{chap:2020_sep_ext}
+
+% ----------------------------------------------------------------------
+\section{Bloque I: Interacción Gravitatoria}
+\label{sec:grav_2020_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 1}
+\label{subsec:C1_2020_sep_ext}
+
+\begin{cajaenunciado}
+Escribe la expresión del trabajo de una fuerza y su relación con la energía potencial si la fuerza es conservativa. Un satélite gira alrededor de la Tierra siguiendo una órbita circular. Razona qué trabajo realiza la fuerza gravitatoria cuando el satélite recorre un cuarto de la órbita. ¿Y si recorre una órbita completa?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Este es un problema puramente teórico. Los datos relevantes son:
+\begin{itemize}
+    \item \textbf{Fuerza a analizar:} Fuerza gravitatoria, que es una fuerza conservativa.
+    \item \textbf{Trayectoria:} Órbita circular.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Expresión del trabajo y su relación con la energía potencial.
+        \item Trabajo realizado en 1/4 de órbita.
+        \item Trabajo realizado en una órbita completa.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Fuerza y Desplazamiento en Órbita Circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de la Tierra en el centro. Un satélite se mueve en una órbita circular. En un punto de la órbita, dibujar el vector de la fuerza gravitatoria Fg, apuntando radialmente hacia el centro de la Tierra. En el mismo punto, dibujar un vector de desplazamiento infinitesimal dl, tangente a la trayectoria circular. Marcar claramente que el ángulo entre Fg y dl es de 90 grados."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{trabajo_orbita_circular.png}
+    }}
+    \caption{La fuerza gravitatoria es siempre perpendicular al desplazamiento en una órbita circular.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Trabajo de una Fuerza}
+El trabajo $W$ realizado por una fuerza $\vec{F}$ para mover una partícula desde un punto A hasta un punto B se define como la integral de línea del producto escalar del vector fuerza por el vector desplazamiento $d\vec{l}$:
+$$ W_{A \to B} = \int_{A}^{B} \vec{F} \cdot d\vec{l} $$
+\paragraph*{Fuerzas Conservativas}
+Una fuerza es \textbf{conservativa} si el trabajo que realiza sobre un objeto que se mueve entre dos puntos es independiente de la trayectoria seguida. Para estas fuerzas, se puede definir una función de \textbf{energía potencial ($E_p$)} tal que el trabajo realizado por la fuerza es igual a la variación negativa de dicha energía potencial:
+$$ W_{A \to B} = -\Delta E_p = -(E_{p,B} - E_{p,A}) $$
+La fuerza gravitatoria es un ejemplo canónico de fuerza conservativa.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Podemos resolver la cuestión de dos maneras:
+\paragraph*{Método 1: A partir de la definición de trabajo}
+En una órbita circular, el vector fuerza gravitatoria $\vec{F}_g$ es siempre radial y apunta hacia el centro de la órbita. El vector desplazamiento infinitesimal $d\vec{l}$ es siempre tangente a la trayectoria. Por lo tanto, $\vec{F}_g$ y $d\vec{l}$ son \textbf{perpendiculares} en todo momento. El producto escalar es:
+\begin{gather}
+    \vec{F}_g \cdot d\vec{l} = |\vec{F}_g| |d\vec{l}| \cos(90^\circ) = 0
+\end{gather}
+El trabajo total, al ser la integral de cero, es cero, independientemente del tramo de la trayectoria.
+\begin{gather}
+    W = \int \vec{F}_g \cdot d\vec{l} = \int 0 = 0
+\end{gather}
+\paragraph*{Método 2: A partir de la energía potencial}
+La energía potencial gravitatoria de un satélite en una órbita de radio $r$ es $E_p = -G \frac{M_T m}{r}$. En una órbita circular, el radio $r$ es constante. Por lo tanto, la energía potencial del satélite no cambia a lo largo de su trayectoria. Si consideramos dos puntos cualesquiera A y B de la órbita, $r_A = r_B$, y por tanto $E_{p,A} = E_{p,B}$.
+El trabajo realizado es:
+\begin{gather}
+    W_{A \to B} = -(E_{p,B} - E_{p,A}) = 0
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+Este es un problema cualitativo y no requiere sustitución numérica.
+\begin{cajaresultado}
+    El trabajo realizado por la fuerza gravitatoria al recorrer \textbf{un cuarto de órbita} es \textbf{cero}.
+\end{cajaresultado}
+\begin{cajaresultado}
+    El trabajo realizado por la fuerza gravitatoria al recorrer \textbf{una órbita completa} es \textbf{cero}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El trabajo realizado por la fuerza gravitatoria sobre un satélite en órbita circular es siempre nulo. Esto se debe a que la fuerza es en todo momento perpendicular a la dirección del movimiento, por lo que no tiene componente en la dirección del desplazamiento. Alternativamente, al ser una fuerza conservativa y no haber cambio en la energía potencial (ya que la distancia al centro es constante), el trabajo debe ser cero. Este resultado es válido para cualquier tramo de la órbita.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 1}
+\label{subsec:P1_2020_sep_ext}
+
+\begin{cajaenunciado}
+El proyecto Starlink ha colocado en órbita circular alrededor de la Tierra unos 300 satélites para comunicaciones, que son fácilmente visibles desde la superficie de la Tierra. Sabiendo que la velocidad de uno de dichos satélites es de $7,6\,\text{km/s}$:
+\begin{enumerate}
+    \item[a)] Calcula la altura h a la que se encuentra desde la superficie terrestre (en kilómetros). (1 punto)
+    \item[b)] ¿Cuántas órbitas circulares completas describe el satélite en un día? (1 punto)
+\end{enumerate}
+\textbf{Datos:} constante de gravitación universal, $G=6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$; masa de la Tierra, $M_T=6\cdot10^{24}\,\text{kg}$; radio de la Tierra, $R_T=6400\,\text{km}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad orbital ($v$):} $7,6\,\text{km/s} = 7600\,\text{m/s}$.
+    \item \textbf{Constante G:} $G = 6,67\cdot10^{-11}\,\text{N}\text{m}^2/\text{kg}^2$.
+    \item \textbf{Masa de la Tierra ($M_T$):} $M_T = 6\cdot10^{24}\,\text{kg}$.
+    \item \textbf{Radio de la Tierra ($R_T$):} $R_T = 6400\,\text{km} = 6,4\cdot10^6\,\text{m}$.
+    \item \textbf{Tiempo ($t$):} 1 día = $24 \cdot 3600\,\text{s} = 86400\,\text{s}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Altura de la órbita ($h$).
+        \item Número de vueltas en un día ($N$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Satélite en Órbita Circular} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de la Tierra (esfera de radio RT) en el centro. Un satélite en una órbita circular concéntrica. Etiquetar el radio de la Tierra RT. Etiquetar la altura h del satélite desde la superficie hasta la órbita. Etiquetar el radio total de la órbita r = RT + h. Dibujar el vector velocidad v del satélite, tangente a la órbita."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{satelite_starlink_orbita.png}
+    }}
+    \caption{Parámetros de la órbita del satélite.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{a) Altura de la órbita}
+La altura se deduce de la dinámica del movimiento circular uniforme (MCU). Para una órbita estable, la \textbf{Fuerza Gravitatoria ($F_g$)} que ejerce la Tierra sobre el satélite es la \textbf{Fuerza Centrípeta ($F_c$)} que lo mantiene en la trayectoria circular.
+\begin{itemize}
+    \item Ley de Gravitación Universal: $F_g = G \frac{M_T m}{r^2}$.
+    \item Segunda Ley de Newton para MCU: $F_c = m a_c = m \frac{v^2}{r}$.
+\end{itemize}
+\paragraph*{b) Número de órbitas}
+Se necesita calcular el \textbf{período orbital (T)}, que es el tiempo que tarda el satélite en dar una vuelta completa. Se obtiene de la cinemática del MCU, $v = \frac{2\pi r}{T}$.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Altura h}
+Igualando la fuerza gravitatoria y la centrípeta:
+\begin{gather}
+    G \frac{M_T m}{r^2} = m \frac{v^2}{r}
+\end{gather}
+Simplificando y despejando el radio orbital $r$:
+\begin{gather}
+    G \frac{M_T}{r} = v^2 \implies r = \frac{G M_T}{v^2}
+\end{gather}
+La altura $h$ es la diferencia entre el radio orbital y el radio de la Tierra:
+\begin{gather}
+    h = r - R_T = \frac{G M_T}{v^2} - R_T
+\end{gather}
+\paragraph*{b) Número de vueltas N}
+Primero despejamos el período $T$ de la fórmula de la velocidad:
+\begin{gather}
+    T = \frac{2\pi r}{v}
+\end{gather}
+El número de vueltas $N$ en un tiempo total $t$ (un día) es el cociente entre el tiempo total y el tiempo por vuelta (período):
+\begin{gather}
+    N = \frac{t}{T} = \frac{t \cdot v}{2\pi r}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Cálculo de la altura h}
+Primero calculamos el radio orbital $r$:
+\begin{gather}
+    r = \frac{(6,67\cdot10^{-11}) \cdot (6\cdot10^{24})}{(7600)^2} = \frac{4,002\cdot10^{14}}{5,776\cdot10^7} \approx 6,928\cdot10^6\,\text{m}
+\end{gather}
+Ahora la altura $h$:
+\begin{gather}
+    h = (6,928\cdot10^6\,\text{m}) - (6,4\cdot10^6\,\text{m}) = 0,528\cdot10^6\,\text{m} = 528\,\text{km}
+\end{gather}
+\begin{cajaresultado}
+    La altura del satélite sobre la superficie terrestre es $\boldsymbol{h \approx 528\,\textbf{km}}$.
+\end{cajaresultado}
+\paragraph*{b) Cálculo del número de vueltas N}
+Calculamos el período $T$:
+\begin{gather}
+    T = \frac{2\pi \cdot (6,928\cdot10^6\,\text{m})}{7600\,\text{m/s}} \approx 5718\,\text{s}
+\end{gather}
+Ahora el número de vueltas en un día (86400 s):
+\begin{gather}
+    N = \frac{86400\,\text{s}}{5718\,\text{s/vuelta}} \approx 15,11\,\text{vueltas}
+\end{gather}
+\begin{cajaresultado}
+    El satélite describe aproximadamente $\boldsymbol{15,11}$ órbitas completas en un día.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) Igualando la fuerza gravitatoria con la fuerza centrípeta, se ha determinado que para mantener una velocidad orbital de 7,6 km/s, el satélite debe encontrarse a una altura de $\mathbf{528 \, km}$ sobre la superficie terrestre, lo que corresponde a una órbita terrestre baja (LEO).
+
+b) Con el radio orbital calculado, se obtiene un período de aproximadamente 95 minutos. Esto implica que el satélite completa algo más de $\mathbf{15}$ vueltas a la Tierra cada día.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque II: Interacción Electromagnética}
+\label{sec:em_2020_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 2}
+\label{subsec:C2_2020_sep_ext}
+
+\begin{cajaenunciado}
+Una carga $q_1 = -3\,\text{nC}$ se encuentra situada en el origen de coordenadas del plano XY. Una segunda carga de $q_2 = 4\,\text{nC}$ está situada sobre el eje Y positivo a 2 m del origen. Calcula el vector campo eléctrico creado por cada una de las cargas en un punto P situado a 3 m del origen sobre el eje X positivo y el campo eléctrico total creado por ambas.
+\textbf{Dato:} constante de Coulomb, $k=9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $-3\,\text{nC} = -3\cdot10^{-9}\,\text{C}$. Posición $\vec{r}_1 = (0,0)\,\text{m}$.
+    \item \textbf{Carga 2 ($q_2$):} $4\,\text{nC} = 4\cdot10^{-9}\,\text{C}$. Posición $\vec{r}_2 = (0,2)\,\text{m} = 2\vec{j}\,\text{m}$.
+    \item \textbf{Punto de cálculo (P):} $\vec{r}_P = (3,0)\,\text{m} = 3\vec{i}\,\text{m}$.
+    \item \textbf{Constante k:} $k = 9\cdot10^{9}\,\text{N}\text{m}^2/\text{C}^2$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Campo de $q_1$ en P ($\vec{E}_1$).
+        \item Campo de $q_2$ en P ($\vec{E}_2$).
+        \item Campo total en P ($\vec{E}_T$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering \textbf{Campos Eléctricos en P} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de coordenadas XY. Carga negativa q1 en el origen (0,0). Carga positiva q2 en el eje Y en (0,2). Punto P en el eje X en (3,0). En el punto P, dibujar el vector E1 apuntando desde P hacia el origen (atractivo, en dirección -i). Dibujar el vector r2P desde q2 hasta P. Dibujar el vector E2 saliendo de q2, pasando por P y en la misma dirección que r2P (repulsivo). Dibujar el vector resultante ETotal como la suma vectorial de E1 y E2."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{campos_electricos_xy.png}
+    }}
+    \caption{Vectores de campo eléctrico en el punto P.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El problema se resuelve aplicando la definición del \textbf{campo eléctrico} creado por una carga puntual y el \textbf{principio de superposición}.
+\begin{itemize}
+    \item El campo eléctrico $\vec{E}$ creado por una carga $q$ en un punto P se calcula con la expresión vectorial de la Ley de Coulomb: $\vec{E} = k \frac{q}{r^2} \hat{u}_r = k \frac{q}{r^3} \vec{r}$, donde $\vec{r}$ es el vector que va desde la carga hasta el punto P.
+    \item El campo total en P es la suma vectorial de los campos creados por cada carga individualmente: $\vec{E}_T = \vec{E}_1 + \vec{E}_2$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Campo $\vec{E}_1$}
+El vector de posición desde $q_1$ hasta P es $\vec{r}_{1P} = \vec{r}_P - \vec{r}_1$.
+\begin{gather}
+    \vec{E}_1 = k \frac{q_1}{|\vec{r}_{1P}|^3} \vec{r}_{1P}
+\end{gather}
+\paragraph*{Campo $\vec{E}_2$}
+El vector de posición desde $q_2$ hasta P es $\vec{r}_{2P} = \vec{r}_P - \vec{r}_2$.
+\begin{gather}
+    \vec{E}_2 = k \frac{q_2}{|\vec{r}_{2P}|^3} \vec{r}_{2P}
+\end{gather}
+\paragraph*{Campo Total}
+\begin{gather}
+    \vec{E}_T = \vec{E}_1 + \vec{E}_2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{Cálculo de $\vec{E}_1$}
+$\vec{r}_{1P} = (3\vec{i}) - (0) = 3\vec{i}\,\text{m}$. Su módulo es $|\vec{r}_{1P}| = 3\,\text{m}$.
+\begin{gather}
+    \vec{E}_1 = (9\cdot10^9) \frac{-3\cdot10^{-9}}{3^3} (3\vec{i}) = -1 \cdot (3\vec{i}) = -3\vec{i}\,\text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    El campo creado por la carga $q_1$ es $\boldsymbol{\vec{E}_1 = -3\vec{i}\,\textbf{N/C}}$.
+\end{cajaresultado}
+\paragraph*{Cálculo de $\vec{E}_2$}
+$\vec{r}_{2P} = (3\vec{i}) - (2\vec{j}) = 3\vec{i} - 2\vec{j}\,\text{m}$. Su módulo es $|\vec{r}_{2P}| = \sqrt{3^2 + (-2)^2} = \sqrt{13}\,\text{m}$.
+\begin{gather}
+    \vec{E}_2 = (9\cdot10^9) \frac{4\cdot10^{-9}}{(\sqrt{13})^3} (3\vec{i} - 2\vec{j}) = \frac{36}{13\sqrt{13}} (3\vec{i} - 2\vec{j}) \approx 0,768 (3\vec{i} - 2\vec{j}) \nonumber \\
+    \vec{E}_2 \approx 2,30\vec{i} - 1,54\vec{j}\,\text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    El campo creado por la carga $q_2$ es $\boldsymbol{\vec{E}_2 \approx (2,30\vec{i} - 1,54\vec{j})\,\textbf{N/C}}$.
+\end{cajaresultado}
+\paragraph*{Cálculo de $\vec{E}_T$}
+\begin{gather}
+    \vec{E}_T = \vec{E}_1 + \vec{E}_2 = (-3\vec{i}) + (2,30\vec{i} - 1,54\vec{j}) = -0,70\vec{i} - 1,54\vec{j}\,\text{N/C}
+\end{gather}
+\begin{cajaresultado}
+    El campo eléctrico total en el punto P es $\boldsymbol{\vec{E}_T \approx (-0,70\vec{i} - 1,54\vec{j})\,\textbf{N/C}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Se ha calculado el campo eléctrico de cada carga en el punto P utilizando la ley de Coulomb en forma vectorial. El campo de la carga negativa $q_1$ es atractivo (apunta hacia ella), mientras que el de la carga positiva $q_2$ es repulsivo (se aleja de ella). La suma vectorial de ambos, aplicando el principio de superposición, da como resultado un campo total de $\mathbf{(-0,70\vec{i} - 1,54\vec{j})\,N/C}$.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Cuestión 3}
+\label{subsec:C3_2020_sep_ext}
+
+\begin{cajaenunciado}
+Dos cargas $q_1 = 8,9\,\mu\text{C}$ y $q_2 = 17,8\,\mu\text{C}$ se encuentran en el vacío y situadas, respectivamente, en los puntos $O(0,0,0)\,\text{cm}$ y $P(1,0,0)\,\text{cm}$. Enuncia el teorema de Gauss para el campo eléctrico. Calcula, justificadamente, el flujo del campo eléctrico a través de una superficie esférica de radio 0,5 cm centrada en el punto O. ¿Cambia el flujo si en lugar de una esfera se trata de un cubo de lado 0,5 cm?
+\textbf{Dato:} permitividad del vacío $\epsilon_0 = 8,9\cdot10^{-12}\,\text{C}^2\text{N}^{-1}\text{m}^{-2}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Carga 1 ($q_1$):} $8,9\,\mu\text{C} = 8,9\cdot10^{-6}\,\text{C}$. Posición: Origen $O(0,0,0)\,\text{cm}$.
+    \item \textbf{Carga 2 ($q_2$):} $17,8\,\mu\text{C} = 17,8\cdot10^{-6}\,\text{C}$. Posición: $P(1,0,0)\,\text{cm}$.
+    \item \textbf{Superficie Gaussiana 1:} Esfera de radio $R = 0,5\,\text{cm}$, centrada en O.
+    \item \textbf{Superficie Gaussiana 2:} Cubo de lado $L = 0,5\,\text{cm}$.
+    \item \textbf{Constante $\epsilon_0$:} $8,9\cdot10^{-12}\,\text{C}^2\text{N}^{-1}\text{m}^{-2}$.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Flujo a través de la esfera ($\Phi_{esfera}$).
+        \item Flujo a través del cubo ($\Phi_{cubo}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Superficie Gaussiana} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de coordenadas 3D. Carga puntual q1 en el origen (0,0,0). Carga puntual q2 en el eje X en (1,0,0). Dibujar una esfera transparente centrada en el origen con un radio de 0,5. Mostrar que la carga q1 está dentro de la esfera y la carga q2 está fuera. Etiquetar las cargas, el radio y las posiciones."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{teorema_gauss.png}
+    }}
+    \caption{La superficie gaussiana (esfera) encierra únicamente la carga $q_1$.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\paragraph*{Teorema de Gauss para el Campo Eléctrico}
+El teorema de Gauss establece que el \textbf{flujo del campo eléctrico ($\Phi_E$)} a través de cualquier superficie cerrada (llamada superficie gaussiana) es directamente proporcional a la \textbf{carga eléctrica neta ($Q_{int}$)} encerrada dentro de dicha superficie.
+Matemáticamente, se expresa como:
+$$ \Phi_E = \oint_S \vec{E} \cdot d\vec{S} = \frac{Q_{int}}{\epsilon_0} $$
+Donde:
+\begin{itemize}
+    \item $\Phi_E$ es el flujo eléctrico, medido en $\text{N}\cdot\text{m}^2/\text{C}$ o $\text{V}\cdot\text{m}$.
+    \item $\vec{E}$ es el vector campo eléctrico.
+    \item $d\vec{S}$ es el vector diferencial de superficie, perpendicular a la superficie y hacia afuera.
+    \item $Q_{int}$ es la suma algebraica de todas las cargas en el interior de la superficie S.
+    \item $\epsilon_0$ es la permitividad eléctrica del vacío.
+\end{itemize}
+La principal implicación de este teorema es que el flujo eléctrico a través de una superficie cerrada solo depende de la carga interior, y no de la forma o el tamaño de la superficie ni de las cargas exteriores.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Flujo a través de la esfera}
+La superficie esférica está centrada en el origen y tiene un radio de $R=0,5\,\text{cm}$.
+\begin{itemize}
+    \item La carga $q_1$ está en el origen, por lo que está \textbf{dentro} de la esfera.
+    \item La carga $q_2$ está en $x=1\,\text{cm}$, que está a una distancia mayor que el radio de la esfera, por lo que está \textbf{fuera}.
+\end{itemize}
+La carga interior neta es $Q_{int} = q_1$. Aplicando el teorema de Gauss:
+\begin{gather}
+    \Phi_{esfera} = \frac{q_1}{\epsilon_0}
+\end{gather}
+\paragraph*{Flujo a través del cubo}
+El teorema de Gauss no depende de la forma de la superficie, solo de la carga neta encerrada. Si el cubo también está centrado en el origen y tiene un lado de 0,5 cm, la única carga que encierra sigue siendo $q_1$. Por lo tanto, el flujo será el mismo.
+\begin{gather}
+    \Phi_{cubo} = \Phi_{esfera}
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \Phi_{esfera} = \frac{8,9\cdot10^{-6}\,\text{C}}{8,9\cdot10^{-12}\,\text{C}^2\text{N}^{-1}\text{m}^{-2}} = 1\cdot10^6 \, \text{N}\cdot\text{m}^2/\text{C}
+\end{gather}
+\begin{cajaresultado}
+    El flujo del campo eléctrico a través de la superficie esférica es $\boldsymbol{\Phi_E = 10^6\,\textbf{N}\cdot\textbf{m}^2/\textbf{C}}$.
+\end{cajaresultado}
+
+\paragraph*{Cambio de superficie}
+\newpage
+\begin{cajaresultado}
+    \textbf{No cambia}. Según el teorema de Gauss, el flujo a través de una superficie cerrada solo depende de la carga neta en su interior, no de la forma de la superficie. Como el cubo encerraría la misma carga ($q_1$), el flujo sería idéntico.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+El teorema de Gauss es una herramienta poderosa que relaciona el flujo eléctrico con las fuentes del campo (las cargas). Aplicándolo, se ha determinado un flujo de $\mathbf{10^6\,N \cdot m^2/C}$ a través de la esfera, ya que esta solo encierra la carga $q_1$. Se ha razonado que, por la propia naturaleza del teorema, el flujo no se vería alterado si la superficie fuese un cubo, siempre que la carga encerrada siguiera siendo la misma.
+\end{cajaconclusion}
+
+\newpage
+% ======================================================================
+% INICIO DE LA CUARTA PARTE - BLOQUES II (cont.) y III
+% Este bloque de código contiene las soluciones a los ejercicios
+% restantes de Electromagnetismo y a todos los de Ondas y Óptica.
+% ======================================================================
+
+% ----------------------------------------------------------------------
+% A INSERTAR EN \section{Bloque II: Interacción Electromagnética}
+% ----------------------------------------------------------------------
+\subsection{Cuestión 4}
+\label{subsec:C4_2020_sep_ext}
+
+\begin{cajaenunciado}
+En la figura se muestra una espira rectangular de lados 10 cm y 12 cm en el seno de un campo magnético $\vec{B}$ perpendicular al plano del papel y saliente. Se hace variar $|\vec{B}|$ desde 0 a 1 T en un intervalo de tiempo de 1,2 s. Calcula la variación de flujo magnético y la fuerza electromotriz media inducida en la espira. Indica y justifica el sentido de la corriente eléctrica inducida.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Dimensiones de la espira:} Lados $a=10\,\text{cm}=0,1\,\text{m}$ y $b=12\,\text{cm}=0,12\,\text{m}$.
+    \item \textbf{Área de la espira (S):} $S = a \cdot b = 0,1 \cdot 0,12 = 0,012\,\text{m}^2$.
+    \item \textbf{Campo magnético inicial ($B_i$):} $B_i = 0\,\text{T}$.
+    \item \textbf{Campo magnético final ($B_f$):} $B_f = 1\,\text{T}$.
+    \item \textbf{Intervalo de tiempo ($\Delta t$):} $\Delta t = 1,2\,\text{s}$.
+    \item \textbf{Orientación:} El campo $\vec{B}$ es perpendicular a la superficie de la espira.
+    \item \textbf{Incógnitas:}
+    \begin{itemize}
+        \item Variación del flujo magnético ($\Delta\Phi_B$).
+        \item Fuerza electromotriz media inducida ($\varepsilon_{media}$).
+        \item Sentido de la corriente inducida.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Corriente inducida en la espira} \vspace{0.5cm} \textit{Prompt para la imagen:} "Una espira rectangular. El campo magnético B es saliente (representado por puntos). Una flecha indica que la magnitud de B aumenta. Dentro de la espira, dibujar una flecha curvada que indique el sentido de la corriente inducida (I_inducida) en sentido horario. Dibujar también en el centro un vector B_inducido, que debe ser entrante (representado por una cruz) para oponerse al aumento del flujo saliente."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{espira_flujo_variable.png}
+    }}
+    \caption{Sentido de la corriente inducida por aumento de flujo saliente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+El fenómeno se describe por la \textbf{Ley de Faraday-Lenz}.
+\begin{itemize}
+    \item \textbf{Flujo Magnético ($\Phi_B$):} Para un campo uniforme perpendicular a una superficie plana, el flujo es el producto del módulo del campo por el área: $\Phi_B = B \cdot S$.
+    \item \textbf{Ley de Faraday:} La fuerza electromotriz (fem) inducida en un circuito es igual a la tasa de cambio del flujo magnético a través del circuito, con signo negativo. Para valores medios: $\varepsilon_{media} = -\frac{\Delta\Phi_B}{\Delta t}$.
+    \item \textbf{Ley de Lenz:} El signo negativo indica que la corriente inducida genera un campo magnético propio que se opone a la variación del flujo magnético que la originó.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Variación de Flujo}
+El flujo magnético inicial y final son $\Phi_i = B_i S$ y $\Phi_f = B_f S$, respectivamente. La variación de flujo es:
+\begin{gather}
+    \Delta\Phi_B = \Phi_f - \Phi_i = (B_f - B_i) S
+\end{gather}
+\paragraph*{Fuerza Electromotriz Media}
+Aplicando la ley de Faraday para valores medios:
+\begin{gather}
+    \varepsilon_{media} = -\frac{\Delta\Phi_B}{\Delta t} = -\frac{(B_f - B_i) S}{\Delta t}
+\end{gather}
+\paragraph*{Sentido de la Corriente}
+Se razona con la Ley de Lenz:
+\begin{enumerate}
+    \item El campo $\vec{B}$ es \textbf{saliente}.
+    \item Como su módulo aumenta de 0 a 1 T, el flujo magnético saliente está \textbf{aumentando}.
+    \item La espira reacciona para contrarrestar este aumento. Por tanto, la corriente inducida debe crear un campo magnético inducido $\vec{B}_{ind}$ que sea \textbf{entrante}.
+    \item Usando la regla de la mano derecha, una corriente que crea un campo entrante en el interior de la espira debe circular en sentido \textbf{horario}.
+\end{enumerate}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\begin{gather}
+    \Delta\Phi_B = (1\,\text{T} - 0\,\text{T}) \cdot 0,012\,\text{m}^2 = 0,012\,\text{Wb}
+\end{gather}
+\begin{cajaresultado}
+    La variación de flujo magnético es $\boldsymbol{\Delta\Phi_B = 0,012\,\textbf{Wb}}$.
+\end{cajaresultado}
+\begin{gather}
+    \varepsilon_{media} = -\frac{0,012\,\text{Wb}}{1,2\,\text{s}} = -0,01\,\text{V}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza electromotriz media inducida es $\boldsymbol{\varepsilon_{media} = -0,01\,\textbf{V}}$ (su magnitud es 0,01 V).
+\end{cajaresultado}
+\begin{cajaresultado}
+    El sentido de la corriente inducida es \textbf{horario}.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La variación temporal del campo magnético produce una variación del flujo magnético de $\mathbf{0,012\,Wb}$ a través de la espira. Según la ley de Faraday, esto induce una fem media de $\mathbf{-0,01\,V}$. La ley de Lenz nos permite determinar que para oponerse al aumento de un flujo saliente, la corriente inducida debe circular en sentido horario, generando un campo magnético propio en sentido entrante.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 2}
+\label{subsec:P2_2020_sep_ext}
+
+\begin{cajaenunciado}
+La figura muestra dos conductores rectilíneos, indefinidos y paralelos entre sí, separados por una distancia d en el plano YZ. Se conoce la intensidad de corriente $I_1=1\,\text{A}$, el módulo del campo magnético que esta corriente crea en el punto P de la figura, $B_1 = 10^{-5}\,\text{T}$, así como el módulo del campo magnético total $B=3B_1$.
+\begin{enumerate}
+    \item[a)] Calcula la distancia d y el vector campo magnético $\vec{B}_2$ en el punto P. (1 punto)
+    \item[b)] Si una carga $q=1\,\mu\text{C}$ pasa por dicho punto P con una velocidad $\vec{v}=10^6\vec{k}\,\text{m/s}$, calcula la fuerza $\vec{F}$ (módulo, dirección y sentido) sobre ella. Representa los vectores $\vec{v}$, $\vec{B}$ y $\vec{F}$. (1 punto)
+\end{enumerate}
+\textbf{Dato:} permeabilidad magnética del vacío, $\mu_0=4\pi\cdot10^{-7}\,\text{T}\cdot\text{m/A}$.
+
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Corriente 1 ($I_1$):} $1\,\text{A}$. Dirección: $+z$.
+    \item \textbf{Campo de $I_1$ en P ($|\vec{B}_1|$):} $10^{-5}\,\text{T}$.
+    \item \textbf{Campo total en P ($|\vec{B}_T|$):} $3B_1 = 3\cdot10^{-5}\,\text{T}$.
+    \item \textbf{Geometría (de la figura):} $I_1$ e $I_2$ son paralelos (ambos en $+z$). Distancia $I_1 \leftrightarrow I_2$ es $d$. Distancia $P \leftrightarrow I_1$ es $d$.
+    \item \textbf{Carga (q):} $1\,\mu\text{C} = 10^{-6}\,\text{C}$.
+    \item \textbf{Velocidad ($\vec{v}$):} $10^6\vec{k}\,\text{m/s} = 10^6\vec{k}\,\text{m/s}$. (Según los ejes de la figura, $\vec{k}$ es el vector unitario en la dirección Z).
+    \item \textbf{Constante $\mu_0$:} $4\pi\cdot10^{-7}\,\text{T}\cdot\text{m/A}$.
+    \item \textbf{Incógnitas:} $d$, $\vec{B}_2$, $\vec{F}$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (a): Campos Magnéticos} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de ejes: Y a la derecha, Z hacia arriba, X saliente. Hilo $I_1$ en $y=0$, hilo $I_2$ en $y=d$. Ambos con corriente hacia arriba (+Z). Punto P en $y=-d$. En P, dibujar el vector $\vec{B}_1$ (creado por $I_1$) apuntando a la derecha (+Y). En P, dibujar el vector $\vec{B}_2$ (creado por $I_2$) apuntando también a la derecha (+Y)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{campos_magneticos_hilos.png}
+    }}
+    \hfill
+    \fbox{\parbox{0.45\textwidth}{\centering \textbf{Apartado (b): Fuerza de Lorentz} \vspace{0.5cm} \textit{Prompt para la imagen:} "Sistema de ejes YZ (X saliente). En el punto P, dibujar el vector velocidad $\vec{v}$ en dirección +Z (hacia arriba). Dibujar el vector campo magnético total $\vec{B}_T$ en dirección +Y (a la derecha). Usando la regla de la mano derecha para $\vec{F} = q(\vec{v} \times \vec{B})$, dibujar el vector Fuerza $\vec{F}$ en dirección +X (saliendo del papel)."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fuerza_lorentz_hilos.png}
+    }}
+    \caption{Representación de los campos y la fuerza de Lorentz.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ley de Biot-Savart (o Ley de Ampère):} El módulo del campo magnético creado por un conductor rectilíneo indefinido a una distancia $r$ es $B = \frac{\mu_0 I}{2\pi r}$. Su dirección es tangencial a las líneas de campo circulares y se determina por la regla de la mano derecha.
+    \item \textbf{Principio de Superposición:} El campo magnético total en un punto es la suma vectorial de los campos creados por cada fuente: $\vec{B}_T = \vec{B}_1 + \vec{B}_2$.
+    \item \textbf{Fuerza de Lorentz:} La fuerza sobre una carga $q$ que se mueve con velocidad $\vec{v}$ en un campo $\vec{B}$ es $\vec{F} = q(\vec{v} \times \vec{B})$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Distancia d y Campo $\vec{B}_2$}
+De la ley de Biot-Savart, despejamos la distancia $d$ para el hilo 1:
+\begin{gather}
+    B_1 = \frac{\mu_0 I_1}{2\pi d} \implies d = \frac{\mu_0 I_1}{2\pi B_1}
+\end{gather}
+Según la figura y la regla de la mano derecha (ejes Y-derecha, Z-arriba), ambos hilos crean en P un campo en la dirección $+y$.
+$\vec{B}_1 = B_1 \vec{j}$ y $\vec{B}_2 = B_2 \vec{j}$.
+El campo total es $\vec{B}_T = (B_1+B_2)\vec{j}$. Su módulo es $|\vec{B}_T| = B_1+B_2$.
+Dado que $|\vec{B}_T| = 3B_1$, tenemos $B_1+B_2 = 3B_1 \implies B_2 = 2B_1$.
+\paragraph*{b) Fuerza $\vec{F}$}
+La fuerza viene dada por la expresión de Lorentz, con $\vec{B} = \vec{B}_T$:
+\begin{gather}
+    \vec{F} = q(\vec{v} \times \vec{B}_T)
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Cálculo de d y $\vec{B}_2$}
+\begin{gather}
+    d = \frac{(4\pi\cdot10^{-7}) \cdot (1)}{2\pi \cdot (10^{-5})} = 2\cdot10^{-2}\,\text{m} = 2\,\text{cm}
+\end{gather}
+El módulo de $B_2$ es $B_2 = 2 \cdot B_1 = 2 \cdot 10^{-5}\,\text{T}$. El vector es:
+\begin{cajaresultado}
+    La distancia es $\boldsymbol{d = 2\,\textbf{cm}}$ y el campo del segundo hilo es $\boldsymbol{\vec{B}_2 = 2\cdot10^{-5}\vec{j}\,\textbf{T}}$.
+\end{cajaresultado}
+\paragraph*{b) Cálculo de la Fuerza $\vec{F}$}
+El campo total es $\vec{B}_T = \vec{B}_1 + \vec{B}_2 = 10^{-5}\vec{j} + 2\cdot10^{-5}\vec{j} = 3\cdot10^{-5}\vec{j}\,\text{T}$.
+\begin{gather}
+    \vec{F} = (10^{-6}) \cdot [ (10^6 \vec{k}) \times (3\cdot10^{-5}\vec{j}) ] = (10^{-6}) \cdot [ 30 \cdot (\vec{k}\times\vec{j}) ]
+\end{gather}
+Como $\vec{k}\times\vec{j} = -\vec{i}$, la fuerza es:
+\begin{gather}
+    \vec{F} = 30 \cdot 10^{-6} (-\vec{i}) = -3\cdot10^{-5}\vec{i}\,\text{N}
+\end{gather}
+\begin{cajaresultado}
+    La fuerza sobre la carga es $\boldsymbol{\vec{F} = -3\cdot10^{-5}\vec{i}\,\textbf{N}}$. Su módulo es $3\cdot10^{-5}\,\text{N}$, dirección la del eje X, sentido negativo.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) A partir del campo generado por el primer hilo, se ha deducido una distancia de 2 cm. Aplicando el principio de superposición y la condición del campo total, se ha determinado que el campo del segundo hilo en P es $\mathbf{2\cdot10^{-5}\vec{j}\,T}$.
+
+b) La partícula se mueve paralelamente a los hilos, y el campo magnético total es perpendicular a ellos. La fuerza de Lorentz resultante es perpendicular a ambos, resultando en $\mathbf{-3\cdot10^{-5}\vec{i}\,N}$, una fuerza que empuja a la carga en la dirección negativa del eje X.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque III: Ondas y Óptica Geométrica}
+\label{sec:ondopt_2020_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 5}
+\label{subsec:C5_2020_sep_ext}
+
+\begin{cajaenunciado}
+Un rayo de luz incide sobre una lámina de caras plano-paralelas de índice de refracción $n_2$, situada en un medio de índice de refracción $n_1$. Demuestra que el rayo que emerge de la lámina es paralelo al rayo incidente.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una demostración teórica. Los datos son:
+\begin{itemize}
+    \item \textbf{Medio inicial y final:} Índice de refracción $n_1$.
+    \item \textbf{Medio intermedio (lámina):} Índice de refracción $n_2$.
+    \item \textbf{Geometría:} Lámina de caras plano-paralelas.
+    \item \textbf{Incógnita:} Demostrar que el rayo emergente es paralelo al rayo incidente.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Lámina de caras plano-paralelas} \vspace{0.5cm} \textit{Prompt para la imagen:} "Recrear la figura del examen. Una lámina rectangular vertical (medio n2) rodeada por un medio n1. Un rayo de luz incide desde la izquierda con un ángulo i1 respecto a la normal (línea punteada). El rayo se refracta dentro de la lámina con un ángulo r1. Este rayo viaja hasta la segunda cara, donde incide con un ángulo i2. Finalmente, emerge de la lámina con un ángulo r2. Las dos normales deben ser paralelas entre sí. Etiquetar claramente todos los ángulos y los índices de refracción."
+    \vspace{0.5cm} % \includegraphics[width=0.7\linewidth]{lamina_caras_paralelas.png}
+    }}
+    \caption{Trayectoria de un rayo de luz a través de la lámina.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La demostración se basa en la aplicación sucesiva de la \textbf{Ley de Snell de la Refracción} en las dos interfaces (caras) de la lámina. La ley establece que $n_i \sin\theta_i = n_r \sin\theta_r$. También se utilizará la \textbf{geometría de rectas paralelas cortadas por una secante}.
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Para demostrar que el rayo emergente es paralelo al incidente, debemos probar que el ángulo de emergencia ($r_2$) es igual al ángulo de incidencia inicial ($i_1$).
+
+\paragraph*{1. Refracción en la primera cara (Medio 1 $\to$ Medio 2)}
+Aplicamos la Ley de Snell en el punto donde el rayo entra a la lámina:
+\begin{gather}
+    n_1 \sin(i_1) = n_2 \sin(r_1) \label{eq:snell1}
+\end{gather}
+
+\paragraph*{2. Refracción en la segunda cara (Medio 2 $\to$ Medio 1)}
+Aplicamos la Ley de Snell en el punto donde el rayo sale de la lámina:
+\begin{gather}
+    n_2 \sin(i_2) = n_1 \sin(r_2) \label{eq:snell2}
+\end{gather}
+
+\paragraph*{3. Relación geométrica}
+Dado que las caras de la lámina son paralelas, las normales a ambas superficies también son paralelas. El rayo de luz que viaja por el interior de la lámina actúa como una recta secante que corta a estas dos rectas paralelas. Por la propiedad de los ángulos alternos internos, el ángulo de refracción de la primera cara ($r_1$) es igual al ángulo de incidencia de la segunda cara ($i_2$):
+\begin{gather}
+    r_1 = i_2 \label{eq:geometria}
+\end{gather}
+
+\paragraph*{4. Combinación de las ecuaciones}
+Sustituimos la relación geométrica \eqref{eq:geometria} en la segunda ley de Snell \eqref{eq:snell2}:
+\begin{gather}
+    n_2 \sin(r_1) = n_1 \sin(r_2) \label{eq:snell2_mod}
+\end{gather}
+Ahora comparamos esta ecuación modificada \eqref{eq:snell2_mod} con la de la primera refracción \eqref{eq:snell1}:
+\begin{gather}
+    n_1 \sin(i_1) = n_2 \sin(r_1) \nonumber \\
+    n_1 \sin(r_2) = n_2 \sin(r_1) \nonumber
+\end{gather}
+Igualando los términos de la izquierda, obtenemos:
+\begin{gather}
+    n_1 \sin(i_1) = n_1 \sin(r_2) \implies \sin(i_1) = \sin(r_2)
+\end{gather}
+Dado que los ángulos están en el rango $[0, 90^\circ]$, la igualdad de los senos implica la igualdad de los ángulos:
+\begin{gather}
+    i_1 = r_2
+\end{gather}
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+La demostración es puramente simbólica y no requiere valores numéricos.
+\begin{cajaresultado}
+    Se ha demostrado que el ángulo de incidencia inicial es igual al ángulo de emergencia final ($\boldsymbol{i_1 = r_2}$), lo que significa que el rayo emergente es \textbf{paralelo} al rayo incidente.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+Mediante la aplicación de la Ley de Snell en ambas caras de la lámina y el uso de la relación geométrica entre los ángulos internos (debido al paralelismo de las caras), se ha demostrado rigurosamente que $i_1 = r_2$. Esto confirma que, aunque el rayo sufre un desplazamiento lateral al atravesar la lámina, su dirección de propagación final es la misma que la inicial.
+\end{cajaconclusion}
+
+\newpage
+% ======================================================================
+% INICIO DE LA QUINTA Y ÚLTIMA PARTE - BLOQUES III (cont.) y IV
+% Este bloque de código contiene las soluciones a los ejercicios
+% restantes de Óptica y a todos los de Física del Siglo XX.
+% ======================================================================
+
+% ----------------------------------------------------------------------
+% A INSERTAR EN \section{Bloque III: Ondas y Óptica Geométrica}
+% ----------------------------------------------------------------------
+
+\subsection{Cuestión 6}
+\label{subsec:C6_2020_sep_ext}
+
+\begin{cajaenunciado}
+La imagen de un objeto real, dada por una lente delgada divergente, es siempre virtual, derecha y más pequeña que el objeto. Justifícalo mediante trazado de rayos y explica el porqué de dicho trazado. ¿Qué significa imagen virtual?
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+Es una cuestión teórica sobre las propiedades de las lentes divergentes.
+\begin{itemize}
+    \item \textbf{Dispositivo:} Lente delgada divergente.
+    \item \textbf{Objeto:} Real.
+    \item \textbf{Afirmación a justificar:} La imagen es siempre virtual, derecha y de menor tamaño.
+    \item \textbf{Incógnitas:} Justificación gráfica y teórica, y definición de imagen virtual.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.9\textwidth}{\centering \textbf{Trazado de rayos en lente divergente} \vspace{0.5cm} \textit{Prompt para la imagen:} "Diagrama de óptica. Eje óptico horizontal. Lente delgada divergente en el centro (símbolo con puntas de flecha hacia adentro). Foco objeto F a la derecha y foco imagen F' a la izquierda. Un objeto (flecha vertical 'y' hacia arriba) a la izquierda de la lente. Trazar tres rayos principales desde la punta del objeto: 1. Un rayo paralelo al eje óptico que, al refractarse, diverge de tal forma que su prolongación hacia atrás pasa por el foco imagen F'. 2. Un rayo que se dirige hacia el foco objeto F y que, al refractarse, sale paralelo al eje óptico. 3. Un rayo que pasa por el centro óptico y no se desvía. Las prolongaciones hacia atrás de los tres rayos refractados deben intersectar en un mismo punto, formando una imagen (flecha 'y' hacia arriba, más pequeña) virtual y derecha."
+    \vspace{0.5cm} % \includegraphics[width=0.8\linewidth]{lente_divergente_rayos.png}
+    }}
+    \caption{Formación de una imagen virtual, derecha y menor en una lente divergente.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+La justificación se basa en las reglas del \textbf{trazado de rayos para lentes delgadas divergentes}. Se suelen utilizar tres rayos principales cuya trayectoria es conocida:
+\begin{enumerate}
+    \item \textbf{Rayo paralelo al eje óptico:} Todo rayo que incide paralelo al eje óptico se refracta de manera que su prolongación pasa por el foco imagen ($F'$), que en las lentes divergentes está delante de la lente.
+    \item \textbf{Rayo que apunta al foco objeto:} Todo rayo que incide en dirección al foco objeto ($F$), que está detrás de la lente, se refracta saliendo paralelo al eje óptico.
+    \item \textbf{Rayo que pasa por el centro óptico:} Todo rayo que pasa por el centro óptico no sufre desviación.
+\end{enumerate}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{Justificación del trazado}
+Como se observa en el diagrama de rayos, los rayos que emergen de la lente después de refractarse son siempre \textbf{divergentes}; nunca se cruzan entre sí en el espacio imagen (a la derecha de la lente).
+Para encontrar la imagen, un observador debe \textbf{prolongar hacia atrás} estas trayectorias divergentes hasta encontrar un punto de intersección. Este punto:
+\begin{itemize}
+    \item Está siempre en el mismo lado de la lente que el objeto, lo que define una \textbf{imagen virtual}.
+    \item Está siempre por encima del eje óptico (si el objeto lo está), lo que define una \textbf{imagen derecha}.
+    \item Está siempre más cerca del eje óptico que el objeto, lo que define una \textbf{imagen más pequeña}.
+\end{itemize}
+Esta construcción es válida para cualquier posición del objeto real frente a la lente.
+
+\paragraph*{Significado de Imagen Virtual}
+Una \textbf{imagen virtual} es aquella que se forma en la intersección de las \textit{prolongaciones} de los rayos luminosos, no en la intersección de los rayos mismos. La luz no converge realmente en ese punto. Como consecuencia, una imagen virtual \textbf{no puede ser proyectada sobre una pantalla}. Solo puede ser vista por un observador que mira a través del sistema óptico (como verse en un espejo plano o a través de una lupa usada sobre un objeto cercano).
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+El problema es cualitativo y no requiere cálculos.
+\begin{cajaresultado}
+    El trazado de rayos demuestra que los rayos refractados por una lente divergente siempre divergen. Sus prolongaciones hacia atrás se cortan para formar una imagen \textbf{virtual, derecha y de menor tamaño} que el objeto.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+La justificación mediante el trazado de rayos confirma la afirmación del enunciado. La naturaleza inherentemente divergente de estas lentes hace que los rayos refractados nunca converjan, por lo que la imagen formada es siempre virtual. Esta se percibe como derecha y de menor tamaño, una propiedad utilizada, por ejemplo, en las mirillas de las puertas para abarcar un gran campo de visión.
+\end{cajaconclusion}
+
+\newpage
+
+\subsection{Problema 3}
+\label{subsec:P3_2020_sep_ext}
+
+\begin{cajaenunciado}
+Una onda armónica transversal se propaga con velocidad $v=5\,\text{cm/s}$ en el sentido negativo del eje x. A partir de la información contenida en la figura y justificando la respuesta:
+\begin{enumerate}
+    \item[a)] Determina la amplitud, la longitud de onda, el periodo y la diferencia de fase entre dos puntos que distan 15 cm y separados en el tiempo 3 s. (1 punto)
+    \item[b)] Escribe la expresión de la función de onda (usando el seno), suponiendo que la fase inicial es nula. Calcula la velocidad de un punto de la onda situado en $x=0$ cm para $t=0$ s. (1 punto)
+\end{enumerate}
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Velocidad de propagación ($v$):} $5\,\text{cm/s}$.
+    \item \textbf{Sentido de propagación:} Negativo del eje x.
+    \item \textbf{Datos de la gráfica (en $t=0$):}
+    \begin{itemize}
+        \item Amplitud (máximo valor de y): $A = 4\,\text{cm}$.
+        \item Longitud de onda (distancia de un ciclo completo): $\lambda = 10\,\text{cm}$.
+    \end{itemize}
+    \item \textbf{Datos para diferencia de fase:} $\Delta x = 15\,\text{cm}$, $\Delta t = 3\,\text{s}$.
+    \item \textbf{Fase inicial ($\phi_0$):} $\phi_0 = 0$.
+    \item \textbf{Incógnitas:} $A, \lambda, T, \Delta\phi$, ecuación $y(x,t)$, y $v_y(0,0)$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+La gráfica es proporcionada en el enunciado del problema.
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Onda en t=0} \vspace{0.5cm} \textit{Prompt para la imagen:} "Recrear la gráfica del examen. Eje horizontal 'x (cm)' de 0 a 20. Eje vertical 'y (cm)' de -4 a 4. Dibujar una onda sinusoidal que empieza en (0,0), sube a un máximo en (2.5, 4), cruza el eje en (5,0), baja a un mínimo en (7.5, -4), y completa un ciclo en (10,0). Continuar el patrón hasta x=20."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{onda_problema_3.png}
+    }}
+    \caption{Instantánea de la onda en el instante inicial.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ecuación de onda:} Para una propagación en sentido $-x$, la forma es $y(x,t) = A\sin(\omega t + kx + \phi_0)$.
+    \item \textbf{Parámetros de la onda:} $k = 2\pi/\lambda$ (número de onda), $\omega = 2\pi/T$ (frecuencia angular), $v = \lambda/T$.
+    \item \textbf{Fase ($\phi$):} El argumento del seno, $\phi(x,t) = \omega t + kx + \phi_0$.
+    \item \textbf{Diferencia de fase ($\Delta\phi$):} $\Delta\phi = \phi(x_2, t_2) - \phi(x_1, t_1) = \omega(t_2-t_1) + k(x_2-x_1) = \omega\Delta t + k\Delta x$.
+    \item \textbf{Velocidad de vibración ($v_y$):} Es la derivada de la elongación respecto al tiempo: $v_y = \frac{\partial y}{\partial t}$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+Las ecuaciones fundamentales ya están en su forma simbólica. Los pasos a seguir son: extraer $A$ y $\lambda$ de la gráfica, calcular $T$ a partir de $v$ y $\lambda$, y luego usar estos para hallar $k, \omega, \Delta\phi$ y la ecuación de onda.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+(Se trabajará con las unidades dadas: cm y s)
+\paragraph*{a) Parámetros y diferencia de fase}
+\begin{itemize}
+    \item \textbf{Amplitud (A):} Del gráfico, el valor máximo de $y$ es 4. $\boldsymbol{A=4\,\textbf{cm}}$.
+    \item \textbf{Longitud de onda ($\lambda$):} Del gráfico, la onda completa un ciclo entre $x=0$ y $x=10$. $\boldsymbol{\lambda=10\,\textbf{cm}}$.
+    \item \textbf{Periodo (T):} Usando la relación $v=\lambda/T$, despejamos $T = \lambda/v = \frac{10\,\text{cm}}{5\,\text{cm/s}} = 2\,\text{s}$. $\boldsymbol{T=2\,\textbf{s}}$.
+\end{itemize}
+Para la diferencia de fase, primero calculamos $k$ y $\omega$:
+\begin{gather}
+    k = \frac{2\pi}{\lambda} = \frac{2\pi}{10} = \frac{\pi}{5}\,\text{rad/cm} \quad ; \quad \omega = \frac{2\pi}{T} = \frac{2\pi}{2} = \pi\,\text{rad/s}
+\end{gather}
+Ahora la diferencia de fase:
+\begin{gather}
+    \Delta\phi = \omega\Delta t + k\Delta x = (\pi\,\text{rad/s})(3\,\text{s}) + (\frac{\pi}{5}\,\text{rad/cm})(15\,\text{cm}) = 3\pi + 3\pi = 6\pi\,\text{rad}
+\end{gather}
+\begin{cajaresultado}
+    $A=4\,\text{cm}$, $\lambda=10\,\text{cm}$, $T=2\,\text{s}$ y $\Delta\phi=6\pi\,\text{rad}$.
+\end{cajaresultado}
+\paragraph*{b) Ecuación de onda y velocidad de vibración}
+La ecuación de onda es $y(x,t) = A\sin(\omega t + kx)$, ya que $\phi_0=0$ y la propagación es en sentido $-x$.
+\begin{gather}
+    y(x,t) = 4\sin(\pi t + \frac{\pi}{5}x) \quad (\text{y, x en cm; t en s})
+\end{gather}
+La velocidad de vibración es la derivada temporal:
+\begin{gather}
+    v_y(x,t) = \frac{\partial y}{\partial t} = 4\pi\cos(\pi t + \frac{\pi}{5}x)
+\end{gather}
+Calculamos su valor para $x=0, t=0$:
+\begin{gather}
+    v_y(0,0) = 4\pi\cos(\pi \cdot 0 + \frac{\pi}{5} \cdot 0) = 4\pi\cos(0) = 4\pi \approx 12,57\,\text{cm/s}
+\end{gather}
+\begin{cajaresultado}
+    La función de onda es $\boldsymbol{y(x,t) = 4\sin(\pi t + \frac{\pi}{5}x)}$. La velocidad en (0,0) es $\boldsymbol{v_y(0,0) \approx 12,57\,\textbf{cm/s}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) Analizando la gráfica y los datos, se han determinado los parámetros fundamentales de la onda: amplitud de 4 cm, longitud de onda de 10 cm y un periodo de 2 s. La diferencia de fase calculada, $6\pi$ rad, es un múltiplo de $2\pi$, lo que indica que los dos puntos se encuentran en el mismo estado de vibración.
+
+b) Con los parámetros calculados, se ha construido la ecuación de la onda. Su derivada nos da la velocidad de vibración, que en el origen y en el instante inicial es máxima y positiva ($\mathbf{12,57\,cm/s}$), lo que es coherente con la gráfica que muestra una pendiente positiva en $x=0$.
+\end{cajaconclusion}
+
+\newpage
+
+% ----------------------------------------------------------------------
+\section{Bloque IV: Física del Siglo XX}
+\label{sec:fisXX_2020_sep_ext}
+% ----------------------------------------------------------------------
+
+\subsection{Problema 4}
+\label{subsec:P4_2020_sep_ext}
+
+\begin{cajaenunciado}
+Una radiación monocromática de longitud de onda 500 nm incide sobre una fotocélula de cesio, cuyo trabajo de extracción es de 2 eV. Calcula:
+\begin{enumerate}
+    \item[a)] La frecuencia umbral y la longitud de onda umbral. (1 punto)
+    \item[b)] La energía cinética máxima de los electrones emitidos y el potencial de frenado, ambos en eV. Explica qué es el potencial de frenado. (1 punto)
+\end{enumerate}
+\textbf{Datos:} carga elemental $q=1,6\cdot10^{-19}\,\text{C}$; velocidad de la luz en el vacío, $c=3\cdot10^{8}\,\text{m/s}$; constante de Planck, $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+\end{cajaenunciado}
+\hrule
+
+\subsubsection*{1. Tratamiento de datos y lectura}
+\begin{itemize}
+    \item \textbf{Longitud de onda incidente ($\lambda$):} $500\,\text{nm} = 5\cdot10^{-7}\,\text{m}$.
+    \item \textbf{Trabajo de extracción ($W_0$):} $2\,\text{eV} = 2 \cdot 1,6\cdot10^{-19}\,\text{J} = 3,2\cdot10^{-19}\,\text{J}$.
+    \item \textbf{Constantes:} $e=1,6\cdot10^{-19}\,\text{C}$, $c=3\cdot10^8\,\text{m/s}$, $h=6,6\cdot10^{-34}\,\text{J}\cdot\text{s}$.
+    \item \textbf{Incógnitas:} $f_0, \lambda_0, E_{c,max}, V_s$.
+\end{itemize}
+
+\subsubsection*{2. Representación Gráfica}
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.7\textwidth}{\centering \textbf{Diagrama de energía del efecto fotoeléctrico} \vspace{0.5cm} \textit{Prompt para la imagen:} "Un diagrama de niveles de energía. Un nivel base representa la energía de un electrón ligado al metal. El nivel de energía cero (vacío) está a una altura W0 (trabajo de extracción) por encima del nivel base. Un fotón incidente (flecha hacia abajo con energía $E_f = hf$) llega desde arriba. La flecha llega hasta el electrón en el nivel base y lo 'eleva'. La energía sobrante, $E_f - W_0$, se convierte en la energía cinética $E_{c,max}$ del electrón una vez que escapa del metal."
+    \vspace{0.5cm} % \includegraphics[width=0.9\linewidth]{fotoelectrico_energia.png}
+    }}
+    \caption{Balance energético en la emisión de un fotoelectrón.}
+\end{figure}
+
+\subsubsection*{3. Leyes y Fundamentos Físicos}
+\begin{itemize}
+    \item \textbf{Ecuación de Einstein del Efecto Fotoeléctrico:} La energía de un fotón incidente ($E_f$) se invierte en el trabajo de extracción ($W_0$) y la energía cinética máxima del electrón emitido ($E_{c,max}$): $E_f = W_0 + E_{c,max}$.
+    \item \textbf{Energía del fotón:} $E_f = hf = \frac{hc}{\lambda}$.
+    \item \textbf{Condición umbral:} La frecuencia umbral ($f_0$) y la longitud de onda umbral ($\lambda_0$) son los valores mínimos/máximos para que se produzca el efecto. Corresponden a $E_{c,max}=0$, por lo que $W_0 = hf_0 = \frac{hc}{\lambda_0}$.
+    \item \textbf{Potencial de Frenado ($V_s$):} Es el potencial eléctrico inverso que hay que aplicar para detener completamente a los electrones más energéticos. La energía que les quita el campo eléctrico ($e \cdot V_s$) debe igualar su energía cinética inicial: $E_{c,max} = e \cdot V_s$.
+\end{itemize}
+
+\subsubsection*{4. Tratamiento Simbólico de las Ecuaciones}
+\paragraph*{a) Frecuencia y longitud de onda umbral}
+\begin{gather}
+    f_0 = \frac{W_0}{h} \\
+    \lambda_0 = \frac{hc}{W_0}
+\end{gather}
+\paragraph*{b) Energía cinética y potencial de frenado}
+\begin{gather}
+    E_{c,max} = E_f - W_0 = \frac{hc}{\lambda} - W_0 \\
+    V_s = \frac{E_{c,max}}{e}
+\end{gather}
+Nota: Si $E_{c,max}$ se expresa en eV, el valor numérico de $V_s$ en voltios es el mismo.
+
+\subsubsection*{5. Sustitución Numérica y Resultado}
+\paragraph*{a) Cálculo de $f_0$ y $\lambda_0$}
+Usamos $W_0 = 3,2\cdot10^{-19}\,\text{J}$.
+\begin{gather}
+    f_0 = \frac{3,2\cdot10^{-19}\,\text{J}}{6,6\cdot10^{-34}\,\text{J}\cdot\text{s}} \approx 4,85\cdot10^{14}\,\text{Hz} \\
+    \lambda_0 = \frac{(6,6\cdot10^{-34})(3\cdot10^8)}{3,2\cdot10^{-19}} \approx 6,19\cdot10^{-7}\,\text{m} = 619\,\text{nm}
+\end{gather}
+\begin{cajaresultado}
+    La frecuencia umbral es $\boldsymbol{f_0 \approx 4,85\cdot10^{14}\,\textbf{Hz}}$ y la longitud de onda umbral es $\boldsymbol{\lambda_0 \approx 619\,\textbf{nm}}$.
+\end{cajaresultado}
+\paragraph*{b) Cálculo de $E_{c,max}$ y $V_s$}
+Para facilitar el cálculo, trabajaremos en eV. Primero, la energía del fotón incidente:
+\begin{gather}
+    E_f = \frac{hc}{\lambda} = \frac{(6,6\cdot10^{-34})(3\cdot10^8)}{5\cdot10^{-7}} = 3,96\cdot10^{-19}\,\text{J} \\
+    E_f (\text{eV}) = \frac{3,96\cdot10^{-19}\,\text{J}}{1,6\cdot10^{-19}\,\text{J/eV}} \approx 2,48\,\text{eV}
+\end{gather}
+Ahora la energía cinética máxima:
+\begin{gather}
+    E_{c,max} = E_f - W_0 = 2,48\,\text{eV} - 2\,\text{eV} = 0,48\,\text{eV}
+\end{gather}
+El potencial de frenado es el valor de la energía cinética en eV, pero expresado en voltios.
+\begin{cajaresultado}
+    La energía cinética máxima es $\boldsymbol{E_{c,max} = 0,48\,\textbf{eV}}$ y el potencial de frenado es $\boldsymbol{V_s = 0,48\,\textbf{V}}$.
+\end{cajaresultado}
+
+\subsubsection*{6. Conclusión}
+\begin{cajaconclusion}
+a) Para el cesio, con un trabajo de extracción de 2 eV, se requiere una radiación con una frecuencia mínima de $\mathbf{4,85\cdot10^{14}\,Hz}$ (o una longitud de onda máxima de $\mathbf{619\,nm}$) para poder extraer electrones.
+
+b) Dado que la luz incidente de 500 nm tiene una energía de 2,48 eV (superior a la umbral), se produce efecto fotoeléctrico. La energía sobrante se manifiesta como una energía cinética máxima de $\mathbf{0,48\,eV}$ para los electrones emitidos. Para detener por completo a estos electrones, se requeriría aplicar un potencial eléctrico de frenado de $\mathbf{0,48\,V}$.
+\end{cajaconclusion}
+
+\newpage 
